@@ -211,7 +211,7 @@ if [ "$FAIL" -gt 0 ]; then
   echo "→ Status: FAIL — fix issues before running full overnight"
   exit 1
 elif [ "$WARN" -gt 3 ]; then
-  echo "→ Status: PASS WITH WARNINGS — review before sending to Toi"
+  echo "→ Status: PASS WITH WARNINGS — review before sharing with reviewer"
   exit 0
 else
   echo "→ Status: PASS — output is benchmark-grade, ready to compare with IMI references"

@@ -72,7 +72,7 @@ Each skill consumes the previous skill's output. Each is independently runnable 
 - `[engagement]/21-outreach-and-interviews/raw-claude-buyer-icps-[topic].md`
 - `[engagement]/21-outreach-and-interviews/raw-claude-named-contacts-[topic].md` (50+ contacts via Playwright)
 
-**What it does (Run 2 from Toi's original ask):**
+**What it does (Run 2 — extension from Run 1):**
 
 1. Read overnight-research outputs as context
 2. For each value chain stage, identify named companies operating in that stage in target geography (public web research — industry directories, company websites, news, gov filings, conference attendee lists)
@@ -163,7 +163,7 @@ The skill will treat the captured contact list as research feedstock — `raw-cl
 - `slide-mapper` (NEW — converts research findings to slide structure)
 - Existing zz-skills: `pitch-writing`, `slides-md`, `slides-pptx`
 
-**Quality target:** structurally matches Tokio Marine pitch decks (`01-9d2f3ccc.md`, `02-879f7e36.md` from Toi's reference set) and Cremer Venture Board decks.
+**Quality target:** structurally matches Tokio Marine pitch decks and Cremer Venture Board decks from the WP reference set.
 
 ---
 
@@ -203,7 +203,7 @@ Until then, agents live in each skill's `.claude/agents/` (slight duplication bu
 
 ### Q3 2026 — Build `overnight-buyer-validation`
 
-Triggered by: positive Toi feedback on overnight-research output, plus a real engagement that needs Run 2 (named companies + buyer ICPs).
+Triggered by: positive partner feedback on overnight-research output, plus a real engagement that needs Run 2 (named companies + buyer ICPs).
 
 Effort estimate: ~2 weeks of skill+agent design + 1 week dry-run iteration.
 
@@ -223,7 +223,7 @@ Effort estimate: ~2 weeks (heavy reuse of `slides-md` + `slides-pptx` from zz-sk
 
 If all 4 skills are mature and stable:
 - Move common agents to `Wright-Partners/overnight-shared-agents` submodule
-- Consider folding into `Wright-Partners/zz-skills` if Toi's "zz-skills as sub-repo of zz-template-design" plan goes through
+- Consider folding into `Wright-Partners/zz-skills` if the planned "zz-skills as sub-repo of zz-template-design" migration goes through
 - Each skill's repo becomes a thin layer over the shared agent library
 
 ---

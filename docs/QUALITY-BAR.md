@@ -91,11 +91,11 @@ Signs: token cost >$100 for full overnight run.
 
 Fix: probably hit a search loop where the skill kept re-fetching same sources. Check cache-stats.sh — if cache empty after run, cache helper failed (jq missing? path issue?). Fix cache, re-run.
 
-### "Output looks great but Toi pushes back on a specific claim"
+### "Output looks great but a reviewer pushes back on a specific claim"
 
-Common reaction. The skill flags every assumed claim with `[ASSUMED-N]: to validate <specific question>`. When Toi questions a specific claim, look up its tag — the validation question tells you exactly what field interview would resolve it.
+Common reaction. The skill flags every assumed claim with `[ASSUMED-N]: to validate <specific question>`. When a reviewer questions a specific claim, look up its tag — the validation question tells you exactly what field interview would resolve it.
 
-This is a feature, not a bug. The skill is honest about what's evidenced vs assumed. Toi's pushback should land on either (a) we need to do that field interview, or (b) we missed a primary source — re-research.
+This is a feature, not a bug. The skill is honest about what's evidenced vs assumed. Reviewer pushback should land on either (a) we need to do that field interview, or (b) we missed a primary source — re-research.
 
 ## Quality progression over time
 

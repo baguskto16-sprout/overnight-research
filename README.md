@@ -287,12 +287,12 @@ Each future skill will reuse the same agent library where applicable (value-chai
 ### Why NOT just one giant skill?
 
 - **Vertical slice anti-pattern at the family level** — building all 4 skills before validating any one would be horizontal slicing. Same anti-pattern Matt Pocock warns against in TDD.
-- **Toi's first ETA** — Run 1 only. Build that, ship it, iterate on real feedback before scoping Run 2-4.
+- **Initial scope is Run 1 only** — build that, ship it, iterate on real feedback before scoping Run 2-4.
 - **Unknowns in Run 2-4** — buyer validation needs Playwright LinkedIn automation that needs to be built and tuned. Financial modeling needs TAM/SAM frameworks that depend on Run 1's value chain. Don't pre-build dependencies on uncertain choices.
 
 ### Migration path
 
-After overnight-research v3 ships and gets Toi feedback:
+After overnight-research v3 ships and gets partner feedback:
 
 1. **If feedback is positive on output quality** → start building `overnight-buyer-validation` (Run 2 capability). Reuse this repo's value-chain-mapper + source-validator agents. Add new agents for buyer ICP profiling and search spec generation.
 
