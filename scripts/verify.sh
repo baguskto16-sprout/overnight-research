@@ -87,6 +87,40 @@ check() {
   esac
 }
 
+echo "── 0. Run completion check ──────────────────────────────────"
+
+# Look for log files indicating token/rate limit interruption
+LOG_FILES=$(find "$TARGET" -maxdepth 2 -name "*overnight*.log" -o -name "*smoke-test*.log" 2>/dev/null | head -3)
+INTERRUPTED=0
+
+if [ -n "$LOG_FILES" ]; then
+  for LOG in $LOG_FILES; do
+    if grep -qiE "context.length.exceeded|prompt.is.too.long|rate.limit|429|message.limit|usage.limit|token.limit" "$LOG" 2>/dev/null; then
+      check "Run interrupted (token/rate/usage limit detected)" warn "$(basename "$LOG")"
+      INTERRUPTED=1
+    fi
+  done
+fi
+
+if [ "$INTERRUPTED" -eq 0 ]; then
+  check "No token/rate/usage limit errors in logs" pass
+fi
+
+# Check checkpoint for incomplete run state
+if [ -f "$RUN_DIR/checkpoint.json" ]; then
+  GATE_DECISION=$(jq -r '.final_gate_decision // "null"' "$RUN_DIR/checkpoint.json" 2>/dev/null || echo "null")
+  if [ "$GATE_DECISION" = "null" ] && [ ! -f "$RUN_DIR/RUN-COMPLETE.txt" ]; then
+    CURRENT_PASS=$(jq -r '.current_pass // 0' "$RUN_DIR/checkpoint.json" 2>/dev/null || echo "0")
+    STAGES_DONE=$(jq -r '(.stages_completed | length) // 0' "$RUN_DIR/checkpoint.json" 2>/dev/null || echo "0")
+    check "Run incomplete (pass $CURRENT_PASS, $STAGES_DONE stages done)" warn "RUN-COMPLETE.txt missing"
+    echo ""
+    echo "  → To resume from checkpoint, run:"
+    echo "    cd $TARGET && ./scripts/resume.sh"
+    echo ""
+  fi
+fi
+
+echo ""
 echo "── 1. Output files ───────────────────────────────────────────"
 
 VC_FILE=$(ls "$VC_DIR"/raw-claude-value-chain-*.md 2>/dev/null | head -1 || echo "")

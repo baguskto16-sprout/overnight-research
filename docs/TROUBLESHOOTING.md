@@ -1,5 +1,77 @@
 # Troubleshooting
 
+## Token / rate / usage limit handling
+
+The skill writes checkpoint files at every stage transition (`pass-0-plan.md`, `pass-1-drafts/`, `pass-2-validation/`, etc.) plus `checkpoint.json` tracking which stages are complete. **If the run is interrupted (token limit, rate limit, account usage limit, manual kill, network error), the checkpoint preserves what's been done.**
+
+### How to detect interruption
+
+Run `./scripts/verify.sh` after a run. It checks two signals:
+
+1. Log file content for known limit error patterns (`context length exceeded`, `rate limit`, `429`, `usage limit`, `message limit`, `prompt is too long`)
+2. `checkpoint.json` showing `final_gate_decision: null` AND missing `RUN-COMPLETE.txt`
+
+If either fires, verify reports:
+```
+⚠ Run interrupted (token/rate/usage limit detected)  smoke-test-20260430-2200.log
+⚠ Run incomplete (pass 3, 2 stages done)             RUN-COMPLETE.txt missing
+
+  → To resume from checkpoint, run:
+    cd /your/repo && ./scripts/resume.sh
+```
+
+### How to resume
+
+```bash
+./scripts/resume.sh
+```
+
+Auto-detects the most recent incomplete run, reads its checkpoint, and re-invokes claude with explicit "resume from checkpoint" instruction. The skill's **Step 0.6 (Resume detection)** reads checkpoint, skips already-completed stages, and continues from where it left off.
+
+Behavior:
+- Stages already in `stages_completed` are skipped
+- Stage that was in progress (`stages_in_progress[0]`) is restarted fresh (partial output discarded — safer than trying to salvage interrupted state)
+- Each completed stage updates checkpoint, so subsequent resumes continue from the new latest
+
+If `resume.sh` reports "No incomplete runs found", the most recent run completed successfully. Use `run-headless.sh` for a new fresh run.
+
+### What if I want a fresh run despite an incomplete checkpoint?
+
+The skill honors a `--fresh` flag in the prompt:
+
+```bash
+caffeinate -i nohup claude --print --dangerously-skip-permissions \
+  "Run the overnight-research skill on ./input/your-topic.txt --fresh" \
+  > overnight.log 2>&1 &
+```
+
+Skip checkpoint, generate new run-id, start from scratch.
+
+### Why does this matter for production overnight runs?
+
+Full overnight runs hit:
+
+- **Output token per turn (~8K)** — a single sub-agent invocation might truncate; rare but possible
+- **Context window (200K Sonnet)** — accumulating sub-agent context across passes can approach this on very heavy runs
+- **Account usage limit** — Claude Pro has 5-hour message budget; API has dollar limits that hit on long runs
+- **Rate limit** — peak hour API usage can hit per-minute rate limits
+
+The skill's vertical-slice architecture HELPS here: each stage is small and self-contained, so interruption mid-stage loses at most one stage's work, not the whole run.
+
+### Cost protection
+
+To cap cost on full runs, pass `--max-cost`:
+
+```bash
+claude --print --dangerously-skip-permissions \
+  "Run the overnight-research skill on ./input/your-topic.txt --max-cost 50" \
+  > overnight.log 2>&1 &
+```
+
+Skill respects the cap as a soft limit — when reached, it forces final pass with whatever stages are validated and writes outputs marked as `[INCOMPLETE — cost cap]`.
+
+---
+
 ## Setup issues
 
 ### `gh: command not found`

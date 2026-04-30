@@ -103,6 +103,62 @@ Artifact destinations:
 
 If `.claude/cache/sources/` exists: enable source caching (see Step 5 detail).
 
+### Step 0.6 — Resume detection (token-limit recovery)
+
+**Before starting fresh execution, check if a previous run was interrupted mid-flight.**
+
+Look for incomplete checkpoint at `[SCRATCHPAD_DIR]/<most-recent-timestamp>/checkpoint.json` (engagement mode) or `./output/raw-claude-overnight/<most-recent-timestamp>/checkpoint.json` (sandbox).
+
+A run is incomplete if:
+- `checkpoint.json` exists
+- AND `RUN-COMPLETE.txt` does NOT exist
+- AND `current_pass` < final pass (i.e. `final_gate_decision` is `null`)
+
+If you find an incomplete checkpoint, **read it and resume**:
+
+```json
+{
+  "run_id": "2026-04-30-2200",
+  "input_file": "./input/package-boilers.txt",
+  "current_pass": 3,
+  "stages_planned": [...],
+  "stages_completed": [1, 2],
+  "stages_in_progress": [3],
+  "weak_claims_to_re_research": [...],
+  "final_gate_decision": null,
+  "interruption": {
+    "detected_at": "ISO timestamp",
+    "likely_cause": "token-limit | rate-limit | manual-stop | unknown"
+  }
+}
+```
+
+**Resume logic:**
+
+1. Log clearly: `RESUMING from checkpoint [run-id]. Stages already complete: [1, 2]. Resuming Stage 3.`
+2. Skip stages in `stages_completed`. Read their previously-saved drafts from `pass-1-drafts/stage-N-*.md` for cross-stage context.
+3. Restart from `stages_in_progress[0]` — re-invoke the appropriate sub-agent for that stage. The interrupted stage may have partial output; treat it as needing complete redo, not partial salvage.
+4. Continue normal vertical-slice flow from there.
+5. Update `checkpoint.json` after each stage completes so future resumes have current state.
+
+**Fresh-run logic** (if no checkpoint found OR `RUN-COMPLETE.txt` exists):
+
+Generate a new `run_id` and proceed with normal Step 1 onwards.
+
+**If user explicitly wants fresh run despite incomplete checkpoint:**
+
+Honor a `--fresh` flag in the run command — skip resume and start new. Document this in the run summary as "Resumed: false (--fresh override)".
+
+**Checkpoint update discipline (apply throughout the run):**
+
+Update `checkpoint.json` at these points:
+- After Step 0.5 (output mode detected) — write initial checkpoint with `current_pass: 0`
+- After each stage completes Step 3a-3f or 4a-4f — update `stages_completed`, `current_pass`
+- Before Step 6 (writing final outputs) — set `current_pass: 5` (final pass)
+- After Step 8 (write outputs done) — set `final_gate_decision`, write `RUN-COMPLETE.txt`
+
+This way, **at any point of interruption, the checkpoint reflects current state** and resume is possible.
+
 ### Step 1 — Validate input file (rigorous)
 
 Read the input file. Required fields:
