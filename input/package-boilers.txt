@@ -1,0 +1,60 @@
+# Test input for overnight-research skill — Solid-fuel package boilers
+
+## Topic
+
+Industrial use of solid-fuel package boilers (also called packaged boilers) — small to medium-scale boilers manufactured and assembled at a factory then shipped as a complete unit, fired by solid fuels (coal, biomass, wood pellets, husks, agricultural residues, lignite).
+
+## Hypothesis
+
+Operators of solid-fuel package boilers across Southeast Asian industrial sectors (textile, food processing, palm oil mills, rubber processing, paper & pulp, small-scale manufacturing) experience meaningful operational pain from two sources: the cost and volatility of solid fuel inputs, and the unreliability of the boilers themselves (downtime, maintenance frequency, ash handling, emissions compliance). These operators would pay for a service or product that materially reduces fuel cost or improves reliability, but no integrated solution exists in the regional market today.
+
+## Scope
+
+In:
+- Industrial users of solid-fuel package boilers (capacity range roughly 0.5 to 25 tonnes of steam per hour, or equivalent thermal output)
+- Solid fuel types: coal, biomass pellets, agricultural residues (rice husk, EFB, bagasse, sawdust), wood chips
+- Sectors with high concentration of these boilers: textile, food and beverage, palm oil milling, rubber processing, paper and pulp, small-scale chemical and pharmaceutical manufacturing
+- Value chain from fuel suppliers and boiler OEMs through to end users and aftermarket service providers
+
+Out:
+- Large utility-scale boilers (>50 tonnes steam per hour) — different value chain
+- Gas-fired and oil-fired boilers — different fuel economics
+- Domestic / residential boilers — different scale and buyer
+- Power generation boilers (subset of utility-scale)
+
+## Geography
+
+In: Indonesia, Malaysia, Thailand, Singapore (primary). Vietnam and Philippines as secondary if data is readily available.
+
+Out: All other geographies for this test pass.
+
+## Working hypotheses for pain points (to test against the literature)
+
+1. **High fuel cost** — solid fuel prices have risen and become more volatile, especially for imported coal; biomass alternatives are inconsistent in supply and quality
+2. **Reliability problems** — frequent downtime due to ash buildup, fuel feed system issues, tube fouling, or component wear; reactive maintenance dominates over preventive
+3. **Emissions compliance burden** — rising regulatory pressure on PM, SOx, NOx in Indonesia and Thailand; many operators run aging boilers that struggle to meet new limits
+4. **Skilled operator scarcity** — finding and retaining boiler operators with the right certifications and experience is increasingly hard
+5. **Fuel quality variability** — biomass feedstock varies in moisture, calorific value, and contaminants, causing upstream operational issues
+
+The skill should test which of these are evidenced in industry literature and which need field validation. New pain points surfaced during research should be flagged separately.
+
+## Sources to start from (optional, none required)
+
+- ASEAN Centre for Energy publications on industrial energy use
+- IEA SEA energy reports
+- Indonesia Ministry of Industry / BKPM publications
+- Malaysian Energy Commission publications
+- Thai DEDE / Department of Industrial Works publications
+- Trade press: Bioenergy International, Power Engineering International, Modern Power Systems
+
+## Output location
+
+Default: `./output/raw-claude-overnight/[YYYY-MM-DD-HHmm]/`
+
+## Run notes
+
+- This is a capability test, not a real engagement. The output is a dry run target to compare against IMI Climate Control's `21-value-chain/value-chain-data-center.md` and `22-pain-points/by-stage.md` for structural fit and analytical depth.
+- No real engagement repo is being created. The output stays in scratchpad / output folder.
+- Reference target output files for comparison after the run completes:
+  - `Wright-Partners/26-idea-imicc-datacenters/21-value-chain/value-chain-data-center.md`
+  - `Wright-Partners/26-idea-imicc-datacenters/22-pain-points/by-stage.md`

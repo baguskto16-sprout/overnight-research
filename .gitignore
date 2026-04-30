@@ -1,0 +1,22 @@
+# Run outputs (per-run, not committed)
+output/raw-claude-overnight/*/
+!output/raw-claude-overnight/.gitkeep
+
+# Cache (machine-local, not committed)
+.claude/cache/sources/*.html
+.claude/cache/sources/*.md
+.claude/cache/sources/*.txt
+.claude/cache/sources/index.json
+
+# Logs
+*.log
+.last-run.pid
+.smoke-test.pid
+
+# WP-confidential references (loaded via setup.sh from private repos)
+.claude/refs/*.md
+!.claude/refs/.gitkeep
+
+# OS junk
+.DS_Store
+Thumbs.db

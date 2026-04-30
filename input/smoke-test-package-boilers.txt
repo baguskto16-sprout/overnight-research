@@ -1,0 +1,75 @@
+# Smoke test input — narrow scope for benchmarking only
+
+> **Purpose:** This is a SMOKE TEST input. Scope is narrowed to single sector + single country + single hypothesis so the skill runs Stage 1 vertical slice only in ~20-30 minutes and ~$5-15 cost. Use this to verify the skill works before committing to a full overnight run.
+
+## Topic
+
+Industrial use of solid-fuel package boilers in the Indonesian textile sector — specifically boilers fired by coal or biomass at small to medium textile mills (capacity range 1–10 tonnes of steam per hour).
+
+## Hypothesis
+
+Operators of solid-fuel package boilers in Indonesian textile mills experience meaningful operational pain from high and volatile fuel costs (coal price swings, biomass quality variability), with limited tools to mitigate. They would pay for a service that materially reduces fuel cost or quality risk.
+
+## Scope
+
+In:
+- Indonesian textile sector only (no other industries)
+- Solid-fuel package boilers, capacity 1–10 TPH steam
+- Coal and biomass fuels (rice husk, wood pellets, coal)
+- Value chain: fuel suppliers → boiler OEMs → end users (textile mills)
+
+Out:
+- Other industrial sectors (food, palm oil, rubber, paper, etc.)
+- Other geographies (Malaysia, Thailand, Singapore, Vietnam, Philippines)
+- Larger boilers (>10 TPH) and smaller (<1 TPH)
+- Gas/oil-fired boilers
+
+## Geography
+
+In: Indonesia only (especially Java textile clusters: Bandung, Solo, Semarang)
+Out: All other geographies
+
+## Working hypotheses for pain points
+
+Just one hypothesis for smoke test:
+
+1. **High and volatile fuel cost** — coal prices fluctuate; biomass alternatives have quality variability that affects boiler performance
+
+The skill should test this single hypothesis explicitly and produce 2-3 pain points related to it (with full IMI structure: description, who bears it, cost, frequency, root causes).
+
+## Sources to start from (optional)
+
+- BPS Indonesia (industrial energy statistics)
+- ASEAN Centre for Energy
+- Indonesian Ministry of Industry / BKPM
+- Trade press: Bioenergy International, Modern Power Systems
+
+## Output location
+
+`./output/raw-claude-overnight/[YYYY-MM-DD-HHmm]/`
+
+## Smoke test success criteria
+
+After this run completes, verify:
+
+1. ✅ Skill loaded `.claude/refs/imi-pain-points-template.md` in Step 0 (check log)
+2. ✅ Skill validated input as not-fuzzy in Step 1 (no BLOCKED.md generated)
+3. ✅ Stage 1 vertical slice executed end-to-end (value-chain-mapper → pain-point-researcher → source-validator → deep-research → IMI compare)
+4. ✅ Stage 1 produced output structurally similar to IMI `22-pain-points/by-stage.md` Stage 1 section
+5. ✅ Pain points have 8+ citations each (matches IMI density target)
+6. ✅ At least one PDF source processed via markitdown (academic or government)
+7. ✅ ASSUMED-N tags present and grep-able (`grep "\[ASSUMED-" output/*.md`)
+8. ✅ Self-validation completed with confidence breakdown
+9. ✅ Gate decision logged
+10. ✅ RUN-COMPLETE.txt written
+
+If 8/10+ checks pass: skill works, proceed to full overnight run.
+If fewer: review log, identify which step failed, iterate skill spec before full run.
+
+## Run notes
+
+- This is a smoke test, not a real engagement.
+- Output is throwaway — purpose is to benchmark + verify.
+- Expected runtime: 20-30 minutes (1 stage only)
+- Expected cost: $5-15 in tokens
+- Compare output to IMI Stage 1 (Asset Owners pain points) for structural fit

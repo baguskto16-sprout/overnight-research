@@ -1,0 +1,38 @@
+# Hypothesis input — [your topic name]
+
+## Topic
+
+[Describe the topic in 1-2 sentences. Be specific — include scale, type, application.]
+
+## Hypothesis
+
+[Our best current view: who experiences the pain, what the pain is, why it matters now. 2-4 sentences.]
+
+## Scope
+
+In:
+- [What's in scope — actor types, applications, value chain segments]
+
+Out:
+- [What's explicitly out — adjacent areas we won't research]
+
+## Geography
+
+In: [countries/regions]
+Out: [excluded geographies]
+
+## Working hypotheses for pain points
+
+2-5 candidate pains we want the system to test against the literature:
+
+1. **[Pain 1]** — [why we think this is a pain]
+2. **[Pain 2]** — [why]
+3. ...
+
+## Sources to start from (optional)
+
+- [Pre-known source URL or document name]
+
+## Output location
+
+`./output/raw-claude-overnight/[YYYY-MM-DD-HHmm]/`
