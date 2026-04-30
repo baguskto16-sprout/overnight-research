@@ -271,7 +271,7 @@ This repo is the first of a planned family of overnight-research skills. Each sk
 | Repo | Status | What it does |
 |---|---|---|
 | `Wright-Partners/overnight-research` | ✅ This repo (v3) | Run 1 — value chain + pain points by stage. Foundation for everything downstream. |
-| `Wright-Partners/overnight-buyer-validation` | 🔮 Future | Run 2 — extends value chain into named companies, identifies buyer ICPs, generates LinkedIn Sales Navigator search specs (for compliant manual or Clay-MCP execution). |
+| `Wright-Partners/overnight-buyer-validation` | 🔮 Future | Run 2 — extends value chain into named companies, identifies buyer ICPs, retrieves named contacts via Playwright-driven LinkedIn automation. |
 | `Wright-Partners/overnight-financial-model` | 🔮 Future | Auto-drafts financial model first pass from Run 1 + Run 2 outputs (TAM/SAM, unit economics, revenue model scenarios). |
 | `Wright-Partners/overnight-pitch-prep` | 🔮 Future | Turns research artifacts into deck-ready content via `slides-md` + `slides-pptx` integration. |
 
@@ -288,7 +288,7 @@ Each future skill will reuse the same agent library where applicable (value-chai
 
 - **Vertical slice anti-pattern at the family level** — building all 4 skills before validating any one would be horizontal slicing. Same anti-pattern Matt Pocock warns against in TDD.
 - **Toi's first ETA** — Run 1 only. Build that, ship it, iterate on real feedback before scoping Run 2-4.
-- **Unknowns in Run 2-4** — buyer validation needs Clay/Apollo MCP integration that may not exist yet. Financial modeling needs TAM/SAM frameworks that depend on Run 1's value chain. Don't pre-build dependencies on uncertain choices.
+- **Unknowns in Run 2-4** — buyer validation needs Playwright LinkedIn automation that needs to be built and tuned. Financial modeling needs TAM/SAM frameworks that depend on Run 1's value chain. Don't pre-build dependencies on uncertain choices.
 
 ### Migration path
 
@@ -302,11 +302,11 @@ After overnight-research v3 ships and gets Toi feedback:
 
 ### LinkedIn / contact list scope (deliberate)
 
-This repo (`overnight-research`) explicitly does NOT cover Run 2's "50 LinkedIn names" bullet. Reasons:
+This repo (`overnight-research`) explicitly does NOT cover Run 2's "50 LinkedIn names" bullet. That belongs to the future `overnight-buyer-validation` skill.
 
-- LinkedIn scraping via browser automation (Playwright, undetected-chromedriver) violates LinkedIn ToS, risks account bans, and is brittle.
-- WP already uses Clay (referenced in `wright-partner-talent-screener` skill) which has compliant API access via licensed data partnerships.
-- The right architecture: `overnight-buyer-validation` produces a Sales Navigator search spec (research artifact). Human or Clay-MCP executes the search compliantly.
+- Run 1 (this repo) is value-chain + pain-points research. Producing the named-contact list is a separate problem with its own engineering.
+- `overnight-buyer-validation` will use **Playwright-driven LinkedIn automation** to retrieve named contacts matching ICP profiles — handling login session management, search filter automation, and CSV-style export per profile.
+- Splitting Run 1 from Run 2 keeps each skill's quality target sharp: Run 1 matches IMI's structured pain-point analysis; Run 2 matches Cremer's `companies-spoken-to-matrix.md` density.
 
 See [docs/SKILLS-FAMILY.md](docs/SKILLS-FAMILY.md) for detailed roadmap.
 

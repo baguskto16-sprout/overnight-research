@@ -19,7 +19,7 @@ Hypothesis input
 │  overnight-buyer-validation  │  🔮 future repo
 │  Run 2 — named companies     │
 │         + buyer ICPs         │
-│         + Sales Nav spec     │
+│         + Playwright LinkedIn│
 └──────────────────────────────┘
     │
     ▼ (named buyers + value chain players)
@@ -70,7 +70,7 @@ Each skill consumes the previous skill's output. Each is independently runnable 
 **Output:**
 - `[engagement]/21-outreach-and-interviews/raw-claude-named-companies-[topic].md` (or `24-` in ideation template)
 - `[engagement]/21-outreach-and-interviews/raw-claude-buyer-icps-[topic].md`
-- `[engagement]/21-outreach-and-interviews/raw-claude-sales-nav-search-spec-[topic].md`
+- `[engagement]/21-outreach-and-interviews/raw-claude-named-contacts-[topic].md` (50+ contacts via Playwright)
 
 **What it does (Run 2 from Toi's original ask):**
 
@@ -78,23 +78,32 @@ Each skill consumes the previous skill's output. Each is independently runnable 
 2. For each value chain stage, identify named companies operating in that stage in target geography (public web research — industry directories, company websites, news, gov filings, conference attendee lists)
 3. Map value chain extension actors (OEMs, fuel suppliers, maintenance providers) by company name
 4. Profile buyer ICPs (job titles, company size, decision authority, signals of intent)
-5. Generate Sales Nav search specifications for human/Clay-MCP execution
+5. Drive Playwright-based LinkedIn automation: login session, ICP-matched search, navigate result pages, capture named contacts, CSV export
 
 **Agents needed (some new, some reused):**
 
 - `value-chain-mapper` (reused) — extend value chain output into named players
 - `buyer-icp-profiler` (NEW) — identify decision-makers and buying personas
-- `sales-nav-spec-writer` (NEW) — convert ICPs into Sales Nav filter specs
+- `linkedin-fetcher` (NEW) — Playwright orchestration: login, search filters, paginated result extraction, CSV emit
 - `source-validator` (reused) — independent confidence scoring
 - `deep-research` (reused) — for weak claims
 
-**LinkedIn handling — explicit non-goal:**
+**LinkedIn handling — Playwright automation:**
 
-This skill does NOT scrape LinkedIn. It produces a search SPEC. Two paths to actually getting names:
-- **Compliant manual:** human pastes spec into LinkedIn Sales Navigator, exports CSV (legal, fast, ~30 min)
-- **Clay MCP integration:** if WP enables Clay MCP for Claude Code, skill can execute spec via Clay's licensed data API (compliant, automated)
+This skill drives a Playwright-based browser session to retrieve LinkedIn search results matching ICP profiles. The skill spec will document:
 
-Never browser-automate LinkedIn directly. See [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for full reasoning.
+- Session and credential management (LinkedIn auth handled via local credential store; never logged or committed)
+- Search filter construction from ICP profiles (job title, industry, company size, geography, tenure)
+- Result page navigation, pagination, and structured contact extraction
+- CSV-style output with name, title, company, profile URL, geography, source query
+
+Operational notes for the skill spec when built:
+- Run during overnight window with conservative pacing between actions
+- Use a dedicated LinkedIn session, not a partner's primary account
+- Persist captured raw HTML pages to scratchpad for audit / re-extraction without re-fetching
+- Surface any session interruptions (captcha, restriction prompts) as a halt-and-report condition rather than a silent failure
+
+The skill will treat the captured contact list as research feedstock — `raw-claude-` prefix, requires human review before any outreach activity.
 
 ---
 
@@ -163,7 +172,7 @@ Never browser-automate LinkedIn directly. See [TROUBLESHOOTING.md](TROUBLESHOOTI
 ### Each skill owns one quality target
 
 - overnight-research: matches IMI `22-pain-points/by-stage.md`
-- overnight-buyer-validation: matches Cremer `companies-spoken-to-matrix.md` + Sales Nav spec format
+- overnight-buyer-validation: matches Cremer `companies-spoken-to-matrix.md` + Playwright-driven LinkedIn contact list
 - overnight-financial-model: matches Cremer `biogas-financial-model.md`
 - overnight-pitch-prep: matches Tokio Marine pitch decks + Cremer SteerCo decks
 
@@ -223,7 +232,7 @@ If all 4 skills are mature and stable:
 
 The following are explicitly NOT planned for the overnight-* family:
 
-- **LinkedIn browser scraping** — ToS violation, account ban risk, brittle. Use Clay/Apollo MCPs or human Sales Nav instead.
+- **Real-time LinkedIn search during business hours** — LinkedIn automation runs during the overnight window via `overnight-buyer-validation`'s Playwright agent, not as live interactive search.
 - **Real-time research** during business hours — these are batch overnight skills. Real-time research is a different skill family.
 - **Client-facing autonomous agent** — outputs are research feedstock for human review, never delivered directly to clients without partner curation.
 - **Replacement for field interviews** — every skill outputs `[ASSUMED-N]: to validate <specific question>` tags that explicitly require human-conducted research to resolve.
