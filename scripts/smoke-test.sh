@@ -6,6 +6,7 @@
 # Headless: backgrounds the run with logging
 #
 # Smoke test uses ./input/smoke-test-package-boilers.txt — narrow scope (1 sector, 1 country, 1 hypothesis).
+# Auto-detects repo root from script location. Override with: TARGET=/path/to/repo ./smoke-test.sh
 # Expected runtime: 20-30 minutes. Expected cost: $5-15.
 #
 # After completion, run ./scripts/verify.sh to get benchmark stats.
@@ -13,7 +14,11 @@
 set -euo pipefail
 
 MODE="${1:-interactive}"
-TARGET="${TARGET:-$HOME/Downloads/Work/overnight}"
+
+# Auto-detect repo root (parent of scripts/ directory) unless overridden
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DEFAULT_TARGET="$(cd "$SCRIPT_DIR/.." && pwd)"
+TARGET="${TARGET:-$DEFAULT_TARGET}"
 INPUT="$TARGET/input/smoke-test-package-boilers.txt"
 
 if [ ! -f "$INPUT" ]; then

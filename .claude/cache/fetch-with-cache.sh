@@ -11,7 +11,7 @@
 # Returns content to stdout. Errors to stderr.
 #
 # Cache TTL: 30 days (configurable via CACHE_TTL_DAYS env var)
-# Cache root: $HOME/Downloads/Work/overnight/.claude/cache/sources/
+# Cache root: auto-detected via find_cache_root (walks up from CWD looking for .claude/cache/sources/)
 
 set -euo pipefail
 

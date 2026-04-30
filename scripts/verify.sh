@@ -2,12 +2,17 @@
 # verify.sh — Post-run quality benchmark for overnight-research output.
 # Usage: ./verify.sh [run-id]
 #
-# Defaults to latest run in ~/Downloads/Work/overnight/output/raw-claude-overnight/
+# Defaults to latest run in <repo-root>/output/raw-claude-overnight/ (sandbox mode)
+# or <repo-root>/90-scratchpad/raw-claude-overnight/ (engagement mode).
+# Override repo location with TARGET env var: TARGET=/path/to/repo ./verify.sh
 # Outputs: structured benchmark report with status pass/fail per check.
 
 set -euo pipefail
 
-TARGET="${TARGET:-$HOME/Downloads/Work/overnight}"
+# Auto-detect repo root (parent of scripts/ directory) unless overridden
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DEFAULT_TARGET="$(cd "$SCRIPT_DIR/.." && pwd)"
+TARGET="${TARGET:-$DEFAULT_TARGET}"
 RUN_ID="${1:-}"
 
 # Detect mode: engagement (artifacts in stage folders + scratchpad) or sandbox (./output/)
