@@ -27,28 +27,47 @@ The input you receive will tell you which context.
 |---|---|
 | **High** | 3+ independent sources cited AND ≥1 from primary source category, OR 2+ sources where ≥1 is government statistics or multilateral agency |
 | **Medium** | 2+ independent sources cited where ≥1 is from primary source category that is NOT a market research firm, OR 3+ sources all from secondary categories |
-| **Low** | 1 source cited regardless of category, OR multiple sources from same publication family / citing each other, OR claim tagged `[ASSUMED-N]` |
+| **Low** | 1 source cited regardless of category, OR multiple sources from same publication family / citing each other, OR claim tagged `[ASSUMED-N]`, OR claim about a vendor sourced primarily from that vendor's own marketing surface (see vendor-marketing override below) |
 
-**Primary source categories:**
-- Government statistics agencies (BPS Indonesia, Department of Statistics Malaysia, NSO Thailand, ASEAN Centre for Energy)
-- Multilateral agencies (IEA, IRENA, World Bank, IMF, OECD, ADB, ASEAN Secretariat)
-- National regulatory and ministry publications
-- Industry association reports (sector-specific bodies)
-- Audited research firm published reports (McKinsey, BCG, Bain, IBIS World, Bloomberg NEF) where publicly available
-- Peer-reviewed academic journals
-- Industry standards bodies (ASHRAE, ISO, IEC)
-- Direct interview transcripts with named sources
+**Primary source categories** (ranked, top is strongest):
 
-**Secondary categories (do NOT count toward primary):** trade press, vendor whitepapers, private market research firms (MarketsandMarkets, Mordor, TechSci), industry blogs, news articles, Wikipedia, company press releases.
+1. **Government statistics agencies** — BPS Indonesia, Department of Statistics Malaysia, NSO Thailand, SingStat, ASEAN Centre for Energy, US BLS/Census, Eurostat, UK ONS
+2. **Multilateral agencies** — IEA, IRENA, World Bank, IMF, OECD, ADB, ASEAN Secretariat, WTO, UNCTAD
+3. **National regulatory / ministry publications** — central bank, sector regulator, ministry annual reports
+4. **Top-tier consultancy *authored* reports** — McKinsey & Company, BCG, Bain & Company, Deloitte Insights, PwC Strategy&, EY-Parthenon, KPMG Global, Roland Berger, Oliver Wyman, A.T. Kearney, Bloomberg NEF. Must be the firm's own published report (named author or firm imprint), not a URL where the firm is merely quoted by trade press.
+5. **Audited corporate filings** — 10-K, 10-Q, S-1, 20-F, Form D, annual report PDF from investor relations page, prospectus
+6. **Industry association reports** (sector-specific bodies — TT Club, BIMCO, IATA, FIATA, CSCMP, ATA, etc.)
+7. **Peer-reviewed academic journals**
+8. **Industry standards bodies** (ASHRAE, ISO, IEC, IMO)
+9. **Direct interview transcripts** with named sources (named industry insider, not anonymous)
+10. **Court filings / regulatory enforcement actions** (SEC complaints, court records)
+
+**Secondary categories** (do NOT count toward primary, capped at Medium even at scale):
+- Trade press (FreightWaves, JOC, The Loadstar, Bioenergy International, etc.)
+- News articles (Reuters, Bloomberg news wire, Nikkei, Straits Times) — note: Bloomberg *Terminal data* via cited primary, OK; Bloomberg news article, secondary.
+- Private market research firms (MarketsandMarkets, Mordor, TechSci, Grand View, Precedence, GMInsights, IBIS World public extracts, DataIntelo, Fortune Business Insights) — auto-downgrade further per overrides
+- Industry blogs, Wikipedia, company press releases (PR Newswire, BusinessWire)
+- Vendor whitepapers, case studies, marketing pages — **see vendor-marketing override**
+
+**Auto-Low tier (never count even as secondary):**
+- Vendor's own website / marketing pages / sales-collateral PDFs **when used to evidence a claim about that same vendor or its market** (e.g., project44.com on project44 visibility coverage, fourkites.com on FourKites market share). Cross-vendor coverage on a vendor's blog (project44.com discussing Shippeo) is one half-step better but still secondary.
+- LinkedIn posts, Medium posts by employees of the vendor in question
+- Aggregator marketplace listings (Capterra, G2, Trustpilot — when used for capability claims, not for review counts)
+- Press releases distributed on PR Newswire / BusinessWire by the vendor itself
 
 ## Automatic Low-confidence overrides — apply regardless
 
-- **Operating cost figures from a single trade publication or vendor blog** → Low confidence, period. Doesn't matter if multiple URLs from same publication. coalbiomassboiler.com cited 5 times = 1 source.
-- **Market sizing using APAC figure as proxy for country-specific need** → capped at Medium. Add `Geography mismatch` flag.
-- **Multiple sources tracing back to same primary report** → counted as 1 source. Trace the chain.
-- **Stage with <3 quantified market metrics** → all claims in that stage capped at Medium. Stage flagged `Data gap` in your report.
-- **Single-domain sources** (all citations to same domain or publisher family) → capped at Medium even if 5+ URLs.
-- **Outdated sources** (>3 years old, or stale market data >2 years old) → capped at Medium unless cross-validated with recent source.
+- **Vendor-marketing override** — Any claim about a vendor's own product, capability, market share, customer count, revenue, or feature parity sourced primarily from that vendor's own website / marketing pages / vendor-curated press release → **auto-Low, period.** Promotion to Medium requires ≥1 audited third-party (10-K, S-1, Form D, regulatory filing, named investigative journalist with named insider source, or top-tier consultancy authored report). Applies even if 10 vendor URLs are cited — they count as 1 vendor source.
+  - Domain-blocklist sketch (extend as needed): `project44.com, fourkites.com, shippeo.com, samsara.com, motive.com, descartes.com, getlatka.com, tive.com, controlant.com, roambee.com, sensitech.com, e2open.com, loadsure.com, breezeunderwriting.com, parsyl.com, covergenius.com, hanhaa.com, wakeo.co, transmetrics.eu`
+  - When in doubt: if the URL belongs to the vendor being claimed about, it's auto-Low.
+- **Trade-press-only override** — Operating cost figures, market share, growth rate, or capability claims sourced **only** from trade publications or vendor blogs → Low confidence, period. Doesn't matter if multiple URLs from same publication. coalbiomassboiler.com cited 5 times = 1 source. FreightWaves + JOC reporting the same study based on Mordor = 1 source (Mordor).
+- **Aggregator market-research auto-downgrade** — Any claim sourced primarily from MarketsAndMarkets, Mordor Intelligence, Grand View Research, Precedence Research, GMInsights, DataIntelo, Fortune Business Insights, TechSci, ReportLinker → auto-Low unless cross-validated against ≥1 primary tier source. The number of aggregator URLs cited is irrelevant.
+- **Press-release-only override** — Claims sourced from PR Newswire / BusinessWire / GlobeNewswire alone → Low. Press releases require corroboration by a primary filing (Form D for funding rounds, 10-K for revenue, etc.) to score Medium.
+- **APAC-as-proxy override** — Market sizing using APAC figure as proxy for country-specific need → capped at Medium. Add `Geography mismatch` flag.
+- **Single-domain override** — All citations to same domain or publisher family → capped at Medium even if 5+ URLs.
+- **Outdated-source override** — Sources >3 years old, or stale market data >2 years old → capped at Medium unless cross-validated with recent source.
+- **Chain-of-citations rule** — Multiple sources tracing back to same primary report → counted as 1 source. Trace the chain. If trade press cites Gartner and another trade press cites the same Gartner figure, still 1 source (Gartner — and Gartner is paywalled, so it's actually 0 verifiable sources).
+- **Stage <3 quantified metrics** — All claims in that stage capped at Medium. Stage flagged `Data gap` in your report.
 
 ## Anti-gaming rules — DO NOT
 
@@ -76,16 +95,21 @@ Build list of every claim with footnote ID and source URL(s).
 For each unique source URL, classify:
 
 - `primary-gov` — government statistics agency
-- `primary-multilateral` — IEA, World Bank, OECD, etc.
+- `primary-multilateral` — IEA, World Bank, OECD, ADB, IMF, WTO
 - `primary-ministry` — regulatory body, ministry publication
+- `primary-consultancy` — McKinsey, BCG, Bain, Deloitte Insights, PwC Strategy&, EY-Parthenon, KPMG, Roland Berger, Oliver Wyman, Bloomberg NEF (authored report only)
+- `primary-filing` — 10-K, 10-Q, S-1, 20-F, Form D, prospectus
 - `primary-association` — industry association
 - `primary-academic` — peer-reviewed
-- `primary-standards` — ASHRAE, ISO, IEC
-- `primary-research-firm` — McKinsey, BCG, Bain (published)
-- `secondary-trade` — trade press, vendor blog
-- `secondary-news` — news article
-- `secondary-market-research` — MarketsandMarkets, Mordor, TechSci, paid market research firms
-- `secondary-vendor` — company press release, whitepaper
+- `primary-standards` — ASHRAE, ISO, IEC, IMO
+- `primary-interview` — named-source transcript
+- `primary-legal` — court filing, regulatory enforcement
+- `secondary-trade` — trade press
+- `secondary-news` — news article (Reuters, Bloomberg news, Nikkei, etc.)
+- `secondary-market-research` — MarketsandMarkets, Mordor, TechSci, Grand View, paid aggregators
+- `secondary-press-release` — PR Newswire, BusinessWire, GlobeNewswire
+- `auto-low-vendor` — vendor's own marketing site / pages on claims about that same vendor
+- `auto-low-aggregator-marketplace` — Capterra, G2, Trustpilot (for capability, not review counts)
 
 ### Step 3 — Score every claim
 

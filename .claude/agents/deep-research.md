@@ -35,22 +35,30 @@ Run 5–10 focused WebSearches in priority order:
    - "Indonesia industrial boiler operating cost statistics" → BPS, Ministry of Industry
    - "Malaysia textile sector boiler installation count" → MIDA, Malaysian Textile Manufacturers Association
 
-2. **Multilateral agency reports** (IEA, IRENA, World Bank, OECD, ADB)
-   - Use site: filters where useful
+2. **Multilateral agency reports** (IEA, IRENA, World Bank, OECD, ADB, IMF, WTO, UNCTAD)
+   - Use `site:worldbank.org`, `site:adb.org`, `site:oecd.org` filters
 
 3. **National regulatory and ministry publications**
    - Annual reports, sector reviews, regulatory impact assessments
 
-4. **Industry association reports**
+4. **Top-tier consultancy *authored* reports** (publicly published)
+   - McKinsey, BCG, Bain, Deloitte Insights, PwC Strategy&, EY-Parthenon, KPMG, Roland Berger, Oliver Wyman, Bloomberg NEF
+   - Use `site:mckinsey.com`, `site:bcg.com`, `site:bain.com`, `site:deloitte.com`, `site:pwc.com`, `site:ey.com`, `site:kpmg.com`, `site:rolandberger.com`, `site:oliverwyman.com` filters
+   - Many publish "executive summary" PDFs — process via markitdown
+   - If WebFetch returns empty/blocked (paywall, anti-bot, captcha), mark source `[NEEDS-ATTENDED-FETCH]: <url>` and note in confirmed-scarce reasoning so orchestrator can route it to attended-mode
+
+5. **Audited corporate filings** (SEC EDGAR, company investor-relations pages)
+   - 10-K, 10-Q, S-1, 20-F, Form D for funding rounds, prospectus, annual report PDFs
+   - SEC: `https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=<name>`
+
+6. **Industry association reports**
    - Sector-specific bodies for the geography in scope
    - Annual industry reports often have aggregate statistics
 
-5. **Audited research firms** (publicly published)
-   - McKinsey, BCG, Bain, Bloomberg NEF
-   - Industry reports often published as "executive summary" PDFs
-
-6. **Academic peer-reviewed**
+7. **Academic peer-reviewed**
    - Google Scholar / Semantic Scholar searches
+
+**Vendor's own marketing site is NEVER a primary source for claims about that vendor.** If the only "evidence" you find for a market-share / revenue / capability claim is the vendor's own website, return `confirmed-scarce` and recommend marking the claim as `[ASSUMED-N]` — do not pad with vendor-marketing as if it were evidence.
 
 For each result, fetch the actual page (WebFetch or cache helper) to verify the claim is supported, not just a search snippet.
 
