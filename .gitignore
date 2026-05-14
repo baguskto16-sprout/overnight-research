@@ -20,3 +20,8 @@ output/raw-claude-overnight/*/
 # OS junk
 .DS_Store
 Thumbs.db
+
+# Auto-resume + watchdog runtime pids
+.resume.pid
+.watchdog.pid
+.resume-scheduler.pid

@@ -55,14 +55,30 @@ Before searching, list 5–7 specific things you need to find:
 
 For each item, search in this priority order:
 
-1. Government statistics agencies (BPS Indonesia, MIDA Malaysia, Department of Statistics Malaysia, NSO Thailand, ASEAN Centre for Energy)
-2. Multilateral reports (IEA, IRENA, World Bank, OECD, ADB)
-3. Ministry / regulatory body publications
-4. Industry association reports
-5. Audited research firm published reports (McKinsey, BCG, Bain, IBIS World, Bloomberg NEF)
-6. Academic peer-reviewed research
-7. Industry standards bodies
-8. Trade press — last resort
+1. **Government statistics agencies** — BPS Indonesia, MIDA Malaysia, Department of Statistics Malaysia, NSO Thailand, SingStat, ASEAN Centre for Energy, US BLS/Census, Eurostat, UK ONS
+2. **Multilateral reports** — IEA, IRENA, World Bank, OECD, ADB, IMF, WTO, UNCTAD, ASEAN Secretariat
+3. **Ministry / regulatory body publications** — central banks, sector regulators, ministry annual reports
+4. **Top-tier consultancy authored reports** — McKinsey & Company, BCG, Bain & Company, Deloitte Insights, PwC Strategy&, EY-Parthenon, KPMG Global, Roland Berger, Oliver Wyman, A.T. Kearney, Bloomberg NEF. Must be the firm's own publication (named author or firm imprint), not trade press merely quoting them.
+5. **Audited corporate filings** — 10-K, 10-Q, S-1, 20-F, Form D, prospectus, annual reports from investor relations pages
+6. **Industry association reports** (sector-specific bodies)
+7. **Academic peer-reviewed research**
+8. **Industry standards bodies**
+9. **Trade press** — last resort
+
+**Vendor's own marketing site (e.g., project44.com on project44 product claims) is NEVER a primary source for that vendor.** Use it only to confirm a product *exists*; never to evidence market share, customer count, revenue, or capability superiority. For those, use audited filings, consultancy reports, or named investigative reporting.
+
+**Search heuristics for top-tier consultancy reports** (high-ROI sources usually missed by generic searches):
+- `site:mckinsey.com [topic]`
+- `site:bcg.com [topic]`
+- `site:bain.com [topic]`
+- `site:deloitte.com insights [topic]`
+- `site:pwc.com [topic]`
+- `site:ey.com [topic]`
+- `site:kpmg.com [topic]`
+- `site:rolandberger.com [topic]`
+- `site:oliverwyman.com [topic]`
+- `site:bloomberg.com/nef [topic]`
+- For paywalled / anti-bot consultancy URLs: if WebFetch returns no content, mark the source as `[NEEDS-ATTENDED-FETCH]: <url>` so the orchestrator can route it through attended-mode in a follow-up pass.
 
 **Use cache if available.** Before each WebFetch:
 

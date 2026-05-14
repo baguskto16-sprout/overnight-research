@@ -409,7 +409,20 @@ Do not iterate. Do not auto-rerun. Skill stops here.
 - Match IMI reference structure exactly
 - Citation: every claim has numbered footnote → URL list at section bottom
 - Hypothesis tagging: `[ASSUMED-N]: <claim> — to validate: <specific question>` (sequential N for grep)
-- Source priority: government statistics → multilateral → ministry → industry association → audited research firm → academic → standards body → trade press (last resort)
+- Attended-fetch tagging: when WebFetch on a candidate source returns empty / blocked / boilerplate (anti-bot, captcha, paywall), record the URL with tag `[NEEDS-ATTENDED-FETCH]: <url>` inline in the source list — the orchestrator carries this forward so attended-mode passes can re-fetch via Playwright MCP.
+- Source priority (top is strongest):
+  1. Government statistics agencies (BPS, BLS, Eurostat, etc.)
+  2. Multilateral agencies (IEA, World Bank, IMF, OECD, ADB, WTO, UNCTAD)
+  3. National regulators / ministry publications
+  4. Top-tier consultancy authored reports (McKinsey, BCG, Bain, Deloitte Insights, PwC Strategy&, EY-Parthenon, KPMG, Roland Berger, Oliver Wyman, Bloomberg NEF) — *firm-imprint publication*, not trade-press quoting them
+  5. Audited corporate filings (10-K, 10-Q, S-1, 20-F, Form D, prospectus)
+  6. Industry association reports (sector-specific)
+  7. Academic peer-reviewed
+  8. Industry standards bodies (ASHRAE, ISO, IEC, IMO)
+  9. Named-source interview transcripts
+  10. Trade press (last resort)
+- Vendor’s own marketing site / pages / vendor-curated press releases are NEVER primary for claims about that vendor — auto-Low even if cited multiple times.
+- If a consultancy or paywalled source is found via search but WebFetch returns empty/blocked, tag the URL `[NEEDS-ATTENDED-FETCH]` so attended-mode can re-fetch with Playwright.
 
 ## PDF processing — markitdown
 
