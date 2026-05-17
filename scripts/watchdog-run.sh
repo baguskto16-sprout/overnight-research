@@ -21,11 +21,18 @@
 
 set -euo pipefail
 
-# Ensure tools are on PATH when invoked from non-interactive SSH.
+# Ensure tools are on PATH when invoked from non-interactive SSH (must include node).
 export PATH="$HOME/Library/Python/3.13/bin:/opt/homebrew/opt/python@3.13/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 [ -x /opt/homebrew/bin/brew ] && eval "$(/opt/homebrew/bin/brew shellenv)"
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" >/dev/null 2>&1 || true
+if [ -s "$NVM_DIR/nvm.sh" ]; then
+  . "$NVM_DIR/nvm.sh" >/dev/null 2>&1 || true
+  NODE_BIN=$(ls -d "$NVM_DIR"/versions/node/*/bin 2>/dev/null | sort -V | tail -1)
+  [ -n "$NODE_BIN" ] && export PATH="$NODE_BIN:$PATH"
+fi
+for n in /opt/homebrew/Cellar/node@22/*/bin /opt/homebrew/Cellar/node/*/bin; do
+  [ -x "$n/node" ] && export PATH="$n:$PATH" && break
+done
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$REPO_DIR"
