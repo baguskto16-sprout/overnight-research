@@ -84,12 +84,16 @@ echo ""
 which claude &> /dev/null || { echo "ERROR: claude CLI missing"; exit 1; }
 [ -f "$INPUT_FILE" ] || { echo "ERROR: Original input file not found at $INPUT_FILE"; exit 1; }
 
-# Confirm before resuming
-read -p "Resume this run? (y/N) " -n 1 -r
-echo ""
-if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-  echo "Cancelled."
-  exit 0
+# Confirm before resuming (skip in non-interactive / headless mode, or with --yes)
+if [[ "${1:-}" == "--yes" || "${2:-}" == "--yes" || -n "${ASSUME_YES:-}" ]] || [ ! -t 0 ]; then
+  echo "Auto-confirm: resuming (non-interactive or --yes)."
+else
+  read -p "Resume this run? (y/N) " -n 1 -r
+  echo ""
+  if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+    echo "Cancelled."
+    exit 0
+  fi
 fi
 
 LOG="$TARGET/resume-$(date +%Y%m%d-%H%M).log"

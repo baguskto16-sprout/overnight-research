@@ -9,16 +9,12 @@ cd "$REPO_DIR"
 
 echo "→ Checking dependencies..."
 which claude &> /dev/null || { echo "  ✗ claude CLI missing. Install: brew install --cask claude-code"; exit 1; }
-which gh &> /dev/null || { echo "  ✗ gh CLI missing. Install: brew install gh"; exit 1; }
 which jq &> /dev/null || { echo "  ✗ jq missing. Install: brew install jq"; exit 1; }
 which curl &> /dev/null || { echo "  ✗ curl missing"; exit 1; }
-which markitdown &> /dev/null || { echo "  ⚠ markitdown missing — installing..."; pip install markitdown --user --quiet; }
+which markitdown &> /dev/null || { echo "  ⚠ markitdown missing — installing..."; pip3 install markitdown --user --quiet --break-system-packages; }
 echo "  ✓ All dependencies present"
 
 echo ""
-echo "→ Verifying gh CLI auth..."
-gh auth status &> /dev/null || { echo "  ✗ gh not authenticated. Run: gh auth login"; exit 1; }
-echo "  ✓ gh authenticated"
 
 echo ""
 echo "→ Pulling Wright-Partners reference templates..."
@@ -27,9 +23,9 @@ CLONE_DIR="$HOME/wp-clones-tmp"
 mkdir -p "$CLONE_DIR"
 cd "$CLONE_DIR"
 
-[ ! -d "26-idea-imicc-datacenters" ] && gh repo clone Wright-Partners/26-idea-imicc-datacenters -- --depth=1
-[ ! -d "zz-design-template-2026" ] && gh repo clone Wright-Partners/zz-design-template-2026 -- --depth=1
-[ ! -d "zz-skills" ] && gh repo clone Wright-Partners/zz-skills -- --depth=1
+[ ! -d "26-idea-imicc-datacenters" ] && git clone --depth=1 https://github.com/Wright-Partners/26-idea-imicc-datacenters.git
+[ ! -d "zz-design-template-2026" ] && git clone --depth=1 https://github.com/Wright-Partners/zz-design-template-2026.git
+[ ! -d "zz-skills" ] && git clone --depth=1 https://github.com/Wright-Partners/zz-skills.git
 
 REFS="$REPO_DIR/.claude/refs"
 
