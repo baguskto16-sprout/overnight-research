@@ -28,6 +28,19 @@ for n in /opt/homebrew/Cellar/node@22/*/bin /opt/homebrew/Cellar/node/*/bin; do
   [ -x "$n/node" ] && export PATH="$n:$PATH" && break
 done
 
+# Unlock login keychain — claude stores OAuth in "Claude Code-credentials".
+# Password from $KEYCHAIN_PASSWORD or ~/.keychain-pass (chmod 600).
+_unlock_keychain() {
+  local kc="$HOME/Library/Keychains/login.keychain-db"
+  local pass="${KEYCHAIN_PASSWORD:-}"
+  [ -z "$pass" ] && [ -r "$HOME/.keychain-pass" ] && pass="$(cat "$HOME/.keychain-pass")"
+  if [ -n "$pass" ]; then
+    security unlock-keychain -p "$pass" "$kc" 2>/dev/null \
+      || echo "  ⚠ keychain unlock failed" >&2
+  fi
+}
+_unlock_keychain
+
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$REPO_DIR"
 

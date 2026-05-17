@@ -25,3 +25,7 @@ Thumbs.db
 .resume.pid
 .watchdog.pid
 .resume-scheduler.pid
+.last-run.txt
+
+# Secrets — never commit
+.keychain-pass

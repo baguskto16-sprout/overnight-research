@@ -1,11 +1,34 @@
 #!/bin/bash
 set -euo pipefail
 
-# Load environment
-export PATH="/Users/alphabot/Library/Python/3.13/bin:/opt/homebrew/opt/python@3.13/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+# Load environment (non-interactive SSH doesn't source ~/.zshrc).
+export PATH="$HOME/Library/Python/3.13/bin:/opt/homebrew/opt/python@3.13/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+if [ -s "$NVM_DIR/nvm.sh" ]; then
+  . "$NVM_DIR/nvm.sh" >/dev/null 2>&1 || true
+  NODE_BIN=$(ls -d "$NVM_DIR"/versions/node/*/bin 2>/dev/null | sort -V | tail -1)
+  [ -n "$NODE_BIN" ] && export PATH="$NODE_BIN:$PATH"
+fi
+for n in /opt/homebrew/Cellar/node@22/*/bin /opt/homebrew/Cellar/node/*/bin; do
+  [ -x "$n/node" ] && export PATH="$n:$PATH" && break
+done
+
+# Unlock login keychain so `claude` can read its OAuth token (stored in
+# "Claude Code-credentials"). SSH non-interactive sessions start with a locked
+# keychain. Password from $KEYCHAIN_PASSWORD or ~/.keychain-pass (chmod 600).
+_unlock_keychain() {
+  local kc="$HOME/Library/Keychains/login.keychain-db"
+  local pass="${KEYCHAIN_PASSWORD:-}"
+  [ -z "$pass" ] && [ -r "$HOME/.keychain-pass" ] && pass="$(cat "$HOME/.keychain-pass")"
+  if [ -n "$pass" ]; then
+    security unlock-keychain -p "$pass" "$kc" 2>/dev/null \
+      || echo "⚠ keychain unlock failed — claude OAuth read may fail" >&2
+  else
+    echo "⚠ no KEYCHAIN_PASSWORD or ~/.keychain-pass — relying on keychain already unlocked" >&2
+  fi
+}
+_unlock_keychain
 
 INPUT="${1:-}"
 [ -z "$INPUT" ] && { echo "Usage: $0 <input-file>"; exit 1; }
