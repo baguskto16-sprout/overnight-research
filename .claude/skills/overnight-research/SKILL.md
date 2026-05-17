@@ -14,7 +14,7 @@ Coordinates 4 specialist agents through vertical stage slices to produce WP-grad
 
 ## What this skill does
 
-Reads a hypothesis input file. For each value chain stage, runs a complete vertical slice (research → validate → deep-research weak claims → compare to IMI). Writes structured artifacts. Stops.
+Reads a hypothesis input file. For each value chain stage, runs a complete vertical slice (research → validate → deep-research weak claims → compare to IMI). Writes structured artifacts. Renders a Wright-branded HTML final report. Stops.
 
 ## Step 0–1 are the skill — disproportionate effort here
 
@@ -384,11 +384,47 @@ Timestamp: [ISO timestamp]
 5. Do NOT delete the scratchpad audit trail until you're certain about the output.
 ```
 
+### Step 7.5 — Render Wright-branded final report (HTML, print-ready)
+
+After all stages complete and stage drop summary is written, render a single self-contained HTML file at `[output-dir]/FINAL-REPORT.html` (sandbox mode) or `[engagement-repo]/90-scratchpad/raw-claude-overnight/[run-id]/FINAL-REPORT.html` (engagement mode). The HTML is print-ready — user opens in browser → ⌘P → Save as PDF.
+
+**Invoke the `wright-brand` skill** to load Wright Partners' visual identity (brand tokens, A4 print typography, component library, locked page structure). The skill ships with `~/.claude/skills/wright-brand-skill/` and is expected to be installed on the host machine. If missing, write `RENDER-SKIPPED.md` explaining the dependency and continue to Step 8 without failing the run.
+
+**Source data** (read all):
+- `pass-0-plan.md` — for stage roster, topic, geography
+- `pass-3-deep-research/*` — for the validated body content per stage
+- `stages-validated/*` — for confidence-tagged claims and citations
+- `checkpoint.json` — for run metadata (run-id, dates, agents invoked, sources)
+- `re-run-recommended.md` (if present) — to flag gate failure on cover/exec summary
+
+**Map overnight output → Wright report page structure** (per `wright-brand-skill/SKILL.md` § "Documents (HTML → PDF for opportunity reports, LP updates, fund docs)"):
+
+| Wright page | Source |
+|---|---|
+| Cover (white, red eyebrow, red title) | Topic, geography, run date, "Prepared by Wright Partners · Confidential" |
+| Executive summary (1 page) | Top headline number from highest-confidence stage + 3–4 insight bullets across stages + the explicit ask |
+| Framework page | Value chain mapping — one block per stage with name + 1-line role |
+| Body sections (1+ pages per stage) | Per-stage pain points, root causes, evidence (with footnoted citations) |
+| Prioritization / sequencing | Stage ranking by intervention leverage (derived from confidence + IMI delta) |
+| Sources page (paginate after 12 rows) | Full sources table — publisher, date, URL, what each supports — from all stages |
+| Closing | "Next Steps" + contact (Wright Partners · ziv@ · arnold@) |
+
+**Output rules** (do not deviate):
+- Single self-contained `FINAL-REPORT.html` — inline CSS, no external JS
+- Wordmark from `~/.claude/skills/wright-brand-skill/assets/wright-wordmark-on-light.png` — embed as base64 data URI so the HTML is portable
+- Poppins via Google Fonts CDN (acceptable to use external font CDN; print fallback handled by `font-family: 'Poppins', 'Inter', system-ui`)
+- `@page { size: A4; margin: 0 }` + `.page { width: 210mm; height: 296mm; padding: 18mm 20mm 16mm }`
+- White background throughout. Red `#CC102E` as accent only (eyebrows, callout-lefts, title text). No dark anchor pages.
+- Every claim retains its footnote → URL trail; sources page lists every unique URL from `stages-validated/`
+
+**Verification before Step 8:** open the HTML once in a headless browser check (or skip if not available) to confirm no broken images / unloaded fonts. If the wordmark file is missing, fall back to text-only "WRIGHT PARTNERS" wordmark in red so the report still ships.
+
 ### Step 8 — Stop
 
 Output a final chat message:
 - Output mode (engagement or sandbox)
 - All resolved output paths (so user knows exactly where files landed)
+- Path to `FINAL-REPORT.html` (or `RENDER-SKIPPED.md` if wright-brand skill missing)
 - Gate decision
 - Stages tracer-fired vs aborted
 - Total runtime, agents invoked, sources cited
