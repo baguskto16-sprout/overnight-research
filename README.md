@@ -13,22 +13,30 @@ Reads a hypothesis input file, runs a vertical-slice research pipeline through 4
 Single command, two outcomes:
 
 ```bash
-./scripts/run-headless.sh ./input/your-topic.txt    # fire and walk away
-./scripts/verify.sh                                  # next morning, check quality
+./scripts/run-unattended.sh ./input/your-topic.txt   # fire and walk away (recommended)
+./scripts/verify.sh                                   # next morning, check quality
 ```
 
-**Under the hood:** `run-headless.sh` wraps the call as:
+**`run-unattended.sh` is the recommended entry point.** It runs in two phases inside a detached tmux session:
 
-```bash
-caffeinate -i nohup claude --print --dangerously-skip-permissions \
-  "Run the overnight-research skill on $INPUT" > run.log 2>&1 &
-```
+1. **Phase 1 — main run.** Same WebFetch-only pipeline as `run-headless.sh`. Auto-resumes on usage-limit hits by parsing the reset clock and sleeping.
+2. **Phase 2 — Playwright enrichment.** After Phase 1 writes `RUN-COMPLETE.txt`, automatically re-fetches every `[NEEDS-ATTENDED-FETCH]` URL via the Playwright MCP (headless Chrome). Successful fetches are auto-merged into the canonical `raw-claude-*.md` files (originals backed up to `.bak`); failures are re-tagged `[CONFIRMED-INACCESSIBLE]`. `FINAL-REPORT.html` is re-rendered if claims changed.
 
-- `caffeinate -i` keeps Mac awake while claude is running
-- `nohup` lets the process survive terminal close
-- `--print` enables non-interactive mode
-- `--dangerously-skip-permissions` auto-approves all tool calls (required for unattended; skill is sandboxed to `./output/` — see `docs/TROUBLESHOOTING.md` if concerned)
-- `&` backgrounds the process so you can close iTerm
+Both phases auto-resume on usage limits. Cap is 36h total. tmux session is named `overnight-unattended`.
+
+| Script | Auto-resume on limit | Playwright | Human required | Use case |
+|---|---|---|---|---|
+| `run-unattended.sh` | ✅ both phases | ✅ headless, lazy | ❌ | Default — fire and walk away |
+| `watchdog-run.sh` | ✅ | ❌ | ❌ | Legacy unattended, no enrichment |
+| `run-headless.sh` | ❌ (10 retries only) | ❌ | ❌ | Lower-level building block |
+| `run-attended.sh` | ❌ | ✅ TUI + human | ✅ captchas | Captcha-heavy follow-ups |
+
+**Under the hood:** see `scripts/run-unattended.sh` for the orchestration logic. Key technical decisions:
+
+- `tmux new-session -d -s overnight-unattended` — gives claude its own pty so it doesn't get `SIGTTOU` when the parent shell exits. This is the macOS replacement for the `setsid` approach used on Linux.
+- `caffeinate -i claude --print --dangerously-skip-permissions` — keeps Mac awake during work; `--print` enables non-interactive mode; `--dangerously-skip-permissions` auto-approves all tool calls including MCP.
+- Phase 2 enriches lazily: it only touches URLs the main pass tagged `[NEEDS-ATTENDED-FETCH]` (~5–15 typically), bounding cost.
+- Captcha / MFA / aggressive anti-bot pages defeat headless Playwright. Those URLs are re-tagged `[CONFIRMED-INACCESSIBLE]` (honest) — no fabrication, no retry loop. Estimated lift: 25–35% of `[NEEDS-ATTENDED-FETCH]` URLs become primary citations.
 
 ---
 
@@ -44,8 +52,8 @@ caffeinate -i nohup claude --print --dangerously-skip-permissions \
 # 3. Verify smoke test output
 ./scripts/verify.sh
 
-# 4. Full overnight run (2-4 hours, ~$30-80) — once smoke test passes
-./scripts/run-headless.sh ./input/package-boilers.txt
+# 4. Full overnight run (2-6 hours, ~$30-100) — once smoke test passes
+./scripts/run-unattended.sh ./input/package-boilers.txt
 ```
 
 ---
