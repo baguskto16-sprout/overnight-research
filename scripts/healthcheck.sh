@@ -104,13 +104,46 @@ done
 
 # --- 5. Dependencies on PATH -------------------------------------------------
 echo "[5] Dependencies"
-for d in jq markitdown curl git; do
+for d in jq markitdown curl git tmux; do
   if command -v "$d" >/dev/null 2>&1; then ok "$d"; else
     if [ "$d" = "markitdown" ]; then warn "$d missing (auto-installed on first run, slow)"
+    elif [ "$d" = "tmux" ]; then warn "$d missing (needed for run-unattended.sh; brew install tmux)"
     else fail "$d missing"
     fi
   fi
 done
+
+# --- 5b. Playwright MCP (required for Phase 2 of run-unattended.sh) ---------
+echo "[5b] Playwright MCP (for run-unattended.sh enrichment phase)"
+if command -v claude >/dev/null 2>&1; then
+  MCP_LIST=$(claude mcp list 2>&1 || true)
+  if echo "$MCP_LIST" | grep -i playwright | grep -qi "connected"; then
+    ok "playwright MCP: connected"
+  elif echo "$MCP_LIST" | grep -qi playwright; then
+    warn "playwright MCP registered but not connected — Phase 2 enrichment will skip"
+  else
+    warn "playwright MCP not registered — Phase 2 enrichment will skip"
+    echo "        Register: claude mcp add playwright npx @playwright/mcp@latest --browser chrome"
+  fi
+else
+  warn "skipped — claude CLI missing"
+fi
+
+# --- 5c. Keychain unlock material (for auto-resume after wake from sleep) ---
+echo "[5c] Keychain unlock (for auto-resume after limit reset)"
+if [ -n "${KEYCHAIN_PASSWORD:-}" ]; then
+  ok "KEYCHAIN_PASSWORD env var set"
+elif [ -r "$HOME/.keychain-pass" ]; then
+  PERMS=$(stat -f '%Sp' "$HOME/.keychain-pass" 2>/dev/null)
+  if [ "$PERMS" = "-rw-------" ]; then
+    ok "~/.keychain-pass present with 0600 perms"
+  else
+    warn "~/.keychain-pass present but perms=$PERMS (should be -rw-------; chmod 600 ~/.keychain-pass)"
+  fi
+else
+  warn "no keychain unlock material — auto-resume may fail if keychain locks during run"
+  echo "        Fix: echo 'your-mac-password' > ~/.keychain-pass && chmod 600 ~/.keychain-pass"
+fi
 
 # --- 6. No stuck claude process from prior run -------------------------------
 echo "[6] No stuck prior run"
