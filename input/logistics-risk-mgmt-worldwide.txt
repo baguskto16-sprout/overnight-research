@@ -1,0 +1,66 @@
+# Input — Risk-management solutions across the logistics journey (worldwide scan)
+
+## Topic
+
+Solutions that logistics actors use to manage operational and physical risk across the freight journey — covering vendor procurement, dispatch, in-transit monitoring, multi-leg handoffs, delivery, and incident response. The unit of analysis is the *solution* (software, hardware, service, or hybrid), not the carrier. Solutions in scope include TMS / freight-procurement platforms, vendor-onboarding & compliance tools, fleet & driver management, telematics & IoT cargo sensors, real-time visibility platforms (RTTVPs), control towers, cargo insurance & claims platforms, security & escort services, and incident-response / recovery tools.
+
+## Hypothesis
+
+Shippers (cargo owners) contract large logistics operators / 3PLs (e.g., Kühne+Nagel, DHL, DB Schenker, Kerry Logistics) which in turn subcontract operations to smaller transporters or owner-operator truck fleets. Across this chain, players rely on a fragmented stack of informal, single-purpose, or generic tools (spreadsheets, WhatsApp, email, point telematics, paper PODs), leaving them with risk blind spots at multiple points in the journey: vendor due-diligence, in-transit monitoring, handoffs between carriers, theft / damage detection, and claims / incident response. The market opportunity is an integrated risk layer that spans these stages — but the current competitive landscape is split between (a) heavy enterprise suites only the top 3PLs can afford, (b) carrier-specific telematics owned by hardware vendors, and (c) light-touch SaaS for shippers that doesn't see down into the subcontractor tier.
+
+## Scope
+
+In:
+- Solutions used by shippers (cargo owners), 3PLs / freight forwarders, and small / mid-size road transporters and owner-operators
+- Risk dimensions: counterparty risk (vendor selection, compliance, fraud), cargo risk (theft, damage, temperature, contamination), transit risk (delays, route, security), liability & claims, incident response
+- Solution categories: TMS, freight procurement & vendor management, telematics & fleet management, IoT cargo sensors (GPS trackers, temperature, shock, door, fuel), real-time visibility platforms / control towers, cargo insurance & parametric insurance platforms, claims-management software, security / convoy / escort services, driver safety & ELD, freight matching & broker marketplaces (only where they expose risk features), incident response & recovery
+- Modes: road freight (primary), with ocean / air / rail covered where the same platform serves multimodal shippers
+- Solution types — both **digital** and **non-digital** are in scope. Capture every solution against one of these buckets:
+  - *Digital* — commercial software / SaaS (TMS, RTTVPs, control towers, vendor-onboarding tools); hardware + SaaS bundles (telematics units, IoT cargo sensors, GPS trackers with subscription); insurance-tech and claims platforms (cargo insurance, parametric, claims SaaS); risk-aware marketplaces (freight-matching or broker platforms that expose carrier vetting, identity verification, or risk scoring as features); in-house / proprietary systems where publicly documented (3PL-built tools)
+  - *Non-digital* — physical services (convoys, escorts, marine surveyors, fraud investigators, private security); manual workarounds (spreadsheets, WhatsApp groups, email threads, paper PODs, phone-call carrier vetting, paper logbooks)
+  - Treat manual workarounds as a first-class solution category, **not** a footnote — they are the dominant "risk system" for many small carriers and emerging-market shippers, and the venture's wedge is partly defined by displacing them
+
+Out:
+- Pure pricing / spot-rate marketplaces with no risk angle
+- Last-mile parcel/e-commerce delivery platforms (different unit economics and risk profile) — except where they cross over into B2B freight risk
+- Warehouse-internal WMS without transit dimension
+- Maritime port-operations systems (port-side, not journey-side)
+- Pure passenger telematics or consumer insurance
+
+## Geography
+
+In: Worldwide. Pull the strongest examples wherever they exist (North America, Europe, Israel, India, China, Japan, Latin America, and SEA all in scope). Note country-of-origin and current geographic coverage for each solution.
+
+Out (for sizing): none — global scan. SEA (Singapore, Indonesia, Thailand, Malaysia) is flagged as the *target deployment market* for the venture the research feeds, so for each solution explicitly note: present in SEA? offices / resellers / customers in SEA? local-language / local-regulation support?
+
+## Working hypotheses for pain points (to test against the literature)
+
+1. **Vendor-procurement blind spots** — shippers and 3PLs onboard sub-carriers using spreadsheets and reference checks; few tools verify operator legitimacy, insurance coverage, safety record, or beneficial ownership at the small-transporter tier.
+2. **In-transit visibility breaks at the handoff** — RTTVPs (FourKites, project44, Shippeo, Wakeo, etc.) see shipper-tendered loads but lose signal once a 3PL subcontracts to a small carrier that isn't integrated; data quality collapses across the subcontracting layer.
+3. **Cargo IoT is point-deployed, not journey-deployed** — GPS / temperature / shock sensors exist (Tive, Sensitech, Roambee, Controlant, Hanhaa) but are typically deployed by a single party (shipper OR insurer OR 3PL), not shared across the chain; data is siloed inside the buying party.
+4. **Incident response is reactive and slow** — when a theft, damage, or delay happens, coordination across shipper, 3PL, sub-carrier, insurer, and police is manual; claims platforms (Loadsure, Breeze, Parsyl, Marsh, Cover Genius) shorten payout but rarely shorten *response time* to the incident itself.
+5. **Risk and insurance pricing are disconnected from real journey data** — even where telematics or IoT exists, premiums and claims are still priced off declared values and historical losses, not real-time per-shipment risk signals; parametric / dynamic pricing exists but adoption is thin outside specialty cargo.
+
+The skill should test which of these are evidenced in industry literature and which need field validation. New pain points surfaced during research should be flagged separately. For each surveyed solution, capture: what it does, primary user (shipper / 3PL / carrier / insurer), business model (SaaS seat, per-shipment, hardware + subscription, commission, brokered), pros, cons, SEA presence.
+
+## Sources to start from (optional, none required)
+
+- Gartner Magic Quadrant for Real-Time Transportation Visibility Platforms (most recent)
+- Armstrong & Associates 3PL market reports
+- TT Club / BSI Cargo Theft Reports (annual)
+- World Bank Logistics Performance Index
+- InsurTech press: Reinsurance News, Insurance Insider, Insurtech Insights
+- Trade press: FreightWaves, JOC.com, Lloyd's Loading List, The Loadstar, Air Cargo News, Logistics Asia
+- Company sources: 10-K / S-1 filings of public players (project44, FourKites pre/post-acquisition, Descartes, E2open, Samsara, Motive)
+- SEA-specific: AT Kearney / Bain / Roland Berger SEA logistics reports, JLL / Cushman SEA industrial reports
+
+## Output location
+
+Default sandbox: `./output/raw-claude-overnight/[YYYY-MM-DD-HHmm]/`
+
+## Run notes
+
+- This run feeds the *competitive landscape* section of a Tokio Marine + ID&E venture pitch produced by Wright Partners. The downstream consumer reads visuals, not long text, so research should prioritize crisp per-solution write-ups (what / who / model / pros / cons / SEA presence) and an explicit map of which journey stages each solution covers.
+- Worldwide scan is deliberate — the venture targets SEA but the team needs to see global patterns to spot whitespace. Do not narrow to SEA-only solutions.
+- No engagement repo for this run; sandbox mode is expected.
+- Topic slug for filenames: `logistics-risk-mgmt-worldwide`.
