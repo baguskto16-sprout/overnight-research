@@ -169,6 +169,69 @@ latest_run_dir() {
   ls -td "$REPO_DIR"/output/raw-claude-overnight/*/ 2>/dev/null | head -1 | sed 's:/$::'
 }
 
+# Delete obviously-empty orphan dirs from killed prior launches BEFORE we
+# snapshot. An orphan is a dir under output/raw-claude-overnight/ that has no
+# checkpoint.json, no RUN-COMPLETE.txt, no pass-0-plan.md, and contains only
+# empty subdirs / zero-byte files. Claude can otherwise REUSE these scaffolds
+# on a fresh run, and we'd lose the new run's identity.
+cleanup_empty_orphans() {
+  local d
+  for d in "$REPO_DIR"/output/raw-claude-overnight/*/; do
+    d="${d%/}"
+    [ -d "$d" ] || continue
+    [ -f "$d/checkpoint.json" ] && continue
+    [ -f "$d/RUN-COMPLETE.txt" ] && continue
+    [ -f "$d/pass-0-plan.md" ] && continue
+    # Has any non-empty file anywhere in subtree?
+    if find "$d" -type f ! -empty 2>/dev/null | head -1 | grep -q .; then
+      continue
+    fi
+    log "Cleaning up empty orphan dir: $d"
+    rm -rf "$d"
+  done
+}
+
+# Snapshot which run dirs existed BEFORE we launched. The fresh Phase 1 run will
+# create a new dir; we only treat anything outside this snapshot as "ours".
+# Resume mode skips this — it explicitly targets the pre-existing latest dir.
+PRE_EXISTING_RUN_DIRS=""
+snapshot_pre_existing_runs() {
+  PRE_EXISTING_RUN_DIRS=$(ls -d "$REPO_DIR"/output/raw-claude-overnight/*/ 2>/dev/null \
+                          | sed 's:/$::' | sort | tr '\n' '|')
+}
+
+# Returns the run dir for THIS unattended invocation:
+#   - resume mode: the pre-existing latest (we're continuing it)
+#   - fresh mode:  the newest dir that's either (a) brand new (not in snapshot),
+#                  OR (b) in snapshot BUT a key marker file was written after
+#                  we launched (claude reused a pre-existing orphan).
+active_run_dir() {
+  if [ "${MODE}" = "resume" ]; then
+    latest_run_dir
+    return
+  fi
+  local d marker mtime
+  for d in $(ls -td "$REPO_DIR"/output/raw-claude-overnight/*/ 2>/dev/null | sed 's:/$::'); do
+    # Case A: dir didn't exist before our launch.
+    if ! echo "|$PRE_EXISTING_RUN_DIRS" | grep -qF "|$d|"; then
+      echo "$d"
+      return
+    fi
+    # Case B: pre-existing dir, but claude wrote a marker into it after we launched.
+    for marker in checkpoint.json RUN-COMPLETE.txt pass-0-plan.md; do
+      if [ -f "$d/$marker" ]; then
+        mtime=$(stat -f '%m' "$d/$marker" 2>/dev/null || echo 0)
+        if [ "$mtime" -ge "$START_EPOCH" ]; then
+          echo "$d"
+          return
+        fi
+      fi
+    done
+  done
+  # No active dir yet — claude is still in setup phase.
+  echo ""
+}
+
 latest_run_log() {
   ls -t "$REPO_DIR"/run-*.log "$REPO_DIR"/resume-*.log "$REPO_DIR"/enrichment-*.log 2>/dev/null | head -1
 }
@@ -263,9 +326,9 @@ run_claude_phase() {
       return 2
     fi
 
-    # Check if completion marker appeared
+    # Check if completion marker appeared in OUR run dir (not a stale prior run).
     local run_dir
-    run_dir=$(latest_run_dir)
+    run_dir=$(active_run_dir)
     if [ -n "$run_dir" ] && [ -f "$run_dir/$completion_file" ]; then
       log "$completion_file detected at $run_dir"
       wait "$claude_pid" 2>/dev/null || true
@@ -287,6 +350,7 @@ run_claude_phase() {
       fi
       # Re-check completion marker (race: claude may have written file just before exit)
       sleep 3
+      run_dir=$(active_run_dir)
       if [ -n "$run_dir" ] && [ -f "$run_dir/$completion_file" ]; then
         log "$completion_file appeared just as claude exited"
         return 0
@@ -384,6 +448,15 @@ EOF
 
 PHASE1_CAP_EPOCH=$((START_EPOCH + PHASE1_CAP_HOURS * 3600))
 
+# Sweep empty orphan dirs (left by killed prior launches) before snapshotting.
+# If we don't, claude can reuse the orphan scaffold and we'd lose its identity.
+cleanup_empty_orphans
+
+# Snapshot existing run dirs so the polling loop doesn't pick up a stale prior
+# run's RUN-COMPLETE.txt as if it were ours.
+snapshot_pre_existing_runs
+log "Pre-existing run dirs at launch: $(echo "$PRE_EXISTING_RUN_DIRS" | tr '|' '\n' | grep -c .) dir(s)"
+
 if [ "$MODE" = "resume" ]; then
   log "── Phase 1: RESUME existing run ──"
   PRIOR_RUN_DIR=$(latest_run_dir)
@@ -425,7 +498,7 @@ if [ "${PHASE1_NEED_RUN:-0}" = "1" ]; then
       0) log "Phase 1 complete (RUN-COMPLETE.txt present)"; break ;;
       1)
         log "Phase 1 hit usage limit — auto-resuming after sleep"
-        RUN_DIR=$(latest_run_dir)
+        RUN_DIR=$(active_run_dir)
         if [ -n "$RUN_DIR" ] && [ -f "$RUN_DIR/checkpoint.json" ]; then
           INPUT_FILE_RESUME=$(jq -r '.input_file // ""' "$RUN_DIR/checkpoint.json")
           PHASE1_PROMPT=$(phase1_resume_prompt "$RUN_DIR/checkpoint.json" "$INPUT_FILE_RESUME")
@@ -447,7 +520,7 @@ fi
 # Phase 2 — Playwright enrichment (only if Phase 1 produced RUN-COMPLETE.txt)
 # ---------------------------------------------------------------------------
 
-RUN_DIR=$(latest_run_dir)
+RUN_DIR=$(active_run_dir)
 [ -z "$RUN_DIR" ] && { log "No run dir after Phase 1 — nothing to enrich"; exit 0; }
 
 if [ -f "$RUN_DIR/ENRICHMENT-COMPLETE.txt" ]; then
