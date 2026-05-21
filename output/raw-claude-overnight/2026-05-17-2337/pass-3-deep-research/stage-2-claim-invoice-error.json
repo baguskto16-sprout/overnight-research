@@ -1,0 +1,108 @@
+{
+  "claim": "Freight invoice error rate is 3–8% of invoices",
+  "outcome": "confirmed-scarce",
+  "searches_performed": [
+    "site:cassinfo.com freight invoice error accuracy benchmark",
+    "Cass Information Systems freight invoice audit error rate benchmark report",
+    "\"U.S. Bank Freight Payment Index\" invoice accuracy error rate",
+    "freight invoice error rate \"industry benchmark\" 2023 2024 audit payment primary research",
+    "AFS Logistics freight invoice error rate benchmark report 2024",
+    "APQC \"freight invoice\" error rate benchmark 2023 2024",
+    "CSCMP \"State of Logistics\" freight invoice audit error rate 2023 2024",
+    "Ardent Partners \"State of ePayables\" freight invoice error rate percentage 2023 2024",
+    "\"freight bill\" error rate percentage \"percent\" study survey shippers carriers 2022 2023 2024",
+    "freight invoice error rate academic research \"Journal of Business Logistics\" OR \"Transportation Research\" peer reviewed"
+  ],
+  "categories_searched": [
+    "primary-industry-operator (Cass Information Systems, AFS Logistics, U.S. Bank Freight Payment Index)",
+    "primary-benchmarking-body (APQC open standards — paywalled, not accessible)",
+    "industry-association (CSCMP State of Logistics — paywalled)",
+    "consultancy-authored (Ardent Partners AP Metrics That Matter 2024 — PDF fetched via markitdown)",
+    "vendor-marketing (Medius, Nuvocargo, cassinfo.com — noted, not used as primary)",
+    "academic-peer-reviewed (Journal of Business Logistics, Transportation Research E — no freight-specific invoice error rate study surfaced)",
+    "reference (Wikipedia Freight audit — cites 8.8% but explicitly flagged as uncited original research)"
+  ],
+  "findings_summary": {
+    "no_primary_freight_specific_source_found": true,
+    "sources_assessed": [
+      {
+        "url": "https://www.cassinfo.com/freight/the-six-best-practices-in-freight-audit-and-payment",
+        "category": "vendor-operator",
+        "notes": "Fetched. Mentions 'invoice errors are common. It is easy to be over-charged.' No quantified error rate, no benchmark data cited. Cass benchmarking database is proprietary and client-only.",
+        "usable_as_primary": false
+      },
+      {
+        "url": "https://www.cassinfo.com/freight/5-top-dangers-in-freight-invoice-audit-and-payment",
+        "category": "vendor-operator",
+        "notes": "Fetched. No specific statistics, percentages, or benchmark data on freight invoice error rates.",
+        "usable_as_primary": false
+      },
+      {
+        "url": "https://tradeshift.com/wp-content/uploads/2024/05/Ardent-Partners-AP-Metrics-that-Matter-in-2024-Tradeshift.pdf",
+        "category": "consultancy-survey (Ardent Partners)",
+        "publication_date": "February 2024",
+        "sample_size": "190 AP, finance, and P2P leaders",
+        "key_data": "Industry-average invoice exception rate: 20.7%. Best-in-class exception rate: 11.1%. Straight-through processing rate: 32.4%. Average cost to process one invoice: $9.87. Average processing time: 10.1 days.",
+        "freight_specific": false,
+        "notes": "This covers all-sector accounts payable, not freight-specific. Exception rate (invoices flagged for missing info, coding errors, PO issues, approval bottlenecks) is not identical to 'error rate' on freight invoices. Cannot directly extrapolate to the 3-8% freight claim.",
+        "via_pdf_markitdown": true,
+        "usable_as_primary": "partial — establishes AP-wide invoice exception context, not freight-specific"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Freight_audit",
+        "category": "reference",
+        "notes": "Cites '8.8% of freight invoices' have discrepancies. Wikipedia article itself flags it as having no sources and may contain original research. Not usable as primary evidence.",
+        "usable_as_primary": false
+      },
+      {
+        "url": "https://www.medius.com/blog/benchmarking-ap-accuracy-and-understanding-acceptable-invoice-error-rates/",
+        "category": "vendor-marketing",
+        "key_data": "Cites 'industry standard of 5% or less' and 'best-in-class under 1%.' No external source citation for these figures. References Ardent Partners' State of ePayables but does not quote specific freight error rate data.",
+        "usable_as_primary": false
+      },
+      {
+        "url": "https://cscmp.org/common/Uploaded%20files/2024%20State%20of%20Logistics%20Report%20-%20Executive%20summary.pdf",
+        "category": "industry-association",
+        "notes": "CSCMP 2024 State of Logistics Report is a paid/paywalled document. Executive summary PDF available but does not contain freight invoice error rate data in public section. Full report requires purchase.",
+        "usable_as_primary": false
+      },
+      {
+        "url": "https://www.apqc.org/resources/benchmarking/open-standards-benchmarking/measures/percentage-invoice-line-items",
+        "category": "primary-benchmarking-body (APQC)",
+        "notes": "APQC Open Standards Benchmarking tracks 'percentage of invoice line items processed error-free the first time.' URL returned HTTP 403 Forbidden — paywalled or access-restricted. Cannot verify specific freight percentiles.",
+        "usable_as_primary": false,
+        "needs_attended_fetch": "[NEEDS-ATTENDED-FETCH]: https://www.apqc.org/resources/benchmarking/open-standards-benchmarking/measures/percentage-invoice-line-items"
+      },
+      {
+        "url": "https://afs.net/service/freight-audit/",
+        "category": "vendor-operator",
+        "notes": "AFS Logistics publishes the TD Cowen/AFS Freight Index (Q3 and Q4 2024 editions available), which covers truckload, LTL, and parcel pricing trends — not invoice error rates. No AFS-published freight invoice error rate benchmark report found.",
+        "usable_as_primary": false
+      }
+    ],
+    "context_note": "Multiple vendor and trade-press sources circulate the 3-8% or 5-8% figure, but all trace back to undocumented industry lore or vendor marketing. Cass Information Systems (largest US freight audit firm, NASDAQ:CASS, processes 36M invoices/$38B annually) does maintain a proprietary benchmark database but does not publish specific error rate figures publicly. APQC has a directly relevant open-standards benchmark metric but it is paywalled. No peer-reviewed academic paper specifically measuring freight invoice error rates was surfaced across Journal of Business Logistics or Transportation Research E."
+  },
+  "suggested_revision_options": [
+    {
+      "option": "widen-range",
+      "revised_claim_text": "Freight invoice error rates are widely cited in the industry at 3–20% of invoices, with vendor and audit firm estimates clustering around 5–8%; however, no publicly available primary benchmark dataset has been independently verified by this research. The Ardent Partners AP Metrics That Matter 2024 report (n=190, February 2024) found an average invoice exception rate of 20.7% across all sectors, with best-in-class at 11.1%, suggesting freight-specific error rates may sit at the lower end of published ranges for mature audit programs.",
+      "suggested_score": "Low-Medium",
+      "supporting_source": "https://tradeshift.com/wp-content/uploads/2024/05/Ardent-Partners-AP-Metrics-that-Matter-in-2024-Tradeshift.pdf (all-sector, not freight-specific)"
+    },
+    {
+      "option": "mark-assumed",
+      "revised_claim_text": "[ASSUMED-N]: Freight invoice error rate is approximately 3–8% of invoices — to validate: obtain Cass Information Systems proprietary benchmark data (client-only), purchase CSCMP State of Logistics full report, or access APQC Open Standards Benchmarking 'percentage of invoice line items processed error-free' metric (https://www.apqc.org/resources/benchmarking/open-standards-benchmarking/measures/percentage-invoice-line-items).",
+      "suggested_score": "Low"
+    },
+    {
+      "option": "drop",
+      "rationale": "If the claim is load-bearing for a cost-impact calculation and no primary source can be cited, remove the specific percentage and replace with a directional statement only (e.g., 'freight invoices frequently contain billing errors, representing material cost leakage for shippers')."
+    }
+  ],
+  "recommended_option": "mark-assumed",
+  "reasoning": "Despite exhaustive search across Cass (largest US freight audit operator), U.S. Bank Freight Payment Index, AFS Logistics, APQC, CSCMP, Ardent Partners (PDF fetched), Wikipedia, and academic journals, no publicly accessible primary freight-specific invoice error rate benchmark was found. The 3-8% figure appears to originate in and circulate within vendor marketing and trade press without a traceable primary source. APQC has a directly relevant metric but it is access-restricted and requires attended-mode fetch or a paid subscription. The recommended action is to mark the claim as [ASSUMED-N] with a clear validation path to APQC or Cass proprietary data.",
+  "needs_attended_fetch": [
+    "https://www.apqc.org/resources/benchmarking/open-standards-benchmarking/measures/percentage-invoice-line-items",
+    "https://www.apqc.org/resource-library/resource-collection/accounts-payable-key-benchmarks"
+  ]
+}

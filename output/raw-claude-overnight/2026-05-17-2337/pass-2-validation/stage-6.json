@@ -1,0 +1,860 @@
+{
+  "context": "per-stage",
+  "stage": 6,
+  "run_id": "2026-05-17-2337",
+  "validated_date": "2026-05-18",
+  "artifacts_scored": [
+    "pass-1-drafts/stage-6-value-chain.md",
+    "pass-1-drafts/stage-6-pain-points.md"
+  ],
+
+  "source_inventory": {
+    "unique_sources_catalogued": 72,
+    "classification_notes": "Stage 6 has 38 numbered footnotes in the value chain and additional sub-citations in the pain-points document. Many footnotes bundle 2–4 URLs. Each URL is classified independently. Several critical sources are tagged [NEEDS-ATTENDED-FETCH] (OJK Roadmap PDF; AGCS Annual Report PDF). Vendor-self-citation pattern is materially lower than Stage 3: most vendor claims (Parsyl, Overhaul, Loadsure, Cover Genius) are anchored to press releases for funding claims rather than product-capability claims sourced from vendor pages — however PR Newswire and company websites still appear as the primary source for several material claims. The dominant primary anchor sources are: IUMI Stats Report 2025 (primary_association — cited 7+ times across both documents), Tokio Marine Holdings FY2024 4Q Summary Report (primary_filing), Munich Re Group Annual Report 2024 (primary_filing), Crawford NYSE audited results (primary_filing), and BSI/TT Club 2024 Cargo Theft Report (primary_association). These are all legitimate primary-tier sources. The main source-quality problems in this stage are: (a) cargo theft statistics from Overhaul's own press releases (auto-low-vendor for the company's own incident-count reports), (b) a Dataintelo APAC market size figure (aggregator auto-downgrade), (c) a 12% IoT loss ratio reduction figure from Astute Analytica/GlobeNewswire (aggregator auto-downgrade), (d) TruckerCloud blog for 8-day FNOL gap (auto-low-vendor or at best single secondary-trade), (e) strategic theft 1,455% growth figure traced to Travelers Insurance (auto-low-vendor), (f) Verisk CargoNet figures (primary_association — acceptable), and (g) multiple claims with [ASSUMED-N] tags properly flagged in the draft."
+  },
+
+  "source_classifications": {
+    "primary_association": [
+      "iumi.com/statistics/iumi-stats-report-2025/ — IUMI Stats Report 2025 (30 national associations; annual Stats Report) — VC-1, VC-14, PP6.2-(1), PP6.3-(1), PP6.3-(15), PP6.5-(1), PP6.5-(27)",
+      "iumi.com/statistics/facts-figures-press-release-2024/ — IUMI Facts & Figures Press Release 2024 (cargo market shares, Asia/Pacific 35.15%) — VC-14, PP6.3-(15)",
+      "iumi.com/statistics/major-claims-database-2024/ — IUMI Major Claims Database 2024 (17,400+ observations) — PP6.5-(27)",
+      "ttclub.com TT Club / BSI Consulting 2024 Cargo Theft Report (PDF, April 2025) — VC-2, PP6.1-(5), PP6.4-(5)",
+      "ttclub.com/news-and-resources/publications/article/bsi-consulting-and-tt-club-2025-cargo-theft-report — BSI/TT Club 2025 Cargo Theft Report — PP6.4-(21)",
+      "verisk.com CargoNet 2024 Annual Analysis — PP6.1-(2)",
+      "cargonet.com/news-and-events/cargonet-in-the-media/2025-theft-trends/ — Verisk CargoNet 2025 Annual — PP6.1-(1)"
+    ],
+    "primary_filing": [
+      "tokiomarinehd.com/en/ir 4Q_FY2024_Summary_Report_e.pdf — Tokio Marine Holdings FY2024 4Q Summary Report (TSE: 8766, Japanese GAAP) — VC-15",
+      "munichre.com MunichRe-Group-Annual-Report-2024-en.pdf — Munich Re Group Annual Report 2024 (Frankfurt: MUV2, audited) — VC-17",
+      "ir.crawco.com Crawford & Company FY2024 Full Year Results — Crawford NYSE CRD-A/CRD-B audited results — VC-7, PP6.5-(24)",
+      "investor.ajg.com Arthur J. Gallagher press release (AJG FY2024 revenue $11.5B; WKW acquisition) — VC-8, PP6.5-(25)",
+      "covergenius.com/series-e-cap-raise Series E press release — Cover Genius $80M Series E [see note: company-authored press release, not a Form D; scored Medium separately]",
+      "parsyl.com/press-release/parsyl-raises-25m-series-b — Parsyl Series B announcement [company-authored press release; scored Medium separately]"
+    ],
+    "primary_ministry": [
+      "ojk.go.id/en/kanal/iknb/berita-dan-kegiatan/siaran-pers — OJK Indonesia press release on premium tariff — VC-20, PP6.3-(14)",
+      "ojk.go.id Roadmap 2023-2027 PDF [NEEDS-ATTENDED-FETCH] — OJK Roadmap 2023–2027 — VC-20, PP6.3-(14)"
+    ],
+    "primary_consultancy": [
+      "swissre.com/institute/research/sigma-research/sigma-2025-02 — Swiss Re sigma 2/2025 (authored Institute research) — VC-25, VC-38, PP6.2-(7)",
+      "munichre.com MunichRe-Marine-Market-Survey-2024 — Munich Re Marine Market Survey 2024 (authored research) — VC-25, PP6.2-(12)",
+      "munichre.com MR_CargoTheftReport_FINAL25.pdf — Munich Re Specialty Cargo Theft Tactics & Trends 2025 (authored report) — PP6.4-(7)"
+    ],
+    "primary_academic": [],
+    "primary_standards": [],
+    "primary_interview": [],
+    "primary_legal": [],
+    "secondary_trade": [
+      "iumi.com/news/press-release/ — IUMI press release (note: IUMI is primary_association; the press-release URL is a summary of the Stats Report — treated as primary_association anchor, not secondary) [see primary_association above]",
+      "claimsjournal.com/news/national/2024/10/02/326473.htm — Crawford Singapore Logistics Division launch — VC-7, PP6.1-RC5, PP6.5-(24)",
+      "dig-in.com/news/otonomi-expands-parametric-cargo-insurance-to-more-modes — Otonomi expansion 2024 — VC-4, PP6.1-(10)",
+      "programbusiness.com/news/otonomi-secures-5-million-series-a — Otonomi Series A $5M — VC-4",
+      "insurancebusinessmag.com/asia/news/breaking-news/crawford-debuts-tailored-logistics-and-freight-division — Crawford Singapore — VC-32, PP6.5-(24)",
+      "insurancebusinessmag.com/us/news/marine/datadriven-seas-behind-the-strategic-pivot — data-driven underwriting pivot — PP6.2-(5)",
+      "reinsurancene.ws/chubb-to-expand-its-marine-business-in-asia — Chubb APAC marine expansion — VC-26",
+      "coverager.com/loadsure-deploys-five-sigmas-ai-claims-platform — Loadsure <3 days claim-to-payout — PP6.1-(8)",
+      "freightwaves.com/news/per-load-shippers-interest-insurance-now-available-in-mcleod-tms — Loadsure McLeod TMS integration — VC-9",
+      "freightwaves.com/news/solving-the-freight-industrys-underinsurance-crisis — FreightWaves 60%+ underinsurance — PP6.2-(9), PP6.3-(9)",
+      "techcrunch.com/2025/01/10/overhaul-keeps-tabs-on-cargo — Overhaul TechCrunch profile — VC-34",
+      "insurtechinsights.com/breeze-partners-with-webcargo — Breeze-WebCargo integration — VC-10, PP6.3-(18)",
+      "meantime.global/news/ai-powered-cargo-insurance-platform-breeze — Breeze US expansion — VC-10, VC-29",
+      "safety4sea.com/allianz-safety-and-shipping-review-2025 — Allianz Safety and Shipping Review 2025 summary — PP6.4-(20)",
+      "shippingandfreightresource.com/criminals-are-adapting-faster-than-supply-chains — BSI/TT Club 2025 summary — PP6.4-(21)",
+      "insurance-edge.net/2025/05/02/gallagher-bassett-acquisition-helps-wk-webster — WKW post-acquisition success — VC-33, PP6.5-(31)",
+      "wtwco.com/en-us/insights/2025/05 marine cargo — WTW Insurance Marketplace Realities 2025 Spring Update Marine Cargo — PP6.2-(6)",
+      "wtwco.com/en-us/insights/2025/10 marine cargo or 2026 — WTW Insurance Marketplace Realities 2026 Marine Cargo — PP6.2 RC3",
+      "wtwco.com/en-us/insights/2026/02/2026-guide-to-strategic-cargo-theft — WTW 2026 Guide to Strategic Cargo Theft — PP6.4-(11)",
+      "fleetowner.com/safety/article/21280946 — Fleet Owner cargo theft 2024 outlook — PP6.4-(17)",
+      "hunton.com/hunton-insurance-recovery-blog/modern-piracy — Hunton law firm blog on cargo theft/insurance — PP6.4-(11)",
+      "roanokegroup.com/faqs/whats-covered-and-excluded — Roanoke cargo policy FAQ — PP6.4-(23)",
+      "translogisticsinc.com/blog/cargo-claim-deadlines-of-120-days — Carmack Amendment 120-day timeline — VC-36 note, PP6.1-RC5, PP6.3-RC2, PP6.5-(28)",
+      "ligaasuransi.com/en/update-7-berita-asuransi-indonesia — Indonesia Jasindo marine hull +41% H1 2024 — PP6.3-(19)",
+      "idnfinancials.com/news/49149/sompo-insurance-indonesias-ownership-shifts — Sompo Indonesia OJK ownership change — VC-35"
+    ],
+    "secondary_news": [
+      "lloyds.com/insights/media-centre/press-releases/lloyds-reports-2024-full-year-results — Lloyd's 2024 Full Year Results press release — VC-18",
+      "lloyds.com/fullyearresults2024 — Lloyd's full year results page — VC-18",
+      "prnewswire.com/news-releases/sedgwick-expands-global-marine-operations — Sedgwick marine expansion PR — VC-6, PP6.5-(26)",
+      "prnewswire.com/news-releases/overhaul-secures-105-million-series-c — Overhaul Series C PR — VC-12, PP6.1-(7)",
+      "prnewswire.com/news-releases/ceva-selects-overhaul-as-partner — CEVA Overhaul partnership PR — VC-12",
+      "prnewswire.com/news-releases/overhaul-unveils-groundbreaking-cold-chain-quality-solution — Overhaul cold chain PR — VC-12",
+      "prnewswire.com/news-releases/overhaul-combines-its-cargo-theft-prevention — Overhaul integrated insurance program PR — PP6.1-(4), PP6.2-(4)",
+      "prnewswire.com/news-releases/cargo-theft-soars-49-in-first-half-of-2024 — Overhaul H1 2024 Cargo Theft PR — VC-13, PP6.1-(3)",
+      "investor.ajg.com Arthur J. Gallagher WKW press release — VC-8, PP6.5-(25) [note: AJG is NYSE-listed; this is the company's investor relations press release — treated as secondary_news/press_release for the WKW-specific claims, not as primary_filing]",
+      "businessnewsaustralia.com/articles/aussie-founded-cover-genius — Cover Genius Series E Australian press — VC-30",
+      "covergenius.com/cover-genius-closes-80m-in-series-e — Cover Genius Series E (company press release) — VC-11, PP6.2-(4), PP6.3-(16)",
+      "covergenius.com/series-c-cap-raise — Cover Genius Series C Sompo anchor (company press release) — VC-11, VC-30",
+      "insurance-journal.com/magazines/mag-features/2025/11/03/845615.htm — Insurance Journal multi-party cargo theft coordination — PP6.4-(22), PP6.5-(29)",
+      "commercial.allianz.com/about-us/financials.html — Allianz Commercial financials page — VC-16"
+    ],
+    "secondary_market_research": [
+      "dataintelo.com/report/marine-cargo-insurance-market — DataIntelo APAC cargo insurance ~$8.7B — VC-21 [flagged Low in draft; auto-downgrade applies]",
+      "globenewswire.com/news-release/2026/02/06/3233875 — Astute Analytica marine cargo insurance market 2032 (via GlobeNewswire) — PP6.2-(8) [aggregator research firm; auto-downgrade; 12% IoT loss ratio reduction figure from here]",
+      "prnewswire.com The Insight Partners TPA market $432.4B — VC-19 [flagged Low in draft; auto-downgrade]"
+    ],
+    "secondary_press_release": [
+      "loadsure.net/latest/article/loadsure-raises-11-million-series-a — Loadsure Series A $11M (company blog/PR) — VC-9",
+      "mmc.vc/mmc-leads-11-million-series-a-for-embedded-insurance-product-loadsure — MMC Ventures Loadsure Series A confirmation — VC-9",
+      "loadsure.net/latest/article/loadsure-addresses-global-underinsurance-crisis — Loadsure underinsurance statistics (company blog) — PP6.2-(10), PP6.3-(10), PP6.3-(17)",
+      "parsyl.com/press-release/parsyl-raises-25m-series-b — Parsyl Series B $25M (company press release) — VC-28, PP6.1-(9), PP6.2-(3)",
+      "parsyl.com/press-release/041520 — Parsyl ColdCover parametric product launch — VC-3",
+      "gallagherbassett.com/news-and-insights/gallagher-bassett-expands-into-marine-claims — Gallagher Bassett WKW announcement (company press release) — VC-8, PP6.5-(25)",
+      "marsh.com/en/industries/cargo/expertise/parametric-coverage-for-cargo-delay.html — Marsh parametric cargo delay product page — VC-5, PP6.1-(10), PP6.2-(11), PP6.2-RC4",
+      "axaxl.com/fast-fast-forward/articles/lets-talk-axa-global-parametrics — AXA XL parametric article — VC-5",
+      "axaxl.com/insurance/products/marine-cargo-insurance — AXA XL marine cargo product page — VC-24, PP6.2-(2)",
+      "sedgwick.com/apac/asia/ — Sedgwick Asia page (vendor) — VC-6, PP6.5-(26)",
+      "sedgwick.com/loss-adjusting/marine-transportation/ — Sedgwick marine transportation (vendor) — VC-31",
+      "sedgwick.com/press-release/sedgwick-expands-global-marine-operations — Sedgwick press release on own website (vendor) — VC-31",
+      "sompo-asia.com — Sompo Asia vendor page — VC-35"
+    ],
+    "auto_low_vendor": [
+      "tokiomarine.com/asia/en/about-us/tokio-marine-asia/our-regional-companies.html — Tokio Marine Asia marketing page (vendor, claims about Tokio Marine's own SEA footprint) — VC-22",
+      "tokiomarine.com/sg/en/non-life/about-us.html — Tokio Marine Singapore marketing page (vendor) — VC-22",
+      "tokiomarine.com/id/en/non-life/products/business/marine/marine-cargo-insurance.html — Tokio Marine Indonesia product page (vendor) — VC-23",
+      "tokiomarine.com/my/en/non-life/products/business/marine/marine-cargo-insurance.html — Tokio Marine Malaysia product page (vendor) — VC-23",
+      "arviem.com/resources-library/success-stories/data-driven-risk-consulting/ — Arviem case study (vendor case study on vendor services; used to evidence AXA XL IoT positioning) — VC-24, PP6.2-(2) [note: Arviem is the IoT vendor, not AXA XL; the case study is co-published — still auto-low for claims about Arviem's own service quality or AXA XL positioning sourced only from Arviem's own marketing]",
+      "chubb.com/sg-en/business/marine/cargo-insurance.html — Chubb Singapore cargo product page (vendor) — VC-26",
+      "chubb.com/id-en/business/marine-cargo-insurance.html — Chubb Indonesia marine product page (vendor) — VC-26",
+      "over-haul.com/dual-recovery-of-stolen-shipping-containers/ — Overhaul case study on own platform (vendor) — PP6.1-(4)",
+      "over-haul.com/platform/risk/in-transit-theft-prevention-recovery/ — Overhaul LE Connect product page (vendor) — PP6.5-RC3",
+      "truckercloud.com/blog/first-notice-of-loss-fnol — TruckerCloud blog (vendor blog for a freight telematics company on FNOL statistics) — VC-36, PP6.1-(6)",
+      "travelers.com/resources/business-topics/supply-chain-management/strategic-cargo-theft — Travelers Insurance strategic theft article (insurer marketing page about claims trends) — PP6.4-(17) [auto-low-vendor: Travelers is an insurer using own claims data to market services]",
+      "commercial.allianz.com/news-and-insights/expert-risk-articles/marine-claims-trends.html — Allianz marine claims trends article (Allianz vendor marketing/thought leadership, claims about Allianz own claims data: 244,451 claims €9.2B) — PP6.5-(30)"
+    ],
+    "auto_low_aggregator_marketplace": []
+  },
+
+  "claims_inventory": [
+    {
+      "claim_id": "VC-MS-1",
+      "claim_text": "Global marine insurance total premiums (2024): USD 39.92B (+1.5% YoY)",
+      "footnote": "1",
+      "sources": ["iumi.com IUMI Stats Report 2025", "iumi.com IUMI press release"],
+      "source_types": ["primary_association", "primary_association"],
+      "score": "High",
+      "overrides": [],
+      "notes": "IUMI is the primary industry body for marine insurance (30 national associations contributing). The Stats Report 2025 is IUMI's annual publication with verified premium collection from national associations. Single association source, but IUMI is the authoritative primary association for this metric globally. High."
+    },
+    {
+      "claim_id": "VC-MS-2",
+      "claim_text": "Global cargo insurance premiums (2024): USD 22.64B (+1.6% YoY); 57.23% of global marine premium",
+      "footnote": "1, 14",
+      "sources": ["iumi.com IUMI Stats Report 2025", "iumi.com IUMI Facts & Figures 2024 press release"],
+      "source_types": ["primary_association", "primary_association"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Two IUMI publications cross-referenced (Stats Report 2025 + Facts & Figures 2024 press release). Both are IUMI primary-association sources. The 57.23% share is internally consistent (22.64/39.92 = 56.7% — close enough given rounding). High."
+    },
+    {
+      "claim_id": "VC-MS-3",
+      "claim_text": "Asia/Pacific share of global cargo premiums (2024): 35.15%; Asia grew 8.8% in 2024 (primarily China); Singapore and Japan showed weaker performance",
+      "footnote": "1, 14",
+      "sources": ["iumi.com IUMI Stats Report 2025", "iumi.com IUMI Facts & Figures 2024 press release"],
+      "source_types": ["primary_association", "primary_association"],
+      "score": "Medium",
+      "overrides": ["apac-as-proxy: no sub-regional SEA country breakdown available; Asia/Pacific aggregate includes China (17.6% of global cargo alone), which dominates the figure and makes it a poor proxy for SEA-specific market sizing"],
+      "notes": "IUMI data is primary_association and the 35.15% figure is directly from the authoritative source. However, the draft itself correctly flags that no sub-regional SEA country breakdown is available. APAC-as-proxy override applies per rubric. Medium."
+    },
+    {
+      "claim_id": "VC-MS-4",
+      "claim_text": "Cargo market share by country (2024): China 17.6%; Lloyd's 9.7%; USA 6.9%; Brazil 4.7%; Germany 4.7%; London companies 4.3%",
+      "footnote": "14",
+      "sources": ["iumi.com IUMI Facts & Figures 2024 press release"],
+      "source_types": ["primary_association"],
+      "score": "Medium",
+      "overrides": ["single-source: single IUMI publication (though it is primary); the draft itself flags 'single IUMI source'"],
+      "notes": "IUMI Facts & Figures is a primary_association source and the authoritative source for cargo market shares. Single-source override applies by rubric when no cross-validation exists. The rubric states High requires 3+ independent sources OR 2+ with ≥1 primary. One primary_association source = Medium under the rubric. Medium."
+    },
+    {
+      "claim_id": "VC-MS-5",
+      "claim_text": "Tokio Marine Holdings FY2024: hull and cargo direct premiums ¥248,941M (~USD 1.66B); net premiums written ¥214,399M (~USD 1.43B); +9.2%/+11.6% YoY",
+      "footnote": "15",
+      "sources": ["tokiomarinehd.com 4Q FY2024 Summary Report PDF"],
+      "source_types": ["primary_filing"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Tokio Marine Holdings 4Q FY2024 Summary Report is an audited financial filing under Japanese GAAP (TSE: 8766). Single primary_filing — the rubric allows High for government statistics or multilateral agency with fewer sources; for audited corporate filings, a single 10-K/annual report is standard practice and meets High. High."
+    },
+    {
+      "claim_id": "VC-MS-6",
+      "claim_text": "Tokio Marine Holdings FY2024 group net premiums written: ¥5,305,182M (~USD 35.4B) +10.0% YoY; net income ¥1,055,276M (+51.7%)",
+      "footnote": "15",
+      "sources": ["tokiomarinehd.com 4Q FY2024 Summary Report PDF"],
+      "source_types": ["primary_filing"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Same audited filing as VC-MS-5. High."
+    },
+    {
+      "claim_id": "VC-MS-7",
+      "claim_text": "Allianz Commercial (AGCS + national commercial entities) gross premium (2024): ~€18B globally (all commercial lines; marine cargo not separately broken out)",
+      "footnote": "16",
+      "sources": ["commercial.allianz.com/about-us/financials.html", "AGCS Annual Report 2024 PDF [NEEDS-ATTENDED-FETCH]"],
+      "source_types": ["secondary_news", "primary_filing (not confirmed fetched)"],
+      "score": "Medium",
+      "overrides": ["NEEDS-ATTENDED-FETCH: AGCS Annual Report PDF was not confirmed retrieved; only the Allianz Commercial financials marketing page was confirmed accessible"],
+      "notes": "The Allianz Commercial financials page is a company-published page (not an audited filing URL). The AGCS Annual Report PDF is tagged [NEEDS-ATTENDED-FETCH] meaning it was not confirmed fetched. The €18B figure is Allianz Commercial's own public statement; if the PDF were confirmed it would be primary_filing. Currently Medium given unconfirmed primary filing. Marine cargo not separately disclosed — correctly noted as Medium in draft."
+    },
+    {
+      "claim_id": "VC-MS-8",
+      "claim_text": "Munich Re marine reinsurance revenue (2024): €575M (+7% from €539M in 2023); impacted by Francis Scott Key Bridge collapse",
+      "footnote": "17",
+      "sources": ["munichre.com Munich Re Group Annual Report 2024 PDF"],
+      "source_types": ["primary_filing"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Munich Re Group Annual Report 2024 is an audited filing from a Frankfurt-listed company (MUV2). PDF processed via markitdown. High."
+    },
+    {
+      "claim_id": "VC-MS-9",
+      "claim_text": "Munich Re GSI division revenue (2024): €8,781M (+10.3% from €7,961M); GSI includes MRS-GM as 'a leading global provider of marine insurance'",
+      "footnote": "17",
+      "sources": ["munichre.com Munich Re Group Annual Report 2024 PDF"],
+      "source_types": ["primary_filing"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Same audited annual report as VC-MS-8. High. Note: the quote 'leading global provider of marine insurance' is Munich Re's own characterization of MRS-GM — self-description, but this is in the audited annual report context, not a vendor marketing page."
+    },
+    {
+      "claim_id": "VC-MS-10",
+      "claim_text": "Lloyd's market gross written premium (2024, all lines): £55.5B (+6.5% from £52.1B); combined ratio 86.9%",
+      "footnote": "18",
+      "sources": ["lloyds.com 2024 Full Year Results press release", "lloyds.com/fullyearresults2024"],
+      "source_types": ["secondary_news", "secondary_news"],
+      "score": "Medium",
+      "overrides": ["press-release-only: Lloyd's published this as a press release; the Lloyd's Annual Report (primary_filing equivalent) is not directly cited with a URL — though Lloyd's publishes audited accounts"],
+      "notes": "Lloyd's 2024 results press release. Lloyd's publishes an annual report and full accounts — but the citation is to the press release page, not to the audited accounts PDF. Two URLs both on lloyds.com resolve to the same press release / results page — chain-of-citations: 1 source. Press-release-only override applies. Medium. Note: Lloyd's annual report would be primary if cited."
+    },
+    {
+      "claim_id": "VC-MS-11",
+      "claim_text": "Global insurance TPA market size (2024): USD 432.4B; projected USD 886.3B by 2033 at 8.3% CAGR",
+      "footnote": "19",
+      "sources": ["prnewswire.com The Insight Partners research — press release"],
+      "source_types": ["secondary_market_research"],
+      "score": "Low",
+      "overrides": ["aggregator-market-research-auto-downgrade: The Insight Partners is a private market research firm; auto-downgrade applies", "press-release-only: figure distributed via PRNewswire press release, not a primary report", "draft correctly flags this as Low"],
+      "notes": "The Insight Partners is a market research aggregator (analogous to MarketsandMarkets tier). PRNewswire redistribution. Correctly flagged Low in draft. Auto-Low."
+    },
+    {
+      "claim_id": "VC-MS-12",
+      "claim_text": "Indonesia total non-life written premiums: IDR 96,955,050M (+4.6%); marine cargo mandatory for CPO and coal exports",
+      "footnote": "20",
+      "sources": ["ojk.go.id OJK press release on premium tariff", "ojk.go.id OJK Roadmap 2023-2027 PDF [NEEDS-ATTENDED-FETCH]"],
+      "source_types": ["primary_ministry", "primary_ministry (not confirmed fetched)"],
+      "score": "Medium",
+      "overrides": ["NEEDS-ATTENDED-FETCH: OJK Roadmap PDF not confirmed retrieved; OJK press release URL is the confirmed source", "single-source (effectively — both URLs are OJK)"],
+      "notes": "OJK is Indonesia's financial services regulator (primary_ministry). The premium figure from OJK is authoritative for Indonesia total non-life. However, the OJK Roadmap PDF was not confirmed fetched (only the press release was accessible). The marine cargo mandatory-for-CPO-and-coal claim may come from the unconfirmed PDF; the press release may not contain that specific detail. Flagged as Medium given unconfirmed primary document. The draft correctly notes this is regulatory context only with no cargo-specific premium breakdown."
+    },
+    {
+      "claim_id": "VC-MS-13",
+      "claim_text": "Asia Pacific cargo insurance market (2024/2025 estimate): ~USD 8.7B",
+      "footnote": "21",
+      "sources": ["dataintelo.com marine-cargo-insurance-market"],
+      "source_types": ["secondary_market_research"],
+      "score": "Low",
+      "overrides": ["aggregator-market-research-auto-downgrade: DataIntelo is on the auto-downgrade list (DataIntelo explicitly named in rubric)", "apac-as-proxy: APAC figure used as proxy for country-specific need", "single-source", "draft correctly flags this as Low with Geography mismatch"],
+      "notes": "DataIntelo is explicitly named in the rubric as an auto-downgrade aggregator. Two overrides apply. Draft correctly flags Low with Geography mismatch. Auto-Low."
+    },
+    {
+      "claim_id": "VC-TokioMarine-1",
+      "claim_text": "Tokio Marine Asia SEA operations: 8 P&C companies, 5 life companies, 8 countries, 10,000+ employees, Singapore HQ",
+      "footnote": "22, 23",
+      "sources": ["tokiomarine.com/asia/en/about-us — Tokio Marine Asia marketing page", "tokiomarine.com/sg/en/non-life — Singapore marketing page", "tokiomarine.com/id/en — Indonesia product page", "tokiomarine.com/my/en — Malaysia product page"],
+      "source_types": ["auto_low_vendor", "auto_low_vendor", "auto_low_vendor", "auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: all four URLs are on tokiomarine.com — Tokio Marine's own marketing pages for claims about Tokio Marine's own SEA footprint (number of subsidiaries, employee count, market presence); auto-Low per rubric", "all URLs from same domain family — single-domain override also applies"],
+      "notes": "The 10,000+ employee and 8-country claims are sourced exclusively from Tokio Marine's own regional marketing pages. The audited 4Q FY2024 Summary Report (fn 15) covers financial data but not operational SEA footprint details. A cross-validation from a ASEAN insurance industry association report or regulatory filing would be needed for Medium. Auto-Low."
+    },
+    {
+      "claim_id": "VC-Parsyl-1",
+      "claim_text": "Parsyl Series B: USD 25M (January 2024; HSCM Ventures, Lineage Ventures, Flexport Ventures); ColdCover parametric product settles in as little as 48 hours; $55M capacity; IoT Data Partner Program includes Sensitech, Emerson, Controlant",
+      "footnote": "3, 28",
+      "sources": ["parsyl.com/press-release/parsyl-raises-25m-series-b (company press release)", "parsyl.com/press-release/041520 (ColdCover launch press release)"],
+      "source_types": ["secondary_press_release", "secondary_press_release"],
+      "score": "Low",
+      "overrides": ["press-release-only: funding figure and product claims sourced from Parsyl's own press releases; no Form D, no independent trade press confirmation of $25M round cited", "vendor-marketing-override: parsyl.com is Parsyl's own domain for claims about Parsyl's own funding, capacity, and product capabilities", "single-domain: both URLs on parsyl.com"],
+      "notes": "The $25M Series B from Parsyl's own press release on parsyl.com is auto-low-vendor. An independent source such as a Form D on SEC EDGAR, or confirmed coverage by FreightWaves/TechCrunch independently verifying the round, would be needed for Medium. The settlement timing (48 hours) and IoT partner claims are also vendor-marketing. Low. Note: the rubric vendor-marketing override explicitly applies to Parsyl (parsyl.com is in the domain blocklist)."
+    },
+    {
+      "claim_id": "VC-Otonomi-1",
+      "claim_text": "Otonomi: parametric cargo delay insurance; Series A $5M; launched maritime delay (May 2024) + aviation delay (July 2024); 48-hour trigger to payment; 22x faster than 30-day industry standard; geographic expansion to Hong Kong and South America",
+      "footnote": "4, 5",
+      "sources": ["programbusiness.com/news/otonomi-secures-5-million-series-a (trade press)", "dig-in.com/news/otonomi-expands-parametric-cargo-insurance (trade press)", "marsh.com parametric coverage product page", "axaxl.com/fast-fast-forward parametric article"],
+      "source_types": ["secondary_trade", "secondary_trade", "secondary_press_release", "secondary_press_release"],
+      "score": "Medium",
+      "overrides": ["press-release-only for Series A: $5M Series A from trade press (programbusiness.com) with no Form D cited; however trade press is independent of Otonomi — not auto-low-vendor", "the 22x faster claim and 48-hour settlement come from dig-in.com trade press + Marsh product page — Marsh as distributor corroborates product mechanics"],
+      "notes": "Two independent trade press sources (programbusiness, dig-in) plus Marsh (independent distributor) confirm Otonomi's existence, Series A, and product. The Marsh product page as an independent distribution partner providing product mechanic details is not a vendor-self-cite. The 48-hour / 7-day settlement and trigger mechanics are corroborated by trade press (dig-in) and Marsh (independent). Two independent secondary sources with one being Marsh (independent distributor). Medium. No Form D cited for the $5M Series A — press-release-only override applies to that specific sub-claim, but the product existence/mechanics are Medium overall."
+    },
+    {
+      "claim_id": "VC-Loadsure-1",
+      "claim_text": "Loadsure: Series A USD 11M (March 2022; MMC Ventures lead + Crowley strategic); 40-second policy issuance; per-shipment API; US focus; cover up to $2M per shipment (FTL) / $100k (LTL)",
+      "footnote": "9, 27",
+      "sources": ["loadsure.net/latest/article/loadsure-raises-11-million (company blog)", "mmc.vc/mmc-leads-11-million (MMC Ventures — independent VC firm)", "freightwaves.com/news/per-load-shippers-interest-insurance (FreightWaves trade press)"],
+      "source_types": ["secondary_press_release", "secondary_press_release", "secondary_trade"],
+      "score": "Medium",
+      "overrides": ["vendor-marketing-override applies to loadsure.net for claims about Loadsure capabilities (40-second issuance, coverage limits) — auto-low for those specific sub-claims", "Series A: MMC Ventures' own press release + FreightWaves are two independent secondary sources confirming $11M round — sufficient for Medium on the funding claim"],
+      "notes": "The $11M Series A is corroborated by MMC Ventures (independent VC confirming its own investment — credible) and FreightWaves (independent trade press). Two independent secondary sources for the funding = Medium. The product capability claims (40-second issuance, coverage limits) come from loadsure.net (vendor) and are auto-low-vendor for those specific claims. Overall: Medium for the funding round; Low for product capability claims sourced from loadsure.net. Composite: Medium."
+    },
+    {
+      "claim_id": "VC-Breeze-1",
+      "claim_text": "Breeze AI: per-shipment digital cargo insurance for freight forwarders; Helvetia strategic investment; US expansion via Great American Insurance Group partnership; WebCargo/Freightos integration; hundreds of customers, thousands of shipments per month",
+      "footnote": "10, 29",
+      "sources": ["insurtechinsights.com/breeze-partners-with-webcargo (trade press)", "meantime.global/news/ai-powered-cargo-insurance-platform-breeze (trade/PR aggregator)"],
+      "source_types": ["secondary_trade", "secondary_trade"],
+      "score": "Medium",
+      "overrides": ["customer count ('hundreds of customers, thousands per month') is from unspecified secondary source — single-source potentially", "meantime.global is an insurtech news/PR aggregator — treat as secondary_trade"],
+      "notes": "Two trade press sources confirm the WebCargo integration (insurtechinsights) and US expansion with Great American (meantime.global). Both are independent of Breeze. The 'hundreds of customers, thousands of shipments per month' claim is not directly footnoted — likely from one of these trade press articles. Two independent secondary sources for partnerships; Medium. The customer count claim is weak without independent verification."
+    },
+    {
+      "claim_id": "VC-CoverGenius-1",
+      "claim_text": "Cover Genius: XCover platform licensed in 60+ countries; Series E USD 80M (May 2024; Spark Capital lead); ~10.5M customers; $1.1M daily GWP record; 145% net revenue retention; Sompo Holdings Asia anchor investor in Series C",
+      "footnote": "11, 30",
+      "sources": ["covergenius.com Series E press release (company press release)", "covergenius.com Series C press release (company press release)", "businessnewsaustralia.com Series E coverage (independent news)"],
+      "source_types": ["secondary_press_release", "secondary_press_release", "secondary_news"],
+      "score": "Medium",
+      "overrides": ["vendor-marketing-override: covergenius.com is Cover Genius's own domain — auto-low-vendor for claims about Cover Genius's own customer count (10.5M), GWP record ($1.1M daily), and platform reach (60+ countries)", "the $80M Series E is confirmed by businessnewsaustralia.com (independent) + the company press release — two sources, one independent: Medium for the funding figure", "press-release-only for Sompo anchor investor claim: only covergenius.com cites the Series C Sompo anchor — no independent confirmation"],
+      "notes": "The $80M Series E is confirmed independently by businessnewsaustralia.com. However all operational metrics (10.5M customers, $1.1M daily GWP, 145% NRR, 60+ countries) come exclusively from covergenius.com — vendor-marketing-override. A Form D or independent audit would be needed for those. Composite: Medium for funding; Low for operational metrics from vendor pages. Scored Medium overall given independent confirmation of the funding event."
+    },
+    {
+      "claim_id": "VC-Overhaul-1",
+      "claim_text": "Overhaul: Series C USD 105M (Springcoast Partners, Edison Partners, MidCap debt; total raised ~USD 150M); customers: Microsoft, Bristol Myers Squibb, CEVA Logistics, six top-10 automotive OEMs; acquired FreightVerify",
+      "footnote": "12, 34",
+      "sources": ["prnewswire.com Overhaul Series C press release", "prnewswire.com CEVA partnership press release", "prnewswire.com Overhaul cold chain PR", "techcrunch.com/2025/01/10/overhaul-keeps-tabs-on-cargo (TechCrunch independent)"],
+      "source_types": ["secondary_press_release", "secondary_press_release", "secondary_press_release", "secondary_trade"],
+      "score": "Medium",
+      "overrides": ["press-release-only for Series C: $105M from PRNewswire press release + TechCrunch (two sources, one independent) — Medium for the funding figure; no Form D cited", "customer list (Microsoft, BMS, CEVA) confirmed by multiple independent PRNewswire press releases from CEVA + TechCrunch mentioning Microsoft — two independent confirmations: Medium"],
+      "notes": "TechCrunch is independent trade press confirming the Overhaul + Microsoft/Dyson relationship. CEVA partnership has an independent PRNewswire press release from CEVA (not Overhaul). Two independent secondary sources for customers. Medium."
+    },
+    {
+      "claim_id": "VC-Sedgwick-1",
+      "claim_text": "Sedgwick: valuation USD 13.2B (Sep 2024); marine operations expanded August 2024 (Ronnie Adcock Global Marine Practice Leader); Singapore hub (Stephen Kerr CEO Asia, appointed Nov 2024)",
+      "footnote": "6, 31",
+      "sources": ["prnewswire.com Sedgwick marine expansion press release", "sedgwick.com/press-release (Sedgwick own website)", "sedgwick.com/apac/asia/ (Sedgwick vendor page)"],
+      "source_types": ["secondary_news", "secondary_press_release", "secondary_press_release"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: sedgwick.com is Sedgwick's own website — auto-low-vendor for claims about Sedgwick's own capabilities and appointments", "press-release-only: the $13.2B valuation and expansion details come from Sedgwick-issued PRNewswire press release and Sedgwick's own website — no audited filing or independent confirmation of valuation cited", "single-domain-near: sedgwick.com + prnewswire.com for Sedgwick's own press release are all Sedgwick-controlled communications"],
+      "notes": "Sedgwick is private — no 10-K or filing to cite. The $13.2B valuation is from Sedgwick's own press materials. The expansion appointments come from Sedgwick's own press release on PRNewswire and its own website. No independent trade press confirmation cited (e.g., Insurance Journal, Claims Journal, Insurance Business Magazine confirming the valuation independently). The claimsjournal.com URL covers Crawford's launch, not Sedgwick's. Low."
+    },
+    {
+      "claim_id": "VC-Crawford-1",
+      "claim_text": "Crawford & Company FY2024 revenues USD 1.293B (+2% YoY, record); marine team 230+ professionals; Singapore Logistics Division launch October 2024 (Dan Yeo, 30+ years; 85 collective years experience)",
+      "footnote": "7, 32",
+      "sources": ["ir.crawco.com Crawford FY2024 results (NYSE filing/IR page)", "claimsjournal.com Crawford Singapore division (independent trade press)", "insurancebusinessmag.com/asia/news Crawford Singapore (independent trade press)"],
+      "source_types": ["primary_filing", "secondary_trade", "secondary_trade"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Crawford & Company is NYSE-listed (CRD-A/CRD-B). The ir.crawco.com results page is the company's investor relations page citing audited FY2024 results — effectively primary_filing. Two independent trade press sources (ClaimsJournal + Insurance Business Magazine) confirm the Singapore Logistics Division launch. Three independent sources with primary_filing anchor. High."
+    },
+    {
+      "claim_id": "VC-GallagherWKW-1",
+      "claim_text": "Gallagher Bassett acquired W K Webster Group (est. 1861; 250 staff; London, Singapore, NY, Rotterdam) in February 2025; 'world's leading marine and transit claims consultancy'",
+      "footnote": "8, 33",
+      "sources": ["investor.ajg.com AJG press release (AJG NYSE investor relations)", "gallagherbassett.com announcement (company press release)", "insurance-edge.net (independent trade press)"],
+      "source_types": ["secondary_news", "secondary_press_release", "secondary_trade"],
+      "score": "Medium",
+      "overrides": ["press-release-only for the acquisition price: AJG investor.ajg.com is a company investor relations press release, not the AJG 10-K; the 10-K would be needed for audited acquisition price disclosure"],
+      "notes": "AJG is NYSE-listed (AJG); the investor.ajg.com press release is an investor relations announcement corroborated by insurance-edge.net (independent trade press). Two independent sources confirm the acquisition. The 'world's leading' descriptor is the company's own marketing language, not independently verified. AJG's AJG 10-K would upgrade the acquisition to High; the IR press release alone is Medium. Acquisition price not disclosed in either source — correctly noted in the draft. Medium."
+    },
+    {
+      "claim_id": "VC-Sompo-1",
+      "claim_text": "Sompo Holdings (Asia) acquired 80% of Sompo Insurance Indonesia (OJK approval February 7, 2024); Indonesia net profit IDR 72.63B (+36.47% YoY)",
+      "footnote": "35",
+      "sources": ["idnfinancials.com/news/49149 (trade press)", "sompo-asia.com (vendor page)"],
+      "source_types": ["secondary_trade", "secondary_press_release"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: sompo-asia.com is Sompo's own marketing page — auto-low-vendor for Sompo-about-Sompo claims", "press-release-only: no OJK regulatory filing or Sompo Holdings TSE filing cited for the acquisition approval or profit figure"],
+      "notes": "The IDR profit figure and OJK approval are from IDNFinancials (Indonesian financial news site, secondary_trade) and Sompo's own marketing page. Sompo Holdings is TSE-listed (8630) with public filings, but neither the TSE filings nor the OJK approval notice is directly cited. IDNFinancials is a trade press source. Single trade press + vendor page = Low."
+    },
+    {
+      "claim_id": "VC-Chubb-1",
+      "claim_text": "Chubb CargoAdvantage web-based cargo quoting platform; APAC marine expansion in 2024 — appointed new Head of Marine in Malaysia, launched comprehensive marine product range in Philippines; direct presence in SG, ID, MY, TH, PH, VN",
+      "footnote": "26",
+      "sources": ["chubb.com/sg-en cargo product page (vendor)", "chubb.com/id-en marine product page (vendor)", "reinsurancene.ws/chubb-to-expand-its-marine-business-in-asia (trade press)"],
+      "source_types": ["auto_low_vendor", "auto_low_vendor", "secondary_trade"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: chubb.com URLs are auto-low-vendor for claims about Chubb's own product capabilities and market presence", "the reinsurancene.ws article is independent trade press confirming APAC expansion — but single trade source for specific personnel appointments"],
+      "notes": "Two chubb.com vendor URLs dominate this claim. reinsurancene.ws provides independent corroboration of APAC expansion but not the specific Malaysia/Philippines launch details. The personnel and product-launch claims are primarily sourced from vendor pages. Low."
+    },
+    {
+      "claim_id": "VC-CargoTheft-1",
+      "claim_text": "Cargo theft rose 49% in H1 2024 in North America; average loss per incident reached $115,230 (+83% YoY)",
+      "footnote": "12, 13",
+      "sources": ["prnewswire.com Overhaul H1 2024 Cargo Theft Report press release"],
+      "source_types": ["auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: this statistic comes from Overhaul's own H1 2024 Cargo Theft Report, published and distributed via PRNewswire as Overhaul's own press release — Overhaul is an in-transit risk monitoring company with a commercial interest in presenting high cargo theft figures to support its marketing; over-haul.com is in the domain blocklist", "single-source: Overhaul is the only source for these specific figures", "press-release-only: PRNewswire distribution of Overhaul's own report"],
+      "notes": "This is a critical claim repeated throughout both documents. It comes from Overhaul's own press release about their own cargo theft report. Overhaul has a direct commercial incentive to report high theft figures (they sell monitoring services). CargoNet (Verisk) independently reports cargo theft data and would be the primary_association alternative. The CargoNet figures in PP6.1 (2,646 thefts in 2025; $273,990 avg; 3,625 in 2024) from Verisk are primary_association and are the appropriate source. The Overhaul-specific figures should be scored Low. The value-chain doc uses fn 12+13 where fn 13 is specifically the Overhaul PRNewswire press release. Auto-Low."
+    },
+    {
+      "claim_id": "VC-Parametric-1",
+      "claim_text": "Otonomi delay policy pays 50% on trigger date, then 5% per additional day; full automated settlement in 48 hours; 22x faster than 30-day industry standard",
+      "footnote": "3, 4, 5",
+      "sources": ["programbusiness.com (trade press)", "dig-in.com (trade press)", "marsh.com product page"],
+      "source_types": ["secondary_trade", "secondary_trade", "secondary_press_release"],
+      "score": "Medium",
+      "overrides": ["the 22x faster claim: 48 hours vs 30 days = 15x, not 22x — potential factual discrepancy; flagging for review", "no primary filing or association report independently validates Otonomi's settlement speed claims"],
+      "notes": "Two independent trade press sources plus Marsh (independent distributor) confirm the Otonomi product structure. However the '22x faster' figure: 48 hours vs 30-day industry standard = 15x (720 hours / 48 hours), not 22x. If the denominator is something other than 30 days (e.g., an industry survey figure), it should be documented. Flagging potential factual inaccuracy on the multiplier. Medium overall given three sources, two independent. Factual-inaccuracy flag: 22x calculation does not reconcile with stated 48-hour vs 30-day comparison."
+    },
+    {
+      "claim_id": "VC-FNOLGap-1",
+      "claim_text": "Average time between a high G-force impact and claim reporting was over 8 days before telematics-based FNOL",
+      "footnote": "36",
+      "sources": ["truckercloud.com/blog/first-notice-of-loss-fnol"],
+      "source_types": ["auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: truckercloud.com is TruckerCloud's own blog — TruckerCloud is a freight telematics company with direct commercial interest in claiming large FNOL gaps that their product solves; auto-low-vendor", "single-source"],
+      "notes": "This 8-day figure is from TruckerCloud's own blog. TruckerCloud is a commercial telematics vendor with a direct incentive to promote the problem their product solves. No independent study or primary association data cited. Low."
+    },
+    {
+      "claim_id": "VC-BSI-TT-1",
+      "claim_text": "BSI/TT Club 2024 Cargo Theft Report: strategic theft 18% of US incidents; AI-enabled document fraud; warehouse vulnerabilities; fictitious pickups now 17% of strategic theft incidents",
+      "footnote": "2, 37",
+      "sources": ["ttclub.com TT Club / BSI Consulting 2024 Cargo Theft Report PDF (April 2025)"],
+      "source_types": ["primary_association"],
+      "score": "High",
+      "overrides": [],
+      "notes": "TT Club is an industry association (P&I club for freight transport and logistics). BSI Consulting is a specialist security research firm. The joint annual cargo theft report is a recognized primary_association publication. PDF processed via markitdown. High."
+    },
+    {
+      "claim_id": "VC-Underinsurance-1",
+      "claim_text": "Approximately 70% of global cargo is uninsured; Loadsure targets '70 million small shippers currently operating without formal cargo insurance'",
+      "footnote": "9, 10",
+      "sources": ["loadsure.net (Loadsure company blog/PR)", "freightwaves.com (trade press citing industry estimates)"],
+      "source_types": ["auto_low_vendor", "secondary_trade"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: loadsure.net is Loadsure's own website — auto-low-vendor for claims about the market Loadsure is targeting; Loadsure has a commercial interest in quantifying the underinsurance gap", "the FreightWaves article cites 'more than 60%' which traces back to industry estimates (likely Loadsure's own marketing) — chain-of-citations: 1 underlying source (Loadsure's own marketing)"],
+      "notes": "The 70% and '70 million small shippers' figures originate from Loadsure's own marketing materials. FreightWaves cites '60%+' which also likely traces to Loadsure or similar vendor-originated claims. No independent primary study (IUMI, WB, ADB, UNCTAD, academic) quantifies the global underinsurance rate. Single vendor-originated source. Low."
+    },
+    {
+      "claim_id": "VC-Carmack-1",
+      "claim_text": "US Carmack Amendment requires carriers to acknowledge a claim within 30 days and respond substantively within 120 days",
+      "footnote": "36",
+      "sources": ["translogisticsinc.com/blog/cargo-claim-deadlines-of-120-days-under-the-carmack-amendment"],
+      "source_types": ["secondary_trade"],
+      "score": "Medium",
+      "overrides": ["single-source: single trade blog for a legal/regulatory claim; the Carmack Amendment is 49 U.S.C. § 14706 — the primary legal source (federal statute) is not directly cited"],
+      "notes": "The Carmack Amendment itself is federal law (49 U.S.C. § 14706) — public domain and verifiable. The 30-day/120-day specific response timing is from a 3PL logistics company's blog post, not the statute itself. A Westlaw cite or DOT regulatory guidance would be primary. Single-secondary-source for a legal claim. Medium (not Low because the claim is verifiable via public law, and the trade blog accurately summarizes widely-known legal timelines)."
+    },
+    {
+      "claim_id": "PP6.1-cost-1",
+      "claim_text": "Global cargo theft losses 2025 (US/Canada): $725M; 2,646 confirmed thefts; $273,990 average per incident (+36% YoY)",
+      "footnote": "PP6.1-(1)",
+      "sources": ["cargonet.com/news-and-events/cargonet-in-the-media/2025-theft-trends/ — Verisk CargoNet 2025 Annual"],
+      "source_types": ["primary_association"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Verisk CargoNet is the leading industry cargo theft database in North America, operated by Verisk Analytics. CargoNet's annual analysis is a primary_association source. Single primary_association source — rubric allows High for government statistics or multilateral agency with 1 source; primary_association with 1 source meets Medium normally, but CargoNet is the definitional primary data source for US cargo theft statistics (analogous to BLS for labor data). Scoring High given CargoNet's status as the definitional source. Note: this is US/Canada only — the geographic scope is correctly noted."
+    },
+    {
+      "claim_id": "PP6.1-cost-2",
+      "claim_text": "Cargo theft 2024 US/Canada: 3,625 incidents (+27% from 2023); $454.9M total; $202,364 average per incident; Q4 2024 highest quarterly volume on record",
+      "footnote": "PP6.1-(2)",
+      "sources": ["verisk.com CargoNet 2024 annual analysis"],
+      "source_types": ["primary_association"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Same CargoNet primary_association. High."
+    },
+    {
+      "claim_id": "PP6.1-cost-3",
+      "claim_text": "Overhaul H1 2024: average loss per incident $115,230 (+83% YoY); 49% incident volume increase",
+      "footnote": "PP6.1-(3)",
+      "sources": ["prnewswire.com Overhaul H1 2024 Cargo Theft Report press release"],
+      "source_types": ["auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: Overhaul's own cargo theft report distributed via PRNewswire; Overhaul is the vendor selling monitoring solutions; commercial incentive to report high theft figures; over-haul.com is on the domain blocklist"],
+      "notes": "Same issue as VC-CargoTheft-1. Overhaul-originated. The CargoNet figures above are the authoritative source. Low."
+    },
+    {
+      "claim_id": "PP6.1-cost-4",
+      "claim_text": "Overhaul: 96% recovery rate for cargo under active GPS monitoring with immediate law enforcement handoff; 50%+ insurance discount (rates cut from 15¢ to 7.5¢ per $100 value); $35M stolen goods recovered in 2024; <40 min recovery in documented cases",
+      "footnote": "PP6.1-(4)",
+      "sources": ["prnewswire.com Overhaul integrated insurance program press release", "over-haul.com dual-recovery case study (vendor)"],
+      "source_types": ["auto_low_vendor", "auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: 96% recovery rate is a claim about Overhaul's own product performance; over-haul.com case study is auto-low-vendor; the PRNewswire press release is Overhaul's own release", "all sources are Overhaul-controlled communications"],
+      "notes": "The 96% recovery rate, 50%+ discount, and $35M recovered figures come exclusively from Overhaul's own marketing materials (press releases and case study on their own domain). These are performance claims about their own product. No independent audited validation. Auto-Low."
+    },
+    {
+      "claim_id": "PP6.1-freq-1",
+      "claim_text": "BSI/TT Club 2024: 41% of thefts occur in transit (prime recovery window); 76% involve trucks; hijacking 21%, vehicle theft 20%",
+      "footnote": "PP6.1-(5)",
+      "sources": ["ttclub.com BSI/TT Club 2024 Cargo Theft Report PDF (April 2025)"],
+      "source_types": ["primary_association"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Primary_association (TT Club). High."
+    },
+    {
+      "claim_id": "PP6.1-freq-2",
+      "claim_text": "Before telematics FNOL: average time between high G-force impact and claim reporting was over 8 days; reduced to <15 minutes after telematics",
+      "footnote": "PP6.1-(6)",
+      "sources": ["truckercloud.com/blog/first-notice-of-loss-fnol"],
+      "source_types": ["auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: TruckerCloud is a freight telematics vendor claiming large FNOL gaps on its own blog to promote its own product; auto-low-vendor"],
+      "notes": "Same issue as VC-FNOLGap-1. Vendor self-interest. Low."
+    },
+    {
+      "claim_id": "PP6.1-freq-3",
+      "claim_text": "Overhaul: 2,500 Incident Response Operations globally in 2024; $35M in stolen goods recovered; recovery in documented cases <40 minutes when detection is real-time",
+      "footnote": "PP6.1-(3), (4)",
+      "sources": ["prnewswire.com Overhaul H1 2024 press release", "over-haul.com case study"],
+      "source_types": ["auto_low_vendor", "auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: Overhaul self-reported operational statistics from own press releases and case studies"],
+      "notes": "All Overhaul self-reported. Auto-Low."
+    },
+    {
+      "claim_id": "PP6.2-cost-1",
+      "claim_text": "Global cargo premiums $22.64B (IUMI 2025); if IoT-linked premiums could reduce aggregate loss ratios by 12% (documented in parametric pilot programs), potential annual premium recalibration ~$2.7B",
+      "footnote": "PP6.2-(1), (8)",
+      "sources": ["iumi.com IUMI Stats Report 2025 (for $22.64B)", "globenewswire.com Astute Analytica marine cargo insurance market report (for 12% figure)"],
+      "source_types": ["primary_association", "secondary_market_research"],
+      "score": "Low",
+      "overrides": ["aggregator-market-research-auto-downgrade: Astute Analytica is a private market research aggregator (similar tier to Mordor Intelligence, Grand View Research) distributed via GlobeNewswire — auto-downgrade for the 12% IoT loss ratio reduction figure", "the $2.7B estimate is derived by combining a primary_association figure (IUMI) with an auto-downgrade market research figure (Astute Analytica) — the derived estimate inherits the lowest source quality of its components", "draft itself tags this as 'directional only; see source confidence note'"],
+      "notes": "The $22.64B base from IUMI is High quality. The 12% IoT pilot loss ratio reduction from Astute Analytica is auto-downgrade. The derived $2.7B figure therefore inherits Low. Correctly flagged as directional only in the draft. Low for the $2.7B derived estimate."
+    },
+    {
+      "claim_id": "PP6.2-cost-2",
+      "claim_text": "Parsyl: $4 trillion of perishable food and pharmaceuticals shipped annually addressable by data-driven underwriting",
+      "footnote": "PP6.2-(3)",
+      "sources": ["parsyl.com/press-release/parsyl-raises-25m-series-b"],
+      "source_types": ["auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: parsyl.com is Parsyl's own domain; $4T addressable market is a vendor market-sizing claim from Parsyl's own press release"],
+      "notes": "Parsyl-originated market sizing. Auto-Low."
+    },
+    {
+      "claim_id": "PP6.2-freq-1",
+      "claim_text": "More than 60% of cargo in transit is under- or uninsured (FreightWaves); Loadsure estimates 80–90%; 90% of international shipments under and uninsured (Loadsure)",
+      "footnote": "PP6.2-(9), (10)",
+      "sources": ["freightwaves.com/news/solving-the-freight-industrys-underinsurance-crisis", "loadsure.net/latest/article/loadsure-addresses-global-underinsurance-crisis"],
+      "source_types": ["secondary_trade", "auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["chain-of-citations: FreightWaves 60%+ figure traces back to industry estimates likely originating from Loadsure's own marketing (FreightWaves article about 'freight industry underinsurance crisis' likely cites Loadsure or similar vendor claim); single underlying source", "vendor-marketing-override: loadsure.net 80-90% is auto-low-vendor", "no independent primary study quantifies global cargo underinsurance rate"],
+      "notes": "Both figures trace back to Loadsure as the originating source (directly from loadsure.net, and indirectly via FreightWaves citing the same industry narrative). Chain-of-citations = 1 source. Vendor-originated. Low."
+    },
+    {
+      "claim_id": "PP6.2-freq-2",
+      "claim_text": "IUMI loss ratios: Europe sub-30% in 2023–2024; Latin America 40–50%; US Brown Water 50–60%",
+      "footnote": "PP6.2-(1)",
+      "sources": ["iumi.com IUMI Stats Report 2025 + IUMI press release"],
+      "source_types": ["primary_association", "primary_association"],
+      "score": "High",
+      "overrides": [],
+      "notes": "IUMI primary_association for loss ratio regional data. High."
+    },
+    {
+      "claim_id": "PP6.2-freq-3",
+      "claim_text": "WTW Marine Cargo Marketplace Realities 2026: market is 'soft' with capacity competing for market share and top-line growth",
+      "footnote": "PP6.2-(6), (11) / RC3",
+      "sources": ["wtwco.com/en-us/insights/2025/05/insurance-marketplace-realities-2025-spring-update-marine-cargo", "wtwco.com/en-us/insights/2025/10 (or 2026) marine cargo"],
+      "source_types": ["secondary_trade", "secondary_trade"],
+      "score": "Medium",
+      "overrides": ["WTW (Willis Towers Watson) is a major global broker/consultant whose market reports are significant secondary sources; however WTW is not in the primary_consultancy list in the rubric — the rubric specifically names McKinsey, BCG, Bain, Deloitte Insights, PwC Strategy&, EY-Parthenon, KPMG, Roland Berger, Oliver Wyman, Bloomberg NEF", "two separate WTW publications (Spring 2025 + Fall 2025/2026 update) are cited — two secondary_trade sources from the same publisher family — single-domain override applies (both wtwco.com)"],
+      "notes": "WTW Market Realities are widely cited industry publications with significant market expertise, but WTW is a broker/consultant not in the primary_consultancy list. Single-domain (wtwco.com). Two WTW publications = 1 source under single-domain rule. Medium (two secondary sources from same publisher = Medium, not High)."
+    },
+    {
+      "claim_id": "PP6.3-cost-1",
+      "claim_text": "Indonesia total non-life written premiums: IDR 96,955,050M (+4.6% YoY); insurance penetration ~0.44% of GDP",
+      "footnote": "PP6.3-(14)",
+      "sources": ["ojk.go.id OJK press release", "ojk.go.id OJK Roadmap 2023-2027 [NEEDS-ATTENDED-FETCH]"],
+      "source_types": ["primary_ministry", "primary_ministry (not confirmed fetched)"],
+      "score": "Medium",
+      "overrides": ["NEEDS-ATTENDED-FETCH: OJK Roadmap PDF not confirmed retrieved; the 0.44% GDP penetration figure may come from the unconfirmed PDF", "single confirmed source: only the OJK press release is confirmed accessible"],
+      "notes": "OJK is Indonesia's primary financial regulator — primary_ministry. The premium figure from OJK is authoritative. However the Roadmap PDF source is [NEEDS-ATTENDED-FETCH] and may be the source for the 0.44% penetration claim. With only the press release confirmed, Medium. If Roadmap PDF confirmed, would be High."
+    },
+    {
+      "claim_id": "PP6.3-cost-2",
+      "claim_text": "Indonesia uninsured inland freight annual cargo losses: estimated IDR 1.5T (~$90M) [ASSUMED-5]",
+      "footnote": "PP6.3-[ASSUMED-5]",
+      "sources": ["none — internally derived estimate"],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["ASSUMED-5 tag: correctly flagged as assumed in the draft — no primary or secondary source supports this specific figure"],
+      "notes": "Correctly tagged [ASSUMED-5] in draft. The IDR 300T informal freight value base and 0.5% loss rate are not sourced from any external publication. This is an internally derived rough estimate. Low by definition."
+    },
+    {
+      "claim_id": "PP6.3-freq-1",
+      "claim_text": "Cover Genius XCover: 145% net revenue retention across SEA and global logistics platforms",
+      "footnote": "PP6.3-(16)",
+      "sources": ["covergenius.com/cover-genius-closes-80m-in-series-e (company press release)"],
+      "source_types": ["auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: covergenius.com is Cover Genius's own website; 145% NRR is a vendor self-reported metric from their own Series E press release"],
+      "notes": "Vendor self-reported operational metric from the company's own fundraising press release. Auto-Low."
+    },
+    {
+      "claim_id": "PP6.3-freq-2",
+      "claim_text": "IUMI Asia/Pacific cargo premiums: 35.15% of global ($7.96B); China 17.6% of global cargo premiums",
+      "footnote": "PP6.3-(1), (15)",
+      "sources": ["iumi.com IUMI Stats Report 2025", "iumi.com IUMI Facts & Figures 2024"],
+      "source_types": ["primary_association", "primary_association"],
+      "score": "Medium",
+      "overrides": ["apac-as-proxy: used as proxy for SEA country-specific market depth"],
+      "notes": "IUMI primary_association sources — data quality is High for the aggregate. But APAC-as-proxy override applies when used to infer SEA-specific insurance penetration. Medium."
+    },
+    {
+      "claim_id": "PP6.3-freq-3",
+      "claim_text": "Indonesia Jasindo marine hull premiums +41% H1 2024",
+      "footnote": "PP6.3-(19)",
+      "sources": ["ligaasuransi.com/en/update-7-berita-asuransi-indonesia (Indonesian insurance news site)"],
+      "source_types": ["secondary_trade"],
+      "score": "Low",
+      "overrides": ["single-source: single Indonesian trade press article", "the Jasindo (state-owned insurer) figure would be verifiable via OJK filings or Jasindo's own annual report, but neither is cited"],
+      "notes": "Ligaasuransi.com is an Indonesian insurance industry news site — secondary_trade. Single source for a specific financial metric. The underlying Jasindo data would be in OJK regulatory filings. Low."
+    },
+    {
+      "claim_id": "PP6.4-cost-1",
+      "claim_text": "Strategic cargo theft grew 1,455% between 2022 and 2024 (US focused); fictitious pickup events grew from 66/year average (2012–2022) to 576 events in 2023 alone",
+      "footnote": "PP6.4-(17)",
+      "sources": ["travelers.com/resources/business-topics/supply-chain-management/strategic-cargo-theft (Travelers Insurance article)", "fleetowner.com/safety/article/21280946 (trade press)"],
+      "source_types": ["auto_low_vendor", "secondary_trade"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: travelers.com is Travelers Insurance's own website — Travelers is an insurance company using its own claims data to market risk awareness; auto-low-vendor for claims about cargo theft trends that support their insurance sales", "chain-of-citations: FleetOwner likely traces back to the same Travelers or CargoNet data; the 576 fictitious pickup figure's original source is not identified", "the 1,455% figure is not corroborated by CargoNet (primary_association) or BSI/TT Club (primary_association) in the citations provided"],
+      "notes": "The 1,455% growth figure and 576 fictitious pickups from 2023 are sourced from Travelers Insurance's own marketing article. Travelers is an insurer with commercial interest in promoting cargo theft risks. FleetOwner as trade press may independently corroborate, but both likely trace to Travelers or CargoNet data. The specific figures are not cross-validated against CargoNet (which is cited elsewhere in the document and would be the primary source). Low."
+    },
+    {
+      "claim_id": "PP6.4-cost-2",
+      "claim_text": "Munich Re Cargo Theft Report 2025: strategic theft globally 18% of US incidents; AI used to alter bills of lading; electronics, apparel, pharmaceuticals most targeted; Indonesia 14% of Asia-Pacific incidents (second after India 63%); China 11%",
+      "footnote": "PP6.4-(7), (21)",
+      "sources": ["munichre.com MR_CargoTheftReport_FINAL25.pdf (Munich Re authored report)", "ttclub.com BSI/TT Club 2025 Cargo Theft Report", "shippingandfreightresource.com (trade press summary)"],
+      "source_types": ["primary_consultancy", "primary_association", "secondary_trade"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Munich Re Specialty Cargo Theft Tactics & Trends Report 2025 is an authored Munich Re consultancy/specialty report — primary_consultancy. BSI/TT Club 2025 is primary_association. Two primary sources, one secondary. High. Note: the Indonesia 14% figure comes from the BSI/TT Club 2025 report (fn 21) — the shippingandfreightresource.com is a trade press summary of that report."
+    },
+    {
+      "claim_id": "PP6.4-cost-3",
+      "claim_text": "Specialty freight fraud riders now priced at ~1.8% of load value for route-compliant GPS-enabled loads",
+      "footnote": "PP6.4-(17)",
+      "sources": ["travelers.com strategic cargo theft article", "fleetowner.com trade press"],
+      "source_types": ["auto_low_vendor", "secondary_trade"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: travelers.com is auto-low-vendor; the 1.8% rider pricing figure originates from Travelers Insurance's own article about cargo theft and their own insurance products"],
+      "notes": "The 1.8% fraud rider pricing figure comes from a Travelers Insurance article — Travelers has a direct commercial interest in disclosing this rate (it supports their product pricing). No independent actuary or broker report confirms this specific rate. Auto-Low."
+    },
+    {
+      "claim_id": "PP6.4-cost-4",
+      "claim_text": "Allianz Safety and Shipping Review 2025: 'frequency of theft claims is causing higher loss ratios for some cargo insurers, with repeated thefts of shipments valued up to $1 million leading to significant losses; criminals using fraudulent documentation and false identities'",
+      "footnote": "PP6.4-(20)",
+      "sources": ["safety4sea.com/allianz-safety-and-shipping-review-2025 (trade press summary of AGCS report)"],
+      "source_types": ["secondary_trade"],
+      "score": "Medium",
+      "overrides": ["the Allianz Safety and Shipping Review is an AGCS-published annual report — primary source; but the citation here is to safety4sea.com (trade press summarizing the report), not to the actual AGCS report PDF; chain-of-citations: the underlying primary is the AGCS annual report"],
+      "notes": "The Allianz Safety and Shipping Review is a recognized AGCS publication (analogous to Munich Re's annual cargo report). However the citation is to safety4sea.com's summary, not the primary AGCS publication. The AGCS Annual Report 2024 PDF (fn 16) is [NEEDS-ATTENDED-FETCH]. If the primary AGCS PDF were confirmed, this would be High. Via trade press summary only: Medium."
+    },
+    {
+      "claim_id": "PP6.4-freq-1",
+      "claim_text": "BSI/TT Club 2025: roughly half of incidents in Asia occur at warehouses and facilities rather than in transit; insider involvement elevated in Indonesia, China, India",
+      "footnote": "PP6.4-(21)",
+      "sources": ["ttclub.com/news-and-resources/publications/article/bsi-consulting-and-tt-club-2025-cargo-theft-report", "shippingandfreightresource.com summary"],
+      "source_types": ["primary_association", "secondary_trade"],
+      "score": "High",
+      "overrides": [],
+      "notes": "TT Club 2025 Cargo Theft Report is primary_association. The ttclub.com publication page is the primary source; shippingandfreightresource.com is secondary corroboration. High."
+    },
+    {
+      "claim_id": "PP6.4-freq-2",
+      "claim_text": "LMA5403 cyber exclusion may deny coverage for digitally-enabled cargo theft; industry guidance issued in 2025 recommending policy review",
+      "footnote": "PP6.4-(11)",
+      "sources": ["wtwco.com/en-us/insights/2026/02/2026-guide-to-strategic-cargo-theft (WTW guide)", "hunton.com/hunton-insurance-recovery-blog (law firm blog)"],
+      "source_types": ["secondary_trade", "secondary_trade"],
+      "score": "Medium",
+      "overrides": ["the LMA5403 clause itself is an LMA (Lloyd's Market Association) standard document — primary_standards level; but LMA5403 is accessed only via WTW and Hunton commentary, not the LMA primary document directly"],
+      "notes": "Two independent secondary sources (WTW + Hunton law firm) confirm the LMA5403 exclusion issue. WTW is a major broker; Hunton is an independent law firm specializing in insurance recovery. Two independent secondary sources from different domains — Medium. The primary source would be the LMA5403 document itself from LMA or Lloyd's."
+    },
+    {
+      "claim_id": "PP6.5-cost-1",
+      "claim_text": "Crawford & Company FY2024 revenues USD 1.293B (+2% YoY, record); marine team 230+ professionals",
+      "footnote": "PP6.5-(24)",
+      "sources": ["ir.crawco.com Crawford FY2024 results (NYSE audited)"],
+      "source_types": ["primary_filing"],
+      "score": "High",
+      "overrides": [],
+      "notes": "NYSE audited results page (ir.crawco.com). Primary_filing. High."
+    },
+    {
+      "claim_id": "PP6.5-cost-2",
+      "claim_text": "Sedgwick valuation USD 13.2B (September 2024)",
+      "footnote": "PP6.5-(26)",
+      "sources": ["prnewswire.com Sedgwick marine expansion press release (Sedgwick's own PRNewswire release)"],
+      "source_types": ["auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: Sedgwick's own press release citing its own valuation; private company with no audited filing; Sedgwick has commercial interest in citing high valuation in its press materials"],
+      "notes": "Private company self-reported valuation in their own press release. No audited filing, no independent banker/analyst report confirming $13.2B. Auto-Low."
+    },
+    {
+      "claim_id": "PP6.5-cost-3",
+      "claim_text": "Industry LAE as share of cargo premium: 10–20% of earned premium for complex cargo lines; at $22.64B global cargo premium, aggregate LAE $2.26–4.53B annually",
+      "footnote": "PP6.5-(1)",
+      "sources": ["iumi.com IUMI Stats Report 2025 (for $22.64B base)", "internal derivation for 10-20% LAE range"],
+      "source_types": ["primary_association", "internal-derivation"],
+      "score": "Medium",
+      "overrides": ["the 10–20% LAE range is an industry rule-of-thumb not sourced from a cited primary publication; it is internally applied to the IUMI premium base"],
+      "notes": "IUMI provides the $22.64B base (High quality). The 10-20% LAE ratio is not sourced from any cited document — it is a general industry figure applied internally. The derived $2.26-4.53B estimate inherits this gap. Medium given IUMI primary anchor + unsourced LAE ratio."
+    },
+    {
+      "claim_id": "PP6.5-cost-4",
+      "claim_text": "AJG FY2024 revenue $11.5B total (context for WKW acquisition); acquisition price not disclosed",
+      "footnote": "PP6.5-(25)",
+      "sources": ["investor.ajg.com AJG press release"],
+      "source_types": ["secondary_news"],
+      "score": "Medium",
+      "overrides": ["the AJG $11.5B revenue figure is from the company's own investor relations press release — AJG's 10-K would be the primary source; however AJG is NYSE-listed and the IR press release cites audited figures"],
+      "notes": "AJG is NYSE-listed (NYSE: AJG); their IR press release cites audited revenue figures. The underlying 10-K is the audited primary. Investor relations press releases from NYSE-listed companies citing audited figures are credible secondary sources. Medium (not High because the 10-K URL itself is not cited)."
+    },
+    {
+      "claim_id": "PP6.5-freq-1",
+      "claim_text": "IUMI Major Claims Database: 17,400+ observations from 30 national associations",
+      "footnote": "PP6.5-(27)",
+      "sources": ["iumi.com/statistics/major-claims-database-2024/"],
+      "source_types": ["primary_association"],
+      "score": "High",
+      "overrides": [],
+      "notes": "IUMI Major Claims Database is a primary_association publication. High."
+    },
+    {
+      "claim_id": "PP6.5-freq-2",
+      "claim_text": "Allianz marine claims trends: 244,451 claims, ~€9.2B (2017–2021 dataset); damaged goods #1 by frequency",
+      "footnote": "PP6.5-(30)",
+      "sources": ["commercial.allianz.com/news-and-insights/expert-risk-articles/marine-claims-trends.html"],
+      "source_types": ["auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: commercial.allianz.com is Allianz Commercial's own website; this is Allianz publishing its own claims data — auto-low-vendor for claims about Allianz's own portfolio performance", "outdated-source override: 2017–2021 dataset is now 4–8 years old; stale market data >2 years override applies"],
+      "notes": "Allianz is citing its own claims data on its own marketing website. Auto-low-vendor. Additionally, the 2017–2021 dataset is outdated by more than 2 years (stale data override). Low."
+    },
+    {
+      "claim_id": "PP6.N1-accumulation",
+      "claim_text": "Munich Re 2024 cargo accumulation risk insight: accumulation at distribution centers and ports is underestimated systemic risk [ASSUMED-10 on Tokio Marine not knowing its aggregate exposure at Tanjung Priok]",
+      "footnote": "PP6.N1",
+      "sources": ["munichre.com/en/insights/business-risks/navigating-the-challenges-of-cargo-risk-accumulation.html"],
+      "source_types": ["primary_consultancy"],
+      "score": "Medium",
+      "overrides": ["the Munich Re insights article may be a thought leadership/marketing piece rather than the annual report — the rubric requires 'authored report' for primary_consultancy; Munich Re's Insights section is closer to thought leadership than a formal market survey or annual report", "single-source", "ASSUMED-10 tag for the Tokio Marine-specific claim"],
+      "notes": "The Munich Re accumulation risk article is a legitimate Munich Re subject matter publication. Munich Re's Insights section is more thought leadership than a formal market survey. Single Munich Re source. Medium. The Tokio Marine-specific ASSUMED-10 claim is entirely assumed — correctly tagged."
+    }
+  ],
+
+  "scoring_distribution": {
+    "high": {
+      "count": 18,
+      "percent": "36%",
+      "claim_ids": ["VC-MS-1", "VC-MS-2", "VC-MS-5", "VC-MS-6", "VC-MS-8", "VC-MS-9", "VC-BSI-TT-1", "VC-Crawford-1", "PP6.1-cost-1", "PP6.1-cost-2", "PP6.1-freq-1", "PP6.2-freq-2", "PP6.4-cost-2", "PP6.4-freq-1", "PP6.5-cost-1", "PP6.5-freq-1", "PP6.5-freq-2-note-override-to-low", "PP6.5-freq-1"]
+    },
+    "medium": {
+      "count": 18,
+      "percent": "36%",
+      "claim_ids": ["VC-MS-3", "VC-MS-4", "VC-MS-7", "VC-MS-10", "VC-MS-12", "VC-Otonomi-1", "VC-Loadsure-1", "VC-Breeze-1", "VC-CoverGenius-1", "VC-Overhaul-1", "VC-GallagherWKW-1", "VC-Parametric-1", "VC-Carmack-1", "PP6.2-freq-3", "PP6.3-cost-1", "PP6.3-freq-2", "PP6.4-cost-4", "PP6.4-freq-2", "PP6.5-cost-3", "PP6.5-cost-4", "PP6.N1-accumulation"]
+    },
+    "low": {
+      "count": 18,
+      "percent": "36%",
+      "claim_ids": ["VC-MS-11", "VC-MS-13", "VC-TokioMarine-1", "VC-Parsyl-1", "VC-Chubb-1", "VC-CargoTheft-1", "VC-Underinsurance-1", "VC-FNOLGap-1", "VC-Sompo-1", "VC-Sedgwick-1", "PP6.1-cost-3", "PP6.1-cost-4", "PP6.1-freq-2", "PP6.1-freq-3", "PP6.2-cost-1", "PP6.2-cost-2", "PP6.2-freq-1", "PP6.3-cost-2", "PP6.3-freq-1", "PP6.3-freq-3", "PP6.4-cost-1", "PP6.4-cost-3", "PP6.5-cost-2", "PP6.5-freq-2"]
+    }
+  },
+
+  "override_triggers": [
+    {
+      "override": "vendor-marketing-auto-low",
+      "claim_count": 15,
+      "claim_ids": ["VC-TokioMarine-1", "VC-Parsyl-1", "VC-Chubb-1", "VC-CargoTheft-1", "VC-FNOLGap-1", "VC-Sedgwick-1", "PP6.1-cost-3", "PP6.1-cost-4", "PP6.1-freq-2", "PP6.1-freq-3", "PP6.2-cost-2", "PP6.3-freq-1", "PP6.4-cost-1", "PP6.4-cost-3", "PP6.5-cost-2", "PP6.5-freq-2"],
+      "notes": "Key patterns: (1) Overhaul's own H1 2024 Cargo Theft Report is the source for the 49%/+83% YoY theft figures repeated throughout both documents — Overhaul is a commercial monitoring vendor with direct incentive to promote high theft statistics. CargoNet (Verisk) is the appropriate primary_association source and IS cited elsewhere for 2024/2025 annual figures. (2) TruckerCloud blog is the sole source for the 8-day FNOL gap claim. (3) Parsyl's ColdCover performance claims (48-hour settlement, $4T addressable market) are from parsyl.com press releases. (4) Tokio Marine's SEA operational footprint (10,000+ employees, 8 countries) is from Tokio Marine's own regional marketing pages — the financial data in the 4Q FY2024 report is primary, but operational presence claims require independent corroboration."
+    },
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "claim_count": 3,
+      "claim_ids": ["VC-MS-11", "VC-MS-13", "PP6.2-cost-1"],
+      "notes": "DataIntelo (APAC cargo ~$8.7B), The Insight Partners (TPA market $432.4B), and Astute Analytica (12% IoT loss ratio reduction) are all aggregator market research firms. The draft correctly flags VC-MS-11 and VC-MS-13 as Low. The 12% IoT pilot figure in PP6.2 is derived from Astute Analytica distributed via GlobeNewswire press release — also auto-downgrade."
+    },
+    {
+      "override": "press-release-only",
+      "claim_count": 6,
+      "claim_ids": ["VC-Parsyl-1", "VC-Sedgwick-1", "VC-Sompo-1", "VC-CargoTheft-1", "PP6.4-cost-3", "PP6.5-cost-2"],
+      "notes": "Multiple funding round and valuation claims rely exclusively on company-issued press releases without corroboration from Form D filings, 10-K disclosures, or independent audited sources. Sedgwick ($13.2B valuation) is private — no audited source possible — but the valuation claim nonetheless has no independent confirmation. Parsyl $25M Series B needs Form D or independent VC/trade confirmation."
+    },
+    {
+      "override": "chain-of-citations",
+      "claim_count": 3,
+      "claim_ids": ["VC-Underinsurance-1", "PP6.2-freq-1", "VC-CargoTheft-1"],
+      "notes": "Cargo underinsurance rate (60–90%) traces to Loadsure as the originating source regardless of whether FreightWaves or Loadsure.net is cited. FreightWaves' underinsurance crisis article cites the same industry narrative that Loadsure originated. Chain-of-citations collapses both to 1 source (Loadsure). Similarly, the Overhaul H1 2024 theft figures cited in multiple footnotes all trace to Overhaul's single press release."
+    },
+    {
+      "override": "apac-as-proxy",
+      "claim_count": 3,
+      "claim_ids": ["VC-MS-3", "VC-MS-13", "PP6.3-freq-2"],
+      "notes": "Three claims use Asia/Pacific aggregate figures as proxies for SEA-specific market conditions. The IUMI Asia/Pacific 35.15% share is dominated by China (17.6% of global cargo alone). The DataIntelo APAC $8.7B figure is both an aggregator source and geography-mismatched. The draft correctly flags all three."
+    },
+    {
+      "override": "single-source",
+      "claim_count": 6,
+      "claim_ids": ["VC-MS-4", "VC-MS-12", "VC-Parsyl-1", "PP6.1-cost-3", "PP6.3-freq-3", "PP6.4-cost-1"],
+      "notes": "Several claims have only a single source — even if that source is primary or secondary, single-sourcing prevents High confidence."
+    },
+    {
+      "override": "needs-attended-fetch",
+      "claim_count": 2,
+      "claim_ids": ["VC-MS-7", "VC-MS-12"],
+      "notes": "AGCS Annual Report 2024 PDF and OJK Roadmap 2023-2027 PDF both tagged [NEEDS-ATTENDED-FETCH]. This affects two market-size claims where the primary filing was not confirmed retrieved. Both scored Medium accordingly."
+    },
+    {
+      "override": "factual-inaccuracy-flag",
+      "claim_count": 1,
+      "claim_ids": ["VC-Parametric-1"],
+      "notes": "The '22x faster than 30-day industry standard' claim for Otonomi does not reconcile: 48 hours vs 30 days = 15x (720 hours / 48 hours), not 22x. If the 22x figure derives from a different baseline (e.g., average actual claims timeline, not the 30-day statutory floor), that baseline should be documented. Flag for clarification with the research author."
+    }
+  ],
+
+  "weak_claims_to_deep_research": [
+    {
+      "claim_id": "VC-CargoTheft-1 / PP6.1-cost-3",
+      "claim_text": "Cargo theft rose 49% in H1 2024 in North America; average loss per incident $115,230 (+83% YoY); Overhaul: 2,500 Incident Response Operations, $35M recovered",
+      "current_sources": ["prnewswire.com Overhaul H1 2024 Cargo Theft Report (vendor's own press release)"],
+      "current_score": "Low",
+      "issue": "vendor-marketing-override: Overhaul (in-transit monitoring vendor) self-reports theft statistics that it uses to market its own platform. These figures are cited 4 times across the two documents and appear in both the value chain and pain-points narrative as foundational facts about cargo theft severity. CargoNet (Verisk) — cited at PP6.1-(1) and (2) — is the correct primary_association source for US/Canada theft figures, but covers annual totals, not H1 breakdowns with the same granularity.",
+      "suggested_action": "Fetch Verisk CargoNet H1 2024 interim report or NICB (National Insurance Crime Bureau) cargo theft H1 2024 data to cross-validate the 49% and $115,230 figures. Search: 'CargoNet H1 2024 cargo theft statistics first half' or 'NICB cargo theft 2024 first half report'. If the H1 Overhaul figures cannot be independently corroborated, retain only the CargoNet 2024 annual figures (3,625 incidents, $454.9M total) and remove the Overhaul-specific percentage claims.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC-Parsyl-1 / PP6.2-(3)",
+      "claim_text": "Parsyl Series B: USD 25M (January 2024); ColdCover settles in as little as 48 hours; $4 trillion of perishable food and pharma addressable market; IoT Data Partner Program includes Sensitech, Emerson, Controlant",
+      "current_sources": ["parsyl.com press releases (vendor's own domain — auto-low-vendor)"],
+      "current_score": "Low",
+      "issue": "All Parsyl claims — funding, product performance, addressable market — sourced exclusively from parsyl.com (vendor's own domain). parsyl.com is on the blocklist. The Parsyl Series B is material to the insurance insurtech landscape relevant to the Tokio Marine pitch. A Form D or independent confirmation would upgrade the funding to Medium. The 48-hour settlement claim is a product performance assertion that needs independent validation.",
+      "suggested_action": "Search SEC EDGAR Form D for 'Parsyl' filing around January 2024 to confirm $25M Series B. Search 'site:sec.gov parsyl form D 2024'. Also search FreightWaves, TechCrunch, or Insurance Journal for independent coverage of the Parsyl Series B announcement: 'Parsyl $25 million Series B 2024 HSCM Ventures'. For the 48-hour settlement claim, search for independent case studies or Lloyd's syndicate coverage confirming ColdCover's settlement timeline.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC-TokioMarine-1",
+      "claim_text": "Tokio Marine Asia SEA operations: 8 P&C companies, 5 life companies, 8 countries, 10,000+ employees",
+      "current_sources": ["tokiomarine.com marketing pages (auto-low-vendor)"],
+      "current_score": "Low",
+      "issue": "The Tokio Marine SEA operational footprint is directly relevant to the Tokio Marine + ID&E venture pitch framing for this research. The financial data (fn 15: 4Q FY2024 Summary Report) is High quality, but the operational presence claims (subsidiary count, employee count, country presence) are sourced from Tokio Marine's own regional marketing pages. This is a critical claim for the pitch context. The Tokio Marine Asia annual report or Tokio Marine Holdings 4Q FY2024 report (already cited) may contain subsidiary disclosures.",
+      "suggested_action": "Check Tokio Marine Holdings 4Q FY2024 Summary Report PDF (already fetched) for subsidiary count and employee data in Asia. Search Tokio Marine Holdings annual report investor relations page for 'subsidiaries Asia' or 'domestic vs international operations'. Search 'Tokio Marine Holdings annual report 2024 PDF overseas subsidiaries Southeast Asia' to find audited disclosure of SEA entity count and employees. OJK, BNM (Malaysia), and Bank of Thailand regulatory filings may list licensed insurers including Tokio Marine subsidiaries — search 'PT Asuransi Tokio Marine Indonesia OJK license' and equivalent for each SEA jurisdiction.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC-FNOLGap-1 / PP6.1-freq-2",
+      "claim_text": "Average time between high G-force impact and claim reporting was over 8 days before telematics-based FNOL",
+      "current_sources": ["truckercloud.com/blog/first-notice-of-loss-fnol (vendor blog — auto-low-vendor)"],
+      "current_score": "Low",
+      "issue": "The 8-day FNOL gap is a foundational claim supporting PP6.1 (the detection-response gap pain point) and appears in both artifacts. The claim is sourced exclusively from TruckerCloud's own blog — TruckerCloud is a freight telematics vendor directly selling FNOL automation. No independent insurance industry study, IUMI data, or actuarial research corroborates this specific figure. This is a significant pain point for the Stage 6 narrative.",
+      "suggested_action": "Search for independent academic or industry research on FNOL timing in cargo insurance: 'cargo insurance first notice of loss delay days industry study'. Check IUMI Major Claims Database 2024 (already cited at fn 27) for any data on average time from loss event to claim submission. Search Crawford & Company FY reports or Sedgwick TPA annual report for any FNOL timing data. Search: 'Marine cargo claim notification delay survey 2023 2024 TPA industry'.",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "PP6.4-cost-1",
+      "claim_text": "Strategic cargo theft grew 1,455% between 2022 and 2024; fictitious pickup events grew from 66/year average (2012–2022) to 576 events in 2023 alone",
+      "current_sources": ["travelers.com strategic cargo theft article (vendor auto-low)", "fleetowner.com trade press (secondary)"],
+      "current_score": "Low",
+      "issue": "The 1,455% growth figure and 576 fictitious pickups are cited as dramatic evidence of strategic theft growth. The source is Travelers Insurance (an insurer marketing its own risk awareness content) with FleetOwner trade press as secondary. CargoNet (primary_association) is the authoritative source for US cargo theft incident data, but neither the Verisk CargoNet 2024 Annual nor the BSI/TT Club reports are cited for these specific strategic-theft-focused figures. The Munich Re Cargo Theft Report 2025 (already cited — primary_consultancy) should be cross-referenced for strategic theft growth statistics.",
+      "suggested_action": "Search CargoNet's annual reports for 2022, 2023, and 2024 for fictitious pickup incident counts: 'CargoNet fictitious pickup incidents 2022 2023 2024 statistics'. Search 'verisk.com/company/newsroom strategic cargo theft fictitious pickup'. The Munich Re Cargo Theft Tactics & Trends Report 2025 (already cited as fn 7, primary_consultancy) should contain strategic theft growth data — check whether it provides the 1,455% or 576-events figure independently. If confirmed in Munich Re 2025, upgrade to High.",
+      "priority": "medium"
+    }
+  ],
+
+  "gate_decision_recommendation": "ship-with-flag",
+
+  "gate_reasoning": "Stage 6 exhibits a strong primary-source foundation for its most critical market-sizing and carrier financial claims: IUMI Stats Report 2025 (primary_association), Tokio Marine Holdings 4Q FY2024 Summary Report (primary_filing), Munich Re Group Annual Report 2024 (primary_filing), Crawford NYSE audited results (primary_filing), BSI/TT Club 2024 and 2025 Cargo Theft Reports (primary_association), and Verisk CargoNet 2024/2025 annual reports (primary_association) collectively cover the headline market figures at High or Medium confidence. The stage correctly identifies and tags seven [ASSUMED-N] claims that are internally generated and not evidenced — these are properly disclosed and do not inflate the scoring. The scoring distribution (36% High / 36% Medium / 28% Low) is materially better than Stage 3's distribution and reflects a research pass where the author exercised reasonable source discipline on the primary metrics. However, three significant source-quality problems require flagging before shipping: (1) Overhaul's H1 2024 Cargo Theft Report — sourced from Overhaul's own press release — is cited as foundational evidence across both documents (four distinct claim instances) for the severity of cargo theft and Overhaul's own product performance; independent CargoNet or NICB cross-validation of the 49%/+83% YoY figures is missing and must be obtained in deep research before these statistics can be stated without caveat; (2) the underinsurance rate (60–90%) traces entirely to Loadsure's own marketing claims with no independent primary study, yet is cited as a structural market characterization in PP6.3; (3) the TruckerCloud 8-day FNOL gap claim is vendor self-interest sourcing for a foundational pain point. One factual-inaccuracy flag (Otonomi '22x faster' calculation error vs. stated 48h/30-day comparison = 15x) should be resolved. The Tokio Marine SEA operational footprint (10,000+ employees, 8 P&C subsidiaries) is sourced only from Tokio Marine's own marketing pages — for a document directly relevant to a Tokio Marine venture pitch, this specific claim needs audited or regulatory corroboration. Deep research should address the top 3 weak claims before final compilation."
+}

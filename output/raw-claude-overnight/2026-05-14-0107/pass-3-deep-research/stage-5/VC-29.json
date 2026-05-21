@@ -1,0 +1,76 @@
+{
+  "claim_id": "VC-29",
+  "outcome": "confirmed-scarce",
+  "new_confidence": "L",
+  "refined_claim_text": "[ASSUMED-N]: The global market for high-value cargo escort services is sometimes cited at ~$21B (2024); no credible primary source supports this specific figure. The nearest credible comparable — global cash-in-transit / secure logistics — is sized by independent analysts at $7.9–$47.6B depending on scope definition, with APAC representing 31–38% of the broader secure logistics market (~$15–18B APAC across all secure logistics sub-segments). The $21.3B DataIntelo figure for the narrow 'high-value cargo escort' sub-segment cannot be validated.",
+  "primary_sources_found": [
+    {
+      "url": "https://www.ibisworld.com/industry-statistics/market-size/armored-transportation-services-united-states/",
+      "category": "primary-industry-analyst",
+      "publication_date": "2025-10 (covering 2024 data)",
+      "supports_claim": false,
+      "key_data": "US armored transportation services market size: $4.3B in 2025 / grew 1.2% in 2024. US-only, not global, and covers all armored transport not just high-value cargo escort.",
+      "via_pdf_markitdown": false,
+      "note": "IBISWorld is paywalled; figure extracted from public statistics page. Global extrapolation not possible from this alone."
+    },
+    {
+      "url": "https://www.mordorintelligence.com/industry-reports/global-secure-logistics-market",
+      "category": "secondary-industry-analyst",
+      "publication_date": "2025",
+      "supports_claim": false,
+      "key_data": "Global secure logistics market valued at USD 47.62B in 2025; APAC holds 31.6% share (~$15.1B). This is the broader secure logistics category including cash management, ATM replenishment, and high-value goods transport — not specifically cargo escort.",
+      "via_pdf_markitdown": false,
+      "note": "Mordor Intelligence discloses structured methodology (BIS data, customs manifests, company filings, primary interviews). Higher confidence than DataIntelo aggregators but scope is broader than the claim."
+    },
+    {
+      "url": "https://www.expertmarketresearch.com/reports/cash-in-transit-service-market",
+      "category": "secondary-industry-analyst",
+      "publication_date": "2025",
+      "supports_claim": false,
+      "key_data": "Global cash-in-transit market: USD 7.9B in 2025 (narrow CIT-only scope); APAC fastest-growing at 5.3% CAGR. Key players: Brink's, Loomis, GardaWorld, Prosegur, Allied Universal.",
+      "via_pdf_markitdown": false,
+      "note": "Narrow CIT-only definition. $21.3B DataIntelo figure does not align with this scoping."
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2025/02/26/3032849/35146/en/Brink-s-Announces-Fourth-Quarter-and-Full-Year-2024-Results",
+      "category": "primary-company-filing",
+      "publication_date": "2025-02-26",
+      "supports_claim": false,
+      "key_data": "Brink's FY2024 total revenue: $5.01B. By geography: North America $1.65B, Latin America $1.31B, Europe $1.23B, Rest of World $823M. No cargo escort sub-segment disclosed separately; CVM (Cash & Valuables Management) is largest segment at ~72% of revenue (~$3.6B). BGS (Brink's Global Services, the high-value cargo arm) is not broken out as a standalone line.",
+      "via_pdf_markitdown": false,
+      "note": "Useful for bottom-up triangulation: if Brink's is ~15-20% of global secure logistics, implies global market ~$25-33B — consistent with Mordor's broader figure but not with DataIntelo's narrow $21.3B cargo escort claim."
+    },
+    {
+      "url": "https://www.prosegur.com/en/media/article/press/prosegur-eleva-su-beneficio-neto-consolidado-en-2024-hasta-los-7-8-millones-de-euros-y-supera-todos-los-objetivos-del-ano",
+      "category": "primary-company-filing",
+      "publication_date": "2025",
+      "supports_claim": false,
+      "key_data": "Prosegur FY2024 total sales: €4.91B. Prosegur Cash (valuables logistics): €2.09B. No cargo escort sub-segment broken out. Geographic APAC data not disclosed at sub-segment level.",
+      "via_pdf_markitdown": false,
+      "note": "Confirms Prosegur Cash is ~$2.2B equivalent — consistent with the market being spread across multiple large players, none individually approaching $21B."
+    },
+    {
+      "url": "https://www.loomis.com/en/investors/annual-report-2024",
+      "category": "primary-company-filing",
+      "publication_date": "2025",
+      "supports_claim": false,
+      "key_data": "Loomis FY2024 revenue: SEK 30,442M (~USD 2.8B at 2024 average rate). CIT + CMS = 62% of segment revenue. Asia presence is limited (Hong Kong, Dubai, Shanghai) — not a major APAC player.",
+      "via_pdf_markitdown": false,
+      "note": "Third-largest global CIT player confirms market is fragmented; APAC is not a primary region for Loomis."
+    }
+  ],
+  "searches_performed": [
+    "Brink's 10-K 2024 annual report cargo logistics revenue breakdown",
+    "global armored car services market size 2024 Freedonia IBISWorld Frost Sullivan",
+    "secure logistics market size 2024 APAC Asia Pacific revenue report",
+    "Prosegur 2024 annual report investor presentation revenue breakdown cargo security",
+    "IBISWorld armored car services industry market size revenue 2024 United States global",
+    "Brink's 2024 10-K SEC filing segment revenue cash management valuables management",
+    "high value cargo escort market size 2024 global billion",
+    "DataIntelo high-value cargo escort market report methodology",
+    "cash in transit global market size 2024 billion APAC report credible",
+    "Loomis AB 2024 annual report revenue breakdown cash-in-transit market share Asia"
+  ],
+  "categories_searched": ["primary-company-filings (Brink's, Prosegur, Loomis)", "secondary-industry-analyst (Mordor Intelligence, Expert Market Research, IBISWorld)", "search for primary-gov and primary-multilateral — none found for this specific sub-segment", "DataIntelo source origin check"],
+  "notes": "The $21.3B DataIntelo figure for 'global high-value cargo escort services' is unsupported by any credible primary source. DataIntelo is a known aggregator with no disclosed methodology, primary data collection, or auditable inputs — it cannot serve as a market anchor in external pitch materials. Three independent analytical findings follow: (1) The nearest credible adjacent market, global cash-in-transit (narrow definition), is sized at ~$7.9B by Expert Market Research or ~$16.8B by Cognitive Market Research in 2024 — both materially different from $21.3B. (2) The broader 'secure logistics' market (which includes CIT, ATM services, high-value goods transport, and related) is sized at $47.6B globally by Mordor Intelligence with disclosed methodology, APAC at ~31.6% share (~$15B). (3) Bottom-up triangulation from the four largest operators (Brink's ~$5B, Prosegur Cash ~$2.2B, GardaWorld ~$5.8B guidance, Loomis ~$2.8B) already accounts for ~$15-16B combined revenue for just the top four — implying a $21.3B global 'cargo escort' sub-segment would require these players to derive nearly 100% of revenue from that one sub-service, which contradicts their disclosed segment structures. Recommended revision: replace DataIntelo anchor with Mordor Intelligence secure logistics figure ($47.6B global / ~$15B APAC) with a note that 'high-value cargo escort is a sub-segment of secure logistics; standalone sizing is not available from credible sources.' If the claim is load-bearing for a pitch, it must be field-validated or dropped."
+}

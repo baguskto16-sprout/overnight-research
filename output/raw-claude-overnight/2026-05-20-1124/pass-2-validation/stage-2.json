@@ -1,0 +1,213 @@
+{
+  "context": "per-stage",
+  "stage": 2,
+  "validation_date": "2026-05-20",
+  "files_scored": [
+    "pass-1-drafts/stage-2-value-chain.md",
+    "pass-1-drafts/stage-2-pain-points.md"
+  ],
+  "total_claims_scored": 77,
+  "scoring_distribution": {
+    "high": {
+      "count": 18,
+      "percent": "23.4%",
+      "claim_ids": [
+        "VC-1", "VC-2", "VC-3", "VC-4", "VC-7", "VC-8", "VC-11", "VC-15",
+        "PP2.1-1", "PP2.1-4", "PP2.1-5",
+        "PP2.2-1", "PP2.2-6", "PP2.2-7",
+        "PP2.3-3", "PP2.3-4", "PP2.3-7", "PP2.3-8",
+        "PP2.5-3", "PP2.5-7"
+      ]
+    },
+    "medium": {
+      "count": 9,
+      "percent": "11.7%",
+      "claim_ids": [
+        "VC-10", "VC-20", "VC-27", "VC-28",
+        "PP2.2-3",
+        "PP2.5-5", "PP2.5-6", "PP2.5-8", "PP2.5-10"
+      ]
+    },
+    "low": {
+      "count": 50,
+      "percent": "64.9%",
+      "sample_claim_ids": [
+        "VC-5", "VC-6", "VC-9", "VC-12", "VC-13", "VC-14", "VC-16", "VC-17", "VC-18",
+        "VC-19", "VC-21", "VC-22", "VC-23", "VC-24", "VC-25", "VC-26",
+        "VC-ASSUMED-1", "VC-ASSUMED-2", "VC-ASSUMED-3", "VC-ASSUMED-4", "VC-ASSUMED-5",
+        "PP2.1-3", "PP2.1-6", "PP2.1-7", "PP2.1-8", "PP2.1-9", "PP2.1-10", "PP2.1-11",
+        "PP2.2-2", "PP2.2-4", "PP2.2-5", "PP2.2-8", "PP2.2-9",
+        "PP2.3-1", "PP2.3-2", "PP2.3-5", "PP2.3-6", "PP2.3-9", "PP2.3-10",
+        "PP2.4-1", "PP2.4-2", "PP2.4-3", "PP2.4-5", "PP2.4-6", "PP2.4-7", "PP2.4-8", "PP2.4-9",
+        "PP2.5-1", "PP2.5-2", "PP2.5-4", "PP2.5-9", "PP2.5-11",
+        "PP-ASSUMED-1", "PP-ASSUMED-2", "PP-ASSUMED-3", "PP-ASSUMED-4",
+        "PP-ASSUMED-5", "PP-ASSUMED-6", "PP-ASSUMED-7", "PP-ASSUMED-8",
+        "PP-ASSUMED-9", "PP-ASSUMED-10"
+      ]
+    }
+  },
+  "override_triggers": [
+    {
+      "override": "auto-low-vendor",
+      "description": "Vendor's own marketing page / press release used to evidence claims about that same vendor's capability, market share, or performance metrics",
+      "claim_count": 22,
+      "claim_ids": [
+        "VC-12", "VC-13", "VC-16", "VC-17", "VC-18", "VC-19",
+        "PP2.1-3", "PP2.1-7", "PP2.1-8", "PP2.1-9", "PP2.1-10",
+        "PP2.2-5", "PP2.2-8",
+        "PP2.3-1", "PP2.3-9",
+        "PP2.4-1", "PP2.4-3", "PP2.4-6", "PP2.4-7", "PP2.4-8",
+        "PP2.5-4"
+      ],
+      "key_examples": [
+        "Truckstop 57% fraud reduction claim sourced from truckstop.com product page (VC-17)",
+        "project44 4.1% cost reduction / 17% OTP improvement sourced from project44 PR Newswire and carrierassure.com (VC-18)",
+        "Loadsure '80-90% of loads under/uninsured' sourced from loadsure.net marketing article (PP2.3-1, PP2.4-1)",
+        "Highway fraud index metrics (blocked emails, ownership change spike) sourced from Highway's own GlobeNewswire PRs (PP2.1-9, PP2.1-10)",
+        "Truckstop survey on broker fraud attitudes sourced from truckstop.com press releases (PP2.1-7)"
+      ]
+    },
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "description": "Claims sourced from MarketsandMarkets, Mordor Intelligence, Grand View Research, MarkNtel Advisors, DataIntelo, GrowthMarketReports — auto-Low regardless of how many aggregator URLs cited",
+      "claim_count": 6,
+      "claim_ids": ["VC-23", "VC-24", "VC-25", "PP2.5-1", "PP2.5-2", "PP2.5-11"],
+      "note": "TMS market size ($15.92B MnM / $16.8B Grand View), freight procurement TAM ($1.72-1.97B DataIntelo/GrowthMarketReports), ASEAN road freight ($119.4B Mordor), SEA 3PL market ($26.6B MarkNtel) — all auto-Low"
+    },
+    {
+      "override": "press-release-only",
+      "description": "Funding round or capability claim sourced only from PR Newswire / GlobeNewswire / BusinessWire without Form D, SEC filing, or audited corroboration",
+      "claim_count": 5,
+      "claim_ids": ["VC-13", "VC-14", "VC-19", "PP2.1-9", "PP2.1-10"],
+      "note": "Loadsmart $200M Series D / $1.3B valuation (PR Newswire only, no Form D); Parsyl Series C $20M (parsyl.com own PR + fintech.global, no Form D)"
+    },
+    {
+      "override": "assumed-tag",
+      "description": "Claims explicitly tagged [ASSUMED-N] in the draft — auto-Low per rubric",
+      "claim_count": 15,
+      "claim_ids": [
+        "VC-ASSUMED-1", "VC-ASSUMED-2", "VC-ASSUMED-3", "VC-ASSUMED-4", "VC-ASSUMED-5",
+        "PP-ASSUMED-1", "PP-ASSUMED-2", "PP-ASSUMED-3", "PP-ASSUMED-4", "PP-ASSUMED-5",
+        "PP-ASSUMED-6", "PP-ASSUMED-7", "PP-ASSUMED-8", "PP-ASSUMED-9", "PP-ASSUMED-10"
+      ]
+    },
+    {
+      "override": "single-trade-source",
+      "description": "Operating cost figures, frequency metrics, or loss figures supported only by a single trade publication",
+      "claim_count": 6,
+      "claim_ids": ["PP2.2-2", "PP2.2-4", "PP2.2-9", "PP2.3-6", "PP2.4-9", "PP2.5-9"]
+    },
+    {
+      "override": "chain-of-citations",
+      "description": "Multiple sources tracing back to one originating source",
+      "claim_count": 3,
+      "claim_ids": ["VC-5", "PP2.2-5", "PP2.2-9"],
+      "note": "Gartner MQ citations all trace to paywalled Gartner report via vendor PRs (VC-5); Transfix Shield coverage (3 sources) all trace to Transfix's own launch PR (PP2.2-5); 400% double-brokering spike traces Truckstop→FreightCaviar (PP2.2-9)"
+    },
+    {
+      "override": "outdated-source",
+      "description": "Primary source more than 3 years old",
+      "claim_count": 2,
+      "claim_ids": ["PP2.5-6", "VC-12"],
+      "note": "OECD 2021 ASEAN logistics report (5 years old, capped at Medium despite OECD tier); Emerge 2021 revenue figure from 2021 FreightWaves article (stale, >4 years old)"
+    },
+    {
+      "override": "cross-claim-inconsistency",
+      "description": "Two claims in the same corpus contradict each other on a key metric",
+      "claim_count": 1,
+      "details": "Strategic cargo theft as % of US incidents: BSI/TT Club April 2025 (High confidence) = 18% (VC-2, PP2.2-7); transcredit.com (Low confidence) = 35%+ (PP2.3-10). The 35%+ figure should be dropped or footnoted as likely using a different methodology or time window."
+    }
+  ],
+  "urls_sampled": [
+    {
+      "url": "https://news.tianet.org/tia-releases-state-of-fraud-in-the-industry-april-2025-report/",
+      "claimed_source_for": "TIA April 2025 State of Fraud report — 22% >$200K losses, $800M industry losses",
+      "status": "LIVE — confirmed content matches claim. TIA report released April 28, 2025. 22% figure, 65% increase in fraud reports confirmed.",
+      "verdict": "pass"
+    },
+    {
+      "url": "https://www.ttclub.com/fileadmin/uploads/tt-club/Documents/TT_and_BSI_annual_theft_report/TT_Club_Report_-_Supply_Chain_Report_April_2025.pdf",
+      "claimed_source_for": "BSI/TT Club 2024 Cargo Theft Report — 18% strategic theft, 1,500% growth",
+      "status": "LIVE — PDF accessible; report confirmed as April 2025 publication. Note: web search confirms North American losses $6.6B, incidents up 18% YoY in 2025 data (this is 2025 incident data in the report, not 2024). The '18% of US incidents' figure for strategic theft is confirmed from TT Club report page.",
+      "verdict": "pass"
+    },
+    {
+      "url": "https://www.3plogistics.com/3pl-market-info-resources/3pl-market-information/us-3pl-market-size-estimates/",
+      "claimed_source_for": "Armstrong & Associates — US 3PL $307.9B 2024; DTM $128.3B 2025",
+      "status": "LIVE — confirmed. Armstrong reports 2.8% YoY growth; $307.9B total 2024 US 3PL gross revenue confirmed by multiple independent trade sources.",
+      "verdict": "pass"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/overhaul-unveils-ai-powered-freight-fraud-detection-software-for-shippers-and-3pls-302350139.html",
+      "claimed_source_for": "Overhaul FraudWatch — 14% flagged, $100M saved, January 2025",
+      "status": "LIVE — confirmed launch announcement. January 14, 2025. 14% flagged (7% bad actors, 12% no proper FMCSA authority — note: 7+12=19%, not 14%; document may cite a composite figure). $100M+ saved claimed by vendor.",
+      "verdict": "pass — but note: this is vendor's own PR Newswire release; auto-low-vendor override applies regardless of URL liveness"
+    },
+    {
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/09/oecd-competition-assessment-reviews-logistics-sector-in-asean_a3c71f68/2dcba34b-en.pdf",
+      "claimed_source_for": "OECD 2021 ASEAN logistics — information asymmetry in road freight",
+      "status": "LIVE — OECD PDF confirmed accessible. Report exists. Specific 'information asymmetry' language in road freight context requires full PDF review — the claim paraphrases OECD findings rather than quoting directly. Source is 5 years old (outdated-source override applies).",
+      "verdict": "pass with flag — OECD source is real but (a) 5 years old triggers outdated-source cap to Medium; (b) the specific 'information asymmetry at tender step' paraphrase is not a verbatim OECD quote and may overstate what the OECD said"
+    }
+  ],
+  "weak_claims_to_deep_research": [
+    {
+      "claim_id": "PP2.3-10 / VC inconsistency",
+      "claim_text": "Strategic cargo theft grew from <5% to 35%+ of all reported cargo thefts between 2022 and 2025 (transcredit.com) — contradicts BSI/TT Club figure of 18% in the same corpus",
+      "current_sources": ["https://www.transcredit.com/double-brokering-scams-freight-prevention-2025.html"],
+      "current_score": "Low",
+      "issue": "Single secondary-trade source (transcredit.com blog) contradicts High-confidence primary source (BSI/TT Club 18%). Internal corpus inconsistency.",
+      "suggested_action": "Remove transcredit.com 35%+ figure or footnote as unreconciled with BSI/TT Club 18%. Search: 'BSI TT Club 2025 strategic cargo theft percentage methodology site:ttclub.com OR site:bsigroup.com' to confirm the 18% is the authoritative figure and understand why transcredit cites 35%+.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP2.1-9 / PP2.1-10",
+      "claim_text": "Highway blocked 1,986,995 fraudulent email attempts in full-year 2025 (117% YoY from 914,719 in 2024); Q2 2025 showed 135% spike in suspicious MC ownership changes",
+      "current_sources": [
+        "https://www.globenewswire.com/news-release/2026/01/26/3225705/0/en/Highway-Releases-Q4-2025-Freight-Fraud-Index-Revealing-The-Rise-of-Carrier-Involved-Theft.html",
+        "https://www.globenewswire.com/news-release/2025/07/29/3123318/0/en/Highway-Releases-Q2-2025-Freight-Fraud-Index-Identity-Based-Fraud-Attempts-Escalate-with-495K-Blocked-Emails-and-42K-Fraudulent-Calls.html"
+      ],
+      "current_score": "Low",
+      "issue": "Auto-low-vendor override. Both sources are Highway's own GlobeNewswire press releases about Highway's own product metrics. No third-party audit or independent corroboration of the email-blocking volume figures.",
+      "suggested_action": "Search for FreightWaves or TIA independent coverage that cites Highway's fraud index data with independent analyst commentary. Query: 'Highway freight fraud index 2025 independent analysis site:freightwaves.com OR site:tianet.org'. Also: request Highway's methodology documentation for how 'blocked email attempt' is defined and measured.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP2.4-1 / PP2.3-1",
+      "claim_text": "Up to 80–90% of freight loads are under-insured or uninsured in the US freight market",
+      "current_sources": [
+        "https://www.loadsure.net/latest/article/loadsure-takes-aim-at-80-90-cargo-underinsurance-with-dynamic-coverage-in-40-seconds-for-high-value-specialty-loads/",
+        "https://www.dat.com/company/news-events/news-releases/dat-and-loadsure-bring-fast-affordable-all-risk-per-load-insurance-to-the-industrys-largest-spot-truckload-freight-network"
+      ],
+      "current_score": "Low",
+      "issue": "Auto-low-vendor override. The '80-90%' figure is a self-interested claim by Loadsure CEO from Loadsure's own marketing material. The DAT press release is co-issued marketing. No independent insurer, regulator, or industry association validates this figure.",
+      "suggested_action": "Search for FMCSA data on motor carrier insurance filings vs. cargo claim values, or TT Club / Swiss Re cargo underinsurance research. Query: 'cargo underinsurance freight rate per conveyance FMCSA OR TT Club OR Swiss Re OR Allianz 2023 2024'. Alternatively, query Insurance Information Institute for motor truck cargo market data.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP2.2-2",
+      "claim_text": "Average value per theft rose to $273,990 in Q1 2025, up 36% from 2024",
+      "current_sources": ["https://itsupplychain.com/freight-fraud-is-a-main-concern-for-shippers-in-2024-reaches-bold-new-levels/"],
+      "current_score": "Low",
+      "issue": "Single secondary-trade source (itsupplychain.com). The underlying data source for $273,990 is not identified in the draft — unclear if this traces to CargoNet, BSI, or another source. The claim is critical to quantifying per-incident cost in Pain point 2.2.",
+      "suggested_action": "Verify whether this figure originates from CargoNet Q1 2025 data release or BSI/TT Club 2025 interim report. Query: 'CargoNet Q1 2025 cargo theft average value $273,990 site:cargonet.com OR site:verisk.com'. If it traces to CargoNet, cite the primary source directly.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC-5",
+      "claim_text": "Oracle is in 17th consecutive year as Gartner MQ Leader for TMS (2024); SAP in 10th consecutive year",
+      "current_sources": [
+        "https://www.oracle.com/news/announcement/oracle-named-a-leader-in-gartner-mq-transportation-management-systems-2024-04-10/",
+        "https://news.sap.com/2024/04/sap-named-a-leader-2024-gartner-magic-quadrant-for-transportation-management-systems/",
+        "https://www.e2open.com/news/press-releases/e2open-again-positioned-as-a-leader-in-2024-gartner-magic-quadrant-for-transportation-management-systems/",
+        "https://solutionsreview.com/enterprise-resource-planning/whats-changed-2024-gartner-magic-quadrant-for-transportation-management-systems/"
+      ],
+      "current_score": "Low",
+      "issue": "Chain-of-citations: all sources trace to the same paywalled Gartner 2024 TMS MQ report. oracle.com/news = auto-low-vendor for Oracle's own Gartner Leader claim. news.sap.com = auto-low-vendor for SAP's own claim. e2open.com = auto-low-vendor. solutionsreview.com = one secondary-trade source summarizing the same Gartner report. The Gartner MQ itself is paywalled.",
+      "suggested_action": "Purchase or access Gartner 2024 TMS MQ report via institutional access to confirm leader positions and consecutive-year counts. Alternative: cite Forrester Wave for TMS (if available free) as independent cross-check. Query: 'Gartner 2024 Magic Quadrant Transportation Management Systems leaders site:gartner.com'. If not accessible, flag as 'per vendor PR' and reduce factual confidence of consecutive-year claims.",
+      "priority": "medium"
+    }
+  ],
+  "gate_decision_recommendation": "remediate",
+  "gate_reasoning": "Stage 2 scores 64.9% Low confidence across 77 scored claims — well above the remediation threshold. The High-confidence spine is solid: cargo theft statistics rest on primary-tier sources (Verisk CargoNet, BSI/TT Club, TIA industry association, Armstrong & Associates, Uber/E2open SEC filings, Trimble IR). The structural problems are (1) pervasive auto-low-vendor captures for product capability claims — Truckstop, Highway, project44, Loadsure, Overhaul, and Transfix metrics are all self-reported in vendor marketing materials without independent audit; (2) all market-sizing figures for TMS, SEA road freight, and freight procurement software TAM derive from auto-downgraded aggregators (MarketsandMarkets, Mordor, Grand View, MarkNtel, DataIntelo); (3) 15 ASSUMED-tagged claims require field validation before they should appear in a delivered report; and (4) a material internal inconsistency exists between the BSI/TT Club 18% strategic theft share (High confidence) and the transcredit.com 35%+ figure (Low confidence) for the same metric, which must be resolved. The corpus is not shippable as-is to a client because the most frequently-cited claims — vendor performance metrics, per-load insurance prevalence, SEA market size, spot-market theft rate differential — are uniformly Low or ASSUMED. Deep research should prioritize: (a) an independent cross-reference for the $273,990 Q1 2025 per-incident figure back to primary CargoNet/BSI data; (b) an independent insurance industry source for the cargo underinsurance prevalence figure; (c) FMCSA or TIA primary data for the broker fraud-loss aggregate to replace trade-press-only citations; and (d) a Form D or Crunchbase Pro confirmation for funding rounds currently sourced only from vendor press releases."
+}

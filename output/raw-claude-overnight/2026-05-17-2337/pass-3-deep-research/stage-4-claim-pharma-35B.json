@@ -1,0 +1,26 @@
+{
+  "claim_id": "VC4-PP2-pharma-35B-loss",
+  "outcome": "found-stronger-evidence",
+  "new_score": "Medium",
+  "replacement_or_supplementary_sources": [
+    {
+      "publisher": "Peli BioThermal / IQVIA Institute for Human Data Science (analytical partner)",
+      "title": "2019 Biopharma Cold-Chain Logistics Survey",
+      "url": "https://f.hubspotusercontent00.net/hubfs/4107558/PEL1046_SurveyReport_v1-QueensEnglish%5B6%5D.pdf",
+      "date": "2019",
+      "what_it_supports": "Primary PDF (fetched via markitdown): contains the $35B figure verbatim; its own footnote 4 attributes the $35B to Pharmaceutical Commerce 2018 Biopharma Cold Chain Sourcebook.",
+      "tier": "vendor-commissioned-survey-with-analytical-partner"
+    },
+    {
+      "publisher": "IQVIA",
+      "title": "Pharma's Frozen Assets — Cold Chain Medicines (White Paper)",
+      "url": "https://www.iqvia.com/library/white-papers/pharmas-frozen-assets",
+      "date": "2022",
+      "what_it_supports": "More recent IQVIA cold-chain paper (2022); focuses on ESG / carbon footprint, does not refresh the $35B loss figure.",
+      "tier": "primary"
+    }
+  ],
+  "revised_claim_text": "The biopharma industry loses an estimated $35 billion annually from failures in temperature-controlled logistics — including lost product, clinical trial costs, wasted logistics spend, and root-cause analysis — per the 2018 Pharmaceutical Commerce Biopharma Cold Chain Sourcebook, as cited in the 2019 Biopharma Cold-Chain Logistics Survey commissioned by Peli BioThermal with IQVIA Institute as analytical partner. No independent 2023–2025 update to this figure has been published; flag for refresh.",
+  "footnote_for_artifact": "Peli BioThermal / IQVIA Institute, 2019 Biopharma Cold-Chain Logistics Survey (PDF: https://f.hubspotusercontent00.net/hubfs/4107558/PEL1046_SurveyReport_v1-QueensEnglish%5B6%5D.pdf, fetched via markitdown). Underlying source attributed by Peli's footnote 4 to Pharmaceutical Commerce 2018 Biopharma Cold Chain Sourcebook.",
+  "notes": "Primary document located; attribution corrected (IQVIA is analytical partner not author; trace runs Pharmaceutical Commerce 2018 → Peli BioThermal 2019 → secondary blogs). Upgrade Low → Medium (not High because underlying figure is from a 2018 trade-press sourcebook, not a government/multilateral source). No 2023–2025 independent refresh exists. [ASSUMED-flag] for figure freshness."
+}

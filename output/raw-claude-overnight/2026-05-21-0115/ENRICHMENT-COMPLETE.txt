@@ -1,0 +1,32 @@
+Unattended Phase 2 complete.
+URLs attempted: 17 · Succeeded: 13 · Confirmed inaccessible: 4
+Tag-occurrence level (across both canonical files): 30 attempted · 25 succeeded · 5 inaccessible
+Claims upgraded: 5
+New % Low (post-enrichment): ~27.5% · Gate: ship-with-flag
+
+Detail:
+  - 3 claims Medium-High -> High (McKinsey supply-chain-risk, McKinsey last-mile, TAPA APAC)
+  - 1 claim Medium -> High (PP4.1 McKinsey 30%-beyond-Tier-1 caveat resolved)
+  - 1 claim Low-Medium -> Medium (Loadsure Lloyd's coverholder index)
+
+Inline tag substitutions applied:
+  - [NEEDS-ATTENDED-FETCH ...] -> [VERIFIED-VIA-PLAYWRIGHT-2026-05-21] (25 occurrences)
+  - [NEEDS-ATTENDED-FETCH ...] -> [CONFIRMED-INACCESSIBLE] (5 occurrences)
+  - Original source citations preserved in all cases; confidence tiers never downgraded.
+
+Structural gaps remaining (not Playwright-recoverable):
+  - ATRI Nuclear Verdicts PDF (truckingresearch.org) - Cloudflare bot protection
+  - Gartner Magic Quadrant 2025 (gartner.com/en/documents/6272683) - paywall
+  - Controlant 2024 $35M raise primary press release (controlant.com/news/) - dead slug
+  - ThinkFreight FMCSA brokerages article (thinkfreight.io) - HTTP 404
+
+Artifacts touched:
+  - raw-claude-value-chain-logistics-risk-mgmt-worldwide.md (inline tags replaced; .bak preserved)
+  - raw-claude-pain-points-logistics-risk-mgmt-worldwide.md (inline tags replaced; .bak preserved)
+  - raw-claude-summary-logistics-risk-mgmt-worldwide.md (Phase 2 section appended)
+  - checkpoint.json (auto_enrichment object added with full detail)
+  - FINAL-REPORT.html (re-rendered to 19 pages; Phase 2 page inserted before closing)
+
+Run window: 2026-05-21 04:55 - 05:01 (+08:00)
+Wall-clock used: ~6 minutes (cap was 60 minutes)
+URL budget used: 17 of 30

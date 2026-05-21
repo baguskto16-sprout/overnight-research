@@ -1,0 +1,70 @@
+{
+  "claim_id": "PP-4",
+  "outcome": "confirmed-scarce",
+  "new_confidence": "L",
+  "refined_claim_text": "Overhaul self-reports a 96% FTL cargo theft recovery rate for shipments on its platform [VENDOR-CLAIM]. Industry-cited figures of 73% recovery with real-time alerts vs. ~20% with delayed alerts trace exclusively to vendor and vendor-adjacent marketing content; no independent actuarial, government, or multilateral study corroborates the specific split. The directional claim — that faster alerting improves recovery odds — is consistent with law enforcement guidance but has no peer-reviewed or auditor-verified quantification.",
+  "primary_sources_found": [
+    {
+      "url": "https://wwd.com/sourcing-journal/logistics/cargo-theft-overhaul-supply-chain-risk-visibility-73-million-law-enforcement-1238813482/",
+      "category": "trade-press",
+      "publication_date": "2023",
+      "supports_claim": false,
+      "key_data": "Article attributes 96% FTL recovery rate solely to Overhaul's own statements ('Overhaul says it has a 96 percent recovery rate'); no independent verification cited.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://truckingresearch.org/wp-content/uploads/2025/10/ATRI-The-Fight-Against-Cargo-Theft-10-2025.pdf",
+      "category": "primary-industry-association",
+      "publication_date": "2025-10",
+      "supports_claim": false,
+      "key_data": "ATRI October 2025 report states 74% of stolen goods are never recovered (i.e., ~26% overall recovery rate across all incident types). No breakdown by alert timing or monitoring modality. Does not mention 73%/20%/96% figures.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://tapa.memberclicks.net/assets/2025-National-Cargo-Theft-Conferfence/Presentations-for-Sharing/2024%20Annual%20Verisk%20CargoNet%E2%80%99s%20Supply%20Chain%20Risk%20Report.pdf",
+      "category": "primary-industry-data",
+      "publication_date": "2025",
+      "supports_claim": false,
+      "key_data": "Verisk CargoNet 2024 annual report covers 3,625 incidents and $454M in losses. Reports incident types, geographies, and commodity trends. No recovery rate by alert timing published; full recovery-rate data is member-only.",
+      "via_pdf_markitdown": true
+    },
+    {
+      "url": "https://www.ttclub.com/fileadmin/uploads/tt-club/Documents/TT_and_BSI_annual_theft_report/TT_Club_Report_-_Supply_Chain_Report_April_2025.pdf",
+      "category": "primary-multilateral-insurer",
+      "publication_date": "2025-04",
+      "supports_claim": false,
+      "key_data": "TT Club / BSI 2024 cargo theft report discusses real-time tracking, GPS immobilizers, and monitoring-and-response best practice. Does not quantify recovery rates by alert modality; notes that criminals adapt to defeat tracking if response is slow, but gives no percentage figures.",
+      "via_pdf_markitdown": true
+    },
+    {
+      "url": "https://lasd.org/wp-content/uploads/2024/09/Publications_CargoCats_092024.pdf",
+      "category": "primary-gov",
+      "publication_date": "2024-09",
+      "supports_claim": false,
+      "key_data": "LASD Cargo CATS publishes program objectives and reporting procedures. No aggregate recovery rate statistic published. Historical cumulative figure ($485M recovered since 1990) is not comparable to a rate-by-alert-time metric.",
+      "via_pdf_markitdown": true
+    }
+  ],
+  "searches_performed": [
+    "NICB cargo theft recovery statistics 2024 rate",
+    "Verisk CargoNet cargo theft recovery rate report 2023 2024",
+    "TT Club cargo theft recovery rate real-time alert study",
+    "cargo theft recovery rate '73%' OR '96%' real-time alert monitoring",
+    "ATRI cargo theft recovery statistics trucking association report",
+    "Overhaul cargo theft '96 percent' OR '96%' recovery rate white paper press release",
+    "LA County Sheriff CATS cargo theft recovery rate statistics published",
+    "TAPA EMEA cargo theft recovery rate 2024 real-time tracking percentage",
+    "cargo theft recovery rate hours time elapsed 24 hours statistics NICB FBI",
+    "'73 percent' OR '73%' cargo theft recovery 'real-time' origin source"
+  ],
+  "categories_searched": [
+    "primary-gov (LASD CATS, FBI UCR)",
+    "primary-multilateral-insurer (TT Club/BSI 2024 report)",
+    "primary-industry-data (Verisk CargoNet 2024 annual report)",
+    "primary-industry-association (ATRI October 2025 report)",
+    "primary-insurance-bureau (NICB)",
+    "trade-press (WWD/Sourcing Journal, FreightWaves)",
+    "vendor-content (Overhaul, FleetRabbit, Tive)"
+  ],
+  "notes": "The 96% FTL recovery rate is attributable solely to Overhaul's own marketing and press releases, confirmed by direct fetch of the primary trade-press article that quotes it. The 73% (real-time alert) vs. 20% (delayed alert) split traces to FleetRabbit, a vendor blog, and is echoed by other vendor-adjacent content with no original study cited. No government agency (LASD CATS, FBI, NICB), no multilateral insurer (TT Club/BSI), no independent research house (ATRI), and no academic publication was found that quantifies cargo recovery rates by alert modality or timing. ATRI's October 2025 primary report provides the most authoritative cross-industry figure: 74% of stolen goods are never recovered industry-wide (~26% overall recovery). Verisk CargoNet's annual report covers 144 data fields on theft incidents but does not publish recovery-rate-by-alert-time data in its publicly available summary; full data is member-gated. TT Club/BSI 2024 report confirms that real-time tracking and rapid response are best-practice recommendations but provides no quantified recovery lift by modality. The directional claim that faster alerting improves recovery is credible on face and supported by law enforcement guidance, but the specific 73%/20%/96% figures cannot be corroborated from any source outside Overhaul's own assertions and derivative vendor content. Recommended revision: retain the directional point with an explicit [VENDOR-CLAIM] marker; remove or caveat the specific percentages until an independent audit or CargoNet member-data study is obtained."
+}

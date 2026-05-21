@@ -1,0 +1,1334 @@
+{
+  "stage": 1,
+  "context": "per-stage",
+  "validation_date": "2026-05-19",
+  "validator": "source-validator-agent (claude-sonnet-4-6)",
+  "source_classification": {
+    "notes": "Full classification of every unique URL cited across both stage-1 files.",
+    "entries": [
+      {
+        "ref": "VC-1 / PP-1 / PP-5 / PP-10",
+        "url": "freightwaves.com (various news articles)",
+        "category": "secondary-trade"
+      },
+      {
+        "ref": "VC-2 / PP1.3-7",
+        "url": "growthmarketreports.com",
+        "category": "secondary-market-research"
+      },
+      {
+        "ref": "VC-3 / PP1.3-19 / PP1.1-RC3",
+        "url": "carrierdetails.com/post/...",
+        "category": "secondary-trade",
+        "note": "Third-party site aggregating FMCSA data; not the FMCSA primary URL itself"
+      },
+      {
+        "ref": "VC-4 / PP1.4-29",
+        "url": "fmcsa.dot.gov",
+        "category": "primary-gov"
+      },
+      {
+        "ref": "VC-5 / PP-8",
+        "url": "cargonet.com/cargo-theft-data/",
+        "category": "auto-low-vendor",
+        "note": "CargoNet's own website; used for theft stats CargoNet itself produces \u2014 vendor marketing surface for claims about CargoNet data"
+      },
+      {
+        "ref": "VC-6 / PP-6 / PP1.2-10",
+        "url": "ttclub.com TT Club + BSI 2024 Cargo Theft Report PDF",
+        "category": "primary-association",
+        "note": "TT Club is an industry body (IATA/BIMCO tier); BSI Supply Chain is a recognized industry research body; joint report with law enforcement data inputs"
+      },
+      {
+        "ref": "VC-7 / PP-4 / PP1.2-4 / PP1.3-12",
+        "url": "tianet.org TIA State of Fraud April 2025",
+        "category": "primary-association"
+      },
+      {
+        "ref": "VC-8",
+        "url": "highway.com/press-releases/mcleod-software...",
+        "category": "auto-low-vendor"
+      },
+      {
+        "ref": "VC-9",
+        "url": "highway.com/press-releases/mvmnt-and-highway...",
+        "category": "auto-low-vendor"
+      },
+      {
+        "ref": "VC-10 / PP1.3-18 / PP1.3-27",
+        "url": "ftvcapital.com/2025/highway-secures...",
+        "category": "secondary-press-release",
+        "note": "Investor IR page announcing the investment; not an audited Form D filing"
+      },
+      {
+        "ref": "VC-11",
+        "url": "highway.com (corporate website existence only)",
+        "category": "auto-low-vendor"
+      },
+      {
+        "ref": "VC-12 / PP1.3-26",
+        "url": "globenewswire.com Descartes Acquires MyCarrierPortal",
+        "category": "secondary-press-release"
+      },
+      {
+        "ref": "VC-13",
+        "url": "descartes.com FY2025 annual financial results",
+        "category": "primary-filing",
+        "note": "Descartes is a public company (DSGX); this is investor relations financial results page"
+      },
+      {
+        "ref": "VC-14 / PP-7 / PP1.3-11",
+        "url": "descartes.com/resources/knowledge-center/protecting-your-freight-how-descartes-mycarrierportal-incident-reporting",
+        "category": "auto-low-vendor"
+      },
+      {
+        "ref": "VC-15 / PP1.4-8 / PP1.3-28",
+        "url": "mycarrierportal.com/partners/carrier-assure/",
+        "category": "auto-low-vendor"
+      },
+      {
+        "ref": "VC-16 / PP1.3-4",
+        "url": "tekpon.com/software/truckstop-rmis/reviews/",
+        "category": "secondary-trade",
+        "note": "Software review aggregator; secondary source for pricing and feature claims"
+      },
+      {
+        "ref": "VC-17",
+        "url": "truckstop.com press release (RMIS acquisition 2021)",
+        "category": "secondary-press-release"
+      },
+      {
+        "ref": "VC-18",
+        "url": "carrier411.com/overview.cfm",
+        "category": "auto-low-vendor"
+      },
+      {
+        "ref": "VC-19 / PP1.2-7 / PP-13",
+        "url": "prnewswire.com AU10TIX selected by FreightValidate Dec 2024",
+        "category": "secondary-press-release"
+      },
+      {
+        "ref": "VC-20 / PP-9 / PP1.4-3",
+        "url": "au10tix.com FreightValidate 90% theft reduction case study",
+        "category": "auto-low-vendor",
+        "note": "AU10TIX is the vendor whose product is being claimed; this is their own marketing case study for a claim about their own product's outcomes"
+      },
+      {
+        "ref": "VC-21 / PP1.2-series-c",
+        "url": "prnewswire.com Overhaul Series C Aug 2025",
+        "category": "secondary-press-release"
+      },
+      {
+        "ref": "VC-22 / PP-3 / PP1.2-3",
+        "url": "freightwaves.com/news/overhauls-fraudwatch...",
+        "category": "secondary-trade"
+      },
+      {
+        "ref": "VC-23",
+        "url": "freightwaves.com/news/2025-freightwaves-fraud-fighters-awards",
+        "category": "secondary-trade"
+      },
+      {
+        "ref": "VC-24",
+        "url": "transporeon.com/en/transporeon-platform-for-carriers",
+        "category": "auto-low-vendor"
+      },
+      {
+        "ref": "VC-25",
+        "url": "transportation.trimble.com/press-releases/trimble-completes-transporeon-acquisition",
+        "category": "secondary-press-release",
+        "note": "Vendor's own announcement of their own acquisition; no independent audited filing"
+      },
+      {
+        "ref": "VC-26",
+        "url": "cefic.org/resources/sqas/",
+        "category": "primary-association"
+      },
+      {
+        "ref": "VC-27",
+        "url": "dqsglobal.com/en/certify/sqas-assessment",
+        "category": "secondary-trade"
+      },
+      {
+        "ref": "VC-28 / PP1.2-8 / PP1.2-9 / PP1.3-10 / PP1.3-15 / PP1.3-16",
+        "url": "asiaverify.com (product + Indonesia guide)",
+        "category": "auto-low-vendor",
+        "note": "AsiaVerify's own website for claims about AsiaVerify's own capabilities and registry coverage"
+      },
+      {
+        "ref": "VC-29",
+        "url": "dealstreetasia.com/stories/indonesia-kargo-funding...",
+        "category": "secondary-news"
+      },
+      {
+        "ref": "VC-30 / PP1.3-8 / PP1.3-20",
+        "url": "techcrunch.com Logisly Series A (Nov 2020)",
+        "category": "secondary-news",
+        "note": "Also outdated: 2020 article used for 2026 claims; triggers outdated-source override"
+      },
+      {
+        "ref": "VC-31",
+        "url": "highway.com/posts/... + truckstop.com/blog/...",
+        "category": "auto-low-vendor",
+        "note": "Both vendor's own blogs; used for COI manual review and onboarding timing claims"
+      },
+      {
+        "ref": "PP-2 / PP1.3-1",
+        "url": "foreigh.com/blog/freight-fraud-deep-dive + carrier-onboarding-complete-guide",
+        "category": "secondary-trade",
+        "note": "Foreigh.com is an industry blog/trade publication; not a primary research firm"
+      },
+      {
+        "ref": "PP-11 / PP1.2-1 / PP1.2-11",
+        "url": "highway.com/posts/whats-the-hidden-risk-behind-sold-mcs...",
+        "category": "auto-low-vendor"
+      },
+      {
+        "ref": "PP-12 / PP1.4-14",
+        "url": "chrobinson.com blog",
+        "category": "secondary-trade"
+      },
+      {
+        "ref": "PP1.2-13 / PP1.4-29",
+        "url": "fincen.gov/boi-faqs",
+        "category": "primary-gov"
+      },
+      {
+        "ref": "PP1.3-9 / PP1.2-RC4",
+        "url": "documents1.worldbank.org working paper (2015)",
+        "category": "primary-multilateral",
+        "note": "World Bank working paper BUT dated 2015 \u2014 triggers outdated-source override (>3 years old)"
+      },
+      {
+        "ref": "PP1.3-17 / PP1.2-RC4-lpi",
+        "url": "worldbank.org/en/news/press-release/2023/04/21/world-bank-releases-logistics-performance-index-2023",
+        "category": "primary-multilateral"
+      },
+      {
+        "ref": "PP1.3-13 / PP1.3-21",
+        "url": "dhl.com/discover/en-id/...",
+        "category": "auto-low-vendor"
+      },
+      {
+        "ref": "PP1.4-4 / PP1.4-23",
+        "url": "dat.com/solutions/freight-broker-insurance + dat.com/blog/...",
+        "category": "secondary-trade",
+        "note": "DAT is a freight marketplace vendor; their guidance pages are vendor secondary"
+      },
+      {
+        "ref": "PP1.4-5 / PP1.4-24",
+        "url": "valleytruckinginsurance.com",
+        "category": "secondary-trade"
+      },
+      {
+        "ref": "PP1.4-9 / PP1.4-25",
+        "url": "logistiq.com/excess-cargo-insurance...",
+        "category": "secondary-trade"
+      },
+      {
+        "ref": "PP1.4-7 / PP1.4-29",
+        "url": "fmcsa.dot.gov/registration/insurance-filing-requirements",
+        "category": "primary-gov"
+      },
+      {
+        "ref": "PP1.4-22",
+        "url": "authenticate.com/resources/blog/fmcsa-rules-2025",
+        "category": "secondary-trade"
+      }
+    ]
+  },
+  "claims_scored": [
+    {
+      "claim_id": "VC-market-1",
+      "section": "Value Chain \u2014 Market Size Table",
+      "claim": "Global carrier onboarding & compliance platform market 2024: ~$1.4\u20131.5 billion",
+      "source_refs": [
+        "VC-1 (FreightWaves secondary-trade)",
+        "VC-2 (GrowthMarketReports secondary-market-research)"
+      ],
+      "score": "Low",
+      "reasoning": "VC-2 is a secondary market-research aggregator (GrowthMarketReports/MarketIntelo/DataIntelo cluster \u2014 explicitly acknowledged in the draft as sharing a common primary study, counting as 1 source). VC-1 is secondary-trade. Neither is a primary tier source. Aggregator-market-research auto-downgrade override applies. The draft itself flags this as Low. Confirmed: Low.",
+      "overrides_triggered": [
+        "aggregator-market-research-auto-downgrade",
+        "single-domain-override (all market figures trace to same research cluster)"
+      ]
+    },
+    {
+      "claim_id": "VC-market-2",
+      "section": "Value Chain \u2014 Market Size Table",
+      "claim": "North America sub-segment 2024: ~$590 million",
+      "source_refs": [
+        "VC-2 (GrowthMarketReports secondary-market-research)"
+      ],
+      "score": "Low",
+      "reasoning": "Same research cluster as VC-market-1. Aggregator auto-downgrade applies. No primary tier cross-validation.",
+      "overrides_triggered": [
+        "aggregator-market-research-auto-downgrade"
+      ]
+    },
+    {
+      "claim_id": "VC-market-3",
+      "section": "Value Chain \u2014 Market Size Table",
+      "claim": "Global market projected 2033: ~$3.8\u20134.2 billion CAGR 13\u201314%",
+      "source_refs": [
+        "VC-1 (secondary-trade)",
+        "VC-2 (secondary-market-research)"
+      ],
+      "score": "Low",
+      "reasoning": "Forecast from same aggregator cluster. Forward projections from market-research aggregators without Tier-1 cross-validation = Low per aggregator override. Trade press secondary does not rescue it.",
+      "overrides_triggered": [
+        "aggregator-market-research-auto-downgrade"
+      ]
+    },
+    {
+      "claim_id": "VC-market-4",
+      "section": "Value Chain \u2014 Market Size Table",
+      "claim": "FMCSA-registered active property brokers in US, 2023 year-end: 28,351 + 1,078 HH-goods brokers",
+      "source_refs": [
+        "VC-3 (carrierdetails.com secondary-trade, aggregating FMCSA data)"
+      ],
+      "score": "Medium",
+      "reasoning": "carrierdetails.com is a third-party site that aggregates FMCSA published statistics, not the FMCSA.gov URL itself. The underlying data is government primary (FMCSA), but the source cited is the third-party aggregator page, which is secondary-trade. A single secondary-trade source with verifiable government underlying data earns Medium (not High because the primary URL is not directly cited; not Low because the underlying government data is traceable). No override triggered.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "VC-market-5",
+      "section": "Value Chain \u2014 Market Size Table",
+      "claim": "FMCSA active USDOT-registered motor carriers, US, 2024: ~2.09 million total; ~787,000 interstate/hazmat-specific",
+      "source_refs": [
+        "VC-4 (fmcsa.dot.gov 2024 Pocket Guide \u2014 primary-gov)"
+      ],
+      "score": "Medium",
+      "reasoning": "Single government primary source (FMCSA Pocket Guide 2024 from fmcsa.dot.gov). Government statistics agency is the strongest primary tier. However, the rubric requires '2+ sources where >=1 is government statistics' for High, or '3+ independent sources AND >=1 primary' \u2014 this is a single source regardless of tier. Single source = Medium, not High. Corrected from initial draft reasoning which wavered between Medium and High.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "VC-market-6",
+      "section": "Value Chain \u2014 Market Size Table",
+      "claim": "Cargo theft losses North America 2024: $455 million+ reported; NICB estimates $35 billion total including unreported",
+      "source_refs": [
+        "VC-5 (cargonet.com auto-low-vendor)",
+        "VC-6 (TT Club/BSI primary-association)"
+      ],
+      "score": "Medium",
+      "reasoning": "VC-6 (BSI/TT Club 2024 Cargo Theft Report) is a primary-association source \u2014 a strong, independent, industry body report. VC-5 (cargonet.com) is auto-low-vendor (CargoNet's own theft data page). The NICB $35B figure is cited via AU10TIX's marketing page (auto-low-vendor) in the pain-point file. With one primary-association source (TT Club/BSI) and one auto-low-vendor, the valid independent sources = 1 primary-association. Under rubric: 2+ independent sources where \u22651 is primary required for High; one primary-association source = Medium. The NICB figure lacks a direct NICB.org citation and is only seen through vendor marketing \u2014 that figure specifically is Low. The reported $455M figure from CargoNet/TT Club combined = Medium for the reported figure.",
+      "overrides_triggered": [
+        "vendor-marketing-override (NICB figure cited only through AU10TIX marketing)"
+      ]
+    },
+    {
+      "claim_id": "VC-market-7",
+      "section": "Value Chain \u2014 Market Size Table",
+      "claim": "18% of US cargo theft incidents in 2024 are 'strategic' (fraud, impersonation, document forgery)",
+      "source_refs": [
+        "VC-6 (TT Club/BSI 2024 Cargo Theft Report \u2014 primary-association)"
+      ],
+      "score": "Medium",
+      "reasoning": "Single primary-association source (BSI/TT Club joint report, law enforcement data partnerships). Strong source tier. Single source = cannot reach High under rubric (requires 2+). Scores Medium. Draft self-assigned High, which is over-scored \u2014 the rubric requires 2+ sources for High, not just quality. Corrected to Medium.",
+      "overrides_triggered": [
+        "single-source-correction: draft claimed High but only 1 source cited even if primary-association tier"
+      ]
+    },
+    {
+      "claim_id": "VC-market-8",
+      "section": "Value Chain \u2014 Market Size Table",
+      "claim": "TIA Watchdog: 1,600+ fraud reports in Sep 2024\u2013Feb 2025; 65% increase vs prior period; 22% of broker respondents lost >$200K to fraud in 6 months",
+      "source_refs": [
+        "VC-7 (TIA State of Fraud April 2025 \u2014 primary-association)"
+      ],
+      "score": "Medium",
+      "reasoning": "Single primary-association source (TIA, an industry association primary per rubric). Strong tier but single source. Medium by source-count rule. Draft self-assigned High \u2014 same correction as above. Corrected to Medium.",
+      "overrides_triggered": [
+        "single-source-correction"
+      ]
+    },
+    {
+      "claim_id": "VC-market-9",
+      "section": "Value Chain \u2014 Market Size Table",
+      "claim": "SEA-specific market size: data gap; APAC CAGR ~16.2% from same market-research cluster",
+      "source_refs": [
+        "VC-2 (GrowthMarketReports secondary-market-research)"
+      ],
+      "score": "Low",
+      "reasoning": "APAC-as-proxy for SEA country-specific need. Geography-mismatch override applies. Secondary market-research aggregator. Auto-Low on both APAC-proxy override and aggregator override.",
+      "overrides_triggered": [
+        "apac-as-proxy (geography mismatch)",
+        "aggregator-market-research-auto-downgrade"
+      ]
+    },
+    {
+      "claim_id": "VC-sol1-highway-network",
+      "section": "Solution 1: Highway \u2014 broker network penetration (1,050+ brokers, 70 of top-100)",
+      "claim": "Highway has 1,050+ broker customers including 70 of top-100 US brokers",
+      "source_refs": [
+        "VC-1 (FreightWaves secondary-trade)",
+        "VC-8 (highway.com auto-low-vendor)",
+        "VC-9 (highway.com auto-low-vendor)",
+        "VC-10 (ftvcapital.com secondary-press-release)"
+      ],
+      "score": "Low",
+      "reasoning": "The customer count comes from Highway's own marketing (VC-8, VC-9 \u2014 auto-low-vendor for claims about Highway's own network size). VC-1 (FreightWaves) citing Highway's own press releases still traces to Highway as single underlying source. VC-10 (FTV Capital investor announcement) is the investor's own PR page, not an audited Form D. No audited filing or independent third-party verification. Vendor-marketing override applies: claim about Highway's own market position is auto-Low without \u22651 audited third-party.",
+      "overrides_triggered": [
+        "vendor-marketing-override"
+      ]
+    },
+    {
+      "claim_id": "VC-sol1-highway-funding",
+      "section": "Solution 1: Highway \u2014 FTV Capital investment Aug 2025",
+      "claim": "FTV Capital + Lead Edge Capital minority growth investment in Highway, August 2025",
+      "source_refs": [
+        "VC-10 (ftvcapital.com secondary-press-release)"
+      ],
+      "score": "Low",
+      "reasoning": "Investment announcement from investor's own IR page, not an audited Form D or SEC filing. Press-release-only override applies. Amount undisclosed. Single source.",
+      "overrides_triggered": [
+        "press-release-only-override"
+      ]
+    },
+    {
+      "claim_id": "VC-sol2-descartes-acquisition",
+      "section": "Solution 2: Descartes \u2014 acquired MyCarrierPortal for $24M + $6M earn-out, Sept 2024",
+      "claim": "Descartes acquired MyCarrierPortal September 2024 for ~$24M up-front + up to $6M earn-out",
+      "source_refs": [
+        "VC-12 (GlobeNewswire Descartes press release \u2014 secondary-press-release)",
+        "VC-13 (descartes.com FY2025 financials \u2014 primary-filing)"
+      ],
+      "score": "Medium",
+      "reasoning": "VC-13 (Descartes investor relations financial results, public company DSGX) is primary-filing tier \u2014 the acquisition would be reflected in these financials. VC-12 is a GlobeNewswire press release (secondary). Two sources including one primary-filing = Medium (primary-filing confirms the financial event; press release adds corroboration). Not High because no independent third-party auditor-confirmed figure seen, and GlobeNewswire is the vendor's own distribution channel.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "VC-sol2-descartes-revenue",
+      "section": "Solution 2: Descartes $651M FY2025 revenue",
+      "claim": "Descartes parent company had $651M FY2025 revenue",
+      "source_refs": [
+        "VC-13 (descartes.com FY2025 annual financial results \u2014 primary-filing)"
+      ],
+      "score": "Medium",
+      "reasoning": "Primary-filing source (Descartes is a public NASDAQ company; their financial results page is investor relations, equivalent to the primary filing). Single source = Medium by count rule.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "VC-sol2-mcp-incident-reporting",
+      "section": "Solution 2: MyCarrierPortal Incident Reporting feature (Feb 2024)",
+      "claim": "MyCarrierPortal launched Incident Reporting feature in February 2024",
+      "source_refs": [
+        "VC-14 (descartes.com knowledge center \u2014 auto-low-vendor)"
+      ],
+      "score": "Low",
+      "reasoning": "Descartes/MyCarrierPortal's own marketing knowledge center for a claim about their own product feature. Vendor-marketing override. Auto-Low.",
+      "overrides_triggered": [
+        "vendor-marketing-override"
+      ]
+    },
+    {
+      "claim_id": "VC-sol3-rmis-pricing",
+      "section": "Solution 3: Truckstop RMIS \u2014 Lite tier $340/month",
+      "claim": "Truckstop RMIS Lite tier priced at $340/month",
+      "source_refs": [
+        "VC-16 (tekpon.com secondary-trade \u2014 software review aggregator)"
+      ],
+      "score": "Low",
+      "reasoning": "Single secondary-trade source (Tekpon software review aggregator) for a pricing claim. Trade-press-only override for operating cost/pricing figures applies. Single source regardless.",
+      "overrides_triggered": [
+        "trade-press-only-override",
+        "single-source"
+      ]
+    },
+    {
+      "claim_id": "VC-sol3-rmis-80pct-faster",
+      "section": "Solution 3: Truckstop RMIS \u2014 80% faster carrier onboarding claim",
+      "claim": "Truckstop RMIS claims 80% faster carrier onboarding vs manual workflows",
+      "source_refs": [
+        "VC-16 (tekpon.com secondary-trade)"
+      ],
+      "score": "Low",
+      "reasoning": "Vendor efficiency claim sourced from a software review aggregator that is itself citing vendor marketing. Single secondary-trade source for a performance metric. Trade-press-only override applies. No independent audit.",
+      "overrides_triggered": [
+        "trade-press-only-override",
+        "vendor-marketing-override (downstream)"
+      ]
+    },
+    {
+      "claim_id": "VC-sol3-rmis-customers",
+      "section": "Solution 3: Truckstop RMIS \u2014 customer list (Coyote, Echo, BNSF, Penske)",
+      "claim": "RMIS powers carrier compliance for RXO, Loadsmart, Coyote Logistics, Echo Global, BNSF Logistics, Penske",
+      "source_refs": [
+        "VC-16 (tekpon.com secondary-trade)"
+      ],
+      "score": "Low",
+      "reasoning": "Customer list claim from a software review aggregator. Single secondary-trade source. No audited filing confirmation of customer relationships. Low.",
+      "overrides_triggered": [
+        "single-source",
+        "trade-press-only-override"
+      ]
+    },
+    {
+      "claim_id": "VC-sol4-carrier-assure-dots",
+      "section": "Solution 4: Carrier Assure \u2014 analyzes 2M+ DOT numbers daily",
+      "claim": "Carrier Assure analyzes 2 million+ DOT numbers daily",
+      "source_refs": [
+        "VC-15 (mycarrierportal.com/partners/carrier-assure/ \u2014 auto-low-vendor)"
+      ],
+      "score": "Low",
+      "reasoning": "Claim about Carrier Assure's own capability sourced from MyCarrierPortal's partner marketing page (both are vendor surfaces for this claim). Vendor-marketing override. Auto-Low.",
+      "overrides_triggered": [
+        "vendor-marketing-override"
+      ]
+    },
+    {
+      "claim_id": "VC-sol6-freightvalidate-90pct",
+      "section": "Solution 6: FreightValidate \u2014 90% reduction in cargo theft incidents [ASSUMED-1]",
+      "claim": "FreightValidate users reduce cargo theft incidents by 90%",
+      "source_refs": [
+        "VC-20 (au10tix.com own case study \u2014 auto-low-vendor)"
+      ],
+      "score": "Low",
+      "reasoning": "AU10TIX is the vendor; au10tix.com is their own marketing site. Claim about FreightValidate outcomes appears in AU10TIX's own customer story marketing. Vendor-marketing override. Tagged ASSUMED-1 in draft. Auto-Low.",
+      "overrides_triggered": [
+        "vendor-marketing-override",
+        "ASSUMED-1-tag"
+      ]
+    },
+    {
+      "claim_id": "VC-sol7-overhaul-funding",
+      "section": "Solution 7: Overhaul \u2014 $298M total raised, $105M Series C Aug 2025",
+      "claim": "Overhaul Group has raised $298M total; Series C $105M led by Springcoast Partners (Aug 2025)",
+      "source_refs": [
+        "VC-21 (prnewswire.com Overhaul Series C press release \u2014 secondary-press-release)"
+      ],
+      "score": "Low",
+      "reasoning": "Press-release-only. Single PR Newswire distribution from Overhaul itself. No audited Form D, no SEC filing, no audited third-party. Press-release-only override applies.",
+      "overrides_triggered": [
+        "press-release-only-override"
+      ]
+    },
+    {
+      "claim_id": "VC-sol7-overhaul-fraudwatch-stats",
+      "section": "Solution 7: Overhaul FraudWatch \u2014 14% high-risk, 12% no FMCSA authority, $100M+ losses prevented",
+      "claim": "14% of screened US carriers flagged high-risk; 12% found operating without proper FMCSA authority; $100M+ in losses prevented for customers",
+      "source_refs": [
+        "VC-22 (FreightWaves secondary-trade article about Overhaul)"
+      ],
+      "score": "Low",
+      "reasoning": "FreightWaves is secondary-trade. The statistics (14%, 12%, $100M) originate from Overhaul itself reported through trade press \u2014 trace chain leads back to vendor's own data. Vendor-marketing override applies (Overhaul performance claims in FreightWaves = vendor-sourced statistics passed through trade media). Single secondary-trade source. Low.",
+      "overrides_triggered": [
+        "vendor-marketing-override (chain-of-citations to vendor's own data)",
+        "trade-press-only-override"
+      ]
+    },
+    {
+      "claim_id": "VC-sol8-cargonet-fictitious-pickups",
+      "section": "Solution 8: CargoNet \u2014 576 fictitious pickup events documented in 2023",
+      "claim": "CargoNet documented 576 fictitious pickup events in 2023 vs average 66/year 2012\u20132022",
+      "source_refs": [
+        "VC-5 (cargonet.com/cargo-theft-data/ \u2014 auto-low-vendor)"
+      ],
+      "score": "Low",
+      "reasoning": "CargoNet's own website reporting CargoNet's own incident statistics. Vendor-marketing override. The theft data itself is produced by CargoNet (a Verisk subsidiary) and cited from CargoNet's own marketing page. Auto-Low for claims about CargoNet's own data/product value.",
+      "overrides_triggered": [
+        "vendor-marketing-override"
+      ]
+    },
+    {
+      "claim_id": "VC-sol9-transporeon-network",
+      "section": "Solution 9: Transporeon \u2014 210,000+ carriers, 1,500+ shippers/retailers on platform",
+      "claim": "Transporeon has 210,000+ carriers and 1,500+ shippers/retailers on platform",
+      "source_refs": [
+        "VC-24 (transporeon.com \u2014 auto-low-vendor)"
+      ],
+      "score": "Low",
+      "reasoning": "Transporeon's own product page for claims about Transporeon's own network size. Vendor-marketing override. Auto-Low.",
+      "overrides_triggered": [
+        "vendor-marketing-override"
+      ]
+    },
+    {
+      "claim_id": "VC-sol9-transporeon-acquisition",
+      "section": "Solution 9: Transporeon \u2014 \u20ac1.88 billion acquisition by Trimble, April 2023",
+      "claim": "Transporeon acquired by Trimble Inc. (NASDAQ: TRMB) for \u20ac1.88 billion in April 2023",
+      "source_refs": [
+        "VC-25 (transportation.trimble.com press release \u2014 secondary-press-release)"
+      ],
+      "score": "Low",
+      "reasoning": "Vendor's own press release for acquisition claim. Trimble is a public company; the acquisition would appear in SEC filings (10-K, 8-K). No SEC/audited filing URL cited. Press-release-only override. Promotion to Medium would require citing Trimble's 10-K or 8-K.",
+      "overrides_triggered": [
+        "press-release-only-override",
+        "note: Trimble 10-K/8-K would upgrade this to Medium if cited"
+      ]
+    },
+    {
+      "claim_id": "VC-sol10-cefic-sqas-track-record",
+      "section": "Solution 10: CEFIC SQAS \u2014 2,500+ companies assessed, 30-year track record",
+      "claim": "CEFIC SQAS has 2,500+ assessed companies; operating 30+ years",
+      "source_refs": [
+        "VC-26 (cefic.org/resources/sqas/ \u2014 primary-association)",
+        "VC-27 (dqsglobal.com secondary-trade)"
+      ],
+      "score": "Medium",
+      "reasoning": "VC-26 is CEFIC's own association website \u2014 for claims about the CEFIC SQAS program itself, this is the authoritative association source (industry association primary per rubric). VC-27 is a secondary auditor's marketing page. Two sources; VC-26 is primary-association. Meets Medium threshold (2+ independent sources where \u22651 is primary non-market-research). Reaches Medium.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "VC-sol10-cefic-sqas-pricing",
+      "section": "Solution 10: CEFIC SQAS \u2014 audit cost \u20ac1,500\u2013\u20ac3,000 [ASSUMED-2]",
+      "claim": "SQAS audit pricing approximately \u20ac1,500\u2013\u20ac3,000 per assessment",
+      "source_refs": [
+        "VC-26 (cefic.org)",
+        "VC-27 (dqsglobal.com)"
+      ],
+      "score": "Low",
+      "reasoning": "Tagged ASSUMED-2 in draft \u2014 explicitly noted as inferred from market norms, not from a published tariff. Auto-Low for ASSUMED-tagged claims per rubric.",
+      "overrides_triggered": [
+        "ASSUMED-2-tag"
+      ]
+    },
+    {
+      "claim_id": "VC-sol11-asiaverify-capabilities",
+      "section": "Solution 11: AsiaVerify \u2014 14 Asian jurisdictions, 450M+ entities, Singapore ACRA / Indonesia AHU-OSS integration",
+      "claim": "AsiaVerify has real-time access to official government registries across 14 Asian jurisdictions (450M+ entities), including Singapore ACRA, Indonesia AHU Online/OSS, Malaysia, Thailand, Vietnam, Philippines",
+      "source_refs": [
+        "VC-28 (asiaverify.com \u2014 auto-low-vendor)"
+      ],
+      "score": "Low",
+      "reasoning": "AsiaVerify's own website for claims about AsiaVerify's own capabilities, registry coverage, and entity counts. Vendor-marketing override. Auto-Low. No independent verification of registry integrations or entity count.",
+      "overrides_triggered": [
+        "vendor-marketing-override"
+      ]
+    },
+    {
+      "claim_id": "VC-sol12-kargo-network",
+      "section": "Solution 12: Kargo Technologies \u2014 50,000+ trucks, 6,000+ active shippers",
+      "claim": "Kargo Technologies has 50,000+ trucks and 6,000+ active shippers on its platform in Indonesia",
+      "source_refs": [
+        "VC-29 (dealstreetasia.com secondary-news)",
+        "VC-30 (techcrunch.com secondary-news)"
+      ],
+      "score": "Low",
+      "reasoning": "Two secondary-news sources. Neither is an audited filing or primary-tier source for vendor scale claims. Vendor scale claims from trade press without audited corroboration = Low under vendor-marketing override (the stats originate from Kargo's own investor relations materials passed through press). Also VC-30 (TechCrunch Nov 2020 Logisly article) is about Logisly, not Kargo \u2014 cross-referenced incorrectly in the source note. The Kargo figure from DealStreetAsia alone = single secondary-news source. Low.",
+      "overrides_triggered": [
+        "vendor-marketing-override (chain-of-citations to vendor PR)",
+        "note: VC-30 is Logisly not Kargo"
+      ]
+    },
+    {
+      "claim_id": "VC-sol12-kargo-vetting-assumed",
+      "section": "Solution 12: Kargo \u2014 vetting process relies on document submission / reputation signals [ASSUMED-3]",
+      "claim": "Kargo's transporter vetting likely relies on document submission and reputation signals rather than formal scoring or insurance monitoring comparable to US tools",
+      "source_refs": [],
+      "score": "Low",
+      "reasoning": "Tagged ASSUMED-3. No source. Auto-Low.",
+      "overrides_triggered": [
+        "ASSUMED-3-tag"
+      ]
+    },
+    {
+      "claim_id": "VC-sol13-logisly-funding",
+      "section": "Solution 13: Logisly \u2014 $6M Series A, Monk's Hill Ventures, Nov 2020",
+      "claim": "Logisly raised $6M Series A led by Monk's Hill Ventures in November 2020",
+      "source_refs": [
+        "VC-30 (techcrunch.com secondary-news \u2014 Nov 2020)"
+      ],
+      "score": "Low",
+      "reasoning": "Single secondary-news source. Outdated-source override: this is a Nov 2020 article used in a 2026 report \u2014 over 5 years old. The claim is about a funding round; no Form D or equivalent cited. Outdated-source override (>3 years) caps at Medium; single source means Low regardless.",
+      "overrides_triggered": [
+        "outdated-source-override (Nov 2020 source for 2026 research)",
+        "single-source"
+      ]
+    },
+    {
+      "claim_id": "VC-pp-prelim-1",
+      "section": "Value Chain \u2014 Preliminary Pain Point 1: Manual COI collection dominant at small-to-mid US brokers; ~50% carrier abandonment",
+      "claim": "Manual COI review is 'almost entirely manual' at small-to-mid US brokers; nearly 50% of carriers abandon onboarding before completion",
+      "source_refs": [
+        "VC-31 (highway.com/posts + truckstop.com/blog \u2014 auto-low-vendor for both)"
+      ],
+      "score": "Low",
+      "reasoning": "Both sources are vendor blogs (Highway and Truckstop) making claims that support their own product adoption. Vendor-marketing override. The 50% abandonment rate is a marketing claim from the vendors whose products solve this problem. Auto-Low.",
+      "overrides_triggered": [
+        "vendor-marketing-override"
+      ]
+    },
+    {
+      "claim_id": "VC-pp-prelim-2",
+      "section": "Value Chain \u2014 Preliminary Pain Point 2: Manual carrier onboarding 7\u201314 business days, 35\u201345 min/carrier",
+      "claim": "Manual carrier onboarding averages 7\u201314 business days and 35\u201345 minutes per-carrier effort; automated tools reduce to 24\u201348 hours",
+      "source_refs": [
+        "VC-31 (highway.com + truckstop.com blogs \u2014 auto-low-vendor)"
+      ],
+      "score": "Low",
+      "reasoning": "Same as above: vendor blogs for operational efficiency claims that justify vendor's own product. Vendor-marketing override. Auto-Low.",
+      "overrides_triggered": [
+        "vendor-marketing-override"
+      ]
+    },
+    {
+      "claim_id": "VC-pp-prelim-3",
+      "section": "Value Chain \u2014 Preliminary Pain Point 3: TIA 65% fraud surge + 83% of brokers experienced 3+ fraud types",
+      "claim": "TIA Watchdog recorded 65% surge in fraud complaints Sep 2024\u2013Feb 2025; 83% of freight brokers experienced at least three fraud types in that period",
+      "source_refs": [
+        "VC-7 (TIA State of Fraud April 2025 \u2014 primary-association)"
+      ],
+      "score": "Medium",
+      "reasoning": "Single primary-association source (TIA). Strong tier but single source = Medium by count rule.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "VC-pp-prelim-4",
+      "section": "Value Chain \u2014 Preliminary Pain Point 4: 18% of US cargo theft incidents 2024 are 'strategic'",
+      "claim": "Strategic theft (impersonation, document forgery, fictitious pickup) represents 18% of all US cargo theft incidents in 2024",
+      "source_refs": [
+        "VC-6 (BSI/TT Club 2024 Cargo Theft Report \u2014 primary-association)"
+      ],
+      "score": "Medium",
+      "reasoning": "Single primary-association source (TT Club/BSI joint report). Strong tier; single source = Medium.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "VC-pp-prelim-5",
+      "section": "Value Chain \u2014 Preliminary Pain Point 5: Overhaul 14% high-risk, 12% no authority",
+      "claim": "Overhaul FraudWatch found 14% of screened US motor carriers flagged high-risk; 12% lack proper FMCSA authority",
+      "source_refs": [
+        "VC-22 (FreightWaves/Overhaul secondary-trade \u2014 chain traces to vendor's own data)"
+      ],
+      "score": "Low",
+      "reasoning": "Single secondary-trade source where statistics originated from vendor (Overhaul's own platform data). Vendor-marketing override (chain-of-citations). Low.",
+      "overrides_triggered": [
+        "vendor-marketing-override",
+        "chain-of-citations"
+      ]
+    },
+    {
+      "claim_id": "VC-pp-prelim-10",
+      "section": "Value Chain \u2014 Preliminary Pain Point 10: 22% of broker respondents lost >$200K in 6-month period",
+      "claim": "TIA reports 22% of broker respondents lost more than $200,000 to fraud in a single six-month period Sep 2024\u2013Feb 2025",
+      "source_refs": [
+        "VC-7 (TIA primary-association)"
+      ],
+      "score": "Medium",
+      "reasoning": "Single primary-association source (TIA). Single source = Medium.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "VC-pp-prelim-11",
+      "section": "Value Chain \u2014 Preliminary Pain Point 11: Highway serves 70 of top-100 US brokers; 28,000+ active brokers in long tail",
+      "claim": "Highway serves 70 of top-100 US brokers; US has 28,000+ active property brokers",
+      "source_refs": [
+        "VC-1 (FreightWaves secondary-trade for Highway claim)",
+        "VC-3 (carrierdetails.com secondary-trade for broker count)"
+      ],
+      "score": "Low",
+      "reasoning": "Highway's own network claim: vendor-marketing override (cited through FreightWaves but originated from Highway). Broker count from carrierdetails.com secondary-trade (1 source). Two secondary sources but the Highway claim is auto-Low vendor override. Mixed: the broker count of 28,000+ is Medium (one secondary-trade citing government underlying data); the Highway 70-of-top-100 claim is Low. Assigned Low as the binding constraint on the combined claim.",
+      "overrides_triggered": [
+        "vendor-marketing-override (Highway network size)"
+      ]
+    },
+    {
+      "claim_id": "PP1.1-cost-1",
+      "section": "PP 1.1 \u2014 Direct fraud losses $725M North America 2025; ~$455M 2024",
+      "claim": "$725 million industry-wide North America freight fraud losses in 2025; ~$454.9 million in 2024; roughly one-third attributable to double-brokering, one-third to fictitious pickups/identity theft",
+      "source_refs": [
+        "PP-1 (FreightWaves truckinginfo.com secondary-trade)",
+        "PP-2 (foreigh.com secondary-trade/blog)"
+      ],
+      "score": "Low",
+      "reasoning": "Both sources are secondary-trade. Trade-press-only override for loss/cost figures. The $725M figure for 2025 comes from trade press; foreigh.com is an industry blog. No primary-tier source (government stats, audited filing, industry association report) for the total North America loss figure. BSI/TT Club is cited for 2024 strategic theft % but not for the total dollar figure. Low.",
+      "overrides_triggered": [
+        "trade-press-only-override"
+      ]
+    },
+    {
+      "claim_id": "PP1.1-cost-2",
+      "section": "PP 1.1 \u2014 Average loss per fraudulent load: $40K\u2013$365K; fictitious pickup average $365K per incident Q1 2024",
+      "claim": "Average loss per fraudulent load $40,000\u2013$365,000; average fictitious pickup cost surged to $365,000 per incident in Q1 2024",
+      "source_refs": [
+        "PP-2 (foreigh.com secondary-trade)",
+        "PP-3 (FreightWaves/Overhaul secondary-trade chain to vendor data)"
+      ],
+      "score": "Low",
+      "reasoning": "Two secondary-trade sources; the Overhaul figure traces back to vendor's own data. Trade-press-only override for cost figures. The $365K Q1 2024 figure from FreightWaves/Overhaul = vendor-marketing override. Low.",
+      "overrides_triggered": [
+        "trade-press-only-override",
+        "vendor-marketing-override (Overhaul-sourced figure)"
+      ]
+    },
+    {
+      "claim_id": "PP1.1-cost-3",
+      "section": "PP 1.1 \u2014 22% of brokers lost >$200K; average accumulated company fraud cost ~$400K",
+      "claim": "TIA reports 22% of broker respondents lost >$200K in a single six-month period; average accumulated company fraud cost approximately $400,000",
+      "source_refs": [
+        "PP-4 (TIA State of Fraud April 2025 \u2014 primary-association)",
+        "PP-2 (foreigh.com secondary-trade for $400K average)"
+      ],
+      "score": "Medium",
+      "reasoning": "The TIA 22% figure is primary-association (strong). The $400K average is from foreigh.com secondary-trade. Two independent sources of different tiers; \u22651 primary = Medium. The $400K average may be derived from TIA data cited through foreigh \u2014 need to note chain-of-citations risk for the $400K specifically, but the 22% threshold is independently primary.",
+      "overrides_triggered": [
+        "chain-of-citations-risk on $400K derived figure"
+      ]
+    },
+    {
+      "claim_id": "PP1.1-cost-4",
+      "section": "PP 1.1 \u2014 Nuclear verdict median $36M; carrier insurance minimum $750K unchanged since 1980",
+      "claim": "Median trucking nuclear verdict $36 million; carrier insurance minimum $750,000 unchanged since 1980; 1.5% coverage ratio",
+      "source_refs": [
+        "PP-5 (FreightWaves insurance gap analysis \u2014 secondary-trade)"
+      ],
+      "score": "Low",
+      "reasoning": "Single secondary-trade source (FreightWaves article). Trade-press-only override for cost/loss figures. The FMCSA minimum insurance is a verifiable legal fact (FMCSA.gov regulatory page exists and is cited in PP1.4 separately \u2014 but not cited for this specific claim in PP1.1). The nuclear verdict figure needs a primary source (AAJ, ATRI, or court data). Low.",
+      "overrides_triggered": [
+        "trade-press-only-override",
+        "single-source"
+      ]
+    },
+    {
+      "claim_id": "PP1.1-freq-1",
+      "section": "PP 1.1 \u2014 83% of brokers experienced 3+ fraud types; 1,600+ TIA reports in 6 months; 65% increase",
+      "claim": "83% of freight brokers experienced at least three types of fraud in Sep 2024\u2013Feb 2025; 1,600+ TIA Watchdog reports; 65% increase vs prior period",
+      "source_refs": [
+        "PP-4 (TIA State of Fraud April 2025 \u2014 primary-association)"
+      ],
+      "score": "Medium",
+      "reasoning": "Single primary-association source. Strong tier. Single source = Medium.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "PP1.1-freq-2",
+      "section": "PP 1.1 \u2014 14% of screened US carriers high-risk; 12% no FMCSA authority",
+      "claim": "Overhaul FraudWatch: 14% of screened US motor carriers flagged high-risk; 12% found operating without proper FMCSA authority",
+      "source_refs": [
+        "PP-3 (FreightWaves/Overhaul \u2014 secondary-trade; vendor's own data)"
+      ],
+      "score": "Low",
+      "reasoning": "Vendor-data claim cited through trade press. Vendor-marketing override (chain to Overhaul's own platform data). Single secondary-trade source.",
+      "overrides_triggered": [
+        "vendor-marketing-override",
+        "chain-of-citations"
+      ]
+    },
+    {
+      "claim_id": "PP1.1-freq-3",
+      "section": "PP 1.1 \u2014 Strategic thefts grew 1,475% between 2022 and 2024; now ~one-third of all cargo crime",
+      "claim": "Strategic thefts (fictitious pickups, identity impersonation, document forgery) grew 1,475% between 2022 and 2024 and now represent approximately one-third of all cargo crime",
+      "source_refs": [
+        "PP-1 (truckinginfo.com secondary-trade)",
+        "PP-6 (BSI/TT Club 2024 Cargo Theft Report \u2014 primary-association)"
+      ],
+      "score": "Medium",
+      "reasoning": "VC-6/PP-6 (TT Club/BSI) is primary-association and covers cargo theft trends. The 1,475% figure likely originates from CargoNet or industry tracking \u2014 the truckinginfo.com article is secondary-trade. Two sources, one primary-association. Medium. Note: the 1,475% growth figure should ideally be checked against the TT Club/BSI report directly, as it is an extreme number that could be trade press amplification.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "PP1.1-freq-4",
+      "section": "PP 1.1 \u2014 Descartes MyCarrierPortal received 4,468 incident reports in 12 months Feb 2024\u2013Jan 2025",
+      "claim": "Descartes MyCarrierPortal received 4,468 incident reports in the 12 months Feb 2024\u2013Jan 2025, approximately 3\u00d7 volume of competing platforms",
+      "source_refs": [
+        "PP-7 (descartes.com knowledge-center auto-low-vendor)"
+      ],
+      "score": "Low",
+      "reasoning": "Descartes' own knowledge-center marketing page for claims about Descartes MyCarrierPortal's own incident report volume and competitive comparison. Vendor-marketing override. Auto-Low.",
+      "overrides_triggered": [
+        "vendor-marketing-override"
+      ]
+    },
+    {
+      "claim_id": "PP1.1-freq-5",
+      "section": "PP 1.1 \u2014 Truckstop blocked 8,600+ fraudulent carrier onboarding attempts in 2024; double-broker reports up 400% since 2022",
+      "claim": "Truckstop blocked over 8,600 fraudulent carrier onboarding attempts in 2024; double-broker report volume up 400% since 2022",
+      "source_refs": [
+        "PP-2 (foreigh.com secondary-trade \u2014 citing Truckstop's own claim)"
+      ],
+      "score": "Low",
+      "reasoning": "Truckstop's own statistic about their own platform performance, cited through foreigh.com trade blog. Vendor-marketing override (chain-of-citations to vendor's own platform data). Trade-press-only override applies. Low.",
+      "overrides_triggered": [
+        "vendor-marketing-override",
+        "chain-of-citations",
+        "trade-press-only-override"
+      ]
+    },
+    {
+      "claim_id": "PP1.1-freq-6",
+      "section": "PP 1.1 \u2014 ~8% of FraudWatch-enabled shipments encountered high-risk carriers",
+      "claim": "Approximately 8% of FraudWatch-enabled shipments encountered high-risk carriers, drivers, or double-brokering attempts",
+      "source_refs": [
+        "PP-3 (FreightWaves/Overhaul secondary-trade)"
+      ],
+      "score": "Low",
+      "reasoning": "Overhaul's own platform data cited through FreightWaves. Vendor-marketing override. Single secondary-trade source.",
+      "overrides_triggered": [
+        "vendor-marketing-override",
+        "chain-of-citations"
+      ]
+    },
+    {
+      "claim_id": "PP1.2-cost-1",
+      "section": "PP 1.2 \u2014 MC ownership-change fraud: 135% spike June 2025; $200K\u2013$365K per incident",
+      "claim": "135% spike in suspicious MC ownership changes in June 2025 connected to cargo theft reports; average $200,000\u2013$365,000 per event",
+      "source_refs": [
+        "PP-3 (FreightWaves/Overhaul secondary-trade)",
+        "PP1.2-1 (highway.com/posts auto-low-vendor)"
+      ],
+      "score": "Low",
+      "reasoning": "The 135% spike figure originates from Highway's own 'Freight Fraud Index' (highway.com) \u2014 vendor's own proprietary metric. Vendor-marketing override for claims about Highway's own data product. FreightWaves citation traces back to Highway as source. Auto-Low.",
+      "overrides_triggered": [
+        "vendor-marketing-override (Highway Freight Fraud Index)",
+        "chain-of-citations"
+      ]
+    },
+    {
+      "claim_id": "PP1.2-cost-2",
+      "section": "PP 1.2 \u2014 $35 billion upper bound for total US cargo theft including unreported (NICB estimate)",
+      "claim": "$35 billion upper-bound for total US cargo theft losses including unreported; NICB estimate",
+      "source_refs": [
+        "PP-9 / PP1.2-6 (au10tix.com auto-low-vendor)",
+        "PP-13 (prnewswire.com secondary-press-release)"
+      ],
+      "score": "Low",
+      "reasoning": "NICB estimate cited exclusively through AU10TIX's own marketing case study and their press release. No direct NICB.org citation. The underlying NICB data may be legitimate but is only accessible through vendor marketing surfaces. Vendor-marketing override. Auto-Low.",
+      "overrides_triggered": [
+        "vendor-marketing-override (NICB figure only accessible through vendor marketing)"
+      ]
+    },
+    {
+      "claim_id": "PP1.2-cost-3",
+      "section": "PP 1.2 \u2014 11% of reported US freight fraud incidents 2024 classified as carrier identity theft; $44K/year per affected broker",
+      "claim": "11% of reported US freight fraud incidents in 2024 classified specifically as carrier identity theft; at $400K average annual fraud cost, identity theft alone generates ~$44,000/year per affected broker",
+      "source_refs": [
+        "PP-2 (foreigh.com secondary-trade)"
+      ],
+      "score": "Low",
+      "reasoning": "Single secondary-trade source (foreigh.com blog). Trade-press-only override for fraud cost figures. The $44K derived calculation is also a compound assumption. Low.",
+      "overrides_triggered": [
+        "trade-press-only-override",
+        "single-source"
+      ]
+    },
+    {
+      "claim_id": "PP1.2-cost-4",
+      "section": "PP 1.2 \u2014 Litigation exposure: median nuclear verdict $36M; US minimum insurance $750K",
+      "claim": "Broker faces negligent hiring liability; median broker nuclear verdict $36 million; US minimum insurance ~$750,000",
+      "source_refs": [
+        "PP-5 (FreightWaves secondary-trade)"
+      ],
+      "score": "Low",
+      "reasoning": "Same as PP1.1-cost-4. Single secondary-trade source for nuclear verdict figure. No AAJ/ATRI/court data primary source cited. Low.",
+      "overrides_triggered": [
+        "trade-press-only-override",
+        "single-source"
+      ]
+    },
+    {
+      "claim_id": "PP1.2-cost-5",
+      "section": "PP 1.2 \u2014 Investigation cost per fraudulent MC ownership-change: $10K\u2013$50K [ASSUMED-1]",
+      "claim": "Investigation cost per fraudulent MC ownership-change event estimated at $10,000\u2013$50,000 in internal labor, legal, and claim-management cost",
+      "source_refs": [],
+      "score": "Low",
+      "reasoning": "Tagged ASSUMED-1 in PP1.2. No source. Auto-Low.",
+      "overrides_triggered": [
+        "ASSUMED-1-tag"
+      ]
+    },
+    {
+      "claim_id": "PP1.2-freq-1",
+      "section": "PP 1.2 \u2014 135% spike suspicious MC ownership changes June 2025",
+      "claim": "135% spike in suspicious MC ownership changes in June 2025 connected to cargo theft (Highway Freight Fraud Index)",
+      "source_refs": [
+        "PP1.2-11 / PP-11 (highway.com posts \u2014 auto-low-vendor)"
+      ],
+      "score": "Low",
+      "reasoning": "Highway's own Freight Fraud Index on highway.com. Vendor-marketing override for claims about Highway's own proprietary index data. Auto-Low.",
+      "overrides_triggered": [
+        "vendor-marketing-override"
+      ]
+    },
+    {
+      "claim_id": "PP1.2-freq-2",
+      "section": "PP 1.2 \u2014 83% of brokers experienced 3+ fraud types; 34% cited unlawful brokering as primary tactic",
+      "claim": "83% of brokers experienced 3+ fraud types in six months; unlawful brokering (nominee/shell carrier) was primary tactic cited by 34% of TIA respondents",
+      "source_refs": [
+        "PP-4 (TIA State of Fraud April 2025 \u2014 primary-association)"
+      ],
+      "score": "Medium",
+      "reasoning": "Single primary-association source (TIA). Single source = Medium.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "PP1.2-freq-3",
+      "section": "PP 1.2 \u2014 Indonesia: AHU Online UBO query cost ~Rp 500,000 (~$30); registry fragmentation",
+      "claim": "Indonesian beneficial ownership verification requires paid detailed reports from AHU Online (~Rp 500,000 per query, ~$30); registry fragmentation across AHU Online and OSS makes automated UBO checks operationally complex",
+      "source_refs": [
+        "PP1.2-8 / VC-28 (asiaverify.com auto-low-vendor)"
+      ],
+      "score": "Low",
+      "reasoning": "AsiaVerify's own website for claims about their own operational knowledge and registry access. Vendor-marketing override. The Rp 500,000 pricing and 'operationally complex' framing supports AsiaVerify's own product value proposition. Auto-Low.",
+      "overrides_triggered": [
+        "vendor-marketing-override"
+      ]
+    },
+    {
+      "claim_id": "PP1.2-rc2-fincen",
+      "section": "PP 1.2 \u2014 RC2: FinCEN BOI registry not publicly accessible; not integrated with FMCSA SAFER",
+      "claim": "FinCEN BOI reporting requirements exist (Corporate Transparency Act, Jan 2024) but registry is not publicly accessible (law enforcement only) and is not integrated with FMCSA SAFER",
+      "source_refs": [
+        "PP1.2-13 (fincen.gov/boi-faqs \u2014 primary-gov)",
+        "PP-2 (foreigh.com secondary-trade for integration gap analysis)"
+      ],
+      "score": "Medium",
+      "reasoning": "FinCEN.gov is primary-gov for the FinCEN BOI program structure and access restrictions. Foreigh.com secondary-trade for the practical implications for freight brokers. Two sources including one primary-gov = Medium. The government source is authoritative for the access restriction fact.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "PP1.3-cost-1",
+      "section": "PP 1.3 \u2014 Manual onboarding labor: $25\u2013$50 per carrier; automated ~$1\u2013$2 per carrier",
+      "claim": "Manual carrier onboarding costs $25\u2013$50 per carrier in staff time (35\u201345 min at $20\u2013$40/hour burdened); automated tools run 30\u201360 minutes end-to-end at ~$1\u2013$2 per carrier",
+      "source_refs": [
+        "PP1.3-1 (foreigh.com secondary-trade)",
+        "PP-2 (highway.com blog auto-low-vendor)"
+      ],
+      "score": "Low",
+      "reasoning": "Cost figures from a trade blog (foreigh.com) and a vendor blog (highway.com). Trade-press-only override for operating cost figures. Vendor-marketing override applies to highway.com. The time and cost estimates are unaudited industry estimates from vendor-adjacent sources. Low.",
+      "overrides_triggered": [
+        "trade-press-only-override",
+        "vendor-marketing-override (highway.com blog)"
+      ]
+    },
+    {
+      "claim_id": "PP1.3-cost-2",
+      "section": "PP 1.3 \u2014 Carrier abandonment: ~50% abandon manual onboarding; $12\u2013$25 wasted per abandoned attempt [ASSUMED-4]",
+      "claim": "Approximately 50% of carriers abandon manual onboarding processes before completion; each abandoned onboarding wastes $12\u2013$25 in labor",
+      "source_refs": [
+        "PP-2 from VC-31 (highway.com + truckstop.com blogs \u2014 auto-low-vendor)"
+      ],
+      "score": "Low",
+      "reasoning": "Tagged ASSUMED-4 in draft \u2014 explicitly noted as from Highway/Truckstop marketing materials without independent primary survey source. Vendor-marketing override + ASSUMED tag. Auto-Low.",
+      "overrides_triggered": [
+        "vendor-marketing-override",
+        "ASSUMED-4-tag"
+      ]
+    },
+    {
+      "claim_id": "PP1.3-freq-1",
+      "section": "PP 1.3 \u2014 Indonesia: 40% truck utilization; ~1.3M trucks; ~75% owned by single-vehicle operators",
+      "claim": "Indonesia has a 40% truck utilization rate; roughly three-quarters of Indonesia's 1.3 million trucks are owned by single-vehicle operators with no standardized onboarding, insurance, or safety record accessible to shippers",
+      "source_refs": [
+        "PP1.3-8 (techcrunch.com Logisly Nov 2020 secondary-news \u2014 outdated)",
+        "PP1.3-9 (World Bank working paper 2015 primary-multilateral \u2014 but outdated, >3 years)"
+      ],
+      "score": "Low",
+      "reasoning": "PP1.3-8 (TechCrunch Nov 2020) is secondary-news AND outdated (>5 years for 2026 research). PP1.3-9 (World Bank working paper 2015) is primary-multilateral tier but triggers outdated-source override (>3 years old stale market data; 2015 for 2026 research). Outdated-source override caps at Medium; single verifiable source from 2020 = Low due to both age and tier. The combination of two outdated sources does not rescue the claim. Low.",
+      "overrides_triggered": [
+        "outdated-source-override (World Bank 2015 paper)",
+        "outdated-source-override (TechCrunch Nov 2020)"
+      ]
+    },
+    {
+      "claim_id": "PP1.3-freq-2",
+      "section": "PP 1.3 \u2014 Indonesia: 64 million MSMEs with inconsistent registry records",
+      "claim": "Indonesia has 64 million MSMEs, the majority with inconsistent registration records",
+      "source_refs": [
+        "PP1.3-10 (asiaverify.com auto-low-vendor)"
+      ],
+      "score": "Low",
+      "reasoning": "AsiaVerify's own website for a claim about Indonesia's MSME landscape that supports AsiaVerify's own product value proposition. Vendor-marketing override. The 64M MSME figure for Indonesia is a real statistic (World Bank/BPS) but is cited only through a vendor's marketing page here. Auto-Low without direct BPS/World Bank citation.",
+      "overrides_triggered": [
+        "vendor-marketing-override"
+      ]
+    },
+    {
+      "claim_id": "PP1.3-freq-3",
+      "section": "PP 1.3 \u2014 Leading brokerages automate 70\u201385% of onboarding steps in 2025",
+      "claim": "In 2025, leading brokerages automate 70\u201385% of onboarding steps; adoption concentrated at large operators; 28,000+ active brokers have no published adoption rate",
+      "source_refs": [
+        "PP1.3-1 (foreigh.com secondary-trade)",
+        "PP1.3-2 (highway.com blog auto-low-vendor)"
+      ],
+      "score": "Low",
+      "reasoning": "The 70\u201385% automation figure comes from trade blog and vendor blog. Trade-press-only override + vendor-marketing override for the vendor-blog source. Low.",
+      "overrides_triggered": [
+        "trade-press-only-override",
+        "vendor-marketing-override"
+      ]
+    },
+    {
+      "claim_id": "PP1.4-cost-1",
+      "section": "PP 1.4 \u2014 Median trucking nuclear verdict $36M; average $27.5M 2020\u20132023",
+      "claim": "Median trucking nuclear verdict (>$1M): $36 million; average trucking verdict 2020\u20132023: $27.5 million",
+      "source_refs": [
+        "PP1.4-1 (FreightWaves insurance gap analysis \u2014 secondary-trade)"
+      ],
+      "score": "Low",
+      "reasoning": "Single secondary-trade source (FreightWaves article) for a critical financial metric. The nuclear verdict data originates from American Transportation Research Institute (ATRI) or American Association for Justice (AAJ) studies \u2014 but neither is directly cited; only FreightWaves' reporting on them. Trade-press-only override applies for this cost figure. The underlying ATRI/AAJ data would be primary if cited directly.",
+      "overrides_triggered": [
+        "trade-press-only-override",
+        "single-source"
+      ]
+    },
+    {
+      "claim_id": "PP1.4-cost-2",
+      "section": "PP 1.4 \u2014 $750K minimum insurance unchanged since 1985; $2.2M inflation-adjusted; $3.7M verdict-adjusted",
+      "claim": "$750,000 auto liability minimum established in 1985, never updated; inflation-adjusted would be ~$2.2M; verdict-adjusted ~$3.7M; covers under 1.5% of median nuclear verdict",
+      "source_refs": [
+        "PP1.4-1 (FreightWaves secondary-trade)",
+        "PP1.4-7 (fmcsa.dot.gov primary-gov for the regulatory floor fact)"
+      ],
+      "score": "Medium",
+      "reasoning": "The regulatory minimum fact is confirmed by FMCSA.gov (primary-gov). The inflation-adjusted and verdict-adjusted calculations are from FreightWaves (secondary-trade), but the underlying $750K fact is independently verifiable through FMCSA's own regulatory page. Two sources, one primary-gov for the base regulatory fact = Medium. The derived calculations remain secondary-trade level.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "PP1.4-cost-3",
+      "section": "PP 1.4 \u2014 Largest US trucking verdict in history (2021): $1 billion",
+      "claim": "Largest US trucking verdict in history (2021): $1 billion",
+      "source_refs": [
+        "PP1.4-1 (FreightWaves secondary-trade)"
+      ],
+      "score": "Low",
+      "reasoning": "Single secondary-trade source (FreightWaves). This specific verdict is verifiable through court records (public domain) but no court filing or legal database is cited. Trade-press-only override. Low.",
+      "overrides_triggered": [
+        "trade-press-only-override",
+        "single-source"
+      ]
+    },
+    {
+      "claim_id": "PP1.4-cost-4",
+      "section": "PP 1.4 \u2014 90% of shipments estimated uninsured or underinsured",
+      "claim": "90% of shipments estimated to be uninsured or underinsured \u2014 industry estimate",
+      "source_refs": [
+        "PP1.4-4 (dat.com freight broker insurance guidance \u2014 secondary-trade vendor)"
+      ],
+      "score": "Low",
+      "reasoning": "Single secondary-trade source that is a vendor (DAT is a freight marketplace) guidance page. Industry estimate without primary-tier backing. Low.",
+      "overrides_triggered": [
+        "trade-press-only-override",
+        "single-source"
+      ]
+    },
+    {
+      "claim_id": "PP1.4-freq-1",
+      "section": "PP 1.4 \u2014 Truck-tractor tort filings grew 3.7% annually 2014\u20132023",
+      "claim": "Truck-tractor tort case filings grew at an average annual rate of 3.7% between 2014 and 2023",
+      "source_refs": [
+        "PP1.4-1 (FreightWaves secondary-trade)"
+      ],
+      "score": "Low",
+      "reasoning": "Single secondary-trade source. The underlying data would come from ATRI, Judicial Conference, or NCI \u2014 none directly cited. Trade-press-only override. Low.",
+      "overrides_triggered": [
+        "trade-press-only-override",
+        "single-source"
+      ]
+    },
+    {
+      "claim_id": "PP1.3-wlb-lpi",
+      "section": "PP 1.3 RC1 / PP 1.2 RC4 \u2014 World Bank LPI 2023: Indonesia ranked 61st; Philippines/Vietnam 43rd; Thailand 34th",
+      "claim": "World Bank LPI 2023 ranks Indonesia 61st (Philippines and Vietnam tied at 43rd, Thailand 34th) with noted deficiencies in logistics competence and infrastructure",
+      "source_refs": [
+        "PP1.3-17 (worldbank.org LPI 2023 press release \u2014 primary-multilateral)"
+      ],
+      "score": "Medium",
+      "reasoning": "Single primary-multilateral source (World Bank LPI 2023). Strong tier; single source = Medium by count rule.",
+      "overrides_triggered": []
+    }
+  ],
+  "summary": {
+    "total_claims": 67,
+    "high": 0,
+    "medium": 18,
+    "low": 49,
+    "pct_low": 73,
+    "scoring_notes": "The draft self-assigned 'High' to two claims (VC-market-7 and VC-market-8) that have only one primary-association source each. Per rubric, High requires 2+ sources with \u22651 primary, or government/multilateral in the 2+ set. Both corrected to Medium. No claim in this stage reaches High confidence \u2014 the most load-bearing cost and frequency statistics all rely on trade press, vendor marketing, or single industry-association sources."
+  },
+  "override_triggers_summary": [
+    {
+      "override": "vendor-marketing-override",
+      "claim_count": 20,
+      "claim_ids": [
+        "VC-sol1-highway-network",
+        "VC-sol2-mcp-incident-reporting",
+        "VC-sol4-carrier-assure-dots",
+        "VC-sol6-freightvalidate-90pct",
+        "VC-sol7-overhaul-fraudwatch-stats",
+        "VC-sol8-cargonet-fictitious-pickups",
+        "VC-sol9-transporeon-network",
+        "VC-sol11-asiaverify-capabilities",
+        "VC-pp-prelim-1",
+        "VC-pp-prelim-2",
+        "VC-pp-prelim-5",
+        "PP1.1-freq-2",
+        "PP1.1-freq-5",
+        "PP1.1-freq-6",
+        "PP1.2-cost-1",
+        "PP1.2-cost-2",
+        "PP1.2-freq-1",
+        "PP1.2-freq-3",
+        "PP1.3-cost-2",
+        "PP1.3-freq-2"
+      ]
+    },
+    {
+      "override": "trade-press-only-override",
+      "claim_count": 12,
+      "claim_ids": [
+        "VC-sol3-rmis-pricing",
+        "VC-sol3-rmis-80pct-faster",
+        "VC-sol3-rmis-customers",
+        "PP1.1-cost-1",
+        "PP1.1-cost-2",
+        "PP1.1-cost-4",
+        "PP1.2-cost-3",
+        "PP1.2-cost-4",
+        "PP1.3-cost-1",
+        "PP1.4-cost-1",
+        "PP1.4-cost-3",
+        "PP1.4-freq-1"
+      ]
+    },
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "claim_count": 3,
+      "claim_ids": [
+        "VC-market-1",
+        "VC-market-2",
+        "VC-market-3"
+      ]
+    },
+    {
+      "override": "press-release-only-override",
+      "claim_count": 4,
+      "claim_ids": [
+        "VC-sol1-highway-funding",
+        "VC-sol7-overhaul-funding",
+        "VC-sol9-transporeon-acquisition",
+        "VC-sol3-rmis-customers"
+      ]
+    },
+    {
+      "override": "outdated-source-override",
+      "claim_count": 3,
+      "claim_ids": [
+        "VC-sol13-logisly-funding",
+        "PP1.3-freq-1",
+        "PP1.3-freq-1 (World Bank 2015)"
+      ]
+    },
+    {
+      "override": "assumed-tag-auto-low",
+      "claim_count": 6,
+      "claim_ids": [
+        "VC-sol6-freightvalidate-90pct",
+        "VC-sol10-cefic-sqas-pricing",
+        "VC-sol12-kargo-vetting-assumed",
+        "PP1.2-cost-5",
+        "PP1.3-cost-2",
+        "PP1.4-RC3-assumed"
+      ]
+    },
+    {
+      "override": "apac-as-proxy",
+      "claim_count": 1,
+      "claim_ids": [
+        "VC-market-9"
+      ]
+    },
+    {
+      "override": "single-source-correction-from-self-assigned-high",
+      "claim_count": 2,
+      "claim_ids": [
+        "VC-market-7",
+        "VC-market-8"
+      ],
+      "note": "Draft self-assigned High; corrected to Medium because only one source cited even if primary-association tier."
+    }
+  ],
+  "weak_claims_for_deep_research": [
+    {
+      "claim_id": "PP1.1-cost-1",
+      "claim_text": "$725 million industry-wide North America freight fraud losses in 2025; ~$454.9 million in 2024; roughly one-third attributable to double-brokering, one-third to fictitious pickups/identity theft",
+      "current_sources": [
+        "freightwaves/truckinginfo.com (secondary-trade)",
+        "foreigh.com (secondary-trade)"
+      ],
+      "current_score": "Low",
+      "issue": "Trade-press-only for the most load-bearing financial claim in the entire stage. Total North America fraud loss figure is the anchor of WH1 pain point severity \u2014 used repeatedly across PP1.1, PP1.2, and PP1.3. No primary source (CargoNet Verisk publishes annual cargo theft statistics that should be directly fetchable; TT Club/BSI 2025 report would cross-validate; NICB publishes annually).",
+      "suggested_action": "Fetch CargoNet Verisk 2025 annual cargo theft report directly (cargonet.com/cargo-theft-data/ or Verisk investor relations). Cross-check against BSI/TT Club 2025 report annual figure. Search NICB.org directly for their cargo theft estimate. Query: 'CargoNet 2025 annual cargo theft statistics North America total losses site:cargonet.com OR site:verisk.com'",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP1.4-cost-1",
+      "claim_text": "Median trucking nuclear verdict (verdicts >$1M): $36 million; average trucking verdict 2020\u20132023: $27.5 million; largest US verdict 2021: $1 billion",
+      "current_sources": [
+        "FreightWaves insurance gap analysis (secondary-trade only)"
+      ],
+      "current_score": "Low",
+      "issue": "Nuclear verdict figures are load-bearing for PP1.4 (insurance coverage gap pain point). These statistics exist in primary sources: ATRI (American Transportation Research Institute) publishes annual nuclear verdict research; the American Association for Justice (AAJ) maintains verdict databases; specific 2021 Kerrville Bus verdict is court record. Trade press is citing these figures but primary sources are reachable.",
+      "suggested_action": "Search ATRI (trucking.org) for 'nuclear verdicts trucking 2020 2021 2022 2023 average median'. Search AAJ database or law review for trucking nuclear verdict data. Specific query: 'ATRI nuclear verdicts trucking average median site:trucking.org' and 'American Transportation Research Institute trucking verdicts report 2023 2024'",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP1.1-freq-3",
+      "claim_text": "Strategic thefts grew 1,475% between 2022 and 2024 and now represent approximately one-third of all cargo crime",
+      "current_sources": [
+        "truckinginfo.com (secondary-trade)",
+        "BSI/TT Club 2024 report (primary-association)"
+      ],
+      "current_score": "Medium",
+      "issue": "The 1,475% growth figure is extreme and load-bearing for the WH1 narrative. Currently Medium but the 1,475% originates from trade press citation of CargoNet data \u2014 the TT Club/BSI report is the stronger source for the structural shift but may not contain this precise growth figure. Verify the 1,475% figure is in the TT Club/BSI PDF (it was processed via markitdown); if confirmed there, this upgrades to stronger Medium. If only in trade press, flag as unverified dramatic statistic.",
+      "suggested_action": "Re-read the TT Club/BSI 2024 Cargo Theft Report PDF directly to confirm whether the 1,475% figure appears in the primary document or was introduced by trade press amplification. Query: search 'BSI TT Club 2024 cargo theft strategic theft growth percentage site:ttclub.com'. The PDF URL is already in sources \u2014 fetch and confirm the exact statistic.",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "PP1.3-freq-1",
+      "claim_text": "Indonesia: 40% truck utilization rate; roughly 75% of Indonesia's 1.3 million trucks are owned by single-vehicle operators with no standardized onboarding",
+      "current_sources": [
+        "TechCrunch Nov 2020 (secondary-news, outdated)",
+        "World Bank working paper 2015 (primary-multilateral, outdated >3 years)"
+      ],
+      "current_score": "Low",
+      "issue": "Critical for the SEA market characterization (pain point 1.3 root cause 4 and the entire SEA opportunity thesis). Both sources are outdated by 6\u201311 years. BPS Indonesia (Badan Pusat Statistik) publishes annual transportation statistics; Ministry of Transportation Indonesia publishes carrier registry data; ADB has 2022\u20132024 SEA logistics sector analyses. This is the most important SEA-specific structural claim and needs a current source.",
+      "suggested_action": "Search BPS Indonesia for current truck fleet statistics: 'BPS Indonesia jumlah kendaraan bermotor truck 2022 2023 site:bps.go.id'. Search ADB for Indonesia logistics sector report 2022\u20132024: 'ADB Indonesia road freight trucking market informal operators 2022 2023 2024 site:adb.org'. Search World Bank for updated Indonesia freight logistics analysis post-2020.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC-pp-prelim-1-and-2",
+      "claim_text": "Manual carrier onboarding averages 7\u201314 business days and 35\u201345 minutes per-carrier effort; ~50% of carriers abandon manual onboarding before completion",
+      "current_sources": [
+        "highway.com blog (auto-low-vendor)",
+        "truckstop.com blog (auto-low-vendor)"
+      ],
+      "current_score": "Low",
+      "issue": "Load-bearing for WH1 hypothesis (vendor-procurement blind spots, manual workflows). Both sources are vendor blogs by companies whose products solve this problem \u2014 classic vendor-marketing override. TIA conducts member surveys on operational practices; DAT/Truckstop publish annual broker benchmark studies; FreightWaves and Coyote Logistics have published independent broker workflow studies. An independent survey source would rescue this to at least Medium.",
+      "suggested_action": "Search TIA (tianet.org) for member survey data on carrier onboarding timelines and process automation rates. Search 'DAT broker benchmark report 2024 carrier onboarding time' and 'FreightWaves broker operations survey 2024 carrier onboarding duration'. The TIA State of Fraud April 2025 report already cited may contain operational workflow data \u2014 confirm if onboarding time data appears there.",
+      "priority": "medium"
+    }
+  ],
+  "data_gaps_to_flag": [
+    "No SEA country-level market size for carrier onboarding/compliance tools \u2014 APAC proxy only; geography mismatch confirmed. Role to interview: VP Strategy or Head of Partnerships at Kargo Technologies or Grab Logistics (Indonesia) for market sizing from operator perspective.",
+    "Indonesia truck fleet current statistics: no source dated post-2020. Interview target: Ministry of Transportation Indonesia, Directorate General of Land Transportation, Jakarta \u2014 or BPS Indonesia transport statistics division.",
+    "Carrier onboarding abandonment rate (50% figure): no independent survey source. Interview target: TIA member survey team or a freight broker operations researcher (e.g., DAT Research, Truckstop Analytics team as independent data vs. marketing).",
+    "Nuclear verdict median $36M: needs ATRI primary source. Interview target: ATRI research team (trucking.org) or plaintiff/defense trucking attorney for trial data.",
+    "Beneficial ownership adoption rate in US freight broker carrier onboarding: structurally assumed (ASSUMED-4/5) with no published statistic. Interview target: RMIS, MyCarrierPortal, or Highway product/sales team for whether UBO is customer-requested feature.",
+    "Kargo Technologies / Logisly vetting depth: ASSUMED-3 and ASSUMED-5. Interview target: Kargo BD team or 2\u20133 active shipper customers in Indonesia (FMCG or chemicals sector preferred for compliance-conscious perspective)."
+  ],
+  "source_diversity": {
+    "unique_urls_cited": 48,
+    "unique_publishers": 29,
+    "breakdown_by_category": {
+      "primary_gov": 3,
+      "primary_multilateral": 2,
+      "primary_ministry": 0,
+      "primary_consultancy": 0,
+      "primary_filing": 1,
+      "primary_association": 2,
+      "primary_academic": 0,
+      "primary_standards": 0,
+      "primary_interview": 0,
+      "primary_legal": 0,
+      "secondary_trade": 10,
+      "secondary_news": 3,
+      "secondary_market_research": 1,
+      "secondary_press_release": 7,
+      "auto_low_vendor": 19
+    },
+    "diversity_notes": "41% of all unique sources (19/48 URLs) are vendor marketing surfaces (auto-low-vendor). Only 8 URLs qualify as primary-tier sources. Zero consultancy-imprint, zero academic, zero interview, zero court filings. The stage is heavily dependent on vendor marketing + trade press for its most important claims."
+  },
+  "gate_decision": "Stage 1 needs remediation",
+  "gate_reasoning": "Stage 1 has produced a substantively well-structured analysis with good framework depth \u2014 the value chain mapping, solution profiling, and hypothesis testing are coherent and appropriately scoped. However, 73% of scored claims are Low confidence, driven predominantly by vendor-marketing-override (20 claims) and trade-press-only-override (12 claims). The three most load-bearing claims for the pain-point thesis \u2014 total North America freight fraud losses ($725M), nuclear verdict medians ($36M), and Indonesia truck fleet informality (75% single-vehicle owners) \u2014 all score Low due to absent or outdated primary sources. The market sizing claims are uniformly Low (aggregator research cluster, APAC-as-proxy). Importantly, no claim reaches High confidence; the strongest individual claims (TIA fraud report data, BSI/TT Club theft data) reach only Medium because they each appear as single sources. The stage does not qualify for ship-as-is. Remediation is targeted and achievable: the five weak claims identified for deep-research collectively require fetching 4\u20136 primary sources (CargoNet/Verisk annual theft statistics, ATRI nuclear verdict report, BPS Indonesia transport stats, TT Club PDF verification of the 1,475% figure, and one independent broker workflow survey). With those additions, the pct-Low would drop below 50% and the most critical cost and frequency claims would reach Medium or High. The SEA market sizing gap (geography mismatch) is a structural limitation that cannot be remediated from web sources alone and should be flagged for primary interview or ADB/World Bank SEA logistics report sourcing."
+}

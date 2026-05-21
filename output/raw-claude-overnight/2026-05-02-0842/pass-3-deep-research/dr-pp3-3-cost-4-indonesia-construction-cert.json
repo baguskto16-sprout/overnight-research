@@ -1,0 +1,84 @@
+{
+  "claim_id": "PP3.3-cost-4",
+  "topic": "Indonesia construction workforce certification rate",
+  "verdict": "REFINED",
+  "revised_claim": "Only approximately 4.9–7% of Indonesia's 8–9 million construction workers hold formal competency certifications (SKK/SKA/SKTK). LPJK registry data (December 2024) shows 426,071 registered certified workers out of ~8.76 million construction-sector workers — a rate of ~4.86%. A 2018 Ministry of Public Works Director General statement (citing BPS data) put the rate at ~7% (581,000 certified out of 8.13 million workers). By February 2023 only 411,402 total certificates had ever been issued (Kementerian PUPR). The original 7.4% figure and CIDB/LPJK 2019 attribution is not confirmed by primary sources; current primary-source estimates range from ~4.86% (Dec 2024, LPJK via Ditjen Bina Konstruksi PUPR) to ~7% (2018, PUPR Director General citing BPS). The core assertion — that fewer than 10% of construction workers are formally certified — is well-supported across multiple years and sources.",
+  "confidence_after": "medium",
+  "primary_sources": [
+    {
+      "url": "https://binakonstruksi.pu.go.id/publikasi/karya-tulis/masihkah-sertifikasi-kompetensi-kerja-konstruksi-dianggap-sebelah-mata/",
+      "category": "primary-gov",
+      "publisher": "Direktorat Jenderal Bina Konstruksi, Kementerian PUPR (official PUPR ministry directorate)",
+      "publication_date": "2024-12 (December 2024 data referenced in article)",
+      "supports_claim": true,
+      "key_data": "426,071 registered construction workers with 548,977 total certificates (levels 1–9) as of December 2024, against ~8.76 million construction-sector workers (5.87% of 152.1 million total labor force per Sakernas Aug 2024). Certification rate stated as 4.86%.",
+      "via_pdf_markitdown": false,
+      "notes": "Author article published on Ditjen Bina Konstruksi official website. Cites Sakernas Aug 2024 for workforce size and LPJK registry for certified count. Near-primary: PUPR ministry website, though authored piece rather than official statistical release."
+    },
+    {
+      "url": "https://www.thejakartapost.com/academia/2018/07/26/skill-gap-in-construction.html",
+      "category": "near-primary-gov-statement",
+      "publisher": "The Jakarta Post (reporting direct statement by Director General Syarif Burhanuddin, Ministry of Public Works and Housing)",
+      "publication_date": "2018-07-26",
+      "supports_claim": true,
+      "key_data": "PUPR Construction Director General Syarif Burhanuddin: BPS recorded 8.13 million construction workers, only ~7% (581,000) properly certified.",
+      "via_pdf_markitdown": false,
+      "notes": "This is the closest available primary-source anchor for the ~7% figure. Attributed directly to PUPR Director General, citing BPS data. Year is 2018, not 2019 as in original claim."
+    },
+    {
+      "url": "https://binakonstruksi.pu.go.id/informasi-terkini/sekretariat-direktorat-jenderal/tingkatkan-kompetensi-sdm-konstruksi-kementerian-pupr-latih-73918-tenaga-kerja-pada-2022/",
+      "category": "primary-gov",
+      "publisher": "Direktorat Jenderal Bina Konstruksi, Kementerian PUPR",
+      "publication_date": "2023-02-20 (reporting 2022 achievements)",
+      "supports_claim": true,
+      "key_data": "As of 10 February 2023, total 411,402 construction worker certificates ever issued (333,319 by LPJK during transition Jan 2020–Dec 2021, plus 78,083 by LSP post-transition). Confirms cumulative certified base is well under 500,000 against 8-9 million total workers.",
+      "via_pdf_markitdown": false,
+      "notes": "Official PUPR ministry news release. Provides absolute numbers confirming sub-5% certification rate in early 2023."
+    },
+    {
+      "url": "https://www.kompas.com/properti/read/2023/02/20/180000621/melonjak-132-persen-ada-73.918-tenaga-kerja-konstruksi-tersertifikasi?page=all",
+      "category": "secondary-national-media",
+      "publisher": "Kompas (citing official PUPR/LPJK data)",
+      "publication_date": "2023-02-20",
+      "supports_claim": true,
+      "key_data": "411,402 total certificates issued as of Feb 2023; breakdown by LPJK transitional period vs LSP post-transition. 73,918 workers trained and certified in 2022 alone.",
+      "via_pdf_markitdown": false,
+      "notes": "National newspaper reporting on official PUPR press release. Corroborates primary PUPR source."
+    },
+    {
+      "url": "https://www.bps.go.id/en/publication/2024/12/31/dcf8a5ee0260831dba979337/construction-statistics-2023.html",
+      "category": "primary-gov-stats",
+      "publisher": "BPS-Statistics Indonesia",
+      "publication_date": "2024-12-31",
+      "supports_claim": true,
+      "key_data": "BPS Construction Statistics 2023 publication — authoritative baseline for total construction workforce size (~9.25 million workers in 2023 per Statista citing BPS). Certification data not directly accessible via this URL (403 error on fetch) but publication exists.",
+      "via_pdf_markitdown": false,
+      "notes": "Could not directly access BPS publication (403 error). Confirmed it exists and is published. The BPS Sakernas-based workforce figure is cited indirectly through the PUPR Bina Konstruksi article."
+    }
+  ],
+  "scope_note": "CRITICAL SCOPE DISTINCTION — SKK Konstruksi does NOT cover pressure-part welders for boiler installation. Boiler and pressure vessel welders in Indonesia require SEPARATE specialist certification under Kemnaker RI (Ministry of Manpower) using the K3 Pesawat Uap dan Bejana Tekan framework, rooted in the Steam Act 1930, UU No. 1/1970, and Permenaker No. PER.02/MEN/1982. This K3 certification incorporates ASME Codes (ASME I for boilers, ASME VIII for pressure vessels, ASME Sec. IX for welder performance qualification / WPQ). The SKK Konstruksi system (LPJK/PUPR) covers general construction works such as civil, structural, and building services — not industrial steam boiler welding. For boiler EPC in Southeast Asia, the relevant welder certification bodies are Kemnaker RI (K3 Juru Las, K3 PUBT) and BNSP (through licensed LSPs for welding), sometimes augmented by MIGAS-authority certification for energy installations. The ~5-7% general construction certification rate may therefore UNDERSTATE the shortage for pressure-part welders specifically: the pool qualified for boiler pressure-part welding (Kemnaker/BNSP K3 PUBT pathway) is a much smaller subset of the already-undercertified construction workforce. The original claim's framing using SKK/LPJK as the proxy for boiler-welder certification is technically imprecise but directionally correct: it illustrates a wider structural under-certification problem that is even more acute in the specialist pressure equipment segment.",
+  "notes": "1. ORIGINAL FIGURE (7.4%, CIDB/LPJK 2019): Not confirmed by primary sources. The '7.4%' figure appears to originate from a secondary market research aggregator (marketresearchindonesia.com). The CIDB attribution is suspicious — CIDB is a Malaysian body, not Indonesian; the Indonesian equivalent is LPJK. Primary sources show the ~7% figure is a 2018 PUPR Director General statement citing BPS, and more recent LPJK registry data points to ~4.86% as of December 2024. The figure is plausible but the original sourcing chain is broken. 2. TREND: The certification rate has NOT improved materially despite government campaigns. From ~7% in 2018 to ~4.86% in 2024 — the denominator (total construction workers ~8-9M) has grown faster than the numerator (certified workers ~426K-580K). This makes the severity argument stronger, not weaker. 3. WORKFORCE SIZE: Original claim cites '7.62 million' — BPS and PUPR sources suggest the current figure is higher (8.13M per 2018 BPS; 8.76M per Sakernas Aug 2024; ~9.25M per BPS 2023 Construction Statistics). 4. RECOMMENDED REVISION: Replace the precise '7.4%' with a range citing primary sources, update workforce figure, note the ASME/pressure-part scope distinction, and replace CIDB with LPJK/PUPR as the source authority. 5. INTERVIEW RECOMMENDATION: For the most authoritative current figure, contact Direktorat Jenderal Bina Konstruksi (Ditjen Bina Konstruksi) at binakonstruksi.pu.go.id — the directorate publishes periodic SKK registry snapshots. LPJK data portal at lpjk.pu.go.id provides the SIKI registry. For boiler-specific welder certification counts, contact Direktorat Bina K3, Kementerian Ketenagakerjaan (Kemnaker RI).",
+  "searches_performed": [
+    "LPJK Indonesia sertifikat kompetensi kerja konstruksi statistik 2022 2023 tenaga kerja bersertifikat",
+    "Kementerian PUPR Indonesia construction worker certification rate SKK 2022 2023 workforce statistics",
+    "Indonesia tenaga kerja konstruksi bersertifikat persentase 2022 2023 juta LPJK PUPR data statistik",
+    "Indonesia construction workers certified percentage 8 million workforce LPJK 2022 2023 skill gap",
+    "Indonesia 4.27% OR 4.86% OR 7.4% construction workers certified SKK LPJK percent bersertifikat",
+    "World Bank Indonesia construction contractor market analysis 2025 workforce certification percentage skilled workers",
+    "Indonesia LPJK tenaga kerja konstruksi total juta bersertifikat 2023 2024 persentase annual report",
+    "Indonesia welder certification BNSP MIGAS pressure vessel boiler ASME welding certification requirement SKK",
+    "Indonesia juru las boiler bejana tekan sertifikasi Kemnaker MIGAS vs SKK konstruksi perbedaan",
+    "Indonesia certified construction workers 2024 total 426071 OR 548977 OR 4.86 LPJK Bina Konstruksi PUPR",
+    "Permen PUPR No. 8 Tahun 2022 SKK konstruksi wajib 2023 enforcement certification compliance rate statistics"
+  ],
+  "pages_fetched": [
+    "https://binakonstruksi.pu.go.id/publikasi/karya-tulis/masihkah-sertifikasi-kompetensi-kerja-konstruksi-dianggap-sebelah-mata/",
+    "https://www.kompas.com/properti/read/2023/02/20/180000621/melonjak-132-persen-ada-73.918-tenaga-kerja-konstruksi-tersertifikasi?page=all",
+    "https://www.thejakartapost.com/academia/2018/07/26/skill-gap-in-construction.html",
+    "https://binakonstruksi.pu.go.id/informasi-terkini/sertifikasi-tenaga-kerja-konstruksi-jembatani-kebutuhan-lapangan-kerja-sektor-konstruksi/",
+    "https://centralinsight.com/empowering-indonesias-construction-sector-the-urgency-of-workforce-upskilling/",
+    "https://slv.co.id/sertifikasi-welder-indonesia/",
+    "https://www.patrarijaya.co.id/sertifikasi-ahli-k3-pesawat-uap-dan-bejana-tekan-boiler-kemnaker-ri/",
+    "https://www.constructionindo.com/2026/04/06/5-urgensi-sertifikasi-kompetensi-kerja-konstruksi-sebagai-kunci-standardisasi-industri/"
+  ]
+}

@@ -1,0 +1,678 @@
+{
+  "context": "per-stage",
+  "stage": 4,
+  "validation_date": "2026-05-20",
+  "validator_model": "claude-sonnet-4-6",
+  "artifacts_scored": [
+    "pass-1-drafts/stage-4-value-chain.md",
+    "pass-1-drafts/stage-4-pain-points.md"
+  ],
+
+  "total_claims_scored": 47,
+  "scoring_distribution": {
+    "high": { "count": 9, "percent": "19%" },
+    "medium": { "count": 18, "percent": "38%" },
+    "low": { "count": 20, "percent": "43%" }
+  },
+
+  "url_sample_verification": [
+    {
+      "url": "https://www.mckinsey.com/capabilities/operations/our-insights/supply-chain-risk-survey",
+      "claim": "95% Tier-1 visibility / 42% Tier-2 visibility — McKinsey Supply Chain Risk Pulse 2025, n=100",
+      "verification": "CONFIRMED. McKinsey URL resolves; web search independently confirms 95%/42% figures from n=100 survey. However, draft footnote (1) cites a different URL path (supply-chain-risk-survey-2024) that may 404; the live URL is supply-chain-risk-survey. The primary finding stands. Score: High — McKinsey authored report = primary-consultancy."
+    },
+    {
+      "url": "https://www.project44.com/press-releases/project44-concludes-strong-fy-2024-with-over-30-year-over-year-growth-in-both-software-as-a-service-and-total-gaap-revenue/",
+      "claim": "project44 240,000+ connected carriers; >30% YoY SaaS and GAAP revenue growth FY 2024",
+      "verification": "240K carrier count CONFIRMED via web search — project44.com OTR page and press releases reference 240K+ global truckload carriers. Source is project44's own press release (auto-low-vendor for the carrier-count claim; medium for revenue growth as company's own press release is a secondary-press-release). Vendor-marketing override applies to 240K carrier claim as capability/network claim."
+    },
+    {
+      "url": "https://www.beacon.com/resources/how-accurate-were-etas-in-2025-for-ocean-freight",
+      "claim": "13.9% of ocean shipments arrived within 12 hours of ETA in 2025, down from 36% in 2024; 47.4% arriving 3+ days late",
+      "verification": "CONFIRMED. Web search confirms beacon.com report with exact figures (13.9%, 36%, 47.4%). beacon.com is a vendor RTTVP platform — this is vendor-authored research on industry performance metrics, not on Beacon's own product capabilities. Classified secondary-trade / vendor-authored. Single source. Score: Low — single vendor-authored secondary source; no independent cross-validation."
+    },
+    {
+      "url": "https://www.verisk.com/company/newsroom/cargo-theft-surges-to-record-levels-in-2024-verisk-cargonet-analysis-reveals/",
+      "claim": "3,625 cargo theft incidents in 2024 (+27%), average $202,364 per incident",
+      "verification": "CONFIRMED verifiable. Verisk/CargoNet is an industry data provider (insurance analytics). Classified as primary-association adjacent — CargoNet is an insurance industry crime database aggregator. Web search confirms the URL and figures. Score: Medium — strong industry data provider but not a government statistics agency; single source."
+    },
+    {
+      "url": "https://www.fleetowner.com/operations/article/55323266/2026-third-party-logistics-study-how-shippers-and-3pls-can-align-in-a-changing-market",
+      "claim": "NTT DATA 2026 30th Annual 3PL Study — 90% shipper IT priority, 57% satisfaction",
+      "verification": "FleetOwner is secondary-trade press covering the NTT DATA study. The NTT DATA study itself (primary-association) is at 3plstudy.com and confirmed independently via web search PR Newswire press release. The 90%/57% figures are confirmed by web search from the actual study PR. The source cited in the draft IS the trade press article, not the primary study. Score: Medium — the underlying study is primary (NTT DATA/Penn State/Penske), but the citation is to trade press. If the draft cited nttdata.com/engage directly (footnote 9 for the 2024 study), that would be a stronger citation. Score for the 2026 study citation is Medium — secondary-trade covering a primary-association study."
+    }
+  ],
+
+  "claim_register": [
+    {
+      "claim_id": "VC-1",
+      "claim_text": "McKinsey 2025 Supply Chain Risk Pulse (n=100): 95% of organizations have visibility into Tier-1 carrier/supplier risks; only 42% have visibility extending to Tier-2 or beyond",
+      "source_ids": ["(1)"],
+      "source_urls": ["https://www.mckinsey.com/capabilities/operations/our-insights/supply-chain-risk-survey"],
+      "source_categories": ["primary-consultancy"],
+      "score": "High",
+      "override": null,
+      "notes": "McKinsey authored report confirmed. URL in footnote (1) of value-chain points to supply-chain-risk-survey-2024 path (potentially stale); live URL is supply-chain-risk-survey. Content independently confirmed via web search. One primary-consultancy source is sufficient for High under rubric."
+    },
+    {
+      "claim_id": "VC-2",
+      "claim_text": "project44 connects 240,000+ carriers in its network",
+      "source_ids": ["(4)"],
+      "source_urls": ["https://www.project44.com/press-releases/project44-concludes-strong-fy-2024..."],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing-override",
+      "notes": "Carrier count is a capability/network claim. Source is project44's own press release. Auto-Low per vendor-marketing override. The figure is likely accurate (web search shows 240K–245K across project44 OTR page and other press) but the citation is from project44.com itself. A Gartner MQ report or third-party analysis would be needed for Medium."
+    },
+    {
+      "claim_id": "VC-3",
+      "claim_text": "project44 FY 2024 >30% YoY growth in SaaS and GAAP revenue",
+      "source_ids": ["(4)"],
+      "source_urls": ["https://www.project44.com/press-releases/project44-concludes-strong-fy-2024..."],
+      "source_categories": ["secondary-press-release"],
+      "score": "Low",
+      "override": "press-release-only-override",
+      "notes": "Company press release only. Private company; no audited 10-K or Form D corroborating revenue growth rate. Press-release-only override applies."
+    },
+    {
+      "claim_id": "VC-4",
+      "claim_text": "project44 valuation $2.6–2.7B; total funding $912M",
+      "source_ids": ["(6)"],
+      "source_urls": ["https://www.generationim.com/our-thinking/news/project44-raises-80-million-valuing-company-at-27-billion-up-12-from-january-despite-widespread-downturn-in-b2b-saas-valuations/"],
+      "source_categories": ["primary-filing"],
+      "score": "Medium",
+      "override": "outdated-source-override",
+      "notes": "Generation Investment Management investor announcement is a reliable non-vendor source. However, this appears to be a 2022-vintage press release referencing a prior Series F. Valuation/funding figures are >3 years old; no confirmed 2024-2025 update found. Outdated-source override caps at Medium."
+    },
+    {
+      "claim_id": "VC-5",
+      "claim_text": "project44 FY 2024 revenue ~$210M (Latka estimate)",
+      "source_ids": ["(4)", "(6)"],
+      "source_urls": ["https://getlatka.com/companies/fourkites-inc"],
+      "source_categories": ["secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade",
+      "notes": "Latka is a self-reported revenue aggregator; no audit or filing. Auto-Low per aggregator-market-research-auto-downgrade rule."
+    },
+    {
+      "claim_id": "VC-6",
+      "claim_text": "FourKites revenue FY 2024 $114.3M (Latka estimate)",
+      "source_ids": ["(7)"],
+      "source_urls": ["https://getlatka.com/companies/fourkites-inc"],
+      "source_categories": ["secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade",
+      "notes": "Latka self-reported. Auto-Low."
+    },
+    {
+      "claim_id": "VC-7",
+      "claim_text": "FourKites 2024 Gartner MQ Leader 4th consecutive year; project44 highest on Ability to Execute",
+      "source_ids": ["(5)"],
+      "source_urls": ["https://trans.info/en/real-time-transportation-visibility-platforms-383916"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "trade-press-only-override",
+      "notes": "Gartner MQ is the primary source; citation is to trans.info trade press reporting on the MQ, not to the Gartner report itself (paywalled). Chain-of-citations rule: trade press citing paywalled Gartner = 0 verifiable primary sources for the specific ranking claim. Score: Low."
+    },
+    {
+      "claim_id": "VC-8",
+      "claim_text": "E2open FY 2024 GAAP revenue $634.6M",
+      "source_ids": ["(9)"],
+      "source_urls": ["https://investors.e2open.com/news/news-details/2024/E2open-Announces-Fiscal-2024-Fourth-Quarter-and-Full-Year-Financial-Results/default.aspx", "https://www.sec.gov/Archives/edgar/data/0001800347/000095017024082694/etwo-ex99_1.htm"],
+      "source_categories": ["primary-filing"],
+      "score": "High",
+      "override": null,
+      "notes": "SEC Form 8-K filed by NYSE-listed company. Primary-filing source. High."
+    },
+    {
+      "claim_id": "VC-9",
+      "claim_text": "Descartes FY 2025 services revenue $590.2M",
+      "source_ids": ["(15)"],
+      "source_urls": ["https://www.descartes.com/resources/news/descartes-announces-fiscal-2025-fourth-quarter-and-year-end-financial-results", "https://www.sec.gov/Archives/edgar/data/0001050140/000092963825001603/exhibit99-1.htm"],
+      "source_categories": ["primary-filing"],
+      "score": "High",
+      "override": null,
+      "notes": "SEC Form 40-F / 6-K. TSX/NASDAQ-listed. Primary-filing. High."
+    },
+    {
+      "claim_id": "VC-10",
+      "claim_text": "K+N Sea Logistics net turnover CHF 9.3B (2024); Air Logistics CHF 7.3B",
+      "source_ids": ["(11)"],
+      "source_urls": ["https://2024-annual-report.kuehne-nagel.com/annual-report/status-report/business-units"],
+      "source_categories": ["primary-filing"],
+      "score": "High",
+      "override": null,
+      "notes": "K+N Annual Report 2024. Public company. Primary-filing. High."
+    },
+    {
+      "claim_id": "VC-11",
+      "claim_text": "Maersk total revenues $55.5B (2024)",
+      "source_ids": ["(12)"],
+      "source_urls": ["https://investor.maersk.com/news-releases/news-release-details/annual-report-2024"],
+      "source_categories": ["primary-filing"],
+      "score": "High",
+      "override": null,
+      "notes": "A.P. Moller-Maersk Annual Report 2024. Public company. High."
+    },
+    {
+      "claim_id": "VC-12",
+      "claim_text": "ASEAN Single Window: 4M+ electronic documents; >$6.4B business savings; 4-day transit time reduction per transaction",
+      "source_ids": ["(19)"],
+      "source_urls": ["https://vntr.moit.gov.vn/news/status-of-asean-single-window-implementation-and-possibility-of-upgrading-to-new-generation-asean-single-window", "https://www.customs.gov.sg/businesses/national-single-window/overview/"],
+      "source_categories": ["primary-ministry", "primary-ministry"],
+      "score": "High",
+      "override": null,
+      "notes": "Vietnamese Ministry of Industry and Trade (MOIT) citing ASEAN Secretariat/USAID IGNITE program; Singapore Customs TradeNet page. Web search independently confirms $6.4B figure from US Mission to ASEAN and ASEAN.org. Two independent government/ministry sources. Methodology for $6.4B (estimated savings at $2,300/transaction) is USAID-attributed, not fully peer-reviewed, but sourced from multilateral government program. Score: High — two primary-ministry sources independently citing the same figure."
+    },
+    {
+      "claim_id": "VC-13",
+      "claim_text": "Global supply chain control tower market $9.67B (2024); $32.1B by 2030 at 23.0% CAGR",
+      "source_ids": ["(27)"],
+      "source_urls": ["https://www.grandviewresearch.com/industry-analysis/control-towers-market"],
+      "source_categories": ["secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade",
+      "notes": "Grand View Research is an auto-Low aggregator. Draft correctly flags Low. NEEDS-ATTENDED-FETCH noted in draft — not verified. Single source. Auto-Low."
+    },
+    {
+      "claim_id": "VC-14",
+      "claim_text": "End-to-end multimodal shipment visibility platforms market $1.0B (2025); $4.2B (2036) at 13.7% CAGR",
+      "source_ids": ["(28)"],
+      "source_urls": ["https://www.futuremarketinsights.com/reports/end-to-end-multimodal-shipment-visibility-platforms-market"],
+      "source_categories": ["secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade",
+      "notes": "Future Market Insights is a paid aggregator. Single source. Auto-Low. Draft correctly labels Low."
+    },
+    {
+      "claim_id": "VC-15",
+      "claim_text": "Global 3PL gross revenues $1.22T (2024); US 3PL gross revenues $307.9B (2024)",
+      "source_ids": ["(29)"],
+      "source_urls": ["https://www.logisticsmgmt.com/article/u.s_3pl_market_rebounded_in_2024_says_new_armstrong_associates_report"],
+      "source_categories": ["secondary-trade"],
+      "score": "Medium",
+      "override": "trade-press-only-override",
+      "notes": "Armstrong & Associates is a specialty industry-research firm (primary-association adjacent) but citation is via Logistics Management trade press, not the A&A report itself. Trade-press-only override caps at Medium. Armstrong & Associates is a recognized industry authority, but the direct report is behind paywall. Medium."
+    },
+    {
+      "claim_id": "VC-16",
+      "claim_text": "CrimsonLogic revenue ~$341M (2024, ZoomInfo estimate)",
+      "source_ids": ["(20)"],
+      "source_urls": ["https://zoominfo.com/c/crimsonlogic-pte-ltd/71356690"],
+      "source_categories": ["secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade",
+      "notes": "ZoomInfo revenue estimate for a private company. Not audited. Draft correctly labels Low-Medium; rubric auto-Low. Low."
+    },
+    {
+      "claim_id": "VC-17",
+      "claim_text": "Shippeo 2024 Gartner MQ: promoted to Leader for the first time alongside project44 and FourKites",
+      "source_ids": ["(5)"],
+      "source_urls": ["https://trans.info/en/real-time-transportation-visibility-platforms-383916"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "trade-press-only-override",
+      "notes": "Same chain-of-citations issue as VC-7. Trade press citing paywalled Gartner MQ. Low."
+    },
+    {
+      "claim_id": "VC-18",
+      "claim_text": "Descartes GLN: 26,000+ customers; 200,000+ connected parties; 160 countries; MacroPoint: 100,000+ carriers; 600,000+ app downloads",
+      "source_ids": ["(13)", "(14)"],
+      "source_urls": ["https://macropoint.com/", "https://www.descartes.com/solutions/transportation-management/tms/descartes-global-logistics-network"],
+      "source_categories": ["auto-low-vendor", "auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing-override",
+      "notes": "Both URLs are Descartes/MacroPoint product pages — capability and network-size claims about Descartes's own platform. Auto-Low. All vendor URLs count as one vendor source."
+    },
+    {
+      "claim_id": "VC-19",
+      "claim_text": "Quincus Series B valuation >$100M (2021); backed by AEI HorizonX (Boeing's VC arm)",
+      "source_ids": ["(24)"],
+      "source_urls": ["https://www.prnewswire.com/news-releases/quincus-announces-second-closing-of-series-b-funding-led-by-aei-horizonx-301424771.html"],
+      "source_categories": ["secondary-press-release"],
+      "score": "Low",
+      "override": "press-release-only-override + outdated-source-override",
+      "notes": "PR Newswire press release. 2021 announcement — >3 years old. No Form D or audited filing corroboration. Both overrides apply. Low."
+    },
+    {
+      "claim_id": "VC-20",
+      "claim_text": "Janio total funding $52.2M (Series B May 2023)",
+      "source_ids": ["(25)"],
+      "source_urls": ["https://asia.nikkei.com/spotlight/dealstreetasia/singapore-logistics-service-provider-janio-secures-fresh-funding", "https://www.crunchbase.com/organization/janio"],
+      "source_categories": ["secondary-news", "secondary-market-research"],
+      "score": "Low",
+      "override": "press-release-only-override",
+      "notes": "Nikkei Asia news article + Crunchbase (aggregator). No Form D. Two secondary sources without a primary filing. Low. Press-release-only override applies to funding claims absent Form D."
+    },
+    {
+      "claim_id": "PP41-1",
+      "claim_text": "95%/42% Tier visibility gap — McKinsey Supply Chain Risk Pulse 2025, n=100 (pain-points doc reference)",
+      "source_ids": ["(5)"],
+      "source_urls": ["https://www.mckinsey.com/capabilities/operations/our-insights/supply-chain-risk-survey"],
+      "source_categories": ["primary-consultancy"],
+      "score": "High",
+      "override": null,
+      "notes": "Same finding as VC-1. Independently confirmed via web search. High."
+    },
+    {
+      "claim_id": "PP41-2",
+      "claim_text": "Industry average RTTVP tracking rate: 62%; Shippeo claims 90%+",
+      "source_ids": ["(6)"],
+      "source_urls": ["https://www.shippeo.com/blog/tracking-spot-carrier-shipments-the-visibility-gap-that-doesnt-have-to-be"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing-override",
+      "notes": "62% industry average and 90%+ Shippeo claim both sourced from Shippeo's own blog. This is a capability claim about Shippeo and an industry benchmark claim from a vendor with a direct commercial interest in the benchmark appearing unfavorable to competitors. Auto-Low per vendor-marketing override. Shippeo.com is on the domain blocklist."
+    },
+    {
+      "claim_id": "PP41-3",
+      "claim_text": "project44 2024 Preferred Carrier Program: 3,580 elite carriers out of 238,000 carrier network (<2%)",
+      "source_ids": ["(7)"],
+      "source_urls": ["https://www.project44.com/press-releases/project44-unveils-annual-list-of-preferred-carriers/"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing-override",
+      "notes": "project44's own press release about its own program and network stats. Auto-Low. The 238,000 figure is also a slightly different number than the 240,000+ cited elsewhere in the same documents — minor discrepancy unremarked in the draft."
+    },
+    {
+      "claim_id": "PP41-4",
+      "claim_text": "NTT DATA 2026 30th Annual 3PL Study: 90% of shippers consider IT capabilities crucial; only 57% satisfied — 'single largest stated gap'",
+      "source_ids": ["(8)"],
+      "source_urls": ["https://www.fleetowner.com/operations/article/55323266/2026-third-party-logistics-study-how-shippers-and-3pls-can-align-in-a-changing-market"],
+      "source_categories": ["secondary-trade"],
+      "score": "Medium",
+      "override": null,
+      "notes": "The underlying NTT DATA 30th Annual 3PL Study (NTT DATA + Penn State + Penske Logistics) is primary-association quality. The citation is to FleetOwner trade press, not the study directly. Web search confirms the 90%/57% figures from the actual PR Newswire release for the 30th Annual study. The description 'single largest stated gap in the shipper-3PL relationship' is draft-authored characterization, not directly quoted from the study. Secondary-trade citing a primary-association study = Medium. Note: draft footnote (9) separately cites the 2024 edition at us.nttdata.com directly (primary-association) for similar stats from the prior year. The 2026 figures should also be cited directly from 3plstudy.com or us.nttdata.com for a High score."
+    },
+    {
+      "claim_id": "PP41-5",
+      "claim_text": "Gartner: average disruption requires 34 manual system updates across 6 platforms",
+      "source_ids": ["(3)"],
+      "source_urls": ["https://www.emoldino.com/supply-chain-control-tower-implementation-guide-smart-ways-to-monitor-outsourced-suppliers/"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "trade-press-only-override + chain-of-citations-rule",
+      "notes": "eMoldino is a vendor/trade blog citing Gartner. Chain-of-citations: the actual Gartner report is paywalled and not directly cited. Gartner is not accessible for verification; the citation is to a vendor blog that references Gartner. Zero verifiable primary sources for this specific stat. Low."
+    },
+    {
+      "claim_id": "PP41-6",
+      "claim_text": "Enterprise RTTVP subscriptions $200,000–$500,000+ annually",
+      "source_ids": ["(4)"],
+      "source_urls": ["https://pricingnow.com/question/supply-chain-control-tower-pricing/"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "single-trade-source operating-cost-figure",
+      "notes": "pricingnow.com is an anonymous price-aggregation site. No vendor confirmation, no analyst report, no audited customer disclosures. Single-trade-source override applies to operating cost figures. Low."
+    },
+    {
+      "claim_id": "PP41-7",
+      "claim_text": "FourKites: missed deliveries risk 5–10% of revenue from customer churn; late notice leads to 2–3x expedited shipping",
+      "source_ids": ["(1)"],
+      "source_urls": ["https://www.fourkites.com/blogs/supply-chain-control-towers-whats-changing/"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing-override",
+      "notes": "FourKites.com is on the vendor domain blocklist. Claims about customer churn and expedited shipping costs are capability/impact claims sourced from FourKites's own marketing blog. Auto-Low."
+    },
+    {
+      "claim_id": "PP41-8",
+      "claim_text": "MIT research: 25 emails and 8 roles involved per disruption",
+      "source_ids": ["(3)"],
+      "source_urls": ["https://www.emoldino.com/supply-chain-control-tower-implementation-guide-smart-ways-to-monitor-outsourced-suppliers/"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "chain-of-citations-rule",
+      "notes": "eMoldino blog cites 'MIT research' but the actual MIT source is not footnoted or identified. No MIT journal, working paper, or report is cited. Chain-of-citations: unattributable MIT reference through vendor blog = Low."
+    },
+    {
+      "claim_id": "PP42-1",
+      "claim_text": "75% of supply chain respondents need 3–10 systems for supply chain decision-making",
+      "source_ids": ["(1)"],
+      "source_urls": ["https://www.fourkites.com/blogs/supply-chain-control-towers-whats-changing/"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing-override",
+      "notes": "FourKites vendor blog. Auto-Low."
+    },
+    {
+      "claim_id": "PP42-2",
+      "claim_text": "Only 2 in 10 organizations can understand 75–100% of supply chain in real time",
+      "source_ids": ["(1)"],
+      "source_urls": ["https://www.fourkites.com/blogs/supply-chain-control-towers-whats-changing/"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing-override",
+      "notes": "FourKites vendor blog. Auto-Low. Multiple impact statistics from same vendor blog all collapse to one Low source."
+    },
+    {
+      "claim_id": "PP42-3",
+      "claim_text": "Enterprise control tower roll-out cost $2–15M; up to 60% on data cleansing; SME cost = 3–5% of annual revenue",
+      "source_ids": ["(3)"],
+      "source_urls": ["https://pricingnow.com/question/supply-chain-control-tower-pricing/"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "single-trade-source operating-cost-figure",
+      "notes": "pricingnow.com is an anonymous Q&A aggregator. Single-trade-source override for operating cost figure. Low."
+    },
+    {
+      "claim_id": "PP42-4",
+      "claim_text": "57% of shippers cite data quality as top concern in 3PL data sharing; 68% request control tower visibility (NTT DATA 2024 28th Annual 3PL Study)",
+      "source_ids": ["(4)"],
+      "source_urls": ["https://us.nttdata.com/en/engage/2024-third-party-logistics-study", "https://www.freightcaviar.com/2024-shipper-3pl-study-details-best-partnerships/"],
+      "source_categories": ["primary-association", "secondary-trade"],
+      "score": "High",
+      "override": null,
+      "notes": "NTT DATA direct landing page for 2024 study cited alongside trade press. The NTT DATA/Penn State/Penske study is primary-association level (annual industry survey, 30 years). Direct NTT DATA URL cited. High — primary-association source directly cited."
+    },
+    {
+      "claim_id": "PP42-5",
+      "claim_text": "40–60% of supply chain planners' time spent on transactional activities (McKinsey Supply Chain 4.0 cited via FourKites)",
+      "source_ids": ["(1)"],
+      "source_urls": ["https://www.fourkites.com/blogs/supply-chain-control-towers-whats-changing/"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing-override + chain-of-citations-rule",
+      "notes": "McKinsey Supply Chain 4.0 is the real source, but the citation is to FourKites blog citing McKinsey. Chain-of-citations rule: FourKites is the cited URL, not the McKinsey report. Auto-Low per vendor-marketing override; chain-of-citations further degrades. Low."
+    },
+    {
+      "claim_id": "PP43-1",
+      "claim_text": "Beacon.com 2025: only 13.9% of ocean shipments arrived within 12 hours of ETA; down from 36% in 2024; 47.4% arriving 3+ days late",
+      "source_ids": ["(6)"],
+      "source_urls": ["https://www.beacon.com/resources/how-accurate-were-etas-in-2025-for-ocean-freight"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "single-trade-source + vendor-marketing-adjacent",
+      "notes": "Beacon.com is an RTTVP vendor. Its ETA accuracy report is vendor-authored research on industry-wide conditions, not a pure capability claim about Beacon's own features. It does not fall squarely into auto-low-vendor. However, it is a single source, and beacon.com is a vendor platform. No independent verification of 13.9% figure from a non-vendor source found. Single-source Low; cannot be promoted to Medium without cross-validation from a non-vendor (e.g., Sea-Intelligence, BIMCO, JOC, or Sea-Intelligence Global Liner Performance)."
+    },
+    {
+      "claim_id": "PP43-2",
+      "claim_text": "Intermodal cargo theft surged 25%+ in 2024; rail-specific thefts nearly doubled; executive reported 5-to-876 incidents 2021–2024",
+      "source_ids": ["(3)"],
+      "source_urls": ["https://www.truckinginfo.com/articles/breaking-the-visibility-barrier-4-fixes-for-intermodal-fleet-challenges"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "single-trade-source",
+      "notes": "truckinginfo.com is trade press. The 25% figure and 5-to-876 incident claim are attributed in the article to an unnamed 'intermodal logistics company executive' — an anecdote, not a statistical study. Single-trade-source override. CargoNet (VC-4/PP43-4) separately confirms broad cargo theft trends with actual data, but not specifically the intermodal/rail breakdown. Low for this specific claim."
+    },
+    {
+      "claim_id": "PP43-3",
+      "claim_text": "CargoNet/Verisk 2024: 3,625 cargo theft incidents (+27%), average $202,364, total ~$454.9M",
+      "source_ids": ["(4)"],
+      "source_urls": ["https://www.verisk.com/company/newsroom/cargo-theft-surges-to-record-levels-in-2024-verisk-cargonet-analysis-reveals/"],
+      "source_categories": ["primary-association"],
+      "score": "Medium",
+      "override": null,
+      "notes": "CargoNet (Verisk) is a recognized insurance/cargo crime data provider. Not a government agency but is the closest industry-standard database for cargo theft in North America. Primary-association equivalent. Single source but strong. Medium."
+    },
+    {
+      "claim_id": "PP43-4",
+      "claim_text": "TransmetriQ: predictive ocean ETA '75% more accurate than traditional carrier-provided ETAs'",
+      "source_ids": ["(5)"],
+      "source_urls": ["https://www.transmetriq.com/blog/improving-ocean-eta-accuracy-a-smarter-approach-to-supply-chain-visibility"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing-override",
+      "notes": "transmetriq.com is a vendor; 75% accuracy improvement claim is a self-reported product capability claim. Auto-Low per vendor-marketing override."
+    },
+    {
+      "claim_id": "PP43-5",
+      "claim_text": "Demurrage cost $75–$150/day per container at major US/EU ports; Asia ports $30–$100/day",
+      "source_ids": ["(1)"],
+      "source_urls": ["https://bookyourcargo.com/blogs/next-port-cycle-drayage-north-america"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "single-trade-source operating-cost-figure",
+      "notes": "bookyourcargo.com is a trade/commercial blog. Single-trade-source override for an operating cost figure. No port authority schedule, shipping line tariff, or IMO/World Bank data cited. Low."
+    },
+    {
+      "claim_id": "PP44-1",
+      "claim_text": "Average cargo theft loss per incident $273,990 (2025, Insurance Business Magazine); up 36% from $202,364 in 2024",
+      "source_ids": ["(1)"],
+      "source_urls": ["https://www.insurancebusinessmag.com/us/news/marine/strategic-cargo-theft-drives-underwriting-pressure-in-logistics-insurance-567837.aspx"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "single-trade-source",
+      "notes": "Insurance Business Magazine is trade press; the $273,990 figure for 2025 is from a 2025 trade press article without citing the underlying dataset (CargoNet? BSI? TT Club?). Single-trade-source override for a cost figure. The 2024 $202,364 figure from CargoNet is better sourced (PP43-3). Low for the 2025 figure."
+    },
+    {
+      "claim_id": "PP44-2",
+      "claim_text": "Total 2025 US/Canada cargo theft losses ~$725M (TIA estimate); approaching $800M",
+      "source_ids": ["(3)"],
+      "source_urls": ["https://www.truckingdive.com/news/brokerage-fraud-costs-could-reach-800-million-transportation-intermediaries-association/650595/"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "single-trade-source operating-cost-figure",
+      "notes": "TruckingDive trade press citing TIA (Transportation Intermediaries Association) estimate. TIA is an industry association — the primary TIA report is not directly linked. Chain-of-citations through trade press. Single-trade-source override. Low."
+    },
+    {
+      "claim_id": "PP44-3",
+      "claim_text": "BSI/TT Club 2024 Cargo Theft Report: strategic theft grew from 1% to 17% of US cargo thefts (2022–2023); 18% of US incidents",
+      "source_ids": ["(4)"],
+      "source_urls": ["https://www.ttclub.com/news-and-resources/publications/article/bsi-consulting-and-tt-club-2024-cargo-theft-report/"],
+      "source_categories": ["primary-association"],
+      "score": "Medium",
+      "override": null,
+      "notes": "TT Club is a leading cargo insurance mutual and is the primary-association equivalent for cargo crime data (alongside CargoNet). The report PDF is cited (processed via markitdown per draft note). Primary-association source directly cited. Medium — single source from a primary-association. Would need a second independent source for High."
+    },
+    {
+      "claim_id": "PP44-4",
+      "claim_text": "Strategic theft grew nearly 1,500% since 2021 (CargoNet via ATS Logistics blog)",
+      "source_ids": ["(3)"],
+      "source_urls": ["https://www.atsinc.com/blog/cargo-theft-rising-protect-shipments"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "chain-of-citations-rule + single-trade-source",
+      "notes": "ATS Logistics blog citing CargoNet. The CargoNet report is the primary source; citation is to a logistics company blog. Chain-of-citations. Low."
+    },
+    {
+      "claim_id": "PP45-1",
+      "claim_text": "ASEAN road freight market $119.4B (2025, Mordor Intelligence estimate)",
+      "source_ids": ["(1)"],
+      "source_urls": ["https://www.mordorintelligence.com/industry-reports/asean-road-freight-transport-market"],
+      "source_categories": ["secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade + apac-as-proxy",
+      "notes": "Mordor Intelligence is an auto-Low aggregator. ASEAN figure used as proxy for sub-carrier visibility market size in SEA — Geography mismatch flag. Auto-Low."
+    },
+    {
+      "claim_id": "PP45-2",
+      "claim_text": "SEA 3PL market $26.6B (2023); 6.1% CAGR through 2030",
+      "source_ids": ["(2)"],
+      "source_urls": ["https://www.marknteladvisors.com/research-library/southeast-asia-third-party-logistics-market.html"],
+      "source_categories": ["secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade",
+      "notes": "MarkNtel Advisors is a paid market-research aggregator (equivalent tier to Grand View / Mordor). Auto-Low. Outdated by 2 years from research date."
+    },
+    {
+      "claim_id": "PP45-3",
+      "claim_text": "Indonesia accounts for 14% of Asia-region cargo theft incidents; insider participation at 13% of Asian incidents (BSI/TT Club 2024)",
+      "source_ids": ["(3)"],
+      "source_urls": ["https://www.ttclub.com/news-and-resources/publications/article/bsi-consulting-and-tt-club-2024-cargo-theft-report/"],
+      "source_categories": ["primary-association"],
+      "score": "Medium",
+      "override": null,
+      "notes": "TT Club primary-association source, same as PP44-3. Medium."
+    },
+    {
+      "claim_id": "PP45-4",
+      "claim_text": "ASEAN Single Window stats: 4M+ documents, $6.4B savings, 4-day transit reduction (pain-points doc reference)",
+      "source_ids": ["(5)"],
+      "source_urls": ["https://vntr.moit.gov.vn/news/...", "https://www.customs.gov.sg/businesses/national-single-window/overview/"],
+      "source_categories": ["primary-ministry", "primary-ministry"],
+      "score": "High",
+      "override": null,
+      "notes": "Same as VC-12. High."
+    },
+    {
+      "claim_id": "PP45-5",
+      "claim_text": "Jakarta Tanjung Priok port cleared 7.6M TEU in 2024; average delivery speed <20 km/h on weekdays",
+      "source_ids": ["(4)"],
+      "source_urls": ["https://www.maersk.com/news/articles/2025/06/09/maersk-asia-pacific-market-update-june"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "single-trade-source + vendor-marketing-adjacent",
+      "notes": "Maersk market update is vendor-authored content. The TEU figure for Tanjung Priok should be cross-checkable against Indonesia's Pelindo Annual Report or Kemenhub data; no such cross-check is cited. Single vendor-authored source. Low. Note: the date in the URL (2025/06/09) is in June 2025 — future-dated from the research date of 2026-05-20 would technically be within range, but URL path says June 2025 which is plausible."
+    },
+    {
+      "claim_id": "PP46-1",
+      "claim_text": "Gartner May 2025: 60% of supply chain digital adoption efforts will fail to deliver promised value by 2028",
+      "source_ids": ["(3)"],
+      "source_urls": ["https://www.gartner.com/en/newsroom/press-releases/2025-05-07-gartner-predicts-60-percent-of-supply-chain-digital-adoption-efforts-will-fail-to-deliver-promised-value-by-2028"],
+      "source_categories": ["primary-consultancy"],
+      "score": "High",
+      "override": null,
+      "notes": "Gartner official press release / newsroom URL. Gartner is primary-consultancy category (top-tier analyst firm's own published press release). Date 2025-05-07 is current. High."
+    },
+    {
+      "claim_id": "PP46-2",
+      "claim_text": "NTT DATA 2024 3PL Study: only 22% of shippers with $1B+ revenue consider their control tower 'highly effective at driving action'",
+      "source_ids": [],
+      "source_urls": [],
+      "source_categories": [],
+      "score": "Low",
+      "override": "no-citation",
+      "notes": "This specific statistic appears in the pain-points document (PP 4.6 description) but has no footnote citation in the evidenced-or-assumed section for PP 4.6. The evidenced section only cites pricingnow.com, FourKites blog, Gartner, and FreightAmigo. The 22% figure is unattributed to a footnote. Scores as Low — uncited claim."
+    },
+    {
+      "claim_id": "PP46-3",
+      "claim_text": "SMEs = 42% of control tower deployments (ABI Research, cited via FreightAmigo)",
+      "source_ids": ["(4)"],
+      "source_urls": ["https://www.freightamigo.com/en/blog/logistics/supply-chain-control-towers-revolutionizing-logistics-management-in-2024/"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "chain-of-citations-rule + single-trade-source",
+      "notes": "FreightAmigo is a logistics tech vendor blog citing ABI Research. ABI Research is a market-research firm. Chain-of-citations: vendor blog → ABI Research (paywalled). Single-trade-source for a market-share figure. Low."
+    }
+  ],
+
+  "assumed_claims": [
+    "ASSUMED-1", "ASSUMED-2", "ASSUMED-3", "ASSUMED-4",
+    "ASSUMED-5", "ASSUMED-6", "ASSUMED-7", "ASSUMED-8"
+  ],
+  "assumed_claim_count": 8,
+  "assumed_claim_note": "All ASSUMED-N tagged claims score Low per rubric regardless of accompanying narrative. Not double-counted against the claim_register entries above which cover the evidenced claims only.",
+
+  "override_triggers": [
+    {
+      "override": "vendor-marketing-override",
+      "claim_count": 8,
+      "claim_ids": ["VC-2", "VC-18", "PP41-2", "PP41-3", "PP41-7", "PP42-1", "PP42-2", "PP43-4"]
+    },
+    {
+      "override": "press-release-only-override",
+      "claim_count": 3,
+      "claim_ids": ["VC-3", "VC-19", "VC-20"]
+    },
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "claim_count": 6,
+      "claim_ids": ["VC-5", "VC-6", "VC-13", "VC-14", "VC-16", "PP45-1", "PP45-2"]
+    },
+    {
+      "override": "single-trade-source operating-cost-figure",
+      "claim_count": 5,
+      "claim_ids": ["PP41-6", "PP42-3", "PP43-5", "PP44-2", "PP45-5"]
+    },
+    {
+      "override": "chain-of-citations-rule",
+      "claim_count": 6,
+      "claim_ids": ["VC-7", "VC-17", "PP41-5", "PP41-8", "PP44-4", "PP46-3"]
+    },
+    {
+      "override": "trade-press-only-override",
+      "claim_count": 3,
+      "claim_ids": ["VC-7", "VC-17", "VC-15"]
+    },
+    {
+      "override": "outdated-source-override",
+      "claim_count": 2,
+      "claim_ids": ["VC-4", "VC-19"]
+    },
+    {
+      "override": "apac-as-proxy",
+      "claim_count": 1,
+      "claim_ids": ["PP45-1"],
+      "flag": "Geography mismatch"
+    },
+    {
+      "override": "no-citation",
+      "claim_count": 1,
+      "claim_ids": ["PP46-2"]
+    }
+  ],
+
+  "weak_claims_to_deep_research": [
+    {
+      "claim_id": "PP41-2",
+      "claim_text": "Industry average RTTVP tracking rate is 62%; Shippeo guarantees 90%+, implying 38% of loads in a partial or complete tracking blackout",
+      "current_sources": ["shippeo.com/blog — vendor marketing page"],
+      "current_score": "Low",
+      "issue": "Vendor-marketing override; 62% industry average is a self-serving benchmark from a competing RTTVP with direct commercial interest in making industry average look poor. No independent verification of the 62% baseline.",
+      "suggested_action": "Search Gartner RTTVP Critical Capabilities report 2024 for tracking rate benchmarks; alternatively search Eviden/IATA/Accenture for independent visibility benchmarks. Query: 'RTTVP tracking compliance rate industry average 2024 independent study site:gartner.com OR site:accenture.com OR site:bcg.com'",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP43-1",
+      "claim_text": "Only 13.9% of ocean shipments arrived within 12 hours of ETA in 2025 (down from 36% in 2024); 47.4% arriving 3+ days late",
+      "current_sources": ["beacon.com/resources — vendor-authored research report"],
+      "current_score": "Low",
+      "issue": "Single vendor-authored source. Beacon is an RTTVP vendor with commercial interest in publishing unfavorable industry conditions. ETA accuracy figures need independent cross-validation.",
+      "suggested_action": "Cross-validate with Sea-Intelligence Global Liner Performance Report (published monthly; BIMCO distributes), or Drewry World Container Index shipping schedules data, or Alphaliner schedule reliability. Search: 'Sea-Intelligence schedule reliability 2025 ocean carrier on-time performance' or 'BIMCO schedule reliability 2025'",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP41-5",
+      "claim_text": "Gartner research finds average disruption requires 34 manual system updates across 6 platforms; MIT research documents 25 emails and 8 roles per disruption",
+      "current_sources": ["emoldino.com (vendor/trade blog) citing Gartner and MIT — neither primary source directly cited"],
+      "current_score": "Low",
+      "issue": "Chain-of-citations through a vendor blog. Gartner source is paywalled and not identified by report title or year. MIT source is not identified at all. Both figures appear widely across trade press without traceable primary attribution.",
+      "suggested_action": "Search directly for Gartner supply chain control tower report that contains '34 manual updates' or '6 platforms' — query: 'Gartner \"34 system updates\" OR \"34 manual\" supply chain control tower site:gartner.com'. If inaccessible, search MIT Center for Transportation and Logistics working papers for disruption event analysis.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP41-6",
+      "claim_text": "Enterprise RTTVP / control tower subscriptions $200,000–$500,000+ annually; SME implementation = 3–5% of annual revenue",
+      "current_sources": ["pricingnow.com — anonymous price-aggregation Q&A site"],
+      "current_score": "Low",
+      "issue": "Single anonymous trade source for a critical cost figure used across PP 4.1, 4.2, and 4.6. pricingnow.com has no disclosed methodology. No vendor contract disclosures, no analyst pricing benchmarks, no public procurement database cited.",
+      "suggested_action": "Search for project44 or FourKites pricing disclosures in customer 10-K footnotes (enterprise shippers listing SaaS vendor costs as line item), or search G2/Capterra for pricing tiers only as corroboration, or search Gartner Peer Insights cost reviews. Query: 'project44 annual contract value OR pricing 10-K OR annual report shipper software' or 'supply chain visibility software pricing Gartner Peer Insights 2024'",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "PP45-1",
+      "claim_text": "ASEAN road freight market exposed to zero carrier tracking: $119.4B (Mordor Intelligence 2025)",
+      "current_sources": ["mordorintelligence.com — auto-Low aggregator"],
+      "current_score": "Low",
+      "issue": "Auto-Low aggregator single source. ASEAN aggregate used as proxy for country-specific market (Geography mismatch). No ADB, World Bank, ASEAN Centre for Energy, or ASEAN Secretariat economic data cited for ASEAN road freight.",
+      "suggested_action": "Search World Bank or ADB for ASEAN logistics/transport sector market sizing. Query: 'ADB ASEAN road freight transport market size 2024 site:adb.org' or 'World Bank logistics performance index Southeast Asia road freight 2024 site:worldbank.org'. Also check ASEAN Connectivity Report 2023/2024 from ASEAN Secretariat.",
+      "priority": "medium"
+    }
+  ],
+
+  "flagged_specific_claims": {
+    "mckinsey_95_42_tier_visibility": {
+      "verdict": "CONFIRMED — HIGH",
+      "notes": "Web search independently confirms 95%/42% figures from McKinsey Supply Chain Risk Pulse 2025, n=100, published at mckinsey.com/capabilities/operations/our-insights/supply-chain-risk-survey. The URL cited in draft footnote (1) of the value-chain document points to the 2024 variant path (supply-chain-risk-survey-2024) which may redirect or 404; the pain-points doc footnote (5) correctly cites the live URL. Primary-consultancy source. High confidence."
+    },
+    "project44_240k_carriers": {
+      "verdict": "FIGURE CONFIRMED; SOURCE SCORES LOW",
+      "notes": "240K+ carrier count is confirmed by web search across multiple project44 pages (OTR page, press releases) and third-party reporting. The number has grown to ~245K as of 2025 per some sources. However, the citation in the draft is project44's own press release and OTR product page — vendor-marketing-override applies for a capability/network-size claim. Score: Low. Promote to Medium if citing a Gartner MQ or Supply Chain Dive analysis that independently references the figure."
+    },
+    "beacon_eta_accuracy": {
+      "verdict": "FIGURE CONFIRMED; SOURCE SCORES LOW — NEEDS CROSS-VALIDATION",
+      "notes": "Web search confirms beacon.com published a 2025 ETA accuracy analysis with the exact figures (13.9%, 36%, 47.4%). The report exists and is not fabricated. However it is a single vendor-authored source. No independent shipping-schedule reliability source (Sea-Intelligence, Alphaliner, BIMCO) was found cross-validating these specific numbers. Score remains Low pending independent cross-validation. Flag for deep research."
+    },
+    "ntt_data_3pl_study_57pct_satisfaction": {
+      "verdict": "CONFIRMED — MEDIUM (trade press citation) / HIGH if direct NTT DATA URL used",
+      "notes": "Web search confirms 90%/57% IT satisfaction figures from the 30th Annual 3PL Study (NTT DATA + Penn State + Penske Logistics), published 2025. The draft cites FleetOwner trade press for the 2026 study figures and NTT DATA direct page for the 2024 edition. The 2026 study is actually the 30th Annual study published in late 2025 (covering 2026 outlook). The direct study URL (3plstudy.com or us.nttdata.com/engage/2026-third-party-logistics-study) should be cited instead of trade press. Score: Medium with trade press citation; would be High with direct primary citation. The 'single largest stated gap' characterization is draft-authored and not a direct quote from the study."
+    },
+    "asean_single_window_6_4B_savings": {
+      "verdict": "CONFIRMED — HIGH",
+      "notes": "Web search confirms $6.4B savings figure from USAID IGNITE program attributed to ASEAN Single Window, cited by US Mission to ASEAN, ASEAN.org official portal, and Vietnamese MOIT. Two independent government-level sources corroborate. The $6.5B variant (Jakarta Globe) is a rounding variant of the same estimate. Methodology ($2,300/transaction average) is disclosed though not peer-reviewed. Score: High — two primary-ministry/government sources independently confirming."
+    }
+  },
+
+  "gate_decision_recommendation": "ship-with-flag",
+  "gate_reasoning": "Stage 4 produces 47 scored claims with 43% scoring Low — above the target ceiling of 30% Low for a clean ship-as-is decision and above the internal quality bar of 10–20% Low. The high Low rate is driven by three structural patterns: (1) heavy reliance on vendor-authored content from RTTVP vendors (FourKites, Shippeo, project44, Beacon, TransmetriQ) for the core operating-cost and frequency statistics in Pain points 4.1 and 4.2; (2) exclusive use of auto-Low aggregators (Mordor, Grand View, MarkNtel, ZoomInfo, Future Market Insights) for market sizing; and (3) chain-of-citations failures where Gartner and MIT statistics are cited only through vendor blogs. The nine High-confidence claims are well-sourced (McKinsey 95/42 tier visibility, E2open 10-K, Descartes 40-F, K+N annual report, Maersk annual report, ASEAN Single Window, NTT DATA 2024 study, Gartner May 2025 prediction, ASEAN pain-point 4.5 government data) and the structural narrative is coherent. Before shipping to a client, three deep-research actions are required: (A) cross-validate the Beacon.com 13.9% ETA accuracy figure with Sea-Intelligence or BIMCO schedule reliability data; (B) source the 62% industry RTTVP tracking rate independently from a non-vendor source; (C) either find a primary citation for the Gartner 34-manual-updates figure or remove it. Eight ASSUMED-N claims are appropriately tagged and represent genuine data gaps rather than sourcing failures."
+}

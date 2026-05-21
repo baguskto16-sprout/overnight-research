@@ -1,0 +1,68 @@
+{
+  "claim_id": "PP-1.1-cost-1",
+  "original_claim": "average cost of a successful fictitious pickup was $365,000 per incident in Q1 2024",
+  "outcome": "refined",
+  "new_evidence": [
+    {
+      "finding": "CargoNet Q1 2024 quarterly report: overall average stolen shipment value across all theft types in Q1 2024 was $281,757 (925 incidents, estimated $154.6M total). No category-specific breakdown for fictitious pickup is published in the public-facing report.",
+      "source": "https://www.cargonet.com/news-and-events/cargonet-in-the-media/2024-q1-theft-trends/",
+      "source_type": "secondary",
+      "confidence": "H",
+      "note": "CargoNet/Verisk is the primary theft-tracking database for US/Canada; this is the Q1 2024 period referenced by the original $365,000 claim. The $281,757 figure is the all-types average; strategic-theft-only incidents carry higher per-incident values but no public per-category breakdown is provided."
+    },
+    {
+      "finding": "CargoNet 2024 full-year annual report: estimated average value per theft rose to $202,364 (up from $187,895 in 2023). Total estimated losses were $454.9M across 3,625 incidents — a 27% year-over-year increase. The annual average is lower than Q1 2024 average because Q1 2024 was a spike quarter.",
+      "source": "https://www.verisk.com/company/newsroom/cargo-theft-surges-to-record-levels-in-2024-verisk-cargonet-analysis-reveals/",
+      "source_type": "primary",
+      "confidence": "H",
+      "note": "Verisk/CargoNet is the authoritative primary source. Corroborated identically by Risk & Insurance (https://riskandinsurance.com/cargo-theft-losses-hit-record-455m-in-2024/) and NICB (https://www.carriermanagement.com/news/2025/06/25/276715.htm)."
+    },
+    {
+      "finding": "CargoNet 2025 full-year annual report: average theft value rose 36% to $273,990 per incident (2025 vs $202,364 in 2024). Total losses ~$725M across ~3,594 incidents — a 60% YoY increase in dollar terms.",
+      "source": "https://www.cargonet.com/news-and-events/cargonet-in-the-media/2025-theft-trends/",
+      "source_type": "primary",
+      "confidence": "H",
+      "note": "Directly corroborated by FBI IC3 PSA260430 (https://www.ic3.gov/PSA/2026/PSA260430) which cites the same $273,990 and $725M figures, providing independent federal-agency corroboration."
+    },
+    {
+      "finding": "FBI Internet Crime Complaint Center (IC3) PSA260430 (April 2026): cites 2025 cargo theft losses of $725M (+60% from 2024), confirmed incidents up 18%, and average value per theft rising 36% to $273,990. The PSA is specifically focused on cyber-enabled strategic cargo theft (fictitious pickups, carrier identity theft, shipment misdirection) as the dominant growth vector.",
+      "source": "https://www.ic3.gov/PSA/2026/PSA260430",
+      "source_type": "primary",
+      "confidence": "H",
+      "note": "Federal law enforcement primary source independently corroborating CargoNet figures. Establishes that the cyber-enabled/fictitious-pickup category is the primary driver of the surge."
+    },
+    {
+      "finding": "TIA 'State of Fraud in the Industry 2024' report (surveyed ~200 TIA member companies, Feb–Aug 2024): average gross annual cost of fraud per company was $402,344; per-load fraud cost exceeded $40,760. The $402K figure is per-company-per-year, not per-incident. No category-level (fictitious pickup vs. double-broker) per-incident breakdown was published publicly.",
+      "source": "https://www.thetrucker.com/trucking-news/business/tia-releases-state-of-fraud-in-the-industry-2024-report",
+      "source_type": "secondary",
+      "confidence": "M",
+      "note": "TIA is an industry association (not a neutral statistician); survey of members introduces selection bias. The $40,760 per-load figure is far below the $202K–$365K range because it averages across all fraud types including failed attempts and minor incidents, not just successful full-load thefts."
+    },
+    {
+      "finding": "Overhaul FraudWatch launch (FreightWaves, January 2025): 'the average cost of a successful fictitious pickup surging to $365,000 per incident in Q1 2024.' No methodology, data source, or sample size is disclosed in the article or the press release. This is the vendor's own marketing claim for their fraud-detection product launch, not an independently audited statistic.",
+      "source": "https://www.freightwaves.com/news/overhauls-fraudwatch-a-new-paradigm-in-freight-fraud-prevention",
+      "source_type": "tertiary",
+      "confidence": "L",
+      "note": "Verbatim quote confirmed via WebFetch. Source is a vendor press release covered as trade news. No independent corroboration found for the $365,000 figure specifically. CargoNet Q1 2024 overall average was $281,757; the $365,000 is plausible for the fictitious-pickup subset (which targets higher-value loads) but cannot be independently verified from public data."
+    },
+    {
+      "finding": "BSI / TT Club 2024 Cargo Theft Report (April 2025 publication, covering 2024 data): North American losses reached $6.6B in 2025 (a different total than CargoNet's $725M — BSI/TT Club appears to use broader economic-impact methodology rather than direct insurance-claim values). 79% of North American supply chain incidents targeted trucks. 18% of US incidents were identified as strategically planned thefts. No per-incident dollar breakdown by theft type published in the public summary.",
+      "source": "https://www.ttclub.com/news-and-resources/publications/article/bsi-consulting-and-tt-club-2024-cargo-theft-report/",
+      "source_type": "secondary",
+      "confidence": "M",
+      "note": "PDF at https://www.ttclub.com/fileadmin/uploads/tt-club/Documents/TT_and_BSI_annual_theft_report/TT_Club_Report_-_Supply_Chain_Report_April_2025.pdf — markitdown conversion returned no content (likely access-controlled). Public summary does not break out per-incident dollar values by theft type."
+    }
+  ],
+  "revised_claim": "Per-incident cost of a fictitious pickup: approximately $281,757 overall average across all cargo theft types in Q1 2024 per CargoNet (Verisk); full-year 2024 all-theft average was $202,364, rising 36% to $273,990 in 2025. The $365,000 figure specifically for fictitious pickups comes from Overhaul's vendor marketing materials (Q1 2024) and is unverified by an independent primary source — it is plausible given that strategic/deception-based thefts target higher-value loads, but should be cited as a vendor estimate pending independent corroboration. Range supported by primary sources: $202,000–$282,000 per incident (2024, all theft types); the fictitious-pickup subset likely runs higher given load-selection targeting, with $365,000 a vendor-stated upper estimate.",
+  "revised_citations": [
+    "https://www.cargonet.com/news-and-events/cargonet-in-the-media/2024-q1-theft-trends/",
+    "https://www.verisk.com/company/newsroom/cargo-theft-surges-to-record-levels-in-2024-verisk-cargonet-analysis-reveals/",
+    "https://www.cargonet.com/news-and-events/cargonet-in-the-media/2025-theft-trends/",
+    "https://www.ic3.gov/PSA/2026/PSA260430",
+    "https://www.freightwaves.com/news/overhauls-fraudwatch-a-new-paradigm-in-freight-fraud-prevention",
+    "https://www.thetrucker.com/trucking-news/business/tia-releases-state-of-fraud-in-the-industry-2024-report"
+  ],
+  "still_assumed": true,
+  "assumed_note": "The $365,000 per fictitious-pickup-specifically figure remains vendor-attributed (Overhaul) with no disclosed methodology and no independent primary-source corroboration found. CargoNet does not publish per-category per-incident averages in its public reports. The claim is directionally consistent with CargoNet's Q1 2024 overall average of $281,757 (fictitious pickups target higher-value loads, so a higher subset average is plausible) but cannot be verified from public primary data.",
+  "trend": "Confirmed upward trend, well-supported: all-type average per incident $187,895 (2023) → $202,364 (2024) → $273,990 (2025), a 46% cumulative increase over two years. Total losses $331.9M (2023) → $454.9M (2024) → $725M (2025). Strategic/deception-based theft (including fictitious pickups) rose from <5% to >35% of all reported cargo thefts over 2020–2024, amplifying the per-incident value gap between fraud-based and opportunistic theft."
+}

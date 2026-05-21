@@ -1,0 +1,250 @@
+{
+  "context": "per-stage",
+  "stage": 3,
+  "validation_date": "2026-05-20",
+  "validator": "source-validator-agent",
+  "total_claims_scored": 70,
+  "scoring_distribution": {
+    "high": {"count": 11, "percent": "15.7%"},
+    "medium": {"count": 9, "percent": "12.9%"},
+    "low": {"count": 50, "percent": "71.4%"}
+  },
+  "source_categories_found": {
+    "primary_gov": ["fmcsa.dot.gov (FMCSA Pocket Guide 2024)"],
+    "primary_multilateral": ["recaap.org (ReCAAP ISC Annual Report 2025)"],
+    "primary_ministry": [],
+    "primary_consultancy": ["munichre.com (Munich Re 2025 Cargo Theft Report, authored)", "pwc.com/id (PwC Indonesia Zero ODOL policy explainer)"],
+    "primary_filing": ["sec.gov Karooooo 20-F/press filing", "stocktitan.net/sec-filings/IOT (Samsara 10-K FY2026 — underlying filing confirmed on SEC.gov)", "Samsara S-1 (FY2021, sec.gov directly cited)"],
+    "primary_association": ["ttclub.com / bsigroup.com (TT Club + BSI 2024 Cargo Theft Report, co-authored industry association + standards body)", "verisk.com/cargonet.com (Verisk CargoNet — industry data authority, public company VRSK)"],
+    "primary_academic": ["ncbi.nlm.nih.gov/pmc (ISM-MICMAC peer-reviewed journal, PMC11244810)"],
+    "secondary_trade": ["truckertools.com (vendor marketing surface — reclassified, see overrides)", "freightwaves.com", "supplychainbrain.com", "ajot.com", "iotbusinessnews.com", "futureiot.tech", "shipandbunker.com", "maritime-executive.com", "marineinsight.com", "maritimefairtrade.org", "dcvelocity.com", "wiserlogtech.com", "iotforall.com", "telit.com/blog"],
+    "secondary_news": ["iol.co.za", "commonwealthunion.com", "tech.eu", "investinestonia.com", "sourcingjournal.com"],
+    "secondary_market_research": ["mordorintelligence.com", "marketsandmarkets.com", "marketresearchfuture.com", "grandviewresearch.com", "Berg Insight (via GlobeNewswire/BusinessWire press releases)"],
+    "secondary_press_release": ["prnewswire.com (Overhaul, project44)", "businesswire.com (Berg Insight/ResearchAndMarkets)", "globenewswire.com (Tive, project44, Berg Insight)"],
+    "auto_low_vendor": [
+      "project44.com (claims about project44 revenue, product, Series G)",
+      "fourkites.com (claims about FourKites cash-flow breakeven, Gartner positioning)",
+      "shippeo.com (claims about Shippeo Gartner positioning, ARR)",
+      "gomotive.com (claims about Motive ARR, funding)",
+      "tive.com/blog (claims about Tive metrics, electronics gap)",
+      "controlant.com (Pfizer cold chain case study — vendor's own case study)",
+      "carrier.com (Sensitech product launches — parent company corporate site)",
+      "descartes.com (Lipsey Logistics case study, FraudGuard launch — vendor own site)",
+      "macropoint.com (G2 Leader recognition — vendor subdomain)",
+      "over-haul.com (Gartner MQ Challenger, Series C via PR)",
+      "parsyl.com (Data Partner Program capabilities)",
+      "blog.transtrack.co (TransTRACK Series A, capabilities)",
+      "lytx.com (56% reduction in risky driving — vendor own site)",
+      "getlatka.com (Shippeo $22.3M ARR — CEO self-reported interview, not audited)",
+      "en.wikipedia.org (Geotab — not acceptable source category)"
+    ]
+  },
+  "override_triggers": [
+    {
+      "override": "vendor-marketing-override",
+      "description": "Claim about a vendor's own product, capability, ARR, revenue, or funding sourced from that vendor's own website or press release",
+      "claim_count": 22,
+      "claim_ids": ["VC-10", "VC-11", "VC-12", "VC-13", "VC-17a", "VC-17b", "VC-20", "VC-21", "VC-23", "VC-24", "VC-25", "VC-26", "VC-30", "VC-32", "PP3.1-cost-2", "PP3.1-cost-3", "PP3.1-cost-4", "PP3.1-freq-3", "PP3.2-freq-1", "PP3.2-freq-2", "PP3.5-freq-1", "PP3.6-cost-2", "PP3.6-freq-1"]
+    },
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "description": "Claims sourced primarily from MarketsandMarkets, Mordor Intelligence, Grand View Research, Market Research Future — auto-Low without cross-validation against primary source",
+      "claim_count": 5,
+      "claim_ids": ["VC-1", "VC-2", "VC-6", "VC-7", "PP3.4-cost-1"]
+    },
+    {
+      "override": "niche-market-research-as-aggregator",
+      "description": "Berg Insight is a niche private research firm not in the rubric's named top-tier consultancy list; citations via GlobeNewswire/BusinessWire press releases do not elevate to primary-consultancy; treated as secondary-market-research",
+      "claim_count": 4,
+      "claim_ids": ["VC-8", "VC-9", "PP3.4-freq-1", "PP3.4-freq-5"],
+      "note": "Draft incorrectly rated VC-8 as High. Berg Insight press release distributed via GlobeNewswire/BusinessWire is secondary-press-release of a paid niche research firm. The actual Berg Insight report (berginsight.com) is a paid proprietary report — the data cited is from the press-release summary only, not the full report. Auto-Low applies."
+    },
+    {
+      "override": "single-trade-source",
+      "description": "Operating cost figures or market share claims sourced only from trade publications",
+      "claim_count": 7,
+      "claim_ids": ["VC-14", "VC-15", "VC-18", "VC-29", "PP3.2-cost-1b", "PP3.3-freq-3", "PP3.5-cost-2"]
+    },
+    {
+      "override": "chain-of-citations",
+      "description": "Multiple sources tracing back to same underlying claim or single primary report",
+      "claim_count": 3,
+      "claim_ids": ["VC-24", "PP3.2-freq-3", "PP3.6-freq-3"],
+      "note": "VC-24 (Controlant case study) — controlant.com case study + supplychainbrain.com trade coverage of same case study = 1 underlying source (Controlant). PP3.2-freq-3 (WHO 25% vaccines) — cited via Controlant case study and iotforall.com trade blog, not via WHO primary publication directly. PP3.6-freq-3 (Telit blog citing Berg Insight) — vendor blog citing niche research firm = single chain."
+    },
+    {
+      "override": "press-release-only",
+      "description": "Funding or capability claims sourced only from PRNewswire, BusinessWire, or GlobeNewswire without corroborating Form D or SEC filing",
+      "claim_count": 6,
+      "claim_ids": ["VC-14", "VC-15", "VC-22", "VC-25", "PP3.3-freq-3", "PP3.5-freq-1"]
+    },
+    {
+      "override": "misattributed-source",
+      "description": "Claim attribute says 'IATA estimate' but search confirms $35B figure originates from IQVIA (2019 Biopharma Cold Chain Logistics Survey), not IATA. IATA's own estimate is $2.5B-$12.5B for air cargo specifically. The iotforall.com blog misattributes the figure.",
+      "claim_count": 1,
+      "claim_ids": ["PP3.2-cost-2"],
+      "note": "This is a source-integrity issue beyond confidence scoring. The $35B figure is real (IQVIA-sourced) but the attribution in the draft ('IATA estimate') is factually incorrect. The iotforall.com citation chains to a misattributed stat. Requires correction and direct IQVIA citation."
+    },
+    {
+      "override": "single-domain-override",
+      "description": "All citations on Trucker Tools compliance benchmarks (30-40% industry average, 80-90% shipper demand) come from truckertools.com — a vendor selling the competing solution. Counts as single vendor-marketing source.",
+      "claim_count": 2,
+      "claim_ids": ["PP3.1-freq-1", "PP3.1-12"],
+      "note": "The 30-40% industry average visibility compliance figure — the most-cited statistic in Pain Point 3.1 — is sourced exclusively from Trucker Tools' own marketing pages. Trucker Tools is a competing RTTVP vendor with a direct commercial interest in documenting a high compliance gap. No neutral third-party (FMCSA, ATA, McKinsey, Gartner in a directly cited report) independently confirms this figure. This is the single most load-bearing claim in the pain point and it has zero independent source support."
+    },
+    {
+      "override": "gartner-magic-quadrant-note",
+      "description": "Gartner MQ vendor positioning claims (project44 #1, FourKites Leader, Shippeo Leader, Overhaul Challenger) are sourced from vendor press releases (project44.com, fourkites.com, shippeo.com, over-haul.com) rather than from the Gartner-published document directly. The Gartner MQ 2024 RTTVP document exists (gartner.com/en/documents/5298863) but is not cited; instead each vendor's promotional version of their own positioning is cited. Vendor-marketing-override applies to all of these. Score: Low for each vendor's own positioning claim.",
+      "claim_ids": ["VC-project44-MQ", "VC-fourkites-MQ", "VC-shippeo-MQ", "VC-26"]
+    }
+  ],
+  "claim_detail": [
+    {"claim_id": "VC-1", "claim_text": "Global commercial vehicle telematics market $23.45B (Mordor Intelligence, 2024E)", "sources": ["mordorintelligence.com"], "source_categories": ["secondary-market-research"], "score": "Low", "overrides": ["aggregator-market-research-auto-downgrade"]},
+    {"claim_id": "VC-2", "claim_text": "Global commercial vehicle telematics market $5.4B (MarketsandMarkets, 2024)", "sources": ["marketsandmarkets.com"], "source_categories": ["secondary-market-research"], "score": "Low", "overrides": ["aggregator-market-research-auto-downgrade"]},
+    {"claim_id": "VC-3", "claim_text": "Samsara TAM $54.6B (composed of $32.9B global commercial telematics + $19.9B commercial surveillance + $1.8B trailer/cargo tracking)", "sources": ["sec.gov Samsara S-1"], "source_categories": ["primary-filing"], "score": "Medium", "notes": "Single primary-filing; TAM is company-defined and self-reported in S-1 — directionally useful but not independently validated"},
+    {"claim_id": "VC-4", "claim_text": "Samsara FY2026 revenue $1.62B, 98% subscription, ended Jan 31 2026", "sources": ["stocktitan.net/sec-filings/IOT (Samsara 10-K)"], "source_categories": ["primary-filing"], "score": "High", "notes": "10-K filing confirmed via SEC.gov; StockTitan is an SEC filing aggregator. Revenue confirmed as $1,618.6M."},
+    {"claim_id": "VC-5", "claim_text": "Motive ~$500M ARR (2025, S-1 filed Dec 2025)", "sources": ["saastr.com (trade analysis of S-1)", "gomotive.com/blog (vendor own site)"], "source_categories": ["secondary-trade", "auto-low-vendor"], "score": "Medium", "overrides": ["vendor-marketing-override for gomotive.com"], "notes": "S-1 itself would be primary-filing but is not the cited URL; saastr.com is secondary trade analysis. Vendor-marketing auto-low applies to gomotive.com source. Single valid secondary source citing S-1."},
+    {"claim_id": "VC-6", "claim_text": "Global supply chain visibility software market $3.2B (Market Research Future, 2024)", "sources": ["marketresearchfuture.com"], "source_categories": ["secondary-market-research"], "score": "Low", "overrides": ["aggregator-market-research-auto-downgrade"], "notes": "Draft correctly flags as Low."},
+    {"claim_id": "VC-7", "claim_text": "Global real-time cold chain monitoring market $35.0B (Grand View Research, 2024)", "sources": ["grandviewresearch.com"], "source_categories": ["secondary-market-research"], "score": "Low", "overrides": ["aggregator-market-research-auto-downgrade"], "notes": "Draft correctly flags as Low."},
+    {"claim_id": "VC-8", "claim_text": "SEA fleet management installed base 2.8M units active (Berg Insight, end-2023)", "sources": ["businesswire.com (Berg Insight press release via ResearchAndMarkets)", "globenewswire.com (Berg Insight press release)"], "source_categories": ["secondary-press-release", "secondary-press-release"], "score": "Low", "overrides": ["niche-market-research-as-aggregator", "single-domain-override"], "notes": "CRITICAL CORRECTION: Draft rated this High. Berg Insight is a niche private research firm, not in the rubric's top-tier consultancy list. Both citations are press-release distributions (BusinessWire + GlobeNewswire) of Berg Insight's own summary data. The underlying paid report exists at berginsight.com but is not directly cited; only the press release summary is accessible. Correct score is Low."},
+    {"claim_id": "VC-9", "claim_text": "SEA fleet management penetration rate ~17.5% of commercial fleet vehicles (Berg Insight, 2024E)", "sources": ["globenewswire.com (Berg Insight press release)"], "source_categories": ["secondary-press-release"], "score": "Low", "overrides": ["niche-market-research-as-aggregator"], "notes": "Same override as VC-8. Single niche research firm press release."},
+    {"claim_id": "VC-10", "claim_text": "project44 FY2024 revenue $210M+ at 30%+ YoY growth; 1,300+ enterprise customers", "sources": ["project44.com/press-releases (vendor own PR)"], "source_categories": ["auto-low-vendor"], "score": "Low", "overrides": ["vendor-marketing-override"], "notes": "Vendor's own press release on vendor's own revenue. No audited filing (10-K/S-1) directly cited. PRNewswire corroboration confirmed in search but traces to same press release origin. Private company — no SEC 10-K."},
+    {"claim_id": "VC-11", "claim_text": "Shippeo FY2024 revenue $22.3M ARR", "sources": ["shippeo.com/press-releases (vendor own)", "getlatka.com (CEO self-reported interview)"], "source_categories": ["auto-low-vendor", "auto-low-vendor"], "score": "Low", "overrides": ["vendor-marketing-override"], "notes": "Both sources are vendor self-reported. Latka data is CEO-phone-interview self-reported, not audited. Both score auto-Low for vendor own revenue claim."},
+    {"claim_id": "VC-12", "claim_text": "FourKites reached cash-flow breakeven 2023; Gartner 2024 MQ Leader (fourth consecutive year)", "sources": ["fourkites.com/press (vendor own site)"], "source_categories": ["auto-low-vendor"], "score": "Low", "overrides": ["vendor-marketing-override", "gartner-magic-quadrant-note"]},
+    {"claim_id": "VC-13", "claim_text": "project44 $912M total raised; Series G $80M at $2.7B valuation (Nov 2022)", "sources": ["project44.com/press-releases (vendor own PR x2)"], "source_categories": ["auto-low-vendor"], "score": "Low", "overrides": ["vendor-marketing-override", "press-release-only"], "notes": "No Form D cited. All sources are vendor's own press releases."},
+    {"claim_id": "VC-14", "claim_text": "Shippeo $137M total raised (Series D-II $30M, Jan 2025)", "sources": ["freightwaves.com (trade press)"], "source_categories": ["secondary-trade"], "score": "Low", "overrides": ["single-trade-source", "press-release-only"], "notes": "Single trade press source reporting a funding round. No Form D corroboration cited."},
+    {"claim_id": "VC-15", "claim_text": "Wakeo €30M+ total funding (€18M round Dec 2023); LKW Walter tech acquisition July 2024", "sources": ["tech.eu (trade/news)"], "source_categories": ["secondary-news"], "score": "Low", "overrides": ["single-trade-source"], "notes": "Single secondary news source. No Form D."},
+    {"claim_id": "VC-16", "claim_text": "Trimble acquisition of Transporeon $1.98B (Dec 2022)", "sources": ["investinestonia.com (Estonian investment promotion agency blog)"], "source_categories": ["secondary-news"], "score": "Low", "overrides": ["single-trade-source"], "notes": "Should be sourced from Trimble SEC 8-K or press release, not an investment promotion agency blog."},
+    {"claim_id": "VC-17a", "claim_text": "Descartes MacroPoint FraudGuard launch (April 2024)", "sources": ["descartes.com/resources (vendor own site)"], "source_categories": ["auto-low-vendor"], "score": "Low", "overrides": ["vendor-marketing-override"]},
+    {"claim_id": "VC-17b", "claim_text": "Descartes MacroPoint G2 Fall 2024 Leader", "sources": ["macropoint.com/news (vendor subdomain)"], "source_categories": ["auto-low-vendor", "auto-low-aggregator-marketplace"], "score": "Low", "overrides": ["vendor-marketing-override"]},
+    {"claim_id": "VC-18", "claim_text": "Motive $2.85B valuation (Series F $150M, 2022)", "sources": ["freightwaves.com (trade press)"], "source_categories": ["secondary-trade"], "score": "Low", "overrides": ["single-trade-source", "press-release-only"], "notes": "Single trade press. No Form D. Valuation claims require primary-filing corroboration."},
+    {"claim_id": "VC-19", "claim_text": "Geotab 6M+ connected vehicles, 160 countries, world's largest commercial telematics provider by subscription count", "sources": ["en.wikipedia.org"], "source_categories": ["auto-low-vendor"], "score": "Low", "overrides": ["vendor-marketing-override"], "notes": "Wikipedia for vendor capability claim is auto-Low. Claims about Geotab should be sourced from Geotab's own filings (but private company) or from a primary consultancy/association report."},
+    {"claim_id": "VC-20", "claim_text": "Tive 2M trackers sold as of Dec 2024", "sources": ["globenewswire.com (Tive press release)"], "source_categories": ["secondary-press-release", "auto-low-vendor"], "score": "Low", "overrides": ["vendor-marketing-override"]},
+    {"claim_id": "VC-21", "claim_text": "Tive 60% YoY revenue growth H1 2024; 850+ customers; $100M booked ARR (May 2026)", "sources": ["globenewswire.com (Tive press releases)", "freightwaves.com (trade)"], "source_categories": ["auto-low-vendor", "secondary-trade"], "score": "Low", "overrides": ["vendor-marketing-override"], "notes": "GlobeNewswire Tive releases are vendor's own PRs. FreightWaves reports the same Tive PR. Chain traces to Tive."},
+    {"claim_id": "VC-22", "claim_text": "Roambee + MDI Ventures Indonesia strategic investment", "sources": ["prweb.com (press release)"], "source_categories": ["secondary-press-release"], "score": "Low", "overrides": ["press-release-only"]},
+    {"claim_id": "VC-23", "claim_text": "Sensitech TempTale GEO X launch Feb 2024; Berlinger acquisition Aug 2024; Lynx FacTOR Mar 2025", "sources": ["carrier.com (parent company corporate site)"], "source_categories": ["auto-low-vendor"], "score": "Low", "overrides": ["vendor-marketing-override"]},
+    {"claim_id": "VC-24", "claim_text": "Controlant Pfizer COVID vaccine: <0.1% product loss vs 25-50% pre-digital baseline; 5B+ doses deployed", "sources": ["controlant.com (vendor case study)", "supplychainbrain.com (trade coverage of same case study)"], "source_categories": ["auto-low-vendor", "secondary-trade"], "score": "Low", "overrides": ["vendor-marketing-override", "chain-of-citations"], "notes": "Both sources originate from Controlant's own case study. supplychainbrain.com is trade press reporting Controlant's own claim. One underlying source (Controlant)."},
+    {"claim_id": "VC-25", "claim_text": "Overhaul $105M Series C (Aug 2025); safeguards $1.4T cargo; customers Microsoft, BMS, CEVA, Arvato", "sources": ["prnewswire.com (Overhaul own PR)"], "source_categories": ["secondary-press-release", "auto-low-vendor"], "score": "Low", "overrides": ["vendor-marketing-override", "press-release-only"]},
+    {"claim_id": "VC-26", "claim_text": "Overhaul Gartner 2024 Magic Quadrant Challenger positioning", "sources": ["over-haul.com (vendor own site)"], "source_categories": ["auto-low-vendor"], "score": "Low", "overrides": ["vendor-marketing-override", "gartner-magic-quadrant-note"]},
+    {"claim_id": "VC-27", "claim_text": "PowerFleet FY2025 revenue $362.5M (+26% YoY), 75% SaaS; FY2026 guidance $440-$445M", "sources": ["ir.powerfleet.com/press-releases (IR press release)"], "source_categories": ["secondary-press-release"], "score": "Medium", "notes": "PowerFleet is public (NYSE: AIOT). IR press release is one step from the actual 10-K. Revenue figure would be in annual 10-K filing. Treated as Medium — verifiable via SEC but IR press release is not the audited filing itself."},
+    {"claim_id": "VC-28", "claim_text": "Karooooo / Cartrack SEA subscription revenue +30% Q1 2026; SEA second-largest contributor", "sources": ["sec.gov Karooooo 20-F/press filing"], "source_categories": ["primary-filing"], "score": "High"},
+    {"claim_id": "VC-29", "claim_text": "Karooooo SGD 334.6M group revenue FY2024; SEA second-largest regional contributor", "sources": ["iol.co.za/business-report (South African news)"], "source_categories": ["secondary-news"], "score": "Low", "overrides": ["single-trade-source"], "notes": "The Karooooo 20-F is available on SEC and would be the correct primary source. The figure should be sourced from the filing directly, not from a news article."},
+    {"claim_id": "VC-30", "claim_text": "TransTRACK Series A $12M (Eurazeo + Cocoon Capital); 10,000+ units, 500+ clients", "sources": ["blog.transtrack.co (vendor own blog)"], "source_categories": ["auto-low-vendor"], "score": "Low", "overrides": ["vendor-marketing-override"]},
+    {"claim_id": "VC-31", "claim_text": "BSI/TT Club 2024 Cargo Theft Report — SEA piracy +281% YoY; top theft countries; food/beverages primary SEA targets", "sources": ["bsigroup.com", "ttclub.com (PDF)"], "source_categories": ["primary-association", "primary-standards"], "score": "High"},
+    {"claim_id": "VC-32", "claim_text": "Lytx 56% reduction in risky driving behaviors; covers 4,500+ customers, 200,000+ vehicles", "sources": ["lytx.com/news-events (vendor own site)"], "source_categories": ["auto-low-vendor"], "score": "Low", "overrides": ["vendor-marketing-override"]},
+    {"claim_id": "PP3.1-freq-1", "claim_text": "Industry average visibility compliance rate 30-40%; shipper demand 80-90%", "sources": ["truckertools.com (vendor marketing pages x2)"], "source_categories": ["auto-low-vendor"], "score": "Low", "overrides": ["vendor-marketing-override", "single-domain-override"], "notes": "CRITICAL: This is the most load-bearing factual claim in Pain Point 3.1. It is sourced exclusively from Trucker Tools' own marketing site — a competing RTTVP vendor with direct commercial interest in documenting the highest possible compliance gap. No independent neutral third-party confirms the 30-40% baseline."},
+    {"claim_id": "PP3.1-cost-1", "claim_text": "US truck brokerage revenue exceeds $80B (ATA/Armstrong & Associates)", "sources": ["3plogistics.com/3pl-market-research (Armstrong & Associates)"], "source_categories": ["secondary-market-research"], "score": "Medium", "notes": "Armstrong & Associates is the reference firm for 3PL market data. Not a top-tier consultancy per rubric. Single secondary market-research source. Treat as Medium."},
+    {"claim_id": "PP3.1-cost-2", "claim_text": "project44 Network Operations Agent launch April 2026 — 'nearly one million automated carrier communications' to resolve gaps in 259,000-carrier network", "sources": ["globenewswire.com (project44 press release)"], "source_categories": ["auto-low-vendor"], "score": "Low", "overrides": ["vendor-marketing-override"]},
+    {"claim_id": "PP3.1-cost-3", "claim_text": "project44 Carrier Managed Services: 20-40pp data availability improvement, 40-70pp milestone improvement; enterprise RTTVP contracts $150K-$500K+/year", "sources": ["project44.com/blog (vendor own blog)"], "source_categories": ["auto-low-vendor"], "score": "Low", "overrides": ["vendor-marketing-override"]},
+    {"claim_id": "PP3.1-cost-4", "claim_text": "Lipsey Logistics increased carrier compliance by 20 percentage points through Descartes MacroPoint adoption", "sources": ["descartes.com/resources (vendor case study)"], "source_categories": ["auto-low-vendor"], "score": "Low", "overrides": ["vendor-marketing-override"]},
+    {"claim_id": "PP3.1-cost-5", "claim_text": "CargoNet average cargo theft loss per incident $202,364 in 2024 (up from $187,895 in 2023); $454.9M total US losses 2024", "sources": ["verisk.com/newsroom", "cargonet.com/news-events"], "source_categories": ["primary-association", "primary-association"], "score": "Medium", "notes": "Both sources are Verisk/CargoNet — same parent entity (Verisk Analytics, NYSE: VRSK). CargoNet is a Verisk product. Single-domain override applies — two URLs but same publication family. CargoNet is an industry reference authority for cargo theft data; treat as single primary-association source = Medium."},
+    {"claim_id": "PP3.1-freq-2", "claim_text": "97% of US trucking companies operate 20 trucks or fewer; 90% operate six or fewer (FMCSA 2024)", "sources": ["fmcsa.dot.gov Pocket Guide 2024"], "source_categories": ["primary-gov"], "score": "High"},
+    {"claim_id": "PP3.1-freq-3", "claim_text": "project44 G2 Winter 2024 Report — 93% data quality vs 88% category average", "sources": ["project44.com/blog (vendor own blog)"], "source_categories": ["auto-low-vendor"], "score": "Low", "overrides": ["vendor-marketing-override"]},
+    {"claim_id": "PP3.1-RC2", "claim_text": "WiserLogTech RTTVP reliability critique including Flexport manual data entry", "sources": ["wiserlogtech.com (industry blog)"], "source_categories": ["secondary-trade"], "score": "Low", "overrides": ["single-trade-source"]},
+    {"claim_id": "PP3.1-11", "claim_text": "project44 FY2024 revenue $210M+, 30%+ YoY growth, 1,300+ enterprise customers (repeat in PP3.1)", "sources": ["project44.com/press-releases (vendor own)"], "source_categories": ["auto-low-vendor"], "score": "Low", "overrides": ["vendor-marketing-override"]},
+    {"claim_id": "PP3.2-cost-1", "claim_text": "15-25% higher insurance premiums for temperature-sensitive cargo without verifiable monitoring data", "sources": ["tago.io/blog (IoT platform vendor own blog)"], "source_categories": ["auto-low-vendor"], "score": "Low", "overrides": ["vendor-marketing-override"], "notes": "TagoIO is an IoT platform vendor; their blog is a vendor marketing surface. No primary source (Lloyd's actuarial data, insurance regulator, TT Club) cited. Most load-bearing cost claim in PP3.2 with zero valid source support."},
+    {"claim_id": "PP3.2-cost-1b", "claim_text": "Pharma cold chain premiums at 0.5-3% of insured values; 15-30% risk management discount band", "sources": ["insure24.co.uk/blog (insurance broker blog)"], "source_categories": ["secondary-trade"], "score": "Low", "overrides": ["single-trade-source"], "notes": "Insurance broker comparison site — not a Lloyd's actuarial publication, regulatory body, or industry association (TT Club, IUMI). Single secondary source for a critical cost figure."},
+    {"claim_id": "PP3.2-cost-2", "claim_text": "IATA estimates pharmaceutical air cargo losses from temperature excursions at $35B/year globally", "sources": ["iotforall.com (trade blog)"], "source_categories": ["secondary-trade"], "score": "Low", "overrides": ["single-trade-source", "misattributed-source"], "notes": "CRITICAL SOURCE ERROR: The $35B figure originates from IQVIA Institute for Human Data Science (2019 Biopharma Cold Chain Logistics Survey), not from IATA. IATA's own estimate is $2.5B-$12.5B for air cargo temperature losses. The iotforall.com blog misattributes the IQVIA figure to IATA. This is a factual error in source attribution embedded in the draft."},
+    {"claim_id": "PP3.2-freq-1", "claim_text": "Parsyl Data Partner Program (March 2024) covers five monitoring vendors; no equivalent at Lloyd's, AIG, Swiss Re, Zurich as of May 2026", "sources": ["parsyl.com/media (vendor own site)", "ajot.com (trade press)"], "source_categories": ["auto-low-vendor", "secondary-trade"], "score": "Low", "overrides": ["vendor-marketing-override"]},
+    {"claim_id": "PP3.2-freq-2", "claim_text": "Tive 4M+ trackers sold, 1,200+ customers, $100M booked ARR (May 2026)", "sources": ["globenewswire.com (Tive press release)"], "source_categories": ["auto-low-vendor"], "score": "Low", "overrides": ["vendor-marketing-override"]},
+    {"claim_id": "PP3.2-freq-3", "claim_text": "WHO estimate: 25% of vaccines arrive degraded due to cold chain failures", "sources": ["controlant.com case study (chains to WHO)", "supplychainbrain.com (trade, chains to Controlant)"], "source_categories": ["auto-low-vendor", "secondary-trade"], "score": "Medium", "overrides": ["chain-of-citations"], "notes": "Underlying source is WHO (primary-multilateral) but is cited second-hand through Controlant vendor case study. If WHO figure verified directly from WHO publication, would score High. As cited via vendor case study chain, score Medium. Recommend direct WHO citation."},
+    {"claim_id": "PP3.2-academic", "claim_text": "IoT cold chain barriers: data interoperability and stakeholder trust as leading structural barriers (ISM-MICMAC analysis)", "sources": ["ncbi.nlm.nih.gov/pmc/articles/PMC11244810"], "source_categories": ["primary-academic"], "score": "High"},
+    {"claim_id": "PP3.3-freq-3", "claim_text": "Parsyl $15M fundraise; launch of tech-enabled cargo insurance products", "sources": ["reinsurancene.ws (trade press)"], "source_categories": ["secondary-trade"], "score": "Low", "overrides": ["single-trade-source", "press-release-only"]},
+    {"claim_id": "PP3.3-freq-4", "claim_text": "Pharmaceutical cold chain logistics market revenue $65B+ in 2025; insurance at 0.5-3% generates $325M-$1.95B in premium", "sources": ["iotforall.com (trade blog)"], "source_categories": ["secondary-trade"], "score": "Low", "overrides": ["single-trade-source"], "notes": "Single trade blog source for a large market-size figure. IATA or a multilateral body would be appropriate for pharma air cargo market size."},
+    {"claim_id": "PP3.4-cost-1", "claim_text": "ASEAN road freight transport market $119.4B in 2025 (Mordor Intelligence)", "sources": ["mordorintelligence.com"], "source_categories": ["secondary-market-research"], "score": "Low", "overrides": ["aggregator-market-research-auto-downgrade"]},
+    {"claim_id": "PP3.4-cost-2", "claim_text": "BSI/TT Club 2024: Indonesia 14% of Asia cargo theft incidents; 13% insider involvement; food, beverages, agricultural products primary SEA targets", "sources": ["ttclub.com", "ttclub.com PDF"], "source_categories": ["primary-association", "primary-association"], "score": "High", "notes": "BSI+TT Club co-authored report from P&I club and BSI standards body. Two primary-category sources."},
+    {"claim_id": "PP3.4-cost-3", "claim_text": "Cartrack SEA subscription revenue +30% Q1 2026; second-largest region", "sources": ["iol.co.za (South African news)"], "source_categories": ["secondary-news"], "score": "Low", "overrides": ["single-trade-source"], "notes": "The Karooooo 20-F or Karooooo quarterly filing would be the appropriate primary source for this financial figure."},
+    {"claim_id": "PP3.4-cost-4", "claim_text": "Karooooo SGD 334.6M group revenue FY2024 (SEC filing)", "sources": ["sec.gov Karooooo filing"], "source_categories": ["primary-filing"], "score": "High"},
+    {"claim_id": "PP3.4-freq-1", "claim_text": "Berg Insight: SEA fleet management penetration 17.5% in 2024 (3.6M units), projected 27.1% in 2029 (6.4M units); CAGR 12.3%; 'relatively basic tracking systems'", "sources": ["globenewswire.com (Berg Insight press release)", "iotbusinessnews.com (trade coverage of Berg Insight)"], "source_categories": ["secondary-press-release", "secondary-trade"], "score": "Low", "overrides": ["niche-market-research-as-aggregator", "chain-of-citations"], "notes": "Both sources trace to Berg Insight (niche private research firm, not in top-tier consultancy list). The 17.5% penetration figure is the most-cited metric in PP3.4 and it has only niche-market-research support via press release distribution. This requires either a government statistics source (BPS Indonesia, MOTL Thailand, ASEAN Centre for Energy) or a top-tier consultancy authored report to score above Low."},
+    {"claim_id": "PP3.4-freq-2", "claim_text": "Indonesia Zero ODOL regulation targets overloading via WIM and ETLE; no driver behavior mandate", "sources": ["pwc.com/id (PwC Indonesia media centre)", "blog.transtrack.co (vendor blog)"], "source_categories": ["primary-consultancy", "auto-low-vendor"], "score": "Medium", "notes": "PwC Indonesia's own published policy analysis is primary-consultancy. Vendor blog is auto-low. Net: one valid primary source."},
+    {"claim_id": "PP3.4-freq-3", "claim_text": "Samsara and Motive have no confirmed SEA commercial market presence", "sources": ["gomotive.com (vendor own)", "stocktitan.net SEC Samsara 10-K"], "source_categories": ["auto-low-vendor", "primary-filing"], "score": "Medium", "notes": "Samsara 10-K is primary-filing confirming North America focus. Motive source is vendor own site (auto-low). One valid primary-filing source."},
+    {"claim_id": "PP3.4-freq-4", "claim_text": "TransTRACK Series A $12M; 10,000+ units, 500+ clients; temperature and E-seal monitoring", "sources": ["blog.transtrack.co (vendor own blog)"], "source_categories": ["auto-low-vendor"], "score": "Low", "overrides": ["vendor-marketing-override"]},
+    {"claim_id": "PP3.4-freq-5", "claim_text": "SEA fleet management market expected to double by 2028 to 5.4M units (Berg Insight via BusinessWire)", "sources": ["businesswire.com (Berg Insight press release)"], "source_categories": ["secondary-press-release"], "score": "Low", "overrides": ["niche-market-research-as-aggregator"]},
+    {"claim_id": "PP3.5-cost-1", "claim_text": "ReCAAP 2025: 108 incidents in SOMS, 19-year high, 74% increase from 62 in 2024; 87% Jan-Jul concentration", "sources": ["recaap.org/resources PDF (direct)", "recaap.org press release PDF", "shipandbunker.com (corroborating trade)"], "source_categories": ["primary-multilateral", "primary-multilateral", "secondary-trade"], "score": "High", "notes": "ReCAAP ISC is an intergovernmental body (primary-multilateral). Two primary-multilateral URLs directly from recaap.org plus trade corroboration."},
+    {"claim_id": "PP3.5-cost-2", "claim_text": "Piracy types: fuel siphoning $400K-$700K per tanker; cargo pilferage 26% of incidents", "sources": ["maritimefairtrade.org (trade/news)"], "source_categories": ["secondary-trade"], "score": "Low", "overrides": ["single-trade-source"], "notes": "Single trade source for specific dollar-loss figures. ReCAAP annual report or Lloyd's MIU data would be appropriate primary source for per-incident loss values."},
+    {"claim_id": "PP3.5-cost-3", "claim_text": "Overhaul projects 22% increase in US cargo theft 2025; Munich Re: sea piracy rising 85% globally H1 2025", "sources": ["munichre.com (Munich Re 2025 authored report)", "bsigroup.com/ttclub.com (BSI/TT Club 2024)"], "source_categories": ["primary-consultancy", "primary-association"], "score": "High", "notes": "Munich Re's own authored specialty insurance report qualifies as primary-consultancy. BSI/TT Club is primary-association. Two independent primary-category sources."},
+    {"claim_id": "PP3.5-cost-4", "claim_text": "BSI/TT Club 2024: 281% YoY piracy surge in Strait of Malacca; Indonesia second-most affected Asian country", "sources": ["ttclub.com PDF", "bsigroup.com"], "source_categories": ["primary-association", "primary-standards"], "score": "High"},
+    {"claim_id": "PP3.5-freq-1", "claim_text": "Overhaul Series C $105M (August 2025) — LATAM/North America focus; no SEA equivalent", "sources": ["prnewswire.com (Overhaul own PR)"], "source_categories": ["auto-low-vendor", "secondary-press-release"], "score": "Low", "overrides": ["vendor-marketing-override"]},
+    {"claim_id": "PP3.6-cost-1", "claim_text": "Verisk CargoNet: $454.9M total US cargo theft losses 2024, 60% increase from 2023; $202,364 per incident", "sources": ["verisk.com/newsroom"], "source_categories": ["primary-association"], "score": "Medium", "notes": "Verisk is a public company (VRSK). CargoNet is Verisk's industry data product. Single source from industry data authority. No independent cross-validation from government statistics or a second industry body (e.g. BSI, TT Club, FBI)."},
+    {"claim_id": "PP3.6-cost-2", "claim_text": "Tive: electronics 'often less monitored or tracked efficiently'; Tive 4M+ trackers weighted to cold chain", "sources": ["tive.com/blog (vendor own)", "globenewswire.com (Tive press release)"], "source_categories": ["auto-low-vendor", "auto-low-vendor"], "score": "Low", "overrides": ["vendor-marketing-override"]},
+    {"claim_id": "PP3.6-freq-1", "claim_text": "Overhaul H1 2024: cargo theft up 49% globally; 2025 projection +22%; electronics named priority target", "sources": ["prnewswire.com (Overhaul own PR)", "sourcingjournal.com (trade press citing same PR)"], "source_categories": ["auto-low-vendor", "secondary-trade"], "score": "Low", "overrides": ["vendor-marketing-override", "chain-of-citations"]},
+    {"claim_id": "PP3.6-freq-2", "claim_text": "Munich Re 2025: organized criminal groups use AI to target freight data; cargo targeting intelligence-driven", "sources": ["munichre.com (Munich Re 2025 authored report)"], "source_categories": ["primary-consultancy"], "score": "High"},
+    {"claim_id": "PP3.6-freq-3", "claim_text": "Cold chain remote tracking units: 4.1M active 2021, projected 9.2M by 2026 (Berg Insight via Telit)", "sources": ["telit.com/blog (vendor blog citing Berg Insight)"], "source_categories": ["auto-low-vendor"], "score": "Low", "overrides": ["vendor-marketing-override", "chain-of-citations"], "notes": "Vendor blog citing Berg Insight (niche research firm). Double-chain: auto-low vendor blog + niche market-research aggregator."}
+  ],
+  "url_sample_findings": [
+    {
+      "url": "globenewswire.com/news-release/2024/10/30/...Berg-Insight... (source 9, VC-9)",
+      "check": "Berg Insight SEA 17.5% penetration figure",
+      "finding": "This is a GlobeNewswire press release distribution of Berg Insight's own marketing summary for their paid report. Berg Insight is a niche private research firm — NOT in the rubric's top-tier consultancy list (McKinsey, BCG, Bain, Deloitte Insights, PwC Strategy&, EY-Parthenon, KPMG, Roland Berger, Oliver Wyman, Bloomberg NEF). The underlying paid report exists at berginsight.com but is paywalled. The draft rates the Berg Insight data (VC-8) as 'High' — this is INCORRECT. Correct score: Low."
+    },
+    {
+      "url": "project44.com/press-releases/project44-concludes-strong-fy-2024... (source 10, VC-10)",
+      "check": "project44 $210M FY2024 revenue",
+      "finding": "This is project44's own press release on project44's own revenue. project44 is a private company with no SEC 10-K. Auto-low-vendor applies. The PRNewswire distribution of the same press release was confirmed in search but does not constitute an independent source — it is the same press release on a different distribution channel. Correct score: Low."
+    },
+    {
+      "url": "getlatka.com/companies/shippeo (source 11, VC-11)",
+      "check": "Shippeo $22.3M ARR",
+      "finding": "GetLatka collects revenue data via CEO/founder phone interviews ('Latka verified'). It is NOT an audited data source. It is effectively a self-reported CEO interview, which is one step above a company's own press release. No audited filing or Form D exists for Shippeo. Draft notes 'Latka self-reported; confidence Medium' — however, given vendor-marketing-override applies and Latka is not a primary filing, correct score is Low."
+    },
+    {
+      "url": "iotforall.com/cold-chain-pharma-iot (source 7, PP3.2-cost-2)",
+      "check": "IATA $35B pharmaceutical temperature excursion losses",
+      "finding": "CRITICAL: The $35B figure is misattributed. Search confirmed this figure originates from IQVIA Institute for Human Data Science (2019 Biopharma Cold Chain Logistics Survey), not from IATA. IATA's own published estimate for pharma air cargo temperature losses is $2.5B-$12.5B. The iotforall.com blog misattributes the IQVIA statistic to IATA. This is a factual source-attribution error in the draft. The claim in the pain-points file ('IATA estimates pharmaceutical air cargo temperature excursion losses at $35B/year') is factually incorrect as cited."
+    },
+    {
+      "url": "truckertools.com/how-to-improve-freight-visibility-compliance/ (source 1, PP3.1-freq-1)",
+      "check": "30-40% industry average visibility compliance rate",
+      "finding": "Trucker Tools is a competing RTTVP vendor selling load-tracking software to freight brokers. The 30-40% 'industry average' figure appears exclusively on Trucker Tools' own marketing pages. The figure directly benefits Trucker Tools commercially by documenting the largest possible compliance gap. No neutral third-party (FMCSA, ATA, Gartner directly, McKinsey) independently publishes this figure. This is the most-cited quantified claim in Pain Point 3.1 and it has zero independent source support. Auto-low-vendor applies."
+    }
+  ],
+  "weak_claims_to_deep_research": [
+    {
+      "claim_id": "PP3.1-freq-1",
+      "claim_text": "Industry average visibility compliance rate hovers at 30-40%; shippers demand 80-90%",
+      "current_sources": ["truckertools.com (vendor marketing pages only)"],
+      "current_score": "Low",
+      "issue": "Entire compliance-gap narrative rests on a single vendor's self-published benchmark with no independent corroboration. Trucker Tools has commercial interest in citing the highest possible compliance gap.",
+      "suggested_action": "Search for: (1) FMCSA or ATA published data on load tracking compliance rates; (2) Gartner MQ 2024 RTTTVP direct report (gartner.com/en/documents/5298863) for any compliance rate benchmarks in the analyst commentary; (3) academic studies on ELD compliance and carrier tracking rates (Google Scholar: 'freight visibility compliance rate carrier trucking'); (4) interview freight operations directors at 3 mid-market brokers ($50M-$500M volume) for their internal tracking compliance dashboard figures",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP3.2-cost-1",
+      "claim_text": "Without verifiable monitoring data, temperature-sensitive cargo shippers pay 15-25% higher insurance premiums",
+      "current_sources": ["tago.io/blog (IoT platform vendor marketing)"],
+      "current_score": "Low",
+      "issue": "The most important cost quantification in Pain Point 3.2 is sourced entirely from a competing IoT vendor's marketing blog with no cited actuarial or underwriting primary source. TagoIO does not disclose where the 15-25% figure came from.",
+      "suggested_action": "Search for: (1) IUMI (International Union of Marine Insurance) cold chain premium rate data or annual report; (2) Lloyd's Market Association cargo policy statistics; (3) TT Club 'Marine Cargo Insurance' primer or annual report for premium rate bands by cargo type; (4) Swiss Re 'World Insurance' sigma report for pharmaceutical cargo risk; (5) interview a Lloyd's syndicate underwriter covering pharmaceutical cargo (e.g., Chaucer, Beazley, BRIT) for current rate differentials between monitored and unmonitored cold-chain shipments",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP3.2-cost-2",
+      "claim_text": "IATA estimates pharmaceutical air cargo losses from temperature excursions at $35B/year globally",
+      "current_sources": ["iotforall.com/cold-chain-pharma-iot"],
+      "current_score": "Low",
+      "issue": "SOURCE MISATTRIBUTION: The $35B figure originates from IQVIA (2019 Biopharma Cold Chain Logistics Survey), not from IATA. IATA's own estimate is $2.5B-$12.5B for air cargo specifically. The draft contains a factual error in source attribution that must be corrected before publication.",
+      "suggested_action": "Replace with: (1) Directly cite IQVIA Institute 2019 Biopharma Cold Chain Logistics Survey for the $35B figure and correct the attribution from 'IATA' to 'IQVIA'; (2) Separately cite IATA's actual published estimate ($2.5B-$12.5B air cargo losses) from IATA's own pharma air cargo guidelines or 2024 annual report; (3) WHO PQS (Prequalification Programme) data for vaccine cold chain losses as a primary-multilateral source",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC-8",
+      "claim_text": "SEA fleet management installed base 2.8M units active (Berg Insight, end-2023); CAGR 13.7% to 5.4M by 2028",
+      "current_sources": ["businesswire.com (Berg Insight press release)", "globenewswire.com (Berg Insight press release)"],
+      "current_score": "Low",
+      "issue": "Draft incorrectly rated this High. Berg Insight is a niche private research firm not in the rubric's top-tier consultancy list. Both citations are press release distributions of Berg Insight's paid report summary — not the report itself. The 17.5% penetration figure derived from this data (VC-9, PP3.4-freq-1) is the most-cited SEA-specific metric across both files and has no government statistics or multilateral corroboration.",
+      "suggested_action": "Search for: (1) ASEAN Centre for Energy or ASEAN Secretariat data on commercial vehicle registration by country (Indonesia BPS, Thailand NESDC, Malaysia DOSM) to derive an independent fleet size denominator; (2) Individual country transport ministry data: Indonesian Ministry of Transportation annual report for commercial vehicle registration counts; (3) ADB transport statistics for ASEAN commercial vehicle fleets; (4) IEA Southeast Asia Energy Outlook for motorization data; (5) cross-check Berg Insight figure against Frost & Sullivan or McKinsey ASEAN fleet data if available",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP3.4-cost-1",
+      "claim_text": "ASEAN road freight transport market estimated at $119.4B in 2025 (Mordor Intelligence)",
+      "current_sources": ["mordorintelligence.com"],
+      "current_score": "Low",
+      "issue": "Mordor Intelligence is an auto-Low aggregator. The $119.4B figure is the only market-size anchor for the entire PP3.4 cost framing. The unmonitored freight calculation ($98.7B × 82.5% unmonitored) flows directly from this figure.",
+      "suggested_action": "Search for: (1) World Bank ASEAN logistics and transport market data (worldbank.org ASEAN transport); (2) ADB (Asian Development Bank) transport statistics for ASEAN freight volumes; (3) ASEAN Secretariat annual report for intra-ASEAN trade logistics; (4) McKinsey or BCG ASEAN logistics report (search 'McKinsey ASEAN logistics market 2024'); (5) National bureau of statistics data: BPS Indonesia logistics sector GDP contribution; NESDB Thailand freight transport data",
+      "priority": "medium"
+    }
+  ],
+  "gate_decision_recommendation": "re-run-recommended",
+  "gate_reasoning": "Stage 3 scores 71.4% of claims as Low confidence (50 of 70 scored claims), with only 11 High-confidence claims (15.7%) — all of which are concentrated in regulatory filings (Samsara 10-K, Karooooo 20-F), government statistics (FMCSA), and two industry association reports (BSI/TT Club, ReCAAP ISC). The stage fails on three structural deficiencies that cannot be remediated by minor additions: first, the most load-bearing quantified claim in Pain Point 3.1 — the 30–40% industry average visibility compliance rate — is sourced exclusively from a competing vendor's marketing site with zero independent corroboration, which means the entire $800M–$1.6B broker-revenue-at-risk calculation rests on uncorroborated vendor data; second, the 15–25% insurance premium penalty claim in Pain Point 3.2 is sourced from an IoT vendor's marketing blog with no actuarial or underwriting primary source; third, the $35B pharma cold-chain loss figure is factually misattributed to IATA when the actual source is IQVIA (2019), requiring a correction before the figure can be cited at any confidence level. Additionally, the draft incorrectly rates the Berg Insight SEA fleet data (VC-8) as High confidence when the correct score under the rubric is Low — Berg Insight is a niche paid research firm distributed via press releases, not a top-tier consultancy authored report. Deep research should target five specific gaps: (1) neutral third-party benchmark for RTTVP visibility compliance rates; (2) IUMI or Lloyd's actuarial data for cold-chain premium differentials; (3) direct IQVIA and IATA source citation correction for the $35B figure; (4) government statistics cross-validation of the 17.5% SEA telematics penetration rate; (5) ASEAN multilateral or ADB source for the $119.4B road freight market size."
+}

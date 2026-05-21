@@ -1,0 +1,89 @@
+{
+  "run_id": "2026-05-20-1124",
+  "input_file": "./input/logistics-risk-mgmt-worldwide.txt",
+  "topic_slug": "logistics-risk-mgmt-worldwide",
+  "mode": "sandbox",
+  "output_dir": "./output/raw-claude-overnight/2026-05-20-1124/",
+  "current_pass": 5,
+  "stages_planned": [
+    {"n": 1, "name": "Pre-dispatch — vendor procurement & onboarding"},
+    {"n": 2, "name": "Dispatch — freight procurement & tendering"},
+    {"n": 3, "name": "In-transit — visibility & monitoring"},
+    {"n": 4, "name": "Multi-leg handoffs — subcontractor chain integration & control towers"},
+    {"n": 5, "name": "Delivery — POD, last-leg verification & security"},
+    {"n": 6, "name": "Post-incident — claims, insurance & recovery"}
+  ],
+  "stages_completed": [1, 2, 3, 4, 5, 6],
+  "stages_in_progress": [],
+  "weak_claims_to_re_research": [],
+  "deep_research_applied": [
+    {"id": "PP1.2-2", "outcome": "replace", "topic": "1,500% strategic theft scope"},
+    {"id": "PP1.2-9", "outcome": "replace", "topic": "400% Truckstop re-attribution"},
+    {"id": "PP1.5-1", "outcome": "replace", "topic": "OFAC $263M / 14 actions verification"},
+    {"id": "VC-Nirvana", "outcome": "confirm-upgrade", "topic": "Nirvana $1.5B + Tokio Marine Future Fund confirmation"},
+    {"id": "PP5.2-IDePOD", "outcome": "drop", "topic": "Indonesia ePOD mandate unsubstantiated"},
+    {"id": "PP3.2-IATA-IQVIA", "outcome": "replace", "topic": "IATA → IQVIA factual correction"},
+    {"id": "VC-IUMI", "outcome": "confirm-upgrade", "topic": "IUMI 2024 figures PDF verbatim verified"},
+    {"id": "PP6.4-Malacca", "outcome": "confirm", "topic": "281% SOMS piracy surge verified"}
+  ],
+  "validation_summary": {
+    "stage_1": {"claims": 59, "low_pct_initial": 67.8, "low_pct_post_remediation_est": 50.0},
+    "stage_2": {"claims": 77, "low_pct_initial": 64.9, "low_pct_post_remediation_est": 64.0},
+    "stage_3": {"claims": 70, "low_pct_initial": 71.4, "low_pct_post_remediation_est": 63.0},
+    "stage_4": {"claims": 47, "low_pct_initial": 43.0, "low_pct_post_remediation_est": 43.0},
+    "stage_5": {"claims": 46, "low_pct_initial": 63.0, "low_pct_post_remediation_est": 58.0},
+    "stage_6": {"claims": 47, "low_pct_initial": 64.0, "low_pct_post_remediation_est": 50.0},
+    "corpus_total_claims": 346,
+    "corpus_low_pct_post_remediation_est": 56.0
+  },
+  "final_gate_decision": "ship-with-flag",
+  "started_at": "2026-05-20T11:27:00+08:00",
+  "finished_at": "2026-05-20T14:05:00+08:00",
+  "interruption": null,
+  "outputs": {
+    "value_chain": "raw-claude-value-chain-logistics-risk-mgmt-worldwide.md",
+    "pain_points": "raw-claude-pain-points-logistics-risk-mgmt-worldwide.md",
+    "summary": "raw-claude-summary-logistics-risk-mgmt-worldwide.md",
+    "final_report_html": "FINAL-REPORT.html",
+    "cross_stage_observations": "cross-stage-observations.md"
+  },
+  "phase_2_handoff": {
+    "needed": true,
+    "reason": "unattended-Playwright mode; Phase 2 orchestrator handles attended-fetch enrichment",
+    "attended_fetch_targets": [
+      "https://ofac.treasury.gov/civil-penalties-and-enforcement-information/2025-enforcement-information",
+      "https://www.iata.org/en/programs/cargo/pharma/ceiv-pharma/",
+      "https://jdih.dephub.go.id/",
+      "https://www.ttnews.com/articles/double-brokering-increases",
+      "https://truckstop.com/blog/how-to-report-double-brokering/",
+      "Crunchbase/PitchBook gated funding rounds for Loadsure / Parsyl / Breeze / Cover Genius / Highway"
+    ]
+  },
+  "auto_enrichment": {
+    "started_at": "2026-05-20T07:34:38Z",
+    "completed_at": "2026-05-20T07:42:13Z",
+    "urls_attempted": 9,
+    "urls_succeeded": 8,
+    "urls_confirmed_inaccessible": 1,
+    "tool": "mcp__playwright (with curl fallback for one PDF download)",
+    "notes": "Of 8 reachable URLs, 1 (OFAC consolidated 2025 enforcement index) substantiates a numbered claim with a true confidence upgrade (Medium → High). 5 fetches confirm the source page is reachable but the specific claim figure is not on the fetched page (figures originate from PDFs / whitepapers / press releases already cited): IATA pharma overview, IATA CEIV Pharma, Grand View Research (aggregator override keeps Low), SAP control tower (no public pricing), Roanoke API (no SEA detail). 1 fetch (TT Club PDF) yielded the source body but DOES NOT contain the Indonesia top-10 / +281% Malacca specifics — those remain on secondary sources only. 1 fetch (JDIH Kemenhub) confirms the source registry is reachable and the original 'no ePOD mandate found' finding stands. 1 inaccessible (TT News 403 / Varnish edge cache).",
+    "claims_upgraded": [
+      {"id": "PP1.5-OFAC-INDEX", "from": "medium", "to": "high", "new_source": "https://ofac.treasury.gov/civil-penalties-and-enforcement-information/2025-enforcement-information", "evidence": "Primary OFAC YTD-2025 table: 14 actions, $265,746,819 total; Fracht FWO $1,610,775 (9/3/25); Key Holding $608,825 (7/2/25); GVA Capital $215,988,868 (6/12/25)."}
+    ],
+    "tags_resolved_no_upgrade": [
+      {"url": "https://www.roanokegroup.com/cargo-api-integration/", "outcome": "verified-product-scope", "note": "Narrative reference in vendor row; not a numbered claim."},
+      {"url": "https://www.sap.com/resources/supply-chain-control-tower", "outcome": "verified-page-reachable", "note": "Citation row; product confirmed but pricing not public."},
+      {"url": "https://www.grandviewresearch.com/industry-analysis/control-towers-market", "outcome": "verified-figures-match", "note": "Aggregator-override per validator keeps tier Low even with primary page reachable."},
+      {"url": "https://www.ttclub.com/fileadmin/uploads/tt-club/Documents/TT_and_BSI_annual_theft_report/TT_Club_Report_-_Supply_Chain_Report_April_2025.pdf", "outcome": "pdf-fetched-discrepancy", "note": "PDF body does NOT name Indonesia or cite +281% Malacca piracy; lists Brazil/Mexico/India/US/Germany/Chile/South Africa hotspots. Indonesia/Malacca specifics remain on secondary sources."},
+      {"url": "https://www.iata.org/en/programs/cargo/pharma/", "outcome": "verified-program-only", "note": "Confirms CEIV Pharma exists; $2.5B–$12.5B excursion figure not on overview page."},
+      {"url": "https://www.iata.org/en/services/certification/special-cargo/ceiv-pharma/", "outcome": "verified-program-only", "note": "Old /programs/cargo/pharma/ceiv-pharma/ now redirects here. Program scope confirmed."},
+      {"url": "https://jdih.dephub.go.id/", "outcome": "verified-original-finding-stands", "note": "Registry reachable; no national ePOD regulation surfaced via keyword search. Original 'unsubstantiated' status holds."}
+    ],
+    "tags_inaccessible": [
+      {"url": "https://www.ttnews.com/articles/double-brokering-increases", "reason": "HTTP 403 / Varnish edge cache; bot-blocked even via Playwright. Marked CONFIRMED-INACCESSIBLE in canonical pain-points file."}
+    ],
+    "corpus_low_pct_post_enrichment_est": 55.7,
+    "gate_decision_post_enrichment": "ship-with-flag",
+    "gate_unchanged_reason": "Single Medium → High upgrade on a corpus of 346 claims produces sub-1pt movement; all other resolutions either confirm prior tier or hit validator override rules. Gate band (30–70% Low ⇒ ship-with-flag) unchanged."
+  }
+}

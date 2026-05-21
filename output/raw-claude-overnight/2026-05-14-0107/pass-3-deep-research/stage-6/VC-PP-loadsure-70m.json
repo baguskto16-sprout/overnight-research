@@ -1,0 +1,143 @@
+{
+  "claim_id": "VC-PP-loadsure-70m",
+  "original_claim": "70 million small shippers globally operate without any formal cargo insurance; 60%+ of freight globally estimated to be under- or uninsured",
+  "outcome": "CONFIRMED-SCARCE",
+  "new_confidence": "L",
+  "verdict_tag": "CONFIRMED-SCARCE",
+  "two_part_finding": {
+    "figure_1_70m_shippers": {
+      "status": "vendor-only",
+      "finding": "The '70 million small shippers' figure cannot be found in any government, multilateral, or academic source. Searches across WTO, UNCTAD, ITC, World Bank, and trade press trace every citation back to Loadsure's own marketing copy. The Carrier Management (2022) article quoting Loadsure CEO Matt McCord states he 'has seen reports' of 60-90% underinsurance but names no source. No primary anchor exists.",
+      "closest_anchor": "WTO/ITC data confirms 95% of companies globally are MSMEs, but no database publishes a count of 'active small shippers without insurance.' WTO MSME working group notes SMEs account for 78% of exporters in developed economies but only 34% of export value — useful context, not a count of uninsured shippers."
+    },
+    "figure_2_60pct_uninsured": {
+      "status": "directionally-supported-by-independent-triangulation",
+      "finding": "No primary source publishes a '60%+ uninsured/under-insured freight' figure. However, an independent IUMI-based triangulation produces a directionally consistent result: IUMI (2024) reports USD 22.64 billion in global cargo insurance premiums. World merchandise trade in 2023 was ~USD 24 trillion (WTO). At a plausible mid-range cargo insurance rate of 0.2–0.3% of insured value, the implied insured cargo value is USD 7.5T–11.3T, representing 31–47% of world trade — implying 53–69% of global trade value is uninsured or underinsured. The 60%+ claim is thus plausible as a directional estimate but cannot be precisely pinned to that specific threshold from IUMI data alone, because the calculation is highly sensitive to the assumed insurance rate.",
+      "triangulation_method": "IUMI cargo premiums / plausible rate range / WTO trade value",
+      "rate_sensitivity": "At 0.1% rate: ~94% of trade insured (implausible for SME-heavy flows). At 0.3% rate: ~31% insured (~69% not). At 0.5% rate: ~19% insured (~81% not). Best estimate: 0.2-0.3% for the mixed portfolio, giving 31-47% insured, 53-69% uninsured/under-insured."
+    }
+  },
+  "primary_sources_found": [
+    {
+      "url": "https://iumi.com/statistics/facts-figures-press-release-2024/",
+      "category": "primary-industry-body",
+      "publication_date": "2025-09 (covering 2024 data)",
+      "supports_claim": "partially — supports direction, not specific 60% threshold",
+      "key_data": "Global cargo insurance premiums: USD 22.64 billion in 2024 (1.6% uplift on 2023). Cargo commands 57.23% of total marine insurance premiums. By region: Europe 46.96%, Asia/Pacific 29.79%, Latin America 10.19%, North America 7.75%. No penetration rate vs. total trade value is stated.",
+      "via_pdf_markitdown": false,
+      "note": "IUMI is the authoritative primary source for global marine insurance premium data. The premium figure is independently verifiable and does not trace to Loadsure. However, IUMI does not publish an insured-vs-total-trade penetration ratio."
+    },
+    {
+      "url": "https://iumi.com/news/press-release/steady-insurance-markets-for-hull-and-cargo-in-2024-but-offshore-energy-business-is-challenged-headlinds-loom-for-all-markets-reports-iumi/",
+      "category": "primary-industry-body",
+      "publication_date": "2025",
+      "supports_claim": "partially",
+      "key_data": "2024 total marine premiums: USD 39.92 billion. Cargo: USD 22.64 billion. This confirms the premium base for the triangulation calculation above.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://www.adb.org/publications/2023-trade-finance-gaps-growth-jobs-survey",
+      "category": "primary-multilateral",
+      "publication_date": "2023-09-05",
+      "supports_claim": "adjacent — supports SME access gap narrative",
+      "key_data": "Global trade finance gap reached USD 2.5 trillion in 2022 (up from USD 1.7 trillion in 2020). SMEs bear disproportionate share. 45% of SME trade finance requests rejected vs 17% for large firms. This finance access gap is a structural proxy for insurance access gap, but cargo insurance penetration is not directly measured.",
+      "via_pdf_markitdown": false,
+      "note": "ADB trade finance gap data supports the narrative that SMEs operate with substantially less financial protection than large shippers, but does not directly measure cargo insurance penetration."
+    },
+    {
+      "url": "https://www.wto.org/english/tratop_e/msmes_e/ersd_research_notes4_web_e.pdf",
+      "category": "primary-multilateral",
+      "publication_date": "2020 (WTO MSME working group)",
+      "supports_claim": "adjacent",
+      "key_data": "SMEs account for 78% of exporters in developed economies but only 34% of export value. In developing economies, SME export participation is even lower (7.6–15% of manufacturing sales). Relevant context: the majority of individual exporting entities are small firms, consistent with the claim that most individual shippers lack formal insurance — but no insurance data.",
+      "via_pdf_markitdown": false
+    }
+  ],
+  "negative_findings": [
+    {
+      "source_checked": "WTO World Trade Statistical Review (2023, 2024)",
+      "finding": "Covers merchandise trade values and volumes by country; does not publish count of active exporters by size or insurance status."
+    },
+    {
+      "source_checked": "ITC (International Trade Centre) SME Competitiveness Outlook",
+      "finding": "Covers SME competitiveness indicators; no cargo insurance penetration data found in publicly available publications."
+    },
+    {
+      "source_checked": "IUMI Global Marine Insurance Report",
+      "finding": "Publishes premium volumes by line and region; explicitly does not publish a penetration ratio (insured % of total trade). No such ratio found in 2024 or 2025 reports."
+    },
+    {
+      "source_checked": "Swiss Re sigma (searched 2022-2025 series)",
+      "finding": "Covers total insurance premiums by country and P/C vs life breakdown; no marine cargo penetration ratio as % of world trade in public summaries."
+    },
+    {
+      "source_checked": "Marsh / WTW marine cargo market reports",
+      "finding": "WTW Insurance Marketplace Realities 2024 Marine Cargo page returned HTTP 403; Munich Re cargo accumulation article returned HTTP 403. No public penetration figure retrieved."
+    },
+    {
+      "source_checked": "Carrier Management (2022) article on Loadsure",
+      "finding": "CEO Matt McCord references '60 to 90 percent' as figures he 'has seen in reports' — no source named. This confirms the figure is vendor-asserted, not sourced from a primary study."
+    },
+    {
+      "source_checked": "Loadsure / FreightWaves chain",
+      "finding": "All downstream citations of 70M shippers and 60%+ uninsured trace to Loadsure's own marketing. No independent primary source found anywhere in citation chain."
+    }
+  ],
+  "independent_triangulation": {
+    "method": "IUMI cargo premiums ÷ plausible insurance rate × WTO world trade value",
+    "inputs": {
+      "cargo_premiums_2024_usd": "22.64 billion (IUMI, primary source)",
+      "world_merchandise_trade_2023_usd": "~24 trillion (WTO, primary source)",
+      "assumed_insurance_rate_range": "0.1% to 0.5% of insured value (industry convention)"
+    },
+    "outputs": {
+      "at_0.1pct_rate": "Implied insured cargo USD 22.6T = 94% of trade (implausible; would mean near-universal coverage)",
+      "at_0.2pct_rate": "Implied insured cargo USD 11.3T = 47% of trade (53% uninsured)",
+      "at_0.3pct_rate": "Implied insured cargo USD 7.5T = 31% of trade (69% uninsured)",
+      "at_0.5pct_rate": "Implied insured cargo USD 4.5T = 19% of trade (81% uninsured)",
+      "midpoint_0.2_to_0.3pct": "31-47% of world trade insured => 53-69% uninsured/under-insured"
+    },
+    "conclusion": "At any plausible mid-range insurance rate (0.2-0.3%), the IUMI premium base implies that 53-69% of global trade by value is uninsured or under-insured. The '60%+' directional claim is consistent with this range. However, the calculation cannot confirm the specific 60% threshold claimed, and the result is highly sensitive to the rate assumption. The '70 million shippers' count has no triangulation pathway from available data.",
+    "caveat": "This triangulation assumes a uniform average rate, which is unrealistic. Large commodity shippers likely carry higher rates; small parcel shippers may carry lower rates or none at all. The actual uninsured fraction by shipment count (vs value) would likely be higher, since SME shipments are smaller individually."
+  },
+  "searches_performed": [
+    "IUMI International Union Marine Insurance global cargo premium volume insured trade 2023 2024 annual report",
+    "WTO World Trade Statistical Review 2024 number of exporters SME small firms global",
+    "UNCTAD SME exporters count global small medium enterprise trade participation 2022 2023",
+    "IUMI cargo insurance premiums global trade value penetration rate insured vs total trade 2023 2024",
+    "World Bank IFC SME access insurance trade finance gap developing countries cargo freight uninsured",
+    "ICC trade finance gap 2022 2023 uninsured trade exposure SME developing countries ADB",
+    "Swiss Re sigma cargo marine insurance global trade penetration rate percentage insured shipments 2022 2023",
+    "global cargo underinsurance freight insurance penetration 'percentage of trade' insured Marsh WTW Allianz 2023 2024",
+    "'70 million' shippers cargo insurance uninsured global freight origin source data",
+    "'60 percent' OR '60%' freight cargo uninsured underinsured global estimate source IUMI Swiss Re Allianz 2021 2022 2023"
+  ],
+  "categories_searched": [
+    "primary-industry-body (IUMI — fetched and verified)",
+    "primary-multilateral (WTO, UNCTAD, ADB, IFC/World Bank — searched)",
+    "primary-gov — no government agency publishes cargo insurance penetration statistics",
+    "secondary-industry-analyst (Marsh WTW Munich Re — fetched, HTTP 403 blocks on premium content)",
+    "trade-press-citation-tracing (Carrier Management Loadsure profile — fetched and verified as vendor-only)"
+  ],
+  "suggested_revision_options": [
+    {
+      "option": "replace-with-triangulated-range",
+      "revised_claim_text": "The majority of global freight by value moves without adequate insurance coverage. IUMI (2024) reports USD 22.64 billion in global cargo insurance premiums against ~USD 24 trillion in world merchandise trade; at typical cargo insurance rates of 0.2–0.3%, this implies 53–69% of world trade may be uninsured or under-insured — consistent with the directional claim of 60%+ underinsurance, but the specific threshold cannot be confirmed from available primary data. The '70 million uninsured shippers' figure originates from Loadsure's marketing and has no independent primary anchor.",
+      "suggested_score": "Medium",
+      "note": "Anchors the directional claim to IUMI + WTO primary data while accurately flagging what cannot be confirmed."
+    },
+    {
+      "option": "mark-assumed",
+      "revised_claim_text": "[ASSUMED-N]: ~60%+ of global freight is under- or uninsured (Loadsure marketing claim; directionally consistent with IUMI/WTO triangulation but not confirmed by primary source). 70M uninsured shippers figure: vendor-originated, no primary anchor. To validate: commission primary survey of SME exporter insurance uptake rates, or request IUMI to compute premium-to-trade-value penetration ratio.",
+      "suggested_score": "Low"
+    },
+    {
+      "option": "drop-shipper-count-keep-direction",
+      "revised_claim_text": "A substantial majority of global freight moves without formal cargo insurance, particularly among SME shippers. IUMI data shows USD 22.64B in cargo premiums (2024) against USD 24T in world merchandise trade, implying large under-coverage at typical insurance rates. The ADB (2023) reports a USD 2.5T trade finance gap disproportionately affecting SMEs, structurally consistent with widespread insurance access gaps. The specific '70 million shippers' and '60%+' figures are Loadsure-originated and should be dropped in favor of the directional framing above.",
+      "suggested_score": "Medium"
+    }
+  ],
+  "recommended_option": "replace-with-triangulated-range",
+  "reasoning": "The '70 million shippers' figure has no primary anchor whatsoever and should be dropped from any artifact claiming evidence-based analysis. The '60%+ uninsured' directional claim is independently supported by IUMI/WTO triangulation (which yields a 53-69% range), making it defensible as a directional estimate when properly caveated. The recommended revision separates what is calculable from primary sources (the range) from what is vendor-only (the specific 60% threshold and shipper count). Outcome is CONFIRMED-SCARCE because the direction is supported by adjacent primary data even though no source directly publishes the claimed figures.",
+  "notes": "The most analytically robust path is to replace the Loadsure-originated figures with the IUMI/WTO triangulation framing. This is more credible in external materials: it cites real primary institutions (IUMI for premiums, WTO for trade value), shows the methodology, and honestly states the uncertainty range. If the '70M shippers' count is load-bearing for a pitch or claim, it must either be dropped or explicitly flagged as a vendor assertion requiring independent validation through a primary SME survey."
+}

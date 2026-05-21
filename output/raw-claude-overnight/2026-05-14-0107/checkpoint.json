@@ -1,0 +1,48 @@
+{
+  "run_id": "2026-05-14-0107",
+  "input_file": "./input/logistics-risk-mgmt-worldwide.txt",
+  "topic_slug": "logistics-risk-mgmt-worldwide",
+  "mode": "sandbox",
+  "output_dir": "./output/raw-claude-overnight/2026-05-14-0107/",
+  "current_pass": 5,
+  "stages_planned": [
+    {"n": 1, "name": "Vendor procurement & counterparty risk"},
+    {"n": 2, "name": "TMS, dispatch & freight orchestration"},
+    {"n": 3, "name": "Fleet & driver management / telematics"},
+    {"n": 4, "name": "In-transit visibility & cargo IoT"},
+    {"n": 5, "name": "Security, escort & physical protection"},
+    {"n": 6, "name": "Cargo insurance, claims & incident response"}
+  ],
+  "stages_completed": [
+    {"n": 1, "name": "Vendor procurement & counterparty risk", "gate": "ship-with-flag", "claims_total": 77, "claims_high": 11, "claims_med": 25, "claims_low": 41, "unique_domains": 44},
+    {"n": 2, "name": "TMS, dispatch & freight orchestration", "gate": "ship-with-flag", "claims_total": 82, "claims_high": 14, "claims_med": 24, "claims_low": 44, "unique_domains": 68},
+    {"n": 3, "name": "Fleet & driver management / telematics", "gate": "ship-with-flag", "claims_total": 101, "claims_high": 14, "claims_med": 34, "claims_low": 53, "unique_domains": 54},
+    {"n": 4, "name": "In-transit visibility & cargo IoT", "gate": "ship-with-flag", "claims_total": 121, "claims_high": 0, "claims_med": 37, "claims_low": 84, "unique_domains": 68},
+    {"n": 5, "name": "Security, escort & physical protection", "gate": "ship-with-flag", "claims_total": 103, "claims_high": 21, "claims_med": 39, "claims_low": 43, "unique_domains": 45, "deep_research_completed": ["PP-40 STRONGER L→H", "PP-22 STRONGER L→M", "PP-4 confirmed-scarce", "VC-29 confirmed-scarce", "VC-33 confirmed-scarce"]},
+    {"n": 6, "name": "Cargo insurance, claims & incident response", "gate": "ship-with-flag", "claims_total": 84, "claims_high": 19, "claims_med": 28, "claims_low": 37, "unique_domains": 84, "deep_research_completed": ["PP6.1-5 STRONGER L→M (SambaSafety 2025 primary)", "PP6.1-8 CONFIRMED-WEAK (ADB 2023 proxy + ASSUMED-10)", "PP6.1-2 STRONGER L→H (ATRI 2025 PDF + CIAB primary)", "PP6.2-6 CONFIRMED-WEAK (Flock Freight + Synchrogistics)", "VC-PP-loadsure-70m CONFIRMED-SCARCE (IUMI/WTO triangulation)"]}
+  ],
+  "stages_in_progress": [],
+  "weak_claims_to_re_research": [],
+  "cross_stage_validation": {
+    "corpus_claims_total": 568,
+    "corpus_claims_high_pct": 13.9,
+    "corpus_claims_med_pct": 32.9,
+    "corpus_claims_low_pct": 53.2,
+    "corpus_unique_domains": 328,
+    "aggregator_domains_auto_low": 5,
+    "verify_tags_inserted": ["VERIFY-1: project44 $210M vs $175M ARR (Stage 4)", "VERIFY-2: Nirvana Series D $100M/$1.5B vs $80M/$830M (Stage 3)"]
+  },
+  "final_gate_decision": "ship-with-flag",
+  "outputs_written": [
+    "raw-claude-value-chain-logistics-risk-mgmt-worldwide.md",
+    "raw-claude-pain-points-logistics-risk-mgmt-worldwide.md",
+    "raw-claude-summary-logistics-risk-mgmt-worldwide.md",
+    "checkpoint.json",
+    "RUN-COMPLETE.txt"
+  ],
+  "interruption": null,
+  "resumed": true,
+  "resume_history": [
+    {"timestamp": "2026-05-15", "resumed_from_stage": 6, "reason": "Stage 6 drafts written prior run but validation+deep-research+final-pass not completed; checkpoint had stages_in_progress=[6]"}
+  ]
+}

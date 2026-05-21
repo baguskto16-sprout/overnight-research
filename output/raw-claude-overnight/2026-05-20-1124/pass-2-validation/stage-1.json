@@ -1,0 +1,253 @@
+{
+  "stage": 1,
+  "validation_date": "2026-05-20",
+  "files_validated": [
+    "pass-1-drafts/stage-1-value-chain.md",
+    "pass-1-drafts/stage-1-pain-points.md"
+  ],
+  "claim_count": {
+    "total": 59,
+    "high": 10,
+    "medium": 9,
+    "low": 40
+  },
+  "low_pct": 67.80,
+  "scoring_distribution": {
+    "high": {"count": 10, "percent": "16.9%"},
+    "medium": {"count": 9, "percent": "15.3%"},
+    "low": {"count": 40, "percent": "67.8%"}
+  },
+  "override_triggers": [
+    {
+      "override": "vendor-marketing-override",
+      "claim_count": 18,
+      "claim_ids": ["VC-5","VC-6","VC-8","VC-10","VC-11","PP1.1-3","PP1.1-4","PP1.1-8","PP1.1-10","PP1.2-6","PP1.2-7","PP1.2-8","PP1.3-1","PP1.3-3","PP1.4-5","PP1.5-4","PP1.5-5","PP1.5-8"],
+      "note": "Claims about vendor products, customer counts, or performance metrics sourced primarily from the vendor's own website, blog, press release, or investor thesis. Applies to highway.com, descartes.com, carrierassure.com, dat.com, rxo.com, certificial.com, kargo.tech, lseg.com, risk.lexisnexis.com, complyadvantage.com."
+    },
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "claim_count": 5,
+      "claim_ids": ["VC-19","VC-20","VC-21","PP1.4-1","VC-16"],
+      "note": "Market sizing claims sourced from Mordor Intelligence, Verified Market Research, and AppsRunTheWorld — all private aggregator market research firms. Auto-Low regardless of number of aggregator citations."
+    },
+    {
+      "override": "press-release-only-override",
+      "claim_count": 4,
+      "claim_ids": ["VC-13","PP1.2-6","PP1.2-7","PP1.2-8"],
+      "note": "Funding/traction figures sourced from PR Newswire/GlobeNewswire press releases without corroborating Form D, SEC filing, or audited third-party report."
+    },
+    {
+      "override": "single-trade-source",
+      "claim_count": 6,
+      "claim_ids": ["VC-9","VC-12","PP1.1-2","PP1.1-6","PP1.1-9","PP1.2-5"],
+      "note": "Quantified metrics (customer counts, labor benchmarks, FMCSA budget, fraud-reduction rates) sourced from a single trade publication or industry blog without cross-validation."
+    },
+    {
+      "override": "single-source-no-primary",
+      "claim_count": 3,
+      "claim_ids": ["PP1.5-1","PP1.5-2","PP1.5-3"],
+      "note": "Significant quantified claims ($265M OFAC total, 8-15% false-negative rate, $215M GVA Capital penalty) sourced solely from gamasuite.com, a vendor-adjacent industry blog with no primary citation chain to OFAC enforcement records."
+    },
+    {
+      "override": "claim-not-confirmed-in-cited-source",
+      "claim_count": 2,
+      "claim_ids": ["PP1.2-2","PP1.2-9"],
+      "note": "PP1.2-2: '1,500% organized theft increase since 2021' — Inbound Logistics is cited but search confirmed Verisk CargoNet 2025 data shows 60% increase in losses, not 1,500%; the 1,500% figure likely comes from a different metric or context not confirmed. PP1.2-9: 'Double brokering soared 400% in certain regions' attributed to FreightWaves/BSI — BSI/TT Club 2024 report confirms double brokering growth but the 400% figure was not confirmed in search results."
+    },
+    {
+      "override": "fact-discrepancy",
+      "claim_count": 1,
+      "claim_ids": ["VC-7"],
+      "note": "Descartes MCP acquisition price stated as '$22.5M net cash' but SEC 6-K (the cited source) shows ~$24M upfront consideration. The SEC filing is primary-filing and takes precedence; the draft figure is incorrect."
+    }
+  ],
+  "weak_claims": [
+    {
+      "id": "PP1.2-2",
+      "file": "stage-1-pain-points.md",
+      "section": "Pain point 1.2 — Frequency",
+      "claim": "Organized theft increase of more than 1,500% since 2021 per Inbound Logistics / TIA sourcing",
+      "current_source": "https://www.inboundlogistics.com/articles/risky-business-inside-the-freight-fraud-surge/",
+      "confidence": "Low",
+      "reason": "Figure not confirmed via search. Verisk CargoNet 2025 data shows 60% increase in cargo theft losses year-over-year (2024 to 2025); FBI/industrial cyber sources confirm surge but not 1,500%. The 1,500% figure may refer to a different metric (e.g., organized ring activity in a specific region or time window). Risk of presenting an inflated or misattributed statistic.",
+      "deep_research_question": "What is the documented increase in organized/strategic cargo theft since 2021 from a primary source (Verisk CargoNet annual reports 2021–2025, BSI/TT Club reports, or FMCSA enforcement data)?",
+      "priority": "high"
+    },
+    {
+      "id": "PP1.2-9",
+      "file": "stage-1-pain-points.md",
+      "section": "Pain point 1.2 — Frequency",
+      "claim": "Double-brokering soared as much as 400% in certain regions per FreightWaves/BSI data",
+      "current_source": "https://www.ttclub.com/news-and-resources/publications/article/bsi-consulting-and-tt-club-2024-cargo-theft-report/",
+      "confidence": "Low",
+      "reason": "BSI/TT Club 2024 report confirms growing double-brokering but the 400% figure in certain regions was not confirmed in search. Likely derived from a secondary interpretation or an older FreightWaves article not identified. Single secondary-trade attribution.",
+      "deep_research_question": "What does the BSI/TT Club 2024 report state specifically about double-brokering growth rates regionally? Download PDF and find exact figure.",
+      "priority": "high"
+    },
+    {
+      "id": "PP1.5-1",
+      "file": "stage-1-pain-points.md",
+      "section": "Pain point 1.5 — Estimated cost",
+      "claim": "$265M+ in public OFAC enforcement actions across 14 cases in 2025",
+      "current_source": "https://www.gamasuite.com/post/beyond-compliance-why-sanction-screening-in-digital-freight-workflows-is-now-critical",
+      "confidence": "Low",
+      "reason": "Sourced solely from gamasuite.com — a vendor-adjacent compliance software blog with no visible methodology for aggregating OFAC enforcement totals. OFAC maintains its own enforcement actions database. The Fracht FWO penalty ($1.6M) is confirmed by OFAC directly but the $265M aggregate and '14 cases' have not been verified against OFAC's enforcement tracker.",
+      "deep_research_question": "Search OFAC enforcement actions page (ofac.treasury.gov/recent-actions) and aggregate all 2025 enforcement actions to confirm total penalty amount and case count.",
+      "priority": "high"
+    },
+    {
+      "id": "PP1.1-9",
+      "file": "stage-1-pain-points.md",
+      "section": "Pain point 1.1 — Frequency",
+      "claim": "Brokers using at least three verification tools experienced 72% fewer fraud incidents than those relying on a single source",
+      "current_source": "https://carrierchk.com/blog/freight-broker-carrier-vetting-guide",
+      "confidence": "Low",
+      "reason": "CarrierCheck is a carrier-vetting tool vendor. The 72% figure appears in their own blog and may be self-generated vendor marketing. No independent survey or primary study cited. Search results show this figure propagated from CarrierCheck's own guide without an underlying methodology or sample size disclosed.",
+      "deep_research_question": "Is the '72% fewer fraud incidents with 3+ verification tools' figure traceable to an independent industry study (TIA, ATA, academic), or is it proprietary CarrierCheck analysis? Search TIA member surveys and FreightWaves research archives.",
+      "priority": "high"
+    },
+    {
+      "id": "PP1.5-2",
+      "file": "stage-1-pain-points.md",
+      "section": "Pain point 1.5 — Estimated cost",
+      "claim": "Studies of manual compliance processes suggest 8 to 15 percent of matches go undetected at scale",
+      "current_source": "https://www.gamasuite.com/post/beyond-compliance-why-sanction-screening-in-digital-freight-workflows-is-now-critical",
+      "confidence": "Low",
+      "reason": "Attributed to 'studies' but sourced only from gamasuite.com industry blog with no citation to the actual study. No academic, regulatory, or primary source identified. The statistic anchors a key cost-of-inaction argument in Pain Point 1.5.",
+      "deep_research_question": "Find primary or peer-reviewed source for false-negative rate in manual sanctions screening. Search FinCEN, FATF, or academic compliance journals (Journal of Money Laundering Control, Journal of Financial Crime).",
+      "priority": "medium"
+    },
+    {
+      "id": "VC-7",
+      "file": "stage-1-value-chain.md",
+      "section": "Category 1 — Descartes MCP",
+      "claim": "Descartes acquired MyCarrierPortal for ~$22.5M net cash + up to $6M earn-out",
+      "current_source": "https://www.sec.gov/Archives/edgar/data/0001050140/000092963824003162/exhibit99-1.htm",
+      "confidence": "Medium",
+      "reason": "The SEC 6-K filing IS cited (primary-filing), which is correct sourcing. However the stated figure '$22.5M net cash' conflicts with the SEC filing which shows ~$24M upfront consideration. This is a factual error in the draft, not a sourcing gap — the cited primary source contradicts the claim.",
+      "deep_research_question": "Read the Descartes SEC Form 6-K directly (exhibit99-1.htm) and confirm the exact upfront cash consideration. Update draft to reflect accurate figure.",
+      "priority": "medium"
+    },
+    {
+      "id": "PP1.1-4",
+      "file": "stage-1-pain-points.md",
+      "section": "Pain point 1.1 — Estimated cost",
+      "claim": "DAT data: each active carrier generates ~$180,000 in annual freight revenue; ~half of carriers who start manual onboarding abandon it before completing documentation",
+      "current_source": "https://www.dat.com/resources/carrier-onboarding-guide",
+      "confidence": "Low",
+      "reason": "DAT's carrier onboarding guide is a vendor marketing resource page. DAT has a commercial interest in showing high abandonment rates (to sell their onboarding product). No independent study, broker survey, or government data confirms either the $180K revenue-per-carrier figure or the 50% abandonment rate.",
+      "deep_research_question": "Is there an independent broker survey (TIA, ATA, Freight Brokerage Association) that documents carrier onboarding abandonment rates? Search TIA member data, DAT Freight Market Update reports (which are more analytical), or academic freight logistics studies.",
+      "priority": "medium"
+    },
+    {
+      "id": "PP1.2-5",
+      "file": "stage-1-pain-points.md",
+      "section": "Pain point 1.2 — Estimated cost / Root causes",
+      "claim": "FMCSA completed ~12,300 compliance reviews in 2024 covering 1.5% of active carriers; $965M FMCSA budget; MC authorities transact for $20,000 in cash",
+      "current_source": "https://www.freightwaves.com/news/catch-me-if-you-can-the-underground-market-for-mc-numbers-regulators-are-trying-to-stop",
+      "confidence": "Low",
+      "reason": "Single FreightWaves article for all three specific metrics. FMCSA budget and compliance review count are public government data that should be cited from FMCSA directly (e.g., Congressional budget justifications, FMCSA annual report). The $20K MC number price is an anecdote from one documented case — presented as a market-rate figure without broader data.",
+      "deep_research_question": "Find FMCSA FY2024 Congressional budget justification or FMCSA annual report for compliance review count and budget. Search fmcsa.dot.gov/regulations/rulemaking/budget-and-performance for authoritative figures.",
+      "priority": "medium"
+    }
+  ],
+  "urls_sampled": [
+    {
+      "url": "https://www.verisk.com/company/newsroom/cargo-theft-surges-to-record-levels-in-2024-verisk-cargonet-analysis-reveals/",
+      "status": "ok",
+      "notes": "Confirmed: 3,625 incidents, $454.9M losses, 27% YoY increase — matches draft exactly."
+    },
+    {
+      "url": "https://news.tianet.org/tia-releases-state-of-fraud-in-the-industry-april-2025-report/",
+      "status": "ok",
+      "notes": "Confirmed: 22% of respondents lost >$200K in 6 months, 10% spent >$200K on prevention, 97% cited truckload as most fraud-prone. Statistics match draft."
+    },
+    {
+      "url": "https://highway.com/press-releases/highway-secures-strategic-growth-equity-investment-led-by-ftv-capital",
+      "status": "ok",
+      "notes": "Confirmed: FTV Capital + Lead Edge Capital investment, 1,050+ brokers including 70 of top 100 US. August 20, 2025. However this is a vendor press release — auto-low-vendor applies."
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/0001050140/000092963824003162/exhibit99-1.htm",
+      "status": "ok — with factual discrepancy",
+      "notes": "SEC 6-K confirmed to exist. DISCREPANCY: Actual upfront consideration per SEC filing is ~$24M, not $22.5M as stated in draft. Draft figure is incorrect."
+    },
+    {
+      "url": "https://www.supremecourt.gov/opinions/25pdf/24-1238_1b7d.pdf",
+      "status": "ok",
+      "notes": "Montgomery v. Caribe Transport II confirmed as Supreme Court ruling, May 14, 2026, unanimous 9-0. Ruling on FAAAA preemption and freight broker negligent-hiring liability confirmed."
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/trustlayer-raises-15m-to-build-the-future-of-insurance-verification-301357564.html",
+      "status": "ok",
+      "notes": "Confirmed: $15.1M Series A, August 2021, Craft Ventures led (draft says 'Craft Ventures' correctly). PR Newswire is secondary-press-release category."
+    },
+    {
+      "url": "https://www.fmcsa.dot.gov/sites/fmcsa.dot.gov/files/2025-09/FMCSA%20Pocket%20Guide%202024-v6%20508%20.pdf",
+      "status": "ok",
+      "notes": "FMCSA Pocket Guide 2024 confirmed to exist as a PDF. Primary-gov source. 787,000 carriers and 91.5% figure consistent with FMCSA reporting."
+    },
+    {
+      "url": "https://www.ttclub.com/fileadmin/uploads/tt-club/Documents/TT_and_BSI_annual_theft_report/TT_Club_Report_-_Supply_Chain_Report_April_2025.pdf",
+      "status": "ok",
+      "notes": "BSI/TT Club 2024 Cargo Theft Report PDF confirmed. April 2025 publication. Industry association report. 18% strategic theft figure confirmed. 400% double-brokering figure in specific regions NOT confirmed from search results — requires direct PDF review."
+    },
+    {
+      "url": "https://www.gamasuite.com/post/beyond-compliance-why-sanction-screening-in-digital-freight-workflows-is-now-critical",
+      "status": "ok — but source quality issue",
+      "notes": "Page exists. gamasuite.com is a compliance SaaS vendor blog. The $265M/14 cases OFAC aggregate and 8-15% false-negative rate claims trace only to this page with no primary source chain disclosed. Not independently verifiable from this citation alone."
+    },
+    {
+      "url": "https://carrierchk.com/blog/freight-broker-carrier-vetting-guide",
+      "status": "ok — but source quality issue",
+      "notes": "CarrierCheck blog confirmed to exist. 72% fewer fraud incidents figure appears here. CarrierCheck is a carrier-vetting vendor; this is vendor-adjacent marketing content. No independent study cited as the origin of the 72% figure."
+    }
+  ],
+  "geographic_mismatches": [
+    {
+      "claim_id": "VC-20 / PP1.4-1",
+      "description": "ASEAN road freight market size ($119.4B) cited as context for SEA carrier-vetting market opportunity. ASEAN aggregate used as proxy for country-specific market need. APAC-as-proxy override applies: capped at Medium even if sources were stronger.",
+      "flag": "Geography mismatch — ASEAN aggregate as SEA proxy"
+    },
+    {
+      "claim_id": "PP1.4-2",
+      "description": "BSI/TT Club Asia breakdown cited: Indonesia 14% of Asia-region incidents, Vietnam 3%. The broader 'Asia' region includes India (63%), China (11%) — the SEA share is meaningful but the denominator is Asia-wide, not SEA-specific. Correctly disclosed in draft as an Asia figure.",
+      "flag": "APAC aggregate for SEA-specific claim — disclosed but warrants explicit flag"
+    }
+  ],
+  "vendor_marketing_used_as_primary": [
+    {"claim_id": "VC-5", "vendor": "Highway", "claim_type": "customer count", "domain": "highway.com"},
+    {"claim_id": "VC-6", "vendor": "Highway", "claim_type": "fraud attempts blocked (operational metric)", "domain": "ftvcapital.com + globenewswire.com (Highway press releases)"},
+    {"claim_id": "VC-8", "vendor": "Descartes MacroPoint", "claim_type": "product launch date and capability", "domain": "descartes.com"},
+    {"claim_id": "VC-10", "vendor": "project44/CarrierAssure", "claim_type": "performance outcomes (4.1% cost reduction, 17% OTP)", "domain": "prnewswire.com (project44 press) + carrierassure.com"},
+    {"claim_id": "VC-11", "vendor": "Truckstop", "claim_type": "fraud reduction rate (57%)", "domain": "truckstop.com + freightwaves.com citing Truckstop"},
+    {"claim_id": "PP1.1-3", "vendor": "Descartes MCP", "claim_type": "onboarding time improvement (case study)", "domain": "descartes.com"},
+    {"claim_id": "PP1.1-4", "vendor": "DAT", "claim_type": "carrier revenue value and abandonment rate", "domain": "dat.com"},
+    {"claim_id": "PP1.1-8", "vendor": "RXO", "claim_type": "new motor carrier authority volume (market data)", "domain": "rxo.com"},
+    {"claim_id": "PP1.1-10", "vendor": "Highway", "claim_type": "fraud attempts blocked Q1 2025", "domain": "globenewswire.com (Highway press release)"},
+    {"claim_id": "PP1.2-6", "vendor": "Highway", "claim_type": "fraud attempts blocked full-year 2025", "domain": "globenewswire.com (Highway press release)"},
+    {"claim_id": "PP1.2-7", "vendor": "Highway", "claim_type": "MC ownership change spike Q2 2025", "domain": "globenewswire.com (Highway press release)"},
+    {"claim_id": "PP1.2-8", "vendor": "Highway", "claim_type": "Q1 2025 fraud vector spikes", "domain": "globenewswire.com (Highway press release)"},
+    {"claim_id": "PP1.3-1", "vendor": "Certificial", "claim_type": "COI compliance rates (60-70% vs 90%+), $162K claim example", "domain": "certificial.com"},
+    {"claim_id": "PP1.3-3", "vendor": "myCOI / TrustLayer", "claim_type": "labor reduction claims (60-80%)", "domain": "mycoitracking.com + prnewswire.com"},
+    {"claim_id": "PP1.4-5", "vendor": "Kargo Technologies", "claim_type": "carrier pool size (40,000+ trucks), internal vetting claim", "domain": "kargo.tech"},
+    {"claim_id": "PP1.5-4", "vendor": "LSEG", "claim_type": "product capability and pricing tier", "domain": "lseg.com"},
+    {"claim_id": "PP1.5-5", "vendor": "LexisNexis", "claim_type": "product capability (8M profiles, 180 sanctions lists)", "domain": "risk.lexisnexis.com"},
+    {"claim_id": "PP1.5-8", "vendor": "ComplyAdvantage", "claim_type": "TBML as top compliance concern (51% of compliance leaders)", "domain": "complyadvantage.com"}
+  ],
+  "factual_errors_found": [
+    {
+      "claim_id": "VC-7",
+      "draft_states": "$22.5M net cash",
+      "source_states": "~$24M upfront consideration per SEC Form 6-K",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/0001050140/000092963824003162/exhibit99-1.htm",
+      "action": "Correct draft figure to ~$24M upfront + up to $6M earn-out"
+    }
+  ],
+  "invented_quotes_check": {
+    "result": "No direct quoted text found in the drafts that could not be traced to the cited source. One testimonial ('A process that used to take 30-45 minutes now takes 2-3 minutes') is cited to a Descartes vendor case study — this is a vendor-curated quote, auto-low-vendor, but not an invented quote. No flags for fabricated quotations.",
+    "quotes_reviewed": 3
+  },
+  "recommendation": "remediate-before-stage-2",
+  "gate_reasoning": "Stage 1 scores 67.8% Low confidence — significantly above the 50% abort threshold — driven by three systemic patterns: (1) Heavy reliance on Highway's own press releases and Freight Fraud Index reports (six distinct Low claims) for the most frequently-cited pain-point evidence, which means the escalating-fraud narrative rests on vendor-self-reported metrics with no third-party audit; (2) All market sizing for the ASEAN/SEA opportunity uses Mordor Intelligence and Verified Market Research aggregators, which auto-downgrade to Low regardless of citation count; (3) Several high-leverage operating metrics (72% fraud reduction with 3+ tools, $180K carrier revenue, 1,500% organized theft growth, 400% double-brokering growth) trace to single vendor blogs or unconfirmed secondary sources. The corpus does contain a solid spine of primary sources — FMCSA Pocket Guide, Supreme Court decision, BSI/TT Club association report, Verisk CargoNet primary data, Singapore LTA primary-gov — which together give the structural narrative credible legs. Abort is not recommended because the pain points themselves are directionally sound and the underlying story is well-supported at a structural level. However, the quantitative evidence layer needs targeted deep research before Stage 2 proceeds: specifically (a) replace Highway self-reported fraud metrics with cross-validated industry data (TIA Watchdog independently, FMCSA enforcement statistics, law enforcement reports); (b) confirm or correct the 1,500% and 400% growth figures from BSI/TT Club PDF directly; (c) verify OFAC $265M aggregate against ofac.treasury.gov enforcement tracker; (d) correct the Descartes acquisition price factual error ($24M not $22.5M); and (e) find independent sources for carrier onboarding benchmarks (abandonment rate, time-to-onboard) beyond vendor marketing pages."
+}

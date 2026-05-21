@@ -1,0 +1,39 @@
+{
+  "claim_id": "PP2.1-freq-1",
+  "original_claim": "Identity fraud attempts rose from 0.53% (2023) to 1.66% (2024) to 2.15% (2025) — 306% increase; logistics is hardest-hit sector (IDScan.net 1M+ transaction dataset via DC Velocity)",
+  "original_score": "L",
+  "new_score": "L",
+  "outcome": "confirmed-scarce",
+  "new_sources": [
+    {
+      "url": "https://idscan.net/press-release/surging-id-fraud-in-us-cargo-and-logistics-report-finds/",
+      "publisher": "IDScan.net (vendor self-published)",
+      "category": "primary-vendor",
+      "key_quote": "Identity fraud attempts rose from 0.53% in 2023 to 1.66% in 2024 to 2.15% in 2025, based on more than one million identity verification transactions across processing, manufacturing, transport and warehousing operations. Q2 2025 saw the highest quarterly fraud rate on record, running 75% above historical average.",
+      "note": "This is the direct primary source — the IDScan.net press release for their '2026 Cargo and Logistics ID Fraud Report.' Confirms exact figures and methodology. However, IDScan.net is an independent New Orleans-based vendor (founded 2009); its report is self-published from its own proprietary VeriScan platform transaction data, not a third-party audit. Upgrades from 'secondary trade re-reporting' to 'vendor primary source' but remains a single vendor dataset."
+    },
+    {
+      "url": "https://idscan.net/press-release/2025-id-fraud-report/",
+      "publisher": "IDScan.net (vendor self-published)",
+      "category": "primary-vendor",
+      "key_quote": "150 million ID scans analyzed during 2024; cargo/logistics sector saw 61.4% increase in fraud activity in Q4 2024.",
+      "note": "IDScan.net's general 2025 ID Fraud Report (cross-sector, 150M scans). Does NOT contain the 0.53%/1.66%/2.15% figures — those appear only in the separate 2026 Cargo and Logistics ID Fraud Report. Finance/banking showed over twice the fraud rate of other sectors in this report, which somewhat complicates the 'logistics is hardest-hit' framing from the cargo-specific report."
+    },
+    {
+      "url": "https://news.tianet.org/tia-releases-state-of-fraud-in-the-industry-april-2025-report/",
+      "publisher": "Transportation Intermediaries Association (TIA)",
+      "category": "industry-association",
+      "key_quote": "TIA Watchdog recorded over 1,600 fraud reports between September 2024 and February 2025 — a 65% increase from the prior period. 83% of respondents experienced at least three types of fraud in six months. 97% identified truckload freight as most fraud-prone mode.",
+      "note": "Independent corroboration of rising fraud trajectory in logistics, but uses incident-count methodology (not % of transactions). Cannot be used to independently verify the 0.53%/1.66%/2.15% percentage-of-transactions figures. Survey-based, not transaction-data-based."
+    },
+    {
+      "url": "https://truckstop.com/blog/2025-freight-fraud-report/",
+      "publisher": "Truckstop",
+      "category": "industry-vendor",
+      "key_quote": "63,000 fraud checks performed; covers 2024 fraud patterns on Truckstop platform.",
+      "note": "WebFetch returned 403 Forbidden — content could not be verified. Search snippets indicate Truckstop reports fraud in absolute counts (65,000 thefts, 45% decrease in customer-reported fraud), not as % of total transactions. Cannot serve as independent corroboration of IDScan.net's transaction-rate methodology."
+    }
+  ],
+  "revised_claim_text": "[ASSUMED-N]: According to IDScan.net's proprietary VeriScan transaction dataset (1M+ transactions, logistics sector), identity fraud attempt rates rose from 0.53% (2023) to 1.66% (2024) to 2.15% (2025) — a ~306% increase over two years. The trajectory of rising freight identity fraud is independently corroborated in direction (but not in transaction-rate methodology) by TIA Watchdog's 65% incident-count increase over the same period. The specific percentage-of-transaction figures have not been replicated by any independent dataset. Claim should be cited as vendor-reported with hedging language.",
+  "notes": "SEARCH FINDINGS SUMMARY:\n\n1. PRIMARY SOURCE CONFIRMED: The IDScan.net press release at idscan.net/press-release/surging-id-fraud-in-us-cargo-and-logistics-report-finds/ is the primary source for the 0.53%/1.66%/2.15% figures. The report is titled '2026 Cargo and Logistics ID Fraud Report.' The DC Velocity article accurately re-reported this vendor source. This upgrades the sourcing from 'secondary trade re-reporting' to 'vendor primary source,' but does NOT change the fundamental limitation: it is a single vendor's proprietary dataset with no external audit.\n\n2. IDScan.net IS INDEPENDENT: No parent-company relationship with IDology or LexisNexis was found. IDScan.net is a standalone New Orleans-based company. Its methodology is its own VeriScan platform scans — there is no third-party validation of dataset representativeness.\n\n3. TIA APRIL 2025 REPORT: Confirms rising fraud trajectory and that truckload freight is most fraud-prone mode (97% of respondents), but uses survey and incident-count methodology, not transaction-rate percentages. Cannot independently verify the IDScan.net figures.\n\n4. TRUCKSTOP/DAT: No transaction-rate percentage data found. Truckstop reports fraud in absolute counts and customer-reported decreases. Their 2025 Fraud Report page returned 403 Forbidden. No independent % of transactions metric available.\n\n5. TRANSUNION: H2 2025 Global Fraud Report does not cover logistics sector at transaction-rate level. A search result snippet mentioned logistics fraud rate of ~2% in Canada in 2024 (TransUnion's H1 2025 Omnichannel Fraud report), which is directionally consistent with IDScan.net's 1.66% US figure for 2024, but this is a different geography and the Canadian figure could not be fetched and verified within budget.\n\n6. 'HARDEST-HIT' CLAIM: IDScan.net's own broader 2025 ID Fraud Report (150M scans, all sectors) shows finance/banking at over twice the fraud rate of other sectors. The 'hardest-hit' framing appears only in the cargo-specific subset report and may reflect the steepest growth rate rather than the absolute highest rate across all industries.\n\nRECOMMENDATION: Score remains L. The claim can be cited with explicit vendor-source attribution and hedging. If the claim is kept, rewrite as: 'IDScan.net's proprietary transaction data (1M+ logistics-sector ID scans) shows identity fraud attempt rates more than tripling from 0.53% in 2023 to 2.15% in 2025; the fraud growth trajectory is corroborated directionally by TIA Watchdog incident data but no independent transaction-rate dataset has published comparable percentage figures.'"
+}

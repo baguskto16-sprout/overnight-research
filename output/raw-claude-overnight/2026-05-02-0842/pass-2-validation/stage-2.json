@@ -1,0 +1,195 @@
+{
+  "stage": 2,
+  "stage_name": "Boiler OEMs",
+  "total_claims": 84,
+  "by_confidence": {
+    "high": 4,
+    "medium": 15,
+    "low": 65
+  },
+  "low_confidence_pct": 0.774,
+  "unique_sources_cited": 48,
+  "override_flags": [
+    {
+      "flag": "single_vendor_repeat_domain",
+      "domain": "coalbiomassboiler.com",
+      "description": "Cited as sole source across at least 10 distinct claims (PP2.1-1, PP2.1-4, PP2.1-6, PP2.2-1, PP2.2-5, PP2.2-11, PP2.3-1, PP2.3-10, PP2.4-3, PP2.3-RC3). All cost and lead-time figures citing only this domain count as single-source regardless of URL count within domain.",
+      "claim_ids": ["PP2.1-1", "PP2.1-4", "PP2.1-6", "PP2.2-1", "PP2.2-5", "PP2.2-11", "PP2.3-1", "PP2.3-10", "PP2.4-3", "PP2.3-RC3"]
+    },
+    {
+      "flag": "single_vendor_oe_pages",
+      "description": "Vendor own-website used as sole source for capability, project, and market position claims: zbgboiler.com (VC22, VC23), en.zozen.com (VC24), coalbiomassboiler.com/taishan (VC25), vyncke.com (VC27), thermaxglobal.com (VC16, PP2.1-11), cheemaboilers.com (VC19 partial), exportersindia.com (VC19 Cethar).",
+      "claim_ids": ["VC22", "VC23", "VC24", "VC25", "VC27", "VC16", "PP2.1-11"]
+    },
+    {
+      "flag": "geography_mismatch",
+      "description": "APAC aggregate market sizing used without country-level breakdown for SEA context: VC3 (APAC 41% of global industrial boiler market), PP2.3-9 (APAC 12.8% biomass CAGR).",
+      "claim_ids": ["VC3", "PP2.3-9"]
+    },
+    {
+      "flag": "stale_source",
+      "description": "The Edge Malaysia article dated FY2019 context used for Boilermech market share figures (50-60% Malaysia, 25-30% Indonesia) — over 5 years old for a market share claim.",
+      "claim_ids": ["VC20"]
+    },
+    {
+      "flag": "single_domain_comtrade_proxy",
+      "description": "All UN Comtrade trade data (Indonesia HS8402 imports, India exports, China exports) accessed exclusively via trendeconomy.com aggregator rather than official comtrade.un.org. All five such claims (VC4-VC9, PP2.1-7) are single-domain and scored Low accordingly.",
+      "claim_ids": ["VC4", "VC5", "VC6", "VC7", "VC8", "VC9", "PP2.1-7"]
+    },
+    {
+      "flag": "wikipedia_sole_source",
+      "description": "Wikipedia used as primary or sole citation for financial/company facts: VC18 (ISGEC revenue INR 6,245 crore), VC26 (Vyncke revenue ~EUR 200M). Wikipedia itself cites no audited source for Vyncke revenue.",
+      "claim_ids": ["VC18", "VC26"]
+    },
+    {
+      "flag": "suspect_source_identity",
+      "description": "PP2.4-7 cites 'bainbridge.com/sector-analysis/industrial-boiler-services-id-b7x2f9' as if it were Bain & Company. bainbridge.com is NOT bain.com. The domain appears to be an unrelated entity. This citation should be treated as unverified secondary-trade, not primary-research-firm. The BCG source in the same footnote is valid; bainbridge.com reduces to 1 credible source.",
+      "claim_ids": ["PP2.4-7"]
+    },
+    {
+      "flag": "paywalled_unverified",
+      "description": "VC13 / PP2.1-8 cites volza.com export shipment count (India 49%, China 24%) marked as 'paywalled primary; cited as confirmed via web search summary' — the underlying data was never directly accessed. Scored Low.",
+      "claim_ids": ["VC13", "PP2.1-8"]
+    },
+    {
+      "flag": "ASSUMED_tags",
+      "description": "12 claims carry explicit [ASSUMED-N] tags: ASSUMED-1 through ASSUMED-12. All scored Low per override rules.",
+      "claim_ids": [
+        "PP2.1-RC2", "PP2.1-RC4", "PP2.1-RC5",
+        "PP2.2-4", "PP2.2-6", "PP2.2-RC2", "PP2.2-RC3", "PP2.2-RC4",
+        "PP2.3-4", "PP2.3-5", "PP2.3-RC2", "PP2.3-RC4",
+        "PP2.4-1", "PP2.4-4", "PP2.4-RC1", "PP2.4-RC2", "PP2.4-RC3", "PP2.4-RC4"
+      ]
+    }
+  ],
+  "claims": [
+    {"id": "VC1", "claim_text": "Global industrial boilers market $16.6B (2024)", "sources": ["grandviewresearch.com"], "source_categories": ["secondary-market-research"], "score": "Low", "override": "single source"},
+    {"id": "VC2", "claim_text": "Global industrial boilers market CAGR 3.6% (2025-2033)", "sources": ["grandviewresearch.com"], "source_categories": ["secondary-market-research"], "score": "Low", "override": "single source"},
+    {"id": "VC3", "claim_text": "Asia Pacific ~41% (~$6.8B) of global industrial boiler market (2024)", "sources": ["grandviewresearch.com"], "source_categories": ["secondary-market-research"], "score": "Low", "override": "single source; geography_mismatch — APAC proxy for SEA context"},
+    {"id": "VC4", "claim_text": "Indonesia HS 8402 steam-boiler imports $737M (2023)", "sources": ["trendeconomy.com (UN Comtrade re-publisher)"], "source_categories": ["secondary-trade"], "score": "Low", "override": "single source domain; primary data not cited from comtrade.un.org directly"},
+    {"id": "VC5", "claim_text": "Indonesia HS 8402 imports YoY +58% vs. 2022 ($466M)", "sources": ["trendeconomy.com"], "source_categories": ["secondary-trade"], "score": "Low", "override": "single source domain"},
+    {"id": "VC6", "claim_text": "India HS 8402 exports $181M (2023)", "sources": ["trendeconomy.com"], "source_categories": ["secondary-trade"], "score": "Low", "override": "single source domain"},
+    {"id": "VC7", "claim_text": "India HS 8402 exports to Indonesia $7.58M / 4.18% (2023)", "sources": ["trendeconomy.com"], "source_categories": ["secondary-trade"], "score": "Low", "override": "single source domain"},
+    {"id": "VC8", "claim_text": "China HS 8402 exports $1.41B (2023)", "sources": ["trendeconomy.com"], "source_categories": ["secondary-trade"], "score": "Low", "override": "single source domain"},
+    {"id": "VC9", "claim_text": "China HS 8402 exports to Indonesia ~$527M (71% of $737M, 2023)", "sources": ["trendeconomy.com (x2 footnotes, same domain)"], "source_categories": ["secondary-trade"], "score": "Low", "override": "single domain — two footnotes to same publication family"},
+    {"id": "VC10", "claim_text": "Global biomass boiler market $10.4B (2024)", "sources": ["globalgrowthinsights.com"], "source_categories": ["secondary-market-research"], "score": "Low", "override": "single source"},
+    {"id": "VC11", "claim_text": "Global biomass boiler market CAGR 12.8% (2025-2032)", "sources": ["globalgrowthinsights.com"], "source_categories": ["secondary-market-research"], "score": "Low", "override": "single source"},
+    {"id": "VC12", "claim_text": "BM GreenTech total revenue MYR 440M (~$93M) FY2024", "sources": ["finance.yahoo.com/BM GreenTech earnings release"], "source_categories": ["secondary-news (audited underlying)"], "score": "Low", "override": "single source cited; annual report at boilermech.com cited in PP2.2-14 but not cross-linked in VC section"},
+    {"id": "VC13", "claim_text": "India 49%, China 24%, South Korea 7% of global HS 8402 exports by shipment count (Oct 2023-Sep 2024)", "sources": ["volza.com (paywalled, accessed via web search summary)"], "source_categories": ["secondary-market-research (paywalled, unverified)"], "score": "Low", "override": "single source; source never directly accessed — web search summary only"},
+    {"id": "VC14", "claim_text": "Thermax >30 units to Thailand sugar; 140 units to SEA sugar industry (B&H)", "sources": ["thermaxglobal.com", "thaipr.net"], "source_categories": ["secondary-vendor", "secondary-trade"], "score": "Medium", "override": "none; two sources but both secondary, one is vendor self-report"},
+    {"id": "VC15", "claim_text": "Thermax Q1 2024 deal with Malaysian agro-industrial group for 18-facility biomass rollout", "sources": ["thaipr.net (Thermax press release)"], "source_categories": ["secondary-trade"], "score": "Low", "override": "single source"},
+    {"id": "VC16", "claim_text": "Thermax revenue INR 9,323 crore (~$1.12B) FY2024", "sources": ["thermaxglobal.com", "thaipr.net"], "source_categories": ["secondary-vendor", "secondary-trade"], "score": "Low", "override": "single source — neither thermaxglobal.com nor thaipr.net are audited financials for the revenue figure; annual report cited separately in PP2.1 but not linked here"},
+    {"id": "VC17", "claim_text": "ISGEC three biomass boilers commissioned in Thailand (Dec 2021-Feb 2022) for GKBI/PTT/KTIS", "sources": ["business-standard.com"], "source_categories": ["secondary-news"], "score": "Low", "override": "single source; credible quality but single source override applies"},
+    {"id": "VC18", "claim_text": "ISGEC group revenue INR 6,245 crore (~$750M) FY2024", "sources": ["en.wikipedia.org/wiki/ISGEC"], "source_categories": ["secondary-trade (Wikipedia)"], "score": "Low", "override": "single source; Wikipedia for financial fact"},
+    {"id": "VC19", "claim_text": "ForbesVyncke 50:50 JV with Vyncke since 2009, manufacturing at Chakan, Pune", "sources": ["business-standard.com (2013 article)"], "source_categories": ["secondary-news"], "score": "Low", "override": "single source; article is from 2013 — stale for current operational status"},
+    {"id": "VC20", "claim_text": "Boilermech ~50-60% Malaysia, ~25-30% Indonesia biomass boiler market share", "sources": ["theedgemalaysia.com (FY2019 context article)"], "source_categories": ["secondary-trade"], "score": "Low", "override": "stale — FY2019 market share data >5 years old; The Edge article pre-dates post-COVID market evolution"},
+    {"id": "VC21", "claim_text": "BM GreenTech FY2024 revenue MYR 440M; acquired by QL Resources Oct 2024", "sources": ["finance.yahoo.com/earnings release", "boilermech.com/annual-report-2024.pdf"], "source_categories": ["secondary-news", "primary (audited annual report)"], "score": "Medium", "override": "none; two sources with one being audited annual report"},
+    {"id": "VC22", "claim_text": "ZBG documented exports to Indonesia and Vietnam (paper mill, biomass)", "sources": ["zbgboiler.com"], "source_categories": ["secondary-vendor"], "score": "Low", "override": "single source; vendor self-report"},
+    {"id": "VC23", "claim_text": "ZBG ASME S/U stamps", "sources": ["zbgboiler.com"], "source_categories": ["secondary-vendor"], "score": "Low", "override": "single source; vendor self-report — ASME certification verifiable but not independently cited"},
+    {"id": "VC24", "claim_text": "Zozen annual production capacity 2,000 units; ASME certified; SEA exports confirmed", "sources": ["en.zozen.com"], "source_categories": ["secondary-vendor"], "score": "Low", "override": "single source; vendor self-report"},
+    {"id": "VC25", "claim_text": "Taishan Group annual turnover >$500M; biomass projects in Thailand/Malaysia/Indonesia/Philippines", "sources": ["coalbiomassboiler.com (Taishan ASEAN Energy Week 2025 article)"], "source_categories": ["secondary-trade/vendor blog"], "score": "Low", "override": "single source; coalbiomassboiler.com is a Chinese boiler industry trade/vendor blog"},
+    {"id": "VC26", "claim_text": "Vyncke ~EUR 200M revenue (2023); >4,400 global references", "sources": ["en.wikipedia.org/wiki/Vyncke", "vyncke.com"], "source_categories": ["secondary-trade (Wikipedia)", "secondary-vendor"], "score": "Low", "override": "single source family — Wikipedia cites vendor website; both trace to same primary source"},
+    {"id": "VC27", "claim_text": "Vyncke offices in Malaysia and Thailand; primary vendor for high-efficiency palm oil mill biomass", "sources": ["vyncke.com"], "source_categories": ["secondary-vendor"], "score": "Low", "override": "single source; vendor self-report"},
+    {"id": "PP2.1-1", "claim_text": "Chinese OEMs price chain-grate and FBC packages 20-35% below Indian equivalents", "sources": ["coalbiomassboiler.com", "industrialbiomassboiler.com"], "source_categories": ["secondary-vendor", "secondary-vendor"], "score": "Low", "override": "single vendor domain family; both sources are Chinese boiler vendor or vendor-adjacent blogs; no independent price benchmarking"},
+    {"id": "PP2.1-2", "claim_text": "Thermax industrial EBIT ~9.3% FY2024; ISGEC operating margin ~8.9% LTM 2024/25", "sources": ["alphaspread.com", "equitymaster.com / Thermax annual report"], "source_categories": ["secondary-market-research", "secondary-market-research / primary (annual report)"], "score": "Medium", "override": "none; two financial data sources with one referencing audited annual report"},
+    {"id": "PP2.1-3", "claim_text": "BM GreenTech gross margin recovery 14.7% (FY2022) to 24.7% (FY2024)", "sources": ["investing.com", "boilermech.com/annual-report-2024.pdf"], "source_categories": ["secondary-market-research", "primary (audited annual report)"], "score": "Medium", "override": "none"},
+    {"id": "PP2.1-4", "claim_text": "Lost-order value: Indian 5 t/h biomass ~$300K-$500K vs. Chinese $200K-$380K (20-25% gap); 10 t/h gap $100K-$250K", "sources": ["coalbiomassboiler.com", "industrialbiomassboiler.com"], "source_categories": ["secondary-vendor", "secondary-vendor"], "score": "Low", "override": "single vendor domain family for price figures; no independent price benchmarking from buyer, trade association, or customs data"},
+    {"id": "PP2.1-5", "claim_text": "China >300 boiler manufacturers; structural overcapacity; state-backed export credit sustaining below-cost export pricing", "sources": ["rhg.com (Rhodium Group March 2024)", "prnewswire.com (China Boiler Industry Report 2022)"], "source_categories": ["primary-research-firm", "secondary-news (market research press release)"], "score": "Medium", "override": "none; Rhodium Group is credible independent research firm"},
+    {"id": "PP2.1-6", "claim_text": "ESP/baghouse add-ons $100K-$500K (baghouse); $50K-$150K (cyclone) at biomass boiler scale", "sources": ["coalbiomassboiler.com"], "source_categories": ["secondary-vendor"], "score": "Low", "override": "single source; vendor blog"},
+    {"id": "PP2.1-7", "claim_text": "China ~71% of Indonesia's $737M HS 8402 imports ($527M, 2023)", "sources": ["trendeconomy.com"], "source_categories": ["secondary-trade"], "score": "Low", "override": "single source domain"},
+    {"id": "PP2.1-8", "claim_text": "India 49%, China 24% of global HS 8402 export shipment count (Oct 2023-Sep 2024)", "sources": ["volza.com (paywalled, web search summary)"], "source_categories": ["secondary-market-research (unverified)"], "score": "Low", "override": "single source; paywalled data cited from web summary — not directly verified"},
+    {"id": "PP2.1-9", "claim_text": "China >300 manufacturers; average annual production below 2,000 evaporation tons per firm", "sources": ["prnewswire.com (China Boiler Industry Report 2022)"], "source_categories": ["secondary-news"], "score": "Low", "override": "single source"},
+    {"id": "PP2.1-10", "claim_text": "Chinese firms use export markets to offset domestic margin compression from overcapacity; state credit and tax credit support", "sources": ["rhg.com (Rhodium Group)", "tradefinanceglobal.com", "asiasociety.org"], "source_categories": ["primary-research-firm", "secondary-trade", "secondary-trade"], "score": "High", "override": "none; primary-research-firm + two corroborating secondaries"},
+    {"id": "PP2.1-11", "claim_text": "Thermax 'first time' competitive win over foreign brands; 30-year SEA presence", "sources": ["thermaxglobal.com"], "source_categories": ["secondary-vendor"], "score": "Low", "override": "single source; vendor self-report"},
+    {"id": "PP2.1-RC1", "claim_text": "China industrial boiler sector structural overcapacity sustained by state support enabling below-market export pricing", "sources": ["rhg.com (Rhodium Group)", "prnewswire.com (China Boiler Industry Report 2022)"], "source_categories": ["primary-research-firm", "secondary-news"], "score": "Medium", "override": "none"},
+    {"id": "PP2.1-RC2", "claim_text": "[ASSUMED-1] SEA procurement committees evaluate TCO in fewer than 20% of competitive boiler bids", "sources": ["[ASSUMED-1]"], "source_categories": ["assumed"], "score": "Low", "override": "ASSUMED tag"},
+    {"id": "PP2.1-RC3", "claim_text": "China Exim Bank buyer-credit financing creates payment structure Indian OEMs cannot replicate", "sources": ["tradefinanceglobal.com", "asiasociety.org (BRI toolkit)"], "source_categories": ["secondary-trade", "secondary-trade"], "score": "Medium", "override": "none; two independent secondary sources on a well-documented phenomenon; no primary government source"},
+    {"id": "PP2.1-RC4", "claim_text": "[ASSUMED-2] Indian OEMs collectively fewer than 3 dedicated staff in Indonesia and fewer than 5 in Thailand", "sources": ["[ASSUMED-2]", "trendeconomy.com (market size logic)"], "source_categories": ["assumed", "secondary-trade"], "score": "Low", "override": "ASSUMED tag; market-size logic uses Low-confidence single source"},
+    {"id": "PP2.1-RC5", "claim_text": "[ASSUMED-3] OEM country-level registration costs (DOSH, Disnaker) total $30K-$100K per OEM per country for first-time registration", "sources": ["[ASSUMED-3]"], "source_categories": ["assumed"], "score": "Low", "override": "ASSUMED tag"},
+    {"id": "PP2.2-1", "claim_text": "Refractory relining cost $20K-$80K per event; failure interval reduced to 3-6 months from 12-18 months", "sources": ["coalbiomassboiler.com (industrial biomass boiler costs)"], "source_categories": ["secondary-vendor"], "score": "Low", "override": "single source; vendor blog for operating cost figure"},
+    {"id": "PP2.2-2", "claim_text": "Tube bundle cleaning/partial re-tubing $30K-$100K per event; 3-4 day de-slagging downtime per incident", "sources": ["link.springer.com (Biomass Conversion and Biorefinery, peer-reviewed)", "sciencedirect.com (EFB fouling pilot-scale study, peer-reviewed)"], "source_categories": ["primary-academic", "primary-academic"], "score": "High", "override": "none; two independent peer-reviewed academic sources"},
+    {"id": "PP2.2-3", "claim_text": "Palm oil mill boiler outage $50K-$183K/day production loss (45 t/h FFB, 20% extraction, CPO $850/tonne)", "sources": ["beta.co.id (Indonesian palm oil industry blog)"], "source_categories": ["secondary-trade"], "score": "Low", "override": "single source; secondary-trade blog for critical cost figure; methodology is author-derived"},
+    {"id": "PP2.2-4", "claim_text": "[ASSUMED-4] Biomass boiler OEMs provision 2-4% of revenue for warranty; BM GreenTech implied $1.9M-$3.7M annually", "sources": ["[ASSUMED-4]"], "source_categories": ["assumed"], "score": "Low", "override": "ASSUMED tag"},
+    {"id": "PP2.2-5", "claim_text": "Forensic analysis cost $5K-$20K per warranty claim event; OEM field engineer deployment cost", "sources": ["coalbiomassboiler.com (warranty claims documentation guide)"], "source_categories": ["secondary-vendor"], "score": "Low", "override": "single source; vendor blog"},
+    {"id": "PP2.2-6", "claim_text": "Biomass O&M 5-8% of capital cost per year vs. 2-4% for clean-fuel; excess $15K-$20K/year above coal baseline for $500K unit", "sources": ["coalbiomassboiler.com (industrial biomass boiler costs)"], "source_categories": ["secondary-vendor"], "score": "Low", "override": "single source; vendor blog for operating cost figure"},
+    {"id": "PP2.2-7", "claim_text": "EFB as-received moisture 60-70%; OEM design basis 15-40% moisture; GCV 10.09-10.57 MJ/kg raw vs. 16-19 MJ/kg dried", "sources": ["academic.oup.com/ce (Oxford Academic Clean Energy, peer-reviewed)"], "source_categories": ["primary-academic"], "score": "Low", "override": "single source override applies despite primary-academic quality"},
+    {"id": "PP2.2-8", "claim_text": "Potassium 48.94 wt% of EFB ash; ash fusion temperature below 750°C causing slagging", "sources": ["sciencedirect.com/topics/engineering/empty-fruit-bunch (ScienceDirect Topics aggregated page)"], "source_categories": ["secondary-trade (aggregated topic page, not peer-reviewed article)"], "score": "Low", "override": "single source; ScienceDirect Topics is a curated summary page, not a peer-reviewed article"},
+    {"id": "PP2.2-9", "claim_text": "Rice husk ash content 15-20% by weight; silica 85-95% of ash; sandblasting abrasion effect", "sources": ["knowledgebank.irri.org (IRRI Knowledge Bank)", "agriculture.institute"], "source_categories": ["primary-multilateral (IRRI)", "secondary-trade"], "score": "Medium", "override": "none; one primary-multilateral (IRRI) + one secondary"},
+    {"id": "PP2.2-10", "claim_text": "Biomass co-firing reverses maintenance interval: 12-18 months reverts to 3-6 months after high-alkali biomass introduction", "sources": ["circulatingfluidizedbedboiler.com"], "source_categories": ["secondary-vendor"], "score": "Low", "override": "single source; vendor/trade blog"},
+    {"id": "PP2.2-11", "claim_text": "Biomass boiler refractory O&M 5-8% of capital cost per year; excess $15K-$20K above coal baseline", "sources": ["coalbiomassboiler.com"], "source_categories": ["secondary-vendor"], "score": "Low", "override": "single source; same domain as PP2.2-6 — same vendor blog, same override"},
+    {"id": "PP2.2-RC1", "claim_text": "Fresh EFB GCV ~10 MJ/kg below autogenous combustion minimum; mills fire fresh EFB as residue disposal", "sources": ["academic.oup.com/ce (Oxford Academic, peer-reviewed)", "mdpi.com/Sustainability (MDPI, peer-reviewed)"], "source_categories": ["primary-academic", "primary-academic"], "score": "High", "override": "none; two independent peer-reviewed academic sources"},
+    {"id": "PP2.2-RC2", "claim_text": "[ASSUMED-5] OEMs accept >50% of warranty claims where root cause was fuel-quality deviation", "sources": ["[ASSUMED-5]"], "source_categories": ["assumed"], "score": "Low", "override": "ASSUMED tag"},
+    {"id": "PP2.2-RC3", "claim_text": "[ASSUMED-6] Fewer than 10% of SEA industrial biomass boiler installations have continuous fuel moisture monitoring", "sources": ["[ASSUMED-6]"], "source_categories": ["assumed"], "score": "Low", "override": "ASSUMED tag"},
+    {"id": "PP2.2-RC4", "claim_text": "[ASSUMED-7] Fewer than 5% of palm oil mill biomass supply agreements include enforceable fuel moisture/ash specs", "sources": ["[ASSUMED-7]"], "source_categories": ["assumed"], "score": "Low", "override": "ASSUMED tag"},
+    {"id": "PP2.2-RC5", "claim_text": "OEM combustion chamber designs validated on single-point design fuel do not tolerate real-field EFB/rice husk variability", "sources": ["academic.oup.com/ce (Oxford Academic)", "sciencedirect.com/topics (aggregated)", "circulatingfluidizedbedboiler.com"], "source_categories": ["primary-academic", "secondary-trade (aggregated)", "secondary-vendor"], "score": "Medium", "override": "none; one primary-academic + two secondary sources"},
+    {"id": "PP2.3-1", "claim_text": "Baghouse filter $100K-$500K installed for 5-25 t/h biomass package; 15-30% of base boiler capital cost", "sources": ["coalbiomassboiler.com (industrial biomass boiler costs)"], "source_categories": ["secondary-vendor"], "score": "Low", "override": "single source; vendor blog for capital cost figure"},
+    {"id": "PP2.3-2", "claim_text": "Cyclone $50K-$150K installed; effective only to ~150-200 mg/Nm3; Malaysia EQA 2014 sets 150 mg/Nm3 requiring baghouse/ESP addition", "sources": ["coalbiomassboiler.com", "doe.gov.my (Malaysia DOE official)"], "source_categories": ["secondary-vendor", "primary-ministry"], "score": "Medium", "override": "none; one primary-ministry + one secondary-vendor"},
+    {"id": "PP2.3-3", "claim_text": "ESP capital cost ~$50/kW thermal; 5 t/h biomass ESP $150K-$200K; 15 t/h $400K-$600K", "sources": ["thundersaidenergy.com (Thunder Said Energy)"], "source_categories": ["secondary-trade"], "score": "Low", "override": "single source"},
+    {"id": "PP2.3-4", "claim_text": "[ASSUMED-8] OEM APC interface engineering costs $15K-$50K per order in additional engineering hours", "sources": ["[ASSUMED-8]"], "source_categories": ["assumed"], "score": "Low", "override": "ASSUMED tag"},
+    {"id": "PP2.3-5", "claim_text": "[ASSUMED-8] OEMs with integrated APC scope face 2-3x higher commissioning liability exposure", "sources": ["[ASSUMED-8]"], "source_categories": ["assumed"], "score": "Low", "override": "ASSUMED tag"},
+    {"id": "PP2.3-6", "claim_text": "Indonesia PerMen LHK No. 11/2021 governs emission standards for boilers (PM, SO2, NOx, HCl, opacity)", "sources": ["peraturan.bpk.go.id (Indonesia BPK official regulations portal)", "jdih.kemenkoinfra.go.id (Indonesia Ministry of Infrastructure JDIH)"], "source_categories": ["primary-ministry", "primary-ministry"], "score": "High", "override": "none; two independent government portals confirming same regulation"},
+    {"id": "PP2.3-7", "claim_text": "Malaysia EQA Clean Air Regulations 2014: 150 mg/Nm3 PM for solid fuel, 30 kg/h threshold, 90% efficiency mandate", "sources": ["doe.gov.my (Malaysia DOE official)", "eswis.doe.gov.my (Malaysia DOE ESWIS — same ministry, different subdomain)", "sekitarsynergy.blogspot.com"], "source_categories": ["primary-ministry", "primary-ministry (same agency)", "secondary-trade"], "score": "Medium", "override": "doe.gov.my and eswis.doe.gov.my are same ministry — counted as 1 primary-ministry source; with secondary blog = one primary + one secondary"},
+    {"id": "PP2.3-8", "claim_text": "Thailand 2023 PCD revised standards: 30-50 mg/Nm3 PM for new plants vs. 120 mg/Nm3 for old", "sources": ["enviliance.com (regulatory intelligence service, not official Thai PCD)"], "source_categories": ["secondary-trade"], "score": "Low", "override": "single source; third-party regulatory summary, not official Thai PCD notification"},
+    {"id": "PP2.3-9", "claim_text": "Biomass boiler market CAGR 12.8% 2025-2032 in Asia Pacific", "sources": ["globalgrowthinsights.com"], "source_categories": ["secondary-market-research"], "score": "Low", "override": "single source; geography_mismatch — APAC aggregate, not SEA or country-specific"},
+    {"id": "PP2.3-10", "claim_text": "Agro-residue boilers require 15-30% higher emission control CAPEX vs. pellet/wood chip boilers", "sources": ["coalbiomassboiler.com"], "source_categories": ["secondary-vendor"], "score": "Low", "override": "single source; vendor blog"},
+    {"id": "PP2.3-RC1", "claim_text": "Emission standards tightening post-date OEM design libraries; no standardized APC interface for package boilers", "sources": ["peraturan.bpk.go.id", "doe.gov.my", "enviliance.com (Thailand)"], "source_categories": ["primary-ministry", "primary-ministry", "secondary-trade"], "score": "Medium", "override": "regulatory facts are well-sourced (High); design library inference is analytical/unverified — composite scored Medium"},
+    {"id": "PP2.3-RC2", "claim_text": "[ASSUMED-9] No published standard governs boiler-to-APC interface for sub-25 t/h solid-fuel packages in any SEA standards body", "sources": ["[ASSUMED-9]"], "source_categories": ["assumed"], "score": "Low", "override": "ASSUMED tag"},
+    {"id": "PP2.3-RC3", "claim_text": "End-users cannot allocate emission compliance liability between boiler OEM and APC sub-supplier; pressure OEM to take single-point accountability", "sources": ["coalbiomassboiler.com (x2 footnotes, same domain)"], "source_categories": ["secondary-vendor"], "score": "Low", "override": "single source; vendor blog; the structural liability claim lacks primary-market evidence"},
+    {"id": "PP2.3-RC4", "claim_text": "[ASSUMED-10] Smaller local SEA boiler fabricators lose >30% of new-installation bids to larger OEMs because they cannot offer integrated APC", "sources": ["[ASSUMED-10]"], "source_categories": ["assumed"], "score": "Low", "override": "ASSUMED tag"},
+    {"id": "PP2.4-1", "claim_text": "[ASSUMED-6] Emergency spare freight $500-$5K per shipment; $2K-$8K per emergency order with customs", "sources": ["[ASSUMED-6]"], "source_categories": ["assumed"], "score": "Low", "override": "ASSUMED tag"},
+    {"id": "PP2.4-2", "claim_text": "Palm oil mill downtime $50K-$183K/day; textile plant similar; each week of boiler downtime $350K-$1.2M production loss", "sources": ["beta.co.id", "vortechglobal.com"], "source_categories": ["secondary-trade", "secondary-trade"], "score": "Medium", "override": "none; two secondary-trade sources corroborating order-of-magnitude cost range"},
+    {"id": "PP2.4-3", "claim_text": "Standard tube bundle/economizer lead time 6-12 weeks from Indian OEM to SEA; control panels 4-8 weeks; boiler shell 8-14 weeks", "sources": ["coalbiomassboiler.com (industrial boiler spare parts delivery)"], "source_categories": ["secondary-vendor"], "score": "Low", "override": "single source; vendor blog for critical operational lead-time figure"},
+    {"id": "PP2.4-4", "claim_text": "In-country service subsidiary establishment cost $500K-$2M annual operating cost; viable only at 30+ in-country units or $1M+ service contracts", "sources": ["no source cited — author-derived estimate"], "source_categories": ["none"], "score": "Low", "override": "no source cited"},
+    {"id": "PP2.4-5", "claim_text": "Grate bars for high-silica biomass replacement every 6-18 months; EFB refractory patching every 3-6 months — multiple emergency orders per year", "sources": ["agriculture.institute (rice husk silica)", "circulatingfluidizedbedboiler.com (refractory cycles)"], "source_categories": ["secondary-trade", "secondary-vendor"], "score": "Medium", "override": "none; two secondary sources from different domains/categories"},
+    {"id": "PP2.4-6", "claim_text": "BM GreenTech gross margin 24.7% FY2024; Surabaya facility; even local OEM aftermarket monetization constrained", "sources": ["investing.com", "theedgemalaysia.com"], "source_categories": ["secondary-market-research", "secondary-trade"], "score": "Medium", "override": "none; two independent sources; The Edge is credible financial press"},
+    {"id": "PP2.4-7", "claim_text": "Aftermarket services generate 35-60% gross margins and 8-20% EBITDA for service-dominated industrial manufacturers", "sources": ["bcg.com (BCG 2025 publication)", "bainbridge.com (NOT Bain & Company — unverified entity)"], "source_categories": ["primary-research-firm", "suspect/unverified"], "score": "Low", "override": "bainbridge.com is NOT bain.com; suspect source identity reduces to single credible source (BCG); single credible source override applies"},
+    {"id": "PP2.4-RC1", "claim_text": "[ASSUMED-11] Per-country order volume for Indian OEMs too small to justify in-country subsidiary fixed cost", "sources": ["[ASSUMED-11]", "trendeconomy.com (India $7.6M HS8402 exports, single source)"], "source_categories": ["assumed", "secondary-trade"], "score": "Low", "override": "ASSUMED tag; underlying market-size figure is itself Low-confidence"},
+    {"id": "PP2.4-RC2", "claim_text": "[ASSUMED-12] Agent commission 3-7% insufficient to fund parts stocking or service staff", "sources": ["[ASSUMED-12]"], "source_categories": ["assumed"], "score": "Low", "override": "ASSUMED tag"},
+    {"id": "PP2.4-RC3", "claim_text": "[ASSUMED-11] Geographic density of SEA installed base makes service economics categorically worse than domestic analogy", "sources": ["[ASSUMED-11]"], "source_categories": ["assumed"], "score": "Low", "override": "ASSUMED tag"},
+    {"id": "PP2.4-RC4", "claim_text": "End-user boiler procurement does not price value of local aftermarket support; suppresses OEM investment", "sources": ["[ASSUMED-1 transitive — from PP2.1-RC2]"], "source_categories": ["assumed (transitive)"], "score": "Low", "override": "ASSUMED tag (transitive from ASSUMED-1)"}
+  ],
+  "weak_claims_for_deep_research": [
+    {
+      "id": "PP2.1-1",
+      "claim_text": "Chinese OEMs price chain-grate and FBC packages 20-35% below Indian OEM equivalents",
+      "current_sources": ["coalbiomassboiler.com", "industrialbiomassboiler.com"],
+      "current_score": "Low",
+      "why_weak": "THE central quantified claim of the stage's primary pain point (margin compression). Both sources are Chinese boiler vendor/vendor-adjacent blogs — effectively a single source family. No independent price benchmarking from buyer surveys, trade association, customs unit-value data, or IEA/OECD energy equipment cost tracking. A vendor blog quoting competitor pricing is not evidence.",
+      "suggested_query": "Search IEA or World Bank procurement cost benchmarks for industrial biomass boilers SEA 2022-2025; OR search Thermax/ISGEC annual reports for average selling price per unit disclosed; OR search ASEAN Centre for Energy industrial energy equipment cost surveys; OR search Malaysian Palm Oil Board (MPOB) capital cost per tonne FFB for biomass boiler component",
+      "priority": "high"
+    },
+    {
+      "id": "PP2.2-3",
+      "claim_text": "Palm oil mill boiler outage costs $50,000-$183,000 per day in lost production (45 t/h FFB, 20% oil extraction, CPO $850/tonne)",
+      "current_sources": ["beta.co.id (Indonesian palm oil industry blog)"],
+      "current_score": "Low",
+      "why_weak": "Critical financial quantification used to justify severity of both PP2.2 (warranty exposure) and PP2.4 (aftermarket downtime). Single secondary-trade source (Indonesian industry blog). The calculation is plausible but the blog presents it without sourcing the mill throughput or extraction assumptions. Used twice across the document. MPOB or GAPKI industry association data would provide a verifiable throughput and yield basis.",
+      "suggested_query": "Search MPOB (Malaysian Palm Oil Board) annual statistics for average CPO mill throughput (FFB/tonne/hour) and extraction rate 2022-2024; OR search GAPKI Indonesia palm oil statistics for processing cost and downtime impact per tonne FFB; OR search World Bank commodity price monitor for CPO reference price 2024",
+      "priority": "high"
+    },
+    {
+      "id": "PP2.4-3",
+      "claim_text": "Standard tube bundle/economizer lead time 6-12 weeks from Indian OEM to SEA end-user; boiler shell 8-14 weeks; control panels 4-8 weeks",
+      "current_sources": ["coalbiomassboiler.com (industrial boiler spare parts delivery)"],
+      "current_score": "Low",
+      "why_weak": "Core evidential claim for PP2.4 (thin aftermarket network). The specific lead-time ranges are the primary quantification of the aftermarket pain. Single vendor blog source with no corroboration from OEM annual reports, logistics benchmarks, or end-user testimony. A vendor blog quoting competitor delivery times is not independent evidence. Indian boiler industry association (IBMA) or end-user maintenance managers would provide credible primary data.",
+      "suggested_query": "Search IBMA (Indian Boiler Manufacturers Association) or Engineering Export Promotion Council India for industrial boiler export lead time and logistics data; OR search Thermax or ISGEC annual reports for aftermarket/spares revenue and delivery time KPIs disclosed; OR search Indonesia/Malaysia industrial maintenance benchmarking reports for OEM spare parts lead times in capital equipment",
+      "priority": "high"
+    }
+  ],
+  "source_diversity_summary": {
+    "primary_gov": 3,
+    "primary_multilateral": 1,
+    "primary_ministry": 4,
+    "primary_association": 0,
+    "primary_academic": 4,
+    "primary_standards": 0,
+    "primary_research_firm": 2,
+    "secondary_trade": 15,
+    "secondary_news": 4,
+    "secondary_market_research": 6,
+    "secondary_vendor": 14,
+    "suspected_or_unverified": 1,
+    "notes": "Primary sources total 14 of ~48 unique domains cited (29%). The remaining 71% are secondary sources. coalbiomassboiler.com alone is sole source for 10+ distinct claims. No industry association (IBMA, CIBA, MPOB, GAPKI) cited directly. No government statistics agency data (BPS Indonesia, DOSM Malaysia, NSO Thailand) cited. Trade data routed through TrendEconomy aggregator rather than UN Comtrade directly."
+  }
+}

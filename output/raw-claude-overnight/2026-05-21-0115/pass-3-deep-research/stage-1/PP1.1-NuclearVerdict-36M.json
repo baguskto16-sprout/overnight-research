@@ -1,0 +1,66 @@
+{
+  "claim_id": "PP1.1-NuclearVerdict-36M",
+  "original_claim": "$36M median nuclear verdict for broker negligent-hiring",
+  "outcome": "replace",
+  "verified_value": "$36M is the median nuclear verdict (jury awards > $10M) in trucking cases generally (carrier-facing) for 2022, per ATRI's December 2025 litigation update. The ILR May 2024 study puts the overall cross-category median at $21M and the product-liability peak at $36M in 2022. No actual broker-specific negligent-hiring nuclear verdicts exist in the record — broker negligent-hiring FAAAA preemption defense was available until Montgomery v. Caribe (May 14, 2026), meaning the broker-facing verdict pool is effectively zero cases. The $36M figure is a legitimate proxy for forward exposure (trucking cases with negligent-hiring factor increase expected awards 272.3%), but it must not be described as the 'broker negligent-hiring' median. It is the broader trucking industry median, applied as an exposure ceiling proxy.",
+  "precision_problem": "The claim conflates two datasets: (1) ATRI's trucking carrier verdict median ($36M for 2022 trucking cases) and (2) ILR's product-liability case median ($36M peak in 2022). Neither data set is broker-specific. The FreightWaves 'Freight Broker Insurance Gap' article used $36M as a hypothetical broker-scenario number, not a measured broker verdict. The BeInsure article attributed it to ATRI but also in the context of trucking generally.",
+  "best_source": {
+    "publisher": "American Transportation Research Institute (ATRI)",
+    "title": "Trucking Nuclear Verdicts and Litigation Cost Update",
+    "url": "https://truckingresearch.org/",
+    "note": "Direct PDF not publicly indexed; content confirmed via CCJ and San Diego Union-Tribune reporting on the December 2025 ATRI release. ATRI site itself returned 403. [NEEDS-ATTENDED-FETCH]: https://truckingresearch.org/2025/ to locate PDF URL.",
+    "date": "December 2025",
+    "tier": "primary-industry-research (ATRI is a nonprofit research unit of the American Trucking Associations)"
+  },
+  "supporting_sources": [
+    {
+      "publisher": "U.S. Chamber of Commerce Institute for Legal Reform",
+      "title": "Nuclear Verdicts: An Update on Trends, Causes, and Solutions",
+      "url": "https://instituteforlegalreform.com/wp-content/uploads/2024/05/ILR-May-2024-Nuclear-Verdicts-Study.pdf",
+      "date": "May 2024",
+      "tier": "primary-industry-research",
+      "key_data": "Overall median nuclear verdict 2013-2022: $21M. Auto accident median: $21M. Product liability median: $25M (peaked at $36M in 2022). ~1 in 4 auto accident nuclear verdicts involves a commercial trucking company. No broker-negligent-hiring category.",
+      "via_pdf_markitdown": true,
+      "note": "The $36M in ILR is product-liability peak (2022), not trucking specifically."
+    },
+    {
+      "publisher": "FreightWaves",
+      "title": "The Freight Broker Insurance Gap Is Now Real",
+      "url": "https://www.freightwaves.com/news/the-freight-broker-insurance-gap-is-now-real",
+      "date": "May 2026",
+      "tier": "trade-press",
+      "key_data": "Cites $36M as trucking median per ATRI December 2025. Uses it as hypothetical broker exposure, explicitly noting 'the $36 million judgment a jury just handed down because the broker put a load on a carrier with a conditional safety rating' is a hypothetical example, not an actual broker verdict. Confirms no actual broker-facing negligent-hiring nuclear verdicts on record.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "publisher": "BeInsure",
+      "title": "Freight Brokers Face New Insurance Gap After Supreme Court Ruling",
+      "url": "https://beinsure.com/news/freight-brokers-face-new-insurance-gap-after-court-ruling/",
+      "date": "May 2026",
+      "tier": "trade-press (insurance media)",
+      "key_data": "Attributes $36M to ATRI December 2025 trucking litigation update; applies it to broker exposure context. Does not claim $36M is a broker-specific figure. Confirms ATRI defines 'nuclear verdict' as >$10M.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "publisher": "ATRI / Commercial Carrier Journal",
+      "title": "ATRI Report: Trucking Nuclear Verdicts and Litigation Costs Surge",
+      "url": "https://www.ccjdigital.com/business/insurance/article/15773236/atri-report-trucking-nuclear-verdicts-litigation-costs-surge",
+      "date": "December 2025 (article reporting on the ATRI release)",
+      "tier": "trade-press reporting primary source",
+      "key_data": "ATRI December 2025: tractor-trailer tort case filings grew 3.7% annually 2014-2023; median nuclear verdict $36M in 2022 (~50% higher than 2013 median); verdicts >$50M rose 6.4 percentage points. Negligent hiring/onboarding increases expected award by 272.3%.",
+      "note": "[NEEDS-ATTENDED-FETCH]: https://www.ccjdigital.com/business/insurance/article/15773236/atri-report-trucking-nuclear-verdicts-litigation-costs-surge (returned 403)"
+    },
+    {
+      "publisher": "ILR / Scopelitis Spring 2026 Newsletter",
+      "title": "Supreme Court Holds Negligent Selection Claims Against Brokers Are Not Preempted",
+      "url": "https://scopelitis.com/issue/spring-2026/?pdf=true",
+      "date": "Spring 2026",
+      "tier": "law-firm-primary (leading broker liability defense bar)",
+      "key_data": "Montgomery v. Caribe analysis. Confirms no verdict data for broker negligent-hiring cases cited — Scopelitis discusses legal exposure but provides no verdict-size benchmark, corroborating that broker-specific verdict data does not yet exist.",
+      "via_pdf_markitdown": false
+    }
+  ],
+  "recommendation": "Replace the claim 'Median nuclear verdict in trucking negligent-hiring cases (now relevant to brokers post-Montgomery): $36M' with: 'Median nuclear verdict in trucking cases reached $36M in 2022 (ATRI, December 2025) — a 50% increase over the 2013 median of ~$24M. No broker-specific negligent-hiring verdict data exists yet (FAAAA preemption blocked such claims pre-Montgomery); however, ATRI data shows that negligent hiring/onboarding as an aggravating factor increases expected verdict awards by 272.3%, making trucking-industry medians the best available forward-looking exposure proxy for brokers post-Montgomery. The $36M figure should be cited as the trucking-industry median, not a broker-specific median. [Source: ATRI Nuclear Verdicts and Litigation Cost Update, December 2025; ILR Nuclear Verdicts: An Update, May 2024 (PDF)]'",
+  "atri_pdf_status": "[NEEDS-ATTENDED-FETCH]: truckingresearch.org returned 403 for all attempted ATRI PDF paths. The December 2025 ATRI report is confirmed to exist and is referenced extensively in trade press (CCJ, San.com, BeInsure, FreightWaves) but could not be directly fetched. Attended-mode browser session needed to download the PDF from truckingresearch.org.",
+  "confidence_revised": "Medium-High for $36M as trucking carrier median (multiple trade-press corroborations of ATRI Dec 2025 report; ILR primary PDF verified via markitdown). Low for 'broker negligent-hiring' framing — that framing is not supported by any primary source; no such verdict pool exists."
+}

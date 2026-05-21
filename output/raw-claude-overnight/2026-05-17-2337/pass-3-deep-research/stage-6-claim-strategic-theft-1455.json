@@ -1,0 +1,14 @@
+{
+  "claim_id": "PP6.4-cost-1",
+  "outcome": "found-stronger-evidence",
+  "new_score": "High",
+  "replacement_or_supplementary_sources": [
+    {"url": "https://www.munichre.com/content/dam/munichre/mram/content-pieces/pdfs/MR_CargoTheftReport_FINAL25.pdf", "tier": "primary_insurer_report (Munich Re Specialty Group N.A.)", "date": "2025-01", "what_it_supports": "Fictitious pickups increased 1,445.83% Q1 2022 → Q1 2024 (Dr. Cyndee Garbrecht, SVP Claims). Jan-Jun 2024 thefts +34.55% (1,778 reported losses, $112M). Fetched via markitdown."},
+    {"url": "https://www.cargonet.com/news-and-events/cargonet-in-the-media/2023-theft-trends/", "tier": "primary_industry_data (Verisk/CargoNet)", "date": "2024-01", "what_it_supports": "576 fictitious pickup events recorded in 2023 vs 2012-2022 annual average of 66 (8.7× increase). Total supply-chain theft events: 2,852 in 2023, +59% YoY. Total losses $331.9M."},
+    {"url": "https://www.verisk.com/company/newsroom/cargo-theft-surges-to-record-levels-in-2024-verisk-cargonet-analysis-reveals/", "tier": "primary_industry_data (Verisk/CargoNet)", "date": "2025-01", "what_it_supports": "3,625 incidents in 2024, +27% YoY; average loss $202,364. Strategic theft remains dominant criminal method."},
+    {"url": "https://www.ttclub.com/fileadmin/uploads/tt-club/Documents/TT_and_BSI_annual_theft_report/TT_Club_Report_-_Supply_Chain_Report_April_2025.pdf", "tier": "primary_insurer_consultancy (TT Club + BSI)", "date": "2025-04", "what_it_supports": "Strategic theft ~18% of all US incidents; geographic expansion into Midwest, UK, Germany, France."}
+  ],
+  "revised_claim_text": "Strategic cargo theft (fictitious pickups + deception) surged in 2022–2024: Munich Re Specialty Group N.A. reports a 1,445.83% increase in fictitious pickups from Q1 2022 to Q1 2024 (Dr. Cyndee Garbrecht, SVP Claims, named source). CargoNet recorded 576 fictitious pickup events in 2023 alone — ~8.7× the 2012–2022 annual average of 66. Overall US+Canada cargo theft reached 3,625 incidents in 2024 (+27% YoY). TT Club/BSI 2025 reports strategic theft accounts for ~18% of all US incidents.",
+  "footnote_for_artifact": "Strategic cargo theft growth: Munich Re Specialty Group N.A., 'Cargo Theft Tactics & Trends Report 2025' (Jan 2025, p.9 — Garbrecht quote, fetched via markitdown); Verisk CargoNet 2023 and 2024 Annual Analyses (cargonet.com; verisk.com/company/newsroom); TT Club / BSI Consulting 'Supply Chain Report' April 2025 (ttclub.com). Travelers and FleetOwner citations dropped — Munich Re and CargoNet are the primary upstream sources.",
+  "notes": "Travelers' '1,455%' figure is a rounded version of Munich Re's precise 1,445.83%. The 576 fictitious pickups in 2023 is a CargoNet primary statistic (not a Travelers invention). Upgrade Low → High: two named primary sources (Munich Re + CargoNet) plus TT Club/BSI corroboration. Replace Travelers/FleetOwner citations with Munich Re + CargoNet."
+}

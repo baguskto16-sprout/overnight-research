@@ -1,0 +1,32 @@
+RUN-COMPLETE
+============
+
+Run ID: 2026-05-20-1124
+Topic: Logistics risk-management solutions worldwide
+Started: 2026-05-20 11:27 +08
+Finished: 2026-05-20 14:05 +08
+Mode: Unattended-Playwright (Phase 1 only; Phase 2 enrichment handled by separate orchestrator)
+Gate decision: SHIP-WITH-FLAG (~56% Low post-remediation, within the 30-70% band)
+
+Outputs:
+- raw-claude-value-chain-logistics-risk-mgmt-worldwide.md (~236 KB, 6 stages concatenated)
+- raw-claude-pain-points-logistics-risk-mgmt-worldwide.md (~433 KB, 30+ pain points)
+- raw-claude-summary-logistics-risk-mgmt-worldwide.md (~12 KB run summary)
+- FINAL-REPORT.html (~272 KB, 9-page Wright-branded A4 print-ready)
+- cross-stage-observations.md
+- pass-0-plan.md, checkpoint.json
+- pass-1-drafts/ (12 files: 6 stages × value-chain + pain-points)
+- pass-2-validation/ (12 files: 6 stages × .json + summary.md)
+- stages-validated/ (6 files)
+- pass-3-deep-research/ at ../../../pass-3-deep-research/ (8 JSON files across stages 1, 3, 5, 6)
+
+Stages tracer-fired: 6 of 6 (all complete; no aborts)
+Sub-agent invocations: 21 (6 value-chain + 6 pain-point + 6 source-validator + 8 deep-research, parallelized where independent)
+Wall-clock runtime: ~2 hrs 38 min (well under 4-hour cap)
+
+Top 3 high-confidence findings:
+1. SEA parametric / telematics-native cargo insurance is unaddressed — Loadsure, Parsyl, Nirvana, Breeze, Cover Genius have zero SEA deployment; Tokio Marine has the CVC investment in Nirvana via TMFF and the regional infrastructure to be first.
+2. SCOTUS Montgomery v. Caribe Transport II (May 14, 2026) removed FAAAA preemption for broker negligent-hiring — turns carrier vetting into legal duty. Highway, MyCarrierPortal/Descartes dominate US; SEA has no equivalent.
+3. SOMS corridor piracy surged 281% YoY in H1 2025 (BSI/TT Club April 2026 + ReCAAP ISC 2025 corroborated) — 19-year high; no RTTVP offers SEA piracy-corridor risk scoring.
+
+This file signals to the unattended wrapper that Phase 1 is complete. Phase 2 (Playwright attended-fetch enrichment) is launched by a separate orchestrator and is NOT handled by this run.

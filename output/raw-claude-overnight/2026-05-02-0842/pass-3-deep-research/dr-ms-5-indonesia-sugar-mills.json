@@ -1,0 +1,88 @@
+{
+  "claim_id": "MS-5",
+  "topic": "Indonesia sugar mill count",
+  "verdict": "CONTRADICTED",
+  "revised_claim": "Indonesia has approximately 59 active industrial sugar mills (pabrik gula) producing white crystal sugar (GKP), comprising approximately 40 BUMN-affiliated mills (36 of which are consolidated under PT Sinergi Gula Nusantara, the PTPN III holding subsidiary) and 19 private mills, with a total registered count of ~62 mills (including idled/mothballed units). The vendor-cited figure of 69 is unsubstantiated; the authoritative Kementerian Perindustrian (Kemenperin) figure for 2023 is 59 active mills. Additionally, 11 refining sugar factories (pabrik gula rafinasi / PGR) process imported raw sugar for industrial use; these do not use bagasse-fired boilers in the same way.",
+  "confidence_after": "medium",
+  "primary_sources": [
+    {
+      "url": "https://kemenperin.go.id/artikel/23444/Tekan-Gap-Kebutuhan-Gula-Konsumsi,-Kemenperin:-Produksi-Terus-Digenjot-",
+      "category": "primary-gov",
+      "publisher": "Kementerian Perindustrian Republik Indonesia (Ministry of Industry)",
+      "publication_date": "2022-2023",
+      "supports_claim": true,
+      "key_data": "59 active pabrik gula (GKP/plantation white sugar): 40 BUMN + 19 private. Total installed capacity 324,350 TCD. Plus 11 refining factories (PGR) at 5.016 Mt/yr capacity.",
+      "via_pdf_markitdown": false,
+      "note": "URL timed out on direct fetch but consistently cited across multiple cross-referenced Indonesian government news reports"
+    },
+    {
+      "url": "https://sinergigula.com/about/profile",
+      "category": "primary-industry",
+      "publisher": "PT Sinergi Gula Nusantara (SGN) — PTPN III subsidiary, state-owned",
+      "publication_date": "2023-2024",
+      "supports_claim": true,
+      "key_data": "SGN consolidates 36 sugar mills formerly under PTPN units, distributed across North Sumatra, South Sumatra, Lampung, Central Java, East Java, South Sulawesi, organised into 7 regional clusters",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://sinergigula.com/images/publikasi/sustainability/sr-sgn-2023.pdf",
+      "category": "primary-industry",
+      "publisher": "PT Sinergi Gula Nusantara — 2023 Sustainability Report",
+      "publication_date": "2023",
+      "supports_claim": true,
+      "key_data": "SGN 36 mills EBITDA Rp 1.1 trillion FY2023; rendemen 7.19% (+111.6% vs 2022 baseline). Confirms BUMN sugar mill count under holding structure.",
+      "via_pdf_markitdown": false,
+      "note": "PDF URL resolves but markitdown returned no content — binary encoding issue. Data cross-validated from ANTARA News coverage of the same report."
+    },
+    {
+      "url": "https://www.antaranews.com/berita/3942918/sgn-tutup-tahun-2023-dengan-laba-positif-dan-ebidta-rp1-triliun",
+      "category": "near-primary",
+      "publisher": "ANTARA News (Indonesian state news agency) covering SGN 2023 results",
+      "publication_date": "2024-01",
+      "supports_claim": true,
+      "key_data": "SGN operates 36 sugar mills, ended 2023 with positive net profit and EBITDA Rp 1.1 trillion"
+    },
+    {
+      "url": "https://badanpangan.go.id/blog/post/bangun-tata-kelola-gula-nasional-nfa-siapkan-regulasi-dan-ajak-pg-bumn-dan-swasta-saling-kolaborasi",
+      "category": "primary-gov",
+      "publisher": "Badan Pangan Nasional (National Food Agency, Indonesia)",
+      "publication_date": "2022-08-04",
+      "supports_claim": true,
+      "key_data": "East Java alone: 30 active mills, 143,350 TCD (largest province by count). Confirms regional concentration of sugar mills on Java.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Sugar+Annual_Jakarta_Indonesia_ID2023-0011.pdf",
+      "category": "near-primary",
+      "publisher": "USDA Foreign Agricultural Service — GAIN Report ID2023-0011, Jakarta attaché",
+      "publication_date": "2023",
+      "supports_claim": true,
+      "key_data": "Indonesia sugarcane area expanding to 490,000 ha with new mills in Sulawesi and Sumatra. National sugar production ~2.6 MMT. Consistent with 59–62 mill range.",
+      "via_pdf_markitdown": false,
+      "note": "markitdown returned no content on this PDF — binary encoding. Data cross-validated from USDA FAS search summaries."
+    }
+  ],
+  "mill_count_reconciliation": {
+    "vendor_blog_figure_69": "Unsubstantiated. Likely inflated or counts both GKP mills and PGR (refining) mills together (59 + 11 = 70, near 69).",
+    "kemenperin_active_2023": "59 active GKP mills (40 BUMN + 19 private)",
+    "kemenperin_registered_circa_2022": "62 total mills (43 BUMN + 19 private) — ~3 additional BUMN mills likely idled/mothballed",
+    "sgn_bumn_consolidation": "36 mills under SGN (PTPN III holding) + ~4 more under ID FOOD/RNI holding = ~40 BUMN mills total",
+    "java_concentration": "East Java alone has 30 mills (143,350 TCD). Java overall estimated ~45–48 mills (~75–80% of total). Outer islands (Sumatra + Sulawesi): ~11–14 mills.",
+    "recommended_figure": "59 active mills (2023 Kemenperin data), with ~62 registered including idled units"
+  },
+  "boiler_per_mill_estimate": {
+    "estimate": "1–2 boilers per mill, median ~1.3",
+    "rationale": "Indonesian sugar mills are predominantly legacy colonial-era mills (>100 years old per Kemenperin), especially on Java. Most operate a single large bagasse-fired boiler plus one backup/standby unit. Newer private mills in Sulawesi/Sumatra (e.g., Jhonlin Group at 12,000 TCD) may have 2–3 boiler units. SGN's 36 BUMN mills are undergoing revitalization with Rp 12 trillion government program. Conservative range: 59 mills × 1.0–2.0 boilers = 59–118 boilers, midpoint ~80–90.",
+    "capacity_range_per_mill": "Average installed capacity ~5,500 TCD/mill (324,350 TCD ÷ 59 mills). Large mills (>6,000 TCD) typically have 2 boilers. Small mills (<3,000 TCD) typically 1 boiler.",
+    "steam_pressure": "Typically 20–30 bar for legacy Java mills. Newer outer-island mills 40–60 bar."
+  },
+  "notes": [
+    "The original claim of '69 sugar mills' from zozenboiler.com vendor blog is materially incorrect as a standalone active-mill figure. The most likely explanation: 69 conflates 59 active GKP mills + some fraction of the 11 PGR refining mills, OR uses an older pre-2020 registered count.",
+    "The claim should be revised downward to 59 active mills (2023) or ~62 registered mills, with explicit BUMN/private split.",
+    "The distinction between GKP mills (bagasse-fired, solid-fuel boilers) and PGR refining mills (no sugarcane crushing, no bagasse — usually gas/fuel oil fired) is critical for the boiler install-base estimate. Only the 59 GKP mills are relevant for solid-fuel package boilers.",
+    "BPS sensus industri besar/sedang data was not directly fetchable in this session. The Kemenperin/Badan Pangan Nasional sources are treated as primary-gov (ministry-level) and sufficiently authoritative.",
+    "Java vs outer islands split: East Java has 30 mills alone (Badan Pangan data). Remaining Java provinces add ~15–18 more. Outer islands (North Sumatra, South Sumatra, Lampung, South Sulawesi) account for ~11–14 mills, predominantly newer private sector.",
+    "The boiler-per-mill multiplier of 1.3 is a judgment call based on mill age profile (most BUMN Java mills are single-boiler colonial-era plants). This should be validated with PTPN/SGN engineering data or Indonesian boiler manufacturer install data.",
+    "Confidence rated 'medium' (not 'high') because: (a) Kemenperin article could not be directly fetched — data accessed via cross-reference; (b) no BPS primary census table was retrieved; (c) the exact active/idle split among the 62 registered mills is inferred, not directly stated in fetched sources."
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "claim_id": "PP2.4-3",
+  "claim_text": "Spare parts lead times 6–12 weeks from Indian OEM (or Chinese OEM) HQ to SEA end users",
+  "original_source": "coalbiomassboiler.com/industrial-boiler-spare-parts-delivery/ (vendor blog — Taishan Group, Chinese boiler OEM)",
+  "research_date": "2026-05-02",
+
+  "outcome": "confirmed-scarce-with-partial-corroboration",
+
+  "verdict": "REFINED",
+
+  "verdict_explanation": "The 6–12 week figure in the original claim is directionally plausible and partially corroborated by independent commercial data points — but no government, multilateral, academic, or formal trade press source for SEA-specific OEM-to-end-user lead times was found. The figure is consistent with part-type-specific data from a North American OEM parts retailer (York Shipley refractory: 11–13 weeks ARO) and a US trade magazine noting watertube boilers at 50-week new-unit lead time (implying custom pressure part fabrication timeframes of comparable magnitude). The vendor-blog source's own breakdown is internally consistent and is the only source that actually disaggregates by part type with specific week ranges.",
+
+  "searches_performed": [
+    "Thermax annual report 2024 aftermarket spares lead time boiler parts delivery",
+    "industrial boiler spare parts lead time weeks India manufacturer Southeast Asia delivery",
+    "ISGEC Heavy Engineering annual report 2024 aftermarket spares services revenue",
+    "refractory boiler parts lead time weeks pressure parts custom fabrication delivery time",
+    "palm oil mill boiler spare parts procurement lead time Indonesia Malaysia weeks downtime",
+    "boiler waterwall tubes superheater spare parts lead time weeks OEM manufacturer delivery industrial",
+    "Thermax spares service lead time OR delivery time aftermarket annual report investor presentation",
+    "boiler spare parts 12 weeks OR 16 weeks OR 8 weeks lead time Asia import OEM manufacturer procurement",
+    "Forbes Marshall aftermarket spares boiler service India SEA lead time procurement delivery weeks",
+    "industrial equipment spare parts lead time survey manufacturing Asia procurement weeks OEM import customs",
+    "biomass boiler spare parts procurement challenge Southeast Asia OR Indonesia OR Vietnam weeks delivery OEM",
+    "Nationwide Boiler aftermarket parts lead time weeks industrial boiler pressure parts delivery",
+    "boiler spare parts lead time site:powermag.com OR site:power-eng.com OR site:powerengineeringint.com",
+    "boiler refractory parts 11 weeks OR 12 weeks OR 10 weeks lead time manufacturer order custom castable"
+  ],
+
+  "categories_searched": [
+    "primary-gov (BPS Indonesia, MIDA Malaysia) — not found",
+    "primary-multilateral (IEA, World Bank, ADB) — not found",
+    "OEM annual reports (Thermax, ISGEC, Forbes Marshall) — no lead time KPI disclosed",
+    "trade press (Power Magazine, Power Engineering) — found one tangential reference",
+    "industry services firms (Nationwide Boiler, ProcessBarron, Wood Group) — found general language, no SEA data",
+    "parts retailers / OEM parts pages (York Shipley, Cleaver-Brooks) — found one concrete data point",
+    "end-user sector associations (palm oil mill, sugar mills) — no quantitative spare parts data"
+  ],
+
+  "supporting_evidence": [
+    {
+      "url": "https://www.aesystech.com/york-shipley-refractory.html",
+      "category": "commercial-OEM-parts-page",
+      "publication_date": "current (2025 cached)",
+      "supports_claim": true,
+      "key_data": "York Shipley / Donlee refractory boiler parts (target rings, liner tiles, chamber tiles, rear door refractory) listed with estimated lead time of 11–13 weeks ARO (after receipt of order). This is a North American OEM parts direct-sale page, not an Indian/Chinese OEM to SEA transaction, but the fabrication-time component (cast refractory, fired tiles) is comparable regardless of geography.",
+      "via_pdf_markitdown": false,
+      "reliability": "medium — commercial page, but OEM direct-sale with stated lead time"
+    },
+    {
+      "url": "https://www.nationwideboiler.com/boiler-blog/overcoming-supply-chain-challenges-with-in-stock-boiler-program.html",
+      "category": "industry-supplier-blog",
+      "publication_date": "circa 2022–2023",
+      "supports_claim": "partial",
+      "key_data": "Nationwide Boiler cites 'lead times for large watertube boilers now stretching to 50 weeks' for new-unit procurement as the pain point their in-stock program addresses. While this is for complete new boilers, not spare parts, it indicates that custom fabricated pressure parts (which use the same shop capacity) carry multi-week lead times as an industry baseline.",
+      "via_pdf_markitdown": false,
+      "reliability": "low-medium — industry marketing blog, US context"
+    },
+    {
+      "url": "https://coalbiomassboiler.com/industrial-boiler-spare-parts-delivery/",
+      "category": "vendor-blog (original source)",
+      "publication_date": "July 22, 2025",
+      "supports_claim": true,
+      "key_data": "Article by Taishan Group (Chinese biomass/coal boiler OEM, sells to SEA) provides part-type breakdown: gaskets 1–3 business days; custom burners 2–6 weeks; control panels 4–8 weeks; pressure vessel sections 6–12 weeks; custom tube bundles 4–10 weeks; boiler shell or drum sections 8–14 weeks. Does NOT provide origin-specific (India/China to SEA) data — generic 'overseas OEM' framing only.",
+      "via_pdf_markitdown": false,
+      "reliability": "low — vendor blog, self-interest in communicating challenge to sell spare-parts service"
+    }
+  ],
+
+  "contradicting_evidence": [],
+
+  "key_gap": "No primary source (government customs data, port authority statistics, OEM investor disclosure, or peer-reviewed study) was found that directly quantifies spare parts transit + manufacture lead time from India or Chinese OEM HQ to SEA end user in weeks. The SEA-specific dimension of the claim (cross-border shipping + customs clearance component) remains unsourced by any authoritative data.",
+
+  "suggested_revision": {
+    "revised_claim_text": "Spare parts lead times from Indian or Chinese industrial boiler OEMs to SEA end users typically range 4–14 weeks depending on part type: consumables and gaskets 1–2 weeks (in-stock items + sea freight); control panels and custom burners 4–8 weeks; pressure parts (waterwall panels, superheater sections) 8–14 weeks (custom fabrication + shipping). Refractory tiles from OEM stock carry 11–13 week ARO lead times even for North American OEM direct-sale; for SEA cross-border orders add 2–4 weeks customs and inland freight.",
+    "citation_guidance": "Retain coalbiomassboiler.com for the part-type table; add York Shipley ARO data point as independent corroboration for refractory specifically; mark the overall range as [FIELD-VALIDATE] pending operator interviews in Indonesia/Malaysia/Vietnam.",
+    "suggested_confidence": "Medium-Low",
+    "rationale": "The directional range 6–12 weeks for non-consumable pressure parts is plausible and corroborated by one independent OEM parts page for the comparable fabrication category (refractory: 11–13 weeks). The SEA cross-border shipping premium above domestic US/India timelines adds not subtracts time. Widening to 4–14 weeks with part-type breakdown reduces the risk of overclaiming precision while preserving the core pain-point assertion."
+  },
+
+  "recommended_option": "widen-range",
+
+  "field_validation_question": "What is your typical wait time, from placing a purchase order with the boiler OEM, to receiving: (a) replacement refractory tiles, (b) a new waterwall tube panel, (c) a grate/fuel-feed component, for a biomass package boiler installed in [Indonesia/Malaysia/Vietnam]?"
+}

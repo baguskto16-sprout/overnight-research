@@ -1,0 +1,59 @@
+{
+  "run_id": "2026-05-17-2337",
+  "input_file": "./input/logistics-risk-mgmt-worldwide.txt",
+  "topic_slug": "logistics-risk-mgmt-worldwide",
+  "mode": "sandbox",
+  "output_dir": "./output/raw-claude-overnight/2026-05-17-2337/",
+  "started_at": "2026-05-17T23:38:00Z",
+  "completed_at": "2026-05-18T15:30:00Z",
+  "current_pass": 5,
+  "stages_planned": [
+    {"n": 1, "name": "Vendor procurement & counterparty risk"},
+    {"n": 2, "name": "TMS, dispatch & freight orchestration"},
+    {"n": 3, "name": "Fleet & driver management / telematics"},
+    {"n": 4, "name": "In-transit visibility & cargo IoT"},
+    {"n": 5, "name": "Security, escort & physical protection"},
+    {"n": 6, "name": "Cargo insurance, claims & incident response"}
+  ],
+  "stages_completed": [
+    {"n": 1, "name": "Vendor procurement & counterparty risk", "gate": "ship-with-flag", "claims_total": 72, "claims_high": 17, "claims_med": 16, "claims_low": 39, "low_pct": "54%", "unique_domains": 35},
+    {"n": 2, "name": "TMS, dispatch & freight orchestration", "gate": "ship-with-flag", "claims_total": 50, "claims_high": 12, "claims_med": 12, "claims_low": 26, "low_pct": "52%", "deep_research_completed": ["invoice-error", "mckinsey-handoff", "tms-market"]},
+    {"n": 3, "name": "Fleet & driver management / telematics", "gate": "ship-with-flag", "claims_total": 60, "claims_high": 23, "claims_med": 15, "claims_low": 22, "low_pct": "37%", "deep_research_completed": ["combined-ratio: M→H", "eld-noncompliance: kept L (assumed)", "insurance-per-mile: M→H", "rods-falsification: M→H", "maintenance-downtime: kept L"]},
+    {"n": 4, "name": "In-transit visibility & cargo IoT", "gate": "ship-with-flag (post-DR)", "claims_total": 50, "claims_high_pre": 4, "claims_high_post": 5, "claims_med_pre": 15, "claims_med_post": 17, "claims_low_pre": 31, "claims_low_post": 28, "low_pct_post": "56%", "deep_research_completed": ["berg-installed-base: M→H", "beacon-eta: L→M (methodology)", "pharma-35B: L→M (attribution)", "sensitech: L→M (revenue corrected $5.8B→$22.5B)", "data-sharing-44pct: kept L (composite alternative provided)"]},
+    {"n": 5, "name": "Security, escort & physical protection", "gate": "ship", "claims_total": 49, "claims_high_pre": 20, "claims_high_post": 21, "claims_med_pre": 13, "claims_med_post": 14, "claims_low_pre": 16, "claims_low_post": 14, "low_pct_post": "29%", "deep_research_completed": ["cargonet-recovery: kept L (confirmed-scarce)", "munich-re-indonesia: M→H (TT Club cross-val)", "cargo-security-market: kept L (band $2.5-3.0B 2024)", "gnss-interference: L→M (FAA + OPSGROUP + Aireon + EASA-IATA)", "latam-cargo-theft: L→M (AMESIS + BSI/TT Club Mexico)"]},
+    {"n": 6, "name": "Cargo insurance, claims & incident response", "gate": "ship", "claims_total": 54, "claims_high_pre": 18, "claims_high_post": 19, "claims_med_pre": 18, "claims_med_post": 21, "claims_low_pre": 18, "claims_low_post": 14, "low_pct_post": "26%", "deep_research_completed": ["overhaul-h1: L→M (CargoNet primary)", "parsyl: L→M (year 2024→2022, partners corrected)", "tokio-marine: L→M (5 life→4 life corrected)", "fnol-gap: kept L (confirmed-scarce, ASSUMED-N)", "strategic-theft-1455: L→H (Munich Re 1,445.83% primary)"]}
+  ],
+  "stages_in_progress": [],
+  "weak_claims_to_re_research": [],
+  "cross_stage_validation": {
+    "total_claims": 335,
+    "high": 97,
+    "medium": 95,
+    "low": 143,
+    "low_pct": "42.7%",
+    "gate": "ship-with-flag",
+    "unique_sources_approx": 210,
+    "needs_attended_fetch_count": 9
+  },
+  "final_gate_decision": "ship-with-flag",
+  "outputs_written": [
+    "raw-claude-value-chain-logistics-risk-mgmt-worldwide.md",
+    "raw-claude-pain-points-logistics-risk-mgmt-worldwide.md",
+    "raw-claude-summary-logistics-risk-mgmt-worldwide.md",
+    "pass-0-plan.md",
+    "pass-1-drafts/ (12 files)",
+    "pass-2-validation/ (10 files incl. cross-stage-final.md)",
+    "pass-3-deep-research/ (26 files)",
+    "stages-validated/ (12 files)",
+    "checkpoint.json",
+    "RUN-COMPLETE.txt"
+  ],
+  "interruption": {
+    "detected_at": "2026-05-18T00:50:00Z",
+    "likely_cause": "token-limit-or-handoff",
+    "resumed_at": "2026-05-18T07:30:00Z",
+    "resumed_again_at": "2026-05-18T13:38:00Z"
+  },
+  "resumed": true,
+  "prior_run_referenced": "2026-05-14-0107"
+}

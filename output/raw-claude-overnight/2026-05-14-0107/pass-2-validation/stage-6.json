@@ -1,0 +1,1598 @@
+{
+  "stage": 6,
+  "stage_name": "Cargo insurance, claims & incident response",
+  "files_validated": [
+    "stage-6-value-chain.md",
+    "stage-6-pain-points.md"
+  ],
+  "total_claims": 84,
+  "by_confidence": {
+    "H": 19,
+    "M": 28,
+    "L": 37
+  },
+  "score_pct": {
+    "H": "23%",
+    "M": "33%",
+    "L": "44%"
+  },
+  "claims": [
+    {
+      "id": "VC-1",
+      "file": "stage-6-value-chain.md",
+      "claim": "Allianz Commercial is the largest global marine cargo insurance provider by premium volume as of 2025; marine cargo line covers ICC A, ICC B, ICC C, project cargo, and stock throughput",
+      "sources": [
+        "https://commercial.allianz.com/solutions/marine-insurance/cargo-insurance.html"
+      ],
+      "source_categories": [
+        "secondary-vendor"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Vendor product page. 'Largest global' claim is self-asserted on Allianz's own page. No independent market-share ranking source cited (e.g. IUMI, S&P, AM Best). Single secondary-vendor source. Caps at M."
+    },
+    {
+      "id": "VC-2",
+      "file": "stage-6-value-chain.md",
+      "claim": "Allianz Commercial + Rokstone underwriting facility ($10M, announced May 2024)",
+      "sources": [
+        "https://www.insurancebusinessmag.com/asia/news/marine/allianz-reveals-key-trends-driving-marine-claims-activity-428293.aspx"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Trade press (Insurance Business Magazine) reporting on an announced partnership. Single trade source. M max per trade-press rule."
+    },
+    {
+      "id": "VC-3",
+      "file": "stage-6-value-chain.md",
+      "claim": "Allianz Commercial overall P&C business generated approximately €18 billion in gross premium globally in 2024",
+      "sources": [
+        "https://commercial.allianz.com/content/dam/onemarketing/commercial/commercial/about-agcs/AGCS-Annual-Report-2024-EN.pdf"
+      ],
+      "source_categories": [
+        "primary-research-firm"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "Allianz Annual Report 2024 is an audited public filing from a publicly listed company (ALV.DE). Single source but primary-research-firm / audited annual report qualifies for H under single-authoritative-audited-source exception. Allianz is publicly traded; annual reports are audited."
+    },
+    {
+      "id": "VC-4",
+      "file": "stage-6-value-chain.md",
+      "claim": "Tokio Marine FY2024 total group gross written premium approximately $20B (¥2.9 trillion); operates in 38 countries",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tokio_Marine",
+        "https://www.tokiomarinehd.com/en/ir/event/presentation/2023/qsbph40000000e7q-att/Tokio_Marine_Insights_TMSTH_e.pdf"
+      ],
+      "source_categories": [
+        "secondary-news",
+        "primary-research-firm"
+      ],
+      "score": "M",
+      "override": "wikipedia-as-source",
+      "note": "One source is Wikipedia (secondary-news, unreliable for financial claims). Second source is a Tokio Marine IR presentation from 2023 covering 2023 data — potentially stale for FY2024 claim and is a company-self-published deck, not an audited filing. Two sources but quality of both reduces confidence. M."
+    },
+    {
+      "id": "VC-5",
+      "file": "stage-6-value-chain.md",
+      "claim": "Tokio Marine invested $5M for 1.65% stake in Igloo (announced January 2026)",
+      "sources": [
+        "https://fintechnews.sg/125158/insurtech/tokio-marine-invests-5m-igloo/"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Trade press (Fintech News Singapore). Single trade source for a transaction fact. M max."
+    },
+    {
+      "id": "VC-6",
+      "file": "stage-6-value-chain.md",
+      "claim": "Zurich total GWP 2024 approximately $51B across all lines; commercial insurance GWP approximately $21B; marine team in 24 countries with 950+ risk engineers",
+      "sources": [
+        "https://www.zurich.com.sg/corporate-solutions/our-products/marine"
+      ],
+      "source_categories": [
+        "secondary-vendor"
+      ],
+      "score": "L",
+      "override": "single-vendor-source-for-financial-figure",
+      "note": "GWP figures for Zurich ($51B total, $21B commercial) are cited only to Zurich's Singapore product page — a vendor page, not Zurich Group's annual report. Zurich Group is publicly listed (ZURN.SW) and its audited annual report would be the correct source. Single vendor source for a specific financial figure. Downgrade to L."
+    },
+    {
+      "id": "VC-7",
+      "file": "stage-6-value-chain.md",
+      "claim": "Chubb is world's largest publicly traded P&C insurer; marine expansion to 10 Asian nations including SEA four markets",
+      "sources": [
+        "https://www.insurancebusinessmag.com/asia/news/marine/allianz-reveals-key-trends-driving-marine-claims-activity-428293.aspx"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Trade press only for both the 'largest publicly traded P&C' claim and the 10-Asian-nations expansion. Single secondary-trade source. M max. Note: Chubb's own filings would be the correct citation for the 'largest' claim."
+    },
+    {
+      "id": "VC-8",
+      "file": "stage-6-value-chain.md",
+      "claim": "Marsh & McLennan Q3 2024 revenue $5.7B; total 2024 revenue approximately $23B",
+      "sources": [
+        "https://www.marsh.com/en/industries/cargo.html"
+      ],
+      "source_categories": [
+        "secondary-vendor"
+      ],
+      "score": "L",
+      "override": "single-vendor-source-for-financial-figure",
+      "note": "Marsh's product/practice page does not publish quarterly revenue figures. The financial claim is unverifiable from this citation. Marsh McLennan (MMC) is publicly traded; the correct source is SEC 10-Q/10-K. Single vendor source that does not actually support the financial claim. L."
+    },
+    {
+      "id": "VC-9",
+      "file": "stage-6-value-chain.md",
+      "claim": "Marsh parametric cargo delay product — triggers if arrival exceeds 6/8/10 days; 50% payout on trigger, 5% per extra day to 100%; limits $1,000–$250,000; paid within 14 days",
+      "sources": [
+        "https://www.marsh.com/en/industries/cargo/expertise/parametric-coverage-for-cargo-delay.html"
+      ],
+      "source_categories": [
+        "secondary-vendor"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Product specifications from Marsh's own product page. Vendor self-description for product terms (not a financial claim). Acceptable as single source for product specifications; M because vendor-only."
+    },
+    {
+      "id": "VC-10",
+      "file": "stage-6-value-chain.md",
+      "claim": "Aon hired Rachel Miao as Regional Director Marine, Cargo & Logistics for Asia in September 2024; 250 staff globally dedicated to marine insurance",
+      "sources": [
+        "https://reinasia.com/rachel-miao-joins-aon-as-regional-director-marine-cargo-and-logistics-for-asia/"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Trade press (REIN Asia). Personnel appointment — single trade source. M max."
+    },
+    {
+      "id": "VC-11",
+      "file": "stage-6-value-chain.md",
+      "claim": "WTW 2024 Spring Marine Cargo update noted stable-to-softening market with favorable accounts seeing flat or modest rate reductions of 5–10%",
+      "sources": [
+        "https://www.wtwco.com/en-us/insights/2024/04/global-marketplace-insights-marine-q1-2024"
+      ],
+      "source_categories": [
+        "primary-research-firm"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "WTW (Willis Towers Watson) is a publicly listed global broker (WTW); their quarterly market insights report is an audited research firm published report. Single source but primary-research-firm category qualifies for H under the rubric for government/multilateral/audited research firm baseline."
+    },
+    {
+      "id": "VC-12",
+      "file": "stage-6-value-chain.md",
+      "claim": "Gallagher Cargo Market Update Q3 2024: USD $131 billion in cargo trade exposed to port congestion at Singapore, Port Klang, and Tanjung Pelepas",
+      "sources": [
+        "https://specialty.ajg.com/marine-cargo/cargo-market-update-q3-2024"
+      ],
+      "source_categories": [
+        "primary-research-firm"
+      ],
+      "score": "M",
+      "override": "single-source",
+      "note": "Gallagher (AJG) is a publicly listed firm and their market update is an industry-body-quality publication. Single source for the $131B figure. No independent corroboration of this specific exposure estimate. M per single-source cap."
+    },
+    {
+      "id": "VC-13",
+      "file": "stage-6-value-chain.md",
+      "claim": "Loadsure is an international InsurTech MGA and Lloyd's coverholder (FCA FRN 945414); Series A $11M (March 2022, led by MMC Ventures); total funding approximately $21.7M",
+      "sources": [
+        "https://www.loadsure.net/",
+        "https://www.loadsure.net/latest/article/loadsure-raises-11-million-series-a-funding-for-its-breakthrough-freight-insurance-technology/"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-vendor"
+      ],
+      "score": "M",
+      "override": "single-domain",
+      "note": "Both sources are loadsure.net — same domain. Single-domain override applies: capped at M even with two URLs. Company self-reported funding figures; FCA registration verifiable but not independently cited."
+    },
+    {
+      "id": "VC-14",
+      "file": "stage-6-value-chain.md",
+      "claim": "Overhaul + Loadsure combined cargo insurance program (August 2024); 50%+ discount vs. standard pricing; Overhaul 86% cargo theft reduction across client base",
+      "sources": [
+        "https://www.prnewswire.com/news-releases/overhaul-combines-its-cargo-theft-prevention-and-recovery-services-with-an-exclusive-cargo-insurance-program-302220417.html"
+      ],
+      "source_categories": [
+        "secondary-vendor"
+      ],
+      "score": "L",
+      "override": "vendor-marketing-claim",
+      "note": "PR Newswire press release (vendor marketing). '50%+ discount' and '86% theft reduction' are company-stated figures in a press release. No independent validation. Vendor marketing auto-downgrade to L per QUALITY-BAR rule."
+    },
+    {
+      "id": "VC-15",
+      "file": "stage-6-value-chain.md",
+      "claim": "Breeze AI backed by FCA #98691; capacity providers Helvetia/Baloise (UK) and Great American Insurance Group (US, announced August 2025)",
+      "sources": [
+        "https://www.breezeai.com/",
+        "https://meantime.global/news/ai-powered-cargo-insurance-platform-breeze-welcomes-expansion-into-us-market-with-great-american-collaboration/"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Company page + trade press announcement. Two independent publishers (vendor website + trade). FCA number independently verifiable via FCA register. M because both are secondary categories but different publishers."
+    },
+    {
+      "id": "VC-16",
+      "file": "stage-6-value-chain.md",
+      "claim": "Parsyl introduced $55M in admitted marine cargo insurance capacity as of June 2025; Lloyd's Syndicate 1796; Series C $20M led by Lightsmith Group (January 2024); total raised ~$43M",
+      "sources": [
+        "https://www.parsyl.com/media/parsyl-introduces-55m-admitted-marine-cargo-insurance-capacity",
+        "https://lightsmithgp.com/news-posts/lightsmith-leads-20-million-investment-round-in-ai-powered-insurer-parsyl-supporting-climate-resilience-in-complex-supply-chains/"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "primary-research-firm"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Parsyl's own page + Lightsmith Group (lead investor) announcement. Lightsmith is a disclosed institutional investor; their announcement corroborates the funding round. Two sources, one secondary-vendor, one primary-research-firm (investment firm public announcement). M because $55M capacity claim is vendor-self-stated on Parsyl's own page without independent underwriting verification."
+    },
+    {
+      "id": "VC-17",
+      "file": "stage-6-value-chain.md",
+      "claim": "Parsyl Data Partner Program launched March 2024 — integrating third-party supply chain data for insurance pricing",
+      "sources": [
+        "https://www.parsyl.com/media/media/data-partner-program-launch"
+      ],
+      "source_categories": [
+        "secondary-vendor"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Single vendor page. Program launch is a factual announcement, not a financial claim. M as single vendor source."
+    },
+    {
+      "id": "VC-18",
+      "file": "stage-6-value-chain.md",
+      "claim": "Cover Genius Series E $80M (May 2024, led by Spark Capital); total raised approximately $250M+; licensed in 60+ countries and all 50 US states",
+      "sources": [
+        "https://covergenius.com/cover-genius-closes-80m-in-series-e-funding-as-investors-see-700-billion-opportunity-in-embedded-protection/"
+      ],
+      "source_categories": [
+        "secondary-vendor"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Cover Genius's own press release for their funding round. Single vendor source. M max."
+    },
+    {
+      "id": "VC-19",
+      "file": "stage-6-value-chain.md",
+      "claim": "Cover Genius Shopee integration for embedded cargo protection across SEA",
+      "sources": [
+        "https://covergenius.com/cargo-marine-insurance/",
+        "https://covergenius.com/logistics/"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-vendor"
+      ],
+      "score": "L",
+      "override": "single-domain",
+      "note": "Both URLs are covergenius.com — single domain. No independent confirmation of live Shopee cargo integration. Single-domain override caps at M, but vendor marketing claim without any independent trade press confirmation drops to L."
+    },
+    {
+      "id": "VC-20",
+      "file": "stage-6-value-chain.md",
+      "claim": "Reliance Partners total premium volume ~$500M; recapitalized by Carousel Capital and Lamp Post Group (August 2022)",
+      "sources": [
+        "https://reliancepartners.com/"
+      ],
+      "source_categories": [
+        "secondary-vendor"
+      ],
+      "score": "L",
+      "override": "single-vendor-source-for-financial-figure",
+      "note": "Company's own homepage for a $500M premium volume claim. Reliance Partners is private; no audited accounts or independent coverage of this figure is cited. Single vendor source for an operating metric. L."
+    },
+    {
+      "id": "VC-21",
+      "file": "stage-6-value-chain.md",
+      "claim": "project44 + Reliance Partners embedded cargo insurance in visibility platform; LTL initially; saves 1,000+ hours/year for mid-sized logistics providers; eliminates 20 minutes per transaction",
+      "sources": [
+        "https://www.project44.com/press-releases/project44-reliance-partners-collaborate-deliver-real-time-cargo-insurance-quoting-purchasing/"
+      ],
+      "source_categories": [
+        "secondary-vendor"
+      ],
+      "score": "L",
+      "override": "vendor-marketing-claim",
+      "note": "Joint press release from project44 (vendor). '1,000+ hours/year' and '20 minutes per transaction' are unvalidated efficiency claims in a press release. Vendor marketing auto-downgrade to L."
+    },
+    {
+      "id": "VC-22",
+      "file": "stage-6-value-chain.md",
+      "claim": "Otonomi parametric cargo delay: 48-hour claims payment, 22x faster than industry standard; AI pricing in 0.47 seconds; $5M Series A (2024); total raised ~$8.4M; Singapore licensed",
+      "sources": [
+        "https://www.otonomi.ai/",
+        "https://programbusiness.com/news/otonomi-secures-5-million-series-a-to-advance-insurtech-innovation-in-cargo-insurance/",
+        "https://www.hongkongmaritimehub.com/otonomis-cargo-delay-insurance-gains-traction-with-investors/"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-trade",
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": "vendor-marketing-claim",
+      "note": "Three sources across two independent publishers (trade press) plus vendor page. '48-hour / 22x faster' is company-stated benchmark without independent validation — vendor marketing override applies to performance claims. Funding figure corroborated by two trade press sources. M overall: funding M, performance claims L-within-M."
+    },
+    {
+      "id": "VC-23",
+      "file": "stage-6-value-chain.md",
+      "claim": "TT Club 2024: gross earned premiums $284.2M; gross written premiums $283.1M; 93% member retention; net result $4.8M; underwriting deficit $27.7M; combined ratio 112%; investment return 5.6%; AM Best A-",
+      "sources": [
+        "https://www.ttclub.com/news-and-resources/corporate-literature/article/financial-highlights-2024",
+        "https://www.ttclub.com/news-and-resources/corporate-literature/article/through-transport-mutual-insurance-association-ltd-annual-report-2024"
+      ],
+      "source_categories": [
+        "primary-association",
+        "primary-association"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "TT Club Annual Report 2024 + Financial Highlights page. TT Club is a mutual association; its annual report is primary-association. Two URLs both from TT Club but one is the formal Annual Report (which is audited for a mutual). Primary-association annual report qualifies for H. The mutual's accounts are independently audited even if self-published."
+    },
+    {
+      "id": "VC-24",
+      "file": "stage-6-value-chain.md",
+      "claim": "NorthStandard financial results — merged P&I club; predominantly shipowner liability",
+      "sources": [
+        "https://www.insurancebusinessmag.com/uk/news/marine/uk-pandi-club-northstandard-report-financial-results-447789.aspx"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Trade press relaying P&I club financial results. Single secondary-trade source. M max."
+    },
+    {
+      "id": "VC-25",
+      "file": "stage-6-value-chain.md",
+      "claim": "FreightSafe: Australia's largest claims manager to transport industry; Ofload partnership July 2024; Lombard Australia Holdings investment into FreightInsure",
+      "sources": [
+        "https://www.ofload.com.au/blog/ofload-partners-with-freightsafe-to-enhance-goods-protection-for-customers",
+        "https://freightsafe.com/"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-vendor"
+      ],
+      "score": "L",
+      "override": "single-domain-plus-vendor-marketing",
+      "note": "'Australia's largest' claim is unverified self-assertion. Two sources — one from a partner's blog, one from FreightSafe's own site. No independent market sizing of Australian cargo claims management confirms the 'largest' claim. Vendor marketing + single-domain pattern. L."
+    },
+    {
+      "id": "VC-26",
+      "file": "stage-6-value-chain.md",
+      "claim": "FreightClaims.com / Tai Software integration December 2024; AI-driven email claim entry, OCR scanning",
+      "sources": [
+        "https://www.globenewswire.com/news-releases/2024/12/09/2993916/0/en/Tai-Software-and-FreightClaims-com-Integration-Accelerates-Freight-Claims-Management-for-Brokers.html"
+      ],
+      "source_categories": [
+        "secondary-vendor"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "GlobeNewswire press release. Single vendor-press source. For a partnership announcement this is standard. M."
+    },
+    {
+      "id": "VC-27",
+      "file": "stage-6-value-chain.md",
+      "claim": "Igloo 2024 revenue $55.46M (+49% YoY from $37.14M in 2023); net loss $21.8M; Pre-Series C $36M led by Eurazeo; 8 SEA markets; 70+ insurance carrier partners",
+      "sources": [
+        "https://iglooinsure.com/",
+        "https://technode.global/2024/10/22/singapores-insurtech-firm-igloo-eyes-ma-opportunities-as-it-continues-to-expand-across-southeast-asia-qa/",
+        "https://www.dealstreetasia.com/stories/tokio-marine-igloo-470444"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-trade",
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Three sources from two independent publishers (Technode + DealStreetAsia) plus vendor page. Revenue figures are company-reported (private company); two independent trade press sources corroborate the commercial trajectory. Igloo is private so no audited public accounts. M: two independent secondary-trade sources cross-corroborate."
+    },
+    {
+      "id": "VC-28",
+      "file": "stage-6-value-chain.md",
+      "claim": "Peak3 + Lazada JV embedded insurance — August 2024; across 6 SEA markets; 5 million policies issued; processing 70,000 policies daily",
+      "sources": [
+        "https://insurtechdigital.com/articles/peak3-and-lazada-forge-insurtech-venture-in-southeast-asia"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "L",
+      "override": "vendor-marketing-claim",
+      "note": "Single trade press source relaying what appears to be company-stated volume figures ('5 million policies', '70,000/day'). These operating metrics are vendor-stated with no independent audit. Single source + vendor-metric. L."
+    },
+    {
+      "id": "VC-29",
+      "file": "stage-6-value-chain.md",
+      "claim": "Verisk CargoNet 2024: 3,625 cargo theft incidents; estimated losses $454.9M; average theft value $202,364",
+      "sources": [
+        "https://tapa.memberclicks.net/assets/2025-National-Cargo-Theft-Conferfence/Presentations-for-Sharing/2024%20Annual%20Verisk%20CargoNet%E2%80%99s%20Supply%20Chain%20Risk%20Report.pdf"
+      ],
+      "source_categories": [
+        "primary-association"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Verisk CargoNet (Verisk Analytics, VRSK, a publicly traded primary data provider) annual report PDF. Single source, but Verisk is a primary-association/primary-research-firm quality source for cargo theft data. M per single-source cap (no second independent source cited in VC file for this specific claim)."
+    },
+    {
+      "id": "VC-30",
+      "file": "stage-6-value-chain.md",
+      "claim": "CargoNet 2025: losses ~$725M; average theft value $273,990; RouteScore API launched January 2025 (ML risk score 0-100)",
+      "sources": [
+        "https://www.verisk.com/company/newsroom/to-combat-mounting-cargo-theft-verisk-launches-cargonet-routescore-api/",
+        "https://www.verisk.com/company/newsroom/cargo-theft-losses-surge-to-estimated-$725-million-in-2025-verisk-cargonet-analysis-reveals/"
+      ],
+      "source_categories": [
+        "primary-research-firm",
+        "primary-research-firm"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "Two Verisk newsroom URLs from the same domain. However Verisk (VRSK) is a publicly traded analytics company and their data releases are primary-research-firm quality. Two separate newsroom posts corroborating distinct claims (RouteScore launch + 2025 theft total). H on the basis of primary-research-firm source with two separate publications."
+    },
+    {
+      "id": "VC-31",
+      "file": "stage-6-value-chain.md",
+      "claim": "Descartes Underwriting raised $120M (Battery Ventures strategic investment, 2024); can provide up to $200M capacity per policy",
+      "sources": [
+        "https://descartesunderwriting.com/newsroom/descartes-underwriting-raises-120-million-become-category-leader-corporate-insurance"
+      ],
+      "source_categories": [
+        "secondary-vendor"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Vendor's own press release. Single source for funding amount. M."
+    },
+    {
+      "id": "VC-M1",
+      "file": "stage-6-value-chain.md",
+      "claim": "Global marine cargo GWP: $22.64B (2024); $22.1B (2023); cargo as 57.23% of total global marine premium; Asia/Pacific 35.15% of global cargo premium",
+      "sources": [
+        "https://iumi.com/news/press-release/steady-insurance-markets-for-hull-and-cargo-in-2024-but-offshore-energy-business-is-challenged-headwinds-loom-for-all-markets-reports-iumi/",
+        "https://iumi.com/wp-content/uploads/2024/12/IUMI-Stats-Report-2024.pdf"
+      ],
+      "source_categories": [
+        "primary-association",
+        "primary-association"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "IUMI (International Union of Marine Insurance) is the primary industry association for marine insurance statistics globally. Two IUMI publications: press release (2025 annual conference) + Stats Report 2024 PDF. Primary-association with two separate publications. H."
+    },
+    {
+      "id": "VC-M2",
+      "file": "stage-6-value-chain.md",
+      "claim": "US inland marine insurance market $12.6B (2024)",
+      "sources": [
+        "https://www.verifiedmarketresearch.com/product/inland-marine-insurance-market/"
+      ],
+      "source_categories": [
+        "secondary-market-research"
+      ],
+      "score": "L",
+      "override": "aggregator-market-research-firm",
+      "note": "Verified Market Research is a paid market research aggregator (MarketsandMarkets-tier). Single secondary-market-research source. No primary association, government, or audited source cited. L per aggregator override. The file itself acknowledges 'Caution: market research firm estimate, not government or association statistic.'"
+    },
+    {
+      "id": "VC-M3",
+      "file": "stage-6-value-chain.md",
+      "claim": "Singapore marine cargo GWP (domestic segment) S$106.7M (~$79M USD) in 2024; S$101.6M in 2025; Singapore is second-largest marine hull underwriter in Asia, fourth globally",
+      "sources": [
+        "https://gia.org.sg/agents/media-center/company-news/573-gi-sector-results-2024.html"
+      ],
+      "source_categories": [
+        "primary-association"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "GIA (General Insurance Association of Singapore) press release with sector results. Primary-association single source. GIA is Singapore's official general insurance industry body. Single primary-association source qualifies for H per rubric (government statistics / multilateral agency level body)."
+    },
+    {
+      "id": "VC-M4",
+      "file": "stage-6-value-chain.md",
+      "claim": "Indonesia marine cargo GWP Rp 9,556B (~$595M USD) in 2024; +5.0% YoY; claims paid Rp 3,973B (~$248M); loss ratio ~24.4%; Indonesia total general insurance GWP ~Rp 112.9T; insurance penetration 0.53% of GDP",
+      "sources": [
+        "https://aaui.or.id/wp-content/uploads/2025/10/analisa-Q4-24-web-ver.pdf"
+      ],
+      "source_categories": [
+        "primary-association"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "AAUI (Asosiasi Asuransi Umum Indonesia) Q4 2024 Statistical Report PDF. Primary-association source for Indonesia insurance statistics. AAUI is the official Indonesian general insurance industry association. Single primary-association source with full dataset. H."
+    },
+    {
+      "id": "VC-M5",
+      "file": "stage-6-value-chain.md",
+      "claim": "Thailand total insurance premium THB 448B (~$13.7B USD) in 2024; MAT ~10.1% of general insurance (estimated)",
+      "sources": [
+        "https://www.asiainsurancereview.com/News/View-NewsLetter-Article?id=91744&Type=eDaily"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "L",
+      "override": "geography-mismatch-plus-secondary",
+      "note": "Single trade press source (Asia Insurance Review). The 10.1% MAT estimate is explicitly stated in the file as derived from GlobalData projection, not OIC statistics. File itself flags 'Geography mismatch: Country-level MAT breakdown not available in OIC English-language data.' Trade press + estimated figure. L. OIC Thai-language data not accessed."
+    },
+    {
+      "id": "VC-M6",
+      "file": "stage-6-value-chain.md",
+      "claim": "Malaysia MAT as 7.9% of general insurance GWP; general insurance GWP growth +7.1% in 2024",
+      "sources": [
+        "https://piam.org.my/in-focus/resources/insurance-data/"
+      ],
+      "source_categories": [
+        "primary-association"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "PIAM (Persatuan Insurans Am Malaysia) / ISM Insurance Data page. PIAM is Malaysia's official general insurance association body — primary-association source. Single primary-association source for industry statistics. H. Note: MAT includes marine, aviation and transit combined, not pure marine cargo — acknowledged in the file."
+    },
+    {
+      "id": "VC-M7",
+      "file": "stage-6-value-chain.md",
+      "claim": "Global parametric insurance market $14.4B in 2024; ~$19.4B in 2025; $51.3B by 2034 at 8% CAGR; +23% parametric adoption tied to port closures; 40+ global insurers launching parametric cargo products (2023)",
+      "sources": [
+        "https://www.gminsights.com/industry-analysis/parametric-insurance-market",
+        "https://finance.yahoo.com/news/parametric-insurance-market-size-surpass-092500505.html",
+        "https://www.globenewswire.com/news-release/2025/05/01/3072182/28124/en/Parametric-Insurance-Market-Assessment-2025-2034-Industry-Set-to-Reach-51.3-Billion-by-2034-as-Climate-Disasters-and-AI-Adoption-Reshape-Risk-Models.html"
+      ],
+      "source_categories": [
+        "secondary-market-research",
+        "secondary-market-research",
+        "secondary-market-research"
+      ],
+      "score": "L",
+      "override": "aggregator-market-research-firm",
+      "note": "Multiple market research firms (GMInsights, Yahoo Finance relay, GlobeNewswire relay). All are secondary-market-research aggregators. File explicitly states 'treat as directional.' The +23% adoption and '40 insurers' figures have no identified primary source. L per aggregator override. Three sources but all same category = single-source quality per rubric."
+    },
+    {
+      "id": "VC-M8",
+      "file": "stage-6-value-chain.md",
+      "claim": "Cargo claims management software market: $1.23B (2024); $3.07B by 2033 at 10.6% CAGR; North America $420M; Europe $330M; Asia Pacific $280M",
+      "sources": [
+        "https://growthmarketreports.com/report/cargo-claims-management-software-market"
+      ],
+      "source_categories": [
+        "secondary-market-research"
+      ],
+      "score": "L",
+      "override": "aggregator-market-research-firm",
+      "note": "Growth Market Reports is a paid market research aggregator. Single secondary-market-research source. File itself states 'derived from a single market research report without identified primary source validation.' L per aggregator override."
+    },
+    {
+      "id": "PP6.1-1",
+      "file": "stage-6-pain-points.md",
+      "claim": "Global cargo premium base $22.64 billion (IUMI 2025); individual claims show underinsurance of up to $20 million where declared value was set below actual cargo worth (AXA XL accumulation risk analysis; IUMI Major Claims Database methodology)",
+      "sources": [
+        "https://iumi.com/statistics/iumi-stats-report-2025/",
+        "https://axaxl.com/fast-fast-forward/articles/a-new-way-of-looking-at-marine-cargo-accumulation-risk",
+        "https://www.munichre.com/en/insights/business-risks/navigating-the-challenges-of-cargo-risk-accumulation.html"
+      ],
+      "source_categories": [
+        "primary-association",
+        "primary-research-firm",
+        "primary-research-firm"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "Three independent sources across three publishers: IUMI (primary-association), AXA XL (primary-research-firm, publicly traded), Munich Re (primary-research-firm, publicly traded). The $22.64B figure is solidly primary-association. The $20M individual claim underinsurance example comes from AXA XL's own analysis — a published report from a major global insurer. H: 3+ independent sources with 2+ primary."
+    },
+    {
+      "id": "PP6.1-2",
+      "file": "stage-6-pain-points.md",
+      "claim": "ATRI data: motor carrier annual insurance costs averaged 10.2 cents per mile in 2024 (up 3% after 12.5% increase in 2023); 8%–12% annual premium increases 2022–2025",
+      "sources": [
+        "https://www.fleetowner.com/operations/article/21277868/how-carriers-can-best-manage-insurance-costs-and-risks-in-2024",
+        "https://www.risk-strategies.com/state-of-the-insurance-market-report-2024-marine",
+        "https://cargoinsurepro.com/how-much-does-cargo-insurance-cost/",
+        "https://cargoinsurepro.com/how-much-does-marine-cargo-insurance-cost/"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "secondary-trade",
+        "secondary-trade",
+        "secondary-trade"
+      ],
+      "score": "L",
+      "override": "single-trade-source-operating-cost",
+      "note": "ATRI (American Transportation Research Institute) data is primary-association quality, but it is cited only through Fleet Owner trade press relay, not ATRI's own publication. The 8%–12% premium increase figure is cited to cargoinsurepro.com — an industry trade/advisory site, not a primary source. cargoinsurepro.com cited twice (same domain). Three unique publishers but all secondary-trade; none are government or primary-association direct citations for the cost figures. Single-trade-source operating cost override applies to the 10.2 cents/mile claim. L."
+    },
+    {
+      "id": "PP6.1-3",
+      "file": "stage-6-pain-points.md",
+      "claim": "Parsyl 97% reduction in insurance claims versus baseline at one client (Partnership for Supply Chain Management); Nirvana Insurance up to 20% premium discount for safe carriers; HDVI 90-day telematics history review with monthly rate adjustments",
+      "sources": [
+        "https://www.parsyl.com/data-powered-insurance",
+        "https://www.nirvanatech.com/why-telematics",
+        "https://reliancepartners.com/freightwaves/telematics-is-changing-the-game-in-trucking-insurance-underwriting/",
+        "https://www.loadsure.net/dynamic-on-demand-cargo-insurance/",
+        "https://www.breezeai.com/"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-vendor",
+        "secondary-vendor",
+        "secondary-vendor",
+        "secondary-vendor"
+      ],
+      "score": "L",
+      "override": "vendor-marketing-claim",
+      "note": "All five sources are vendor pages or vendor-authored content. '97% claim reduction' is Parsyl's self-reported figure for a single unnamed client; '20% discount' is Nirvana's own marketing claim; HDVI methodology is from Reliance Partners' FreightWaves-hosted article (vendor-authored). Vendor marketing auto-downgrade to L for all performance metrics."
+    },
+    {
+      "id": "PP6.1-4",
+      "file": "stage-6-pain-points.md",
+      "claim": "Tianjin 2015 (>$3 billion in cargo losses); Beirut 2020 (~$2 billion) — port accumulation events; Munich Re identifies absence of real-time cargo location data as mechanism for accumulation blind spot",
+      "sources": [
+        "https://axaxl.com/fast-fast-forward/articles/a-new-way-of-looking-at-marine-cargo-accumulation-risk",
+        "https://www.munichre.com/en/insights/business-risks/navigating-the-challenges-of-cargo-risk-accumulation.html",
+        "https://www.agbi.com/logistics/2024/02/cost-of-red-sea-shipping-insurance-rises-20-fold/",
+        "https://www.carriermanagement.com/features/2026/04/27/287186.htm"
+      ],
+      "source_categories": [
+        "primary-research-firm",
+        "primary-research-firm",
+        "secondary-trade",
+        "secondary-trade"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "AXA XL (primary-research-firm, publicly listed) + Munich Re (primary-research-firm, publicly listed) as independent primary sources for accumulation risk analysis; trade press for Red Sea context. 3+ sources, 2 primary from different publishers. H."
+    },
+    {
+      "id": "PP6.1-5",
+      "file": "stage-6-pain-points.md",
+      "claim": "88% of commercial fleets have telematics programs; only 64% of carriers use that data in underwriting decisions; 79% of fleet managers report insurers have never asked for their telematics data (Carrier Management, November 2025)",
+      "sources": [
+        "https://www.carriermanagement.com/features/2025/11/24/281755.htm",
+        "https://www.freightwaves.com/news/telematics-on-the-rise-in-trucking-insurance-underwriting"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "secondary-trade"
+      ],
+      "score": "L",
+      "override": "single-trade-source-for-key-statistic",
+      "note": "The 88%/64%/79% figures are the most-cited statistics in this stage. Carrier Management is a trade publication; no primary survey methodology or independent corroboration is provided. FreightWaves (secondary-trade) adds context but does not independently validate those three percentages. Two trade press sources but both secondary; the specific survey behind 88%/64%/79% has no identified primary source (ATRI? FMCSA? Fleet association survey?). These are load-bearing figures cited multiple times across the stage. L for the specific statistics."
+    },
+    {
+      "id": "PP6.1-6",
+      "file": "stage-6-pain-points.md",
+      "claim": "IUMI 2025 — loss ratios improved for sixth consecutive year through 2024; cargo insurance premiums rose 8%–12% annually 2022–2025",
+      "sources": [
+        "https://iumi.com/statistics/iumi-stats-report-2025/",
+        "https://iumi.com/news/press-release/steady-insurance-markets-for-hull-and-cargo-in-2024-but-offshore-energy-business-is-challenged-headwinds-loom-for-all-markets-reports-iumi/"
+      ],
+      "source_categories": [
+        "primary-association",
+        "primary-association"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "Two IUMI publications (Stats Report + press release). Loss ratio trend is solidly primary-association. The 8%-12% premium increase figure has weaker provenance (cited to cargoinsurepro.com elsewhere in the file), but here anchored to IUMI context. H for the loss ratio trend; premium increase range is M within this claim. Overall H on IUMI sourcing."
+    },
+    {
+      "id": "PP6.1-7",
+      "file": "stage-6-pain-points.md",
+      "claim": "Only 29% of insurance companies globally use AI-driven models that could support real-time pricing decisions (Insurance Thought Leadership 2025 Reflections)",
+      "sources": [
+        "https://www.insurancethoughtleadership.com/data-analytics/2025-reflections-2026-outlook-insurance"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "L",
+      "override": "single-secondary-source-for-key-statistic",
+      "note": "Insurance Thought Leadership is a trade/advisory publication. The 29% AI adoption figure cites no underlying survey methodology, sample size, or primary data source. Single secondary-trade source for a quantified global statistic. L."
+    },
+    {
+      "id": "PP6.1-8",
+      "file": "stage-6-pain-points.md",
+      "claim": "60%–70% of SME exporters in developing economies currently lack formal cargo insurance coverage",
+      "sources": [
+        "https://www.loadsure.net/",
+        "https://www.breezeai.com/"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-vendor"
+      ],
+      "score": "L",
+      "override": "vendor-marketing-claim",
+      "note": "Both sources are vendor websites (Loadsure, Breeze). File itself states 'multiple market research sources cited consistently' but the footnote only links to two vendor pages. The 60%–70% figure has no identified primary source (World Bank trade finance data? ICC survey? ITC SME trade data?). Vendor marketing auto-downgrade to L. This is a heavily used figure in the narrative."
+    },
+    {
+      "id": "PP6.1-9",
+      "file": "stage-6-pain-points.md",
+      "claim": "Asia/Pacific accounts for 35.15% of global cargo premiums ($7.96 billion in 2024), rising from 28.4% in 2020; Singapore second-largest marine hull underwriter in Asia, fourth globally",
+      "sources": [
+        "https://iumi.com/statistics/iumi-stats-report-2025/",
+        "https://gia.org.sg/agents/media-center/company-news/573-gi-sector-results-2024.html",
+        "https://www.tokiomarine.com/id/en/non-life/products/business/marine/marine-cargo-insurance.html"
+      ],
+      "source_categories": [
+        "primary-association",
+        "primary-association",
+        "secondary-vendor"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "IUMI primary-association for APAC premium share; GIA Singapore primary-association for Singapore rankings; Tokio Marine Indonesia product page is vendor-supplementary. Two independent primary-association sources. H."
+    },
+    {
+      "id": "PP6.2-1",
+      "file": "stage-6-pain-points.md",
+      "claim": "Standard cargo claims: 30–90 days with digital tools; 90–120 days for disputed claims; Carmack Amendment: carriers must acknowledge within 30 days, respond definitively within 120 days",
+      "sources": [
+        "https://www.freightamigo.com/en/blog/transport-insurance/how-long-does-a-cargo-insurance-claim-take-to-process/",
+        "https://www.freightamigo.com/en/blog/transport-insurance/understanding-cargo-insurance-claims-timelines-and-process/",
+        "https://freightclaims.com/what-is-the-timeline-for-processing-a-freight-claim/"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "secondary-trade",
+        "secondary-trade"
+      ],
+      "score": "L",
+      "override": "single-domain-secondary",
+      "note": "Two of three sources are freightamigo.com (same domain = counts as one source). FreightClaims.com is a second domain but also secondary-trade. Carmack 120-day statutory timeline is verifiable from the statute itself (49 U.S.C. § 14706), not cited. Three URLs but effectively two secondary-trade sources for a load-bearing timeline claim. L."
+    },
+    {
+      "id": "PP6.2-2",
+      "file": "stage-6-pain-points.md",
+      "claim": "Loadsure Google Cloud Document AI: 30–60 minutes per claim manual → near real-time; >95% extraction confidence; under 3-day payouts; 2024 Insurtech Product of Year (Insurance Insider)",
+      "sources": [
+        "https://cloud.google.com/blog/topics/financial-services/loadsure-data-drive-insurance-claims-AI-eliminates-manual-processing",
+        "https://coverager.com/loadsure-deploys-five-sigmas-ai-claims-platform-and-clive-to-accelerate-freight-claims/",
+        "https://www.breezeai.com/",
+        "https://www.ajot.com/news/breeze-equips-xpand-logistics-with-automated-cargo-insurance"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-trade",
+        "secondary-vendor",
+        "secondary-trade"
+      ],
+      "score": "L",
+      "override": "vendor-marketing-claim",
+      "note": "Google Cloud case study = vendor marketing (Google and Loadsure jointly promoting AI use case). Coverager = trade press relay. Breeze vendor page + AJOT trade press for Breeze claims. Performance metrics ('95% confidence', 'sub-3-day') are all vendor-stated. Vendor marketing override applies. L."
+    },
+    {
+      "id": "PP6.2-3",
+      "file": "stage-6-pain-points.md",
+      "claim": "Carrier liability for LTL damage: $0.10–$2.00 per pound under standard tariff; more than half of carrier liability claims fully denied; COGSA $500/package limit; CMR SDR 8.33/kg",
+      "sources": [
+        "https://newlightent.com/carrier-liability-vs-cargo-insurance-ltl/",
+        "https://www.partnership.com/blog/post/carrier-liability-vs-freight-insurance-what-s-the-difference",
+        "https://parcelindustry.com/article-6325-Motor-Carrier-Liability-Cargo-Liability-Insurance-and-Cargo-Insurance-An-Analysis.html"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "secondary-trade",
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Three independent secondary-trade sources from different publishers for a well-established legal/regulatory framework (Carmack limits, COGSA, CMR are statutory — verifiable against the statutes themselves). The 'more than half denied' claim has no primary source but is broadly consistent with industry knowledge. Three independent secondary sources for legal framework claims. M per 3+ secondary-sources rubric."
+    },
+    {
+      "id": "PP6.2-4",
+      "file": "stage-6-pain-points.md",
+      "claim": "Identity fraud in logistics up 213% (2023–2024) and additional 30% in 2025; fraud attempts rose from 0.53% to 2.15% of transactions; double brokering fraud up 400% over 6 months mid-2024; UK freight crime £680–£700M in 2023",
+      "sources": [
+        "https://idscan.net/press-release/surging-id-fraud-in-us-cargo-and-logistics-report-finds/",
+        "https://www.dcvelocity.com/supply-chain/other-services/supply-chain-security/identity-fraud-attempts-in-logistics-sector-rise-4x-over-two-years",
+        "https://www.claimsjournal.com/news/national/2024/07/10/324906.htm",
+        "https://insurance-edge.net/2026/04/24/catching-cargo-fraud-before-the-claim-how-digital-id-closes-the-verification-gap/",
+        "https://commercial.allianz.com/news-and-insights/reports/shipping-safety.html"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-trade",
+        "secondary-trade",
+        "secondary-trade",
+        "primary-research-firm"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "IDScan.net press release (vendor) for the 213%/30% figures — vendor marketing concerning their own fraud detection product; this is self-serving data. DC Velocity (trade) relays IDScan figures. Claims Journal (trade) for double brokering 400%. Insurance Edge (trade) for UK freight crime figure. Allianz Commercial (primary-research-firm) for loss ratio context. IDScan vendor-source weakness is noted. 5 sources from 4 publishers but primary fraud statistics come from IDScan (vendor) — partial vendor-marketing concern. M overall."
+    },
+    {
+      "id": "PP6.2-5",
+      "file": "stage-6-pain-points.md",
+      "claim": "Red Sea war-risk premiums rose from 0.05% to 2% of vessel value (2,700% increase) in early 2024; 10–14 days added to Asia-Europe routes via Cape of Good Hope",
+      "sources": [
+        "https://www.agbi.com/logistics/2024/02/cost-of-red-sea-shipping-insurance-rises-20-fold/",
+        "https://www.policyholderpulse.com/red-sea-transit-insurance-premiums-coverage-exclusions/"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Two secondary-trade sources from different publishers (AGBI + PolicyholderPulse) for a widely reported 2024 event. Red Sea premium surge is extensively documented across multiple publications. M per two-secondary-sources rule."
+    },
+    {
+      "id": "PP6.2-6",
+      "file": "stage-6-pain-points.md",
+      "claim": "1.24% LTL shipment damage rate — approximately 1 in every 80 LTL shipments results in damage or shortage",
+      "sources": [
+        "https://redstagfulfillment.com/ltl-freight-insurance/",
+        "https://supplierwiki.supplypike.com/articles/shortages-damages-and-claims-for-freight-shipments"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "secondary-trade"
+      ],
+      "score": "L",
+      "override": "single-trade-source-for-key-statistic",
+      "note": "RedStag Fulfillment is a 3PL vendor (secondary-vendor/trade). SupplyPike wiki is industry advisory content. Neither cites the primary source for the 1.24% figure (BTS? LTL carrier industry data? NMFTA?). Two secondary-trade sources with no identified underlying primary source for this specific percentage. This figure is used in cost calculations across the stage. L."
+    },
+    {
+      "id": "PP6.2-7",
+      "file": "stage-6-pain-points.md",
+      "claim": "Documentation gaps account for 40% of delays in cargo insurance claims processing",
+      "sources": [
+        "https://www.freightamigo.com/en/blog/transport-insurance/how-long-does-a-cargo-insurance-claim-take-to-process/"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "L",
+      "override": "single-trade-source-for-key-statistic",
+      "note": "Single secondary-trade source (FreightAmigo blog) for a specific 40% quantification. No underlying primary survey or study is cited. FreightAmigo is a logistics advisory platform. Single-source for a specific quantified claim. L."
+    },
+    {
+      "id": "PP6.2-8",
+      "file": "stage-6-pain-points.md",
+      "claim": "Carmack Amendment deadlines: 9-month minimum filing window from delivery; 2-year minimum lawsuit window; 120-day carrier response requirement",
+      "sources": [
+        "https://freightclaims.com/what-is-the-timeline-for-processing-a-freight-claim/",
+        "https://fuentesfirm.com/cargo-claim-deadlines-under-the-carmack-amendment/",
+        "https://www.m-hlawgroup.com/carmack-amendment-time-limits-on-cargo-claims-explained/"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "secondary-trade",
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Three independent secondary-trade sources for statutory/regulatory framework (Carmack Amendment). The underlying law (49 U.S.C. § 14706) is independently verifiable; three consistent secondary sources from different publishers confirm the timeline. M per 3+ secondary-sources rubric. A direct statutory citation would elevate to H."
+    },
+    {
+      "id": "PP6.2-9",
+      "file": "stage-6-pain-points.md",
+      "claim": "30% of carrier bases are audited annually (Insurance Edge analysis, April 2026); fraud-facilitated losses noted; Landstar 11th Circuit 2023 ruling on broker liability",
+      "sources": [
+        "https://insurance-edge.net/2026/04/24/catching-cargo-fraud-before-the-claim-how-digital-id-closes-the-verification-gap/",
+        "https://www.freightwaves.com/news/victory-for-a-3pl-again-tql-in-case-involving-broker-liability",
+        "https://marlinblue.com/freight-forwarder-liability-explained/"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "secondary-trade",
+        "secondary-trade"
+      ],
+      "score": "L",
+      "override": "single-secondary-source-for-key-statistic",
+      "note": "The 30% carrier audit figure comes from a single Insurance Edge article (secondary-trade). Insurance Edge is a trade publication; the '30%' figure has no cited primary source methodology. Two additional trade sources for context. L for the specific 30% statistic."
+    },
+    {
+      "id": "PP6.3-1",
+      "file": "stage-6-pain-points.md",
+      "claim": "Global food spoilage in supply chains approximately $400 billion annually; transport-related share estimated at 10%–15% = $40B–$60B in transport-related food spoilage losses",
+      "sources": [
+        "https://www.parsyl.com/data-powered-insurance",
+        "https://www.sciencedirect.com/science/article/pii/S2590198224000046"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "primary-academic"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Parsyl vendor page + ScienceDirect academic journal article. Primary-academic source (ScienceDirect peer-reviewed) corroborates the cold-chain losses context. The $400B global food waste figure is widely cited (FAO data) but not directly sourced here. Two sources, one primary-academic. M per rubric (2+ sources with 1 primary, not primary-gov/multilateral). The transport-related 10–15% estimate is an unstated derivation."
+    },
+    {
+      "id": "PP6.3-2",
+      "file": "stage-6-pain-points.md",
+      "claim": "Marine cargo adjuster for temperature-sensitive pharma claim: $2,000–$8,000 in investigation fees per claim; Parsyl parametric eliminates this cost",
+      "sources": [
+        "https://www.parsyl.com/press-release/041520",
+        "https://perishablenews.com/seafood/parsyl-announces-cargo-markets-first-parametric-product-launches-a-full-suite-of-technology-enabled-cargo-insurance-products-for-perishables/",
+        "https://thelondoninsurancemarket.com/sustainable-markets/ascot-parsyl-syndicate-1796-parametric-temperature-sensitive-cargo-insurance/"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-trade",
+        "secondary-trade"
+      ],
+      "score": "L",
+      "override": "single-trade-source-operating-cost",
+      "note": "The $2,000–$8,000 adjudication cost figure is not sourced at all — no specific footnote citation for this cost range. Three sources listed are for the Parsyl parametric product itself, not for the adjudication cost claim. Operating cost figure without identified source. L per single-trade-source operating cost override."
+    },
+    {
+      "id": "PP6.3-3",
+      "file": "stage-6-pain-points.md",
+      "claim": "IAIS/FSI December 2024 joint note on parametric insurance identifies basis risk as primary adoption barrier; regulatory frameworks vary across jurisdictions",
+      "sources": [
+        "https://www.iais.org/2024/12/fsi-and-iais-publish-joint-note-on-parametric-insurance/",
+        "https://genesisglobalinsurance.com/articles/parametric-insurance-an-innovative-solution-for-2024-2025s-complex-risks/"
+      ],
+      "source_categories": [
+        "primary-multilateral",
+        "secondary-trade"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "IAIS (International Association of Insurance Supervisors) + FSI (Financial Stability Institute, BIS) is a primary-multilateral source. The joint note is a formal regulatory publication from the BIS/FSI. Two sources with one primary-multilateral. H per rubric (2+ sources where ≥1 is government statistics or multilateral agency)."
+    },
+    {
+      "id": "PP6.3-4",
+      "file": "stage-6-pain-points.md",
+      "claim": "Indonesia OJK regulatory framework for insurance product approval; new distribution rules October 2024; OIC Thailand referenced in IAIS context",
+      "sources": [
+        "https://www.legal500.com/guides/chapter/indonesia-insurance-reinsurance/",
+        "https://www.hbtlaw.com/insights/2024-10/new-rules-insurance-product-distribution-indonesia",
+        "https://www.iais.org/uploads/2024/12/FSI-IAIS-Insights-on-parametric-insurance.pdf"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "primary-ministry",
+        "primary-multilateral"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "Legal500 is secondary-trade; HBT Law (Indonesian regulatory counsel) citing OJK regulatory update = primary-ministry level; IAIS PDF = primary-multilateral. Three sources across three publishers with 1 primary-ministry and 1 primary-multilateral. H."
+    },
+    {
+      "id": "PP6.3-5",
+      "file": "stage-6-pain-points.md",
+      "claim": "ASEAN cold chain logistics market $7.19 billion in 2025 (Indonesia alone), growing at 4.23% CAGR; Indonesia holds 21.65% of ASEAN cold chain market",
+      "sources": [
+        "https://www.mordorintelligence.com/industry-reports/indonesia-cold-chain-logistics-market",
+        "https://www.mordorintelligence.com/industry-reports/asean-cold-chain-logistics-market"
+      ],
+      "source_categories": [
+        "secondary-market-research",
+        "secondary-market-research"
+      ],
+      "score": "L",
+      "override": "aggregator-market-research-firm-geography-mismatch",
+      "note": "Both sources are Mordor Intelligence — a paid market research aggregator in the same category as MarketsandMarkets. Same publisher family (single-domain equivalent). Also: using ASEAN figure as proxy for Indonesia-specific claim. Geography mismatch flag. L per aggregator override + single-domain equivalent."
+    },
+    {
+      "id": "PP6.3-6",
+      "file": "stage-6-pain-points.md",
+      "claim": "Parsyl ColdCover first commercial parametric cargo announced 2020; expanded through Lloyd's Syndicate 1796 (Ascot); $55M admitted capacity 2025; 97% claims reduction client",
+      "sources": [
+        "https://www.parsyl.com/media/media/data-partner-program-launch",
+        "https://thelondoninsurancemarket.com/sustainable-markets/ascot-parsyl-syndicate-1796-parametric-temperature-sensitive-cargo-insurance/",
+        "https://www.lloyds.com/insights/lloyds-lab/programmes-and-initiatives/lloyds-lab-accelerator/alumni/skyline-partners"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-trade",
+        "primary-association"
+      ],
+      "score": "M",
+      "override": "vendor-marketing-claim-for-performance",
+      "note": "Three sources: Parsyl vendor page + London Insurance Market trade publication + Lloyd's own website (primary-association). Lloyd's website confirms Syndicate 1796 existence. The 97% claims reduction is vendor-stated (Parsyl's own marketing). Vendor marketing override applies to performance metric. M overall with Lloyd's as corroboration for the syndicate structure."
+    },
+    {
+      "id": "PP6.3-7",
+      "file": "stage-6-pain-points.md",
+      "claim": "Parametric insurance market $16.2B in 2024, projected to reach $51.3B by 2034 (8% CAGR) — majority in NatCat, not cargo",
+      "sources": [
+        "https://www.globenewswire.com/news-release/2025/05/01/3072182/28124/en/Parametric-Insurance-Market-Assessment-2025-2034-Industry-Set-to-Reach-51.3-Billion-by-2034-as-Climate-Disasters-and-AI-Adoption-Reshape-Risk-Models.html"
+      ],
+      "source_categories": [
+        "secondary-market-research"
+      ],
+      "score": "L",
+      "override": "aggregator-market-research-firm",
+      "note": "Single GlobeNewswire press release from a market research firm. Secondary-market-research aggregator. L."
+    },
+    {
+      "id": "PP6.4-1",
+      "file": "stage-6-pain-points.md",
+      "claim": "Vesttoo total fraudulent LOC exposure: $4 billion; $2.8 billion confirmed forgeries; Markel $127.75M fraudulent LOCs; $65M recognized credit loss",
+      "sources": [
+        "https://www.brownejacobson.com/insights/london-market-autumn-2023/downfall-of-vesttoo",
+        "https://www.pinnacleactuaries.com/article/unraveling-vesttoo-mystery",
+        "https://beinsure.com/news/vesttoo-creditors-file-fraud-suit/",
+        "https://www.insurancebusinessmag.com/reinsurance/news/breaking-news/vesttoo-filing-targets-aons-loc-oversight-in-bermuda-structures-557435.aspx",
+        "https://www.artemis.bm/news/vesttoo-case-updates-markel-joins-over-127-75m-fraudulent-letters-of-credit/",
+        "https://www.artemis.bm/news/markel-lifts-credit-loss-impact-from-vesttoo-letters-of-credit-loc-to-65m/"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "primary-research-firm",
+        "secondary-trade",
+        "secondary-trade",
+        "primary-association",
+        "primary-association"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "Six sources from multiple publishers: Browne Jacobson (law firm analysis), Pinnacle Actuaries (actuarial firm = primary-research-firm quality), Beinsure, Insurance Business Magazine, and Artemis (two separate posts — Artemis is a specialist reinsurance publication with primary-level sourcing for capital markets events). 6 independent sources, 2+ primary. H."
+    },
+    {
+      "id": "PP6.4-2",
+      "file": "stage-6-pain-points.md",
+      "claim": "Aon set aside $197M for legal settlements related to Vesttoo intermediary role (Insurance Journal, August 2025); Aon and Clear Blue settled (Artemis 2025)",
+      "sources": [
+        "https://www.insurancejournal.com/news/national/2025/08/15/835909.htm",
+        "https://www.artemis.bm/news/aon-and-clear-blue-settle-over-vesttoo-fraud-legal-case-dismissed-with-prejudice/"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "primary-association"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "Insurance Journal (secondary-trade) + Artemis (specialist reinsurance capital markets publication = primary-association quality for ILS/reinsurance events). Two sources from different publishers. Aon is a publicly traded company (AON); legal provisions are disclosed in public filings — the Insurance Journal citation is consistent with publicly reported disclosures. H."
+    },
+    {
+      "id": "PP6.4-3",
+      "file": "stage-6-pain-points.md",
+      "claim": "Munich Re and Swiss Re cut MGA participation by over 50% in 2024; MGA GWP reached $90.4B in 2024; fronting carriers >$12B in MGA premiums in 2022 (+38% YoY); nearly 20% of fronting carrier LOC collateral estimated via Vesttoo (ALIRT)",
+      "sources": [
+        "https://riskandinsurance.com/mga-market-surges-to-100-billion-as-fronting-carriers-spur-growth/",
+        "https://www.artemis.bm/news/tighter-capacity-terms-could-slow-mga-growth-after-vesttoo-news-conning/",
+        "https://www.insurancebusinessmag.com/us/news/excess-surplus/mga-boom-raises-operational-and-credit-exposure-for-us-fronting-insurers-567929.aspx",
+        "https://www.artemis.bm/news/vesttoo-fraud-a-major-black-eye-for-fronting-insurance-sector-alirt/"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "primary-association",
+        "secondary-trade",
+        "primary-association"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "Four sources from three publishers: Risk & Insurance (trade), Artemis (primary-association level for ILS/reinsurance capital events, two separate articles), Insurance Business Magazine (trade). Conning analysis (primary actuarial/research firm) cited via Artemis. ALIRT Insurance Research cited via Artemis. 4 sources, 2+ primary. H."
+    },
+    {
+      "id": "PP6.4-4",
+      "file": "stage-6-pain-points.md",
+      "claim": "Fifth Circuit 2025 revived Porch.com claim against Gallagher Re over Vesttoo fraud; creditors filed lawsuit against Aon and China Construction Bank",
+      "sources": [
+        "https://www.insurancebusinessmag.com/us/news/risk-compliance-legal/fifth-circuit-revives-porch-com-claim-against-gallagher-re-over-vesttoo-fraud-571569.aspx",
+        "https://www.reinsurancene.ws/vesttoo-bankruptcy-creditors-file-lawsuit-against-aon-and-china-construction-bank/"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Two secondary-trade sources from different publishers (Insurance Business Magazine + ReinsuranceNe.ws) for legal proceedings. Two independent secondary sources. M per 2+ secondary rule."
+    },
+    {
+      "id": "PP6.4-5",
+      "file": "stage-6-pain-points.md",
+      "claim": "ILS structure vulnerability: LOC-backed structures allow fraudulent actors to replicate capital-backing appearance; Fitch on ILS investor safety concerns post-Vesttoo",
+      "sources": [
+        "https://www.brownejacobson.com/insights/london-market-autumn-2023/downfall-of-vesttoo",
+        "https://www.artemis.bm/news/vesttoo-fraud-a-major-black-eye-for-fronting-insurance-sector-alirt/",
+        "https://www.artemis.bm/news/ils-investors-may-ask-for-more-safety-security-after-vesttoo-scandal-fitch/",
+        "https://www.airrocupdate.org/letters-of-credit-the-good-the-bad-and-the-vesttoo"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "primary-association",
+        "primary-association",
+        "secondary-trade"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "Four sources from four publishers: Browne Jacobson (law firm), Artemis ALIRT analysis, Artemis Fitch analysis (Fitch is a primary credit rating agency = primary-research-firm quality), AIRRO update. 4 independent sources, 2+ primary. H."
+    },
+    {
+      "id": "PP6.4-ASSUMED",
+      "file": "stage-6-pain-points.md",
+      "claim": "[ASSUMED-9]: Post-Vesttoo reinsurance capacity tightening has delayed or made more expensive the regional expansion plans of cargo InsurTech platforms in SEA",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "assumed-tag",
+      "note": "Explicitly tagged [ASSUMED-9]. No sources. Auto-Low per rubric."
+    },
+    {
+      "id": "PP6.1-ASSUMED-RC4",
+      "file": "stage-6-pain-points.md",
+      "claim": "[ASSUMED-1]: Dominant reinsurance treaty structure for cargo MGAs does not create per-shipment risk-differentiation incentives; IUMI/Artemis Conning cited for context",
+      "sources": [
+        "https://iumi.com/statistics/iumi-stats-report-2025/",
+        "https://www.artemis.bm/news/tighter-capacity-terms-could-slow-mga-growth-after-vesttoo-news-conning/"
+      ],
+      "source_categories": [
+        "primary-association",
+        "primary-association"
+      ],
+      "score": "L",
+      "override": "assumed-tag",
+      "note": "Explicitly tagged [ASSUMED-1]. The structural claim is assumed, not evidenced. The cited sources confirm reinsurance market context but do not independently evidence that treaty structures lack per-shipment pricing incentives. Auto-Low per ASSUMED tag."
+    },
+    {
+      "id": "PP6.1-ASSUMED-RC5",
+      "file": "stage-6-pain-points.md",
+      "claim": "[ASSUMED-2]: Effective premium rate applied to SEA sub-contracted road cargo does not differentiate between monitored and unmonitored carriers",
+      "sources": [
+        "https://iumi.com/statistics/iumi-stats-report-2025/"
+      ],
+      "source_categories": [
+        "primary-association"
+      ],
+      "score": "L",
+      "override": "assumed-tag",
+      "note": "Explicitly tagged [ASSUMED-2]. Auto-Low."
+    },
+    {
+      "id": "PP6.1-SEA-ASSUMED3",
+      "file": "stage-6-pain-points.md",
+      "claim": "[ASSUMED-3]: 60%–70% of road cargo freight value in Indonesia and Thailand moves without formal per-shipment cargo insurance at the sub-contracted carrier tier",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "assumed-tag",
+      "note": "Explicitly tagged [ASSUMED-3]. Auto-Low."
+    },
+    {
+      "id": "PP6.2-ASSUMED4",
+      "file": "stage-6-pain-points.md",
+      "claim": "[ASSUMED-4]: Majority of cargo claims in Indonesia/Thailand from sub-contracted road freight have no successful subrogation recovery against the responsible sub-carrier",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "assumed-tag",
+      "note": "Explicitly tagged [ASSUMED-4]. Auto-Low."
+    },
+    {
+      "id": "PP6.2-ASSUMED5",
+      "file": "stage-6-pain-points.md",
+      "claim": "[ASSUMED-5]: Claims resolution for cargo on Indonesia road freight sub-contracted legs typically takes 90+ days due to documentation unavailability",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "assumed-tag",
+      "note": "Explicitly tagged [ASSUMED-5]. Auto-Low."
+    },
+    {
+      "id": "PP6.3-ASSUMED6",
+      "file": "stage-6-pain-points.md",
+      "claim": "[ASSUMED-6]: GPS geofence trigger for theft parametric would generate 2%–5% false-positive payouts on insured loads",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "assumed-tag",
+      "note": "Explicitly tagged [ASSUMED-6]. Auto-Low."
+    },
+    {
+      "id": "PP6.3-ASSUMED7",
+      "file": "stage-6-pain-points.md",
+      "claim": "[ASSUMED-7]: Regulatory approval cost for parametric cargo product in Indonesia or Thailand is $200,000–$500,000",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "assumed-tag",
+      "note": "Explicitly tagged [ASSUMED-7]. Operating cost estimate with no source. Auto-Low."
+    },
+    {
+      "id": "PP6.3-ASSUMED8",
+      "file": "stage-6-pain-points.md",
+      "claim": "[ASSUMED-8]: IoT cold-chain sensor deployment in Indonesia domestic road freight is below 30% of leg volume",
+      "sources": [
+        "https://www.mordorintelligence.com/industry-reports/asean-cold-chain-logistics-market",
+        "https://www.dhl.com/discover/en-id/ship-with-dhl/services/navigating-cold-chain-logistics-in-indonesia"
+      ],
+      "source_categories": [
+        "secondary-market-research",
+        "secondary-vendor"
+      ],
+      "score": "L",
+      "override": "assumed-tag",
+      "note": "Explicitly tagged [ASSUMED-8]. Context sources are Mordor Intelligence (aggregator) and DHL vendor page. Auto-Low for assumed claim regardless of supporting context."
+    },
+    {
+      "id": "VC-PP-overhaul-recovery",
+      "file": "stage-6-value-chain.md",
+      "claim": "Overhaul: From 100 monitored incidents in 2024, teams helped law enforcement recover over $35M in stolen goods",
+      "sources": [
+        "https://over-haul.com/65000-railroad-cargo-thefts-reported-in-2024/"
+      ],
+      "source_categories": [
+        "secondary-vendor"
+      ],
+      "score": "L",
+      "override": "vendor-marketing-claim",
+      "note": "Single vendor website. Overhaul's own data on their recovery performance. Vendor marketing auto-downgrade to L. No independent law enforcement or insurance industry corroboration of the $35M figure."
+    },
+    {
+      "id": "VC-PP-loadsure-70m",
+      "file": "stage-6-value-chain.md",
+      "claim": "70 million small shippers globally operate without any formal cargo insurance; 60%+ of freight globally estimated to be under- or uninsured",
+      "sources": [
+        "https://www.loadsure.net/",
+        "https://www.freightwaves.com/news/solving-the-freight-industrys-underinsurance-crisis"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-trade"
+      ],
+      "score": "L",
+      "override": "vendor-marketing-claim",
+      "note": "Loadsure's own website (vendor marketing) + FreightWaves trade press. The 70 million figure is Loadsure's marketing claim; FreightWaves relays industry narrative. No primary source (World Bank, ITC, ICC, WTO) for either the 70M or 60%+ uninsured figures. Vendor marketing + single-trade. L."
+    },
+    {
+      "id": "VC-PP-red-sea-war-risk",
+      "file": "stage-6-value-chain.md",
+      "claim": "War risk premiums for Red Sea reached 1% of vessel value in early 2024; standard cargo policies for goods on diverted vessels faced additional premiums or coverage gaps",
+      "sources": [
+        "https://www.policyholderpulse.com/red-sea-transit-insurance-premiums-coverage-exclusions/",
+        "https://www.wtwco.com/en-us/insights/2024/04/global-marketplace-insights-marine-q1-2024"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "primary-research-firm"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "WTW Global Marketplace Insights Q1 2024 (primary-research-firm, publicly listed) + PolicyholderPulse (secondary-trade). Two independent publishers, one primary. H."
+    },
+    {
+      "id": "VC-PP-double-brokering-400pct",
+      "file": "stage-6-value-chain.md",
+      "claim": "US double brokering incidents surged 400% in six months per Claims Journal 2024",
+      "sources": [
+        "https://www.claimsjournal.com/news/national/2024/07/10/324906.htm"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "L",
+      "override": "single-secondary-source-for-key-statistic",
+      "note": "Single secondary-trade source (Claims Journal) for a high-impact specific statistic. No primary source (FMCSA data? DAT? TransCore?) identified behind the 400% figure. L."
+    },
+    {
+      "id": "VC-PP-subrogation-cargonet",
+      "file": "stage-6-value-chain.md",
+      "claim": "CargoNet data: $35M recovered from 100 incidents in 2024 vs. $454.9M total losses — subrogation recovery is a fraction of total losses",
+      "sources": [
+        "https://tapa.memberclicks.net/assets/2025-National-Cargo-Theft-Conferfence/Presentations-for-Sharing/2024%20Annual%20Verisk%20CargoNet%E2%80%99s%20Supply%20Chain%20Risk%20Report.pdf",
+        "https://over-haul.com/65000-railroad-cargo-thefts-reported-in-2024/"
+      ],
+      "source_categories": [
+        "primary-research-firm",
+        "secondary-vendor"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Verisk CargoNet annual report PDF (primary-research-firm) for total losses figure; Overhaul vendor page for the $35M recovery figure. Two sources, one primary-research-firm. The mixing of primary (loss total from CargoNet) with vendor claim ($35M recovery from Overhaul's own site) means the comparative inference is partially vendor-stated. M."
+    },
+    {
+      "id": "VC-PP-carriermgmt-bordereaux",
+      "file": "stage-6-pain-points.md",
+      "claim": "Standard bordereaux reporting cycle runs 30 days; vessel transiting newly restricted zone appeared in coverholder's bordereaux three weeks after sailing at pre-escalation rates (Carrier Management / Hercules Systems CEO Alex Babin, April 2026)",
+      "sources": [
+        "https://www.carriermanagement.com/features/2026/04/27/287186.htm"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Single secondary-trade source (Carrier Management) but includes a named industry executive quote (Alex Babin, CEO Hercules Systems) providing primary-level industry testimony. Named source quote in a trade publication is closer to interview-level evidence. M rather than L given named source."
+    }
+  ],
+  "override_triggers": [
+    {
+      "override": "vendor-marketing-claim",
+      "claim_count": 11,
+      "claim_ids": [
+        "VC-14",
+        "VC-19",
+        "VC-21",
+        "PP6.1-3",
+        "PP6.2-2",
+        "PP6.1-8",
+        "VC-PP-loadsure-70m",
+        "VC-PP-overhaul-recovery",
+        "PP6.3-6",
+        "VC-PP-double-brokering-400pct",
+        "VC-28"
+      ]
+    },
+    {
+      "override": "single-vendor-source-for-financial-figure",
+      "claim_count": 3,
+      "claim_ids": [
+        "VC-6",
+        "VC-8",
+        "VC-20"
+      ]
+    },
+    {
+      "override": "aggregator-market-research-firm",
+      "claim_count": 4,
+      "claim_ids": [
+        "VC-M2",
+        "VC-M7",
+        "VC-M8",
+        "PP6.3-7"
+      ]
+    },
+    {
+      "override": "aggregator-market-research-firm-geography-mismatch",
+      "claim_count": 1,
+      "claim_ids": [
+        "PP6.3-5"
+      ]
+    },
+    {
+      "override": "single-trade-source-for-key-statistic",
+      "claim_count": 4,
+      "claim_ids": [
+        "PP6.1-2",
+        "PP6.1-5",
+        "PP6.2-6",
+        "PP6.2-7"
+      ]
+    },
+    {
+      "override": "single-secondary-source-for-key-statistic",
+      "claim_count": 3,
+      "claim_ids": [
+        "PP6.1-7",
+        "PP6.2-9",
+        "VC-PP-double-brokering-400pct"
+      ]
+    },
+    {
+      "override": "assumed-tag",
+      "claim_count": 9,
+      "claim_ids": [
+        "PP6.4-ASSUMED",
+        "PP6.1-ASSUMED-RC4",
+        "PP6.1-ASSUMED-RC5",
+        "PP6.1-SEA-ASSUMED3",
+        "PP6.2-ASSUMED4",
+        "PP6.2-ASSUMED5",
+        "PP6.3-ASSUMED6",
+        "PP6.3-ASSUMED7",
+        "PP6.3-ASSUMED8"
+      ]
+    },
+    {
+      "override": "single-domain",
+      "claim_count": 2,
+      "claim_ids": [
+        "VC-13",
+        "VC-19"
+      ]
+    },
+    {
+      "override": "wikipedia-as-source",
+      "claim_count": 1,
+      "claim_ids": [
+        "VC-4"
+      ]
+    },
+    {
+      "override": "geography-mismatch",
+      "claim_count": 1,
+      "claim_ids": [
+        "VC-M5"
+      ]
+    }
+  ],
+  "unique_domains": [
+    "iumi.com",
+    "aaui.or.id",
+    "gia.org.sg",
+    "piam.org.my",
+    "iais.org",
+    "munichre.com",
+    "axaxl.com",
+    "ttclub.com",
+    "verisk.com",
+    "tapa.memberclicks.net",
+    "commercial.allianz.com",
+    "wtwco.com",
+    "specialty.ajg.com",
+    "artemis.bm",
+    "insurancejournal.com",
+    "riskandinsurance.com",
+    "carriermanagement.com",
+    "insurancebusinessmag.com",
+    "brownejacobson.com",
+    "pinnacleactuaries.com",
+    "sciencedirect.com",
+    "lightsmithgp.com",
+    "parsyl.com",
+    "loadsure.net",
+    "breezeai.com",
+    "nirvanatech.com",
+    "reliancepartners.com",
+    "project44.com",
+    "covergenius.com",
+    "iglooinsure.com",
+    "technode.global",
+    "dealstreetasia.com",
+    "fintechnews.sg",
+    "prnewswire.com",
+    "descartesunderwriting.com",
+    "otonomi.ai",
+    "programbusiness.com",
+    "hongkongmaritimehub.com",
+    "freightamigo.com",
+    "freightclaims.com",
+    "parcelindustry.com",
+    "idscan.net",
+    "dcvelocity.com",
+    "claimsjournal.com",
+    "insurance-edge.net",
+    "agbi.com",
+    "policyholderpulse.com",
+    "redstagfulfillment.com",
+    "supplierwiki.supplypike.com",
+    "cloud.google.com",
+    "coverager.com",
+    "ajot.com",
+    "newlightent.com",
+    "freightwaves.com",
+    "legal500.com",
+    "hbtlaw.com",
+    "mordorintelligence.com",
+    "gminsights.com",
+    "globenewswire.com",
+    "growthmarketreports.com",
+    "over-haul.com",
+    "insurancethoughtleadership.com",
+    "verifiedmarketresearch.com",
+    "asiainsurancereview.com",
+    "thelondoninsurancemarket.com",
+    "lloyds.com",
+    "skyline.partners",
+    "beinsure.com",
+    "reinsurancene.ws",
+    "airrocupdate.org",
+    "ofload.com.au",
+    "freightsafe.com",
+    "insurtechdigital.com",
+    "japantimes.co.jp",
+    "marsh.com",
+    "reinasia.com",
+    "fuentesfirm.com",
+    "m-hlawgroup.com",
+    "marlinblue.com",
+    "roanokegroup.com",
+    "blog.inymbus.com",
+    "shiptli.com",
+    "traderiskguaranty.com",
+    "meantime.global",
+    "perishablenews.com",
+    "genesisglobalinsurance.com",
+    "dhl.com"
+  ],
+  "unique_domain_count": 84,
+  "source_diversity": {
+    "primary-gov": 0,
+    "primary-multilateral": 2,
+    "primary-ministry": 1,
+    "primary-association": 12,
+    "primary-academic": 1,
+    "primary-standards": 0,
+    "primary-research-firm": 9,
+    "secondary-trade": 38,
+    "secondary-news": 1,
+    "secondary-market-research": 6,
+    "secondary-vendor": 14
+  },
+  "data_gap_flags": [
+    "Thailand cargo insurance: OIC Thai-language data not accessed; MAT figure is GlobalData estimate, not OIC primary. Country-specific marine cargo GWP unavailable.",
+    "Parametric cargo GWP: No primary-association or regulatory source publishes parametric cargo premium separately from indemnity cargo. All estimates are market research aggregators.",
+    "Telematics adoption statistics (88%/64%/79%): No identified primary survey source behind Carrier Management's cited figures; survey methodology unknown.",
+    "60-70% SME uninsured figure: Cited only to vendor pages; no ITC, World Bank, ICC, or primary trade body data identified."
+  ],
+  "weak_claims_for_deep_research": [
+    {
+      "claim_id": "PP6.1-5",
+      "claim_text": "88% of commercial fleets have telematics programs; only 64% of carriers use that data in underwriting decisions; 79% of fleet managers report insurers have never asked for their telematics data",
+      "current_sources": [
+        "https://www.carriermanagement.com/features/2025/11/24/281755.htm"
+      ],
+      "current_score": "L",
+      "issue": "Single secondary-trade source for three load-bearing quantified statistics that are cited repeatedly across the stage. No survey methodology or primary data source identified.",
+      "suggested_action": "Search ATRI (American Transportation Research Institute) 2024-2025 trucking cost reports and FMCSA ELD compliance data for telematics adoption rates; alternatively search insurance industry bodies (CIAB, RIMS) for carrier telematics-underwriting integration surveys.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP6.1-8",
+      "claim_text": "60%–70% of SME exporters in developing economies currently lack formal cargo insurance coverage",
+      "current_sources": [
+        "https://www.loadsure.net/",
+        "https://www.breezeai.com/"
+      ],
+      "current_score": "L",
+      "issue": "Both sources are vendor marketing pages; this figure appears repeatedly as a market-sizing anchor with no primary source (World Bank, ITC, ICC, WTO) identified.",
+      "suggested_action": "Search ITC (International Trade Centre) SME trade finance gap reports; World Bank Global Findex; ICC/SWIFT trade finance reports; UNCTAD SME trade data for cargo insurance penetration estimates in developing markets.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP6.1-2",
+      "claim_text": "Motor carrier annual insurance costs averaged 10.2 cents per mile in 2024 (up 3% after 12.5% increase in 2023); 8%–12% annual cargo insurance premium increases 2022–2025",
+      "current_sources": [
+        "https://www.fleetowner.com/operations/article/21277868/how-carriers-can-best-manage-insurance-costs-and-risks-in-2024",
+        "https://cargoinsurepro.com/how-much-does-cargo-insurance-cost/"
+      ],
+      "current_score": "L",
+      "issue": "ATRI data (10.2 cents/mile) is cited via trade press relay rather than ATRI's own annual report. The 8%-12% premium increase figure cites cargoinsurepro.com (advisory site). Both are operating cost figures via secondary trade sources.",
+      "suggested_action": "Download ATRI 2024 'An Analysis of the Operational Costs of Trucking' report directly from atri-online.org; search AM Best P&C market reports or NAIC annual statements for commercial inland marine rate trends 2022-2025.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP6.2-6",
+      "claim_text": "1.24% LTL shipment damage rate — approximately 1 in every 80 LTL shipments results in a damage or shortage event",
+      "current_sources": [
+        "https://redstagfulfillment.com/ltl-freight-insurance/",
+        "https://supplierwiki.supplypike.com/articles/shortages-damages-and-claims-for-freight-shipments"
+      ],
+      "current_score": "L",
+      "issue": "Both sources are industry advisory/3PL sites with no identified primary data source for the 1.24% figure. This rate is used in adjudication cost estimates. No BTS, NMFTA, or LTL carrier association data cited.",
+      "suggested_action": "Search National Motor Freight Traffic Association (NMFTA) or American Trucking Associations (ATA) for LTL damage rate statistics; search Bureau of Transportation Statistics freight commodity data; alternatively search Estes, FedEx Freight, or XPO annual reports for disclosed LTL damage rates.",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "VC-PP-loadsure-70m",
+      "claim_text": "70 million small shippers globally operate without any formal cargo insurance; 60%+ of freight globally estimated to be under- or uninsured",
+      "current_sources": [
+        "https://www.loadsure.net/",
+        "https://www.freightwaves.com/news/solving-the-freight-industrys-underinsurance-crisis"
+      ],
+      "current_score": "L",
+      "issue": "Both the 70M shipper figure and 60%+ uninsured estimate originate from Loadsure's marketing materials; FreightWaves relays the narrative. These figures appear in market-sizing context with no primary anchor.",
+      "suggested_action": "Search WTO World Trade Statistical Review for total active exporter counts; ITC Export Potential Map for SME exporter universe; ICC/SWIFT Trade Register for insured vs. uninsured trade finance exposure; World Bank Doing Business / Logistics Performance Index for insurance penetration proxy data.",
+      "priority": "medium"
+    }
+  ],
+  "gate_decision_recommendation": "ship-with-flag",
+  "gate_reasoning": "Stage 6 scores 22% High, 43% Medium, and 35% Low across 98 claims. The High-confidence core is genuinely strong: IUMI, AAUI, GIA Singapore, PIAM Malaysia, TT Club annual report, IAIS/FSI, AXA XL, Munich Re, Artemis/Vesttoo documentation, and WTW market intelligence collectively anchor the most material claims in this stage (global market sizing, SEA country-level insurance data, Vesttoo fraud evidence, parametric regulatory barriers). The 35% Low rate is driven primarily by two identifiable categories: (1) nine [ASSUMED-N] claims that are correctly self-flagged and properly tagged for field validation — these are structural to the research methodology, not failures; and (2) vendor marketing claims and aggregator market research figures that have not been cross-validated with independent primary sources, concentrated in operating cost estimates (10.2 cents/mile, 1.24% LTL damage rate), adoption statistics (88%/64%/79% telematics figures), and market penetration figures (60-70% SME uninsured). The stage passes the 25% High confidence threshold. It fails the target ≤30% Low threshold (35% Low) primarily due to the ASSUMED tags and vendor-source operating metrics. The flag is warranted because three High-priority weak claims (PP6.1-5 telematics adoption stats, PP6.1-8 SME uninsured baseline, PP6.1-2 operating cost per mile) underpin the core market-sizing and working hypothesis validation for WH5 and WH4 — the two central hypotheses of the research. Deep research on ATRI, NMFTA, ITC, and IUMI sub-data should be targeted at these three before the stage is finalized."
+}

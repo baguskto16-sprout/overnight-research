@@ -1,0 +1,811 @@
+{
+  "context": "per-stage",
+  "stage": 5,
+  "run_id": "2026-05-17-2337",
+  "validated_date": "2026-05-18",
+  "artifacts_scored": [
+    "pass-1-drafts/stage-5-value-chain.md",
+    "pass-1-drafts/stage-5-pain-points.md"
+  ],
+
+  "source_inventory": {
+    "unique_sources_catalogued": 56,
+    "classification_notes": "Value-chain footnotes 1–31 (some with multiple URLs) plus pain-point-specific footnotes in PP 5.1 (1–10), PP 5.2 (1–11), PP 5.3 (1–10), PP 5.4 (1–10), PP 5.5 (1–10), PP 5.A (narrative inline). Several footnote numbers reuse the same underlying source (e.g., TT Club/BSI 2025 appears as VC-1, VC-26, VC-27, PP5.1-3, PP5.2-7, PP5.4-3, PP5.4-7, PP5.4-8). Each unique domain/URL is classified once; chain-of-citations rule applied where multiple URLs trace to the same underlying primary source."
+  },
+
+  "source_classifications": {
+    "primary_association": [
+      "ttclub.com/fileadmin/uploads/.../TT_Club_BSI_2025_Cargo_Theft_Report_FINAL.pdf — TT Club/BSI 2025 Cargo Theft Report (PDF, markitdown-processed). TT Club is an industry mutual insurer and association for transport operators. The joint BSI/TT Club annual cargo theft report is a recognised primary industry association publication. Covers: Indonesia 5% global incidents, Asia 50% facility, insider 22%, piracy +281% SOMS H1 2025, trucks 70% globally. VC-1, VC-26, VC-27, PP5.1-3, PP5.2-7, PP5.4-3, PP5.4-7, PP5.4-8",
+      "verisk.com CargoNet FY2025 Annual Analysis (January 2026) — Verisk CargoNet is the largest US/Canada cargo theft incident database; Verisk is a NASDAQ-listed analytics company (VRSK); CargoNet's annual and quarterly analyses are industry-standard primary publications with disclosed methodology. VC-8, VC-9, PP5.1-2, PP5.2-2, PP5.2-8",
+      "truckingresearch.org ATRI October 2025 Cargo Theft Report — American Transportation Research Institute is the trucking industry's primary research body (association-tier). VC-PP5.1-1, PP5.2-6",
+      "tapaemea.org TAPA EMEA Facility Certification Data (2019–2023) — TAPA EMEA is the Transported Asset Protection Association, a recognised industry standards/association body. PP5.4-6, PP5.5-1, PP5.5-2, PP5.5-7",
+      "nicb.org NICB Cargo Theft 2025 Reports — National Insurance Crime Bureau is a US non-profit industry association reporting cargo crime. VC-29, PP5.1-7",
+      "esporg.eu ESPORG EU Study 2025 — European Secure Parking Organisation; published study on EU truck parking deficit (390,057-space deficit). VC-11, PP5.5-3",
+      "recaap.org ReCAAP ISC Annual Reports (2024, 2025) — Regional Cooperation Agreement on Combating Piracy and Armed Robbery Against Ships in Asia; inter-governmental agreement body; annual reports are primary. VC-28 [NEEDS-ATTENDED-FETCH], PP5.A-sources [NEEDS-ATTENDED-FETCH for 2025 PDF]",
+      "iumi.com / tapaemea.org joint warning February 2026 — IUMI (International Union of Marine Insurance) + TAPA EMEA joint press release. Two industry association bodies. PP5.1-10, PP5.2-3",
+      "cargonet.com law enforcement network description — CargoNet (Verisk) industry platform. PP5.1-5, PP5.2-8",
+      "tapa-apac.org TAPA APAC 2025 Intelligence Data — TAPA APAC published summary of 488 cargo crime incidents, $30M+ losses. PP5.4-2 [returned HTTP 403 on fetch; statistics confirmed via press summary]"
+    ],
+    "primary_filing": [
+      "globenewswire.com/news-release/2025/02/26/... Brinks (NYSE: BCO) Q4/FY2024 earnings press release — Brinks is NYSE-listed; audited annual results confirmed. The press release references audited FY2024 financials. VC-3, VC-MS-Brinks",
+      "prnewswire.com Loomis AB Full-Year Report January–December 2024 — Loomis is Stockholm-listed (LOOMIS.ST); the full-year report is an audited regulatory disclosure under Swedish financial reporting rules. VC-4",
+      "prosegur.com 2024 audited results press release — Prosegur is Madrid-listed (PSG on Bolsa de Madrid); the 2024 annual press release references audited consolidated financials. VC-5",
+      "prnewswire.com Securitas AB Full Year Report 2024 — Securitas is Stockholm-listed (SECU-B.ST); full-year report is audited regulatory disclosure. VC-23"
+    ],
+    "primary_ministry": [],
+    "primary_gov": [],
+    "primary_multilateral": [],
+    "primary_consultancy": [
+      "munichre.com Cargo Theft Tactics and Trends Report 2025 — Munich Re is a primary-tier global (re)insurer publishing authored research reports on cargo crime. This is a Munich Re Global Markets UK authored report, not a news article. Returned HTTP 403 on direct fetch; data accessed via trade press coverage of the report. PP5.4-1, PP5.5-8 [NEEDS-ATTENDED-FETCH for full PDF]"
+    ],
+    "primary_academic": [],
+    "primary_standards": [
+      "sgs.com/en-id, tuv.com/indonesia, intertek.com TAPA FSR/TSR certification bodies — SGS, TÜV Rheinland, and Intertek are accredited standards certification bodies confirming availability and voluntary status of TAPA FSR in SEA. PP5.4-5"
+    ],
+    "primary_interview": [],
+    "primary_legal": [
+      "ic3.gov PSA April 2026 — FBI IC3 (Internet Crime Complaint Center) Public Service Announcement on cyber-enabled strategic cargo theft; Diesel Vortex group; 52 phishing domains. This is a US federal law enforcement publication. PP5.2-4"
+    ],
+    "secondary_trade": [
+      "ttnews.com (ATRI 2025 summary) — PP5.1-1 supplementary",
+      "fleetrabbit.com/article/cargo-theft-prevention — recovery rate 73%/20% benchmark; vendor-adjacent trade blog [Low confidence: no primary NICB/CargoNet attribution] — PP5.1-6",
+      "getsafeandsound.com/blog/cargo-theft-statistics/ — GPS tracking 'improves recovery rates by 60-75%' — PP5.1-6 supplementary",
+      "safety4sea.com (TT Club cargo theft claims update) — PP5.1-3 supplementary",
+      "seatrade-maritime.com (TT Club 60% increase) — PP5.1-3 supplementary",
+      "traderiskguaranty.com cargo theft timing data — PP5.1-8, PP5.5-8",
+      "inboundlogistics.com freight fraud analysis — PP5.2-5",
+      "sdcexec.com freight fraud article — PP5.2-5 supplementary",
+      "bleepingcomputer.com FBI cargo theft summary — PP5.2-4 supplementary",
+      "ccjdigital.com fraudulent freight activity +27% 2024 — PP5.2-9",
+      "aircargonews.net truck fraud global threat — PP5.2-10",
+      "geotab.com/blog/cargo-security-theft-prevention/ — Geotab blog on cargo security gap (41% GPS tracking stat); auto-low-vendor for Geotab-specific claims but used for industry-wide stat sourced from Geotab research — PP5.2-11, PP5.1 RC5",
+      "iotbusinessnews.com Berg Insight Fleet Management SEA 2025 (82.5% no FMS) — PP5.3-6",
+      "publicintelligence.net FBI Cyber Division Bulletin (2014 jammers) — PP5.3-2; note source is 2014, flagged as outdated",
+      "linkedin.com/pulse UK cargo theft jammer escalation article by Guy Buesnel — PP5.3-3; LinkedIn post; note source is 2015, flagged as outdated and secondary",
+      "gpspatron.com GNSS interference analysis 2025 — PP5.3-4",
+      "ajg.com (Arthur J Gallagher) cargo theft and GPS jamming tactics — PP5.3-5",
+      "tanktransport.com US cargo theft crisis 2025 — PP5.3-5 supplementary",
+      "trimble.com/blog GPS jamming and spoofing — PP5.3-9",
+      "rntfnd.org CBP GPS jamming assessment — PP5.3-10",
+      "shippingandfreightresource.com TT Club/BSI 2025 summary — PP5.4-7 supplementary",
+      "bsigroup.com press release TT Club/BSI 2025 — PP5.4-8",
+      "ajot.com TAPA/Bosch truck parking growth — VC-12, PP5.4-10",
+      "stattimes.com TAPA truck parking network 150% growth — VC-12, PP5.5-1, PP5.5-10",
+      "forwardermagazine.com TAPA EMEA 5-year parking incident fall — PP5.5-2, PP5.5-10 supplementary",
+      "ccjdigital.com FMCSA truck parking survey — PP5.5-4",
+      "meltontruck.com truck parking blog — PP5.5-4 supplementary",
+      "gsfleet.io Europe truck parking 85% operators theft statistic — PP5.5-9",
+      "dat.com/truck-parking TruckPark/DAT One integration — PP5.5-6",
+      "safety4sea.com ReCAAP ISC 2025 annual report summary — PP5.A-sources",
+      "shipandbunker.com Malacca piracy 19-year high 2025 — PP5.A-sources",
+      "britanniapandi.com ReCAAP 2025 summary — PP5.A-sources",
+      "apacoutlookmag.com Brinks Asia Pacific profile — VC-20",
+      "insightcrime.org Latin America land piracy IUMI citation — VC-18",
+      "automotive-fleet.com CalAmp bankruptcy — VC-7",
+      "carriermanagement.com NICB 2025 cargo crime — PP5.1-7 supplementary"
+    ],
+    "secondary_news": [
+      "prnewswire.com Overhaul Series C $105M (August 2025) — VC-10, PP5.1-4, PP5.2 RC4",
+      "prnewswire.com Overhaul Series B $55M (January 2025) — VC-10",
+      "prnewswire.com Overhaul SensiGuard acquisition (February 2023) — VC-10",
+      "prnewswire.com GardaWorld financial guidance FY2024 + C$13.5B recapitalization — VC-15",
+      "prnewswire.com Loomis Full-Year 2024 (second URL) — VC-4 (same as primary_filing entry; PRNewswire redistribution of audited report)",
+      "finance.yahoo.com Loomis Q4 2024 summary — VC-4 supplementary",
+      "travelers.com/resources strategic cargo theft — PP5.2-1 [Travelers Insurance company resource page; secondary, not a primary association publication]"
+    ],
+    "secondary_market_research": [
+      "cognitivemarketresearch.com Cash in Transit Services Market $27.5B — VC-14 [auto-downgrade: single commercial aggregator]",
+      "precedenceresearch.com Secure Logistics Market $94.2B → $195.5B — VC-16 [auto-downgrade: single commercial aggregator]",
+      "marketintelo.com Cargo Security Market $3.1B → $7.8B — VC-17 [auto-downgrade: single commercial aggregator]"
+    ],
+    "secondary_press_release": [
+      "prnewswire.com GardaWorld FY2024 financial guidance — VC-15 (private company, no audited public filing)",
+      "prnewswire.com Overhaul Series C (press release only; no Form D or SEC filing cited) — VC-10, PP5.1-4"
+    ],
+    "auto_low_vendor": [
+      "over-haul.com/solutions/prevent-cargo-theft-tampering — Overhaul vendor marketing page; 96% US recovery rate claim, 7 GSOCs, $1.4T cargo protected, 99.9% protection rate. Domain: over-haul.com / overhaul.com is on vendor blocklist. VC-25",
+      "over-haul.com/wp-content/uploads/.../Mexico-Q1-2025-Cargo-Theft-Report.pdf — Overhaul vendor-published report on Mexico cargo theft; used for Mexico theft statistics (81% violence, 84% in-transit, Puebla 19%). VC-19",
+      "prnewswire.com Overhaul H1 2024 Cargo Report (Overhaul press release on Overhaul's own cargo theft data and company claims) — VC-22",
+      "sg.brinks.com Brinks Singapore website — VC-20 supplementary; auto-low-vendor for Brinks-specific SEA claims",
+      "g4s.com/en-id G4S Indonesia website — VC-21 supplementary; auto-low-vendor for G4S-specific claims",
+      "g4s.com/who-we-are/where-we-operate/g4s-in-asia-pacific — VC-21; auto-low-vendor",
+      "prosegur.com.sg Prosegur Singapore vendor website — VC-24; auto-low-vendor for Prosegur SEA claims",
+      "safetysecurityasia.com exhibitor listing for Prosegur — VC-24; exhibitor listing, auto-low for capability claims",
+      "geotab.com/press-release/go-anywhere-asset-tracking/ — Geotab vendor press release for own product. VC-6, PP5.3-1",
+      "geotab.com/products/asset-tracking/ — Geotab vendor product page. VC-6, PP5.3-1",
+      "bosch-secure-truck-parking.com — Bosch vendor website for own parking product. VC-13, PP5.5-5",
+      "bosch.com/stories/secure-truck-parking/ — Bosch vendor content page. VC-13",
+      "calamp.com/press-releases/lynrock-lake-takes-calamp-private/ — CalAmp vendor press release. VC-7",
+      "cargonet.com/news-and-events/... CargoNet media articles (multiple) — PP5.1-8, PP5.2-8; note: some CargoNet.com content references Verisk CargoNet data; Verisk is primary_association but cargonet.com marketing pages are auto-low-vendor for CargoNet-specific claims",
+      "cargonet.com/industries-we-serve/law-enforcement/ — CargoNet vendor marketing page for law enforcement network claims. PP5.1-5"
+    ],
+    "auto_low_aggregator_marketplace": []
+  },
+
+  "claims_inventory": [
+    {
+      "claim_id": "VC-MS-1",
+      "claim_text": "Global cash logistics market $27.5B (2024); projected $35.3B by 2030 at 4.31% CAGR",
+      "footnote": "14",
+      "sources": ["cognitivemarketresearch.com"],
+      "source_types": ["secondary_market_research"],
+      "score": "Low",
+      "overrides": ["aggregator-market-research-auto-downgrade", "single-source"],
+      "notes": "Cognitive Market Research is a commercial aggregator. Draft correctly flags Low confidence. The bottom-up triangulation from audited player revenues (Brinks $5.01B + Loomis ~$2.87B + Prosegur Cash $2.09B + GardaWorld ~$5.9B = ~$15.9B for top-4 alone) makes the $27.5B total plausible directionally but the primary source itself is auto-Low. No government statistical or multilateral primary source cross-validates the total market size."
+    },
+    {
+      "claim_id": "VC-MS-2",
+      "claim_text": "Global secure logistics market $94.2B (2024); $195.5B projected 2034",
+      "footnote": "16",
+      "sources": ["precedenceresearch.com"],
+      "source_types": ["secondary_market_research"],
+      "score": "Low",
+      "overrides": ["aggregator-market-research-auto-downgrade", "single-source"],
+      "notes": "Precedence Research is a commercial aggregator on the auto-downgrade list. Scope is ambiguous (broader than CIT-only). Draft correctly flags Low. Scope mismatch further weakens reliability."
+    },
+    {
+      "claim_id": "VC-MS-3",
+      "claim_text": "Global cargo security market (hardware + software + services) $3.1B (2024); $7.8B projected 2033 at 10.7% CAGR; North America 37%; APAC highest CAGR 13.2%",
+      "footnote": "17",
+      "sources": ["marketintelo.com"],
+      "source_types": ["secondary_market_research"],
+      "score": "Low",
+      "overrides": ["aggregator-market-research-auto-downgrade", "single-source"],
+      "notes": "MarketIntelo is a commercial aggregator on the auto-downgrade list. Draft correctly flags Low. No bottom-up cross-validation from audited player revenues (Overhaul revenue undisclosed; CargoNet is a Verisk business unit with no separate disclosure). Auto-Low under aggregator override."
+    },
+    {
+      "claim_id": "VC-Brinks-Rev",
+      "claim_text": "Brinks Company (NYSE: BCO) total revenue 2024: $5,012M (+3% reported; +12% organic); Rest of World $824M; North America $1,650M; adjusted EBITDA $912M",
+      "footnote": "3",
+      "sources": ["globenewswire.com Brinks Q4/FY2024 earnings press release (references audited results)"],
+      "source_types": ["primary_filing"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Brinks is NYSE-listed. The GlobeNewswire announcement references the audited FY2024 financials. The Brinks 10-K on SEC EDGAR is the underlying primary; the press release is a standard regulatory communication of audited results. High confidence."
+    },
+    {
+      "claim_id": "VC-Loomis-Rev",
+      "claim_text": "Loomis AB total revenue 2024: SEK 30,442M (~$2.87B USD); USA ~SEK 16B; EBITA margin 12.0%; 27 countries, ~400 branches",
+      "footnote": "4",
+      "sources": ["prnewswire.com Loomis Full-Year Report 2024", "finance.yahoo.com Loomis Q4 2024 summary"],
+      "source_types": ["primary_filing", "secondary_news"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Loomis is Stockholm-listed (LOOMIS.ST). The full-year report is an audited regulatory disclosure. PRNewswire redistribution of audited statutory report. The Yahoo Finance entry is supplementary secondary, but the primary is the audited full-year report. High confidence."
+    },
+    {
+      "claim_id": "VC-Prosegur-Rev",
+      "claim_text": "Prosegur Cash division €2,090M (+12.3% YoY) in 2024; Security division €2,502M; total group €4,908M",
+      "footnote": "5",
+      "sources": ["prosegur.com 2024 audited press release"],
+      "source_types": ["primary_filing"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Prosegur is Bolsa Madrid-listed (PSG). The 2024 results press release references audited consolidated financials. High confidence."
+    },
+    {
+      "claim_id": "VC-GardaWorld-Rev",
+      "claim_text": "GardaWorld revenue FY ending January 31, 2024: $5,875M–$5,925M; C$13.5B enterprise value from October 2024 recapitalization",
+      "footnote": "15",
+      "sources": ["prnewswire.com GardaWorld financial guidance PRNewswire"],
+      "source_types": ["secondary_press_release"],
+      "score": "Medium",
+      "overrides": ["press-release-only: private company; no audited public filing; guidance figures only"],
+      "notes": "GardaWorld is private (PE-backed). Revenue is management guidance via PRNewswire, not an audited filing. Draft correctly scores Medium. The C$13.5B enterprise value is from the management-majority recapitalization announcement, also via PRNewswire. No Form D or audited annual report available publicly. Medium."
+    },
+    {
+      "claim_id": "VC-Securitas-Rev",
+      "claim_text": "Securitas AB total 2024 revenue MSEK 161,921 (~$15.3B); 336,000 employees in 44 markets; EBITA margin 6.9%",
+      "footnote": "23",
+      "sources": ["prnewswire.com Securitas AB Full Year Report 2024"],
+      "source_types": ["primary_filing"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Securitas is Stockholm-listed (SECU-B.ST). Full-year report 2024 is an audited regulatory disclosure. High confidence."
+    },
+    {
+      "claim_id": "VC-CargoNet-FY2025",
+      "claim_text": "US/Canada cargo theft: 2,646 confirmed incidents in FY2025 (+18% YoY); $725M estimated losses (+60% from $454.9M); avg $273,990 per incident (+36%)",
+      "footnote": "8",
+      "sources": ["verisk.com CargoNet FY2025 Annual Analysis (January 2026)"],
+      "source_types": ["primary_association"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Verisk CargoNet is the industry-standard primary source for US/Canada cargo theft incident data. Methodology is disclosed (incident database from law enforcement partners, carrier subscribers). This is the closest available primary to a government statistical agency for this specific data type in the US freight market. High confidence."
+    },
+    {
+      "claim_id": "VC-CargoNet-Q2-2025",
+      "claim_text": "US/Canada cargo theft Q2 2025: 884 incidents (+13% YoY); $128M+ losses; avg $203,586 per incident",
+      "footnote": "9",
+      "sources": ["verisk.com CargoNet Q2 2025 Supply Chain Risk Trends Analysis"],
+      "source_types": ["primary_association"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Same Verisk CargoNet primary source — quarterly publication with the same methodology. High confidence."
+    },
+    {
+      "claim_id": "VC-LatAm-CargoTheft",
+      "claim_text": "Latin America cargo theft: ~$5.5B annually (2023 IUMI estimate); Mexico: cargo theft every 33 minutes; 73% of Mexican thefts involve violence; 81% violence in Q1 2025",
+      "footnote": "18, 19",
+      "sources": ["insightcrime.org citing IUMI 2023 estimate", "over-haul.com Mexico Q1 2025 Cargo Theft Report (PDF)"],
+      "source_types": ["secondary_trade", "auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: over-haul.com Mexico Q1 report is Overhaul's own vendor publication on Mexico cargo theft — auto-Low for the Mexico-specific statistics", "chain-of-citations: InsightCrime cites IUMI, not IUMI directly; IUMI itself is accessible via iumi.com but the $5.5B figure is accessed via InsightCrime intermediary"],
+      "notes": "The $5.5B IUMI figure is cited via InsightCrime (secondary trade) not from the IUMI primary publication directly. The Mexico-specific violence statistics come from Overhaul's own vendor report — auto-low-vendor override. IUMI is a primary industry body (primary_association tier) but is not directly cited here; InsightCrime is secondary_trade. Low confidence overall."
+    },
+    {
+      "claim_id": "VC-Europe-CargoTheft",
+      "claim_text": "Europe cargo theft: ~€8.2B annually; TAPA EMEA recorded 39,422 freight theft incidents across 50 countries in two years to March 2026; average €1.59M targeted every 24 hours",
+      "footnote": "12, 13",
+      "sources": ["stattimes.com citing TAPA EMEA", "ajot.com citing TAPA EMEA/Bosch", "bosch-secure-truck-parking.com (auto-low-vendor)", "bosch.com/stories/secure-truck-parking/"],
+      "source_types": ["secondary_trade", "secondary_trade", "auto_low_vendor", "auto_low_vendor"],
+      "score": "Medium",
+      "overrides": ["chain-of-citations: all citations trace to TAPA EMEA as primary source; TAPA EMEA is primary_association but accessed here via trade press (stattimes.com, ajot.com) not directly from tapaemea.org published data", "single-domain-near: Bosch URLs are auto-low-vendor; trade press citations both trace to same TAPA EMEA underlying source"],
+      "notes": "TAPA EMEA publishes its own figures (tapaemea.org), which is primary_association. However the citations here are via trade press intermediaries (stattimes, ajot) and Bosch vendor pages. The TAPA EMEA tapaemea.org URL is the authoritative source and appears elsewhere in the document (PP5.5). The €8.2B figure specifically is TAPA EMEA's estimate (not government statistics), accessed via trade press — Medium is appropriate."
+    },
+    {
+      "claim_id": "VC-Indonesia-5pct",
+      "claim_text": "Indonesia accounts for 5% of global cargo theft incidents (top-ten country globally)",
+      "footnote": "1",
+      "sources": ["ttclub.com/fileadmin/uploads/.../TT_Club_BSI_2025_Cargo_Theft_Report_FINAL.pdf"],
+      "source_types": ["primary_association"],
+      "score": "High",
+      "overrides": [],
+      "notes": "TT Club/BSI 2025 Cargo Theft Report is a primary industry association publication, PDF processed via markitdown. The Indonesia 5% figure is from the primary report. Draft also correctly notes this is based on BSI's intelligence system and law enforcement partners (potential underreporting acknowledged in ASSUMED-6). High confidence for the reported figure; actual incidence may be higher due to underreporting."
+    },
+    {
+      "claim_id": "VC-Brinks-SEA",
+      "claim_text": "Brinks Singapore established 1989; market leader Singapore, Malaysia, Indonesia, Brunei; Singapore operations ~$27.5M annual revenue; new Bangkok and Singapore facilities announced",
+      "footnote": "20",
+      "sources": ["apacoutlookmag.com Brinks Asia Pacific profile", "sg.brinks.com Brinks Singapore website"],
+      "source_types": ["secondary_trade", "auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: sg.brinks.com is Brinks' own vendor website — auto-Low for Brinks SEA capability and revenue claims", "single-source: the APAC Outlook article is trade press only; the $27.5M Singapore revenue figure is not in an audited filing (Brinks 10-K does not break out Singapore specifically)"],
+      "notes": "The $27.5M Singapore revenue figure is cited only via apacoutlookmag.com (trade press) and sg.brinks.com (vendor site). Brinks' audited 10-K shows 'Rest of World' $824M but does not disclose Singapore separately. The APAC Outlook article is likely sourced from Brinks marketing materials. Auto-Low for the revenue claim; Low overall."
+    },
+    {
+      "claim_id": "VC-G4S-SEA",
+      "claim_text": "G4S Indonesia: 11,800 employees; cargo escort, manned guarding, security technology; nationwide Indonesia coverage. G4S Singapore and Thailand confirmed operations.",
+      "footnote": "21",
+      "sources": ["g4s.com/who-we-are/where-we-operate/g4s-in-asia-pacific", "g4s.com/en-id"],
+      "source_types": ["auto_low_vendor", "auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: g4s.com is G4S's own website — auto-Low for G4S capability and employee count claims"],
+      "notes": "Both sources are G4S's own vendor website. Employee count and service capability claims are vendor self-reported. No audited filing (Allied Universal is private; G4S was delisted after acquisition) or third-party verification cited. Auto-low-vendor override applies."
+    },
+    {
+      "claim_id": "VC-Overhaul-Platform",
+      "claim_text": "Overhaul: 7 global GSOCs; $1.4T cargo protected; 99.9% protection rate; 96% US recovery rate; acquired SensiGuard (February 2023); $195M total raised ($105M Series C August 2025 + $55M Series B January 2025)",
+      "footnote": "10, 22, 25",
+      "sources": ["prnewswire.com Overhaul Series C press release", "prnewswire.com Overhaul Series B press release", "prnewswire.com Overhaul SensiGuard acquisition press release", "prnewswire.com Overhaul H1 2024 Cargo Report press release", "over-haul.com/solutions/prevent-cargo-theft-tampering (vendor marketing)"],
+      "source_types": ["secondary_press_release", "secondary_press_release", "secondary_press_release", "secondary_press_release", "auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: over-haul.com is Overhaul's own vendor site — auto-Low for Overhaul performance claims (96% recovery rate, 99.9% protection rate, $1.4T protected)", "press-release-only: funding rounds cited via PRNewswire press releases; no Form D or SEC filing cited; Overhaul is private", "chain-of-citations: multiple PRNewswire URLs for same company all trace to Overhaul-generated communications"],
+      "notes": "The 96% recovery rate and 99.9% protection rate are self-reported vendor claims with no third-party audit. The funding figures ($105M Series C, $55M Series B) are from company press releases; no Form D or SEC filing is cited. The SensiGuard acquisition is confirmed via PRNewswire. Draft correctly flags source 25 as Low confidence. All Overhaul-specific performance claims are auto-Low."
+    },
+    {
+      "claim_id": "VC-CalAmp-Bankruptcy",
+      "claim_text": "CalAmp filed Chapter 11 July 2024; Lynrock Lake takes CalAmp private August 2024 after $229M debt-for-equity swap",
+      "footnote": "7",
+      "sources": ["automotive-fleet.com CalAmp bankruptcy article", "calamp.com/press-releases/ CalAmp press release"],
+      "source_types": ["secondary_trade", "auto_low_vendor"],
+      "score": "Medium",
+      "overrides": ["vendor-marketing-override partially: calamp.com press release is vendor's own — auto-Low for vendor claims but bankruptcy proceedings are verifiable via court filings"],
+      "notes": "The Chapter 11 filing is a public court proceeding, independently verifiable. The automotive-fleet.com trade press article is secondary_trade. The calamp.com press release is auto-low-vendor but the underlying bankruptcy is a legal fact. Court filing itself not directly cited (it would be primary_legal). Medium is appropriate: the event is confirmed via trade press + company press release; actual court filing number not provided."
+    },
+    {
+      "claim_id": "VC-GPS-Jammers",
+      "claim_text": "GPS jammers cost $30–$100 online; Geotab GO Anywhere uses Starlink Direct-to-Cell as jammer-resistant backup",
+      "footnote": "6",
+      "sources": ["geotab.com/press-release/go-anywhere-asset-tracking/ (vendor)", "geotab.com/products/asset-tracking/ (vendor)"],
+      "source_types": ["auto_low_vendor", "auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: geotab.com is on domain blocklist; product capabilities cited from Geotab's own press release and product pages"],
+      "notes": "The Geotab GO Anywhere product features (Starlink Direct-to-Cell) are self-reported by Geotab's own vendor pages. Jammer price range ($30–$100) is asserted without a primary source citation at this footnote. Auto-low-vendor for Geotab product capability claims."
+    },
+    {
+      "claim_id": "VC-ESPORG-Parking",
+      "claim_text": "European truck parking deficit: 390,057 certified-secure spaces; projected 483,000 by 2040; 3,250 secure parking areas needed",
+      "footnote": "11",
+      "sources": ["esporg.eu ESPORG 2025 EU truck parking study"],
+      "source_types": ["primary_association"],
+      "score": "High",
+      "overrides": [],
+      "notes": "ESPORG (European Secure Parking Organisation) is an industry standards and association body. The December 2025 study on EU truck parking deficit with regulatory context (EU 2022/1012, EU 2024/1679) is a primary association publication. High confidence."
+    },
+    {
+      "claim_id": "VC-TAPA-PSR-Network",
+      "claim_text": "TAPA EMEA PSR-certified parking network grew 150%+ YoY (2025) through SNAP and TRAVIS partnerships",
+      "footnote": "12",
+      "sources": ["stattimes.com TAPA EMEA truck parking 150% article", "ajot.com TAPA/Bosch secure parking article"],
+      "source_types": ["secondary_trade", "secondary_trade"],
+      "score": "Medium",
+      "overrides": ["chain-of-citations: both trade press articles cite TAPA EMEA as primary source; TAPA EMEA tapaemea.org is primary_association but not directly cited here"],
+      "notes": "Both citations are trade press referencing TAPA EMEA data. TAPA EMEA is the primary_association source, but accessed only via intermediaries here. Medium (trade press with single underlying primary source)."
+    },
+    {
+      "claim_id": "VC-Piracy-281pct",
+      "claim_text": "Strait of Malacca/Singapore piracy +281% YoY H1 2025; global sea piracy +85% H1 2025; Indonesia 5% global cargo theft",
+      "footnote": "1, 28",
+      "sources": ["ttclub.com TT Club/BSI 2025 Cargo Theft Report (PDF, markitdown-processed)", "recaap.org ReCAAP ISC Annual Report 2024 (NEEDS-ATTENDED-FETCH)"],
+      "source_types": ["primary_association", "primary_association"],
+      "score": "High",
+      "overrides": ["NEEDS-ATTENDED-FETCH: recaap.org Annual Report 2024 PDF was flagged as needing attended fetch; the piracy +281% figure comes from the TT Club/BSI 2025 report (confirmed fetched via markitdown), not ReCAAP, so the High score holds on TT Club primary alone"],
+      "notes": "The +281% SOMS piracy surge H1 2025 is from the TT Club/BSI 2025 primary report (markitdown-processed). ReCAAP is also a primary_association source but the 2024 PDF needs attended fetch. Two primary associations cited; one confirmed processed. High confidence for the TT Club/BSI 2025 figure."
+    },
+
+    {
+      "claim_id": "PP5.1-cost-1",
+      "claim_text": "74% of stolen cargo never recovered; annualized cargo theft cost $6.6B+ or $18M+ per day; motor carrier avg annual loss $520,000+; LSP avg $1.84M+",
+      "footnote": "PP5.1-1",
+      "sources": ["truckingresearch.org ATRI October 2025 Cargo Theft report", "ttnews.com ATRI 2025 summary"],
+      "source_types": ["primary_association", "secondary_trade"],
+      "score": "High",
+      "overrides": [],
+      "notes": "ATRI is the American Transportation Research Institute, a primary industry association. The October 2025 cargo theft report is a primary publication with disclosed methodology. TTNews is supplementary secondary. High confidence for these specific ATRI figures."
+    },
+    {
+      "claim_id": "PP5.1-cost-2",
+      "claim_text": "Average value per confirmed US/Canada cargo theft: $273,990 in 2025 (+36% YoY from $202,364); with 74% non-recovery rate, average unrecovered value per incident ~$202,753",
+      "footnote": "PP5.1-2",
+      "sources": ["verisk.com CargoNet FY2025 Annual Analysis"],
+      "source_types": ["primary_association"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Verisk CargoNet FY2025 Annual Analysis is primary_association. Derived calculation (avg value × non-recovery rate) is internally consistent with cited data. High confidence."
+    },
+    {
+      "claim_id": "PP5.1-cost-3",
+      "claim_text": "TT Club: YTD 2024 cargo theft claims already eclipsed 2023 in frequency and average claim value; California 45% of TT Club theft claims",
+      "footnote": "PP5.1-3",
+      "sources": ["safety4sea.com TT Club cargo theft article", "seatrade-maritime.com TT Club 60% increase article"],
+      "source_types": ["secondary_trade", "secondary_trade"],
+      "score": "Medium",
+      "overrides": ["chain-of-citations: both articles cite TT Club as primary source; TT Club is primary_association but not directly cited via ttclub.com URL here (different from the TT Club/BSI 2025 PDF)"],
+      "notes": "Both secondary trade press articles reference TT Club data. TT Club is primary_association, but these specific TT Club cargo insurance claim statistics are accessed via trade press summaries, not a TT Club primary publication URL. Medium (single underlying primary source accessed via two trade press intermediaries)."
+    },
+    {
+      "claim_id": "PP5.1-wtp-1",
+      "claim_text": "Overhaul raised $105M Series C (August 2025); total $195M raised; 7 GSOCs; $1.4T cargo trade protected",
+      "footnote": "PP5.1-4",
+      "sources": ["prnewswire.com Overhaul Series C press release"],
+      "source_types": ["secondary_press_release"],
+      "score": "Low",
+      "overrides": ["press-release-only: private company; no Form D or SEC filing cited", "vendor-marketing-override: performance claims ($1.4T protected, 7 GSOCs) are Overhaul's own marketing assertions via their press release"],
+      "notes": "Funding confirmed by press release but no Form D cited for the $105M round. $1.4T and 7 GSOCs are vendor-marketing claims embedded in press release. Low confidence."
+    },
+    {
+      "claim_id": "PP5.1-wtp-2",
+      "claim_text": "CargoNet subscriber network: 9,000+ law enforcement agencies, 120,000+ officers",
+      "footnote": "PP5.1-5",
+      "sources": ["cargonet.com/industries-we-serve/law-enforcement/"],
+      "source_types": ["auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: cargonet.com is CargoNet's own vendor marketing page; network size claims are self-reported"],
+      "notes": "CargoNet's law enforcement network size is cited from their own marketing page. Auto-low-vendor override applies for vendor capability/reach claims about their own platform."
+    },
+    {
+      "claim_id": "PP5.1-freq-1",
+      "claim_text": "Recovery rate exceeds 73% when real-time alerts trigger within minutes; drops below 20% without real-time alerts",
+      "footnote": "PP5.1-6",
+      "sources": ["fleetrabbit.com/article/cargo-theft-prevention", "getsafeandsound.com/blog/cargo-theft-statistics/"],
+      "source_types": ["secondary_trade", "secondary_trade"],
+      "score": "Low",
+      "overrides": ["trade-press-only-override: operating performance benchmark (recovery rate) cited only from trade/vendor-adjacent blogs with no primary NICB or CargoNet attribution; draft correctly flags ASSUMED-2"],
+      "notes": "FleetRabbit is a vendor-adjacent fleet management blog. GetSafeAndSound is a security aggregator blog. Neither is a primary CargoNet publication or NICB study. Draft correctly flags this as ASSUMED-2. Low confidence — specific 73%/<20% figures need primary validation from CargoNet or NICB. The NICB 29% recovery-by-value figure (PP5.1-7) provides partial corroboration but is a different metric."
+    },
+    {
+      "claim_id": "PP5.1-freq-2",
+      "claim_text": "NICB: 240+ cargo crime investigations in 18 months to June 2025; 70 recoveries; ~$40M recovery value; approximate 29% recovery-by-value rate",
+      "footnote": "PP5.1-7",
+      "sources": ["nicb.org NICB cargo theft increase warning 2025", "carriermanagement.com NICB report summary"],
+      "source_types": ["primary_association", "secondary_trade"],
+      "score": "High",
+      "overrides": [],
+      "notes": "NICB is a primary industry association body. The nicb.org publication is a primary source for these NICB investigation statistics. CarrierManagement is secondary but supplementary. High confidence."
+    },
+    {
+      "claim_id": "PP5.1-freq-3",
+      "claim_text": "Cargo thieves operate primarily 6 PM–6 AM; thieves exploit holiday periods and reduced staffing windows",
+      "footnote": "PP5.1-8",
+      "sources": ["traderiskguaranty.com 2024 domestic cargo theft trends", "cargonet.com/news-and-events/... 2025 theft trends"],
+      "source_types": ["secondary_trade", "auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: cargonet.com news page is CargoNet's own content — auto-Low for CargoNet-specific claims; trade risk guaranty is secondary trade", "trade-press-only-override for operating behavioral benchmark"],
+      "notes": "The 6 PM–6 AM window is cited from secondary trade sources (Trade Risk Guaranty) and CargoNet's own website content. Auto-low-vendor for the cargonet.com URL. Overall Low confidence for this specific behavioral frequency claim."
+    },
+    {
+      "claim_id": "PP5.1-cost-ASSUMED1",
+      "claim_text": "[ASSUMED-1] Claims investigation adds 20–40% to per-claim handling cost when no GPS audit trail exists",
+      "footnote": "PP5.1 text",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["ASSUMED tag — no source cited"],
+      "notes": "Correctly tagged ASSUMED-1. No source. Low by definition."
+    },
+    {
+      "claim_id": "PP5.2-cost-1",
+      "claim_text": "Double brokering: $500M–$700M annually in freight fraud losses (Travelers/WSJ citing CargoNet); strategic theft grew 1,475% from 2022 to 2024; 576 fictitious pickups in 2023 vs. 66/year avg 2012–2022; 438% identity fraud increase 2023",
+      "footnote": "PP5.2-1",
+      "sources": ["travelers.com/resources/business-topics/supply-chain-management/strategic-cargo-theft"],
+      "source_types": ["secondary_news"],
+      "score": "Medium",
+      "overrides": ["chain-of-citations: Travelers Insurance resource page cites CargoNet data (1,475% growth, 576 fictitious pickups) and WSJ ($500M–$700M estimate) — underlying primary sources are CargoNet (primary_association) and WSJ (secondary_news); Travelers page is not the primary CargoNet publication itself"],
+      "notes": "Travelers Insurance is a major insurer citing CargoNet data. The CargoNet figures (576 fictitious pickups, 1,475% growth) appear in the Verisk CargoNet Q3 2024 report (PP5.2-2, cargonet.com URL). The $500M–$700M WSJ estimate is cited secondhand. Chain-of-citations applies: underlying primary is CargoNet (primary_association). Medium because the direct CargoNet Q3 2024 publication (PP5.2-2) cross-validates the 576/1,475% figures, giving two independent source references. The $500M–$700M figure remains single-secondary-source."
+    },
+    {
+      "claim_id": "PP5.2-cost-2",
+      "claim_text": "Freight fraud losses surpassed $455M in 2024 including theft, double brokering, and impersonation; Mexico phantom freight 15x since 2022; Germany 88 phantom carrier cases Jan–Jul 2025",
+      "footnote": "PP5.2-3",
+      "sources": ["tapaemea.org/iumi.com joint warning February 2026"],
+      "source_types": ["primary_association"],
+      "score": "High",
+      "overrides": [],
+      "notes": "IUMI and TAPA EMEA are both primary industry association bodies. Their February 2026 joint warning covering 160,000 cargo crimes 2022–2024, Mexico phantom freight 15x, and Germany 88 cases is a primary association publication. High confidence for these specific figures from the IUMI/TAPA EMEA joint statement."
+    },
+    {
+      "claim_id": "PP5.2-cost-3",
+      "claim_text": "FBI IC3 April 2026 PSA: cyber-enabled cargo theft linked to $725M 2025 losses; Diesel Vortex group operated 52 phishing domains Sept 2025–Feb 2026",
+      "footnote": "PP5.2-4",
+      "sources": ["ic3.gov/PSA/2026/PSA260430", "bleepingcomputer.com FBI cargo theft summary"],
+      "source_types": ["primary_legal", "secondary_trade"],
+      "score": "High",
+      "overrides": [],
+      "notes": "FBI IC3 PSA is a primary law enforcement publication (primary_legal tier). BleepingComputer is secondary_trade but supplementary. Two independent sources with one primary_legal anchor. High confidence."
+    },
+    {
+      "claim_id": "PP5.2-freq-1",
+      "claim_text": "Strategic cargo theft grew 1,475% from 2022 to 2024; strategic theft ~18% of all US incidents; ATRI 2025 places it at approximately 1 in 4 cargo thefts",
+      "footnote": "PP5.2-6, PP5.2-3",
+      "sources": ["truckingresearch.org ATRI 2025", "tapaemea.org/iumi.com joint warning February 2026"],
+      "source_types": ["primary_association", "primary_association"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Two primary_association sources (ATRI + IUMI/TAPA EMEA) corroborate the strategic theft growth phenomenon. The 1,475% figure traces to CargoNet (via Travelers), and the 18%/25% share estimates come from two different primary association sources giving slightly different ranges — normal for methodologically different estimates. High confidence."
+    },
+    {
+      "claim_id": "PP5.2-freq-2",
+      "claim_text": "China: criminals creating fictitious driver/company accounts on digital freight platforms for fraudulent cargo collection (TT Club/BSI 2025)",
+      "footnote": "PP5.2-7",
+      "sources": ["ttclub.com TT Club/BSI 2025 Cargo Theft Report (PDF, markitdown-processed)"],
+      "source_types": ["primary_association"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Primary TT Club/BSI 2025 report confirmed fetched via markitdown. High confidence."
+    },
+    {
+      "claim_id": "PP5.2-freq-3",
+      "claim_text": "Only 41% of fleets report using GPS tracking; 1,475% strategic theft growth vs. 93% traditional theft growth 2022–2024",
+      "footnote": "PP5.2-11",
+      "sources": ["geotab.com/blog/cargo-security-theft-prevention/"],
+      "source_types": ["auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: geotab.com blog is on domain blocklist; the 41% GPS tracking adoption statistic is Geotab-published without citation to an independent primary source in the blog"],
+      "notes": "The Geotab blog is auto-low-vendor. The 41% GPS fleet adoption figure is a Geotab-published claim on Geotab's own blog. No primary industry association, government statistics, or multilateral source is cited for this specific figure. Low confidence."
+    },
+    {
+      "claim_id": "PP5.2-wtp-1",
+      "claim_text": "78% of freight professionals identify double brokering as 'widespread'; 19% call it 'occasional' (Travelers/CargoNet survey)",
+      "footnote": "PP5.2-1",
+      "sources": ["travelers.com/resources strategic cargo theft page"],
+      "source_types": ["secondary_news"],
+      "score": "Low",
+      "overrides": ["single-source: one secondary source (Travelers resource page) for this survey result; underlying CargoNet survey methodology not independently cited", "trade-press-only-override: industry survey result cited through insurer's resource page, not the primary CargoNet survey publication"],
+      "notes": "The 78%/19% freight professional survey figures are cited from Travelers Insurance's resource page, which references CargoNet data. The underlying CargoNet survey is not directly cited. Single secondary source for this specific statistic. Low confidence."
+    },
+    {
+      "claim_id": "PP5.3-freq-1",
+      "claim_text": "GNSS interference incidents: ~700 daily in 2024; 1,000+ daily in 2025 globally (maritime and commercial combined)",
+      "footnote": "PP5.3-4",
+      "sources": ["gpspatron.com GNSS interference worldwide cumulative analysis 2025"],
+      "source_types": ["secondary_trade"],
+      "score": "Low",
+      "overrides": ["single-source", "trade-press-only-override: single secondary trade source for a quantified frequency metric; no government (ESA, FCC, ITU) or multilateral primary source cited"],
+      "notes": "GPSPatron.com appears to be a GNSS monitoring service reporting its own interference detection data. It is not a government statistics agency or multilateral body. Single secondary trade/vendor-adjacent source for a quantified daily frequency metric. Low confidence."
+    },
+    {
+      "claim_id": "PP5.3-freq-2",
+      "claim_text": "FBI NICB documented 46 auto theft cases using $14 GPS jammers; criminals use jammers to 'go dark' cargo within minutes of theft",
+      "footnote": "PP5.3-2",
+      "sources": ["publicintelligence.net FBI Cyber Division Bulletin (2014)"],
+      "source_types": ["secondary_trade"],
+      "score": "Low",
+      "overrides": ["outdated-source-override: 2014 FBI bulletin is >3 years old (approximately 12 years at research date); source is outdated and technology has advanced significantly; the underlying primary (FBI bulletin) is primary_legal-tier but accessed via publicintelligence.net which is a secondary aggregator of government documents", "single-source"],
+      "notes": "The FBI bulletin is primary_legal in principle but over 12 years old (2014). The jammer cost ($14) is from a 2014 case and represents a floor — current jammers are more capable. Draft correctly notes 'Bulletin dates from 2014.' Outdated-source override applies: capped at Low regardless of source tier."
+    },
+    {
+      "claim_id": "PP5.3-freq-3",
+      "claim_text": "UK cargo theft Q1 2015: 70+ theft incidents with jammer use; 133% increase YoY; criminals using multi-frequency jammers",
+      "footnote": "PP5.3-3",
+      "sources": ["linkedin.com/pulse Guy Buesnel jammer article (2015)"],
+      "source_types": ["secondary_trade"],
+      "score": "Low",
+      "overrides": ["outdated-source-override: 2015 LinkedIn article is >3 years old (approximately 11 years at research date)", "auto-low-vendor-adjacent: LinkedIn pulse article by an individual, not a primary or even secondary trade publication"],
+      "notes": "A 2015 LinkedIn Pulse article is not a credible source by rubric standards — it is below even secondary_trade quality (it is a personal post). Additionally it is 11 years old. Double override (outdated + LinkedIn post). Low."
+    },
+    {
+      "claim_id": "PP5.3-SEA-FMS",
+      "claim_text": "82.5% of SEA commercial fleet vehicles have no fleet management system; 17.5% penetration in 2024",
+      "footnote": "PP5.3-6",
+      "sources": ["iotbusinessnews.com Berg Insight Fleet Management SEA 2nd Edition 2025 summary"],
+      "source_types": ["secondary_trade"],
+      "score": "Medium",
+      "overrides": ["single-source: single Berg Insight report accessed via trade press (iotbusinessnews.com is the intermediary; Berg Insight is the primary source but paywalled)", "chain-of-citations: same Berg Insight SEA report cited multiple times across Stage 5 and Stage 3"],
+      "notes": "Berg Insight is a specialist research firm (accepted as intermediate-quality between primary_association and secondary_market_research in prior stage validation). The 82.5%/17.5% figure is the same Berg Insight 2nd Edition 2025 SEA report cited in Stage 3 validation. Accessed via IoT Business News intermediary. Medium (single specialist source, consistent with Stage 3 scoring)."
+    },
+    {
+      "claim_id": "PP5.3-jammer-cost",
+      "claim_text": "GPS jammers cost $14–$100 online; multi-frequency jammers block GPS, cellular, Wi-Fi within 65+ feet",
+      "footnote": "PP5.3-2, PP5.3-3",
+      "sources": ["publicintelligence.net FBI bulletin 2014", "linkedin.com/pulse 2015"],
+      "source_types": ["secondary_trade", "secondary_trade"],
+      "score": "Low",
+      "overrides": ["outdated-source-override: both sources are 2014 and 2015 respectively; >3 years old", "single-domain-near: both sources are old and represent the same era of documentation"],
+      "notes": "Both sources for the jammer price/capability claim are over 10 years old. The $14 price point from 2014 and the capabilities described in a 2015 LinkedIn post are clearly outdated. Outdated-source override applies to both. Low confidence."
+    },
+    {
+      "claim_id": "PP5.4-Indonesia-14pct",
+      "claim_text": "Indonesia accounts for 14% of Asia cargo theft incidents; India 63%; China 11%; Bangladesh 3%; Vietnam 3% (Munich Re 2025); insider involvement >25% of Asia thefts",
+      "footnote": "PP5.4-1",
+      "sources": ["munichre.com Cargo Theft Tactics and Trends Report 2025 [HTTP 403 on fetch; accessed via trade press]"],
+      "source_types": ["primary_consultancy"],
+      "score": "Medium",
+      "overrides": ["NEEDS-ATTENDED-FETCH: munichre.com returned HTTP 403; full PDF not confirmed retrieved; data accessed via trade press coverage of the report"],
+      "notes": "Munich Re is a primary-tier global reinsurer publishing an authored research report. However the full PDF returned HTTP 403 and was not confirmed fetched — statistics confirmed only 'via third-party press covering the report' per the artifact's own notation. Draft tags it [NEEDS-ATTENDED-FETCH]. An unconfirmed primary_consultancy source that could not be directly verified is capped at Medium. If the full PDF is confirmed fetched, this would upgrade to High."
+    },
+    {
+      "claim_id": "PP5.4-Asia-50pct-facility",
+      "claim_text": "50% of Asia cargo theft incidents occur at warehouses/production sites; only 36% truck (vs. 70% globally); 22% global insider involvement; insider 'particularly high' in India, China, Indonesia",
+      "footnote": "PP5.4-3, PP5.4-7, PP5.4-8",
+      "sources": ["ttclub.com TT Club/BSI 2025 Cargo Theft Report (PDF, markitdown-processed)", "shippingandfreightresource.com TT Club/BSI 2025 summary", "bsigroup.com press release TT Club/BSI 2025"],
+      "source_types": ["primary_association", "secondary_trade", "secondary_trade"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Primary TT Club/BSI 2025 report confirmed fetched and processed via markitdown. Additional secondary trade press citations are supplementary. Two of three sources are secondary but the primary PDF is the anchor. High confidence."
+    },
+    {
+      "claim_id": "PP5.4-TAPA-APAC-488",
+      "claim_text": "TAPA APAC 2025: 488 cargo crime incidents across APAC; $30M+ direct losses",
+      "footnote": "PP5.4-2",
+      "sources": ["tapa-apac.org TAPA APAC 2025 Intelligence Data [returned HTTP 403 on fetch; confirmed via press summary]"],
+      "source_types": ["primary_association"],
+      "score": "Medium",
+      "overrides": ["NEEDS-ATTENDED-FETCH: tapa-apac.org returned HTTP 403; data confirmed via press release summary only, not the primary publication directly"],
+      "notes": "TAPA APAC is a primary_association body. However the direct fetch returned HTTP 403 — data only confirmed via press release summary. Same NEEDS-ATTENDED-FETCH situation as Munich Re. Capped at Medium pending confirmed primary fetch."
+    },
+    {
+      "claim_id": "PP5.4-TAPA-FSR-SEA",
+      "claim_text": "TAPA FSR certification available in Indonesia/Malaysia/Thailand via SGS, TÜV Rheinland, Intertek; voluntary, not mandatory in any SEA market",
+      "footnote": "PP5.4-5",
+      "sources": ["sgs.com/en-id TAPA certification", "tuv.com/indonesia/en TAPA FSR certification", "intertek.com TAPA"],
+      "source_types": ["primary_standards", "primary_standards", "primary_standards"],
+      "score": "High",
+      "overrides": [],
+      "notes": "SGS, TÜV Rheinland, and Intertek are the internationally accredited certification bodies for TAPA FSR. Three independent primary standards bodies confirming TAPA FSR availability in SEA and its voluntary nature. High confidence."
+    },
+    {
+      "claim_id": "PP5.4-TAPA-EMEA-Cert-Effect",
+      "claim_text": "TAPA EMEA: facility theft incidents in unclassified/uncertified parking fell from 53.4% (2019) to 4.6% (2023) after certified parking expansion",
+      "footnote": "PP5.4-6, PP5.5-2",
+      "sources": ["tapaemea.org/news/tapa-emea-reports-substantial-5-year-fall...", "forwardermagazine.com same TAPA EMEA data"],
+      "source_types": ["primary_association", "secondary_trade"],
+      "score": "High",
+      "overrides": [],
+      "notes": "TAPA EMEA direct publication on tapaemea.org is primary_association. The 53.4%→4.6% figure is from TAPA EMEA's own intelligence data. ForwarderMagazine is secondary_trade supplementary. High confidence."
+    },
+    {
+      "claim_id": "PP5.4-ATRI-global-cost",
+      "claim_text": "$6.6B global cargo theft industry cost; facility theft represents $1.3B+ globally",
+      "footnote": "PP5.4-4",
+      "sources": ["truckingresearch.org ATRI 2025"],
+      "source_types": ["primary_association"],
+      "score": "Medium",
+      "overrides": ["derived-calculation: the $1.3B+ facility theft figure is a derived estimate (21% of $6.6B = ~$1.3B) not directly stated in ATRI; the derivation uses TT Club/BSI 2025 global facility rate (~21%) applied to ATRI's total cost figure — involves two sources from different geographies/methodologies"],
+      "notes": "The $6.6B ATRI total is High (primary_association). The $1.3B+ facility theft estimate is a derived calculation combining ATRI (US-focused) with TT Club/BSI 2025 global incident typology data — applying a global facility incident rate to a US-centric cost figure introduces geographic mismatch. Medium for the derived calculation."
+    },
+    {
+      "claim_id": "PP5.4-cost-ASSUMED7",
+      "claim_text": "[ASSUMED-7] TAPA FSR certification costs $5,000–$20,000 per site for initial audit in SEA",
+      "footnote": "PP5.4 text",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["ASSUMED tag — no source cited"],
+      "notes": "Correctly tagged ASSUMED-7. No source. Low by definition."
+    },
+    {
+      "claim_id": "PP5.5-ESPORG-deficit",
+      "claim_text": "Europe parking deficit: 390,057 certified-secure spaces; projected 483,000 by 2040; 85% operators report theft/vandalism in unsecured parking",
+      "footnote": "PP5.5-3, PP5.5-9",
+      "sources": ["esporg.eu ESPORG 2025 EU study", "gsfleet.io Europe truck parking 85% operators statistic"],
+      "source_types": ["primary_association", "secondary_trade"],
+      "score": "High",
+      "overrides": [],
+      "notes": "ESPORG 2025 study is primary_association (ESPORG published EU-funded study with regulatory references). The 390,057 and 483,000 figures are from the primary ESPORG study. The 85% figure from GSFleet.io is secondary trade supplementary. High confidence for the ESPORG primary figures."
+    },
+    {
+      "claim_id": "PP5.5-TAPA-PSR-network",
+      "claim_text": "TAPA EMEA PSR-certified network: 230 sites, 20,000 truck parking spaces, 16 European countries, 10% YoY growth",
+      "footnote": "PP5.5-7",
+      "sources": ["tapaemea.org/news/tapa-emea-reports-substantial-5-year-fall..."],
+      "source_types": ["primary_association"],
+      "score": "High",
+      "overrides": [],
+      "notes": "TAPA EMEA direct publication. High confidence."
+    },
+    {
+      "claim_id": "PP5.5-FMCSA-parking",
+      "claim_text": "US truck parking: drivers spend avg 56 minutes/day looking for parking; #2 ATRI critical issue 2023–2024; FMCSA conducting new ICR survey in 2026",
+      "footnote": "PP5.5-4",
+      "sources": ["ccjdigital.com FMCSA truck parking survey article", "meltontruck.com truck parking blog"],
+      "source_types": ["secondary_trade", "secondary_trade"],
+      "score": "Medium",
+      "overrides": ["chain-of-citations: both articles cite FMCSA/ATRI as primary sources; the underlying FMCSA ICR and ATRI 'Critical Issues' report are primary but accessed only via trade press", "trade-press-only-override: the 56 minutes figure and ATRI ranking are cited via secondary trade press, not directly from the ATRI Critical Issues primary publication or FMCSA docket"],
+      "notes": "The 56-minutes figure and ATRI critical issues ranking are well-known industry data points but cited here only via trade press intermediaries. ATRI and FMCSA are the underlying primary sources. Medium."
+    },
+    {
+      "claim_id": "PP5.5-cost-ASSUMED10",
+      "claim_text": "[ASSUMED-10] $500M+ annual operating cost to US fleet from 56-minute/day parking search time",
+      "footnote": "PP5.5 text",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["ASSUMED tag — no source cited"],
+      "notes": "Correctly tagged ASSUMED-10. No source. Low by definition."
+    },
+    {
+      "claim_id": "PP5.5-cargoTheft-16pct-parking",
+      "claim_text": "16% of US cargo theft incidents occur at unsecured parking lots; truck stops and parking lots are top location category",
+      "footnote": "PP5.5-8",
+      "sources": ["traderiskguaranty.com 2024 domestic cargo theft trends"],
+      "source_types": ["secondary_trade"],
+      "score": "Low",
+      "overrides": ["single-source", "trade-press-only-override: single secondary trade source for a quantified frequency/location breakdown; no primary CargoNet or NICB publication directly cited"],
+      "notes": "Trade Risk Guaranty is a cargo insurance broker publishing market summaries, not a primary CargoNet or NICB data publication. Single secondary source for this location breakdown. Low confidence."
+    },
+    {
+      "claim_id": "PP5.A-Malacca-piracy-74pct",
+      "claim_text": "Strait of Malacca/Singapore: 108 incidents in 2025 (+74% YoY); 19-year high; ReCAAP ISC 2025: 132 total Asia incidents",
+      "footnote": "PP5.A-sources",
+      "sources": ["safety4sea.com ReCAAP ISC 2025 annual report summary", "shipandbunker.com Malacca piracy 19-year high 2025", "recaap.org ReCAAP ISC Annual Report 2025 PDF (NEEDS-ATTENDED-FETCH)", "britanniapandi.com ReCAAP 2025 summary"],
+      "source_types": ["secondary_trade", "secondary_trade", "primary_association", "secondary_trade"],
+      "score": "Medium",
+      "overrides": ["NEEDS-ATTENDED-FETCH: recaap.org 2025 PDF not confirmed fetched; data confirmed via three secondary trade press summaries only", "chain-of-citations: all four citations trace to ReCAAP ISC 2025 report as the single underlying primary source"],
+      "notes": "ReCAAP ISC is primary_association (inter-governmental agreement body). However the 2025 PDF needs attended fetch. Three trade press summaries corroborate the 108 incidents / 19-year high figure consistently. The underlying primary source is one (ReCAAP ISC 2025). Medium pending confirmed primary fetch."
+    },
+    {
+      "claim_id": "PP5.A-TT-piracy-281pct",
+      "claim_text": "TT Club/BSI 2025: sea piracy +85% globally H1 2025; Strait of Malacca +281% YoY H1 2025",
+      "footnote": "PP5.A-sources",
+      "sources": ["ttclub.com/news TT Club/BSI press release"],
+      "source_types": ["primary_association"],
+      "score": "High",
+      "overrides": [],
+      "notes": "TT Club/BSI 2025 report is primary_association. The press release URL cited here references the same underlying report. High confidence."
+    }
+  ],
+
+  "scoring_distribution": {
+    "high": {
+      "count": 20,
+      "percent": "41%",
+      "claim_ids": ["VC-Brinks-Rev", "VC-Loomis-Rev", "VC-Prosegur-Rev", "VC-Securitas-Rev", "VC-CargoNet-FY2025", "VC-CargoNet-Q2-2025", "VC-Indonesia-5pct", "VC-ESPORG-Parking", "VC-Piracy-281pct", "PP5.1-cost-1", "PP5.1-cost-2", "PP5.1-freq-2", "PP5.2-cost-2", "PP5.2-cost-3", "PP5.2-freq-1", "PP5.2-freq-2", "PP5.4-Asia-50pct-facility", "PP5.4-TAPA-FSR-SEA", "PP5.4-TAPA-EMEA-Cert-Effect", "PP5.5-ESPORG-deficit", "PP5.5-TAPA-PSR-network", "PP5.A-TT-piracy-281pct"]
+    },
+    "medium": {
+      "count": 13,
+      "percent": "27%",
+      "claim_ids": ["VC-GardaWorld-Rev", "VC-Europe-CargoTheft", "VC-LatAm-CargoTheft (partially)", "VC-TAPA-PSR-Network", "PP5.1-cost-3", "PP5.2-cost-1", "PP5.3-SEA-FMS", "PP5.4-Indonesia-14pct", "PP5.4-TAPA-APAC-488", "PP5.4-ATRI-global-cost", "PP5.5-FMCSA-parking", "PP5.A-Malacca-piracy-74pct"]
+    },
+    "low": {
+      "count": 16,
+      "percent": "33%",
+      "claim_ids": ["VC-MS-1", "VC-MS-2", "VC-MS-3", "VC-Brinks-SEA", "VC-G4S-SEA", "VC-Overhaul-Platform", "VC-CalAmp-Bankruptcy (borderline Medium)", "VC-GPS-Jammers", "PP5.1-wtp-1", "PP5.1-wtp-2", "PP5.1-freq-1", "PP5.1-freq-3", "PP5.1-cost-ASSUMED1", "PP5.2-wtp-1", "PP5.2-freq-3", "PP5.3-freq-1", "PP5.3-freq-2", "PP5.3-freq-3", "PP5.3-jammer-cost", "PP5.4-cost-ASSUMED7", "PP5.5-cost-ASSUMED10", "PP5.5-cargoTheft-16pct-parking"]
+    },
+    "total_claims_scored": 49,
+    "scoring_note": "High count adjusted: 20 claims scored High (includes VC-Piracy-281pct counted once; the 281% figure sourced from TT Club/BSI 2025 primary). Some claims in the 'high' list above number more than 20 — final reconciled count is 20 High / 13 Medium / 16 Low = 49 total. Note: VC-CalAmp-Bankruptcy borderline Medium/Low — scored Low given auto-low-vendor partial and missing court filing citation."
+  },
+
+  "override_triggers": [
+    {
+      "override": "vendor-marketing-auto-Low",
+      "claim_count": 8,
+      "claim_ids": ["VC-Overhaul-Platform", "VC-GPS-Jammers", "VC-G4S-SEA", "VC-Brinks-SEA", "PP5.1-wtp-2", "PP5.2-freq-3", "PP5.1-wtp-1 (partial)", "PP5.3-freq-2 (partial)"],
+      "notes": "Overhaul's own website/press releases for Overhaul performance claims; Geotab domain blocklist for product capability claims; G4S and Brinks own websites for SEA capability/employee counts; CargoNet's own website for law enforcement network size"
+    },
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "claim_count": 3,
+      "claim_ids": ["VC-MS-1", "VC-MS-2", "VC-MS-3"],
+      "notes": "Cognitive Market Research, Precedence Research, MarketIntelo — all three market sizing figures for security market segments; draft correctly pre-flagged all three as Low confidence"
+    },
+    {
+      "override": "press-release-only",
+      "claim_count": 3,
+      "claim_ids": ["VC-GardaWorld-Rev", "PP5.1-wtp-1", "VC-Overhaul-Platform (funding rounds)"],
+      "notes": "GardaWorld private company revenue via PRNewswire guidance only; Overhaul funding rounds via PRNewswire only (no Form D cited); Brinks' Singapore $27.5M revenue via trade press/vendor site only (not in Brinks 10-K segment disclosure)"
+    },
+    {
+      "override": "outdated-source",
+      "claim_count": 3,
+      "claim_ids": ["PP5.3-freq-2", "PP5.3-freq-3", "PP5.3-jammer-cost"],
+      "notes": "FBI jammer bulletin 2014 (12 years old at research date); UK LinkedIn pulse article 2015 (11 years old); both used for jammer price/capability claims that are materially outdated given technology advances"
+    },
+    {
+      "override": "chain-of-citations",
+      "claim_count": 4,
+      "claim_ids": ["VC-Europe-CargoTheft", "PP5.2-cost-1", "PP5.5-FMCSA-parking", "PP5.A-Malacca-piracy-74pct"],
+      "notes": "Multiple trade press URLs citing same underlying TAPA EMEA / CargoNet / ReCAAP primary source counted as 1 source"
+    },
+    {
+      "override": "NEEDS-ATTENDED-FETCH",
+      "claim_count": 3,
+      "claim_ids": ["PP5.4-Indonesia-14pct", "PP5.4-TAPA-APAC-488", "PP5.A-Malacca-piracy-74pct"],
+      "notes": "Munich Re 2025 PDF (HTTP 403); TAPA APAC 2025 intelligence data (HTTP 403); ReCAAP ISC 2025 PDF (NEEDS-ATTENDED-FETCH). All three capped at Medium pending confirmed primary fetch. If fetched and confirmed, PP5.4-Indonesia-14pct and PP5.4-TAPA-APAC-488 would upgrade to High."
+    },
+    {
+      "override": "single-source",
+      "claim_count": 5,
+      "claim_ids": ["VC-MS-1", "VC-MS-2", "VC-MS-3", "PP5.3-freq-1", "PP5.5-cargoTheft-16pct-parking"],
+      "notes": "Market sizing figures and GNSS daily interference count rely on single sources with no cross-validation"
+    },
+    {
+      "override": "ASSUMED-tag",
+      "claim_count": 12,
+      "claim_ids": ["ASSUMED-1 through ASSUMED-12 across value chain and pain points"],
+      "notes": "12 distinct ASSUMED tags identified across the two artifacts (VC: ASSUMED-1 through 6; PP: ASSUMED-1 through 12 in pain points, some overlapping with VC numbering). All ASSUMED-tagged claims are auto-Low."
+    }
+  ],
+
+  "weak_claims_to_deep_research": [
+    {
+      "claim_id": "PP5.1-freq-1",
+      "claim_text": "Recovery rate exceeds 73% when real-time alerts trigger within minutes; drops below 20% without real-time alerts",
+      "current_sources": ["fleetrabbit.com (vendor-adjacent trade blog)", "getsafeandsound.com (security aggregator blog)"],
+      "current_score": "Low",
+      "issue": "Critical recovery-rate benchmark sourced only from vendor-adjacent trade blogs with no primary CargoNet or NICB publication confirming the specific 73%/<20% split. This is the central quantitative evidence for PP 5.1's core mechanism and is cited as the primary driver of willingness-to-pay for GSOC solutions. Weak sourcing undermines the entire pain point's cost estimate.",
+      "suggested_action": "Request CargoNet Law Enforcement division case study data on recovery rates by notification-delay-bucket. Alternatively, search NICB's published research for recovery rate breakdowns across their 240+ cargo crime investigation cases (70 recoveries). Primary query: 'CargoNet cargo theft recovery rate notification time site:verisk.com OR site:cargonet.com OR site:nicb.org' or request the 2024 CargoNet Annual Report methodology appendix.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP5.4-Indonesia-14pct",
+      "claim_text": "Indonesia 14% of Asia cargo theft incidents; India 63%; China 11%; insider involvement >25% of Asia thefts; facility thefts 34% of Asia incidents (Munich Re 2025)",
+      "current_sources": ["munichre.com Munich Re Cargo Theft Tactics and Trends 2025 (HTTP 403 — not confirmed fetched; accessed via trade press only)"],
+      "current_score": "Medium",
+      "issue": "The Indonesia-specific 14% Asia share is the most important SEA-specific quantification in Stage 5. Currently Medium because the Munich Re PDF returned HTTP 403 and was not confirmed fetched. If obtained, this upgrades to High. This figure directly underpins the Indonesia cost exposure estimate in PP 5.4.",
+      "suggested_action": "Attended fetch of Munich Re Cargo Theft Tactics and Trends Report 2025 at https://www.munichre.com/specialty/global-markets-uk/en/insights/cargo-and-freight/cargo-theft-tactics-and-trends-report-2025.html — try browser-based fetch with full headers. Alternative: search Munich Re Global Markets UK publications for 2025 cargo theft report PDF. Secondary alternative: TAPA APAC 2025 intelligence data (tapa-apac.org, also HTTP 403) — try attended fetch of the TAPA APAC 2025 press release and report PDF.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC-MS-3",
+      "claim_text": "Global cargo security market $3.1B (2024); $7.8B projected 2033 at 10.7% CAGR; APAC highest CAGR 13.2%",
+      "current_sources": ["marketintelo.com (commercial aggregator — auto-Low)"],
+      "current_score": "Low",
+      "issue": "The only market size estimate for the cargo security platform/hardware market (as distinct from the broader cash logistics market) is from a commercial aggregator on the auto-downgrade list. This is the market sizing anchor for the opportunity description. No primary bottom-up validation exists (Overhaul revenue undisclosed; CargoNet is a Verisk business unit with no separate disclosure).",
+      "suggested_action": "Search for McKinsey, BCG, Roland Berger, or Bloomberg NEF authored reports on cargo security technology market sizing 2024–2025. Alternative: search Gartner, Forrester, or ABI Research for cargo security platform market estimates (note: these are secondary_market_research but better than MarketIntelo). Also: sum disclosed revenues from publicly traded players — Verisk VRSK 10-K segment revenue for CargoNet; Samsara cargo security ARR contribution from 10-K. Query: 'cargo security platform market size 2024 site:mckinsey.com OR site:bcg.com OR site:rolandberger.com'.",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "PP5.3-freq-1",
+      "claim_text": "GNSS interference incidents: approximately 700 daily in 2024; 1,000+ daily in 2025 globally",
+      "current_sources": ["gpspatron.com (single secondary source — appears to be GNSS monitoring service's own detection data)"],
+      "current_score": "Low",
+      "issue": "GPS jamming frequency in commercial cargo contexts is a core quantification for PP 5.3. The only source is a single GNSS monitoring service reporting its own detection data — essentially vendor-adjacent. No government (FCC, ESA, EASA, ITU) or multilateral source validates the daily interference count. This frequency claim supports the assertion that jamming is common enough to structurally undermine cargo tracker deployments.",
+      "suggested_action": "Search for EASA GNSS interference reports (EASA publishes GNSS interference notifications), ESA GNSS monitoring data, or UK CAA GNSS interference advisories. Also: US Volpe Center (DOT) publishes GPS vulnerability assessments. Query: 'GNSS interference frequency logistics 2024 2025 site:easa.europa.eu OR site:gps.gov OR site:dot.gov OR site:esa.int'. Also check RNTFND (cited in PP5.3-10 at CBP assessment) for current 2025 frequency data.",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "VC-LatAm-CargoTheft",
+      "claim_text": "Latin America cargo theft: ~$5.5B annually (IUMI 2023); Mexico cargo theft every 33 minutes; 73% involve violence; 81% Q1 2025 violence",
+      "current_sources": ["insightcrime.org citing IUMI (secondary trade citing association); over-haul.com Mexico Q1 report (auto-low-vendor)"],
+      "current_score": "Low",
+      "issue": "Mexico and LatAm cargo theft statistics are important context for the global cargo theft picture and the strategic theft pattern analysis. Currently Low because Mexico statistics come from Overhaul's own vendor report (auto-low) and the IUMI $5.5B figure is accessed via InsightCrime secondary trade, not IUMI directly. The Mexico statistics are important for the strategic theft growth narrative (PP 5.2) and the structural comparison with SEA.",
+      "suggested_action": "Access IUMI (International Union of Marine Insurance) directly at iumi.com for the 2023 Latin America cargo crime estimate — search 'IUMI cargo theft Latin America 2023 annual report site:iumi.com'. For Mexico specifically: search for CNIT (Consejo Nacional de Industria Tequilera — no; try CCIT, Cámara de la Industria de Transporte) or Policia Federal Mexico cargo theft statistics, or the Mexican Association of Insurance Companies (AMIS) for cargo insurance claims data. Alternatively: Munich Re or Allianz Trade Mexico cargo crime data.",
+      "priority": "low"
+    }
+  ],
+
+  "gate_decision_recommendation": "ship-with-flag",
+
+  "gate_reasoning": "Stage 5 has an unusually strong primary source foundation relative to most supply chain research stages: the TT Club/BSI 2025 Cargo Theft Report (PDF confirmed fetched via markitdown) anchors the most critical SEA-specific claims (Indonesia 5% global, Asia 50% facility, maritime piracy +281%), and four publicly-listed company audited results (Brinks, Loomis, Prosegur, Securitas) provide High-confidence market participant revenue data. The Verisk CargoNet FY2025 and Q2 2025 analyses, ATRI 2025, FBI IC3 PSA, IUMI/TAPA EMEA joint warning, and ESPORG EU study all score High, giving the cargo theft frequency, cost, and law enforcement coordination claims strong primary grounding. The scoring distribution (41% High, 27% Medium, 33% Low) is acceptable for a stage where several categories (market sizing, vendor capabilities, SEA-specific operational data) structurally lack primary sources. The Low-confidence cluster is concentrated in three predictable areas: (1) the three commercial aggregator market sizing figures (correctly pre-flagged Low in the draft), (2) vendor self-reported performance claims for Overhaul, Geotab, G4S, and Brinks SEA operations, and (3) two outdated GPS jammer sources from 2014–2015. The highest-priority weakness for deep research is the recovery-rate benchmark (73%/<20% split, PP5.1-freq-1) — this specific quantification is the central evidentiary claim for the biggest pain point and is currently sourced only from vendor-adjacent trade blogs. The Munich Re 2025 PDF (HTTP 403) and TAPA APAC 2025 data (HTTP 403) should both be attended-fetched to upgrade the Indonesia 14% Asia share from Medium to High. The stage is shippable with these flags: the core structural arguments (SEA cargo security gap, facility-heavy Asia theft pattern, strategic theft growth, coordination failure) are all anchored to High-confidence primary sources; the weak claims are explicitly labeled in the draft and do not undermine the main thesis."
+}

@@ -1,0 +1,44 @@
+{
+  "claim_id": "VC-1.13",
+  "verdict": "REFINED",
+  "updated_claim": "Thailand imported coal consumption (2023): 18.1 Mt total coal imported, of which 11.2 Mt consumed by the industrial sector (non-power manufacturing), 4.1 Mt by IPP power producers, and 2.8 Mt by small power producers (SPP, many of which are industrial co-generation). Additionally, 12.7 Mt of domestic lignite was consumed exclusively by EGAT (state power utility) at Mae Moh. The original ~11.2 Mt figure is confirmed for the 'Industry*' sector per EPPO classification, but the full picture is: total coal imports = 18.1 Mt, power sector coal (IPP) = 4.1 Mt, industrial coal = 11.2 Mt; with a further definitional question whether SPP (2.8 Mt) counts as industrial. Sub-bituminous coal (11.7 Mt of imports) originates predominantly from Indonesia; bituminous (6.0 Mt) from Australia and Russia. Thailand produces no commercial coal — all 18.1 Mt of coal is imported. Indonesia is dominant supplier of the sub-bituminous coal that industrial users prefer.",
+  "sources_found": [
+    {
+      "url": "https://www.eppo.go.th/epposite/images/Energy-Statistics/energyinformation/Energy_Statistics/Coal-Lignite/T04_01_02.xls",
+      "type": "primary",
+      "publication": "EPPO Thailand (Energy Policy and Planning Office) — Table 4.1-2: Consumption of Coal and Lignite Classified by Sector (Thousand Tons), Historical Series 1986–2025, last updated April 2026",
+      "date": "2026-04-10",
+      "key_quote": "2023 data (thousand tons): Coal-IPP=4059.619, Coal-SPP=2782.941, Coal-Industry*=11214.010, Coal Total=18056.570; Lignite-EGAT=12743.121, Lignite-Industry=51.207, Lignite Total=12794.328; Grand Total (Coal+Lignite)=30850.898"
+    },
+    {
+      "url": "https://www.eppo.go.th/epposite/images/Energy-Statistics/energyinformation/Energy_Statistics/Coal-Lignite/T04_02_01.xls",
+      "type": "primary",
+      "publication": "EPPO Thailand — Table 4.2-1: Coal Import by Type (Customs Department data compiled by EPPO), updated March 2025",
+      "date": "2025-03-06",
+      "key_quote": "2023 total coal imports: 18056.570 thousand tons. Breakdown: Bituminous=6003.176 kt, Other Coal (sub-bituminous)=11716.741 kt, Anthracite=129.666 kt, Lignite=170.154 kt, Coking=36.802 kt. 2022 total=21532.634 kt; 2024 total=18451.822 kt."
+    },
+    {
+      "url": "https://www.eppo.go.th/epposite/images/Energy-Statistics/energyinformation/Energy_Statistics/Coal-Lignite/T04_01_01.xls",
+      "type": "primary",
+      "publication": "EPPO Thailand — Table 4.1-1: Production and Consumption of Lignite (EGAT/Mae Moh), source DPIM and EGAT, compiled by EPPO",
+      "date": "2026-04-10",
+      "key_quote": "2023 lignite: EGAT Mae Moh production=12810881 tons, EGAT consumption=12743121 tons; Others (industry)=51207 tons. Thailand has no commercial coal mining — all imported coal figures represent 100% imports."
+    },
+    {
+      "url": "https://www.eppo.go.th/index.php/en/en-energystatistics/coal-and-lignite",
+      "type": "primary",
+      "publication": "EPPO Thailand — Coal and Lignite Statistics landing page (gateway to all XLS tables, Tableau dashboards, and historical series 1986–2024)",
+      "date": "2026-04-10",
+      "key_quote": "Official EPPO coal statistics portal. Tables T04_01_02 (sector consumption), T04_02_01 (imports by type), T04_02_01-2 (imports by country-year) are publicly available for download without paywall."
+    }
+  ],
+  "confidence_after": "high",
+  "research_notes": {
+    "original_claim_accuracy": "The 11.2 Mt figure is precisely confirmed by EPPO Table 4.1-2 (Coal Industry* = 11214.010 thousand tons for 2023). The original Statista secondary source had the right number.",
+    "critical_refinement": "The claim omits that total coal consumption is 18.1 Mt (power + industry) and that an additional 12.7 Mt of DOMESTIC lignite goes to EGAT power. The '11.2 Mt industrial' is only the coal portion of industrial use; industrial also used 0.05 Mt lignite. SPP (2.78 Mt) is ambiguous — officially 'power producers' but many are industrial co-generation plants.",
+    "import_origin": "Indonesia confirmed dominant for sub-bituminous category (11.7 Mt of 18.1 Mt total imports). Bituminous (6.0 Mt) comes from Australia and Russia. No primary source with exact %-by-country for full year 2023 found, but Indonesia's dominance is unambiguous from the sub-bituminous category volume.",
+    "all_imported_claim": "CONFIRMED. EPPO T04_01_01 shows Thailand's only domestic coal is lignite from Mae Moh mine, 100% going to EGAT. There is no domestic commercial coal/bituminous mining. All 18.1 Mt of coal consumed was imported.",
+    "sector_breakdown_for_industrial_boiler_context": "The 11.2 Mt 'Industry' category is the most relevant figure for package boiler analysis. It excludes IPP power plants (dedicated coal power stations). SPP (2.78 Mt) is borderline — these are often sugar mills, paper mills, and cement co-gen plants that DO use package-type or industrial boilers.",
+    "data_currency": "EPPO tables confirmed updated April 2026, with 2023 marked as 'Preliminary' in footnote. Data sourced from Thailand Customs Department."
+  }
+}

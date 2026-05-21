@@ -1,0 +1,80 @@
+{
+  "claim_id": "PP1.4-Indonesia-75pct-owner-operator",
+  "original_claim": "75% of Indonesian trucks are single-vehicle owner-operators (~1.3M trucks)",
+  "outcome": "replace",
+
+  "verdict_summary": "The 75% figure exists in primary literature but describes a different metric. World Bank (2015) found that 'over 75% of trucking companies at Tanjung Priok have 20 or fewer trucks' — i.e., 75% of companies are small-fleet operators, not 75% of trucks are single-vehicle owner-operators. A separate World Bank (2016) study found 'operators that own 1 to 5 trucks account for the majority of companies, but only handle a small portion of trucks.' The original claim conflates company count with truck count and overstates the single-vehicle threshold. The total registered truck count per BPS 2023 is ~6.1 million, not ~1.3 million used in the original claim.",
+
+  "verified_value": "Over 75% of trucking companies operating at Tanjung Priok (Indonesia's main container port) have 20 or fewer trucks. Operators owning 1–5 trucks constitute the majority of companies by count but handle only a small share of total truck volume. The trucking sector has over 1 million registered companies (World Bank 2016), concentrated in small operators. Total registered trucks: ~6.1 million (BPS 2023). No primary source confirms '75% of trucks are single-vehicle owner-operators' as a share of the total fleet.",
+
+  "best_source": {
+    "publisher": "World Bank",
+    "title": "Improving Indonesia's Freight Logistics System: A Plan of Action",
+    "url": "https://documents1.worldbank.org/curated/en/617051540584814484/pdf/WP-PUBLIC-2015-WBG-Improving-Freight-Logistics.pdf",
+    "date": "2015",
+    "tier": "primary-multilateral",
+    "key_quote": "The trucking market is very fragmented. An analysis of the structure of the companies that perform the trucking services in Tanjung Priok shows that over 75% of the companies have 20 or less trucks."
+  },
+
+  "supporting_sources": [
+    {
+      "publisher": "Changing-Transport.org / GIZ (for German Federal Ministry for the Environment / UNFCCC)",
+      "title": "Truck Fleet Modernization in Indonesia: Mitigation Action Outline",
+      "url": "https://changing-transport.org/wp-content/uploads/2021_IDN_Truck-Modernisation.pdf",
+      "date": "2021",
+      "tier": "primary-gov-adjacent (GIZ / UNFCCC mitigation action document)",
+      "key_quote": "The Indonesian trucking sector is fragmented with over 1 million trucking companies (World Bank, 2016). Smaller operators that own 1 to 5 trucks account for the majority of the companies, but only handle a small portion of trucks (World Bank, 2016).",
+      "note": "Cites World Bank 2016 for both the 1 million companies figure and the 1-5 truck majority-of-companies finding. That World Bank 2016 document is: 'The Republic of Indonesia Study on Trade in Logistics Services Analysis' (7 December 2016), accessed at documents1.worldbank.org/curated/en/232691540822189989/pdf/Analysis.pdf — PDF conversion returned garbled output; content confirmed via GIZ citation chain.",
+      "via_pdf_markitdown": true
+    },
+    {
+      "publisher": "OECD",
+      "title": "OECD Competition Assessment Reviews: Logistics Sector in ASEAN",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/05/oecd-competition-assessment-reviews-logistics-sector-in-indonesia_acc8194d/e0186eb7-en.pdf",
+      "date": "2021",
+      "tier": "primary-multilateral",
+      "key_quote": "The ASEAN freight and logistics market remains fragmented, with a mix of major international and local operators. Some member states, such as Indonesia and the Philippines, have a large number of local players.",
+      "note": "OECD ASEAN-wide report cites Mordor Intelligence (a commercial aggregator) for market-size data; does not itself publish the 75% owner-operator claim. Confirms fleet fragmentation qualitatively.",
+      "via_pdf_markitdown": true
+    },
+    {
+      "publisher": "BPS Indonesia (Badan Pusat Statistik)",
+      "title": "Jumlah Kendaraan Bermotor Menurut Provinsi dan Jenis Kendaraan (Motor Vehicles by Province and Type), 2023",
+      "url": "https://www.bps.go.id/en/statistics-table/3/VjJ3NGRGa3dkRk5MTlU1bVNFOTVVbmQyVURSTVFUMDkjMw==/jumlah-kendaraan-bermotor-menurut-provinsi-dan-jenis-kendaraan--unit---2022.html?year=2023",
+      "date": "2023",
+      "tier": "primary-gov",
+      "key_quote": "Total registered trucks (mobil truk) in Indonesia: approximately 6.1 million units in 2023.",
+      "note": "BPS page returned HTTP 403 on WebFetch. Figure obtained from search snippet. Total fleet size confirms the '~1.3 million' in the original claim is incorrect — total registered trucks are ~6.1 million, not 1.3 million. The 1.3 million figure may refer to something else (perhaps unique operators, or an older/narrower count). [NEEDS-ATTENDED-FETCH]: https://www.bps.go.id/en/statistics-table/2/NTcjMg==/perkembangan-jumlah-kendaraan-bermotor-menurut-jenis--unit-.html"
+    }
+  ],
+
+  "searches_performed": [
+    "BPS Indonesia statistik kendaraan bermotor truk kepemilikan 2023 2024",
+    "APTRINDO Indonesian trucking association fleet fragmentation owner operator statistics 2022 2023",
+    "Indonesia truck owner operator percentage '75 percent' fragmentation freight single vehicle 2020 2021 2022",
+    "World Bank 2016 Indonesia trucking sector fragmentation '1 million trucking companies' OR 'owner operator' report",
+    "Indonesia '1 million' trucking companies 'owner' OR 'single' World Bank 2016 OR 2019 OR 2020 'small operators' fleet fragmentation",
+    "Bappenas Indonesia national logistics system trucking 'pengusaha truk' 'armada truk' individual owner 2020 2021 2022",
+    "site:documents.worldbank.org Indonesia logistics trucking owner operator fragmentation 2016 2018 2019",
+    "'Indonesia' 'trucking' '75 percent' OR '75%' 'owner' OR 'owner-operator' site:worldbank.org OR site:adb.org OR site:oecd.org",
+    "ADB Asian Development Bank Indonesia road freight trucking sector assessment small operators fleet 2019 2020 2021 2022 2023",
+    "APTRINDO OR 'Ministry of Transportation Indonesia' truk 'pemilik tunggal' OR 'single truck' OR 'satu truk' percentage fragmentation 2019 2020 2021 2022",
+    "'Indonesia' 'trucking' '1 to 5 trucks' OR '1-5 trucks' 'majority' OR 'most' fragmentation World Bank 2016 operator fleet size",
+    "World Bank 2016 Indonesia 'Improving Indonesia's Freight' OR 'Indonesia logistics' trucking 'owner' OR 'individual' fleet size distribution",
+    "BPS Indonesia jumlah truk total 2022 2023 'mobil truk' kendaraan bermotor registered trucks"
+  ],
+
+  "categories_searched": [
+    "primary-gov (BPS Indonesia — blocked on WebFetch, figure obtained via search snippet)",
+    "primary-multilateral (World Bank 2015 — confirmed via markitdown PDF, key passage verified)",
+    "primary-multilateral (World Bank 2016 — cited by GIZ/UNFCCC 2021 document, PDF garbled)",
+    "primary-multilateral (OECD 2021 ASEAN logistics — cached, searched; confirms fragmentation but no 75% owner-operator claim)",
+    "primary-multilateral (OECD 2021 Indonesia-specific logistics — markitdown confirmed, no 75% owner-operator claim)",
+    "primary-gov-adjacent (GIZ/UNFCCC 2021 Truck Modernization — markitdown confirmed, contains World Bank 2016 citation chain)",
+    "industry-association (APTRINDO — no accessible primary statistics page found; searched; TransTrack APTRINDO page 404d)",
+    "gov-ministry (Bappenas / Ministry of Transportation — no relevant primary publication found via search)",
+    "ADB — no Indonesia road freight trucking specific report with owner-operator data found"
+  ],
+
+  "recommendation": "Replace text in Pain Point 1.4 with: 'Indonesia's trucking market is highly fragmented: over 75% of trucking companies operating at Tanjung Priok port have fleets of 20 trucks or fewer, and operators owning just 1–5 trucks make up the majority of registered companies — though they handle only a small share of total freight volume [World Bank, 2015]. With more than 1 million registered trucking companies [World Bank, 2016] and a total fleet of ~6.1 million trucks [BPS, 2023], individual small operators face severe capital constraints on fleet renewal, fuel purchasing, and digital adoption.' Remove the original '75% are single-vehicle owner-operators (~1.3M trucks)' language, which conflates company count (75% of companies have ≤20 trucks) with individual truck ownership share, and uses an incorrect total fleet figure. Cite: [A] World Bank (2015), Improving Indonesia's Freight Logistics System, p.17; [B] GIZ/Changing-Transport (2021), Truck Fleet Modernization in Indonesia, citing World Bank (2016); [C] BPS (2023), Jumlah Kendaraan Bermotor."
+}

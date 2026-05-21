@@ -1,0 +1,38 @@
+{
+  "claim_id": "PP2.3-cost-4",
+  "original_claim": "Haulio revenue: $25M (Dec 2023) → $15M (Oct 2024); 40% decline; 32 employees (July 2024)",
+  "original_score": "L",
+  "new_score": "L",
+  "outcome": "confirmed-scarce",
+  "searches_performed": [
+    "Haulio Singapore revenue funding 2024 Heliconia Capital PSA",
+    "Haulio Alvin Ea revenue growth metrics interview 2024",
+    "Haulio 2024 employees layoffs downsizing site:techinasia.com OR site:e27.co OR site:dealstreetasia.com",
+    "Haulio Singapore 2024 revenue decline employees TechInAsia e27",
+    "Haulio Alvin Ea interview 2024 2025 revenue growth",
+    "Haulio PSA Singapore partnership announcement volume 2024"
+  ],
+  "categories_searched": [
+    "primary-gov (ACRA BizFile — paywalled, not accessible)",
+    "primary-multilateral (none applicable)",
+    "trade-press (TechInAsia, e27, DealStreetAsia, KrAsia, Vulcan Post — no 2024 revenue/employee figures found)",
+    "company-blog (haulio.io/blog — no financial disclosures)",
+    "CEO-interview (Aspire Feb 2025, KrAsia Jul 2021, Evolution Jobs May 2021 — no revenue figures)",
+    "secondary-aggregators (ZoomInfo, Tracxn, LeadIQ, CBInsights — all appear to re-surface Getlatka data)",
+    "partner-announcements (PSA, Heliconia, SGTraDex — no revenue or volume figures)"
+  ],
+  "new_sources": [],
+  "key_findings": [
+    "The $25M (Dec 2023) and $15M (Oct 2024) revenue figures, plus 32-employee count (Jul 2024), originate exclusively from Getlatka.com, an unaudited self-reported private-company revenue database.",
+    "Secondary aggregators (ZoomInfo, Tracxn, LeadIQ, CBInsights) echo these same figures but all trace back to Getlatka as the apparent single source; they do not constitute independent corroboration.",
+    "No named-author trade press article from TechInAsia, e27, DealStreetAsia, KrAsia, or Vulcan Post discloses Haulio revenue or employee headcount figures for 2023 or 2024.",
+    "The Aspire Singapore article (Feb 2025) — the most recent CEO interview found — contains no financial metrics.",
+    "The thechain.email domain hosting an Alvin Ea interview has expired and is now listed for sale; content is inaccessible.",
+    "Haulio's own blog (haulio.io) contains no revenue disclosures or employee count announcements.",
+    "ACRA BizFile for Haulio Pte Ltd financial filings requires payment and was not accessed; this remains a potential but unverified primary source.",
+    "The Series A press release (Jan 2022) notes 'significant revenue growth in 2021' but gives no figure.",
+    "The Haulio-SGTraDex/PSA integration (July 2024) announcement contains no volume or revenue metrics."
+  ],
+  "revised_claim_text": "[ASSUMED-N]: Haulio revenue reportedly declined approximately 40% in 2024 ($25M Dec 2023 → $15M Oct 2024 per Getlatka unaudited estimates); employee headcount dropped from ~77 to ~32 over the same period per same source. No independent trade press or primary disclosure corroborates these figures. To validate: obtain ACRA BizFile financials for Haulio Pte Ltd, or secure direct disclosure from CEO Alvin Ea.",
+  "notes": "Confirmed scarcity. All secondary aggregators (ZoomInfo, Tracxn, LeadIQ) appear to re-surface the same Getlatka data point rather than independently verifying it. The 40% revenue decline and 32-employee count should not be stated as fact in the artifact. ACRA BizFile is theoretically accessible for a fee and would be the recommended next step for a paying researcher. Score remains L."
+}

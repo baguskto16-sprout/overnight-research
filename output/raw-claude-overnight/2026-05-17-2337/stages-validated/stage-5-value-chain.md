@@ -1,0 +1,223 @@
+## Stage 5: Security, Escort & Physical Protection
+
+*Run ID: 2026-05-17-2337 | Generated: 2026-05-18*
+
+*TT Club/BSI 2025 Cargo Theft Report processed via markitdown (PDF, primary source). Brinks NYSE:BCO audited 2024 earnings. Loomis LOOMIS.ST audited 2024 annual report. Prosegur Madrid Bolsa 2024 audited results. GardaWorld FY2024 guidance (private, PE-disclosed). Verisk CargoNet Q2 2025 and FY2025 analysis. Overhaul Series C ($105M) announcement August 2025.*
+
+---
+
+### Description
+
+Security, escort, and physical protection is the layer of the logistics value chain that applies human presence, armored hardware, GPS-enabled locking devices, intelligence data, and incident-response coordination to reduce the probability and cost of cargo theft, hijacking, and diversion. The stage spans two economically distinct sub-segments: (a) the large-scale **cash and valuables logistics** market, dominated by Brinks, Loomis, GardaWorld, and Prosegur, which moves currency, banknotes, jewelry, and high-value commodities in armored vehicles; and (b) the emerging **in-transit cargo security platform** market, where Overhaul (post-SensiGuard acquisition), CargoNet/Verisk, and a fragmented base of escort vendors apply IoT geofencing, AI-driven risk scoring, and 24/7 monitoring control towers to protect freight on commercial trucks. These two sub-segments are converging: Overhaul now combines IoT monitoring with physical escort dispatch, while traditional armored logistics firms (Brinks Global Services) compete for high-value cargo air/road shipments previously handled by freight forwarders. In SEA, neither sub-segment is well-developed: cargo security escort is informal and relationship-based, cargo theft intelligence platforms have no regional footprint, and the TT Club/BSI 2025 report names Indonesia (5% of global theft incidents) as a top-ten country globally for cargo crime.
+
+---
+
+### Activities
+
+1. **Physical escort and convoy security for high-value in-transit cargo** — Deploying armed or unarmed security personnel in escort vehicles accompanying commercial freight trucks carrying electronics, pharmaceuticals, luxury goods, automotive parts, or other high-value loads. Escort teams maintain radio/cellular contact with dispatch control centers, log deviations from approved routes, and are authorized to intervene or alert law enforcement on anomalies. The revenue model is day-rate per escort vehicle plus personnel costs; tier-1 players (Brinks Global Services, Prosegur) operate this alongside their cash-in-transit businesses; specialized cargo escort firms (SGI Solutions Group International, IPSA International, WJM Cargo Security in the UK) focus on freight specifically. (1, 2)
+
+2. **Armored vehicle cash-in-transit and valuables logistics** — Operating fleets of armored vehicles (Brinks: 16,400 vehicles globally; GardaWorld: 3,500 in North America; Loomis: ~400 branches in 27 countries) to transport currency, precious metals, jewelry, diamonds, banknotes, and high-value documents for central banks, commercial banks, retailers, government authorities, and mining/manufacturing customers. Revenue is per-route recurring service contracts, typically multi-year. This constitutes the majority of Brinks ($5.01B total 2024 revenue; CVM contributing the largest share), Loomis (SEK 30.4B 2024 revenue), and Prosegur (€2.09B Cash division 2024) total revenues. Not identical to freight cargo escort, but the infrastructure (armored vehicles, command centers, global network) is increasingly applied to high-value commercial freight. (3, 4, 5)
+
+3. **GPS-enabled cargo lock and asset tracker deployment** — Installing GPS-enabled, tamper-evident mechanical locks on container doors, trailer kingpins, or cargo compartments (Apex Lock, PadLock Pro, Cargo Lock series) with real-time cellular/satellite tracking transmitted to shipper or security operations center dashboards. Alert thresholds include: unauthorized door open, route deviation >X km, extended stop in non-approved location, battery cut, or GPS signal loss. Geotab's GO Anywhere product line offers both hardwired and battery-powered trackers with Starlink Direct-to-Cell for coverage in cellular dead zones; CalAmp (now private, post-Chapter 11 July 2024 restructure) historically served this market before bankruptcy. (6, 7)
+
+4. **Cargo theft intelligence, monitoring, and incident response** — Operating 24/7 global security operations centers (GSOCs) that ingest IoT data streams, apply AI-driven risk scoring (Overhaul's RiskGPT), generate geofence breach alerts, and coordinate physical response through law enforcement partnerships and recovery specialists. Overhaul (Austin, TX) operates 7 global GSOCs after acquiring SensiGuard from Carrier/Sensitech (February 2023), and claims to protect $1.4 trillion in cargo trade with a 99.9% shipment protection rate. CargoNet (Verisk) maintains the US and Canada's largest cargo theft incident database (3,625 incidents in 2024; estimated $454.9M losses) and issues real-time alerts to subscribers. The key product differentiation vs. pure telematics (Stage 3) is active incident response — Overhaul's team contacts law enforcement, provides real-time location data, and coordinates recovery, rather than simply alerting the shipper. (8, 9, 10)
+
+5. **Secure parking network access and theft-hardened stop management** — Operating or accrediting certified secure truck parking facilities that meet minimum standards for perimeter security, video surveillance, and driver access control to prevent the dominant theft mode of "parking-phase theft" (TT Club/BSI 2025: approximately 20% of global theft by category is "theft from vehicle" while parked, and 50% of Asia incidents are facility-based). In Europe, Bosch Secure Truck Parking operates a digital booking platform for certified secure lots; TAPA EMEA's PSR-certified network grew 150%+ year-on-year in 2025 through partnerships with SNAP (digital mobility platform) and TRAVIS Road Services. In the US, CargoNet's TruckPark service and Truck Parking Club aggregate certified-secure lot data. Secure parking is structurally absent in SEA freight corridors. (11, 12, 13)
+
+---
+
+### Revenue Model
+
+Physical security escort: day-rate per escort team/vehicle plus per-shipment load charges (non-disclosed publicly; market pricing ~$500–$2,000/day for armed escort depending on geography and risk classification); armored cash logistics: recurring per-route or per-collection fees under multi-year contracts with volume discounts; cargo security platform (Overhaul, CargoNet): annual SaaS subscription for monitoring per-shipment value tier, plus per-event recovery coordination fees and an optional embedded cargo insurance premium (Overhaul launched a combined theft-prevention + cargo insurance program August 2024); GPS lock/tracker hardware: $150–$500 hardware sale plus $15–30/month cellular/satellite subscription.
+
+---
+
+### Cost Drivers
+
+Armored vehicle fleet capex and maintenance (Brinks: 16,400 vehicles globally represents hundreds of millions in fleet book value); personnel cost for armed/trained security staff (labor-intensive, 24/7 shift requirements); 24/7 GSOC staffing and technology infrastructure (Overhaul: 7 global operations centers); insurance and bonding for loss exposure on transported valuables; law enforcement relationship management and intelligence-sharing network participation (CargoNet/NICB partnerships require FBI and law enforcement access); cellular/satellite data costs for real-time tracking at scale; hardware manufacturing, logistics, and installation for GPS locks and trackers.
+
+---
+
+### Market Size
+
+| Metric | Value | Confidence | Sources |
+|--------|-------|------------|---------|
+| Global cash logistics market (CIT + cash processing) | $27.5B (2024); projected $35.3B by 2030 at 4.31% CAGR | Low — single commercial aggregator (Cognitive Market Research); no government statistical primary source; Brinks ($5.01B) + Loomis (~$2.9B USD) + Prosegur Cash ($2.09B) + GardaWorld (~$5.9B total) triangulate to $15–16B for top-4 players alone, suggesting $27.5B total is plausible but scope is ambiguous | (14), (3), (4), (5), (15) |
+| Global secure logistics market (broader definition including jewelry, pharma, valuables transport) | $94.2B (2024); $195.5B projected 2034 | Low — Precedence Research commercial aggregator; broader scope than CIT-only; includes armored vehicles, surveillance, facility security; auto-Low under skill rules for single commercial report | (16) |
+| Global cargo security market (cargo theft prevention solutions: hardware + software + services) | $3.1B (2024); $7.8B projected 2033 at 10.7% CAGR; North America 37% of 2024 market share; APAC projected highest CAGR at 13.2% | Low — MarketIntelo commercial aggregator; cross-checked against audited player revenues (Overhaul ~$195M total funding, revenue not disclosed; CargoNet is a Verisk business unit with no separate revenue disclosure; Geotab asset trackers a subset of 5M subscriptions) — no bottom-up confirmation | (17) |
+| Brinks Company total revenue 2024 (NYSE: BCO, audited) | $5,012M (+3% reported; +12% organic); Rest of World segment (incl. Asia/MEA/BGS international routes) $824M (+2% reported); BGS (Brinks Global Services) noted as growing within Rest of World | High — NYSE:BCO audited Q4/FY2024 earnings press release | (3) |
+| Loomis AB total revenue 2024 (LOOMIS.ST, audited) | SEK 30,442M (~$2.87B USD at 10.6 SEK/USD); USA segment ~SEK 16B; Europe & Latin America ~SEK 15B; EBITA margin 12.0% (up from 10.7% in 2023); 27 countries, ~400 branches | High — Loomis full-year report January–December 2024, audited (Stockholm-listed) | (4) |
+| Prosegur Cash revenue 2024 (Bolsa Madrid: PSG, audited) | €2,090M (+12.3% YoY; exceeded €2B for first time); Prosegur Security (broader services incl. guards, tech) €2,502M; total group €4,908M | High — Prosegur 2024 audited press release | (5) |
+| GardaWorld revenue FY ending January 31, 2024 (private, PE-disclosed) | $5,875M–$5,925M (FY2024 guidance); management-backed majority recapitalization at C$13.5B enterprise value (October 2024) | Medium — GardaWorld financial guidance via PRNewswire; PE-disclosed valuation; no audited public filing | (15) |
+| US and Canada cargo theft losses 2025 (Verisk CargoNet annual) | $725M estimated (+60% from 2024's $454.9M); 2,646 confirmed incidents (+18% YoY); avg value $273,990 (+36%) | High — Verisk CargoNet annual analysis (January 2026); industry-standard primary source; methodology disclosed | (8) |
+| US and Canada cargo theft Q2 2025 (Verisk CargoNet quarterly) | 884 incidents (+13% YoY); estimated $128M+ losses; avg $203,586 per incident | High — Verisk CargoNet Q2 2025 Supply Chain Risk Trends Analysis | (9) |
+| Latin America cargo theft losses (IUMI / InsightCrime) | ~$5.5B annually (2023 estimate from IUMI via InsightCrime; Brazil 68% of South American incidents); Mexico: cargo theft every 33 minutes on major highways (2025 estimate); 73% of Mexican thefts involve violence | Medium — IUMI cited via third-party (InsightCrime); Mexico statistics from Overhaul Mexico Cargo Theft Report Q1 2025 | (18), (19) |
+| Europe cargo theft financial losses (TAPA EMEA estimated) | ~€8.2B annually; TAPA EMEA Intelligence System recorded 39,422 freight theft incidents across 50 countries in the two years to March 2026; average €1.59M worth of goods targeted every 24 hours | Medium — TAPA EMEA published figures (Bosch/AJOT cross-reference); not government statistics; TAPA is industry body primary source for European cargo crime | (12), (13) |
+
+**Data gap — SEA-specific cargo security market size:** No government statistical agency (BPS Indonesia, DOSM Malaysia, NSO Thailand, SingStat), multilateral body (ADB, World Bank, ASEAN Secretariat), TAPA APAC, or named consultancy-authored report has published a country-specific market size for cargo security escort services, GPS lock deployment, or cargo theft intelligence platforms in Southeast Asia as of research date. TAPA APAC's Cargo Crime Monitor database exists but country-level APAC aggregate reports are member-restricted with no public citation.
+
+**Data gap — Overhaul revenue:** Overhaul raised $105M Series C (August 2025, total $195M raised); revenue not disclosed. No audited ARR figure available. Revenue not estimable from public filings.
+
+---
+
+### Current Players by Region
+
+**North America (US primary; Canada secondary):**
+- **Brinks Company (NYSE: BCO)** — Global leader; $5.01B total 2024 revenue; 68,200 employees; 16,400 armored vehicles; Brinks Global Services (BGS) provides cross-border secure logistics (diamonds, jewelry, pharma, electronics, currency) in 100+ countries; market leader in cash-in-transit. North America segment $1.65B (2024). SEA: YES — Brinks Singapore established 1989; market leader in Singapore, Malaysia, Indonesia, Brunei; BGS covers Thailand and Philippines; Singapore office ~$27.5M annual revenue; new Bangkok and Singapore facilities announced. (3, 20)
+- **GardaWorld** — Private (BC Partners PE exit; management-majority + HPS Investment Partners minority from October 2024 C$13.5B recapitalization); $5.9B FY2024 guidance; 3,500 armored vehicles North America; cash-in-transit + cargo escort + international risk; largest private security employer globally. SEA: Limited — operates mainly in North America and select international corridors; no confirmed dedicated SEA cargo escort operation. (15)
+- **Allied Universal / G4S** — Allied Universal acquired G4S (April 2021); combined ~$20B revenue; G4S Indonesia has 11,800 employees and provides cargo escort and security guarding; G4S Singapore operates security solutions. SEA: YES — G4S Indonesia (cargo escort services confirmed); G4S Singapore (security services); G4S Thailand (confirmed operations); combined Allied Universal is the largest physical security provider in several SEA markets. (21)
+- **Overhaul (private)** — Austin TX; founded 2016; acquired SensiGuard from Carrier/Sensitech February 2023 (adding Brazil, Mexico, Czech Republic offices, 350+ employees); acquired FreightVerify for item-level tracking; $195M total raised ($55M Series B January 2025; $105M Series C August 2025 led by Springcoast + Edison Partners + Morgan Stanley 1GT); 7 global GSOCs; clients: Microsoft, Bristol Myers Squibb, CEVA Logistics, Arvato, Dyson; protects $1.4T cargo trade; 99.9% protection rate claimed. SEA: NO — no SEA office or confirmed APAC commercial deployment found. (10, 22)
+- **CargoNet (Verisk Analytics, NASDAQ: VRSK)** — Largest US/Canada cargo theft incident database; 3,625 incidents in 2024 ($454.9M losses); Q2 2025 +13% YoY; publishes quarterly and annual analyses; provides real-time theft alerts to subscriber carriers; partners with NICB and FBI for law enforcement handoff. SEA: NO — North America-focused incident database. (8, 9)
+
+**Europe:**
+- **Securitas AB (SECU-B Stockholm, audited)** — Total 2024 revenue MSEK 161,921 (~$15.3B); 336,000 employees in 44 markets; security services + technology and solutions; provides cargo escort and pharmaceutical in-transit security through specialized healthcare logistics units; no separate cargo security segment disclosure. SEA: Partial — Securitas operates in select APAC markets; no confirmed SEA cargo escort division. (23)
+- **Loomis AB (LOOMIS.ST, audited)** — SEK 30.4B total 2024 revenue (~$2.87B); 27 countries; primarily Europe and US; cash-in-transit, cash management services, and international valuables logistics (Via Mat legacy); 12% EBITA margin 2024; no declared Asia operations. SEA: NO — operates US and Europe/Latin America only; no SEA cash logistics or cargo escort confirmed. (4)
+- **Prosegur (Bolsa Madrid: PSG, audited)** — €4.9B total 2024 group revenue; Cash division €2.09B; Security division €2.5B (guards, escort, technology); obtained IATA airfreight certification in Brazil (expanding international cargo); regional presence in Latin America primary; Prosegur Singapore Pte Ltd confirmed with manned guarding and logistics services. SEA: Partial — Prosegur Singapore office confirmed; broader SEA footprint (Indonesia, Malaysia, Thailand) via security division but primarily manned guarding not cargo-specific escort. (5, 24)
+- **Bosch Secure Truck Parking** — Bosch subsidiary; Europe-only; digital booking platform for certified-secure truck parking; TAPA PSR-certified network partner; expanded with SNAP partnership for multi-platform booking; UK launch confirmed. Addresses the 20% of European cargo theft occurring at unsecured parking stops. SEA: NO. (12)
+
+**Latin America (specific high-theft markets):**
+- **Prosegur Cash (Brazil, Argentina)** — Largest private secure logistics player in Latin America; cash-in-transit and high-value cargo escort across Brazil and Argentina. Brazil represents 68% of South American cargo theft incidents (IUMI). SEA: No Latin American operations in SEA.
+- **Pinkerton (Altair subsidiary)** — Global risk intelligence firm; São Paulo manufacturing threat intelligence and cargo crime analysis for Brazil/LatAm operations; predictive analytics for cargo routing. SEA: YES — Pinkerton has APAC operations including Singapore; primarily risk intelligence, not physical escort. [ASSUMED-1]
+- **Carga Segura (Mexico)** — Mexico-specific cargo security service operating in highest-theft corridors (Puebla, Mexico State, Guanajuato, Michoacán); armed escort and cargo monitoring for Mexico domestic moves. SEA: NO. [ASSUMED-2: Named in orchestrator stage scope; no audited revenue data found; Mexico-domestic only]
+
+**Southeast Asia (where present):**
+- **Brinks Singapore / Brinks Malaysia / Brinks Indonesia** — Market leader for cash-in-transit and secure valuables logistics; established 1989; serves banks, retailers, mining, jewelry, government; Singapore operations (~$27.5M revenue); expanded Bangkok and Singapore facilities in 2024; BGS cross-border covers Thailand and Philippines for air cargo security. SEA: YES (confirmed, primary regional player). (20)
+- **G4S Indonesia (Allied Universal subsidiary)** — 11,800 employees; cargo escort, manned guarding, security technology; nationwide Indonesia coverage. G4S Singapore: general security services. G4S Thailand: confirmed operations. SEA: YES (Indonesia, Singapore, Thailand confirmed; Malaysia and Philippines partial). (21)
+- **Prosegur Singapore** — Manned guarding and integrated security solutions; presence at Safety & Security Asia 2025; broader Indonesia, Malaysia, Thailand security coverage. Limited cargo-specific escort vs. general guarding. SEA: Partial. (24)
+- **Titan Security Global (Indonesia)** — Indonesia-focused cargo security contractor; provides armed and unarmed security personnel for goods transport; convoy escort; local market only. SEA: Partial (Indonesia-domestic). [ASSUMED-3]
+
+**Data gap — purpose-built cargo theft intelligence or IoT-escort platform in SEA:** No SEA-headquartered platform equivalent to Overhaul or CargoNet identified. No GPS cargo lock vendor with SEA-native GSOC confirmed. The nearest approximation is Geotab's GO Anywhere tracker (Singapore office; resellers in Indonesia, Thailand, Malaysia, Philippines) providing asset tracking but not active incident response. Cartrack (Stage 3) provides GPS and stolen vehicle recovery but not cargo-specific 24/7 escort dispatch.
+
+---
+
+### Preliminary Pain Points (this stage)
+
+1. **Physical cargo theft in SEA is severe and underreported, but no regional intelligence platform exists to aggregate or respond to incidents.** Indonesia ranked 5th globally for cargo theft incidents (TT Club/BSI 2025 Report: 5% of global incidents); Vietnam, China, and Bangladesh also in the top-10 Asia group. Despite this, there is no SEA equivalent of CargoNet providing a centralized incident reporting database, real-time theft alerts, or law enforcement data-sharing infrastructure for freight carriers and shippers. Industry participants rely on informal WhatsApp group alerts. (1, 8)
+
+2. **Incident response coordination is multi-party, manual, and slow — the working hypothesis WH4 is evidenced.** When a theft occurs, the typical notification chain requires the driver to contact the transport company, who contacts the shipper, who contacts the insurer and files a police report — a serial process taking hours before a law enforcement response is activated. Overhaul's value proposition is shortening this with pre-established law enforcement partnerships and a 24/7 GSOC, achieving a 96% US recovery rate vs. industry baseline recovery rates below 20% without real-time alerts. The critical recovery window is the first 30 minutes; most SEA thefts go unreported for hours or days. (10, 25)
+
+3. **Security tool deployment is fragmented by purchasing party — WH3 is evidenced.** GPS locks are purchased by shippers or 3PLs and deployed on specific high-value loads; telematics (Stage 3) is owned by carriers; insurance is contracted separately by shippers; physical escort is arranged by 3PLs or shippers independently. There is no shared visibility layer across these security investments: the shipper's GPS lock data is not visible to the 3PL's telematics vendor, which is not connected to the insurer's loss-prevention platform. Overhaul's device-agnostic GSOC model is the only commercially documented attempt to aggregate across these layers, but it requires enterprise-level SaaS contracts that SEA mid-tier shippers cannot afford. (10, Stage 1 context, Stage 3 context)
+
+4. **GPS jamming defeats cargo tracker hardware during active theft events.** The same GPS jammers (widely sold for $30–100 online) that blind telematics (Stage 3 pain point) also defeat cargo GPS locks. During an active theft, criminals routinely deploy jammers to prevent real-time tracking. Geotab's GO Anywhere Plus uses Starlink Direct-to-Cell connectivity as a jammer-resistant backup layer, but this is a premium hardware tier. In SEA, where lower-cost Chinese-manufactured trackers (Jimi IoT, Concox) predominate, jammer-resistant connectivity is absent at the market level. (6, Stage 3 context)
+
+5. **Facility-based cargo theft dominates in Asia (50% of incidents) but warehouse security standards are not enforced.** The TT Club/BSI 2025 Asia data shows that 50% of Asian cargo theft incidents occur at warehouses and production sites (vs. 20% globally), and insider involvement accounts for 22% of regional thefts (notably high in Indonesia, India, and China). Cargo security solutions focused on in-transit protection (GPS locks, vehicle escort) do not address the dominant Asia theft vector. No mandated minimum-security standard for commercial warehouses exists in Indonesia, Thailand, or Malaysia equivalent to TAPA TSR (Transported Asset Protection Association Truck Security Requirements) compliance in Europe and North America. (1, 26)
+
+6. **Pharmaceutical and electronics cargo require temperature-verified chain-of-custody that security escort does not provide.** High-value cold-chain pharmaceutical shipments require GDP (Good Distribution Practice) compliance documentation alongside physical security. In SEA, GDP enforcement varies: Singapore HSA has active GDP inspection programs; Indonesia BPOM is less systematic; Thailand FDA GDP framework exists but enforcement is patchy. Security escort providers (G4S, Prosegur) in SEA do not integrate real-time temperature monitoring with their escort services; shippers must layer a separate cold-chain IoT device (Sensitech, Controlant — Stage 4) onto an escort service sourced from a different vendor, creating a documentation gap for claims purposes. [ASSUMED-4]
+
+7. **Secure parking infrastructure is structurally absent across SEA freight corridors.** Europe has identified a 390,000-space deficit in certified-secure truck parking (ESPORG 2025 study); the US has insufficient secure parking on major freight lanes. In SEA, no certified-secure truck parking certification scheme, network, or booking platform exists at all. The TT Club/BSI 2025 report confirms that Asia's incident typology is facility-heavy, but parking-phase theft (driver stops for rest breaks on long runs, e.g., the Jakarta–Surabaya corridor or the Bangkok–Chiang Mai highway) is not tracked separately and is structurally unaddressed. (11, 12, 13)
+
+8. **Armored vehicle providers (Brinks, Prosegur) are optimized for cash logistics, not commercial cargo security.** Brinks Singapore and G4S Indonesia operate primarily for banking clients (cash collection, ATM replenishment, vault services). Their armored vehicle fleets and operational protocols are designed for cash, not general cargo. A shipment of consumer electronics or pharmaceuticals that needs an armed escort from the port to a distribution center requires either a cash-logistics firm to operate outside its core (different risk model, different insurance, different vehicle configuration) or a general security firm (G4S, Securitas) that has escort capability but not the same level of cargo tracking technology integration. No SEA player currently bridges this gap at scale. (20, 21, 23)
+
+9. **Strategic cargo theft using fake carrier identity is growing in SEA as TT Club/BSI 2025 confirms for China, and digital freight platforms create the infrastructure for this.** China's TT Club/BSI 2025 data documents a new pattern: criminals creating fictitious driver and company accounts on digital freight platforms to fraudulently collect cargo. The same digital freight platforms operating in SEA (Kargo Technologies, Deliveree, Haulio, Logisly — Stage 1 and Stage 2 context) use lightweight carrier onboarding workflows and cannot verify driver identity at load pickup, making them structurally identical to the Chinese platforms now exploited for fictitious pickup fraud. No SEA cargo security platform currently monitors digital freight platform bookings for fraudulent pickup patterns. (1, 27)
+
+10. **No SEA insurer or reinsurer has built cargo theft prevention into underwriting through a real-time data feed.** TT Club (mutual insurer for the transport industry) publishes the annual cargo theft report but does not provide a real-time incident monitoring API to its SEA members. Tokio Marine Holdings and Sompo International (the most relevant Japan-linked insurers for a SEA cargo insurance venture) price cargo coverage based on declared value and commodity type, not real-time route risk or GPS alert history. The connection between security platform data and insurance pricing is the structural gap that Overhaul's embedded insurance product (launched August 2024, US-only) attempts to close, but no equivalent exists in any SEA market. [ASSUMED-5]
+
+11. **Response time data is US-centric; SEA response time is structurally worse.** The 30-minute recovery window and 73% recovery rate with real-time alerts (industry benchmark) assume law enforcement response times and GPS coverage comparable to US markets. In Indonesia (roads covering 1.9M+ km across a 5,000-island archipelago), Thailand (notoriously slow administrative processes for formal police reports), and Vietnam (limited cargo-crime-specific law enforcement training), equivalent response times are not achievable even with real-time alert platforms. The security platform value proposition (shorten response time) is structurally harder to deliver in SEA — a fact no vendor has publicly documented or quantified. (25, 26)
+
+12. **Cargo theft at the Strait of Malacca surged 281% YoY (2025), but maritime security for SEA freight is siloed from land-side cargo security.** The TT Club/BSI 2025 report documents an 85% global piracy increase in H1 2025 and a 281% surge specifically at the Strait of Malacca and Singapore. Maritime piracy (sea piracy) and land-based cargo theft are tracked separately, covered by different insurance policies, and managed by entirely different security vendors — ReCAAP ISC (maritime) vs. cargo escort firms (land). A shipment moving through the Malacca Strait and then by truck through Indonesia or Malaysia passes through two completely unconnected security frameworks with no shared visibility. (1, 28)
+
+---
+
+### Sources for this stage
+
+(1) TT Club and BSI Consulting, *BSI Consulting and TT Club 2025 Cargo Theft Report* (April 2026). PDF processed via markitdown. https://www.ttclub.com/fileadmin/uploads/tt-club/Documents/Corporate_Literature/TT_Club_BSI_2025_Cargo_Theft_Report_FINAL.pdf — Primary: Top countries Indonesia 5% global; Asia facility-heavy (50%); insider 22% global; Strait of Malacca piracy +281% H1 2025; trucks 70% of all incidents globally.
+
+(2) TT Club and BSI, 2025 Cargo Theft Report summary press release. https://www.ttclub.com/news-and-resources/news/article/tt-club-bsi-consulting-warn-of-escalating-global-cargo-theft-as-criminal-tactics-grow-increasingly-sophisticated
+
+(3) Brinks Company (NYSE: BCO), "Brink's Announces Fourth-Quarter and Full-Year 2024 Results," February 26, 2025 (audited). Total revenue $5,012M; geographic segments (NA $1,650M; LatAm $1,311M; Europe $1,227M; Rest of World $824M); adjusted EBITDA $912M; free cash flow $400M. https://www.globenewswire.com/news-release/2025/02/26/3032849/35146/en/Brink-s-Announces-Fourth-Quarter-and-Full-Year-2024-Results.html
+
+(4) Loomis AB (LOOMIS.ST), Full-Year Report January–December 2024. Revenue SEK 30,442M; USA segment ~SEK 16B; Europe & Latin America ~SEK 15B; EBITA margin 12.0%; 27 countries, ~400 branches. https://www.prnewswire.com/news-releases/loomis-full-year-report-january--december-2024-302368508.html and https://finance.yahoo.com/news/loomis-ab-loimf-q4-2024-070345063.html
+
+(5) Prosegur, "Prosegur increases 2024 consolidated net profit to €78 million (+19%)," 2025. Audited: Cash division €2,090M (+12.3%); Security division €2,502M; total group €4,908M. https://www.prosegur.com/en/media/article/press/prosegur-eleva-su-beneficio-neto-consolidado-en-2024-hasta-los-7-8-millones-de-euros-y-supera-todos-los-objetivos-del-ano
+
+(6) Geotab, "GO Anywhere Asset Tracking Family" press release and product page. https://www.geotab.com/press-release/go-anywhere-asset-tracking/ and https://www.geotab.com/products/asset-tracking/
+
+(7) CalAmp Chapter 11 bankruptcy filing, July 2024, and restructuring: Lynrock Lake takes CalAmp private August 2024 after $229M debt-for-equity swap. https://www.automotive-fleet.com/10222855/calamp-files-bankruptcy-restructuring-finances and https://www.calamp.com/press-releases/lynrock-lake-takes-calamp-private/
+
+(8) Verisk CargoNet, "Cargo Theft Losses Surge to Estimated $725 Million in 2025, Verisk CargoNet Analysis Reveals," January 2026 (FY2025 data). https://www.verisk.com/company/newsroom/cargo-theft-losses-surge-to-estimated-$725-million-in-2025-verisk-cargonet-analysis-reveals/ — Primary: 2,646 incidents FY2025; $725M estimated; avg $273,990 per incident; +60% vs 2024.
+
+(9) Verisk CargoNet, "Cargo Theft Surges 13% Year-Over-Year in Second Quarter 2025," Q2 2025 Supply Chain Risk Trends Analysis. https://www.verisk.com/company/newsroom/cargo-theft-surges-13-year-over-year-in-second-quarter-2025-as-organized-crime-groups-target-high-value-commodities/
+
+(10) Overhaul, Series C $105M press release (August 2025); Overhaul Series B $55M (January 2025); SensiGuard acquisition (February 2023). https://www.prnewswire.com/news-releases/overhaul-secures-105-million-series-c-to-drive-platform-innovation-and-expansion-302533989.html and https://www.prnewswire.com/news-releases/overhaul-secures-55-million-in-funding-led-by-springcoast-partners-to-accelerate-ai-innovation-and-strategic-growth-302348146.html and https://www.prnewswire.com/news-releases/overhaul-acquires-sensiguard-to-become-largest-in-transit-supply-chain-cargo-security-provider-301739973.html
+
+(11) ESPORG, European Secure Parking Organisation, "The EU's push for safe and secure truck parking," December 2025. Parking space deficit estimated at 390,057 spaces across Europe, projected to rise to 483,000 by 2040. https://esporg.eu/2025/12/15/the-eus-push-for-safe-and-secure-truck-parking/
+
+(12) TAPA EMEA, "TAPA truck parking network grows 150% across Europe amid theft rise" (2026 data, SNAP + TRAVIS partnerships). https://www.stattimes.com/cargo-airports/tapa-truck-parking-network-grows-150-across-europe-amid-theft-rise-1358783 and TAPA EMEA estimates ~€8.2B annual European cargo theft losses: https://ajot.com/news/tapa-partners-with-bosch-secure-truck-parking-boosting-secure-parking-places-by-over-42-in-12-months
+
+(13) Bosch Secure Truck Parking — European certified-secure parking platform; TAPA PSR network partner; QR/ALPR access control. https://www.bosch-secure-truck-parking.com/en/ and https://www.bosch.com/stories/secure-truck-parking/
+
+(14) Cognitive Market Research, "Cash in Transit Services Market" — $16.8B (2024 CIT-specific); $27.5B (broader cash logistics); Brinks/Loomis/GardaWorld/Prosegur jointly >60% share. https://www.cognitivemarketresearch.com/cash-in-transit-services-market-report — [Low confidence: single commercial aggregator; use as directional only]
+
+(15) GardaWorld, "Financial Guidance for Fiscal Year Ending January 31, 2024" (PRNewswire, January 2024). Revenue guidance $5,875M–$5,925M; October 2024 management-majority recapitalization at C$13.5B enterprise value with HPS Investment Partners. https://www.prnewswire.com/news-releases/gardaworld-announces-financial-guidance-for-fiscal-year-ending-january-31-2024-and-intends-to-amend-the-maturity-date-of-its-term-loan-b-due-2026-to-2029-302040627.html
+
+(16) Precedence Research, "Secure Logistics Market Size to Hit USD 195.54 Bn By 2034." $94.2B (2024) → $195.5B (2034). https://www.precedenceresearch.com/secure-logistics-market — [Low confidence: single commercial aggregator; scope ambiguous]
+
+(17) MarketIntelo, "Cargo Security Market Research Report 2033." $3.1B (2024) → $7.8B (2033) at 10.7% CAGR; North America 37% share; APAC highest CAGR 13.2%. https://marketintelo.com/report/cargo-security-market — [Low confidence: single commercial aggregator; auto-Low under skill rules]
+
+(18) InsightCrime, "Land piracy leads to loss of $30 billion a year in Latin America" (citing IUMI 2023 estimate of $5.5B direct annual losses). https://insightcrime.org/news/brief/land-piracy-leads-to-loss-of-30-billion-a-year-in-latin-america/
+
+(19) Overhaul, Mexico Q1-2025 Cargo Theft Report. 81% of incidents involved violence; 84% of thefts in-transit; Puebla 19% of cases; State of Mexico 19%; food and beverage 34% of targets. https://over-haul.com/wp-content/uploads/2025/05/Mexico-Q1-2025-Cargo-Theft-Report-.pdf (PDF, [NEEDS-ATTENDED-FETCH] for full detail)
+
+(20) Brinks Asia Pacific profile and Singapore operations. Established 1989; market leader Singapore, Malaysia, Indonesia, Brunei; new Bangkok and Singapore facilities; BGS provides air cargo security Thailand and Philippines. https://www.apacoutlookmag.com/company-profiles/110-brinks-asia-pacific and https://sg.brinks.com/
+
+(21) G4S Indonesia (Allied Universal subsidiary) — 11,800 employees; cargo escort, manned guarding nationwide Indonesia coverage. G4S Asia Pacific: https://www.g4s.com/who-we-are/where-we-operate/g4s-in-asia-pacific and G4S Indonesia: https://www.g4s.com/en-id
+
+(22) Overhaul, "Cargo Theft Soars 49% in First Half of 2024," Overhaul H1 2024 Cargo Report; Overhaul platform description. https://www.prnewswire.com/news-releases/cargo-theft-soars-49-in-first-half-of-2024-amid-rising-criminal-sophistication-reveals-overhaul-report-302228584.html
+
+(23) Securitas AB (SECU-B.ST), Full Year Report 2024, January–December. Revenue MSEK 161,921 (~$15.3B); EBITA margin 6.9%; 336,000 employees in 44 markets. https://www.prnewswire.com/news-releases/securitas-ab-full-year-report-2024--januarydecember-302369837.html
+
+(24) Prosegur Singapore Pte Ltd — integrated security solutions, manned guarding, logistics, alarms. Safety & Security Asia 2025 exhibitor. https://www.prosegur.com.sg/ and https://www.safetysecurityasia.com/exhibitors/prosegur
+
+(25) Overhaul platform description: 96% US recovery rate; 7 global GSOCs; law enforcement partnerships. https://www.over-haul.com/solutions/prevent-cargo-theft-tampering — [Low confidence for Overhaul's own performance claims: vendor-marketing site; 96% recovery rate has no third-party audit; use as directional benchmark only; cross-reference with insurance recovery data]
+
+(26) TT Club/BSI 2025 Cargo Theft Report, Asia section: 50% of Asia incidents at warehouses and production sites; only 36% truck; insider 22% of regional thefts. (Same as source 1 above — processed via markitdown)
+
+(27) TT Club/BSI 2025 Cargo Theft Report, Asia section: China criminals creating fictitious driver/company accounts on digital freight platforms for fraudulent cargo collection. (Same as source 1 above)
+
+(28) ReCAAP ISC Annual Report 2024, piracy and armed robbery in Asia. https://www.recaap.org/resources/ck/files/reports/annual/ReCAAP%20ISC%20Annual%20Report%202024%20-%20Final.pdf (PDF, [NEEDS-ATTENDED-FETCH] for full data)
+
+(29) NICB, "Cargo Theft Up 27% in 2024 With Continued Rise Expected" (June 2025). 2,217 US cargo theft events; 49% increase YoY; California + Texas + Florida = 54% of incidents. https://www.nicb.org/news/regional-news/report-shows-california-and-texas-account-over-half-all-cargo-theft-2024 and https://www.carriermanagement.com/news/2025/06/25/276715.htm
+
+(30) IUMI and TAPA EMEA joint warning: "nearly 160,000 cargo-related crimes recorded across 129 countries between 2022 and 2024." https://iumi.com/news/press-release/iumi-and-tapa-emea-warn-of-escalating-cargo-theft-and-freight-fraud/
+
+(31) Munich Re, "Cargo theft tactics and trends report 2025." Asia: India 63% of APAC theft cases; Indonesia 14%; China 11%; Bangladesh 3%; Vietnam 3%. Facility thefts 34% of Asia incidents. https://www.munichre.com/specialty/global-markets-uk/en/insights/cargo-and-freight/cargo-theft-tactics-and-trends-report-2025.html — [NEEDS-ATTENDED-FETCH for full PDF: returned HTTP 403]
+
+---
+
+### Assumptions to validate
+
+[ASSUMED-1]: Pinkerton (Altair subsidiary) operates cargo security risk intelligence services in SEA including Singapore. Pinkerton's website indicates APAC presence but specific SEA cargo security operations were not confirmed from primary sources.
+- To validate: Contact Pinkerton APAC regional office in Singapore; ask whether they provide cargo theft intelligence or escort coordination services for freight operators in Indonesia, Thailand, and Malaysia.
+
+[ASSUMED-2]: "Carga Segura" was named in the orchestrator stage scope as a Mexico-specific specialty cargo security provider. No audited revenue, company website, or verified third-party source was found for this specific entity. Mexico cargo security is dominated by Overhaul (via SensiGuard operations), Laufer Group, and GardaWorld internationally, plus local armed escort firms.
+- To validate: Request Mexico freight security industry directory from Overhaul Mexico operations team or BSI Consulting Mexico office; confirm whether "Carga Segura" is a registered operating company.
+
+[ASSUMED-3]: Titan Security Global Indonesia provides cargo security convoy escort services as a local provider. Company website claims cargo transport security; no revenue, customer count, or independent secondary source found.
+- To validate: Request credentials and reference customers from Titan Security Global Indonesia; compare against G4S Indonesia's dedicated cargo escort service offering.
+
+[ASSUMED-4]: Security escort providers in SEA (G4S, Prosegur) do not currently integrate real-time temperature or shock monitoring with their escort services for pharmaceutical or sensitive cargo; shippers must source from two separate vendors. This was inferred from the absence of any documented product combining escort + IoT cold-chain in any SEA operator's public materials.
+- To validate: Demo G4S Indonesia cargo escort service and Prosegur Singapore logistics; specifically ask: "Does your escort service include real-time cargo condition monitoring (temperature, humidity, shock) during transit, or is that the shipper's responsibility?"
+
+[ASSUMED-5]: Tokio Marine Holdings and Sompo International price SEA cargo coverage based on declared value and commodity type, not real-time route risk or GPS alert history. This is inferred from the absence of any disclosed telematics-linked cargo pricing product in SEA.
+- To validate: Interview underwriting team at Tokio Marine Indonesia and Tokio Marine Singapore on whether real-time GPS data or GSOC monitoring reduces cargo premium; ask whether any cargo security platform (Overhaul equivalent) has approached them for data-sharing integration.
+
+[ASSUMED-6]: The TT Club/BSI 2025 report figure that Indonesia accounts for 5% of global cargo theft incidents is based on incidents reported through BSI's intelligence system and law enforcement partners. Actual underreporting in Indonesia (where formal cargo theft report rates are structurally lower than in OECD countries) means true Indonesian incident rate is likely materially higher.
+- To validate: Cross-reference with TAPA APAC Cargo Crime Monitor member data (requires TAPA APAC membership access); interview Indonesia National Police (Polri) cargo crime unit (Bareskrim) for comparison with registered theft reports vs. insurance claims filed with OJK-regulated insurers.
+
+
+---
+
+### Deep-research applied — corrections and upgrades (pass-3)
+
+**1. VC-MS-3 (global cargo security market $3.1B) → confirmed-scarce; Low retained for precise figure.** The $3.1B (2024) / $7.8B (2033) / 10.7% CAGR / 13.2% APAC CAGR figures derive solely from marketintelo.com (commercial aggregator, auto-Low). No McKinsey/BCG/Roland Berger/BNEF/multilateral primary corroboration. Two independent mid-tier commercial research firms bracket the 2024 market: MarketsandMarkets Supply Chain Security $2.52B (broader scope, 12.6% CAGR to 2030); Mordor Intelligence Cargo & Vehicle Screening $2.76B (narrower scope, 6.5% CAGR). Use the **$2.5–3.0B (2024) with 7–13% CAGR band** as the source-triangulated estimate; flag the precise marketintelo figures as [ASSUMED-N]. Verisk/CargoNet $455M North America 2024 cargo theft losses provides a demand-side anchor.
+
+**2. VC-LatAm-CargoTheft → upgraded Low → Medium with attribution correction.** Mexico cargo theft direction strongly confirmed by primary sources: AMESIS (Asociación Mexicana de Empresas de Seguridad Privada e Industria Satelital) reported 15,937 incidents in 2024 (+9.15% YoY) via El Financiero (Feb 18, 2025); AMESIS secretary Rodrigo Larracilla on record citing "one robbery every 33 minutes" via Mexico Business News; 73% violence rate corroborated by BSI Consulting + TT Club 2024 Cargo Theft Report (April 2025, PDF fetched via markitdown). The $5.5B annual LatAm aggregate loss figure cannot be confirmed at IUMI primary — IUMI's Feb 2026 press release characterizes losses as "several billions of Euros" globally across ~160,000 incidents in 129 countries, without LatAm dollar breakdown. Drop the specific $5.5B IUMI attribution or flag [ASSUMED-N].
+
+**3. New source additions:**
+- (29) BSI Consulting + TT Club 2024 Cargo Theft Report, April 2025: https://www.ttclub.com/fileadmin/uploads/tt-club/Documents/TT_and_BSI_annual_theft_report/TT_Club_Report_-_Supply_Chain_Report_April_2025.pdf (markitdown-verified)
+- (30) AMESIS via El Financiero, Feb 18, 2025: https://www.elfinanciero.com.mx/transporte-y-movilidad/2025/02/18/mas-de-15-mil-robos-a-transporte-en-mexico-en-2024-reporta-amesis/
+- (31) AMESIS secretary on-record via Mexico Business News: https://mexicobusiness.news/mobility/news/mexico-battles-cargo-theft-amid-driver-shortage-crisis
+- (32) IUMI press release Feb 3, 2026: https://iumi.com/news/press-release/iumi-and-tapa-emea-warn-of-escalating-cargo-theft-and-freight-fraud/
+- (33) MarketsandMarkets Supply Chain Security Market 2024: https://www.marketsandmarkets.com/PressReleases/supply-chain-security.asp
+- (34) Mordor Intelligence Cargo & Vehicle Screening: https://www.mordorintelligence.com/industry-reports/cargo-and-vehicle-screening-market
+

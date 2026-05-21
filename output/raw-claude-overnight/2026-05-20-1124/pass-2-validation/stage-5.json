@@ -1,0 +1,786 @@
+{
+  "context": "per-stage",
+  "stage": 5,
+  "run_id": "2026-05-20-1124",
+  "validated_at": "2026-05-20",
+  "files_scored": [
+    "pass-1-drafts/stage-5-value-chain.md",
+    "pass-1-drafts/stage-5-pain-points.md"
+  ],
+
+  "url_sample_verification": {
+    "note": "Five URLs sampled for live reachability and content match.",
+    "samples": [
+      {
+        "id": "URL-S1",
+        "url": "https://truckingresearch.org/2025/10/new-atri-research-confirms-the-high-costs-of-cargo-theft-to-industry/",
+        "claim_anchored": "ATRI $520K/carrier annual loss, $1.84M/LSP, $6.6B industry-wide",
+        "verification": "CONFIRMED. ATRI published October 2025. $520K+ per motor carrier, $1.84M+ per LSP, $6.6B annualized / $18M daily — all figures independently confirmed via web search corroboration across TT News, FleetEquipment, Trucking Dive, Overdrive. Primary source category: primary-association. Score contribution: High."
+      },
+      {
+        "id": "URL-S2",
+        "url": "https://www.prnewswire.com/news-releases/cargo-theft-soars-49-in-first-half-of-2024-amid-rising-criminal-sophistication-reveals-overhaul-report-302228584.html",
+        "claim_anchored": "Facility theft 4% H1 2023 → 19% H1 2024; average loss per incident $115,230 +83% YoY",
+        "verification": "CONFIRMED via PR Newswire press release from Overhaul. Figures confirmed by multiple trade press pickups (SecurityInfoWatch, DC Velocity, Food Logistics, Carrier Management). IMPORTANT: The source domain is prnewswire.com — this is a press release from Overhaul (vendor in the cargo security space), not a primary filing. Overhaul is both a vendor (cargo risk platform) and a research publisher. The report is Overhaul's own data product. This sits between secondary-press-release and secondary-trade. It does not meet auto-low-vendor criteria (Overhaul is not a company being claimed about in this context; it is providing third-party theft data). However it is a vendor-published press release, not an audited filing or government stat. Classified: secondary-press-release (Overhaul research arm). The 4%→19% trend figure is cited in draft as also sourced from BSI/TT Club (cross-validated for facility-theft direction). Score impact: Medium ceiling for this URL alone; claims using it alongside BSI/TT Club can reach High."
+      },
+      {
+        "id": "URL-S3",
+        "url": "https://sambasafety.com/blog/why-fleets-wont-share-telematics-data",
+        "claim_anchored": "70% commercial fleets do not share telematics with insurers; 79% never asked; 65% cite better rates when sharing",
+        "verification": "CONFIRMED figures exist at SambaSafety blog. However: verification of specific '70%' figure shows discrepancy. Web search returns SambaSafety GlobeNewswire press release (Oct 2025) stating '88% of fleets use telematics, but only 30% share data with insurers' — i.e., 70% NOT sharing. The draft's '70% do not share' figure is mathematically consistent with '30% share', so the 70% figure is correct as stated. The 79% 'never asked' figure confirmed. The 65% 'better rates' figure confirmed. SOURCE CATEGORY: SambaSafety is a vendor (fleet telematics risk intelligence platform). The blog at sambasafety.com is classified as auto-low-vendor for claims about SambaSafety's own product, but this data is a fleet survey result about industry behavior — not a claim about SambaSafety's own capability. Classify as secondary-trade / vendor-sponsored research. Not auto-low, but also not primary. Single source for a key operating-behavior statistic. Override triggered: single-domain (only SambaSafety for this figure). Score: Low — single vendor-sponsored source for a critical market behavior claim."
+      },
+      {
+        "id": "URL-S4",
+        "url": "https://blog.cfglobal.co/air-sea-and-tech-the-future-of-indonesias-supply-chain-in-2025/",
+        "claim_anchored": "Indonesia mandatory ePOD Q3 2026, targeting IDR 2.1 trillion ($130M) annual fraud losses",
+        "verification": "CRITICAL FAILURE. Web search for 'Indonesia ePOD mandatory Q3 2026 IDR 2.1 trillion electronic proof delivery regulation' returns ZERO government or regulatory sources confirming this mandate. The cfglobal.co domain is an industry blog (CF Global — a logistics consultancy marketing blog). No BPS Indonesia, Ministry of Transportation Indonesia, or Kemenhub regulation mandating ePOD by Q3 2026 was found in any search. The IDR 2.1 trillion figure is unverified and not traceable to any government source. This is a single trade/industry blog source for a regulatory fact that would need a Kemenhub (Ministry of Transportation) gazette or BPS publication to be credible. Auto-Low: single industry blog, no government corroboration, regulatory fact unverified. Score: Low. Flag as HIGH PRIORITY for deep research."
+      },
+      {
+        "id": "URL-S5",
+        "url": "https://www.securitas.com/globalassets/com/files/annual-reports/eng/securitas_ar2024_eng.pdf",
+        "claim_anchored": "Securitas Ibero-America: 9% of group sales, MSEK 11,138 FY2024; covers Brazil, Mexico, and six LatAm countries",
+        "verification": "CONFIRMED category: primary-filing (annual report / audited corporate filing from listed company Securitas AB, Nasdaq OMX). The Ibero-America segment figures at 9% of group sales and MSEK 11,138 are standard segment disclosure in a public company annual report. Score: High."
+      }
+    ]
+  },
+
+  "source_catalog": {
+    "primary_association": [
+      "ATRI (truckingresearch.org) — industry association, October 2025",
+      "BSI/TT Club 2024 Cargo Theft Report (ttclub.com PDF) — industry association/multilateral-adjacent",
+      "TIA State of Fraud April 2025 (tianet.org) — industry association",
+      "Verisk CargoNet 2024 Annual Report (verisk.com) — industry association/analytics body",
+      "NTC&Logistica Brazil — industry association (cited via WLRN and Overhaul/TAPA)"
+    ],
+    "primary_filing": [
+      "Samsara Form 10-K FY2026 (via stocktitan.net SEC filing) — annual report",
+      "Securitas AB Annual and Sustainability Report 2024 (securitas.com PDF) — listed company annual report",
+      "PowerFleet FY2025 annual results press release (ir.powerfleet.com) — investor relations",
+      "Motive S-1 filed December 2025 (SaaStr secondhand) — NOTE: S-1 itself is primary; SaaStr is secondary"
+    ],
+    "primary_multilateral": [],
+    "primary_gov": [],
+    "primary_ministry": [],
+    "primary_consultancy": [],
+    "primary_academic": [],
+    "primary_legal": [],
+    "primary_interview": [],
+    "primary_standards": [],
+    "secondary_trade": [
+      "TT News (ttnews.com) — multiple claims",
+      "FreightWaves (freightwaves.com) — underreporting stat",
+      "Tank Transport (tanktransport.com) — premium surcharge, $6.6B total",
+      "Carrier Management (carriermanagement.com) — telematics integration failure",
+      "Claims Journal (claimsjournal.com) — Mexico liability cap",
+      "Small Wars Journal (smallwarsjournal.com) — Mexico FDI / $415M",
+      "Borderless Coverage (borderlesscoverage.com) — Mexico hijacking trends",
+      "GlobeNewswire (globenewswire.com) — Berg Insight SEA fleet data",
+      "CNBC (cnbc.com) — Verkada valuation",
+      "SiliconAngle (siliconangle.com) — Verkada Series E",
+      "TechCrunch (techcrunch.com) — Netradyne Series D",
+      "Mexico Business News (mexicobusiness.news) — Mexico theft data",
+      "WLRN Public Media (wlrn.org) — Brazil NTC&Logistica citation",
+      "Insurance Journal (insurancejournal.com) — telematics",
+      "FleetOwner (fleetowner.com) — dashcam adoption",
+      "Laneproof (laneproof.com) — POD economics",
+      "eLogii (elogii.com) — paper POD timeline",
+      "nFlo (nflo.tech) — GPS spoofing",
+      "Denim (denim.com) — POD fraud vectors",
+      "Brown & Brown (bbrown.com) — delivery liability costs",
+      "ATS Logistics (atsinc.com) — Mexico liability cap"
+    ],
+    "secondary_press_release": [
+      "Overhaul H1 2024 report (prnewswire.com) — facility theft data",
+      "Kaleris/PINC merger (prnewswire.com) — PINC #1 YMS claim",
+      "PINC Accel-KKR investment (prnewswire.com) — PINC context",
+      "Allied Universal G4S acquisition (aus.com/press-releases) — $18B revenue",
+      "GardaWorld financial guidance (prnewswire.com) — CAD $5.9B revenue",
+      "CalAmp financial performance (calamp.com/press-releases) — $197M revenue"
+    ],
+    "secondary_market_research": [
+      "DataIntelo (dataintelo.com) — POD market $1.42B–$3.2B",
+      "MarketIntelo (marketintelo.com) — POD market",
+      "ResearchAndMarkets / Business Research Insights (researchandmarkets.com) — $334.8B private security market, +22% escort growth",
+      "Berg Insight (via GlobeNewswire) — SEA fleet penetration 17.5%"
+    ],
+    "secondary_vendor_sponsored_research": [
+      "SambaSafety blog (sambasafety.com) — 70% non-sharing telematics figure",
+      "Overhaul Q2 2025 US Cargo Theft Report (over-haul.com) — 37% warehouse/DC incidents",
+      "Overhaul Brazil Annual Report 2024 (TAPA PDF) — 81% hijacking, 14% pilferage",
+      "Overhaul Mexico Annual Report 2024 (TAPA PDF) — Mexico incident profile",
+      "Geotab blog (geotab.com) — 41% GPS, 23% camera, 37% cost barrier, 15-30% premium savings",
+      "Verizon Connect (verizonconnect.com) — 15-30% premium savings",
+      "Lytx (lytx.com) — 56% risk reduction, 4,500 customers",
+      "Coolfire Solutions (coolfiresolutions.com) — 95% shrinkage reduction, 800% fraud surge",
+      "TruckerCloud (truckercloud.com) — telematics context",
+      "LoJack (lojack.com) — 98%+ recovery rate, 26-min avg"
+    ],
+    "auto_low_vendor": [
+      "getlatka.com/companies/onfleet — Onfleet ARR",
+      "getlatka.com/companies/dispatchtrack — DispatchTrack ARR",
+      "getlatka.com/companies/verkada — Verkada ARR",
+      "growjo.com/company/DispatchTrack — DispatchTrack revenue",
+      "solutionsgroupinternational.com — SGI service description",
+      "gbssecurindo.co.id — PT Garda Bangsa profile",
+      "titanforce.com.my — Titan Force profile",
+      "pro-vigil.com — Pro-Vigil revenue",
+      "bossecurity.com — Pro-Vigil competitor comparison",
+      "lojack.com/products — LoJack product page",
+      "powerfleet.com/us/products — PowerFleet product documentation",
+      "dispatchtrack.com/blog — DispatchTrack product blog",
+      "onfleet.com/blog — Onfleet product blog",
+      "greenmile.com — GreenMile profile",
+      "locus.sh/press-releases — Locus press release",
+      "over-haul.com/reports — Overhaul gated reports",
+      "cfglobal.co — industry blog (Indonesia ePOD mandate)"
+    ]
+  },
+
+  "claims_scored": [
+    {
+      "id": "VC1a",
+      "claim_text": "Global private security services market $334.8B in 2024",
+      "sources": ["ResearchAndMarkets / Business Research Insights (researchandmarkets.com)"],
+      "source_categories": ["secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade — single-firm private market research estimate, methodology opaque, no cross-validation with primary source",
+      "notes": "Directional context only."
+    },
+    {
+      "id": "VC1b",
+      "claim_text": "Armored vehicle escort services growth +22% YoY (2024)",
+      "sources": ["ResearchAndMarkets / Business Research Insights (researchandmarkets.com)"],
+      "source_categories": ["secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade + single source, no primary cross-validation",
+      "notes": "Draft already flags Low. Override confirms."
+    },
+    {
+      "id": "VC2",
+      "claim_text": "Brazil cargo theft: 10,478 incidents; estimated losses $221M direct (2024)",
+      "sources": ["WLRN Public Media citing NTC&Logistica (wlrn.org)", "Overhaul/TAPA Brazil Annual Report 2024 (TAPA PDF)"],
+      "source_categories": ["secondary-news (WLRN)", "secondary-vendor-sponsored-research (Overhaul/TAPA)"],
+      "score": "Medium",
+      "override": "Chain-of-citations: both sources trace to NTC&Logistica as originator — NTC&Logistica is a primary-association source (National Association of Cargo Transport and Logistics Brazil), but neither cited URL is the NTC&Logistica primary publication. WLRN is secondary news citing NTC&Logistica; Overhaul/TAPA PDF is vendor research citing NTC&Logistica. The draft claims 'High — NTC&Logistica primary data via Overhaul and WLRN' — this misapplies the chain-of-citations rule. Two secondary sources both tracing to same originator count as 1 source (NTC&Logistica) accessed indirectly. Score: Medium (two different publication chains, at least one industry association as originator, but no direct NTC&Logistica URL cited).",
+      "notes": "Draft marked High — downgraded to Medium. Deep-research action: locate NTC&Logistica primary publication URL or BPS Brazil equivalent."
+    },
+    {
+      "id": "VC3a",
+      "claim_text": "Brazil accounts for 68% of South American cargo theft incidents in 2024",
+      "sources": ["BSI/TT Club 2024 Cargo Theft Report (ttclub.com PDF)", "Overhaul Brazil Annual Report 2024 (TAPA PDF)"],
+      "source_categories": ["primary-association (TT Club)", "secondary-vendor-sponsored-research (Overhaul)"],
+      "score": "High",
+      "override": "None. BSI/TT Club is primary-association (TT Club is an industry mutual insurer / association publishing original research). Cross-validated with Overhaul. Meets High rubric.",
+      "notes": "Solid."
+    },
+    {
+      "id": "VC3b",
+      "claim_text": "81% of Brazil theft events in 2024 are armed hijackings",
+      "sources": ["Overhaul Brazil Annual Report 2024 (TAPA PDF)"],
+      "source_categories": ["secondary-vendor-sponsored-research"],
+      "score": "Low",
+      "override": "Single source — Overhaul's own Brazil annual report. Overhaul is a cargo security vendor publishing proprietary data products. Draft marks High — incorrect. One vendor-authored source, no corroboration by NTC&Logistica or BSI/TT Club on the hijacking-specific percentage.",
+      "notes": "Draft over-scored this. Need NTC&Logistica or government Brazil crime statistics (SENASP/MJSP) to cross-validate."
+    },
+    {
+      "id": "VC4a",
+      "claim_text": "Mexico cargo theft: ~24,000 incidents in 2024, +16% YoY",
+      "sources": ["TT News / Overhaul (ttnews.com)", "Overhaul Mexico 2024 Annual Report (gated)"],
+      "source_categories": ["secondary-trade (TT News)", "secondary-vendor-sponsored-research (Overhaul gated)"],
+      "score": "Low",
+      "override": "Chain-of-citations: TT News cites Overhaul as source of 24,000 figure. Gated Overhaul report is same source family. Both trace to Overhaul as the originator — single vendor source. No Mexican government (SCT/SSPC/Guardia Nacional) primary publication cited. Mexico Business News separately cites the 24,000 figure but also appears to trace to Overhaul. Draft marks Medium — downgraded to Low: the incident count comes from a single vendor (Overhaul), not a Mexican government statistical body.",
+      "notes": "CRITICAL: Draft text states 'Mexico SCT figures' in user concern list — no SCT source was actually cited. SCT (Secretaria de Comunicaciones y Transportes) primary data would need to be the source. Deep-research priority: locate SCT or SSPC (Secretaria de Seguridad) primary data."
+    },
+    {
+      "id": "VC4b",
+      "claim_text": "Mexico cargo theft losses exceed $368M (7B MXN) annually",
+      "sources": ["Circulo Logistico via Mexico Business News (mexicobusiness.news)"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "Single trade source. Circulo Logistico is an industry association but cited only via Mexico Business News trade article — not via a direct Circulo Logistico publication URL. Trade-press-only override for an operating cost/loss figure.",
+      "notes": "Need Circulo Logistico primary publication or Mexican government data."
+    },
+    {
+      "id": "VC5",
+      "claim_text": "Global facility theft = 16% of all cargo theft incidents in 2024",
+      "sources": ["BSI/TT Club 2024 Cargo Theft Report (ttclub.com PDF)"],
+      "source_categories": ["primary-association"],
+      "score": "High",
+      "override": "None. BSI/TT Club is primary-association. Single primary-association source meets High rubric (government stats or multilateral not required when ≥1 primary source category is present and there are no contradictions). Confirmed via web search.",
+      "notes": "Solid. Confirmed by live search."
+    },
+    {
+      "id": "VC6",
+      "claim_text": "Global hijacking = 21% of all cargo theft incidents in 2024",
+      "sources": ["BSI/TT Club 2024 Cargo Theft Report (ttclub.com PDF)"],
+      "source_categories": ["primary-association"],
+      "score": "High",
+      "override": "None.",
+      "notes": "Same sourcing as VC5."
+    },
+    {
+      "id": "VC7",
+      "claim_text": "Proof of Delivery software market $1.42B–$3.2B in 2024",
+      "sources": ["DataIntelo (dataintelo.com)", "MarketIntelo (marketintelo.com)"],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "score": "Low",
+      "override": "Aggregator-market-research-auto-downgrade. Both DataIntelo and MarketIntelo are in the auto-downgrade list. Draft already flags Low — override confirms. Two aggregator URLs from related/overlapping firms count as 1 source.",
+      "notes": "Directional only. Draft appropriately flags."
+    },
+    {
+      "id": "VC8",
+      "claim_text": "Onfleet: $35M ARR, ~900 customers (June 2024)",
+      "sources": ["Latka (getlatka.com/companies/onfleet)"],
+      "source_categories": ["auto-low-vendor (Latka self-reported aggregator)"],
+      "score": "Low",
+      "override": "Vendor-marketing override: Latka is a self-reported revenue aggregator; data is self-submitted by the company. getlatka.com is in the domain blocklist-adjacent category (vendor-curated data, not audited). Draft already flags Low.",
+      "notes": "No S-1 or Form D available to cross-validate Onfleet revenue."
+    },
+    {
+      "id": "VC9",
+      "claim_text": "DispatchTrack: $8.5M ARR (Latka) vs. $36.2M (Growjo) — figures diverge",
+      "sources": ["Latka (getlatka.com/companies/dispatchtrack)", "Growjo (growjo.com/company/DispatchTrack)"],
+      "source_categories": ["auto-low-vendor", "secondary-market-research"],
+      "score": "Low",
+      "override": "Auto-low-vendor (Latka). Growjo is a third-party estimate with opaque methodology. Sources diverge by 4x — unusable as a single figure. Draft already flags Low.",
+      "notes": "No audited filing available."
+    },
+    {
+      "id": "VC10",
+      "claim_text": "Indonesia accounts for 14% of Asia cargo theft incidents in 2024",
+      "sources": ["BSI/TT Club 2024 Cargo Theft Report (ttclub.com PDF)"],
+      "source_categories": ["primary-association"],
+      "score": "Medium",
+      "override": "APAC-as-proxy override partially applicable: this is Asia-region data for Indonesia, not global-to-country proxy. Single primary-association source without cross-validation. Scores Medium (1 primary-association source, but not government statistics or multilateral).",
+      "notes": "Acceptable at Medium."
+    },
+    {
+      "id": "VC11",
+      "claim_text": "Locus acquired by Ingka Group/IKEA October 2025, targeting €100M annual delivery savings; $82.5M total funding",
+      "sources": ["Locus press release (locus.sh)", "Ingka Group newsroom (ingka.com)", "Crunchbase (crunchbase.com)"],
+      "source_categories": ["secondary-press-release (Locus)", "secondary-press-release (Ingka)", "secondary-market-research (Crunchbase)"],
+      "score": "Medium",
+      "override": "Press release from Locus (vendor) about own acquisition. Ingka newsroom corroborates. Two independent press releases from both sides of the transaction is stronger than one. No Form D or regulatory filing cited. Crunchbase funding data is secondary aggregator. Score: Medium — acquisition confirmed by two parties' announcements; €100M savings target is an Ingka management claim.",
+      "notes": "Acceptable for player description; flag €100M savings as unaudited projection."
+    },
+    {
+      "id": "VC12",
+      "claim_text": "Samsara: $1.62B FY2026 revenue, 98% SaaS subscription",
+      "sources": ["Samsara Form 10-K (FY2026, ended Jan 31, 2026) via stocktitan.net"],
+      "source_categories": ["primary-filing (10-K via StockTitan)"],
+      "score": "High",
+      "override": "None. 10-K is primary-filing. StockTitan is an SEC filing aggregator — the underlying document is an SEC 10-K. Fully audited.",
+      "notes": "Solid."
+    },
+    {
+      "id": "VC13",
+      "claim_text": "Lytx: 4,500+ customers, 200,000+ vehicles, 56% reduction in risky driving behaviors",
+      "sources": ["Lytx (lytx.com/news-events)", "PR Newswire / DHL Letter Ride case study"],
+      "source_categories": ["auto-low-vendor (Lytx own marketing)", "secondary-press-release (Lytx PR Newswire)"],
+      "score": "Low",
+      "override": "Vendor-marketing override: Lytx is the vendor being described; lytx.com is their own marketing surface. PR Newswire case study is Lytx-curated. Both count as 1 vendor source. No audited corporate filing (Lytx is private, Leonard Green portfolio — no 10-K). The 56% reduction is Lytx's own reported metric.",
+      "notes": "Would need Form D or third-party audit to upgrade."
+    },
+    {
+      "id": "VC14",
+      "claim_text": "Netradyne: $90M Series D, January 2025, Point72; $1.35B valuation",
+      "sources": ["TechCrunch (techcrunch.com)"],
+      "source_categories": ["secondary-news"],
+      "score": "Low",
+      "override": "Single secondary-news source. No Form D filed citation. TechCrunch is credible trade/news but secondary. Form D would be the primary verification.",
+      "notes": "Downgrade from implied Medium. Acceptable for player landscape but flag as unaudited."
+    },
+    {
+      "id": "VC15",
+      "claim_text": "Motive: ~$500M ARR; S-1 filed December 2025",
+      "sources": ["SaaStr (saastr.com)"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "Single secondary-trade source. S-1 itself would be primary-filing, but is cited via SaaStr's summary — not the actual S-1 document. Until SEC EDGAR link to Motive S-1 is cited, score Low.",
+      "notes": "Search SEC EDGAR for Motive (Keep Truckin) S-1 to upgrade."
+    },
+    {
+      "id": "VC16",
+      "claim_text": "Securitas Ibero-America: 9% of group sales, MSEK 11,138 FY2024; covers Brazil, Mexico, six LatAm countries; transformation program ongoing",
+      "sources": ["Securitas AB Annual and Sustainability Report 2024 (securitas.com PDF)"],
+      "source_categories": ["primary-filing"],
+      "score": "High",
+      "override": "None. Listed company audited annual report.",
+      "notes": "Solid."
+    },
+    {
+      "id": "VC17",
+      "claim_text": "Allied Universal: $18B+ revenue post-G4S acquisition (2021), 800,000 employees",
+      "sources": ["Allied Universal press release (aus.com/press-releases)"],
+      "source_categories": ["secondary-press-release (vendor own)"],
+      "score": "Low",
+      "override": "Press-release-only override. Allied Universal is private — no 10-K. The press release is from their own domain at time of 2021 acquisition announcement. Single press release from the vendor itself. Revenue figure is 2021 vintage, now 5 years stale. Outdated-source override also applies.",
+      "notes": "Stale (2021) and single-source. Note for field description only."
+    },
+    {
+      "id": "VC18",
+      "claim_text": "GardaWorld: projected revenues CAD $5,875–$5,925M (FY ending Jan 2024)",
+      "sources": ["GardaWorld press release via PR Newswire (prnewswire.com)"],
+      "source_categories": ["secondary-press-release"],
+      "score": "Low",
+      "override": "Press-release-only override. GardaWorld is private. Note: draft correctly states GardaWorld sold US/Mexico guarding to Andrews International in 2009 — so this revenue figure is not relevant to LATAM freight escort context. Guidance figures are forward-looking and unaudited.",
+      "notes": "Low relevance and low confidence. Used only as context."
+    },
+    {
+      "id": "VC19",
+      "claim_text": "PINC is the #1-selling yard management system (YMS)",
+      "sources": ["PR Newswire — Kaleris merger announcement (prnewswire.com)", "PR Newswire — PINC Accel-KKR investment (prnewswire.com)"],
+      "source_categories": ["secondary-press-release", "secondary-press-release"],
+      "score": "Low",
+      "override": "Press-release-only override. Both URLs are PR Newswire press releases from PINC/Kaleris's own marketing. '#1-selling' is a marketing claim unsupported by independent market share data. Two press releases from same entity = 1 source. Vendor-marketing override applies.",
+      "notes": "Capability/market position claim needs independent market report."
+    },
+    {
+      "id": "VC20",
+      "claim_text": "Verkada: $357M ARR (2024); $5.8B valuation (December 2025, CapitalG)",
+      "sources": ["Latka (getlatka.com/companies/verkada)", "CNBC (cnbc.com)", "SiliconAngle (siliconangle.com)"],
+      "source_categories": ["auto-low-vendor (Latka)", "secondary-news", "secondary-news"],
+      "score": "Low",
+      "override": "Latka auto-low for ARR. Valuation confirmed by two independent news sources (CNBC + SiliconAngle) which elevates valuation claim. However, ARR from Latka remains Low (vendor-self-reported). Split scoring: ARR = Low; valuation = Medium (two independent news sources). Overall claim bundle = Low because core revenue metric is unsupported.",
+      "notes": "Valuation claim is Medium-quality; ARR figure is Low-quality."
+    },
+    {
+      "id": "VC21",
+      "claim_text": "Pro-Vigil: ~$185.9M annual revenue",
+      "sources": ["pro-vigil.com", "bossecurity.com (competitor comparison)"],
+      "source_categories": ["auto-low-vendor (pro-vigil.com)", "secondary-trade (competitor site)"],
+      "score": "Low",
+      "override": "Vendor-marketing override. Pro-Vigil is private. Revenue figure from pro-vigil.com (their own site) or a competitor comparison blog — both are non-audited, non-primary.",
+      "notes": "Use as directional only."
+    },
+    {
+      "id": "VC22",
+      "claim_text": "Motorola Solutions: $6.2B+ FY2024 revenue",
+      "sources": ["investor.motorolasolutions.com"],
+      "source_categories": ["primary-filing (investor relations, listed NYSE: MSI)"],
+      "score": "High",
+      "override": "None. Listed company investor relations page — underlying data is audited 10-K.",
+      "notes": "Solid."
+    },
+    {
+      "id": "VC23",
+      "claim_text": "PowerFleet: $362.5M FY2025 revenue, 26% YoY growth, 75% SaaS; $440–445M FY2026 guidance",
+      "sources": ["PowerFleet IR press release (ir.powerfleet.com)"],
+      "source_categories": ["primary-filing (investor relations, NYSE: AIOT)"],
+      "score": "High",
+      "override": "None. Listed company investor relations annual results press release = primary-filing equivalent.",
+      "notes": "Solid."
+    },
+    {
+      "id": "VC24",
+      "claim_text": "CalAmp: $197M revenue FY2024, 2.7M subscribers, 10M+ active edge devices; LoJack México division",
+      "sources": ["CalAmp press release (calamp.com/press-releases)"],
+      "source_categories": ["secondary-press-release (CalAmp own)"],
+      "score": "Low",
+      "override": "Press-release-only override: CalAmp delisted and went through restructuring — no current public 10-K. The press release is from CalAmp's own domain for their own performance metrics. Vendor-marketing override applies for capability claims (LoJack México). Revenue may be directionally correct but unaudited.",
+      "notes": "Find any SEC filing (final 10-K before delisting) to upgrade."
+    },
+    {
+      "id": "VC25",
+      "claim_text": "SEA fleet telematics penetration ~17.5% of commercial vehicles (2024E); CAGR 13.7%; 5.4M units by 2028",
+      "sources": ["Berg Insight via GlobeNewswire press release (globenewswire.com)"],
+      "source_categories": ["secondary-market-research (Berg Insight)"],
+      "score": "Low",
+      "override": "Single-firm market research (Berg Insight) distributed via GlobeNewswire press release. Berg Insight is a reputable fleet management analyst but is a paid-research firm, not government statistics. Single source, secondary-market-research category. No government statistics (BPS Indonesia, LTFRB Philippines, Ministry of Transport Thailand) or multilateral cross-validation. APAC-as-proxy override also partially applies (SEA aggregate used; country-specific not broken out).",
+      "notes": "Most credible anchor for SEA fleet market but still single paid-research source."
+    },
+    {
+      "id": "PP1a",
+      "claim_text": "Motor carriers average $520,000 in annual cargo theft losses; LSPs average $1.84M; industry-wide $6.6B ($18M daily)",
+      "sources": ["ATRI October 2025 (truckingresearch.org)", "Summar Financial citing ATRI (summar.com)"],
+      "source_categories": ["primary-association (ATRI)", "secondary-trade (Summar)"],
+      "score": "High",
+      "override": "None. ATRI is a primary-association source (ATA's research arm). Live URL verified, figures confirmed by multiple independent trade press pickups. Summar is secondary but ATRI alone meets High. Chain-of-citations: Summar cites ATRI — counts as 1 source (ATRI), but ATRI alone = primary-association = sufficient for High.",
+      "notes": "Solid. One of the strongest claims in the document."
+    },
+    {
+      "id": "PP1b",
+      "claim_text": "Average cargo theft loss per incident: $202,364 in 2024 (up 8% from $187,895 in 2023)",
+      "sources": ["Verisk CargoNet 2024 Annual Report (verisk.com/newsroom)"],
+      "source_categories": ["primary-association (Verisk CargoNet — industry analytics body)"],
+      "score": "High",
+      "override": "None. CargoNet (Verisk subsidiary) is the authoritative US cargo theft tracking database, equivalent to primary-association. Published as annual report. Confirmed via web search.",
+      "notes": "Solid."
+    },
+    {
+      "id": "PP1c",
+      "claim_text": "Facility theft: 19% of H1 2024 incidents (up from 4% in H1 2023); average facility theft loss +82% YoY; average loss per incident $115,230 (+83% YoY)",
+      "sources": ["Overhaul H1 2024 US Cargo Theft Report (prnewswire.com press release)"],
+      "source_categories": ["secondary-press-release (Overhaul vendor)"],
+      "score": "Low",
+      "override": "Single-vendor press release. Overhaul is a cargo risk management vendor — their own H1 2024 report distributed via PR Newswire. Not cross-validated by CargoNet, NICB, or any government source at the specific 4%→19% granularity. Vendor-marketing override is borderline (Overhaul publishes research, not marketing per se), but this is still Overhaul's proprietary dataset, unaudited. Trade-press-only override applies for an operating cost / incident-frequency figure from a single proprietary vendor source.",
+      "notes": "CRITICAL: This is the headline trend claim in the entire document and it rests on a single vendor's press release. BSI/TT Club 2024 confirms facility theft at 16% globally but does NOT confirm the specific 4%→19% US trajectory. NICB source (12) is cited in the document but only as context. Deep research priority."
+    },
+    {
+      "id": "PP1d",
+      "claim_text": "Cargo premiums up 8–12% average (2024); high-risk lane surcharges 12–18%; fraud-loss rider 1.8% of load value",
+      "sources": ["TT News (ttnews.com/articles/insurance-premium-cargo-theft)", "Tank Transport (tanktransport.com)"],
+      "source_categories": ["secondary-trade", "secondary-trade"],
+      "score": "Low",
+      "override": "Trade-press-only override. Operating cost figures (premium rates, surcharge percentages) sourced only from trade publications. Two trade sources but both are secondary; neither is a primary insurer filing, actuarial report, or regulatory rate filing. Single-domain concern: TT News and Tank Transport are different publications, so not single-domain, but both are trade press.",
+      "notes": "Need Lloyd's market statistics, AM Best market segment report, or primary insurer disclosure."
+    },
+    {
+      "id": "PP1e",
+      "claim_text": "37% of fleet managers cite hardware/subscription cost as primary barrier; 41% GPS adoption; 23% camera/video adoption",
+      "sources": ["Geotab blog (geotab.com/blog/cargo-security-theft-prevention)"],
+      "source_categories": ["auto-low-vendor (Geotab own blog)"],
+      "score": "Low",
+      "override": "Vendor-marketing override: Geotab is a fleet telematics vendor. Their blog post on cargo security technology adoption is a marketing surface. The survey methodology, sample, and n-count are not disclosed in the citation. Single vendor source for market adoption statistics.",
+      "notes": "Need independent survey (ATA, ATRI, or S&P Global) to validate adoption rates."
+    },
+    {
+      "id": "PP1f",
+      "claim_text": "40%+ motor carriers avoid reporting theft to insurers; 69.9% experience average theft values below $50,000",
+      "sources": ["FreightWaves (freightwaves.com/news/fear-of-high-premiums-keeps-cargo-theft-underreported)"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "Single trade-press source for a critical behavioral statistic. FreightWaves article — the underlying survey source is not identified in the citation. Trade-press-only override for an operating behavior / cost figure.",
+      "notes": "Need original survey source (ATRI? CargoNet? NICB?). FreightWaves is citing some underlying data not clearly identified."
+    },
+    {
+      "id": "PP1g",
+      "claim_text": "Global facility theft: 16% of all global cargo theft incidents in 2024",
+      "sources": ["BSI/TT Club 2024 Cargo Theft Report (ttclub.com PDF)"],
+      "source_categories": ["primary-association"],
+      "score": "High",
+      "override": "None. Same as VC5.",
+      "notes": "Solid."
+    },
+    {
+      "id": "PP1h",
+      "claim_text": "Q2 2025: warehouses and distribution centers = 37% of US cargo theft incidents (most frequently targeted location)",
+      "sources": ["Overhaul Q2 2025 US Cargo Theft Report (over-haul.com/reports)"],
+      "source_categories": ["secondary-vendor-sponsored-research (Overhaul proprietary report)"],
+      "score": "Low",
+      "override": "Single vendor-proprietary source. Overhaul Q2 2025 is from Overhaul's gated reports section (over-haul.com). Vendor's own data product, unaudited, not cross-validated. The 4%→19%→37% progression across H1 2023→H1 2024→Q2 2025 ALL rests on Overhaul as the single data source — this creates a critical single-vendor dependency for the entire facility-theft trend narrative.",
+      "notes": "VERY HIGH PRIORITY. The 4%→19%→37% trend sequence in the draft (H1 2023, H1 2024, Q2 2025) is entirely sourced from Overhaul's own proprietary reports. This is the most-cited trend in Stage 5 and rests on one vendor."
+    },
+    {
+      "id": "PP1i",
+      "claim_text": "3,625 North American cargo theft incidents in 2024, +27% from 2023 (CargoNet)",
+      "sources": ["Verisk CargoNet (verisk.com/newsroom)", "Tank Transport (tanktransport.com)"],
+      "source_categories": ["primary-association (CargoNet)", "secondary-trade (Tank Transport)"],
+      "score": "High",
+      "override": "None. CargoNet is primary-association. Tank Transport cites CargoNet — chain traces to primary. Score High.",
+      "notes": "Solid."
+    },
+    {
+      "id": "PP2a",
+      "claim_text": "Paper POD dispute resolution: 48 hours to two weeks vs. minutes for digital",
+      "sources": ["eLogii (elogii.com/blog/proof-of-delivery)", "Laneproof (laneproof.com)"],
+      "source_categories": ["auto-low-vendor (eLogii is a POD platform vendor)", "auto-low-vendor (Laneproof is a freight payment platform)"],
+      "score": "Low",
+      "override": "Both sources are vendor marketing surfaces. eLogii is a delivery management software vendor; their POD guide is product marketing. Laneproof is a freight payment platform. Vendor-marketing override applies to both. The 48-hour to 2-week figure is an unaudited industry claim repeated across vendor blogs.",
+      "notes": "Need independent logistics research (e.g., ATA survey, academic study) to validate dispute timeline figures."
+    },
+    {
+      "id": "PP2b",
+      "claim_text": "95% reduction in fraud-related shrinkage after implementing multi-layer ePOD (Coolfire case study)",
+      "sources": ["Coolfire Solutions (coolfiresolutions.com)"],
+      "source_categories": ["auto-low-vendor (Coolfire is a technology vendor)"],
+      "score": "Low",
+      "override": "Vendor-marketing override: Coolfire Solutions is the vendor providing the case study about their own product. Single-customer case study on vendor's own website.",
+      "notes": "Acceptable as illustrative example with Low tag."
+    },
+    {
+      "id": "PP2c",
+      "claim_text": "67% of leading carriers use ePOD; 23% dispute reduction; 23% faster payment (ATA benchmark)",
+      "sources": ["Laneproof citing Transportation Research Board / ATA (laneproof.com)"],
+      "source_categories": ["auto-low-vendor (Laneproof citing ATA via their blog)"],
+      "score": "Low",
+      "override": "Chain-of-citations: Laneproof cites ATA/TRB as source. ATA and TRB would be primary-association, but they are cited via a vendor blog (Laneproof) without a direct URL to the ATA/TRB publication. Cannot verify the chain. Vendor-marketing override applies. The 67% figure and ATA benchmark need direct ATA publication link.",
+      "notes": "Locate the actual ATA or Transportation Research Board publication to upgrade."
+    },
+    {
+      "id": "PP2d",
+      "claim_text": "Nearly 1 in 4 freight brokers lost over $200,000 to fraud in a single six-month period",
+      "sources": ["TIA State of Fraud April 2025 (tianet.org)"],
+      "source_categories": ["primary-association (Transportation Intermediaries Association)"],
+      "score": "High",
+      "override": "None. TIA is a primary industry association. Their State of Fraud April 2025 report is original research from the relevant industry body. Single primary-association source meets High for this type of descriptive statistic.",
+      "notes": "Solid."
+    },
+    {
+      "id": "PP2e",
+      "claim_text": "Indonesia mandatory ePOD effective Q3 2026; targeting IDR 2.1 trillion ($130M) in annual fraud losses",
+      "sources": ["blog.cfglobal.co/air-sea-and-tech-the-future-of-indonesias-supply-chain-in-2025/"],
+      "source_categories": ["auto-low-vendor (cfglobal.co is an industry logistics blog)"],
+      "score": "Low",
+      "override": "CRITICAL LOW. URL-S4 verification confirmed: no government source (Kemenhub, BPS Indonesia, Ministry of Transportation Republic of Indonesia) found to corroborate this mandate. cfglobal.co is an industry consultancy blog. Single-blog source for a regulatory fact. The IDR 2.1 trillion figure and Q3 2026 deadline are unverified against any Kemenhub gazette, ministerial decree, or Indonesian government publication. This claim could be fabricated, misattributed, or from a proposal rather than an enacted regulation. Auto-Low, highest-priority deep-research target.",
+      "notes": "HIGHEST PRIORITY FLAG. If this regulation does not exist or is mischaracterized, the entire Indonesia ePOD market opportunity narrative in PP5.2 loses its strongest government anchor."
+    },
+    {
+      "id": "PP2f",
+      "claim_text": "800% increase in shipping fraud incidents from 2020 to 2021 (TransUnion)",
+      "sources": ["Coolfire Solutions (coolfiresolutions.com) citing TransUnion"],
+      "source_categories": ["auto-low-vendor (Coolfire citing TransUnion via their blog)"],
+      "score": "Low",
+      "override": "Chain-of-citations: Coolfire cites TransUnion, but no direct TransUnion publication URL is provided. Vendor blog intermediary. Additionally, 2020–2021 data is now >4 years old — outdated-source override applies.",
+      "notes": "Stale and unverifiable chain."
+    },
+    {
+      "id": "PP3a",
+      "claim_text": "Mexico carrier liability cap $1,750–$4,503 USD for 40,000-lb load; fewer than 5% of US-bound Mexican shipments carry full insurance",
+      "sources": ["Claims Journal (claimsjournal.com) citing logistics executives", "ATS Logistics blog (atsinc.com)"],
+      "source_categories": ["secondary-trade (Claims Journal)", "auto-low-vendor (ATS Logistics blog)"],
+      "score": "Low",
+      "override": "The $1,750 liability cap is a Mexican law figure that should be citable to Ley de Vías Generales de Comunicación or SCT tariff schedules — no government primary cited. Claims Journal cites 'logistics executives' (unnamed). ATS Logistics is a vendor blog. Trade-press-only override for a legal liability cap figure; vendor-marketing override for ATS.",
+      "notes": "Find the Mexican transportation law (Ley de Caminos) or SCT tariff tables for the liability cap. The <5% insurance coverage figure is unattributed to any source in the Claims Journal article."
+    },
+    {
+      "id": "PP3b",
+      "claim_text": "Mexico annual cargo loss from violent highway robbery: $415 million",
+      "sources": ["Small Wars Journal / Arizona State University (smallwarsjournal.com)"],
+      "source_categories": ["secondary-trade (Small Wars Journal is peer-reviewed adjacent but primarily practitioner publication)"],
+      "score": "Low",
+      "override": "Small Wars Journal is an independent practitioner journal, not peer-reviewed academic. The $415M figure is attributed to 'Mexico experts' without identifying the underlying primary source. Single source, secondary-trade category, underlying primary not identified. Trade-press-only override for a loss magnitude figure.",
+      "notes": "Elevate if the underlying source within Small Wars Journal article can be identified and is a primary."
+    },
+    {
+      "id": "PP3c",
+      "claim_text": "Mexico H1 2024: 3,393 violent cargo truck hijackings; 130% jump in smaller truck hijackings July–August 2024",
+      "sources": ["Borderless Coverage (borderlesscoverage.com)"],
+      "source_categories": ["secondary-trade (Borderless Coverage — insurance/logistics trade blog)"],
+      "score": "Low",
+      "override": "Single secondary-trade source. Borderless Coverage is an insurance trade blog. The 'federal government data' attribution for 3,393 hijackings needs to be traced to the actual Mexican federal source (likely Guardia Nacional or Fiscalía General statistics). Indirect citation to government data via a trade blog does not meet primary standard.",
+      "notes": "Find the Guardia Nacional or SSPC primary source for Mexico H1 2024 hijacking count."
+    },
+    {
+      "id": "PP3d",
+      "claim_text": "Brazil: 10,478 incidents / $221M 2024 (same claim as VC2)",
+      "sources": ["WLRN (wlrn.org)", "Overhaul/TAPA Brazil Annual Report (TAPA PDF)"],
+      "source_categories": ["secondary-news", "secondary-vendor-sponsored-research"],
+      "score": "Medium",
+      "override": "Same as VC2. Chain-of-citations traces to NTC&Logistica. Medium.",
+      "notes": "Consistent with VC2 scoring."
+    },
+    {
+      "id": "PP3e",
+      "claim_text": "Mexico: ~24,000 incidents 2024; 83.8% involved violence; >80% in six states; Mexico State = 32%",
+      "sources": ["TT News / Overhaul (ttnews.com)", "Overhaul/TAPA Mexico Annual Report 2024 (TAPA PDF)"],
+      "source_categories": ["secondary-trade", "secondary-vendor-sponsored-research"],
+      "score": "Low",
+      "override": "Same as VC4a. Single vendor originator (Overhaul). State breakdown percentages are from Overhaul proprietary data, not Mexican government sources (INEGI, SSPC, Guardia Nacional). Violence percentage (83.8%) also sourced from Overhaul. Single-vendor dependency for all Mexico frequency claims.",
+      "notes": "Consistent with VC4a scoring."
+    },
+    {
+      "id": "PP3f",
+      "claim_text": "BR-116 Rodovia Presidente Dutra = 9.3% of all national cargo theft incidents in Brazil",
+      "sources": ["Overhaul/TAPA Brazil Annual Report 2024 (TAPA PDF)"],
+      "source_categories": ["secondary-vendor-sponsored-research"],
+      "score": "Low",
+      "override": "Single vendor source (Overhaul Brazil Annual Report). Corridor-specific percentage not cross-validated by NTC&Logistica primary data.",
+      "notes": "Would need NTC&Logistica corridor breakdown to validate."
+    },
+    {
+      "id": "PP4a",
+      "claim_text": "Telematics adoption produces 15–30% insurance premium reductions",
+      "sources": ["Geotab blog (geotab.com/blog/telematics-insurance)", "Verizon Connect (verizonconnect.com)"],
+      "source_categories": ["auto-low-vendor (Geotab own blog)", "auto-low-vendor (Verizon Connect own blog)"],
+      "score": "Low",
+      "override": "Both sources are vendor marketing surfaces for fleet telematics vendors. Vendor-marketing override applies. The 15–30% premium reduction figure is a marketing claim circulated widely but not traceable to an actuarial study or regulatory rate filing.",
+      "notes": "Need insurer actuarial report (AM Best, Swiss Re, or individual carrier filing) to validate premium reduction range."
+    },
+    {
+      "id": "PP4b",
+      "claim_text": "70% of commercial fleets do not share telematics with insurers; 79% never asked; 65% savings when sharing",
+      "sources": ["SambaSafety blog (sambasafety.com/blog/why-fleets-wont-share-telematics-data)"],
+      "source_categories": ["secondary-vendor-sponsored-research (SambaSafety)"],
+      "score": "Low",
+      "override": "Single vendor-sponsored research. SambaSafety is a fleet risk intelligence vendor. Their survey data is commercially motivated. URL-S3 verification: 70% non-sharing figure is consistent with SambaSafety's GlobeNewswire press release (30% share = 70% don't). However, n-count, methodology, and sample frame not disclosed in citation. Single vendor source for critical market behavior statistic. Single-domain override applies.",
+      "notes": "GlobeNewswire PR for same report adds secondary corroboration but still traces to SambaSafety as sole originator."
+    },
+    {
+      "id": "PP4c",
+      "claim_text": "88% of commercial fleets use telematics; 64% used in underwriting; combined ratio above 100 in 12 of 13 years",
+      "sources": ["Carrier Management (carriermanagement.com)", "Insurance Journal (insurancejournal.com)"],
+      "source_categories": ["secondary-trade", "secondary-trade"],
+      "score": "Low",
+      "override": "Trade-press-only override. Two trade sources, but the 88% figure traces to SambaSafety (per live search showing SambaSafety GlobeNewswire data). Chain-of-citations: both articles citing same SambaSafety data. Combined ratio from actuarial data should be traceable to AM Best or NAIC — no primary cite. Trade-press-only for operating cost / market behavior figures.",
+      "notes": "Note: the 88% figure contradicts PP4b (which says 70% don't share — 88% USE telematics but only 30% share it with insurers). These figures are consistent when read together. The 88% USE vs 30% SHARE gap is the core SambaSafety finding."
+    },
+    {
+      "id": "PP4d",
+      "claim_text": "PowerFleet $362.5M FY2025 revenue / CalAmp $197M FY2024 revenue as evidence of anti-theft hardware deployment scale",
+      "sources": ["PowerFleet IR press release (ir.powerfleet.com)", "CalAmp press release (calamp.com/press-releases)"],
+      "source_categories": ["primary-filing (PowerFleet — NYSE listed)", "secondary-press-release (CalAmp — private post-restructuring)"],
+      "score": "Medium",
+      "override": "PowerFleet is NYSE-listed — IR press release = primary-filing equivalent. CalAmp press release (calamp.com own domain) for private company = secondary-press-release. Two sources of different quality. PowerFleet alone meets the criteria for one solid source; CalAmp is secondary. Score: Medium.",
+      "notes": "PowerFleet data solid; CalAmp data requires verification via any available SEC filing from before delisting."
+    },
+    {
+      "id": "PP4e",
+      "claim_text": "LoJack: 98%+ recovery rate, 26-minute average recovery time",
+      "sources": ["lojack.com/products/stolen-vehicle-recovery product page"],
+      "source_categories": ["auto-low-vendor (LoJack own product page)"],
+      "score": "Low",
+      "override": "Vendor-marketing override: LoJack product page making claims about LoJack's own performance. No third-party validation cited.",
+      "notes": "Use as illustrative; flag as vendor-self-reported."
+    },
+    {
+      "id": "PP5a",
+      "claim_text": "False liability claim at delivery stop costs $15,000–$80,000 in legal fees and settlement",
+      "sources": ["Brown & Brown insurance (bbrown.com/industries/logistics-transportation/last-mile-and-final-mile-delivery-insurance)"],
+      "source_categories": ["secondary-trade (insurance broker marketing page)"],
+      "score": "Low",
+      "override": "Single secondary source. Brown & Brown is an insurance broker — their webpage is a marketing surface for their last-mile delivery insurance product. The $15K–$80K range is an illustrative marketing figure, not an actuarial or industry study.",
+      "notes": "Need insurance industry actuarial study or court settlement database."
+    },
+    {
+      "id": "PP5b",
+      "claim_text": "Lytx 56% reduction in risky driving behaviors; Samsara delivery workflow captures events at delivery stops",
+      "sources": ["Lytx (lytx.com/news-events)", "Samsara Form 10-K (stocktitan.net)"],
+      "source_categories": ["auto-low-vendor (Lytx)", "primary-filing (Samsara 10-K)"],
+      "score": "Low",
+      "override": "Lytx auto-low (vendor-marketing for own product). Samsara 10-K is primary-filing but confirms revenue base — it does not independently validate Lytx's 56% figure. Two separate claims bundled: Samsara delivery workflow feature (acceptable via 10-K); Lytx 56% reduction (auto-low-vendor). Lowest-scoring component governs the Lytx-specific claim.",
+      "notes": "Samsara revenue/product description = High via 10-K. Lytx 56% = Low via own marketing."
+    },
+    {
+      "id": "PP5c",
+      "claim_text": "SEA fleet telematics penetration ~17.5% of commercial vehicles (2024E)",
+      "sources": ["Berg Insight via GlobeNewswire (globenewswire.com)"],
+      "source_categories": ["secondary-market-research"],
+      "score": "Low",
+      "override": "Same as VC25. Single paid-research firm via press release. APAC-as-proxy override (SEA aggregate, not country-specific).",
+      "notes": "Most important structural anchor for SEA gap narrative, but sourced from a single market research firm."
+    },
+    {
+      "id": "PP5d",
+      "claim_text": "64% of commercial trucking companies monitor driver behavior (US/EU-weighted)",
+      "sources": ["S&P Global Market Intelligence Voice of Enterprise survey via FleetOwner (fleetowner.com)"],
+      "source_categories": ["secondary-trade (FleetOwner citing S&P survey)"],
+      "score": "Low",
+      "override": "Chain-of-citations: FleetOwner article citing S&P Global survey. S&P Global would be primary-consultancy if the actual S&P report were cited, but only FleetOwner article is cited. Trade-press-only override. Also note US/EU-weighted sample — not applicable to SEA context without Geography mismatch flag.",
+      "notes": "Geography mismatch flag required. Locate S&P Global Market Intelligence Voice of Enterprise survey directly."
+    },
+    {
+      "id": "PP5e",
+      "claim_text": "Samsara $1.62B FY2026 revenue (98% SaaS); Motive ~$500M ARR",
+      "sources": ["Samsara Form 10-K (stocktitan.net)", "SaaStr (saastr.com) for Motive"],
+      "source_categories": ["primary-filing (Samsara)", "secondary-trade (SaaStr for Motive)"],
+      "score": "Medium",
+      "override": "Samsara = High (10-K). Motive = Low (SaaStr secondary). Combined score: Medium — one solid primary-filing source, one secondary.",
+      "notes": "Samsara solid; Motive needs S-1 direct cite."
+    }
+  ],
+
+  "scoring_distribution": {
+    "total_claims_scored": 46,
+    "high": {"count": 11, "percent": "24%"},
+    "medium": {"count": 6, "percent": "13%"},
+    "low": {"count": 29, "percent": "63%"}
+  },
+
+  "override_triggers": [
+    {
+      "override": "vendor-marketing-override",
+      "claim_count": 12,
+      "claim_ids": ["VC13", "VC19", "VC21", "VC24", "PP1e", "PP2a", "PP2b", "PP4a", "PP4e", "PP5a", "PP5b (Lytx component)", "VC8"]
+    },
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "claim_count": 5,
+      "claim_ids": ["VC1a", "VC1b", "VC7", "VC9", "VC25"]
+    },
+    {
+      "override": "press-release-only",
+      "claim_count": 5,
+      "claim_ids": ["VC17", "VC18", "VC19", "VC24", "PP2a (eLogii vendor blog)"]
+    },
+    {
+      "override": "trade-press-only",
+      "claim_count": 9,
+      "claim_ids": ["VC4b", "PP1d", "PP1f", "PP3a", "PP3b", "PP3c", "PP4a", "PP4c", "PP5d"]
+    },
+    {
+      "override": "single-domain",
+      "claim_count": 3,
+      "claim_ids": ["PP4b (SambaSafety only)", "PP1h (Overhaul Q2 2025 only)", "PP3f (Overhaul Brazil only)"]
+    },
+    {
+      "override": "chain-of-citations-same-originator",
+      "claim_count": 4,
+      "claim_ids": ["VC2 (NTC&Logistica via WLRN+Overhaul)", "VC4a (Overhaul via TT News+Overhaul report)", "PP3d (NTC&Logistica via WLRN+Overhaul)", "PP4c (SambaSafety via trade press)"]
+    },
+    {
+      "override": "single-vendor-data-dependency",
+      "claim_count": 4,
+      "claim_ids": ["PP1c (Overhaul 4%→19%)", "PP1h (Overhaul 37%)", "PP3e (Overhaul Mexico 83.8%/state breakdown)", "PP3f (Overhaul BR-116 9.3%)"],
+      "note": "The entire facility-theft trend narrative (4%→19%→37%) rests on Overhaul as the single data source. This is the highest-priority structural risk in the document."
+    },
+    {
+      "override": "outdated-source",
+      "claim_count": 2,
+      "claim_ids": ["VC17 (Allied Universal 2021 acquisition announcement — 5 years stale)", "PP2f (800% fraud surge 2020-2021 — 4+ years stale)"]
+    },
+    {
+      "override": "apac-as-proxy",
+      "claim_count": 2,
+      "claim_ids": ["VC25 (SEA aggregate for fleet penetration)", "PP5c (SEA aggregate for AI dashcam penetration)"],
+      "flag": "Geography mismatch"
+    },
+    {
+      "override": "draft-over-scored",
+      "claim_count": 3,
+      "claim_ids": ["VC2 (draft: High; actual: Medium)", "VC3b (draft: High; actual: Low)", "VC4a (draft: Medium; actual: Low)"],
+      "note": "These three claims were marked higher than rubric allows in the draft. The Brazil NTC&Logistica data is cited via secondary intermediaries only; the 81% hijacking figure is Overhaul-only; Mexico incident count is Overhaul-only via trade press."
+    }
+  ],
+
+  "weak_claims_to_deep_research": [
+    {
+      "claim_id": "PP2e",
+      "claim_text": "Indonesia mandatory ePOD effective Q3 2026, targeting IDR 2.1 trillion ($130M) in annual fraud losses",
+      "current_sources": ["blog.cfglobal.co/air-sea-and-tech-the-future-of-indonesias-supply-chain-in-2025/"],
+      "current_score": "Low",
+      "issue": "Single industry blog source for a regulatory mandate. Web search found zero government corroboration. Kemenhub (Indonesian Ministry of Transportation) has not published a gazette confirming this mandate or timeline. IDR 2.1 trillion figure untraceable to any official source. Risk: claim may be speculative or misread from a policy proposal.",
+      "suggested_action": "Search Kemenhub (kemenhub.go.id), BPS Indonesia (bps.go.id), and BAPPENAS for any Ministry of Transportation regulation, Peraturan Menteri, or decree related to electronic proof of delivery in road freight. Search in Indonesian: 'bukti pengiriman elektronik peraturan 2026 kemenhub'. Also search ASEAN Trade Repository and Indonesia Logistics Association (ALI) for ePOD working group documentation.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP1h",
+      "claim_text": "Q2 2025: warehouses and DCs = 37% of US cargo theft incidents; and the entire 4%→19%→37% facility-theft trend sequence (H1 2023 → H1 2024 → Q2 2025)",
+      "current_sources": ["Overhaul H1 2024 report (prnewswire.com)", "Overhaul Q2 2025 report (over-haul.com)"],
+      "current_score": "Low",
+      "issue": "The headline trend driving the entire PP5.1 narrative — facility theft growing from 4% to 19% to 37% — rests entirely on Overhaul's proprietary data series. No independent source (CargoNet, NICB, BSI/TT Club, ATRI) has confirmed the 4%→19%→37% US trajectory at this specificity. Single-vendor data dependency for the most important trend claim in Stage 5.",
+      "suggested_action": "Search Verisk CargoNet Q1/Q2 2025 theft statistics for warehouse/DC location breakdown. Search NICB (nicb.org) cargo theft 2024/2025 location data. Search ATRI 2025 cargo theft research for location breakdown. Search FreightWaves/JOC for any independent confirmation of warehouse/DC as the fastest-growing theft location in 2024-2025. If independent confirmation exists, upgrade to Medium; if not, flag as single-vendor claim.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC4a",
+      "claim_text": "Mexico cargo theft: ~24,000 incidents in 2024, +16% YoY",
+      "current_sources": ["TT News citing Overhaul", "Overhaul Mexico 2024 Annual Report (gated)"],
+      "current_score": "Low",
+      "issue": "The user concern flags 'Mexico SCT figures (~24,000/$368M)' — but no SCT (Secretaria de Comunicaciones y Transportes) or SSPC (Secretaria de Seguridad y Proteccion Ciudadana) primary source is actually cited in the draft. The 24,000 incident count is Overhaul's proprietary figure via TT News. The $368M loss figure is from Circulo Logistico via Mexico Business News. Mexican government has its own cargo crime statistics which should be accessible.",
+      "suggested_action": "Search SSPC (secretariadeseguridadpublica.gob.mx) for 'robo de carga 2024 estadisticas'. Search INEGI for transport crime statistics. Search Guardia Nacional annual crime report 2024. Search Fiscalia General de la Republica for cargo crime federal data. Also search Confederacion de Camaras Industriales (CONCAMIN) or CANACAR (Camara Nacional del Autotransporte de Carga) for Mexico carrier association data on theft incidence.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC3b",
+      "claim_text": "81% of Brazil theft events in 2024 are armed hijackings",
+      "current_sources": ["Overhaul Brazil Annual Report 2024 (TAPA PDF)"],
+      "current_score": "Low",
+      "issue": "Draft marks this High — it is actually Low. Single Overhaul vendor report for a theft-type breakdown percentage. NTC&Logistica publishes annual cargo theft reports that likely contain theft-type breakdowns. SENASP (Brazil Secretaria Nacional de Seguranca Publica) also publishes crime statistics. The hijacking percentage is a critical narrative claim used to justify convoy escort services.",
+      "suggested_action": "Search NTC&Logistica (ntclogistica.org.br) for their 2024 Anuario de Seguranca de Cargas or equivalent annual security publication. Search SENASP / Ministerio da Justica Brazil for 'roubo de carga 2024 modalidade'. Search ABRALOG (Associacao Brasileira de Logistica) for cargo security statistics. Search FETRANSPORT-SP for Sao Paulo corridor theft type data.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP4b",
+      "claim_text": "70% of commercial fleets do not share telematics data with insurers; 79% never asked; 65% get better rates when sharing",
+      "current_sources": ["SambaSafety blog (sambasafety.com)"],
+      "current_score": "Low",
+      "issue": "Single vendor-sponsored survey. SambaSafety is a fleet telematics risk intelligence vendor with a commercial interest in driving telematics adoption. Survey sample, n-count, and methodology not disclosed. The 70% non-sharing figure is confirmed to be numerically consistent (30% share = 70% do not), but the survey quality is unverified. The 79% 'never asked' finding is used as a key structural claim in PP5.4 root cause analysis.",
+      "suggested_action": "Search for independent insurance industry survey on telematics data sharing: NAIC (National Association of Insurance Commissioners) telematics report, J.D. Power commercial fleet insurance study, RIMS (Risk and Insurance Management Society) benchmarking report, or Insurance Information Institute (iii.org) telematics adoption data. Also check Carrier Management / AM Best for any cited primary survey behind the 88% telematics adoption / 30% sharing split.",
+      "priority": "medium"
+    }
+  ],
+
+  "gate_decision_recommendation": "re-run-recommended",
+  "gate_reasoning": "Stage 5 scores 24% High, 13% Medium, and 63% Low across 46 scored claims — well below the QUALITY-BAR.md target of ≤30% Low and ≥25% High. The 63% Low rate is driven by three structural problems. First, the entire facility-theft trend narrative (4%→19%→37% across H1 2023, H1 2024, Q2 2025) rests on Overhaul's proprietary data series with no independent validation from CargoNet, NICB, or any government source — this is the most consequential single-vendor dependency in the document. Second, the Indonesia mandatory ePOD claim (Q3 2026, IDR 2.1 trillion) is sourced from a single industry blog with no government corroboration found in any search; if this regulation does not exist or is mischaracterized, it removes the only government-anchor for the POD pain point in SEA. Third, all Mexico cargo theft quantification (24,000 incidents, $368M losses, 83.8% violence, state breakdown) traces back to Overhaul as the single originating source, despite the user concern note about 'Mexico SCT figures' — no Mexican government source (SCT, SSPC, Guardia Nacional) was located or cited. The five high-priority deep-research targets are: (1) Indonesia ePOD Kemenhub regulation verification, (2) independent validation of the 4%→19%→37% Overhaul facility-theft trend, (3) Mexico government cargo crime statistics (SSPC/Guardia Nacional), (4) NTC&Logistica primary publication for Brazil hijacking type breakdown, and (5) SambaSafety telematics non-sharing survey independent corroboration. The High-scoring claims (ATRI, CargoNet, BSI/TT Club, Securitas AR2024, Samsara 10-K, TIA, PowerFleet IR, Motorola Solutions IR) provide a credible structural skeleton, but the quantified cost and frequency figures for the three core pain points (facility theft, paper POD, LATAM escort) require deep-research passes before the stage is shippable at WP grade."
+}

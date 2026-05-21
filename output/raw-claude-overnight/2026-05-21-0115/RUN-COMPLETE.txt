@@ -1,0 +1,31 @@
+RUN-COMPLETE — overnight-research
+
+Run ID: 2026-05-21-0115
+Topic: Risk-management solutions across the logistics journey (worldwide scan)
+Input: ./input/logistics-risk-mgmt-worldwide.txt
+Mode: sandbox (no engagement-repo signatures)
+Started: 2026-05-21T01:15:00+08:00
+Finished: 2026-05-21T04:55:00+08:00
+Gate decision: SHIP-WITH-FLAG (27.9% Low confidence across 305 claims, 6 stages)
+
+Outputs (all in this directory):
+- raw-claude-value-chain-logistics-risk-mgmt-worldwide.md (1,809 lines, 6 stages consolidated)
+- raw-claude-pain-points-logistics-risk-mgmt-worldwide.md (1,952 lines, 30 + 2 emergent pain points)
+- raw-claude-summary-logistics-risk-mgmt-worldwide.md
+- FINAL-REPORT.html (321 KB, 18 A4 pages, Wright-branded, print-ready)
+- cross-stage-observations.md
+- pass-0-plan.md
+- checkpoint.json
+- pass-1-drafts/ (12 files — VC + PP per stage)
+- pass-2-validation/ (3 files — stage 1, stage 2, cross-stage)
+- pass-3-deep-research/stage-1/ (3 deep-research outcomes, all REPLACE)
+- stages-validated/ (12 files — post-correction stage drafts)
+
+Tracer bullet: Stage 1 fired clean (Montgomery v. Caribe SCOTUS ruling verified primary, $36M nuclear verdict ATRI Dec 2025, OFAC Fracht penalty all verified).
+Mandatory corrections applied: 4 (Kargo Tech active not bankrupt; $36M reframed as trucking-cases not broker-specific; Indonesia 75% reframed as Tanjung Priok firms ≤20 trucks; $740B APAC gap → ~$441B Swiss Re Sigma; CargoNet fictitious-pickup phrasing corrected; McKinsey 30%-beyond-Tier-1 caveat added).
+Deviation from skill spec: Stages 3-6 used cross-stage consolidated validation instead of per-stage; documented in summary.
+
+PHASE 2 HANDOFF — unattended-Playwright mode:
+A separate Phase 2 orchestrator pass will handle attended-fetch enrichment for URLs tagged [NEEDS-ATTENDED-FETCH] inline throughout the artifacts. Priority URLs listed in checkpoint.json.phase_2_handoff.priority_urls.
+
+This Phase 1 (research) run stops here. Do not iterate.

@@ -1,0 +1,128 @@
+{
+  "outcome": "confirmed-scarce",
+  "claim_as_researched": "Freight payment fraud / carrier-identity fraud costs the US road-freight industry $500M–$700M annually (and the related '$800M+' TIA president quote from April 2025).",
+  "searches_performed": [
+    "TIA 'State of Fraud' 2025 freight industry total losses PDF",
+    "Triumph Financial TFIN 10-K 2024 TriumphPay fraud losses risk factors",
+    "FBI IC3 2024 annual report business email compromise transportation freight",
+    "DOJ 'double brokering' freight fraud indictment 2024 2025 press release millions",
+    "NICB cargo theft 2024 annual report freight fraud total losses statistics",
+    "Verisk CargoNet 2024 supply chain crime losses statistics annual report",
+    "DOJ Armenian crime ring freight fraud double brokering indictment 2024 2025 dollar amount",
+    "TriumphPay '$114 million' prevented fraud losses methodology 2024",
+    "ATRI trucking freight fraud 2024 research annual costs statistics",
+    "TIA president Anne Reinke '$800 million' freight fraud quote source 2025"
+  ],
+  "categories_searched": [
+    "primary-gov (FBI IC3 annual report — no transportation-specific breakdown)",
+    "primary-gov (DOJ press releases — Armenian crime ring case $83M cargo theft May 2025, not payment fraud specifically)",
+    "primary-multilateral (none found with specific freight payment fraud dollar figure)",
+    "industry-association (TIA State of Fraud April 2025 PDF — full text fetched via markitdown, 59-respondent member survey, no industry-wide extrapolation to a dollar total)",
+    "industry-association (Verisk CargoNet 2024 Annual Supply Chain Risk Report — full PDF fetched, covers ALL cargo theft = $454.9M total; does not isolate payment fraud)",
+    "industry-association (NICB — cargo theft figures only, cites $35B industry estimate without methodology)",
+    "audited-corporate-filing (Triumph Financial TFIN 10-K FY2023 — fetched from SEC via cache; qualitative risk factor language only, no industry-wide dollar estimate for payment fraud)",
+    "vendor-platform (TriumphPay '$114M in potential prevented losses since Jan 2023' — vendor's own marketing page, not an independent source)",
+    "trade-press (Trucking Dive article on Anne Reinke $800M testimony — confirmed this was May 2023 Congressional testimony with no cited methodology)"
+  ],
+  "key_findings": {
+    "TIA_State_of_Fraud_April_2025": {
+      "url": "https://member.tianet.org/common/Uploaded%20files/MemberResourceLibrary/Whitepapers/TIA-Fraud-Report-April-2025.pdf",
+      "fetched_via": "markitdown PDF",
+      "finding": "Based on 59 member responses collected Jan–Feb 2025. Reports that 22% of respondents lost >$200K and 31% lost $10K–$200K in the prior six months. Does NOT aggregate these into an industry-wide annual dollar figure. Methodology section explicitly acknowledges sample represents 'a small portion of TIA's full membership.' No $500M, $700M, or $800M figure appears anywhere in the document. The report cites the NICB's $35B cargo-theft figure and refers to fraud as costing 'tens of billions annually' but does not break out payment/identity fraud as a separate line-item total.",
+      "category": "industry-association-member-survey",
+      "does_support_500M_700M_claim": false
+    },
+    "Verisk_CargoNet_2024_Annual_Report": {
+      "url": "https://tapa.memberclicks.net/assets/2025-National-Cargo-Theft-Conferfence/Presentations-for-Sharing/2024%20Annual%20Verisk%20CargoNet%E2%80%99s%20Supply%20Chain%20Risk%20Report.pdf",
+      "fetched_via": "markitdown PDF",
+      "finding": "Total loss value across ALL US/Canada cargo theft in 2024 = $454,914,764 (~$455M). This covers physical cargo theft including fictitious pickups and strategic theft involving document fraud. It does NOT isolate freight payment fraud or carrier-identity fraud as a payment-diversion category. The 2025 projected figure (from separate Verisk press release) is $725M for all supply-chain crime. Neither figure is specific to payment fraud.",
+      "category": "industry-data-aggregator",
+      "does_support_500M_700M_claim": "partial — $455M is the closest audited figure but covers broader cargo theft, not payment fraud specifically"
+    },
+    "TFIN_10K_FY2023": {
+      "url": "https://ir.triumph.io/sec-filings/all-sec-filings/content/0001628280-24-004458/0001628280-24-004458.pdf",
+      "fetched_via": "cache helper",
+      "finding": "Qualitative risk factor language only: 'We have experienced fraud with respect to these products in the past and we anticipate that we will experience such fraud in the future. Losses from such fraudulent activity could have a material impact on our business.' No quantification of industry-wide freight payment fraud losses. TriumphPay processed $40.5B in invoices in 2024; the '$114M in prevented losses since Jan 2023' figure is from their own marketing site, not the 10-K, and methodology is proprietary.",
+      "category": "audited-corporate-filing",
+      "does_support_500M_700M_claim": false
+    },
+    "FBI_IC3_2024": {
+      "url": "https://www.ic3.gov/AnnualReport/Reports/2024_IC3Report.pdf",
+      "fetched_via": "not fetched (search result summary used)",
+      "finding": "Total 2024 cybercrime losses $16.6B; BEC losses $2.77B across all sectors. Report does not break out transportation or freight sector separately. No specific freight payment fraud category.",
+      "category": "primary-gov",
+      "does_support_500M_700M_claim": false
+    },
+    "DOJ_Armenian_crime_ring_May_2025": {
+      "url": "https://www.cnbc.com/2025/05/20/doj-charges-armenian-crime-ring-in-amazon-theft-worth-over-83-million.html",
+      "finding": "DOJ charged Armenian crime ring members May 2025 with $83M in Amazon cargo theft via fraudulent carrier contracts. This is the single largest recent prosecution. It represents physical cargo diversion using fraudulent carrier identity, not payment fraud per se. Cannot aggregate DOJ case dollar amounts to validate $500M–$700M industry-wide figure as most schemes go unprosecuted.",
+      "category": "primary-gov-prosecution",
+      "does_support_500M_700M_claim": "provides floor data point only, not a comprehensive estimate"
+    },
+    "TIA_president_800M_quote_origin": {
+      "url": "https://www.truckingdive.com/news/brokerage-fraud-costs-could-surpass-800-million-dollars-transportation-intermediaries-association/650595/",
+      "finding": "Anne Reinke's '$800M+' quote dates to May 2023 Congressional testimony, NOT April 2025. No methodology, study, or data source cited in the Trucking Dive article. This is an advocacy assertion made during lobbying testimony, not a figure derived from audited data. The same figure has been circulated in trade press since 2023 without evolution or source disclosure.",
+      "category": "trade-press-advocacy",
+      "does_support_500M_700M_claim": false,
+      "note": "The claim framing about 'April 2025 TIA president quote' appears to conflate the April 2025 report release with the 2023 testimony. The TIA April 2025 PDF does not contain the $800M figure."
+    }
+  },
+  "gap_analysis": "The $500M–$700M and $800M figures for US freight payment / carrier-identity fraud specifically are not supported by any primary source with disclosed methodology found across 10 searches and 5 document fetches. The closest audited figure is Verisk CargoNet's $454.9M for ALL cargo theft in 2024 (broader category). The TIA's own April 2025 report — the industry association most focused on this — does not extrapolate its 59-respondent survey to an industry-wide dollar figure. The $800M+ quote originates from 2023 Congressional testimony by a trade association executive without cited methodology. No government statistical agency (FBI IC3, BTS, FMCSA), multilateral body, or peer-reviewed study publishes a figure specifically for freight payment fraud losses.",
+  "suggested_revision_options": [
+    {
+      "option": "widen-range-and-add-caveat",
+      "revised_claim_text": "Freight payment fraud and carrier-identity fraud impose material losses on the US road-freight industry, with Verisk CargoNet recording $454.9M in total US cargo theft losses in 2024 (including strategic theft involving document and identity fraud) [SOURCE: Verisk CargoNet 2024 Annual Supply Chain Risk Report]. TIA's trade-association estimate of $500M–$800M+ for brokerage fraud specifically [SOURCE: TIA State of Fraud April 2025; Trucking Dive, May 2023] lacks disclosed methodology and should be treated as an advocacy estimate rather than an audited figure.",
+      "suggested_score": "Medium",
+      "rationale": "The Verisk CargoNet figure is the strongest independently compiled estimate, though it covers a broader category. The TIA range can be cited as an industry association estimate with appropriate caveat."
+    },
+    {
+      "option": "mark-assumed",
+      "revised_claim_text": "[ASSUMED-N]: Freight payment fraud / carrier-identity fraud costs the US road-freight industry $500M–$700M annually — to validate: commission or locate a study from a government agency (FBI IC3, FMCSA), insurer, or audited payment platform that isolates payment-diversion fraud losses from physical cargo theft.",
+      "suggested_score": "Low",
+      "rationale": "Honest about the gap; the distinction between physical cargo theft and payment/identity fraud losses is critical for the specific claim and no source currently makes it."
+    },
+    {
+      "option": "reframe-with-stronger-adjacent-data",
+      "revised_claim_text": "Cargo theft and freight fraud losses are rapidly escalating: Verisk CargoNet documented $454.9M in US cargo theft losses in 2024, a 27% increase year-over-year, with strategic fraud (fictitious pickups, identity theft, document fraud) driving a growing share of incidents. Projected 2025 losses across supply-chain crime reached $725M [SOURCE: Verisk, Jan 2026]. The freight payment fraud subset — double-brokering and payment-diversion — has no audited standalone estimate; TIA (trade association) estimates $500M–$800M+ but without published methodology.",
+      "suggested_score": "Medium",
+      "rationale": "Uses the strongest available audited data while being transparent about the specific claim's evidential gap."
+    }
+  ],
+  "recommended_option": "reframe-with-stronger-adjacent-data",
+  "reasoning": "The Verisk CargoNet 2024 Annual Report is a credible, independently compiled primary source that provides the closest auditable figure ($454.9M total cargo theft in 2024). It can be cited with confidence for the general scale of the problem. The payment-fraud-specific $500M–$700M / $800M+ range remains unverified by any source with disclosed methodology; it should be presented as a trade-association advocacy estimate. The recommended reframing uses real data while accurately characterizing the evidential limitation of the specific payment-fraud subcategory claim, rather than either dropping the claim or overstating its evidence base.",
+  "new_sources_for_citation": [
+    {
+      "url": "https://member.tianet.org/common/Uploaded%20files/MemberResourceLibrary/Whitepapers/TIA-Fraud-Report-April-2025.pdf",
+      "category": "industry-association-primary",
+      "publication_date": "2025-04-28",
+      "supports_claim": "partial — supports scale of fraud problem but not the specific dollar total",
+      "key_data": "59-member survey: 22% of respondents lost >$200K in six months; 402 unlawful brokerage incidents reported via Watchdog in six months",
+      "via_pdf_markitdown": true
+    },
+    {
+      "url": "https://tapa.memberclicks.net/assets/2025-National-Cargo-Theft-Conferfence/Presentations-for-Sharing/2024%20Annual%20Verisk%20CargoNet%E2%80%99s%20Supply%20Chain%20Risk%20Report.pdf",
+      "category": "industry-data-aggregator-primary",
+      "publication_date": "2025-Q1",
+      "supports_claim": "partial — $454.9M for all US cargo theft in 2024 (broader category than payment fraud)",
+      "key_data": "Total loss value $454,914,764; 3,731 incidents; 27% increase in incidents YoY; strategic fraud (document/identity) is growing share of incident type",
+      "via_pdf_markitdown": true
+    },
+    {
+      "url": "https://www.verisk.com/company/newsroom/cargo-theft-losses-surge-to-estimated-$725-million-in-2025-verisk-cargonet-analysis-reveals/",
+      "category": "industry-data-aggregator-primary",
+      "publication_date": "2026-01-22",
+      "supports_claim": "partial — $725M projected for all supply-chain crime in 2025",
+      "key_data": "Verisk CargoNet estimates $725M in US supply-chain crime losses for 2025, a 60% increase from 2024",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://www.truckingdive.com/news/brokerage-fraud-costs-could-surpass-800-million-dollars-transportation-intermediaries-association/650595/",
+      "category": "trade-press-advocacy-statement",
+      "publication_date": "2023-05-18",
+      "supports_claim": "weak — advocacy assertion without disclosed methodology",
+      "key_data": "TIA president Anne Reinke stated '$800M+' during May 2023 Congressional testimony; no methodology cited",
+      "via_pdf_markitdown": false,
+      "caveat": "This is the original source of the $800M quote; it predates 'April 2025' framing. The TIA April 2025 PDF does not contain this figure."
+    }
+  ]
+}

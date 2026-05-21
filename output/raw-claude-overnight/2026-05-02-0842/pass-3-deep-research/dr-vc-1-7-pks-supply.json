@@ -1,0 +1,45 @@
+{
+  "claim_id": "VC-1.7",
+  "verdict": "REFINED",
+  "updated_claim": "Indonesia and Malaysia combined produce approximately 14–19 million tonnes of palm kernel shell (PKS) per year (central estimate 15–18 Mt), derived from: Indonesia CPO ~50 Mt (GAPKI 2024) + Malaysia CPO ~18.6 Mt (MPOB 2023), back-calculated to FFB via official OERs, then multiplied by the GAPKI-stated PKS yield of 5–6% of FFB. The original claim of '>18 Mt/yr' sits at the top of this range and is achievable only at a 6% PKS/FFB yield; a more conservative midpoint (5.5%) gives ~17 Mt combined. Revised claim: 'Indonesia and Malaysia combined generate an estimated 15–19 Mt of PKS per year, with a central estimate of approximately 16–17 Mt at a 5–5.5% PKS/FFB yield ratio.'",
+  "sources_found": [
+    {
+      "url": "https://gapki.id/en/news/2024/02/28/palm-oil-industry-performance-in-2023-prospects-for-2024/",
+      "type": "primary",
+      "publication": "GAPKI (Indonesian Palm Oil Producers Association)",
+      "date": "2024-02-28",
+      "key_quote": "The production of crude palm oil (CPO) in 2023 was projected to reach 50.07 million tons or an increase of 7.15% compared to that of 2022 at 46.73 million tons. Palm kernel oil (PKO) reached 4.77 million tons."
+    },
+    {
+      "url": "https://bepi.mpob.gov.my/images/overview/Overview2023.pdf",
+      "type": "primary",
+      "publication": "Malaysian Palm Oil Board (MPOB) — Overview of Malaysian Oil Palm Industry 2023",
+      "date": "2024-01",
+      "key_quote": "Crude palm oil production reached 18.55 million tonnes in 2023. Oil extraction rate (OER) increased 0.8% to 19.86%."
+    },
+    {
+      "url": "https://gapki.id/en/news/2022/11/11/palm-oil-shells-becoming-more-promising-at-global-market/",
+      "type": "primary",
+      "publication": "GAPKI — citing APCASI (Indonesian Palm Shell Industry Association)",
+      "date": "2022-11-11",
+      "key_quote": "In 2019, PKS production reached 9.97 million tons, of which 1.72 million tons were exported (17.25% of total production). Every palm oil mill produces 50–70 kg of palm shells per tonne of FFB."
+    },
+    {
+      "url": "https://gapki.id/en/news/2025/03/05/palm-biomass-hugely-potential-to-support-energy-resilience/",
+      "type": "primary",
+      "publication": "GAPKI — Palm Biomass Potential Indonesia",
+      "date": "2025-03-05",
+      "key_quote": "PKS is around 5–6 percent of FFB. Biomass from fruit fiber and shells totals approximately 29.52 million tons per year [Indonesia]; fronds and leaves at 114.39 million tons per year."
+    },
+    {
+      "url": "https://www.bps.go.id/en/publication/2024/11/29/d5dcb42ab730df1be4339c34/indonesian-oil-palm-statistics-2023.html",
+      "type": "primary",
+      "publication": "BPS-Statistics Indonesia — Indonesian Oil Palm Statistics 2023",
+      "date": "2024-11-29",
+      "key_quote": "Annual publication presenting data of area and production on oil palm by province and by category of producers. Indonesia CPO 2023: 50.07 Mt (GAPKI-consistent)."
+    }
+  ],
+  "methodology_note": "Bottom-up calculation: Indonesia FFB 2023 ≈ 218–228 Mt (CPO 50.07 Mt ÷ 22–23% OER). Malaysia FFB 2023 ≈ 93.4 Mt (CPO 18.55 Mt ÷ 19.86% MPOB OER). PKS at 5%: combined ~15.6–16.0 Mt. PKS at 5.5%: combined ~17.1–17.7 Mt. PKS at 6%: combined ~18.7–19.3 Mt. Cross-check: APCASI direct figure for Indonesia 2019 = 9.97 Mt implies a ~4.6% ratio, yielding ~14–15 Mt combined at 2023 CPO levels. The '>18 Mt' claim requires the high end (6%) of the yield range.",
+  "confidence_after": "medium",
+  "confidence_reasoning": "Strong primary sources for CPO production (GAPKI, MPOB). The 5-6% PKS/FFB ratio is well-established in engineering literature and confirmed by GAPKI. The 18 Mt threshold is at the top of the plausible range; a revised range of 14–19 Mt (central ~16–17 Mt) is better supported. Recommend revising the claim from '>18 Mt' to '15–19 Mt' with midpoint disclosure."
+}

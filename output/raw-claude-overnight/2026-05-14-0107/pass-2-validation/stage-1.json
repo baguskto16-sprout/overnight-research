@@ -1,0 +1,811 @@
+{
+  "stage": 1,
+  "stage_name": "Vendor procurement & counterparty risk",
+  "files_validated": [
+    "stage-1-value-chain.md",
+    "stage-1-pain-points.md"
+  ],
+  "total_claims": 77,
+  "by_confidence": {
+    "H": 11,
+    "M": 25,
+    "L": 41
+  },
+  "unique_source_domains": 44,
+  "unique_source_urls": 53,
+  "domain_diversity_list": [
+    "fmcsa.dot.gov",
+    "safer.fmcsa.dot.gov",
+    "verisk.com",
+    "cargonet.com",
+    "ftvcapital.com",
+    "tianet.org",
+    "mycarrierportal.com",
+    "highway.com",
+    "freightvalidate.com",
+    "prnewswire.com",
+    "freightwaves.com",
+    "reliancepartners.com",
+    "carrier411.com",
+    "freightcaviar.com",
+    "carrierassure.com",
+    "macropoint.com",
+    "brokerpro.com",
+    "risk.lexisnexis.com",
+    "au10tix.com",
+    "triumphpay.com",
+    "descartes.com",
+    "globenewswire.com",
+    "tekpon.com",
+    "carrierowl.com",
+    "dat.com",
+    "over-haul.com",
+    "pymnts.com",
+    "transporeon.com",
+    "transportation.trimble.com",
+    "cargobase.com",
+    "cargowise.com",
+    "growthmarketreports.com",
+    "verifiedmarketresearch.com",
+    "mordorintelligence.com",
+    "infodlt.dlt.go.th",
+    "fvp.dlt.go.th",
+    "lpi.worldbank.org",
+    "ttclub.com",
+    "kemenhub.go.id",
+    "oecd.org",
+    "certificial.com",
+    "oipinsurtech.com",
+    "foreigh.com",
+    "icij.org",
+    "fleetowner.com",
+    "trucksafe.com",
+    "carrier-ok.com",
+    "putterman-law.com",
+    "ttnews.com"
+  ],
+  "claims": [
+    {
+      "id": "VC-1",
+      "file": "stage-1-value-chain.md",
+      "claim": "US trucking market has ~600,000 active registered motor carriers",
+      "current_source": "https://www.fmcsa.dot.gov/registration/fmcsa-data-dissemination-program",
+      "confidence": "H",
+      "reason": "Primary government data from the federal regulator that maintains this count.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-2",
+      "file": "stage-1-value-chain.md",
+      "claim": "US trucking processes approximately $900 billion in freight annually",
+      "current_source": "https://www.fmcsa.dot.gov/registration/fmcsa-data-dissemination-program",
+      "confidence": "M",
+      "reason": "The cited URL is the FMCSA data dissemination program page, which does not directly publish freight revenue totals; this figure is typically sourced from ATA or BTS — the attribution to FMCSA is incorrect and no ATA/BTS source is cited.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-3",
+      "file": "stage-1-value-chain.md",
+      "claim": "An MC number can be obtained for ~$300 in under a week with no in-person identity check",
+      "current_source": "none",
+      "confidence": "L",
+      "reason": "No footnote attached to this claim in the value-chain document; bare assertion without cited source.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-4",
+      "file": "stage-1-value-chain.md",
+      "claim": "CargoNet reported 3,625 cargo theft incidents in US and Canada in 2024, 27% YoY increase, $454.9M in losses",
+      "current_source": "https://www.verisk.com/company/newsroom/cargo-theft-surges-to-record-levels-in-2024-verisk-cargonet-analysis-reveals/",
+      "confidence": "H",
+      "reason": "Verisk CargoNet is the industry-standard primary data source for North American cargo theft; this is the organization's own annual analysis.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-5",
+      "file": "stage-1-value-chain.md",
+      "claim": "Freight fraud and double-brokering schemes cost victims $500M–$700M in freight payments annually beyond physical cargo losses",
+      "current_source": "https://ftvcapital.com/insights/driving-trust-in-trucking-why-we-invested-in-highway/",
+      "confidence": "L",
+      "reason": "Single source is an investor blog post from FTV Capital (Highway's backer); no disclosed methodology, no independent cross-validation; classic vendor-adjacent estimate.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-6",
+      "file": "stage-1-value-chain.md",
+      "claim": "TIA 2024 fraud survey: average member lost over $400,000 to fraud; 43% named unlawful brokerage as top concern",
+      "current_source": "https://news.tianet.org/key-findings-from-the-tia-fraud-report-2024/",
+      "confidence": "M",
+      "reason": "TIA is a primary industry association; the report is their own survey of members, but sample skews toward larger member brokers and methodology is not fully disclosed in the summary citation.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-7",
+      "file": "stage-1-value-chain.md",
+      "claim": "Descartes MCP reduces onboarding to under 5 minutes for 97%+ of carriers already in its database",
+      "current_source": "https://www.mycarrierportal.com/features/pricing/",
+      "confidence": "L",
+      "reason": "Vendor self-claim on vendor's own pricing page; no third-party audit or independent validation cited.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-8",
+      "file": "stage-1-value-chain.md",
+      "claim": "RMIS automates carrier compliance and insurance certificate verification for freight brokers",
+      "current_source": "https://www.freightwaves.com/news/rmis-automates-carrier-compliance-for-brokers-big-and-small",
+      "confidence": "M",
+      "reason": "Named trade publication (FreightWaves) article with attributed vendor statements; not an independent audit but meets named-author trade-press standard.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-9",
+      "file": "stage-1-value-chain.md",
+      "claim": "Carrier Assure analyzes 2M+ DOT numbers daily; Carrier411 has 4,500+ broker subscribers",
+      "current_source": "https://www.carrier411.com/overview.cfm and https://www.carrierassure.com/how-it-works",
+      "confidence": "L",
+      "reason": "Both figures are vendor self-claims on the vendors' own websites with no third-party verification.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-10a",
+      "file": "stage-1-value-chain.md",
+      "claim": "Highway Load Lock has protected 5M+ loads since launch with zero documented strategic cargo theft incidents; blocked 914,719 fraud attempts in 2024",
+      "current_source": "https://ftvcapital.com/insights/driving-trust-in-trucking-why-we-invested-in-highway/",
+      "confidence": "L",
+      "reason": "Single-vendor source: FTV Capital is Highway's investor; this is vendor self-reporting via an investor's promotional blog. Single-trade-source override applies.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-10b",
+      "file": "stage-1-value-chain.md",
+      "claim": "Overhaul FraudWatch flagged 8% of shipments in early deployment as high-risk",
+      "current_source": "https://www.freightwaves.com/news/overhauls-fraudwatch-a-new-paradigm-in-freight-fraud-prevention",
+      "confidence": "L",
+      "reason": "Trade press article reporting Overhaul's own deployment metrics; vendor self-claim laundered through trade press with no independent audit.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-10c",
+      "file": "stage-1-value-chain.md",
+      "claim": "TIA Watchdog logged 1,600+ fraud reports Sep 2024–Feb 2025, a 65% increase over prior comparable period",
+      "current_source": "https://news.tianet.org/tia-releases-state-of-fraud-in-the-industry-april-2025-report/",
+      "confidence": "M",
+      "reason": "TIA is the primary industry association producing the report on its own members' data; counts as industry-association report.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-11",
+      "file": "stage-1-value-chain.md",
+      "claim": "Highway Trusted Freight Exchange is a verified carrier directory exclusive to vetted participants",
+      "current_source": "https://highway.com/press-releases/highway-launches-load-lock-redefining-load-level-protection-and-compliance-for-freight-brokers",
+      "confidence": "L",
+      "reason": "Vendor press release on vendor's own domain; pure product-description marketing claim.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-12",
+      "file": "stage-1-value-chain.md",
+      "claim": "AU10TIX verifies government IDs from 190+ countries in under 4 seconds",
+      "current_source": "https://www.au10tix.com/",
+      "confidence": "L",
+      "reason": "Vendor homepage claim; no independent benchmark or audit cited.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-13",
+      "file": "stage-1-value-chain.md",
+      "claim": "AU10TIX has prevented $18B+ in identity fraud globally",
+      "current_source": "https://www.au10tix.com/",
+      "confidence": "L",
+      "reason": "Vendor marketing claim on vendor website; no methodology, no third-party audit, no independent verification.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-14",
+      "file": "stage-1-value-chain.md",
+      "claim": "Descartes Systems Group acquired MyCarrierPortal for approximately $24M in September 2024",
+      "current_source": "https://www.descartes.com/resources/news/descartes-acquires-mycarrierportal and https://www.globenewswire.com/news-release/2024/09/18/2948080/0/en/Descartes-Acquires-MyCarrierPortal.html",
+      "confidence": "H",
+      "reason": "First-party disclosure from Descartes Systems Group (NASDAQ: DSGX), a public company; acquisition announced via press release and required to be disclosed under securities regulations.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-15",
+      "file": "stage-1-value-chain.md",
+      "claim": "RMIS Lite starts at $340/month",
+      "current_source": "https://tekpon.com/software/truckstop-rmis/reviews/",
+      "confidence": "L",
+      "reason": "User-reported pricing from a software review aggregation site; not sourced from Truckstop/RMIS official pricing page.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-16",
+      "file": "stage-1-value-chain.md",
+      "claim": "RMIS registers approximately 1 new carrier every 12 seconds; 97%+ of active US carriers already in database",
+      "current_source": "https://www.freightwaves.com/news/rmis-automates-carrier-compliance-for-brokers-big-and-small",
+      "confidence": "M",
+      "reason": "Named FreightWaves article attributes these statistics to RMIS; secondary-trade citing vendor but with named-publication attribution.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-17",
+      "file": "stage-1-value-chain.md",
+      "claim": "Highway has 1,050+ broker clients including 70 of the top 100 US brokers",
+      "current_source": "https://highway.com/",
+      "confidence": "L",
+      "reason": "Vendor self-claim on vendor homepage; no independent verification.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-18",
+      "file": "stage-1-value-chain.md",
+      "claim": "Highway blocked 914,719 fraud attempts in 2024",
+      "current_source": "https://ftvcapital.com/insights/driving-trust-in-trucking-why-we-invested-in-highway/",
+      "confidence": "L",
+      "reason": "Investor promotional blog post authored by Highway's own backer; single-vendor source; no independent audit. Single-trade-source override applies.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-19",
+      "file": "stage-1-value-chain.md",
+      "claim": "FTV Capital made an investment in Highway (August 2025)",
+      "current_source": "https://ftvcapital.com/insights/driving-trust-in-trucking-why-we-invested-in-highway/",
+      "confidence": "M",
+      "reason": "Verifiable institutional investment announcement; FTV Capital is a named private equity firm and the article is their own first-party disclosure of the investment.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-20",
+      "file": "stage-1-value-chain.md",
+      "claim": "Carrier Assure Premium pricing is $149/month",
+      "current_source": "https://www.carrierassure.com/pricing",
+      "confidence": "M",
+      "reason": "Vendor's own published pricing page; vendor self-disclosure of pricing is verifiable and treated as M per the rubric note that vendor self-claims about own product specifics are M unless contradicted.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-21",
+      "file": "stage-1-value-chain.md",
+      "claim": "TIA Watchdog logged 1,600+ fraud reports in six months; 65% increase over prior period",
+      "current_source": "https://news.tianet.org/tia-releases-state-of-fraud-in-the-industry-april-2025-report/",
+      "confidence": "M",
+      "reason": "TIA is the primary industry association; Watchdog is their own platform and this is their own report.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-22",
+      "file": "stage-1-value-chain.md",
+      "claim": "Transporeon connects 210,000+ carriers and 1,500+ shippers; processes 120,000 transports/day",
+      "current_source": "https://www.transporeon.com/en/company and https://transportation.trimble.com/resources/press-releases/trimble-completes-transporeon-acquisition",
+      "confidence": "M",
+      "reason": "Vendor self-reported network scale, cross-referenced by Trimble's acquisition press release (public company disclosure); M because scale figures are vendor-reported but verifiable acquisition announcement provides partial corroboration.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-23",
+      "file": "stage-1-value-chain.md",
+      "claim": "Trimble acquired Transporeon for €1.88B, completed April 2023",
+      "current_source": "https://transportation.trimble.com/resources/press-releases/trimble-completes-transporeon-acquisition",
+      "confidence": "H",
+      "reason": "Trimble is a publicly traded company (NASDAQ: TRMB); material M&A transaction disclosed via formal press release and required to be reported under securities regulations.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-24",
+      "file": "stage-1-value-chain.md",
+      "claim": "Cargobase HQ in Singapore; office in Kuala Lumpur, Malaysia; SOC 2 certified; serves 50+ countries",
+      "current_source": "https://www.cargobase.com/ and https://www.prnewswire.com/apac/news-releases/cargobase-expands-global-footprint-with-new-office-in-kuala-lumpur-malaysia-301989333.html",
+      "confidence": "M",
+      "reason": "Vendor press release plus company website; KL office opening is a verifiable corporate event; SOC 2 is an audited certification that can be independently verified.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-25",
+      "file": "stage-1-value-chain.md",
+      "claim": "Overhaul raised $105M Series C in August 2025",
+      "current_source": "https://www.pymnts.com/news/investment-tracker/2025/overhaul-raises-105-million-dollars-supply-chain-risk-management-platform/",
+      "confidence": "M",
+      "reason": "Named financial news publication (PYMNTS) reporting verifiable funding event; cross-checkable against Overhaul's own press release.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-26",
+      "file": "stage-1-value-chain.md",
+      "claim": "Overhaul safeguards over $1.4 trillion in cargo trade at any given moment",
+      "current_source": "https://www.over-haul.com/product/fraudwatch",
+      "confidence": "L",
+      "reason": "Vendor marketing claim on vendor product page; no methodology, no third-party audit.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-27",
+      "file": "stage-1-value-chain.md",
+      "claim": "Overhaul FraudWatch saved customers $100M+ in potential losses in 2024 early deployment",
+      "current_source": "https://www.freightwaves.com/news/overhauls-fraudwatch-a-new-paradigm-in-freight-fraud-prevention",
+      "confidence": "L",
+      "reason": "Trade press article reporting Overhaul's own claimed savings figure; single trade source repeating vendor claim, no independent validation. Single-trade-source override applies.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-28",
+      "file": "stage-1-value-chain.md",
+      "claim": "Descartes Systems Group serves 25,000+ customers globally",
+      "current_source": "https://www.descartes.com/solutions/transportation-management/carrier-onboarding-fraud-prevention",
+      "confidence": "M",
+      "reason": "Descartes is a public company (NASDAQ: DSGX); customer count is disclosed in their investor materials; the specific page cited is vendor marketing but the figure is verifiable against quarterly filings.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-29",
+      "file": "stage-1-value-chain.md",
+      "claim": "Global carrier onboarding and compliance platform market size is $1.62B in 2024; CAGR 12.8%; projected $4.38B by 2033",
+      "current_source": "https://growthmarketreports.com/report/carrier-onboarding-and-compliance-platform-market",
+      "confidence": "L",
+      "reason": "Tagged [ASSUMED-1] in draft; secondary-market-research firm (GrowthMarketReports); draft itself flags as Low-Medium confidence with no government or multilateral cross-validation available.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-30",
+      "file": "stage-1-value-chain.md",
+      "claim": "North America ~41% ($670M), Europe ~25% ($410M), Asia Pacific ~21% ($340M) of global carrier onboarding platform market",
+      "current_source": "https://growthmarketreports.com/report/carrier-onboarding-and-compliance-platform-market",
+      "confidence": "L",
+      "reason": "Regional breakdown from same secondary-market-research report as VC-29; no independent cross-validation.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-31",
+      "file": "stage-1-value-chain.md",
+      "claim": "Freight broker software market (broader TAM) is $20.03B in 2024",
+      "current_source": "https://www.verifiedmarketresearch.com/product/freight-broker-software-market/",
+      "confidence": "L",
+      "reason": "Secondary-market-research firm (Verified Market Research); no methodology disclosed; broad TAM bucket that includes non-vetting tools.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-33",
+      "file": "stage-1-value-chain.md",
+      "claim": "Cargo theft losses in US and Canada surged to an estimated $725M in 2025",
+      "current_source": "https://www.verisk.com/company/newsroom/cargo-theft-losses-surge-to-estimated-$725-million-in-2025-verisk-cargonet-analysis-reveals/",
+      "confidence": "H",
+      "reason": "Verisk CargoNet 2025 annual analysis; primary industry data source published January 2026.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-34",
+      "file": "stage-1-value-chain.md",
+      "claim": "Double-brokering fraud increased 400% in some regions (2023–2024)",
+      "current_source": "https://ftvcapital.com/insights/driving-trust-in-trucking-why-we-invested-in-highway/",
+      "confidence": "L",
+      "reason": "Investor blog post; vague geography ('some regions'); no disclosed methodology or primary data source; single secondary-vendor source.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-35",
+      "file": "stage-1-value-chain.md",
+      "claim": "Strategic cargo theft grew 1,475% from 2022 to 2024",
+      "current_source": "https://www.verisk.com/company/newsroom/cargo-theft-surges-to-record-levels-in-2024-verisk-cargonet-analysis-reveals/",
+      "confidence": "H",
+      "reason": "Verisk CargoNet 2024 annual analysis; same primary industry data source as VC-4.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-36",
+      "file": "stage-1-value-chain.md",
+      "claim": "ASEAN road freight market is $119.43B in 2025",
+      "current_source": "https://www.mordorintelligence.com/industry-reports/asean-road-freight-transport-market",
+      "confidence": "L",
+      "reason": "Secondary-market-research firm (Mordor Intelligence); Geography mismatch flag — this is a regional market size used as a proxy to calculate a country-specific tool adoption opportunity; no government or multilateral cross-validation.",
+      "weak_claim_for_deep_research": true
+    },
+    {
+      "id": "VC-37",
+      "file": "stage-1-value-chain.md",
+      "claim": "SEA carrier vetting tool market proxy TAM is $4.4M–$8.8M",
+      "current_source": "none — [ASSUMED-2]",
+      "confidence": "L",
+      "reason": "Explicitly tagged [ASSUMED-2]; derived calculation using two L-confidence inputs (Mordor ASEAN figure and an assumed 5–10% digitization discount); no primary data source.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-38",
+      "file": "stage-1-value-chain.md",
+      "claim": "Pricing benchmarks: FreightValidate $99/mo; RMIS Lite $340/mo; MyCarrierPortal Standard $500/mo; Carrier Assure $149/mo",
+      "current_source": "https://freightvalidate.com/aboutus; https://tekpon.com/software/truckstop-rmis/reviews/; https://www.mycarrierportal.com/features/pricing/; https://www.carrierassure.com/pricing",
+      "confidence": "M",
+      "reason": "Three of four prices are from vendor's own published pricing pages (M); RMIS pricing is from Tekpon review site (L), dragging the composite to M.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-39",
+      "file": "stage-1-value-chain.md",
+      "claim": "Highway has no SEA presence as of 2026; all 225,000+ carrier insights are FMCSA US/Canada carriers",
+      "current_source": "https://highway.com/",
+      "confidence": "M",
+      "reason": "Vendor self-disclosure of geographic scope from vendor website; vendor self-claims about own operational scope are M per rubric.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-40",
+      "file": "stage-1-value-chain.md",
+      "claim": "Indonesia has 4M+ registered commercial vehicles, predominantly owner-operated",
+      "current_source": "none",
+      "confidence": "L",
+      "reason": "No footnote attached to this claim in the document; bare assertion. BPS Indonesia or Kemenhub annual statistics would be the appropriate primary source.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-41",
+      "file": "stage-1-value-chain.md",
+      "claim": "Thailand DLT operates a digital carrier information portal at infodlt.dlt.go.th",
+      "current_source": "https://infodlt.dlt.go.th/en",
+      "confidence": "H",
+      "reason": "Primary government source; the Thai Department of Land Transport's own portal.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-42",
+      "file": "stage-1-value-chain.md",
+      "claim": "Highway blocked 9,829 carrier users from 75 countries from its platform in 2024",
+      "current_source": "https://ftvcapital.com/insights/driving-trust-in-trucking-why-we-invested-in-highway/",
+      "confidence": "L",
+      "reason": "Single vendor source via investor blog; Highway self-reported statistic with no independent audit. Single-trade-source override: same publication family as VC-10a and VC-18.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "VC-43",
+      "file": "stage-1-value-chain.md",
+      "claim": "Descartes MacroPoint FraudGuard 2.0 launched July 2025 with 16 real-time in-transit risk alert types",
+      "current_source": "https://www.globenewswire.com/news-release/2025/07/07/3110885/0/en/Descartes-MacroPoint-FraudGuard-2-0-Provides-Transportation-Industry-with-Next-Generation-Solution-for-Freight-Fraud-Defense.html",
+      "confidence": "M",
+      "reason": "GlobeNewswire press release issued by Descartes Systems Group (NASDAQ: DSGX); public company first-party disclosure of product launch.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.1-cost-1",
+      "file": "stage-1-pain-points.md",
+      "claim": "Average cost of a successful fictitious pickup was $365,000 per incident in Q1 2024",
+      "current_source": "https://www.freightwaves.com/news/overhauls-fraudwatch-a-new-paradigm-in-freight-fraud-prevention",
+      "confidence": "L",
+      "reason": "Single trade-press source repeating Overhaul vendor data; single-trade-source override applies. This figure originated from Overhaul's own deployment data and was published via FreightWaves with no independent audit.",
+      "weak_claim_for_deep_research": true
+    },
+    {
+      "id": "PP-1.1-cost-2",
+      "file": "stage-1-pain-points.md",
+      "claim": "Average cargo theft incident value was $202,364 in 2024 and $273,990 in 2025",
+      "current_source": "https://www.verisk.com/company/newsroom/cargo-theft-surges-to-record-levels-in-2024-verisk-cargonet-analysis-reveals/",
+      "confidence": "H",
+      "reason": "Verisk CargoNet primary industry data source; same high-confidence source as VC-4.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.1-cost-3",
+      "file": "stage-1-pain-points.md",
+      "claim": "Aggregate annual freight fraud payment losses are $500M–$700M, distinct from physical cargo losses",
+      "current_source": "https://ftvcapital.com/insights/driving-trust-in-trucking-why-we-invested-in-highway/",
+      "confidence": "L",
+      "reason": "Same investor blog source as VC-5; single-source estimate without methodology. This is the only source for this figure across both files.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.1-cost-5",
+      "file": "stage-1-pain-points.md",
+      "claim": "Average TIA member company lost over $400,000 to fraud; 22% of respondents lost more than $200,000 in a single six-month period",
+      "current_source": "https://news.tianet.org/tia-releases-state-of-fraud-in-the-industry-april-2025-report/",
+      "confidence": "M",
+      "reason": "TIA State of Fraud April 2025 is a primary industry association survey; member sample may skew toward larger brokers but methodology is disclosed and TIA is the relevant trade body.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.1-cost-6",
+      "file": "stage-1-pain-points.md",
+      "claim": "10% of TIA respondents spent over $200,000 on fraud prevention in a six-month period",
+      "current_source": "https://news.tianet.org/tia-releases-state-of-fraud-in-the-industry-april-2025-report/",
+      "confidence": "M",
+      "reason": "Same TIA April 2025 association survey source; M for same reasons as PP-1.1-cost-5.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.1-freq-3",
+      "file": "stage-1-pain-points.md",
+      "claim": "Highway Q1 2026: 527,940 fraudulent emails blocked (49.9% YoY increase); identity theft cases +89.6%; change-of-ownership fraud +169.6%; 50% of theft incidents tied to carriers with clean records",
+      "current_source": "https://highway.com/posts/2024-freight-fraud-trends and https://www.globenewswire.com/news-release/2026/05/05/3288141/0/en/Freight-Fraud-Hits-Record-High-in-Q1-2026-Half-of-All-Incidents-Tied-to-Carriers-With-Clean-Records.html",
+      "confidence": "L",
+      "reason": "Both sources are Highway's own publications — internal vendor data blog and vendor-issued GlobeNewswire press release. Two URLs, one source family. Single-trade-source override applies. No independent third-party audit of these statistics.",
+      "weak_claim_for_deep_research": true
+    },
+    {
+      "id": "PP-1.1-freq-4",
+      "file": "stage-1-pain-points.md",
+      "claim": "83% of TIA-surveyed respondents experienced at least three distinct fraud types in a six-month window",
+      "current_source": "https://news.tianet.org/tia-releases-state-of-fraud-in-the-industry-april-2025-report/",
+      "confidence": "M",
+      "reason": "TIA primary association survey, April 2025.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.1-freq-5",
+      "file": "stage-1-pain-points.md",
+      "claim": "8% of Overhaul FraudWatch-enabled shipments encountered a high-risk carrier, driver, or double-brokering attempt in early deployment",
+      "current_source": "https://www.freightwaves.com/news/overhauls-fraudwatch-a-new-paradigm-in-freight-fraud-prevention",
+      "confidence": "L",
+      "reason": "Trade press article is the single source for this Overhaul self-reported deployment statistic; single-trade-source override applies.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.1-freq-6",
+      "file": "stage-1-pain-points.md",
+      "claim": "Truckstop reported a 400% increase in double-brokering complaints in Q4 2022–Q1 2023; total freight fraud reports jumped 130% from 2022 to 2023",
+      "current_source": "https://www.ttnews.com/articles/double-brokering-increases",
+      "confidence": "L",
+      "reason": "Trade news article (Transport Topics) reporting Truckstop vendor data; secondary source reporting vendor claim; single-trade-source override applies.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.1-rc1",
+      "file": "stage-1-pain-points.md",
+      "claim": "FMCSA filed-to-published conversion rate was 60–65% before biometric verification rollout; dropped to approximately 30% after biometric checks were mandated",
+      "current_source": "https://www.freightwaves.com/news/fmcsa-crackdown-on-carrier-fraud-halves-newly-granted-authorities and https://www.carrier-ok.com/post/fmcsa-s-new-id-verification-slows-motor-carrier-approvals-early-data-signals-fraud-crackdown-impac",
+      "confidence": "L",
+      "reason": "FreightWaves trade press plus carrier-ok.com (a carrier vetting vendor blog); neither is a primary FMCSA regulatory source. FMCSA's own rulemaking documents or enforcement press releases would be the appropriate source for these conversion rate figures.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.1-rc2",
+      "file": "stage-1-pain-points.md",
+      "claim": "Highway detected 109,672 FMCSA contact changes in 2024 that were potential fraud signals",
+      "current_source": "https://www.globenewswire.com/news-release/2026/05/05/3288141/0/en/Freight-Fraud-Hits-Record-High-in-Q1-2026-Half-of-All-Incidents-Tied-to-Carriers-With-Clean-Records.html",
+      "confidence": "L",
+      "reason": "Highway-issued vendor press release on GlobeNewswire; vendor self-reported internal statistic with no independent verification. Single-trade-source override applies.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.1-rc3",
+      "file": "stage-1-pain-points.md",
+      "claim": "Overhaul FraudWatch found 14% of US motor carriers screened at pickup were high-risk; 12% were operating without proper FMCSA authority at point of physical pickup",
+      "current_source": "https://www.freightwaves.com/news/overhauls-fraudwatch-a-new-paradigm-in-freight-fraud-prevention and https://www.over-haul.com/product/fraudwatch",
+      "confidence": "L",
+      "reason": "Two sources, both Overhaul-sourced (trade press article reporting Overhaul data + Overhaul product page); single-vendor source with no independent audit. Single-trade-source override applies.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.1-rc5",
+      "file": "stage-1-pain-points.md",
+      "claim": "Clean aged MC numbers are priced at $20,000+ on the underground market",
+      "current_source": "https://www.freightwaves.com/news/catch-me-if-you-can-the-underground-market-for-mc-numbers-regulators-are-trying-to-stop",
+      "confidence": "M",
+      "reason": "Named investigative trade-press article from FreightWaves with quoted sources; secondary-trade but with investigative reporting methodology, meets named-author trade-press standard.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.2-cost-1",
+      "file": "stage-1-pain-points.md",
+      "claim": "ASEAN road freight market is $119.43B in 2025",
+      "current_source": "https://www.mordorintelligence.com/industry-reports/asean-road-freight-transport-market",
+      "confidence": "L",
+      "reason": "Secondary-market-research firm (Mordor Intelligence); Geography mismatch flag — ASEAN-level figure used as proxy for a country-specific opportunity argument with no government or multilateral cross-validation.",
+      "weak_claim_for_deep_research": true
+    },
+    {
+      "id": "PP-1.2-cost-2",
+      "file": "stage-1-pain-points.md",
+      "claim": "Indonesia is ranked 61st in the World Bank 2023 LPI, down from 45th in 2018",
+      "current_source": "https://lpi.worldbank.org/en/home",
+      "confidence": "H",
+      "reason": "World Bank Logistics Performance Index is a primary multilateral data source; rankings are verified and publicly available.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.2-cost-3",
+      "file": "stage-1-pain-points.md",
+      "claim": "A mid-size SEA 3PL adding 20–50 carriers per month incurs $24,000–$216,000 annually in manual vetting labor costs",
+      "current_source": "none — [ASSUMED-2]",
+      "confidence": "L",
+      "reason": "Explicitly tagged [ASSUMED-2] in the draft; no primary labor cost data cited; derived from unverified hourly rate assumption of $25–$45/hour for logistics coordinators in Singapore/KL.",
+      "weak_claim_for_deep_research": true
+    },
+    {
+      "id": "PP-1.2-cost-4",
+      "file": "stage-1-pain-points.md",
+      "claim": "26% of recorded cargo theft incidents in India, Indonesia, and Bangladesh involved insider participation (BSI/TT Club 2024)",
+      "current_source": "https://www.ttclub.com/news-and-resources/publications/article/bsi-consulting-and-tt-club-2024-cargo-theft-report/",
+      "confidence": "M",
+      "reason": "BSI/TT Club 2024 Cargo Theft Report is an industry-association level publication from TT Club (a P&I mutual insurer) and BSI Consulting; meets industry-association report standard, but the 26% figure aggregates across three countries so Indonesia-specific rate is not isolable.",
+      "weak_claim_for_deep_research": true
+    },
+    {
+      "id": "PP-1.2-freq-1",
+      "file": "stage-1-pain-points.md",
+      "claim": "World Bank LPI 2023: Singapore ranks 1st globally; Malaysia 31st; Thailand 37th; Indonesia 61st",
+      "current_source": "https://lpi.worldbank.org/en/home",
+      "confidence": "H",
+      "reason": "World Bank LPI primary multilateral data; verified public dataset.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.2-freq-2",
+      "file": "stage-1-pain-points.md",
+      "claim": "ASEAN road freight remains 'moderately fragmented' with digital platforms widening performance gap",
+      "current_source": "https://www.mordorintelligence.com/industry-reports/asean-road-freight-transport-market",
+      "confidence": "L",
+      "reason": "Descriptive language from secondary-market-research firm with no disclosed methodology; qualitative characterization from Mordor Intelligence.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.3-cost-1",
+      "file": "stage-1-pain-points.md",
+      "claim": "Manual carrier onboarding takes 4–8 hours per carrier; RMIS is 80% faster; a mid-size brokerage incurs $35,000–$72,000 annually in manual onboarding labor",
+      "current_source": "https://www.freightwaves.com/news/rmis-automates-carrier-compliance-for-brokers-big-and-small and https://www.dat.com/resources/carrier-onboarding-guide",
+      "confidence": "L",
+      "reason": "Hours-per-carrier and labor cost are derived estimates not stated in the cited sources; FreightWaves and DAT sources discuss the process but the $35K–$72K annual cost is a derived calculation on top of unstated hourly labor assumptions.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.3-cost-2",
+      "file": "stage-1-pain-points.md",
+      "claim": "Real-time COI network tools achieve 90%+ insurance compliance rates vs. 60–70% for legacy document-based tools",
+      "current_source": "https://www.certificial.com/ and https://www.oipinsurtech.com/data-silos-in-insurance/",
+      "confidence": "L",
+      "reason": "Certificial.com is a vendor whose product is real-time COI verification; the compliance benchmark is vendor-sourced. OIPInsurtech is an insurance technology trade blog. Both are secondary/vendor sources; single-trade-source override applies for this quantified claim.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.3-cost-3",
+      "file": "stage-1-pain-points.md",
+      "claim": "A mid-size 3PL with $50M freight under management and 0.3% fraud loss rate loses approximately $150,000/year to incomplete vetting",
+      "current_source": "https://foreigh.com/blog/freight-fraud-deep-dive",
+      "confidence": "L",
+      "reason": "Single blog-style source (foreigh.com); the 0.3% fraud loss rate has no disclosed methodology or primary data source; this is a bare estimate.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.3-cost-4",
+      "file": "stage-1-pain-points.md",
+      "claim": "Preventing a single $40,000 fraudulent load justifies annual technology spending of $10,000–$20,000 at a 2x–4x minimum ROI",
+      "current_source": "https://foreigh.com/blog/freight-fraud-deep-dive",
+      "confidence": "L",
+      "reason": "Same single blog source as PP-1.3-cost-3; derived ROI calculation from unverified baseline assumptions.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.3-freq-2",
+      "file": "stage-1-pain-points.md",
+      "claim": "RMIS database covers 97–98% of active North American carriers",
+      "current_source": "https://www.freightwaves.com/news/rmis-automates-carrier-compliance-for-brokers-big-and-small",
+      "confidence": "M",
+      "reason": "Named FreightWaves article attributing this coverage statistic to RMIS; trade press with attributed vendor claim.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.3-freq-4",
+      "file": "stage-1-pain-points.md",
+      "claim": "Insurance data silos are 'a leading cause of breakdowns in broker-carrier relationships in 2025'",
+      "current_source": "https://www.oipinsurtech.com/data-silos-in-insurance/",
+      "confidence": "L",
+      "reason": "OIPInsurtech is an insurance technology trade blog; qualitative characterization from secondary-trade source without primary survey data.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.4-cost-1",
+      "file": "stage-1-pain-points.md",
+      "claim": "ASEAN non-life insurance penetration averages 1–2% of GDP versus 3–4% in developed markets",
+      "current_source": "none — [ASSUMED-4]",
+      "confidence": "L",
+      "reason": "Explicitly tagged [ASSUMED-4]; no source cited; the actual figure is available from Swiss Re sigma or OECD Global Insurance Statistics — the draft correctly flags this for validation.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.4-cost-3",
+      "file": "stage-1-pain-points.md",
+      "claim": "Global cargo theft losses exceed $80B+ annually with Asia Pacific contributing a growing share",
+      "current_source": "https://www.freightwaves.com/news/overhauls-fraudwatch-a-new-paradigm-in-freight-fraud-prevention",
+      "confidence": "L",
+      "reason": "Trade press article citing Overhaul vendor claim; the $80B figure is a widely-cited industry estimate of uncertain origin. Single-trade-source citing vendor marketing claim.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.4-freq-1",
+      "file": "stage-1-pain-points.md",
+      "claim": "BSI/TT Club 2024 identified Indonesia, India, China, Vietnam, and Bangladesh as Asia's most cargo-theft-affected countries",
+      "current_source": "https://www.ttclub.com/news-and-resources/publications/article/bsi-consulting-and-tt-club-2024-cargo-theft-report/",
+      "confidence": "M",
+      "reason": "BSI/TT Club 2024 Cargo Theft Report; industry-association level publication from a P&I mutual insurer.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.4-freq-2",
+      "file": "stage-1-pain-points.md",
+      "claim": "World Bank LPI 2023: Indonesia ranked 61st; Vietnam 50th in logistics quality",
+      "current_source": "https://lpi.worldbank.org/en/home",
+      "confidence": "H",
+      "reason": "World Bank LPI primary multilateral data.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.5-cost-2",
+      "file": "stage-1-pain-points.md",
+      "claim": "The underground market prices clean aged MC numbers at $20,000+ per authority",
+      "current_source": "https://www.freightwaves.com/news/catch-me-if-you-can-the-underground-market-for-mc-numbers-regulators-are-trying-to-stop",
+      "confidence": "M",
+      "reason": "FreightWaves investigative article with quoted sources on the underground MC number market; secondary-trade with investigative methodology.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.5-freq-1",
+      "file": "stage-1-pain-points.md",
+      "claim": "Highway Q1 2026: change-of-ownership fraud surged 169.6% YoY; 399 ownership changes flagged as potentially fraudulent in a single quarter",
+      "current_source": "https://www.globenewswire.com/news-release/2026/05/05/3288141/0/en/Freight-Fraud-Hits-Record-High-in-Q1-2026-Half-of-All-Incidents-Tied-to-Carriers-With-Clean-Records.html",
+      "confidence": "L",
+      "reason": "Highway-authored vendor press release issued via GlobeNewswire; vendor self-reported statistics with no independent audit. Single-vendor source.",
+      "weak_claim_for_deep_research": false
+    },
+    {
+      "id": "PP-1.5-freq-2",
+      "file": "stage-1-pain-points.md",
+      "claim": "Treasury Department announced it will not enforce the Corporate Transparency Act beneficial-ownership reporting rule (March 2025)",
+      "current_source": "https://icij.org/inside-icij/2025/03/treasury-department-wont-enforce-beneficial-ownership-rule-under-the-corporate-transparency-act/",
+      "confidence": "M",
+      "reason": "ICIJ is a credible investigative journalism organization; the Treasury non-enforcement decision is a verifiable public policy action corroborated by other trade and legal press (Fleet Owner source 35 also cited).",
+      "weak_claim_for_deep_research": false
+    }
+  ],
+  "weak_claims_to_re_research": [
+    {
+      "id": "PP-1.2-cost-3",
+      "file": "stage-1-pain-points.md",
+      "claim": "A mid-size SEA 3PL adding 20–50 carriers per month incurs $24,000–$216,000 annually in manual vetting labor costs",
+      "what_to_find": "Find primary salary data for logistics operations coordinators in Singapore and Kuala Lumpur from a named-employer survey, government labor statistics (MOM Singapore, Malaysia DOSM), or a named HR consultancy report (Mercer, Korn Ferry) to validate the $25–$45/hour fully-loaded labor cost assumption. The annual cost range is the primary quantified SEA pain point in PP1.2 and its weakness undermines the entire SEA opportunity framing.",
+      "priority": "high"
+    },
+    {
+      "id": "PP-1.1-cost-1",
+      "file": "stage-1-pain-points.md",
+      "claim": "Average cost of a successful fictitious pickup was $365,000 per incident in Q1 2024",
+      "what_to_find": "Find an independent primary source for the per-incident cost of fictitious pickup or strategic cargo theft events beyond the single FreightWaves/Overhaul vendor citation. Candidates: TIA 2024 State of Fraud survey methodology (ask TIA for underlying data table); FBI IC3 2024 Internet Crime Report (check freight fraud subcategory); NICB cargo theft annual report; Verisk CargoNet breakdown by theft type. The $365K figure is cited in the top-line cost argument for PP1.1 but currently rests on a single vendor source.",
+      "priority": "high"
+    },
+    {
+      "id": "VC-36",
+      "file": "stage-1-value-chain.md",
+      "claim": "ASEAN road freight market is $119.43B in 2025 (used to anchor SEA opportunity TAM)",
+      "what_to_find": "Find an independent cross-validation of the ASEAN road freight market size from a non-market-research-firm source. Candidates: ADB Transport Sector Assessment for ASEAN 2023–2024; ASEAN Secretariat ASEAN Transport Strategic Plan 2022–2026 with freight volume data; World Bank transport sector studies for Indonesia, Thailand, Malaysia. The $119B figure from Mordor Intelligence is the only source and it anchors the entire SEA opportunity argument in both the value chain and PP1.2.",
+      "priority": "high"
+    },
+    {
+      "id": "PP-1.1-freq-3",
+      "file": "stage-1-pain-points.md",
+      "claim": "Highway Q1 2026: 527,940 fraudulent emails blocked (+49.9% YoY); identity theft cases +89.6%; change-of-ownership fraud +169.6%; 50% of theft incidents tied to carriers with clean records",
+      "what_to_find": "Find independent corroboration of Highway's Q1 2026 fraud trend statistics from a non-vendor source. Candidates: TIA April 2025 fraud report for comparable trend data; FBI IC3 2025 Annual Report (released mid-year); NICB 2024–2025 cargo theft data; CargoNet Q1 2026 quarterly release. The entire fraud-frequency argument in PP1.1 relies heavily on Highway self-reported data; if independent sources confirm similar trend magnitude, these claims can be upgraded to M.",
+      "priority": "medium"
+    },
+    {
+      "id": "PP-1.2-cost-4",
+      "file": "stage-1-pain-points.md",
+      "claim": "26% of recorded cargo theft incidents in India, Indonesia, and Bangladesh involved insider participation",
+      "what_to_find": "Access the actual BSI/TT Club 2024 Cargo Theft Report PDF to verify (a) whether the 26% figure applies to the three-country aggregate or to Indonesia specifically, (b) the sample size and methodology behind this calculation, and (c) whether Indonesia's insider-participation rate differs materially from the group average. If Indonesia-specific data is available, this would strengthen the SEA counterparty risk argument in PP1.2 and PP1.4 materially.",
+      "priority": "medium"
+    }
+  ],
+  "gate_decision_for_stage_1": "ship-with-flag",
+  "gate_reason": "Stage 1 has a credible H-confidence backbone for the US market: Verisk CargoNet data, World Bank LPI, FMCSA government records, and multiple public-company M&A disclosures anchor the core problem-scale claims. However, 53% of total claims (41 of 77) score Low confidence. Three structural problems prevent a clean ship: (1) The primary SEA cost quantification — the $24K–$216K manual vetting labor estimate in PP1.2 — is explicitly tagged [ASSUMED-2] with no primary source, which means the SEA pain-point's economic argument is unsubstantiated. (2) Highway's fraud-frequency statistics (914,719 blocked attempts; +169.6% ownership fraud; 527,940 Q1 2026 blocks) constitute a large cluster of L-confidence vendor self-reports that drive the frequency narrative in PP1.1 and PP1.5 without independent corroboration. (3) The $119B ASEAN road freight figure from Mordor Intelligence is the only source for the market-size anchor of the SEA opportunity, and it is a secondary-market-research source with no multilateral or government cross-validation. The stage should ship for downstream use but must be flagged for deep-research on the three high-priority weak claims before the SEA opportunity framing and the US fraud frequency figures are cited as evidenced conclusions.",
+  "imi_structural_compare": {
+    "imi_pp_count_target": "2-4",
+    "stage_pp_count": 5,
+    "imi_rc_per_pp_target": "3-5",
+    "stage_rc_min": 2,
+    "stage_rc_max": 5,
+    "imi_citations_per_pp_target": "8-15",
+    "stage_citations_min": 5,
+    "stage_citations_max": 12,
+    "imi_unique_sources_target": "8+",
+    "stage_unique_sources": 44,
+    "all_dimensions_pass": false,
+    "remediation_needed": [
+      "PP count is 5 vs. target of 2–4; PP1.5 (beneficial-ownership cliff) is valuable but could be folded into PP1.1 RC5 to bring count within target range",
+      "PP1.4 (SEA insurance gap) has only 5 cited sources, below the 8-citation target; 3 of those are ASSUMED or self-referential",
+      "PP1.2 root-cause RC3 cites only the stage's own value-chain map and its own ASSUMED notes as evidence — not an independent citation; remediation needed for this circular self-reference",
+      "Highway vendor statistics cluster (VC-10a, VC-18, VC-42, PP-1.1-freq-3, PP-1.1-rc2, PP-1.5-freq-1) forms a single-vendor data dependency across multiple pain points; independent corroboration required before promotion to final"
+    ]
+  }
+}

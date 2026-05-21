@@ -1,0 +1,116 @@
+{
+  "outcome": "confirmed-scarce",
+  "claim_verbatim": "30% of trucks estimated running non-compliant ELD systems",
+  "original_source_verdict": "Single industry-operator estimate (Joshua Kreyer, Silver Arrow Express) via FreightWaves trade press — no independent regulatory dataset cited",
+  "searches_performed": [
+    "FMCSA ELD noncompliance rate enforcement statistics 2024 2025 site:fmcsa.dot.gov",
+    "GAO FMCSA ELD electronic logging device compliance noncompliance rate report 2023 2024 site:gao.gov",
+    "FMCSA ELD compliance rate roadside inspection data annual report 2024",
+    "FMCSA 'large truck and bus statistics' ELD violations hours of service 2024",
+    "FMCSA ELD noncompliant trucks '30 percent' OR '30%' OR noncompliance rate enforcement statistics congressional testimony",
+    "FMCSA ELD compliance '99 percent' OR '99%' rate official data source 2023 2024",
+    "FMCSA CVSA roadcheck 2024 2025 ELD hours of service violation rate results statistics",
+    "FMCSA ELD oversight report compliance rate carriers 'not compliant' percentage 2022 2023 official",
+    "CVSA International Roadcheck 2025 results ELD false logs out-of-service site:cvsa.org"
+  ],
+  "categories_searched": [
+    "primary-gov (FMCSA, DOT)",
+    "primary-gov (GAO)",
+    "primary-gov (CVSA — tri-national enforcement body)",
+    "trade-press (FreightWaves, TheTrucker, Overdrive)",
+    "industry-association (CVSA Roadcheck results)",
+    "third-party compliance vendors (Foley, Logrock, Kellercompass)"
+  ],
+  "key_findings": {
+    "no_30pct_government_source_found": "No government agency (FMCSA, GAO, DOT OIG, NTSB) has published a fleet-wide ELD noncompliance rate of 30% or any comparable aggregate estimate. The 30% figure traces exclusively to Joshua Kreyer (Silver Arrow Express Operating Manager) as quoted in FreightWaves — there is no independent corroboration.",
+    "what_official_data_does_show": {
+      "cvsa_2025_roadcheck": {
+        "source": "CVSA International Roadcheck 2025 (May 13-15, 2025), 56,178 inspections",
+        "url": "https://cvsa.org/news/2025-roadcheck-results/",
+        "finding": "10% of all driver out-of-service violations were for false logs/RODS falsification (332 of ~3,342 OOS drivers). HOS was top driver OOS violation at 32.4% of OOS violations. These are violation-of-OOS-drivers figures, not fleet-wide noncompliance rates.",
+        "note": "OOS rate applies to inspected trucks presenting for roadside check — not representative of all trucks running. Roadcheck does not produce a fleet-wide ELD noncompliance prevalence rate."
+      },
+      "cvsa_2024_roadcheck": {
+        "source": "CVSA International Roadcheck 2024 — via Foley.io summary",
+        "url": "https://www.foley.io/articles/the-cvsa-releases-2024-roadcheck-inspection-results",
+        "finding": "HOS was the #1 driver violation category at 32.1% of total driver violations (870 violations). No breakdown of what share of inspected trucks had ELD violations specifically."
+      },
+      "fmcsa_eld_revocations_2025_2026": {
+        "source": "FMCSA newsroom and FreightWaves",
+        "finding": "27 ELDs revoked since January 2026; revocation pace ran 80% higher in 2025 than prior year. These are device-level revocations (manufacturer compliance), not carrier/truck noncompliance rates."
+      },
+      "fmcsa_eld_oversight_report_april_2023": {
+        "url": "https://www.fmcsa.dot.gov/sites/fmcsa.dot.gov/files/2023-04/ELD%20Oversight%20Report%20-%20April%202023.pdf",
+        "status": "[NEEDS-ATTENDED-FETCH]: PDF blocked by Akamai/FMCSA access control — could not retrieve content",
+        "note": "This is the primary government document most likely to contain fleet-wide compliance rate data. Must be retrieved via attended browser session."
+      }
+    },
+    "freightwaves_article_source_analysis": {
+      "url": "https://www.freightwaves.com/news/eld-loopholes-fueling-fraud-driving-good-carriers-out-of-business-experts-warn",
+      "finding": "FreightWaves article relies on anecdotal expert testimony. Three industry figures quoted (Kreyer, Meiborg, Moss), none of whom cite an independent study or government dataset for the 30% figure. The article itself acknowledges the estimate is from an industry operator, not regulatory analysis."
+    },
+    "contradicting_signal": "FMCSA broadly characterized ELD compliance as 'nearly 99% across the trucking industry' (cited in secondary sources from FMCSA materials), which directly contradicts the 30% noncompliance claim. However, the 99% claim refers to ELD adoption/registration compliance, not to ELD data integrity or log falsification — these measure different things."
+  },
+  "suggested_revision_options": [
+    {
+      "option": "widen-range",
+      "revised_claim_text": "Industry observers have raised concerns about ELD log falsification and non-compliant ELD device use among a subset of carriers, though no government agency has published a fleet-wide noncompliance rate. CVSA's 2025 International Roadcheck found that 10% of all driver out-of-service violations involved false logs or records-of-duty-status falsification, and HOS violations were the top driver violation category (32.4% of OOS violations) across 56,178 inspections.",
+      "suggested_score": "Medium",
+      "note": "Replaces unsubstantiated 30% estimate with verifiable CVSA enforcement data; frames as a known enforcement priority without fabricating a fleet-wide prevalence rate."
+    },
+    {
+      "option": "mark-assumed",
+      "revised_claim_text": "[ASSUMED-N]: ~30% of trucks estimated running non-compliant ELD systems — source is single industry operator (Joshua Kreyer, Silver Arrow Express) via FreightWaves; no FMCSA, GAO, or CVSA dataset corroborates this fleet-wide rate. To validate: request FMCSA MCMIS enforcement data or obtain FMCSA ELD Oversight Report (April 2023, PDF blocked).",
+      "suggested_score": "Low"
+    },
+    {
+      "option": "drop",
+      "rationale": "The 30% figure is an unverified single-operator estimate with no regulatory corroboration and is contradicted by FMCSA's own characterization of 'nearly 99%' ELD adoption compliance. Retain only the CVSA Roadcheck HOS/false-log violation data as the factual anchor."
+    }
+  ],
+  "recommended_option": "widen-range",
+  "reasoning": "The '30% non-compliant' claim traces to a single industry operator quote and cannot be independently verified through any government enforcement dataset, GAO study, or academic analysis. The CVSA Roadcheck data provides a verifiable, primary-government-adjacent source (CVSA is the enforcement body) showing that log falsification and HOS violations are significant enforcement priorities — but expressed as shares of out-of-service violations among inspected trucks, not as fleet-wide noncompliance prevalence. The widen-range option preserves a factual claim about ELD compliance enforcement while removing the unsupported '30%' figure. The FMCSA ELD Oversight Report (April 2023) remains the one potentially decisive primary source and should be retrieved via attended fetch before finalizing.",
+  "needs_attended_fetch": [
+    {
+      "url": "https://www.fmcsa.dot.gov/sites/fmcsa.dot.gov/files/2023-04/ELD%20Oversight%20Report%20-%20April%202023.pdf",
+      "reason": "FMCSA PDF blocked by CDN access control. Most likely primary government document containing fleet-wide ELD compliance rate data."
+    },
+    {
+      "url": "https://www.fmcsa.dot.gov/sites/fmcsa.dot.gov/files/2025-09/FMCSA%20Pocket%20Guide%202024-v6%20508%20.pdf",
+      "reason": "FMCSA 2024 Pocket Guide to Large Truck and Bus Statistics — also blocked. Contains annual enforcement violation counts."
+    }
+  ],
+  "sources_verified_by_fetch": [
+    {
+      "url": "https://cvsa.org/news/2025-roadcheck-results/",
+      "category": "primary-regulatory-enforcement",
+      "publication_date": "2025",
+      "via_pdf_markitdown": false,
+      "status": "blocked-403-use-foley-summary"
+    },
+    {
+      "url": "https://www.foley.io/articles/the-cvsa-releases-2025-roadcheck-inspection-results",
+      "category": "secondary-summary-of-primary",
+      "publication_date": "2025",
+      "via_pdf_markitdown": false,
+      "status": "fetched-successfully",
+      "key_data": "HOS violations = 32.4% of driver OOS citations (1,076); false logs/RODS = 10% of driver OOS violations (332); 56,178 total inspections"
+    },
+    {
+      "url": "https://www.foley.io/articles/the-cvsa-releases-2024-roadcheck-inspection-results",
+      "category": "secondary-summary-of-primary",
+      "publication_date": "2024",
+      "via_pdf_markitdown": false,
+      "status": "fetched-successfully",
+      "key_data": "HOS = #1 driver violation category at 32.1% of total driver violations (870 violations) in 2024 Roadcheck"
+    },
+    {
+      "url": "https://www.freightwaves.com/news/eld-loopholes-fueling-fraud-driving-good-carriers-out-of-business-experts-warn",
+      "category": "trade-press",
+      "publication_date": "2025-2026",
+      "via_pdf_markitdown": false,
+      "status": "fetched-successfully",
+      "key_data": "30% figure comes from Joshua Kreyer (Silver Arrow Express); article relies on anecdotal operator testimony; no independent dataset cited"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+RUN COMPLETE
+============
+Run ID: 2026-05-17-2337
+Topic: logistics-risk-mgmt-worldwide
+Mode: sandbox
+Completed: 2026-05-18T15:30:00Z (final pass-3 + cross-stage applied)
+Resumed: true (2026-05-18T13:38 from stage 4 onward; 2026-05-18T07:30 prior resume from token-limit)
+
+GATE DECISION: ship-with-flag (42.7% Low across 335 claims)
+
+OUTPUTS:
+- raw-claude-value-chain-logistics-risk-mgmt-worldwide.md (1,351 lines)
+- raw-claude-pain-points-logistics-risk-mgmt-worldwide.md (1,866 lines)
+- raw-claude-summary-logistics-risk-mgmt-worldwide.md
+- pass-0-plan.md / pass-1-drafts/ / pass-2-validation/ (incl. cross-stage-final.md) / pass-3-deep-research/ / stages-validated/
+- checkpoint.json
+
+PASS-3 DEEP-RESEARCH (this resume): 15 weak claims investigated across stages 4-6. 11 upgraded, 4 confirmed-scarce.
+
+NEXT: render Wright-branded FINAL-REPORT.html (Step 7.5).
+
+FINAL-REPORT rendered: FINAL-REPORT.html (4.0M) + FINAL-REPORT.pdf (335K)
+17 pages: Cover, Exec Summary, Framework, 6 stages, Prioritization, Timeline, Open Questions, Next Steps, 2x Sources, Methodology, Closing.
+PDF page count verified = 17 (matches HTML page divs, no trailing blank).

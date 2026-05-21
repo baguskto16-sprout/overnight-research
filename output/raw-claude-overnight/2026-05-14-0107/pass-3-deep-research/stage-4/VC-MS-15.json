@@ -1,0 +1,63 @@
+{
+  "claim_id": "VC-MS-15",
+  "outcome": "confirmed-scarce",
+  "new_confidence": "L",
+  "refined_claim_text": "[ASSUMED-N]: ASEAN cold chain logistics market estimated at $8–$20B (wide range reflects divergence across secondary research sources; no primary-source consensus); forecast to grow at 7–9% CAGR through 2028–2031. To validate: seek ASEAN Secretariat economic report, ADB trade facilitation data, or GCCA member-access cold storage capacity report.",
+  "primary_sources_found": [
+    {
+      "url": "https://www.gcca.org/magazine-article/asia-pacific-cold-chain-market-trends-2025/",
+      "title": "Deep Dive: The Asia-Pacific Cold Chain Market in 2025",
+      "publisher": "Global Cold Chain Alliance (GCCA)",
+      "primary_category": "primary-association",
+      "exact_quote": "Demand for investment in temperature-controlled logistics and storage continues to accelerate across the Asia-Pacific region. Singapore imports 90% of its food supply. Philippines government allocated $53 million to build approximately 100 cold storage facilities.",
+      "note": "Covers physical capacity and qualitative trends only; no ASEAN-level dollar market size figure provided. Does NOT corroborate the $19.76B figure."
+    },
+    {
+      "url": "https://www.eria.org/research/the-cold-chain-for-agri-food-products-in-asean/",
+      "title": "The Cold Chain for Agri-food Products in ASEAN (ERIA Research Project Report FY2018 no.11)",
+      "publisher": "Economic Research Institute for ASEAN and East Asia (ERIA)",
+      "primary_category": "primary-multilateral",
+      "exact_quote": "Thailand total capacity of 940,000 metric tons; Vietnam private sector capacity more than 500,000 pallets; Indonesia 370,200 metric tons (major companies only).",
+      "note": "Country-level cold STORAGE CAPACITY data only (physical, not dollar market size). Published 2018/2019. Does not provide an ASEAN-level market dollar value. Does not corroborate $19.76B."
+    },
+    {
+      "url": "https://www.gcca.org/wp-content/uploads/2024/02/2022-GCCF-Vietnam-Cold-Chain-Assessment.pdf",
+      "title": "Cold Chain in Vietnam: Emerging Markets Program Assessment (2020)",
+      "publisher": "Global Cold Chain Foundation / USDA Foreign Agricultural Service",
+      "primary_category": "primary-gov",
+      "exact_quote": "Assessment covers cold storage, refrigerated transport, postharvest handling, retail cold chain, and government regulations in Vietnam.",
+      "note": "Country-specific (Vietnam only), published 2020. Physical and qualitative assessment, no ASEAN aggregated dollar market size. Does not corroborate $19.76B."
+    }
+  ],
+  "contradicting_signals": {
+    "description": "Multiple secondary research firms produce widely divergent ASEAN market size estimates for overlapping periods, indicating the $19.76B figure is not grounded in a shared primary data set.",
+    "estimates_found": [
+      {"source": "Research and Markets (via GlobeNewswire, Jan 2024)", "base_year": "2023", "value": "$8.34B", "forecast": "$12.70B by 2028"},
+      {"source": "TechSci Research", "base_year": "2023", "value": "$8.61B", "forecast": "7.82% CAGR through 2029"},
+      {"source": "Research and Markets (via GlobeNewswire, May 2025)", "base_year": "2025", "value": "$9.99B", "forecast": "$15.23B by 2030 at 8.8% CAGR"},
+      {"source": "Verified Market Research", "base_year": "2024", "value": "$13.5B", "forecast": "$23.8B by 2032 at 7.3% CAGR"},
+      {"source": "Mordor Intelligence (original cited source)", "base_year": "2026 estimate", "value": "$19.76B", "forecast": "$25.54B by 2031 at 5.26% CAGR"}
+    ],
+    "verdict": "The $19.76B figure appears to be Mordor Intelligence's 2026 projected value, not a current market size. Other secondary firms using the same approximate period cite figures 35-55% lower. No primary source (government, multilateral, association) has published an ASEAN cold chain dollar market size to adjudicate among these estimates."
+  },
+  "searches_performed": [
+    "ASEAN cold chain logistics market size 2024 ADB Asian Development Bank",
+    "GCCA Global Cold Storage Capacity Report 2024 Southeast Asia",
+    "Southeast Asia cold chain market size JLL Cushman Wakefield 2024",
+    "Bain McKinsey cold chain Southeast Asia OR ASEAN market size billion 2024 2025",
+    "ADB Asian Development Bank cold chain Southeast Asia report market infrastructure 2024",
+    "World Bank cold chain Southeast Asia OR ASEAN market size logistics report 2023 2024",
+    "cold chain Indonesia Thailand Vietnam Philippines billion market size country statistics 2024",
+    "GCCA cold storage capacity ASEAN OR Southeast Asia million cubic meters country data 2023 2024",
+    "ERIA Economic Research Institute for ASEAN cold chain cold storage capacity Southeast Asia report",
+    "ERIA cold chain agri-food ASEAN report PDF 2020 2021 2022 market size statistics"
+  ],
+  "categories_searched": [
+    "primary-gov (ADB, World Bank, USDA/FAS — no ASEAN-level market size found)",
+    "primary-multilateral (ERIA — physical capacity only, no dollar market value)",
+    "primary-association (GCCA — members-only report; public articles cover capacity trends not dollar size)",
+    "secondary-research-firms (Mordor, Research&Markets, TechSci, Verified Market Research — wide divergence, no consensus)",
+    "primary-consulting (Bain, McKinsey, JLL, Cushman Wakefield — no dedicated ASEAN cold chain market sizing reports found)"
+  ],
+  "notes": "The $19.76B figure cannot be corroborated by any primary or higher-credibility source. The Mordor Intelligence figure appears to be a 2026 projected value (not a current market size as claimed) and sits at the extreme high end of a cluster of divergent secondary estimates ranging from $8.3B to $19.76B for broadly comparable periods. GCCA's Global Cold Storage Capacity Report is the closest primary-association source but is (a) members-only and (b) measures physical capacity in cubic meters, not dollar market value. ERIA provides country-level physical capacity data for 5 ASEAN countries (2018/2019) but no dollar market size. ADB, World Bank, and ASEAN Secretariat do not publish ASEAN-level cold chain logistics dollar market estimates. Bain and McKinsey publish no dedicated SEA cold chain sizing reports. The claim should be revised to reflect the wide uncertainty range and marked [ASSUMED-N]. Country-level primary data from Indonesia BPS, Thailand NESDC, or Vietnam GSO cold chain/logistics sectors could be the path to bottom-up corroboration if field research is feasible."
+}

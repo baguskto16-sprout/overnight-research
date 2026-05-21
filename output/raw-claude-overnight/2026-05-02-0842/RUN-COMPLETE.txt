@@ -1,0 +1,21 @@
+Run 2026-05-02-0842 — COMPLETE
+Topic: Industrial solid-fuel package boilers, Southeast Asia
+Mode: sandbox (capability test)
+
+Started:                    2026-05-02 08:42 UTC
+Mid-run interrupt + resume: 2026-05-03 14:05 UTC
+Final-pass resumed:         2026-05-18 13:38 local
+Finalized:                  2026-05-19 00:10 local
+
+Gate decision: SHIP WITH FLAG
+Corpus: 463 claims · 36 High · 132 Medium · 295 Low · 63.7% Low post-DR
+DR utilization: 13 of 25 calls · 8.0pp reduction in Low share
+Flags: 8 (3 HIGH severity)
+
+Deliverables:
+- raw-claude-value-chain-package-boilers.md (combined, 5 stages, 175 KB)
+- raw-claude-pain-points-package-boilers.md (combined, 5 stages + refinements, 356 KB)
+- raw-claude-summary-package-boilers.md (run summary)
+- FINAL-REPORT.html (Wright-branded, A4 print-ready, 13 pages, 297 KB self-contained)
+- pass-0-plan.md, pass-1-drafts/, pass-2-validation/, pass-3-deep-research/, stages-validated/
+- checkpoint.json

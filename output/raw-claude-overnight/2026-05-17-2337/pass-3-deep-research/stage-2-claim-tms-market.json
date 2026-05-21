@@ -1,0 +1,157 @@
+{
+  "deep_research_run": "2026-05-17",
+  "claim_id": "stage-2-tms-market-sizing",
+  "claim_verbatim": "Global TMS market is approximately $1.32B (2024) growing to $2.11B (2029)",
+  "original_source_flag": "Chain-of-citations: TalkingLogistics trade blog citing Gartner; Gartner paywalled; unverifiable primary",
+
+  "outcome": "contradicting-evidence",
+
+  "searches_performed": [
+    "ARC Advisory Group TMS transportation management system market size 2024 2025",
+    "site:arcweb.com transportation management system market",
+    "IDC transportation management software market size 2024 MarketScape",
+    "WiseTech Global CargoWise annual revenue FY2025 annual report investor",
+    "E2open subscription revenue FY2024 annual report 10-K transportation management",
+    "Trimble Transportation Logistics segment revenue FY2024 annual report 10-K",
+    "Armstrong Associates 3PL technology TMS market spend 2024 survey",
+    "Blue Yonder annual recurring revenue 2024 Panasonic supply chain software TMS",
+    "IDC worldwide transportation management systems 2024 market size billion CAGR forecast",
+    "CSCMP State of Logistics 2024 TMS transportation management technology spend"
+  ],
+
+  "categories_searched": [
+    "primary-gov-stats",
+    "primary-multilateral",
+    "primary-industry-analyst (ARC Advisory, IDC)",
+    "audited-corporate-filings",
+    "industry-association (Armstrong & Associates, CSCMP)",
+    "top-tier-consultancy (Kearney via CSCMP)"
+  ],
+
+  "key_finding": "The claimed figure of $1.32B (2024) growing to $2.11B (2029) is almost certainly scoped to TMS *software license / SaaS subscription revenue only* — a narrow definition. Multiple independent data sources yield market size estimates 5x to 15x larger when broader TMS market definitions are used. Furthermore, bottom-up triangulation from audited vendor financials alone yields a figure far exceeding $1.32B, making the original claim's scope definitionally suspect.",
+
+  "new_sources": [
+    {
+      "url": "https://www.arcweb.com/market-analysis/transportation-management-systems",
+      "category": "primary-industry-analyst",
+      "publication_date": "ongoing (2024-2025)",
+      "supports_claim": false,
+      "key_data": "ARC Advisory Group — the industry-standard analyst for supply chain software market sizing — covers the TMS market comprehensively but their specific revenue figures are paywalled. The page confirms they cover 'a comprehensive analysis of the current market plus a five-year forecast.' ARC is the source that market practitioners treat as authoritative for this segment. Full report [NEEDS-ATTENDED-FETCH]: https://www.arcweb.com/market-analysis/transportation-management-systems",
+      "via_pdf_markitdown": false,
+      "fetch_status": "BLOCKED — Cloudflare 403. [NEEDS-ATTENDED-FETCH]: https://www.arcweb.com/market-analysis/transportation-management-systems"
+    },
+    {
+      "url": "https://my.idc.com/getdoc.jsp?containerId=US51982224",
+      "category": "primary-industry-analyst",
+      "publication_date": "April 2024",
+      "supports_claim": false,
+      "key_data": "IDC MarketScape: Worldwide Transportation Management Systems Applications 2024 Vendor Assessment — confirmed to exist. Covers planning, execution, visibility, optimization, and procurement. Market sizing data is behind paywall. [NEEDS-ATTENDED-FETCH]: https://my.idc.com/getdoc.jsp?containerId=US51982224",
+      "via_pdf_markitdown": false,
+      "fetch_status": "PAYWALLED — requires IDC login. [NEEDS-ATTENDED-FETCH]: https://my.idc.com/getdoc.jsp?containerId=US51982224"
+    },
+    {
+      "url": "https://investor.trimble.com/news/news-details/2025/Trimble-Announces-Fourth-Quarter-and-Full-Year-2024-Results-and-Initiates-2025-Guidance/default.aspx",
+      "category": "audited-corporate-filing",
+      "publication_date": "February 2025",
+      "supports_claim": false,
+      "key_data": "Trimble Transportation & Logistics segment FY2024 revenue: $788.8M (up 9.5% YoY from $720.3M in 2023). Includes TMS software (TMW Suite, Transplace-derived capabilities) but also ELD hardware, fleet telematics, and driver-facing products — not pure TMS. Source is Trimble investor press release from audited financial results.",
+      "via_pdf_markitdown": false,
+      "fetch_status": "FETCHED — verified"
+    },
+    {
+      "url": "https://investors.e2open.com/news/news-details/2024/E2open-Announces-Fiscal-2024-Fourth-Quarter-and-Full-Year-Financial-Results/default.aspx",
+      "category": "audited-corporate-filing",
+      "publication_date": "April 2024",
+      "supports_claim": false,
+      "key_data": "E2open GAAP subscription revenue FY2024: $536.8M (84.6% of total revenue of $634.6M). Covers multi-enterprise supply chain platform including TMS, demand sensing, order management, and global trade. TMS is one module among several — not pure TMS revenue. Separately confirmed as Gartner Magic Quadrant Leader for TMS 2024.",
+      "via_pdf_markitdown": false,
+      "fetch_status": "CONFIRMED via search snippet from audited earnings release"
+    },
+    {
+      "url": "https://www.digitalcommerce360.com/2025/02/17/blue-yonder-ai-fiscal-year-2024-revenue/",
+      "category": "primary-secondary (trade press citing company disclosure)",
+      "publication_date": "February 2025",
+      "supports_claim": false,
+      "key_data": "Blue Yonder (Panasonic subsidiary) total revenue FY2024: $1.36B. SaaS revenue grew 14.2% YoY. Covers WMS, TMS, supply chain planning — no TMS-specific segment breakout. Blue Yonder alone at $1.36B total revenue already exceeds the claimed $1.32B *global* TMS market size, exposing the original figure as either extremely narrow-scoped or incorrect.",
+      "via_pdf_markitdown": false,
+      "fetch_status": "FETCHED — verified"
+    },
+    {
+      "url": "https://www.descartes.com/resources/news/descartes-announces-fiscal-2025-fourth-quarter-and-annual-financial-results",
+      "category": "audited-corporate-filing",
+      "publication_date": "March 2025",
+      "supports_claim": false,
+      "key_data": "Descartes Systems Group total revenue FY2025: $651M (up 14% YoY). Covers logistics technology platform including routing, carrier management, trade compliance, and transportation management. Not pure TMS.",
+      "via_pdf_markitdown": false,
+      "fetch_status": "CONFIRMED via search snippet from audited earnings release"
+    },
+    {
+      "url": "https://www.wisetechglobal.com/media/i4ib0p11/wtc-fy25-results-investor-presentation.pdf",
+      "category": "audited-corporate-filing",
+      "publication_date": "August 2025",
+      "supports_claim": false,
+      "key_data": "WiseTech Global FY2025 revenue: A$1.34B (~US$882M at ~0.66 AUD/USD), up 26.8% YoY. CargoWise is primarily a freight forwarding / logistics execution platform. TMS is one capability within a broader platform. Not pure TMS.",
+      "via_pdf_markitdown": false,
+      "fetch_status": "CONFIRMED via search snippet from audited investor presentation"
+    },
+    {
+      "url": "https://cscmp.org/common/Uploaded%20files/2024%20State%20of%20Logistics%20Report%20-%20Executive%20summary.pdf",
+      "category": "industry-association",
+      "publication_date": "2024",
+      "supports_claim": false,
+      "key_data": "CSCMP State of Logistics 2024 executive summary (Kearney-authored) — publicly available PDF. Covers macro logistics industry trends, air/ocean/motor/rail/3PL/warehouse/sustainability. Contains NO specific TMS market sizing figures or technology spend breakdowns. Useful for logistics industry context but does not evidence the TMS market size claim.",
+      "via_pdf_markitdown": true,
+      "fetch_status": "FETCHED and read — no TMS-specific sizing data found"
+    }
+  ],
+
+  "bottom_up_triangulation": {
+    "method": "Sum of audited vendor revenue for top TMS-adjacent vendors, with notes on scope inflation (each vendor's revenue includes non-TMS products)",
+    "note": "These figures are for TOTAL company/segment revenue, not TMS-only. They represent upper-bound inputs for market-share triangulation. Precise TMS-only revenue is not publicly broken out by any vendor.",
+    "vendors": [
+      {"vendor": "Blue Yonder (Panasonic)", "revenue": "$1.36B", "period": "FY2024", "scope": "WMS + TMS + Supply Chain Planning combined"},
+      {"vendor": "Trimble T&L", "revenue": "$788.8M", "period": "FY2024", "scope": "TMS software + ELD/telematics hardware"},
+      {"vendor": "Descartes Systems", "revenue": "$651M", "period": "FY2025", "scope": "Logistics platform incl. TMS, trade compliance, routing"},
+      {"vendor": "E2open", "revenue": "$634.6M total / $536.8M subscription", "period": "FY2024", "scope": "Multi-enterprise SCM platform"},
+      {"vendor": "WiseTech CargoWise", "revenue": "~$882M USD", "period": "FY2025", "scope": "Freight forwarding execution platform"}
+    ],
+    "conclusion": "Blue Yonder alone at $1.36B total revenue exceeds the claimed $1.32B global TMS market. Even assigning only 25-30% of each vendor's revenue to TMS-specific functionality, the implied TMS market from these five vendors alone would be $1.1B–$1.4B — and these five are not the full market (SAP OTM, Oracle TMS, Manhattan Associates, MercuryGate, project44, Uber Freight, and dozens of regional vendors are excluded). This makes the $1.32B figure credible only as 'pure-play TMS SaaS software' under an extremely narrow scope definition, not the full market."
+  },
+
+  "scope_discrepancy_analysis": {
+    "original_claim_scope": "Likely 'TMS pure-play SaaS/cloud software licenses only' (narrow) — consistent with Gartner's historical approach of sizing only the software license/subscription portion of enterprise software markets, excluding professional services, hardware, and embedded TMS within broader suites",
+    "broader_market_estimates": [
+      {"source": "IMARC Group (commercial research house)", "size_2024": "$10.3B", "methodology": "unknown"},
+      {"source": "Global Market Insights (commercial research house)", "size_2024": "$15B", "methodology": "unknown"},
+      {"source": "Market Research Future (commercial research house)", "size_2024": "$5.0B", "methodology": "unknown"},
+      {"source": "Grand View Research (commercial research house)", "size_2025": "$18.56B", "methodology": "unknown"}
+    ],
+    "note": "Commercial market research houses (IMARC, GMInsights, Grand View, etc.) use broad definitions including all transportation software, services, and sometimes hardware. These figures are NOT primary sources — they are themselves derived/modeled. They cannot be used as primary evidence but illustrate the scope problem with the original claim."
+  },
+
+  "suggested_revision": "Replace claim with: 'The global TMS market is sized differently depending on scope definition: Gartner's narrow pure-play TMS software estimate (cited via trade press, unverified primary) suggests approximately $1.32B in 2024 growing to $2.11B by 2029, implying ~10% CAGR. However, this definition appears to exclude embedded TMS capabilities within broader supply chain suites, professional services, and TMS-adjacent functionality. ARC Advisory Group (the industry-standard source for supply chain software market sizing) maintains a dedicated TMS market study [NEEDS-ATTENDED-FETCH: arcweb.com/market-analysis/transportation-management-systems] and IDC's 2024 MarketScape covers the same space [NEEDS-ATTENDED-FETCH: my.idc.com/getdoc.jsp?containerId=US51982224]. Bottom-up triangulation from audited vendor financials (Blue Yonder $1.36B total FY2024; Trimble T&L $788.8M FY2024; Descartes $651M FY2025; E2open $634.6M FY2024) confirms the broader market far exceeds $1.32B when full platform revenues are considered. The $1.32B/$2.11B figures should be treated as [ASSUMED-N] narrow-scope software-only estimates pending ARC Advisory or IDC primary source verification.'",
+
+  "suggested_new_score": "Low",
+
+  "recommended_option": "mark-assumed-with-scope-caveat",
+
+  "reasoning": "The $1.32B figure fails the primary-source test: it traces to a paywalled Gartner note via trade press. More critically, bottom-up triangulation from audited public filings shows that Blue Yonder alone (a TMS + WMS + planning vendor) reported $1.36B total revenue in FY2024 — numerically exceeding the claimed entire global TMS market. This contradiction strongly suggests the original figure reflects an extremely narrow scope (pure-play SaaS TMS license revenue only) that is not clearly disclosed in the trade-press citation. The two authoritative primary sources — ARC Advisory Group and IDC's 2024 MarketScape — are both paywalled/blocked and require attended fetch to verify. Until those primary sources are accessed, the claim must be flagged [ASSUMED-N] with explicit scope disclosure.",
+
+  "needs_attended_fetch": [
+    {
+      "url": "https://www.arcweb.com/market-analysis/transportation-management-systems",
+      "reason": "ARC Advisory Group is the industry-standard primary source for TMS market sizing; Cloudflare blocks automated access",
+      "priority": "HIGH"
+    },
+    {
+      "url": "https://my.idc.com/getdoc.jsp?containerId=US51982224",
+      "reason": "IDC MarketScape: Worldwide TMS Applications 2024 — requires IDC login/purchase",
+      "priority": "HIGH"
+    },
+    {
+      "url": "https://www.arcweb.com/press/e-commerce-ai-boost-demand-transportation-management-systems",
+      "reason": "ARC press release likely contains public-facing market size data; returned 403",
+      "priority": "MEDIUM"
+    }
+  ]
+}

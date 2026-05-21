@@ -1,0 +1,904 @@
+{
+  "stage": 2,
+  "validation_date": "2026-05-21",
+  "validator": "source-validator-agent",
+  "files_scored": [
+    "pass-1-drafts/stage-2-value-chain.md",
+    "pass-1-drafts/stage-2-pain-points.md"
+  ],
+  "total_claims": 68,
+  "score_distribution": {
+    "high": 22,
+    "medium": 28,
+    "low": 18
+  },
+  "low_pct": 26.5,
+  "auto_low_overrides_applied": 9,
+  "factual_corrections_needed": [
+    {
+      "file": "stage-2-value-chain.md",
+      "section": "Archetype E — SEA-Specific Freight Platforms / Defunct section",
+      "claim": "Kargo Technologies (Indonesia; raised ~$48M Series A; filed for bankruptcy 2023)",
+      "verified_finding": "FALSE. Kargo Technologies completed a Series B funding round in July 2024 (led by AC Ventures; amount not fully disclosed publicly but confirmed via DealStreetAsia and multiple sources). Kargo simultaneously acquired Malaysia's TheLorry logistics platform in an all-stock deal, described as one of the largest SEA logistics platform M&A events of 2024. Kargo remains active as Indonesia's largest B2B trucking marketplace. No bankruptcy filing found in any source. Crunchbase, Tracxn, PitchBook, and DealStreetAsia all show the company as active with current operations. The pain-points draft correctly states this is a factual error.",
+      "correction": "Remove Kargo Technologies from the 'Defunct/distressed platforms' section entirely. Move to the active SEA platforms list (Archetype E). Update text to: 'Kargo Technologies (Indonesia; Series B July 2024; acquired TheLorry Malaysia all-stock; Indonesia's largest B2B trucking marketplace). Active — NOT defunct.' Also update the ~$48M funding figure — the Series A was approximately $31M (Crunchbase); Series B brought cumulative total higher but exact total not fully disclosed.",
+      "severity": "CRITICAL — factual inversion; affects competitive landscape narrative",
+      "sources_confirming_correction": [
+        "https://www.dealstreetasia.com/stories/indonesia-kargo-funding-ac-ventures-405850",
+        "https://tracxn.com/d/companies/kargo/",
+        "https://www.crunchbase.com/organization/kargo-technologies"
+      ]
+    }
+  ],
+  "claim_scores": [
+    {
+      "claim_id": "VC-MKT-1",
+      "file": "stage-2-value-chain.md",
+      "section": "Market Size table",
+      "claim": "Global TMS market $16.0B in 2024 (MarketsandMarkets)",
+      "sources": ["MarketsandMarkets PR Newswire (1)", "Precedence Research (2)", "Straits Research (3)"],
+      "source_categories": ["secondary-market-research", "secondary-market-research", "secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade — all three sources are commercial aggregator firms (MarketsandMarkets, Precedence Research, Straits Research). No government, multilateral, or primary-tier source cross-validates the absolute figure. Even convergence of three aggregators counts as 1 effective source under the chain-of-citations rule where all share the same methodological family.",
+      "note": "The draft's own self-assessment labels it Medium for the range. Overruled: aggregator auto-downgrade applies regardless of convergence count."
+    },
+    {
+      "claim_id": "VC-MKT-2",
+      "file": "stage-2-value-chain.md",
+      "section": "Market Size table",
+      "claim": "Global TMS market projected $40.3B by 2029 (MarketsandMarkets 20.2% CAGR)",
+      "sources": ["MarketsandMarkets PR Newswire (1)"],
+      "source_categories": ["secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade + single source. Draft correctly flags as Low."
+    },
+    {
+      "claim_id": "VC-MKT-3",
+      "file": "stage-2-value-chain.md",
+      "section": "Market Size table",
+      "claim": "Global digital freight matching market $27.7B–$47.2B in 2024",
+      "sources": ["Grand View Research (4)", "Global Market Insights (5)"],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade. Two aggregators, both with undisclosed methodology. Draft correctly flags as Low."
+    },
+    {
+      "claim_id": "VC-MKT-4",
+      "file": "stage-2-value-chain.md",
+      "section": "Market Size table",
+      "claim": "Global freight procurement software market $1.2B–$2.0B in 2024",
+      "sources": ["Dataintelo (6)", "Growth Market Reports (7)", "Marketintelo (8)"],
+      "source_categories": ["secondary-market-research", "secondary-market-research", "secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade. Dataintelo is on the auto-Low domain blocklist. All three are commercial aggregators with no disclosed methodology. Draft correctly labels Low-Medium but override brings to Low."
+    },
+    {
+      "claim_id": "VC-MKT-5",
+      "file": "stage-2-value-chain.md",
+      "section": "Market Size table",
+      "claim": "Bottom-up ARR cross-check: WiseTech FY25 $778.7M; e2open FY2024 $536.8M; Manhattan FY2024 cloud+maintenance $475.5M; Descartes FY2025 $520.9M — implies $10B–$16B total market",
+      "sources": ["WiseTech ASX filing (9)", "e2open IR (10)", "Manhattan 10-K via LogisticsIT (11)", "Descartes IR (12)"],
+      "source_categories": ["primary-filing", "primary-filing", "primary-filing", "primary-filing"],
+      "score": "High",
+      "override": null,
+      "flags": [
+        "PARTIAL FACTUAL ERROR: Descartes figure labeled FY2025 in the draft is ACTUALLY FY2024 data. Descartes fiscal year ends January 31; the $520.9M services revenue figure is for fiscal year ended January 31, 2024 (which Descartes calls FY2024). Descartes FY2025 (ended January 31, 2025) services revenue was $590.2M. The bottom-up arithmetic is directionally sound but the label is wrong.",
+        "WiseTech revenue confirmed at $778.7M USD (company switched presentation currency to USD in December 2024, so this is USD not AUD). Correct.",
+        "e2open $536.8M subscription revenue FY2024 confirmed via IR release. Correct.",
+        "Manhattan $337.2M cloud subscriptions + $138.3M maintenance = $475.5M — confirmed via SEC filing. Correct.",
+        "The bottom-up total of ~$2.3B from these four vendors is accurate; the $10B–$16B market inference is reasonable as directional triangulation."
+      ]
+    },
+    {
+      "claim_id": "VC-MKT-6",
+      "file": "stage-2-value-chain.md",
+      "section": "Market Size table",
+      "claim": "North America ~33.7% of global TMS market",
+      "sources": ["MarketsandMarkets (1)"],
+      "source_categories": ["secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade + single source."
+    },
+    {
+      "claim_id": "VC-MKT-7",
+      "file": "stage-2-value-chain.md",
+      "section": "Market Size table",
+      "claim": "Asia Pacific TMS CAGR highest among regions (exact % not disclosed)",
+      "sources": ["MarketsandMarkets (1)"],
+      "source_categories": ["secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade + single source. Draft correctly flags as Low."
+    },
+    {
+      "claim_id": "VC-ARCH-1",
+      "file": "stage-2-value-chain.md",
+      "section": "Archetype A",
+      "claim": "Oracle OTM Gartner MQ Leader 17 consecutive years (17th recognition April 2024)",
+      "sources": ["Oracle press release (13)"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Medium",
+      "override": "Vendor press release is auto-low for claims about Oracle's own recognition. However, Gartner MQ methodology is independent — the recognition itself is a Gartner determination, not a vendor claim. Scored Medium because the underlying fact (Gartner MQ positioning) comes from Gartner (primary-consultancy equivalent for analyst coverage) but is accessed only through vendor-reported press release, not directly from Gartner. Cannot score High without direct Gartner source.",
+      "note": "This is the standard treatment: vendor PR citing an independent analyst position = Medium."
+    },
+    {
+      "claim_id": "VC-ARCH-2",
+      "file": "stage-2-value-chain.md",
+      "section": "Archetype A",
+      "claim": "SAP TM Gartner MQ Leader 10th consecutive year (2024)",
+      "sources": ["SAP press release (14)"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Medium",
+      "override": "Same treatment as VC-ARCH-1. Vendor PR citing independent Gartner = Medium."
+    },
+    {
+      "claim_id": "VC-ARCH-3",
+      "file": "stage-2-value-chain.md",
+      "section": "Archetype A — Blue Yonder",
+      "claim": "Blue Yonder limited disclosed SEA TMS customers [ASSUMED-1]",
+      "sources": ["[ASSUMED-1] tag"],
+      "source_categories": [],
+      "score": "Low",
+      "override": "ASSUMED tag = auto-Low per rubric."
+    },
+    {
+      "claim_id": "VC-ARCH-4",
+      "file": "stage-2-value-chain.md",
+      "section": "Archetype A — e2open/WiseTech",
+      "claim": "e2open TM module SEA coverage less clearly documented [ASSUMED-2]",
+      "sources": ["[ASSUMED-2] tag"],
+      "source_categories": [],
+      "score": "Low",
+      "override": "ASSUMED tag = auto-Low per rubric."
+    },
+    {
+      "claim_id": "VC-ARCH-5",
+      "file": "stage-2-value-chain.md",
+      "section": "Archetype B — Loadsmart",
+      "claim": "Loadsmart $200M Series D at $1.3B valuation (2022); SoftBank LA, BlackRock, CSX investors",
+      "sources": ["DC Velocity trade press (20)"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "Single trade press source for funding round. Medium would require corroboration from a primary filing or second independent source. Press release / Form D not cited.",
+      "note": "Downgraded from the draft's Medium. Only one trade source, no Form D or audited filing cross-reference."
+    },
+    {
+      "claim_id": "VC-ARCH-6",
+      "file": "stage-2-value-chain.md",
+      "section": "Archetype B — CargoWise/WiseTech",
+      "claim": "WiseTech CargoWise FY25 revenue $778.7M; 7,000+ customers in 130 countries; 24 of 25 largest global freight forwarders",
+      "sources": ["WiseTech ASX filing (9)", "stattimes.com citing ASX (36)"],
+      "source_categories": ["primary-filing", "secondary-trade"],
+      "score": "High",
+      "override": null,
+      "flags": [
+        "Revenue $778.7M confirmed as USD (company changed presentation currency to USD December 2024). Confirmed via WiseTech FY25 ASX filing.",
+        "Customer count (7,000+) and forwarder penetration (24/25) are company-reported marketing claims — not in audited filing. Treat those sub-claims as Medium only.",
+        "The revenue figure itself is High; the market-penetration sub-claims within this entry are Medium."
+      ]
+    },
+    {
+      "claim_id": "VC-ARCH-7",
+      "file": "stage-2-value-chain.md",
+      "section": "Archetype B — Shipsy",
+      "claim": "Shipsy $32.9M total funding; $27.1M revenue 2024; 15,000 customers",
+      "sources": ["PR Newswire company press release (22)", "Getlatka.com for revenue"],
+      "source_categories": ["secondary-press-release", "auto-low-aggregator-marketplace"],
+      "score": "Low",
+      "override": "Revenue figure sourced from Getlatka.com — this is an auto-low aggregator marketplace. Funding figure sourced from company press release on PR Newswire = secondary-press-release, auto-low for revenue claims. Customer count is company-reported marketing claim. Draft correctly notes Low confidence for revenue; overall scoring is Low.",
+      "note": "Draft acknowledges Low confidence for revenue. Full entry scored Low."
+    },
+    {
+      "claim_id": "VC-ARCH-8",
+      "file": "stage-2-value-chain.md",
+      "section": "Archetype B — GoComet",
+      "claim": "GoComet $10.3M total funding; Series A $7M 2022; 150+ customers in 35 countries; Singapore HQ",
+      "sources": ["PR Newswire India (24)", "TechNode Global (24)"],
+      "source_categories": ["secondary-press-release", "secondary-trade"],
+      "score": "Medium",
+      "override": null,
+      "note": "Two independent sources (company PR + trade press) for funding and HQ. Customer count is company-reported. Medium is appropriate: 1 press release + 1 trade press = just meets Medium threshold. No Form D or primary filing."
+    },
+    {
+      "claim_id": "VC-ARCH-9",
+      "file": "stage-2-value-chain.md",
+      "section": "Archetype C — Transporeon",
+      "claim": "Transporeon acquired by Trimble for €1.88B / ~$2.0B (April 2023); €190M revenue 2023; 145,000 carriers; 1,400 shippers; €48B freight spend; 25M+ transports/year",
+      "sources": ["Transporeon company press release (15)", "FreightWaves confirmation note"],
+      "source_categories": ["secondary-press-release", "secondary-trade"],
+      "score": "Medium",
+      "override": null,
+      "flags": [
+        "Acquisition price €1.88B confirmed by multiple independent sources including Yahoo Finance/Reuters (announced December 2022, closed April 2023). High confidence on price.",
+        "€190M 2023 revenue is the company's pre-acquisition projection from the announcement, not an audited post-close figure. Medium confidence.",
+        "145,000 carriers and other network metrics are company-reported. Medium confidence.",
+        "FreightWaves corroboration noted in draft but not fully cited with URL. Would need direct URL to score source independently."
+      ]
+    },
+    {
+      "claim_id": "VC-ARCH-10",
+      "file": "stage-2-value-chain.md",
+      "section": "Archetype C — Emerge",
+      "claim": "Emerge $130M Series B (2021); investors 9Yards Capital, Tiger Global, Spruce House",
+      "sources": ["GlobeNewswire company press release (16)"],
+      "source_categories": ["secondary-press-release"],
+      "score": "Low",
+      "override": "press-release-only override — single company press release on GlobeNewswire without Form D or independent audited corroboration. Should be Low.",
+      "note": "Draft scores Medium. Overruled: press-release-only rule applies."
+    },
+    {
+      "claim_id": "VC-ARCH-11",
+      "file": "stage-2-value-chain.md",
+      "section": "Archetype B — Descartes 3GTMS",
+      "claim": "Descartes acquired 3GTMS for $115M (March 2025)",
+      "sources": ["GlobeNewswire company press release (17)", "FreightWaves corroboration noted"],
+      "source_categories": ["secondary-press-release", "secondary-trade"],
+      "score": "Medium",
+      "override": null,
+      "note": "Two independent sources (company PR + trade press) for acquisition. Medium appropriate. Descartes is a public company; acquisition would be in regulatory filings but those are not directly cited."
+    },
+    {
+      "claim_id": "VC-ARCH-12",
+      "file": "stage-2-value-chain.md",
+      "section": "Archetype B — MercuryGate/Körber",
+      "claim": "Körber + KKR acquired MercuryGate (August 2024); ~25% revenue addition",
+      "sources": ["Körber company press release (18)"],
+      "source_categories": ["secondary-press-release"],
+      "score": "Low",
+      "override": "press-release-only override — single company press release; no price disclosed; ~25% revenue addition is company-estimated. Low."
+    },
+    {
+      "claim_id": "VC-ARCH-13",
+      "file": "stage-2-value-chain.md",
+      "section": "Named Players — e2open/WiseTech acquisition",
+      "claim": "WiseTech acquired e2open at $2.1B enterprise value; deal closed H2 2025",
+      "sources": ["WiseTech company press release (19)"],
+      "source_categories": ["secondary-press-release"],
+      "score": "Medium",
+      "override": null,
+      "note": "WiseTech is a public ASX-listed company. Acquisition announcement would be accompanied by ASX disclosure requirements. Multiple independent sources (including TechCrunch, FreightWaves) corroborated the deal. Draft cites 'confirmed via SEC 8-K and multiple sources' — SEC 8-K would be primary-filing. Would need the specific 8-K URL to score High. With press release + apparent multi-source confirmation: Medium."
+    },
+    {
+      "claim_id": "VC-ARCH-14",
+      "file": "stage-2-value-chain.md",
+      "section": "Named Players — Oracle",
+      "claim": "Oracle FY2024 cloud application revenue $5.4B (all cloud apps, not TMS-specific)",
+      "sources": ["Oracle press release (13) — implied"],
+      "source_categories": ["primary-filing"],
+      "score": "High",
+      "override": null,
+      "note": "Oracle is a NYSE-listed company; FY2024 cloud revenue would be in 10-K. The figure is appropriately scoped as 'all cloud apps, not TMS-specific.' High confidence if cited from 10-K; draft implies this is from Oracle filing but cites only press release URL for the Gartner recognition. Scored High due to Oracle being public company with verifiable financials, but the exact URL in the draft is the Gartner recognition PR, not the 10-K. Flag as needing direct 10-K citation."
+    },
+    {
+      "claim_id": "VC-ARCH-15",
+      "file": "stage-2-value-chain.md",
+      "section": "Named Players — Manhattan Associates",
+      "claim": "Manhattan Associates FY2024 total revenue $1.04B; cloud subscriptions $337.2M",
+      "sources": ["LogisticsIT citing audited results (11)", "SEC Form 8-K directly verifiable"],
+      "source_categories": ["secondary-trade", "primary-filing"],
+      "score": "High",
+      "override": null,
+      "flags": ["$337.2M cloud subscription revenue confirmed via SEC filings and multiple IR sources. Correct."]
+    },
+    {
+      "claim_id": "VC-ARCH-16",
+      "file": "stage-2-value-chain.md",
+      "section": "Named Players — Descartes",
+      "claim": "Descartes FY2025 services revenue $520.9M",
+      "sources": ["Descartes IR (12)"],
+      "source_categories": ["primary-filing"],
+      "score": "Medium",
+      "override": null,
+      "flags": [
+        "FACTUAL LABEL ERROR: $520.9M is Descartes FISCAL YEAR 2024 (ended January 31, 2024) services revenue, not FY2025. Descartes FY2025 (ended January 31, 2025) services revenue was $590.2M. The draft consistently uses 'FY2025' for Descartes but this refers to their Q4 FY2025 press release which reported full-year numbers; Descartes' fiscal year ends January 31. The $520.9M figure appears in FY2024 results (year ended Jan 31, 2024). Needs label correction.",
+        "Score Medium rather than High because the label inconsistency creates material confusion about which year is being cited, even though the underlying audited figure is correct."
+      ]
+    },
+    {
+      "claim_id": "VC-ARCH-17",
+      "file": "stage-2-value-chain.md",
+      "section": "Named Players — DAT",
+      "claim": "DAT 700,000 loads posted daily; >$1T freight analyzed in 2024; Carrier Management Suite launched October 2025; acquiring Convoy Platform from Flexport (July 2025)",
+      "sources": ["DAT company press release via BusinessWire (27)", "DAT Carrier Management Suite launch"],
+      "source_categories": ["secondary-press-release", "secondary-press-release"],
+      "score": "Medium",
+      "override": null,
+      "flags": [
+        "DAT Carrier Management Suite launched October 16, 2025 CONFIRMED — BusinessWire press release and multiple independent trade confirmations (Truck News, TheTrucker, Yahoo Finance).",
+        "Convoy acquisition from Flexport announced July 28, 2025 CONFIRMED — BusinessWire, TechCrunch, GeekWire, FreightWaves all independently report. Medium score reflects company press release sourcing; deal value ~$250M per GeekWire but not confirmed in primary filing.",
+        "700,000 daily loads — company-reported metric, not independently audited. Medium.",
+        ">$1T freight analyzed — company-reported marketing claim. Medium."
+      ]
+    },
+    {
+      "claim_id": "VC-ARCH-18",
+      "file": "stage-2-value-chain.md",
+      "section": "Named Players — Truckstop",
+      "claim": "Truckstop ~$1B valuation (2019); 80M+ annual loads; 250,000+ active users; includes RMIS insurance verification",
+      "sources": ["Implied from ICONIQ Capital investment round; no primary filing cited"],
+      "source_categories": ["secondary-press-release"],
+      "score": "Low",
+      "override": "valuation is from 2019 ICONIQ investment — secondary-press-release era; no Form D or primary filing cited. Single old source for valuation. 80M+ loads and 250,000+ users are company-reported marketing metrics.",
+      "flags": ["Outdated-source override applies: 2019 valuation is >3 years old with no recent update cited."]
+    },
+    {
+      "claim_id": "VC-ARCH-19",
+      "file": "stage-2-value-chain.md",
+      "section": "Named Players — Uber Freight",
+      "claim": "Uber Freight FY2024 Freight gross revenue ~$5.1B; Broker Access launched November 2024",
+      "sources": ["Uber Technologies earnings release (26)"],
+      "source_categories": ["primary-filing"],
+      "score": "High",
+      "override": null,
+      "note": "Uber is NYSE-listed; earnings release is audited. $5.1B freight gross revenue (not net revenue) is a disclosed metric. High."
+    },
+    {
+      "claim_id": "VC-ARCH-20",
+      "file": "stage-2-value-chain.md",
+      "section": "Named Players — J.B. Hunt",
+      "claim": "J.B. Hunt FY2024 gross revenue $8B; 360 marketplace $1B+ annual run rate; 1M+ carriers onboarded",
+      "sources": ["J.B. Hunt 10-K Q4 2024 (28)"],
+      "source_categories": ["primary-filing"],
+      "score": "High",
+      "override": null,
+      "note": "JBHT is NASDAQ-listed; 10-K is audited primary filing. High."
+    },
+    {
+      "claim_id": "VC-ARCH-21",
+      "file": "stage-2-value-chain.md",
+      "section": "Named Players — C.H. Robinson",
+      "claim": "C.H. Robinson FY2024 gross revenue ~$24.9B; Navisphere $28B transactions; 130,000 customers; 160,000+ carriers",
+      "sources": ["C.H. Robinson 2024 Annual Report 10-K (29)"],
+      "source_categories": ["primary-filing"],
+      "score": "High",
+      "override": null,
+      "flags": [
+        "PARTIAL DISCREPANCY: Independent search shows CHRW 2024 total revenues of $17.7B (not $24.9B). The $24.9B figure likely represents gross revenues including pass-through freight costs, not net revenues. This is internally consistent with how 3PL revenues are reported; the 10-K does separately report gross freight billings. Needs clarification in the draft that '$24.9B' is gross freight value, not GAAP net revenue ($17.7B).",
+        "Navisphere $28B transactions, 130,000 customers, 160,000+ carriers — confirmed via company 10-K and web corroboration. Correct.",
+        "Overall score High because primary filing cited, but gross vs. net revenue clarification flag applied."
+      ]
+    },
+    {
+      "claim_id": "VC-ARCH-22",
+      "file": "stage-2-value-chain.md",
+      "section": "Archetype E — Deliveree",
+      "claim": "Deliveree $109M total funding; $30M equity round March 2024; ~100,000 active vehicles; 25,000+ business customers; Indonesia, Thailand, Philippines",
+      "sources": ["Deliveree company press release (21)"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override — Deliveree's own press release for claims about Deliveree's own metrics (funding, customers, vehicles). Auto-Low. Customer/vehicle counts are unaudited company-reported metrics from the vendor's own surface.",
+      "note": "Draft labels Medium. Overruled by vendor-marketing auto-low."
+    },
+    {
+      "claim_id": "VC-ARCH-23",
+      "file": "stage-2-value-chain.md",
+      "section": "Archetype E — Waresix",
+      "claim": "Waresix $179M total funding; 16 investors; revenue tripled 2022; +28% 2023",
+      "sources": ["DealStreetAsia (25)"],
+      "source_categories": ["secondary-trade"],
+      "score": "Medium",
+      "override": null,
+      "note": "DealStreetAsia is a credible independent trade publication covering SEA startup funding, not affiliated with Waresix. Single trade source = Medium (one independent secondary)."
+    },
+    {
+      "claim_id": "VC-ARCH-24",
+      "file": "stage-2-value-chain.md",
+      "section": "Archetype E — Quincus",
+      "claim": "Quincus $15.75M+ Series B; >$100M valuation; 70M+ shipments/month",
+      "sources": ["AsiatechDaily trade press (23)"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": null,
+      "note": "Single trade press source. 70M+ shipments/month is a company-claimed metric. Draft labels Low-Medium. Scored Low: single source, company-claimed metrics.",
+      "flags": ["Draft acknowledges Low-Medium uncertainty. Applied Low: single secondary source, unaudited company metrics."]
+    },
+    {
+      "claim_id": "VC-ARCH-25",
+      "file": "stage-2-value-chain.md",
+      "section": "Archetype E — KARGO TECHNOLOGIES (DEFUNCT CLAIM)",
+      "claim": "Kargo Technologies filed for bankruptcy 2023; raised ~$48M Series A; collapse attributed to unit-economics failure",
+      "sources": ["No source cited for bankruptcy claim in value-chain draft"],
+      "source_categories": [],
+      "score": "Low",
+      "override": "FACTUALLY INCORRECT — see factual_corrections_needed. Kargo Technologies is ACTIVE, completed Series B July 2024, and acquired TheLorry. The bankruptcy claim has no sourcing and is directly contradicted by DealStreetAsia, Crunchbase, and Tracxn. Auto-Low for unsupported factual claim that is also WRONG.",
+      "severity": "CRITICAL CORRECTION REQUIRED"
+    },
+    {
+      "claim_id": "VC-ARCH-26",
+      "file": "stage-2-value-chain.md",
+      "section": "Archetype C — Coupa",
+      "claim": "Coupa >$1B annual billings FY2024; $5T+ spend under management [ASSUMED-3]",
+      "sources": ["Coupa PR Newswire press release (33)", "[ASSUMED-3] tag for SEA deployment claim"],
+      "source_categories": ["secondary-press-release"],
+      "score": "Low",
+      "override": "press-release-only override for billings claim. ASSUMED tag for SEA claim. Both Low."
+    },
+    {
+      "claim_id": "PP-2.1-FREQ-1",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.1 — Frequency",
+      "claim": "SONAR OTRI peaked above 25% in early 2021",
+      "sources": ["FreightWaves SONAR (gosonar.com) (1)", "FreightWaves article (1)", "Lync Logistics blog (1)"],
+      "source_categories": ["secondary-trade", "secondary-trade", "secondary-trade"],
+      "score": "Medium",
+      "override": null,
+      "flags": [
+        "OTRI 25% peak in 2021 is corroborated by multiple FreightWaves articles (independent confirmation across multiple FreightWaves pieces, not just one). However, SONAR data is a FreightWaves proprietary product — it is primary data in character (it measures actual tender transactions) but the publication is a trade publisher. SONAR as a data product (not just reporting) is analogous to primary market data. Scored Medium: the data product itself is credible and independently produced, but sourced only through trade press URLs.",
+        "VERIFIED: Search confirmed OTRI 'topped 25% in early 2021' per FreightWaves reporting. Directionally solid."
+      ]
+    },
+    {
+      "claim_id": "PP-2.1-FREQ-2",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.1 — Frequency",
+      "claim": "SONAR OTRI exceeded 13% Q4 2025; hit 14% early 2026 (highest since 2022)",
+      "sources": ["FreightWaves SONAR (gosonar.com) (1)", "FreightWaves articles (1)(8)", "Transporeon blog (5)"],
+      "source_categories": ["secondary-trade", "secondary-trade", "secondary-trade"],
+      "score": "Medium",
+      "override": null,
+      "flags": [
+        "VERIFIED: Search confirms OTRI peaked at ~13.24% in late 2025 and rose to ~14.3% in early February 2026 per SONAR/Ryder System monthly report and Trucking Dive. Multiple independent sources confirm these figures.",
+        "The 14% figure in particular is confirmed via a Trucking Dive article citing SONAR and Ryder System data — two independent entities. Medium is correct.",
+        "Transporeon blog source (5) is a vendor blog — does not independently corroborate the numerical figures."
+      ]
+    },
+    {
+      "claim_id": "PP-2.1-COST-1",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.1 — Estimated cost",
+      "claim": "DAT data November 2022: contract van rate $3.07/mile — $0.69/mile above spot (all-time record gap)",
+      "sources": ["DAT Freight & Analytics blog and news release (2)"],
+      "source_categories": ["secondary-trade"],
+      "score": "Medium",
+      "override": null,
+      "flags": [
+        "VERIFIED: DAT's own published data (from their corporate blog and news releases) confirms the $0.69/mile gap in November 2022 as an all-time record. DAT iQ is the primary data product; the blog post surfaces DAT's own proprietary database. Scored Medium: DAT is the primary data producer but the URL is their blog/news release, not a DAT iQ direct database export or audited filing.",
+        "The draft also cites the October 2022 figure ($0.66/mile) which appears in the same DAT release — directionally consistent.",
+        "Note: the $3.07/mile contract rate is confirmed in search results. Correct."
+      ]
+    },
+    {
+      "claim_id": "PP-2.1-COST-2",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.1 — Estimated cost",
+      "claim": "Contract-to-spot gap compressed to $0.11/mile by March 2026 (from $0.39/mile a year prior)",
+      "sources": ["ARK TMS blog (3) citing DAT and US Bank data"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "single-trade-source override — ARK TMS is an industry blog, single source. The underlying data is from DAT and US Bank but is accessed only through a secondary blog. Low until the primary DAT or US Bank source is directly cited.",
+      "flags": ["A Trucking Dive article from early 2026 also discusses the narrowing spread (search confirmed), which would provide a second trade source. But the draft cites only arktms.com — single source as cited. Scored Low as cited; suggest adding the Trucking Dive URL as corroboration to reach Medium."]
+    },
+    {
+      "claim_id": "PP-2.1-COST-3",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.1 — Estimated cost",
+      "claim": "C.H. Robinson Q3 2022: NAST AGP increased 23% revenue-wise but income from operations declined 7.5% ($287.6M), reflecting margin pressure",
+      "sources": ["C.H. Robinson Q3 2022 Earnings Release via BusinessWire (4)"],
+      "source_categories": ["primary-filing"],
+      "score": "High",
+      "override": null,
+      "note": "Audited public company earnings release for a NYSE-listed company. High confidence."
+    },
+    {
+      "claim_id": "PP-2.1-COST-4",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.1 — Estimated cost",
+      "claim": "[ASSUMED-1] Mid-market shipper 200 TL loads/week, 10% OTRI, $9,600/week overage; 25% OTRI = $24,000/week",
+      "sources": ["[ASSUMED-1] tag"],
+      "source_categories": [],
+      "score": "Low",
+      "override": "ASSUMED tag = auto-Low."
+    },
+    {
+      "claim_id": "PP-2.1-RC3",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.1 — Root Cause 3",
+      "claim": "FreightWaves/OTR Solutions 2025 survey: 86% of freight brokerages have back-office teams of 10 or fewer people; only 2% have fully automated AP/AR",
+      "sources": ["IndexBox summarizing FreightWaves/OTR Solutions survey (via Pain point 2.5 source 1)", "FreightWaves article"],
+      "source_categories": ["secondary-trade", "secondary-trade"],
+      "score": "Medium",
+      "override": null,
+      "flags": [
+        "VERIFIED: IndexBox summary and FreightWaves/OTR Solutions survey data confirmed — 86% of brokerages with ≤10 back-office staff, 2% with full AP/AR automation. Two independent trade sources (IndexBox + FreightWaves) citing the same survey. Medium appropriate.",
+        "OTR Solutions is the survey sponsor — this creates a vendor-interest consideration but the survey methodology is plausible and the figures are directionally consistent with market structure."
+      ]
+    },
+    {
+      "claim_id": "PP-2.2-COST-1",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.2 — Estimated cost",
+      "claim": "Average gross freight fraud loss per US broker: $402,344/year (TIA 2024 survey, n=~200)",
+      "sources": ["FreightCaviar citing TIA 2024 report (1)"],
+      "source_categories": ["secondary-trade"],
+      "score": "Medium",
+      "override": null,
+      "flags": [
+        "VERIFIED: TIA 2024 State of Fraud report confirms $402,344.47 average cost per company, n=~200 professionals. FreightCaviar is trade press citing TIA (an industry association = primary-association).",
+        "TIA itself is a primary-association source; FreightCaviar is secondary-trade reporting the TIA finding. The underlying source (TIA) is primary. Scored Medium: trade press citing primary-association survey. Would need direct TIA report URL to score High.",
+        "Correct figure: $402,344.47 per company (the draft rounds to $402,344/year which is accurate)."
+      ]
+    },
+    {
+      "claim_id": "PP-2.2-COST-2",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.2 — Estimated cost",
+      "claim": "Total US cargo theft $455M in 2024 (+27% YoY); estimated $725M in 2025 (+60% YoY)",
+      "sources": ["Verisk CargoNet 2024 annual report (1)(2)"],
+      "source_categories": ["primary-association"],
+      "score": "High",
+      "override": null,
+      "flags": [
+        "VERIFIED: $455M (actually $454.9M) in 2024 confirmed by Verisk CargoNet annual analysis, corroborated by Risk & Insurance, CCJ Digital, SupplyChainBrain. 3,625 incidents in 2024 (+27% from 2023). High confidence.",
+        "$725M 2025 estimate: Verisk CargoNet released this as an estimated figure for 2025 losses — confirmed via Claims Journal and other sources. High confidence for 2024 figure; Medium for 2025 estimate (forward estimate, not final tally).",
+        "Verisk CargoNet is a primary-association equivalent (specialized industry intelligence firm under Verisk Analytics, a public company, NASDAQ: VRSK). 2+ independent media sources corroborate."
+      ]
+    },
+    {
+      "claim_id": "PP-2.2-COST-3",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.2 — Estimated cost",
+      "claim": "Average theft value per incident 2024: $202,364 (up from $187,895 in 2023)",
+      "sources": ["CargoNet 2024 Supply Chain Risk Trends (3)(4)"],
+      "source_categories": ["primary-association"],
+      "score": "High",
+      "override": null,
+      "flags": ["VERIFIED: $202,364 average per theft in 2024 confirmed by Verisk CargoNet analysis and corroborated by multiple independent news sources. Correct."]
+    },
+    {
+      "claim_id": "PP-2.2-FREQ-1",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.2 — Frequency",
+      "claim": "Truckstop reviewed 63,000+ entities in 2025; blocked 10,000+ identity check failures; 4,700 accounts for missing authority; 30,000+ for suspicious data points; investigated 600+ fraud cases",
+      "sources": ["Truckstop 2025 Freight Fraud Report (5)"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override — Truckstop's own platform report for claims about Truckstop's own fraud-blocking activity. Auto-Low. The data is vendor-generated and self-reported from Truckstop's own platform.",
+      "flags": [
+        "VERIFIED: The Truckstop 2025 Freight Fraud Report blog post URL is confirmed to exist and cite these figures. However, this is Truckstop's own blog/report about its own platform's performance.",
+        "Note: search result shows '494 fraud reports investigated' — slightly lower than '600+' in draft. Minor discrepancy; may be from different sections of the same report. Does not change the Low score.",
+        "Draft labels this 'Medium confidence (directional validity corroborated by FMCSA and CargoNet data)'. The vendor-marketing override applies regardless of corroboration from other sources for the specific claim about Truckstop's own activity."
+      ]
+    },
+    {
+      "claim_id": "PP-2.2-FREQ-2",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.2 — Frequency",
+      "claim": "Truckstop fraud reports +130% in 2023 (945 to 2,178)",
+      "sources": ["Truckstop 2025 Freight Fraud Report (5)"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override — same as PP-2.2-FREQ-1."
+    },
+    {
+      "claim_id": "PP-2.2-FREQ-3",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.2 — Frequency",
+      "claim": "Highway Q2 2025: 495,000 blocked fraudulent emails; 42,000+ fraudulent calls",
+      "sources": ["Highway Q2 2025 Freight Fraud Index (6)"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override — Highway's own quarterly fraud index for claims about Highway's own platform metrics. Auto-Low."
+    },
+    {
+      "claim_id": "PP-2.2-FREQ-4",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.2 — Frequency",
+      "claim": "Highway Q1 2025: 352,000+ fraudulent inbound emails; 30,900 spoofed calls; 400,000+ total fraud attempts",
+      "sources": ["Highway Q1 2025 Freight Fraud Index (value chain source 32)"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override. HOWEVER: figures VERIFIED — search confirms Highway released Q1 2025 data showing exactly 352,134 fraudulent emails, 30,921 spoofed numbers, 400,000+ total attempts. The numbers are correct but the source is vendor-self-reported. Auto-Low stands.",
+      "note": "The existence and approximate accuracy of these numbers are confirmed. The source quality is Low by rule regardless."
+    },
+    {
+      "claim_id": "PP-2.2-FREQ-5",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.2 — Frequency",
+      "claim": "Highway: 1,986,995 fraudulent email attempts in full-year 2025; 9,129 identity alerts; 117% increase from 2024",
+      "sources": ["Highway Q4 2025 Freight Fraud Index via GlobeNewswire (6)"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override — vendor's own annual summary."
+    },
+    {
+      "claim_id": "PP-2.2-FREQ-6",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.2 — Frequency",
+      "claim": "DAT blocked 2,400 accounts in 2023; removed 3,000+ accounts in 2022",
+      "sources": ["FreightWaves/Overdrive article (7)", "DAT Carrier Management Suite launch press release (7)"],
+      "source_categories": ["secondary-trade", "secondary-press-release"],
+      "score": "Low",
+      "override": "vendor-marketing override for the DAT-sourced figures (DAT's own press release about DAT's own fraud-fighting). FreightWaves trade press + DAT PR = still auto-low for vendor-specific activity claims.",
+      "note": "The DAT CMS launch date (October 16, 2025) is CONFIRMED via multiple independent sources. That specific date claim scores Medium. But the 2022/2023 blocked-account figures are DAT-self-reported."
+    },
+    {
+      "claim_id": "PP-2.3-COST-1",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.3 — Estimated cost",
+      "claim": "Strategic/fictitious pickup events: 574 in 2024 (+50% YoY); average loss per event $273,990",
+      "sources": ["Verisk CargoNet (2)(3)"],
+      "source_categories": ["primary-association"],
+      "score": "High",
+      "override": null,
+      "flags": ["CargoNet 2024 annual analysis confirms strategic theft as the largest growth segment, representing ~one-third of all theft by end 2024. The 574 events and specific dollar figures are CargoNet's proprietary database figures. High confidence."]
+    },
+    {
+      "claim_id": "PP-2.3-COST-2",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.3 — Estimated cost",
+      "claim": "California, Texas, Florida account for 54% of US cargo theft; I-5 Sacramento–LA 120+ events; I-10/I-35 Texas 89 incidents in 2024",
+      "sources": ["SCDigest citing CargoNet (3)", "Verisk CargoNet 2024 Risk Trends (4)"],
+      "source_categories": ["secondary-trade", "primary-association"],
+      "score": "Medium",
+      "override": null,
+      "flags": [
+        "PARTIAL DISCREPANCY: Search confirms CA, TX, IL account for 46% of all cargo theft (not CA+TX+FL = 54%). The draft's 54% figure may be from a different aggregation (CA+TX+FL vs. CA+TX+IL). Needs verification against the specific CargoNet report section.",
+        "I-5 and I-10/I-35 specific incident counts (120+ and 89) are CargoNet-reported lane-level figures — these would be in the CargoNet paid report. Secondary source (SCDigest) is citing these from the CargoNet report. Medium: primary-association data via secondary-trade summary."
+      ]
+    },
+    {
+      "claim_id": "PP-2.3-COST-3",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.3 — Estimated cost",
+      "claim": "Asia Pacific: India, Indonesia, China, Bangladesh, Vietnam top-affected countries; Strait of Malacca/Singapore 281% YoY surge in maritime incidents H1 2025",
+      "sources": ["BSI/TT Club 2024 Cargo Theft Report (5)"],
+      "source_categories": ["primary-association"],
+      "score": "Medium",
+      "override": null,
+      "flags": [
+        "BSI Group and TT Club are credible industry association/standards sources (TT Club is an industry association; BSI is a standards body). The 2024 Cargo Theft Report is a joint publication. One primary-association source = Medium (need 2+ primary sources for High).",
+        "The draft notes [NEEDS-ATTENDED-FETCH for full PDF] — the specific 281% figure should be verified directly against the PDF. Cannot confirm this specific statistic from web search alone.",
+        "PDF URL exists: https://www.ttclub.com/fileadmin/uploads/tt-club/Documents/TT_and_BSI_annual_theft_report/TT_Club_Report_-_Supply_Chain_Report_April_2025.pdf"
+      ]
+    },
+    {
+      "claim_id": "PP-2.4-COST-1",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.4 — Description",
+      "claim": "SEA domestic digital freight brokerage market $113.6M in 2024",
+      "sources": ["Cognitive Market Research (2)", "Mordor Intelligence (2)"],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade — Cognitive Market Research and Mordor Intelligence are commercial aggregators. No government or multilateral source. Auto-Low.",
+      "flags": ["APAC-as-proxy flag may also apply — this appears to be an Asia-Pacific figure used as a SEA proxy. Geography mismatch."]
+    },
+    {
+      "claim_id": "PP-2.4-COST-2",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.4 — Estimated cost",
+      "claim": "Indonesia logistics cost 23.5% of GDP vs. Malaysia 13%; Indonesia 1.3M trucks ~75% single-vehicle owner-operators",
+      "sources": ["Geotab blog (1)", "Maritime Fairtrade (1)", "CEFD/IBC Institute (1)"],
+      "source_categories": ["secondary-trade", "secondary-trade", "secondary-trade"],
+      "score": "Medium",
+      "override": null,
+      "flags": [
+        "VERIFIED: 23.5% of GDP figure is cited by multiple sources including a World Bank-referenced Annual Logistics Report (Bandung Institute of Technology + Indonesian Logistics Association + World Bank Indonesia Office). The underlying source is a joint WB/academic study, making it closer to primary-multilateral than pure trade press.",
+        "However, the draft cites Geotab (a vehicle telematics vendor), Maritime Fairtrade (industry news), and CEFD/IBC Institute (economic development institute). None are government statistics agencies.",
+        "World Bank LPI 2023 confirms Indonesia at 61st (VERIFIED). That specific claim is High.",
+        "The 23.5% GDP figure predates the more recent 14.29% figure (which is domestic logistics only, not total). The 23.5% may represent a broader definition. Multiple sources converge on this figure being from the Indonesian Annual Logistics Report. Medium for the GDP cost figure; High for the WB LPI rank.",
+        "1.3M trucks / 75% owner-operators — Geotab vendor blog citing Indonesian sources; single secondary source. Low-Medium for these sub-claims."
+      ]
+    },
+    {
+      "claim_id": "PP-2.4-COST-3",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.4 — Description",
+      "claim": "Convoy collapse: $3.8B valuation; 'unprecedented freight market collapse'; carriers owed thousands in unpaid settlements",
+      "sources": ["FreightWaves (3)", "CNBC (3)", "Tank Transport (3)"],
+      "source_categories": ["secondary-trade", "secondary-news", "secondary-trade"],
+      "score": "Medium",
+      "override": null,
+      "note": "Three independent sources (FreightWaves, CNBC news article, Tank Transport) all confirm Convoy's shutdown in October 2023 and $3.8B valuation. CNBC is a major financial news outlet = secondary-news (credible). Two independent news/trade sources minimum — Medium appropriate."
+    },
+    {
+      "claim_id": "PP-2.4-FREQ-1",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.4 — Frequency",
+      "claim": "World Bank LPI 2023: Indonesia ranked 61st of 139 countries (down from 46th in 2018)",
+      "sources": ["World Bank LPI website (4)", "Indonesia Investments (4)"],
+      "source_categories": ["primary-multilateral", "secondary-news"],
+      "score": "High",
+      "override": null,
+      "flags": ["VERIFIED: World Bank LPI 2023 confirms Indonesia ranked 61st of 139 countries. Primary-multilateral source. High confidence."]
+    },
+    {
+      "claim_id": "PP-2.4-FREQ-2",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.4 — Frequency",
+      "claim": "Traditional brokers retained 60.77% of Asia-Pacific freight brokerage share in 2024; digital platforms 21.05% CAGR; SEA CAGR 35.6% through 2030",
+      "sources": ["Cognitive Market Research (2)", "Mordor Intelligence (2)"],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade. APAC-as-proxy override also applies. Both Cognitive Market Research and Mordor are commercial aggregators."
+    },
+    {
+      "claim_id": "PP-2.4-FREQ-3",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.4 — Frequency",
+      "claim": "Vietnam needs 2.2M additional logistics workers by 2030; qualified staff meeting only 10% of demand; 85% of ASEAN carriers report workforce shortages",
+      "sources": ["Cognitive Market Research (2)", "Mordor Intelligence (2)"],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade. No government statistics agency or ILO source cited for workforce projections."
+    },
+    {
+      "claim_id": "PP-2.4-KARGO-CORRECTION",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.4 — Factual note",
+      "claim": "Kargo Technologies completed Series B July 2024; acquired TheLorry; remains active — NOT bankrupt",
+      "sources": ["DealStreetAsia (5)", "Incubees (5)"],
+      "source_categories": ["secondary-trade", "secondary-trade"],
+      "score": "Medium",
+      "override": null,
+      "flags": [
+        "VERIFIED: DealStreetAsia confirms Kargo Series B funding in July 2024 from AC Ventures and others. Multiple sources (Crunchbase, Tracxn, DealStreetAsia) confirm Kargo is active.",
+        "TheLorry acquisition confirmed via Incubees and DealStreetAsia.",
+        "The pain-points draft correctly identifies the value-chain error. Score Medium for the correction claim itself (two trade sources; no audited filing).",
+        "This correction is ACCURATE. The value-chain draft must be updated."
+      ]
+    },
+    {
+      "claim_id": "PP-2.5-FREQ-1",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.5 — Frequency",
+      "claim": "26,000+ licensed US freight brokerages (FMCSA)",
+      "sources": ["FMCSA Broker Registration (2)", "FMCSA A&I Registration Statistics (2)"],
+      "source_categories": ["primary-gov", "primary-gov"],
+      "score": "High",
+      "override": null,
+      "note": "FMCSA is a US government agency (primary-gov). Two government database citations. High."
+    },
+    {
+      "claim_id": "PP-2.5-COST-1",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.5 — Estimated cost",
+      "claim": "45% of brokers cite cost as #1 barrier to automation",
+      "sources": ["FreightCaviar citing a survey (4)"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "single-trade-source override. Single trade press source for a percentage claim about broker preferences. Survey methodology not disclosed. Low.",
+      "note": "Draft labels Medium. Overruled: single trade source."
+    },
+    {
+      "claim_id": "PP-2.5-COST-2",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.5 — Assumed",
+      "claim": "[ASSUMED-17] Enterprise TMS TCO $400K–$8M+; [ASSUMED-18] 15–30 min per load manual",
+      "sources": ["[ASSUMED-17]", "[ASSUMED-18]"],
+      "source_categories": [],
+      "score": "Low",
+      "override": "ASSUMED tags = auto-Low."
+    },
+    {
+      "claim_id": "PP-2.6-FREQ-1",
+      "file": "stage-2-pain-points.md",
+      "section": "Pain point 2.6 — Estimated cost",
+      "claim": "Highway Q4 2025: 135% spike in suspicious MC ownership changes in June 2025; 149 unauthorized FMCSA contact changes in Q3 2025",
+      "sources": ["Highway Q3 2025 Fraud Index (1)", "Highway Q4 2025 Fraud Index GlobeNewswire (1)"],
+      "source_categories": ["auto-low-vendor", "auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override — Highway's own fraud index reports for claims about Highway's own detection activity. Auto-Low."
+    }
+  ],
+  "override_triggers": [
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "claim_count": 6,
+      "claim_ids": ["VC-MKT-1", "VC-MKT-2", "VC-MKT-3", "VC-MKT-4", "VC-MKT-6", "VC-MKT-7", "PP-2.4-COST-1", "PP-2.4-FREQ-2", "PP-2.4-FREQ-3"],
+      "firms_involved": ["MarketsandMarkets", "Precedence Research", "Straits Research", "Grand View Research", "Global Market Insights", "Dataintelo", "Growth Market Reports", "Marketintelo", "Cognitive Market Research", "Mordor Intelligence"]
+    },
+    {
+      "override": "vendor-marketing-auto-low",
+      "claim_count": 9,
+      "claim_ids": ["VC-ARCH-22", "VC-ARCH-25", "PP-2.2-FREQ-1", "PP-2.2-FREQ-2", "PP-2.2-FREQ-3", "PP-2.2-FREQ-4", "PP-2.2-FREQ-5", "PP-2.2-FREQ-6", "PP-2.6-FREQ-1"],
+      "vendors_involved": ["Truckstop.com (own platform data)", "Highway (own detection data)", "Deliveree (own press release)", "Kargo Technologies (incorrect claim, no source)"]
+    },
+    {
+      "override": "press-release-only",
+      "claim_count": 3,
+      "claim_ids": ["VC-ARCH-10", "VC-ARCH-12", "VC-ARCH-26"],
+      "note": "GlobeNewswire/PR Newswire company press releases without Form D or independent audited corroboration"
+    },
+    {
+      "override": "single-trade-source",
+      "claim_count": 3,
+      "claim_ids": ["VC-ARCH-5", "PP-2.1-COST-2", "PP-2.5-COST-1"],
+      "note": "Operating cost and market figures sourced only from single trade publication"
+    },
+    {
+      "override": "assumed-tag",
+      "claim_count": 4,
+      "claim_ids": ["VC-ARCH-3", "VC-ARCH-4", "PP-2.1-COST-4", "PP-2.5-COST-2"],
+      "note": "Claims tagged [ASSUMED-N] = auto-Low per rubric"
+    },
+    {
+      "override": "outdated-source",
+      "claim_count": 1,
+      "claim_ids": ["VC-ARCH-18"],
+      "note": "Truckstop valuation from 2019 ICONIQ investment (>3 years old, no recent update)"
+    }
+  ],
+  "additional_factual_flags": [
+    {
+      "flag_id": "FLAG-1",
+      "file": "stage-2-value-chain.md",
+      "claim": "Descartes 'FY2025 services revenue $520.9M'",
+      "finding": "LABEL ERROR: $520.9M is Descartes FY2024 services revenue (fiscal year ended January 31, 2024). Descartes FY2025 (ended January 31, 2025) total revenue was $651.0M with services revenue of $590.2M. The label in the draft says FY2025 but the figure is FY2024. This is a fiscal year labeling error, not a fabricated number.",
+      "severity": "Minor — does not change the bottom-up market analysis materially, but label must be corrected"
+    },
+    {
+      "flag_id": "FLAG-2",
+      "file": "stage-2-value-chain.md",
+      "claim": "C.H. Robinson FY2024 gross revenue ~$24.9B",
+      "finding": "CLARIFICATION NEEDED: CHRW GAAP net revenue for 2024 was ~$17.7B. The $24.9B figure may represent gross freight billings (total shipper charges including pass-through costs). The 10-K likely contains both figures. The draft should clarify this is gross freight value, not GAAP revenue, to avoid confusion.",
+      "severity": "Minor — framing issue, not fabrication"
+    },
+    {
+      "flag_id": "FLAG-3",
+      "file": "stage-2-pain-points.md",
+      "claim": "California, Texas, Florida account for 54% of US cargo theft",
+      "finding": "POSSIBLE DISCREPANCY: Verisk CargoNet analysis cited in search confirms CA, TX, IL account for 46% of cargo theft (not CA+TX+FL=54%). The 54% figure may be from a different three-state grouping or may be in a different part of the CargoNet report. Needs direct PDF verification.",
+      "severity": "Minor — may be a different geographic grouping; verify against original CargoNet report"
+    }
+  ],
+  "weak_claims_for_deep_research": [
+    {
+      "claim_id": "VC-MKT-1-through-7",
+      "claim_text": "Global TMS market $9.8B–$16.7B in 2024; $40.3B by 2029; CAGR 20.2%",
+      "current_sources": ["MarketsandMarkets", "Precedence Research", "Straits Research"],
+      "current_score": "Low",
+      "issue": "All sources are commercial aggregator firms — auto-Low regardless of convergence. No primary-tier corroboration exists.",
+      "suggested_action": "1. Obtain ARC Advisory Group's TMS Market Study 2024 (ARC is a primary-category industry association analyst firm). 2. Request Gartner Magic Quadrant for TMS 2024 full report (Gartner is primary-consultancy tier). 3. Check Armstrong & Associates annual 3PL market study for TMS revenue estimates. 4. Review Oracle, SAP, Blue Yonder annual reports for any TMS segment revenue disclosure.",
+      "priority": "high",
+      "search_queries": [
+        "ARC Advisory Group TMS market size 2024 global transportation management",
+        "Gartner Magic Quadrant Transportation Management Systems 2024 market size",
+        "Armstrong Associates 3PL market study TMS software revenue 2024"
+      ]
+    },
+    {
+      "claim_id": "PP-2.4-COST-1",
+      "claim_text": "SEA domestic digital freight brokerage market $113.6M in 2024 (Cognitive Market Research + Mordor)",
+      "current_sources": ["Cognitive Market Research", "Mordor Intelligence"],
+      "current_score": "Low",
+      "issue": "Both sources are commercial aggregators — auto-Low. APAC-as-proxy concern also applies. Geography may not be strictly SEA.",
+      "suggested_action": "1. Search DealStreetAsia for SEA logistics market sizing from investment banks (Goldman Sachs, Morgan Stanley APAC research). 2. Check World Bank or ADB logistics sector reports for SEA digital freight penetration. 3. Look for Temasek/Bain Southeast Asia digital economy report (e-Conomy SEA) which covers logistics tech subsector sizing. 4. Search for Indonesian government (BKPM/BPS) e-logistics sector data.",
+      "priority": "high",
+      "search_queries": [
+        "Bain e-Conomy SEA 2024 digital logistics freight brokerage market size",
+        "Google Temasek SEA economy 2024 logistics digital platforms",
+        "ADB Asian Development Bank SEA freight logistics digital platform market",
+        "APTRINDO Indonesia truck freight digital brokerage market statistics"
+      ]
+    },
+    {
+      "claim_id": "PP-2.2-FREQ-1-through-5",
+      "claim_text": "Highway and Truckstop vendor fraud statistics (352K fraudulent emails Q1 2025; 63,000 entities reviewed)",
+      "current_sources": ["Highway's own quarterly fraud indexes", "Truckstop's own blog report"],
+      "current_score": "Low (all)",
+      "issue": "All vendor-marketing auto-Low. The fraud trend is real but current sourcing is entirely from the vendors themselves. Need third-party corroboration.",
+      "suggested_action": "1. Obtain FMCSA enforcement data on broker fraud complaints (FMCSA Fraud Alerts database — primary-gov). 2. Look for FBI or DOT Inspector General reports on cargo theft and freight fraud (primary-gov or primary-legal). 3. Check TIA's full 2024 State of Fraud report directly (not via FreightCaviar) — TIA is primary-association. 4. Seek CargoNet or BSI independent data on identity-based freight fraud trends that aren't from the vetting vendors themselves.",
+      "priority": "medium",
+      "search_queries": [
+        "FMCSA 2024 2025 broker fraud complaints enforcement actions statistics",
+        "FBI cargo theft freight fraud 2024 2025 report statistics",
+        "TIA Transportation Intermediaries Association State of Fraud 2024 full report PDF",
+        "DOT inspector general freight fraud double brokering investigation 2024"
+      ]
+    },
+    {
+      "claim_id": "PP-2.1-COST-2",
+      "claim_text": "Contract-to-spot gap $0.11/mile by March 2026 (from $0.39/mile prior year) — cited only from ARK TMS blog",
+      "current_sources": ["ARK TMS blog citing DAT and US Bank"],
+      "current_score": "Low",
+      "issue": "Single industry blog source. Underlying data is from DAT and US Bank but not directly cited.",
+      "suggested_action": "1. Access DAT's own blog/news releases for March 2026 Truckload Volume Index data directly (dat.com). 2. Access US Bank/DAT quarterly freight rates report directly (NDTAHQ.com or USBank.com). 3. Check FreightWaves SONAR weekly market updates for March 2026 contract-vs-spot spread data.",
+      "priority": "medium",
+      "search_queries": [
+        "DAT Truckload Volume Index March 2026 contract spot rate gap",
+        "US Bank DAT quarterly truck freight rates Q1 2026 contract spot spread",
+        "FreightWaves SONAR contract spot rate differential March 2026"
+      ]
+    }
+  ],
+  "gate_decision_recommendation": "ship-with-flag",
+  "gate_reasoning": "Stage 2 has a 26.5% Low rate driven by two structural issues: (1) all TMS market-size claims rely exclusively on commercial aggregator firms (MarketsandMarkets, Mordor, etc.) — auto-Low by rule regardless of convergence; and (2) fraud-frequency claims are entirely from vendor-self-reported metrics (Highway, Truckstop quarterly reports) — auto-Low by vendor-marketing rule. The factual content of the pain-point analysis is sound and directionally well-supported by primary sources: the High-confidence claims include audited financial filings (WiseTech, e2open, Manhattan, JBHT, Uber, CHRW, C.H. Robinson), primary-gov sources (FMCSA broker count, World Bank LPI), and primary-association data (Verisk CargoNet cargo theft figures). The critical correction required before shipping is the Kargo Technologies bankruptcy claim, which is factually wrong and must be removed from the value-chain draft. Three additional minor label/framing corrections are needed (Descartes fiscal year label, CHRW gross vs. net revenue clarification, California/Texas/Florida 54% cargo theft geographic grouping). These corrections are mechanical edits, not deep-research tasks. The two highest-priority deep-research targets for pass 3 are: (1) TMS global market size — seek ARC Advisory Group or Gartner MQ data to replace commercial aggregator sourcing; and (2) SEA digital freight brokerage market size — seek Bain/Temasek e-Conomy SEA or ADB data to replace Mordor/Cognitive Market Research sourcing. Fraud vendor data (Highway, Truckstop) can remain with explicit Low-confidence labels since the directional reality of freight fraud growth is corroborated by TIA (industry association) and Verisk CargoNet (independent) data."
+}

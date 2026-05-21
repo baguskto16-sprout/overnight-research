@@ -1,0 +1,41 @@
+{
+  "claim_id": "PP4.1-14",
+  "outcome": "stronger",
+  "new_confidence": "H",
+  "refined_claim_text": "Fictitious pickup events recorded by CargoNet (Verisk) surged from an average of 66 per year over 2012–2022 to 576 events in 2023 — a roughly 8× increase in a single year — making theft-by-deception the dominant supply chain security threat in 2023. (Source: Verisk CargoNet, 2023 Supply Chain Risk Trends Analysis, January 2024.)",
+  "primary_sources_found": [
+    {
+      "url": "https://www.cargonet.com/news-and-events/cargonet-in-the-media/2023-theft-trends/",
+      "title": "2023 Supply Chain Risk Trends Analysis",
+      "publisher": "Verisk CargoNet",
+      "primary_category": "primary-research-firm",
+      "publication_date": "2024-01",
+      "exact_quote": "CargoNet recorded 576 fictitious pickup events [in 2023], far above the average of 66 per year since 2012. Theft by deception schemes were the prominent threat to safe freight transportation this year.",
+      "via_pdf_markitdown": false,
+      "notes": "CargoNet is a Verisk Analytics product and operates the primary U.S./Canada cargo theft database used by law enforcement, insurance, and logistics operators. The 2023 annual trends page is publicly accessible and directly contains the 576 / 66-per-year figures."
+    },
+    {
+      "url": "https://www.cargonet.com/static/Intel-brief-Fictitious-Pickup-Trends/",
+      "title": "Emerging Risk: Intelligence Brief on Current Fictitious Pickup Trends",
+      "publisher": "Verisk CargoNet",
+      "primary_category": "primary-research-firm",
+      "publication_date": "2023-01-25",
+      "exact_quote": "CargoNet recorded 94 more fictitious cargo pickups in 2022 compared to the year prior. Fictitious pickups are a highly specialized form of cargo theft that requires skill in document forgery and internet-based fraud in addition to: (a) a location that can store one or more truckloads of goods and (b) fence contacts that can safely sell this product.",
+      "via_pdf_markitdown": false,
+      "notes": "This January 2023 intelligence brief pre-dates the 2023 annual report. It confirms CargoNet's definition and documents the 2021→2022 escalation. Organized crime in Chicago, South Florida, and LA are cited. The 576/66 figures are in the 2023 annual report, not this brief."
+    },
+    {
+      "url": "https://tapa.memberclicks.net/assets/2025-National-Cargo-Theft-Conferfence/Presentations-for-Sharing/2024%20Annual%20Verisk%20CargoNet%E2%80%99s%20Supply%20Chain%20Risk%20Report.pdf",
+      "title": "Verisk CargoNet 2024 Annual Supply Chain Risk Report (Non-Member Version)",
+      "publisher": "Verisk CargoNet / TAPA (Transported Asset Protection Association)",
+      "primary_category": "primary-research-firm",
+      "publication_date": "2025",
+      "exact_quote": "Fictitious Pick-up [listed as a distinct incident category, comprising 0.63% of 3,625 total 2024 incidents]",
+      "via_pdf_markitdown": true,
+      "notes": "The public non-member PDF distributed at the 2025 TAPA National Cargo Theft Conference. Contains an incident-type breakdown pie chart showing 'Fictitious Pick-up' at 0.63% of 3,625 total incidents (~23 events). The full 2024 fictitious pickup raw count is in the member-only portal and is not disclosed in this public version. A 32% year-over-year increase in straight theft is noted. The dramatic drop from 576 (2023) to ~23 (2024 pie estimate) is likely an artefact of reclassification into 'Fraud' (15.97%) rather than a real decline — to be verified against member report."
+    }
+  ],
+  "definition_confirmed": "A fictitious pickup is a cargo theft scheme in which a criminal presents forged documentation (fake bill of lading, cloned carrier identity, fraudulent driver credentials) and collects a legitimate shipment at the shipper's dock, impersonating the authorized carrier. CargoNet characterises it as requiring 'skill in document forgery and internet-based fraud' plus secure storage capacity and fence contacts. It is distinct from digital freight-brokerage fraud ('double brokering') in that physical presence at the dock is required.",
+  "2024_data_status": "Partial only. The public 2024 non-member CargoNet report (via TAPA) shows 'Fictitious Pick-up' as a labelled incident category but provides only pie-chart percentages, not raw counts. Full 2024 fictitious pickup count is member-gated. The 2024 annual trends landing page (cargonet.com/2024-theft-trends) mentions 3,625 total incidents and 27% YoY increase overall but does not break out fictitious pickup specifics on the public page.",
+  "notes": "The 66→576 figures are definitively sourced to Verisk CargoNet's own 2023 annual report — a primary research-firm source, not trade press. CargoNet is a Verisk Analytics subsidiary that administers the official U.S.–Canada cargo theft database shared with law enforcement and insurance carriers; it is the industry primary for cargo crime statistics, equivalent in authority to NICB for vehicle theft. The HaulerHub vendor blog that was originally cited was relaying CargoNet's numbers accurately but without attribution. The original claim text is factually correct. Confidence should be upgraded from Low to High. CNBC (Jan 22, 2024) also ran a story citing this CargoNet data (URL: cnbc.com/2024/01/22/cargo-theft-up-57percent-in-2023-vs-2022-new-cargonet-data-shows.html) but returned HTTP 403 during verification — noted as corroborating secondary media but not listed as a primary source."
+}

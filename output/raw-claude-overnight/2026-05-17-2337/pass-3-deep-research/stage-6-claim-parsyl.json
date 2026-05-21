@@ -1,0 +1,16 @@
+{
+  "claim_id": "VC-Parsyl-1",
+  "outcome": "contradicting-evidence",
+  "new_score": "Medium",
+  "replacement_or_supplementary_sources": [
+    {"url": "https://www.reinsurancene.ws/parsyl-raises-25m-series-b-funding/", "tier": "independent-trade-press", "date": "2022-01-31", "what_it_supports": "$25M Series B led by HSCM Ventures — January 2022 (NOT January 2024)."},
+    {"url": "https://www.artemis.bm/news/hscm-ventures-backs-parsyl-the-sensor-driven-parametrics-insurtech/", "tier": "independent-trade-press (Artemis)", "date": "2022-01-27", "what_it_supports": "Confirms $25M Series B, HSCM Ventures lead, January 27, 2022."},
+    {"url": "https://www.insurtechinsights.com/parsyl-raises-25m-series-b-funding/", "tier": "independent-trade-press", "date": "2022-01-31", "what_it_supports": "Third independent confirmation."},
+    {"url": "https://www.parsyl.com/media/media/data-partner-program-launch", "tier": "vendor-primary (program-launch)", "date": "2024-03", "what_it_supports": "Data Partner Program March 2024 partners: Berlinger (Sensitech), Copeland (fmr. Emerson), Roambee, Sensitech, Tive — Controlant NOT listed."},
+    {"url": "https://www.berlinger.com/medien/berlinger-partners-with-parsyl", "tier": "partner-company-independent", "date": "2024", "what_it_supports": "Berlinger/Sensitech independently confirms partnership."},
+    {"url": "https://www.portal.insuranceinsider.com/article/29mxhpl4qywkjwby119mo/parsyl-secures-25mn-and-announces-us-mga", "tier": "specialist-trade-press [NEEDS-ATTENDED-FETCH]", "date": "2022", "what_it_supports": "Insurance Insider coverage of $25M Series B + MGA launch; paywalled."}
+  ],
+  "revised_claim_text": "Parsyl raised USD 25M in a Series B round in January 2022 (corrected from '2024' in source draft), led by HSCM Ventures. The IoT Data Partner Program, launched March 2024, includes Sensitech (formerly Berlinger), Copeland (formerly Emerson), Roambee, and Tive — Controlant is not a confirmed partner. ColdCover parametric settlement window is documented at 72 hours under the parametric product terms (vendor cites 48 hours and 'same-day' for individual claims). The $4 trillion perishable food + pharma addressable market figure is from Parsyl's own press releases — [ASSUMED-N], not independently corroborated.",
+  "footnote_for_artifact": "Parsyl $25M Series B funding date corrected to January 2022 per three independent trade publications: Reinsurance News, Artemis.bm, and Insurtech Insights (all Jan 27-31, 2022). Data Partner Program partner list per Parsyl's March 2024 launch announcement, cross-verified by Berlinger's independent announcement. Insurance Insider coverage [NEEDS-ATTENDED-FETCH]: portal.insuranceinsider.com/article/29mxhpl4qywkjwby119mo. ColdCover 48-hour vs 72-hour and the $4T TAM are vendor-only.",
+  "notes": "Critical year correction: 2024 → 2022. SEC EDGAR returned 403 — Form D status not confirmable via this route but funding amount and date verified through three independent trade publications. Controlant removed from partner list. Score upgrades Low → Medium because funding + partners are now independently anchored, even though product-performance metrics remain vendor-only."
+}

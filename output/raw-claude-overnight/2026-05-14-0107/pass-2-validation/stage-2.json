@@ -1,0 +1,1081 @@
+{
+  "stage": 2,
+  "stage_name": "TMS, dispatch & freight orchestration",
+  "files_validated": [
+    "pass-1-drafts/stage-2-value-chain.md",
+    "pass-1-drafts/stage-2-pain-points.md"
+  ],
+  "total_claims": 82,
+  "by_confidence": {
+    "H": 14,
+    "M": 24,
+    "L": 44
+  },
+  "unique_source_domains": 68,
+  "unique_source_urls": 101,
+  "domain_diversity_list": [
+    "investor.uber.com",
+    "ir.fulltruckalliance.com",
+    "manh.com",
+    "hkexnews.hk",
+    "news.tianet.org",
+    "nucleusresearch.com",
+    "arcweb.com",
+    "e2open.com",
+    "gartner.com",
+    "ccjdigital.com",
+    "freightwaves.com",
+    "overdriveonline.com",
+    "truckingdive.com",
+    "dcvelocity.com",
+    "highway.com",
+    "triumph.io",
+    "triumphpay.com",
+    "locus.sh",
+    "selecthub.com",
+    "gocomet.com",
+    "transportmanagement.org",
+    "roado.co.in",
+    "meltingspot.io",
+    "noeldcosta.com",
+    "transportmanagementsoftware.org",
+    "sacra.com",
+    "getlatka.com",
+    "dealstreetasia.com",
+    "techcollectivesea.com",
+    "idnfinancials.com",
+    "equalocean.com",
+    "scmp.com",
+    "sahmcapital.com",
+    "project44.com",
+    "grandviewresearch.com",
+    "marketsandmarkets.com",
+    "precedenceresearch.com",
+    "gminsights.com",
+    "ftvcapital.com",
+    "logisticsviewpoints.com",
+    "businesswire.com",
+    "blogs.oracle.com",
+    "appsruntheworld.com",
+    "sap.com",
+    "silicon.co.uk",
+    "alpegagroup.com",
+    "koerber.com",
+    "globenewswire.com",
+    "transporeon.com",
+    "finance.yahoo.com",
+    "wisetechglobal.com",
+    "sennder.com",
+    "cargobase.com",
+    "prnasia.com",
+    "haulio.io",
+    "mediadblueyonder.com",
+    "uberfreight.com",
+    "truckstop.com",
+    "sourcingjournal.com",
+    "theloadstar.com",
+    "marketscreener.com",
+    "arktms.com",
+    "fareye.com",
+    "hatfieldandassociates.com",
+    "cassinfo.com",
+    "supplychainbrain.com",
+    "blog.gettransport.com",
+    "freight360.net",
+    "cxtms.com",
+    "nuvocargo.com"
+  ],
+  "claims": [
+    {
+      "id": "VC-intro-1",
+      "file": "stage-2-value-chain.md",
+      "claim": "Fraud attempt rates on digital freight platforms increased from 0.53% of loads in 2023 to 1.66% in 2024 — a 213% increase",
+      "sources": ["ccjdigital.com (1)"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "single-trade-source: ccjdigital.com alone; the underlying data is IDScan.net vendor dataset (1M transactions) re-reported by CCJ trade press — two layers of secondary. Same data in pain-points cited via dcvelocity.com; still single-vendor dataset, still trade-press relay.",
+      "note": "CCJ article title references '27% increase in 2024' which is inconsistent with the 213% figure in the text — potential transcription error or different metric base deserves flagging."
+    },
+    {
+      "id": "VC-SAP-1",
+      "file": "stage-2-value-chain.md",
+      "claim": "SAP TM named a Leader in Nucleus Research 2024 TMS Value Matrix",
+      "sources": ["nucleusresearch.com (2)", "businesswire.com (2)"],
+      "source_categories": ["primary-research-firm", "secondary-vendor"],
+      "score": "H",
+      "override": null,
+      "note": "Nucleus Research is an audited analyst firm; its published Value Matrix qualifies as primary-research-firm."
+    },
+    {
+      "id": "VC-SAP-2",
+      "file": "stage-2-value-chain.md",
+      "claim": "SAP holds ~10–15% of global enterprise TMS market share",
+      "sources": ["nucleusresearch.com (2)"],
+      "source_categories": ["primary-research-firm"],
+      "score": "M",
+      "override": "Single primary-research-firm source without a corroborating second analyst; qualifies M under rubric (1 primary source only, no government/multilateral co-source).",
+      "note": null
+    },
+    {
+      "id": "VC-SAP-3",
+      "file": "stage-2-value-chain.md",
+      "claim": "SAP TM cons: UI complexity drives end-user adoption failures cited in Gartner Peer Insights reviews",
+      "sources": ["gartner.com/reviews (3)"],
+      "source_categories": ["primary-research-firm"],
+      "score": "M",
+      "override": null,
+      "note": "Gartner Peer Insights is a crowd-sourced review platform, not a Gartner analyst report; single source, qualitative."
+    },
+    {
+      "id": "VC-SAP-4",
+      "file": "stage-2-value-chain.md",
+      "claim": "SAP TM: SEA regional offices in Singapore, Malaysia, Thailand, Indonesia",
+      "sources": ["sap.com/sea (4)"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "Single vendor page; no independent corroboration.",
+      "note": null
+    },
+    {
+      "id": "VC-OTM-1",
+      "file": "stage-2-value-chain.md",
+      "claim": "Oracle OTM named TMS Leader by Gartner for 17th consecutive time as of 2024",
+      "sources": ["e2open.com/news (5)", "blogs.oracle.com (8)"],
+      "source_categories": ["secondary-vendor", "secondary-vendor"],
+      "score": "L",
+      "override": "Both sources are vendor press releases/blogs citing the Gartner MQ; the Gartner MQ itself is not directly cited. Two URLs from vendor domain family — single source family override applies.",
+      "note": "The underlying Gartner MQ report would be H; the citation chain stops at vendor press releases."
+    },
+    {
+      "id": "VC-OTM-2",
+      "file": "stage-2-value-chain.md",
+      "claim": "Oracle OTM non-Oracle ERP integration costs $500K–$3M in custom development",
+      "sources": ["locus.sh/blogs (7)"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "Single trade/competitor blog source for an operating cost figure. locus.sh is a Locus (competitor TMS vendor) blog — secondary-trade at best, secondary-vendor at worst. No SI or Gartner corroboration.",
+      "note": "High-impact cost claim; single-trade-source override triggered."
+    },
+    {
+      "id": "VC-OTM-3",
+      "file": "stage-2-value-chain.md",
+      "claim": "Oracle holds estimated >19% of global TMS market share; top-ranked by customer count per Apps Run The World",
+      "sources": ["appsruntheworld.com (6)"],
+      "source_categories": ["secondary-market-research"],
+      "score": "L",
+      "override": "Single secondary-market-research source; Apps Run The World is a paid market research database, not a multilateral or audited analyst firm.",
+      "note": null
+    },
+    {
+      "id": "VC-MANH-1",
+      "file": "stage-2-value-chain.md",
+      "claim": "Manhattan Associates FY2024 revenue $1.04B, 12% growth; cloud subscription $337M, 32% growth",
+      "sources": ["manh.com press release (9)"],
+      "source_categories": ["primary-research-firm"],
+      "score": "H",
+      "override": null,
+      "note": "manh.com earnings press release is a first-party financial disclosure by a public company (NASDAQ: MANH); qualifies as H under first-party 10-K/press release rubric."
+    },
+    {
+      "id": "VC-MANH-2",
+      "file": "stage-2-value-chain.md",
+      "claim": "Manhattan Active TM named Leader in 2026 Gartner Magic Quadrant for TMS",
+      "sources": ["manh.com press release (9)"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "Vendor press release citing Gartner MQ; Gartner MQ itself not directly cited. Single vendor source.",
+      "note": "Note: 2026 MQ cited here while VC-OTM-1 cites 2024 MQ — the Gartner MQ timeline needs verification; scoring as L due to vendor-only citation."
+    },
+    {
+      "id": "VC-MANH-3",
+      "file": "stage-2-value-chain.md",
+      "claim": "Manhattan serves 1,200+ customers in 75+ countries",
+      "sources": ["manh.com press release (9)"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": null,
+      "note": "Vendor's own metric in its earnings press release; qualifies as M under 'vendor disclosure of own metric' rubric."
+    },
+    {
+      "id": "VC-BY-1",
+      "file": "stage-2-value-chain.md",
+      "claim": "Blue Yonder Cloud TMS grew from 10M to 45M monthly shipments in one year",
+      "sources": ["logisticsviewpoints.com (10)", "media.blueyonder.com (11)"],
+      "source_categories": ["secondary-trade", "secondary-vendor"],
+      "score": "L",
+      "override": "The 45M shipments figure originates from Blue Yonder's own Nucleus Research content (secondary-vendor page). Logisticsviewpoints is trade press re-citing vendor data. Both sources trace to vendor-originated data. Single-source-family override.",
+      "note": null
+    },
+    {
+      "id": "VC-BY-2",
+      "file": "stage-2-value-chain.md",
+      "claim": "Blue Yonder acquired One Network in May 2024",
+      "sources": ["logisticsviewpoints.com (10)"],
+      "source_categories": ["secondary-trade"],
+      "score": "M",
+      "override": null,
+      "note": "Acquisition is a verifiable corporate event; trade press report of a confirmed deal qualifies as named-author trade press citing primary corporate announcement. Single source but corporate event."
+    },
+    {
+      "id": "VC-BY-3",
+      "file": "stage-2-value-chain.md",
+      "claim": "Blue Yonder $289M quarterly revenue Q1 2023 baseline, growing ~11% per year",
+      "sources": ["media.blueyonder.com (11)"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "Single vendor content page; Blue Yonder is private (Panasonic subsidiary), no public filing. Vendor-self-reported revenue without audit.",
+      "note": null
+    },
+    {
+      "id": "VC-MERC-1",
+      "file": "stage-2-value-chain.md",
+      "claim": "MercuryGate recognized as Challenger in 2024 Gartner MQ for TMS",
+      "sources": ["silicon.co.uk (12)", "alpegagroup.com (12)"],
+      "source_categories": ["secondary-trade", "secondary-vendor"],
+      "score": "L",
+      "override": "Both sources are trade press / vendor announcements citing Gartner MQ; neither is the Gartner report itself. Same limitation as VC-OTM-1.",
+      "note": null
+    },
+    {
+      "id": "VC-MERC-2",
+      "file": "stage-2-value-chain.md",
+      "claim": "MercuryGate managed $70B+ annual freight spend; 300,000+ daily logins from 80 countries (2018 figures)",
+      "sources": ["koerber.com (13)"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "Single vendor (acquirer) press release. Data acknowledged as 2018 — stale data override: >3 years old, flagged in-text.",
+      "note": "Outdated-source override triggered in addition to single-vendor-source override."
+    },
+    {
+      "id": "VC-MCLEOD-1",
+      "file": "stage-2-value-chain.md",
+      "claim": "McLeod v24.2 update: 354+ active customers; Greenscreens.ai real-time pricing integration",
+      "sources": ["globenewswire.com/McLeod (14)"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": null,
+      "note": "GlobeNewsWire press release from the vendor is first-party disclosure of own metrics; qualifies M under 'vendor disclosure of own metric'."
+    },
+    {
+      "id": "VC-TRIMBLE-1",
+      "file": "stage-2-value-chain.md",
+      "claim": "Trimble acquired Transporeon for €1.88B in April 2023; Transporeon has 145,000 carriers, 1,400 shippers, €48B managed freight, ~€190M revenue 2023 (~25% growth)",
+      "sources": ["transporeon.com (16)", "truckingdive.com (16)"],
+      "source_categories": ["secondary-vendor", "secondary-trade"],
+      "score": "M",
+      "override": null,
+      "note": "Acquisition price and Transporeon operating metrics come from the Trimble/Transporeon press releases. Truckingdive is named-author trade press corroborating the corporate event. Two independent sources (one vendor, one trade), vendor discloses own metrics — qualifies M."
+    },
+    {
+      "id": "VC-DESC-1",
+      "file": "stage-2-value-chain.md",
+      "claim": "Descartes named top cloud-based TMS provider by ARC Advisory Group 2024",
+      "sources": ["finance.yahoo.com (17)"],
+      "source_categories": ["secondary-trade"],
+      "score": "M",
+      "override": null,
+      "note": "The underlying ARC Advisory report is primary-research-firm, but the citation is a Yahoo Finance re-post of the press release. The award itself references a named analyst firm (ARC Advisory), which elevates above pure trade-press."
+    },
+    {
+      "id": "VC-E2OPEN-1",
+      "file": "stage-2-value-chain.md",
+      "claim": "WiseTech acquired e2open for $2.1B enterprise value (completed August 2025); e2open $132.9M Q1 2025 subscription revenue",
+      "sources": ["e2open.com/news (18)", "wisetechglobal.com (18)"],
+      "source_categories": ["secondary-vendor", "secondary-vendor"],
+      "score": "M",
+      "override": null,
+      "note": "Both are vendor press releases for the same corporate transaction. The acquisition price and financials are first-party disclosures by public companies (WiseTech is ASX-listed); scores M since both trace to the same transaction family. Would upgrade to H with direct ASX or SEC filing citation."
+    },
+    {
+      "id": "VC-E2OPEN-2",
+      "file": "stage-2-value-chain.md",
+      "claim": "e2open named Leader in 2024 Gartner Magic Quadrant for TMS (second consecutive year)",
+      "sources": ["e2open.com/news (5)"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "Single vendor press release citing Gartner. Same issue as VC-OTM-1.",
+      "note": null
+    },
+    {
+      "id": "VC-UBER-1",
+      "file": "stage-2-value-chain.md",
+      "claim": "Uber Freight FY2024 Gross Bookings $1.28B; EBITDA $(22)M; EBITDA margin (1.7%)",
+      "sources": ["investor.uber.com (20)"],
+      "source_categories": ["primary-H"],
+      "score": "H",
+      "override": null,
+      "note": "Uber Technologies SEC-registered earnings press release; public company first-party financial disclosure."
+    },
+    {
+      "id": "VC-UBER-2",
+      "file": "stage-2-value-chain.md",
+      "claim": "Uber Freight: Challenger in 2024 Gartner MQ; 60%+ fraud reduction since 2023",
+      "sources": ["investor.uber.com (20)", "ccjdigital.com (1)"],
+      "source_categories": ["primary-H", "secondary-trade"],
+      "score": "M",
+      "override": "60% fraud reduction figure comes from Uber Freight's own blog (uberfreight.com/blog cited in pain-points as (8)) — vendor-self-reported metric. Gartner MQ challenger cited via earnings release (vendor-secondary). Two sources but both trace to vendor-family for the fraud figure.",
+      "note": "Uber's own earnings release does not cite the fraud reduction figure; that data is from vendor blog."
+    },
+    {
+      "id": "VC-UBER-3",
+      "file": "stage-2-value-chain.md",
+      "claim": "FMCSA forced transparency from Uber Freight after double-brokering scam (late 2023)",
+      "sources": ["overdriveonline.com (21)"],
+      "source_categories": ["secondary-trade"],
+      "score": "M",
+      "override": null,
+      "note": "Overdrive Online is named-author trade press covering an FMCSA regulatory action (primary event). The FMCSA action itself is a government record, and Overdrive's reporting is the closest citation available. Single trade-press source but covers a documented regulatory event."
+    },
+    {
+      "id": "VC-LOADS-1",
+      "file": "stage-2-value-chain.md",
+      "claim": "Loadsmart reached operating profitability Q3 2024; on track for all-time record gross profit 2024; 85% automation rate; $1.3B valuation",
+      "sources": ["globenewswire.com/Loadsmart (22)"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": null,
+      "note": "GlobeNewsWire press release is vendor first-party disclosure of own operating metrics. Qualifies M under 'vendor disclosure of own metric'. Loadsmart is private; no public filing available."
+    },
+    {
+      "id": "VC-CONVOY-1",
+      "file": "stage-2-value-chain.md",
+      "claim": "Convoy raised $1B+; valued at $3.8B peak; shut down October 19, 2023; freight market recession collapsed spot rates 30–40% in 2022–2023",
+      "sources": ["freightwaves.com/convoy (23)", "freightwaves.com/convoy-obituary (24)"],
+      "source_categories": ["secondary-trade", "secondary-trade"],
+      "score": "M",
+      "override": null,
+      "note": "Two independent FreightWaves articles from the same publication family — single-domain override technically applies (both freightwaves.com). Capped at M. Convoy bankruptcy filings would be H per the override rule but are not the sources cited."
+    },
+    {
+      "id": "VC-SENNDER-1",
+      "file": "stage-2-value-chain.md",
+      "claim": "Sennder acquired C.H. Robinson European Surface Transportation; combined revenue €1.4B; 40,000+ deployed trucks; 120,000 vehicle access; 1,700 employees",
+      "sources": ["sennder.com/press (25)"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "Single vendor press release. Revenue figure '€1.4B combined' is an announced expectation, not audited financials. Sennder is private.",
+      "note": null
+    },
+    {
+      "id": "VC-CARGO-1",
+      "file": "stage-2-value-chain.md",
+      "claim": "Cargobase: G2 ranked #6 of 184 TMS solutions globally; 273% reported growth; SOC 2 Type II certified November 2024; 55-country footprint",
+      "sources": ["cargobase.com/blog (26)", "prnasia.com (26)"],
+      "source_categories": ["secondary-vendor", "secondary-vendor"],
+      "score": "L",
+      "override": "Both sources are the vendor's own blog and a PR Newswire Asia press release. Growth figure '273%' has no timeframe. Single-source-family and single-vendor overrides apply.",
+      "note": null
+    },
+    {
+      "id": "VC-HAULIO-1",
+      "file": "stage-2-value-chain.md",
+      "claim": "Haulio: $15M ARR (October 2024); $7.9M total funding; Series A $5.75M 2021; revenue declined from $25M peak 2023",
+      "sources": ["haulio.io (27)", "getlatka.com (27)"],
+      "source_categories": ["secondary-vendor", "secondary-market-research"],
+      "score": "L",
+      "override": "haulio.io is the company's own website (vendor). getlatka.com is a third-party revenue-tracking database that scrapes and estimates private company revenue — it is not audited and Latka's methodology for private companies is not published. Neither source is primary. Single-source-family issue: both converge on same underlying estimates.",
+      "note": "Haulio ARR is a critical metric for SEA platform risk analysis; needs confirmation from a funding press release or audited filing."
+    },
+    {
+      "id": "VC-KARGO-1",
+      "file": "stage-2-value-chain.md",
+      "claim": "Kargo Technologies: 636 employees (July 2024); Series A $31M (Peak XV Partners); $38.6M+ total funding; acquired TheLorry 2024",
+      "sources": ["dealstreetasia.com (28)", "techcollectivesea.com (28)"],
+      "source_categories": ["secondary-trade", "secondary-trade"],
+      "score": "M",
+      "override": null,
+      "note": "Two independent trade press sources (DealStreet Asia and Tech Collective SEA) corroborating the same funding/acquisition events. Both are named-author trade press covering verifiable corporate events. Scores M."
+    },
+    {
+      "id": "VC-DELIV-1",
+      "file": "stage-2-value-chain.md",
+      "claim": "Deliveree: 100,000 active trucks; $109M total funding; $30M March 2024 equity raise; GTV grew 3.2× in two years; targeting $100M+ GTV 2024",
+      "sources": ["idnfinancials.com (29)"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "Single secondary-trade source. IDN Financials is an Indonesian financial news site. Deliveree is private; no audited financials. Single-source override.",
+      "note": null
+    },
+    {
+      "id": "VC-GOGOX-1",
+      "file": "stage-2-value-chain.md",
+      "claim": "GoGoX: HKEX listed (IPO June 2022, raised HK$671M); 340+ cities; market cap declined from HK$10.3B to ~HK$300M by January 2024 (97% value erosion); 2021 revenue ~RMB 660M (~$90M)",
+      "sources": ["equalocean.com (30)", "scmp.com (30)"],
+      "source_categories": ["secondary-trade", "secondary-news"],
+      "score": "M",
+      "override": null,
+      "note": "HKEX listing and IPO are verifiable corporate events. Two independent sources (EqualOcean analysis, SCMP news). Market cap figure is observable from exchange data. The underlying HKEX filings are primary but not cited directly. Scores M."
+    },
+    {
+      "id": "VC-FTA-1",
+      "file": "stage-2-value-chain.md",
+      "claim": "FTA FY2024 total net revenues RMB 11.24B ($1.54B USD); net income RMB 3.12B ($428M); 33.2% revenue growth; transaction service revenue +66.7%; 197.2M fulfilled orders",
+      "sources": ["ir.fulltruckalliance.com (31)"],
+      "source_categories": ["primary-H"],
+      "score": "H",
+      "override": null,
+      "note": "NYSE-listed company (YMM) investor relations earnings release. First-party financial disclosure."
+    },
+    {
+      "id": "VC-LALA-1",
+      "file": "stage-2-value-chain.md",
+      "claim": "Lalatech/Lalamove FY2024 revenue $1.59B; net profit $501M (23.5% growth); GTV $11.1B; 24% GTV growth; 14 global markets; IPO pending",
+      "sources": ["sahmcapital.com (32)"],
+      "source_categories": ["secondary-trade"],
+      "score": "M",
+      "override": null,
+      "note": "Sahm Capital is a trade/financial news outlet reporting IPO filing data. Underlying Lalatech IPO prospectus would be H, but the citation is the trade report, not the filing. Named-author trade citing primary IPO filing = M. Single source."
+    },
+    {
+      "id": "VC-P44-1",
+      "file": "stage-2-value-chain.md",
+      "claim": "project44 Intelligent TMS: 4.1% transportation cost reduction, 17% on-time improvement; $2.7B valuation (Series F)",
+      "sources": ["project44.com/press-releases (33)"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "Single vendor press release. Performance metrics are vendor-self-reported from early adopters without disclosed methodology.",
+      "note": null
+    },
+    {
+      "id": "VC-MARKET-1",
+      "file": "stage-2-value-chain.md",
+      "claim": "Global TMS market size 2024: $9.77B–$10.3B",
+      "sources": ["grandviewresearch.com (34)", "marketsandmarkets.com (34)"],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "score": "L",
+      "override": "Both sources are paid/secondary market research firms (Grand View Research and MarketsandMarkets). Neither qualifies as primary. Two sources from same category family — capped L per rubric (multiple sources from secondary categories not meeting Medium threshold when no primary is present). MarketsandMarkets is explicitly listed in override rules as secondary-market-research.",
+      "note": null
+    },
+    {
+      "id": "VC-MARKET-2",
+      "file": "stage-2-value-chain.md",
+      "claim": "Global TMS CAGR (2024–2030): 17.6%; projected size 2030: $38B",
+      "sources": ["arcweb.com (35)"],
+      "source_categories": ["primary-research-firm"],
+      "score": "M",
+      "override": null,
+      "note": "ARC Advisory Group is a legitimate audited research firm (primary-research-firm category). Single source but primary category — qualifies M per rubric."
+    },
+    {
+      "id": "VC-MARKET-3",
+      "file": "stage-2-value-chain.md",
+      "claim": "Nucleus Research 2024 TMS Leaders: SAP, Oracle, Manhattan, Blue Yonder, e2open, Kinaxis, One Network",
+      "sources": ["nucleusresearch.com (2)"],
+      "source_categories": ["primary-research-firm"],
+      "score": "H",
+      "override": null,
+      "note": "Nucleus Research published Value Matrix — primary-research-firm. H."
+    },
+    {
+      "id": "VC-MARKET-4",
+      "file": "stage-2-value-chain.md",
+      "claim": "Global digital freight brokerage market 2024: $5.79B–$5.9B",
+      "sources": ["precedenceresearch.com (36)", "gminsights.com (37)"],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "score": "L",
+      "override": "Two secondary-market-research firms converge but neither is primary. Both are in the secondary-market-research category. Geography mismatch not applicable (this is global). Capped L — two secondary sources without any primary corroboration.",
+      "note": null
+    },
+    {
+      "id": "VC-MARKET-5",
+      "file": "stage-2-value-chain.md",
+      "claim": "ASEAN freight & logistics total market 2024: $269.5B; projected 2030: $390B",
+      "sources": ["techcollectivesea.com (38)"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "Single secondary-trade source. Geography mismatch flag: ASEAN total logistics market is not the same as digital freight platform GMV — used as proxy. Single-source override + Geography mismatch flag.",
+      "note": "Geography mismatch: ASEAN-level total logistics figure used as proxy for SEA digital freight platform sizing."
+    },
+    {
+      "id": "VC-MARKET-6",
+      "file": "stage-2-value-chain.md",
+      "claim": "Sennder combined revenue post-acquisition: €1.4B (~$1.5B) — Medium confidence",
+      "sources": ["sennder.com/press (25)"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": null,
+      "note": "The draft correctly flags this as M (press release, not audited). Vendor's own press release of anticipated combined revenue — M per vendor-disclosure-of-own-metric."
+    },
+    {
+      "id": "VC-ASSUMED-1",
+      "file": "stage-2-value-chain.md",
+      "claim": "[ASSUMED-1] SAP TM year-1 professional services costs $2M–$6M",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "ASSUMED tag — automatic Low per rubric.",
+      "note": null
+    },
+    {
+      "id": "VC-ASSUMED-2",
+      "file": "stage-2-value-chain.md",
+      "claim": "[ASSUMED-2] Uber Freight negative EBITDA reflects below-market pricing, will improve with rate recovery",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "ASSUMED tag — automatic Low per rubric.",
+      "note": null
+    },
+    {
+      "id": "VC-ASSUMED-3",
+      "file": "stage-2-value-chain.md",
+      "claim": "[ASSUMED-3] GoGoX market cap decline reflects HKEX sector compression, not purely operational deterioration",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "ASSUMED tag — automatic Low per rubric.",
+      "note": null
+    },
+    {
+      "id": "VC-ASSUMED-4",
+      "file": "stage-2-value-chain.md",
+      "claim": "[ASSUMED-4] SEA digital freight platforms compete primarily in spot-mode with higher fraud/retention risks than developed markets",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "ASSUMED tag — automatic Low per rubric.",
+      "note": null
+    },
+    {
+      "id": "PP2.1-freq-1",
+      "file": "stage-2-pain-points.md",
+      "claim": "Identity fraud attempts in logistics rose from 0.53% (2023) to 1.66% (2024) to 2.15% (2025) — 306% increase over two years; logistics is hardest-hit sector by IDScan.net 1M+ transaction dataset",
+      "sources": ["dcvelocity.com (12)"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "Single secondary-trade source (DC Velocity) reporting IDScan.net vendor data. Override per instructions: IDScan.net 1M-transaction dataset = M (vendor's own data, well-disclosed), but the citation here is DC Velocity trade press citing IDScan.net — adding one more layer of indirection. Scoring L because the direct citation is trade press, not the IDScan.net primary disclosure. If IDScan.net's own report were cited directly, this would be M.",
+      "note": "The CCJ article in VC-intro-1 cites '27% increase in 2024' but this source cites '306% increase over 2 years' for a related but different metric — trajectory data is from same vendor dataset reported differently across two trade outlets."
+    },
+    {
+      "id": "PP2.1-cost-1",
+      "file": "stage-2-pain-points.md",
+      "claim": "Annual industry-wide freight payment fraud losses: $500M–$700M per year",
+      "sources": ["ftvcapital.com (1)", "freightwaves.com (2)"],
+      "source_categories": ["secondary-vendor", "secondary-trade"],
+      "score": "L",
+      "override": "FTV Capital is a VC firm that invested in Highway — it is not an independent third party; its $500M–$700M estimate is an investment thesis narrative. FreightWaves is trade press. Neither source is primary. Two sources from secondary categories without any primary. Single-trade-source override applies to the FTV estimate specifically.",
+      "note": "Critical cost claim with no primary source."
+    },
+    {
+      "id": "PP2.1-cost-2",
+      "file": "stage-2-pain-points.md",
+      "claim": "TIA members: average company loss $402,344/year; average cost per fraudulent load $40,760; 22% lost >$200K in single six-month period",
+      "sources": ["news.tianet.org (3)"],
+      "source_categories": ["primary-association"],
+      "score": "H",
+      "override": null,
+      "note": "TIA (Transportation Intermediaries Association) April 2025 Fraud Report — primary industry association survey. H."
+    },
+    {
+      "id": "PP2.1-cost-3",
+      "file": "stage-2-pain-points.md",
+      "claim": "TriumphPay prevented $113.58M in losses (Jan 2023–2024) across ~$51B annual brokered freight; implied detected fraud rate ~0.22% of gross freight value",
+      "sources": ["triumph.io/blog (4)"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": "Per override rules: TriumphPay $113.58M prevented losses figure = M (vendor press release). Applied.",
+      "note": "TriumphPay and Highway are noted as 'same family of partnerships' in override rules for diversity counting."
+    },
+    {
+      "id": "PP2.1-cost-4",
+      "file": "stage-2-pain-points.md",
+      "claim": "Fictitious pickup average per-incident cost: $365,000 (Q1 2024, vendor-cited upper bound)",
+      "sources": ["freightwaves.com/overhaul (5)"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "Single secondary-trade source (FreightWaves article citing Overhaul vendor data). Vendor-cited figure through trade press = L. The draft itself tags this as 'vendor-cited upper bound'.",
+      "note": null
+    },
+    {
+      "id": "PP2.1-cost-5",
+      "file": "stage-2-pain-points.md",
+      "claim": "Surety bond costs escalated from ~$18,000 to ~$40,000 in 2024 — 122% increase",
+      "sources": ["transportationrecovery.com (6)"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "Single secondary-trade source. transportationrecovery.com is a small trade/advocacy site. No primary bond market data.",
+      "note": null
+    },
+    {
+      "id": "PP2.1-wtp-1",
+      "file": "stage-2-pain-points.md",
+      "claim": "Highway Load Lock adopted by 1,050+ US brokers including 70 of top 100; 914,719 blocked emails in 2024",
+      "sources": ["highway.com/posts (7)"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": null,
+      "note": "Highway's own 2024 Fraud Trends report — vendor disclosure of own metric. M per rubric."
+    },
+    {
+      "id": "PP2.1-wtp-2",
+      "file": "stage-2-pain-points.md",
+      "claim": "Uber Freight: 60% fraud reduction in its own network since summer 2023",
+      "sources": ["uberfreight.com/blog (8)"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": null,
+      "note": "Uber Freight blog = vendor disclosure of own metric. M."
+    },
+    {
+      "id": "PP2.1-freq-2",
+      "file": "stage-2-pain-points.md",
+      "claim": "TIA Watchdog: 1,611 fraud reports in Sep 2024–Feb 2025 six-month window; 65% increase over prior comparable period",
+      "sources": ["news.tianet.org (3)"],
+      "source_categories": ["primary-association"],
+      "score": "H",
+      "override": null,
+      "note": "TIA April 2025 primary association report. H."
+    },
+    {
+      "id": "PP2.1-freq-3",
+      "file": "stage-2-pain-points.md",
+      "claim": "Truckstop fraud reports jumped 130% from 945 (2022) to 2,178 (2023); DAT prevented 2,400 fraudulent account applications 2023",
+      "sources": ["truckstop.com/blog (9)", "truckingdive.com (10)"],
+      "source_categories": ["secondary-vendor", "secondary-trade"],
+      "score": "M",
+      "override": null,
+      "note": "Two independent sources: Truckstop (vendor own metric for own platform) + Trucking Dive (trade press) corroborating DAT's own figure. Vendor disclosure of own metrics + independent trade press confirmation = M."
+    },
+    {
+      "id": "PP2.1-freq-4",
+      "file": "stage-2-pain-points.md",
+      "claim": "85% of FreightWaves-surveyed freight brokers/carriers impacted by double brokering Q2 2023; 10% lost >$500K that quarter",
+      "sources": ["freightwaves.com (11)"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "Single secondary-trade source. FreightWaves conducted its own survey — methodology and N not disclosed in the citation. Not a primary-association survey with published methodology.",
+      "note": "High-frequency, high-severity claim with undisclosed survey methodology."
+    },
+    {
+      "id": "PP2.1-freq-5",
+      "file": "stage-2-pain-points.md",
+      "claim": "DAT One platform experienced $20/mile load posts from hacked accounts in 2024 — fraud at infrastructure layer",
+      "sources": ["overdriveonline.com (13)"],
+      "source_categories": ["secondary-trade"],
+      "score": "M",
+      "override": null,
+      "note": "Single named-author trade press (Overdrive) covering a documented platform security incident. M — named-author trade press covering verifiable event."
+    },
+    {
+      "id": "PP2.1-RC1-1",
+      "file": "stage-2-pain-points.md",
+      "claim": "Highway detected 109,672 FMCSA contact changes in 2024 as potential fraud signals",
+      "sources": ["highway.com/posts (7)"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": null,
+      "note": "Highway vendor disclosure of own metric. M."
+    },
+    {
+      "id": "PP2.2-cost-1",
+      "file": "stage-2-pain-points.md",
+      "claim": "Enterprise TMS year-1 professional services (SAP TM, Oracle OTM): $2M–$6M implementation + $1M–$5M+ annual license",
+      "sources": ["locus.sh/blogs (16)", "selecthub.com (17)"],
+      "source_categories": ["secondary-trade", "secondary-trade"],
+      "score": "L",
+      "override": "Single-trade-source override: locus.sh is a competitor vendor blog (Locus); selecthub.com is a software review/comparison site. Both are secondary-trade. No SI firm benchmark, no Gartner/Forrester cost study. [ASSUMED-3] also tagged. Critical cost figure with no primary source.",
+      "note": "This is the SAP TM implementation cost claim flagged as high-priority in the task prompt."
+    },
+    {
+      "id": "PP2.2-cost-2",
+      "file": "stage-2-pain-points.md",
+      "claim": "Scope expansion adds 30–50% to initial implementation budget; data migration costs €50K–€200K for mid-market",
+      "sources": ["transportmanagement.org (18)"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "Single secondary-trade source. transportmanagement.org is an obscure TMS content/SEO site. No Gartner/McKinsey/SI firm methodology.",
+      "note": null
+    },
+    {
+      "id": "PP2.2-cost-3",
+      "file": "stage-2-pain-points.md",
+      "claim": "66% of enterprise technology projects end in partial or total failure (Standish Group CHAOS 2020, 50,000-project dataset); average cost overrun ~30%, schedule slippage 41%",
+      "sources": ["roado.co.in (19)"],
+      "source_categories": ["secondary-trade"],
+      "score": "M",
+      "override": "Per override rules: Standish Group '66% project failure' without TMS-specific methodology disclosure = M (industry-wide proxy). The citation here is roado.co.in which is a secondary blog re-citing Standish — not the Standish report itself. Applying M per override designation, but noting the citation is twice-removed from the primary.",
+      "note": "The Gartner-cited 83% data migration overrun statistic in the same footnote is also a secondary citation through roado.co.in."
+    },
+    {
+      "id": "PP2.2-freq-1",
+      "file": "stage-2-pain-points.md",
+      "claim": "76% of enterprise TMS migrations 'fail to meet their objectives' per 2025 analysis of European TMS cloud migrations",
+      "sources": ["transportmanagement.org (18)"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "Single secondary-trade source. transportmanagement.org — same site as PP2.2-cost-2. The '76% failure' figure for TMS-specific migrations is a key claim with only one obscure trade source.",
+      "note": "The combination of '66% general IT failure' (Standish) and '76% TMS-specific failure' (transportmanagement.org) without independent corroboration of the TMS-specific figure is a weakness."
+    },
+    {
+      "id": "PP2.2-freq-2",
+      "file": "stage-2-pain-points.md",
+      "claim": "Gartner: 83% of data migration projects exceed budgets and timelines",
+      "sources": ["roado.co.in (19)"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "Single secondary-trade blog re-citing Gartner. The Gartner stat is not directly cited; roado.co.in is the source. Twice-removed from primary.",
+      "note": null
+    },
+    {
+      "id": "PP2.2-freq-3",
+      "file": "stage-2-pain-points.md",
+      "claim": "McKinsey digital transformation 69% failure rate",
+      "sources": ["meltingspot.io (21)"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "Single secondary-trade blog re-citing McKinsey. The McKinsey report is not directly cited. Meltingspot.io is a community platform/blog.",
+      "note": null
+    },
+    {
+      "id": "PP2.2-cost-4",
+      "file": "stage-2-pain-points.md",
+      "claim": "Freight invoice error rate 3–7% of annual freight spend; a $100M freight program loses $3M–$7M annually in billing errors",
+      "sources": ["cxtms.com (20)", "nuvocargo.com (20)", "stbfreight.com (34)", "auditecsolutions.com (34)"],
+      "source_categories": ["secondary-trade", "secondary-vendor", "secondary-vendor", "secondary-vendor"],
+      "score": "L",
+      "override": "Multiple sources but all are secondary-trade or secondary-vendor (freight audit vendors citing their own market). cxtms.com is an AI audit vendor; nuvocargo.com is a freight forwarder vendor; stbfreight.com is a freight payment vendor; auditecsolutions.com is a freight audit vendor. All have commercial interest in the figure. No primary (NSST, Cass annual report, academic study) cited. Single-source-family override for vendor interest group.",
+      "note": null
+    },
+    {
+      "id": "PP2.2-cost-5",
+      "file": "stage-2-pain-points.md",
+      "claim": "SAP TM consulting fees $800K–$1.5M range (noeldcosta.com)",
+      "sources": ["noeldcosta.com (23)"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "Single secondary-trade source: noeldcosta.com is a personal blog/consultant website. No methodology. Single-trade-source override.",
+      "note": null
+    },
+    {
+      "id": "PP2.3-cost-1",
+      "file": "stage-2-pain-points.md",
+      "claim": "Convoy total funding raised >$1B; peak valuation $3.8B; Flexport sold Convoy platform to DAT for ~$250M (93% discount from peak); ~$750M+ venture capital destroyed",
+      "sources": ["sacra.com (25)", "freightwaves.com (25)"],
+      "source_categories": ["secondary-market-research", "secondary-trade"],
+      "score": "M",
+      "override": null,
+      "note": "Sacra is a private company research database (secondary-market-research) and FreightWaves is trade press. Two independent sources covering the same event. The Convoy bankruptcy filing would be H per override rules but is not cited. Sacra's private company data is detailed research, elevated above pure market research firms. M."
+    },
+    {
+      "id": "PP2.3-cost-2",
+      "file": "stage-2-pain-points.md",
+      "claim": "400 carriers claimed $2.6M in unpaid Convoy freight invoices; Eagle Radovish owed $156,820 (203 loads); individual carriers owed $3,500–$156,820",
+      "sources": ["overdriveonline.com (26)", "freightwaves.com (27)"],
+      "source_categories": ["secondary-trade", "secondary-trade"],
+      "score": "M",
+      "override": null,
+      "note": "Two independent named-author trade outlets covering Convoy court proceedings. The court filings themselves would be H (per override rule: Convoy bankruptcy filings = H), but these are trade press reports of those filings. Convoy bankruptcy court records are primary; trade press citing them = M. Two independent sources.",
+      "note2": "Per override rules, Convoy bankruptcy filings + court records = H. If the court docket itself were cited, this would upgrade to H."
+    },
+    {
+      "id": "PP2.3-cost-3",
+      "file": "stage-2-pain-points.md",
+      "claim": "IKEA interpleader: $500,000 disputed freight charges involving 58 parties; Convoy surety bond $75,000 vs. $2.6M in carrier claims (3,400% shortfall)",
+      "sources": ["sourcingjournal.com (28)", "theloadstar.com (28)"],
+      "source_categories": ["secondary-trade", "secondary-trade"],
+      "score": "M",
+      "override": null,
+      "note": "Two independent trade outlets covering IKEA vs. Convoy court filing. The underlying interpleader court filing would be H, but trade press citing it = M. Two independent sources."
+    },
+    {
+      "id": "PP2.3-cost-4",
+      "file": "stage-2-pain-points.md",
+      "claim": "Haulio revenue: $25M (Dec 2023) → $15M (Oct 2024); 40% decline; 32 employees (July 2024)",
+      "sources": ["getlatka.com (29)"],
+      "source_categories": ["secondary-market-research"],
+      "score": "L",
+      "override": "Single secondary-market-research source (Latka — unaudited private company revenue database). Haulio ARR is not confirmed by any audited filing or press release. Single-source override.",
+      "note": "This is a critical SEA platform health metric; needs verification."
+    },
+    {
+      "id": "PP2.3-cost-5",
+      "file": "stage-2-pain-points.md",
+      "claim": "GoGoX FY2024 revenue RMB 660.1M ($90.6M); 2023 revenue RMB 752.8M ($103.4M); EBITDA negative RMB 68.3M; revenue declined 12.3% in 2024",
+      "sources": ["hkexnews.hk (30)", "marketscreener.com (30)"],
+      "source_categories": ["primary-H", "secondary-market-research"],
+      "score": "H",
+      "override": null,
+      "note": "hkexnews.hk is the Hong Kong Stock Exchange official filings repository — primary regulatory filing. MarketScreener is corroborating secondary. Primary government/regulatory + secondary = H."
+    },
+    {
+      "id": "PP2.3-freq-1",
+      "file": "stage-2-pain-points.md",
+      "claim": "Uber Freight FY2024 EBITDA loss $(22)M on $1.28B gross bookings; platform remains loss-making in fourth year post-freight-recession",
+      "sources": ["investor.uber.com (31)"],
+      "source_categories": ["primary-H"],
+      "score": "H",
+      "override": null,
+      "note": "SEC-registered Uber earnings press release. H."
+    },
+    {
+      "id": "PP2.3-freq-2",
+      "file": "stage-2-pain-points.md",
+      "claim": "At least three US digital-native freight platforms ceased operations since 2021 (Convoy, Transfix pivot, 10 Roads shutdown)",
+      "sources": ["arktms.com (32)", "truckstop.com/convoy (unspecified)"],
+      "source_categories": ["secondary-vendor", "secondary-vendor"],
+      "score": "L",
+      "override": "arktms.com is a competitor TMS vendor blog. The Transfix pivot and 10 Roads claims lack dedicated citations. Single-vendor-source override for arktms.com.",
+      "note": null
+    },
+    {
+      "id": "PP2.3-RC1-1",
+      "file": "stage-2-pain-points.md",
+      "claim": "Convoy revenue declined from $750M (2021) to $320M (2023); sub-10% gross margin; burn rate exceeding remaining runway",
+      "sources": ["sacra.com (25)"],
+      "source_categories": ["secondary-market-research"],
+      "score": "L",
+      "override": "Single secondary-market-research source (Sacra — private company research). These Convoy financial metrics are not from bankruptcy filings; they are Sacra's estimates. Single-source override.",
+      "note": "The Convoy bankruptcy docket would be H for verified financial claims; Sacra estimates remain L."
+    },
+    {
+      "id": "PP2.3-RC2-1",
+      "file": "stage-2-pain-points.md",
+      "claim": "FMCSA broker surety bond minimum $75,000; last revised 2012; Convoy managed $750M+ freight throughput at peak with only $75,000 in bonded coverage",
+      "sources": ["theloadstar.com (33)", "overdriveonline.com (28-unspecified)"],
+      "source_categories": ["secondary-trade", "secondary-trade"],
+      "score": "M",
+      "override": null,
+      "note": "The $75,000 FMCSA surety bond minimum is a regulatory fact verifiable from FMCSA.dot.gov (not cited but independently verifiable). Two trade outlets report it. M — named-author trade press covering verifiable regulatory fact."
+    },
+    {
+      "id": "PP2.3-ASSUMED-5",
+      "file": "stage-2-pain-points.md",
+      "claim": "[ASSUMED-5] Platform-collapse replacement capacity cost: $250K–$500K/month",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "ASSUMED tag — automatic Low.",
+      "note": null
+    },
+    {
+      "id": "PP2.3-ASSUMED-6",
+      "file": "stage-2-pain-points.md",
+      "claim": "[ASSUMED-6] No commercial product tracks real-time financial health of freight platforms for shipper risk management",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "ASSUMED tag — automatic Low.",
+      "note": null
+    },
+    {
+      "id": "PP2.4-cost-1",
+      "file": "stage-2-pain-points.md",
+      "claim": "Industry-standard freight invoice billing error rate 3–7% of total freight spend; up to 10% of freight bills contain errors; up to 18% contain hidden charges",
+      "sources": ["cxtms.com (34)", "stbfreight.com (34)", "auditecsolutions.com (34)", "zdscs.com (35)", "betachon.com (35)"],
+      "source_categories": ["secondary-trade", "secondary-vendor", "secondary-vendor", "secondary-trade", "secondary-vendor"],
+      "score": "L",
+      "override": "All five sources are freight audit vendors or trade blogs with commercial interest in elevated error rates. No neutral primary source (NSST council, Cass annual report, peer-reviewed study). Single-source-family override (vendor interest group).",
+      "note": null
+    },
+    {
+      "id": "PP2.4-cost-2",
+      "file": "stage-2-pain-points.md",
+      "claim": "Manual invoice processing cost: $30/invoice; automated audit: $3.50/invoice (IBM TMS Freight Payment white paper)",
+      "sources": ["public.dhe.ibm.com (36)"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "Single secondary-vendor source (IBM white paper). Vendor marketing document. Date unknown — potentially outdated.",
+      "note": null
+    },
+    {
+      "id": "PP2.4-cost-3",
+      "file": "stage-2-pain-points.md",
+      "claim": "TriumphPay: $113.58M prevented losses (Jan 2023–2024); $26.5M in Load Limit-failed invoices across ~$51B brokered freight",
+      "sources": ["triumph.io/blog (4)"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": "Per override rules: TriumphPay $113.58M = M (vendor press release, well-disclosed). Applied.",
+      "note": "Highway and TriumphPay are in the same partnership family per override rules — count as one source family for diversity purposes."
+    },
+    {
+      "id": "PP2.4-cost-4",
+      "file": "stage-2-pain-points.md",
+      "claim": "Global freight audit and payment market: $4.8B by 2024, growing at 13.8% CAGR",
+      "sources": ["fareye.com (37)", "hatfieldandassociates.com (37)"],
+      "source_categories": ["secondary-vendor", "secondary-trade"],
+      "score": "L",
+      "override": "fareye.com is a logistics SaaS vendor blog; hatfieldandassociates is a small consulting/trade site. Neither is a primary market research firm. Single-trade-source override for market sizing figure.",
+      "note": null
+    },
+    {
+      "id": "PP2.4-freq-1",
+      "file": "stage-2-pain-points.md",
+      "claim": "Cass processes 36 million freight invoices annually valued at over $38 billion",
+      "sources": ["cassinfo.com (38)"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": null,
+      "note": "Cass Information Systems is a publicly traded company (NASDAQ: CASS) and this is a first-party disclosure of their own processing volume from their website. Vendor disclosure of own metric = M. Note: Cass 10-K would be H."
+    },
+    {
+      "id": "PP2.4-freq-2",
+      "file": "stage-2-pain-points.md",
+      "claim": "34% of TIA respondents cited unlawful brokerage as top fraud concern 2025; 83% experienced at least three fraud types in six months",
+      "sources": ["news.tianet.org (3)"],
+      "source_categories": ["primary-association"],
+      "score": "H",
+      "override": null,
+      "note": "TIA April 2025 primary association survey. H."
+    },
+    {
+      "id": "PP2.4-ASSUMED-7",
+      "file": "stage-2-pain-points.md",
+      "claim": "[ASSUMED-7] Total annual factoring-channel freight fraud loss is not published; $26.5M TriumphPay/Highway figure covers one network Jan 2023–June 2024",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "ASSUMED tag — automatic Low.",
+      "note": null
+    },
+    {
+      "id": "PP2.4-ASSUMED-8",
+      "file": "stage-2-pain-points.md",
+      "claim": "[ASSUMED-8] Formal freight audit and payment platform adoption among SEA shippers is low; most use ERP-native AP",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "ASSUMED tag — automatic Low.",
+      "note": null
+    },
+    {
+      "id": "PP2.5-cost-1",
+      "file": "stage-2-pain-points.md",
+      "claim": "Contract tender rejection rate exceeded 13% at 2025 peak season",
+      "sources": ["blog.gettransport.com (43)"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "Single secondary-trade source (GetTransport blog). The tender rejection rate is an important market metric that should ideally come from Cass Freight Index, DAT, or FreightWaves TRAC. blog.gettransport.com is a small logistics marketplace blog.",
+      "note": "Cass Freight Index would be H for this type of market data per override rules."
+    },
+    {
+      "id": "PP2.5-freq-1",
+      "file": "stage-2-pain-points.md",
+      "claim": "97% of TIA respondents identified truckload as most fraud-prone mode",
+      "sources": ["news.tianet.org (3)"],
+      "source_categories": ["primary-association"],
+      "score": "H",
+      "override": null,
+      "note": "TIA April 2025 primary association report. H."
+    },
+    {
+      "id": "PP2.5-ASSUMED-9",
+      "file": "stage-2-pain-points.md",
+      "claim": "[ASSUMED-9] Spot-carrier fraud rate structurally higher than contracted-carrier rate; no primary survey quantifies the differential",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "ASSUMED tag — automatic Low.",
+      "note": null
+    },
+    {
+      "id": "PP2.5-ASSUMED-10",
+      "file": "stage-2-pain-points.md",
+      "claim": "[ASSUMED-10] Cargo insurance does not differentiate premiums by contracted vs. spot carrier qualification mode",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "ASSUMED tag — automatic Low.",
+      "note": null
+    }
+  ],
+  "override_triggers": [
+    {
+      "override": "single-trade-source",
+      "claim_count": 20,
+      "claim_ids": ["VC-intro-1", "VC-OTM-2", "PP2.1-cost-1", "PP2.1-cost-4", "PP2.1-cost-5", "PP2.1-freq-4", "PP2.2-cost-1", "PP2.2-cost-2", "PP2.2-cost-5", "PP2.2-freq-1", "PP2.2-freq-2", "PP2.2-freq-3", "PP2.3-RC1-1", "PP2.4-cost-1", "PP2.4-cost-2", "PP2.4-cost-4", "PP2.5-cost-1", "VC-MERC-2", "VC-DELIV-1", "VC-CARGO-1"]
+    },
+    {
+      "override": "single-vendor-source",
+      "claim_count": 8,
+      "claim_ids": ["VC-SAP-4", "VC-OTM-1", "VC-E2OPEN-2", "VC-MANH-2", "VC-BY-1", "VC-SENNDER-1", "PP2.3-freq-2", "VC-P44-1"]
+    },
+    {
+      "override": "apac-as-proxy",
+      "claim_count": 1,
+      "claim_ids": ["VC-MARKET-5"],
+      "note": "ASEAN total logistics $269.5B used as context for SEA digital freight platform sizing — Geography mismatch flagged"
+    },
+    {
+      "override": "assumed-tag-automatic-low",
+      "claim_count": 10,
+      "claim_ids": ["VC-ASSUMED-1", "VC-ASSUMED-2", "VC-ASSUMED-3", "VC-ASSUMED-4", "PP2.3-ASSUMED-5", "PP2.3-ASSUMED-6", "PP2.4-ASSUMED-7", "PP2.4-ASSUMED-8", "PP2.5-ASSUMED-9", "PP2.5-ASSUMED-10"]
+    },
+    {
+      "override": "same-vendor-family-diversity",
+      "claim_count": 3,
+      "claim_ids": ["PP2.1-cost-3", "PP2.4-cost-3", "PP2.1-wtp-1"],
+      "note": "TriumphPay $113.58M figure and Highway adoption metrics all originate from the TriumphPay-Highway partnership family; count as single-source family for source diversity purposes"
+    },
+    {
+      "override": "market-sizing-secondary-market-research-only",
+      "claim_count": 2,
+      "claim_ids": ["VC-MARKET-1", "VC-MARKET-4"],
+      "note": "Global TMS and global digital freight brokerage market size figures cite only secondary-market-research firms (GVR, MarketsandMarkets, Precedence, GM Insights)"
+    },
+    {
+      "override": "outdated-source",
+      "claim_count": 1,
+      "claim_ids": ["VC-MERC-2"],
+      "note": "MercuryGate $70B freight spend and 300,000 daily logins explicitly noted as 2018 figures (>6 years old)"
+    }
+  ],
+  "weak_claims_to_re_research": [
+    {
+      "id": "PP2.1-freq-1",
+      "file": "stage-2-pain-points.md",
+      "claim": "Identity fraud attempts rose from 0.53% (2023) to 1.66% (2024) to 2.15% (2025) — 306% increase; logistics is hardest-hit sector (IDScan.net 1M+ transaction dataset via DC Velocity)",
+      "current_sources": ["dcvelocity.com (secondary-trade re-reporting IDScan.net vendor data)", "ccjdigital.com in value chain (same underlying dataset)"],
+      "current_score": "L",
+      "issue": "Single vendor dataset (IDScan.net) reported through trade press. The underlying IDScan.net primary report is not directly cited; the trajectory figure is the headline claim for all of Pain Point 2.1. If IDScan.net publishes an annual fraud report with methodology disclosure, that would be M per override rules. A second independent dataset (TIA Watchdog rates, Truckstop incident percentages) would corroborate the trajectory.",
+      "what_to_find": "Search for IDScan.net 2025 Logistics Fraud Report direct URL; search for TIA 2025 fraud report percentage-of-loads methodology; search for Truckstop or DAT published fraud rate as % of transactions (not just report counts) to corroborate the 0.53%→2.15% trajectory with a second dataset.",
+      "priority": "high"
+    },
+    {
+      "id": "PP2.2-cost-1",
+      "file": "stage-2-pain-points.md",
+      "claim": "Enterprise TMS year-1 professional services: $2M–$6M (SAP TM, Oracle OTM); SAP TM consulting fees $800K–$1.5M (noeldcosta.com)",
+      "current_sources": ["locus.sh/blogs (competitor vendor blog)", "selecthub.com (software review site)", "noeldcosta.com (personal consultant blog)"],
+      "current_score": "L",
+      "issue": "Implementation cost range for SAP TM and Oracle OTM — the most cited cost figure in Pain Point 2.2 — has no primary source. Locus.sh is a direct TMS competitor with commercial motivation to inflate SAP implementation costs. SelectHub is a buyer guide site, not an SI firm. The $1.5M–$10M range mentioned in the task prompt prompt vs. the $2M–$6M in the draft suggests range variance across sources.",
+      "what_to_find": "Search Gartner Market Guide for TMS Implementation Costs 2024; search Forrester Total Economic Impact SAP TM; search Accenture or Capgemini SAP Transportation Management implementation pricing disclosure; search UpperEdge SAP contract benchmarking for TMS go-live cost estimates. Target: one Gartner/Forrester report or Tier-1 SI disclosed range.",
+      "priority": "high"
+    },
+    {
+      "id": "PP2.1-cost-1",
+      "file": "stage-2-pain-points.md",
+      "claim": "Annual industry-wide freight payment fraud losses: $500M–$700M per year",
+      "current_sources": ["ftvcapital.com (VC investor narrative)", "freightwaves.com (trade press)"],
+      "current_score": "L",
+      "issue": "FTV Capital is the venture investor in Highway — it has direct commercial interest in the magnitude of the fraud problem. The $500M–$700M figure is widely re-cited in the industry but traces back to this VC-originated estimate. No FBI Internet Crime Complaint Center data, no DOT/FMCSA fraud loss statistics, no TIA primary survey with a total-market figure have been found.",
+      "what_to_find": "Search FBI IC3 2024 Annual Report for transportation fraud losses; search FMCSA enforcement actions and financial penalties database; search TIA 2025 Fraud Report for total industry loss estimate (the April 2025 TIA report cited elsewhere may contain this); search Travellers Insurance or ACORD cargo fraud loss statistics.",
+      "priority": "high"
+    },
+    {
+      "id": "PP2.3-cost-4",
+      "file": "stage-2-pain-points.md",
+      "claim": "Haulio ARR: $15M (October 2024), down from $25M peak 2023; 32 employees July 2024",
+      "current_sources": ["getlatka.com (unaudited private company revenue database)"],
+      "current_score": "L",
+      "issue": "Haulio is private and has not published financials. Getlatka.com estimates private company ARR through a non-transparent methodology (self-reported CEO interviews and AI estimation). The $15M→$25M decline is used as a key SEA platform fragility data point but rests entirely on one unaudited database. Haulio's funding rounds (Temasek-backed Heliconia, PSA unboXed) were announced through press releases that may contain revenue context.",
+      "what_to_find": "Search Heliconia Capital / PSA unboXed Haulio Series A press release for any revenue or GMV figure; search TechInAsia, DealStreetAsia, or TechCollectiveSEA for Haulio 2024 revenue or ARR reference; search Haulio LinkedIn or founder interviews for disclosed revenue context. If no audited figure exists, downgrade claim to ASSUMED and note data gap.",
+      "priority": "medium"
+    }
+  ],
+  "gate_decision_for_stage_2": "ship-with-flag",
+  "gate_reason": "Stage 2 scores 14H / 24M / 44L across 82 claims, yielding a 54% Low rate — below the quality floor for ship-as-is. The High-confidence claims are well-anchored: public-company financial disclosures (Uber, FTA, Manhattan Associates, GoGoX HKEX), TIA primary-association survey data, Nucleus Research analyst report, and HKEX regulatory filings cover the most important factual anchors in the stage. However, four structural weaknesses prevent clean ship: (1) The stage's headline fraud-trajectory figure (0.53% → 2.15%) rests on a single vendor dataset reported through trade press — the most-cited claim in the entire stage has no primary corroboration. (2) The TMS implementation cost range ($2M–$6M for SAP/Oracle) — central to Pain Point 2.2 — cites only competitor blogs and software-review sites, with no Gartner/Forrester/SI firm validation. (3) The industry-wide fraud loss total ($500M–$700M) traces to a VC investor narrative with commercial interest in the figure. (4) Haulio's revenue decline ($25M → $15M) — the primary SEA platform fragility data point — rests solely on Latka, an unaudited private-company database. The 10 ASSUMED-tagged claims add further uncertainty across all four pain points. Ship-with-flag is appropriate: the structural analysis is sound and the H-confidence anchors are credible, but the three top-priority weak claims should be deep-researched before the stage is cited in client-facing material.",
+  "imi_structural_compare": {
+    "imi_pp_count_target": "2-4",
+    "stage_pp_count": 5,
+    "stage_rc_min": 3,
+    "stage_rc_max": 5,
+    "stage_citations_min": 3,
+    "stage_citations_max": 15,
+    "stage_unique_sources": 68,
+    "all_dimensions_pass": false,
+    "remediation_needed": [
+      "PP count is 5 (target 2-4): Pain Points 2.1–2.5 present; PP 2.5 (spot-vs-contracted dispatch) is a derivative of PP 2.1 and could be merged or demoted to a sub-point of PP 2.1 RC5 to bring count within target",
+      "54% of claims score Low — needs targeted deep-research on the 4 identified weak claims before final validation pass",
+      "ASSUMED-tag rate is 10 of 82 claims (12%) — higher than Stage 1 equivalent; SEA-specific claims are disproportionately ASSUMED"
+    ]
+  }
+}

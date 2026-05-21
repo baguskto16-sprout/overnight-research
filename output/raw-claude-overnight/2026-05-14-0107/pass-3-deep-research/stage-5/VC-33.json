@@ -1,0 +1,75 @@
+{
+  "claim_id": "VC-33",
+  "outcome": "confirmed-scarce",
+  "new_confidence": "L",
+  "refined_claim_text": "Indonesia's private security services market is estimated at approximately USD 1.3 billion (2023–2024), based on secondary market research aggregation; no independent primary-government or multilateral source has been located to corroborate this figure.",
+  "primary_sources_found": [
+    {
+      "url": "https://jurnalsecurity.com/jumlah-bujp-dan-satpam-meningkat-di-tahun-2022/",
+      "category": "industry-trade-press",
+      "publication_date": "2023-02-01",
+      "supports_claim": "indirect",
+      "key_data": "Polri (via Kapolri Jenderal Listyo Sigit Prabowo, cited at 42nd Satpam anniversary ceremony): 5,670 BUJP companies and 856,002 security personnel in Indonesia as of 2022, up from 1,622 BUJP and 815,129 personnel in 2021. Establishes significant industry scale but gives no revenue or market-size figure.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://www.securityindustry.org/wp-content/uploads/2024/02/SIA-ASIS-Complexities-of-Security-Market-Research.pdf",
+      "category": "primary-industry-association",
+      "publication_date": "2024-02",
+      "supports_claim": "partial-contextual",
+      "key_data": "ASIS International / SIA / Omdia report: 'Rest of Asia & Oceania' (includes Indonesia, India, Japan, Korea, SEA, etc.) physical security services revenue was USD 8.2 billion in 2023, growing to USD 10.2 billion by 2026. Indonesia is listed within this grouping but receives no individual country breakout. Southeast Asia described as 'fast-growing region.' Report does not disaggregate Indonesia.",
+      "via_pdf_markitdown": true
+    },
+    {
+      "url": "https://www.researchandmarkets.com/reports/5960481/indonesia-security-services-market-summary",
+      "category": "secondary-aggregator",
+      "publication_date": "2024-03",
+      "supports_claim": "indirect",
+      "key_data": "MarketLine report notes Indonesia captured a 1.2% share of the Asia-Pacific security services market in 2023. Does not state a dollar figure for Indonesia specifically in the accessible portion. Primary sources not disclosed.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://www.kenresearch.com/industry-reports/indonesia-security-services-market",
+      "category": "secondary-aggregator",
+      "publication_date": "2024",
+      "supports_claim": "yes-but-low-credibility",
+      "key_data": "Ken Research: USD 1.3 billion (2024 valuation based on five-year historical analysis). Methodology references government sources and CATIs with industry experts but does not explicitly cite BPS or Polri. Neither primary agency is named in publicly accessible content.",
+      "via_pdf_markitdown": false
+    }
+  ],
+  "searches_performed": [
+    "BPS Indonesia jasa pengamanan KBLI 80 statistik 2024",
+    "Indonesia private security market size Polri BUJP jumlah perusahaan 2024",
+    "ASGARDA asosiasi pengamanan Indonesia jumlah perusahaan satpam 2024",
+    "Frost Sullivan Indonesia security services market size 2023 2024",
+    "IFC World Bank Indonesia private security services market assessment investment climate",
+    "Indonesia security services industry revenue GDP contribution BPS sensus ekonomi 2016 2026",
+    "ABUJAPI annual report Indonesia security industry statistics satpam 2023 2024",
+    "ASIS International global security industry size Indonesia share physical security 2023 2024",
+    "Indonesia security services market billion 2023 2024 manned guarding industry report",
+    "Polri Badan Usaha Jasa Pengamanan jumlah 2023 2024 data statistics satpam"
+  ],
+  "categories_searched": [
+    "primary-gov (BPS Indonesia — no KBLI-80 revenue data found publicly)",
+    "primary-gov (Polri Mabes — BUJP count data found via trade press attribution, no revenue)",
+    "primary-multilateral (IFC, World Bank — no Indonesia security services market assessment found)",
+    "primary-association (ABUJAPI website — no quantitative data publicly available; ASGARDA does not appear to exist as a named body)",
+    "primary-industry-association (ASIS/SIA/Omdia 2024 — covers Rest of Asia region, no Indonesia breakout)",
+    "secondary-aggregator (Ken Research — sole source for $1.3B figure; MarketLine — confirms relative scale but no dollar figure)",
+    "secondary-aggregator (Frost & Sullivan — no Indonesia physical security market report found)"
+  ],
+  "suggested_revision_options": [
+    {
+      "option": "mark-assumed",
+      "revised_claim_text": "[ASSUMED-N]: Indonesia private security services market approximately USD 1.3 billion (2023–2024) per secondary market-research aggregator (Ken Research); figure unverified against BPS, Polri BUJP licensing data, or any multilateral source. To validate: request BPS KBLI-80 revenue tables or ABUJAPI national-level aggregate statistics.",
+      "suggested_score": "L"
+    },
+    {
+      "option": "widen-range",
+      "revised_claim_text": "Indonesia private security services market estimated at USD 1–2 billion (2023), based on a single secondary market-research aggregator; no primary government or multilateral corroboration identified. ASIS/SIA/Omdia (2024) reports Rest of Asia & Oceania security services at USD 8.2 billion, within which Indonesia participates but is not disaggregated.",
+      "suggested_score": "L"
+    }
+  ],
+  "recommended_option": "mark-assumed",
+  "notes": "Ten searches conducted across six source categories. Key findings: (1) BPS Indonesia does not publish KBLI-80 (Investigation and Security Activities) sector revenue as a standalone public table — the classification exists but granular revenue data is behind request or census channels. (2) Polri BUJP data, as cited via Kapolri statements at the 2023 Satpam anniversary ceremony, establishes real operational scale: 5,670 licensed security companies and 856,002 guards nationally (2022), which is consistent with a billion-dollar market but is a headcount proxy, not revenue. (3) ASGARDA does not appear to be an active named body in Indonesian security — the relevant association is ABUJAPI (Asosiasi Badan Usaha Jasa Pengamanan Indonesia); their public website contains no downloadable statistics. (4) ASIS/SIA/Omdia 2024 global report (primary industry-association source, PDF verified via markitdown) covers Southeast Asia as a 'fast-growing region' and lists Indonesia within 'Rest of Asia & Oceania' at USD 8.2B services in 2023, but provides no country-level disaggregation for Indonesia. (5) IFC, World Bank, Frost & Sullivan, and ADB produce no publicly accessible Indonesia-specific physical security market sizing. (6) MarketLine (secondary) notes Indonesia held 1.2% of Asia-Pacific security services in 2023 — if AP services ~USD 100B, that yields ~USD 1.2B, loosely corroborating Ken Research's figure, but both are secondary aggregators without disclosed primaries. Conclusion: the $1.3B figure cannot be upgraded above Low confidence without BPS census data or ABUJAPI aggregate revenue disclosure."
+}

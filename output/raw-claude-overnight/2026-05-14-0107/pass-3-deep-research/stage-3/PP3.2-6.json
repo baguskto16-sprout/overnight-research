@@ -1,0 +1,30 @@
+{
+  "claim_id": "PP3.2-6",
+  "original_claim": "Nirvana raised $100M Series D at $1.5B valuation in December 2025 — insurer using telematics behavioral signals for premium pricing",
+  "original_score": "L",
+  "new_score": "H",
+  "outcome": "stronger",
+  "factual_correction": "The claim figures are CORRECT. Nirvana Insurance raised a $100M Series D led by Valor Equity Partners on December 18, 2025, at a $1.5B post-money valuation. The original source cited (TechCrunch March 2025) was the wrong round — that article described the earlier Series C ($80M at $830M valuation, March 10, 2025). The Series D is a distinct, subsequent round announced ~9 months later.",
+  "new_sources": [
+    {
+      "url": "https://www.prnewswire.com/news-releases/nirvana-raises-100-million-series-d-to-further-redefine-trillion-dollar-industry-302645840.html",
+      "publisher": "PR Newswire (Nirvana official press release)",
+      "category": "primary-press-release",
+      "key_quote": "December 18, 2025 — Nirvana raises $100 million Series D; models trained on more than 30 billion miles of fleet driving data; up to 20% upfront safety discounts; led by Valor Equity Partners."
+    },
+    {
+      "url": "https://news.crunchbase.com/ai/insurance-platform-nirvana-valuation-nearly-doubles/",
+      "publisher": "Crunchbase News",
+      "category": "primary-tech-press",
+      "key_quote": "December 18, 2025 — AI Insurance Startup Nirvana Nearly Doubles Valuation To $1.5B with $100M Series D; round came just over nine months after the startup raised $80M in a Series C at an $830M valuation."
+    },
+    {
+      "url": "https://techcrunch.com/2025/03/10/nirvana-keeps-on-truckin-with-80m-at-a-830m-valuation-for-its-ai-powered-insurance/",
+      "publisher": "TechCrunch",
+      "category": "context-prior-round",
+      "key_quote": "PRIOR ROUND ONLY — Series C: $80M at $830M valuation, March 10, 2025. This is the URL that was incorrectly cited for the Series D claim."
+    }
+  ],
+  "revised_claim_text": "Nirvana raised $100M Series D at $1.5B valuation on December 18, 2025 — a commercial trucking insurer using telematics behavioral signals (trained on 30B+ miles of fleet driving data) for premium pricing, delivering up to 20% upfront safety discounts (PR Newswire, Dec 18 2025; Crunchbase News, Dec 18 2025).",
+  "notes": "The claim text was factually accurate all along — the $100M / $1.5B / December 2025 figures are verified by Nirvana's own PR Newswire press release (Dec 18, 2025) and Crunchbase News. The only defect was that the cited source URL pointed to the March 2025 Series C article ($80M / $830M), creating a mismatch. Fix: replace the source citation with the PR Newswire press release and/or Crunchbase News article for the Series D. No change to the claim text is required other than adding the correct citations. Also worth noting: the prior round (Series C) details are $80M at $830M valuation, March 10, 2025, covered by TechCrunch — useful as background context but not the correct source for this claim."
+}

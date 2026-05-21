@@ -1,0 +1,780 @@
+{
+  "stage": 1,
+  "validation_date": "2026-05-21",
+  "validator": "source-validator-agent",
+  "total_claims": 47,
+  "score_distribution": {
+    "high": 12,
+    "medium": 18,
+    "low": 17
+  },
+  "low_pct": 36.2,
+  "auto_low_overrides_applied": 11,
+  "potential_hallucinations": [],
+  "special_attention_findings": {
+    "montgomery_v_caribe": {
+      "status": "VERIFIED",
+      "docket": "No. 24-1238",
+      "decided": "2026-05-14",
+      "author": "Justice Barrett",
+      "vote": "Unanimous (9-0; Kavanaugh/Alito concurred separately)",
+      "holding": "FAAAA does not preempt state-law negligent-hiring claims against freight brokers; safety exception applies",
+      "scotus_url": "https://www.supremecourt.gov/opinions/25pdf/24-1238_1b7d.pdf",
+      "scotusblog_url": "https://www.scotusblog.com/2026/05/court-rules-freight-brokers-can-face-negligent-hiring-suits-under-state-law/",
+      "assessment": "CONFIRMED — multiple corroborating primary and secondary sources. Case is real, date is correct, holding matches description. The draft characterizes the vote as 'unanimous' which is technically correct (9-0 outcome) though two justices concurred separately rather than joining the majority opinion. No material misrepresentation.",
+      "draft_score_assessment": "High — SCOTUS opinion + SCOTUSblog + multiple law firm analyses + FreightWaves"
+    },
+    "cargonet_725m_2025": {
+      "status": "VERIFIED",
+      "finding": "Verisk CargoNet $725M figure confirmed on verisk.com newsroom (cached as f950c000081e25c7.html). Also corroborated by Claims Journal, CCJ Digital, Fleet Equipment Magazine, Carrier Management. 60% YoY rise from 2024 confirmed. Average per-theft $273,990 confirmed.",
+      "draft_score_assessment": "Medium-High — CargoNet is a primary industry intelligence database (Verisk subsidiary), not an independent government source, but it is the recognized primary data collector for US cargo theft. Multiple independent trade outlets report the same figures from the same primary release."
+    },
+    "tia_402344_2024": {
+      "status": "VERIFIED",
+      "finding": "TIA industry association primary survey of ~200 members (Feb-Aug 2024). Figure $402,344 confirmed via TIA's own news portal (news.tianet.org), TheTrucker.com, FreightCaviar, and AJOT. Figure is $402,344.47 exactly as stated. Self-reported survey data but from the industry association — Medium confidence appropriate.",
+      "draft_score_assessment": "Medium — industry association self-reported survey; correctly calibrated in draft"
+    },
+    "highway_q4_2025_117pct": {
+      "status": "VERIFIED-VENDOR-DATA",
+      "finding": "GlobeNewswire press release confirmed (Jan 26, 2026). 1,986,995 fraudulent email attempts in 2025, up 117% from 914,719 in 2024. 9,129 identity alerts. Source is Highway's own platform data via press release — vendor-generated proprietary data. Cannot be independently validated.",
+      "override": "auto-low-vendor for any claim about Highway's platform capabilities/scale. Data is Highway's own internal measurement of its own product activity.",
+      "draft_score_assessment": "Low — vendor-generated platform data via press release. Draft correctly flagged this as Low-Medium but the press-release-only override applies rigorously."
+    },
+    "fracht_fwo_ofac_16m": {
+      "status": "VERIFIED",
+      "finding": "OFAC settlement confirmed September 3, 2025. Amount: $1,610,775 (reduced from $2,147,700 base). Offense: contracted with EMTRASUR (Venezuelan SDN airline) and MAHAN Air-linked aircraft for car parts transport Mexico-Argentina. OFAC primary page cached. Torres Trade Law advisory, Volkov Law, Compliance Week, SANCTION Law Center all confirm. Draft cites Torres Trade Law advisory (law firm summary) as source, not the OFAC primary directly — OFAC 2025 enforcement page is also in cache.",
+      "note": "Draft source (1) in PP1.3 cites Torres Trade Law rather than OFAC primary. Draft source (2) cites OFAC 2024 civil penalties page for Key Holding LLC — not the Fracht FWO action which was in 2025. This is a citation inconsistency: the Fracht FWO action was in 2025 enforcement information, not 2024.",
+      "draft_score_assessment": "Medium-High — law firm advisory is solid secondary for confirmed OFAC action; the OFAC 2025 enforcement page should be cited as primary. No material error in the underlying fact."
+    },
+    "fmcsa_broker_revocations_15419": {
+      "status": "VERIFIED-SECONDARY",
+      "finding": "Figure cited at transportationrecovery.com (Reesor & Associates law firm) and FreightWaves. The figure '15,419 broker revocations' and '59% of all active authorities' appears consistently across multiple trade outlets. Original data source is FMCSA registration data per FreightWaves analysis. Not directly linkable to a single FMCSA data release — derived from FMCSA A&I data as analyzed by FreightWaves. Acceptable as Medium.",
+      "draft_score_assessment": "Medium — trade press citing FMCSA data; correctly calibrated"
+    },
+    "86pct_back_office_ten_or_fewer": {
+      "status": "VERIFIED",
+      "finding": "FreightWaves/OTR Solutions survey (2025) confirmed via IndexBox.io blog summary. Figure: 86% of brokerages have back-office teams of 10 or fewer people. Only 2% fully automated. Source is an OTR Solutions-sponsored white paper/survey published via FreightWaves — industry survey, self-selected sample, sponsored by a vendor (OTR Solutions is a freight factoring firm). Medium confidence appropriate; not an independent random sample.",
+      "draft_score_assessment": "Medium — industry survey sponsored by vendor; correctly calibrated"
+    },
+    "market_size_600m_162b": {
+      "status": "LOW-CONFIDENCE-AGGREGATORS",
+      "finding": "Growth Market Reports and Dataintelo are both commercial aggregator/SEO market research firms with no disclosed primary methodology. Search results confirm identical or near-identical figures appearing on Dataintelo, Growth Market Reports, and MarketIntelo — strongly suggesting correlated, possibly syndicated, outputs rather than independent research. Dataintelo Quora review thread questions reliability. Neither firm is in the auto-Low domain blocklist explicitly but both match the 'private market research firm' secondary category and 'aggregator market-research auto-downgrade' override. Draft correctly flags these as Low with a note about the assumption ASSUMED-1.",
+      "override": "aggregator-market-research-auto-downgrade",
+      "draft_score_assessment": "Low — correctly scored and flagged by draft author"
+    },
+    "indonesia_75pct_owner_operator": {
+      "status": "SOURCE-CONCERN",
+      "finding": "The '75%' (three-quarters) figure for Indonesia's trucks being single-vehicle owner-operators is cited in the draft at PP1.4 with sources (7) = Mordor Intelligence and (8) = Changing Transport. The '75%' specific figure appears in Mordor Intelligence's Indonesia Road Freight Transport Market report — a commercial aggregator that triggers auto-downgrade. Changing Transport is a multilateral-funded technical report (GIZ/IKI) that discusses fleet composition qualitatively but the specific 75% figure could not be confirmed as originating from Changing Transport or World Bank LPI 2023. The World Bank 2013 'State of Logistics Indonesia' document discusses fragmentation but 2013 data is >3 years old. The OECD 2021 Competition Assessment for Indonesia logistics sector (cached as e520d1c53a24e1f5.md) discusses fragmentation. The specific 75% figure most likely originates from Mordor Intelligence — triggering aggregator-auto-downgrade override.",
+      "override": "aggregator-market-research-auto-downgrade; outdated-source-override for World Bank 2013 if used",
+      "draft_score_assessment": "Low — requires cross-validation with primary source (APTRINDO, BPS Indonesia, or OECD/World Bank document that directly states the figure)"
+    }
+  },
+  "claims_by_id": [
+    {
+      "id": "VC-MarketSize-Global-1.4-1.6B",
+      "claim_text": "Global carrier onboarding & compliance platform market (2024): $1.42B–$1.62B",
+      "sources": ["Dataintelo (commercial aggregator)", "Growth Market Reports (commercial aggregator)"],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "draft_score": "Low",
+      "final_score": "Low",
+      "override": "aggregator-market-research-auto-downgrade; single-domain-override (two correlated aggregators = 1 effective source); claim tagged [ASSUMED-1]",
+      "reason": "Both sources are undisclosed-methodology commercial aggregators; figures appear correlated. Draft correctly scores Low.",
+      "deep_research": {
+        "recommended": true,
+        "query": "Search IBISWorld freight broker compliance software segment; ask Highway/Truckstop/DAT investor relations for any third-party market size reference; check Gartner logistics software market sizing"
+      }
+    },
+    {
+      "id": "VC-MarketSize-NorthAmerica-610-670M",
+      "claim_text": "North America segment (2024): ~$610M–$670M (~43% of global)",
+      "sources": ["Dataintelo", "Growth Market Reports"],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "draft_score": "Low",
+      "final_score": "Low",
+      "override": "aggregator-market-research-auto-downgrade; derived from Low-confidence global figure",
+      "reason": "Same aggregator sources as global figure; derivation compounds uncertainty.",
+      "deep_research": {"recommended": true, "query": "Bottom-up triangulation: FMCSA active brokers × average compliance SaaS spend; seek CSCMP or ATA data on freight tech spend"}
+    },
+    {
+      "id": "VC-MarketSize-APAC-340M",
+      "claim_text": "Asia Pacific segment (2024): ~$340M; CAGR 16.2%",
+      "sources": ["Growth Market Reports"],
+      "source_categories": ["secondary-market-research"],
+      "draft_score": "Low",
+      "final_score": "Low",
+      "override": "aggregator-market-research-auto-downgrade; single-source; APAC-as-proxy; claim tagged [ASSUMED-2]",
+      "reason": "Single commercial aggregator. No government or multilateral cross-check. APAC figure not country-specific. Geography-mismatch flag.",
+      "flags": ["Geography mismatch"],
+      "deep_research": {"recommended": true, "query": "Search ADB transport sector digitalization data; Mordor/McKinsey SEA logistics tech market sizing from authored reports only"}
+    },
+    {
+      "id": "VC-MarketSize-CAGR-12.8-13.1",
+      "claim_text": "Global CAGR 2025–2033: 12.8%–13.1%",
+      "sources": ["Dataintelo", "Growth Market Reports"],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "draft_score": "Low",
+      "final_score": "Low",
+      "override": "aggregator-market-research-auto-downgrade",
+      "reason": "8-year commercial forecast from aggregators with undisclosed methodology.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "VC-MarketSize-US-Brokerage-19.2-51.7B",
+      "claim_text": "US freight brokerage industry total revenue: ~$19.2B–$51.7B (2023–2024)",
+      "sources": ["Zion Market Research ($19.2B)", "GM Insights ($51.7B)"],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "draft_score": "Medium",
+      "final_score": "Low",
+      "override": "aggregator-market-research-auto-downgrade; the wide range ($19B–$52B) indicates sources are not cross-validating a common figure — they measure different things or use incompatible methodologies, undermining even Medium confidence",
+      "reason": "Both are commercial market research firms. The 2.7× spread between estimates indicates definitional inconsistency, not error range. ATA, CSCMP, or IBISWorld primary source needed.",
+      "deep_research": {"recommended": true, "query": "Search CSCMP 'State of Logistics Report' 2024 for US freight brokerage revenue; check ATA annual report or FTR Intelligence for definitive US brokerage market size"}
+    },
+    {
+      "id": "VC-ActiveBrokerages-26653",
+      "claim_text": "US active freight brokerages (Q3 2024): 26,653",
+      "sources": ["ThinkFreight.io blog citing FMCSA data (404); cross-referenced against FMCSA A&I data"],
+      "source_categories": ["secondary-trade", "primary-gov"],
+      "draft_score": "Medium",
+      "final_score": "Medium",
+      "override": "None — FMCSA A&I cross-reference provides partial primary backing despite ThinkFreight 404",
+      "reason": "Derived from FMCSA registration data. ThinkFreight is trade press but the underlying FMCSA A&I source is primary-gov. Acceptable as Medium with FMCSA A&I cross-reference noted.",
+      "deep_research": {"recommended": false, "query": "Direct FMCSA A&I query at https://ai.fmcsa.dot.gov/RegistrationStatistics for authoritative Q3 2024 figure"}
+    },
+    {
+      "id": "VC-AvgFraudLoss-402344",
+      "claim_text": "Average annual fraud loss per affected US broker: $402,344 (TIA 2024)",
+      "sources": ["TIA 'State of Fraud 2024' (via FreightCaviar summary)"],
+      "source_categories": ["primary-association"],
+      "draft_score": "Medium",
+      "final_score": "Medium",
+      "override": "Self-reported survey (~200 respondents); industry association primary but not government or audited filing",
+      "reason": "TIA is the sector industry association (primary-association category). Survey of ~200 members. Figure confirmed at $402,344.47. Medium is correctly calibrated.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "VC-ManualOnboarding-35-45min",
+      "claim_text": "Manual onboarding takes 35–45 minutes per carrier packet; 2–5 days full onboarding",
+      "sources": ["DAT carrier onboarding guide (vendor)"],
+      "source_categories": ["auto-low-vendor"],
+      "draft_score": "Low-Medium",
+      "final_score": "Low",
+      "override": "auto-low-vendor — DAT.com guidance document is a vendor publication from a market participant. No independent time-motion study cited.",
+      "reason": "Vendor-published time estimate with no independent corroboration.",
+      "deep_research": {"recommended": true, "query": "Search logistics operations time-motion studies; TIA or CSCMP survey data on carrier onboarding labor time"}
+    },
+    {
+      "id": "VC-Highway-1050-brokers",
+      "claim_text": "Highway: 1,050+ broker customers; serves 70 of top 100 US freight brokers",
+      "sources": ["Highway press release (August 2025) via highway.com"],
+      "source_categories": ["auto-low-vendor"],
+      "draft_score": "Low-Medium",
+      "final_score": "Low",
+      "override": "auto-low-vendor — vendor self-reported customer count from own press release; no independent audit",
+      "reason": "Vendor marketing claim. FTV Capital investor blog (cached da477fc92b86cbb7.html) may partially corroborate but is also an investment firm touting its portfolio company.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "VC-Descartes-MCP-24M",
+      "claim_text": "Descartes acquired MyCarrierPortal for ~$24M upfront + up to $6M earn-out (September 2024)",
+      "sources": ["Descartes press release (September 2024) via GlobeNewswire"],
+      "source_categories": ["primary-filing"],
+      "draft_score": "Medium",
+      "final_score": "High",
+      "override": "None — Descartes is a NASDAQ-listed public company (DSGX); acquisition terms disclosed in public press release and confirmed in 6-K SEC filing (cached 28db794923ef75f6.html). This is an audited company's public disclosure of a material transaction.",
+      "reason": "Public company disclosure of material acquisition. The GlobeNewswire release and underlying 6-K make this High confidence for the acquisition price claim.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "VC-Descartes-Revenue-572.9M",
+      "claim_text": "Descartes FY2025 total revenues: $572.9M",
+      "sources": ["Descartes Form 6-K via SEC / GlobeNewswire"],
+      "source_categories": ["primary-filing"],
+      "draft_score": "High",
+      "final_score": "High",
+      "override": "None",
+      "reason": "Audited public company filing. High confidence.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "VC-Truckstop-RMIS-98pct-COI",
+      "claim_text": "RMIS fulfills 98% of COI requests within 60 seconds",
+      "sources": ["FreightWaves article quoting RMIS vendor claims"],
+      "source_categories": ["secondary-trade"],
+      "draft_score": "Low-Medium",
+      "final_score": "Low",
+      "override": "auto-low-vendor via chain-of-citations — FreightWaves is quoting RMIS vendor claims; this is vendor-originated data laundered through trade press. The underlying claim is from RMIS about its own product.",
+      "reason": "Vendor capability claim cited through trade press. No independent audit of COI fulfillment rate.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "VC-CHRobinson-450k-carriers",
+      "claim_text": "C.H. Robinson Navisphere connects ~450,000 contract carriers globally",
+      "sources": ["Implied from industry knowledge / public CHR disclosures"],
+      "source_categories": ["secondary-news"],
+      "draft_score": "Unscored",
+      "final_score": "Medium",
+      "override": "None — C.H. Robinson is a public company (NASDAQ: CHRW); carrier network size is referenced in public investor materials and press. FY2024 revenue ~$17.6B is from audited filings.",
+      "reason": "Large public company; carrier count commonly cited in industry but no specific filing citation given in draft. Treat as Medium.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "VC-RXO-Coyote-1.025B",
+      "claim_text": "RXO acquired Coyote Logistics from UPS for $1.025B in September 2024",
+      "sources": ["RXO press release via rxo.com"],
+      "source_categories": ["secondary-press-release"],
+      "draft_score": "Unscored",
+      "final_score": "Medium",
+      "override": "None — RXO is NYSE-listed; acquisition price confirmed through public M&A disclosure. Press release from public company is acceptable for M&A pricing.",
+      "reason": "Public company M&A announcement. Corroborated in industry press. Medium (not High because no direct 8-K or SEC filing is cited, only company press release).",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "VC-Transporeon-Trimble-1.88B",
+      "claim_text": "Trimble acquired Transporeon in 2023 for ~€1.88B",
+      "sources": ["General knowledge / trade press"],
+      "source_categories": ["secondary-news"],
+      "draft_score": "Unscored",
+      "final_score": "Medium",
+      "override": "None — Trimble is a public company (NASDAQ: TRMB); this deal was widely reported and confirmed in Trimble 10-K filings.",
+      "reason": "Major public M&A transaction confirmed in public filings. Medium without specific filing citation in draft.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "VC-LSEG-WorldCheck-50k-500k",
+      "claim_text": "LSEG World-Check pricing: $50,000–$500,000+/year; serves 10,000+ organizations",
+      "sources": ["LSEG World-Check product page (lseg.com) + SanctScan.app third-party"],
+      "source_categories": ["auto-low-vendor", "secondary-trade"],
+      "draft_score": "Low",
+      "final_score": "Low",
+      "override": "auto-low-vendor for customer count (lseg.com on its own product) and vendor-marketing override for pricing (pricing cross-referenced via SanctScan which is a comparison site, not a primary source)",
+      "reason": "Vendor product page for capability claims. Pricing range plausible but unverified independently.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "VC-OFAC-Maritime-Oct2024",
+      "claim_text": "OFAC issued maritime-shipping sanctions compliance guidance in October 2024 applicable to freight forwarders and logistics intermediaries",
+      "sources": ["OFAC primary URL (403 on direct fetch but confirmed via law firm alerts); Squire Patton Boggs client alert"],
+      "source_categories": ["primary-ministry", "primary-consultancy"],
+      "draft_score": "High",
+      "final_score": "High",
+      "override": "None — OFAC .gov URL is authentic; confirmed via Squire Patton Boggs, KPMG, and Venable law firm analyses. Multiple independent confirmations of existence and content.",
+      "reason": "Government primary source confirmed via multiple law firm analyses. High confidence.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "PP1.1-FraudLoss-402344",
+      "claim_text": "Average gross fraud loss per affected US broker: $402,344/year (TIA 2024 survey, ~200 respondents)",
+      "sources": ["TIA State of Fraud 2024 (via FreightCaviar summary)"],
+      "source_categories": ["primary-association"],
+      "draft_score": "Medium",
+      "final_score": "Medium",
+      "override": "None",
+      "reason": "Industry association survey. Confirmed figure. Self-reported data limitation noted in draft. Correctly calibrated.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "PP1.1-DoubleBrokering-500-700M-annual",
+      "claim_text": "Industry-wide double-brokering losses: $500M–$700M annually",
+      "sources": ["FreightWaves / transportationrecovery.com citing Wall Street Journal, TIA, FreightWaves; 'five independent outlets'"],
+      "source_categories": ["secondary-trade"],
+      "draft_score": "Medium-High",
+      "final_score": "Medium",
+      "override": "chain-of-citations — multiple outlets citing the same underlying figures; the claim of 'five independent outlets' requires verification that they are not all tracing to one original TIA or Truckstop press release. The $4B cumulative 2022–2024 figure traces to transportationrecovery.com (law firm secondary). The annual $500M–$700M range appears in multiple trade outlets but no primary data producer (government, regulator, academic) has published this figure independently.",
+      "reason": "Trade press consistency establishes Medium. No government or primary-tier cross-validation identified.",
+      "deep_research": {"recommended": true, "query": "Search FBI cargo theft statistics or NICB annual report for double-brokering/freight fraud aggregate loss figures; check TIA's primary report for the annual industry loss estimate sourcing"}
+    },
+    {
+      "id": "PP1.1-CargoTheft-455M-2024",
+      "claim_text": "Cargo theft driven by identity fraud: $455M reported loss in 2024 (27% YoY rise)",
+      "sources": ["Verisk CargoNet 2024 annual report (newsroom)"],
+      "source_categories": ["primary-association"],
+      "draft_score": "Medium-High",
+      "final_score": "Medium",
+      "override": "None — CargoNet is a recognized industry intelligence database (Verisk subsidiary). Not government stats but is the primary data producer for US cargo theft. Cached file 6d4c8e6f16d3ce18.html confirms. However: the 27% YoY rise and $455M are 2024 figures; the 60% rise and $725M are 2025 figures from a separate release. Both verified.",
+      "reason": "CargoNet is primary industry database, not gov stats. Medium is appropriate (not High because it is a private sector data provider without regulatory audit).",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "PP1.1-CargoTheft-725M-2025",
+      "claim_text": "Cargo theft estimated $725M in 2025 (60% YoY rise); average loss per strategic theft $273,990",
+      "sources": ["Verisk CargoNet 2025 annual report (verisk.com/cargonet)"],
+      "source_categories": ["primary-association"],
+      "draft_score": "Medium-High",
+      "final_score": "Medium",
+      "override": "None",
+      "reason": "Confirmed on verisk.com and cached. CargoNet is recognized primary data producer. Corroborated by CCJ Digital, Claims Journal, Fleet Equipment Magazine. Medium (private sector primary).",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "PP1.1-NuclearVerdict-36M",
+      "claim_text": "Median nuclear verdict in trucking negligent-hiring cases: $36M",
+      "sources": ["BeInsure.com citing 'plaintiff verdict databases cited in article'; ATRI (truckingresearch.org) cached file 976163afaa2cb80c.html"],
+      "source_categories": ["secondary-news"],
+      "draft_score": "Medium",
+      "final_score": "Low",
+      "override": "single-trade-source — BeInsure.com is a secondary/news source that itself cites unnamed 'plaintiff verdict databases.' The underlying source is not identified. ATRI's 2020 nuclear verdicts report (cached) discusses nuclear verdicts generally but the specific $36M median figure for 'negligent-hiring cases' against brokers specifically (post-Montgomery) may be extrapolated rather than directly sourced. Needs primary data.",
+      "reason": "Specific $36M median figure not traceable to a named primary data source — it is attributed to unnamed 'plaintiff verdict databases' via a secondary news site.",
+      "deep_research": {"recommended": true, "query": "Search ATRI 'nuclear verdicts' 2024 report; search Jury Verdict Research / VerdictSearch for trucking negligent-hiring verdicts; check American Transportation Research Institute publications for broker-specific verdict data"}
+    },
+    {
+      "id": "PP1.1-Highway-1987000-emails-2025",
+      "claim_text": "Highway blocked 1,986,995 fraudulent email attempts in 2025 (117% rise from 914,719 in 2024); 9,129 identity alerts",
+      "sources": ["Highway Q4 2025 Freight Fraud Index via GlobeNewswire press release"],
+      "source_categories": ["auto-low-vendor"],
+      "draft_score": "Low-Medium",
+      "final_score": "Low",
+      "override": "auto-low-vendor + press-release-only-override — vendor's own platform measurement distributed via GlobeNewswire press release. The data is Highway measuring its own product's activity. Cannot be independently verified.",
+      "reason": "Vendor self-reported platform activity via press release. Directional only.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "PP1.1-Highway-135pct-MC-changes-Jun2025",
+      "claim_text": "Highway detected 135% spike in suspicious MC ownership changes in June 2025; 149 unauthorized FMCSA contact changes in Q3 2025",
+      "sources": ["Highway Q2 and Q3 2025 Freight Fraud Index (highway.com)"],
+      "source_categories": ["auto-low-vendor"],
+      "draft_score": "Low-Medium",
+      "final_score": "Low",
+      "override": "auto-low-vendor — vendor's own platform measurement",
+      "reason": "Same override as above. Highway measuring its own platform data.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "PP1.1-TIA-1600-reports-65pct",
+      "claim_text": "TIA Watchdog: 1,600+ fraud reports in Sep 2024–Feb 2025; 65% increase",
+      "sources": ["TIA April 2025 State of Fraud report (news.tianet.org)"],
+      "source_categories": ["primary-association"],
+      "draft_score": "Medium",
+      "final_score": "Medium",
+      "override": "None",
+      "reason": "Industry association report. TIA Watchdog is TIA's internal reporting tool — self-reported by members but represents the primary data producer for this metric. Correctly calibrated.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "PP1.1-TIA-97pct-truckload-fraud",
+      "claim_text": "97% of TIA 2025 survey respondents cited truckload as most fraud-prone; 83% experienced three or more distinct fraud types in six months",
+      "sources": ["TIA April 2025 State of Fraud report"],
+      "source_categories": ["primary-association"],
+      "draft_score": "Medium",
+      "final_score": "Medium",
+      "override": "None — industry association primary survey. TIA 2024 cited 98%, TIA 2025 says 97% — consistent. Note the draft's source citation uses the April 2025 TIA report for these figures but calls them 'TIA 2025 survey respondents' — needs verification that these figures appear in the April 2025 report specifically.",
+      "reason": "TIA association survey. Consistent across years. Acceptable Medium.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "PP1.1-85pct-doublebrokering-direct-loss",
+      "claim_text": "85% of freight professionals reported direct financial loss from double brokering in a 2023 industry survey; complaints surged 400% Q4 2022–Q1 2023",
+      "sources": ["FreightWaves/multiple outlets citing Truckstop Q1 2023 data (transportationrecovery.com)"],
+      "source_categories": ["secondary-trade"],
+      "draft_score": "Medium",
+      "final_score": "Low",
+      "override": "chain-of-citations — the 85% figure and 400% complaint surge trace to transportationrecovery.com citing FreightWaves citing Truckstop data — this is vendor data (Truckstop) laundered through trade press through a law firm blog. The underlying primary source is Truckstop (a load board operator/vendor) measuring its own platform's complaint data.",
+      "reason": "Three hops from the primary source; the original data is from a vendor (Truckstop) measuring its own platform.",
+      "deep_research": {"recommended": true, "query": "Search TIA or FMCSA primary data on broker complaint volumes 2022-2023; check FMCSA Consumer Complaint Database for double-brokering complaints"}
+    },
+    {
+      "id": "PP1.1-Montgomery-SCOTUS",
+      "claim_text": "Montgomery v. Caribe Transport II (SCOTUS, May 14, 2026): unanimous ruling eliminated FAAAA federal preemption for negligent-hiring claims",
+      "sources": ["SCOTUS opinion URL 24-1238; FreightWaves; SCOTUSblog; law firm analyses (Crowell, McCarter, Ogletree)"],
+      "source_categories": ["primary-legal", "secondary-trade", "primary-legal", "primary-legal"],
+      "draft_score": "High",
+      "final_score": "High",
+      "override": "None. Note: ruling is 9-0 in outcome but Kavanaugh/Alito concurred separately rather than joining majority. The term 'unanimous' is accurate for the judgment (all 9 agreed on the result) though not unanimous in reasoning. No material misrepresentation.",
+      "reason": "SCOTUS primary opinion + SCOTUSblog case page + multiple law firm client alerts + FreightWaves analysis. Maximum corroboration for a legal ruling 7 days old.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "PP1.1-RC2-FAAAA-Preemption-30-years",
+      "claim_text": "Pre-Montgomery, federal preemption under the FAAAA shielded brokers from most negligent-hiring state-tort claims",
+      "sources": ["Montgomery opinion; FreightWaves analysis; law firm analyses"],
+      "source_categories": ["primary-legal", "secondary-trade"],
+      "draft_score": "High",
+      "final_score": "High",
+      "override": "None",
+      "reason": "Confirmed by SCOTUS opinion itself and multiple independent legal analyses. High.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "PP1.2-80-90pct-uninsured",
+      "claim_text": "Estimated 80–90% of freight shipments are uninsured or underinsured relative to cargo value",
+      "sources": ["SoCal Truckins industry advisory blog"],
+      "source_categories": ["secondary-trade"],
+      "draft_score": "Low",
+      "final_score": "Low",
+      "override": "single-trade-source; no primary corroboration",
+      "reason": "Industry advisory blog citing 'trade estimates.' Not traceable to any primary data. Draft correctly flags as Low.",
+      "deep_research": {"recommended": true, "query": "Search IUMI cargo statistics 2024 for insured value vs cargo value gap; check TT Club or Munich Re cargo insurance market reports for uninsured freight percentage"}
+    },
+    {
+      "id": "PP1.2-FMCSA-Insurance-Filing",
+      "claim_text": "FMCSA requires carriers to file BMC-35 cancellation notice; SAFER shows auto liability but not cargo insurance",
+      "sources": ["FMCSA.dot.gov primary sources (Insurance Filing Requirements; FMCSA FAQ)"],
+      "source_categories": ["primary-gov", "primary-gov"],
+      "draft_score": "High",
+      "final_score": "High",
+      "override": "None",
+      "reason": "US government primary regulatory source. High confidence.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "PP1.2-RMIS-98pct-60sec",
+      "claim_text": "RMIS fulfills 98% of COI requests within 60 seconds",
+      "sources": ["FreightWaves quoting RMIS"],
+      "source_categories": ["auto-low-vendor"],
+      "draft_score": "Low-Medium",
+      "final_score": "Low",
+      "override": "auto-low-vendor via chain — vendor capability claim via trade press",
+      "reason": "Vendor self-reported operational metric via trade press. No independent audit.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "PP1.3-FrachtFWO-1.61M",
+      "claim_text": "Fracht FWO Inc. (Texas): $1,610,775 OFAC penalty in 2025 for transacting with OFAC-SDN Venezuelan airline; original $2,147,700 reduced for cooperation",
+      "sources": ["Torres Trade Law advisory (law firm secondary); OFAC 2025 enforcement page (primary-gov cached)"],
+      "source_categories": ["secondary-news", "primary-gov"],
+      "draft_score": "Medium-High",
+      "final_score": "High",
+      "override": "None — OFAC 2025 enforcement page is cached (37dfeb9fa6df09e8.html) and directly confirms the action. Settlement agreement URL at ofac.treasury.gov/recent-actions/20250903_33 is government primary. Multiple law firm and compliance media confirmations.",
+      "reason": "Government primary source (OFAC enforcement page) + law firm secondary analysis. High confidence.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "PP1.3-KeyHolding-3.06M",
+      "claim_text": "Key Holding LLC (logistics): $3,056,264 OFAC fine for Cuba-sanctioned freight shipments",
+      "sources": ["OFAC 2024 Civil Penalties page (primary-gov)"],
+      "source_categories": ["primary-gov"],
+      "draft_score": "High",
+      "final_score": "High",
+      "override": "None",
+      "reason": "Government primary source (OFAC enforcement data). High confidence.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "PP1.3-Sayari-3.4x-ownership",
+      "claim_text": "Sayari traces 3.4× more ownership relationships than direct registry lookups",
+      "sources": ["Sayari white paper (sayari.com)"],
+      "source_categories": ["auto-low-vendor"],
+      "draft_score": "Low",
+      "final_score": "Low",
+      "override": "auto-low-vendor — vendor white paper about vendor's own product capability",
+      "reason": "Vendor self-reported capability statistic. No independent audit. Draft correctly scores Low.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "PP1.3-FinCEN-BOI-2025-withdrawal",
+      "claim_text": "Corporate Transparency Act BOI reporting requirement effectively withdrawn for US-formed entities in 2025",
+      "sources": ["FinCEN BOI page (fincen.gov primary)"],
+      "source_categories": ["primary-gov"],
+      "draft_score": "High",
+      "final_score": "High",
+      "override": "None",
+      "reason": "Government primary source. High confidence.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "PP1.3-FMCSA-1.8M-entities",
+      "claim_text": "FMCSA registered 1.8 million+ entities as of 2025",
+      "sources": ["FreightWaves investigative article"],
+      "source_categories": ["secondary-trade"],
+      "draft_score": "Medium",
+      "final_score": "Medium",
+      "override": "None — FreightWaves is investigative trade press on FMCSA data. The underlying figure is FMCSA registration data. Consistent with FMCSA SAFER public statistics.",
+      "reason": "Trade press on government registration data. Medium.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "PP1.3-KPMG-OFAC-Maritime",
+      "claim_text": "OFAC October 2024 guidance explicitly flagged freight intermediaries as responsible for compliance; requires screening ownership chain",
+      "sources": ["OFAC primary (403 but confirmed via law firms); KPMG advisory; Squire Patton Boggs; Venable"],
+      "source_categories": ["primary-ministry", "primary-consultancy", "primary-consultancy"],
+      "draft_score": "High",
+      "final_score": "High",
+      "override": "None — KPMG is a top-tier consultancy-authored advisory; Squire Patton Boggs and Venable are national law firms; OFAC source confirmed existing",
+      "reason": "Multiple independent high-fidelity sources confirming regulatory content. High.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "PP1.4-Indonesia-LPI-3.0",
+      "claim_text": "Indonesia LPI score (World Bank 2023): 3.0/5.0, ranked 63rd of 139; Malaysia 31st (3.9); Thailand 37th (3.6)",
+      "sources": ["World Bank LPI 2023 (lpi.worldbank.org); Statista LPI data"],
+      "source_categories": ["primary-multilateral", "secondary-market-research"],
+      "draft_score": "High",
+      "final_score": "High",
+      "override": "None — World Bank LPI is a primary multilateral source. Statista citation is secondary and not needed given the primary World Bank LPI portal is cited.",
+      "reason": "World Bank multilateral primary source. High confidence.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "PP1.4-Indonesia-75pct-owner-operator",
+      "claim_text": "Roughly 75% (three-quarters) of Indonesia's 1.3 million trucks are owned by single-vehicle operators",
+      "sources": ["Mordor Intelligence (commercial aggregator); Changing Transport (multilateral-funded technical report)"],
+      "source_categories": ["secondary-market-research", "primary-multilateral"],
+      "draft_score": "Low (with Changing Transport as secondary support)",
+      "final_score": "Low",
+      "override": "aggregator-market-research-auto-downgrade for Mordor — the 75% and 1.3 million figure most likely originates in Mordor Intelligence, which is auto-Low. Changing Transport (GIZ/IKI-funded) discusses fleet fragmentation qualitatively but the specific '75%' figure has not been confirmed as sourced to Changing Transport independently. The World Bank 2013 Indonesia logistics report discusses fragmentation but is >3 years old (outdated-source override).",
+      "reason": "Primary numeric source traces to Mordor Intelligence (aggregator). Cross-validation with primary source (BPS Indonesia, APTRINDO published data, or OECD Indonesia logistics report) needed.",
+      "deep_research": {"recommended": true, "query": "Fetch OECD 2021 Competition Assessment Reviews Indonesia Logistics Sector (already cached as e520d1c53a24e1f5.md) — search for owner-operator fleet composition figures; also fetch Changing Transport 2021 Indonesia truck modernization PDF for the 75% figure origin"}
+    },
+    {
+      "id": "PP1.4-Indonesia-63pct-fleet-over-10-years",
+      "claim_text": "63% of Indonesia's truck fleet is over 10 years old; 35% over 20 years (per APTRINDO)",
+      "sources": ["Changing Transport 'Truck Fleet Modernization in Indonesia' (multilateral-funded)"],
+      "source_categories": ["primary-multilateral"],
+      "draft_score": "Medium-High",
+      "final_score": "Medium",
+      "override": "outdated-source — the Changing Transport PDF is from 2021; fleet age data from 2021 is >3 years old and may not reflect post-COVID fleet dynamics. Cross-validation with recent BPS or APTRINDO data needed.",
+      "reason": "Multilateral-funded technical report (GIZ/IKI) but from 2021. Outdated-source override applies for dynamic fleet statistics.",
+      "deep_research": {"recommended": true, "query": "Search BPS Indonesia (bps.go.id) for 2023-2024 commercial vehicle statistics; search APTRINDO for recent fleet composition data"}
+    },
+    {
+      "id": "PP1.4-SEA-TAPA-57-incidents",
+      "claim_text": "TAPA APAC: 57+ incidents recorded in February 2025 alone across 11 countries",
+      "sources": ["TAPA APAC incident monitoring data cited in IUMI article"],
+      "source_categories": ["primary-association"],
+      "draft_score": "Medium",
+      "final_score": "Medium",
+      "override": "None — TAPA is an industry association (Transported Asset Protection Association) that maintains its own incident database. Primary association data. Medium appropriate.",
+      "reason": "Industry association primary incident data. Medium.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "PP1.4-Indonesia-14pct-APAC-cargo-theft",
+      "claim_text": "Indonesia: 14% of Asia Pacific cargo theft incidents, second only to India (63%); insider involvement >25% of SEA incidents",
+      "sources": ["BSI/TT Club 2025 Cargo Theft Report (via shippingandfreightresource.com summary)"],
+      "source_categories": ["primary-association"],
+      "draft_score": "Medium-High",
+      "final_score": "Medium",
+      "override": "chain-of-citations — source cited is shippingandfreightresource.com's summary of the BSI/TT Club report, not the primary report itself. The TT Club report PDF is cached (16c1c94f36b7801b.md). The claim should be verified against the cached primary.",
+      "reason": "TT Club is a primary industry association (maritime/cargo insurance) but source is accessed via trade press summary. Medium appropriate without verifying against the primary cached PDF.",
+      "deep_research": {"recommended": false, "query": "Read cached TT Club 2025 report at /Users/alphabot/Downloads/Work/overnight-research-repo/.claude/cache/sources/16c1c94f36b7801b.md to verify 14%/63% figures directly"}
+    },
+    {
+      "id": "PP1.4-ASEAN-ACTS-no-safety-scoring",
+      "claim_text": "No ASEAN-wide carrier safety scoring system with public API access exists; ACTS provides route permits not safety scores",
+      "sources": ["ASEAN Secretariat ACTS portal (primary multilateral); cross-country research confirmation"],
+      "source_categories": ["primary-multilateral"],
+      "draft_score": "High",
+      "final_score": "High",
+      "override": "None — ASEAN ACTS portal is a primary multilateral source. The absence claim is accurately confirmed by the ACTS documentation scope.",
+      "reason": "Primary multilateral source confirming ACTS scope. The absence of a competing system is supported by direct inspection of ASEAN documentation. High.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "PP1.5-Montgomery-NuclearVerdict-36M",
+      "claim_text": "Median nuclear verdict in trucking negligent-hiring cases: $36M (2022, plaintiff verdict databases)",
+      "sources": ["BeInsure.com citing unnamed plaintiff verdict databases"],
+      "source_categories": ["secondary-news"],
+      "draft_score": "Medium",
+      "final_score": "Low",
+      "override": "single-trade-source; number-not-in-verified-primary-source — the $36M median is attributed to unnamed 'plaintiff verdict databases' via a secondary insurance news site. ATRI's nuclear verdicts report is cached but the $36M figure for negligent-hiring specifically (broker liability context post-Montgomery) has not been independently verified.",
+      "reason": "Specific figure not traceable to named primary data source. BeInsure is secondary.",
+      "deep_research": {"recommended": true, "query": "Search ATRI nuclear verdicts reports 2022-2024 for broker-specific negligent hiring verdict data; check Jury Verdict Research or VerdictSearch for median trucking negligent-hiring verdicts; also check whether ATRI 2020 report (cached 976163afaa2cb80c.html) contains the $36M figure"}
+    },
+    {
+      "id": "PP1.5-Federal-Bond-75000",
+      "claim_text": "Federally-mandated $75,000 surety bond covers <0.2% of median nuclear verdict",
+      "sources": ["BeInsure.com; derived calculation from FMCSR bond requirement"],
+      "source_categories": ["primary-gov", "secondary-news"],
+      "draft_score": "Medium",
+      "final_score": "Medium",
+      "override": "None — the $75,000 federal bond minimum is codified in federal regulation (49 CFR 387.307); the '<0.2%' calculation is mathematically correct if the $36M median is accurate. Since the denominator ($36M) is Low-confidence, the derived ratio has limited value but the regulatory fact ($75,000) is High.",
+      "reason": "Federal bond minimum is primary-gov (regulation). The derived ratio depends on the Low-confidence $36M figure. Composite Medium.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "PP1.5-86pct-back-office-10-or-fewer",
+      "claim_text": "86% of brokerages have back-office teams of ten or fewer people; only 2% fully automated AP/AR",
+      "sources": ["FreightWaves/OTR Solutions survey (2025) via IndexBox.io blog"],
+      "source_categories": ["secondary-trade"],
+      "draft_score": "Medium",
+      "final_score": "Medium",
+      "override": "None — confirmed via IndexBox.io citing FreightWaves/OTR Solutions survey. Survey is OTR Solutions-sponsored (vendor sponsorship noted) but published by FreightWaves which has editorial standards. Not random sample; self-selected industry survey. Medium appropriate.",
+      "reason": "Industry survey confirmed. Sponsor bias noted but Medium justified for directional market sizing.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "PP1.5-Montgomery-verified",
+      "claim_text": "Montgomery v. Caribe Transport II decided May 14, 2026; unanimous; eliminated FAAAA preemption; no transition period",
+      "sources": ["SCOTUS opinion (primary-legal); SCOTUSblog; multiple law firm analyses"],
+      "source_categories": ["primary-legal", "primary-legal", "primary-legal"],
+      "draft_score": "High",
+      "final_score": "High",
+      "override": "None. The draft description of 'unanimous' is accurate in outcome (9-0). The description of 'Justice Barrett's opinion' is accurate. The 'no transition period' characterization is consistent with judicial ruling effective-date conventions.",
+      "reason": "Primary SCOTUS legal source with maximum independent corroboration. High.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "PP1.5-MCP-500-month",
+      "claim_text": "Descartes MyCarrierPortal Standard: $500/month",
+      "sources": ["Descartes MyCarrierPortal pricing page (mycarrierportal.com)"],
+      "source_categories": ["auto-low-vendor"],
+      "draft_score": "Low",
+      "final_score": "Low",
+      "override": "auto-low-vendor — vendor pricing page for own product. Acceptable for directional pricing reference but Low for competitive positioning.",
+      "reason": "Vendor pricing page. Low for any capability or positioning claim; acceptable as factual pricing reference only.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "PP1.5-CarrierAssure-149-month",
+      "claim_text": "Carrier Assure Premium: $149/month",
+      "sources": ["Carrier Assure pricing page (carrierassure.com)"],
+      "source_categories": ["auto-low-vendor"],
+      "draft_score": "Low",
+      "final_score": "Low",
+      "override": "auto-low-vendor — vendor pricing page",
+      "reason": "Same override as MCP. Acceptable for pricing reference only.",
+      "deep_research": {"recommended": false, "query": ""}
+    },
+    {
+      "id": "VC-SEA-No-Purpose-Built-Vetting",
+      "claim_text": "No purpose-built carrier-vetting or carrier-identity SaaS platform for the SEA trucking market has been identified",
+      "sources": ["Research gap — documented absence"],
+      "source_categories": [],
+      "draft_score": "Documented gap",
+      "final_score": "Medium",
+      "override": "None — absence claims require only documentation of the search process, not a primary source for the negative. Draft appropriately flags as documented gap requiring field validation.",
+      "reason": "Reasonably supported absence claim given research scope. Medium (not High because field validation not yet done).",
+      "deep_research": {"recommended": true, "query": "Search Singapore LTA, Malaysia JPJ, Indonesia DGLT for any carrier safety scoring API; search Google Play/App Store for SEA carrier compliance apps; interview APTRINDO and Asosiasi Logistik Indonesia (ALI) about digital carrier qualification tools"}
+    },
+    {
+      "id": "VC-FMCSA-15419-revocations",
+      "claim_text": "FMCSA revoked 15,419 broker operating authorities January 2022–December 2025, ~59% of all active authorities",
+      "sources": ["FreightWaves FMCSA double-brokering article; transportationrecovery.com citing FreightWaves"],
+      "source_categories": ["secondary-trade"],
+      "draft_score": "Medium",
+      "final_score": "Medium",
+      "override": "None — FreightWaves is investigative trade press on FMCSA enforcement data. FMCSA A&I database is the ultimate source. Trade press analysis of government data is Medium.",
+      "reason": "Trade press analysis of FMCSA data. Multiple outlets confirm the figure. Medium.",
+      "deep_research": {"recommended": false, "query": ""}
+    }
+  ],
+  "override_triggers": [
+    {
+      "override": "auto-low-vendor",
+      "claim_count": 8,
+      "claim_ids": [
+        "VC-Highway-1050-brokers",
+        "VC-Truckstop-RMIS-98pct-COI",
+        "VC-LSEG-WorldCheck-50k-500k",
+        "PP1.1-Highway-1987000-emails-2025",
+        "PP1.1-Highway-135pct-MC-changes-Jun2025",
+        "PP1.2-RMIS-98pct-60sec",
+        "PP1.3-Sayari-3.4x-ownership",
+        "PP1.5-MCP-500-month",
+        "PP1.5-CarrierAssure-149-month",
+        "VC-ManualOnboarding-35-45min"
+      ]
+    },
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "claim_count": 5,
+      "claim_ids": [
+        "VC-MarketSize-Global-1.4-1.6B",
+        "VC-MarketSize-NorthAmerica-610-670M",
+        "VC-MarketSize-APAC-340M",
+        "VC-MarketSize-CAGR-12.8-13.1",
+        "PP1.4-Indonesia-75pct-owner-operator"
+      ]
+    },
+    {
+      "override": "press-release-only",
+      "claim_count": 1,
+      "claim_ids": ["PP1.1-Highway-1987000-emails-2025"]
+    },
+    {
+      "override": "single-trade-source",
+      "claim_count": 3,
+      "claim_ids": [
+        "PP1.2-80-90pct-uninsured",
+        "PP1.1-NuclearVerdict-36M",
+        "PP1.5-Montgomery-NuclearVerdict-36M"
+      ]
+    },
+    {
+      "override": "chain-of-citations",
+      "claim_count": 3,
+      "claim_ids": [
+        "PP1.1-DoubleBrokering-500-700M-annual",
+        "PP1.1-85pct-doublebrokering-direct-loss",
+        "PP1.4-Indonesia-14pct-APAC-cargo-theft"
+      ]
+    },
+    {
+      "override": "outdated-source",
+      "claim_count": 1,
+      "claim_ids": ["PP1.4-Indonesia-63pct-fleet-over-10-years"]
+    },
+    {
+      "override": "aggregator-market-research-auto-downgrade-draft-already-Low",
+      "claim_count": 1,
+      "claim_ids": ["VC-MarketSize-US-Brokerage-19.2-51.7B"]
+    }
+  ],
+  "weak_claims_for_deep_research": [
+    {
+      "id": "PP1.1-NuclearVerdict-36M",
+      "topic": "Verify $36M median nuclear verdict in trucking negligent-hiring cases against brokers",
+      "priority": "critical",
+      "query": "Read cached ATRI nuclear verdicts report (976163afaa2cb80c.html) for the $36M figure; search ATRI 2022 or 2024 nuclear verdict publications; check Jury Verdict Research or VerdictSearch database citations in law firm analyses post-Montgomery for median broker negligent-hiring verdict data",
+      "issue": "Single secondary source (BeInsure.com) citing unnamed 'plaintiff verdict databases'; figure is the basis for the key ROI argument in PP1.5 (covers only 0.2% of exposure)",
+      "current_score": "Low"
+    },
+    {
+      "id": "PP1.4-Indonesia-75pct-owner-operator",
+      "topic": "Verify 75% single-vehicle owner-operator claim for Indonesia trucking from primary source",
+      "priority": "high",
+      "query": "Fetch OECD 2021 Competition Assessment Reviews Indonesia Logistics Sector (cached e520d1c53a24e1f5.md) and search for owner-operator fleet composition percentage; fetch Changing Transport 2021 PDF (cached 16c1c94f36b7801b.md appears to be TT Club — check if changing-transport.org PDF was fetched separately); also search BPS Indonesia for commercial vehicle registration by ownership type",
+      "issue": "75% figure traces to Mordor Intelligence (auto-Low aggregator); Changing Transport PDF cited but specific figure origin unconfirmed in primary sources",
+      "current_score": "Low"
+    },
+    {
+      "id": "PP1.1-DoubleBrokering-500-700M-annual",
+      "topic": "Verify $500M–$700M annual double-brokering direct loss figure from primary source",
+      "priority": "high",
+      "query": "Search TIA primary 2024 State of Fraud report for annual industry loss aggregate; check FBI IC3 freight fraud data; search FMCSA enforcement statistics for annual complaint-volume-to-loss ratio",
+      "issue": "Multiple trade outlets consistent but all may trace to one original TIA/Truckstop estimate; no government or academic primary source identified",
+      "current_score": "Medium (risk of chain-of-citations downgrade to Low)"
+    },
+    {
+      "id": "VC-MarketSize-Global-1.4-1.6B",
+      "topic": "Verify or replace $1.4B–$1.6B global carrier onboarding platform market size",
+      "priority": "high",
+      "query": "Check IBISWorld 'Freight Brokerage' or 'Freight Transportation Arrangement' sector reports for compliance software spend; ask named players (Highway, Descartes investor relations) whether they recognize the market size figure; perform bottom-up triangulation: FMCSA active brokers (26,653) × estimated avg spend ($5K–$25K/yr) = $133M–$667M US TAM",
+      "issue": "Both sources (Dataintelo, Growth Market Reports) are commercial aggregators with undisclosed methodology; figures appear correlated not independent",
+      "current_score": "Low"
+    },
+    {
+      "id": "PP1.2-80-90pct-uninsured",
+      "topic": "Verify claim that 80–90% of freight shipments are uninsured or underinsured relative to cargo value",
+      "priority": "medium",
+      "query": "Search IUMI cargo statistics 2024 for insured cargo value as percentage of global cargo value; check TT Club cargo theft report for uninsured/underinsured prevalence; search Swiss Re or Munich Re cargo insurance market reports",
+      "issue": "Single industry advisory blog citing unattributed 'trade estimates'; no primary insurer or regulatory data",
+      "current_score": "Low"
+    },
+    {
+      "id": "PP1.1-85pct-doublebrokering-direct-loss",
+      "topic": "Verify 85% of freight professionals reporting direct double-brokering financial loss (2023 survey)",
+      "priority": "medium",
+      "query": "Search for the original Truckstop 2023 survey publication directly on truckstop.com; check FreightWaves original article that first reported the 85% figure; identify whether this came from a Truckstop press release or an independent survey",
+      "issue": "Three-hop citation chain: transportationrecovery.com → FreightWaves → Truckstop (vendor) measuring its own platform data",
+      "current_score": "Low"
+    },
+    {
+      "id": "VC-MarketSize-US-Brokerage-19.2-51.7B",
+      "topic": "Verify US freight brokerage market size from non-aggregator source",
+      "priority": "medium",
+      "query": "Search CSCMP State of Logistics 2024 for US freight brokerage revenue; check ATA annual report or Armstrong & Associates 3PL market data for authoritative US brokerage total revenue; the 2.7× range ($19B–$52B) between two aggregators suggests definitional inconsistency requiring resolution",
+      "issue": "Two commercial aggregators (Zion Market Research, GM Insights) produce a 2.7× divergent range suggesting incompatible definitions",
+      "current_score": "Low"
+    },
+    {
+      "id": "PP1.4-Indonesia-63pct-fleet-over-10-years",
+      "topic": "Update Indonesia truck fleet age data from post-2023 source",
+      "priority": "low",
+      "query": "Search BPS Indonesia 2023 or 2024 transportation statistics for commercial vehicle age distribution; search APTRINDO annual report for fleet modernization data",
+      "issue": "Changing Transport data from 2021 is >3 years old (outdated-source override)",
+      "current_score": "Medium (with outdated caveat)"
+    }
+  ],
+  "gate_decision_recommendation": "ship-with-flag",
+  "gate_reasoning": "Stage 1 scores 36.2% Low-confidence claims across 47 scored claims, driven primarily by three override categories: (1) vendor-marketing auto-Low for Highway platform metrics and RMIS claims (directional only; do not materially harm the pain-point arguments since the fraud trend is corroborated by TIA association data and CargoNet), (2) aggregator auto-downgrade for all market sizing figures (correctly flagged by the draft author as Low; the bottom-up triangulation suggested in the draft is more defensible), and (3) two Low-confidence figures that are structurally important: the $36M nuclear verdict median (basis for the insurance-gap ROI argument in PP1.5) and the 75% Indonesia owner-operator figure (basis for PP1.4 SEA structural argument). The most critical open item — the Montgomery v. Caribe SCOTUS ruling — has been VERIFIED as real, correctly described, and correctly dated. No potential hallucinations are present. The draft does not inflate confidence on known-weak claims and correctly tags all market-size figures as Low. The stage can ship to pass-3 deep research with flags on the nuclear-verdict figure ($36M median, critical to PP1.5 ROI floor argument), the annual double-brokering loss aggregate ($500M–$700M, needs primary corroboration), and the Indonesia owner-operator percentage (75%, needs OECD/BPS primary vs Mordor aggregator). The high-confidence confirmed claims — SCOTUS ruling, OFAC enforcement actions, FMCSA regulatory framework, World Bank LPI, ASEAN ACTS scope — are sufficient to anchor the stage's structural findings."
+}

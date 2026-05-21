@@ -1,0 +1,90 @@
+{
+  "outcome": "contradicting-evidence",
+  "claim_as_stated": "Nuclear verdicts (trucking-related liability verdicts ≥$10M) median is approximately $36M",
+  "new_sources": [
+    {
+      "url": "https://instituteforlegalreform.com/wp-content/uploads/2024/05/ILR-May-2024-Nuclear-Verdicts-Study.pdf",
+      "category": "primary-industry-association",
+      "publisher": "U.S. Chamber of Commerce Institute for Legal Reform",
+      "publication_date": "2024-05",
+      "report_title": "Nuclear Verdicts: An Update on Trends, Causes, and Solutions",
+      "study_period": "2013–2022 with preliminary 2023 data",
+      "supports_claim": false,
+      "key_data": {
+        "median_all_case_types_2013_2022": "$21 million",
+        "median_auto_accident_2013_2022": "$21 million",
+        "median_product_liability_peaked_2022": "$36 million (peak year only, up from $24M in 2013)",
+        "preliminary_median_2023": "$23.8 million (all nuclear verdicts)",
+        "mean_all_types_2013_2022": "$89 million",
+        "trucking_share_of_auto_accident_nuclear_verdicts": "approximately 1 in 4 (25%)",
+        "definition_used": "verdicts of $10 million or more"
+      },
+      "via_pdf_markitdown": true,
+      "notes": "The $36M figure in the original claim corresponds ONLY to product liability cases at their 2022 peak — not to trucking/auto accident cases overall. The 10-year median for auto accident nuclear verdicts (which encompasses trucking) is $21M."
+    },
+    {
+      "url": "https://truckingresearch.org/2020/06/23/understanding-the-impact-of-nuclear-verdicts-on-the-trucking-industry/",
+      "category": "primary-industry-association",
+      "publisher": "American Transportation Research Institute (ATRI)",
+      "publication_date": "2020-06",
+      "report_title": "Understanding the Impact of Nuclear Verdicts on the Trucking Industry",
+      "study_period": "2006–2019",
+      "supports_claim": false,
+      "key_data": {
+        "mean_verdict_2010": "$2.3 million",
+        "mean_verdict_2018": "$22.3 million",
+        "mean_verdict_growth_2010_2018": "967% increase",
+        "annual_mean_growth_rate": "51.7% per year",
+        "cases_analyzed": "600+ cases with verdicts over $1M between 2006 and 2019"
+      },
+      "via_pdf_markitdown": false,
+      "notes": "ATRI page returns 403 Forbidden. Source confirmed via TRID/TRB entry and multiple secondary citations. This 2020 study does not cite a $36M median — it reports mean figures, not medians. [NEEDS-ATTENDED-FETCH]: https://truckingresearch.org/2020/06/23/understanding-the-impact-of-nuclear-verdicts-on-the-trucking-industry/"
+    },
+    {
+      "url": "https://instituteforlegalreform.com/research/nuclear-verdicts-an-update-on-trends-causes-and-solutions/",
+      "category": "primary-industry-association",
+      "publisher": "U.S. Chamber of Commerce Institute for Legal Reform",
+      "publication_date": "2024-05",
+      "report_title": "Nuclear Verdicts: An Update on Trends, Causes, and Solutions (landing page)",
+      "supports_claim": false,
+      "key_data": {
+        "headline_finding": "Median nuclear verdict over 2013–2022 was $21 million; $36M was product liability 2022 peak"
+      },
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://riskandinsurance.com/nuclear-verdicts-surge-with-median-award-near-24m-in-2023/",
+      "category": "secondary-trade-press",
+      "publisher": "Risk & Insurance",
+      "publication_date": "2024",
+      "report_title": "Nuclear Verdicts Surge With Median Award Near $24M in 2023",
+      "supports_claim": false,
+      "key_data": {
+        "median_2023_preliminary": "$23.8 million (all nuclear verdicts, ILR preliminary data)",
+        "source_cited": "U.S. Chamber of Commerce Institute for Legal Reform"
+      },
+      "via_pdf_markitdown": false,
+      "notes": "Trade press reporting of ILR preliminary 2023 data. Confirms overall nuclear verdict median near $24M in 2023, not $36M."
+    }
+  ],
+  "contradiction_summary": "The $36M figure in the original claim is real but mischaracterized. It appears in the ILR May 2024 primary report, but specifically as the peak median for PRODUCT LIABILITY cases in the single year 2022. The 10-year median (2013–2022) for ALL nuclear verdict case types is $21 million, and the auto-accident category (which encompasses trucking) also has a $21 million median over the same period. Preliminary 2023 data puts the overall median at ~$23.8 million. The claim as stated — '$36M median' for trucking-related nuclear verdicts — overstates the figure by ~70% when applied to the trucking/auto-accident category.",
+  "suggested_revision": "Replace claim with: 'Nuclear verdicts (liability verdicts ≥$10M) in auto accident cases — which include trucking — carried a median of approximately $21M over 2013–2022, rising to ~$24M in 2023, per the U.S. Chamber of Commerce Institute for Legal Reform (May 2024). The $36M figure cited in some industry coverage refers specifically to the peak median for product liability cases in 2022, not to trucking cases broadly. Approximately one in four auto-accident nuclear verdicts involves a commercial trucking company.' [Source: ILR Nuclear Verdicts Report, May 2024, verified via PDF]",
+  "suggested_new_score": "High",
+  "reasoning": "The U.S. Chamber of Commerce Institute for Legal Reform May 2024 report is a primary, independently authored, publicly published research document verified via PDF download and markitdown conversion. It directly addresses nuclear verdicts with precise medians by case type and year. The original $36M claim is factually traceable to this document but is applied to the wrong case category — the trucking/auto-accident median is $21M (10-year) or ~$24M (2023). The corrected claim can be cited at High confidence using the ILR PDF as primary source.",
+  "searches_performed": [
+    "ATRI nuclear verdicts trucking 2024 report truckingresearch.org",
+    "ATRI 'Understanding the Impact of Nuclear Verdicts on the Trucking Industry' report",
+    "Institute for Legal Reform trucking nuclear verdicts median 2024 report",
+    "ATRI nuclear verdicts update 2024 'median' trucking liability verdict statistics",
+    "ATRI 2024 nuclear verdicts trucking report median verdict trucking-specific statistics",
+    "ATRI 2024 nuclear verdicts trucking 'median' surpassed report truckingresearch.org update"
+  ],
+  "categories_searched": [
+    "primary-industry-association (ATRI)",
+    "primary-industry-association (U.S. Chamber ILR)",
+    "primary-industry-association (ATA)",
+    "secondary-trade-press (FleetOwner, CCJ, Risk & Insurance, FreightWaves, Transport Topics)",
+    "countervailing-source (Truck Safety Coalition / Heliotrope critique of ATRI report)"
+  ],
+  "atri_access_note": "ATRI's truckingresearch.org returns HTTP 403 for direct fetch. The ATRI 2020 report is confirmed via TRID/TRB catalogue entry (https://trid.trb.org/View/1715637) and multiple peer citations. An ATRI 2024 update was announced in research priorities (May 2024) but the full updated report was not publicly accessible at time of research. [NEEDS-ATTENDED-FETCH]: https://truckingresearch.org/2020/06/23/understanding-the-impact-of-nuclear-verdicts-on-the-trucking-industry/"
+}

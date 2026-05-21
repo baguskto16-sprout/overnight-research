@@ -1,0 +1,54 @@
+{
+  "claim_id": "PP2.2-cost-1",
+  "original_claim": "Enterprise TMS year-1 professional services: $2M–$6M (SAP TM, Oracle OTM); SAP TM consulting fees $800K–$1.5M (noeldcosta.com)",
+  "original_score": "L",
+  "new_score": "L",
+  "outcome": "confirmed-scarce",
+  "searches_performed": [
+    "Gartner Magic Quadrant TMS transportation management system implementation cost 2023 2024",
+    "Forrester Total Economic Impact SAP Transportation Management TM implementation cost",
+    "UpperEdge SAP TM transportation management implementation cost consulting fees benchmark",
+    "Nucleus Research TMS transportation management ROI implementation cost 2022 2023 2024",
+    "SAP TM Oracle OTM implementation cost enterprise professional services $2M+ site:upperEdge.com OR site:gartner.com",
+    "ARC Advisory Group transportation management system TMS implementation cost benchmark report",
+    "SAP TM transportation management implementation professional services cost million Accenture Deloitte IBM Capgemini case study",
+    "Oracle OTM enterprise implementation cost professional services millions 2022 2023 2024",
+    "TMS enterprise implementation cost range professional services $2M-$6M analyst report 2022-2025",
+    "Gartner Market Guide transportation management systems TMS 2023 2024 implementation cost professional services pricing"
+  ],
+  "categories_searched": [
+    "primary-gov (n/a — no government agency publishes TMS implementation cost benchmarks)",
+    "primary-multilateral (Gartner MQ/Market Guide — paywalled, no public cost data found)",
+    "primary-research-firm (Nucleus Research TMS Value Matrix 2023/2024 — PDF unreadable; public summaries contain no implementation cost figures)",
+    "analyst-advisory (ARC Advisory Group — blocked by Cloudflare; published content confirms SI fees are the most expensive cost but gives no dollar ranges)",
+    "tier-1-SI-disclosure (Accenture, Deloitte, IBM, Capgemini — no public TMS-specific engagement cost disclosures found)",
+    "benchmarking-firm (UpperEdge — blog reviewed; no SAP TM-specific cost posts found as of May 2026)",
+    "vendor-review-aggregator (Gartner Peer Insights — 403 Forbidden; search snippets contain no specific dollar amounts)",
+    "practitioner-case-study (freepressjournal.in Dec 2025 article cites a $1M annual engagement for a single mid-market SAP TM rollout — below the claimed $2M–$6M range for enterprise, and is a practitioner blog post, not primary research)"
+  ],
+  "new_sources": [
+    {
+      "url": "https://www.freepressjournal.in/latest-news/transforming-global-freight-operations-strategic-sap-tm-implementation-drives-significant-first-year-efficiency-gain",
+      "publisher": "Free Press Journal (authored by practitioner Kapil Joshi)",
+      "category": "practitioner-case-study",
+      "key_quote": "A $1 million annual engagement focused on delivering measurable business value... organization's annual freight spend ~$30 million, annual revenue ~$2 billion",
+      "notes": "Published December 19, 2025. Describes a single real SAP TM implementation in North America. The $1M annual engagement is a single data point for a mid-market rollout — it is below the $2M–$6M range asserted in the original claim and does not constitute corroboration of the upper range. Source quality: practitioner blog, not peer-reviewed or analyst-authored."
+    },
+    {
+      "url": "https://nucleusresearch.com/research/single/tms-technology-value-matrix-2024/",
+      "publisher": "Nucleus Research",
+      "category": "primary-research-firm (paywalled)",
+      "key_quote": "No implementation cost data found in public-facing abstract or press release. Report identifies SAP and Oracle as leading TMS vendors but does not disclose implementation cost benchmarks in its public summary.",
+      "notes": "The full Nucleus Research TMS Value Matrix 2024 is paywalled. The publicly downloadable PDF (via Kinaxis reprint) was unreadable with markitdown. No implementation cost figures were surfaced."
+    },
+    {
+      "url": "https://www.arcweb.com/market-analysis/transportation-management-systems-integration-consulting-services",
+      "publisher": "ARC Advisory Group",
+      "category": "primary-research-firm (paywalled/blocked)",
+      "key_quote": "TMS vendor system integration fees are the most expensive, while boutique consulting firms tend to charge lower fees. The vast majority of revenues come from implementations from Blue Yonder, Oracle, and SAP.",
+      "notes": "ARC confirms that large-vendor (Oracle, SAP) TMS SIs are the most expensive tier but does not publish specific dollar ranges publicly. Site blocked by Cloudflare during this research session."
+    }
+  ],
+  "revised_claim_text": "[ASSUMED-N]: Enterprise TMS year-1 professional services for SAP TM or Oracle OTM implementations are commonly cited in the range of $800K–$6M, with SAP TM consulting fees often cited at $800K–$1.5M for mid-market rollouts and significantly higher for global enterprise deployments — however, no primary analyst-firm (Gartner, Forrester, Nucleus, ARC) or Tier-1 SI public disclosure was found to validate the upper end of this range. Evidence is limited to a practitioner consultant blog (noeldcosta.com), a competitor vendor blog (locus.sh), and a software review site (selecthub.com). To validate: request Gartner Critical Capabilities for TMS (paywalled), Nucleus Research TMS deployment cost notes, or ARC's TMS SI market study.",
+  "notes": "Budget exhausted (8 WebSearch, 6 WebFetch attempts). The $2M–$6M enterprise year-1 professional services figure is plausible for large-scale, global SAP TM or Oracle OTM rollouts based on industry context (a $1M engagement for a mid-market, single-region implementation was found), but no primary analyst source with methodology-backed cost bands was surfaced in public domain. The Gartner MQ and Nucleus TMS reports do not include implementation cost benchmarks in their public-facing material. UpperEdge has no public SAP TM cost content. No Tier-1 SI (Accenture, Deloitte, IBM, Capgemini) has publicly disclosed TMS deal values. The claim should be marked ASSUMED-N and flagged for primary-source validation."
+}

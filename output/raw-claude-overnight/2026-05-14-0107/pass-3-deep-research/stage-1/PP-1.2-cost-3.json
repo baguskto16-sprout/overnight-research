@@ -1,0 +1,67 @@
+{
+  "claim_id": "PP-1.2-cost-3",
+  "original_claim": "Manual carrier qualification in SEA typically requires document collection, reference calls, and site visits — conservatively 4–8 hours per carrier, at a fully-loaded labor cost of $25–$45/hour for a logistics operations coordinator in Singapore or KL = $100–$360 per carrier onboarded. A mid-size 3PL adding 20–50 carriers per month incurs $24,000–$216,000 annually in manual vetting labor",
+  "outcome": "refined",
+  "new_evidence": [
+    {
+      "finding": "Singapore logistics coordinator base salary range is SGD 24,000–50,280/yr (median SGD 37,200/yr), based on 10,000 employer-disclosed salary records; fully loaded with 17% employer CPF and ~5% benefits (1.22x multiplier), the fully-loaded hourly rate is USD 11–23/hr at the May 2026 SGD/USD rate of 0.787 — not the $25–$45/hr assumed in the original claim.",
+      "source": "https://sg.talent.com/salary?job=logistics+coordinator",
+      "source_type": "secondary",
+      "confidence": "H"
+    },
+    {
+      "finding": "JobStreet Singapore employer-disclosed data (May 2026) shows logistics coordinator monthly salary averages of SGD 3,150–4,125 across districts, and logistics executive at SGD 3,675–4,125/mo; fully loaded the upper bound is ~USD 22.8/hr — confirming the talent.com range and further ruling out the $45/hr upper bound in the original claim.",
+      "source": "https://sg.jobstreet.com/career-advice/role/logistics-coordinator/salary",
+      "source_type": "secondary",
+      "confidence": "H"
+    },
+    {
+      "finding": "JobStreet Singapore logistics executive role (May 2026) shows salary averages of SGD 3,675–4,125/mo based on employer job-ad disclosures, with individual listings citing SGD 3,400–4,500/mo, placing fully-loaded executive cost at USD 19–23/hr — still well below the original $45/hr upper bound.",
+      "source": "https://sg.jobstreet.com/career-advice/role/logistics-executive/salary",
+      "source_type": "secondary",
+      "confidence": "H"
+    },
+    {
+      "finding": "Malaysia DOSM Salaries and Wages Survey 2024 (primary government source) shows the services sector mean monthly wage was MYR 3,831; JobStreet Malaysia shows logistics coordinators at MYR 2,875–4,400/mo, yielding a fully-loaded KL-market hourly rate of USD 4.28–6.55/hr — roughly one-quarter of the $25–$45/hr assumption.",
+      "source": "https://storage.dosm.gov.my/labour/salaries_wages_2024.pdf",
+      "source_type": "primary",
+      "confidence": "H"
+    },
+    {
+      "finding": "Malaysia DOSM 2024 Salaries and Wages Survey Report (OpenDOSM portal): median monthly salaries and wages for Malaysian citizens rose to MYR 2,793 in 2024, services sector mean MYR 3,831, directly cross-validating the JobStreet Malaysia logistics coordinator range as plausible for KL.",
+      "source": "https://open.dosm.gov.my/publications/salaries_wages_2023",
+      "source_type": "primary",
+      "confidence": "H"
+    },
+    {
+      "finding": "Singapore MOM Occupational Wages Tables 2024 (official government publication covering 500+ occupations) exists at stats.mom.gov.sg and contains role-specific median gross wage data for transport and logistics occupations, but wage values are locked in Excel downloads not web-accessible by automated fetch; the existence of the dataset confirms MOM as the primary source for role-level benchmarks.",
+      "source": "https://stats.mom.gov.sg/Pages/Occupational-Wages-Tables2024.aspx",
+      "source_type": "primary",
+      "confidence": "M"
+    },
+    {
+      "finding": "PayScale Singapore (12 profiles, last updated February 2023) shows Operations Coordinator, Logistics median of SGD ~34,000/yr, consistent with talent.com and JobStreet at the lower-to-mid range, providing independent corroboration that coordinator-grade roles are in the SGD 30,000–50,000 base salary band.",
+      "source": "https://www.payscale.com/research/SG/Job=Operations_Coordinator%2C_Logistics/Salary",
+      "source_type": "secondary",
+      "confidence": "M"
+    },
+    {
+      "finding": "Morgan McKinley via ResumeWriter.SG (Jan 2025) benchmarks Singapore Logistics Specialist at SGD 50,000/yr and Logistics Manager at SGD 80,000/yr, confirming that the $25–$45/hr range would correspond to experienced specialist or manager level rather than coordinator level, and that coordinator-grade staff would be in the SGD 30,000–45,000 base range.",
+      "source": "https://www.resumewriter.sg/blog/salary-guide-singapore-supply-chain-procurement/",
+      "source_type": "secondary",
+      "confidence": "M"
+    }
+  ],
+  "revised_claim": "Manual carrier qualification in SEA typically requires document collection, reference calls, and site visits — conservatively 4–8 hours per carrier, at a fully-loaded labor cost of approximately USD 11–23/hr for a logistics operations coordinator in Singapore (SGD 24,000–50,280/yr base plus 17% employer CPF; SGD/USD 0.787 as of May 2026) or USD 4–7/hr in KL/Malaysia (MYR 2,875–4,400/mo per JobStreet MY 2026, DOSM 2024) = roughly USD 44–184 per carrier onboarded in Singapore, or USD 16–56 in Malaysia. A mid-size 3PL adding 20–50 carriers per month incurs approximately USD 10,560–110,400/yr in manual vetting labor (Singapore-rate upper bound) to USD 3,840–33,600/yr (Malaysia-rate lower bound). The original $25–$45/hr assumption was derived from North American or European labor-cost benchmarks and materially overstates SEA coordinator-level costs; the $45/hr upper bound approximates Singapore logistics manager/specialist salaries, not coordinator salaries.",
+  "revised_citations": [
+    "https://sg.talent.com/salary?job=logistics+coordinator",
+    "https://sg.jobstreet.com/career-advice/role/logistics-coordinator/salary",
+    "https://sg.jobstreet.com/career-advice/role/logistics-executive/salary",
+    "https://my.jobstreet.com/career-advice/role/logistics-coordinator/salary",
+    "https://storage.dosm.gov.my/labour/salaries_wages_2024.pdf",
+    "https://open.dosm.gov.my/publications/salaries_wages_2023",
+    "https://stats.mom.gov.sg/Pages/Occupational-Wages-Tables2024.aspx"
+  ],
+  "still_assumed": false,
+  "recommended_followup_interview": "HR Manager or Regional Compensation & Benefits Lead at a mid-size SEA 3PL (e.g., Bollore Logistics, CJ Logistics, or Yusen Logistics Singapore) to confirm fully-loaded cost per headcount including annual bonus, healthcare, and leave provisions, and to verify whether carrier vetting is performed by coordinator-grade staff or outsourced to a vendor/compliance team."
+}

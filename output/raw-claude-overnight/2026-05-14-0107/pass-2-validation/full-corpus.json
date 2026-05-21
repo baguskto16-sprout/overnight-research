@@ -1,0 +1,347 @@
+{
+  "context": "final",
+  "run_id": "2026-05-14-0107",
+  "validation_date": "2026-05-15",
+  "validator_note": "Aggregated from per-stage JSONs stage-1 through stage-6; cross-stage inconsistencies identified via grep of stages-validated/ markdown corpus. Stage 6 has a minor internal discrepancy: total_claims=84 in structured JSON header but gate_reasoning references 98 claims — 84 used throughout as it matches the claim array length.",
+
+  "corpus_claims_total": 568,
+
+  "corpus_claims_high": {
+    "count": 79,
+    "percent": "13.9%",
+    "by_stage": {
+      "stage_1": 11,
+      "stage_2": 14,
+      "stage_3": 14,
+      "stage_4": 0,
+      "stage_5": 21,
+      "stage_6": 19
+    }
+  },
+
+  "corpus_claims_medium": {
+    "count": 187,
+    "percent": "32.9%",
+    "by_stage": {
+      "stage_1": 25,
+      "stage_2": 24,
+      "stage_3": 34,
+      "stage_4": 37,
+      "stage_5": 39,
+      "stage_6": 28
+    }
+  },
+
+  "corpus_claims_low": {
+    "count": 302,
+    "percent": "53.2%",
+    "by_stage": {
+      "stage_1": 41,
+      "stage_2": 44,
+      "stage_3": 53,
+      "stage_4": 84,
+      "stage_5": 43,
+      "stage_6": 37
+    },
+    "stage_4_flag": "Stage 4 solo L-rate is 69.4% (84/121), just below the 70% re-run threshold. It is the single weakest stage in the corpus and is the primary driver of the corpus-level L rate."
+  },
+
+  "corpus_unique_domains": {
+    "total_deduplicated": 328,
+    "per_stage_unique_pre_deduplication": {
+      "stage_1": 49,
+      "stage_2": 70,
+      "stage_3": 75,
+      "stage_4": 67,
+      "stage_5": 66,
+      "stage_6": 87
+    },
+    "citation_diversity_grade": "ship-with-flag",
+    "citation_diversity_grade_reasoning": "328 unique domains far exceeds the 40-60 ship threshold. The diversity grade would be 'ship' on domain count alone — however the domain diversity metric is misleading here because (a) 15 domains appear in 3+ stages indicating structural source reuse, (b) freightwaves.com appears across all 6 stages as a catch-all relay for vendor statistics, (c) five secondary-market-research aggregator domains (mordorintelligence, marketsandmarkets, gminsights, grandviewresearch, precedenceresearch) appear in 3-4 stages each and all receive automatic L overrides, and (d) 94 of the 328 unique domains are vendor or vendor-adjacent sites that add volume without adding source quality. Adjusted quality-weighted domain diversity is estimated at 110-130 truly independent sources — still above the 40-60 ship target but the raw 328 overstates diversity."
+  },
+
+  "top_overused_sources": [
+    {
+      "domain": "freightwaves.com",
+      "stage_count": 6,
+      "issue": "Appears in every stage as primary relay for vendor statistics, regulatory events, and market trends. Not itself a primary source — it is named-author trade press at best, vendor-narrative relay at worst. Dozens of L-confidence claims across stages source their only URL to FreightWaves articles re-quoting vendor data. When FreightWaves is the sole citation for a quantified claim, single-trade-source override applies.",
+      "count_exceeds_5": true
+    },
+    {
+      "domain": "globenewswire.com",
+      "stage_count": 6,
+      "issue": "Used as catch-all citation for vendor press releases across all stages. GlobeNewswire is a press release distribution wire — it does not independently verify or editorially review claims. It does NOT add source quality above the underlying vendor press release. Multiple stages treat GlobeNewswire as a named-author trade publication when it is a distribution channel. This has inflated M-confidence scores in stages 1, 2, 3, and 4 where GlobeNewswire is cited as the 'second source' to elevate from L to M.",
+      "count_exceeds_5": true
+    },
+    {
+      "domain": "prnewswire.com",
+      "stage_count": 5,
+      "issue": "Same issue as globenewswire.com — press release distribution wire mistaken for trade press in several claims. PRNewswire is the publisher-of-record for corporate press releases; it does not editorially validate content. Used across stages 1, 3, 4, 5, 6.",
+      "count_exceeds_5": true
+    },
+    {
+      "domain": "ftvcapital.com",
+      "stage_count": 2,
+      "issue": "FTV Capital is the venture investor in Highway (Stage 1, Stage 2). The $500M-$700M freight fraud annual loss figure — which is the single most-cited cross-stage cost figure in stages 1 and 2 — originates from FTV Capital's Highway investment thesis. It is an L-confidence single-vendor-source claim, and should not be treated as an industry baseline figure in any downstream synthesis. Confirmed as the same source in both stages.",
+      "count_exceeds_5": false,
+      "special_flag": "This is the origin of the $500M-$700M figure that propagates across stages 1 and 2 with L confidence. Its recurrence inflates the apparent cost-of-fraud estimate for the freight broker segment."
+    },
+    {
+      "domain": "mordorintelligence.com",
+      "stage_count": 4,
+      "issue": "Secondary-market-research firm. Appears in stages 1, 3, 4, 6 — always triggering the secondary-market-research override (automatic L for market sizing). The ASEAN road freight $119.43B figure (stage 1), fleet telematics market figures (stage 3), RTTVP market sizing (stage 4), and parametric insurance market (stage 6) all originate here. Cross-stage dependency: if Mordor's methodology is wrong, it distorts four separate TAM/market-sizing arguments.",
+      "count_exceeds_5": false
+    },
+    {
+      "domain": "getlatka.com",
+      "stage_count": 2,
+      "issue": "Unaudited private-company revenue database. Used in stages 2 and 4 for private company revenue figures (Haulio ARR, project44 revenue). Latka's methodology is not independently audited; it relies on CEO interviews and AI estimation. Creates a specific cross-stage inconsistency: project44 revenue is cited as ~$210M in stage-4-value-chain.md (Latka estimate) and ~$175M ARR in stage-4-pain-points.md (different Latka figure from same database) — both from the same source, neither audited.",
+      "count_exceeds_5": false
+    }
+  ],
+
+  "cross_stage_inconsistencies": [
+    {
+      "id": "XSI-1",
+      "severity": "HIGH",
+      "topic": "project44 revenue — two figures from same source in same stage",
+      "stage_1_of_2": "stage-4-value-chain.md",
+      "claim_1": "project44 FY2024 revenue estimated ~$210M (Latka estimate, VC-3)",
+      "stage_2_of_2": "stage-4-pain-points.md",
+      "claim_2": "project44 ~$175M ARR by end-2024 (Latka estimate, footnote 6)",
+      "source_overlap": "Both figures cite getlatka.com — same unaudited database, different figures. $210M vs $175M ARR is a $35M discrepancy from the same source, suggesting Latka's estimate changed between query dates or Latka uses a different revenue definition (GAAP vs ARR) for the two pages.",
+      "resolution": "Remove one figure. Stage-4-value-chain.md VC-3 notes this as 'estimated'; pain-points footnote 6 uses it as fact. Both should be qualified as 'Latka estimate, unaudited'. The company's own press release confirms only '>30% YoY growth' without stating a revenue starting point — $175M and $210M cannot both be correct.",
+      "impact": "Stage 4 is the only stage with zero H-confidence claims. This inconsistency is the most visible data quality issue in the corpus."
+    },
+    {
+      "id": "XSI-2",
+      "severity": "HIGH",
+      "topic": "Indonesia commercial vehicle fleet count — three different figures across stages",
+      "stage_1_of_3": "stage-1-value-chain.md",
+      "claim_1": "Indonesia has 4M+ registered commercial vehicles (no source cited, bare assertion, claim VC-40, L confidence)",
+      "stage_2_of_3": "stage-3-value-chain.md VC-42 and stage-3-pain-points.md",
+      "claim_2": "Total SEA commercial vehicle fleet in Indonesia exceeds 23M (Mordor Intelligence, L confidence). Stage 3 value chain data table corrects this to 6,091,822 registered trucks (BPS Indonesia 2023, H confidence) and notes the 23M Mordor figure likely covers all non-motorcycle vehicles.",
+      "stage_3_of_3": "stage-3-value-chain.md narrative (pain-point section)",
+      "claim_3": "Cartrack 274k devices vs. total addressable commercial vehicle fleet in SEA 'exceeds 23M in Indonesia alone' — reuses Mordor figure despite BPS correction in same document",
+      "source_overlap": "Stage 3 contains an internal contradiction: it both corrects the 23M figure to 6.09M (BPS, H confidence) AND continues to use the 23M figure in narrative context. Stage 1 uses a third figure (4M+) with no source. The three figures (4M, 6.09M, 23M) appear across two stages.",
+      "resolution": "Use only the BPS Indonesia figure (6,091,822 trucks, 2023) as the authoritative baseline. Remove 4M+ from Stage 1 (source it to BPS or remove). Remove 23M references from Stage 3 narrative and substitute BPS truck count. The 23M figure may refer to all road motor vehicles excluding motorcycles per Mordor's methodology — if used at all, it must be clearly qualified.",
+      "impact": "Indonesia fleet size is cited in stages 1, 3, and 4 as a market-sizing anchor for telematics, carrier vetting, and RTTVP opportunity. The three-figure discrepancy (4M vs 6.09M vs 23M) makes the SEA market size argument inconsistent across stages."
+    },
+    {
+      "id": "XSI-3",
+      "severity": "MEDIUM",
+      "topic": "$500M-$700M freight fraud annual loss figure — cross-stage propagation of L-confidence VC-estimate",
+      "stage_1_of_2": "stage-1-pain-points.md PP-1.1-cost-3 and stage-1-value-chain.md table",
+      "claim_1": "$500M-$700M in freight fraud payment losses annually (ftvcapital.com, L confidence)",
+      "stage_2_of_2": "stage-2-pain-points.md PP2.1-cost-1",
+      "claim_2": "$500M-$700M annual freight payment fraud losses (ftvcapital.com + freightwaves.com, L confidence)",
+      "source_overlap": "The figure originates from the FTV Capital Highway investment thesis in both stages. Stage 2 adds FreightWaves as a 'second source' but the FreightWaves article itself cites the $500M-$700M figure from TIA/FTV — it is not an independent calculation. The two 'sources' trace to the same origin.",
+      "resolution": "Retain the figure with explicit L-confidence flag and attribution to FTV Capital investment thesis. Do not treat as an independently cross-validated industry estimate. The TIA April 2025 survey provides independent broker-level loss data ($402K average per member company) that should replace this figure as the headline cost claim.",
+      "impact": "This figure is used as the primary cost anchor for the freight fraud narrative in both stages. An investor's estimate should not function as an industry baseline."
+    },
+    {
+      "id": "XSI-4",
+      "severity": "MEDIUM",
+      "topic": "Strategic cargo theft 1,475% growth — consistent figure, inconsistent attribution",
+      "stages": "stage-1-pain-points.md, stage-4-pain-points.md, stage-5-pain-points.md",
+      "observation": "The 1,475% strategic theft growth figure appears in three stages. In Stage 1 it is attributed to CargoNet/Verisk. In Stage 4 it cites 'FreightWaves April 2025' citing CargoNet. In Stage 5 it cites 'CargoNet/FreightWaves'. The underlying data is consistent (H confidence from Verisk CargoNet), but the citation chains differ — Stage 4 adds an FBI/IC3 PSA as a second corroborating source (IC3.gov), which is a material improvement. Stages 1 and Stage 5 do not carry this FBI corroboration.",
+      "resolution": "Add FBI IC3 April 2026 PSA citation (https://www.ic3.gov/PSA/2026/PSA260430) as a secondary corroborating source in Stages 1 and 5 wherever the 1,475% figure appears. This is a harmless upgrade — the underlying data is correct and Stage 4 already validated this citation path.",
+      "impact": "Low — the figure itself is credible, the inconsistency is in citation completeness not in the claim value."
+    }
+  ],
+
+  "cross_stage_redundancies": [
+    {
+      "id": "XSR-1",
+      "topic": "Overhaul vendor profile",
+      "stages_affected": ["stage-1", "stage-4", "stage-5", "stage-6"],
+      "description": "Overhaul is profiled substantively in four separate stages: carrier fraud detection (stage 1), in-transit visibility (stage 4), cargo security (stage 5), and cargo insurance/claims (stage 6). The $5B cargo recovered claim, $105M Series C, and SensiGuard acquisition appear in stages 4, 5, and 6 with slightly different citation specificity. The stage-5 citation (freightwaves.com + stocktitan.net) is the most complete. Stage-6 VC-Overhaul-3 cites the same series C as $105M. Recommend consolidating Overhaul's full profile into the stage where it is most central (Stage 5 — cargo security) and cross-referencing in other stages rather than re-profiling.",
+      "redundant_claim_overlap": "Series C $105M appears in stages 4 (indirectly via VC-28), 5 (VC-13), and 6 (referenced in VC-Reliance context). SensiGuard acquisition appears in stages 5 and 6."
+    },
+    {
+      "id": "XSR-2",
+      "topic": "TIA April 2025 Fraud Report statistics",
+      "stages_affected": ["stage-1", "stage-2"],
+      "description": "TIA April 2025 survey data (1,611 Watchdog reports, average $402K loss, 97% truckload fraud mode, 83% experienced 3+ fraud types, 65% increase in reports) is cited in both stages 1 and 2 with H/M confidence correctly applied. This is appropriate cross-citation of a primary source — it is not a quality problem, but downstream synthesis should treat these as the same dataset, not two independent measurements of fraud frequency.",
+      "redundant_claim_overlap": "TIA April 2025 report cited in PP-1.1, PP-1.1-cost-5, PP-1.1-freq-4, PP-1.1-cost-6 (stage 1) and PP2.1-cost-2, PP2.1-freq-2, PP2.4-freq-2, PP2.5-freq-1 (stage 2). Recommend adding a cross-reference note in stage 2 to direct readers to stage 1's fuller treatment."
+    },
+    {
+      "id": "XSR-3",
+      "topic": "CargoNet/Verisk cargo theft annual statistics (2024 and 2025 reports)",
+      "stages_affected": ["stage-1", "stage-4", "stage-5"],
+      "description": "Verisk CargoNet 2024 and 2025 annual theft data is used across three stages. Stage 5 provides the most complete treatment including both 2024 ($454.9M, 3,625 incidents) and 2025 ($725M, 3,594 events, 2,646 confirmed thefts) figures with direct CargoNet URLs. Stage 1 and Stage 4 cite the same underlying data through FreightWaves relay. The data is correct and consistently applied but should be noted as coming from one primary source used in three places.",
+      "redundant_claim_overlap": "The 2024 3,625 incidents / $454.9M figure appears in stages 1 and 5; the 1,475% strategic theft growth appears in stages 1, 4, and 5."
+    }
+  ],
+
+  "assumed_tag_inventory": {
+    "total_assumed_tags_corpus_wide": 60,
+    "note": "Estimated from per-stage counts: S1=4 (ASSUMED-1 through 4), S2=10 (ASSUMED-1 through 10), S3=16, S4=12, S5=16, S6=9. All auto-scored Low per rubric. None of the deep-research items resolved ASSUMED tags into sourced claims — they remain as field-validation hypotheses.",
+    "concentration": "ASSUMED tags are disproportionately concentrated in SEA-specific operational claims across all stages, and in financial/market-sizing estimates that lack primary data. This reflects a structural data gap: no primary government or multilateral source for SEA logistics market sizing exists at the sub-sector granularity needed by this research."
+  },
+
+  "residual_weak_claims_for_field_validation": [
+    {
+      "rank": 1,
+      "claim_id": "XSI-1 / VC-3 & PP4.1-11 (Stage 4)",
+      "claim_text": "project44 FY2024 revenue: ~$210M (value chain) vs ~$175M ARR (pain points) — same Latka database, conflicting figures",
+      "current_score": "L (both figures)",
+      "assumed_tag": false,
+      "why_critical": "Stage 4 is the only stage with zero H-confidence claims. The project44 revenue figure is the single most-cited private company financial figure in that stage and is used to anchor market leadership claims. The internal contradiction from the same source (Latka) is the most prominent data credibility issue in the corpus. Resolving this requires a direct interview with project44 IR, or citing only the company-disclosed '>30% growth' without inferring a revenue base.",
+      "field_action": "Request revenue disclosure from project44 directly. Alternatively, qualify both as 'Latka estimate, unaudited, conflicting figures — ARR vs GAAP revenue definitions' and strip from any client-facing output.",
+      "stage": 4
+    },
+    {
+      "rank": 2,
+      "claim_id": "ASSUMED-2 / PP-1.2-cost-3 (Stage 1)",
+      "claim_text": "A mid-size SEA 3PL adding 20–50 carriers per month incurs $24,000–$216,000 annually in manual vetting labor costs",
+      "current_score": "L (ASSUMED-2)",
+      "assumed_tag": true,
+      "why_critical": "This is the single most-cited cost-quantification for the SEA carrier vetting opportunity — the entire Stage 1 SEA commercial case rests on this figure. It is derived from an assumed $25-$45/hour labor rate for logistics coordinators in Singapore/KL with no primary survey data. If the labor rate assumption is wrong by 30%, the annual cost range shifts significantly. No MOM Singapore, DOSM Malaysia, or Mercer/Korn Ferry salary survey has been cited.",
+      "field_action": "Obtain MOM Singapore Occupational Wage Statistics (published annually by Singapore Ministry of Manpower) for logistics coordinator or operations executive roles. Malaysia DOSM Salaries & Wages Survey also covers this. Target: replace assumed $25-$45/hr with primary government labor cost data. One Mercer SEA Logistics Salary Benchmark would also qualify.",
+      "stage": 1
+    },
+    {
+      "rank": 3,
+      "claim_id": "VC-PP-loadsure-70m / PP6.1-8 (Stage 6)",
+      "claim_text": "70 million small shippers globally operate without any formal cargo insurance; 60%+ of freight globally estimated to be under- or uninsured",
+      "current_score": "L",
+      "assumed_tag": false,
+      "why_critical": "This figure is the headline market opportunity claim for Stage 6 and the entire cargo insurance section. It originates from Loadsure's marketing materials relayed through FreightWaves — a classic single-vendor-source override. No ITC, World Bank, ICC, WTO, or IUMI primary data has been found to validate or proxy this figure. Deep research was flagged for ADB 2023 proxy + ASSUMED-10 but did not fully resolve the uninsured shipper baseline.",
+      "field_action": "Search ITC Trade Map for total active SME exporter universe; World Bank SME Finance Forum for insurance penetration data; UNCTAD World Investment Report for trade finance gap estimates; IUMI Statistics Committee reports (IUMI is already cited in this stage for global cargo GWP). The 60% uninsured estimate may be directionally correct but needs a non-vendor anchor.",
+      "stage": 6
+    },
+    {
+      "rank": 4,
+      "claim_id": "PP2.1-freq-1 / VC-intro-1 (Stage 2)",
+      "claim_text": "Identity fraud attempts in logistics rose from 0.53% (2023) to 1.66% (2024) to 2.15% (2025) — 306% increase; logistics is hardest-hit sector (IDScan.net dataset)",
+      "current_score": "L",
+      "assumed_tag": false,
+      "why_critical": "This is the headline fraud-trajectory claim for Stage 2 and is cited as evidence that logistics is the hardest-hit sector by identity fraud. The underlying data is a 1M-transaction sample from IDScan.net (a vendor with commercial interest in elevated fraud rates) reported through DC Velocity trade press. A 306% trajectory claim built on a single commercial vendor's transaction sample is not sufficiently evidenced for commercial decision use. TIA's survey or FBI IC3 data would provide independent corroboration.",
+      "field_action": "Access IDScan.net's own published 2025 logistics fraud report directly (not via trade press relay) to confirm the 0.53% → 2.15% trajectory with stated methodology. Cross-validate with FBI IC3 2024 Internet Crime Report (transportation fraud category) and TIA 2025 Watchdog data as percentage of loads transacted (not just report count).",
+      "stage": 2
+    },
+    {
+      "rank": 5,
+      "claim_id": "PP2.2-cost-1 (Stage 2)",
+      "claim_text": "Enterprise TMS year-1 professional services (SAP TM, Oracle OTM): $2M–$6M implementation + $1M–$5M+ annual license",
+      "current_score": "L",
+      "assumed_tag": false,
+      "why_critical": "The TMS implementation cost range is the central economic argument for Pain Point 2.2 and for the market opportunity framing around mid-market TMS displacement. It is sourced from a competitor vendor blog (Locus.sh), a software-review aggregation site (SelectHub), and a personal consultant's blog (noeldcosta.com) — none of which are Gartner, Forrester, or an SI firm. A commercial decision on enterprise TMS switching costs cannot be anchored to these sources.",
+      "field_action": "Search Gartner Market Guide for Transportation Management Systems 2024 (paywalled — may need procurement); search UpperEdge SAP contract benchmarking disclosures; search Accenture, Capgemini, or IBM consulting published TMS migration cost estimates; interview Tier-1 SI firms (Accenture, Capgemini, DXC) directly on SAP TM/Oracle OTM average go-live costs.",
+      "stage": 2
+    },
+    {
+      "rank": 6,
+      "claim_id": "VC-36 / PP-1.2-cost-1 (Stage 1)",
+      "claim_text": "ASEAN road freight market is $119.43B in 2025 (Mordor Intelligence only)",
+      "current_score": "L (Geography mismatch + single secondary market research firm)",
+      "assumed_tag": false,
+      "why_critical": "This is the market-sizing anchor for the entire SEA carrier vetting opportunity argument in Stage 1. It appears in both the value chain and pain points sections. There is no ADB, ASEAN Secretariat, World Bank, or government source cross-validating this figure. The Mordor figure may be directionally correct, but using a single secondary market research firm's estimate as the TAM foundation for a commercial decision is not defensible.",
+      "field_action": "Search ADB Transport Sector Assessment for ASEAN 2023-2024; ASEAN Secretariat ASEAN Transport Strategic Plan 2022-2026 (publicly available PDF); World Bank Indonesia, Thailand, Malaysia transport sector studies for country-level road freight volumes; ERIA (Economic Research Institute for ASEAN and East Asia) logistics sector reports. Triangulate country-level figures rather than relying on ASEAN-level aggregates.",
+      "stage": 1
+    },
+    {
+      "rank": 7,
+      "claim_id": "PP3.2-6 (Stage 3)",
+      "claim_text": "Nirvana Series D: $100M raised at $1.5B valuation [FACTUAL ERROR — cited sources describe $80M at $830M valuation]",
+      "current_score": "L (factual error — per stage-3 gate_reason)",
+      "assumed_tag": false,
+      "why_critical": "This is flagged in the Stage 3 gate reasoning as a factual error where the cited URLs describe an $80M/$830M round, not the $100M/$1.5B stated in the text. This is a publishable error that must be corrected before any external use.",
+      "field_action": "IMMEDIATE CORRECTION REQUIRED. Replace claim with the correct figures from the cited URLs: $80M Series D at $830M post-money valuation. Do not use the $100M/$1.5B figures unless a separate, confirming source for those numbers can be located.",
+      "stage": 3
+    },
+    {
+      "rank": 8,
+      "claim_id": "PP-40 / Stage 5",
+      "claim_text": "Maritime piracy Straits of Malacca/Singapore surged 74% in 2025 to 108 incidents — highest in 19-year monitoring period (ReCAAP ISC Annual Report 2025 — no URL cited)",
+      "current_score": "L (no URL cited for primary source)",
+      "assumed_tag": false,
+      "why_critical": "ReCAAP ISC Annual Report 2025 is a legitimate intergovernmental primary source (equivalent to primary-multilateral), but no URL has been added to the stage-5 document. The deep-research pass flagged this as a recommended action (locate recaap.org/reports direct URL). Without a verifiable URL, the claim cannot be cited in client-facing material even though the underlying data source is appropriate.",
+      "field_action": "Visit recaap.org/reports to confirm 2025 Annual Report availability and insert the direct PDF URL. If the 2025 Annual Report has not yet been published, cite the most recent quarterly report with the same ReCAAP ISC primary-multilateral classification. Once URL is added, this upgrades from L to H.",
+      "stage": 5
+    }
+  ],
+
+  "five_top_highest_confidence_findings": [
+    {
+      "rank": 1,
+      "finding": "US/Canada cargo theft reached record levels in 2024-2025: 3,625 incidents and $454.9M in losses in 2024 (27% YoY increase); escalating to 2,646 confirmed thefts and ~$725M estimated losses in 2025 (+36% in average theft value to $273,990). Strategic theft (fraud-enabled) grew 1,475% from Q1 2022 to Q4 2024.",
+      "primary_sources": ["Verisk CargoNet 2024 Annual Analysis (verisk.com)", "CargoNet 2025 Theft Trends (cargonet.com)", "FBI IC3 PSA April 2026 (ic3.gov) — corroborates strategic theft trajectory"],
+      "confidence": "H",
+      "stages": [1, 4, 5],
+      "commercial_significance": "The cargo theft problem is demonstrably worsening and the causal mechanism is strategy-based fraud (not opportunistic) — validating the need for counterparty risk and carrier vetting tools."
+    },
+    {
+      "rank": 2,
+      "finding": "TIA April 2025 primary survey of member freight brokers: average company lost $402,344/year to fraud; 22% lost more than $200K in a single six-month period; 83% experienced three or more distinct fraud types in six months; 97% cited truckload as the most fraud-prone mode; TIA Watchdog recorded 1,611 fraud reports in a six-month window (Sep 2024-Feb 2025), a 65% increase over the prior comparable period.",
+      "primary_sources": ["TIA State of Fraud in the Industry April 2025 (news.tianet.org) — primary industry association survey"],
+      "confidence": "H",
+      "stages": [1, 2],
+      "commercial_significance": "The TIA survey is the corpus's single best source for quantifying the frequency and financial impact of freight fraud at the freight broker level — independent of any vendor's commercial interest."
+    },
+    {
+      "rank": 3,
+      "finding": "Platform financial health risk is real and quantified: Uber Freight posted EBITDA loss of $(22)M on $1.28B gross bookings in FY2024; GoGoX (HKEX-listed) recorded a 12.3% revenue decline in FY2024 to RMB 660.1M with negative EBITDA of RMB 68.3M; Full Truck Alliance (NYSE:YMM) is the outlier with RMB 11.24B revenue (+33.2%) and RMB 3.12B net income.",
+      "primary_sources": ["Uber Technologies SEC earnings press release (investor.uber.com)", "GoGoX HKEX filing (hkexnews.hk)", "Full Truck Alliance investor relations (ir.fulltruckalliance.com)"],
+      "confidence": "H",
+      "stages": [2],
+      "commercial_significance": "Public-company disclosures confirm structural financial fragility in digital freight platforms outside China, validated by the Convoy collapse case study. Shippers face concentration risk when selecting digital platform partners."
+    },
+    {
+      "rank": 4,
+      "finding": "SEA logistics infrastructure quality is measurably inferior to peer markets: World Bank LPI 2023 ranks Singapore 1st globally, Malaysia 31st, Thailand 37th, Indonesia 61st (down from 45th in 2018). Indonesia's decline in rank over five years is a primary-multilateral-confirmed signal of logistics system deterioration, not a trend artifact.",
+      "primary_sources": ["World Bank Logistics Performance Index 2023 (lpi.worldbank.org)"],
+      "confidence": "H",
+      "stages": [1],
+      "commercial_significance": "The LPI data provides a defensible, independent benchmark for the gap between SEA logistics maturity and the infrastructure assumed by North American-originated logistics risk management tools."
+    },
+    {
+      "rank": 5,
+      "finding": "Global marine cargo insurance market was $22.64B in gross written premium in 2024 (IUMI primary-association data); SEA country-level data available at primary level: Indonesia (AAUI) and Malaysia (PIAM) both publish country marine cargo GWP. The Vesttoo fraud case (fraudulent LoC collateral in a reinsurance sidecar structure) is documented via Artemis.bm and legal proceedings — a primary-level anchor for systemic counterparty risk in cargo insurance markets.",
+      "primary_sources": ["IUMI Statistics Committee (iumi.com)", "AAUI Indonesia (aaui.or.id)", "PIAM Malaysia (piam.org.my)", "Artemis.bm Vesttoo fraud documentation"],
+      "confidence": "H",
+      "stages": [6],
+      "commercial_significance": "Stage 6 has the strongest primary source mix in the corpus. The marine cargo market size, SEA country insurance data, and Vesttoo counterparty risk event are all defensible with primary sources."
+    }
+  ],
+
+  "three_top_questions_for_field_validation": [
+    {
+      "rank": 1,
+      "question": "What is the actual per-carrier manual vetting labor cost for a mid-size SEA 3PL, and what hourly rate applies to logistics coordinators in Singapore and Kuala Lumpur?",
+      "why_critical": "The SEA commercial opportunity in Stage 1 rests on the $24K-$216K annual vetting cost estimate (ASSUMED-2). This is the most commercially consequential ASSUMED tag in the corpus — it underlies the unit economics argument for the SEA carrier vetting tool opportunity. Without a primary labor cost anchor, the SEA pain-point economic case is unverifiable.",
+      "evidence_needed": "MOM Singapore Occupational Wage Statistics (logistics/operations coordinator role), DOSM Malaysia Salaries and Wages Survey, or a Mercer/Korn Ferry SEA Logistics Salary Benchmark for the relevant job family. One survey source is sufficient to replace the assumption.",
+      "stages_affected": [1]
+    },
+    {
+      "rank": 2,
+      "question": "What is the actual adoption rate of telematics-based underwriting among commercial trucking insurers in North America and SEA, and do insurers systematically request telematics data at policy renewal?",
+      "why_critical": "Three separate claims across Stages 3 and 6 rely on telematics-sharing statistics that originate from carrier management trade press or insurer marketing (88% of fleets have telematics; only 64% share it for underwriting; 79% say insurers never asked). These figures underpin the 'telematics as risk signal' thesis in Stage 6 and the 'data silos' framing in Stage 3. None has a named survey methodology or primary-association backing.",
+      "evidence_needed": "ATRI Fleet Technology Utilization Survey (published annually, covers telematics adoption rate and insurance-sharing practice); alternatively NPTC, TCA, or ATA surveys on telematics and insurance data sharing. For SEA: direct insurer interviews (Chubb, Tokio Marine, Allianz Commercial) on whether telematics data is solicited or accepted for commercial motor pricing.",
+      "stages_affected": [3, 6]
+    },
+    {
+      "rank": 3,
+      "question": "What is the universe of uninsured or underinsured small shippers globally, and is the 60-70% of global freight being under-insured a defensible market-sizing claim?",
+      "why_critical": "The 70 million uninsured shipper figure and the 60%+ uninsured freight estimate (Stage 6) are the headline market opportunity claims for the cargo insurance digitization thesis. Both originate from Loadsure's marketing materials and have no independent primary anchor. These figures are central to the commercial case for insurtech/parametric cargo insurance products in Stage 6.",
+      "evidence_needed": "ITC (International Trade Centre) SME Trade Finance reports; World Bank Global Findex for SME insurance penetration; ICC/SWIFT Trade Register for trade finance exposure and insurance take-up rates; UNCTAD World Investment Report; IUMI sub-data on cargo insurance penetration as a share of global trade value (IUMI is already cited in Stage 6 at H confidence — check whether IUMI publishes penetration estimates alongside GWP data).",
+      "stages_affected": [6]
+    }
+  ],
+
+  "final_gate_decision": "ship-with-flag",
+
+  "final_gate_threshold_applied": "53.2% Low-confidence claims — within the 30-70% ship-with-flag band",
+
+  "gate_reasoning": "The corpus of 568 scored claims across six stages produces 79 High (13.9%), 187 Medium (32.9%), and 302 Low (53.2%) confidence scores. The 53.2% Low rate places the full corpus firmly in the ship-with-flag band. All six individual stages also received ship-with-flag gate decisions. The corpus CANNOT be upgraded to ship-as-is because: (1) Stage 4 (In-transit visibility) has zero High-confidence claims and a 69.4% Low rate — it is one percentage point from the re-run threshold and contains a confirmed factual error (project44 revenue internal inconsistency). (2) Stage 3 contains a confirmed factual error (Nirvana Series D round size) that must be corrected before any external use. (3) The corpus's primary SEA commercial opportunity argument rests on three ASSUMED tags (SEA labor cost, ASEAN freight market size, SEA digital penetration rates) that remain unresolved after deep research. (4) The $500M-$700M fraud loss figure — the most-cited cross-stage cost claim — remains a single-vendor L-confidence estimate that should not anchor any commercial or investment conclusion. The corpus SHOULD be shipped for internal research orientation because: the High-confidence core is strong (TIA primary survey, Verisk CargoNet, World Bank LPI, public company SEC/HKEX filings, IUMI marine insurance statistics, TAPA/ReCAAP incident data) and correctly anchors the most material factual claims across the five strongest stages (1, 2, 3, 5, 6). Stage 5 and Stage 6 both have High-confidence claims exceeding 20% of their total, indicating credible primary-source coverage of the security and insurance domains. The research is structurally sound as a stage-by-stage value chain analysis; it is not suitable for direct client-facing citation without the flags and field validation items identified above.",
+
+  "ship_conditions": [
+    "MANDATORY before any external use: Correct Stage 3 Nirvana Series D factual error (change $100M/$1.5B to $80M/$830M per cited sources)",
+    "MANDATORY before any external use: Qualify project44 revenue inconsistency in Stage 4 — remove one of the two conflicting Latka estimates or label both explicitly as unaudited estimates with conflicting definitions",
+    "MANDATORY before commercial decision use: Field-validate the three ASSUMED tags identified as top residual weak claims (SEA vetting labor cost, ASEAN market size, SME uninsured baseline) with primary-source interviews or government statistical data",
+    "RECOMMENDED: Add ReCAAP ISC Annual Report 2025 URL to Stage 5 PP-40 — this upgrades a currently-uncitable primary source from L to H at no research cost",
+    "RECOMMENDED: Add FBI IC3 April 2026 PSA citation to Stage 1 and Stage 5 strategic theft claims — Stage 4 already carries this citation, and adding it to Stages 1 and 5 resolves XSI-4",
+    "RECOMMENDED: Standardize Indonesia fleet count to BPS 6,091,822 trucks (2023) across all stages and remove the 4M+ (Stage 1) and 23M (Stage 3 narrative) references"
+  ]
+}

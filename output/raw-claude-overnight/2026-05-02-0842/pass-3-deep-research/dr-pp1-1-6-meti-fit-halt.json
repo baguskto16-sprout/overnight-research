@@ -1,0 +1,54 @@
+{
+  "claim_id": "PP1.1-6",
+  "verdict": "REFINED",
+  "updated_claim": "Japan's METI, at its Procurement Price Calculation Committee meeting on January 17, 2025, announced the exclusion of large-scale general woody biomass power (10,000 kW / 10 MW or more) and all liquid biomass fuels (all scales) from the FIT and FIP schemes from FY2026 onward. This was formally confirmed in METI's official English-language press release dated March 21, 2025. The policy is NOT a blanket halt on all biomass: sub-10MW woody and agricultural biomass projects remain eligible for FIT/FIP support at ¥24/kWh. The practical effect for the 'demand-cliff' framing is real but scoped: it targets the large-scale imported-fuel plants (the primary consumers of Vietnam wood pellets and Indonesia PKS) that are 10MW+. No new FIT/FIP-supported large biomass plants will be approved from FY2026, eliminating the pipeline of subsidized demand that drove pellet and PKS export growth. The original claim's 'halt acceptance of new biomass FIT projects' language is slightly overbroad — the precise scope is large woody (10MW+) and all liquid biomass, not all biomass universally. The FY2026 cutoff and the policy's existence are confirmed.",
+  "sources_found": [
+    {
+      "url": "https://www.meti.go.jp/english/press/2025/0321_001.html",
+      "type": "primary",
+      "publication": "METI (Ministry of Economy, Trade and Industry) official English press release",
+      "date": "2025-03-21",
+      "key_quote": "Biomass power generation using general timber, etc., (10,000 kW or more) and biomass liquid fuel (all scales) will not be covered by the FIT/FIP schemes from FY2026."
+    },
+    {
+      "url": "https://japanenergyhub.com/news/large-biomass-fit-fip-discontinuation/",
+      "type": "secondary",
+      "publication": "Japan Energy Hub (specialist Japan energy policy tracker)",
+      "date": "2025-01 (reporting on Jan 17 committee meeting)",
+      "key_quote": "At the meeting of its Procurement Price Calculation Committee held on January 17, 2025, METI expressed its intention to discontinue the support of new large-scale woody biomass and all liquid biomass power plants through the FIT and FIP schemes from FY2026 onward."
+    },
+    {
+      "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2549219-japan-s-2025-26-fip-fit-small-biomass-price-unchanged",
+      "type": "secondary",
+      "publication": "Argus Media (specialist commodity trade press)",
+      "date": "2025-03 (FY2025-26 price announcement)",
+      "key_quote": "METI maintained the FiP and FiT price for small biomass projects at ¥24/kWh for April 2025-March 2026; applies to projects using general woody and agricultural biomass with less than 10MW capacity — confirming the sub-10MW carve-out while large biomass is excluded."
+    },
+    {
+      "url": "https://www.meti.go.jp/shingikai/santeii/pdf/092_02_00.pdf",
+      "type": "primary",
+      "publication": "METI Agency for Natural Resources and Energy — Santeii (Procurement Price Calculation Committee) working document on biomass power, January 2024 precursor document",
+      "date": "2024-01",
+      "key_quote": "Japanese-language METI committee document — confirms large biomass (10,000 kW+) on agenda for FIT/FIP phase-out; cited in Japan Energy Hub's January 2025 coverage as background to the FY2026 decision."
+    }
+  ],
+  "confidence_after": "high",
+  "research_notes": {
+    "primary_source_confirmed": true,
+    "exact_meti_press_release_date": "2025-03-21",
+    "committee_meeting_announcing_intent": "2025-01-17",
+    "scope_refinement": "NOT all biomass — specifically large woody (10MW+) and all liquid biomass. Sub-10MW woody/agricultural biomass continues under FIT/FIP at ¥24/kWh.",
+    "demand_cliff_validity": "Valid for the relevant import-fuel category: large-scale biomass plants (10MW+) are the primary importers of Vietnam wood pellets and Indonesia PKS. The subsidy pipeline for new such plants ends FY2026.",
+    "additional_context": "METI had not approved any new large biomass FIT/FIP projects since 2017 in practice; Jan 2025 announcement formally codifies this into regulation. Tender capacity for large biomass being reduced from 120MW to 30MW.",
+    "searches_performed": [
+      "METI Japan biomass FIT halt new applications FY2026 site:meti.go.jp",
+      "Japan METI biomass FIT suspension new projects 2025 announcement",
+      "METI Japan biomass FIT FIP exclude FY2026 10MW 10000 kW woody biomass liquid biomass 2025",
+      "Argus biomass Japan FIT FIP 2026 large woody biomass exclusion METI January 2025",
+      "Japan biomass FIT halt palm kernel shells wood pellets Vietnam Indonesia demand 2025 2026",
+      "METI procurement price calculation committee biomass FIT FIP exclude FY2026 January 2025",
+      "biomass power generation general timber 10000 kW not be covered FIT FIP FY2026 METI 2025",
+      "Japan Energy Hub METI large biomass FIT FIP FY2026 discontinuation January 2025"
+    ]
+  }
+}

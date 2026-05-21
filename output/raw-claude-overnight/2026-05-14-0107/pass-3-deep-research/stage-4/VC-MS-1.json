@@ -1,0 +1,27 @@
+{
+  "claim_id": "VC-MS-1",
+  "outcome": "contradicted",
+  "new_confidence": "L",
+  "refined_claim_text": "The global RTTVP market was projected by Gartner (in 2021) to reach approximately $1B by 2024, up from ~$300M in 2020 — a ~4x decade-scale growth story. The $3.2B–$4.2B range currently cited appears in secondary aggregator reports (DataIntelo, MarketIntelo) with undisclosed methodology and cannot be attributed to any primary research firm. Berg Insight published 'Real-Time Transportation Visibility Platforms — 1st Edition' (July 2024), but market-size figures are gated behind a paid subscription and no dollar figure was publicly disclosed. No IDC, Frost & Sullivan, or ABI Research figure for this specific market was located. Use 'approx. $1B (Gartner 2021 projection for 2024)' as the defensible anchor, or replace with [ASSUMED-N] pending Berg Insight report purchase.",
+  "primary_sources_found": [
+    {
+      "url": "https://www.freightwaves.com/news/what-gartners-new-magic-quadrant-tells-us-about-the-real-time-visibility-market",
+      "title": "What Gartner's new Magic Quadrant tells us about the real-time visibility market",
+      "publisher": "FreightWaves (citing Gartner analyst Bart De Muynck)",
+      "primary_category": "primary-research-firm-cited-secondary",
+      "exact_quote": "Gartner projects the real-time visibility market will reach $1 billion by 2024 [from close to $300 million in 2020]",
+      "note": "Article published April 16 2021; cites Gartner Magic Quadrant for RTTVP. Gartner's own MQ page (gartner.com/en/documents/5298863) is paywalled; this is a credible editorial citation of Gartner's figure, not the primary document itself.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://media.berginsight.com/2024/07/19182135/bi-visibility1-ps.pdf",
+      "title": "Real-Time Transportation Visibility Platforms — 1st Edition (product sample)",
+      "publisher": "Berg Insight AB",
+      "primary_category": "primary-research-firm",
+      "exact_quote": "Real-Time Transportation Visibility Platforms covers various solutions offering visibility functionality for the transport sector. This research note from Berg Insight provides you with 25 pages of business intelligence including an overview of the leading players in the transportation visibility space. [Published July 2024, author Rickard Andersson]",
+      "note": "This is the public product brochure/sample — no market-size dollar figure is disclosed. Full report costs €300–€500. Confirms Berg Insight covers this market but does not corroborate or contradict the $3.2B–$4.2B range.",
+      "via_pdf_markitdown": true
+    }
+  ],
+  "notes": "CONTRADICTING EVIDENCE: The only attributable primary-firm figure for the RTTVP market is Gartner's own projection (cited in FreightWaves, April 2021) of approximately $1B by 2024, grown from ~$300M in 2020. This is roughly 3–4x smaller than the $3.2B–$4.2B range in the current claim. The $3.2B and $4.2B figures appear exclusively in secondary aggregator reports (DataIntelo, MarketIntelo, OpenPR/Valuates) that share no disclosed methodology and are widely cross-cited from each other, suggesting a single undisclosed originating model. Berg Insight's July 2024 report ('Real-Time Transportation Visibility Platforms — 1st Edition', author Rickard Andersson) is the most credible specialist source for this category; however the public sample PDF contains no market-size figures — the full report is gated (€300–€500). Searches across IDC, ABI Research, and Frost & Sullivan returned no attributable RTTVP-specific market-size figures. The Gartner Magic Quadrant (March 2024, document 5298863) is paywalled and no market-size figure leaked into public press releases from participating vendors. RECOMMENDATION: (1) Replace the $3.2B–$4.2B claim with the Gartner-attributed ~$1B figure as the defensible lower-bound anchor (citing the FreightWaves/Gartner 2021 source and noting it is a 2021 projection), OR (2) mark as [ASSUMED-N] and note that a Berg Insight report purchase would resolve the gap, OR (3) note the RTTVP category is sub-scale relative to the broader supply-chain visibility / TMS market, and reframe the market sizing accordingly. Do not retain the $3.2B–$4.2B range without a primary-firm citation."
+}

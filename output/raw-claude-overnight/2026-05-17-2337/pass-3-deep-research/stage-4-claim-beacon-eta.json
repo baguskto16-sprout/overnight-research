@@ -1,0 +1,34 @@
+{
+  "claim_id": "VC4-PP3-Beacon-ETA-2025",
+  "outcome": "found-stronger-evidence",
+  "new_score": "Medium",
+  "replacement_or_supplementary_sources": [
+    {
+      "publisher": "Sea-Intelligence",
+      "title": "Global schedule reliability improves to 64.1% in November 2025",
+      "url": "https://www.sea-intelligence.com/press-room/364-global-schedule-reliability-improves-to-64-1-in-november-2025",
+      "date": "2025-12",
+      "what_it_supports": "Independent monthly schedule reliability tracking: Nov 2025 global on-time rate 64.1% (+9.5pp YoY); average delay for late arrivals 4.88 days. Full-year 2025 range ~62–68% (above 2024's ~50–55%). 34 trade lanes, 60+ carriers, 12,000+ vessel arrivals/month.",
+      "tier": "primary_specialist"
+    },
+    {
+      "publisher": "Xeneta",
+      "title": "Schedule Reliability Scorecard — 2025 Year in Review (Global)",
+      "url": "https://www.xeneta.com/news/xeneta-schedule-reliability-scorecard-2025-year-in-review-global",
+      "date": "2026-01",
+      "what_it_supports": "Global on-time rose from 30% (2024) to 34% (2025), 13% YoY improvement. Q1 2025 worst (-5.3 days avg delay); Q2–Q4 recovered to -3.7 days. ±1 calendar day vs proforma. 200+ operators, 25,000+ port pairs.",
+      "tier": "primary_specialist"
+    },
+    {
+      "publisher": "Xeneta",
+      "title": "Schedule Reliability — Methodology Documentation",
+      "url": "https://help.xeneta.com/docs/schedule-reliability",
+      "date": "2025",
+      "what_it_supports": "Confirms ±1 calendar day vs proforma ETA definition — methodologically distinct from Beacon's ±12-hour RTTVP-ETA window.",
+      "tier": "primary_specialist"
+    }
+  ],
+  "revised_claim_text": "Ocean freight schedule reliability improved year-on-year in 2025 but remained challenged: Sea-Intelligence tracked global on-time performance at 62–68% across 2025 (vs ~50–55% in 2024), measured as vessel arrivals against carrier published schedules (60+ carriers, 12,000+ arrivals/month). Xeneta's full-year data shows 34% of global voyages on-time in 2025 (up from 30% in 2024, ±1 calendar day vs proforma), avg delay 3.7–5.3 days. Separately, a Beacon platform analysis (n=27,613 shipments) reports only 13.9% of shipments arrived within ±12 hours of dynamic RTTVP ETA in 2025 (vs 36.0% in 2024) — this uses a tighter window against continuously revised ETAs and is a stricter, methodologically distinct measure from industry-standard schedule reliability indices.",
+  "footnote_for_artifact": "Sea-Intelligence Global Liner Performance monthly reports, 2025 (sea-intelligence.com/press-room). Xeneta Schedule Reliability Scorecard — 2025 Year in Review, January 2026 (xeneta.com/news). Methodology note: Sea-Intelligence and Xeneta measure ±1 calendar day vs proforma carrier ETA; Beacon (beacon.com/resources/how-accurate-were-etas-in-2025) uses ±12-hour window vs dynamic RTTVP ETA — not directly comparable.",
+  "notes": "Sea-Intelligence and Xeneta (two independent primary specialists) both contradict Beacon's narrative of sharp deterioration: 2025 was actually better than 2024 by both industry-standard measures. Beacon's figure isn't wrong, it's measuring a different thing (stricter window, dynamic ETA baseline). Retain only if methodology is explicitly disclosed; prefer Sea-Intelligence/Xeneta as the headline reliability benchmark. Upgrade Low → Medium for the Beacon claim (because the platform-specific data is genuine, just narrow); High for the new Sea-Intelligence/Xeneta benchmarks."
+}

@@ -1,0 +1,1511 @@
+{
+  "stage": 4,
+  "stage_name": "In-transit visibility & cargo IoT",
+  "files_validated": [
+    "pass-1-drafts/stage-4-value-chain.md",
+    "pass-1-drafts/stage-4-pain-points.md"
+  ],
+  "total_claims": 121,
+  "by_confidence": {
+    "H": 0,
+    "M": 37,
+    "L": 84
+  },
+  "score_pct": {
+    "H": "0%",
+    "M": "30.6%",
+    "L": "69.4%"
+  },
+  "unique_source_domains": 68,
+  "unique_source_urls": 97,
+  "domain_diversity_list": [
+    "project44.com",
+    "getlatka.com",
+    "generationim.com",
+    "freightwaves.com",
+    "prnewswire.com",
+    "fourkites.com",
+    "shippeo.com",
+    "tech.eu",
+    "supplychainit.com",
+    "railwayage.com",
+    "descartes.com",
+    "over-haul.com",
+    "blumeglobal.com",
+    "prnewswire.in",
+    "globenewswire.com",
+    "marketsandmarkets.com",
+    "controlant.com",
+    "blog.orbcomm.com",
+    "logmore.com",
+    "hapag-lloyd.com",
+    "openpr.com",
+    "reports.valuates.com",
+    "intellitrans.com",
+    "straitsresearch.com",
+    "polarismarketresearch.com",
+    "berginsight.com",
+    "mordorintelligence.com",
+    "researchandmarkets.com",
+    "macropoint.com",
+    "gcca.org",
+    "blogs.tradlinx.com",
+    "verisk.com",
+    "marketintelo.com",
+    "navixy.com",
+    "info.publicintelligence.net",
+    "travelers.com",
+    "burnsandwilcox.com",
+    "haulerhub.com",
+    "wiserlogtech.com",
+    "sensos.io",
+    "pmc.ncbi.nlm.nih.gov",
+    "sensitech.com",
+    "tive.com",
+    "techcrunch.com",
+    "iotbusinessnews.com",
+    "telematicswire.net",
+    "parsyl.com",
+    "ajot.com",
+    "pharmanow.live",
+    "foodlogistics.com",
+    "zigpoll.com",
+    "insurancebusinessmag.com",
+    "cdmoworld.com",
+    "iotm2mcouncil.org",
+    "reportlinker.com",
+    "statista.com",
+    "vizionapi.com",
+    "sciencedirect.com",
+    "cxtms.com",
+    "strategictracking.com",
+    "ttclub.com",
+    "research.oz.spotlightar.com",
+    "futuremarketinsights.com",
+    "wakeo.co",
+    "iata.org",
+    "who.int",
+    "roambee.com"
+  ],
+  "source_category_counts": {
+    "primary-gov": 1,
+    "primary-multilateral": 1,
+    "primary-ministry": 0,
+    "primary-association": 2,
+    "primary-academic": 2,
+    "primary-standards": 0,
+    "primary-research-firm": 2,
+    "secondary-trade": 22,
+    "secondary-news": 0,
+    "secondary-market-research": 14,
+    "secondary-vendor": 20
+  },
+  "claims": [
+    {
+      "id": "VC-1",
+      "file": "stage-4-value-chain.md",
+      "claim": "Gartner published first RTTVP Magic Quadrant in 2020; 2024 MQ covers seven evaluated vendors",
+      "sources": ["https://www.project44.com/press-releases/project44-named-a-leader-in-the-2024-gartner-magic-quadrant-for-real-time-transportation-visibility-platforms-for-fourth-consecutive-year/"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "single-vendor-press-release citing paywalled primary; Gartner MQ not directly accessed",
+      "note": "Gartner MQ is primary but only available via vendor PR. Cannot confirm seven vendors figure independently."
+    },
+    {
+      "id": "VC-2",
+      "file": "stage-4-value-chain.md",
+      "claim": "project44 carrier network: 240,000+ global carriers; 760+ ELD/telematics integrations; SLA covers 90% of contracted TL carriers in North America and Europe within 30 days",
+      "sources": [
+        "https://www.project44.com/press-releases/project44-concludes-strong-fy-2024-with-over-30-year-over-year-growth-in-both-software-as-a-service-and-total-gaap-revenue/",
+        "https://www.project44.com/press-releases/project44-introduces-first-ever-carrier-onboarding-sla-to-accelerate-visibility-results-for-shippers/"
+      ],
+      "source_categories": ["secondary-vendor", "secondary-vendor"],
+      "score": "M",
+      "override": "single-vendor-domain; two press releases from same vendor",
+      "note": "Company-disclosed own network metrics get Medium per rubric. Two vendor press releases both confirming, but same domain. 240,000 carrier figure and SLA terms are company's own published commitments."
+    },
+    {
+      "id": "VC-3",
+      "file": "stage-4-value-chain.md",
+      "claim": "project44 FY2024 revenue estimated ~$210M; >30% YoY growth in SaaS and total GAAP revenue",
+      "sources": [
+        "https://www.project44.com/press-releases/project44-concludes-strong-fy-2024-with-over-30-year-over-year-growth-in-both-software-as-a-service-and-total-gaap-revenue/",
+        "https://getlatka.com/companies/project44"
+      ],
+      "source_categories": ["secondary-vendor", "secondary-market-research"],
+      "score": "M",
+      "override": "none",
+      "note": "30%+ growth is company-disclosed via PR; ~$210M is Latka estimate (unaudited). Two independent sources but Latka is unaudited commercial estimator. No audit or SEC-equivalent filing. Conflicting note: PP4.1 cites $175M ARR from same Latka source — internal inconsistency flagged."
+    },
+    {
+      "id": "VC-4",
+      "file": "stage-4-value-chain.md",
+      "claim": "project44 customer count: 1,000+ leading brands (company-disclosed); 550 customers per third-party",
+      "sources": [
+        "https://www.project44.com/press-releases/project44-concludes-strong-fy-2024-with-over-30-year-over-year-growth-in-both-software-as-a-service-and-total-gaap-revenue/",
+        "https://getlatka.com/companies/project44"
+      ],
+      "source_categories": ["secondary-vendor", "secondary-market-research"],
+      "score": "M",
+      "override": "none",
+      "note": "Figures conflict (1,000+ vs 550), indicating at least one is inaccurate. Not upgraded to High due to conflicting figures. Latka definition of 'customer' may differ from vendor definition."
+    },
+    {
+      "id": "VC-5",
+      "file": "stage-4-value-chain.md",
+      "claim": "project44 total raised $912M across 8 rounds; last disclosed valuation $2.7B (Nov 2022, Series G, Generation Investment)",
+      "sources": ["https://www.generationim.com/our-thinking/news/project44-raises-80-million-valuing-company-at-27-billion-up-12-from-january-despite-widespread-downturn-in-b2b-saas-valuations/"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": "none",
+      "note": "Named investor (Generation Investment) press release for a specific, verifiable funding round. Own-metric class claim. Valuation is from 2022 — outdated for current valuation but accurate for the stated 'last disclosed' qualifier."
+    },
+    {
+      "id": "VC-6",
+      "file": "stage-4-value-chain.md",
+      "claim": "project44 2024 Gartner MQ: Leader for fourth consecutive year; highest on Ability to Execute and Completeness of Vision",
+      "sources": [
+        "https://www.project44.com/press-releases/project44-named-a-leader-in-the-2024-gartner-magic-quadrant-for-real-time-transportation-visibility-platforms-for-fourth-consecutive-year/",
+        "https://www.shippeo.com/press-releases/shippeo-named-a-leader-in-the-2024-gartner-magic-quadrant-for-real-time-transportation-visibility-platforms"
+      ],
+      "source_categories": ["secondary-vendor", "secondary-vendor"],
+      "score": "L",
+      "override": "paywalled-primary-via-vendor-PR",
+      "note": "Both sources are vendor PRs citing the same paywalled Gartner report. 'Highest on Ability to Execute' is project44's own claim about its quadrant position — this specific placement detail is unverifiable without the Gartner primary. Two vendor PRs from different vendors confirm Leader status, which partially corroborates, but the 'highest' claim is unverified. Gartner MQ paywalled."
+    },
+    {
+      "id": "VC-7",
+      "file": "stage-4-value-chain.md",
+      "claim": "project44 Q3 2025: 40%+ new ARR growth; operational cash flow breakeven",
+      "sources": ["https://www.freightwaves.com/news/project44-achieves-cash-flow-breakeven-40-arr-growth-in-q3-2025"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "single-trade-publication",
+      "note": "FreightWaves is trade press. Single source. Company-claimed financials reported via trade press."
+    },
+    {
+      "id": "VC-8",
+      "file": "stage-4-value-chain.md",
+      "claim": "project44 added 8+ million vehicles in China OTR expansion",
+      "sources": ["https://www.project44.com/press-releases/project44-concludes-strong-fy-2024-with-over-30-year-over-year-growth-in-both-software-as-a-service-and-total-gaap-revenue/"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "single-vendor-press-release",
+      "note": "Single vendor PR for a specific network metric. Unverifiable independently."
+    },
+    {
+      "id": "VC-9",
+      "file": "stage-4-value-chain.md",
+      "claim": "FourKites revenue estimated ~$114M (2024)",
+      "sources": ["https://getlatka.com/companies/fourkites-inc"],
+      "source_categories": ["secondary-market-research"],
+      "score": "L",
+      "override": "single-commercial-estimator",
+      "note": "Latka is an unaudited commercial estimator. Single source. FourKites is private; no audited financials available."
+    },
+    {
+      "id": "VC-10",
+      "file": "stage-4-value-chain.md",
+      "claim": "FourKites total funding $292M; last valuation ~$1B (Series D, 2022)",
+      "sources": ["https://www.fourkites.com/press/fourkites-raises-100m-for-supply-chain-visibility/"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": "none",
+      "note": "Company's own press release for its own funding round. Own-metric class. FourKites is private so this is the authoritative source for its own raise."
+    },
+    {
+      "id": "VC-11",
+      "file": "stage-4-value-chain.md",
+      "claim": "FourKites 2024 Gartner MQ: Leader",
+      "sources": [
+        "https://www.project44.com/press-releases/project44-named-a-leader-in-the-2024-gartner-magic-quadrant-for-real-time-transportation-visibility-platforms-for-fourth-consecutive-year/",
+        "https://www.freightwaves.com/news/freighttech-friday-gartner-critiques-real-time-visibility-market-players"
+      ],
+      "source_categories": ["secondary-vendor", "secondary-trade"],
+      "score": "L",
+      "override": "paywalled-primary-via-vendor-PR-and-trade-press",
+      "note": "Gartner MQ not directly accessed. Two secondary sources (competitor vendor PR + trade press) confirm FourKites as Leader. Upgraded from pure-L given two different sources confirm — borderline."
+    },
+    {
+      "id": "VC-12",
+      "file": "stage-4-value-chain.md",
+      "claim": "FourKites 1.1M carriers and suppliers globally; processes 3.2M+ events/day; 200+ territories",
+      "sources": ["https://www.fourkites.com/carrier-faq/"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "single-vendor-source",
+      "note": "FourKites FAQ page. Single vendor source for own network metrics."
+    },
+    {
+      "id": "VC-13",
+      "file": "stage-4-value-chain.md",
+      "claim": "FourKites revenue growth slowed in 2023-2024; customer service scores declined (Gartner 2024 critique)",
+      "sources": ["https://www.freightwaves.com/news/freighttech-friday-gartner-critiques-real-time-visibility-market-players"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "single-trade-source citing paywalled Gartner critique",
+      "note": "FreightWaves article about Gartner critique; underlying Gartner text not directly cited. Single trade source."
+    },
+    {
+      "id": "VC-14",
+      "file": "stage-4-value-chain.md",
+      "claim": "[ASSUMED-1] FourKites remains independent as of May 2026; Lineage Logistics acquisition not confirmed",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "ASSUMED-tag-automatic-L",
+      "note": "Drafter correctly flagged this as assumed and unvalidated. No acquisition announcement found."
+    },
+    {
+      "id": "VC-15",
+      "file": "stage-4-value-chain.md",
+      "claim": "Shippeo FY2024 revenue ~$22.3M",
+      "sources": ["https://getlatka.com/companies/shippeo"],
+      "source_categories": ["secondary-market-research"],
+      "score": "L",
+      "override": "single-commercial-estimator",
+      "note": "Latka unaudited estimate. Shippeo is private."
+    },
+    {
+      "id": "VC-16",
+      "file": "stage-4-value-chain.md",
+      "claim": "Shippeo total funding >$140M; latest $30M Series D-II (Jan 2025) led by Woven Capital (Toyota's fund)",
+      "sources": ["https://www.shippeo.com/press-releases/shippeo-raises-30m-strategic-round-led-by-woven-capital-to-accelerate-us-and-apac-expansion"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": "none",
+      "note": "Company's own press release for own named funding round. Own-metric class. Named investor (Woven Capital/Toyota) adds verifiability."
+    },
+    {
+      "id": "VC-17",
+      "file": "stage-4-value-chain.md",
+      "claim": "Shippeo customer count: ~50 enterprise accounts (data source) vs company claim of 150+ global enterprise clients",
+      "sources": [
+        "https://www.shippeo.com/press-releases/shippeo-raises-30m-strategic-round-led-by-woven-capital-to-accelerate-us-and-apac-expansion",
+        "https://getlatka.com/companies/shippeo"
+      ],
+      "source_categories": ["secondary-vendor", "secondary-market-research"],
+      "score": "L",
+      "override": "conflicting-figures-between-sources",
+      "note": "50 vs 150+ is a 3x discrepancy. Conflicting figures from vendor PR and Latka. Both sources are unreliable: vendor PR inflates; Latka applies own methodology. Neither verifiable independently."
+    },
+    {
+      "id": "VC-18",
+      "file": "stage-4-value-chain.md",
+      "claim": "Shippeo APAC growth: +53% customer growth YoY; +64% shipments tracked",
+      "sources": ["https://www.shippeo.com/press-releases/shippeo-raises-30m-strategic-round-led-by-woven-capital-to-accelerate-us-and-apac-expansion"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "single-vendor-press-release for performance metrics",
+      "note": "Company's own growth metrics in a fundraising press release. Single source; no independent verification."
+    },
+    {
+      "id": "VC-19",
+      "file": "stage-4-value-chain.md",
+      "claim": "Shippeo 28M+ shipments tracked annually across 92 countries",
+      "sources": ["https://www.shippeo.com/press-releases/shippeo-raises-30m-strategic-round-led-by-woven-capital-to-accelerate-us-and-apac-expansion"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "single-vendor-press-release",
+      "note": "Single vendor press release. Company-claimed metric."
+    },
+    {
+      "id": "VC-20",
+      "file": "stage-4-value-chain.md",
+      "claim": "Shippeo 2024 Gartner MQ: Leader; highest customer recommendation rate on Gartner Peer Insights for four consecutive years",
+      "sources": [
+        "https://www.project44.com/press-releases/project44-named-a-leader-in-the-2024-gartner-magic-quadrant-for-real-time-transportation-visibility-platforms-for-fourth-consecutive-year/",
+        "https://www.shippeo.com/press-releases/shippeo-named-a-leader-in-the-2024-gartner-magic-quadrant-for-real-time-transportation-visibility-platforms"
+      ],
+      "source_categories": ["secondary-vendor", "secondary-vendor"],
+      "score": "L",
+      "override": "paywalled-primary-via-vendor-PRs",
+      "note": "Two vendor PRs (from different vendors) confirm Shippeo as Leader — this corroboration is worth noting. However the 'highest customer recommendation rate' specific claim is only in Shippeo's own PR. Gartner Peer Insights rating is verifiable on the Gartner Peer Insights public website, which is not cited."
+    },
+    {
+      "id": "VC-21",
+      "file": "stage-4-value-chain.md",
+      "claim": "Wakeo total raised ~$32.7M; last round €18M Series B (Dec 2023), led by Statkraft Ventures",
+      "sources": ["https://tech.eu/2023/12/04/wakeo-raises-18m-for-supply-chain-visibility-and-sustainability/"],
+      "source_categories": ["secondary-trade"],
+      "score": "M",
+      "override": "none",
+      "note": "European tech press (tech.eu) covering verifiable funding round with named investor. Date-specific and verifiable via Statkraft Ventures portfolio disclosures."
+    },
+    {
+      "id": "VC-22",
+      "file": "stage-4-value-chain.md",
+      "claim": "Wakeo customers include Air Liquide, Michelin, Acer, Faurecia, Chryso; operates 180+ countries",
+      "sources": ["https://tech.eu/2023/12/04/wakeo-raises-18m-for-supply-chain-visibility-and-sustainability/"],
+      "source_categories": ["secondary-trade"],
+      "score": "M",
+      "override": "none",
+      "note": "Named enterprise customers reported by European tech press at funding announcement. Named customers are individually verifiable. Single source but named/verifiable facts."
+    },
+    {
+      "id": "VC-23",
+      "file": "stage-4-value-chain.md",
+      "claim": "[ASSUMED-2] Wakeo has indirect SEA ocean freight coverage via API integrations but no direct SEA commercial presence",
+      "sources": ["https://tech.eu/2023/12/04/wakeo-raises-18m-for-supply-chain-visibility-and-sustainability/"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "ASSUMED-tag-automatic-L",
+      "note": "Drafter flagged as assumed. Wakeo office presence unverified."
+    },
+    {
+      "id": "VC-24",
+      "file": "stage-4-value-chain.md",
+      "claim": "Trimble acquired Transporeon in 2023 for ~$1.9B; Trimble Transportation revenue ~$1.5B combined",
+      "sources": ["https://www.railwayage.com/intermodal/wisetech-global-acquires-blume-global/"],
+      "source_categories": ["secondary-trade"],
+      "score": "M",
+      "override": "none",
+      "note": "Acquisition by publicly-listed Trimble (NASDAQ: TRMB) is a material corporate event verifiable via SEC filings. Trade press coverage. $1.9B figure is consistent with public reporting. The revenue figure is less precise but directionally supported by Trimble's public reporting."
+    },
+    {
+      "id": "VC-25",
+      "file": "stage-4-value-chain.md",
+      "claim": "Transporeon network: 145,000 carriers, 1,300 shippers, 100+ large retailers; monitors €500M+ goods in real-time daily; 40+ countries",
+      "sources": ["https://www.supplychainit.com/transporeon-and-sixfold-join-forces-to-build-the-most-powerful-real-time-visibility-network-in-the-world/"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "single-trade-source for vendor-sourced network metrics",
+      "note": "Trade press article relaying vendor's own figures. Single source. '€500M+ goods daily' is an unverifiable vendor claim relayed via trade press."
+    },
+    {
+      "id": "VC-26",
+      "file": "stage-4-value-chain.md",
+      "claim": "Descartes Systems (NASDAQ: DSGX) FY2025 revenue ~$634M; MacroPoint is one of several SaaS products",
+      "sources": ["https://www.railwayage.com/intermodal/wisetech-global-acquires-blume-global/"],
+      "source_categories": ["secondary-trade"],
+      "score": "M",
+      "override": "none",
+      "note": "Descartes is publicly listed (NASDAQ: DSGX); revenue is reportable via SEC filings. However the citation source (Railway Age article about WiseTech/Blume) does not appear to be the correct source for Descartes financials — the footnote (16) is the WiseTech/Blume article. Mismatch between cited source and claimed fact. Revenue is verifiable via 10-K but not correctly cited here. Upgraded to M because the underlying fact is verifiable for a public company."
+    },
+    {
+      "id": "VC-27",
+      "file": "stage-4-value-chain.md",
+      "claim": "Descartes MacroPoint: 216,000+ carrier coverage; FraudGuard capability launched 2024",
+      "sources": ["https://www.descartes.com/resources/news/new-descartes-macropoint-capabilities-help-combat-fraud-transportation-and-logistics"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": "none",
+      "note": "Company's own press release for its own product launch and network size. Own-metric class. Descartes is public, adding credibility to its own disclosures."
+    },
+    {
+      "id": "VC-28",
+      "file": "stage-4-value-chain.md",
+      "claim": "Overhaul total raised ~$260M ($55M Jan 2025 + $105M Series C Aug 2025)",
+      "sources": [
+        "https://www.prnewswire.com/news-releases/overhaul-secures-105-million-series-c-to-drive-platform-innovation-and-expansion-302533989.html",
+        "https://www.prnewswire.com/news-releases/a-new-era-of-supply-chain-transparency-begins-overhaul-acquires-freightverify-302533020.html"
+      ],
+      "source_categories": ["secondary-vendor", "secondary-vendor"],
+      "score": "M",
+      "override": "none",
+      "note": "Two official press releases (prnewswire — company-issued) for two separate named funding rounds. Own-metric class. Named investors (Springcoast Partners, Edison Partners) add verifiability."
+    },
+    {
+      "id": "VC-29",
+      "file": "stage-4-value-chain.md",
+      "claim": "Overhaul ~350 customers including Microsoft, Dyson, Bristol Myers Squibb, CEVA Logistics, Arvato",
+      "sources": ["https://www.prnewswire.com/news-releases/overhaul-secures-105-million-series-c-to-drive-platform-innovation-and-expansion-302533989.html"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "single-vendor-press-release",
+      "note": "Single vendor press release. Named customers are individually verifiable in principle but 350 total count is unaudited."
+    },
+    {
+      "id": "VC-30",
+      "file": "stage-4-value-chain.md",
+      "claim": "Overhaul safeguards >$1.4T in cargo trade; 99.9% shipment protection rate (company-claimed)",
+      "sources": ["https://www.prnewswire.com/news-releases/overhaul-secures-105-million-series-c-to-drive-platform-innovation-and-expansion-302533989.html"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "single-vendor-press-release; company-claimed metric explicitly flagged in draft",
+      "note": "Drafter correctly flagged 'company-claimed.' $1.4T cargo and 99.9% rate are marketing claims unverifiable externally."
+    },
+    {
+      "id": "VC-31",
+      "file": "stage-4-value-chain.md",
+      "claim": "Overhaul 2024 Gartner MQ: Challenger",
+      "sources": ["https://www.project44.com/press-releases/project44-named-a-leader-in-the-2024-gartner-magic-quadrant-for-real-time-transportation-visibility-platforms-for-fourth-consecutive-year/"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "paywalled-primary-via-single-vendor-PR",
+      "note": "Only cited from competitor vendor's press release. Overhaul's own press releases not cited to confirm this quadrant placement."
+    },
+    {
+      "id": "VC-32",
+      "file": "stage-4-value-chain.md",
+      "claim": "Overhaul acquired FreightVerify in Aug 2025; adds 6 of top-10 automotive manufacturers to roster",
+      "sources": [
+        "https://www.prnewswire.com/news-releases/overhaul-secures-105-million-series-c-to-drive-platform-innovation-and-expansion-302533989.html",
+        "https://www.prnewswire.com/news-releases/a-new-era-of-supply-chain-transparency-begins-overhaul-acquires-freightverify-302533020.html"
+      ],
+      "source_categories": ["secondary-vendor", "secondary-vendor"],
+      "score": "M",
+      "override": "none",
+      "note": "Two official press releases from Overhaul confirming the acquisition. Named corporate event. '6 of top-10 automotive manufacturers' is company-claimed in its own PR — credible enough for M."
+    },
+    {
+      "id": "VC-33",
+      "file": "stage-4-value-chain.md",
+      "claim": "[ASSUMED-3] Overhaul has some APAC pharma/tech deployments; no confirmed direct SEA commercial team",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "ASSUMED-tag-automatic-L",
+      "note": "Drafter flagged as assumed."
+    },
+    {
+      "id": "VC-34",
+      "file": "stage-4-value-chain.md",
+      "claim": "WiseTech acquired Blume Global in Feb 2023 for $414M; Blume FY2024 revenue forecast ~$65-70M (growing 45-55% post-acquisition)",
+      "sources": ["https://www.blumeglobal.com/newsroom/blume-global-now-runs-logistics-operating-platform-natively-google-cloud/"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": "none",
+      "note": "WiseTech Global (ASX: WTC) is publicly listed; $414M acquisition is a material ASX-disclosed event. Vendor newsroom is not the ideal citation — WiseTech ASX announcement would be primary — but the facts are verifiable. Revenue forecast of $65-70M is speculative/internal estimate."
+    },
+    {
+      "id": "VC-35",
+      "file": "stage-4-value-chain.md",
+      "claim": "GoComet FY2024 revenue SGD 3.65M (~$2.7M USD); raised $7M Series A; 230+ employees; 230+ enterprise customers; Singapore office; Philippines ~20% of SEA portfolio",
+      "sources": ["https://www.prnewswire.com/in/news-releases/gocomet-raises-7-million-series-a-funding-872253680.html"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "single-vendor-press-release for multiple specific metrics",
+      "note": "Single GoComet funding press release. Revenue figure (SGD 3.65M) and Philippines portfolio percentage are highly specific claims from a single vendor PR without independent corroboration."
+    },
+    {
+      "id": "VC-36",
+      "file": "stage-4-value-chain.md",
+      "claim": "Tive Series C: $40M (Jan 2025) led by WiL and Sageview Capital; total raised $120M",
+      "sources": ["https://www.globenewswire.com/news-release/2025/01/23/3014338/0/en/Tive-Secures-40-Million-in-Series-C-Funding-Led-by-WiL-Sageview-Capital.html"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": "none",
+      "note": "GlobeNewswire is a professional wire service. Named investors (WiL, Sageview Capital) and specific round amount. Own-metric class for own funding. Verifiable via investor portfolio disclosures."
+    },
+    {
+      "id": "VC-37",
+      "file": "stage-4-value-chain.md",
+      "claim": "Tive 60% YoY revenue growth H1 2024; 64% growth in tracker shipments H1 2024",
+      "sources": ["https://www.globenewswire.com/news-release/2024/07/30/2920922/0/en/Tive-Celebrates-60-Year-over-Year-Revenue-Growth.html"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "single-vendor-press-release for growth metrics",
+      "note": "Single vendor press release for growth rates. Tive is private; no audited verification available."
+    },
+    {
+      "id": "VC-38",
+      "file": "stage-4-value-chain.md",
+      "claim": "Tive 900+ customers; 350+ new customers added in 2024",
+      "sources": [
+        "https://www.globenewswire.com/news-release/2025/01/23/3014338/0/en/Tive-Secures-40-Million-in-Series-C-Funding-Led-by-WiL-Sageview-Capital.html",
+        "https://www.globenewswire.com/news-release/2024/07/30/2920922/0/en/Tive-Celebrates-60-Year-over-Year-Revenue-Growth.html"
+      ],
+      "source_categories": ["secondary-vendor", "secondary-vendor"],
+      "score": "M",
+      "override": "none",
+      "note": "Two separate GlobeNewswire press releases from the same vendor confirm consistent customer count trajectory. Own-metric class. Consecutive press releases showing growth from same base give some internal consistency check."
+    },
+    {
+      "id": "VC-39",
+      "file": "stage-4-value-chain.md",
+      "claim": "[ASSUMED-4] Tive trackers reach SEA via pharma/CPG customers' global logistics partners; no dedicated local support entity",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "ASSUMED-tag-automatic-L",
+      "note": "Drafter flagged as assumed."
+    },
+    {
+      "id": "VC-40",
+      "file": "stage-4-value-chain.md",
+      "claim": "Carrier Global (NYSE: CARR) overall revenue $22B FY2024; Carrier holds largest cold chain monitoring market share (~16-26% combined)",
+      "sources": ["https://www.marketsandmarkets.com/ResearchInsight/cold-chain-monitoring-market.asp"],
+      "source_categories": ["secondary-market-research"],
+      "score": "L",
+      "override": "single-commercial-research-firm for market share",
+      "note": "Carrier Global revenue ($22B) is publicly reportable from 10-K but not cited from that primary source. Market share 16-26% is from MarketsandMarkets alone — a single commercial research firm. Wide range (16-26%) indicates methodological uncertainty."
+    },
+    {
+      "id": "VC-41",
+      "file": "stage-4-value-chain.md",
+      "claim": "Sensitech acquired Berlinger & Co. Aug 2024; Lynx FacTOR launched March 2025",
+      "sources": ["https://www.marketsandmarkets.com/ResearchInsight/cold-chain-monitoring-market.asp"],
+      "source_categories": ["secondary-market-research"],
+      "score": "M",
+      "override": "none",
+      "note": "Acquisition date and product launch are verifiable corporate events. Sensitech's own press release (cited in PP4.2-7 at sensitech.com/resources/news) directly confirms the Berlinger acquisition. While the value chain cites MarketsandMarkets, the pain points file cites the primary Sensitech announcement. Treated as M given cross-validation within the same document set."
+    },
+    {
+      "id": "VC-42",
+      "file": "stage-4-value-chain.md",
+      "claim": "Controlant FY2024 revenue ~$174M (third-party estimate, unverified)",
+      "sources": ["https://getlatka.com/companies/controlant"],
+      "source_categories": ["secondary-market-research"],
+      "score": "L",
+      "override": "single-commercial-estimator; explicitly flagged as unverified by drafter",
+      "note": "Drafter correctly flags 'unverified.' Latka estimate for private company. $174M would be a remarkable revenue figure for a company that raised ~$130M total; plausibility gap increases skepticism."
+    },
+    {
+      "id": "VC-43",
+      "file": "stage-4-value-chain.md",
+      "claim": "Controlant funding: $35M (Nov 2024: $25M equity + $10M debt); prior $40M (Sep 2023); total raised ~$130M+",
+      "sources": ["https://www.controlant.com/insights/controlant-closes-a-usd35-million-funding-round-to-advance-market-expansion"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": "none",
+      "note": "Company's own press release for own funding rounds. Own-metric class. Specific structure ($25M equity + $10M debt) adds detail that a vendor would not inflate."
+    },
+    {
+      "id": "VC-44",
+      "file": "stage-4-value-chain.md",
+      "claim": "Controlant: Pfizer as major customer for COVID-19 vaccine global distribution",
+      "sources": ["https://www.controlant.com/insights/controlant-closes-a-usd35-million-funding-round-to-advance-market-expansion"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "single-vendor-press-release for customer relationship claim",
+      "note": "Pfizer-Controlant relationship is widely cited in cold chain press but the primary citation here is only Controlant's own PR. Pfizer has not independently confirmed this relationship in the cited sources."
+    },
+    {
+      "id": "VC-45",
+      "file": "stage-4-value-chain.md",
+      "claim": "Controlant Nippon Express partnership (Jun 2024) expands APAC reach",
+      "sources": ["https://www.controlant.com/insights/controlant-closes-a-usd35-million-funding-round-to-advance-market-expansion"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": "none",
+      "note": "Named corporate partnership with specific date. Nippon Express is a major global 3PL; partnership verifiable via Nippon Express Holdings investor communications. Single source but specific and verifiable."
+    },
+    {
+      "id": "VC-46",
+      "file": "stage-4-value-chain.md",
+      "claim": "[ASSUMED-5] Roambee operates at least one APAC hub (India confirmed); no confirmed SEA-specific office",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "ASSUMED-tag-automatic-L",
+      "note": "Drafter flagged as assumed. Roambee APAC office presence unvalidated in cited sources."
+    },
+    {
+      "id": "VC-47",
+      "file": "stage-4-value-chain.md",
+      "claim": "Roambee total raised ~$23.7M; second RevTek Capital financing closed Feb 2024",
+      "sources": ["https://www.prnewswire.com/news-releases/roambee-raises-15-2m-to-help-shippers-monitor-and-automate-their-supply-chain-300993924.html"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "source-mismatch: cited PR is for older $15.2M round; Feb 2024 financing and $23.7M total not in cited source",
+      "note": "The cited PR (prnewswire.com/300993924) appears to be an older round. The $23.7M total and 'Feb 2024' financing are not supported by the cited URL. Claim is not evidenced by the footnote provided."
+    },
+    {
+      "id": "VC-48",
+      "file": "stage-4-value-chain.md",
+      "claim": "Roambee 300+ customers; 50+ from global Top 100; 10 global offices; 5G GPS smart label May 2024",
+      "sources": ["https://www.prnewswire.com/news-releases/roambee-raises-15-2m-to-help-shippers-monitor-and-automate-their-supply-chain-300993924.html"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "source-mismatch; single-vendor-press-release",
+      "note": "Same citation issue as VC-47. Older PR likely predates the 300+ customer count and 5G label launch (May 2024). Multiple claims, single potentially outdated source."
+    },
+    {
+      "id": "VC-49",
+      "file": "stage-4-value-chain.md",
+      "claim": "[ASSUMED-6] Globe Tracker reaches SEA via ocean carrier customers' container fleets; no direct SEA office",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "ASSUMED-tag-automatic-L",
+      "note": "Drafter flagged as assumed."
+    },
+    {
+      "id": "VC-50",
+      "file": "stage-4-value-chain.md",
+      "claim": "Globe Tracker: engaged with 5 of top-10 global ocean carriers and 2 of top-5 freight forwarders; $0.99/asset/day all-inclusive pricing",
+      "sources": ["https://www.freightwaves.com/news/globe-tracker-launches-cargo-tracking-monitoring-equipment"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "single-trade-source; vendor-sourced claims relayed via trade press",
+      "note": "'5 of top-10' is an unverifiable vendor claim; carrier identities not named. FreightWaves relays Globe Tracker's own claims. $0.99/day pricing is a specific product claim that could be verified via Globe Tracker's own website but is not cross-cited."
+    },
+    {
+      "id": "VC-51",
+      "file": "stage-4-value-chain.md",
+      "claim": "[ASSUMED-7] Logmore revenue and customer count undisclosed",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "ASSUMED-tag-automatic-L",
+      "note": "Drafter correctly flags undisclosed."
+    },
+    {
+      "id": "VC-52",
+      "file": "stage-4-value-chain.md",
+      "claim": "[ASSUMED-8] Logmore no confirmed SEA commercial presence; devices available globally via EU/Nordic distributors",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "ASSUMED-tag-automatic-L",
+      "note": "Drafter flagged as assumed."
+    },
+    {
+      "id": "VC-53",
+      "file": "stage-4-value-chain.md",
+      "claim": "Hapag-Lloyd fitted >2/3 of its entire dry container fleet with GPS IoT devices as of April 2024; Live ETA 75% more accurate than static schedule",
+      "sources": ["https://www.hapag-lloyd.com/en/company/press/releases/2024/04/hapag-lloyd-launches-first-dry-container-tracking-product--live-.html"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": "none",
+      "note": "Hapag-Lloyd is publicly listed (XTRA: HLAG); this is their own official press release for their own product launch and fleet metrics. Own-metric class. Publicly-listed company's own fleet data carries higher credibility than private company claims. '75% more accurate' is a company-claimed performance metric — not independently audited."
+    },
+    {
+      "id": "VC-54",
+      "file": "stage-4-value-chain.md",
+      "claim": "WiseTech Global: ~$2.8B revenue (FY2025 AUD); CargoWise used by 15,000+ freight forwarders; WiseTech-Hapag-Lloyd partnership Feb 2026",
+      "sources": ["https://www.hapag-lloyd.com/en/company/press/releases/2024/04/hapag-lloyd-launches-first-dry-container-tracking-product--live-.html"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": "none",
+      "note": "WiseTech is ASX-listed (WTC); revenue is publicly reported. CargoWise customer count is company-disclosed. Partnership announcement would typically come from both parties. Cited source is the Hapag-Lloyd PR which predates the Feb 2026 partnership — footnote may point to wrong URL for the partnership claim. Revenue is verifiable via ASX filings."
+    },
+    {
+      "id": "VC-MS-1",
+      "file": "stage-4-value-chain.md",
+      "claim": "Global RTTVP market size (2024): $3.2B-$4.2B",
+      "sources": [
+        "https://www.openpr.com/news/3761839/real-time-transportation-visibility-platform-market-size",
+        "https://reports.valuates.com/market-reports/QYRE-Auto-34I14270/global-real-time-transportation-visibility-platform"
+      ],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "score": "L",
+      "override": "secondary-market-research-only; openpr.com is a press release aggregator not an independent research firm",
+      "note": "openpr.com is a press release distribution site that re-publishes market research summaries, not an independent research firm. Valuates is a report aggregator. Neither is a specialist primary research firm (Berg Insight, ABI Research, Gartner equivalent). Two secondary market research re-publishers do not meet the corroboration standard. CRITICAL: this is the foundational market sizing claim for the entire RTTVP category — Low confidence here is a major flag."
+    },
+    {
+      "id": "VC-MS-2",
+      "file": "stage-4-value-chain.md",
+      "claim": "RTTVP CAGR (2024-2033): 17.8%-19.2%",
+      "sources": [
+        "https://www.openpr.com/news/3761839/real-time-transportation-visibility-platform-market-size",
+        "https://reports.valuates.com/market-reports/QYRE-Auto-34I14270/global-real-time-transportation-visibility-platform"
+      ],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "score": "L",
+      "override": "secondary-market-research-only; commercial forecasts from re-publishers",
+      "note": "Same sourcing issue as VC-MS-1. Long-horizon commercial forecast."
+    },
+    {
+      "id": "VC-MS-3",
+      "file": "stage-4-value-chain.md",
+      "claim": "RTTVP projected market size (2033): $13.5B-$18.7B",
+      "sources": [
+        "https://www.openpr.com/news/3761839/real-time-transportation-visibility-platform-market-size",
+        "https://reports.valuates.com/market-reports/QYRE-Auto-34I14270/global-real-time-transportation-visibility-platform"
+      ],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "score": "L",
+      "override": "secondary-market-research-only; long-horizon commercial forecast from re-publishers",
+      "note": "9-year forward forecast from secondary market research aggregators. No specialist primary source."
+    },
+    {
+      "id": "VC-MS-4",
+      "file": "stage-4-value-chain.md",
+      "claim": "North America share of global RTTVP market (2024): ~38%",
+      "sources": [
+        "https://www.openpr.com/news/3761839/real-time-transportation-visibility-platform-market-size",
+        "https://reports.valuates.com/market-reports/QYRE-Auto-34I14270/global-real-time-transportation-visibility-platform"
+      ],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "score": "L",
+      "override": "secondary-market-research-only; same re-publisher pair",
+      "note": "Geographic breakdown from secondary re-publishers. Both likely sourcing from same underlying paid report."
+    },
+    {
+      "id": "VC-MS-5",
+      "file": "stage-4-value-chain.md",
+      "claim": "Asia Pacific RTTVP CAGR (2025-2033): ~20.5% (fastest-growing region)",
+      "sources": ["https://www.openpr.com/news/3761839/real-time-transportation-visibility-platform-market-size"],
+      "source_categories": ["secondary-market-research"],
+      "score": "L",
+      "override": "single-secondary-market-research-source",
+      "note": "Single openpr.com re-publisher. APAC-as-proxy concern: this is a global commercial forecast with an APAC segment; not a country-specific analysis."
+    },
+    {
+      "id": "VC-MS-6",
+      "file": "stage-4-value-chain.md",
+      "claim": "Gartner 2024 MQ Leaders: project44, FourKites, Shippeo",
+      "sources": [
+        "https://www.project44.com/press-releases/project44-named-a-leader-in-the-2024-gartner-magic-quadrant-for-real-time-transportation-visibility-platforms-for-fourth-consecutive-year/",
+        "https://www.shippeo.com/press-releases/shippeo-named-a-leader-in-the-2024-gartner-magic-quadrant-for-real-time-transportation-visibility-platforms"
+      ],
+      "source_categories": ["secondary-vendor", "secondary-vendor"],
+      "score": "M",
+      "override": "none",
+      "note": "Two independent vendor PRs from two different companies (project44, Shippeo) both announcing Leader status in the same Gartner MQ. Cross-corroboration from competing vendors is meaningful even when both cite a paywalled primary. FourKites Leader status confirmed by FreightWaves article (VC-11). Upgraded to M."
+    },
+    {
+      "id": "VC-MS-7",
+      "file": "stage-4-value-chain.md",
+      "claim": "Gartner 2024 MQ Challenger: Overhaul",
+      "sources": ["https://www.project44.com/press-releases/project44-named-a-leader-in-the-2024-gartner-magic-quadrant-for-real-time-transportation-visibility-platforms-for-fourth-consecutive-year/"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "single-vendor-PR citing paywalled primary; Overhaul's own PR not cited",
+      "note": "Only cited from competitor's press release. Overhaul's own PR (cited in VC-28) does not confirm Challenger status in the cited URLs."
+    },
+    {
+      "id": "VC-MS-8",
+      "file": "stage-4-value-chain.md",
+      "claim": "Gartner 2024 MQ Niche Players: IntelliTrans (and others not publicly confirmed)",
+      "sources": ["https://www.intellitrans.com/2024/04/01/intellitrans-placed-in-2024-magic-quadrant-for-real-time-transportation-visibility-platforms/"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "single-vendor-press-release; vendor's own announcement of own Gartner placement",
+      "note": "IntelliTrans's own PR about its own Gartner placement. Single vendor source for a Gartner primary. Others 'not publicly confirmed' per drafter."
+    },
+    {
+      "id": "VC-MS-9",
+      "file": "stage-4-value-chain.md",
+      "claim": "Global cold chain monitoring market (2024): $7.03B-$7.63B",
+      "sources": [
+        "https://straitsresearch.com/report/cold-chain-monitoring-market",
+        "https://www.polarismarketresearch.com/industry-analysis/cold-chain-monitoring-market"
+      ],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "score": "L",
+      "override": "secondary-market-research-only; Straits Research and Polaris Market Research are not specialist primary firms",
+      "note": "Both are secondary commercial research firms. Neither is a specialist primary (Berg Insight, ABI Research). Two non-specialist commercial firms do not meet the corroboration standard for M. CRITICAL: headline market sizing for cold chain monitoring."
+    },
+    {
+      "id": "VC-MS-10",
+      "file": "stage-4-value-chain.md",
+      "claim": "Cold chain monitoring CAGR (2025-2033/34): 9.57%-13.2%",
+      "sources": [
+        "https://straitsresearch.com/report/cold-chain-monitoring-market",
+        "https://www.polarismarketresearch.com/industry-analysis/cold-chain-monitoring-market"
+      ],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "score": "L",
+      "override": "secondary-market-research-only; commercial forecasts",
+      "note": "Same sourcing issue as VC-MS-9."
+    },
+    {
+      "id": "VC-MS-11",
+      "file": "stage-4-value-chain.md",
+      "claim": "Cold chain monitoring projected market (2033): $16.67B-$23.29B",
+      "sources": [
+        "https://straitsresearch.com/report/cold-chain-monitoring-market",
+        "https://www.polarismarketresearch.com/industry-analysis/cold-chain-monitoring-market"
+      ],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "score": "L",
+      "override": "secondary-market-research-only; long-horizon commercial forecast",
+      "note": "9-year forward forecast. Wide range ($16.67B-$23.29B) reflects definitional differences between two commercial firms, not independent corroboration."
+    },
+    {
+      "id": "VC-MS-12",
+      "file": "stage-4-value-chain.md",
+      "claim": "Reefer container remote tracking shipments (2023): 765,000 units worldwide; CAGR 8.7% (2023-2028); projected ~1.2M units (2028)",
+      "sources": ["https://www.berginsight.com/the-cold-chain-tracking-and-monitoring-market/"],
+      "source_categories": ["primary-research-firm"],
+      "score": "M",
+      "override": "none",
+      "note": "Berg Insight is the definitive specialist research firm for IoT/telematics market data. Single source but from the most authoritative specialist primary for this specific metric. Direct citation of Berg Insight's own published report page. This is the strongest non-assumed market data claim in the document."
+    },
+    {
+      "id": "VC-MS-13",
+      "file": "stage-4-value-chain.md",
+      "claim": "ORBCOMM reefer containers in field: 600,000+ (since 2007)",
+      "sources": ["https://blog.orbcomm.com/driving-iot-innovation-orbcomms-highlights-of-2024/"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": "none",
+      "note": "Company's own blog reporting its own installed base milestone. Own-metric class. ORBCOMM (taken private) self-reports its own fleet management count — no commercial incentive to overstate a cumulative historical figure."
+    },
+    {
+      "id": "VC-MS-14",
+      "file": "stage-4-value-chain.md",
+      "claim": "Carrier Global / Sensitech holds largest cold chain monitoring market share (~16-26% combined)",
+      "sources": ["https://www.marketsandmarkets.com/ResearchInsight/cold-chain-monitoring-market.asp"],
+      "source_categories": ["secondary-market-research"],
+      "score": "L",
+      "override": "single-commercial-research-firm for competitive market share",
+      "note": "MarketsandMarkets alone for a market share claim. Wide range (16-26%) indicates methodological uncertainty. No corroboration from ABI Research, Berg Insight, or industry association."
+    },
+    {
+      "id": "VC-MS-15",
+      "file": "stage-4-value-chain.md",
+      "claim": "ASEAN cold chain logistics market: $19.76B (current); forecast $25.54B by 2031",
+      "sources": ["https://www.mordorintelligence.com/industry-reports/asean-cold-chain-logistics-market"],
+      "source_categories": ["secondary-market-research"],
+      "score": "L",
+      "override": "single-secondary-market-research-source; Mordor Intelligence",
+      "note": "Mordor Intelligence is explicitly called out in the rubric as a secondary market research firm. Single source for a foundational SEA market sizing figure. No corroboration from ASEAN Secretariat, ADB, or regional government statistics."
+    },
+    {
+      "id": "VC-MS-16",
+      "file": "stage-4-value-chain.md",
+      "claim": "Indonesia cold chain logistics market (2024): ~$5.08B; 9.60% CAGR to 2034",
+      "sources": ["https://www.researchandmarkets.com/reports/5912628/indonesia-cold-chain-logistics-market-report"],
+      "source_categories": ["secondary-market-research"],
+      "score": "L",
+      "override": "single-secondary-market-research-source; no BPS Indonesia or government corroboration",
+      "note": "Research and Markets is a report aggregator. Single commercial source for country-specific market sizing. No BPS Indonesia, Ministry of Trade, or ASEAN-level primary source corroboration. CRITICAL for Indonesia market thesis."
+    },
+    {
+      "id": "VC-MS-17",
+      "file": "stage-4-value-chain.md",
+      "claim": "Indonesia share of ASEAN cold chain: 21.65%",
+      "sources": ["https://www.mordorintelligence.com/industry-reports/asean-cold-chain-logistics-market"],
+      "source_categories": ["secondary-market-research"],
+      "score": "L",
+      "override": "derived-figure-from-single-secondary-market-research-source",
+      "note": "Arithmetic derived from Mordor Intelligence's own ASEAN figure ($5.08B / $19.76B). Both numerator and denominator from same single Mordor report. Double dependency on single secondary source."
+    },
+    {
+      "id": "PP4.1-1",
+      "file": "stage-4-pain-points.md",
+      "claim": "project44 claims 245,000+ connected carriers; integrations across 800+ ELD/telematics providers",
+      "sources": [
+        "https://www.project44.com/blog/technology-you-can-trust-project44s-preferred-telematics-program/",
+        "https://www.project44.com/carriers/connect/api/"
+      ],
+      "source_categories": ["secondary-vendor", "secondary-vendor"],
+      "score": "M",
+      "override": "single-vendor-domain",
+      "note": "Two project44 pages confirming their own network metrics. Own-metric class. Note: the value chain cites 240,000 while pain points cites 245,000 — minor internal inconsistency suggesting the figure was updated between drafting sessions."
+    },
+    {
+      "id": "PP4.1-2",
+      "file": "stage-4-pain-points.md",
+      "claim": "3,580 carriers meet project44 Preferred Carrier quality threshold; covers 70+ countries",
+      "sources": ["https://www.project44.com/blog/2024-preferred-carrier-awards/"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": "none",
+      "note": "Company's own published program awards page with specific count. Own-metric class. This is the strongest quality-disclosure claim in the entire Stage 4 document — vendor's own public program data."
+    },
+    {
+      "id": "PP4.1-3",
+      "file": "stage-4-pain-points.md",
+      "claim": "Fewer than 2% of project44's total network meets Preferred Carrier quality threshold (3,580 / 245,000)",
+      "sources": [
+        "https://www.project44.com/blog/2024-preferred-carrier-awards/",
+        "https://www.project44.com/blog/technology-you-can-trust-project44s-preferred-telematics-program/"
+      ],
+      "source_categories": ["secondary-vendor", "secondary-vendor"],
+      "score": "M",
+      "override": "none",
+      "note": "Derived calculation from two company-disclosed figures. Both figures are from the same vendor domain but represent two independently disclosed metrics (total network, preferred count). The arithmetic (3,580/245,000 = 1.46%) is internally consistent. This is a legitimate derived fact from vendor's own public disclosures."
+    },
+    {
+      "id": "PP4.1-4",
+      "file": "stage-4-pain-points.md",
+      "claim": "Enterprise RTTVP contracts cost $200,000-$500,000+ per year; FourKites cited at $100-$500/user/month by third-party",
+      "sources": ["https://blogs.tradlinx.com/how-much-does-project44-fourkites-or-vizion-really-cost-what-lsps-need-to-know-before-paying-for-premium-visibility-tools/"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "single-trade-source for operating cost figures",
+      "note": "Tradlinx is an LSP/logistics software vendor blog. Single trade source for pricing figures that RTTVP vendors do not disclose publicly. Per rubric: operating cost figures from single trade publication = Low regardless. HIGH PRIORITY for deep research."
+    },
+    {
+      "id": "PP4.1-5",
+      "file": "stage-4-pain-points.md",
+      "claim": "project44 quantifies cost of poor visibility as €50/$68 per load",
+      "sources": ["https://www.project44.com/blog/technology-you-can-trust-project44s-preferred-telematics-program/"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "single-vendor-blog for operating cost figure",
+      "note": "Per rubric: operating cost figures from single vendor blog = Low. project44 has a commercial incentive to quantify the pain their product solves — this figure is likely internally generated without independent methodology."
+    },
+    {
+      "id": "PP4.1-6",
+      "file": "stage-4-pain-points.md",
+      "claim": "Annual visibility-gap cost for a US mid-market shipper (50,000 loads/year, 15-25% spot): $510K-$850K in operational inefficiency",
+      "sources": ["https://www.project44.com/blog/technology-you-can-trust-project44s-preferred-telematics-program/"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "derived-calculation anchored on single-vendor-blog cost figure",
+      "note": "Derived extrapolation using project44's own €50/load figure multiplied by assumed load count and spot rate. Double dependency: the $68/load anchor is itself L (PP4.1-5). Compounded uncertainty."
+    },
+    {
+      "id": "PP4.1-7",
+      "file": "stage-4-pain-points.md",
+      "claim": "Average cargo theft value per incident (North America 2024): $202,364; 3,625 incidents; $454.9M total",
+      "sources": ["https://www.verisk.com/company/newsroom/cargo-theft-surges-to-record-levels-in-2024-verisk-cargonet-analysis-reveals/"],
+      "source_categories": ["primary-research-firm"],
+      "score": "M",
+      "override": "none",
+      "note": "Verisk CargoNet is the definitive specialist primary research source for North American cargo theft statistics. FBI-registered theft reporting program. Single source but from the authoritative primary for this metric. Meets primary-research-firm threshold. Cannot reach H with single source."
+    },
+    {
+      "id": "PP4.1-8",
+      "file": "stage-4-pain-points.md",
+      "claim": "RTTVP market valued at $4.2B (2024), growing to $18.7B by 2033 (17.8% CAGR)",
+      "sources": ["https://marketintelo.com/report/real-time-transportation-visibility-platform-market"],
+      "source_categories": ["secondary-market-research"],
+      "score": "L",
+      "override": "single-unknown-commercial-re-publisher; marketintelo.com is not a recognized research firm",
+      "note": "marketintelo.com appears to be a market research report aggregator/re-publisher of unknown origin. Single unverified commercial source. Conflicts with value chain which used openpr.com + Valuates for the same range. Three different unverified sources for the same figure = still Low."
+    },
+    {
+      "id": "PP4.1-9",
+      "file": "stage-4-pain-points.md",
+      "claim": "GPS jamming used in approximately 85% of cargo thefts in Mexico",
+      "sources": ["https://www.navixy.com/blog/asset-tracking-with-anti-jamming-tech/"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "single-vendor-blog for specific statistical claim; vendor has commercial incentive to inflate GPS threat",
+      "note": "Navixy is an anti-jammer/GPS tracking vendor. 85% figure from a vendor selling anti-jamming products. No primary source (law enforcement, CargoNet equivalent for Mexico) cited. Potential commercial bias in figure."
+    },
+    {
+      "id": "PP4.1-10",
+      "file": "stage-4-pain-points.md",
+      "claim": "FBI documented criminal GPS jammer use as standard criminal tool in US and Canada cargo theft",
+      "sources": ["https://info.publicintelligence.net/FBI-CargoThievesGPS.pdf"],
+      "source_categories": ["primary-gov"],
+      "score": "M",
+      "override": "none",
+      "note": "FBI bulletin is a government primary source. info.publicintelligence.net is a non-profit that publishes obtained government documents — the underlying document is FBI-authored. Single government primary source; needs 2+ sources with ≥1 gov for High. Qualitative claim (documents use) rather than quantitative."
+    },
+    {
+      "id": "PP4.1-11",
+      "file": "stage-4-pain-points.md",
+      "claim": "project44 ~$175M ARR by end-2024 (45% YoY growth); $2.4B valuation",
+      "sources": ["https://getlatka.com/companies/project44/vs/fourkites-inc"],
+      "source_categories": ["secondary-market-research"],
+      "score": "L",
+      "override": "single-commercial-estimator; conflicts with VC-3 ($210M)",
+      "note": "Internal inconsistency: this cites $175M ARR while value chain cites ~$210M revenue from same Latka source. The comparison page (p44 vs FourKites) may use different metrics than the individual company page. Latka unaudited regardless."
+    },
+    {
+      "id": "PP4.1-12",
+      "file": "stage-4-pain-points.md",
+      "claim": "FourKites revenue $114.3M in 2024",
+      "sources": ["https://getlatka.com/companies/project44/vs/fourkites-inc"],
+      "source_categories": ["secondary-market-research"],
+      "score": "L",
+      "override": "single-commercial-estimator",
+      "note": "Latka comparison page. Consistent with VC-9 ($114M from FourKites-specific Latka page). Still single unaudited estimator."
+    },
+    {
+      "id": "PP4.1-13",
+      "file": "stage-4-pain-points.md",
+      "claim": "Strategic cargo theft rose 1,475% between 2022 and 2024; one-third of 2024 thefts were identity-based",
+      "sources": [
+        "https://www.travelers.com/resources/business-topics/supply-chain-management/strategic-cargo-theft",
+        "https://www.burnsandwilcox.com/insights/cargo-theft-hits-record-high-in-2024-targeting-consumer-goods-electronics-and-more/"
+      ],
+      "source_categories": ["secondary-trade", "secondary-trade"],
+      "score": "L",
+      "override": "two-secondary-trade-sources for dramatic statistical claim; no Verisk CargoNet or primary source cited",
+      "note": "1,475% rise is a dramatic specific figure. Both sources are insurance industry content marketing (Travelers = insurer, Burns & Wilcox = broker) — not primary cargo theft data. Neither cites its underlying source for the 1,475% figure. HIGH PRIORITY: this specific figure needs Verisk CargoNet or BSI/TT Club primary sourcing. Risk of misattributed or miscomputed statistic."
+    },
+    {
+      "id": "PP4.1-14",
+      "file": "stage-4-pain-points.md",
+      "claim": "Fictitious pickup events grew from avg 66/year (2012-2022) to 576 in 2023",
+      "sources": ["https://haulerhub.com/blog/consumer-goods-theft-how-retail-crime-and-cargo-theft-are-costing-businesses-billions-in-2024/"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "single-trade-blog for specific statistical claim",
+      "note": "HaulerHub is a trucking software vendor blog. Specific numbers (66→576) are often attributed to FreightGuard or CargoNet reports. Not traced to primary. HIGH PRIORITY for deep research — these numbers are used to characterize the scale of a major fraud category."
+    },
+    {
+      "id": "PP4.1-15",
+      "file": "stage-4-pain-points.md",
+      "claim": "[ASSUMED-1] Driver-app authorization completion rate for spot-carrier loads: 20-40% in North America; below 15% in SEA",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "ASSUMED-tag-automatic-L",
+      "note": "Drafter correctly flagged as estimated from structural analysis. No empirical data."
+    },
+    {
+      "id": "PP4.1-16",
+      "file": "stage-4-pain-points.md",
+      "claim": "Shippeo explicitly acknowledges tracking gap for spot-carrier subcontracting; driver app positioned as spot-carrier solution",
+      "sources": ["https://www.shippeo.com/blog/tracking-spot-carrier-shipments-the-visibility-gap-that-doesnt-have-to-be"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": "none",
+      "note": "Vendor's own published blog explicitly describing the tracking gap the vendor itself faces. Self-disclosure of product limitation. This is a particularly valuable source type — the vendor is acknowledging the structural failure, not marketing against it. M (single source, vendor, but self-disclosure of limitation is credible)."
+    },
+    {
+      "id": "PP4.2-1",
+      "file": "stage-4-pain-points.md",
+      "claim": "Pharma cold chain temperature excursions cost global industry ~$35 billion annually (IQVIA Institute 2019)",
+      "sources": ["https://sensos.io/resources/cold-chain-pharma/the-hidden-crisis-temperature%E2%80%91related-pharma-losses/"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "single-vendor-blog citing IQVIA; IQVIA primary not directly cited",
+      "note": "Sensos is a sensor vendor. Their blog page cites IQVIA but sensos.io is the actual cited URL. The IQVIA Institute 2019 report is the genuine primary but is not directly linked or cited with a report name/URL. $35B is a widely-circulated figure in pharma cold chain literature; origin is often traced back to IQVIA (formerly QuintilesIMS) but specific report citation is absent. HIGH PRIORITY: this is the headline financial anchor for PP4.2."
+    },
+    {
+      "id": "PP4.2-2",
+      "file": "stage-4-pain-points.md",
+      "claim": "25% of vaccines reaching destination have degraded efficacy due to cold chain failures (Cargosense study, WHO temperature excursion definition)",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5821242/",
+        "https://www.sensitech.com/en/blog/blog-articles/blog-pharma-cold-chain-monitoring.html"
+      ],
+      "source_categories": ["primary-academic", "secondary-vendor"],
+      "score": "M",
+      "override": "none",
+      "note": "PubMed Central peer-reviewed article is primary academic. Sensitech vendor blog is secondary corroboration. Two independent sources (academic + vendor) from different categories. Meets Medium standard: 2+ sources where ≥1 is primary non-market-research. Note: PMC5821242 is a 2018 vaccine cold chain paper — verify it contains the 25% figure and not a different finding."
+    },
+    {
+      "id": "PP4.2-3",
+      "file": "stage-4-pain-points.md",
+      "claim": "Cold chain monitoring market $4.7B (2021) → $15B (2030) (MarketsandMarkets)",
+      "sources": ["https://www.marketsandmarkets.com/PressReleases/cold-chain-monitoring.asp"],
+      "source_categories": ["secondary-market-research"],
+      "score": "L",
+      "override": "single-commercial-research-firm; outdated (2021 baseline)",
+      "note": "MarketsandMarkets is called out in rubric as secondary-market-research. Single source. 2021 data point is outdated (>3 years) per override rules — capped at Medium even if better sourced, but this is already Low. Conflicts with VC-MS-9 ($7.03B-$7.63B in 2024) suggesting market grew substantially."
+    },
+    {
+      "id": "PP4.2-4",
+      "file": "stage-4-pain-points.md",
+      "claim": "Tive 2 million trackers deployed cumulatively (December 2024 milestone); 900+ customers; 50%+ YoY growth",
+      "sources": [
+        "https://www.tive.com/blog/tives-journey-to-a-million-trackers-unprecedented-end-to-end-visibility",
+        "https://www.tive.com/press-release/tive-secures-40-million-in-series-c-funding-led-by-wil-sageview-capital",
+        "https://techcrunch.com/2025/01/23/tives-tools-help-companies-track-the-status-of-their-shipments-in-real-time/"
+      ],
+      "source_categories": ["secondary-vendor", "secondary-vendor", "secondary-trade"],
+      "score": "M",
+      "override": "none",
+      "note": "Three sources: two from Tive (vendor milestone blog + funding PR) and one from TechCrunch (independent tech press). Three corroborating sources across two categories (vendor + tech press). Meets 3+ secondaries threshold for Medium."
+    },
+    {
+      "id": "PP4.2-5",
+      "file": "stage-4-pain-points.md",
+      "claim": "Berg Insight 2024: 13.8M total cargo tracking devices globally; 4.5M general cargo; 3.1M refrigerated trailer/container trackers",
+      "sources": [
+        "https://iotbusinessnews.com/2021/10/25/13560-the-installed-base-of-active-cargo-tracking-units-to-reach-29-million-by-2025/",
+        "https://telematicswire.net/berg-insight-the-installed-base-of-tracking-devices-for-trailers-containers-rail-freight-wagons-ulds-and-pallets-reached-11-million-in-2023/"
+      ],
+      "source_categories": ["secondary-trade", "secondary-trade"],
+      "score": "L",
+      "override": "trade-press-reporting-on-Berg-Insight; 2021 and 2023 data extrapolated to 2024; Berg Insight not directly cited",
+      "note": "Both are trade press articles reporting Berg Insight findings from 2021 and 2023. The 13.8M 'current 2024' figure is not from a 2024 Berg Insight publication cited directly. The berginsight.com domain IS cited in VC-MS-12 for a different metric — but for this specific 13.8M claim the citations are older trade press. Outdated source override applies (>2 years)."
+    },
+    {
+      "id": "PP4.2-6",
+      "file": "stage-4-pain-points.md",
+      "claim": "Parsyl Data Partner Program (March 2024): participating providers Berlinger/Sensitech, Copeland, Roambee, Tive; insurer integration with sensor data for claims",
+      "sources": [
+        "https://www.parsyl.com/media/media/data-partner-program-launch",
+        "https://www.ajot.com/news/parsyl-launches-new-data-initiative-with-leading-supply-chain-monitoring-providers"
+      ],
+      "source_categories": ["secondary-vendor", "secondary-trade"],
+      "score": "M",
+      "override": "none",
+      "note": "Two independent sources: Parsyl's own announcement + AJOT trade press coverage. Two categories (vendor + trade). Named participating companies are verifiable. March 2024 is recent enough to meet currency threshold."
+    },
+    {
+      "id": "PP4.2-7",
+      "file": "stage-4-pain-points.md",
+      "claim": "Sensitech completed acquisition of Berlinger & Co. Monitoring Solutions in August 2024",
+      "sources": ["https://www.sensitech.com/en/resources/news/news-article/2024-08-02-berlinger-acquisition-completion.html"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": "none",
+      "note": "Company's own announcement of own acquisition completion. Dated (2024-08-02). Own-metric class. Carrier Global is publicly listed — the acquisition is a verifiable corporate event, though the citation is the acquiree's own announcement."
+    },
+    {
+      "id": "PP4.2-8",
+      "file": "stage-4-pain-points.md",
+      "claim": "51% of Asia-Pacific pharma manufacturers adopting digital monitoring technologies for cold chain distribution (2024 survey)",
+      "sources": ["https://www.pharmanow.live/knowledge-hub/market-trends/cold-chain-innovations-in-2025"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "single-trade-publication; survey methodology and sponsor undisclosed",
+      "note": "pharmanow.live is a pharma trade knowledge hub. The '2024 survey' is not identified by name, sponsor, or methodology. 51% adoption rate is a highly specific claim from an unverified survey. This figure is used to support a key assumption about APAC cold chain adoption."
+    },
+    {
+      "id": "PP4.2-9",
+      "file": "stage-4-pain-points.md",
+      "claim": "ABI Research: cold chain telematics market surpassing $2.5B by 2032",
+      "sources": ["https://www.foodlogistics.com/transportation/cold-chain/news/22912217/abi-research-cold-chain-telematics-market-to-grow-25b-by-2032"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "trade-press-reporting-on-ABI-Research; specialist primary not directly cited",
+      "note": "ABI Research is a specialist primary research firm (primary-research-firm category) but is cited here only via Food Logistics trade press, not via ABI Research's own published report. Single trade source reporting a specialist primary. Note: value chain mentions 'ABI Research cold chain track and trace revenues to surpass $7B annually by 2032' — different figure from a different ABI publication, creating inconsistency."
+    },
+    {
+      "id": "PP4.3-1",
+      "file": "stage-4-pain-points.md",
+      "claim": "Cargo theft losses: $454.9M in 3,625 incidents (North America 2024) — Verisk CargoNet",
+      "sources": ["https://www.verisk.com/company/newsroom/cargo-theft-surges-to-record-levels-in-2024-verisk-cargonet-analysis-reveals/"],
+      "source_categories": ["primary-research-firm"],
+      "score": "M",
+      "override": "none",
+      "note": "Same as PP4.1-7. Verisk CargoNet authoritative primary for US cargo theft. Single specialist primary = M."
+    },
+    {
+      "id": "PP4.3-2",
+      "file": "stage-4-pain-points.md",
+      "claim": "Total global cargo theft losses $6.6B+ annually (TT Club/BSI 2025 report); North America figure",
+      "sources": ["https://www.insurancebusinessmag.com/us/news/breaking-news/global-cargo-theft-hits-new-highs-as-criminal-networks-evolve--tt-club-572468.aspx"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "trade-press-reporting-on-primary-association; TT Club report not directly cited",
+      "note": "TT Club/BSI annual cargo theft report is a primary-association source (TT Club is mutual insurer/transport association). However, here it is cited via insurancebusinessmag.com (trade press), not the TT Club primary URL. The TT Club primary IS directly cited in PP4.4-4 (ttclub.com URL). For this specific claim, the citation is one hop removed. Compare: if TT Club were cited directly = M; via trade press = L."
+    },
+    {
+      "id": "PP4.3-3",
+      "file": "stage-4-pain-points.md",
+      "claim": "Tracker economics: $25-$75 per disposable shipment; $10-$40/month reusable subscription (industry cost structure estimate)",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "no-specific-citation; cost estimate based on undisclosed industry cost structure",
+      "note": "Drafter states 'third-party supply chain intelligence and industry cost structure' but cites no specific source. Per rubric: operating cost figure with no citation = Low regardless. This range appears reasonable but is unverified."
+    },
+    {
+      "id": "PP4.3-4",
+      "file": "stage-4-pain-points.md",
+      "claim": "IoT installation cost >$50K for fleets <50 vehicles; $300/vehicle labor; $25-$40/asset/month SaaS; payback >2yr in SEA",
+      "sources": ["https://www.zigpoll.com/content/iot-data-utilization-strategy-guide-director-supplychains"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "single-vendor-blog for operating cost figures; Zigpoll is a survey tool vendor, not a logistics industry source",
+      "note": "Zigpoll is a customer survey/feedback tool vendor. Their supply chain IoT guide is content marketing. Not a logistics-specialist source. Per rubric: operating cost figures from single vendor blog = Low. The $50K fleet installation figure is SEA-specific context but the source has no demonstrated logistics sector expertise."
+    },
+    {
+      "id": "PP4.3-5",
+      "file": "stage-4-pain-points.md",
+      "claim": "Berg Insight 2024: 13.8M cargo tracking devices; €2.7B market; 2029: 26.9M devices, €4.5B",
+      "sources": [
+        "https://iotbusinessnews.com/2021/10/25/13560-the-installed-base-of-active-cargo-tracking-units-to-reach-29-million-by-2025/",
+        "https://www.iotm2mcouncil.org/iot-library/news/smart-logistics-news/tracking-devices-set-for-18-2-cagr-says-berg/"
+      ],
+      "source_categories": ["secondary-trade", "secondary-trade"],
+      "score": "L",
+      "override": "trade-press-reporting-on-Berg-Insight; outdated source (2021 data); Berg Insight not directly cited",
+      "note": "Same issue as PP4.2-5. Two trade press re-publications of Berg Insight reports from different years. The €2.7B/2024 and 26.9M/2029 projections are not confirmed in the cited 2021 URLs. IoT M2M Council article date not specified."
+    },
+    {
+      "id": "PP4.3-6",
+      "file": "stage-4-pain-points.md",
+      "claim": "Commercial vehicle fleet 28-31M units globally; 31.3M new annual units by 2028",
+      "sources": [
+        "https://www.reportlinker.com/clp/global/505345",
+        "https://www.statista.com/topics/3582/trucks-and-commercial-vehicles/"
+      ],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "score": "L",
+      "override": "two-secondary-market-research-aggregators",
+      "note": "Reportlinker and Statista are market research aggregators. Two secondary commercial sources for a foundational denominator used to estimate IoT adoption rate."
+    },
+    {
+      "id": "PP4.3-7",
+      "file": "stage-4-pain-points.md",
+      "claim": "Gartner 2024 survey: 57% of retail supply chain leaders struggle to translate IoT deployment into clear ROI",
+      "sources": ["https://www.zigpoll.com/content/iot-data-utilization-strategy-guide-director-supplychains"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "single-vendor-blog citing Gartner primary; Gartner not directly cited",
+      "note": "Zigpoll vendor blog claims to cite a Gartner 2024 survey. The Gartner survey itself is not linked or identified by name. Same domain as PP4.3-4. Two uses of the same vendor blog for two different claims. Gartner research is paywalled; without direct citation this cannot be verified."
+    },
+    {
+      "id": "PP4.3-8",
+      "file": "stage-4-pain-points.md",
+      "claim": "[ASSUMED-4] Fewer than 5% of road freight shipments in Indonesia, Vietnam, Thailand carry shipment-level cargo IoT sensor",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "ASSUMED-tag-automatic-L",
+      "note": "Drafter flagged as assumed. No data for SEA shipment-level IoT adoption rate exists in cited sources."
+    },
+    {
+      "id": "PP4.3-9",
+      "file": "stage-4-pain-points.md",
+      "claim": "Indonesia road freight market: ~$54B annually",
+      "sources": ["https://www.mordorintelligence.com/industry-reports/indonesia-road-freight-transport-market"],
+      "source_categories": ["secondary-market-research"],
+      "score": "L",
+      "override": "single-secondary-market-research-source; Mordor Intelligence",
+      "note": "Mordor Intelligence is rubric-listed secondary market research firm. Single source for a country-specific market size. No BPS Indonesia or government trade data corroboration."
+    },
+    {
+      "id": "PP4.3-10",
+      "file": "stage-4-pain-points.md",
+      "claim": "Berg Insight: installed base of fleet management systems in SEA to reach 6.4M units by 2029",
+      "sources": ["https://iotbusinessnews.com/2026/02/26/the-installed-base-of-fleet-management-systems-in-southeast-asia-to-reach-6-4-million-units-by-2029/"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "trade-press-reporting-on-Berg-Insight; specialist primary not directly cited",
+      "note": "IoTBusinessNews (trade press) reporting on a Berg Insight report from February 2026. The Berg Insight report itself is not directly cited. Single trade press source for a SEA-specific specialist figure. If Berg Insight were cited directly this would be M."
+    },
+    {
+      "id": "PP4.3-11",
+      "file": "stage-4-pain-points.md",
+      "claim": "[ASSUMED-5] IoT tracker economic viability threshold met by ~20% of global road freight by shipment count; 70-80% by cargo value",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "ASSUMED-tag-automatic-L",
+      "note": "Drafter flagged as modeled estimate requiring validation."
+    },
+    {
+      "id": "PP4.4-1",
+      "file": "stage-4-pain-points.md",
+      "claim": "Average mid-to-large shipper in 2025 runs 5-10 separate visibility tools; 'blind spots lasting days' on ocean-to-rail handoffs",
+      "sources": [
+        "https://cxtms.com/blog/2026-04-29-multimodal-visibility-platforms-replacing-silos-2026",
+        "https://www.strategictracking.com/2026/01/26/multi-modal-supply-chain-visibility-tracking-across-road-rail-sea-air/"
+      ],
+      "source_categories": ["secondary-trade", "secondary-trade"],
+      "score": "L",
+      "override": "two-vendor-blogs; no industry survey or association report",
+      "note": "CXTMS is a TMS software vendor blog; strategictracking.com appears to be a tracking vendor blog. Both 2026-dated, but no industry survey, shipper association study, or independent analyst cited. '5-10 separate tools' is a striking claim used repeatedly to characterize the pain — needs survey data backing."
+    },
+    {
+      "id": "PP4.4-2",
+      "file": "stage-4-pain-points.md",
+      "claim": "VIZION captured 13.3M container journeys in 2024 and documented carrier-by-carrier ETA accuracy",
+      "sources": ["https://www.vizionapi.com/blog/breaking-down-carrier-performance-eta-accuracy-across-asia-south-america-transpacific-and-asia-europe-trade-lanes"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": "none",
+      "note": "VIZION is an ocean visibility API provider; this is their own published research on their own platform data. Company-disclosed own metric (13.3M journeys). Own dataset research is a form of primary data for this specific vendor. Drafter notes specific accuracy rates are in a downloadable report — meaning the underlying data exists."
+    },
+    {
+      "id": "PP4.4-3",
+      "file": "stage-4-pain-points.md",
+      "claim": "AIS data has systematic quality issues: incorrect entries, missing values, inconsistent formats, delayed updates",
+      "sources": ["https://www.sciencedirect.com/article/pii/S2666827025001343"],
+      "source_categories": ["primary-academic"],
+      "score": "M",
+      "override": "none",
+      "note": "ScienceDirect peer-reviewed article (2025, journal not specified in citation but ScienceDirect domain confirmed). Primary academic source. Single source = M (not H). This is the strongest sourced claim in PP4.4. The qualitative direction (AIS has systematic errors) is well-established in maritime informatics literature."
+    },
+    {
+      "id": "PP4.4-4",
+      "file": "stage-4-pain-points.md",
+      "claim": "TT Club/BSI 2024 Cargo Theft Report: theft from stationary vehicles and storage facilities is one of highest-risk scenarios; clusters at origin/destination",
+      "sources": ["https://www.ttclub.com/news-and-resources/publications/article/bsi-consulting-and-tt-club-2024-cargo-theft-report/"],
+      "source_categories": ["primary-association"],
+      "score": "M",
+      "override": "none",
+      "note": "TT Club is a mutual insurer and transport industry association (primary-association). BSI Supply Chain is a risk intelligence firm. Their joint annual cargo theft report is a primary-association publication with proprietary claims data. Single primary-association source = M. TT Club directly cited."
+    },
+    {
+      "id": "PP4.4-5",
+      "file": "stage-4-pain-points.md",
+      "claim": "Independent RTTVP critique: 'no company has consistently delivered on multimodal promises'; Flexport manually fills data gaps 'for show' at major accounts",
+      "sources": ["https://www.wiserlogtech.com/rttvp-is-now-scorched-earth/"],
+      "source_categories": ["secondary-trade"],
+      "score": "L",
+      "override": "single-trade-blog for strong structural claim",
+      "note": "wiserlogtech.com is an independent logistics technology analyst blog. Single source. The Flexport claim is serious and specific but sourced only from this one independent analyst. No corroborating sources. Value as qualitative structural insight is high; evidentiary value is Low."
+    },
+    {
+      "id": "PP4.4-6",
+      "file": "stage-4-pain-points.md",
+      "claim": "RTTVP 2025 MQ: user concerns about project44 shipment tracking quality and consistency",
+      "sources": ["https://research.oz.spotlightar.com/reports/magic-quadrant-real-time-transportation-visibility-platforms-2025/leaders"],
+      "source_categories": ["secondary-market-research"],
+      "score": "L",
+      "override": "suspicious-domain; non-credible source",
+      "note": "research.oz.spotlightar.com is not a legitimate Gartner URL or recognized research publisher. This domain appears to be an SEO scraper or unauthorized re-publisher. Cannot validate as legitimate source. Claim about 'user concerns' must be sourced from the actual Gartner MQ 2025 or Gartner Peer Insights. This citation should be removed."
+    },
+    {
+      "id": "PP4.4-7",
+      "file": "stage-4-pain-points.md",
+      "claim": "Multimodal visibility platforms market: $1.2B in 2026 (FutureMarketInsights)",
+      "sources": ["https://www.futuremarketinsights.com/reports/end-to-end-multimodal-shipment-visibility-platforms-market"],
+      "source_categories": ["secondary-market-research"],
+      "score": "L",
+      "override": "single-secondary-market-research-source; FutureMarketInsights is a commercial research firm",
+      "note": "FutureMarketInsights is a commercial research firm. Single source for a market sizing claim."
+    },
+    {
+      "id": "PP4.4-8",
+      "file": "stage-4-pain-points.md",
+      "claim": "[ASSUMED-6] Cost of shipment going dark at modal interface 24-72 hours: $500-$5,000 per incident",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "ASSUMED-tag-automatic-L",
+      "note": "Drafter flagged as estimated. No published study quantifies this specific cost."
+    },
+    {
+      "id": "PP4.4-9",
+      "file": "stage-4-pain-points.md",
+      "claim": "VIZION 2024 study: specific carrier-by-carrier ETA accuracy rates documented across Asia, South America, transpacific, Asia-Europe lanes",
+      "sources": ["https://www.vizionapi.com/blog/breaking-down-carrier-performance-eta-accuracy-across-asia-south-america-transpacific-and-asia-europe-trade-lanes"],
+      "source_categories": ["secondary-vendor"],
+      "score": "L",
+      "override": "single-vendor-source; 'specific accuracy rates available only in downloadable reports' per drafter",
+      "note": "Drafter notes specific rates are in a paywalled/downloadable report, not accessible. The claim references data that is not fully disclosed in the cited URL. Single vendor source."
+    },
+    {
+      "id": "PP4.4-10",
+      "file": "stage-4-pain-points.md",
+      "claim": "[ASSUMED-7] Port terminal gate-event data latency in RTTVP pipelines: average 4-12 hours from actual physical event",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "ASSUMED-tag-automatic-L",
+      "note": "Drafter flagged as assumed. No RTTVP engineering team data cited."
+    },
+    {
+      "id": "PP4.5-1",
+      "file": "stage-4-pain-points.md",
+      "claim": "Cargo IoT alert routing is designed around single account-holder; multi-party incident coordination is manual and opt-in; Tive Shared Shipments requires manual link generation",
+      "sources": ["https://www.tive.com/blog/share-supply-chain-data-with-tives-new-shared-shipments-feature"],
+      "source_categories": ["secondary-vendor"],
+      "score": "M",
+      "override": "none",
+      "note": "Vendor's own product documentation confirms the architecture (single account-holder, manually generated read-only link). Self-disclosure of product design is credible. M because it is the vendor's own description of their own product design."
+    },
+    {
+      "id": "PP4.5-2",
+      "file": "stage-4-pain-points.md",
+      "claim": "Parsyl 72-hour claims payment capability",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "no-citation in PP4.5 section",
+      "note": "No footnote or URL provided for this specific Parsyl claims capability in the PP4.5 section. Parsyl is cited elsewhere (PP4.2-6) but not for the 72-hour claims payment specifically. Missing citation."
+    },
+    {
+      "id": "PP4.5-3",
+      "file": "stage-4-pain-points.md",
+      "claim": "[ASSUMED-8] SEA average time from cargo incident detection to law enforcement notification: 6-24 hours vs. 1-4 hours in North America",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "ASSUMED-tag-automatic-L",
+      "note": "Drafter flagged as assumed. No CargoNet equivalent for SEA exists to validate."
+    }
+  ],
+  "override_triggers": [
+    {
+      "override": "ASSUMED-tag-automatic-L",
+      "claim_count": 12,
+      "claim_ids": ["VC-14", "VC-23", "VC-33", "VC-39", "VC-46", "VC-49", "VC-51", "VC-52", "PP4.1-15", "PP4.3-8", "PP4.3-11", "PP4.4-8", "PP4.4-10", "PP4.5-3"]
+    },
+    {
+      "override": "single-trade-source-for-operating-cost",
+      "claim_count": 4,
+      "claim_ids": ["PP4.1-4", "PP4.1-5", "PP4.1-6", "PP4.3-4"]
+    },
+    {
+      "override": "secondary-market-research-only-for-market-sizing",
+      "claim_count": 10,
+      "claim_ids": ["VC-MS-1", "VC-MS-2", "VC-MS-3", "VC-MS-4", "VC-MS-5", "VC-MS-9", "VC-MS-10", "VC-MS-11", "VC-MS-14", "VC-MS-15", "VC-MS-16", "VC-MS-17"]
+    },
+    {
+      "override": "source-mismatch-cited-URL-does-not-support-claim",
+      "claim_count": 2,
+      "claim_ids": ["VC-47", "VC-48"]
+    },
+    {
+      "override": "suspicious-domain-non-credible-source",
+      "claim_count": 1,
+      "claim_ids": ["PP4.4-6"]
+    },
+    {
+      "override": "trade-press-reporting-on-specialist-primary",
+      "claim_count": 5,
+      "claim_ids": ["PP4.2-5", "PP4.2-9", "PP4.3-5", "PP4.3-10", "PP4.3-2"]
+    },
+    {
+      "override": "paywalled-primary-via-vendor-PR-only",
+      "claim_count": 6,
+      "claim_ids": ["VC-1", "VC-6", "VC-11", "VC-20", "VC-31", "VC-MS-7", "VC-MS-8"]
+    },
+    {
+      "override": "vendor-blog-for-Gartner-statistic",
+      "claim_count": 1,
+      "claim_ids": ["PP4.3-7"]
+    }
+  ],
+  "weak_claims_to_re_research": [
+    {
+      "id": "PP4.1-13",
+      "file": "stage-4-pain-points.md",
+      "claim": "Strategic cargo theft rose 1,475% between 2022 and 2024; one-third of 2024 thefts were identity-based",
+      "current_sources": [
+        "https://www.travelers.com/resources/business-topics/supply-chain-management/strategic-cargo-theft",
+        "https://www.burnsandwilcox.com/insights/cargo-theft-hits-record-high-in-2024-targeting-consumer-goods-electronics-and-more/"
+      ],
+      "current_score": "L",
+      "issue": "Dramatic 1,475% figure sourced only from insurance industry content marketing (Travelers, Burns & Wilcox). Neither source discloses the methodology or primary data behind the percentage. No Verisk CargoNet, BSI Supply Chain, or TT Club primary source cited for this specific statistic.",
+      "what_to_find": "Search Verisk CargoNet 2024 annual report for strategic/fictitious cargo theft trend data. Search BSI Supply Chain 2024 and 2025 Annual Cargo Theft Report for identity-fraud trend statistics. Acceptable alternative: FreightGuard/NMC intelligence reports on strategic theft trends. Search query: 'Verisk CargoNet strategic cargo theft 2024 annual report fictitious pickup statistics'",
+      "priority": "high"
+    },
+    {
+      "id": "PP4.1-14",
+      "file": "stage-4-pain-points.md",
+      "claim": "Fictitious pickup events grew from average 66/year (2012-2022) to 576 in 2023",
+      "current_sources": ["https://haulerhub.com/blog/consumer-goods-theft-how-retail-crime-and-cargo-theft-are-costing-businesses-billions-in-2024/"],
+      "current_score": "L",
+      "issue": "HaulerHub (trucking software vendor blog) is the only source. These specific numbers (66→576) are highly precise and likely trace to FreightGuard or CargoNet annual report data, but the chain of citation is broken. The figures are used to characterize the scale of a major fraud trend central to PP4.1.",
+      "what_to_find": "Search Verisk CargoNet 2023 and 2024 annual cargo theft reports for fictitious pickup / identity theft statistics. Search FreightGuard annual reports. Search: 'fictitious pickup cargo theft 576 2023 CargoNet' and 'identity theft load cargo fraud 2023 statistics BSI TT Club'. Confirm whether 66→576 growth figure originated from CargoNet or another primary source.",
+      "priority": "high"
+    },
+    {
+      "id": "PP4.2-1",
+      "file": "stage-4-pain-points.md",
+      "claim": "$35 billion annually in pharma cold chain temperature excursion losses (IQVIA Institute 2019)",
+      "current_sources": ["https://sensos.io/resources/cold-chain-pharma/the-hidden-crisis-temperature%E2%80%91related-pharma-losses/"],
+      "current_score": "L",
+      "issue": "IQVIA is the named primary source (IQVIA Institute report) but is accessed only via a sensor vendor's blog page. The specific IQVIA report title, year, and direct URL are not cited. $35B is the most-cited figure in all pharma cold chain literature and anchors PP4.2's financial framing.",
+      "what_to_find": "Locate the IQVIA Institute report that contains the $35B figure. Search 'IQVIA Institute temperature-sensitive pharmaceutical distribution losses 2019 report' and 'IQVIA cold chain excursion $35 billion annual report'. Also check WHO pharmaceutical cold chain reports and ICH Q10 documentation for independent corroboration. Direct URL to IQVIA report or IQVIA Institute landing page required.",
+      "priority": "high"
+    },
+    {
+      "id": "VC-MS-1",
+      "file": "stage-4-value-chain.md",
+      "claim": "Global RTTVP market size (2024): $3.2B-$4.2B",
+      "current_sources": [
+        "https://www.openpr.com/news/3761839/real-time-transportation-visibility-platform-market-size",
+        "https://reports.valuates.com/market-reports/QYRE-Auto-34I14270/global-real-time-transportation-visibility-platform"
+      ],
+      "current_score": "L",
+      "issue": "openpr.com and Valuates are secondary market research re-publishers, not independent research firms. The foundational market sizing for the entire RTTVP category has no specialist primary source (Berg Insight, ABI Research, Gartner, IDC). The range ($3.2B-$4.2B) cannot be validated without methodology access.",
+      "what_to_find": "Search for RTTVP market sizing from Berg Insight, ABI Research, IDC, or Gartner directly. Search 'Berg Insight real-time transportation visibility platform market 2024' and 'ABI Research RTTVP market size 2024' and 'IDC supply chain visibility platform market forecast 2024'. Also search Gartner's own market sizing publications if available. Acceptable: two specialist primary research firms corroborating the $3-5B range.",
+      "priority": "high"
+    },
+    {
+      "id": "VC-MS-15",
+      "file": "stage-4-value-chain.md",
+      "claim": "ASEAN cold chain logistics market: $19.76B current; forecast $25.54B by 2031",
+      "current_sources": ["https://www.mordorintelligence.com/industry-reports/asean-cold-chain-logistics-market"],
+      "current_score": "L",
+      "issue": "Single Mordor Intelligence estimate (rubric-listed secondary market research firm) for the headline SEA market size. This figure is foundational to the SEA market thesis. No ASEAN Secretariat, ADB, GCCA APAC regional chapter, or government statistics corroboration.",
+      "what_to_find": "Search ASEAN Secretariat for cold chain logistics statistics. Search ADB (Asian Development Bank) for ASEAN cold chain or food logistics market reports. Search GCCA (Global Cold Chain Alliance) APAC chapter for Asia-Pacific cold chain market sizing. Search 'ASEAN cold chain logistics market size 2024 ADB ASEAN Secretariat'. Also check Indonesian Ministry of Trade cold chain reports and Singapore EDB logistics sector reports.",
+      "priority": "medium"
+    }
+  ],
+  "gate_decision_for_stage_4": "ship-with-flag",
+  "gate_reason": "At 69.4% Low confidence (84 of 121 scored claims), Stage 4 sits just below the 70% re-run threshold but carries systemic source quality problems that materially undermine the document's evidentiary value. The most critical failures are: (1) The RTTVP market sizing ($3.2B-$4.2B) is sourced only from openpr.com and Valuates — both are re-publishers, not independent research firms — which means the category's own addressable market has no specialist primary validation. (2) The 1,475% strategic cargo theft rise (PP4.1) and 66→576 fictitious pickup statistics (PP4.1) — both central to the GPS-jamming / spot-carrier risk framing — are sourced from insurance industry content marketing (Travelers, Burns & Wilcox, HaulerHub blog) with no Verisk CargoNet or TT Club primary citation. (3) The $35B pharma cold chain loss figure (PP4.2) is accessed only via a sensor vendor's blog, not the IQVIA Institute primary. (4) The suspicious domain research.oz.spotlightar.com (PP4.4-6) is cited for a Gartner 2025 MQ claim and appears to be an SEO scraper — this citation must be removed. (5) The ASSUMED tags are used appropriately (12 instances properly disclosed) but create a high floor of structural uncertainty about SEA presence claims for every vendor profiled. The gate decision is ship-with-flag rather than re-run because: the vendor profiles (funding rounds, acquisitions, named customers) are correctly sourced from primary press releases and constitute reliable M-confidence factual claims; the Gartner MQ Leadership positions are corroborated by multiple competing vendor PRs; and Berg Insight is directly cited for the reefer tracker metric. The three highest-priority deep research targets are: (a) Verisk CargoNet primary for 1,475% strategic theft rise and 66→576 fictitious pickups; (b) IQVIA Institute primary for $35B pharma cold chain loss; (c) specialist primary research firm (Berg Insight, ABI Research, IDC) for RTTVP market size. Resolving these three would lift 8-10 Low claims to Medium, potentially crossing back below the 30% Low threshold on re-validation.",
+  "imi_structural_compare": {
+    "imi_pp_count_target": "2-4",
+    "stage_pp_count": 5,
+    "stage_rc_min": 3,
+    "stage_rc_max": 4,
+    "stage_citations_min": 8,
+    "stage_citations_max": 12,
+    "stage_unique_sources": 68,
+    "all_dimensions_pass": false,
+    "remediation_needed": [
+      "PP count (5) exceeds target range of 2-4; consider consolidating PP4.5 into PP4.1 or PP4.4 since it is flagged as a cross-cutting observation rather than a standalone pain point",
+      "RTTVP market sizing requires specialist primary research firm (Berg Insight, ABI Research, IDC) to replace openpr.com/Valuates citations — failing VC-MS-1 through VC-MS-5 all Low",
+      "Strategic cargo theft statistics (PP4.1-13, PP4.1-14) require Verisk CargoNet or BSI/TT Club primary citations to replace insurance industry content marketing sources",
+      "Pharma cold chain $35B loss figure (PP4.2-1) requires direct IQVIA Institute citation to replace sensos.io vendor blog",
+      "Suspicious domain citation (PP4.4-6: research.oz.spotlightar.com) must be removed and replaced with legitimate Gartner Peer Insights URL or acknowledged as unverified",
+      "Internal financial inconsistency: project44 revenue cited as both ~$210M (VC-3) and ~$175M ARR (PP4.1-11) from Latka — one figure must be removed or both qualified as estimates from the same commercial estimator with different methodology",
+      "Berg Insight SEA fleet management figure (PP4.3-10) should cite berginsight.com directly rather than via iotbusinessnews.com trade press"
+    ]
+  }
+}

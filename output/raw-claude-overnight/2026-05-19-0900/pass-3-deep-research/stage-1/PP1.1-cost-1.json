@@ -1,0 +1,67 @@
+{
+  "claim_id": "PP1.1-cost-1",
+  "outcome": "partial",
+  "notes": "Two of three sub-claims are now confirmed by tier-1 primary sources (Verisk NASDAQ:VRSK press release and CargoNet annual PDF). The $35B NICB sub-claim is partially confirmed — NICB does cite this figure on its website, but the figure originates from Homeland Security Investigations (HSI/DHS), not from an NICB-authored study. No primary NICB report URL with $35B and explicit 'unreported' language was retrievable (nicb.org returned HTTP 403 for all pages attempted).",
+  "stronger_sources_found": [
+    {
+      "url": "https://www.verisk.com/company/newsroom/cargo-theft-losses-surge-to-estimated-$725-million-in-2025-verisk-cargonet-analysis-reveals/",
+      "tier": 1,
+      "category": "primary-industry-data-publisher",
+      "publication_date": "2026-01-22",
+      "publisher": "Verisk Analytics (NASDAQ: VRSK) — CargoNet division",
+      "what_it_supports": "Confirms $725M estimated North American (US+Canada) freight/cargo theft losses in 2025, a 60% increase from 2024. 3,594 supply chain crime events across US and Canada. Average per-theft value $273,990. Directly contradicts the characterization 'freight fraud' — this is cargo theft (physical + scheme theft), not all freight fraud.",
+      "key_quote": "estimated losses surged to nearly $725 million, a 60 percent increase from 2024, as organized criminal groups increasingly focused on high value shipments",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://tapa.memberclicks.net/assets/2025-National-Cargo-Theft-Conferfence/Presentations-for-Sharing/2024%20Annual%20Verisk%20CargoNet%E2%80%99s%20Supply%20Chain%20Risk%20Report.pdf",
+      "tier": 1,
+      "category": "primary-industry-data-publisher-pdf",
+      "publication_date": "2025-01",
+      "publisher": "Verisk CargoNet (Verisk Analytics NASDAQ: VRSK) — hosted by TAPA (Transport Asset Protection Association)",
+      "what_it_supports": "Confirms exact 2024 total loss value of $454,914,764 (~$454.9M) across US and Canada. 3,625 incidents. Average per-theft value $202,364.",
+      "key_quote": "Cargo Theft by Total Loss Value: $454,914,764",
+      "via_pdf_markitdown": true
+    },
+    {
+      "url": "https://www.nicb.org/prevent-fraud-theft/cargo-theft",
+      "tier": 2,
+      "category": "primary-industry-association",
+      "publication_date": "undated (active page as of 2025-2026)",
+      "publisher": "National Insurance Crime Bureau (NICB)",
+      "what_it_supports": "NICB does publish and endorse the $35B annual US cargo theft figure on its website. However, the figure is attributed to Homeland Security Investigations (HSI) in multiple corroborating secondary sources, not to an original NICB study. The NICB page returned HTTP 403 during fetch attempts — content confirmed via search snippets only.",
+      "key_quote": "Cargo theft costs an estimated $35 billion annually in the United States — attributed on NICB site, original source: Homeland Security Investigations (HSI/DHS)",
+      "via_pdf_markitdown": false,
+      "caveat": "NICB pages returned 403 Forbidden — content verified via search snippets and secondary sources only. 'Including unreported' language not independently confirmed in a primary NICB document during this research session."
+    }
+  ],
+  "claim_accuracy_assessment": {
+    "$725M_2025": "CONFIRMED — Verisk CargoNet primary press release, Jan 22 2026. Scope: US + Canada. Category: cargo theft (physical + scheme/fraud). Note: this is CargoNet-tracked theft, not a comprehensive 'all freight fraud' figure.",
+    "$454.9M_2024": "CONFIRMED — CargoNet 2024 Annual Report PDF, exact figure $454,914,764. Scope: US + Canada.",
+    "$35B_NICB_unreported": "PARTIALLY CONFIRMED with attribution caveat — NICB does use this figure; however, original source is Homeland Security Investigations (HSI), not an NICB-authored study. The 'including unreported' framing is common in industry descriptions of this figure but lacks a traceable primary NICB report citation. The figure may also pre-date 2024-2025 and not be current."
+  },
+  "terminology_note": "The claim uses 'freight fraud' but Verisk CargoNet tracks 'supply chain crime' which includes cargo theft, fictitious pickup/identity schemes, and strategic theft. The CargoNet figures are the most authoritative available for North America but do not equal a comprehensive 'freight fraud' total (e.g., double brokering, payment fraud are not included). The claim should clarify it refers to cargo theft losses, not all freight fraud.",
+  "revised_claim_text": "North American cargo theft losses reached an estimated ~$725 million in 2025 (up ~60% from $454.9M in 2024), per Verisk CargoNet's annual analysis covering the United States and Canada (Verisk, January 2026). Total annual US cargo theft losses including unreported incidents are estimated at up to $35 billion by Homeland Security Investigations (HSI/DHS), a figure also cited by NICB. Note: the $725M and $454.9M figures cover tracked incidents only; the $35B estimate includes significant unreported crime.",
+  "revised_confidence": "High",
+  "needs_attended_fetch": [
+    "https://www.nicb.org/prevent-fraud-theft/cargo-theft",
+    "https://www.nicb.org/news/blog/rise-cargo-theft-billion-dollar-industry",
+    "https://www.nicb.org/news/regional-news/digital-highway-robbery-cargo-theft-expected-hit-record-highs-2025",
+    "https://www.nicb.org/news/news-releases/nicb-warns-increased-cargo-theft-2025",
+    "https://www.trucking.org/news-insights/freight-under-fire-explosive-rise-cargo-theft"
+  ],
+  "searches_performed": [
+    "CargoNet 2025 annual cargo theft report North America $725 million freight fraud",
+    "NICB National Insurance Crime Bureau freight theft $35 billion unreported 2024 2025",
+    "NICB 'cargo theft' '$35 billion' annual economy site:nicb.org",
+    "CargoNet 2024 annual cargo theft report '$454' OR '$454.9 million' North America losses",
+    "CargoNet 2024 annual report PDF 'supply chain risk' '$454.9' site:verisk.com OR site:cargonet.com",
+    "'cargo theft' '$35 billion' 'Homeland Security' OR 'HSI' origin source attribution annual US economy",
+    "NICB 'cargo theft' '35 billion' primary source original estimate report year published"
+  ],
+  "pdf_evidence": {
+    "file": "/tmp/cargonet-2024-annual.md",
+    "source_pdf": "https://tapa.memberclicks.net/assets/2025-National-Cargo-Theft-Conferfence/Presentations-for-Sharing/2024%20Annual%20Verisk%20CargoNet%E2%80%99s%20Supply%20Chain%20Risk%20Report.pdf",
+    "key_line_from_pdf": "Cargo Theft by Total Loss Value: $454,914,764"
+  }
+}

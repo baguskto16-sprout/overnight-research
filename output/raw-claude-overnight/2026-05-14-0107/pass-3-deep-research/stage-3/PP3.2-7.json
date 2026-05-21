@@ -1,0 +1,29 @@
+{
+  "claim_id": "PP3.2-7",
+  "original_claim": "70% of commercial fleet managers do not share telematics data with their insurer; 79% have never been asked to",
+  "original_score": "L",
+  "new_score": "L",
+  "outcome": "confirmed-scarce",
+  "new_sources": [
+    {
+      "url": "https://sambasafety.com/blog/2025-telematics-report-release",
+      "publisher": "SambaSafety",
+      "category": "vendor-primary",
+      "key_quote": "Only 30% of fleets are currently sharing their telematics data, a six-point drop from last year — consistent with the 70% non-sharing figure, but same vendor source"
+    },
+    {
+      "url": "https://www.carriermanagement.com/features/2025/11/24/281755.htm",
+      "publisher": "Carrier Management",
+      "category": "trade-press",
+      "key_quote": "70 percent of fleet managers report they don't share their telematics data with insurers, and 79 percent said they have not been asked — cites SambaSafety blog as sole source; not an independent corroboration"
+    },
+    {
+      "url": "https://www.insurancejournal.com/news/national/2023/10/12/743807.htm",
+      "publisher": "Insurance Journal / National Alliance for Insurance Education and Research + SambaSafety",
+      "category": "industry-association-co-authored-with-vendor",
+      "key_quote": "Approximately 78% of commercial auto insurers are in the research phase of preparing for usage-based insurance products — covers insurer readiness, not fleet-to-insurer sharing rates; co-authored by SambaSafety so not independent"
+    }
+  ],
+  "revised_claim_text": "[ASSUMED-N]: Approximately 70% of commercial fleet managers do not share telematics data with their insurer, and roughly 79% report never having been asked — figures sourced exclusively from SambaSafety's self-commissioned 2025 Telematics Report (n=152 fleets); directional gap between telematics adoption and insurer integration is widely acknowledged in trade press but no independent industry-association or audited research-firm survey corroborates the specific percentages. To validate: seek ATRI 'Capitalizing on Telematics' study results (survey launched 2025, results pending), NPTC 2025 Benchmarking Report (member-gated), or commission independent broker survey.",
+  "notes": "Exhaustive search across ATRI, NPTC, TCA, AM Best, Frost & Sullivan, Carrier Management, and Insurance Journal found no independent corroboration of the 70%/79% figures. ATRI launched a relevant telematics survey in 2025 but results had not been published as of the research date. The NPTC 2025 Benchmarking Report exists but is member-login gated with no publicly extractable insurance data-sharing statistics. The Carrier Management trade article (Nov 2025) re-cites the same SambaSafety source and adds no independent evidence. The Insurance Journal/National Alliance study (Oct 2023) was co-produced with SambaSafety and covers insurer-side UBI readiness, not fleet-to-insurer data sharing rates. SambaSafety's own survey methodology (152 fleets, 180 brokers, 70 carriers, fielded June-July 2025) is disclosed in aggregate but no third-party firm conducted or audited the survey. The directional claim — that most fleets do not share telematics data with insurers — is consistent across SambaSafety's annual reports and acknowledged in trade press, but the specific 70%/79% numbers cannot be upgraded beyond L without an independent source. Score remains L. Recommended action: mark [ASSUMED-N] and flag for validation against ATRI results when published."
+}

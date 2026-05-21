@@ -1,0 +1,24 @@
+{
+  "claim_id": "PP3.2-3",
+  "original_claim": "Nuclear verdicts in commercial trucking: 135 verdicts of $10M+ in 2024; $31.3B total; 52% increase over 2023",
+  "original_score": "L",
+  "new_score": "M",
+  "outcome": "stronger",
+  "new_sources": [
+    {
+      "url": "https://marathonstrategies.com/report/corporate-verdicts-go-thermonuclear-2025-edition/",
+      "publisher": "Marathon Strategies",
+      "category": "primary-research-firm",
+      "key_quote": "In 2024, 135 lawsuits against corporate defendants resulted in a nuclear verdict — a 52% increase over 2023 — totaling $31.3 billion, a 116% increase over 2023. These verdicts were ordered across 34 states and 77 courts."
+    },
+    {
+      "url": "https://www.insurancejournal.com/news/national/2025/05/22/824792.htm",
+      "publisher": "Insurance Journal",
+      "category": "trade-press-named-author",
+      "key_quote": "Marathon Strategies compiled the research through a review of verdict data, court records, media reports, and other sources. In 2024, 135 nuclear verdicts ($10M+) totaled $31.3B, a 116% rise over 2023; trucking had 8 nuclear verdicts."
+    }
+  ],
+  "claim_accuracy_note": "The 135 / $31.3B / 52% figures are cross-industry corporate verdict totals, NOT trucking-specific. Trucking accounted for only 8 of the 135 verdicts in 2024, and the combined trucking + automotive total was 15 verdicts worth $1.4B. The original claim as written implies these are trucking-sector figures, which is incorrect.",
+  "revised_claim_text": "Nuclear verdicts ($10M+) across all corporate defendants reached a record 135 in 2024 — a 52% increase over 2023 — totaling $31.3B (up 116% YoY), per Marathon Strategies 'Corporate Verdicts Go Thermonuclear 2025 Edition.' Trucking specifically accounted for 8 of those 135 verdicts; trucking and automotive combined faced 15 verdicts totaling $1.4B.",
+  "notes": "Primary source is Marathon Strategies, a research-for-hire firm (not a government agency or academic body), which reduces ceiling to M rather than H. The firm discloses methodology: 'review of verdict data, court records, media reports, and other sources' with an explicit caveat that figures do not reflect reductions, remittiturs, or reversals. Insurance Journal (trade press, named coverage) independently reported the same figures on 2025-05-22. ILR (Institute for Legal Reform) May 2024 report covers only through 2022 and does not contain the 2024 figures. ATRI's trucking-specific nuclear verdict white paper does not appear to contain the 135/$31.3B statistics — those originate exclusively from Marathon Strategies. Critical framing error in original claim: the 135 verdicts and $31.3B are all-industry corporate totals, not trucking-specific; presenting them as trucking figures overstates the trucking sector's exposure and should be corrected in the artifact."
+}

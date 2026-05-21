@@ -1,0 +1,44 @@
+{
+  "claim_id": "PP4.1-13",
+  "outcome": "stronger",
+  "new_confidence": "M",
+  "refined_claim_text": "Strategic cargo theft — defined as deception-based schemes (fictitious pickups, identity fraud, double brokering) that induce supply-chain participants to hand over freight willingly — rose approximately 1,475% between Q1 2022 and Q4 2024 per Verisk CargoNet data, growing from roughly 3% to approximately 33% of all reported cargo theft incidents. The figure is attributed to Verisk CargoNet's internal strategic-theft tracking, cited in detail by FreightWaves (April 2025) quoting the Verisk CargoNet Supply Chain Risk Report (January 2025), and corroborated by a 2026 FBI/IC3 public service announcement on cyber-enabled cargo theft.",
+  "primary_sources_found": [
+    {
+      "url": "https://www.truckinginfo.com/digital-cover-features/cargo-thefts-new-playbook-strategic-fraud-double-brokering-and-cybercrime-hit-trucking",
+      "title": "Cargo Theft's New Playbook: Strategic Fraud, Double Brokering, and Cybercrime Hit Trucking",
+      "publisher": "Trucking Info (Randall-Reilly trade publication)",
+      "primary_category": "primary-trade",
+      "exact_quote": "between 2022 and 2024, while cargo theft overall rose 93%, strategic theft rose 1,475% ... Strategic theft has grown from less than 5% of all cargo theft to roughly a third"
+    },
+    {
+      "url": "https://www.freightwaves.com/news/strategic-cargo-theft-is-a-rapidly-growing-concern",
+      "title": "Strategic cargo theft is a rapidly growing concern",
+      "publisher": "FreightWaves",
+      "primary_category": "primary-trade",
+      "exact_quote": "Strategic theft went from roughly 3 percent of all theft to about 33 percent in that two-year period — Scott Cornell, VP of Transportation, Travelers; cites Verisk CargoNet Report: Strategic Theft (January 2025) and CargoNet 2024 First Quarter Supply Chain Risk Trends Analysis"
+    },
+    {
+      "url": "https://www.ic3.gov/PSA/2026/PSA260430",
+      "title": "Cyber-Enabled Strategic Cargo Theft Surging",
+      "publisher": "FBI Internet Crime Complaint Center (IC3)",
+      "primary_category": "primary-gov",
+      "exact_quote": "In 2025, estimated cargo theft losses in the United States and Canada surged to nearly $725 million, (60 percent increase from 2024); confirmed cargo theft incidents increased by 18 percent"
+    },
+    {
+      "url": "https://www.verisk.com/company/newsroom/cargo-theft-surges-to-record-levels-in-2024-verisk-cargonet-analysis-reveals/",
+      "title": "Cargo Theft Surges to Record Levels in 2024, Verisk CargoNet Analysis Reveals",
+      "publisher": "Verisk / CargoNet",
+      "primary_category": "primary-research-firm",
+      "exact_quote": "3,625 reported incidents representing a stark 27 percent increase from 2023; estimated average value per theft rose to $202,364"
+    },
+    {
+      "url": "https://www.bsigroup.com/en-US/insights-and-media/insights/whitepapers/bsi-consulting-and-tt-club-2024-cargo-theft-report/",
+      "title": "BSI Consulting and TT Club 2024 Cargo Theft Report",
+      "publisher": "BSI Group / TT Club",
+      "primary_category": "primary-research-firm",
+      "exact_quote": "strategic thefts now representing 18% of all incidents in the United States [in 2024]"
+    }
+  ],
+  "notes": "The 1,475% figure is real and traces to Verisk CargoNet's proprietary strategic-theft tracking data, specifically the 'Verisk CargoNet Report: Strategic Theft' published January 2025 and the 2024 Annual Supply Chain Risk Report (presented at the 2025 TAPA National Cargo Theft Conference). The figure measures the growth in strategic-theft incidents from Q1 2022 to Q4 2024 — a period when criminal enterprises pivoted from smash-and-grab to deception-based schemes. The claim's context (93% overall theft rise vs. 1,475% strategic theft rise) is directly confirmed by Trucking Info trade reporting and FreightWaves, both quoting Verisk CargoNet data with named sources.\n\nThe 'one-third' share is confirmed in the same FreightWaves/TruckingInfo reporting: strategic theft grew from ~3% to ~33% of all incidents over the 2022–2024 period. However, an important caveat exists: the BSI/TT Club 2024 Cargo Theft Report (an independent primary source) places the 2024 strategic theft share at 18% of US incidents — materially lower than 33%. This suggests the 33% figure may reflect Verisk CargoNet's methodology/dataset (North America, all strategic subcategories) while BSI/TT Club uses a narrower definition or different incident universe. The FBI/IC3 PSA (April 2026) corroborates the trend direction as a government source but does not reproduce the specific 1,475% figure. Confidence is raised to Medium (not High) because: the 1,475% figure is sourced to Verisk CargoNet's proprietary dataset rather than a publicly downloadable primary-source document with audited methodology; the 33% share conflicts with BSI/TT Club's 18%; and the Verisk CargoNet annual report PDF is gated/presented only at industry conference. Claim should be cited to 'Verisk CargoNet Supply Chain Risk Report (January 2025)' rather than the insurance content-marketing pages currently used."
+}

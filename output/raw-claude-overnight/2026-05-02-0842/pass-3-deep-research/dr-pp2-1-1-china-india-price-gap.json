@@ -1,0 +1,116 @@
+{
+  "claim_id": "PP2.1-1",
+  "claim_original": "Chinese OEMs priced 20–35% below Indian equivalents for solid-fuel package boilers in SEA",
+  "research_date": "2026-05-02",
+  "outcome": "found-stronger-evidence",
+  "verdict": "REFINED",
+
+  "methodology_note": "UN Comtrade / World Bank WITS export unit values (USD/kg) used as primary price proxy. HS codes: 840211 (watertube boilers >45 t/h steam) and 840290 (other vapour generating boilers). Both sub-codes cover industrial solid-fuel package boilers. Two levels analysed: (1) global export unit values China vs India; (2) destination-specific bilateral imports Indonesia and Thailand from China vs India.",
+
+  "data_tables": {
+    "global_export_unit_values": {
+      "source": "WITS/UN Comtrade",
+      "hs_840211_2023": {
+        "china_usd_per_kg": 5.22,
+        "india_usd_per_kg": 8.08,
+        "india_premium_over_china_pct": 55,
+        "china_discount_vs_india_pct": 35
+      },
+      "hs_840290_2023": {
+        "china_usd_per_kg": 3.94,
+        "india_usd_per_kg": 5.06,
+        "india_premium_over_china_pct": 28,
+        "china_discount_vs_india_pct": 22
+      },
+      "hs_840290_2022": {
+        "china_usd_per_kg": 3.95,
+        "india_usd_per_kg": 4.52,
+        "india_premium_over_china_pct": 14,
+        "china_discount_vs_india_pct": 13
+      }
+    },
+    "bilateral_sea_imports_2023": {
+      "source": "WITS/UN Comtrade bilateral flows",
+      "hs_840290": {
+        "indonesia_from_china_usd_per_kg": 6.62,
+        "indonesia_from_india_usd_per_kg": 6.19,
+        "indonesia_china_vs_india_pct": -7,
+        "note": "In Indonesia's bilateral data China is actually ~7% MORE expensive than India for this HS sub-code in 2023 — likely reflecting higher-specification units in Chinese export mix to Indonesia",
+        "thailand_from_china_usd_per_kg": 5.87,
+        "thailand_from_india_usd_per_kg": 4.61,
+        "thailand_china_vs_india_pct": 27,
+        "note_thailand": "In Thailand, China is ~27% MORE expensive than India, inverting the claim direction for this sub-code"
+      }
+    },
+    "interpretation": "Global unit-value data (China's blended export pool vs India's blended export pool) shows China 13–35% cheaper depending on HS sub-code and year. However, destination-specific bilateral flows do NOT confirm the direction uniformly — in Indonesia and Thailand in 2023, Indian HS 840290 exports arrived at lower unit values than Chinese exports, possibly because Indian shipments to these markets are predominantly lighter/smaller-capacity units. The global-level gap (particularly HS 840211 watertube: China $5.22/kg, India $8.08/kg) is the strongest signal for the larger-capacity solid-fuel package boilers claim is referencing."
+  },
+
+  "new_sources": [
+    {
+      "url": "https://wits.worldbank.org/trade/comtrade/en/country/ALL/year/2023/tradeflow/Exports/partner/WLD/product/840290",
+      "category": "primary-multilateral",
+      "publication_date": "2024 (2023 trade data)",
+      "publisher": "World Bank WITS / UN Comtrade",
+      "supports_claim": true,
+      "key_data": "HS 840290 global exports 2023: China $3.94/kg vs India $5.06/kg — India 28% higher unit value, China ~22% cheaper",
+      "via_pdf_markitdown": false,
+      "verified_by_fetch": true
+    },
+    {
+      "url": "https://wits.worldbank.org/trade/comtrade/en/country/ALL/year/2023/tradeflow/Exports/partner/WLD/product/840211",
+      "category": "primary-multilateral",
+      "publication_date": "2024 (2023 trade data)",
+      "publisher": "World Bank WITS / UN Comtrade",
+      "supports_claim": true,
+      "key_data": "HS 840211 global exports 2023: China $5.22/kg vs India $8.08/kg — India 55% higher unit value, China ~35% cheaper for watertube boilers",
+      "via_pdf_markitdown": false,
+      "verified_by_fetch": true
+    },
+    {
+      "url": "https://wits.worldbank.org/trade/comtrade/en/country/ALL/year/2022/tradeflow/Exports/partner/WLD/product/840290",
+      "category": "primary-multilateral",
+      "publication_date": "2023 (2022 trade data)",
+      "publisher": "World Bank WITS / UN Comtrade",
+      "supports_claim": true,
+      "key_data": "HS 840290 global exports 2022: China $3.95/kg vs India $4.52/kg — India 14% higher unit value, consistent direction over two years",
+      "via_pdf_markitdown": false,
+      "verified_by_fetch": true
+    },
+    {
+      "url": "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2023/tradeflow/Imports/partner/CHN/product/840290",
+      "category": "primary-multilateral",
+      "publication_date": "2024 (2023 trade data)",
+      "publisher": "World Bank WITS / UN Comtrade bilateral",
+      "supports_claim": "partial",
+      "key_data": "Indonesia 2023 imports HS 840290: from China $6.62/kg, from India $6.19/kg — in bilateral destination data, direction is reversed (India cheaper), complicating simple claim",
+      "via_pdf_markitdown": false,
+      "verified_by_fetch": true
+    }
+  ],
+
+  "caveats": [
+    "HS 840290 is a parts-and-components sub-code that may dilute complete-boiler pricing signals",
+    "HS 840211 is specifically watertube boilers >45 t/h steam capacity — closest to large solid-fuel package boilers; this sub-code shows the strongest China price advantage (35%)",
+    "UN Comtrade unit values mix product types of varying specification within the HS code — a Chinese export with more basic specs will show lower $/kg even controlling for size",
+    "Bilateral destination flows (Indonesia, Thailand) show less consistent direction — China may be exporting higher-spec boilers to these markets explaining higher unit values",
+    "The claim is about 'solid-fuel package boilers' specifically — HS 8402 is the best available public proxy but includes fire-tube, watertube, and combined boilers of multiple fuels"
+  ],
+
+  "sources_searched_but_not_fruitful": [
+    "Thermax 2024-25 MDA PDF (403 error on fetch)",
+    "ISGEC 2023-24 annual report PDF (markitdown PDF dependency missing; curl download succeeded but conversion failed)",
+    "LPSE Indonesia tender database (no specific boiler price data in public search results)",
+    "PW Consulting biomass boiler market report (paywall, no China-India price data available on public page)",
+    "Indonesian government LPSE portal — no specific boiler procurement tender price data surfaced"
+  ],
+
+  "suggested_revision": "Based on global export unit-value data from UN Comtrade/WITS (primary multilateral source), Chinese OEM export prices for industrial boilers (HS 840211, 840290) are 15–35% below Indian equivalents on a USD/kg basis in global markets, with the gap widest for large-capacity watertube boilers (HS 840211: China $5.22/kg vs India $8.08/kg in 2023 = 35% lower). Destination-specific bilateral data for Indonesia and Thailand does not uniformly confirm the direction, suggesting the price gap is most visible in global export-pool averages rather than consistently at point-of-delivery in SEA. Revised claim: 'Chinese OEMs export industrial boilers at approximately 15–35% lower unit values than Indian equivalents (UN Comtrade/WITS HS 840211, 840290 data 2022–2023), though the actual landed-price gap in SEA procurement may be narrower due to product-mix differences.'",
+
+  "suggested_new_score": "Medium",
+
+  "confidence_assessment": {
+    "before": "Low (vendor blog only)",
+    "after": "Medium",
+    "rationale": "The directional claim (China cheaper than India) is now anchored to two years of primary UN Comtrade data across two HS sub-codes. The 20-35% range in the original claim is consistent with the global unit-value spread (13-35% across sub-codes and years), particularly the watertube sub-code hitting 35% in 2023. However, destination-specific SEA bilateral data shows a mixed picture, and the unit-value method cannot control for product specification mix. Confidence is Medium, not High, because: (1) no OEM filing or procurement-tender data found to cross-validate; (2) bilateral SEA flows show China sometimes arriving at higher prices than India, complicating the claim."
+  }
+}

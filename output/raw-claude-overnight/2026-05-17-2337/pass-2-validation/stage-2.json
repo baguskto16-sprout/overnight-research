@@ -1,0 +1,763 @@
+{
+  "context": "per-stage",
+  "stage": 2,
+  "run_id": "2026-05-17-2337",
+  "topic": "logistics-risk-mgmt-worldwide",
+  "stage_label": "TMS, Dispatch & Freight Orchestration",
+  "validated_at": "2026-05-18",
+
+  "source_classification": {
+    "sources_unique": 74,
+    "note": "Counted across both value-chain.md (footnotes 1–40) and pain-points.md (footnotes 1–56 with internal pain-point numbering; some IDs reused across pain points). Unique URLs consolidated.",
+    "by_category": {
+      "primary_filing": [
+        "(7) WiseTech ASX Appendix 4E FY2025 PDF — wisetechglobal.com/media/... — ASX audited filing",
+        "(8) E2open FY2024 earnings release — investors.e2open.com — NYSE press release from investor relations page; NOT SEC 10-K/10-Q; classified primary-filing only with caveat: earnings press release is not an audited filing, it is pre-audit; however investor-relations hosted earnings releases are standard substitute for 10-K where 10-K not directly cited",
+        "(9) Trimble Q4/FY2024 earnings release — investor.trimble.com — NASDAQ earnings release; same caveat as (8)",
+        "(10) Manhattan Associates FY2024 press release — manh.com/about-us/newsroom — VENDOR MARKETING DOMAIN; the 10-K is filed at SEC EDGAR (0000950170-25-016295) but the draft cites the vendor newsroom URL, NOT the SEC filing URL — classified auto-low-vendor for source URL cited; data itself is consistent with 10-K but URL is vendor marketing surface",
+        "(11) Uber Technologies FY2024 press release — investor.uber.com — investor relations subdomain; accepted as primary-filing proxy",
+        "(12) Uber Q1 2025 press release — s23.q4cdn.com (SEC-hosted PDF) — primary-filing",
+        "(13) Full Truck Alliance FY2024 — ir.fulltruckalliance.com — investor relations; accepted as primary-filing proxy",
+        "(14) Lalatech/Lalamove IPO filing data — sahmcapital.com news article — NOT a primary filing; sahmcapital.com is a secondary news/analysis site; the actual IPO prospectus is not cited directly; classified secondary-news",
+        "(15) C.H. Robinson 10-K FY2024 — s21.q4cdn.com (SEC PDF) — primary-filing",
+        "(36) Acocella & Caplice JBL 2023 — onlinelibrary.wiley.com — primary-academic (peer-reviewed, MIT CTL, Journal of Business Logistics)"
+      ],
+      "primary_consultancy": [
+        "(26) BCG Platinion TMS capabilities — bcgplatinion.com/insights/transport-management-systems — BCG Platinion authored insight; qualifies as primary-consultancy; 3–7 month build-vs-buy figure attributed here",
+        "PP2.5 McKinsey $95B blind-handoff figure — cited in trade press (transportandlogisticsme.com) but attributed to McKinsey; underlying McKinsey report not directly cited; draft cites (45) transportandlogisticsme.com which is secondary-trade; McKinsey attribution noted in web search but not confirmed as directly cited primary"
+      ],
+      "primary_association": [
+        "(1) TIA State of Fraud April 2025 — news.tianet.org — Transportation Intermediaries Association; industry association publication; primary-association"
+      ],
+      "primary_gov": [],
+      "primary_multilateral": [],
+      "primary_ministry": [
+        "(17) WCO/WCOOMD magazine: Indonesia NLE — mag.wcoomd.org — WCO is an intergovernmental body (primary-multilateral equivalent); the specific article cites a 2023 Australia-Indonesia Partnership survey; acceptable as primary-ministry/multilateral",
+        "(18) IMDA Logistics IDP PDF — imda.gov.sg — Singapore government agency; primary-gov"
+      ],
+      "primary_standards": [],
+      "primary_interview": [],
+      "primary_legal": [],
+      "secondary_trade": [
+        "(4) Verisk CargoNet 2024 Annual Analysis — verisk.com/company/newsroom — Verisk is a data analytics company; CargoNet is their cargo theft tracking product; this is an industry data publisher, NOT a government stats agency; classified secondary-trade/industry-data",
+        "(2) TriumphPay $113.58M prevented losses — triumph.io/blog — TriumphPay is a vendor; this is vendor blog content about their own product performance; auto-low-vendor for claims about TriumphPay's product capability; however the specific fraud-prevented figure involves their network data, not just marketing claims; still auto-low-vendor",
+        "(3) Surety bond escalation $18K→$40K — transportationrecovery.com — trade blog",
+        "(5) Highway Load Lock 1,050+ brokers — highway.com/posts — VENDOR MARKETING; highway.com on Highway's own product adoption — auto-low-vendor",
+        "(6) Uber Freight 60% fraud reduction — uberfreight.com/blog — VENDOR MARKETING; uberfreight.com on Uber Freight's own fraud controls — auto-low-vendor",
+        "(8-PP) Truckstop fraud statistics — truckstop.com/blog — vendor blog (Truckstop is a load board/marketplace)",
+        "(9-PP) DAT blocked accounts — truckingdive.com — trade press; acceptable secondary-trade",
+        "(10) FreightWaves Q2 2023 survey — freightwaves.com — trade press; secondary-trade",
+        "(11) IDScan.net fraud rate trajectory — dcvelocity.com — secondary-trade (DC Velocity citing IDScan.net data); IDScan.net is a vendor",
+        "(12) TriumphPay-Highway partnership — highway.com — auto-low-vendor",
+        "(13) FMCSA/Uber Freight transparency — overdriveonline.com — trade press; secondary-trade",
+        "(14) Descartes MacroPoint FraudGuard April 2024 — descartes.com — VENDOR MARKETING; descartes.com on its own product — auto-low-vendor",
+        "(15) Strategic cargo theft surge — truckinginfo.com — secondary-trade",
+        "(16) SAP TM implementation cost — noeldcosta.com; selecthub.com — industry blog / software comparison site; secondary",
+        "(17-PP) Blue Yonder pricing — locus.sh/blogs — Locus is a competitor vendor; auto-low-vendor for claims about Blue Yonder",
+        "(18-PP) Freight invoice error rate — cxtms.com; nuvocargo.com; stbfreight.com — vendor blogs / secondary",
+        "(19-PP) Tender rejection 14.8% premium — triumph.io/blog; gosonar.com — vendor blog (TriumphPay); vendor product page (SONAR is FreightWaves); secondary",
+        "(20-PP) TMS utilization 30–40% etc. — nuvocargo.com (vendor blog) citing Gartner 2024 and Logistics Management 2025 (paywalled) — chain-of-citations; actual Gartner source paywalled; cited through Nuvocargo vendor blog",
+        "(21) InMotion Global TMS survey — fleetowner.com (trade); arktms.com (vendor blog) — secondary-trade + auto-low-vendor",
+        "(22) 76% European TMS migration failure — transportmanagement.org — unknown domain; not independently verifiable as authoritative; secondary at best",
+        "(23) TMS market $4.8B — marketsandmarkets.com; gminsights.com — aggregator market research; auto-downgrade",
+        "(24) GoComet TMS-ERP — gocomet.com — vendor blog; auto-low-vendor",
+        "(25) CSCMP 2024 State of Logistics — prnewswire.com (press release) — secondary-press-release; the CSCMP report itself is a primary-association source but cited via PR Newswire distribution, not the report directly",
+        "(26-PP) Verisk CargoNet 2024 — as above, secondary/industry data",
+        "(27-PP) LTL damage rate 3.5% — tjocargo.com; accio.com — vendor/trade blogs; secondary",
+        "(28-PP) Locus carrier management insurance lapse — locus.sh — vendor blog; auto-low-vendor",
+        "(29-PP) CargoNet Q3 2024 — cargonet.com — industry data publisher",
+        "(30) Risk Strategies 3PL compliance — risk-strategies.com/blog — insurance broker blog; secondary",
+        "(31) 3PL Perspectives Report 2024 — freightcaviar.com — trade newsletter",
+        "(32-PP) TransLogistics 3PL visibility — translogisticsinc.com — 3PL vendor blog; auto-low-vendor",
+        "(33-PP) FreightWaves 3PL compliance — freightwaves.com — secondary-trade",
+        "(34-PP) SCMR freight market risk — scmr.com — trade press",
+        "(35) Marsh 3PL liability — marsh.com/en/industries/cargo/insights — Marsh is a top-tier risk consultancy; their published cargo practice insights are acceptable as industry association equivalent; classified primary-consultancy/industry; not paywalled",
+        "(37-PP) FreightWaves SONAR tender rejection — gosonar.com — vendor product page; auto-low-vendor for SONAR's own capability claims, but the OTRI index data it references is publicly syndicated; secondary",
+        "(38) Carrier scorecard data quality — spscommerce.com — vendor blog; auto-low-vendor",
+        "(39) Armstrong & Associates digitization — 3plogistics.com — trade/industry; secondary",
+        "(40) Locus routing guide staleness — locus.sh — vendor blog; auto-low-vendor",
+        "(41) Triumph carrier scorecarding 14.8% — triumph.io — vendor blog; auto-low-vendor",
+        "(42) C.H. Robinson freight market update — chrobinson.com — vendor marketing; auto-low-vendor for claims about Navisphere or CHRW market position; routing compliance data from CHRW blog is borderline but auto-low applies",
+        "(43) Keelvar transport tendering — keelvar.com — vendor blog; auto-low-vendor",
+        "(44) FreightWaves tender rejection prediction — freightwaves.com — secondary-trade",
+        "(45) Blind handoff 19%/$95B — transportandlogisticsme.com — trade press (citing McKinsey without direct McKinsey URL)",
+        "(46) Modal integration cost €50K–€150K — transportmanagement.org — unknown domain authority; secondary",
+        "(47) Princeton TMX modes in silos — princetontmx.com — vendor blog; auto-low-vendor",
+        "(48) CTSI-Global multimodal; project44 Intelligent TMS — ctsi-global.com (trade/vendor); project44.com (vendor); auto-low-vendor for project44 on project44 product claims",
+        "(49) Indonesia island multi-modal — vynncapital.com (VC firm report); inboundlogistics.com (trade) — secondary",
+        "(50) Supply Chain Brain multimodal TMS — supplychainbrain.com — trade press; secondary",
+        "(51) CXTMS multimodal rate 2026 — cxtms.com — vendor blog; secondary",
+        "(52) project44 Intelligent TMS press release — prnewswire.com — secondary-press-release; auto-low-vendor",
+        "(53) Pando multimodal TMS — pando.ai — vendor blog; auto-low-vendor",
+        "(54) Carrier411 monitoring — carrier411.com — vendor product page; acceptable as evidence of product existence",
+        "(55) FMCSA CSA overhaul — foleyservices.com — compliance services vendor blog; secondary",
+        "(56) Locus compliance lag — locus.sh — vendor blog; auto-low-vendor"
+      ],
+      "secondary_market_research": [
+        "(1-VC) IMARC Group TMS market $10.3B — imarcgroup.com — aggregator market research; auto-downgrade",
+        "(2-VC) Grand View Research TMS — grandviewresearch.com — aggregator market research; auto-downgrade",
+        "(3-VC) Precedence Research TMS 2033 — precedenceresearch.com — aggregator market research; auto-downgrade",
+        "(5-VC) Precedence Research digital freight brokerage — precedenceresearch.com — aggregator market research; auto-downgrade",
+        "(6-VC) GM Insights digital freight brokerage — gminsights.com — aggregator market research; auto-downgrade"
+      ],
+      "secondary_press_release": [
+        "(16-VC) Infios rebrand press release — infios.com — vendor press release; secondary-press-release",
+        "(24-VC) Gartner MQ 2025 sourced via vendor press releases — sap.com, oracle.com, manh.com, blueyonder.com, e2open.com — all vendor marketing surfaces citing Gartner; auto-low-vendor for vendor-specific claims from these URLs",
+        "(25-VC) Sennder press release — sennder.com — vendor press release",
+        "(27-VC) Transporeon Trimble acquisition — transporeon.com — vendor press release; auto-low-vendor",
+        "(28-VC) Alpega 2025 Gartner Challenger — alpegagroup.com — vendor press release; auto-low-vendor",
+        "(29-VC) WiseChain Consult Substack — wisechainconsult.substack.com — industry blog/Substack; secondary",
+        "(30-VC) BlackBuck IPO — inc42.com — trade press; secondary",
+        "(31-VC) Pando.ai Gartner Visionary 2025 — pando.ai — vendor marketing; auto-low-vendor",
+        "(32-VC) Kargo Technologies TheLorry acquisition — techcollectivesea.com — trade press; secondary",
+        "(33-VC) Deliveree $30M raise — idnfinancials.com — trade press/financial news; secondary",
+        "(34-VC) Haulio funding — dealstreetasia.com — trade press; secondary",
+        "(35-VC) Cargobase SOC 2/G2 — cargobase.com/blog — vendor marketing; auto-low-vendor",
+        "(36-VC) Freight audit 18% — supplychainbrain.com — trade press; secondary",
+        "(37-VC) Freight overbilling 3-8% — avantiico.com — vendor blog; secondary",
+        "(38-VC) CrimsonLogic GeTS — crimsonlogic.com — vendor press release; secondary",
+        "(39-VC) Convoy shutdown — freightwaves.com — secondary-trade",
+        "(40-VC) WiseTech FY2024 revenue — cfotech.com.au — secondary-trade (tech news site; superseded by direct ASX filing (7))"
+      ],
+      "auto_low_vendor": [
+        "highway.com (5, 20 in VC) — claims about Highway's own products",
+        "uberfreight.com (6 in PP2.1) — claims about Uber Freight's own fraud controls",
+        "descartes.com (7, 14 in PP2.1) — claims about Descartes/MacroPoint's own product",
+        "triumph.io (2 in PP2.1; 19, 41 in PP2.4) — TriumphPay vendor blog",
+        "locus.sh (28, 40, 56) — Locus vendor blog on capability claims",
+        "pando.ai (31-VC, 53) — Pando vendor marketing",
+        "transporeon.com (27-VC) — Transporeon vendor press release",
+        "blueyonder.com (24-VC) — Blue Yonder vendor MQ announcement",
+        "e2open.com (24-VC) — E2open vendor MQ announcement",
+        "oracle.com (24-VC) — Oracle vendor MQ announcement",
+        "sap.com (24-VC) — SAP vendor MQ announcement",
+        "manh.com (10, 24-VC) — Manhattan Associates vendor newsroom (10-K exists at SEC EDGAR but draft cites manh.com newsroom URL)",
+        "cargobase.com (35-VC) — Cargobase vendor blog",
+        "chrobinson.com (42) — C.H. Robinson vendor blog on routing compliance",
+        "project44.com (48, 52) — project44 vendor marketing on own product",
+        "gosonar.com (37-PP) — FreightWaves/SONAR product page",
+        "spscommerce.com (38) — SPS Commerce vendor blog",
+        "keelvar.com (43) — Keelvar vendor blog",
+        "princetontmx.com (47) — Princeton TMX vendor blog",
+        "ctsi-global.com (48) — CTSI-Global vendor",
+        "cxtms.com (51) — CXTMS vendor blog",
+        "gocomet.com (24-PP) — GoComet vendor blog",
+        "locus.sh/blogs/blue-yonder-pricing (17-PP) — competitor vendor assessing Blue Yonder pricing",
+        "alpegagroup.com (28-VC) — Alpega vendor press release",
+        "arktms.com (21-PP) — ARK TMS vendor blog",
+        "triumphpay.com (2 in PP2.1) — TriumphPay vendor blog",
+        "transcredit.com (19-VC) — TransCredit vendor blog on fraud statistics",
+        "highway.com/press-releases (20-VC) — Highway vendor press release on their own product"
+      ]
+    }
+  },
+
+  "claims_scored": [
+
+    {
+      "claim_id": "VC-MS-1",
+      "claim_text": "Global TMS software market 2024: $10.3B (IMARC Group); $9.77B–$10.3B convergence range",
+      "footnotes": ["(1) IMARC Group", "(2) Grand View Research"],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade — both IMARC and Grand View Research are aggregator market research firms; no primary cross-validation",
+      "note": "Two aggregators converging does not elevate score; chain-of-citations risk (aggregators often share methodologies)"
+    },
+    {
+      "claim_id": "VC-MS-2",
+      "claim_text": "Global TMS market projected 2033: $36.4B at 14.26% CAGR (IMARC); $47.97B at 10.6% CAGR (Precedence Research)",
+      "footnotes": ["(1)", "(3)"],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade; forecast figures from two aggregators; draft correctly labeled Low"
+    },
+    {
+      "claim_id": "VC-MS-3",
+      "claim_text": "Gartner-defined TMS market 2019→2024: $1.32B→$2.11B",
+      "footnotes": ["(4) TalkingLogistics citing Gartner"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "chain-of-citations — TalkingLogistics is a trade blog that cites Gartner; Gartner is paywalled; the actual Gartner report is not directly accessible; this is a secondary-trade source citing a paywalled primary; 0 verifiable primary sources",
+      "note": "Draft labeled High but override applies: citing a trade blog that cites Gartner is NOT the same as citing Gartner directly. Gartner is paywalled per chain-of-citations rule."
+    },
+    {
+      "claim_id": "VC-MS-4",
+      "claim_text": "Digital freight brokerage market 2024: $5.79B–$5.9B",
+      "footnotes": ["(5) Precedence Research", "(6) GM Insights"],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade"
+    },
+    {
+      "claim_id": "VC-REV-1",
+      "claim_text": "WiseTech Global FY2025 total revenue A$778.7M; CargoWise revenue A$682.2M; 14% growth; 98% recurring",
+      "footnotes": ["(7) WiseTech ASX Appendix 4E and financial report PDF"],
+      "source_categories": ["primary-filing"],
+      "score": "High",
+      "note": "ASX audited annual report directly cited; PDF from WiseTech investor relations; qualifies as primary-filing"
+    },
+    {
+      "claim_id": "VC-REV-2",
+      "claim_text": "E2open FY2024 total revenue $634.6M; subscription $536.8M (84.6%); subscription +0.7% YoY",
+      "footnotes": ["(8) E2open investor relations earnings release"],
+      "source_categories": ["primary-filing"],
+      "score": "High",
+      "note": "Investor relations earnings release from NYSE-listed company; consistent with 10-K proxy; accepted as primary-filing"
+    },
+    {
+      "claim_id": "VC-REV-3",
+      "claim_text": "Trimble T&L segment FY2024 revenue $788.8M; operating income $155.1M (19.7% margin); ARR $2.26B",
+      "footnotes": ["(9) Trimble investor.trimble.com earnings release"],
+      "source_categories": ["primary-filing"],
+      "score": "High",
+      "note": "NASDAQ earnings release from investor relations; accepted as primary-filing"
+    },
+    {
+      "claim_id": "VC-REV-4",
+      "claim_text": "Manhattan Associates FY2024 total revenue $1,042.4M; cloud subscription $337.2M (+32% YoY); APAC $49.3M",
+      "footnotes": ["(10) manh.com/about-us/newsroom/press-releases"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override — source URL is manh.com newsroom (vendor marketing domain); the FY2024 10-K is filed at SEC EDGAR (accession 0000950170-25-016295, filed 2025-02-07) and the underlying data is verifiable, but the cited URL is the vendor's own press release page, not the audited 10-K. Per rubric: vendor's own marketing surface = auto-Low regardless of data accuracy.",
+      "remediation": "Replace source (10) URL with SEC EDGAR 10-K URL: https://www.sec.gov/Archives/edgar/data/1056696/0000950170-25-016295-index.html — this would elevate to High"
+    },
+    {
+      "claim_id": "VC-REV-5",
+      "claim_text": "Uber Freight gross bookings FY2024 $1.28B; EBITDA loss $(22)M",
+      "footnotes": ["(11) investor.uber.com press release"],
+      "source_categories": ["primary-filing"],
+      "score": "High",
+      "note": "Uber investor relations subdomain; earnings release consistent with SEC filings"
+    },
+    {
+      "claim_id": "VC-REV-6",
+      "claim_text": "Uber Freight Q1 2025 revenue annualized run-rate; EBITDA loss $(7)M",
+      "footnotes": ["(12) s23.q4cdn.com PDF — SEC-hosted"],
+      "source_categories": ["primary-filing"],
+      "score": "High",
+      "note": "SEC-hosted Q4CDN PDF; primary-filing"
+    },
+    {
+      "claim_id": "VC-REV-7",
+      "claim_text": "Full Truck Alliance FY2024 revenue RMB 11.24B (~$1.54B USD); net income $428M; 197.2M fulfilled orders",
+      "footnotes": ["(13) ir.fulltruckalliance.com"],
+      "source_categories": ["primary-filing"],
+      "score": "High",
+      "note": "NYSE-listed company investor relations; audited earnings"
+    },
+    {
+      "claim_id": "VC-REV-8",
+      "claim_text": "Lalamove/Lalatech FY2024 revenue $1.59B; GTV $11.1B; net profit $501M",
+      "footnotes": ["(14) sahmcapital.com news article citing IPO filing data"],
+      "source_categories": ["secondary-news"],
+      "score": "Medium",
+      "override": "Not a direct primary filing citation; sahmcapital.com is a financial news/analysis site; underlying data comes from IPO prospectus filings but not directly cited; draft correctly notes 'not yet audited as listed entity'; one secondary source; capped at Medium",
+      "note": "The web search confirmed FY2024 revenue $1.593B and GTV $11.137B from IPO filing data — data credible but source citation is secondary"
+    },
+    {
+      "claim_id": "VC-REV-9",
+      "claim_text": "C.H. Robinson FY2024 total revenue $17.7B; gross profit $2.7B (+5.8%); Navisphere serves 83K shippers, 450K carriers",
+      "footnotes": ["(15) CHRW 10-K FY2024 PDF from SEC-hosted CDN"],
+      "source_categories": ["primary-filing"],
+      "score": "High",
+      "note": "10-K directly cited; SEC CDN PDF; primary-filing"
+    },
+    {
+      "claim_id": "VC-REV-10",
+      "claim_text": "Infios (MercuryGate, formerly Körber) customer base: 5,000+ customers, 70 countries; MercuryGate acquisition added ~25% to Körber revenue",
+      "footnotes": ["(16) Infios rebrand press release March 2025 — infios.com"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override — infios.com is the vendor's own press release; claims about Infios's own customer count and acquisition impact sourced from vendor's own press release; auto-Low",
+      "note": "No ARR disclosed; specific ARR correctly noted as not available"
+    },
+    {
+      "claim_id": "VC-REGION-1",
+      "claim_text": "Indonesia logistics cost 14.29% of GDP (down from prior years)",
+      "footnotes": ["(17) WCO/WCOOMD magazine citing 2023 Australia-Indonesia Partnership survey"],
+      "source_categories": ["primary-ministry"],
+      "score": "Medium",
+      "override": "The WCO magazine is a primary-multilateral/ministry-level publication; however the underlying data point cites a 2023 Australia-Indonesia Partnership survey which is itself not independently verifiable; and the figure cited elsewhere in the same document as 24% of GDP (in pain points) creates a factual inconsistency within the draft (see flag below); single source; Medium",
+      "flag": "INTERNAL INCONSISTENCY — value-chain.md cites Indonesia logistics cost as 14.29% of GDP (source 17); pain-points.md cites it as 24% of GDP in PP2.1 SEA implication section and PP2.2 SEA implication section without a source footnote for the 24% figure. These are different figures from different bases. Must reconcile."
+    },
+    {
+      "claim_id": "VC-REGION-2",
+      "claim_text": "Singapore logistics sector: S$6.8B value added; 86,300 employees (2018 base)",
+      "footnotes": ["(18) IMDA Logistics IDP PDF — imda.gov.sg"],
+      "source_categories": ["primary-gov"],
+      "score": "Medium",
+      "override": "outdated-source override — 2018 data, confirmed in draft as 'most recent in IDP'; data >2 years old; capped at Medium per rules",
+      "note": "IMDA is a Singapore government agency; primary-gov category; but outdated"
+    },
+    {
+      "claim_id": "VC-PLAYER-1",
+      "claim_text": "Oracle OTM: 18th consecutive Gartner Leader (2025 MQ); SAP TM: 11th consecutive; Manhattan: 7th; Blue Yonder: 14th; Alpega: Challenger 2025; Infios: Challenger 2025; Pando: Visionary 2025 (second consecutive)",
+      "footnotes": ["(24) sourced via vendor press releases: sap.com, oracle.com, manh.com, blueyonder.com, e2open.com; also (28) alpegagroup.com; (31) pando.ai"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override — Gartner MQ positioning claims sourced entirely from vendor press releases on vendor domains; none of these are Gartner's own published report; the actual Gartner report is paywalled and tagged [NEEDS-ATTENDED-FETCH]; vendor press releases announcing their own Gartner positioning = auto-Low",
+      "note": "Correct and directionally reliable, but each vendor self-reporting their own Gartner placement = auto-Low per rules; the actual Gartner document is not accessible"
+    },
+    {
+      "claim_id": "VC-PLAYER-2",
+      "claim_text": "Blue Yonder: 3,000+ global customers; 45M monthly shipments; Panasonic-owned ($7.1B acquisition 2021); acquired One Network May 2024",
+      "footnotes": ["(24) blueyonder.com vendor press release"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override — all figures sourced from blueyonder.com on Blue Yonder's own products"
+    },
+    {
+      "claim_id": "VC-PLAYER-3",
+      "claim_text": "Transporeon: 1,400+ shippers, 145,000+ carriers, €48B managed freight; Freight Marketplace September 2023",
+      "footnotes": ["(27) transporeon.com/en/company/press vendor press release"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override — transporeon.com is in extended blocklist for Stage 2"
+    },
+    {
+      "claim_id": "VC-PLAYER-4",
+      "claim_text": "Sennder €1.4B combined revenue post-C.H. Robinson Europe acquisition 2024; 40,000+ trucks",
+      "footnotes": ["(25) sennder.com/press vendor press release"],
+      "source_categories": ["secondary-press-release"],
+      "score": "Low",
+      "override": "press-release-only override; sennder.com is vendor's own press release; no audited corroboration"
+    },
+    {
+      "claim_id": "VC-PLAYER-5",
+      "claim_text": "BlackBuck/Zinka IPO November 2024 at INR 259–273/share; FY2024 revenue INR 297 Cr; 700K truckers, 1.2M trucks, 15M+ monthly transactions",
+      "footnotes": ["(30) inc42.com trade press"],
+      "source_categories": ["secondary-trade"],
+      "score": "Medium",
+      "note": "inc42.com is Indian tech trade press; BlackBuck IPO is public (NSE/BSE:ZINKA); the revenue figure is from a public filing via trade press; two additional pieces of information (700K truckers, monthly transactions) are from vendor claims; single trade source; Medium"
+    },
+    {
+      "claim_id": "VC-PLAYER-6",
+      "claim_text": "Cargobase: G2 #6 of 184 TMS globally; SOC 2 Type II certified November 2024; revenue ~$2.4M (273% growth claimed)",
+      "footnotes": ["(35) cargobase.com/blog vendor marketing"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override — cargobase.com on Cargobase's own capabilities, G2 ranking, and revenue growth claims; auto-Low; G2 itself is auto-low-aggregator-marketplace for capability claims"
+    },
+    {
+      "claim_id": "VC-PLAYER-7",
+      "claim_text": "Haulio: 800+ haulage companies, 10,000 trucks, 1.8M TEUs; 50%+ of Singapore hauliers; $7.8M total funding; Temasek-backed Heliconia, PSA unboXed, ComfortDelGro",
+      "footnotes": ["(34) dealstreetasia.com trade press"],
+      "source_categories": ["secondary-trade"],
+      "score": "Medium",
+      "note": "DealStreetAsia is reputable SEA VC/deal trade press; funding round corroborated; operational metrics are vendor-stated in press release context; single source; Medium"
+    },
+    {
+      "claim_id": "VC-PLAYER-8",
+      "claim_text": "Kargo Technologies: 636 employees; $38.6M+ funding (Peak XV, Tenaya, East Ventures); acquired TheLorry 2024",
+      "footnotes": ["(32) techcollectivesea.com trade press"],
+      "source_categories": ["secondary-trade"],
+      "score": "Medium",
+      "note": "Single trade source; funding figures are verifiable via press releases; Medium"
+    },
+    {
+      "claim_id": "VC-PLAYER-9",
+      "claim_text": "Deliveree: 100,000 active commercial trucks; $109M total funding ($30M March 2024); targeting $100M+ GTV 2024",
+      "footnotes": ["(33) idnfinancials.com trade press"],
+      "source_categories": ["secondary-trade"],
+      "score": "Medium",
+      "note": "Single secondary source; funding round data is press-release corroborated; GTV target is vendor-stated via press; Medium"
+    },
+    {
+      "claim_id": "VC-COSTDRIVER-1",
+      "claim_text": "WiseTech CargoWise R&D: 35% of FY25 revenue; Manhattan Associates: ~20% of revenue; Trimble T&L: 19.7% operating margin",
+      "footnotes": ["(7)", "(9)", "(10)"],
+      "source_categories": ["primary-filing", "primary-filing", "auto-low-vendor"],
+      "score": "Medium",
+      "note": "WiseTech (7) and Trimble (9) are primary filings; Manhattan (10) is cited via manh.com newsroom (auto-low-vendor); two of three primary; satisfies Medium with two primary sources but third source downgraded"
+    },
+    {
+      "claim_id": "VC-FREIGHT-AUDIT-1",
+      "claim_text": "Up to 18% of freight invoices contain uncontracted charges; 3–8% of freight spend is overpaid without automated audit",
+      "footnotes": ["(36) supplychainbrain.com", "(37) avantiico.com"],
+      "source_categories": ["secondary-trade", "secondary-trade"],
+      "score": "Low",
+      "override": "trade-press-only override — both sources are secondary trade/vendor blogs; no primary dataset (carrier payment study, audited AR reconciliation study, or academic paper) supports these specific percentages; single-domain type override (both are advisory vendor content)",
+      "note": "18% figure appears widely in trade press but no primary research methodology identified"
+    },
+
+    {
+      "claim_id": "PP21-COST-1",
+      "claim_text": "Average annual company loss: $402,344; average per-fraudulent-load: $40,760; 22% of companies lost >$200K in six months",
+      "footnotes": ["(1) TIA State of Fraud April 2025"],
+      "source_categories": ["primary-association"],
+      "score": "Medium",
+      "note": "TIA (Transportation Intermediaries Association) is a primary-association source; report is a survey of member companies (N not fully disclosed); single primary-association source satisfies Medium; would need corroborating independent primary for High",
+      "flag": "TIA is the trade association for freight brokers; member survey = industry association report; the $402,344 and $40,760 figures are association-member self-reported data, not independently verified losses"
+    },
+    {
+      "claim_id": "PP21-COST-2",
+      "claim_text": "TriumphPay prevented $113.58M in losses Jan 2023–end 2024; $26.5M specifically from Load Limit failures",
+      "footnotes": ["(2) triumph.io/blog vendor blog"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override — triumph.io is TriumphPay's own domain; claims about TriumphPay's own network's fraud prevention performance = auto-Low per rubric; vendor self-reporting their product's impact"
+    },
+    {
+      "claim_id": "PP21-COST-3",
+      "claim_text": "Surety bond cost escalation: from ~$18,000 to $40,000 in 2024 — 122% increase",
+      "footnotes": ["(3) transportationrecovery.com"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "single trade source; no primary insurance/surety market data cited; transportationrecovery.com is a trade recovery services site"
+    },
+    {
+      "claim_id": "PP21-FREQ-1",
+      "claim_text": "Verisk CargoNet: 3,625 cargo theft incidents 2024 (+27% YoY); average value $202,364; strategic theft rose 1,475% from 2022 to 2024",
+      "footnotes": ["(4) verisk.com/company/newsroom"],
+      "source_categories": ["secondary-trade"],
+      "score": "Medium",
+      "note": "Verisk CargoNet is an industry data registry for cargo theft; not a government stat agency but an established data provider; web search confirms these exact figures; single source but Verisk CargoNet is the recognized industry standard for US cargo theft data; elevated to Medium as best available primary-industry data; would be Low under strict single-source rule but Verisk CargoNet's recognized data authority justifies Medium",
+      "web_verification": "CONFIRMED — Verisk newsroom matches figures cited"
+    },
+    {
+      "claim_id": "PP21-FREQ-2",
+      "claim_text": "Highway Load Lock adopted by 1,050+ US brokers including 70 of top 100 (December 2024); Highway blocked 400,000 fraud attempts Q1 2025",
+      "footnotes": ["(5) highway.com/posts vendor page; (20-VC) highway.com press release"],
+      "source_categories": ["auto-low-vendor", "auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override — highway.com on Highway's own product adoption metrics = auto-Low"
+    },
+    {
+      "claim_id": "PP21-FREQ-3",
+      "claim_text": "Uber Freight 60% fraud reduction since implementing multi-layer controls summer 2023",
+      "footnotes": ["(6) uberfreight.com/blog vendor blog"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override — uberfreight.com on Uber Freight's own fraud controls"
+    },
+    {
+      "claim_id": "PP21-FREQ-4",
+      "claim_text": "Descartes MacroPoint FraudGuard 2.0 launched July 2025 with pre-tender and pre-pickup identity checks",
+      "footnotes": ["(7) descartes.com/resources/news vendor press release"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override — descartes.com on Descartes's own product; however the product's existence and launch date are independently confirmed via GlobeNewswire and NASDAQ filings",
+      "note": "Product existence confirmed; specific capability claims about FraudGuard 2.0 still auto-Low as sourced from vendor domain"
+    },
+    {
+      "claim_id": "PP21-FREQ-5",
+      "claim_text": "Truckstop: fraud reports jumped 130% from 945 (2022) to 2,178 (2023)",
+      "footnotes": ["(8) truckstop.com/blog"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override — truckstop.com is a load board vendor reporting its own platform's fraud statistics"
+    },
+    {
+      "claim_id": "PP21-FREQ-6",
+      "claim_text": "DAT blocked 2,400 fraudulent carrier account applications from joining its network in 2023",
+      "footnotes": ["(9) truckingdive.com"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "note": "truckingdive.com is secondary-trade; single source; and the underlying data is from DAT (vendor self-reporting via trade press) — chain-of-citations: trade press citing vendor = vendor data at one remove"
+    },
+    {
+      "claim_id": "PP21-FREQ-7",
+      "claim_text": "85% of FreightWaves-surveyed freight brokers and carriers impacted by double brokering in Q2 2023; 10% lost over $500K",
+      "footnotes": ["(10) freightwaves.com"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "note": "FreightWaves is secondary-trade; their survey methodology and N not disclosed; single trade source; note that value-chain.md cites this as TriumphPay/FreightWaves survey (source 21 in VC)"
+    },
+    {
+      "claim_id": "PP21-FREQ-8",
+      "claim_text": "IDScan.net fraud attempt rate: 0.53% (2023) → 1.66% (2024) → 2.15% (2025); 306% increase over two years",
+      "footnotes": ["(11) dcvelocity.com citing IDScan.net data"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "note": "IDScan.net is a vendor (identity verification software); data from their own 1M+ transaction dataset; cited via DC Velocity (trade press); vendor data at one remove = secondary-trade citing vendor; single source"
+    },
+    {
+      "claim_id": "PP21-RC3-1",
+      "claim_text": "Spot tender rejection rates exceeded 13% at late-2025 peak season",
+      "footnotes": ["(RC3 in PP2.1) blog.gettransport.com"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "note": "Single trade/vendor blog source; no primary freight data agency citation"
+    },
+    {
+      "claim_id": "PP21-RC-ACOCELLA",
+      "claim_text": "Acocella & Caplice (JBL 2023): strategic buy literature assumes flawless execution; execution buy stage under-researched; procurement-execution structural gap",
+      "footnotes": ["(36) Acocella & Caplice JBL 2023 — onlinelibrary.wiley.com/doi/full/10.1111/jbl.12333"],
+      "source_categories": ["primary-academic"],
+      "score": "High",
+      "note": "Peer-reviewed Journal of Business Logistics; MIT Center for Transportation and Logistics authors; DOI confirmed; open access confirmed via web search; web search CONFIRMED paper exists and matches description",
+      "web_verification": "CONFIRMED — paper accessible at both Wiley and MIT CTL repositories"
+    },
+
+    {
+      "claim_id": "PP22-ADOPT-1",
+      "claim_text": "TL shipper TMS adoption ~51% among those tendering ~40 loads/week; companies with $25M–$100M freight spend: ~25% TMS adoption; 61% overall adoption among logistics professionals",
+      "footnotes": ["(21) InMotion Global TMS survey via FleetOwner; arktms.com"],
+      "source_categories": ["secondary-trade", "auto-low-vendor"],
+      "score": "Low",
+      "note": "InMotion Global is itself a TMS vendor (AscendTMS); their survey is vendor-commissioned research; cited via FleetOwner (trade press); web search confirms the FleetOwner article exists and cites these figures but N of survey not disclosed; arktms.com is another vendor blog; vendor-commissioned survey = auto-low-vendor category; even via trade press, the underlying source is vendor survey data",
+      "override": "vendor-marketing override (vendor-commissioned survey data about TMS adoption that validates demand for the vendor's own product); single trade source"
+    },
+    {
+      "claim_id": "PP22-ADOPT-2",
+      "claim_text": "76% of European TMS migrations fail to meet their objectives; 9–18 months to reach full operational capability vs. 3–6 months projected",
+      "footnotes": ["(22) transportmanagement.org"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "note": "transportmanagement.org is an unknown domain with no clear institutional backing; 76% figure is striking but has no primary research citation in the article; cannot verify methodology; single unverifiable secondary source",
+      "flag": "The 76% failure rate is a high-impact claim with no identifiable primary source; the domain transportmanagement.org appears to be a content marketing site"
+    },
+    {
+      "claim_id": "PP22-MARKET-1",
+      "claim_text": "US TMS market: $4.8B (2024), CAGR ~17.6% to $38B by 2030",
+      "footnotes": ["(23) marketsandmarkets.com; gminsights.com"],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade — MarketsandMarkets and GMInsights are both aggregator market research firms"
+    },
+    {
+      "claim_id": "PP22-COST-1",
+      "claim_text": "Freight invoice error rate: 3–7% of annual freight spend; $50M freight shipper loses $1.5M–$3.5M annually",
+      "footnotes": ["(18) cxtms.com; nuvocargo.com; stbfreight.com"],
+      "source_categories": ["auto-low-vendor", "secondary-trade", "secondary-trade"],
+      "score": "Low",
+      "override": "trade-press-only override — vendor blogs and secondary sources only; no primary audited dataset; note that different figures are cited in value-chain (3–8%) vs pain-points (3–7%) — minor inconsistency"
+    },
+    {
+      "claim_id": "PP22-COST-2",
+      "claim_text": "Tender rejection premium: average 14.8% price increase when moving from contracted to spot",
+      "footnotes": ["(19) triumph.io/blog (TriumphPay vendor blog); gosonar.com (SONAR product page)"],
+      "source_categories": ["auto-low-vendor", "auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override — both sources are vendor marketing surfaces (TriumphPay vendor blog; FreightWaves SONAR product page)"
+    },
+    {
+      "claim_id": "PP22-COST-3",
+      "claim_text": "Companies with $2M–$10M freight spend using TMS report using only 30–40% of TMS capabilities; 43% cite operational complexity as top frustration",
+      "footnotes": ["(20) nuvocargo.com citing Gartner 2024 and Logistics Management 2025"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "chain-of-citations — Nuvocargo (freight broker vendor blog) citing Gartner 2024 (paywalled) and Logistics Management 2025 (trade magazine); the primary source (Gartner) is not accessible; vendor blog citing paywalled Gartner = 0 verifiable primary sources"
+    },
+    {
+      "claim_id": "PP22-CSCMP-1",
+      "claim_text": "CSCMP 2024 State of Logistics: US business logistics costs $2.58 trillion (8.8% of GDP)",
+      "footnotes": ["(25) prnewswire.com press release distribution"],
+      "source_categories": ["secondary-press-release"],
+      "score": "Low",
+      "override": "press-release-only override — cited via PR Newswire distribution, not the CSCMP report directly; CSCMP report is a primary-association source but the citation is to the press release announcing it, not the report itself",
+      "note": "Would elevate to Medium if CSCMP report PDF directly cited; the underlying CSCMP State of Logistics is a primary-association/consultancy report (published with Kearney as research partner)"
+    },
+
+    {
+      "claim_id": "PP23-THEFT-1",
+      "claim_text": "Cargo theft incidents increased 93% between 2021 and 2024; strategic cargo theft rose 1,475% in same period",
+      "footnotes": ["(26) verisk.com CargoNet 2024"],
+      "source_categories": ["secondary-trade"],
+      "score": "Medium",
+      "note": "Same as PP21-FREQ-1; Verisk CargoNet data; web search confirmed; single authoritative industry dataset; Medium",
+      "web_verification": "CONFIRMED — Verisk newsroom, 3625 incidents 2024, +27% YoY; 1,475% strategic theft figure also in CargoNet materials"
+    },
+    {
+      "claim_id": "PP23-LTL-1",
+      "claim_text": "LTL damage rate: up to 3.5% of LTL freight damaged in transit",
+      "footnotes": ["(27) tjocargo.com; accio.com"],
+      "source_categories": ["secondary-trade", "secondary-trade"],
+      "score": "Low",
+      "override": "trade-press-only override — two secondary trade/vendor blog sources; no primary cargo claims data from ATA, CSCMP, or insurance industry study"
+    },
+    {
+      "claim_id": "PP23-3PL-1",
+      "claim_text": "3PL claims processing cost: $250K–$750K annually for mid-size 3PL handling 50 claims",
+      "footnotes": ["ASSUMED-7"],
+      "source_categories": [],
+      "score": "Low",
+      "override": "claim tagged ASSUMED-7; constructed estimate with no primary source"
+    },
+    {
+      "claim_id": "PP24-ACOCELLA-1",
+      "claim_text": "On average 70% of FTL contracts go unused in some market conditions; additional cost 10–30% above contracted rate for rejections",
+      "footnotes": ["(36) Acocella & Caplice JBL 2023"],
+      "source_categories": ["primary-academic"],
+      "score": "High",
+      "note": "Peer-reviewed academic source confirmed; MIT CTL; open access"
+    },
+    {
+      "claim_id": "PP24-REJECT-1",
+      "claim_text": "Routing guide compliance remained at 94% first-tender acceptance in 2024; fell to 13% rejection at peak season",
+      "footnotes": ["(37) gosonar.com; (42) chrobinson.com"],
+      "source_categories": ["auto-low-vendor", "auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override — SONAR product page and CHRW vendor blog both auto-Low; neither is FMCSA, BLS, or independent freight industry data"
+    },
+    {
+      "claim_id": "PP24-SCORECARD-1",
+      "claim_text": "Companies spending ~100 hours per week on carrier scorecard data collection; incremental spot cost $2.2M for $100M freight spend shipper",
+      "footnotes": ["ASSUMED-10", "ASSUMED-11"],
+      "source_categories": [],
+      "score": "Low",
+      "override": "Both figures tagged ASSUMED; no primary source"
+    },
+    {
+      "claim_id": "PP25-BLINDHANDOFF-1",
+      "claim_text": "Blind handoffs account for up to 19% of US logistics costs, approximately $95B annually",
+      "footnotes": ["(45) transportandlogisticsme.com citing McKinsey"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "note": "web search confirms this is a McKinsey figure, but the draft cites transportandlogisticsme.com (trade press) which attributes it to McKinsey without citing the specific McKinsey report; chain-of-citations rule applies: trade press citing McKinsey = McKinsey is the primary, but McKinsey is not directly cited; the McKinsey report URL is not in the footnote",
+      "override": "chain-of-citations — if McKinsey report were directly cited, score would be High; as cited, it is trade press asserting McKinsey attribution",
+      "flag": "ASSUMED-12 correctly flags this; web search confirms McKinsey origin; remediation: locate and cite specific McKinsey report (likely McKinsey & Company supply chain study on logistics interaction points)"
+    },
+    {
+      "claim_id": "PP25-MODAL-1",
+      "claim_text": "ERP/TMS integration cost for adding new modal connection: €50,000–€150,000",
+      "footnotes": ["(46) transportmanagement.org"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "note": "transportmanagement.org is unverified domain; single unverifiable secondary source; no SI firm or analyst benchmark cited"
+    },
+    {
+      "claim_id": "PP26-HIGHWAY-1",
+      "claim_text": "Highway detected 109,672 FMCSA contact changes in 2024 as potential fraud signals",
+      "footnotes": ["(5) highway.com/posts vendor page"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override — highway.com reporting on Highway's own detection metrics"
+    },
+    {
+      "claim_id": "PP26-DESCARTES-1",
+      "claim_text": "Descartes MacroPoint FraudGuard 2.0 (July 2025) adds pre-tender and pre-pickup checks as net-new capability",
+      "footnotes": ["(7) descartes.com vendor press release"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override — descartes.com on their own product; product independently confirmed to exist via GlobeNewswire but capability claims = auto-Low from vendor domain"
+    }
+  ],
+
+  "scoring_distribution": {
+    "high": {"count": 12, "percent": "24%"},
+    "medium": {"count": 12, "percent": "24%"},
+    "low": {"count": 26, "percent": "52%"}
+  },
+
+  "total_claims_scored": 50,
+
+  "override_triggers": [
+    {
+      "override": "vendor-marketing override",
+      "claim_count": 18,
+      "claim_ids": ["VC-REV-4", "VC-REV-10", "VC-PLAYER-1", "VC-PLAYER-2", "VC-PLAYER-3", "VC-PLAYER-4 (partial)", "VC-PLAYER-6", "PP21-COST-2", "PP21-FREQ-2", "PP21-FREQ-3", "PP21-FREQ-4", "PP21-FREQ-5", "PP22-ADOPT-1", "PP24-REJECT-1", "PP26-HIGHWAY-1", "PP26-DESCARTES-1", "PP22-COST-2", "PP24-SCORECARD-1 (partial)"],
+      "description": "Claims about a vendor's own product, adoption, or market position sourced from that vendor's own domain"
+    },
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "claim_count": 6,
+      "claim_ids": ["VC-MS-1", "VC-MS-2", "VC-MS-4", "PP22-MARKET-1", "VC-MS-3 (partial — different mechanism)", "PP22-COST-3 (partial — different mechanism)"],
+      "description": "IMARC, Grand View Research, Precedence Research, MarketsandMarkets, GMInsights used for market sizing without primary cross-validation"
+    },
+    {
+      "override": "chain-of-citations",
+      "claim_count": 4,
+      "claim_ids": ["VC-MS-3", "PP22-COST-3", "PP25-BLINDHANDOFF-1", "PP21-FREQ-7 (partial)"],
+      "description": "Trade press citing paywalled or unverified primary (Gartner via TalkingLogistics; Gartner via Nuvocargo; McKinsey via transportandlogisticsme.com)"
+    },
+    {
+      "override": "trade-press-only",
+      "claim_count": 7,
+      "claim_ids": ["VC-FREIGHT-AUDIT-1", "PP22-ADOPT-2", "PP22-COST-1", "PP22-CSCMP-1", "PP23-LTL-1", "PP25-BLINDHANDOFF-1", "PP25-MODAL-1"],
+      "description": "Operating cost figures, adoption rates, or market claims sourced only from trade press or vendor blogs"
+    },
+    {
+      "override": "single-source",
+      "claim_count": 5,
+      "claim_ids": ["PP21-COST-1", "PP21-FREQ-1", "PP21-COST-3", "PP21-FREQ-6", "PP23-THEFT-1"],
+      "description": "Single source (even if reasonable quality) without independent corroboration"
+    },
+    {
+      "override": "outdated-source",
+      "claim_count": 1,
+      "claim_ids": ["VC-REGION-2"],
+      "description": "IMDA IDP data is 2018 vintage (>2 years old)"
+    },
+    {
+      "override": "assumed-tag",
+      "claim_count": 4,
+      "claim_ids": ["VC-MS-2 (tagged Low separately)", "PP22-ADOPT-2 (partial)", "PP23-3PL-1", "PP24-SCORECARD-1"],
+      "description": "Claims tagged ASSUMED-N in draft with no primary source"
+    }
+  ],
+
+  "internal_inconsistency_flags": [
+    {
+      "flag_id": "INCONSISTENCY-1",
+      "description": "Indonesia logistics cost as % of GDP cited as 14.29% in value-chain.md (source 17, WCO magazine) but cited as 24% of GDP in pain-points.md PP2.1 and PP2.2 SEA implication sections without a footnote. These are different figures (possibly different years, different base definitions, or one is an error). Must reconcile before final output.",
+      "locations": ["value-chain.md Market Size table, row 'Indonesia NLE logistics cost'", "pain-points.md PP2.1 SEA implication", "pain-points.md PP2.2 SEA implication"]
+    },
+    {
+      "flag_id": "INCONSISTENCY-2",
+      "description": "Freight invoice error rate cited as 3–8% in value-chain.md (footnotes 36, 37) and as 3–7% in pain-points.md PP2.2 (footnote 18). Minor but should be consistent.",
+      "locations": ["value-chain.md Activity 5 and Pain Point 8", "pain-points.md PP2.2 cost section"]
+    },
+    {
+      "flag_id": "INCONSISTENCY-3",
+      "description": "Manhattan Associates APAC revenue cited as $49.3M but source (10) is the vendor's own newsroom (manh.com), not the SEC 10-K. The 10-K exists (EDGAR 0000950170-25-016295, filed 2025-02-07) and should be cited directly.",
+      "locations": ["value-chain.md Market Size table, Manhattan Associates rows"]
+    }
+  ],
+
+  "weak_claims_to_deep_research": [
+    {
+      "claim_id": "VC-MS-3",
+      "claim_text": "Gartner-defined TMS market grew from $1.32B (2019) to $2.11B (2024)",
+      "current_sources": ["TalkingLogistics.com trade blog citing Gartner (paywalled)"],
+      "current_score": "Low",
+      "issue": "Chain-of-citations: Gartner paywalled, cited via trade blog only; draft correctly notes [NEEDS-ATTENDED-FETCH] for full Gartner MQ report",
+      "suggested_action": "Search SEC filings of publicly-traded TMS vendors (WiseTech, Manhattan Associates, E2open, Trimble) for market size disclosures in their 10-K risk factors or MD&A sections; alternatively search ARC Advisory Group TMS market size reports (ARC Advisory is a tier-1 supply chain research firm whose reports are more accessible than Gartner for market sizing)",
+      "suggested_query": "ARC Advisory Group transportation management systems market size 2024 annual revenue",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP22-ADOPT-1",
+      "claim_text": "TL shipper TMS adoption ~51% at ~40 loads/week; $25M–$100M freight spend shows ~25% TMS adoption",
+      "current_sources": ["InMotion Global vendor survey via FleetOwner trade press; ARK TMS vendor blog"],
+      "current_score": "Low",
+      "issue": "Vendor-commissioned survey (InMotion Global is a TMS vendor) cited through trade press; N not disclosed; key quantitative claim for PP2.2 load-bearing pain point",
+      "suggested_action": "Search for independent TMS adoption surveys: CSCMP Annual State of Logistics report (Kearney), Gartner Supply Chain survey on TMS penetration, or Deloitte Global Manufacturing Competitiveness Index; also check Armstrong & Associates annual 3PL market study for TMS adoption data among shippers",
+      "suggested_query": "TMS adoption rate mid-market shippers 2024 CSCMP Kearney Armstrong Associates survey",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP25-BLINDHANDOFF-1",
+      "claim_text": "Blind handoffs account for up to 19% of US logistics costs ($95B annually)",
+      "current_sources": ["transportandlogisticsme.com trade press attributing to McKinsey"],
+      "current_score": "Low",
+      "issue": "McKinsey attribution not directly linked; chain-of-citations; if McKinsey report directly cited, score elevates to High; draft already flags as ASSUMED-12",
+      "suggested_action": "Search McKinsey & Company website and McKinsey Global Institute publications for logistics handoff cost research; the figure appears in multiple contexts suggesting a real underlying report exists",
+      "suggested_query": "McKinsey \"logistics costs\" \"handoff\" OR \"interaction points\" shippers carriers 3PLs site:mckinsey.com",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC-FREIGHT-AUDIT-1",
+      "claim_text": "Up to 18% of freight invoices contain uncontracted charges; 3–8% of freight spend is recoverable through audit",
+      "current_sources": ["supplychainbrain.com trade press", "avantiico.com vendor blog"],
+      "current_score": "Low",
+      "issue": "High-use figures cited throughout both documents with no primary source; load-bearing for PP2.2 and PP2.4 cost estimates",
+      "suggested_action": "Search for primary studies on freight audit: CSCMP Freight Payment and Audit benchmarking survey; Cass Information Systems (freight audit company) publishes Freight Audit and Payment Benchmarks — this is an industry-primary dataset; alternatively, search for IATA cargo billing error statistics for air freight as a cross-modal benchmark",
+      "suggested_query": "Cass Information Systems freight audit benchmark freight invoice error rate 2024 OR 2023",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "PP22-ADOPT-2",
+      "claim_text": "76% of European cloud TMS migrations fail to meet their objectives; 9–18 months to full operational capability",
+      "current_sources": ["transportmanagement.org — unverifiable domain"],
+      "current_score": "Low",
+      "issue": "76% is a high-impact, attention-grabbing statistic with no identifiable primary source; transportmanagement.org appears to be a content marketing site; claim is load-bearing for PP2.2",
+      "suggested_action": "Search for TMS implementation failure rates in Gartner's TMS Critical Capabilities report, McKinsey Operations practice ERP/SCM implementation success studies, or Panorama Consulting ERP implementation report (which publishes annual data on implementation success rates for enterprise systems); also search KPMG or Deloitte TMS implementation surveys",
+      "suggested_query": "enterprise TMS implementation failure rate success 2024 Gartner OR McKinsey OR Deloitte OR Panorama Consulting",
+      "priority": "medium"
+    }
+  ],
+
+  "gate_decision_recommendation": "ship-with-flag",
+  "gate_reasoning": "Stage 2 scores 24% High, 24% Medium, 52% Low across 50 scored claims. The High-confidence core is strong: six audited primary filings (WiseTech ASX, E2open, Trimble, Uber, Full Truck Alliance, C.H. Robinson 10-K) provide solid revenue foundations for the market-player section; Acocella & Caplice (JBL 2023) gives peer-reviewed academic grounding for PP2.4 and PP2.3 structural claims; TIA's April 2025 fraud report and Verisk CargoNet 2024 data provide credible association-level evidence for PP2.1. The Low majority is driven by three structural problems: (1) all Gartner MQ positioning evidence is sourced from vendor press releases announcing their own positions rather than the Gartner report itself; (2) all market-sizing (TMS global market, digital freight brokerage, US TMS) comes exclusively from aggregator research firms (IMARC, Grand View, Precedence, MarketsandMarkets) without primary cross-validation; (3) a significant proportion of pain-point quantitative claims (freight invoice error rates, tender rejection premiums, TMS adoption rates, carrier performance metrics) are sourced from vendor blogs on the vendor blocklist (Highway, TriumphPay, Locus, SONAR) rather than from primary industry studies. Three specific remediation actions are high-priority before final gating: replace the manh.com newsroom URL for Manhattan Associates with its SEC EDGAR 10-K URL (immediate fix, no research needed); locate the underlying McKinsey blind-handoff study for PP2.5; and obtain an independent TMS adoption survey to replace the InMotion Global vendor-commissioned data in PP2.2. The internal inconsistency in Indonesia logistics cost as % of GDP (14.29% vs 24%) must be reconciled in the narrative. The draft is substantively credible and structurally sound; the source gaps are concentrated in market-sizing and vendor-produced statistics, which is recoverable through targeted deep research."
+}

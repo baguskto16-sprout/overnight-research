@@ -1,0 +1,66 @@
+{
+  "run_id": "2026-05-19-0900",
+  "input_file": "./input/logistics-risk-mgmt-worldwide.txt",
+  "topic_slug": "logistics-risk-mgmt-worldwide",
+  "mode": "sandbox",
+  "phase": "unattended-Playwright Phase 2 (Playwright auto-enrichment complete)",
+  "output_dir": "/Users/alphabot/Downloads/Work/overnight-research-repo/output/raw-claude-overnight/2026-05-19-0900",
+  "current_pass": 6,
+  "stages_planned": [
+    "Stage 1 — Vendor procurement & sub-carrier onboarding",
+    "Stage 2 — Dispatch, freight tendering & TMS",
+    "Stage 3 — In-transit visibility & telematics",
+    "Stage 4 — Multi-leg handoffs & chain-of-custody",
+    "Stage 5 — Delivery, POD & driver safety",
+    "Stage 6 — Incident response, claims & insurance"
+  ],
+  "stages_completed": [1, 2, 3, 4, 5, 6],
+  "stages_in_progress": [],
+  "weak_claims_to_re_research": [
+    "PP1.1-cost-1 — DONE (Verisk press release Tier-1 + CargoNet PDF processed)",
+    "PP1.4-cost-1 — DEFERRED to field interview (ATRI nuclear verdict primary)",
+    "PP1.3-freq-1 — DEFERRED to field interview (BPS Indonesia primary)"
+  ],
+  "final_gate_decision": "Ship with flag (Phase 2 Playwright pass upgraded 7 source citations Low→Medium; 73% Low baseline driven by vendor-marketing-override rule remains structurally unfixable by re-run)",
+  "interruption": null,
+  "metrics": {
+    "total_stages_tracer_fired": 6,
+    "total_stages_aborted": 0,
+    "total_pain_points": 25,
+    "unique_urls": 397,
+    "unique_publishers": 246,
+    "needs_attended_fetch_tags": 0,
+    "value_chain_master_kb": 237,
+    "pain_points_master_kb": 237,
+    "final_report_html_pages": 14
+  },
+  "auto_enrichment": {
+    "started_at": "2026-05-19T05:01:18Z",
+    "completed_at": "2026-05-19T05:05:00Z",
+    "urls_attempted": 9,
+    "urls_succeeded": 7,
+    "urls_confirmed_inaccessible": 2,
+    "non_url_tags_confirmed_inaccessible": 2,
+    "claims_upgraded": [
+      {"id": "VC-Stage2-Source-6", "from": "low", "to": "medium", "new_source": "https://www.businesswire.com/news/home/20240722642127/en/Transport-Management-Systems-Market-Report-2024---TMS-Market-Value-in-Europe-and-North-America-Set-to-Reach-%E2%82%AC-5-billion-by-2028---ResearchAndMarkets.com", "note": "Full press release rendered; Europe TMS €1.2B(2023)→€2.1B(2028) 12.1% CAGR + NA €1.6B→€2.7B 11.3% CAGR + 54 vendor profiles."},
+      {"id": "VC-Stage2-Source-7", "from": "low", "to": "medium", "new_source": "https://www.gartner.com/en/documents/6290615", "note": "Gartner MQ TMS 2025 public abstract — confirms publication date 2025-03-24, analysts Brock Johns, Oscar Sanchez Duran, Carly West, Manav Jain."},
+      {"id": "VC-Stage3-Source-6", "from": "low", "to": "medium", "new_source": "https://www.gartner.com/en/documents/6275683", "note": "Gartner companion abstract on Real-Time Transportation Visibility Platforms MQ — publication 2025-03-19, analysts Oscar Sanchez Duran, Carly West."},
+      {"id": "VC-Stage4-Source-8", "from": "low", "to": "medium", "new_source": "https://www.grandviewresearch.com/press-release/global-control-towers-market", "note": "GVR press release rendered after Cloudflare wait — confirms $32.14B by 2030 at 23.0% CAGR (2025–2030)."},
+      {"id": "VC-Stage5-Source-12", "from": "low", "to": "medium", "new_source": "https://www.cargobase.com", "note": "Cargobase product page confirmed — TMS for enterprise shippers, spot-buy freight management, multi-modal."},
+      {"id": "PP-Stage1-Source-9", "from": "low", "to": "medium", "new_source": "https://documents1.worldbank.org/curated/en/617051540584814484/pdf/WP-PUBLIC-2015-WBG-Improving-Freight-Logistics.pdf", "note": "World Bank Indonesia Freight Logistics report PDF downloaded (1.98MB) and parsed via markitdown — full text extracted."},
+      {"id": "PP-Stage6-Source-16", "from": "low", "to": "medium", "new_source": "https://iumi.com/wp-content/uploads/2024/12/IUMI-Stats-Report-2024.pdf", "note": "IUMI Stats Report 2024 PDF downloaded (1.64MB) and parsed via markitdown — confirms global marine insurance premiums USD 38.9B in 2023, cargo USD 22.1B, ocean hull USD 9.2B."}
+    ],
+    "claims_confirmed_inaccessible": [
+      {"url": "https://truckstop.com/blog/carrier-onboarding-monitoring/", "outcome": "HTTP 403 Forbidden (nginx)"},
+      {"url": "https://www.hapag-lloyd.com/en/online-business/digital-insights-dock/insights/2025/09/expert-talk-global-cargo-insurance-market-in-the-age-of-digitalization.html", "outcome": "HTTP 404 Page not Found after Cloudflare interstitial"},
+      {"tag": "Lloyd's Market Intelligence parametric market share", "outcome": "Paid-subscription product; no Playwright-fetchable equivalent"},
+      {"tag": "OJK Indonesia / OIC Thailand digital-cargo platform penetration", "outcome": "Regulator-only data; no public-web equivalent"}
+    ]
+  },
+  "files": {
+    "value_chain": "raw-claude-value-chain-logistics-risk-mgmt-worldwide.md",
+    "pain_points": "raw-claude-pain-points-logistics-risk-mgmt-worldwide.md",
+    "summary": "raw-claude-summary-logistics-risk-mgmt-worldwide.md",
+    "html_report": "FINAL-REPORT.html"
+  }
+}

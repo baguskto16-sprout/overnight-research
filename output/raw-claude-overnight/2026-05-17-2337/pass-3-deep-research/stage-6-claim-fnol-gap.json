@@ -1,0 +1,11 @@
+{
+  "claim_id": "VC-FNOLGap-1",
+  "outcome": "confirmed-scarce",
+  "new_score": "Low",
+  "replacement_or_supplementary_sources": [
+    {"url": "https://lojackiberia.com/wp-content/uploads/2021/07/Automating-FNOL-and-Claims-for-Property-and-Casualty-Insurers.pdf", "tier": "vendor-whitepaper (CalAmp, citing insurer interviews)", "date": "2022", "what_it_supports": "Traditional FNOL via policyholder call center: '3-5 days on average' across P&C lines (CalAmp cite of insurer interviews — vendor white paper). Not cargo-specific."}
+  ],
+  "revised_claim_text": "[ASSUMED-N]: Pre-telematics FNOL reporting delay in trucking ranged from 3 days (call-center P&C benchmark, CalAmp interviews) to 8+ days (TruckerCloud single-vendor blog) before telematics-based FNOL automation. No independent IUMI, Crawford/Sedgwick TPA, or actuarial study has been located to confirm a cargo-specific benchmark — to validate: actuarial FNOL lag study from TPA or insurer claims operations data.",
+  "footnote_for_artifact": "Pre-telematics FNOL delay range 3–8+ days based on vendor-produced data: CalAmp 'Automating FNOL and Claims for P&C Insurers' (2022, 3-5 day P&C benchmark from insurer interviews); TruckerCloud blog (8+ day cargo-specific figure, single source). No primary cargo-specific FNOL timing benchmark located. Treat as indicative; flag as data gap.",
+  "notes": "Searches across IUMI, Crawford, Sedgwick, NCCI, Verisk, McKinsey, Lloyd's all yielded no specific cargo FNOL benchmark. The CalAmp white paper is the best (still vendor) corroboration and supports a tighter 3-5 day range. Drop specific '8 days' figure or flag as ASSUMED-N. Score stays Low — figure remains scarce."
+}

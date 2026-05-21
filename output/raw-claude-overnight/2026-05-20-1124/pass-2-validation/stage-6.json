@@ -1,0 +1,316 @@
+{
+  "context": "per-stage",
+  "stage": 6,
+  "run_id": "2026-05-20-1124",
+  "validation_date": "2026-05-20",
+  "validator": "source-validator",
+  "priority_stage": true,
+  "priority_note": "Tokio Marine + ID&E venture pitch — heightened scrutiny on IUMI figures, Nirvana valuation, Tokio Marine Future Fund participation, piracy statistics, and legal framework claims",
+
+  "total_claims_scored": 47,
+  "scoring_distribution": {
+    "high": {
+      "count": 9,
+      "percent": "19%",
+      "claim_ids": [
+        "VC-MS-2",
+        "VC-MS-6",
+        "VC-P-2",
+        "PP6.1-1",
+        "PP6.3-6",
+        "PP6.3-8",
+        "PP6.4-2",
+        "PP6.4-3",
+        "PP6.5-5"
+      ]
+    },
+    "medium": {
+      "count": 8,
+      "percent": "17%",
+      "claim_ids": [
+        "VC-MS-1",
+        "VC-MS-3",
+        "PP6.1-3",
+        "PP6.1-10",
+        "PP6.2-1",
+        "PP6.3-2",
+        "PP6.3-4",
+        "PP6.5-1"
+      ]
+    },
+    "low": {
+      "count": 30,
+      "percent": "64%",
+      "claim_ids": [
+        "VC-MS-4", "VC-MS-5", "VC-MS-7", "VC-MS-8", "VC-MS-9", "VC-MS-10",
+        "VC-P-1", "VC-P-3", "VC-P-4",
+        "PP6.1-2", "PP6.1-4", "PP6.1-5", "PP6.1-6", "PP6.1-7", "PP6.1-8",
+        "PP6.1-9", "PP6.1-11", "PP6.1-12",
+        "PP6.2-2", "PP6.2-3", "PP6.2-4", "PP6.2-5", "PP6.2-6", "PP6.2-7",
+        "PP6.3-1", "PP6.3-3", "PP6.3-5", "PP6.3-7",
+        "PP6.4-1", "PP6.4-4", "PP6.4-5",
+        "PP6.5-2", "PP6.5-3", "PP6.5-4", "PP6.5-6",
+        "PP6.N1-1", "PP6.N1-2", "PP6.N1-3"
+      ]
+    }
+  },
+
+  "source_classification": [
+    {"url": "iumi.com (press release)", "class": "primary-association"},
+    {"url": "iumi.com (stats-report PDF)", "class": "primary-association — NEEDS-ATTENDED-FETCH; not directly verified; data taken from press release and IIMS summary instead"},
+    {"url": "iims.org.uk (IUMI summary)", "class": "secondary-trade"},
+    {"url": "hellenicshippingnetwork.com", "class": "secondary-trade"},
+    {"url": "ttclub.com (Annual Report 2024)", "class": "primary-association"},
+    {"url": "ttclub.com (BSI/TT Club 2025 Cargo Theft Report)", "class": "primary-association"},
+    {"url": "actuarialpost.co.uk (BSI/TT Club PDF host)", "class": "secondary-trade (third-party host of primary-association content)"},
+    {"url": "bsigroup.com (press release)", "class": "secondary-press-release"},
+    {"url": "ir.crawco.com (press release citing 10-K)", "class": "secondary-press-release — 10-K referenced but not directly cited"},
+    {"url": "growthmarketreports.com", "class": "secondary-market-research — aggregator auto-downgrade"},
+    {"url": "gminsights.com", "class": "secondary-market-research — aggregator auto-downgrade"},
+    {"url": "marketresearchfuture.com", "class": "secondary-market-research — aggregator auto-downgrade"},
+    {"url": "verisk.com/cargonet", "class": "primary-association — incident database primary data"},
+    {"url": "cargonet.com", "class": "primary-association — same entity as verisk.com/cargonet"},
+    {"url": "loadsure.net", "class": "auto-low-vendor — vendor's own site, claims about Loadsure"},
+    {"url": "crowley.com (Loadsure PR)", "class": "secondary-press-release — third-party investor"},
+    {"url": "parsyl.com (press releases)", "class": "auto-low-vendor — vendor's own site, claims about Parsyl"},
+    {"url": "lightsmithgp.com (Parsyl Series C PR)", "class": "secondary-press-release — named investor, third-party"},
+    {"url": "globenewswire.com (Cover Genius)", "class": "secondary-press-release — company press release on newswire"},
+    {"url": "news.crunchbase.com (Nirvana)", "class": "secondary-news — data aggregator news"},
+    {"url": "techcrunch.com (Nirvana Series C)", "class": "secondary-news"},
+    {"url": "fintech.global (Loadsure EU)", "class": "secondary-trade"},
+    {"url": "insurancejournal.com", "class": "secondary-trade"},
+    {"url": "coverager.com", "class": "secondary-trade"},
+    {"url": "meantime.global (Breeze AI)", "class": "secondary-trade"},
+    {"url": "reinsurancene.ws (Helvetia + Breeze)", "class": "secondary-trade"},
+    {"url": "descartesunderwriting.com", "class": "auto-low-vendor — vendor's own newsroom"},
+    {"url": "intelligentinsurer.com (Descartes)", "class": "secondary-trade"},
+    {"url": "munichre.com (IoT Cover)", "class": "auto-low-vendor — Munich Re product page, claims about Munich Re product"},
+    {"url": "linkedin.com (Stefan Fröhlich, Munich Re)", "class": "auto-low-vendor — LinkedIn post by vendor employee"},
+    {"url": "sedgwick.com", "class": "auto-low-vendor"},
+    {"url": "mclarens.com", "class": "auto-low-vendor"},
+    {"url": "charlestyloradjusting.com", "class": "auto-low-vendor — URL flagged 'to be confirmed'"},
+    {"url": "prnewswire.com (Overhaul insurance program)", "class": "auto-low-vendor + secondary-press-release — vendor's own PRN for claims about Overhaul's recovery rate"},
+    {"url": "prnewswire.com (Overhaul Series C)", "class": "auto-low-vendor + secondary-press-release"},
+    {"url": "prnewswire.com (Overhaul Q1 2026)", "class": "auto-low-vendor + secondary-press-release"},
+    {"url": "wwd.com (Overhaul offices)", "class": "secondary-news"},
+    {"url": "tokiomarinehd.com/ir/download", "class": "primary-filing — annual integrated report, TSE-listed company"},
+    {"url": "tmhcc.com/financial-strength", "class": "auto-low-vendor — TMHCC's own marketing page for sub-segment GWP claims"},
+    {"url": "businesswire.com (Tokio Marine Future Fund)", "class": "secondary-press-release"},
+    {"url": "cbinsights.com (Tokio Marine portfolio)", "class": "secondary-market-research — data aggregator"},
+    {"url": "tracxn.com (Tokio Marine Future Fund)", "class": "secondary-market-research — data aggregator"},
+    {"url": "sompo-hd.com", "class": "auto-low-vendor"},
+    {"url": "bolttech.io", "class": "auto-low-vendor"},
+    {"url": "sumitomocorp.com (Bolttech JV)", "class": "secondary-press-release"},
+    {"url": "iglooinsure.com", "class": "auto-low-vendor"},
+    {"url": "beinsure.com", "class": "secondary-trade"},
+    {"url": "overdriveonline.com", "class": "secondary-trade"},
+    {"url": "marlinblue.com", "class": "secondary-trade"},
+    {"url": "geotab.com (cargo theft report 2026)", "class": "secondary-trade — vendor-authored market report; not independently verified"},
+    {"url": "heavydutyjournal.com", "class": "secondary-trade"},
+    {"url": "tanktransport.com", "class": "secondary-trade"},
+    {"url": "maritime-mutual.com (risk bulletin)", "class": "secondary-trade — mutual insurer risk bulletin"},
+    {"url": "shipandbunker.com", "class": "secondary-trade"},
+    {"url": "worldports.org", "class": "secondary-trade"},
+    {"url": "fleetrabbit.com", "class": "auto-low-vendor — fleet management vendor blog"},
+    {"url": "natlawreview.com", "class": "secondary-trade"},
+    {"url": "fivesigmalabs.com (blog)", "class": "auto-low-vendor — Five Sigma's own blog"},
+    {"url": "freightamigo.com", "class": "secondary-trade"},
+    {"url": "fuentesfirm.com (Carmack)", "class": "secondary-trade — law firm blog"},
+    {"url": "jjkellercompliancenetwork.com", "class": "secondary-trade — compliance training company"},
+    {"url": "falveyinsurancegroup.com (broker liability)", "class": "auto-low-vendor + secondary-trade — cargo insurer's own blog"},
+    {"url": "cozen.com (subrogation whitepaper)", "class": "secondary-trade — law firm publication"},
+    {"url": "mwl-law.com", "class": "secondary-trade — law firm website"},
+    {"url": "blog.gettransport.com", "class": "secondary-trade"},
+    {"url": "linkedin.com (Paul Stewart)", "class": "auto-Low — LinkedIn post by individual"},
+    {"url": "roanokegroup.com", "class": "secondary-trade — insurance broker blog"},
+    {"url": "fmcsa.dot.gov", "class": "primary-gov — US government agency"},
+    {"url": "nirvanatech.com", "class": "auto-low-vendor — Nirvana's own marketing site"},
+    {"url": "samsara.com (Nirvana integration)", "class": "auto-low-vendor — Samsara's marketing page"},
+    {"url": "hapag-lloyd.com (digital insights)", "class": "secondary-trade — shipping carrier content marketing"},
+    {"url": "thelondoninsurancemarket.com (Parsyl/Ascot)", "class": "secondary-trade"},
+    {"url": "freightwaves.com (multiple)", "class": "secondary-trade"},
+    {"url": "reliancepartners.com", "class": "secondary-trade — broker repost of FreightWaves content"},
+    {"url": "carriermanagement.com", "class": "secondary-trade"},
+    {"url": "cloud.google.com (Loadsure case study)", "class": "auto-low-vendor — vendor-curated case study"},
+    {"url": "carrierassure.com", "class": "auto-low-vendor"},
+    {"url": "dailyoilfutures.com", "class": "secondary-trade — obscure industry site"},
+    {"url": "traderiskguaranty.com", "class": "secondary-trade"},
+    {"url": "cargoinsurepro.com", "class": "secondary-trade"},
+    {"url": "reinasia.com", "class": "secondary-trade"},
+    {"url": "claimsjournal.com", "class": "secondary-trade"},
+    {"url": "iumi.com/statistics/major-claims-database-2024", "class": "primary-association"},
+    {"url": "payloadasia.com (2021)", "class": "secondary-trade — outdated >3 years; outdated-source override"},
+    {"url": "statista.com", "class": "secondary-market-research"},
+    {"url": "recaap.org", "class": "primary-multilateral — intergovernmental anti-piracy body"},
+    {"url": "axa.com (SEA presence)", "class": "auto-low-vendor"},
+    {"url": "parsyl.com/press-release/041520 and /121718", "class": "auto-low-vendor"}
+  ],
+
+  "override_triggers": [
+    {
+      "override": "vendor-marketing",
+      "description": "Claims about a vendor's own product, funding, recovery rate, or capability sourced primarily from that vendor's own website or PRNewswire release",
+      "claim_count": 19,
+      "claim_ids": ["VC-MS-7", "VC-MS-8", "VC-P-1", "VC-P-3", "PP6.1-5", "PP6.1-9", "PP6.1-11", "PP6.1-12", "PP6.2-2", "PP6.2-4", "PP6.2-5", "PP6.2-6", "PP6.4-4", "PP6.5-6", "PP6.N1-1", "VC-P-4", "PP6.2-3 (Munich Re $35B cited without URL)", "PP6.3-7", "PP6.N1-3"]
+    },
+    {
+      "override": "press-release-only",
+      "description": "Funding rounds or market claims sourced from PRNewswire / GlobeNewswire / BusinessWire without corroboration from audited filing (Form D, S-1, 10-K)",
+      "claim_count": 5,
+      "claim_ids": ["VC-MS-9", "VC-MS-10", "VC-MS-7", "VC-MS-8", "VC-P-4"]
+    },
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "description": "MarketsandMarkets / GrowthMarketReports / GMInsights / MarketResearchFuture cited as source for market sizing",
+      "claim_count": 2,
+      "claim_ids": ["VC-MS-4", "VC-MS-5"]
+    },
+    {
+      "override": "single-trade-source",
+      "description": "Operating cost figures, market share, or market metrics sourced only from trade press or a single vendor-authored report",
+      "claim_count": 7,
+      "claim_ids": ["PP6.1-2", "PP6.1-6", "PP6.1-7", "PP6.1-8", "PP6.2-7", "PP6.3-3", "PP6.5-3"]
+    },
+    {
+      "override": "no-citation",
+      "description": "Claim made with no source footnote in the text",
+      "claim_count": 1,
+      "claim_ids": ["PP6.5-2 (Singapore $5B+ pharma exports — no footnote)"]
+    },
+    {
+      "override": "ASSUMED-tag",
+      "description": "Claims explicitly tagged [ASSUMED-N] in the artifact",
+      "claim_count": 12,
+      "assumed_tags": ["ASSUMED-1","ASSUMED-2","ASSUMED-3","ASSUMED-4","ASSUMED-5","ASSUMED-6","ASSUMED-7","ASSUMED-8","ASSUMED-9","ASSUMED-10","ASSUMED-11","ASSUMED-12"]
+    },
+    {
+      "override": "outdated-source",
+      "description": "Source >3 years old cited for current market conditions",
+      "claim_count": 1,
+      "claim_ids": ["PP6.4-5 (payloadasia.com 2021 APAC cargo theft data)"]
+    },
+    {
+      "override": "needs-attended-fetch",
+      "description": "IUMI 2024 Stats Report PDF failed markitdown conversion; specific sub-figures (35.15%, 8.8%, 17.6%) sourced from press release and IIMS summary rather than the primary PDF. Priority for attended re-fetch.",
+      "claim_count": 3,
+      "claim_ids": ["VC-MS-1 (35.15%)", "VC-MS-1 (8.8% YoY)", "VC-MS-1 (China 17.6%)"]
+    }
+  ],
+
+  "priority_claim_verdicts": [
+    {
+      "claim_id": "PRIORITY-1",
+      "claim_label": "IUMI $22.64B 2024 marine cargo premium",
+      "score": "Medium",
+      "reasoning": "IUMI is a primary-association and the authoritative source for this figure. However, the IUMI 2024 Stats Report PDF itself was not successfully fetched (markitdown conversion failed; flagged NEEDS-ATTENDED-FETCH). The figure is sourced from IUMI's own press release and a secondary IIMS trade-press summary. The headline $22.64B total is plausible from the press release alone, but the granular sub-figures depend on the PDF.",
+      "action": "Priority attended fetch: download https://iumi.com/wp-content/uploads/2024/12/IUMI-Stats-Report-2024.pdf via Playwright; verify $22.64B, 35.15% Asia/Pacific share, +8.8% YoY, and China 17.6% figures directly from the PDF tables."
+    },
+    {
+      "claim_id": "PRIORITY-2",
+      "claim_label": "Asia/Pacific 35.15% share and +8.8% YoY growth (IUMI)",
+      "score": "Medium",
+      "reasoning": "Same IUMI PDF fetch failure as PRIORITY-1. The 35.15% and +8.8% are specific quantitative sub-figures that would be in the stats report tables, not necessarily in the headline press release. These figures are used to derive the $7.96B SEA-relevant market estimate throughout the pitch. If the PDF shows different numbers, the headline market sizing for the venture pitch changes.",
+      "action": "Verify directly from IUMI 2024 Stats Report PDF. Also cross-check IIMI summary at https://www.iims.org.uk/iumi-report-shows-global-marine-insurance-premiums-total-39-92-billion/ for corroboration."
+    },
+    {
+      "claim_id": "PRIORITY-3",
+      "claim_label": "Nirvana $1.5B valuation + Tokio Marine Future Fund investment",
+      "score": "Low",
+      "reasoning": "Two separate sub-claims. (a) The $1.5B valuation comes from Crunchbase news (secondary-news) and TechCrunch (secondary-news); no Form D or SEC filing is cited. For a venture valuation claim in a venture pitch, this is the weakest possible evidentiary basis — Crunchbase and TechCrunch report rounds without independent verification of the post-money cap table. (b) Tokio Marine Future Fund's Nirvana investment is sourced from CBInsights (data aggregator) and the BusinessWire announcement of the CVC fund launch (2022) — neither directly confirms Nirvana in the portfolio from an audited source. CBInsights portfolio data is compilations from press releases, not primary filings.",
+      "action": "Search SEC EDGAR for Nirvana Insurance Form D filings (Series D, December 2025 round) at https://efts.sec.gov/LATEST/search-index?q=%22Nirvana+Insurance%22&dateRange=custom&startdt=2025-10-01&enddt=2026-03-31&forms=D to verify $100M Series D and $1.5B valuation. For Tokio Marine Future Fund portfolio confirmation, request directly from Tokio Marine Future Fund website or verify via Tokio Marine Holdings FY2024 annual report integrated disclosures."
+    },
+    {
+      "claim_id": "PRIORITY-4",
+      "claim_label": "Loadsure / Parsyl / Breeze / Cover Genius funding and traction numbers",
+      "score": "Low",
+      "reasoning": "All four: sourced from company own press releases, investor press releases, or PRNewswire/GlobeNewswire without any Form D, S-1, or audited corporate filing citation. Loadsure Series A ($11M, 2022): loadsure.net auto-low-vendor + Crowley PR. Parsyl total $66M: parsyl.com auto-low-vendor + Lightsmith investor PR. Cover Genius $80M Series E: GlobeNewswire company PR. Breeze: no funding quantum cited in the value chain; narrative mentions Helvetia + NFX + 7percent Ventures. Press-release-only override applies to all.",
+      "action": "Search SEC EDGAR Form D for each: Loadsure (UK company — Companies House UK instead; search https://find-and-update.company-information.service.gov.uk/), Parsyl (https://efts.sec.gov/LATEST/search-index?q=%22Parsyl%22&forms=D), Cover Genius (Australian company — ASIC search), Nirvana Insurance (EDGAR). For Breeze AI, check EDGAR and Crunchbase for Form D filings."
+    },
+    {
+      "claim_id": "PRIORITY-5",
+      "claim_label": "Strait of Malacca piracy +281% YoY 2025 (BSI/TT Club April 2025)",
+      "score": "Medium",
+      "reasoning": "The TT Club press release URL is cited and TT Club is a primary-association source. The 281% and 108 incidents figures appear in both PP6.1 and PP6.4 with TT Club + ReCAAP ISC corroboration (ReCAAP is primary-multilateral). However, the artifact note in the value chain says 'BSI/TT Club April 2025' while the pain points cite 'BSI/TT Club 2025 Cargo Theft Report (April 2026 edition).' The dates are inconsistent within the artifact — the value chain says April 2025, the pain points say April 2026. The full PDF was not successfully fetched. The 281% figure needs to be directly verified from the PDF to confirm it refers to H1 2025 data published in April 2025 or full-year 2025 data published April 2026.",
+      "action": "Fetch the TT Club/BSI 2025 Cargo Theft Report PDF directly via Playwright at https://www.ttclub.com/fileadmin/uploads/tt-club/Documents/TT_and_BSI_annual_theft_report/TT_Club_Report_-_Supply_Chain_Report_April_2025.pdf and cross-check with the April 2026 edition at https://www.actuarialpost.co.uk/downloads/cat_1/TT_Club_BSI_2026_Cargo_Theft_Report_FINAL.pdf. Resolve the date inconsistency. Also verify 281% figure against ReCAAP ISC annual report at https://www.recaap.org/."
+    },
+    {
+      "claim_id": "PRIORITY-6",
+      "claim_label": "CargoNet 56% recovery rate",
+      "score": "N/A — figure not in artifact",
+      "reasoning": "The task brief mentioned a 'CargoNet 56% recovery rate' for priority verification. This figure does NOT appear anywhere in the artifact. The value chain explicitly states 'Recovery rate: not publicly disclosed by CargoNet.' The pain points use Overhaul's 96%/99.9% figures (vendor-sourced, auto-Low) and the Geotab/Fleetrabbit 73% vs <20% alert-timing differential (also Low). The CargoNet 56% recovery rate was not generated by this draft. No scoring action required; the claim simply does not exist in the artifact.",
+      "action": "If '56% recovery rate' is a claim from a different source or an older brief, verify whether it belongs in this stage. If so, search CargoNet/Verisk publications for any disclosed recovery rate statistic."
+    },
+    {
+      "claim_id": "PRIORITY-7",
+      "claim_label": "Carmack Amendment + FAAAA preemption + state-law cargo claims chain",
+      "score": "Medium (FAAAA preemption claim) / Low (Carmack $1-2/pound liability cap) / High (FMCSA compliance reviews)",
+      "reasoning": "Three distinct legal claims. (a) FAAAA 11th Circuit 2023 ruling: sourced from Falvey Insurance Group blog (cargo insurer's own blog = auto-low-vendor / secondary-trade) — the underlying court ruling is primary-legal but not directly cited. (b) Carmack $1-2/pound limitation: sourced from law firm blogs (fuentesfirm.com, jjkellercompliancenetwork.com) — secondary-trade; the Carmack Amendment statute exists as primary-legal but is not directly cited. (c) FMCSA 12,300 compliance reviews: sourced from fmcsa.dot.gov — primary-gov, High. The legal structure claims are directionally accurate but sourced through secondary legal commentary rather than primary court filings or statutory text.",
+      "action": "For FAAAA preemption: cite the 11th Circuit ruling directly (e.g., USCA 11th Cir. docket for the 2023 cargo broker preemption case). For Carmack limitation clauses: cite 49 U.S.C. § 14706 directly or a federal court decision interpreting limitation-of-liability clauses. Replace law firm blog citations with primary-legal citations."
+    },
+    {
+      "claim_id": "PRIORITY-8",
+      "claim_label": "Tokio Marine 20-F / annual-report citations",
+      "score": "High (FY2024 net income / revenue) / Low (TMHCC GWP $2.7B)",
+      "reasoning": "The tokiomarinehd.com/en/ir/download page is cited for FY2024 consolidated figures (net income ¥695.81B, revenue ¥7.42T) — this is the correct primary-filing source for TSE-listed Tokio Marine Holdings. Score: High. However, the TMHCC $2.7B GWP figure is sourced from tmhcc.com/financial-strength — TMHCC's own marketing page, which is auto-low-vendor for TMHCC sub-segment claims. The TMHCC GWP should instead be verified in the Tokio Marine Holdings annual report's segment disclosures (North America P&C segment). Tokio Marine does not file a 20-F (that is for foreign private issuers on US exchanges); it files on the TSE and publishes an integrated report and English-language annual report.",
+      "action": "Verify TMHCC GWP from Tokio Marine Holdings FY2025 integrated report (English) segment breakdown, available at https://www.tokiomarinehd.com/en/ir/annualreport/. Do not use tmhcc.com as the source for TMHCC-specific figures — use the parent company's consolidated/segment disclosures."
+    }
+  ],
+
+  "weak_claims_to_deep_research": [
+    {
+      "claim_id": "VC-MS-10 / PP6.2-6",
+      "claim_text": "Nirvana Insurance reached a $1.5B valuation (Series D, December 2025); $100M Series D; $260M+ total raised; Tokio Marine Future Fund is a portfolio investor",
+      "current_sources": ["news.crunchbase.com", "techcrunch.com", "cbinsights.com", "businesswire.com (2022 CVC launch)"],
+      "current_score": "Low",
+      "issue": "No Form D or SEC filing cited for Series D valuation. Tokio Marine Future Fund portfolio participation sourced only from CBInsights data aggregator and a 2022 BusinessWire fund-launch announcement — neither directly confirms Nirvana is a current portfolio company. Critical claim for the venture pitch: if Tokio Marine Future Fund's investment in Nirvana cannot be verified, the 'telematics-native CVC signal' thesis weakens significantly.",
+      "suggested_action": "Search SEC EDGAR full-text search for 'Nirvana Insurance' Form D filings (2025): https://efts.sec.gov/LATEST/search-index?q=%22Nirvana%22&forms=D&dateRange=custom&startdt=2025-10-01&enddt=2026-03-31. Confirm Tokio Marine Future Fund in the investor list. Also check Tokio Marine Future Fund's own portfolio page at https://www.tokiomarinehd.com/en/ir/strategy/futurefund/ for Nirvana listing.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC-MS-1 / PP6.1-10 / PP6.5-5",
+      "claim_text": "IUMI 2024 Stats Report: global cargo premiums $22.64B; Asia/Pacific 35.15% share ($7.96B); +8.8% YoY growth; China 17.6% of global",
+      "current_sources": ["iumi.com (press release)", "iims.org.uk (secondary trade summary)"],
+      "current_score": "Medium — PDF not verified",
+      "issue": "The IUMI 2024 Stats Report PDF is the authoritative source for all four granular figures but markitdown conversion failed. All sub-figures are sourced from the press release and a secondary IIMS summary. The 35.15% Asia/Pacific share and +8.8% YoY are the headline numbers underpinning the entire SEA market sizing in the pitch. If the PDF shows different regional breakdowns, the venture market size estimate changes.",
+      "suggested_action": "Attended Playwright fetch of https://iumi.com/wp-content/uploads/2024/12/IUMI-Stats-Report-2024.pdf. Search for tables showing regional cargo premium breakdown. Verify all four figures directly. If Playwright fetch fails (paywall/member access), search for IUMI 2024 conference presentation slides which are sometimes publicly posted.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP6.1-11",
+      "claim_text": "73% recovery rate when real-time GPS alert fires within 3 minutes; below 20% without real-time alerts",
+      "current_sources": ["fleetrabbit.com (fleet management vendor blog)"],
+      "current_score": "Low",
+      "issue": "Single vendor blog source for a specific quantitative claim used to anchor the $386M theoretical recovery opportunity calculation. This 73% vs <20% differential is the key quantitative evidence for Pain Point 6.1's 'detection gap' framing. Fleetrabbit is a fleet management vendor with no disclosed methodology. If the figure cannot be sourced to a primary or association source, the entire $386M calculation loses its evidential foundation.",
+      "suggested_action": "Search CargoNet/Verisk publications for any published recovery rate data by alert timing. Search Overhaul's published research for recovery rate by detection latency. Search ReCAAP ISC or TAPA (Transported Asset Protection Association) reports for documented recovery rate statistics. Query: 'cargo theft recovery rate GPS alert response time statistics site:verisk.com OR site:tapa.com OR site:recaap.org'.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP6.3-3",
+      "claim_text": "FMCSA median jury award for trucking liability in 2026 is $51M; motor carrier insurance minimums remain at $750,000 since the 1980s",
+      "current_sources": ["blog.gettransport.com (trade blog)"],
+      "current_score": "Low",
+      "issue": "Single trade blog source for a specific quantitative claim ($51M median jury award) used to make the structural argument about the insurance gap. The $750,000 minimum is statutory (FMCSA 49 CFR Part 387) and easily verifiable from primary-gov sources, but the $51M jury award figure needs FMCSA, ATA, or insurance industry association sourcing to be credible.",
+      "suggested_action": "Search FMCSA.dot.gov for carrier liability insurance requirements (primary-gov): https://www.fmcsa.dot.gov/registration/commercial-drivers-license/insurance. For jury award statistics, search ATA (American Trucking Associations) or Insurance Institute for Highway Safety litigation data. Query: 'nuclear verdict trucking liability average jury award 2025 FMCSA ATA site:fmcsa.dot.gov OR site:trucking.org OR site:iihs.org'.",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "PP6.1-12 / PP6.4-4",
+      "claim_text": "Overhaul claims 96% FTL recovery rate; 99.9% shipment production rate for monitored loads",
+      "current_sources": ["prnewswire.com (Overhaul Series C press release)", "prnewswire.com (Overhaul Q1 2026 report)"],
+      "current_score": "Low",
+      "issue": "Both figures are Overhaul's own self-reported statistics from their own press releases on PRNewswire — auto-low-vendor, vendor-marketing override. These are used as the North American benchmark against which SEA's absence of a recovery network is compared. The entire Pain Point 6.4 argument ('SEA has no recovery network') uses these figures as the baseline. If these figures cannot be independently corroborated, the benchmark loses credibility.",
+      "suggested_action": "Search for independent coverage of Overhaul's recovery rates in trade press (FreightWaves, JOC, Supply Chain Dive) that may cite the figures with some editorial scrutiny. Alternatively, verify whether TAPA FSR certification requirements document any independent recovery rate benchmarks. Query: 'Overhaul cargo theft recovery rate 96% independent verification' OR 'cargo theft recovery rate benchmarks TAPA FreightWaves 2025'.",
+      "priority": "medium"
+    }
+  ],
+
+  "cross_stage_notes": [
+    "PP6.N1 (claims-to-vetting silo) is a cross-stage structural finding connecting Stage 1 (carrier vetting) and Stage 6. It is extremely thinly sourced (all Low) and would benefit from deep research in Stage 1 context.",
+    "The $35B pharmaceutical supply chain loss figure appears in PP6.2 without a footnote. In PP6.5 it appears attributed to 'Munich Re / Maersk / industry data' — again without a direct citation URL. This figure needs a primary source: Munich Re Sigma or Munich Re cargo loss report. If Munich Re published this in a named report, it would be primary-consultancy tier.",
+    "The IUMI figures (VC-MS-1) are referenced in PP6.2-1 and PP6.5-5 with slightly different source chains — both trace back to the same IUMI press release / PDF, consistent with single-domain rule. Count as one source.",
+    "Outdated source: payloadasia.com (2021) in PP6.4 should be replaced with ReCAAP ISC 2025 annual report which is already cited as source (11) in PP6.4."
+  ],
+
+  "gate_decision_recommendation": "ship-with-flag",
+  "gate_reasoning": "Stage 6 scores 64% Low confidence across 47 scored claims, placing it in the 30-70% Low band (ship-with-flag). The High-confidence cluster is structurally sound: IUMI primary-association figures (with the caveat of unverified PDF), TT Club annual report, Verisk CargoNet incident database, Tokio Marine Holdings annual report, FMCSA primary-gov source, and ReCAAP ISC piracy data. The Low-confidence concentration falls overwhelmingly in two problem areas: (1) all insurtech startup funding and valuation claims (Loadsure, Parsyl, Breeze, Cover Genius, Nirvana) are sourced from vendor press releases or secondary news with no Form D or audited filing — this is structurally the weakest part of the document and is also the section most likely to receive investor scrutiny in a venture pitch; (2) all vendor-self-reported capability metrics (Overhaul recovery rates, Parsyl IoT claim reduction, Loadsure claims speed, Nirvana telematics discount) trigger the vendor-marketing auto-Low override and cannot be promoted without independent third-party corroboration. The five priority attended-fetch actions (IUMI PDF, Nirvana Form D, TT Club/BSI piracy PDF, CargoNet recovery rate search, and FMCSA jury award primary source) would materially improve the document's evidentiary foundation for the venture pitch. The stage should not be presented to Tokio Marine or ID&E in current form without those five actions completed."
+}

@@ -1,0 +1,35 @@
+Unattended Phase 2 complete.
+URLs attempted: 9 · Succeeded: 8 · Confirmed inaccessible: 1
+Claims upgraded: 1 (OFAC 2025 enforcement index: Medium → High)
+New % Low (post-enrichment): 55.7% · Gate: ship-with-flag
+
+Run window: 2026-05-20T07:34:38Z → 2026-05-20T07:42:13Z (~7.5 min wall-clock, well under 60-min cap).
+Tool: mcp__playwright (with curl fallback for one PDF download stream).
+
+Per-URL outcomes:
+ 1. https://www.roanokegroup.com/cargo-api-integration/                                                                   succeeded   product scope confirmed; SEA road-freight applicability still not on page
+ 2. https://www.sap.com/resources/supply-chain-control-tower                                                              succeeded   product described; pricing not public
+ 3. https://www.grandviewresearch.com/industry-analysis/control-towers-market                                             succeeded   figures verbatim-confirmed; aggregator-override keeps tier Low
+ 4. https://www.ttclub.com/.../TT_Club_Report_-_Supply_Chain_Report_April_2025.pdf                                        succeeded   PDF fetched + markitdown-converted; DISCREPANCY: PDF body does not name Indonesia top-10 nor cite +281% Malacca piracy
+ 5. https://www.ttnews.com/articles/double-brokering-increases                                                            INACCESSIBLE  HTTP 403 / Varnish edge cache; bot-blocked even via Playwright
+ 6. https://ofac.treasury.gov/civil-penalties-and-enforcement-information/2025-enforcement-information                    succeeded   PRIMARY confirmed; 14 actions / $265,746,819 YTD; claim Medium → High
+ 7. https://www.iata.org/en/programs/cargo/pharma/                                                                        succeeded   CEIV Pharma program confirmed; $2.5B–$12.5B figure not on overview page
+ 8. https://www.iata.org/en/programs/cargo/pharma/ceiv-pharma/                                                            succeeded   redirect to /services/certification/special-cargo/ceiv-pharma/; program scope confirmed
+ 9. https://jdih.dephub.go.id/                                                                                            succeeded   registry reachable; no national ePOD mandate found; original finding stands
+
+Files updated:
+  raw-claude-value-chain-logistics-risk-mgmt-worldwide.md     (5 tag replacements)
+  raw-claude-pain-points-logistics-risk-mgmt-worldwide.md     (5 tag replacements; one CONFIRMED-INACCESSIBLE; one Medium→High upgrade)
+  raw-claude-summary-logistics-risk-mgmt-worldwide.md         (appended "Auto-enrichment (Phase 2, Playwright pass)" section)
+  checkpoint.json                                             (new auto_enrichment object)
+  FINAL-REPORT.html                                           (re-rendered: new page 09 "Auto-enrichment", closing renumbered 09→10, gate callout refreshed)
+
+Backups (pre-Phase-2 originals):
+  raw-claude-value-chain.md.bak
+  raw-claude-pain-points.md.bak
+
+Hard-rule compliance:
+ - No existing source was removed (rule: only ADD).
+ - No confidence tier was lowered (rule: only UPGRADE).
+ - Captcha / Cloudflare / SSO walls were not bypassed; the single 403 page was re-tagged CONFIRMED-INACCESSIBLE.
+ - 30-fetch and 60-minute caps respected (9 attempted in ~7.5 min).

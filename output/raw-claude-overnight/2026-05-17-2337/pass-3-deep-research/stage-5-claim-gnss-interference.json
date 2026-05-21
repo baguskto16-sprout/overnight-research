@@ -1,0 +1,15 @@
+{
+  "claim_id": "PP5.3-freq-1",
+  "outcome": "found-stronger-evidence",
+  "new_score": "Medium",
+  "replacement_or_supplementary_sources": [
+    {"url": "https://ops.group/dashboard/wp-content/uploads/2024/09/GPS-Spoofing-Final-Report-OPSGROUP-WG-OG24.pdf", "tier": "industry-working-group", "date": "2024-09", "what_it_supports": "500% YoY spoofing increase in 2024; 1,500 flights/day spoofed by August 2024 vs 300 in Q1/Q2 2024. 950-participant workgroup. Fetched via markitdown."},
+    {"url": "https://www.faa.gov/about/office_org/headquarters_offices/avs/offices/afx/afs/afs400/afs410/GNSS/GPS_GNSS_Interference_Resource_Guide.pdf", "tier": "primary-gov (FAA)", "date": "2026-03", "what_it_supports": "FAA GNSS Interference Resource Guide v1.1 with daily spoofing trend charts Jan 2024-Jun 2025 across regions. Cites IATA 65% increase per 1,000 flights H1 2024 vs 2023."},
+    {"url": "https://aireon.com/wp-content/uploads/2025/05/Aireon-White-Paper-GPS-Anomaly-Trends.pdf", "tier": "primary-industry-data (Aireon space-based ADS-B)", "date": "2025-04", "what_it_supports": "Confirms scale/severity increase; ~80% increase in GPS outage events 2021-2024; spoofing indicators continued to climb Aug 2024 - Jan 2025."},
+    {"url": "https://www.easa.europa.eu/en/newsroom-and-events/press-releases/easa-and-iata-outline-comprehensive-plan-mitigate-gnss", "tier": "primary-gov-multilateral (EASA + IATA)", "date": "2025-06", "what_it_supports": "EASA-IATA 4-pillar mitigation plan; 122,000+ flights affected in first 4 months of 2025."},
+    {"url": "https://www.zhaw.ch/en/about-us/news/news-releases/news-detail/event-news/live-gps-spoofing-tracker", "tier": "academic-monitoring (ZHAW/SkAI)", "date": "2024-2025", "what_it_supports": "ZHAW SkAI live spoofing tracker using OpenSky Network data; ~700 daily 2024 figure originates from media coverage of this tracker."}
+  ],
+  "revised_claim_text": "Aviation GNSS interference (primarily spoofing, measured by affected flights/day via ADS-B) ranged from ~300/day in Q1 2024 to peak ~1,500/day in August 2024, averaging ~700/day across 2024, and trending above 1,000/day in early-mid 2025 — a 500% YoY increase (OPSGROUP Sep 2024; FAA Mar 2026; Aireon Apr 2025). Counts reflect aviation-sector incidents detected via ADS-B; total GNSS interference across all transport modes (maritime, road) is considerably higher. EASA+IATA reported 122,000+ flights affected in first 4 months of 2025.",
+  "footnote_for_artifact": "OPSGROUP GPS Spoofing Final Report (Sep 2024, ops.group); FAA GNSS Interference Resource Guide v1.1 (Mar 2026, faa.gov); Aireon White Paper on GPS Anomaly Trends (Apr 2025, aireon.com); EASA-IATA Joint Statement (Jun 2025, easa.europa.eu); ZHAW SkAI live tracker (zhaw.ch). All PDFs fetched via markitdown.",
+  "notes": "Original gpspatron.com source replaced with FAA + OPSGROUP + Aireon + EASA-IATA primary stack. Numbers are aviation-specific (not all-sector global). Upgrade Low → Medium (not High because exact 2025 figure is a trend interpolation, not single-source primary)."
+}

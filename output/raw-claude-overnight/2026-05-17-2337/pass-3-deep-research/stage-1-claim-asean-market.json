@@ -1,0 +1,108 @@
+{
+  "outcome": "confirmed-scarce",
+  "claim_researched": "ASEAN road freight market is approximately $119.43B (or similar magnitude); also sub-claims: $53.88B Indonesia road freight and $288.2B ASEAN all-modes logistics market",
+  "searches_performed": [
+    "ADB Asian Development Bank ASEAN logistics market size road freight publication 2023 2024",
+    "ERIA Economic Research Institute ASEAN logistics market GDP transport 2023 2024",
+    "ITF OECD transport outlook 2023 2025 Southeast Asia freight volume value",
+    "World Bank Indonesia logistics sector review road freight market 2023 2024 site:worldbank.org",
+    "McKinsey Southeast Asia logistics 2024 market size freight billion site:mckinsey.com",
+    "Roland Berger ASEAN Southeast Asia logistics freight market size 2023 2024 report",
+    "ASEAN Secretariat statistical yearbook transport logistics road freight statistics 2023",
+    "Indonesia BPS statistik angkutan barang darat 2022 2023 nilai pasar freight road transport",
+    "ASEAN logistics market size World Bank OR ADB OR UNESCAP road freight revenue 2022 2023 primary data",
+    "UNESCAP ESCAP Southeast Asia transport freight statistics road 2023 2024 report publication",
+    "BCG Southeast Asia logistics freight market size billion 2023 2024 site:bcg.com"
+  ],
+  "pages_fetched": [
+    {
+      "url": "https://www.rolandberger.com/en/Insights/Publications/Last-mile-logistics-in-Southeast-Asia.html",
+      "outcome": "No market size figures — only qualitative trends on last-mile delivery dynamics"
+    },
+    {
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/09/oecd-competition-assessment-reviews-logistics-sector-in-asean_a3c71f68/2dcba34b-en.pdf",
+      "outcome": "FETCHED VIA MARKITDOWN — 7822 lines. The OECD 2021 report does contain ASEAN logistics market figures (USD 357.78B in 2019; projected USD 481B by 2025; road freight share 64.6% of freight transport revenues), but the report explicitly cites Mordor Intelligence (2020[37]) as the data source for all market revenue figures. The OECD document is a competition-assessment authored report, not original market research.",
+      "key_finding": "OECD 2021 ASEAN Logistics report itself sources market revenue data from Mordor Intelligence — it does not independently verify or originate these figures. Road freight 2019 total for 3 ASEAN member states (for which data available) was USD 46.44B."
+    },
+    {
+      "url": "https://www.eria.org/Chapter%203.pdf",
+      "outcome": "FETCHED VIA MARKITDOWN — 17629 lines. This is the ERIA/ASEAN Secretariat chapter 3 on ASEAN transport sector, dated 2010. Contains infrastructure status data (road lengths, vehicle counts, modal shares) but NO market revenue or market size figures in USD billions."
+    },
+    {
+      "url": "https://asiantransportobservatory.org/documents/11/Asian_Transport_2030_Outlook_Nov_2022.pdf",
+      "outcome": "FETCHED VIA MARKITDOWN — 6774 lines. The Asian Transport 2030 Outlook (ADB-linked). Contains investment needs (USD 14.5T in Asia 2020-2030), infrastructure costs, CO2 data, and vehicle ownership trends — does NOT contain ASEAN road freight market revenue or logistics market size in USD billions."
+    },
+    {
+      "url": "https://www.unescap.org/sites/default/d8files/event-documents/EN_CTR8_2.pdf",
+      "outcome": "FETCHED VIA MARKITDOWN — 1113 lines. ESCAP Committee on Transport 8th session (2024). Policy implementation review — no market revenue or market size figures."
+    }
+  ],
+  "categories_searched": [
+    "primary-multilateral-adb",
+    "primary-multilateral-oecd-itf",
+    "primary-multilateral-worldbank",
+    "primary-multilateral-unescap",
+    "primary-gov-indonesia-bps",
+    "primary-gov-asean-secretariat",
+    "top-tier-consultancy-mckinsey",
+    "top-tier-consultancy-bcg",
+    "top-tier-consultancy-roland-berger"
+  ],
+  "critical_finding": {
+    "summary": "The OECD Competition Assessment Reviews: Logistics Sector in ASEAN (2021) is the strongest multilateral publication found. However, it explicitly and repeatedly cites Mordor Intelligence (2020) as the source for ALL ASEAN freight and logistics market revenue figures including the USD 357.78B (2019), USD 481B (2025 projection), and the road freight share data. The OECD report does not independently originate or validate these commercial figures — it simply incorporates them. This means the entire chain of ASEAN logistics market revenue claims ultimately traces to a single commercial aggregator (Mordor Intelligence), regardless of whether the intermediary citing it is the OECD or another party.",
+    "one_independent_data_point": "The OECD report does contain one calculation using 'road freight transport revenue' as an input: USD 46.44B for road freight in 2019 across three ASEAN member states (those for which data were available for the OECD's benefit-calculation exercise). This figure is embedded in a welfare-analysis calculation (p. 114 of PDF, line 5809 of markdown) and is not itself a full-ASEAN market sizing — it covers only the subset of countries where recommendations applied.",
+    "government_statistics_gap": "Indonesia BPS publishes Land Transportation Statistics 2022 and 2023, which cover road lengths, vehicle counts, accident data, and railway transport — but NOT freight market revenue in IDR/USD. These are physical-stock statistics, not value-of-market statistics.",
+    "itf_oecd_transport_outlook": "The ITF Southeast Asia Transport Outlook (Oct 2023) exists as a primary OECD/ITF publication but the PDF returned 403 Forbidden. The OECD landing page was also 403 Forbidden. Tagged NEEDS-ATTENDED-FETCH.",
+    "no_independent_primary_source_found": true
+  },
+  "partial_evidence_note": "The OECD (2021) publication, while secondary for market-sizing purposes, does provide corroborating qualitative structure: road freight is ~64.6% of total ASEAN freight transport revenues (2019), and freight transport is ~72.6% of total logistics revenues (2019). If those structural ratios are applied to any independently-obtained logistics total, the derived road-freight figure would have stronger grounding. However, no independent logistics total was found.",
+  "blocked_sources_needs_attended_fetch": [
+    {
+      "tag": "[NEEDS-ATTENDED-FETCH]",
+      "url": "https://www.oecd.org/en/publications/itf-southeast-asia-transport-outlook_cce75f15-en.html",
+      "reason": "403 Forbidden — ITF Southeast Asia Transport Outlook (Oct 2023) likely has freight scenario data with volume/value projections"
+    },
+    {
+      "tag": "[NEEDS-ATTENDED-FETCH]",
+      "url": "https://www.itf-oecd.org/sites/default/files/docs/itf-southeast-asia-outlook.pdf",
+      "reason": "403 Forbidden — PDF version of ITF Southeast Asia Outlook"
+    },
+    {
+      "tag": "[NEEDS-ATTENDED-FETCH]",
+      "url": "https://www.unescap.org/kp/2023/sustainable-freight-transport-asean-challenges-and-opportunities",
+      "reason": "403 Forbidden — ESCAP 2023 report on sustainable freight in ASEAN may cite market scale data"
+    },
+    {
+      "tag": "[NEEDS-ATTENDED-FETCH]",
+      "url": "https://data.adb.org/dataset/asian-transport-outlook-database",
+      "reason": "403 Forbidden — ADB Asian Transport Outlook database may contain freight volume/value indicators by country"
+    }
+  ],
+  "suggested_revision_options": [
+    {
+      "option": "mark-assumed",
+      "revised_claim_text": "[ASSUMED-N]: ASEAN road freight market is approximately $119B (2025E); ASEAN all-modes logistics market approximately $288B (2025E); Indonesia road freight approximately $54B (2025E) — figures sourced from Mordor Intelligence, which is the ultimate data origin even where cited by OECD secondary publications. To validate: commission cross-check against ITF Southeast Asia Transport Outlook (2023) and Indonesia Ministry of Transportation revenue data.",
+      "suggested_score": "Low"
+    },
+    {
+      "option": "widen-range",
+      "revised_claim_text": "ASEAN all-modes logistics market is estimated in the range of USD 280–360B (2025E), based on commercial market research (Mordor Intelligence); no independent primary government or multilateral source was found that independently validates this figure. Road freight is estimated at approximately 40–65% of total freight transport revenue based on OECD-cited structural ratios.",
+      "suggested_score": "Low",
+      "rationale": "Range reflects structural ratio uncertainty and single-source risk"
+    },
+    {
+      "option": "drop-the-specific-number",
+      "rationale": "If the artifact requires a primary-sourced figure, the specific $119.43B / $288.2B figures cannot be substantiated from any source other than Mordor Intelligence (directly or via OECD secondary citation). Consider replacing with qualitative framing: 'ASEAN logistics is one of the largest freight markets in Asia, with logistics costs accounting for approximately 5% of regional GDP (OECD, 2021)' — this OECD-originated fact is reliable."
+    }
+  ],
+  "recommended_option": "mark-assumed",
+  "oecd_citable_fact": {
+    "fact": "Logistics currently accounts for about 5% of ASEAN GDP and provides approximately 17 million jobs",
+    "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/09/oecd-competition-assessment-reviews-logistics-sector-in-asean_a3c71f68/2dcba34b-en.pdf",
+    "source_category": "primary-multilateral-oecd",
+    "publication_date": "2021",
+    "confidence": "High",
+    "note": "This fact is directly stated in the OECD-authored foreword and repeated in the body — it is OECD's own finding, not citing Mordor Intelligence. It can replace or complement the Mordor market-size figures as a grounded anchor."
+  },
+  "reasoning": "After 10 WebSearches and 5 WebFetch/markitdown operations across six primary-source categories (ADB, OECD/ITF, World Bank, UNESCAP, Indonesia BPS, ASEAN Secretariat) and three consultancy categories (McKinsey, BCG, Roland Berger), no source that independently originates or cross-validates the $119B ASEAN road freight or $288B ASEAN all-modes logistics figures was found. The strongest multilateral publication in the space (OECD 2021 Competition Assessment) itself cites Mordor Intelligence for those figures. The claim remains single-source (Mordor Intelligence) and should be marked ASSUMED-N. One OECD-originated fact IS available as a strong anchor: logistics = ~5% ASEAN GDP. Four potentially useful sources were blocked (403) and are tagged NEEDS-ATTENDED-FETCH."
+}

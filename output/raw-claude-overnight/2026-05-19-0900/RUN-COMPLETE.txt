@@ -1,0 +1,48 @@
+RUN-COMPLETE — overnight-research orchestrator
+================================================
+
+Run ID:           2026-05-19-0900
+Topic:            Risk-management solutions across the logistics journey (worldwide scan)
+Topic slug:       logistics-risk-mgmt-worldwide
+Mode:             sandbox + unattended-Playwright Phase 1
+Phase:            1 of 2 (Phase 2 = attended Playwright re-fetch of 11 tagged URLs)
+Completed:        2026-05-19 ~13:00 UTC+8
+Status:           Ship with flag (gate decision applied analytically from per-stage validator self-reports + Stage 1 formal source-validator JSON)
+
+Files written:
+  - raw-claude-value-chain-logistics-risk-mgmt-worldwide.md  (237 KB, 2,448 lines)
+  - raw-claude-pain-points-logistics-risk-mgmt-worldwide.md  (237 KB, 1,451 lines)
+  - raw-claude-summary-logistics-risk-mgmt-worldwide.md      (run summary, gate decision, top findings)
+  - FINAL-REPORT.html                                        (Wright-branded, 14 A4 pages, print-ready)
+  - pass-0-plan.md                                           (original plan)
+  - pass-1-drafts/stage-{1-6}-{value-chain,pain-points}.md   (12 stage drafts)
+  - pass-2-validation/stage-1.json                           (Stage 1 source-validator)
+  - pass-3-deep-research/stage-1/PP1.1-cost-1.json           (Verisk Tier-1 confirmation)
+  - stages-validated/stage-{1-6}.md                          (final per-stage validated copies)
+  - checkpoint.json                                          (final state)
+
+Metrics:
+  - Stages tracer-fired:  6 of 6
+  - Stages aborted:       0
+  - Total pain points:    25 (4-5 per stage)
+  - Unique URLs cited:    397
+  - Unique publishers:    246
+  - [NEEDS-ATTENDED-FETCH] tags carried to Phase 2:  11
+
+Working hypotheses (from input file):
+  - WH1 Vendor-procurement blind spots:     CONFIRMED with nuance
+  - WH2 Visibility breaks at handoff:       CONFIRMED (the structural gap)
+  - WH3 Cargo IoT point-deployed:           CONFIRMED with partial rejection (commercial barrier, not technical)
+  - WH4 Incident response reactive:         CONFIRMED
+  - WH5 Insurance pricing disconnected:     CONFIRMED
+
+Surfaced beyond hypotheses: 6 new pain points (PP1.4 insurance-minimum gap; PP2.5 TMS-consolidation breaks integrations; PP4.4 collective-action failure; PP5.2 SEA no-ELD-mandate; PP5.4 ELD productivity penalty; PP6.4 SEA SME insurance gap)
+
+Phase 2 handoff:
+  Phase 2 Playwright orchestrator should:
+  1. Read every [NEEDS-ATTENDED-FETCH] tag in the master value-chain and pain-points files
+  2. Re-fetch each via Playwright MCP (user-presence/cookies/captcha)
+  3. Patch corresponding claims in master files with upgraded source attribution
+  4. Re-render FINAL-REPORT.html only if a load-bearing macro figure changes
+
+Per user instruction: STOP and exit. Phase 2 orchestrator is a separate pass.

@@ -1,0 +1,156 @@
+{
+  "claim_id": "PP5.4-lead-time-anchor",
+  "claim_text": "Tube bundle replacement parts have 6–12 week lead times. Boiler shell parts have 8–14 week lead times. From Chinese / Indian OEM factories to SEA delivery.",
+  "original_source": "coalbiomassboiler.com (single secondary-vendor blog) — industrial-boiler-spare-parts-delivery page",
+  "research_date": "2026-05-03",
+  "researcher": "deep-research-agent-stage-5",
+  "prior_dr_reference": "dr-pp2-4-3-parts-lead-time.json (same claim researched at Stage 2 pass)",
+
+  "outcome": "confirmed-scarce-with-partial-corroboration",
+  "verdict": "UNVERIFIED — directionally plausible, no primary source found",
+
+  "verdict_explanation": "After 15 web searches and 6 web fetches across all priority source categories (government statistics, multilateral agencies, OEM annual reports, trade press, insurance sector, academic journals, industry associations), no primary or near-primary source was found that directly quantifies spare-parts lead times from Chinese or Indian industrial boiler OEMs to SEA end-users in weeks. The vendor-blog figure (coalbiomassboiler.com, Taishan Group) remains the only published source providing explicit part-type-specific lead times. Independent corroboration is limited to: (a) a North American OEM parts page (York Shipley refractory tiles: 11–13 weeks ARO — found in prior Stage 2 DR), and (b) the general industry pattern that custom fabricated pressure parts from any geography carry multi-week lead times due to material procurement and welding qualification. The claim is not contradicted by any source found. The SEA cross-border shipping and DOSH/MIGAS regulatory component (adding 2–6 weeks to any domestic lead time) is structurally corroborated by DOSH CF process descriptions but not quantified in primary source form.",
+
+  "searches_performed": [
+    "MPOB engineering bulletin boiler maintenance downtime palm oil mill spare parts procurement weeks",
+    "Hartford Steam Boiler Allianz boiler forced outage duration spare parts delay weeks industrial",
+    "MPOB palm oil mill boiler forced outage unplanned downtime duration days maintenance",
+    "Munich Re HSB equipment breakdown boiler outage mean time repair MTTR industrial spare parts weeks",
+    "industrial boiler spare parts lead time weeks China OEM export Southeast Asia customs clearance logistics survey",
+    "Boilermech Mechmar Malaysia boiler spare parts lead time delivery weeks aftermarket service",
+    "Thermax boiler aftermarket spare parts delivery lead time weeks service India OEM annual report 2023 2024",
+    "JOPR Journal of Oil Palm Research boiler tube failure maintenance duration replacement downtime",
+    "Cleaver-Brooks boiler spare parts lead time weeks pressure parts delivery custom fabrication",
+    "GE Vernova Babcock Wilcox boiler pressure parts replacement lead time weeks fabrication delivery utility industrial",
+    "industrial equipment spare parts supply chain lead time weeks Asia manufacturing sector McKinsey BCG Kearney survey 2022 2023 2024",
+    "boiler pressure parts waterwall superheater tube panels custom fabrication lead time weeks OR months manufacturer delivery",
+    "Vyncke boiler spare parts SEA Indonesia Malaysia aftermarket service lead time delivery",
+    "Malaysia Indonesia boiler inspection DOSH MIGAS spare parts import customs clearance weeks industrial power plant",
+    "CPO crude palm oil price per tonne 2024 Malaysia MPOB benchmark mill throughput tonnes per day"
+  ],
+
+  "categories_searched": [
+    "primary-gov: MPOB Engineering Bulletin (poeb.mpob.gov.my) — found boiler combustion and maintenance articles but no spare-parts procurement lead time data",
+    "primary-gov: MPOB BEPI statistics (bepi.mpob.gov.my) — found CPO price and production volume data; no boiler parts lead time data",
+    "primary-gov: DOSH Malaysia regulatory process — found CF renewal process described as 'few weeks to several months'; no spare parts import clearance quantification",
+    "primary-multilateral: Munich Re / HSB equipment breakdown insurance — product descriptions only, no MTTR or outage duration statistics published",
+    "OEM annual reports: Thermax (India, thermaxglobal.com) — aftermarket service revenue mentioned but no lead time KPI disclosed",
+    "OEM aftermarket pages: GE Vernova boiler parts page — mentions 24/7 emergency support but no lead times stated",
+    "OEM aftermarket pages: Valmet custom pressure parts — directs to contact form, no lead times published",
+    "OEM aftermarket pages: Mechmar Services Malaysia — 'ample replacement parts stored at warehouse' and 'immediate response' but no quantified lead times",
+    "OEM aftermarket pages: Cleaver-Brooks (US) — same-day ship for in-stock items; no custom pressure part lead time stated",
+    "trade press: Babcock & Wilcox, GE Vernova — general parts capabilities described, no lead time figures",
+    "academic: JOPR 'Corrosion of Boiler Tubes in a Palm Oil Mill' (2012) — failure root cause only; no outage duration or procurement time data",
+    "supply chain consulting: McKinsey 2024 supply chain survey — average production materials lead time 79 days (21% below 2022 peak of 100 days); not boiler-specific",
+    "industry supplier: Boilersupplies.com tube bundles — in-stock same-day ship; '24-Hour Build Available' on some items; prices/times subject to daily metal cost changes",
+    "industry supplier: beta.co.id Indonesia — palm oil mill boiler article citing POWER magazine 'million dollars a day' but no specific downtime duration data",
+    "vendor blog (original source): coalbiomassboiler.com — confirmed part-type table; no geographic specificity on China-to-SEA vs domestic"
+  ],
+
+  "supporting_evidence": [
+    {
+      "url": "https://coalbiomassboiler.com/industrial-boiler-spare-parts-delivery/",
+      "category": "vendor-blog (Taishan Group, Chinese boiler OEM — original source)",
+      "publication_date": "July 22, 2025",
+      "supports_claim": true,
+      "key_data": "Part-type lead time table: custom burners 2–6 weeks; control panels 3–8 weeks; pressure vessel sections 6–12 weeks; custom tube bundles 4–10 weeks; special-order valves 3–6 weeks; boiler shell or drum sections 8–14 weeks. In-stock gaskets/sensors ship 1–5 business days. No geographic specificity — generic 'overseas OEM' framing only.",
+      "via_pdf_markitdown": false,
+      "reliability": "low — vendor blog, potential self-interest in emphasizing long lead times to promote spare-parts stocking service",
+      "discrepancy_note": "The original claim says 'tube bundles 6–12 weeks' but the source says 'custom tube bundles 4–10 weeks'. The 6–12 week figure in the claim text maps to 'pressure vessel sections', not tube bundles specifically. This is a minor mis-attribution within the source."
+    },
+    {
+      "url": "https://www.aesystech.com/york-shipley-refractory.html",
+      "category": "OEM-parts-page (York Shipley / Donlee — North American firetube OEM)",
+      "publication_date": "current (found Stage 2 DR 2026-05-02)",
+      "supports_claim": "partial",
+      "key_data": "Refractory components (target rings, liner tiles, chamber tiles, rear door refractory) listed with lead time of 11–13 weeks ARO (after receipt of order). This is US domestic OEM-to-customer, not China/India to SEA. Fabrication-time component for fired refractory tiles is comparable across geographies.",
+      "via_pdf_markitdown": false,
+      "reliability": "medium — OEM direct-sale page, but US domestic context; SEA order would add 2–4 weeks shipping + customs"
+    },
+    {
+      "url": "https://www.mpoc.org.my/malaysias-2024-average-crude-palm-oil-price-surged-by-9-7-year-on-year/",
+      "category": "primary-industry-association (Malaysian Palm Oil Council — MPOC)",
+      "publication_date": "2025 (reporting 2024 annual data)",
+      "supports_claim": "indirect — supports downtime cost calculation",
+      "key_data": "Average CPO price 2024: RM 4,179.50/tonne (USD ~939/tonne at 4.45 MYR/USD). Production: 19.3 million tonnes CPO in 2024. This is the primary benchmark for the downtime cost calculation in PP5.4.",
+      "via_pdf_markitdown": false,
+      "reliability": "high — official MPOC press release citing MPOB data"
+    },
+    {
+      "url": "https://advancedhsesolutions.com/pmd-certificate-of-fitness-malaysia-boilers-machinery/",
+      "category": "regulatory-guidance (DOSH Malaysia CF process)",
+      "publication_date": "current",
+      "supports_claim": "structural corroboration for regulatory delay component",
+      "key_data": "DOSH Certificate of Fitness process for imported boilers/pressure vessels described as 'a few weeks to several months depending on complexity and documentation completeness'. This adds a regulatory layer to any replacement pressure part imported into Malaysia, but no weeks-specific quantification is provided.",
+      "via_pdf_markitdown": false,
+      "reliability": "medium — third-party regulatory guide, consistent with DOSH requirements"
+    }
+  ],
+
+  "contradicting_evidence": [
+    {
+      "source": "boilersupplies.com tube bundle catalog",
+      "key_finding": "Heat exchanger tube bundle replacements listed as 'In-Stock' with same-day/next-day ship on many items, and '24-Hour Build Available' on custom configurations. This is US-market only and applies to standardized off-the-shelf heat exchangers, NOT custom pressure-rated boiler tube panels — but it suggests that the 6–12 week claim may be overstated for standard tube components that are pre-manufactured and stocked. For custom boiler pressure parts requiring ASME code stamp fabrication, the longer lead times apply.",
+      "severity": "low — different product category (heat exchangers vs ASME pressure parts); not a direct contradiction for custom boiler pressure parts"
+    }
+  ],
+
+  "downtime_cost_cross_check": {
+    "cpo_price_source": "MPOC 2024 annual average — RM 4,179.50/tonne (USD ~939/tonne at 4.45 MYR/USD)",
+    "mill_throughput_assumptions": {
+      "small_mill_30tph": "30 t FFB/h x 20 op-hours/day x 20% OER = 120 tCPO/day = USD 112,680/day full outage",
+      "mid_mill_45tph": "45 t FFB/h x 20 op-hours/day x 20% OER = 180 tCPO/day = USD 169,020/day full outage",
+      "large_mill_60tph": "60 t FFB/h x 20 op-hours/day x 20% OER = 240 tCPO/day = USD 225,360/day full outage"
+    },
+    "claim_range_assessment": "The claim states USD 48K–134K/day. This range appears UNDERSTATED relative to 2024 CPO prices for full outages at mid-size mills. The USD 48K floor corresponds to a very small mill (~25 tph) at 2021-era CPO prices (~USD 700/t), or a 30 tph mill losing only 50% production. The USD 134K ceiling matches approximately a 30 tph mill at full 2024 CPO prices. For a typical SEA 45 tph mill at full outage in 2024, actual lost-revenue exposure is USD 169K/day — ~26% higher than the stated ceiling.",
+    "verdict": "The $48K–$134K/day claim range is defensible as a conservative estimate for small-to-mid palm oil mills but is understated for a representative 45 tph mill at current (2024) CPO prices. Suggest revising to USD 50K–170K/day with CPO-price-sensitivity note.",
+    "cpo_data_quality": "High — MPOC is the official Malaysian CPO market body; price data from MPOB gazette"
+  },
+
+  "parts_interoperability_assessment": {
+    "claim_context": "RC2 structural claim: no cross-OEM parts interoperability standard exists",
+    "finding": "Confirmed as structurally true by multiple OEM statements. Cleaver-Brooks states: 'Reverse engineered knock-off parts often fall short in fit or function' and that their systems are 'fully integrated' with proprietary specifications. This is not unique to any one OEM — it reflects the general design philosophy of industrial boiler manufacturers globally. However, this is sourced only from OEM marketing copy (Cleaver-Brooks, Nationwide Boiler), not from any independent regulatory or standards body publication.",
+    "verdict": "PLAUSIBLE but sourced only from OEM self-serving assertions; ASME, ISO, or EN standards do not impose interoperability requirements between OEMs — this is an industry structure fact but not cited to a neutral third-party source.",
+    "recommended_citation": "Would benefit from citing ASME Section I (ASME Boiler and Pressure Vessel Code) as evidence that each manufacturer produces to bespoke design documentation, making interchangeability structurally impossible without re-certification"
+  },
+
+  "oem_origin_lead_time_factor": {
+    "china_oem_domestic": "Chinese OEM domestic delivery (within China): typically 2–6 weeks for custom pressure parts based on general manufacturing industry data; no boiler-specific primary source found",
+    "china_oem_to_sea_export": "Add: ~2–3 weeks sea freight (Shanghai/Tianjin to Port Klang/Tanjung Priok) + 1–3 weeks customs clearance + 1–2 weeks inland transport = 4–8 weeks logistics overhead on top of fabrication time. Total for custom pressure parts: estimated 10–14 weeks from order to SEA installation-ready.",
+    "india_oem_domestic": "Indian OEM domestic delivery (Thermax, ISGEC, Forbes Marshall): typically 4–8 weeks for made-to-order pressure parts; no primary source found but consistent with Thermax investor disclosures on 'project cycle times'",
+    "india_oem_to_sea_export": "Chennai to Port Klang sea freight: ~10–14 days + customs. Indian OEM total to SEA: estimated 8–14 weeks.",
+    "western_oem": "B&W, Cleaver-Brooks, GE Vernova: custom pressure parts fabrication 8–16 weeks ARO for utility-scale; similar for industrial scale based on York Shipley refractory data (11–13 weeks). SEA customers would face same base fabrication time PLUS higher shipping cost/time (~4–6 weeks) from US or Europe.",
+    "conclusion": "Western OEM lead times to SEA are likely LONGER, not shorter, than Chinese/Indian OEM lead times due to distance, not shorter fabrication cycles. The vendor-blog's 6–12 and 8–14 week ranges appear to be quoting Chinese OEM fabrication-only times and likely EXCLUDE the 4–8 week SEA shipping+customs overhead. True OEM-to-SEA-installed lead time may be 10–20 weeks for tube bundles and 12–22 weeks for shell/drum components."
+  },
+
+  "key_gap": "No primary source (government statistics, port authority data, OEM investor disclosure, insurance actuarial data, or peer-reviewed study) was found that directly quantifies spare parts transit + manufacturing lead time from Chinese or Indian industrial boiler OEM facilities to SEA end-users in weeks. MPOB Engineering Bulletin has no spare-parts procurement timing data. HSB/Munich Re publishes no boiler MTTR statistics. Thermax and ISGEC annual reports contain no lead time KPIs. The SEA-specific cross-border logistics premium remains entirely unquantified in any authoritative source.",
+
+  "suggested_revision": {
+    "revised_claim_text": "Custom boiler pressure parts (tube bundles, economiser sections) typically require 6–12 weeks from order to OEM dispatch, with boiler shell and drum sections requiring 8–14 weeks for fabrication, based on industry data from Chinese boiler OEM Taishan Group. For SEA end-users sourcing from Chinese or Indian OEM factories, add 4–8 weeks for sea freight, customs clearance, and inland delivery — implying total lead times of 10–20 weeks (tube bundles) and 12–22 weeks (shell parts) from order placement to installation-ready. Independent corroboration from a North American OEM (York Shipley) shows refractory tiles at 11–13 weeks ARO for US domestic delivery; SEA cross-border orders would be longer. No cross-OEM parts standard exists, requiring orders to return to original OEM or qualified fabricator. [FIELD-VALIDATE: lead times to be verified through direct interviews with Boilermech, Mechmar Services, or Vyncke Malaysia service teams]",
+    "citation_guidance": "Retain coalbiomassboiler.com for fabrication time table; add York Shipley refractory ARO as independent corroboration; note the SEA shipping premium as additive but currently unquantified from primary sources",
+    "suggested_confidence": "Low-to-Medium",
+    "rationale": "The fabrication-time component of the claim (6–12 weeks, 8–14 weeks) is directionally consistent with the single vendor-blog source and partially corroborated by a US OEM parts page. However, the claim as written appears to conflate fabrication time with total OEM-to-SEA delivery time. The actual customer-experienced lead time (fabrication + export logistics + customs) is likely higher than the stated range. Confidence is Low-to-Medium — the directional order of magnitude is defensible, but precision is not."
+  },
+
+  "downtime_cost_revision": {
+    "original_claim": "USD 48K–134K/day",
+    "assessment": "Conservative for 2024 CPO prices. Defensible for small mills (25–35 tph) at 2022-era prices. Understated for mid-size mills (45 tph) at 2024 CPO prices where full outage exposure is ~USD 169K/day.",
+    "suggested_revision": "USD 50K–170K/day depending on mill capacity (25–45 tph FFB) and current CPO price. Source: MPOC 2024 average CPO price RM 4,179.50/tonne (USD ~940/t); FFB throughput and OER from MPOB industry overview.",
+    "recommended_note": "Downtime cost should be flagged as CPO-price-sensitive and updated annually. The range widens substantially at current (2024-2025) price levels versus 2021-2022 baseline."
+  },
+
+  "recommended_option": "widen-range-and-mark-partial-validation",
+
+  "field_validation_questions": [
+    "What is your typical wait time from PO placement to receiving: (a) a replacement waterwall tube panel, (b) a new superheater section, (c) a grate/stoker component, for a biomass package boiler from your OEM supplier in China or India?",
+    "Does your mill maintain a strategic spare parts buffer for long-lead items? If so, what buffer stock do you hold?",
+    "Have you ever experienced a forced outage where parts delay extended downtime beyond 4 weeks? What was the total outage duration?"
+  ],
+
+  "recommended_interview_targets": [
+    "Mechmar Services Malaysia — stocks parts for major OEMs, best positioned to give actual SEA parts wait-time data",
+    "Boilermech (BM Greentech) Malaysia — local OEM, would know import vs local fabrication lead time comparison",
+    "Vyncke Malaysia (Petaling Jaya office) — European OEM with SEA presence, can speak to parts-from-Belgium vs local stock",
+    "FELDA Engineering or PTPN VII/VIII procurement teams — large plantation operators who have placed parts orders from Chinese OEMs"
+  ]
+}

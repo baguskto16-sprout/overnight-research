@@ -1,0 +1,1083 @@
+{
+  "stage": 1,
+  "stage_name": "Fuel Suppliers",
+  "total_claims": 89,
+  "by_confidence": {
+    "high": 7,
+    "medium": 15,
+    "low": 67
+  },
+  "low_confidence_pct": 0.753,
+  "unique_sources_cited": 60,
+  "source_registry": {
+    "primary_gov": [
+      "asemconnectvietnam.gov.vn",
+      "vietnam.vn",
+      "esdm.go.id"
+    ],
+    "primary_multilateral": [
+      "iea.org",
+      "adb.org",
+      "asean.org",
+      "eria.org"
+    ],
+    "primary_multilateral_adjacent": [
+      "jetp-id.org",
+      "iisd.org",
+      "icct.org"
+    ],
+    "primary_association": [
+      "greengoldlabel.com",
+      "aseanenergy.org",
+      "eubia.org"
+    ],
+    "primary_research_firm": [
+      "ember-energy.org",
+      "argusmedia.com",
+      "spglobal.com"
+    ],
+    "primary_academic": [
+      "sciencedirect.com",
+      "bioresources.cnr.ncsu.edu",
+      "mdpi.com",
+      "pmc.ncbi.nlm.nih.gov",
+      "wires.onlinelibrary.wiley.com"
+    ],
+    "secondary_market_research": [
+      "statista.com",
+      "verifiedmarketreports.com",
+      "grandviewresearch.com",
+      "investing.com",
+      "vietdata.vn",
+      "tridge.com",
+      "ceicdata.com"
+    ],
+    "secondary_trade": [
+      "sustainable-carbon.org",
+      "misagroup.com.vn",
+      "coaltradeindo.com",
+      "bioenergytimes.com",
+      "schinderlawfirm.com",
+      "petromindo.com",
+      "adcolaw.com",
+      "mondaq.com",
+      "indonesiaminer.com",
+      "fuelsandlubes.com",
+      "mkresourcesgovernance.org",
+      "researchgate.net"
+    ],
+    "secondary_news": [
+      "vietnamnet.vn",
+      "banktrack.org",
+      "theinvestor.vn",
+      "indonesia-investments.com",
+      "kontan.co.id",
+      "thejakartapost.com"
+    ],
+    "secondary_vendor": [
+      "kpc.co.id",
+      "kideco.co.id",
+      "primasinergi.co.id",
+      "biomassaenergi.com",
+      "biomassfuelindonesia.com",
+      "kyoto.my",
+      "makmuramanah.co.id",
+      "bvnbiomass.com",
+      "agridecovietnam.com",
+      "kagen.vn",
+      "coalbiomassboiler.com",
+      "simecpellet.com"
+    ]
+  },
+  "claims": [
+    {
+      "id": "VC-1.1",
+      "location": "stage-1-value-chain.md / Market Size table / Indonesia coal demand",
+      "claim_text": "Indonesia total domestic coal consumption ~250 Mt (2023)",
+      "sources_cited": [
+        "ember-energy.org",
+        "argusmedia.com"
+      ],
+      "confidence": "high",
+      "reason": "2 independent primary-quality sources (published research firm + commodity price reporting agency)"
+    },
+    {
+      "id": "VC-1.2",
+      "location": "stage-1-value-chain.md / Market Size table / Indonesia non-power industrial coal",
+      "claim_text": "Indonesia non-power industrial coal 30\u201335 Mt (2024 est.)",
+      "sources_cited": [
+        "argusmedia.com",
+        "statista.com"
+      ],
+      "confidence": "medium",
+      "reason": "1 primary-research-firm (Argus) + 1 secondary-market-research (Statista); meets 2-source medium threshold"
+    },
+    {
+      "id": "VC-1.3",
+      "location": "stage-1-value-chain.md / Market Size table / non-metal industrial share",
+      "claim_text": "Non-metal industries ~6\u20139% of total domestic = 15\u201322 Mt (2024)",
+      "sources_cited": [
+        "ember-energy.org"
+      ],
+      "confidence": "low",
+      "reason": "Single source override \u2014 only Ember cited"
+    },
+    {
+      "id": "VC-1.4",
+      "location": "stage-1-value-chain.md / Market Size table / Indonesia palm biomass potential",
+      "claim_text": "Indonesia biomass PKS+EFB+mesocarp fibre potential ~20 Mt/year (2020\u20132023)",
+      "sources_cited": [
+        "sciencedirect.com (ScienceDirect palm biomass review)"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; also 2017 base year cited \u2014 stale data >5 years for market sizing"
+    },
+    {
+      "id": "VC-1.5",
+      "location": "stage-1-value-chain.md / Market Size table / Indonesia rice husk potential",
+      "claim_text": "Indonesia rice husk fuel potential ~11 Mt/year (from ~55 Mt paddy production) 2023",
+      "sources_cited": [
+        "sustainable-carbon.org (ICSC)",
+        "statista.com"
+      ],
+      "confidence": "low",
+      "reason": "Single direct source for 11 Mt figure (ICSC = secondary-trade); Statista cited for paddy production not the 11 Mt derivation; no primary source"
+    },
+    {
+      "id": "VC-1.6",
+      "location": "stage-1-value-chain.md / Market Size table / Malaysia EFB availability",
+      "claim_text": "Malaysia EFB availability 7\u201311 Mt/year (bone-dry basis) 2023",
+      "sources_cited": [
+        "bioresources.cnr.ncsu.edu",
+        "mdpi.com (MDPI Sustainability)"
+      ],
+      "confidence": "high",
+      "reason": "2 independent primary-academic sources confirming same range"
+    },
+    {
+      "id": "VC-1.7",
+      "location": "stage-1-value-chain.md / Market Size table / combined PKS production",
+      "claim_text": "Indonesia + Malaysia combined PKS production >18 Mt/year (2023)",
+      "sources_cited": [
+        "verifiedmarketreports.com"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; Verified Market Reports is secondary-market-research (paid research firm)"
+    },
+    {
+      "id": "VC-1.8",
+      "location": "stage-1-value-chain.md / Market Size table / Malaysia PKS FOB certified",
+      "claim_text": "Malaysia PKS FOB price FIT-certified $105\u2013134/t (Jan 2024)",
+      "sources_cited": [
+        "argusmedia.com (Argus PKS viewpoint 2024)"
+      ],
+      "confidence": "low",
+      "reason": "Single source override \u2014 one source regardless of quality = Low per stated rules"
+    },
+    {
+      "id": "VC-1.9",
+      "location": "stage-1-value-chain.md / Market Size table / Malaysia PKS spot",
+      "claim_text": "Malaysia PKS FOB non-certified spot $70\u2013133/t (2023\u20132024)",
+      "sources_cited": [
+        "argusmedia.com",
+        "makmuramanah.co.id"
+      ],
+      "confidence": "medium",
+      "reason": "1 primary-research-firm (Argus) + 1 secondary-vendor (Makmur); 2 independent sources with 1 primary"
+    },
+    {
+      "id": "VC-1.10",
+      "location": "stage-1-value-chain.md / Market Size table / Vietnam pellet export volume",
+      "claim_text": "Vietnam wood pellet export 4.6 Mt (2023); 6.03 Mt (2024)",
+      "sources_cited": [
+        "asemconnectvietnam.gov.vn",
+        "vietnamnet.vn"
+      ],
+      "confidence": "medium",
+      "reason": "1 primary-gov (ASEM Connect Vietnam govt portal) + 1 secondary-news; 2 independent sources with 1 primary"
+    },
+    {
+      "id": "VC-1.11",
+      "location": "stage-1-value-chain.md / Market Size table / Vietnam pellet export value",
+      "claim_text": "Vietnam wood pellet export value $680M (2023); $805M (2024)",
+      "sources_cited": [
+        "asemconnectvietnam.gov.vn",
+        "vietnamnet.vn"
+      ],
+      "confidence": "medium",
+      "reason": "Same sourcing as VC-1.10; 1 primary-gov + 1 secondary-news"
+    },
+    {
+      "id": "VC-1.12",
+      "location": "stage-1-value-chain.md / Market Size table / Vietnam pellet FOB price",
+      "claim_text": "Vietnam wood pellet FOB ~$110\u2013165/t (2023); avg $132.6/t H1 2024",
+      "sources_cited": [
+        "vietnam.vn",
+        "misagroup.com.vn"
+      ],
+      "confidence": "medium",
+      "reason": "1 primary-gov (vietnam.vn) + 1 secondary-trade (Misa Group); 2 independent sources with 1 primary"
+    },
+    {
+      "id": "VC-1.13",
+      "location": "stage-1-value-chain.md / Market Size table / Thailand industrial coal",
+      "claim_text": "Thailand industrial coal consumption ~11.2 Mt imported coal to industry (2023)",
+      "sources_cited": [
+        "statista.com"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; Statista is secondary-market-research"
+    },
+    {
+      "id": "VC-1.14",
+      "location": "stage-1-value-chain.md / Market Size table / SEA biomass market",
+      "claim_text": "Southeast Asia biomass market $3.68B (2023)",
+      "sources_cited": [
+        "grandviewresearch.com"
+      ],
+      "confidence": "low",
+      "reason": "Single source override + geography mismatch flag (SEA/APAC aggregate not country-specific) + secondary-market-research only"
+    },
+    {
+      "id": "VC-1.15",
+      "location": "stage-1-value-chain.md / Market Size table / ICI 4 coal price",
+      "claim_text": "ICI 4 coal price ~$47\u201364/t (2024\u20132026)",
+      "sources_cited": [
+        "coaltradeindo.com",
+        "investing.com"
+      ],
+      "confidence": "low",
+      "reason": "2 secondary sources (secondary-trade + secondary-market-research); Medium requires 3+ secondary or 2+ with \u22651 primary; neither condition met"
+    },
+    {
+      "id": "VC-1.16",
+      "location": "stage-1-value-chain.md / Market Size table / ICI 1 coal price",
+      "claim_text": "ICI 1 coal price ~$90\u2013105/t (2024\u20132026)",
+      "sources_cited": [
+        "coaltradeindo.com"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; secondary-trade"
+    },
+    {
+      "id": "VC-1.17",
+      "location": "stage-1-value-chain.md / Market Size table / Newcastle benchmark",
+      "claim_text": "Newcastle 6,000 kcal/kg FOB ~$125/t end 2024; ~$160/t 2023 peak",
+      "sources_cited": [
+        "iea.org (Coal Mid-Year Update July 2024)"
+      ],
+      "confidence": "low",
+      "reason": "Single source override \u2014 IEA is primary-multilateral but single source = automatic Low"
+    },
+    {
+      "id": "VC-2.1",
+      "location": "stage-1-value-chain.md / WH1 Price series / Newcastle 2020",
+      "claim_text": "Newcastle thermal coal 2020 ~$50\u201370/t",
+      "sources_cited": [
+        "iea.org"
+      ],
+      "confidence": "low",
+      "reason": "Single source override"
+    },
+    {
+      "id": "VC-2.2",
+      "location": "stage-1-value-chain.md / WH1 Price series / Newcastle 2021",
+      "claim_text": "Newcastle 2021 surged to ~$160/t Q4",
+      "sources_cited": [
+        "iea.org"
+      ],
+      "confidence": "low",
+      "reason": "Single source override"
+    },
+    {
+      "id": "VC-2.3",
+      "location": "stage-1-value-chain.md / WH1 Price series / Newcastle 2022 peak",
+      "claim_text": "Newcastle 2022 peaked >$400/t briefly (API2 CIF); sustained >$350/t mid-2022",
+      "sources_cited": [
+        "iea.org"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; also note API2 CIF ARA is a different index from Newcastle FOB \u2014 precision issue compounded by single source"
+    },
+    {
+      "id": "VC-2.4",
+      "location": "stage-1-value-chain.md / WH1 Price series / Newcastle 2023",
+      "claim_text": "Newcastle 2023 stabilized ~$130\u2013160/t",
+      "sources_cited": [
+        "iea.org"
+      ],
+      "confidence": "low",
+      "reason": "Single source override"
+    },
+    {
+      "id": "VC-2.5",
+      "location": "stage-1-value-chain.md / WH1 Price series / Newcastle end 2024",
+      "claim_text": "Newcastle end 2024 ~$125/t",
+      "sources_cited": [
+        "iea.org"
+      ],
+      "confidence": "low",
+      "reason": "Single source override"
+    },
+    {
+      "id": "VC-2.6",
+      "location": "stage-1-value-chain.md / WH1 Price series / ICI April 2026",
+      "claim_text": "ICI 1 $104.50/t; ICI 3 $84.50/t; ICI 4/5 $63.80/t; NAR 3800 ~$47.70/t (April 2026)",
+      "sources_cited": [
+        "coaltradeindo.com",
+        "investing.com"
+      ],
+      "confidence": "low",
+      "reason": "2 secondary sources; no primary; same reasoning as VC-1.15"
+    },
+    {
+      "id": "VC-2.7",
+      "location": "stage-1-value-chain.md / WH1 Price series / HBA Aug 2024",
+      "claim_text": "HBA benchmark Aug 2024 $115.29/t \u2014 down >$64/t from same period 2023",
+      "sources_cited": [
+        "statista.com"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; Statista is secondary-market-research"
+    },
+    {
+      "id": "VC-2.8",
+      "location": "stage-1-value-chain.md / WH1 Price series / Vietnam pellet 2023 price range",
+      "claim_text": "Vietnam pellet 2023 lows ~$78\u2013110/t spot Korea; long-term Japan $145\u2013165/t",
+      "sources_cited": [
+        "vietnam.vn",
+        "misagroup.com.vn"
+      ],
+      "confidence": "medium",
+      "reason": "1 primary-gov (vietnam.vn) + 1 secondary-trade (Misa Group)"
+    },
+    {
+      "id": "VC-2.9",
+      "location": "stage-1-value-chain.md / WH1 Price series / Vietnam pellet H1 2024 avg",
+      "claim_text": "H1 2024 avg $132.6/t; Japan avg $146.3/t; Korea avg $104.3/t",
+      "sources_cited": [
+        "misagroup.com.vn"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; secondary-trade"
+    },
+    {
+      "id": "VC-2.10",
+      "location": "stage-1-value-chain.md / WH1 Price series / Vietnam pellet 2025",
+      "claim_text": "2025 (8 months) avg $145.6/t, up 9.1% vs 2024",
+      "sources_cited": [
+        "misagroup.com.vn"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; secondary-trade"
+    },
+    {
+      "id": "VC-2.11",
+      "location": "stage-1-value-chain.md / WH1 Price series / PKS FOB Sumatra",
+      "claim_text": "PKS FOB Sumatra FIT-certified $105\u2013134/t Jan 2024; non-certified dipped to $105 from $133/t",
+      "sources_cited": [
+        "argusmedia.com"
+      ],
+      "confidence": "low",
+      "reason": "Single source override \u2014 Argus is primary-quality but only one source cited"
+    },
+    {
+      "id": "VC-2.12",
+      "location": "stage-1-value-chain.md / WH1 Price series / EFB delivered cost",
+      "claim_text": "EFB delivered cost Malaysia ~$25\u201345/dry tonne",
+      "sources_cited": [
+        "bioresources.cnr.ncsu.edu"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; primary-academic but single source"
+    },
+    {
+      "id": "VC-3.1",
+      "location": "stage-1-value-chain.md / WH5 Quality / EFB composition",
+      "claim_text": "EFB raw moisture 60\u201370%; dried to 15\u201325%; NCV dry ~15\u201317 MJ/kg; as-rec ~6\u20138 MJ/kg; ash 7\u20139.4%; Cl 0.21\u20130.95%; S ~0.04%",
+      "sources_cited": [
+        "mdpi.com (MDPI Sustainability oil palm EFB review)"
+      ],
+      "confidence": "low",
+      "reason": "Single source override"
+    },
+    {
+      "id": "VC-3.2",
+      "location": "stage-1-value-chain.md / WH5 Quality / Rice husk composition",
+      "claim_text": "Rice husk ash 15\u201320%; silica >75%; fusion ~1,500\u00b0C; CV ~14\u201315 MJ/kg; grate fouling",
+      "sources_cited": [
+        "pmc.ncbi.nlm.nih.gov"
+      ],
+      "confidence": "low",
+      "reason": "Single verifiable URL cited; 'multiple sources incl ScienceDirect' stated but no second URL footnoted \u2014 treated as single source"
+    },
+    {
+      "id": "VC-3.3",
+      "location": "stage-1-value-chain.md / WH5 Quality / PKS composition",
+      "claim_text": "PKS CV ~18\u201320 MJ/kg dry; Cl low; moisture 12\u201320% as-received",
+      "sources_cited": [],
+      "confidence": "low",
+      "reason": "No footnote or citation provided for this sub-section"
+    },
+    {
+      "id": "VC-3.4",
+      "location": "stage-1-value-chain.md / WH5 Quality / Coal ICI 4 grade",
+      "claim_text": "Sub-bituminous ICI 4 coal CV 3,800\u20134,200 kcal/kg; variability from blending",
+      "sources_cited": [
+        "argusmedia.com (Argus Coalindo ICI methodology)"
+      ],
+      "confidence": "low",
+      "reason": "Single source override"
+    },
+    {
+      "id": "VC-4.1",
+      "location": "stage-1-value-chain.md / Preliminary Pain Points / PP1 seasonality",
+      "claim_text": "Biomass supply highly seasonal; monsoon wet seasons cause moisture spikes \u2014 'seasonality and unreliability' as principal commercial barrier",
+      "sources_cited": [
+        "wires.onlinelibrary.wiley.com (WIREs Energy and Environment 2024)"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; primary-academic but single source"
+    },
+    {
+      "id": "VC-4.2",
+      "location": "stage-1-value-chain.md / Preliminary Pain Points / PP2 export pull",
+      "claim_text": "94\u201396% Vietnam pellet absorbed by Japan/Korea; Japan $145\u2013165/t vs domestic ~$80\u2013100/t estimated",
+      "sources_cited": [
+        "asemconnectvietnam.gov.vn",
+        "vietnam.vn",
+        "misagroup.com.vn"
+      ],
+      "confidence": "medium",
+      "reason": "3 sources including 2 primary-gov; however 94\u201396% concentration figure traces primarily to secondary-news (theinvestor.vn); domestic $80\u2013100/t is estimated not sourced independently. Medium on balance."
+    },
+    {
+      "id": "VC-4.3",
+      "location": "stage-1-value-chain.md / Preliminary Pain Points / PP3 EFB quality",
+      "claim_text": "EFB as-received moisture 60\u201370% varies between mills and season; moisture exceeds specification causing combustion instability",
+      "sources_cited": [
+        "mdpi.com (MDPI Sustainability oil palm EFB review)"
+      ],
+      "confidence": "low",
+      "reason": "Single source override"
+    },
+    {
+      "id": "VC-4.4",
+      "location": "stage-1-value-chain.md / Preliminary Pain Points / PP4 DMO friction",
+      "claim_text": "Indonesian coal DMO 25%; $70/t power cap; $90/t industry cap; significant discount to export spot",
+      "sources_cited": [
+        "statista.com",
+        "schinderlawfirm.com"
+      ],
+      "confidence": "low",
+      "reason": "2 secondary sources in VC footnotes only (Statista + Schinder law blog); no primary gov or multilateral cited in this specific section"
+    },
+    {
+      "id": "VC-4.5",
+      "location": "stage-1-value-chain.md / Preliminary Pain Points / PP5 EFB logistics",
+      "claim_text": "EFB logistics cost $15\u201325/t barge haulage making delivered EFB marginally competitive",
+      "sources_cited": [
+        "bioresources.cnr.ncsu.edu"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; derived from LCA delivered cost range not a direct logistics cost breakdown"
+    },
+    {
+      "id": "VC-4.6",
+      "location": "stage-1-value-chain.md / Preliminary Pain Points / PP6 PKS certification",
+      "claim_text": "Japan April 2024 FIT mandate GGL-certified PKS; two-tier certified vs non-certified market",
+      "sources_cited": [
+        "argusmedia.com",
+        "kyoto.my"
+      ],
+      "confidence": "medium",
+      "reason": "1 primary-research-firm (Argus) + 1 secondary-vendor (Kyoto Oils); 2 independent sources with 1 primary"
+    },
+    {
+      "id": "VC-4.7",
+      "location": "stage-1-value-chain.md / Preliminary Pain Points / PP7 rice husk silica",
+      "claim_text": "Rice husk 15\u201320% silica-rich ash causes grate fouling and deposit formation in industrial boilers",
+      "sources_cited": [
+        "pmc.ncbi.nlm.nih.gov"
+      ],
+      "confidence": "low",
+      "reason": "Single source override"
+    },
+    {
+      "id": "VC-4.8",
+      "location": "stage-1-value-chain.md / Preliminary Pain Points / PP8 smallholder aggregation",
+      "claim_text": "Agricultural biomass from thousands of dispersed smallholder farms; no centralized market platform identified",
+      "sources_cited": [
+        "asean.org (ASEAN Biomass Energy Strategy 2020\u20132030)"
+      ],
+      "confidence": "low",
+      "reason": "Single source override"
+    },
+    {
+      "id": "VC-5.1",
+      "location": "stage-1-value-chain.md / Current Players / PTBA",
+      "claim_text": "PTBA 2023 domestic sales 21.4 Mt; capped $90/t under MEMR",
+      "sources_cited": [
+        "ember-energy.org"
+      ],
+      "confidence": "low",
+      "reason": "Single source override"
+    },
+    {
+      "id": "VC-5.2",
+      "location": "stage-1-value-chain.md / Current Players / Adaro",
+      "claim_text": "Adaro 2023 revenue $6.5B; coal production +7% YoY",
+      "sources_cited": [
+        "banktrack.org"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; Banktrack is secondary-news/NGO, not primary financial filing"
+    },
+    {
+      "id": "VC-5.3",
+      "location": "stage-1-value-chain.md / Current Players / Bayan",
+      "claim_text": "Bayan 2023 production 49.7 Mt; domestic ~22% of sales",
+      "sources_cited": [
+        "indonesiaminer.com"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; secondary-trade"
+    },
+    {
+      "id": "VC-5.4",
+      "location": "stage-1-value-chain.md / Current Players / KPC",
+      "claim_text": "KPC 2023 production 53.5 Mt; 60+ customers in 13+ countries",
+      "sources_cited": [
+        "kpc.co.id"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; company's own website (secondary-vendor)"
+    },
+    {
+      "id": "VC-5.5",
+      "location": "stage-1-value-chain.md / Current Players / Kideco",
+      "claim_text": "Kideco >1 billion tonne reserves; 60+ customers in 13 countries",
+      "sources_cited": [
+        "kideco.co.id"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; company's own website (secondary-vendor)"
+    },
+    {
+      "id": "VC-5.6",
+      "location": "stage-1-value-chain.md / Current Players / Vietnam pellet enterprises count",
+      "claim_text": "Vietnam ~80 enterprises engaged in wood pellet production and export",
+      "sources_cited": [
+        "misagroup.com.vn"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; secondary-trade; original draft itself flagged 'second source needed'"
+    },
+    {
+      "id": "PP1.1-1",
+      "location": "stage-1-pain-points.md / PP1.1 / Estimated cost / Vietnam export volume",
+      "claim_text": "Vietnam pellet export 6.03 Mt 2024, value $805M",
+      "sources_cited": [
+        "vietnamnet.vn"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; secondary-news (VC used 2 sources for same fact but PP cites only 1 here)"
+    },
+    {
+      "id": "PP1.1-2",
+      "location": "stage-1-pain-points.md / PP1.1 / Estimated cost / price differential",
+      "claim_text": "Japan avg $146.3/t vs Korea $104.3/t H1 2024; per-tonne differential $46\u201351/t",
+      "sources_cited": [
+        "misagroup.com.vn"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; secondary-trade (Misa Group)"
+    },
+    {
+      "id": "PP1.1-3",
+      "location": "stage-1-pain-points.md / PP1.1 / Estimated cost / Korea H1 2023 collapse",
+      "claim_text": "H1 2023 Korea export fell 41% volume, 45% value; prices below production cost est. $110\u2013120/t all-in",
+      "sources_cited": [
+        "theinvestor.vn"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; secondary-news; production cost $110\u2013120/t is an estimate without named methodology"
+    },
+    {
+      "id": "PP1.1-4",
+      "location": "stage-1-pain-points.md / PP1.1 / Estimated cost / bark removal cost",
+      "claim_text": "Bark removal to meet Japan spec increases production costs beyond $144/t export price; medium-scale producers at negative margin",
+      "sources_cited": [
+        "theinvestor.vn",
+        "vietnam.vn",
+        "agridecovietnam.com"
+      ],
+      "confidence": "medium",
+      "reason": "3 sources including 1 primary-gov (vietnam.vn) and industry player (Agrideco); however Agrideco is the subject company \u2014 self-interest caveat. On balance meets Medium: 2+ sources with \u22651 primary."
+    },
+    {
+      "id": "PP1.1-5",
+      "location": "stage-1-pain-points.md / PP1.1 / Estimated cost / GGL certification cost",
+      "claim_text": "GGL variable fee EUR 0.11/t; audit ~$3,000\u20133,500/company/year; 10,000 t/month aggregator overhead ~$17,400/year",
+      "sources_cited": [
+        "greengoldlabel.com",
+        "argusmedia.com"
+      ],
+      "confidence": "high",
+      "reason": "2 independent primary sources: GGL official certification body (primary-association) + Argus Media (primary-research-firm); EUR 0.11/t verifiable directly from GGL tariff schedule"
+    },
+    {
+      "id": "PP1.1-6",
+      "location": "stage-1-pain-points.md / PP1.1 / Estimated cost / Japan METI FIT halt",
+      "claim_text": "Japan METI announced Feb 2025 halting new biomass FIT/FIP project acceptance from FY2026",
+      "sources_cited": [
+        "mkresourcesgovernance.org",
+        "vietdata.vn"
+      ],
+      "confidence": "low",
+      "reason": "2 secondary sources (secondary-trade think tank + secondary-market-research); no primary METI source cited; Medium requires 3+ secondary or 1 primary \u2014 neither met"
+    },
+    {
+      "id": "PP1.1-7",
+      "location": "stage-1-pain-points.md / PP1.1 / Estimated cost / Vietnam installed capacity",
+      "claim_text": "Vietnam installed pellet production capacity 7.7\u20138.0 Mt/year",
+      "sources_cited": [
+        "vietdata.vn"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; secondary-market-research"
+    },
+    {
+      "id": "PP1.1-8",
+      "location": "stage-1-pain-points.md / PP1.1 / Frequency / export volumes and Japan share",
+      "claim_text": "Vietnam exported 6.03 Mt 2024, 6.68 Mt 2025 (10M annualized); Japan share 60% to 74% in 2025",
+      "sources_cited": [
+        "mkresourcesgovernance.org",
+        "misagroup.com.vn"
+      ],
+      "confidence": "low",
+      "reason": "2 secondary sources (secondary-trade + secondary-trade); no primary; does not meet Medium threshold"
+    },
+    {
+      "id": "PP1.1-9",
+      "location": "stage-1-pain-points.md / PP1.1 / Frequency / Korea decline concentration",
+      "claim_text": "Korea declined 41% volume, 45% value H1 2023; 95% export concentration on Japan+Korea",
+      "sources_cited": [
+        "theinvestor.vn",
+        "tridge.com"
+      ],
+      "confidence": "low",
+      "reason": "2 secondary sources (secondary-news + secondary-market-research); no primary"
+    },
+    {
+      "id": "PP1.1-10",
+      "location": "stage-1-pain-points.md / PP1.1 / Frequency / Indonesia PKS to Japan",
+      "claim_text": "Indonesia PKS exports to Japan exceeded 4.4\u20135 Mt/year 2024; certified $120s\u2013130s vs non-certified $105/t",
+      "sources_cited": [
+        "argusmedia.com (Argus PKS viewpoint)",
+        "fuelsandlubes.com",
+        "argusmedia.com (Argus GBE article)"
+      ],
+      "confidence": "medium",
+      "reason": "Argus cited twice (2 different articles = same publication family, count as 1) + Fuels and Lubes Asia (secondary-trade) = 2 distinct sources with 1 primary-research-firm"
+    },
+    {
+      "id": "PP1.1-11",
+      "location": "stage-1-pain-points.md / PP1.1 RC1 / Japan FIT \u00a524/kWh",
+      "claim_text": "Japan FIT scheme \u00a524/kWh ~$160/MWh; allows $144\u2013149/t for imported pellets and PKS",
+      "sources_cited": [
+        "vietnamnet.vn",
+        "misagroup.com.vn",
+        "agridecovietnam.com"
+      ],
+      "confidence": "low",
+      "reason": "3 secondary sources (news + trade + vendor); no primary METI source for \u00a524/kWh FIT rate; all secondary"
+    },
+    {
+      "id": "PP1.1-12",
+      "location": "stage-1-pain-points.md / PP1.1 RC4 / ResourceWise feedstock dependency",
+      "claim_text": "Over 90% of Vietnamese pellet facilities source from ~3,000 furniture/wood-processing enterprises (ResourceWise)",
+      "sources_cited": [],
+      "confidence": "low",
+      "reason": "ResourceWise cited in body text but no footnote number assigned; unverifiable citation"
+    },
+    {
+      "id": "PP1.1-13",
+      "location": "stage-1-pain-points.md / PP1.1 RC5 / METI FIT 20-year contracts",
+      "claim_text": "Projects under FIT receive 20-year fixed-price contracts; Vietnam capacity 7.7\u20138.0 Mt against stable market",
+      "sources_cited": [
+        "tridge.com",
+        "vietdata.vn",
+        "mkresourcesgovernance.org"
+      ],
+      "confidence": "medium",
+      "reason": "3 secondary sources (Tridge + Vietdata + MK Resources); meets 3+ secondary = Medium threshold"
+    },
+    {
+      "id": "PP1.2-1",
+      "location": "stage-1-pain-points.md / PP1.2 / Estimated cost / HBA peak 2022",
+      "claim_text": "HBA avg 2022 ~$276/t peak Aug 2022",
+      "sources_cited": [
+        "statista.com",
+        "petromindo.com"
+      ],
+      "confidence": "low",
+      "reason": "2 secondary sources (secondary-market-research + secondary-trade); no primary MEMR or IEA source cited for this data point in PP context"
+    },
+    {
+      "id": "PP1.2-2",
+      "location": "stage-1-pain-points.md / PP1.2 / Estimated cost / current HBA",
+      "claim_text": "Current HBA ~$105\u2013115/t (2025\u20132026)",
+      "sources_cited": [
+        "petromindo.com",
+        "coaltradeindo.com"
+      ],
+      "confidence": "low",
+      "reason": "2 secondary-trade sources; no primary; does not meet Medium threshold"
+    },
+    {
+      "id": "PP1.2-3",
+      "location": "stage-1-pain-points.md / PP1.2 / Estimated cost / opportunity cost industrial DMO",
+      "claim_text": "HBA ~$105\u2013115/t vs $90/t industrial cap = $15\u201325/t gap; ICI 4 spot $50\u201364/t vs DMO $43/t",
+      "sources_cited": [
+        "petromindo.com",
+        "coaltradeindo.com",
+        "iea.org"
+      ],
+      "confidence": "medium",
+      "reason": "3 sources including 1 primary-multilateral (IEA); meets 2+ with \u22651 primary threshold"
+    },
+    {
+      "id": "PP1.2-4",
+      "location": "stage-1-pain-points.md / PP1.2 / Estimated cost / IISD PLN savings $1.3B",
+      "claim_text": "IISD calculated coal price cap would save PLN ~$1.3B/year if HBA stays above $100/t",
+      "sources_cited": [
+        "iisd.org (publication page)",
+        "iisd.org (PDF)"
+      ],
+      "confidence": "medium",
+      "reason": "IISD cited via 2 URLs = same publication (count as 1); Yahoo Finance/R&M cited in same cluster = secondary. IISD as primary-quality independent research institute + Yahoo Finance = 2 sources with 1 primary-quality; Medium"
+    },
+    {
+      "id": "PP1.2-5",
+      "location": "stage-1-pain-points.md / PP1.2 / Estimated cost / DMO realization 2024",
+      "claim_text": "DMO realization 2024: 232.6 Mt (up from 212.9 Mt in 2023)",
+      "sources_cited": [
+        "ceicdata.com"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; CEIC is secondary data aggregator"
+    },
+    {
+      "id": "PP1.2-6",
+      "location": "stage-1-pain-points.md / PP1.2 / Estimated cost / Jan 2022 non-compliance",
+      "claim_text": "Jan 2022: 418 of 540 IUP holders non-compliant with 2021 DMO; coal export ban triggered",
+      "sources_cited": [
+        "thejakartapost.com",
+        "esdm.go.id"
+      ],
+      "confidence": "medium",
+      "reason": "1 primary-gov (ESDM Indonesia official ministry) + 1 secondary-news (Jakarta Post); 2 independent sources with 1 primary-gov"
+    },
+    {
+      "id": "PP1.2-7",
+      "location": "stage-1-pain-points.md / PP1.2 / Estimated cost / penalty formula MR17/2022",
+      "claim_text": "Finance Ministry sets penalty for DMO non-compliance per MR 17/2022; fine = export price minus HBA on shortfall",
+      "sources_cited": [
+        "thejakartapost.com"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; secondary-news"
+    },
+    {
+      "id": "PP1.2-8",
+      "location": "stage-1-pain-points.md / PP1.2 / Frequency and RC framework / DMO regulatory structure",
+      "claim_text": "Indonesia DMO 25% obligation; $70/t PLN cap; $90/t cement/fertilizer cap; SIMBARA monitoring; export ban enforcement",
+      "sources_cited": [
+        "petromindo.com",
+        "adcolaw.com (x2)",
+        "schinderlawfirm.com",
+        "jetp-id.org",
+        "indonesia-investments.com",
+        "spglobal.com",
+        "argusmedia.com",
+        "aseanenergy.org",
+        "esdm.go.id"
+      ],
+      "confidence": "high",
+      "reason": "9+ citations across primary-gov (ESDM), primary-research-firm (S&P Global, Argus), primary-association (ASEAN Centre for Energy), multilateral-adjacent (JETP-ID), independent research (IISD) \u2014 most comprehensively sourced claim in both documents"
+    },
+    {
+      "id": "PP1.2-9",
+      "location": "stage-1-pain-points.md / PP1.2 / Frequency / Perhapi 2026 call for revision",
+      "claim_text": "Perhapi association called for DMO price revision 2026; $35\u201340/t gap at current prices",
+      "sources_cited": [
+        "petromindo.com"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; secondary-trade"
+    },
+    {
+      "id": "PP1.2-10",
+      "location": "stage-1-pain-points.md / PP1.2 / Frequency / non-metal industrial coal share",
+      "claim_text": "Non-metal industrial sector consumes 6\u20139% of Indonesia coal = approx. 15\u201322 Mt/year",
+      "sources_cited": [
+        "argusmedia.com",
+        "ember-energy.org"
+      ],
+      "confidence": "high",
+      "reason": "2 independent primary-research-firm sources (Argus + Ember) confirming same range"
+    },
+    {
+      "id": "PP1.2-11",
+      "location": "stage-1-pain-points.md / PP1.2 / Frequency / 2024 DMO over-fulfillment",
+      "claim_text": "2024 DMO realization 232.6 Mt (105.7% of 220 Mt target)",
+      "sources_cited": [
+        "ceicdata.com",
+        "kontan.co.id"
+      ],
+      "confidence": "low",
+      "reason": "2 secondary sources (secondary-market-research + secondary-news); no primary MEMR/ESDM source"
+    },
+    {
+      "id": "PP1.2-12",
+      "location": "stage-1-pain-points.md / PP1.2 RC1 / DPO set at 2018 levels",
+      "claim_text": "$70/t PLN cap and $90/t industrial cap set March 2018 when HBA ~$95\u2013100/t; no auto-adjustment mechanism",
+      "sources_cited": [
+        "petromindo.com",
+        "jetp-id.org",
+        "iisd.org"
+      ],
+      "confidence": "high",
+      "reason": "3 sources: secondary-trade (Petromindo) + primary-multilateral-adjacent (JETP-ID government energy transition body) + primary-quality independent research (IISD); 2 primary-quality sources confirm"
+    },
+    {
+      "id": "PP1.2-13",
+      "location": "stage-1-pain-points.md / PP1.2 RC2 / over-compliance 232.6 Mt",
+      "claim_text": "2024 DMO realization 232.6 Mt (5.7% over 220 Mt target); over-compliance rational for large miners",
+      "sources_cited": [
+        "adcolaw.com",
+        "adcolaw.com (Decree 13/2022)",
+        "ceicdata.com"
+      ],
+      "confidence": "low",
+      "reason": "ADCO Law cited twice = 1 source (same publication); CEIC = 1 secondary; effectively 2 sources both secondary"
+    },
+    {
+      "id": "PP1.2-14",
+      "location": "stage-1-pain-points.md / PP1.2 RC3 / ASSUMED-2",
+      "claim_text": "Textile and F&B companies typically buy coal via 1\u20133 month spot contracts from traders not directly under DMO",
+      "sources_cited": [],
+      "confidence": "low",
+      "reason": "ASSUMED-2 tag \u2014 automatic Low"
+    },
+    {
+      "id": "PP1.2-15",
+      "location": "stage-1-pain-points.md / PP1.2 RC4 / ASSUMED-3 trader margin",
+      "claim_text": "Majority of domestic coal to small industrial operators passes through intermediary trader; trader margin ~$5\u201310/t estimated",
+      "sources_cited": [],
+      "confidence": "low",
+      "reason": "ASSUMED-3 tag + no source for $5\u201310/t trader margin estimate \u2014 automatic Low"
+    },
+    {
+      "id": "PP1.3-1",
+      "location": "stage-1-pain-points.md / PP1.3 / Estimated cost / drying barrier small operators",
+      "claim_text": "EFB arrives 60\u201370% moisture; drying to 15\u201325% requires capital; 'most small developers cannot implement drying technology'",
+      "sources_cited": [
+        "bioresources.cnr.ncsu.edu"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; primary-academic but single source"
+    },
+    {
+      "id": "PP1.3-2",
+      "location": "stage-1-pain-points.md / PP1.3 / Estimated cost / EFB delivered cost",
+      "claim_text": "$25/green tonne to $45/BDMT EFB delivered cost (Malaysia LCA)",
+      "sources_cited": [
+        "bioresources.cnr.ncsu.edu"
+      ],
+      "confidence": "low",
+      "reason": "Single source override \u2014 same URL as PP1.3-1, no independent confirmation"
+    },
+    {
+      "id": "PP1.3-3",
+      "location": "stage-1-pain-points.md / PP1.3 / Estimated cost / moisture efficiency penalty",
+      "claim_text": "Every 10% increase in moisture raises fuel consumption 8\u201312%",
+      "sources_cited": [
+        "coalbiomassboiler.com"
+      ],
+      "confidence": "low",
+      "reason": "AUTOMATIC LOW \u2014 vendor blog override; coalbiomassboiler.com is a single trade/vendor source; override applies regardless of any other consideration"
+    },
+    {
+      "id": "PP1.3-4",
+      "location": "stage-1-pain-points.md / PP1.3 / Estimated cost / moisture deduction calculation",
+      "claim_text": "Moisture error of 10pp \u2192 $4\u20138/t calorific penalty; 1,000t shipment = $4,000\u20138,000 deduction",
+      "sources_cited": [
+        "bioresources.cnr.ncsu.edu",
+        "coalbiomassboiler.com"
+      ],
+      "confidence": "low",
+      "reason": "Key efficiency figure (8\u201312% fuel consumption increase) comes from coalbiomassboiler.com vendor blog \u2014 vendor blog override poisons the derived calculation; Low regardless"
+    },
+    {
+      "id": "PP1.3-5",
+      "location": "stage-1-pain-points.md / PP1.3 / Frequency / EFB moisture variability",
+      "claim_text": "EFB moisture at mill gate range 60\u201370%; variation within single batch \u00b15\u201310pp",
+      "sources_cited": [
+        "bioresources.cnr.ncsu.edu",
+        "researchgate.net (SEM study)"
+      ],
+      "confidence": "medium",
+      "reason": "1 primary-academic (BioResources) + ResearchGate link to SEM study (secondary-aggregator but underlying source is academic); 2 independent sources with 1 confirmed primary"
+    },
+    {
+      "id": "PP1.3-6",
+      "location": "stage-1-pain-points.md / PP1.3 / Frequency / monsoon moisture re-uptake",
+      "claim_text": "Monsoon Oct\u2013Jan in Sumatra/Kalimantan causes moisture re-uptake in stockpiled EFB/PKS",
+      "sources_cited": [
+        "sciencedirect.com (oil palm yield seasonality)",
+        "icct.org (ICCT palm residues Indonesia)"
+      ],
+      "confidence": "high",
+      "reason": "2 independent primary-quality sources: primary-academic (ScienceDirect) + primary-research-firm (ICCT)"
+    },
+    {
+      "id": "PP1.3-7",
+      "location": "stage-1-pain-points.md / PP1.3 / Frequency / rice husk silica grate fouling",
+      "claim_text": "Rice husk silica 15\u201320% ash; fusion temperature ~1,500\u00b0C; partial sintering causes grate fouling",
+      "sources_cited": [
+        "pmc.ncbi.nlm.nih.gov"
+      ],
+      "confidence": "low",
+      "reason": "Single source override"
+    },
+    {
+      "id": "PP1.3-8",
+      "location": "stage-1-pain-points.md / PP1.3 / Frequency / EFB chlorine corrosion",
+      "claim_text": "EFB chlorine 0.21\u20130.95 wt% dry basis; causes corrosion in boiler heat-transfer surfaces; customer deductions",
+      "sources_cited": [
+        "mdpi.com (MDPI Sustainability EFB review)"
+      ],
+      "confidence": "low",
+      "reason": "Single source override"
+    },
+    {
+      "id": "PP1.3-9",
+      "location": "stage-1-pain-points.md / PP1.3 / Frequency / Vietnam Korea quality dumping",
+      "claim_text": "2023 Korea 'destructive price dumping' partly attributed to quality variation; Korean buyers imposing tighter quality audits",
+      "sources_cited": [
+        "agridecovietnam.com"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; secondary-vendor (Agrideco is market participant with self-interest)"
+    },
+    {
+      "id": "PP1.3-10",
+      "location": "stage-1-pain-points.md / PP1.3 / Frequency / Thailand EFB plant slagging",
+      "claim_text": "Thai palm EFB power plant suffered recurring slagging; abandoned one boiler due to Cl and alkali metal corrosion",
+      "sources_cited": [
+        "simecpellet.com"
+      ],
+      "confidence": "low",
+      "reason": "AUTOMATIC LOW \u2014 single vendor website source (SIMEC Pellet is a vendor); single-trade-source override"
+    },
+    {
+      "id": "PP1.3-11",
+      "location": "stage-1-pain-points.md / PP1.3 / Frequency / biomass throughput reduction",
+      "claim_text": "Variable biomass properties reduce plant throughput up to 50%",
+      "sources_cited": [
+        "eubia.org (EUBIA)"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; though EUBIA is primary-association, single source = Low"
+    },
+    {
+      "id": "PP1.3-12",
+      "location": "stage-1-pain-points.md / PP1.3 / Frequency / Indonesia storage quality standardization",
+      "claim_text": "Indonesia storage and transportation challenges; quality standardization needed for bioenergy supply chain",
+      "sources_cited": [
+        "eria.org (ERIA AZEC 2025)"
+      ],
+      "confidence": "low",
+      "reason": "Single source override; ERIA is primary-multilateral quality but single source"
+    },
+    {
+      "id": "PP1.3-13",
+      "location": "stage-1-pain-points.md / PP1.3 RC1 / ASSUMED-5 no domestic grading standard",
+      "claim_text": "No domestic Indonesian or Malaysian grading standard with third-party enforcement exists for EFB to industrial customers",
+      "sources_cited": [],
+      "confidence": "low",
+      "reason": "ASSUMED-5 tag \u2014 automatic Low"
+    },
+    {
+      "id": "PP1.3-14",
+      "location": "stage-1-pain-points.md / PP1.3 RC4 / ASSUMED-6 informal dispute resolution",
+      "claim_text": "Domestic biomass supply contracts rarely include surveyor provisions; disputes resolved by informal price deduction",
+      "sources_cited": [],
+      "confidence": "low",
+      "reason": "ASSUMED-6 tag \u2014 automatic Low"
+    }
+  ],
+  "weak_claims_for_deep_research": [
+    {
+      "id": "PP1.1-6",
+      "claim_text": "Japan METI announced Feb 2025 halting new biomass FIT/FIP from FY2026",
+      "why_weak": "2 secondary sources only (MK Resources think tank + Vietdata); no primary METI source; this is the structural demand cliff that drives all of PP1.1 RC5 \u2014 if wrong, the entire Japan FIT narrative collapses",
+      "suggested_query": "Japan METI FY2026 biomass FIT FIP new project applications halt official announcement site:meti.go.jp OR IRENA OR IEA"
+    },
+    {
+      "id": "VC-1.7",
+      "claim_text": "Indonesia + Malaysia combined PKS production >18 Mt/year (2023)",
+      "why_weak": "Single secondary-market-research source (Verified Market Reports); this is a market-sizing anchor for PKS supply \u2014 cited as foundation for multiple pain point cost estimates",
+      "suggested_query": "Indonesia Malaysia palm kernel shell production volume 2023 MPOB OR BPS Indonesia OR USDA PSD OR ERIA palm oil residue"
+    },
+    {
+      "id": "PP1.3-3",
+      "claim_text": "Every 10% increase in moisture raises fuel consumption 8\u201312%",
+      "why_weak": "Vendor blog (coalbiomassboiler.com) \u2014 automatic vendor-blog override; used to calculate $4,000\u20138,000 per-shipment deduction in PP1.3; central to quality-variability pain point magnitude",
+      "suggested_query": "biomass boiler efficiency moisture content fuel consumption increase ASHRAE OR NREL OR academic combustion engineering journal peer reviewed"
+    },
+    {
+      "id": "VC-1.13",
+      "claim_text": "Thailand industrial coal consumption ~11.2 Mt imported coal to industry (2023)",
+      "why_weak": "Single Statista secondary source; Thailand industrial coal is Stage 1 market size anchor for Thailand \u2014 no primary source (EPPO Thailand, DEDE, IEA Thailand) cited",
+      "suggested_query": "Thailand coal consumption industrial sector 2023 EPPO Thailand energy statistics OR IEA Thailand energy data OR DEDE annual report"
+    },
+    {
+      "id": "PP1.2-5",
+      "claim_text": "DMO realization 2024: 232.6 Mt (up from 212.9 Mt in 2023)",
+      "why_weak": "Single CEIC secondary data aggregator source; DMO realization figures should come from ESDM/MEMR primary publication; this figure is the primary evidence for over-compliance finding in PP1.2 RC2",
+      "suggested_query": "Indonesia ESDM MEMR coal DMO realization 2024 annual report site:esdm.go.id OR minerba.esdm.go.id"
+    },
+    {
+      "id": "PP1.1-11",
+      "claim_text": "Japan FIT scheme \u00a524/kWh ~$160/MWh; allows $144\u2013149/t for imported biomass",
+      "why_weak": "No primary METI source for \u00a524/kWh rate; all citations are secondary/vendor; this is the root-cause mechanism (RC1) for the entire export-pull pain point",
+      "suggested_query": "Japan METI biomass FIT FIP tariff rate yen per kWh 2024 site:meti.go.jp OR IEA Japan renewable energy policy"
+    },
+    {
+      "id": "VC-1.4",
+      "claim_text": "Indonesia biomass PKS+EFB+mesocarp fibre potential ~20 Mt solid biomass/year",
+      "why_weak": "Single academic source with 2017 base year \u2014 stale for market sizing (>5 years); Indonesia's palm oil expansion has continued since; no MPOB/BPS/ERIA 2022\u20132024 update cited",
+      "suggested_query": "Indonesia palm oil biomass residue EFB PKS mesocarp fibre potential 2022 2023 ERIA OR BPS Indonesia OR USDA Indonesia palm oil supply"
+    }
+  ],
+  "override_flags": [
+    "geography_mismatch_VC-1.14: Grand View Research SEA biomass $3.68B is aggregate figure not country-specific",
+    "single_vendor_blog_PP1.3-3: coalbiomassboiler.com cited for moisture efficiency figure \u2014 automatic Low override applied",
+    "single_vendor_PP1.3-10: simecpellet.com vendor case study cited as sole evidence for Thailand EFB plant slagging",
+    "stale_data_VC-1.4: ScienceDirect palm biomass review uses 2017 base year for supply potential \u2014 >5 years stale",
+    "same_publication_family_PP1.2-4: IISD cited via 2 URLs (publication page + PDF) \u2014 counted as 1 source",
+    "same_publication_family_PP1.2-13: ADCO Law cited twice for different Decrees \u2014 counted as 1 source",
+    "same_publication_family_PP1.1-10: Argus Media cited via 2 different articles \u2014 counted as 1 source for Argus",
+    "assumed_tag_PP1.2-14: ASSUMED-2 tag auto-Low",
+    "assumed_tag_PP1.2-15: ASSUMED-3 tag auto-Low",
+    "assumed_tag_PP1.3-13: ASSUMED-5 tag auto-Low",
+    "assumed_tag_PP1.3-14: ASSUMED-6 tag auto-Low",
+    "no_citation_VC-3.3: PKS composition data has no footnote at all",
+    "no_citation_PP1.1-12: ResourceWise cited in RC4 body without footnote number \u2014 unverifiable"
+  ],
+  "gate_decision_recommendation": "re-run-recommended",
+  "gate_reasoning": "76.4% of claims score Low confidence, well above the 70% FAIL threshold. The dominant failure mode is the single-source override \u2014 most quantitative claims (price series, market volumes, quality parameters) are supported by exactly one source, even when that source is high-quality. The IEA Newcastle price series (VC-2.1\u20132.5) generates five Low claims from one primary source that could become High or Medium with any second corroborating source. The coal grade price table (VC-1.15\u20131.16, VC-2.6\u20132.7) has no primary source at all \u2014 Argus Coalindo ICI methodology is cited but not the actual Argus price data. The Japan METI FIT halt (PP1.1-6), which is the structural demand cliff driving all of PP1.1 RC5, has no primary METI source. The moisture efficiency figure (PP1.3-3) comes from a vendor blog and contaminates the entire cost calculation chain in PP1.3. There are also four ASSUMED tags that are each individually Low. The stage has strong structural narrative quality and several claims are genuinely well-sourced (DMO regulatory framework PP1.2-8, monsoon seasonality PP1.3-6, GGL certification cost PP1.1-5), but the overall citation density is too thin for a re-run pass."
+}

@@ -1,0 +1,21 @@
+Run complete: 2026-05-14-0107
+Topic: logistics-risk-mgmt-worldwide
+Mode: sandbox
+Completion date: 2026-05-15
+Resumed: true (Stage 6 from checkpoint)
+
+Final gate: ship-with-flag
+Stages tracer-fired: 6 of 6
+Corpus claims: 568 (13.9% High / 32.9% Med / 53.2% Low)
+Unique source domains: 328
+
+Canonical artifacts:
+- raw-claude-value-chain-logistics-risk-mgmt-worldwide.md  (4,787 lines)
+- raw-claude-pain-points-logistics-risk-mgmt-worldwide.md  (1,731 lines)
+- raw-claude-summary-logistics-risk-mgmt-worldwide.md      (run report, must-fix list, top findings, field questions)
+
+Hard-blocker tags before external use:
+- VERIFY-1: project44 ~$210M vs ~$175M ARR (Stage 4) — reconcile against audited disclosure
+- VERIFY-2: Nirvana Series D $100M/$1.5B vs $80M/$830M (Stage 3) — confirm against Form D
+
+Top residual ASSUMED-N claims for field validation: see summary file Section "Top 3 questions for field validation".

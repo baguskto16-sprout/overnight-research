@@ -1,0 +1,131 @@
+{
+  "claim_id": "PP6.1-5",
+  "claim_text_original": "88% of commercial fleets have telematics programs; only 64% of carriers use that data in underwriting decisions; 79% of fleet managers report insurers have never asked for their telematics data",
+  "original_source": "https://www.carriermanagement.com/features/2025/11/24/281755.htm",
+  "original_source_flag": "Single trade-press article; no primary source or methodology identified",
+
+  "outcome": "STRONGER L→M",
+  "new_confidence": "M",
+
+  "per_statistic_findings": [
+    {
+      "stat": "88% of commercial fleets have telematics programs",
+      "verdict": "STRONGER L→M",
+      "primary_source_found": true,
+      "closest_authoritative_figure": "88% of fleets now use telematics for safety (SambaSafety 2025 Telematics Report, released October 15, 2025)",
+      "important_caveat": "The original claim reads '88% have telematics programs'; the SambaSafety report's exact phrasing is '88% of fleets now use telematics for safety' — a narrower safety-use framing, not overall program penetration. The 2024 version of the same report cited 82% of commercial insurers having some adoption, suggesting slightly different measurement scope year-over-year.",
+      "methodology": {
+        "fielded_by": "SambaSafety (vendor of fleet safety/telematics software)",
+        "survey_dates": "June-July 2025",
+        "sample_n": 402,
+        "sample_breakdown": "152 fleet respondents, 180 insurance brokers, 70 insurance carriers",
+        "geography": "North America",
+        "sectors": "trucking & transportation, construction, energy, utilities, government, healthcare",
+        "independence": "VENDOR-FIELDED — SambaSafety is a telematics vendor with commercial interest in high adoption figures"
+      },
+      "source_url": "https://www.globenewswire.com/news-release/2025/10/15/3167243/0/en/88-of-Fleets-Now-Use-Telematics-for-Safety-But-Only-30-Share-Data-with-Insurers.html",
+      "source_category": "vendor-press-release",
+      "publication_date": "2025-10-15",
+      "via_pdf_markitdown": false
+    },
+    {
+      "stat": "Only 64% of carriers use that data in underwriting decisions",
+      "verdict": "CONFIRMED-WEAK",
+      "primary_source_found": false,
+      "closest_authoritative_figure": "No independent source confirms '64% of carriers use telematics in underwriting'. SambaSafety's 2025 report states '80% of the top 50 commercial auto insurers use telematics data' (a different population — top-50 only, not all carriers). The 2024 SambaSafety report noted only 23% of insurer telematics teams were led by underwriting (vs. 47% by loss control), indirectly suggesting limited underwriting integration. The '64%' figure appears to originate in the Carrier Management article itself (authored by Kevin Henderson, CEO of Indenseo, a telematics analytics vendor), and is not sourced to any named survey.",
+      "methodology": {
+        "fielded_by": "Unattributed — likely Kevin Henderson/Indenseo internal analysis or a proprietary figure not tied to any disclosed survey",
+        "survey_dates": "Unknown",
+        "sample_n": "Unknown",
+        "independence": "UNVERIFIABLE — sole citation is a vendor-authored trade-press opinion article; figure does not appear in SambaSafety 2025 report, Verisk publications, CIAB quarterly surveys, or any other locatable source"
+      },
+      "source_url": null,
+      "source_category": "unattributed",
+      "publication_date": null,
+      "via_pdf_markitdown": false,
+      "contradicting_figures": [
+        {
+          "figure": "80% of top-50 commercial auto insurers use telematics data",
+          "source": "SambaSafety 2025 Telematics Report (GlobeNewswire press release, 2025-10-15)",
+          "note": "Refers only to top-50 insurers; says 'use telematics data' not specifically 'in underwriting decisions'"
+        }
+      ]
+    },
+    {
+      "stat": "79% of fleet managers report insurers have never asked for their telematics data",
+      "verdict": "STRONGER L→M",
+      "primary_source_found": true,
+      "closest_authoritative_figure": "79% of fleets that don't share telematics data say it's simply because no one has asked (SambaSafety 2025 Telematics Report). Note: this is 79% of the NON-SHARING subset (70% of all fleets don't share), not 79% of all fleet managers — the original claim overstates the base by implying all fleet managers.",
+      "year_over_year_trend": "2024 SambaSafety report cited 74% of non-sharing fleets said they were never asked; 2025 version shows 79% — consistent directional trend",
+      "important_caveat": "The 79% applies to non-sharing fleets only (~70% of all fleets). The universe is ~0.70 × 0.79 = ~55% of ALL fleet managers, not 79% of all fleet managers as the original claim implies.",
+      "methodology": {
+        "fielded_by": "SambaSafety (vendor)",
+        "survey_dates": "June-July 2025",
+        "sample_n": 402,
+        "sample_breakdown": "152 fleet respondents, 180 insurance brokers, 70 insurance carriers",
+        "geography": "North America",
+        "independence": "VENDOR-FIELDED"
+      },
+      "source_url": "https://www.globenewswire.com/news-release/2025/10/15/3167243/0/en/88-of-Fleets-Now-Use-Telematics-for-Safety-But-Only-30-Share-Data-with-Insurers.html",
+      "source_category": "vendor-press-release",
+      "publication_date": "2025-10-15",
+      "via_pdf_markitdown": false
+    }
+  ],
+
+  "primary_sources_found": [
+    {
+      "url": "https://www.globenewswire.com/news-release/2025/10/15/3167243/0/en/88-of-Fleets-Now-Use-Telematics-for-Safety-But-Only-30-Share-Data-with-Insurers.html",
+      "category": "vendor-press-release",
+      "publication_date": "2025-10-15",
+      "supports_claim": "partial",
+      "key_data": "88% of fleets use telematics for safety; 79% of non-sharing fleets say no one asked; 80% of top-50 insurers use telematics data; 30% of fleets share data with insurers. Survey: 152 fleets + 180 brokers + 70 carriers, North America, June-July 2025. Fielded by SambaSafety (telematics vendor).",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://sambasafety.com/blog/why-fleets-wont-share-telematics-data",
+      "category": "vendor-blog",
+      "publication_date": "2025-10",
+      "supports_claim": "partial",
+      "key_data": "Repeats key 2025 report figures; 80% of top-50 commercial auto insurers now use telematics; 70% of fleets not sharing; 79% of non-sharing fleets say never asked. No methodology disclosed on page.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://www.insurancethoughtleadership.com/auto-insurance/telematics-edge-commercial-auto",
+      "category": "trade-press",
+      "publication_date": "2024",
+      "supports_claim": "partial",
+      "key_data": "References SambaSafety 2024 report: 74% of non-sharing fleets said never asked (2024 baseline for 79% in 2025); 82% of commercial insurers have some telematics adoption. Confirms year-over-year trend direction.",
+      "via_pdf_markitdown": false
+    }
+  ],
+
+  "source_chain_assessment": "The Carrier Management article authored by Kevin Henderson (CEO of Indenseo) synthesized SambaSafety's 2025 Telematics Report for the 88% and 79% figures but appears to have introduced the 64% underwriting-use figure independently — possibly from Indenseo's own analytics or client data, not from any publicly disclosed survey. The SambaSafety report is itself a vendor-fielded study (n=152 fleets, 180 brokers, 70 carriers) with commercial interest in high adoption figures; it does not meet ATRI, FMCSA, or independent research organization standards. No government (FMCSA, BTS), no multilateral (OECD, World Bank), no independent academic source, and no ATRI publication was found to corroborate any of the three specific percentages.",
+
+  "searches_performed": [
+    "ATRI 'Critical Issues in Trucking' 2024 2025 telematics adoption fleet percentage",
+    "'88 percent' OR '88%' commercial fleet telematics 'underwriting' survey 2024 2025",
+    "Indenseo fleet telematics insurance underwriting survey 2024 2025 '64%' OR '79%'",
+    "SambaSafety 2025 telematics report methodology sample size survey respondents PDF download",
+    "commercial fleet telematics 'underwriting' '64 percent' OR '64%' carriers use data insurance survey 2024 2025",
+    "CIAB RIMS Marsh 'commercial auto' telematics underwriting adoption survey report 2024 2025",
+    "Verisk 'commercial auto' telematics underwriting adoption rate fleet manager survey 2024 2025 statistics"
+  ],
+
+  "categories_searched": [
+    "primary-gov (FMCSA — not found via search)",
+    "primary-industry-association (ATRI — no telematics adoption % in Critical Issues 2024/2025 reports)",
+    "primary-insurance-association (CIAB quarterly surveys — no telematics underwriting adoption %)",
+    "vendor-press-release (SambaSafety GlobeNewswire — partial confirmation of 88% and 79%)",
+    "vendor-blog (SambaSafety — partial confirmation)",
+    "trade-press (Insurance Thought Leadership — corroborates 2024 baseline figures)",
+    "trade-press (Carrier Management — original article, paywalled, authored by Indenseo CEO)",
+    "primary-data-vendor (Verisk — no specific % found for underwriting adoption)"
+  ],
+
+  "suggested_revision": "Replace the compound claim with three separately-sourced assertions: (1) 'Approximately 88% of commercial fleets use telematics for safety purposes [SambaSafety 2025 Telematics Report; vendor-fielded survey, n=152 fleets, North America, June-July 2025].' (2) 'The share of carriers actively incorporating fleet telematics into underwriting decisions remains contested: 80% of the top-50 commercial auto insurers report using telematics data, though only 23% of insurer telematics teams are underwriting-led [SambaSafety 2025]. The 64% figure cited in the original source cannot be independently verified and should be removed or marked [ASSUMED-N].' (3) 'Among fleets that do not share telematics data with insurers (~70% of all fleets), 79% say the reason is simply that no insurer has asked [SambaSafety 2025]; note this is ~55% of all fleet managers, not 79%.'",
+
+  "recommended_option": "partial-upgrade — upgrade 88% and 79% statistics to Medium confidence with explicit vendor-survey caveat; mark 64% as [ASSUMED-N] or drop and substitute the 80%-of-top-50 figure with proper scope language",
+
+  "reasoning": "Two of the three statistics (88% and 79%) trace to SambaSafety's 2025 Telematics Report — a disclosed, methodologically described vendor study (n=402 total, North America, June-July 2025) released via GlobeNewswire. This is a stronger anchor than a single trade-press article, but still vendor-fielded with commercial interest. The 79% figure also has a 2024 baseline (74%) confirming directional consistency. The 64% underwriting-use figure is not found in SambaSafety's report nor in any other locatable source; it appears to be an unattributed assertion by the Carrier Management article's author (Kevin Henderson, CEO of Indenseo, a competing telematics analytics vendor) and cannot be confirmed or independently cross-checked. ATRI, FMCSA, CIAB, and Verisk produced no corroborating primary data for any of the three specific percentages."
+}

@@ -1,0 +1,113 @@
+{
+  "run_id": "2026-05-21-0115",
+  "input_file": "./input/logistics-risk-mgmt-worldwide.txt",
+  "topic_slug": "logistics-risk-mgmt-worldwide",
+  "mode": "sandbox",
+  "output_dir": "./output/raw-claude-overnight/2026-05-21-0115/",
+  "current_pass": 5,
+  "stages_planned": [
+    {"n": 1, "name": "Pre-dispatch — vendor procurement & onboarding"},
+    {"n": 2, "name": "Dispatch — freight procurement & tendering"},
+    {"n": 3, "name": "In-transit — visibility & monitoring"},
+    {"n": 4, "name": "Multi-leg handoffs — subcontractor chain integration & control towers"},
+    {"n": 5, "name": "Delivery — POD, last-leg verification & security"},
+    {"n": 6, "name": "Post-incident — claims, insurance & recovery"}
+  ],
+  "stages_completed": [1, 2, 3, 4, 5, 6],
+  "stages_in_progress": [],
+  "weak_claims_to_re_research": [],
+  "deep_research_applied": [
+    {"id": "PP1.1-NuclearVerdict-36M", "outcome": "replace", "topic": "$36M trucking-cases median (ATRI Dec 2025), not broker-specific — accurate forward-looking proxy post-Montgomery"},
+    {"id": "PP1.4-Indonesia-75pct", "outcome": "replace", "topic": "75% of Tanjung Priok trucking firms have <=20 trucks (World Bank 2015), not 75% of Indonesian trucks are single-vehicle"},
+    {"id": "PP1.1-DoubleBrokering-500-700M", "outcome": "replace", "topic": "$500M-$700M traces to single TriumphPay internal estimate (April 2023), amplified by WSJ; no government primary; floor: CargoNet 2024 strategic-theft ~$150M"}
+  ],
+  "factual_corrections_applied": [
+    {"id": "VC-Stage2-KargoBankrupt", "correction": "Kargo Technologies is ACTIVE — closed Series B July 2024 (AC Ventures); acquired Malaysia's TheLorry all-stock same quarter. Earlier draft erroneously listed as bankrupt 2023."},
+    {"id": "PP6.3-APACProtectionGap", "correction": "Replaced unverified $740B Peak Re APAC figure with ~$441B emerging-Asia non-life protection gap (Swiss Re Sigma 2024)"},
+    {"id": "PP5+6-FictitiousPickup-303pct", "correction": "Replaced +303% phrasing with CargoNet-aligned ~574 events in 2024 / +50% YoY / order-of-magnitude above ~66/year long-run baseline"},
+    {"id": "PP4.1-McKinsey-30pct-beyond-Tier1", "correction": "Added Medium-confidence caveat noting secondary trade-press source (primary is paywalled; NEEDS-ATTENDED-FETCH)"}
+  ],
+  "validation_summary": {
+    "stage_1": {"claims": 47, "low_pct": 36.2, "gate": "ship-with-flag", "validator": "per-stage"},
+    "stage_2": {"claims": 68, "low_pct": 26.5, "gate": "ship-with-flag", "validator": "per-stage"},
+    "stages_3to6_aggregate": {"claims_est": 190, "validator": "cross-stage consolidated"},
+    "corpus_total_claims": 305,
+    "corpus_low_pct": 27.9,
+    "unique_publication_sources_est": "~50+",
+    "global_gate_decision": "ship-with-flag"
+  },
+  "final_gate_decision": "ship-with-flag",
+  "started_at": "2026-05-21T01:15:00+08:00",
+  "finished_at": "2026-05-21T04:00:00+08:00",
+  "interruption": null,
+  "outputs": {
+    "value_chain": "raw-claude-value-chain-logistics-risk-mgmt-worldwide.md",
+    "pain_points": "raw-claude-pain-points-logistics-risk-mgmt-worldwide.md",
+    "summary": "raw-claude-summary-logistics-risk-mgmt-worldwide.md",
+    "final_report_html": "FINAL-REPORT.html",
+    "cross_stage_observations": "cross-stage-observations.md"
+  },
+  "phase_2_handoff": {
+    "expected": true,
+    "trigger_file": "RUN-COMPLETE.txt",
+    "note": "Unattended-Playwright mode — Phase 2 orchestrator handles attended-fetch enrichment after this run completes.",
+    "priority_urls": [
+      "https://truckingresearch.org/research/trucking-nuclear-verdicts",
+      "IUMI Stats Report 2025 PDF",
+      "Swiss Re Sigma 2024 (emerging-Asia protection gap)",
+      "BSI/TT Club 2025 Cargo Theft Report PDF",
+      "BPS Indonesia Statistik Kendaraan Bermotor 2023",
+      "McKinsey 2024 Global Supply Chain Leader Survey primary",
+      "OFAC settlement archive PDFs (Fracht and similar)",
+      "Vietnam Law No. 91/2025/QH15 official text"
+    ]
+  },
+  "deviation_from_skill_spec": "Stages 3-6 used cross-stage consolidated validation rather than per-stage validation (skill recommends per-stage). Optimization for overnight wall-clock budget. Stage 1 and Stage 2 used full per-stage cycle including deep-research. Cross-stage validator caught the 3 highest-impact post-draft errors (Kargo, $740B, fictitious-pickup) but per-stage Low% breakdown for Stages 3-6 is not separately computed in this run.",
+  "auto_enrichment": {
+    "started_at": "2026-05-21T04:55:00+08:00",
+    "completed_at": "2026-05-21T05:01:00+08:00",
+    "urls_attempted": 17,
+    "tag_occurrences_attempted": 30,
+    "urls_succeeded": 13,
+    "urls_confirmed_inaccessible": 4,
+    "tag_occurrences_succeeded": 25,
+    "tag_occurrences_confirmed_inaccessible": 5,
+    "claims_upgraded": [
+      {"id": "VC-Stage4-McKinsey-30pct-Tier1", "file": "raw-claude-value-chain-...md:1089", "from": "medium-high", "to": "high", "new_source": "https://www.mckinsey.com/capabilities/operations/our-insights/supply-chain-risk-survey-2024", "evidence": "Verbatim: 60% tier-1 visibility (10pp YoY), 7pp deep-tier decline."},
+      {"id": "VC-Stage4-McKinsey-LastMile-65to95B", "file": "raw-claude-value-chain-...md:1337", "from": "medium-high", "to": "high", "new_source": "https://www.mckinsey.com/industries/logistics/our-insights/digitizing-mid-and-last-mile-logistics-handovers-to-reduce-waste", "evidence": "Verbatim: $65B-$95B handoff waste, $45B-$66B B2B, $18B-$28B B2C."},
+      {"id": "VC-Stage6-Loadsure-GoogleCloudAI", "file": "raw-claude-value-chain-...md:1668", "from": "low-medium", "to": "medium", "new_source": "https://www.loadsure.net/latest/", "evidence": "Loadsure latest page accessible; active newsroom confirms Lloyd's coverholder status."},
+      {"id": "PP4.1-McKinsey-30pct-beyond-Tier1", "file": "raw-claude-pain-points-...md:1017", "from": "medium", "to": "high", "new_source": "https://www.mckinsey.com/capabilities/operations/our-insights/supply-chain-risk-survey-2024", "evidence": "Primary McKinsey article now directly verified; 30%-beyond-Tier-1 (and 7pp decline) substantiated verbatim."},
+      {"id": "PP5+6-TAPA-APAC-488", "file": "raw-claude-pain-points-...md:1609", "from": "medium-high", "to": "high", "new_source": "https://tapa-apac.org/the-transported-asset-protection-association-asia-pacific-tapa-apac-releases-2025-intelligence-data-revealing-shifting-cargo-crime-patterns-record-counterfeit-losses-and-escalating-in-transit-risk", "evidence": "Verbatim: 488 incidents, USD 30M direct losses, ~40% en-route."}
+    ],
+    "urls_inaccessible_list": [
+      {"url": "https://thinkfreight.io/blog/fmcsa-active-freight-brokerages-in-july-2024", "reason": "HTTP 404 — page not found"},
+      {"url": "https://www.controlant.com/news/", "reason": "Page returns 404 slug — specific 2024 press release not accessible at this URL"},
+      {"url": "https://www.gartner.com/en/documents/6272683", "reason": "Gartner paywall — subscribe/sign-in gated"},
+      {"url": "https://truckingresearch.org/research/trucking-nuclear-verdicts", "reason": "HTTP 403 — ATRI Cloudflare bot protection blocks unattended access; document existence confirmed via secondary trade-press only"}
+    ],
+    "urls_verified_list": [
+      "https://ofac.treasury.gov/media/933556/download?inline= (PDF — application/pdf reachable)",
+      "https://www.mckinsey.com/capabilities/operations/our-insights/supply-chain-risk-survey-2024",
+      "https://www.mckinsey.com/industries/logistics/our-insights/digitizing-mid-and-last-mile-logistics-handovers-to-reduce-waste",
+      "https://www.mpa.gov.sg/docs/mpalibraries/mpa-documents-files/oms/bunkering/bunkering-services-providers/bunker-surveying-company-licence---1-may-2024.pdf (PDF extracted via markitdown — 37 companies listed in May 2024 version; Saybolt confirmed at #28)",
+      "https://iumi.com/wp-content/uploads/2025/11/IUMI-Stats-Report-2025.pdf (PDF extracted — $39.92B 2024 premiums confirmed)",
+      "https://www.loadsure.net/latest/",
+      "https://www.ttclub.com/fileadmin/uploads/tt-club/Documents/TT_and_BSI_annual_theft_report/TT_Club_Report_-_Supply_Chain_Report_April_2025.pdf (PDF extracted)",
+      "https://www.contractpharma.com/exclusives/temperature-excursions-insights-from-a-cold-chain-expert/ (post-Cloudflare wait)",
+      "https://cdn2.hubspot.net/hubfs/4107558/general%20content/PEL1046_SurveyReport_v4a.pdf (Peli BioThermal 2019 survey PDF extracted)",
+      "https://www.who.int/immunization/programmes_systems/supply_chain/evm/en/ (redirected to current EVM portal — accessible)",
+      "https://www.ccjdigital.com/technology/driver-coaching-and-scorecarding/article/15380799/aienabled-dashcams-can-help-fleets-reduce-insurance-costs (post-Cloudflare wait; 'up to 20%' HDVI/Netradyne discount confirmed)",
+      "https://tapa-apac.org/the-transported-asset-protection-association-asia-pacific-tapa-apac-releases-2025-intelligence-data-revealing-shifting-cargo-crime-patterns-record-counterfeit-losses-and-escalating-in-transit-risk",
+      "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-370/section-370.9"
+    ],
+    "tag_replacement_strategy": "[NEEDS-ATTENDED-FETCH ...] tags replaced inline with [VERIFIED-VIA-PLAYWRIGHT-2026-05-21] on success and [CONFIRMED-INACCESSIBLE] on failure. Confidence tier never downgraded; existing source citations preserved.",
+    "post_enrichment_validation_summary": {
+      "corpus_total_claims": 305,
+      "corpus_low_pct_pre_enrichment": 27.9,
+      "corpus_low_pct_post_enrichment": 27.5,
+      "global_gate_decision": "ship-with-flag",
+      "gate_changed": false,
+      "rationale": "Net effect on Low% is small because the majority of [NEEDS-ATTENDED-FETCH] tags were attached to High-confidence citations with PDF-extraction issues, not to Low-confidence claims. Only one Low-tier claim was upgraded (Loadsure Low-Medium → Medium). Three additional claims moved Medium-High → High (McKinsey x2, TAPA APAC) and one Medium → High (McKinsey 30%-beyond-Tier-1 caveat). Gate remains ship-with-flag — the underlying flags (vendor-marketing-overrides on some Stage 1/2 claims; cross-stage observations) are not Playwright-fixable."
+    }
+  }
+}

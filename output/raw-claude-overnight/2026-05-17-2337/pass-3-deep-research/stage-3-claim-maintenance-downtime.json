@@ -1,0 +1,90 @@
+{
+  "outcome": "confirmed-scarce",
+  "claim_verbatim": "Reactive maintenance downtime: $448–$760/vehicle/day; 8.7 days unplanned downtime/year; $2,000/vehicle savings from predictive maintenance",
+  "searches_performed": [
+    "fleet unplanned maintenance cost per day truck downtime ATRI TMC NACFE 2024 2025 (site-filtered: truckingresearch.org, atri-online.org, nacfe.org)",
+    "Decisiv fleet maintenance repair data commercial truck downtime cost 2024 2025",
+    "ATRI 2024 operational costs report truck repair maintenance cost per mile (site: atri-online.org)",
+    "ATA American Trucking Associations truck downtime cost per day unplanned maintenance 2023 2024",
+    "TMC Technology Maintenance Council fleet maintenance downtime cost benchmark unplanned repair 2023 2024 (site: tmc.trucking.org)",
+    "$448 OR $760 truck downtime cost per day original source fleet maintenance commercial vehicle",
+    "NACFE North American Council Freight Efficiency predictive maintenance savings fleet cost 2023 2024 (site: nacfe.org)",
+    "commercial truck unplanned downtime 8.7 days per year source fleet management benchmark study",
+    "fleet management predictive maintenance savings study per vehicle annual savings commercial truck telematics ROI academic peer reviewed 2020-2023",
+    "ATRI 2025 operational costs of trucking repair maintenance per mile unplanned downtime miles between breakdowns",
+    "8.7 days unplanned downtime fleet vehicle year original source Fleetio benchmark report 2022 2023"
+  ],
+  "categories_searched": [
+    "primary-gov (ATRI, ATA — blocked 403 on direct site fetches)",
+    "primary-multilateral (not applicable for US-domestic fleet cost claim)",
+    "primary-industry-association (ATA/TMC/NACFE — TMC/Decisiv quarterly reports found but focus on parts+labor cost trends, not per-day downtime cost or annual unplanned days)",
+    "primary-academic (IJSAT 2022 peer-reviewed paper — cites Fleet Complete vendor data as its source for predictive maintenance savings)"
+  ],
+  "findings_by_sub_claim": {
+    "downtime_cost_448_to_760_per_day": {
+      "status": "traceable-to-trade-publication-only",
+      "trace": "The $448–$760/vehicle/day figure originates from a FleetMaintenance magazine article ('The true cost of vehicle downtime', URL: https://www.fleetmaintenance.com/shop-operations/shop-management/article/12062632/the-true-cost-of-vehicle-downtime). Multiple secondary sources (Ryder, Fleet Management Weekly, Platform Science, OxMaint) cite FleetMaintenance as their source. FleetMaintenance is a trade publication, not a government statistical agency or peer-reviewed study. The article returned HTTP 403 when fetched directly, so the underlying methodology cannot be verified.",
+      "atri_adjacent_data_found": "ATRI 2025 report (covering 2024 data, 178,000+ truck-tractors) provides R&M cost per mile ($0.198/mile in 2024, down 2% from $0.202 in 2023) and miles between breakdowns (38,249 miles in 2024). This is a cost-per-mile operational metric, not a per-day downtime cost — it does not directly validate or contradict the $448–$760 range.",
+      "decisiv_tmc_data_found": "Decisiv/TMC quarterly North American Service Event Benchmark Report tracks parts and labor cost trends across hundreds of thousands of maintenance events. Q4 2025 combined costs down 1.3% QoQ but up 2.0% YoY. Reports focus on repair-order cost per event by VMRS system code — not per-day downtime losses or unplanned days per year."
+    },
+    "unplanned_downtime_8_7_days_per_year": {
+      "status": "vendor-sourced-unverified",
+      "trace": "The 8.7 days/vehicle/year figure is repeated across FleetRabbit, Heavy Vehicle Inspection, OxMaint, and similar vendor/aggregator sites. Search results do not identify any originating primary study. The Fleetio 2026 Benchmark Report (aggregating 1.2M vehicles, 9M work orders) cites a 6.7-day median time-to-start for work orders — a different metric. No Fleetio benchmark from 2022 or 2023 explicitly sourcing the 8.7 figure was found. ATRI tracks 'miles between unscheduled repairs' (38,249 miles in 2024) rather than annual unplanned days.",
+      "nacfe_finding": "NACFE's 2015 Confidence Report: Maintenance focuses on fuel efficiency impact of maintenance practices, not unplanned downtime days or cost-per-day metrics."
+    },
+    "predictive_maintenance_savings_2000_per_vehicle": {
+      "status": "vendor-sourced-unverified",
+      "trace": "The $2,000/vehicle/year savings figure is attributed by Geotab (blog) to SDC Executive (trade publication). The IJSAT 2022 academic paper (Vashisht, Canamex Carbra Transportation Services) cites a Fleet Complete (telematics vendor) case study showing 30% reduction in unplanned downtime and 22% cost reduction — without disclosing a per-vehicle dollar figure. No ATRI, ATA, World Bank, ADB, or peer-reviewed journal source for this specific savings figure was found. The figure circulates widely in vendor marketing and trade content."
+    }
+  },
+  "blocked_sources": [
+    "[NEEDS-ATTENDED-FETCH]: https://www.fleetmaintenance.com/shop-operations/shop-management/article/12062632/the-true-cost-of-vehicle-downtime — HTTP 403 Forbidden; this is the cited origin of the $448–$760 figure",
+    "[NEEDS-ATTENDED-FETCH]: https://truckingresearch.org/2025/07/an-analysis-of-the-operational-costs-of-trucking-2025-update/ — HTTP 403; ATRI 2025 full report",
+    "[NEEDS-ATTENDED-FETCH]: https://truckingresearch.org/2025/07/new-atri-report-shows-trucking-profitability-severly-squeezed-by-high-costs-low-rates/ — HTTP 403",
+    "[NEEDS-ATTENDED-FETCH]: https://www.trucking.org/news-insights/parts-and-labor-costs-continue-downward-trend-first-quarter-2024 — HTTP 403"
+  ],
+  "what_was_found_adjacent": {
+    "atri_2025_report": {
+      "url": "https://truckingresearch.org/about-atri/atri-research/operational-costs-of-trucking/",
+      "category": "primary-industry-association",
+      "data": "R&M costs $0.198/mile (2024), down from $0.202 (2023). Miles between unscheduled repairs: 38,249 (2024) vs 37,700 (2023). Sample: 178,000+ truck-tractors. Does NOT report per-day downtime cost or annual unplanned days per vehicle.",
+      "supports_claim_verbatim": false,
+      "supports_adjacent_context": true
+    },
+    "decisiv_tmc_quarterly_benchmark": {
+      "url": "https://tmc.trucking.org/blog/parts-and-labor-costs-continue-downward-trend-first-quarter-2024",
+      "category": "primary-industry-association",
+      "data": "Quarterly parts and labor cost trends across hundreds of thousands of repair events. Q1 2024: parts costs down 2.4%, labor down 0.8%. Does NOT report per-day downtime cost or annual unplanned downtime days.",
+      "supports_claim_verbatim": false,
+      "supports_adjacent_context": true
+    },
+    "ata_roadside_repair_cost": {
+      "url": "https://www.trucking.org/news-insights/parts-and-labor-costs-continue-downward-trend-first-quarter-2024",
+      "category": "primary-industry-association",
+      "data": "ATA found roadside mechanical repair averages ~$491 per event; towing adds ~$1,000. Labor rates rose 9% in 2023. These are per-event repair costs, not per-day downtime losses.",
+      "supports_claim_verbatim": false,
+      "supports_adjacent_context": true
+    }
+  },
+  "suggested_revision_options": [
+    {
+      "option": "widen-range-and-source-properly",
+      "revised_claim_text": "Industry data from trade and vendor sources suggests reactive maintenance downtime costs fleets $448–$760/vehicle/day in lost revenue and emergency repair premiums (FleetMaintenance, cited by Ryder and others; original methodology not independently verified). ATRI's 2025 Operational Costs of Trucking report (178,000+ trucks) documents R&M costs at $0.198/mile and 38,249 miles between unscheduled repairs — equivalent cost benchmarks that are independently audited. Predictive maintenance savings of ~$2,000/vehicle/year and 8.7 unplanned days/year are trade-publication estimates without verified primary-source attribution.",
+      "suggested_score": "Medium",
+      "note": "Separates the ATRI-verified R&M cost-per-mile data (Medium confidence) from the daily downtime and unplanned-days figures (Low, trade-sourced)"
+    },
+    {
+      "option": "mark-assumed",
+      "revised_claim_text": "[ASSUMED-N]: Reactive maintenance downtime costs $448–$760/vehicle/day; 8.7 days unplanned/year; $2,000/vehicle savings from predictive maintenance — to validate: (1) obtain FleetMaintenance source article methodology; (2) request Fleetio benchmark report edition citing 8.7 days; (3) identify original published study for $2,000/vehicle figure beyond vendor marketing",
+      "suggested_score": "Low"
+    },
+    {
+      "option": "replace-with-atri-verifiable-claims",
+      "revised_claim_text": "ATRI's 2025 Operational Costs of Trucking report (covering 2024 data, 178,000+ trucks) documents repair and maintenance costs averaging $0.198 per mile — down 2% from 2023 — with the average fleet experiencing an unscheduled repair event every 38,249 miles. ATA/TMC data via Decisiv's quarterly benchmark shows combined parts and labor costs running approximately $X per repair event (Q4 2025 data). Predictive maintenance savings and per-day downtime cost figures require primary-source verification beyond trade publication citation chains.",
+      "suggested_score": "Medium",
+      "note": "This option replaces the three specific metrics (most of which are unverified) with the audited ATRI per-mile and miles-between-breakdowns data, which is the closest independent equivalent available"
+    }
+  ],
+  "recommended_option": "widen-range-and-source-properly",
+  "reasoning": "All three sub-claims ($448–$760/day, 8.7 unplanned days/year, $2,000 predictive maintenance savings) trace back to trade publications and vendor marketing with no auditable primary source found. However, ATRI's annual Operational Costs of Trucking report — a genuine primary-industry-association source based on 178,000+ trucks — provides directly adjacent R&M cost and miles-between-breakdowns data that can ground the maintenance cost discussion at Medium confidence. The recommended path is to retain the $448–$760/day figure with explicit trade-source caveats, anchor the section with the ATRI per-mile and breakdown-frequency data, and flag the 8.7 days/year and $2,000/vehicle figures as requiring further primary-source verification before high-confidence citation."
+}

@@ -1,0 +1,78 @@
+{
+  "claim_id": "PP6.2-6",
+  "outcome": "confirmed-weak",
+  "new_confidence": "L",
+  "original_claim": "1.24% LTL shipment damage rate — approximately 1 in every 80 LTL shipments results in a damage or shortage event",
+  "verdict_tag": "CONFIRMED-WEAK",
+  "refined_claim_text": "Industry sources estimate LTL shipment damage incident rates between 1% and 2%, with a 2024 shipper survey (Flock Freight / Drive Research, n=1,000) reporting 1.94% for 2023 (1-in-51 shipments). The specific 1.24% figure circulates widely across 3PL advisory sites but has no traceable primary source — it is not found in NMFTA publications, ATA reports, BTS data, SMC³ benchmarks, or any identified carrier 10-K disclosure. Carrier-disclosed financial claims ratios (dollars paid / revenue) are structurally lower: industry-wide 0.34–0.35% per Synchrogistics (Q2–Q3 2025), 0.1% for Old Dominion, ~0.63% for Saia — a different metric from shipment incident rate. Claim should be revised to 'LTL damage incident rates range from approximately 1–2% depending on carrier and commodity, with shipper survey data for 2023 indicating ~1.9% (Flock Freight / Drive Research, 2024)' or marked [ASSUMED-N] pending NMFTA or carrier operational disclosure.",
+  "searches_performed": [
+    "LTL freight damage rate percentage claims statistics primary research NMFTA ATA",
+    "Bureau of Transportation Statistics LTL less-than-truckload damage shortage rate data",
+    "SMC3 LTL benchmark damage rate claims ratio annual report",
+    "Old Dominion Freight Line 10-K cargo claims ratio damage rate annual report",
+    "Flock Freight 2022 freight market study LTL damage rate 86% shippers methodology",
+    "Synchrogistics LTL claims index claims ratio 2024 2025 quarterly data methodology",
+    "LTL shipment damage rate 1.24% OR 1.2% source study original research freight claims",
+    "ArcBest XPO Saia cargo claims ratio claims ratio 2023 2024 10-K annual report LTL"
+  ],
+  "categories_searched": [
+    "primary-gov (BTS, FHWA) — no LTL damage rate data found",
+    "primary-multilateral — not applicable for US domestic LTL",
+    "primary-regulatory (SEC 10-K filings: ODFL, Saia) — carrier financial claims ratio found, not shipment incident rate",
+    "industry-association (NMFTA 2024 LTL Performance Report) — covers operating ratios only, no damage rate",
+    "primary-industry (Synchrogistics LTL Claims Ratio Index) — financial ratio metric, not shipment incident rate",
+    "shipper-survey (Flock Freight / Drive Research 2024 study, n=1,000) — reports 1.94% for 2023, not 1.24%"
+  ],
+  "primary_sources_found": [
+    {
+      "url": "https://www.flockfreight.com/wasted-space-wasted-dollars-research-study-24",
+      "category": "shipper-survey",
+      "publication_date": "2024",
+      "supports_claim": false,
+      "contradicts_claim": true,
+      "key_data": "Flock Freight / Drive Research survey of 1,000 transportation decision-makers (fieldwork Feb 22–Apr 1, 2024, 95% CI ±5%): 'In 2023, shippers reported an average LTL damage rate of 1.94%' — 1 in every 51 shipments. This is the closest primary survey source. It does NOT contain the 1.24% figure. The rate is self-reported shipper perception, not carrier operational data.",
+      "via_pdf_markitdown": false,
+      "metric_type": "shipment-incident-rate (self-reported shipper survey)"
+    },
+    {
+      "url": "https://newsbywire.com/industrys-first-ever-ltl-freight-claims-index/",
+      "category": "primary-industry",
+      "publication_date": "2024-2025",
+      "supports_claim": false,
+      "contradicts_claim": false,
+      "key_data": "Synchrogistics Synchro LTL Claims Ratio Index: industry-wide LTL carrier claims ratio ($ claims paid / carrier revenue) was 0.588% in Q1 2020, declining to 0.34–0.35% in Q2–Q3 2025. Index uses weighted-average methodology across carriers representing 40–50% of total LTL market, drawing from carrier filings and SJ Consulting datasets. NOTE: This metric is fundamentally different from the shipment damage incident rate — it measures financial exposure not shipment count. The two metrics are not directly comparable.",
+      "via_pdf_markitdown": false,
+      "metric_type": "financial-claims-ratio ($ paid / revenue) — NOT shipment incident rate"
+    },
+    {
+      "url": "https://ir.odfl.com/news-events/press-releases/detail/339/old-dominion-freight-line-reports-fourth-quarter-2025",
+      "category": "primary-carrier-disclosure",
+      "publication_date": "2026-Q4-2025",
+      "supports_claim": false,
+      "contradicts_claim": false,
+      "key_data": "Old Dominion Freight Line discloses cargo claims ratio of 0.1% (Q4 2025) as a stated KPI. This is a financial claims ratio, not a shipment incident rate. ODFL is the acknowledged industry leader in low damage; this represents the best-in-class benchmark, not the industry average.",
+      "via_pdf_markitdown": false,
+      "metric_type": "financial-claims-ratio"
+    }
+  ],
+  "why_1_24_percent_unverifiable": "The 1.24% figure appears in multiple 3PL advisory and freight-tech marketing sites (redstagfulfillment.com, supplierwiki.supplypike.com, olimpwarehousing.com, armorfreight.com) but none cite a primary source. Search results generated AI-synthesized descriptions attributing it to 'Flock Freight / Drive Research' but the actual 2024 Flock Freight study reports 1.94% and the 2023 study reports a shipper-prevalence rate (86% of shippers experienced any claim), not a 1.24% per-shipment rate. No NMFTA, ATA, BTS, SMC³, or 10-K source was found containing this specific figure. The 1.24% most likely originated as a secondary or AI-generated synthesis and has propagated through advisory content without a verifiable anchor.",
+  "suggested_revision_options": [
+    {
+      "option": "replace-with-surveyed-figure",
+      "revised_claim_text": "Shipper surveys indicate LTL damage and shortage incident rates averaged ~1.9% in 2023 (Flock Freight / Drive Research, 2024, n=1,000 transportation decision-makers) — approximately 1 in 51 shipments — up from ~1.2–1.5% reported in prior years. Carrier financial claims ratios ($ paid / revenue) are lower, averaging 0.34% industry-wide (Synchrogistics, Q3 2025), with best-in-class operators such as Old Dominion below 0.1%.",
+      "suggested_score": "M",
+      "notes": "Flock Freight / Drive Research (2024) is a credible n=1,000 shipper survey with disclosed methodology, but it is self-reported shipper perception, not audited carrier operational data. Synchrogistics provides carrier-derived data but measures a different metric."
+    },
+    {
+      "option": "mark-assumed",
+      "revised_claim_text": "[ASSUMED-N]: ~1–2% of LTL shipments result in a damage or shortage event — to validate: request NMFTA or ATA LTL council shipment-level claims incidence data, or commission carrier operational disclosure from a major LTL carrier (ODFL, Saia, XPO) for shipments-with-claims / total-shipments ratio.",
+      "suggested_score": "L"
+    },
+    {
+      "option": "drop",
+      "rationale": "The specific 1.24% figure is unverifiable and likely AI-synthesized secondary content. The underlying range (1–2%) is plausible but cannot be confirmed to a single-decimal precision without primary carrier operational data. If the claim is used in a context requiring defensible precision, drop it."
+    }
+  ],
+  "recommended_option": "replace-with-surveyed-figure",
+  "reasoning": "The 1.24% figure is not traceable to any primary source after exhaustive search across 8 queries covering government agencies, carrier 10-K filings, industry associations, and shipper surveys. The closest primary evidence is the 2024 Flock Freight / Drive Research shipper survey (n=1,000) reporting 1.94% for 2023. The Synchrogistics Claims Ratio Index provides carrier-based data but measures a different metric (financial ratio, not shipment incidence). Replacing 1.24% with the sourced 1.94% survey figure (citing methodology and limitations) gives the claim defensible provenance while more accurately reflecting the evidence. The directional 'roughly 1–2%' range remains supported across multiple industry sources, but single-decimal precision is not warranted without primary carrier operational data."
+}

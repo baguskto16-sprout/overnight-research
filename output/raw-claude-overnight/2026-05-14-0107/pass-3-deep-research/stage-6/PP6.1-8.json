@@ -1,0 +1,65 @@
+{
+  "claim_id": "PP6.1-8",
+  "outcome": "confirmed-scarce",
+  "new_confidence": "Low",
+  "refined_claim_text": "[ASSUMED-N]: An estimated majority of SME exporters in developing economies lack formal cargo insurance coverage — a specific figure of 60%–70% circulates in commercial market reports but has no identifiable primary source. To validate: commission a targeted survey via ITC, ADB, or ICC Trade Register covering SME cargo insurance uptake by geography and firm size.",
+  "primary_sources_found": [],
+  "searches_performed": [
+    "ADB Trade Finance Gaps Growth and Jobs Survey 2023 — SME exporters uninsured cargo insurance developing economies",
+    "ITC SME Competitiveness Outlook — cargo insurance coverage SME exporters developing countries percentage",
+    "World Bank Enterprise Survey — SME insurance coverage developing economies exporters data",
+    "ICC trade finance SME cargo/marine insurance gap percentage uninsured developing countries report",
+    "ADB 2022 2023 Trade Finance Gaps — SME rejection rate insurance developing Asia survey methodology",
+    "UNCTAD SME exporters cargo/marine insurance uninsured percentage developing countries statistics",
+    "60% 70% SME exporters cargo insurance uninsured developing economies — source report",
+    "Lloyd's insurance gap developing countries cargo marine SME small exporter percentage uninsured 2022–2024",
+    "ITC IFC SME cargo/freight insurance uninsured percentage Africa Asia Latin America exporters survey 2020–2023",
+    "IUMI International Union of Marine Insurance SME developing countries uninsured cargo coverage gap percentage annual report"
+  ],
+  "categories_searched": [
+    "primary-multilateral (ADB — 2023 Trade Finance Gaps, Growth, and Jobs Survey PDF verified)",
+    "primary-multilateral (ADB — 2021 Trade Finance Gaps brief)",
+    "primary-multilateral (ITC — SME Competitiveness Outlook series)",
+    "primary-multilateral (World Bank Enterprise Surveys)",
+    "primary-multilateral (UNCTAD — Marine Insurance Programme and policy documents)",
+    "primary-industry (IUMI — Global Marine Insurance Report 2025 landing page)",
+    "primary-industry (Lloyd's Futureset 'On the Move' Part 3 PDF — markitdown verified)",
+    "commercial-market-research (dataintelo.com marine cargo insurance market report — WebFetch verified)",
+    "commercial-market-research (marketgrowthreports.com cargo insurance market — 403 returned)",
+    "commercial-market-research (freightinsurancecoverage.com marine cargo statistics — WebFetch verified)"
+  ],
+  "origin_of_60_70_figure": {
+    "finding": "The 60%–70% figure originates from undifferentiated commercial market research reports (e.g., dataintelo.com, marketgrowthreports.com). WebFetch of the dataintelo marine cargo insurance market page confirmed the claim is present but completely unsourced — no footnote, no named institution, no survey methodology, no sample size, no geography specifics. The figure circulates virally across vendor marketing pages (Loadsure, BreezeAI) and secondary market-sizing reports without any traceable primary study.",
+    "verified_via": "WebFetch of dataintelo.com/report/marine-cargo-insurance-market (2026-05-15)"
+  },
+  "closest_primary_proxy": {
+    "source": "ADB 2023 Trade Finance Gaps, Growth, and Jobs Survey",
+    "url": "https://www.adb.org/publications/2023-trade-finance-gaps-growth-jobs-survey",
+    "pdf_url": "https://www.adb.org/sites/default/files/publication/906596/adb-brief-256-2023-trade-finance-gaps-growth-jobs-survey.pdf",
+    "publication_date": "2023-09-05",
+    "category": "primary-multilateral",
+    "relevance": "Covers SME trade finance access gaps in developing economies. Finds 45% of SME trade finance applications rejected by banks (vs 17% for MNCs). Does not cover cargo insurance specifically — trade finance credit/guarantee products only. PDF verified via markitdown.",
+    "supports_60_70_claim": false,
+    "key_data": "Global trade finance gap $2.5 trillion (2022); 45% SME application rejection rate; 73% of rejected SMEs cite lack of collateral, transaction history, or credit history as reasons. Survey: 137 banks, 54 countries, 185 firms, 43 countries. Data collected May–July 2023."
+  },
+  "suggested_revision_options": [
+    {
+      "option": "mark-assumed",
+      "revised_claim_text": "[ASSUMED-N]: A large but unquantified share of SME exporters in developing economies operate without formal cargo insurance coverage. The 60%–70% figure circulated in market-sizing materials has no identifiable primary source. To validate: survey data from ITC, ADB Trade Finance Gaps survey (future editions), or ICC Trade Register would be required.",
+      "suggested_score": "Low"
+    },
+    {
+      "option": "replace-with-proxy",
+      "revised_claim_text": "SME exporters in developing economies face significant barriers to trade risk protection: the ADB 2023 Trade Finance Gaps Survey finds 45% of SME trade finance applications rejected (vs 17% for multinationals), with the global unmet trade finance demand at $2.5 trillion — a structural environment in which many SMEs forgo ancillary protections such as cargo insurance (ADB, September 2023).",
+      "suggested_score": "Medium",
+      "note": "This reframes the claim around a verified primary-source figure (trade finance rejection rate as a structural proxy) rather than asserting an unsourced insurance coverage percentage."
+    },
+    {
+      "option": "drop",
+      "rationale": "The 60%–70% figure is unverifiable market-research circular citation. If the document requires a quantified insurance gap anchor, it should be replaced with the proxy option above or held pending primary field research."
+    }
+  ],
+  "recommended_option": "replace-with-proxy",
+  "reasoning": "Eight targeted searches across ADB, ITC, World Bank, ICC, UNCTAD, IUMI, Lloyd's, and multiple commercial sources confirm the 60%–70% figure is not grounded in any primary or multilateral research. The dataintelo report (verified via WebFetch) explicitly contains no footnote or attribution for this statistic. The ADB 2023 Trade Finance Gaps Survey is the strongest available primary source for SME trade access barriers in developing economies, but it covers credit/guarantee gaps — not cargo insurance coverage rates. Replacing the unsourced percentage with the verified ADB trade finance rejection rate as a structural proxy is the most defensible path; it is honest about what the evidence actually shows while still conveying systemic SME risk-protection barriers.",
+  "notes": "Resource usage: 8 WebSearches, 4 WebFetches (dataintelo.com, freightinsurancecoverage.com, Lloyd's Futureset PDF, IUMI 2025 report landing page), 2 markitdown calls (Lloyd's Futureset PDF, ADB 2023 PDF). The Lloyd's Futureset 'On the Move' Part 3 PDF covers supply chain insurance for logistics operators generally — no SME developing-economy cargo gap data. IUMI 2025 Global Marine Insurance Report page links to a download not publicly accessible without registration. No government statistics agency, multilateral body, academic peer-reviewed paper, or audited industry survey was found that independently quantifies the share of SME exporters in developing economies lacking formal cargo insurance. This is a genuine data gap in published literature as of May 2026."
+}

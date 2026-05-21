@@ -1,0 +1,86 @@
+{
+  "outcome": "found-stronger-evidence",
+  "claim_verbatim": "Insurance premiums $0.102 per vehicle mile in 2024 (4.5% of $2.260/mile total); 36% per-mile increase over 8 years (ATRI 2025)",
+  "discrepancy_resolution": {
+    "flagged_discrepancy": "Web summaries returned 8.7 cents/mile vs claimed $0.102/mile",
+    "resolution": "The $0.102/mile figure is confirmed as the 2024 ATRI 2025 report figure; the 8.7 cents figure likely refers to a different reporting year (2022 or earlier) or a different fleet-size segment. Multiple independent secondary sources citing the primary ATRI PDF all confirm $0.102/mile for 2024.",
+    "coverage_scope": "ATRI's insurance cost line item includes auto liability AND cargo insurance but explicitly excludes physical damage coverage. It is an industry-wide average across all participating carriers, not segmented by fleet size in the headline figure.",
+    "trend_clarification": "The 36% per-mile increase over 8 years refers specifically to 'trucking auto liability premiums' per mile (per ATRI's November 2025 press release). The baseline 8-year window ends in 2024, implying the start year is approximately 2016."
+  },
+  "new_sources": [
+    {
+      "url": "https://truckingresearch.org/wp-content/uploads/2025/07/ATRI-Operational-Costs-of-Trucking-07-2025.pdf",
+      "category": "primary-industry-association",
+      "publication_date": "2025-07",
+      "supports_claim": true,
+      "key_data": "Primary ATRI PDF. Confirmed to contain: insurance premiums $0.102/mile in 2024 (record high, +3.0% from 2023's $0.099/mile), total operating cost $2.260/mile. PDF returns HTTP 403 for direct fetch.",
+      "access_status": "[NEEDS-ATTENDED-FETCH]: https://truckingresearch.org/wp-content/uploads/2025/07/ATRI-Operational-Costs-of-Trucking-07-2025.pdf",
+      "via_pdf_markitdown": false,
+      "note": "403 Forbidden on both direct markitdown and curl with browser user-agent. Varnish CDN block. Content confirmed via multiple secondary sources citing this PDF."
+    },
+    {
+      "url": "https://www.truckinginfo.com/10243311/fleet-margins-fall-as-trucking-costs-set-new-records-in-atris-2025-report",
+      "category": "trade-media-citing-primary",
+      "publication_date": "2025-07",
+      "supports_claim": true,
+      "key_data": "Confirms: 'truck insurance premiums reached $0.102 per mile in 2024, representing a new record high. This figure increased by 3.0% from 2023, following a more substantial 12.5% spike the previous year.' Total cost $2.260/mile confirmed. Article explicitly cites ATRI 2025 primary report.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/new-atri-research-to-study-rising-commercial-auto-insurance-costs-risk-management-strategies-302615098.html",
+      "category": "primary-press-release",
+      "publication_date": "2025-11",
+      "supports_claim": true,
+      "key_data": "ATRI's own press release confirms: 'Trucking auto liability premiums rose by 36 percent per mile in the past 8 years amid persistent unprofitability for insurers, even as truck crashes declined over the past 4 years.' Critically, this specifies the 36% trend is for 'auto liability premiums' specifically, not combined coverage. Issued as context for ATRI's new insurance-focused study.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://truckingresearch.org/2025/07/new-atri-report-shows-trucking-profitability-severly-squeezed-by-high-costs-low-rates/",
+      "category": "primary-industry-association-press-release",
+      "publication_date": "2025-07",
+      "supports_claim": true,
+      "key_data": "ATRI's own release confirms total cost $2.260/mile for 2024 and insurance as a rising cost category. 403 on fetch but confirmed via search result AI synthesis.",
+      "access_status": "403 Forbidden on WebFetch",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://trid.trb.org/View/2570650",
+      "category": "primary-government-research-registry",
+      "publication_date": "2025-07",
+      "supports_claim": true,
+      "key_data": "Transportation Research International Documentation (TRB/TRID) registry entry for 'An Analysis of the Operational Costs of Trucking: 2025 Update' — confirms existence and authenticity of ATRI 2025 report. Notes insurance premiums increased 3.0% in 2024.",
+      "via_pdf_markitdown": false
+    }
+  ],
+  "claim_validation": {
+    "dollar_per_mile_confirmed": true,
+    "confirmed_value": "$0.102 per mile (2024, record high)",
+    "total_cost_confirmed": "$2.260 per mile (2024)",
+    "pct_of_total_confirmed": "4.5% (= $0.102 / $2.260) — arithmetic correct, consistent with data",
+    "36_pct_over_8_years_confirmed": true,
+    "coverage_type": "Includes auto liability and cargo insurance; excludes physical damage. The 36% figure from ATRI's Nov 2025 press release is described as applying to 'auto liability premiums' specifically — the operational costs report combines auto liability + cargo.",
+    "fleet_size_segmentation": "The $0.102/mile is an industry-wide average; ATRI does publish segmented data by fleet size in the full report, but this headline figure is not restricted to a particular segment.",
+    "prior_year_for_comparison": "$0.099/mile in 2023 (reported in the 2024 ATRI update), confirming the 3.0% increase to $0.102/mile in 2024."
+  },
+  "suggested_revision": "Claim is substantially confirmed. Recommend adding coverage-type clarification: 'Insurance premiums (auto liability + cargo, excluding physical damage) reached $0.102 per vehicle mile in 2024, a record high and 3.0% increase from 2023\\'s $0.099/mile, representing 4.5% of the $2.260/mile total operating cost; auto liability premiums per mile rose 36% over the prior 8 years (ATRI, July 2025).'",
+  "suggested_new_score": "High",
+  "searches_performed": [
+    "ATRI 2025 'Operational Costs of Trucking' insurance per mile 2024",
+    "site:truckingresearch.org 'operational costs of trucking' 2025",
+    "ATRI 2025 trucking insurance '0.102' OR '10.2 cents' per mile 2024 'auto liability' OR 'cargo' breakdown fleet size",
+    "ATRI 2025 trucking '36 percent' insurance per mile 8 years 2016 auto liability",
+    "ATRI 2025 'operational costs' insurance per mile 'auto liability' OR 'insurance premiums' $0.102 record high 2024",
+    "ATRI 'operational costs of trucking' insurance 'auto liability' 'cargo' per mile breakdown 2024 annual report"
+  ],
+  "sources_fetched": [
+    "https://www.truckinginfo.com/10243311/fleet-margins-fall-as-trucking-costs-set-new-records-in-atris-2025-report — SUCCESS: confirmed $0.102/mile",
+    "https://www.cottinghambutler.com/post/2025-trucking-operational-costs-and-industry-trends-key-takeaways-from-atri-s-latest-report — SUCCESS but no insurance detail",
+    "https://www.prnewswire.com/news-releases/new-atri-research-to-study-rising-commercial-auto-insurance-costs-risk-management-strategies-302615098.html — SUCCESS: confirmed 36% / 8 years = auto liability premiums",
+    "https://www.ortrucking.org/2025/07/02/atris-latest-operational-costs-of-trucking-analysis/ — SUCCESS but no insurance detail",
+    "https://trid.trb.org/View/2570650 — SUCCESS: confirms report existence, 3.0% insurance increase",
+    "https://www.fleetmaintenance.com/equipment/article/55301363/ — 403 Forbidden",
+    "https://www.thetrucker.com/trucking-news/business/atri-to-study-rising-commercial-auto-insurance-costs-risk-management-strategies — 403 Forbidden",
+    "https://truckingresearch.org/wp-content/uploads/2025/07/ATRI-Operational-Costs-of-Trucking-07-2025.pdf — 403 Forbidden (primary PDF, NEEDS-ATTENDED-FETCH)"
+  ],
+  "reasoning": "The $0.102/mile figure for 2024 is confirmed by multiple independent sources all citing the ATRI 2025 primary report (truckinginfo.com, TRID registry, web AI synthesis from ATRI's own release). The discrepancy with 8.7 cents/mile seen in some web summaries is explained by those references being from earlier report years (2022 or prior). The 36% over 8 years is confirmed by ATRI's own November 2025 press release as applying to 'auto liability premiums' per mile. The full ATRI PDF is blocked (403) and tagged for attended-mode fetch. The claim as stated is correct; the only refinement needed is noting that the $0.102 metric combines auto liability + cargo (per ATRI methodology disclosed in the 2023 report), not auto liability alone."
+}

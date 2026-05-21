@@ -1,0 +1,60 @@
+{
+  "claim_id": "PP1.1-11",
+  "verdict": "REFINED",
+  "updated_claim": "Japan's FIT/FIP for biomass power pays ¥24/kWh (~$160/MWh at ¥150/$) for projects using imported general woody biomass (wood pellets, PKS, palm trunk) with capacity under 10 MW — a rate that has held steady through FY2025-26. Large-scale projects (≥10 MW) do not receive a fixed ¥24/kWh; they are subject to competitive FIP tender, with an upper-bid ceiling of ¥14/kWh in FY2024 (and have drawn no bids since 2021-22). METI has signalled intent to discontinue FIT/FIP support for new large-scale woody biomass (≥10 MW) from FY2026. The ¥24/kWh rate for sub-10 MW projects is the mechanism that sustains a Japanese buyer willingness-to-pay of $140–160/t for SEA wood pellets and PKS, versus SEA domestic industrial buyers at $80–100/t — but this arbitrage applies to the sub-10 MW segment; large-scale plants are on contracted or tender-derived rates which may be materially lower.",
+  "sources_found": [
+    {
+      "url": "https://www.meti.go.jp/english/press/2025/0321_001.html",
+      "type": "primary",
+      "publication": "METI Japan (Ministry of Economy, Trade and Industry)",
+      "date": "2025-03-21",
+      "key_quote": "METI Sets the Surcharge Rate for FY2025, Renewable Energy Purchase Prices for FY2025 Onward — confirms biomass FIT/FIP rates and structure for April 2025–March 2026"
+    },
+    {
+      "url": "https://www.meti.go.jp/english/press/2024/0319_001.html",
+      "type": "primary",
+      "publication": "METI Japan (Ministry of Economy, Trade and Industry)",
+      "date": "2024-03-19",
+      "key_quote": "FY2024 FIT/FIP announcement: biomass ineligible for bidding (for small scale), upper limit of bid for large-scale general biomass not published; confirms tiered structure by capacity"
+    },
+    {
+      "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2549219-japan-s-2025-26-fip-fit-small-biomass-price-unchanged",
+      "type": "secondary",
+      "publication": "Argus Media",
+      "date": "2025-03 (FY2025-26 announcement cycle)",
+      "key_quote": "Japan's trade and industry ministry (METI) has decided to maintain the feed-in-premium (FiP) and feed-in-tariff (FiT) price for small biomass power projects at ¥24/kWh ($160/MWh) for the April 2025–March 2026 fiscal year. Applies to general woody and agricultural biomass with less than 10MW capacity. For 10MW+ plants: competitive tender system."
+    },
+    {
+      "url": "https://cintrafor.org/research-brief/bioenergy-and-the-feed-in-tariff-in-japan-creating-demand-for-domestic-wood/",
+      "type": "secondary",
+      "publication": "Cintrafor (Center for International Trade in Forest Products, University of Washington)",
+      "date": "2019-12",
+      "key_quote": "Original FIT rates (July 2012): Imported sustainably sourced biomass — all plant sizes: 24 yen/kWh; domestic woody biomass (forest thinning) under 2,000 kW: 40 yen/kWh; over 2,000 kW: 32 yen/kWh. Tariffs guaranteed over 20-year frame."
+    },
+    {
+      "url": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Japan+Biomass+Annual+2023_Tokyo_Japan_JA2023-0071.pdf",
+      "type": "secondary",
+      "publication": "USDA GAIN Report — Japan Biomass Annual 2023 (USDA Foreign Agricultural Service)",
+      "date": "2023",
+      "key_quote": "From FY2017 METI reduced general wood FIT from 24 yen/kWh to 21 yen/kWh for plants >20 MW. General wood category includes imported woody biomass, PKS, palm trunk. FY2023 expansion of eligible biomass feedstocks. Japan 2022 PKS imports reached 5.1 million MT."
+    }
+  ],
+  "rate_structure_clarification": {
+    "small_scale_under_10MW": {
+      "rate_yen_kWh": 24,
+      "rate_USD_MWh_approx": 160,
+      "scheme": "FIT or FIP (choice)",
+      "status_FY2025_26": "Confirmed unchanged",
+      "biomass_types": "Imported general woody biomass: wood pellets, PKS, palm trunk, agricultural residues"
+    },
+    "large_scale_10MW_plus": {
+      "rate_yen_kWh": "Competitive tender — upper ceiling was 14 yen/kWh in FY2024",
+      "scheme": "FIP tender",
+      "status": "No bids submitted since FY2021-22; METI planning to discontinue for new projects from FY2026",
+      "note": "Most of Japan's large biomass plants (100+ MW co-firing and dedicated plants) were contracted under earlier fixed-rate FIT vintages from 2012–2017 at 21–24 yen/kWh, which they retain for their 20-year term"
+    },
+    "vintage_note": "Plants approved 2012–2016 received 24 yen/kWh for general biomass regardless of size; rate for large new-entrant plants was cut to 21 yen/kWh from FY2017, then moved to competitive tender from FY2018-19"
+  },
+  "claim_accuracy_assessment": "The original claim's ¥24/kWh figure is accurate for (a) small-scale sub-10 MW projects currently, and (b) legacy large-scale plants contracted 2012–2016 that retain their original FIT rate. It is NOT the current rate for new large-scale projects. The price-wedge logic (Japanese buyers paying $140–160/t vs SEA domestic $80–100/t) is directionally correct for sub-10 MW plants and legacy contracts, but overstated if applied uniformly to all current Japanese biomass power buyers.",
+  "confidence_after": "high"
+}

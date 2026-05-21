@@ -1,0 +1,28 @@
+{
+  "claim_id": "VC-MS-3",
+  "outcome": "confirmed-scarce",
+  "new_score": "Low",
+  "replacement_or_supplementary_sources": [
+    {
+      "url": "https://www.mordorintelligence.com/industry-reports/cargo-and-vehicle-screening-market",
+      "tier": "secondary-commercial-research",
+      "date": "2025",
+      "what_it_supports": "Cargo & Vehicle Screening: $2.76B (2024) → $4.04B (2030), 6.5% CAGR. APAC largest market. Narrower scope than 'cargo security'."
+    },
+    {
+      "url": "https://www.marketsandmarkets.com/PressReleases/supply-chain-security.asp",
+      "tier": "secondary-commercial-research",
+      "date": "2024",
+      "what_it_supports": "Supply Chain Security market: $2.52B (2024) → $5.14B (2030), 12.6% CAGR. Broader scope; includes cyber."
+    },
+    {
+      "url": "https://www.verisk.com/company/newsroom/cargo-theft-surges-to-record-levels-in-2024-verisk-cargonet-analysis-reveals/",
+      "tier": "primary-industry-data",
+      "date": "2025",
+      "what_it_supports": "US+Canada cargo theft losses $455M in 2024; 3,625 incidents; +27% YoY; avg $202,364/incident. Demand-side signal only — not a market size."
+    }
+  ],
+  "revised_claim_text": "Global cargo security market — physical screening + cargo tracking/telematics + logistics security services — estimated at ~$2.5–3.0B (2024) per independent commercial research frameworks: MarketsandMarkets supply chain security $2.52B (2024, 12.6% CAGR), Mordor cargo & vehicle screening $2.76B (2024, 6.5% CAGR). Growth band 7–13% CAGR depending on scope; APAC consistently flagged high-growth sub-region. The specific $3.1B (2024) / $7.8B (2033) / 10.7% CAGR / 13.2% APAC CAGR figures derive solely from marketintelo.com (commercial aggregator, auto-Low) — no independent corroboration. [ASSUMED-N]: precision implied by these figures unsupported.",
+  "footnote_for_artifact": "Market size triangulation: MarketsandMarkets 'Supply Chain Security Market', 2024 (marketsandmarkets.com/PressReleases/supply-chain-security.asp); Mordor Intelligence 'Cargo & Vehicle Screening Market', 2025 (mordorintelligence.com/industry-reports/cargo-and-vehicle-screening-market); Verisk/CargoNet 'Cargo Theft Surges to Record Levels in 2024', 2025 (verisk.com/company/newsroom). No McKinsey/BCG/Roland Berger/BNEF/multilateral cargo-security sizing identified in this market scope.",
+  "notes": "Confirmed scarce: no Tier-1 primary or top-tier consultancy publishes a 'cargo security' market frame matching the marketintelo.com $3.1B. The directional band $2.5–3.0B 2024 and 7–13% CAGR is well-bracketed; the precise marketintelo figures should be retired or footnoted as [ASSUMED-N]. Score stays Low for the precise figure; the band can be cited as Medium given two independent commercial-research firms triangulate."
+}

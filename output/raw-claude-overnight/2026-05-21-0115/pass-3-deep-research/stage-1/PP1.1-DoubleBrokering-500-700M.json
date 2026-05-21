@@ -1,0 +1,131 @@
+{
+  "claim_id": "PP1.1-DoubleBrokering-500-700M-annual",
+  "original_claim": "$500M–$700M annual industry loss from double-brokering",
+  "research_date": "2026-05-21",
+
+  "outcome": "replace",
+  "primary_source_found": false,
+
+  "provenance_trace": {
+    "root_origin": "TriumphPay internal estimate — Garrett Wolfe, Chief Strategy Officer, TriumphPay (a division of TBK Bank SSB)",
+    "first_public_statement": "April 14, 2023 press release: 'TriumphPay Partners with Highway to Combat Double-Brokering Fraud' (GlobeNewswire). Melissa Forman, President of TriumphPay, stated: 'we estimate affects $500-700M worth of freight annually.'",
+    "first_named_methodology": "Wolfe stated at the TIA Capital Ideas Conference, mid-April 2023, that the figure came from 'internal reviews' of TriumphPay's payment network, which processes over $23B in annual freight payments. No formula, sampling method, or audit is documented in any public source.",
+    "mainstream_amplification_chain": [
+      "April 14, 2023: GlobeNewswire (TriumphPay press release — vendor-originated)",
+      "April 24, 2023: FreightWaves ('TIA's stark message: Double brokering, fraud out of control') — cites Garrett Wolfe at TIA conference",
+      "April 26, 2023: Wall Street Journal ('Growing Freight Fraud Is Peeling Millions From the U.S. Shipping Market') — cites TriumphPay estimate",
+      "April 27, 2023: FreightWaves ('The $700 million load board fraud epidemic') — cites WSJ citing TriumphPay",
+      "September 2023: FreightWaves/TriumphPay joint white paper ('Freight's Breaking Point: The Double Brokering Dilemma') — reproduces figure with attribution 'by one estimate'",
+      "2024–2025: Multiple trade outlets (FreightCaviar, CCJ Digital, More Than Shipping, Trailer Bridge, LoadSecure, AtoB, etc.) cite the figure, often attributing it to 'Wall Street Journal' without tracing back to TriumphPay as the actual origin"
+    ],
+    "single_source_amplification_confirmed": true,
+    "note": "All downstream citations trace to a single TriumphPay vendor estimate first stated publicly April 14, 2023. No government agency, multilateral body, academic institution, or independent audit organization has published an independent estimate of double-brokering losses in this range."
+  },
+
+  "independent_source_search_results": {
+    "TIA_primary_data": {
+      "found": false,
+      "detail": "TIA's April 2025 'State of Fraud in the Industry' report (fetched via markitdown from member.tianet.org PDF) does not cite a specific annual double-brokering dollar figure. It provides survey-based loss distributions (22% of respondents lost >$200K; 53% lost >$10K) but does not extrapolate to industry total. TIA CEO Anne Reinke separately stated 'brokerage fraud costs $800M or more' in May 2023 (TruckingDive) — also without documented methodology and likely rounding up from the TriumphPay estimate.",
+      "url": "https://member.tianet.org/common/Uploaded%20files/MemberResourceLibrary/Whitepapers/TIA-Fraud-Report-April-2025.pdf"
+    },
+    "CargoNet_Verisk": {
+      "found": false,
+      "detail": "CargoNet/Verisk annual reports track aggregate cargo theft losses ($455M in 2024, $725M estimated in 2025) and identify double brokering as a subset of 'strategic theft' (which grew from 8% to ~33% of all cargo theft 2020–2024). CargoNet does NOT publish a separate dollar figure for double-brokering alone.",
+      "url": "https://www.verisk.com/company/newsroom/cargo-theft-losses-surge-to-estimated-$725-million-in-2025-verisk-cargonet-analysis-reveals/"
+    },
+    "NICB": {
+      "found": false,
+      "detail": "NICB publications on cargo theft do not contain a double-brokering-specific annual loss dollar figure. NICB cites $35B annual cargo theft industry-wide (much broader category; sourced to Homeland Security Investigations). No double-brokering sub-estimate found."
+    },
+    "FBI_IC3": {
+      "found": false,
+      "detail": "FBI IC3 annual reports do not break out freight double-brokering as a separate complaint category. Freight fraud is not isolated within IC3's categorical reporting."
+    },
+    "OOIDA_Foundation": {
+      "found": false,
+      "detail": "OOIDA publishes broker-transparency advocacy materials but does not independently estimate double-brokering dollar losses. Landline Media cited 'nearly $1 billion annually' in a 2023 article — no source document found; likely conflates cargo theft more broadly with double-brokering."
+    },
+    "Highway_vendor_reports": {
+      "found": false,
+      "detail": "Highway's quarterly Freight Fraud Index reports (Q2–Q4 2025) provide platform-specific metrics (emails blocked, identity alerts issued) but do not cite industry-wide dollar loss estimates for double brokering."
+    },
+    "FreightWaves_TriumphPay_white_paper": {
+      "found": true,
+      "assessment": "vendor-industry-media co-production, NOT independent",
+      "detail": "The September 2023 white paper 'Freight's Breaking Point: The Double Brokering Dilemma' is co-published by FreightWaves and TriumphPay. It cites the $500M–$700M figure as 'by one estimate' — referring back to TriumphPay's own prior estimate. The survey of 236 industry professionals provides loss distribution data (55.93% reported Q2 2023 losses of $0–$50K) but does not validate the $500M–$700M total. This document cannot serve as independent corroboration.",
+      "url": "https://www.freightwaves.com/wp-content/uploads/2023/09/20/TriumphPay-Double-Brokering-Dilemma-WP.pdf"
+    }
+  },
+
+  "verified_value": "The $500M–$700M figure is TriumphPay's own internal vendor estimate, first stated publicly April 14, 2023 (GlobeNewswire press release) and elaborated at the TIA Capital Ideas Conference, mid-April 2023. No independent methodology has ever been published. The figure was amplified by WSJ (April 26, 2023), then re-cited by trade press citing WSJ — creating the appearance of multiple independent sources. TIA's own fraud survey data and CargoNet's cargo theft data do not independently support or contradict this specific range. The figure is plausible (TriumphPay processes >$23B in freight payments annually and would observe double-brokering patterns in its payment data) but unaudited and vendor-motivated.",
+
+  "best_source": {
+    "publisher": "FreightWaves / TriumphPay (joint)",
+    "title": "Freight's Breaking Point: The Double Brokering Dilemma (White Paper)",
+    "url": "https://www.freightwaves.com/wp-content/uploads/2023/09/20/TriumphPay-Double-Brokering-Dilemma-WP.pdf",
+    "date": "September 2023",
+    "tier": "Industry-media co-production (NOT primary-independent)",
+    "note": "Best available published document for the claim, but it is a vendor-sponsored white paper. The underlying estimate originates from TriumphPay itself."
+  },
+
+  "supporting_sources": [
+    {
+      "publisher": "GlobeNewswire / TriumphPay",
+      "title": "TriumphPay Partners with Highway to Combat Double-Brokering Fraud",
+      "url": "https://www.globenewswire.com/news-release/2023/04/14/2647052/0/en/TriumphPay-Partners-with-Highway-to-Combat-Double-Brokering-Fraud.html",
+      "date": "2023-04-14",
+      "tier": "Vendor press release — root origin of the figure",
+      "key_data": "Melissa Forman (President, TriumphPay): 'we estimate affects $500-700M worth of freight annually' — no methodology disclosed"
+    },
+    {
+      "publisher": "FreightWaves",
+      "title": "TIA's stark message: Double brokering, fraud out of control",
+      "url": "https://www.freightwaves.com/news/tias-stark-message-double-brokering-fraud-out-of-control",
+      "date": "2023-04-24",
+      "tier": "Trade press",
+      "key_data": "Attributes estimate to Garrett Wolfe (CSO, TriumphPay) at TIA Capital Ideas Conference; describes it as based on 'internal reviews' of TriumphPay's payment network"
+    },
+    {
+      "publisher": "Wall Street Journal",
+      "title": "Growing Freight Fraud Is Peeling Millions From the U.S. Shipping Market",
+      "url": "https://www.wsj.com/articles/growing-freight-fraud-is-peeling-millions-from-the-u-s-shipping-market-8a6cfb90",
+      "date": "2023-04-26",
+      "tier": "Mainstream business press (paywall — NEEDS-ATTENDED-FETCH)",
+      "key_data": "Cited TriumphPay estimate of $500M–$700M; this became the de facto 'respectable' citation that trade press then cited instead of going back to TriumphPay"
+    },
+    {
+      "publisher": "TruckingDive",
+      "title": "Brokerage fraud costs could surpass $800M, TIA president says",
+      "url": "https://www.truckingdive.com/news/brokerage-fraud-costs-could-surpass-800-million-dollars-transportation-intermediaries-association/650595/",
+      "date": "2023-05",
+      "tier": "Trade press",
+      "key_data": "TIA CEO Anne Reinke stated '$800M or more' — no independent methodology; likely rounding up from TriumphPay range"
+    },
+    {
+      "publisher": "TIA",
+      "title": "State of Fraud in the Industry — April 2025 Report",
+      "url": "https://news.tianet.org/tia-releases-state-of-fraud-in-the-industry-april-2025-report/",
+      "date": "2025-04",
+      "tier": "Industry association survey — most current TIA primary data",
+      "key_data": "Survey of ~200 members; provides loss distribution data but does NOT independently reproduce the $500M–$700M aggregate double-brokering figure. 22% of respondents reported losses >$200K from fraud broadly."
+    },
+    {
+      "publisher": "Verisk CargoNet",
+      "title": "Cargo Theft Losses Surge to Estimated $725 Million in 2025",
+      "url": "https://www.verisk.com/company/newsroom/cargo-theft-losses-surge-to-estimated-$725-million-in-2025-verisk-cargonet-analysis-reveals/",
+      "date": "2026 (reporting 2025 data)",
+      "tier": "Industry intelligence — primary data for cargo theft overall",
+      "key_data": "$725M estimated total cargo theft in 2025 (all methods); strategic theft (which includes double brokering) grew to ~33% of incidents — CargoNet does not publish a double-brokering-only dollar subtotal"
+    }
+  ],
+
+  "confidence_assessment": {
+    "original_claim_confidence": "Low-Medium — the figure is directionally plausible but unaudited and originates from a single vendor with commercial interest in the number appearing large",
+    "single_source_amplification": true,
+    "independent_corroboration_count": 0,
+    "vendor_motivated_origin": true,
+    "plausibility_check": "TriumphPay processes >$23B in freight payments/year. If 2–3% of transactions are double-brokered (a plausible rate given survey data showing 85% of brokers affected), that implies $460M–$690M — consistent with the cited range. However, this back-calculation is not the methodology TriumphPay disclosed."
+  },
+
+  "recommendation": "Replace the current text in Pain Point 1.1 with a citation-honest formulation. Suggested replacement: 'Industry-wide double-brokering losses are estimated at $500M–$700M annually in direct freight payments — a figure originating from TriumphPay's internal review of its $23B+ payment network (April 2023) and amplified by the Wall Street Journal and TIA leadership, but not independently audited by any government agency or third-party body. [cite: FreightWaves/TriumphPay white paper, Sept 2023; GlobeNewswire press release, April 14, 2023]. For a fully independent and audited reference point on the broader fraud category, use CargoNet's finding that strategic theft (which includes double brokering) constituted approximately one-third of $455M in verified cargo theft losses in 2024, implying a double-brokering-attributable cargo loss floor of ~$150M in verified cases — with the TriumphPay estimate covering unverified payment diversions that CargoNet does not track [cite: Verisk CargoNet 2024 Annual Report].'"
+}

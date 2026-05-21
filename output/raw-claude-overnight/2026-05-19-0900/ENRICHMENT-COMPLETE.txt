@@ -1,0 +1,52 @@
+Unattended Phase 2 complete.
+Run ID: 2026-05-19-0900
+Window: 2026-05-19 05:01 -> 05:05 UTC (~4 min wall-clock; cap 60 min)
+
+URLs attempted: 9 (cap 30) · Succeeded: 7 · Confirmed inaccessible: 2
+Non-URL [NEEDS-ATTENDED-FETCH] tags also resolved as [CONFIRMED-INACCESSIBLE]: 2
+  - Lloyd's Market Intelligence parametric-cargo market share (paid subscription)
+  - OJK Indonesia / OIC Thailand digital-cargo-platform penetration (regulator-only)
+
+Claims upgraded Low->Medium: 7
+  1. VC Stage 2 (6) BusinessWire/ResearchAndMarkets TMS 2028 forecast
+     Europe TMS EUR 1.2B (2023) -> EUR 2.1B (2028) at 12.1% CAGR;
+     NA EUR 1.6B -> EUR 2.7B at 11.3% CAGR; 54 vendor profiles
+  2. VC Stage 2 (7) Gartner MQ TMS 2025 (public abstract: 2025-03-24; 4 analysts)
+  3. VC Stage 3 (6) Gartner MQ RTVP 2025 (companion abstract: 2025-03-19; 2 analysts)
+  4. VC Stage 4 (8) Grand View Research Control Tower Market
+     ($32.14B by 2030, 23.0% CAGR 2025-2030)
+  5. VC Stage 5 (12) Cargobase product page (enterprise TMS, spot-buy, multi-modal)
+  6. PP Stage 1 (9) World Bank Indonesia Freight Logistics PDF
+     (1.98 MB, parsed via markitdown)
+  7. PP Stage 6 (16) IUMI Stats Report 2024 PDF
+     (1.64 MB, parsed via markitdown; USD 38.9B global marine premiums 2023,
+      USD 22.1B cargo, USD 9.2B ocean hull)
+
+URLs confirmed inaccessible:
+  - truckstop.com/blog/carrier-onboarding-monitoring/ -> HTTP 403 (nginx)
+  - hapag-lloyd.com/.../expert-talk-global-cargo-insurance-market.../ -> HTTP 404
+    after Cloudflare interstitial
+
+New % Low (post-enrichment): est. -2 pp vs Phase 1 baseline (Stage 1 73% unchanged
+  because no Stage 1 source citation was eligible; upgrades concentrated in
+  Stages 2-6 macro-figure and primary-source citations).
+
+Gate: ship-with-flag (unchanged).
+
+Files updated:
+  - raw-claude-value-chain-logistics-risk-mgmt-worldwide.md  (5 tags resolved)
+  - raw-claude-pain-points-logistics-risk-mgmt-worldwide.md  (6 tags resolved/inaccessible)
+  - raw-claude-summary-logistics-risk-mgmt-worldwide.md       (Phase 2 section appended)
+  - checkpoint.json                                           (auto_enrichment object added)
+  - FINAL-REPORT.html                                         (Phase 2 callout + table row + closing list rewritten)
+
+Backups:
+  - raw-claude-value-chain.md.bak
+  - raw-claude-pain-points.md.bak
+
+Hard rules honored:
+  - No claim downgraded.
+  - No existing source removed (only added or annotated).
+  - No content fabricated; empty fetches marked [CONFIRMED-INACCESSIBLE].
+  - 30-URL / 60-minute caps not reached.
+  - No captcha-solving attempted; sites with captcha/login-only access marked inaccessible.

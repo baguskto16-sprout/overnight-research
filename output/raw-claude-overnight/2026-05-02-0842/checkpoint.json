@@ -1,0 +1,54 @@
+{
+  "run_id": "2026-05-02-0842",
+  "input_file": "./input/package-boilers.txt",
+  "topic_slug": "package-boilers",
+  "geography": ["Indonesia", "Malaysia", "Thailand", "Singapore", "Vietnam", "Philippines"],
+  "mode": "sandbox",
+  "output_base": "/Users/alphabot/overnight-research/output/raw-claude-overnight/2026-05-02-0842/",
+  "stages_planned": [
+    {"id": 1, "name": "Fuel Suppliers"},
+    {"id": 2, "name": "Boiler OEMs"},
+    {"id": 3, "name": "EPC / Installation & Commissioning"},
+    {"id": 4, "name": "Industrial End Users"},
+    {"id": 5, "name": "Aftermarket Service & Compliance"}
+  ],
+  "stages_completed": [1, 2, 3, 4, 5],
+  "stages_in_progress": [],
+  "current_pass": 5,
+  "stage_1_verdict": "CONDITIONAL — 5 anchor claims lifted from Low to Medium/High via deep-research",
+  "stage_2_verdict": "CONDITIONAL — 3 anchor claims deep-researched",
+  "stage_3_verdict": "SHIP WITH FLAG — 2 anchor cost claims refined Low → Medium via DR",
+  "stage_4_verdict": "SHIP WITH FLAG — 2 anchor claims refined (lifecycle cost breakdown REFINED; Indonesia sugar mill count CONTRADICTED); 63.7% Low pre-DR, ~58% post-DR estimate",
+  "stage_5_verdict": "SHIP WITH FLAG — 2 anchor claims refined (PP5.2 retrofit cost REFINED with EPA primary anchor; PP5.4 lead times confirmed-scarce, customer-experienced range broadened); 69.5% Low pre-DR, ~62% post-DR estimate",
+  "weak_claims_to_re_research": [],
+  "deep_research_completed": [
+    {"id": "VC-1.7", "topic": "PKS supply", "verdict": "REFINED", "confidence_after": "medium"},
+    {"id": "VC-1.13", "topic": "Thailand industrial coal", "verdict": "REFINED/CONFIRMED", "confidence_after": "high"},
+    {"id": "PP1.1-6", "topic": "METI FIT halt FY2026", "verdict": "REFINED", "confidence_after": "high"},
+    {"id": "PP1.1-11", "topic": "Japan FIT biomass rate", "verdict": "REFINED", "confidence_after": "high"},
+    {"id": "PP1.3-3", "topic": "moisture vs combustion efficiency", "verdict": "REFINED", "confidence_after": "medium"},
+    {"id": "PP2.1-1", "topic": "China-India price gap", "verdict": "DONE"},
+    {"id": "PP2.2-3", "topic": "mill outage cost", "verdict": "DONE"},
+    {"id": "PP2.4-3", "topic": "parts lead time", "verdict": "DONE"},
+    {"id": "PP3.1-cost-1+PP3.2-cost-1", "topic": "EPC LD rate primary source", "verdict": "REFINED", "confidence_after": "medium"},
+    {"id": "PP3.3-cost-4", "topic": "Indonesia construction certification rate", "verdict": "REFINED", "confidence_after": "medium"}
+  ],
+  "final_gate_decision": "ship_with_flag",
+  "global_low_pct_post_dr": 63.7,
+  "corpus_total_claims": 463,
+  "started_at": "2026-05-02T08:42:00Z",
+  "resumed_at": "2026-05-03T14:05:00Z",
+  "completed_at": "2026-05-19T00:10:00Z",
+  "interruption": {
+    "detected_at": "2026-05-03T14:05:00Z",
+    "likely_cause": "session-end on prior run (Stage 3 reached deep-research phase but not finalized)"
+  },
+  "final_pass_resumed_at": "2026-05-18T13:38:00Z",
+  "final_pass_completed_at": "2026-05-19T00:10:00Z",
+  "deliverables": [
+    "raw-claude-value-chain-package-boilers.md",
+    "raw-claude-pain-points-package-boilers.md",
+    "raw-claude-summary-package-boilers.md",
+    "FINAL-REPORT.html"
+  ]
+}

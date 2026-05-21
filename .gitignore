@@ -1,5 +1,5 @@
-# Run outputs (per-run, not committed)
-output/raw-claude-overnight/*/
+# Run outputs — COMMITTED to canonical Wright-Partners repo so Chiara / Toi
+# can review run results directly. `.gitkeep` kept as a safety placeholder.
 !output/raw-claude-overnight/.gitkeep
 
 # Cache (machine-local, not committed)

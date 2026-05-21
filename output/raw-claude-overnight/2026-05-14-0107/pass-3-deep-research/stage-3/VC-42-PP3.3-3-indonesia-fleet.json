@@ -1,0 +1,30 @@
+{
+  "claim_id": "VC-42 + PP3.3-3 (Indonesia commercial fleet)",
+  "original_claim": "Inconsistent figures: 23M+ (Mordor) vs 4-5M (Kemenhub, no URL)",
+  "original_score": "L",
+  "new_score": "H",
+  "outcome": "contradicted",
+  "correct_figure": "~6.09 million registered trucks (truk) in Indonesia as of end-2023 (BPS, updated Feb 2024)",
+  "new_sources": [
+    {
+      "url": "https://www.kompas.com/cekfakta/read/2025/03/26/132200282/jumlah-kendaraan-di-indonesia-sepeda-motor-mencapai-157-juta-unit",
+      "publisher": "Kompas.com (citing BPS — Badan Pusat Statistik, data updated Feb 29 2024)",
+      "category": "primary-gov-secondary-report",
+      "key_quote": "Total vehicles 157,080,504 units: motorcycles 132,433,679; passenger cars 18,285,293; trucks 6,091,822; buses 269,710 — BPS 2023"
+    },
+    {
+      "url": "https://www.bps.go.id/en/statistics-table/2/NTcjMg==/number-of-motor-vehicle-by-type--unit-.html",
+      "publisher": "BPS-Statistics Indonesia (Badan Pusat Statistik) — official national statistics agency",
+      "category": "primary-gov",
+      "key_quote": "Perkembangan Jumlah Kendaraan Bermotor Menurut Jenis — national time-series by vehicle type. 2023 total: 157,080,504 units including 6,091,822 trucks."
+    },
+    {
+      "url": "https://hubnet.kemenhub.go.id/dataset/content/dataset/30",
+      "publisher": "Kemenhub / HUBNET — Indonesian Ministry of Transportation open data portal",
+      "category": "primary-gov",
+      "key_quote": "Dataset 'Perkembangan Jumlah Kendaraan Bermotor Menurut Jenis' — annual time series 2015–2024, available in Excel/JSON. Confirms Kemenhub tracks vehicle-type registration annually; BPS figures derive from this registry."
+    }
+  ],
+  "revised_claim_text": "Indonesia had approximately 6.1 million registered trucks (commercial freight vehicles) as of end-2023, out of 157 million total registered motor vehicles (BPS, updated Feb 2024). The 23M+ figure cited by Mordor Intelligence almost certainly refers to total non-motorcycle motor vehicles (~24.6M = cars + trucks + buses) or a broader 'commercial vehicle fleet' definition inclusive of motorcycles used for commercial delivery; it does not represent the freight truck fleet. The 4–5M Kemenhub figure (no URL) is directionally consistent but understates the BPS-confirmed 6.09M truck count and should be updated. For fleet/telematics purposes, the correct addressable market is approximately 6 million trucks.",
+  "notes": "Disambiguation confirmed: BPS classifies Indonesia's registered vehicles into four categories — sepeda motor (motorcycles, 132.4M), mobil penumpang (passenger cars, 18.3M), truk (trucks, 6.09M), bis (buses, 270K). The ~6M truck figure is the commercially relevant freight/goods vehicle fleet. The 23M Mordor figure cannot be reconciled with any single BPS category; it is most likely (a) total non-motorcycle vehicles ~24.6M, rounded down or from an earlier year, or (b) a broader definition including all 'commercial use' vehicles (motorcycles on ride-hail/delivery platforms + trucks + buses), which would be misleading for fleet telematics market sizing. The Kemenhub HUBNET portal (hubnet.kemenhub.go.id/dataset/content/dataset/30) has annual data in Excel/JSON through 2024; the 2024 figure is expected to be ~6.2–6.4M trucks. Recommend: unify both VC-42 and PP3.3-3 to '~6M registered trucks (BPS 2023)' and retire the Mordor 23M figure as methodologically unverified for this context."
+}

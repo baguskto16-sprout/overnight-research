@@ -1,0 +1,23 @@
+{
+  "claim_id": "PP4.2-1",
+  "outcome": "weakened",
+  "new_confidence": "L",
+  "refined_claim_text": "Failures in pharmaceutical cold chain temperature control are estimated to cost the global biopharma industry ~$35 billion annually (Pelican BioThermal / Peli BioThermal 2019 Cold Chain Logistics Survey, citing IQVIA Institute for Human Data Science as data source; no stand-alone IQVIA Institute primary report confirmed). Losses include destroyed/quarantined product, clinical trial loss and replacement costs, wasted logistics costs, and root-cause analysis costs.",
+  "primary_sources_found": [
+    {
+      "url": "https://cdn2.hubspot.net/hubfs/4107558/general%20content/PEL1046_SurveyReport_v4a.pdf",
+      "title": "2019 Biopharma Cold-Chain Logistics Survey",
+      "publisher": "Pelican BioThermal (Peli BioThermal)",
+      "primary_category": "primary-trade",
+      "exact_quote": "According to the IQVIA Institute for Human Data Science, the biopharma industry loses approximately $35 billion annually as a result of failures in temperature-controlled logistics — from lost product, clinical trial loss and replacement costs, to wasted logistics costs and the costs of root-cause analysis."
+    },
+    {
+      "url": "https://www.prweb.com/releases/pelican_biothermal_reveals_2019_biopharma_cold_chain_logistics_survey_insights_amid_surge_of_temperature_controlled_products/prweb16464798.htm",
+      "title": "Pelican BioThermal Reveals 2019 Biopharma Cold Chain Logistics Survey Insights",
+      "publisher": "PRWeb (Pelican BioThermal press release)",
+      "primary_category": "primary-trade",
+      "exact_quote": "Published July 26, 2019. Confirmed as the originating press release. The $35B figure and IQVIA attribution do not appear in the press release itself — only the survey findings on excursion frequency appear."
+    }
+  ],
+  "notes": "INVESTIGATION SUMMARY: The $35B figure attributed to 'IQVIA Institute 2019' cannot be confirmed as a stand-alone IQVIA Institute primary report. No IQVIA Institute publication titled for cold chain logistics appears in IQVIA's own reports catalog (iqvia.com/insights/the-iqvia-institute/reports-and-publications/reports). IQVIA does publish cold chain white papers ('Pharma's Frozen Assets', 2023; 'Tip of the Iceberg', 2025) but neither is a 2019 primary report on industry-wide losses. The actual citation chain is: (1) Pelican BioThermal's 2019 Biopharma Cold Chain Logistics Survey report attributes the $35B figure to the IQVIA Institute; (2) the Pelican BioThermal July 2019 press release for the same survey does NOT contain the $35B figure or IQVIA attribution, suggesting it may have been added to the PDF version without clear primary sourcing; (3) all downstream citations (Air Cargo News, Dickson Data, Veratrak, Pharmaceutical Commerce 2026 article, FreightWaves 2025) trace back to this Pelican BioThermal survey or to each other — none link to an IQVIA primary document URL. IQVIA (formerly QuintilesIMS) does provide commissioned research and data licensing to third parties, so it is plausible IQVIA provided the underlying data to Pelican BioThermal as a licensed data product rather than a published public report. The Pharmaceutical Commerce Biopharma Cold Chain Sourcebook (annual publication) is a candidate original for the figure but no version examined contained the $35B as a primary statistic. RECOMMENDED ACTION: Retain the $35B figure but re-anchor attribution to 'Pelican BioThermal 2019 Biopharma Cold Chain Logistics Survey (citing IQVIA Institute data)' and flag that no standalone IQVIA report URL exists. The definition of losses is broad: destroyed/quarantined product + clinical trial replacement + wasted logistics + root-cause investigation costs — not destroyed product alone. Score remains Low because the primary document (the Pelican BioThermal PDF) is a vendor-commissioned survey document, not a peer-reviewed or government source, and the IQVIA data underlying it appears to be licensed/proprietary rather than a public primary report."
+}

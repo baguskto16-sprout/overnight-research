@@ -1,0 +1,25 @@
+{
+  "claim_id": "VC4-MS-cargo-tracking-installed-base",
+  "outcome": "found-stronger-evidence",
+  "new_score": "High",
+  "replacement_or_supplementary_sources": [
+    {
+      "url": "http://media.berginsight.com/2025/12/13211620/bi-container13-ps.pdf",
+      "tier": "primary-industry-analyst",
+      "date": "December 2025",
+      "what_it_supports": "13.8M installed base end-2024 → 26.9M by 2029, 14.3% CAGR; €2.7B revenue 2024 → €4.5B 2029 (10.8% CAGR); trailer tracking 43% of installed base, intermodal container 41%; ORBCOMM largest single provider at 2.1M units",
+      "via_pdf_markitdown": true,
+      "access_status": "FETCHED — publicly accessible product-sheet PDF, no paywall"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2025/12/18/3207863/28124/en/Global-4-5-Billion-Trailer-and-Cargo-Container-Tracking-Market-Forecast-2029-Featuring-Profiles-of-112-Tracking-Solution-Providers.html",
+      "tier": "primary-press-release",
+      "date": "2025-12-18",
+      "what_it_supports": "Verbatim confirmation of 13.8M / 26.9M / 14.3% / €2.7B / €4.5B figures",
+      "access_status": "FETCHED — fully accessible"
+    }
+  ],
+  "revised_claim_text": "Global cargo tracking hardware installed base: 13.8M active units (end 2024); 26.9M projected by 2029; 14.3% CAGR — Berg Insight, Trailer and Cargo Container Tracking, 13th Edition (December 2025). Trailer tracking accounts for 43% of installed base; intermodal container tracking 41%. Total market revenue €2.7B in 2024, forecast €4.5B by 2029 (10.8% CAGR). ORBCOMM is the largest single provider at 2.1M units (end 2024).",
+  "footnote_for_artifact": "Berg Insight, 'Trailer and Cargo Container Tracking — 13th Edition,' December 2025. Product sheet PDF: http://media.berginsight.com/2025/12/13211620/bi-container13-ps.pdf (publicly accessible; fetched and verified via markitdown). Press release: GlobeNewswire, 18 December 2025.",
+  "notes": "Original NEEDS-ATTENDED-FETCH flag was on the 260-page paid report; the public product-sheet PDF was fetchable and contains the headline figures verbatim. 12th Edition citation now superseded. No ABI Research / IDC / IoT Analytics counterparts in public form; Berg Insight is the specialist source for this segment. Upgrade Medium → High."
+}

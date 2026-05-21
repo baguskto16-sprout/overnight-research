@@ -1,0 +1,904 @@
+{
+  "context": "per-stage",
+  "stage": 3,
+  "run_id": "2026-05-17-2337",
+  "validated_date": "2026-05-18",
+  "artifacts_scored": [
+    "pass-1-drafts/stage-3-value-chain.md",
+    "pass-1-drafts/stage-3-pain-points.md"
+  ],
+
+  "source_inventory": {
+    "unique_sources_catalogued": 66,
+    "classification_notes": "Multiple footnotes bundle 2–4 URLs under one citation number. Each URL is classified independently. Where a footnote yields only secondary or auto-low sources, the footnote itself scores at that tier regardless of URL count."
+  },
+
+  "source_classifications": {
+    "primary_gov": [
+      "fmcsa.dot.gov (ELD mandate, 3.5M trucks figure) — VC-1, VC-42, PP3.1-8, PP3.3-several, PP3.4-9",
+      "bps.go.id (registered trucks 6,091,822 end-2023) — VC-42, PP3.4-7",
+      "who.int (Indonesia road fatality profile 2023) — PP3.4-1",
+      "crashstats.nhtsa.dot.gov FARS 2023 PDF — PP3.3-3",
+      "morth.nic.in AIS-140 draft PDF — VC-2"
+    ],
+    "primary_multilateral": [],
+    "primary_ministry": [
+      "morth.nic.in (India Ministry of Road Transport AIS-140 gazette, partial — full enforcement circular not confirmed at PDF level, one URL is ministry, others are trade/blog)",
+      "asean.org ASEAN domestic rules doc (Indonesia UU 22/2009 framework) — PP3.4-11"
+    ],
+    "primary_filing": [
+      "sec.gov Samsara FY2026 10-K (NYSE: IOT) — VC-13",
+      "sec.gov Samsara FY2025 10-K (iot2025ars.pdf) — VC-14",
+      "sec.gov Motive S-1 registration statement (Dec 23 2025) — VC-15, PP3.2-8",
+      "karooooo.com/wp-content/uploads KARO 6-K Q3 FY2026 — VC-16 (partial; see note)",
+      "sec.gov Full Truck Alliance 20-F (YMM) — VC-34 (partial; see note)",
+      "nzx.com/announcements/452220 EROAD FY2025 — VC-18",
+      "eroadglobal.com FY25 Annual Report PDF — VC-18 (PDF, NEEDS-ATTENDED-FETCH, not confirmed fetched)",
+      "s29.q4cdn.com Samsara Q4 FY2025 earnings press release PDF — PP3.2-7"
+    ],
+    "primary_association": [
+      "ttclub.com TT Club / BSI Cargo Theft Report 2024 (published Apr 2025) — PP3.1-2",
+      "truckingresearch.org ATRI 2025 Operational Costs of Trucking — PP3.2-2",
+      "truckingresearch.org ATRI Nov 2025 new research announcement — PP3.2-13",
+      "cvsa.org 2025 Roadcheck results — PP3.3-5",
+      "verisk.com CargoNet 2024 annual analysis — PP3.1-3",
+      "marathonstrategies.com nuclear verdicts report 2025 edition — PP3.2-3"
+    ],
+    "primary_academic": [
+      "news.uark.edu / Journal of Operations Management ELD mandate accident study — PP3.3-4, PP3.6"
+    ],
+    "primary_interview": [],
+    "primary_legal": [
+      "overdriveonline.com Chicago ELD cheating court docs — PP3.3-7 (court document cited via trade press; trade press is the actual URL — treat as secondary-trade with court-filing underlying)"
+    ],
+    "secondary_trade": [
+      "freightwaves.com (multiple: ELD fraud, Motive IPO, Descartes/Idelic, NHTSA FARS, Idelic acquisition, CVSA Roadcheck) — PP3.3-1, PP3.3-6, VC-4, VC-15, VC-21",
+      "insurancebusinessmag.com (TT Club $6.6B) — PP3.1-1",
+      "ccjdigital.com (nuclear verdicts $4.1B, driver cameras) — PP3.2-3, PP3.6",
+      "truckinginfo.com (ATRI 2025, EROAD, FMCSA ELD overhaul, Fleetio) — PP3.2-2, PP3.3-6, VC-18, PP3.5-2",
+      "iotbusinessnews.com (Berg Insight SEA, Americas releases) — VC-7, VC-9, PP3.1-7, PP3.4-5",
+      "insurance-canada.ca (Berg Insight hardware/OEM telematics) — VC-6",
+      "thefastmode.com (Berg Insight Europe) — VC-8",
+      "computerweekly.com (Berg Insight video telematics 22M) — VC-12",
+      "telematicswire.net (Tata Motors Fleet Edge) — VC-30",
+      "autocarpro.in (Sensorise/LocoNav acquisition) — VC-28",
+      "apnnews.com (Sensorise launch) — VC-28",
+      "landline.media (OOIDA ELD surveillance, CVSA Roadcheck) — PP3.3-8, PP3.3-5",
+      "overdriveonline.com (ELD cheating network, FMCSA coercion) — PP3.3-7, PP3.3 RC4",
+      "fleetequipmentmag.com (Fleetio 2026) — PP3.5-2",
+      "automotive-fleet.com (Fleetio 2026) — PP3.5",
+      "theaiinsider.tech (Nirvana Series C) — PP3.2-6",
+      "thethaiger.com (Thailand GPS reversal) — PP3.4-8",
+      "inteklogistics.com (FMCSA crackdown 2026) — PP3.3-9",
+      "uscomplianceservices.org (CVSA Roadcheck) — PP3.3-5",
+      "northpennnow.com (data silos multimodal) — PP3.1-12",
+      "carriermanagement.com (insurer silos) — PP3.2 RC1",
+      "ttnews.com (TMC RP 1226 interoperability) — PP3.1 RC2",
+      "macropoint.com (workaround tracking) — PP3.1-11",
+      "shippingandfreightresource.com (BSI/TT Club 2025)",
+      "ligaasuransi.com (Indonesia truck accidents) — PP3.4-1",
+      "cottinghambutler.com (ATRI 2025 costs summary) — supplementary"
+    ],
+    "secondary_news": [
+      "businesswire.com Samsara FY2026 press release — VC-13 (note: BusinessWire is a press release wire; actual 10-K on SEC EDGAR is primary — source credit given to SEC filing URL, not BusinessWire URL)",
+      "businesswire.com RTTVP market report via ResearchAndMarkets — PP3.1-4",
+      "businesswire.com Berg Insight SEA 2024 (via ResearchAndMarkets) — VC-35",
+      "prnewswire.com PowerFleet FY2025 results — VC-17 (press release; underlying financials are audited; treat as secondary-press-release referencing audited figures)",
+      "prnewswire.com Platform Science close — VC-23",
+      "prnewswire.com Nirvana Series C — PP3.2-6",
+      "prnewswire.com VTTI Motive dashcam study — PP3.6",
+      "globenewswire.com Berg Insight SEA top-5 providers — VC-9, VC-38",
+      "globenewswire.com Geotab 5M milestone — VC-19",
+      "globenewswire.com telematics adoption survey (insurer UBI) — PP3.2-9",
+      "globenewswire.com SambaSafety 2025 Annual Telematics Report press release — PP3.2-10",
+      "stocktitan.net (Samsara 10-K summary, Karooooo Q4 FY2026) — VC-13, VC-10",
+      "billionaires.africa (Karooooo FY2026 summary) — VC-10",
+      "fool.com Karooooo Q4 FY2026 transcript — VC-10",
+      "businesswire.com Karooooo FY2025 results — VC-16",
+      "nzherald.co.nz EROAD FY2025 — VC-18",
+      "futunn.com NavInfo earnings index — VC-33",
+      "marketscreener.com NavInfo profile — VC-33",
+      "last10k.com YMM 20-F summary — VC-34",
+      "brookingsregister.com / halstonmedia.com SambaSafety distribution — PP3.2-10",
+      "tomtunguz.com Motive S-1 analysis — VC-15",
+      "investor.trimble.com Platform Science/Trimble announcement — VC-23"
+    ],
+    "secondary_market_research": [
+      "gminsights.com global commercial vehicle telematics $24.3B — VC-5",
+      "gminsights.com video telematics $1.69B — VC-11",
+      "mordorintelligence.com Indonesia road freight $54B — PP3.4-3",
+      "buscmms.com AI fleet maintenance market $4.2B 2024 — PP3.5-3",
+      "researchandmarkets.com (distributor for Berg Insight SEA report) — VC-35"
+    ],
+    "secondary_press_release": [
+      "businesswire.com Samsara FY2026 earnings (classified above under secondary_news — overlaps; both wire services)",
+      "prnewswire.com PowerFleet FY2025 (classified above)",
+      "prnewswire.com Nirvana Series C (classified above)"
+    ],
+    "auto_low_vendor": [
+      "samsara.com/customers/werner-enterprises — VC-40 (Samsara marketing page, claim about Samsara customer outcomes)",
+      "samsara.com/blog/northland-insurance-partnership — PP3.2-4 (Samsara blog on Samsara partnership)",
+      "samsara.com/legal/platform-terms-of-service — PP3.1 RC1 (ToS; not marketing claim, factual legal term — treat as primary-legal-like for data-governance description; does not evidence a product capability claim for Samsara's own market)",
+      "samsara.com integration knowledge base kb.samsara.com — PP3.1 RC1 (vendor integration docs; supports RC structural description, not a market-sizing claim)",
+      "lytx.com/blog and /news-events/press-release — VC-3, VC-26 (Lytx vendor blog and press release on Lytx dashcam outcomes)",
+      "idelic.com/blog — VC-4 (Idelic blog on nuclear verdicts — Idelic vendor on own platform capabilities)",
+      "geotab.com/press-release, /apac/ — VC-19, VC-22, VC-24 (Geotab press releases on Geotab milestone and partnerships)",
+      "webfleet.com/en_us/webfleet/company/ — VC-27 (Webfleet vendor company page)",
+      "netradyne.com case studies — VC-39 (Netradyne vendor case study pages on Netradyne outcomes)",
+      "sambasafety.com/blog — PP3.2-10 (SambaSafety vendor blog; however the underlying survey is cited in GlobeNewswire press release and the survey methodology is independently described — the GlobeNewswire citation is used as the primary reference; SambaSafety.com blog is supplementary vendor content)",
+      "nirvanatech.com/why-telematics — PP3.2 RC3, PP3.2-12 (Nirvana vendor page on own telematics methodology)",
+      "hdvi.com/fleets/ — PP3.2-11 (HDVI vendor page on own product requirements)",
+      "gomotive.com Series G announcement — VC-21 (Motive vendor press release on own funding; but Series G funding is independently cited in context)",
+      "tatamotors.com/press-releases — VC-30 (Tata Motors press release on own connected vehicle program)",
+      "ialert2.ashokleyland.com — VC-31 (Ashok Leyland product page)",
+      "bharatbenz.com/truckonnect — VC-32 (BharatBenz product page on own telematics)",
+      "transtrack.co blog — VC-36 (TransTRACK vendor blog citing Berg Insight recognition)",
+      "katsana.com/telematics-insurance-malaysia-katsana/ — VC-37 (KATSANA vendor page on own UBI product)",
+      "geotab.com/blog — PP3.5-7 (Geotab blog on own driver behavior product)",
+      "airpinpoint.com (Samsara pricing comparison) — PP3.4-2 (third-party price comparison site, not audited)",
+      "fleetrabbit.com (all FleetRabbit blog posts and case studies) — PP3.5-1 (FleetRabbit vendor blogs on own platform outcomes)",
+      "ncms.org technology brief — PP3.5-4 (industry brief, not primary)",
+      "ccjdigital.com telematics integration article — PP3.5-6 (trade press, not auto-low-vendor)"
+    ],
+    "auto_low_aggregator_marketplace": [
+      "getlatka.com (LocoNav ARR $48.7M, KATSANA revenue $3.2M) — VC-29, VC-37",
+      "growjo.com (Geotab estimated revenue ~$970M) — VC-20",
+      "enlyft.com (Verizon Connect market share 5.56%) — VC-24",
+      "crunchbase.com (KATSANA funding) — VC-37"
+    ]
+  },
+
+  "claims_inventory": [
+    {
+      "claim_id": "VC-MS-1",
+      "claim_text": "Global commercial vehicle telematics market size $24.3B (2024)",
+      "footnote": 5,
+      "sources": ["gminsights.com"],
+      "source_types": ["secondary_market_research"],
+      "score": "Low",
+      "overrides": ["aggregator-market-research-auto-downgrade", "single-source"],
+      "notes": "GMI Insights is a private market research aggregator. No cross-validation with IEA, World Bank, or primary consultancy authored report found."
+    },
+    {
+      "claim_id": "VC-MS-2",
+      "claim_text": "Global aftermarket telematics hardware: 51.2M units shipped; €2.4B value (2024); OEM subscriptions 286.6M active, CAGR 13.0% to 528.1M by 2029",
+      "footnote": 6,
+      "sources": ["insurance-canada.ca summaries of Berg Insight reports"],
+      "source_types": ["secondary_trade"],
+      "score": "Medium",
+      "overrides": ["single-domain-near (Berg Insight is paywall; accessed via trade press summaries)", "trade-press-only-override-applies-to-market-sizing"],
+      "notes": "Berg Insight is a credible specialist research firm (primary-association adjacent) but is accessed here only via trade press summaries at insurance-canada.ca, not the Berg Insight primary report. No audited primary source cross-validates. Berg Insight is not a government or multilateral agency, so this does not reach High. Medium is appropriate given Berg Insight's established specialist status."
+    },
+    {
+      "claim_id": "VC-MS-3",
+      "claim_text": "North America fleet management installed base: 17.4M active units (2023); 30.5M projected 2028",
+      "footnote": 7,
+      "sources": ["iotbusinessnews.com Berg Insight release", "berginsight.com product PDF", "fmcsa.dot.gov"],
+      "source_types": ["secondary_trade", "secondary_trade", "primary_gov"],
+      "score": "High",
+      "overrides": [],
+      "notes": "FMCSA primary government source independently corroborates the directional magnitude (3.5M heavy trucks under ELD mandate = major subset of installed base). Berg Insight specialist firm via trade press provides the aggregate figure. Two independent sources with primary_gov cross-validation meets High threshold."
+    },
+    {
+      "claim_id": "VC-MS-4",
+      "claim_text": "SEA fleet management installed base: 3.6M active units (2024); 6.4M projected 2029; CAGR 12.3%; 17.5% penetration rising to 27.1%",
+      "footnote": 9,
+      "sources": ["iotbusinessnews.com Berg Insight 2nd edition 2026 release", "globenewswire.com Berg Insight top-5 release", "berginsight.com product page"],
+      "source_types": ["secondary_trade", "secondary_press_release", "secondary_trade"],
+      "score": "Medium",
+      "overrides": ["single-domain (all three URLs trace to Berg Insight as the primary source — counts as 1 source)", "trade-press-only for market-sizing"],
+      "notes": "All three citations trace to a single Berg Insight report (2nd Edition 2026). This is Berg Insight proprietary research, paywalled, accessed via IoT Business News and GlobeNewswire press summaries. Chain-of-citations rule: 1 underlying source. Berg Insight is not a government/multilateral agency, so medium is correct. Verified against web search — Berg Insight numbers confirmed (6.4M by 2029, 17.5% penetration)."
+    },
+    {
+      "claim_id": "VC-MS-5",
+      "claim_text": "Video telematics global market $1.69B (2024)",
+      "footnote": 11,
+      "sources": ["gminsights.com"],
+      "source_types": ["secondary_market_research"],
+      "score": "Low",
+      "overrides": ["aggregator-market-research-auto-downgrade", "single-source"],
+      "notes": "GMI Insights aggregator; no cross-validation."
+    },
+    {
+      "claim_id": "VC-MS-6",
+      "claim_text": "Video telematics installed base projected 22M units globally by 2030",
+      "footnote": 12,
+      "sources": ["computerweekly.com Berg Insight summary"],
+      "source_types": ["secondary_trade"],
+      "score": "Medium",
+      "overrides": ["single-source", "trade-press-only"],
+      "notes": "Berg Insight specialist cited via Computer Weekly trade press summary. Single underlying source (Berg Insight), not cross-validated. Medium appropriate for specialist firm via trade press."
+    },
+    {
+      "claim_id": "VC-MS-7",
+      "claim_text": "Samsara FY2026 revenue $1,618.6M (+30% YoY); ARR $1.89B",
+      "footnote": 13,
+      "sources": ["sec.gov Samsara 10-K SEC EDGAR filing index", "businesswire.com Samsara press release"],
+      "source_types": ["primary_filing", "secondary_news"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Primary 10-K filing on SEC EDGAR. BusinessWire PR is secondary but the 10-K is the audited authority. High confidence."
+    },
+    {
+      "claim_id": "VC-MS-8",
+      "claim_text": "Samsara FY2025 revenue $1,249.2M (+33% YoY); ARR $1.46B",
+      "footnote": 14,
+      "sources": ["sec.gov iot2025ars.pdf annual report PDF"],
+      "source_types": ["primary_filing"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Direct SEC annual report PDF. High confidence."
+    },
+    {
+      "claim_id": "VC-MS-9",
+      "claim_text": "Motive FY2024 revenue $370M (+19%); ARR $417M at Dec 31 2024; ARR $501M at Sep 30 2025 (+28%)",
+      "footnote": 15,
+      "sources": ["sec.gov Motive S-1 registration statement"],
+      "source_types": ["primary_filing"],
+      "score": "High",
+      "overrides": [],
+      "notes": "SEC S-1 is a primary filing. Confirmed in web search. High confidence."
+    },
+    {
+      "claim_id": "VC-MS-10",
+      "claim_text": "Karooooo FY2026 group revenue ZAR 5.48B (~$302M); ARR ZAR 5.18B; Asia+ME subscribers 336,000 (+23%)",
+      "footnote": "10, 16",
+      "sources": ["fool.com transcript", "stocktitan.net", "billionaires.africa", "businesswire.com Karooooo FY2025", "karooooo.com 6-K Q3 FY2026 PDF"],
+      "source_types": ["secondary_trade", "secondary_news", "secondary_news", "secondary_press_release", "primary_filing"],
+      "score": "High",
+      "overrides": [],
+      "notes": "The 6-K is a primary SEC filing (NASDAQ-listed company's 6-K). The Q4 FY2026 figures come from the Q4 earnings release; while Motley Fool transcript and StockTitan are secondary, the underlying 6-K is primary. High is correct given primary_filing anchor."
+    },
+    {
+      "claim_id": "VC-MS-11",
+      "claim_text": "PowerFleet FY2025 revenue $362.5M (+26% YoY); 2.8M subscribers",
+      "footnote": 17,
+      "sources": ["ir.powerfleet.com press release", "prnewswire.com PowerFleet FY2025"],
+      "source_types": ["secondary_press_release", "secondary_press_release"],
+      "score": "Medium",
+      "overrides": ["press-release-only: no audited 10-K or 20-F URL cited; press release references audited figures but the primary filing itself is not cited"],
+      "notes": "PowerFleet is NASDAQ-listed (AIOT); audited 10-K exists but is not cited — only IR press release and PRNewswire. Press-release-only override applies; Medium. Figures confirmed in web search as directionally accurate."
+    },
+    {
+      "claim_id": "VC-MS-12",
+      "claim_text": "EROAD FY2025 revenue NZD 194.4M (~$116M USD); ARR NZD 175.1M",
+      "footnote": 18,
+      "sources": ["nzx.com/announcements/452220 (NZX audited announcement)", "eroadglobal.com Annual Report PDF (NEEDS-ATTENDED-FETCH)"],
+      "source_types": ["primary_filing", "primary_filing (not confirmed fetched)"],
+      "score": "High",
+      "overrides": [],
+      "notes": "NZX formal stock exchange announcement is primary_filing equivalent. Even without the PDF, the NZX announcement is an audited regulatory disclosure. High confidence."
+    },
+    {
+      "claim_id": "VC-MS-13",
+      "claim_text": "Geotab 5M active subscriptions worldwide (Sep 2025)",
+      "footnote": 19,
+      "sources": ["geotab.com/press-release (vendor)", "globenewswire.com press release"],
+      "source_types": ["auto_low_vendor", "secondary_press_release"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: geotab.com is on domain blocklist; GlobeNewswire is a press release wire redistribution of the same Geotab press release — counts as 1 vendor source"],
+      "notes": "Geotab is private with no public filing. Vendor press release only. Low confidence."
+    },
+    {
+      "claim_id": "VC-MS-14",
+      "claim_text": "Geotab estimated revenue ~$970M (2024)",
+      "footnote": 20,
+      "sources": ["growjo.com third-party estimate"],
+      "source_types": ["auto_low_aggregator_marketplace"],
+      "score": "Low",
+      "overrides": ["auto-low-aggregator: GrowJo is a private company revenue estimator with no audited basis", "draft tags as ASSUMED-6"],
+      "notes": "Correctly flagged ASSUMED-6 in draft. Low confidence."
+    },
+    {
+      "claim_id": "VC-Samsara-1",
+      "claim_text": "Samsara 3,194 customers >$100k ARR; 350+ marketplace integrations; 14 trillion data points processed",
+      "footnote": 13,
+      "sources": ["sec.gov Samsara 10-K"],
+      "source_types": ["primary_filing"],
+      "score": "High",
+      "overrides": [],
+      "notes": "10-K is the authoritative source for these operational KPIs. High confidence."
+    },
+    {
+      "claim_id": "VC-Motive-1",
+      "claim_text": "Motive Series F ($150M, $2.85B valuation May 2022); Series G ($150M, Jul 2025, Kleiner Perkins)",
+      "footnote": 21,
+      "sources": ["freightwaves.com (Series F)", "gomotive.com (Series G — vendor press release)"],
+      "source_types": ["secondary_trade", "auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: gomotive.com is on domain blocklist for Series G; FreightWaves for Series F is secondary_trade; press-release-only for Series G funding — no Form D or SEC filing cited"],
+      "notes": "Series G is on motive.com/gomotive.com — auto-low-vendor. Series F from FreightWaves is secondary_trade only. No Form D cited for either round. Low confidence for both funding rounds. High-confidence alternative would be Form D filings on SEC EDGAR."
+    },
+    {
+      "claim_id": "VC-Geotab-1",
+      "claim_text": "Geotab #1 ABI Research commercial telematics ranking 4 consecutive years",
+      "footnote": 22,
+      "sources": ["geotab.com/apac/", "geotab.com/apac/press-release/southeast-asia-expansion/"],
+      "source_types": ["auto_low_vendor", "auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: geotab.com is blocklisted; ABI Research ranking communicated via vendor's own marketing — ABI Research report itself not cited"],
+      "notes": "The ABI Research ranking (separately cited at footnote 41 via PRNewswire) does confirm Geotab #1. However footnote 22 URLs are vendor pages. ABI Research PRNewswire citation (fn 41) is secondary_press_release. Combined: Low-to-Medium — the ranking is corroborated at fn 41 but via press release, not primary ABI Research authored report. Scored Low for fn 22 alone."
+    },
+    {
+      "claim_id": "VC-PlatformScience-1",
+      "claim_text": "Platform Science acquired Trimble telematics (closed Jan 2025); Trimble trailing-12M ~$300M; ARR ~$200M",
+      "footnote": 23,
+      "sources": ["investor.trimble.com (Trimble investor release)", "prnewswire.com (Platform Science close announcement)"],
+      "source_types": ["secondary_news", "secondary_press_release"],
+      "score": "Medium",
+      "overrides": ["press-release-only for the ARR ~$200M figure: no primary filing for Platform Science (private company); Trimble investor release is closer to primary but is still a press release"],
+      "notes": "The deal itself is confirmed. Trimble is a public company (NASDAQ: TRMB) with 10-K filings, but the trailing-12M revenue figure for the divested unit is from a press release, not from Trimble's actual 10-K segment disclosure. ARR $200M for Platform Science post-acquisition is from the same press release. Medium."
+    },
+    {
+      "claim_id": "VC-VerizonConnect-1",
+      "claim_text": "Verizon Connect divested APAC operations to Geotab (2023–24); ~5.56% market share in Transportation & Fleet category per Enlyft",
+      "footnote": "24, 25",
+      "sources": ["geotab.com/press-release/verizon-connect/ (Geotab vendor press release)", "enlyft.com (aggregator)"],
+      "source_types": ["auto_low_vendor", "auto_low_aggregator_marketplace"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: geotab.com is blocklisted; Enlyft is an aggregator marketplace for technology adoption data"],
+      "notes": "Both sources are auto-low. The Verizon 10-K is cited for total VZ revenue but does not separately disclose fleet segment revenue or confirm the Geotab divestiture specifically."
+    },
+    {
+      "claim_id": "VC-Lytx-1",
+      "claim_text": "Lytx: 5.5M+ drivers protected; 300B+ miles ML database; 89 countries; Level 2 collisions down 59% among coached fleets (2025 Road Safety Report)",
+      "footnote": "3, 26",
+      "sources": ["lytx.com/blog (vendor blog)", "lytx.com/news-events/press-release (vendor press release)"],
+      "source_types": ["auto_low_vendor", "auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: lytx.com is on domain blocklist; all claims about Lytx capabilities/outcomes sourced from Lytx's own blog and press releases; no independent third-party or audited cross-validation"],
+      "notes": "The '59% reduction' is a Lytx self-reported figure from Lytx's own Road Safety Report (a marketing document). No independent validation. Auto-low-vendor."
+    },
+    {
+      "claim_id": "VC-Idelic-1",
+      "claim_text": "Idelic acquired by Descartes April 2026 for $28M + $12M earn-out; 40B+ miles telemetry; 400k+ accident records",
+      "footnote": 4,
+      "sources": ["descartes.com/resources/news (Descartes press release)", "freightwaves.com (trade press)", "idelic.com/blog (vendor blog)"],
+      "source_types": ["secondary_press_release", "secondary_trade", "auto_low_vendor"],
+      "score": "Medium",
+      "overrides": ["vendor-marketing-override partially: idelic.com blog is auto-low-vendor for Idelic claims; but the acquisition price ($28M+$12M) is in Descartes' own press release, not in Idelic's blog; descartes.com is secondary_press_release for the acquirer; FreightWaves is secondary_trade"],
+      "notes": "Acquisition confirmed by two independent secondary sources (Descartes press release + FreightWaves). The 40B+ miles and 400k+ accident records are from Idelic's own blog — auto-low-vendor for those specific data points. The $28M acquisition price is Medium (two secondary sources, neither primary filing — Descartes NASDAQ 10-K not checked for this specific line). Overall Medium."
+    },
+    {
+      "claim_id": "VC-Webfleet-1",
+      "claim_text": "Webfleet ~783,000 European subscriptions; Frost & Sullivan best practice leader 2025",
+      "footnote": 27,
+      "sources": ["frost.com PDF (NEEDS-ATTENDED-FETCH)", "webfleet.com/company/"],
+      "source_types": ["secondary_trade (Frost & Sullivan is a research firm, not primary-gov/multilateral)", "auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: webfleet.com is on domain blocklist; Frost & Sullivan PDF is NEEDS-ATTENDED-FETCH — not confirmed retrieved; Frost & Sullivan is a secondary market research firm, not primary-consultancy-authored at BCG/McKinsey level"],
+      "notes": "Subscriber count comes from webfleet.com vendor page or unconfirmed F&S PDF. Auto-low-vendor for the webfleet.com URL. F&S is a market research firm (secondary_market_research tier). Low confidence."
+    },
+    {
+      "claim_id": "VC-NavInfo-1",
+      "claim_text": "NavInfo (SHE: 002405) H1 2024 revenue RMB 1.667B (~$230M USD); net loss RMB 356M",
+      "footnote": 33,
+      "sources": ["futunn.com earnings report index", "marketscreener.com profile"],
+      "source_types": ["secondary_news", "secondary_news"],
+      "score": "Medium",
+      "overrides": ["primary filing (Shenzhen Stock Exchange filing) not directly cited; accessed via investment data aggregators"],
+      "notes": "NavInfo is listed on Shenzhen (SHE), which requires audited disclosures. The figures are plausibly from audited financial statements, but neither URL is the SHE exchange filing itself. Medium given publicly listed company with verifiable filings, accessed via secondary channels."
+    },
+    {
+      "claim_id": "VC-YMM-1",
+      "claim_text": "Full Truck Alliance FY2024 revenue RMB 11.24B (~$1.54B USD, +33% YoY)",
+      "footnote": 34,
+      "sources": ["prnewswire.com YMM results press release", "last10k.com 20-F summary"],
+      "source_types": ["secondary_press_release", "secondary_news"],
+      "score": "High",
+      "overrides": [],
+      "notes": "YMM is NYSE-listed (NYSE: YMM) and files a 20-F with the SEC. The last10k.com summary references the actual 20-F filing. The PRNewswire press release is from the company itself. Combined with the 20-F as underlying primary filing, this is High. The actual sec.gov 20-F URL would be primary_filing; last10k.com is a conduit but the underlying source is audited."
+    },
+    {
+      "claim_id": "VC-JimiIoT-1",
+      "claim_text": "Jimi IoT: 200,000+ SEA fleet management units via local resellers",
+      "footnote": "9, 35",
+      "sources": ["businesswire.com Berg Insight release (via ResearchAndMarkets distributor)", "iotbusinessnews.com Berg Insight SEA"],
+      "source_types": ["secondary_press_release (ResearchAndMarkets press release on BusinessWire)", "secondary_trade"],
+      "score": "Medium",
+      "overrides": ["chain-of-citations: both trace to Berg Insight SEA report — 1 underlying source", "single-source"],
+      "notes": "Both citations are Berg Insight press summaries. 1 underlying source (Berg Insight specialist). Medium."
+    },
+    {
+      "claim_id": "VC-Cartrack-1",
+      "claim_text": "Cartrack 336,000 Asia+ME subscribers FY2026 (+23% YoY); 17% subscription revenue growth",
+      "footnote": "10, 16",
+      "sources": ["KARO 6-K Q3 FY2026 (primary filing)", "BusinessWire Karooooo FY2025 press release", "fool.com transcript"],
+      "source_types": ["primary_filing", "secondary_press_release", "secondary_trade"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Primary 6-K filing anchor. High."
+    },
+    {
+      "claim_id": "VC-TransTRACK-1",
+      "claim_text": "TransTRACK $12M Series A (Eurazeo, Cocoon Capital); 100,000+ fleet management units; Indonesia-HQ",
+      "footnote": 36,
+      "sources": ["blog.transtrack.co press release (vendor blog)", "blog.transtrack.co Berg Insight recognition (vendor blog citing Berg Insight)"],
+      "source_types": ["auto_low_vendor", "auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: blog.transtrack.co is TransTRACK's own blog; Series A funding not confirmed by Form D or Crunchbase primary; Berg Insight recognition cited via TransTRACK's own blog"],
+      "notes": "All claims about TransTRACK come from TransTRACK's own blog. Auto-low-vendor. A Form D or Crunchbase citation with independent VC confirmation would be needed for the funding claim."
+    },
+    {
+      "claim_id": "VC-KATSANA-1",
+      "claim_text": "KATSANA $3.2M revenue (Oct 2024, GetLatka); 1,600+ enterprise customers; $900k total funding + MYR 6.5M equity + MYR 3M grants",
+      "footnote": 37,
+      "sources": ["getlatka.com (revenue estimate)", "crunchbase.com (funding)", "katsana.com (vendor page)"],
+      "source_types": ["auto_low_aggregator_marketplace", "auto_low_aggregator_marketplace", "auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["auto-low-aggregator (GetLatka is an aggregator marketplace revenue estimator)", "vendor-marketing-override (katsana.com)"],
+      "notes": "All three sources are auto-low. No audited filing or Form D. Low."
+    },
+    {
+      "claim_id": "VC-India-Tata-1",
+      "claim_text": "Tata Motors Fleet Edge: 500,000+ connected Tata trucks as of Jan 2024",
+      "footnote": 30,
+      "sources": ["tatamotors.com press release (vendor)", "telematicswire.net (trade press)"],
+      "source_types": ["auto_low_vendor", "secondary_trade"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: tatamotors.com is Tata's own press release on own product; telematicswire.net is trade press redistributing same press release — chain-of-citations: 1 source (Tata Motors press release)"],
+      "notes": "Single source (Tata Motors press release) with trade press redistribution. Auto-low-vendor for the primary source."
+    },
+    {
+      "claim_id": "VC-AIS140-1",
+      "claim_text": "India AIS-140 VLTD mandate: full enforcement by 2023 for N2/N3 vehicles and hazardous goods transport",
+      "footnote": 2,
+      "sources": ["morth.nic.in AIS-140 draft PDF (primary ministry)", "tracko.co.in blog (vendor/trade)", "hashstudioz.com blog (trade/vendor)"],
+      "source_types": ["primary_ministry", "auto_low_vendor", "secondary_trade"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Ministry publication (morth.nic.in) is primary_ministry. The draft PDF is the official AIS-140 technical standard from India's Ministry of Road Transport. Supplemented by trade/vendor blogs but the primary anchor is sufficient for High."
+    },
+    {
+      "claim_id": "VC-ELD-FMCSA-1",
+      "claim_text": "US FMCSA ELD mandate covers ~3.5M heavy trucks; full compliance December 2019",
+      "footnote": "1, 8",
+      "sources": ["fmcsa.dot.gov (government primary)"],
+      "source_types": ["primary_gov"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Government primary. High."
+    },
+    {
+      "claim_id": "VC-BPS-1",
+      "claim_text": "Indonesia registered trucks: 6,091,822 (end-2023)",
+      "footnote": 42,
+      "sources": ["bps.go.id statistics table"],
+      "source_types": ["primary_gov"],
+      "score": "High",
+      "overrides": [],
+      "notes": "BPS Indonesia is a government statistics agency. High."
+    },
+    {
+      "claim_id": "PP31-cost-1",
+      "claim_text": "Global in-transit cargo theft: $6.6 billion in North America alone in 2025, up 18% year-over-year",
+      "footnote": "PP3.1-(1)",
+      "sources": ["insurancebusinessmag.com (TT Club/BSI 2025 report summary)", "ttclub.com (primary TT Club report)"],
+      "source_types": ["secondary_trade", "primary_association"],
+      "score": "High",
+      "overrides": [],
+      "notes": "TT Club is an industry association (primary_association). The $6.6B figure is confirmed from TT Club/BSI annual cargo theft report. Secondary trade press corroborates. Note: the 18% YoY for North America specifically was not independently verified in web search but TT Club is primary. High."
+    },
+    {
+      "claim_id": "PP31-cost-2",
+      "claim_text": "41% of cargo theft incidents occur during transit, 76% involve trucks",
+      "footnote": "PP3.1-(2)",
+      "sources": ["ttclub.com TT Club/BSI 2024 report"],
+      "source_types": ["primary_association"],
+      "score": "High",
+      "overrides": [],
+      "notes": "TT Club primary association report for 2024 data. High."
+    },
+    {
+      "claim_id": "PP31-cost-3",
+      "claim_text": "Average cargo theft value per incident (North America 2024): $202,364; 3,625 incidents",
+      "footnote": "PP3.1-(3)",
+      "sources": ["verisk.com CargoNet 2024 annual analysis"],
+      "source_types": ["primary_association"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Verisk CargoNet is a primary data source (industry association/analytics firm with primary dataset). Confirmed in web search. High."
+    },
+    {
+      "claim_id": "PP31-cost-4",
+      "claim_text": "RTTVP market $6.3B globally in 2024",
+      "footnote": "PP3.1-(4)",
+      "sources": ["businesswire.com ResearchAndMarkets report"],
+      "source_types": ["secondary_press_release", "secondary_market_research"],
+      "score": "Low",
+      "overrides": ["aggregator-market-research-auto-downgrade: ResearchAndMarkets is an aggregator/distributor; the underlying source is an unnamed market research report distributed via ResearchAndMarkets"],
+      "notes": "ResearchAndMarkets is a market research aggregator. BusinessWire is the press release wire. Double-secondary with no primary cross-validation. Low."
+    },
+    {
+      "claim_id": "PP31-freq-1",
+      "claim_text": "82.5% of SEA commercial fleet vehicles have no fleet management system (Berg Insight); 17.5% penetration in 2024 rising to 27.1% by 2029",
+      "footnote": "PP3.1-(7)",
+      "sources": ["iotbusinessnews.com Berg Insight SEA 2nd Edition 2026"],
+      "source_types": ["secondary_trade"],
+      "score": "Medium",
+      "overrides": ["single-source (Berg Insight accessed via trade press summary)"],
+      "notes": "Same Berg Insight report as VC-MS-4. Medium. Confirmed in web search."
+    },
+    {
+      "claim_id": "PP31-freq-2",
+      "claim_text": "project44: 1B+ shipments annually, 1,300+ enterprise shippers, 150,000+ carriers; 3,580 preferred carriers (<2% of network)",
+      "footnote": "PP3.1-(5), (10)",
+      "sources": ["project44.com/press-releases (vendor press release on Connection Accelerator)", "project44.com/blog (vendor blog)"],
+      "source_types": ["auto_low_vendor", "auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: project44.com is a vendor marketing surface; claims about project44's own network size and capability are sourced from project44.com — auto-low-vendor"],
+      "notes": "project44 is not on the explicit domain blocklist given, but by principle the override applies to any vendor's own marketing surface for claims about that vendor. Auto-low-vendor."
+    },
+    {
+      "claim_id": "PP31-assumed-1",
+      "claim_text": "[ASSUMED-1] Claims-resolution cost premium on subcontracted legs with no telematics record: estimated at 20–40% higher",
+      "footnote": "PP3.1-ASSUMED-1",
+      "sources": [],
+      "source_types": ["assumed"],
+      "score": "Low",
+      "overrides": ["assumed-tag override"],
+      "notes": "Correctly tagged ASSUMED-1. No source. Low."
+    },
+    {
+      "claim_id": "PP32-cost-1",
+      "claim_text": "Commercial auto liability combined ratio 113 (2024); cumulative underwriting losses exceeding $10 billion over 2023–2024; under-reserved $4–$5 billion (AM Best)",
+      "footnote": "PP3.2-(1)",
+      "sources": ["insurancejournal.com AM Best report summary", "news.ambest.com AM Best market segment report"],
+      "source_types": ["secondary_trade", "primary_association"],
+      "score": "Medium",
+      "overrides": ["factual inaccuracy flag: combined ratio discrepancy"],
+      "notes": "CRITICAL ERROR: Web search confirms AM Best's actual figure is combined ratio ~108.5 for the commercial auto segment overall in 2024, with the liability line posting a $6.4B underwriting loss (not $10B+). The draft states '113' and '$10B+ cumulative losses 2023-2024.' The AM Best report does confirm $4-5B under-reserved (verified) and 14 consecutive years of underwriting losses (verified). But the combined ratio figure of 113 is inaccurate vs. confirmed 108.5. The $10B cumulative is directionally supportable ($5B in 2023 + $4.9B in 2024 = $9.9B across 2 years — close, but this arithmetic is not explicitly stated in the cited source). Score reduced to Medium due to factual discrepancy in the combined ratio figure."
+    },
+    {
+      "claim_id": "PP32-cost-2",
+      "claim_text": "Insurance premiums $0.102/vehicle mile in 2024 (4.5% of $2.260/mile total); 36% per-mile increase over 8 years (ATRI 2025)",
+      "footnote": "PP3.2-(2)",
+      "sources": ["truckinginfo.com ATRI report summary", "truckingresearch.org ATRI primary landing page"],
+      "source_types": ["secondary_trade", "primary_association"],
+      "score": "Medium",
+      "overrides": ["factual accuracy flag: ATRI insurance figure discrepancy"],
+      "notes": "ATRI 2025 is confirmed as a primary_association source. However, web search returns ATRI insurance figure as 8.7 cents/mile (not $0.102/mile). The $2.260/mile total operating cost is confirmed. The 36% increase over 8 years is confirmed. The specific $0.102/mile insurance figure does not match web search findings from ATRI summaries (8.7 cents = $0.087/mile). This is a material factual discrepancy in a key cost-per-mile claim. The 36% increase and the total cost are correct; the specific insurance per-mile figure needs verification against the primary ATRI report. Score Medium due to potential transcription error in key metric."
+    },
+    {
+      "claim_id": "PP32-cost-3",
+      "claim_text": "Nuclear verdicts trucking-only: 8 cases in 2024 totaling ~$790.5M; trucking+automotive: 15 cases, $4.1B (Marathon Strategies)",
+      "footnote": "PP3.2-(3)",
+      "sources": ["ccjdigital.com (trade press on Marathon Strategies report)", "marathonstrategies.com (primary Marathon Strategies report)"],
+      "source_types": ["secondary_trade", "primary_association"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Marathon Strategies is an independent research/advocacy firm; their nuclear verdict report is a primary report (not market research aggregator). CCJ Digital is secondary_trade corroboration. Confirmed in web search: 8 trucking verdicts, $790.5M. High. Note: the draft also correctly notes the broader $31.3B is cross-industry all-corporate, not trucking-specific — this is a correction from prior draft and is correct."
+    },
+    {
+      "claim_id": "PP32-cost-4",
+      "claim_text": "Samsara dashcam 10% premium discount from Northland/Travelers; Motive–GEICO up to 10% savings",
+      "footnote": "PP3.2-(4), (5)",
+      "sources": ["samsara.com/blog/northland-insurance-partnership (vendor blog)", "geico.com press release"],
+      "source_types": ["auto_low_vendor", "secondary_press_release"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: samsara.com blog on Samsara partnership outcomes is auto-low-vendor; GEICO press release on own program is secondary_press_release only"],
+      "notes": "Samsara.com blog is auto-low-vendor. GEICO press release is secondary. No audited filing confirms the discount percentages. Low."
+    },
+    {
+      "claim_id": "PP32-cost-5",
+      "claim_text": "Nirvana Series C: $80M at $830M valuation (March 2025, General Catalyst leading); $100M+ premiums under management",
+      "footnote": "PP3.2-(6)",
+      "sources": ["techcrunch.com (primary journalism)", "prnewswire.com Nirvana press release"],
+      "source_types": ["secondary_news", "secondary_press_release"],
+      "score": "Medium",
+      "overrides": ["press-release-only-override: no Form D cited; TechCrunch is named investigative/news journalism but not a primary filing"],
+      "notes": "TechCrunch is high-quality named-source journalism; confirmed in web search ($80M, $830M valuation, General Catalyst). The press-release-only override applies technically but TechCrunch independent reporting from the company elevates this. Medium is appropriate — Medium would rise to High if a Form D or S-1 filing were cited. The $100M premiums under management is confirmed in TechCrunch."
+    },
+    {
+      "claim_id": "PP32-freq-1",
+      "claim_text": "88% of fleets run telematics; only 30% share data with insurers; 74% never asked; n=152 fleet professionals, 180 brokers, 70 carriers (SambaSafety 2025)",
+      "footnote": "PP3.2-(10)",
+      "sources": ["globenewswire.com SambaSafety press release", "sambasafety.com/blog (vendor blog)"],
+      "source_types": ["secondary_press_release", "auto_low_vendor"],
+      "score": "Medium",
+      "overrides": ["vendor-marketing-override: sambasafety.com is on domain blocklist; survey data distributed via GlobeNewswire is a press release from SambaSafety; the underlying report is SambaSafety-authored (a vendor survey)"],
+      "notes": "SambaSafety is a vendor; this is their own survey. Vendor-authored surveys about the market are secondary_press_release at best. However, the survey methodology is disclosed (n=152 fleet professionals, 180 brokers, 70 carriers, June-July 2025), partners include Risk & Insurance Education Alliance and IoT Insurance Observatory (co-sponsors add credibility). Web search confirms these figures exactly. Note: the draft states '74% never asked' but web search found '79% never asked' — minor discrepancy. Medium (vendor-authored survey with disclosed methodology and co-sponsors, distributed via press release)."
+    },
+    {
+      "claim_id": "PP32-freq-2",
+      "claim_text": "82% of commercial insurers use telematics (up from 65% in 2023); 70% plan UBI expansion; 36% of fleets share data (GlobeNewswire October 2025 survey)",
+      "footnote": "PP3.2-(9)",
+      "sources": ["globenewswire.com telematics adoption survey Oct 2025"],
+      "source_types": ["secondary_press_release"],
+      "score": "Low",
+      "overrides": ["press-release-only: GlobeNewswire is a press release wire; the survey source and methodology (n=not specified) are not disclosed in the citation; single secondary source"],
+      "notes": "No methodology disclosed for the October 2025 survey; sample size 'n=not specified' per draft itself. Single press release. Low. The 'n=not specified' means this cannot be cross-validated for statistical validity."
+    },
+    {
+      "claim_id": "PP32-freq-3",
+      "claim_text": "14 consecutive years of commercial auto underwriting losses",
+      "footnote": "PP3.2-(1)",
+      "sources": ["insurancejournal.com AM Best", "news.ambest.com"],
+      "source_types": ["secondary_trade", "primary_association"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Confirmed in web search from AM Best. High."
+    },
+    {
+      "claim_id": "PP33-freq-1",
+      "claim_text": "30% of trucks estimated running non-compliant ELD systems",
+      "footnote": "PP3.3-(1)",
+      "sources": ["freightwaves.com citing Joshua Kreyer, Silver Arrow Express Operating Manager"],
+      "source_types": ["secondary_trade"],
+      "score": "Low",
+      "overrides": ["single-trade-source: single operator estimate cited via trade press; not a regulatory dataset, academic study, or government survey; industry operator estimate"],
+      "notes": "This is a single industry operator's estimate cited by FreightWaves, not an FMCSA enforcement dataset or independent study. Single-trade-source override. Low. This is a load-bearing claim for PP3.3."
+    },
+    {
+      "claim_id": "PP33-freq-2",
+      "claim_text": "58,382 falsification of RODS violations recorded across all FMCSA inspections in 2025 — second most-cited driver violation",
+      "footnote": "PP3.3-(2), (5)",
+      "sources": ["eld.kellerencompass.com J.J. Keller blog", "jjkellercompliancenetwork.com J.J. Keller compliance network", "uscomplianceservices.org", "landline.media"],
+      "source_types": ["secondary_trade", "secondary_trade", "secondary_trade", "secondary_trade"],
+      "score": "Low",
+      "overrides": ["factual inaccuracy flag: CVSA 2025 Roadcheck data discrepancy", "single-trade-source-family: J.J. Keller is a compliance services vendor; all four URLs are secondary trade"],
+      "notes": "CRITICAL DISCREPANCY: Web search against CVSA primary source (cvsa.org) shows that the 2025 Roadcheck (56,178 inspections, 3 days in May 2025) found only 332 driver OOS violations for falsified logs — representing 10% of driver OOS violations. The draft's figure of 58,382 falsification violations appears to be either the total number of driver OOS violations across all categories (not just falsification), or an extrapolation from full-year FMCSA data not cited from a primary government source. The CVSA primary source is not cited directly in PP3.3 footnote 2; it is cited in footnote 5. The '58,382' figure from J.J. Keller's compliance network has not been independently verified as accurate. This is a material factual error risk. Score Low — the factual basis for this specific number is unverified from primary source."
+    },
+    {
+      "claim_id": "PP33-freq-3",
+      "claim_text": "10% of all driver OOS violations at CVSA 2025 Roadcheck were for falsified logs; 56,178 inspections",
+      "footnote": "PP3.3-(5)",
+      "sources": ["uscomplianceservices.org", "landline.media", "cvsa.org (primary — confirmed via web search)"],
+      "source_types": ["secondary_trade", "secondary_trade", "primary_gov (implied; cvsa.org is the primary source)"],
+      "score": "High",
+      "overrides": [],
+      "notes": "The 10%/56,178 inspection figure is confirmed from CVSA primary source (cvsa.org). The secondary URLs are trade press reporting on CVSA results; the underlying CVSA data is primary. High."
+    },
+    {
+      "claim_id": "PP33-freq-4",
+      "claim_text": "67 noncompliant ELD devices revoked by FMCSA since January 2025; 24 revoked in 2024; December 2025 overhaul; code-paste re-registration confirmed",
+      "footnote": "PP3.3-(6)",
+      "sources": ["truckinginfo.com", "freightwaves.com", "fmcsa.dot.gov newsroom"],
+      "source_types": ["secondary_trade", "secondary_trade", "primary_gov"],
+      "score": "High",
+      "overrides": [],
+      "notes": "FMCSA.dot.gov is a primary government source confirming the December 2025 overhaul. Secondary trade press corroborates. High."
+    },
+    {
+      "claim_id": "PP33-cost-1",
+      "claim_text": "Cost gap: compliant carriers ~$2.30/mile vs. noncompliant ~$1.80/mile; ~$0.50/mile gap; 60–100% mileage premium for noncompliant (~$2,000/month/truck extra revenue)",
+      "footnote": "PP3.3-(1)",
+      "sources": ["freightwaves.com citing Joshua Kreyer, Silver Arrow Express"],
+      "source_types": ["secondary_trade"],
+      "score": "Low",
+      "overrides": ["single-trade-source: these are operator estimates cited via FreightWaves — not ATRI audited cost data or government enforcement analysis"],
+      "notes": "Same source as PP33-freq-1. Operator estimate via single trade publication. Low. The ATRI 2025 report provides actual per-mile cost data ($2.260/mile total) but does not appear to have been used to independently validate these specific compliant vs. noncompliant figures."
+    },
+    {
+      "claim_id": "PP33-cost-2",
+      "claim_text": "FMCSA enforcement fines: penalty $15,445; nearly 1 in 4 audits result in fine; total FMCSA fines >$27M in 2024",
+      "footnote": "PP3.3-(2)",
+      "sources": ["eld.kellerencompass.com J.J. Keller", "jjkellercompliancenetwork.com J.J. Keller", "disa.com news"],
+      "source_types": ["secondary_trade", "secondary_trade", "secondary_trade"],
+      "score": "Low",
+      "overrides": ["trade-press-only: J.J. Keller is a compliance services company (vendor in the compliance space); DISA is also a compliance services vendor; no FMCSA.gov primary source cited for fine totals; 'nearly 1 in 4 audits result in fine' is not from FMCSA primary data"],
+      "notes": "Fine amount ($15,445) is likely from Federal Register and could be verified at primary level, but is cited here only via compliance vendor blogs. The $27M total and 1-in-4 rate are not from FMCSA primary datasets. Low."
+    },
+    {
+      "claim_id": "PP33-cost-3",
+      "claim_text": "NHTSA FARS 2023: 5,472 large truck crash fatalities; 153,452 injuries",
+      "footnote": "PP3.3-(3)",
+      "sources": ["crashstats.nhtsa.dot.gov FARS 2023 PDF (primary_gov)", "freightwaves.com"],
+      "source_types": ["primary_gov", "secondary_trade"],
+      "score": "High",
+      "overrides": [],
+      "notes": "NHTSA FARS is primary government data. High."
+    },
+    {
+      "claim_id": "PP33-academic-1",
+      "claim_text": "University of Arkansas / Journal of Operations Management: 11.6% accident increase for owner-operators and 9% for 2–20 truck carriers post-ELD mandate",
+      "footnote": "PP3.3-(4)",
+      "sources": ["news.uark.edu university announcement", "truckinginfo.com trade press"],
+      "source_types": ["primary_academic (university press release referencing published JOM study)", "secondary_trade"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Journal of Operations Management is peer-reviewed. University announcement references published study. High."
+    },
+    {
+      "claim_id": "PP34-cost-1",
+      "claim_text": "Indonesia ~27,000 road collision fatalities per year (WHO 2023)",
+      "footnote": "PP3.4-(1)",
+      "sources": ["who.int WHO Road Safety Country Profile Indonesia 2023"],
+      "source_types": ["primary_gov"],
+      "score": "High",
+      "overrides": [],
+      "notes": "WHO primary multilateral source. High."
+    },
+    {
+      "claim_id": "PP34-cost-2",
+      "claim_text": "Samsara entry pricing $27–$50/vehicle/month; hardware $99–$400",
+      "footnote": "PP3.4-(2)",
+      "sources": ["airpinpoint.com Samsara pricing comparison"],
+      "source_types": ["auto_low_vendor (third-party price comparison site for Samsara's own pricing)"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: pricing data about Samsara from a third-party comparison site still constitutes Samsara marketing surface for practical purposes; samsara.com domain not cited directly but airpinpoint derives from Samsara's published pricing"],
+      "notes": "Third-party pricing aggregator site. Not an audited source. No Samsara 10-K pricing disclosure cited. Low."
+    },
+    {
+      "claim_id": "PP34-cost-3",
+      "claim_text": "Indonesia road freight market ~$54B",
+      "footnote": "PP3.4-(3)",
+      "sources": ["mordorintelligence.com"],
+      "source_types": ["secondary_market_research"],
+      "score": "Low",
+      "overrides": ["aggregator-market-research-auto-downgrade: Mordor Intelligence is on the auto-downgrade list"],
+      "notes": "Mordor Intelligence is explicitly listed in the auto-downgrade rules. Low."
+    },
+    {
+      "claim_id": "PP34-cost-4",
+      "claim_text": "ASEAN road fatality rates: Indonesia 12.4/100k population vs. Singapore 2.1 and Australia 5.6",
+      "footnote": "PP3.4-(4)",
+      "sources": ["asiantransportobservatory.org road safety profiles"],
+      "source_types": ["primary_multilateral (Asian Transport Observatory is an ASEAN-affiliated analytical body)"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Asian Transport Observatory is an ASEAN Centre for Energy-equivalent analytical body. Primary multilateral-adjacent source. High."
+    },
+    {
+      "claim_id": "PP35-cost-1",
+      "claim_text": "Reactive maintenance downtime: $448–$760/vehicle/day; 8.7 days unplanned downtime/year; 73% of fleets run reactive programs; $2,000/vehicle savings from predictive maintenance; 35% breakdown reduction",
+      "footnote": "PP3.5-(1)",
+      "sources": ["fleetrabbit.com/blogs (vendor blog)", "fleetrabbit.com/case-study (vendor case study)"],
+      "source_types": ["auto_low_vendor", "auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: fleetrabbit.com is FleetRabbit's own marketing blog and case study pages on FleetRabbit's own platform outcomes"],
+      "notes": "All reactive maintenance cost figures come from FleetRabbit's own vendor blog and case studies. FleetRabbit is a predictive maintenance vendor. auto-low-vendor override applies. Low."
+    },
+    {
+      "claim_id": "PP35-cost-2",
+      "claim_text": "Fleetio 2026 Benchmark Report: 53.7% scheduled / 40.1% unscheduled / 6.2% emergency maintenance; n=1.2M vehicles, 9M work orders, $7B service spend; 27% predictive maintenance adoption; 5.6% AI widely used",
+      "footnote": "PP3.5-(2)",
+      "sources": ["fleetio.com/resources/white-papers/benchmark-report (vendor report landing page)", "fleetequipmentmag.com", "truckinginfo.com"],
+      "source_types": ["auto_low_vendor (fleetio.com is on domain blocklist)", "secondary_trade", "secondary_trade"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: fleetio.com is on domain blocklist; the Benchmark Report is Fleetio's own proprietary dataset published as a marketing asset; secondary trade press coverage of the same Fleetio report — chain-of-citations: 1 source (Fleetio)"],
+      "notes": "Fleetio is a fleet management software vendor. Their own Benchmark Report is a vendor-published document using their own platform data, marketed as an industry report. This is functionally a vendor whitepaper. Auto-low-vendor. The secondary trade press articles (Fleet Equipment, Trucking Info) are covering the Fleetio report — chain-of-citations, 1 underlying source. Low."
+    },
+    {
+      "claim_id": "PP35-cost-3",
+      "claim_text": "AI fleet maintenance market $4.2B in 2024, growing at 19.3% CAGR toward $11.7B by 2033",
+      "footnote": "PP3.5-(3)",
+      "sources": ["buscmms.com/blog (CMMS vendor blog)"],
+      "source_types": ["secondary_market_research"],
+      "score": "Low",
+      "overrides": ["aggregator-market-research: buscmms.com is a CMMS software vendor blog citing an unspecified market research figure", "single-source"],
+      "notes": "Market sizing figure from a CMMS vendor blog without traceable original source. Low."
+    },
+    {
+      "claim_id": "PP35-freq-1",
+      "claim_text": "78% of breakdowns originate from preventable failures catchable with predictive maintenance (FleetRabbit analysis)",
+      "footnote": "PP3.5 frequency section",
+      "sources": ["fleetrabbit.com (vendor blog)"],
+      "source_types": ["auto_low_vendor"],
+      "score": "Low",
+      "overrides": ["vendor-marketing-override: fleetrabbit.com is FleetRabbit's own blog"],
+      "notes": "Self-serving vendor claim on own marketing blog. Low."
+    },
+    {
+      "claim_id": "PP35-WTP-1",
+      "claim_text": "Penske 2024: little over half of carriers use in-cab monitoring; for small fleets only 32%",
+      "footnote": "PP3.5-(3)",
+      "sources": ["atri-online.org cross-reference via FleetRabbit ATRI citation"],
+      "source_types": ["primary_association (ATRI) — but accessed via FleetRabbit blog citation"],
+      "score": "Medium",
+      "overrides": ["chain-of-citations concern: the Penske/ATRI data is cited via FleetRabbit's blog citing ATRI; the actual ATRI source is not directly cited"],
+      "notes": "If the underlying source is ATRI (primary_association), this would be High. But it is accessed via a FleetRabbit blog citation and the atri-online.org URL itself is a cross-reference via FleetRabbit — not a direct ATRI citation. Medium."
+    }
+  ],
+
+  "scoring_distribution": {
+    "high": {
+      "count": 23,
+      "percent": "38%",
+      "claim_ids": ["VC-MS-3", "VC-MS-7", "VC-MS-8", "VC-MS-9", "VC-MS-10", "VC-MS-12", "VC-Samsara-1", "VC-Cartrack-1", "VC-AIS140-1", "VC-ELD-FMCSA-1", "VC-BPS-1", "VC-YMM-1", "PP31-cost-1", "PP31-cost-2", "PP31-cost-3", "PP32-cost-3", "PP32-freq-3", "PP33-freq-3", "PP33-freq-4", "PP33-cost-3", "PP33-academic-1", "PP34-cost-1", "PP34-cost-4"]
+    },
+    "medium": {
+      "count": 15,
+      "percent": "25%",
+      "claim_ids": ["VC-MS-2", "VC-MS-4", "VC-MS-6", "VC-MS-11", "VC-Idelic-1", "VC-NavInfo-1", "VC-PlatformScience-1", "VC-JimiIoT-1", "PP31-freq-1", "PP32-cost-1", "PP32-cost-2", "PP32-cost-5", "PP32-freq-1", "PP33-freq-4", "PP35-WTP-1"]
+    },
+    "low": {
+      "count": 22,
+      "percent": "37%",
+      "claim_ids": ["VC-MS-1", "VC-MS-5", "VC-MS-13", "VC-MS-14", "VC-Motive-1", "VC-Geotab-1", "VC-VerizonConnect-1", "VC-Lytx-1", "VC-Webfleet-1", "VC-TransTRACK-1", "VC-KATSANA-1", "VC-India-Tata-1", "PP31-cost-4", "PP31-freq-2", "PP31-assumed-1", "PP32-cost-4", "PP32-freq-2", "PP33-freq-1", "PP33-freq-2", "PP33-cost-1", "PP33-cost-2", "PP34-cost-2", "PP34-cost-3", "PP35-cost-1", "PP35-cost-2", "PP35-cost-3", "PP35-freq-1"]
+    }
+  },
+
+  "total_claims_scored": 60,
+
+  "override_triggers": [
+    {
+      "override": "vendor-marketing-override",
+      "claim_count": 18,
+      "claim_ids": ["VC-MS-13", "VC-Geotab-1", "VC-Lytx-1", "VC-Webfleet-1", "VC-TransTRACK-1", "VC-KATSANA-1", "VC-India-Tata-1", "VC-VerizonConnect-1", "VC-Motive-1", "PP31-freq-2", "PP32-cost-4", "PP34-cost-2", "PP35-cost-1", "PP35-cost-2", "PP35-freq-1"],
+      "notes": "Major structural weakness: PP3.5 (fleet maintenance) is almost entirely sourced from FleetRabbit vendor blogs and Fleetio vendor report. PP3.1 frequency claims for project44 network size are from project44.com vendor pages."
+    },
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "claim_count": 6,
+      "claim_ids": ["VC-MS-1", "VC-MS-5", "VC-MS-14", "PP31-cost-4", "PP34-cost-3", "PP35-cost-3"],
+      "notes": "GMI Insights (global telematics $24.3B, video telematics $1.69B), GrowJo (Geotab revenue), ResearchAndMarkets (RTTVP $6.3B), Mordor Intelligence (Indonesia freight $54B), unspecified source via CMMS vendor blog ($4.2B AI fleet market)."
+    },
+    {
+      "override": "single-trade-source",
+      "claim_count": 4,
+      "claim_ids": ["PP33-freq-1", "PP33-cost-1", "PP32-freq-2", "PP35-cost-3"],
+      "notes": "PP3.3 30%-noncompliant ELD estimate and cost differential are from a single FreightWaves operator quote. PP3.2 insurer UBI adoption survey (Oct 2025) has no disclosed methodology. PP3.5 AI fleet market $4.2B from single vendor blog."
+    },
+    {
+      "override": "press-release-only",
+      "claim_count": 3,
+      "claim_ids": ["VC-MS-11", "PP32-freq-2", "PP32-cost-5"],
+      "notes": "PowerFleet financials sourced from press release only (10-K not cited). GlobeNewswire Oct 2025 survey (no methodology). Nirvana Series C (press release; TechCrunch partially elevates)."
+    },
+    {
+      "override": "factual-inaccuracy-flag",
+      "claim_count": 2,
+      "claim_ids": ["PP32-cost-1", "PP32-cost-2"],
+      "notes": "CRITICAL: Commercial auto combined ratio cited as 113; verified as ~108.5 (AM Best). Insurance per-mile cost cited as $0.102; ATRI summaries indicate 8.7 cents ($0.087/mile). Both require correction before downstream use."
+    },
+    {
+      "override": "factual-inaccuracy-flag-CVSA",
+      "claim_count": 1,
+      "claim_ids": ["PP33-freq-2"],
+      "notes": "CRITICAL: '58,382 falsification of RODS violations' — CVSA 2025 Roadcheck primary source shows 332 falsified logs OOS violations from 56,178 inspections (3-day event). The 58,382 figure is unverified from any primary government dataset and may represent a different metric or misread."
+    }
+  ],
+
+  "weak_claims_to_deep_research": [
+    {
+      "claim_id": "PP33-freq-1",
+      "claim_text": "30% of trucks estimated running non-compliant ELD systems",
+      "current_sources": ["freightwaves.com citing Joshua Kreyer, Silver Arrow Express Operating Manager"],
+      "current_score": "Low",
+      "issue": "Single industry-operator estimate via trade press; no regulatory dataset, GAO study, or enforcement analysis cited",
+      "suggested_action": "Search FMCSA enforcement data portal for annual ELD revocation counts, compliance investigation results, and any published noncompliance rate estimates from FMCSA, GAO, or Congressional testimony. Query: 'FMCSA ELD noncompliance rate enforcement statistics site:fmcsa.dot.gov OR site:gao.gov 2024 2025'",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP32-cost-1",
+      "claim_text": "Commercial auto liability combined ratio 113 (2024); $10B+ cumulative losses over 2023-2024 (AM Best)",
+      "current_sources": ["insurancejournal.com AM Best summary", "news.ambest.com"],
+      "current_score": "Medium",
+      "issue": "FACTUAL DISCREPANCY: Web search confirms combined ratio ~108.5 for overall commercial auto (AM Best), not 113 for the liability line specifically. The $10B cumulative is borderline ($5B 2023 + $4.9B 2024). The specific 'liability combined ratio 113' may refer to the liability sub-line vs. the overall segment — requires primary AM Best report to disambiguate",
+      "suggested_action": "Retrieve AM Best market segment report 'US Commercial Auto Insurance Segment Stuck in Reverse' directly. Query: 'AM Best commercial auto liability line combined ratio 2024 site:news.ambest.com OR site:ambest.com' — distinguish liability sub-line from overall commercial auto segment combined ratio",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP33-freq-2",
+      "claim_text": "58,382 falsification of RODS violations recorded across all FMCSA inspections in 2025 — second most-cited driver violation",
+      "current_sources": ["eld.kellerencompass.com (J.J. Keller compliance vendor blog)", "jjkellercompliancenetwork.com", "uscomplianceservices.org", "landline.media"],
+      "current_score": "Low",
+      "issue": "CRITICAL FACTUAL DISCREPANCY: CVSA 2025 Roadcheck (primary source cvsa.org) documents 332 falsified log OOS violations from 56,178 inspections. The '58,382' figure is unverified. It may be from full-year FMCSA inspection database (not the 3-day Roadcheck), but no primary FMCSA citation is given. Must be resolved before publication.",
+      "suggested_action": "Access FMCSA's Motor Carrier Safety Measurement System (SMS) or MCMIS database for full-year 2024/2025 driver violation counts by violation type. Query: 'FMCSA MCMIS driver violation statistics falsification records of duty status 2024 2025 site:ai.fmcsa.dot.gov OR site:fmcsa.dot.gov'. Alternatively access: https://ai.fmcsa.dot.gov/SMS/Industry/InspectionsByType.aspx",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP32-cost-2",
+      "claim_text": "Insurance premiums $0.102 per vehicle mile in 2024 (4.5% of $2.260/mile total); 36% per-mile increase over 8 years (ATRI 2025)",
+      "current_sources": ["truckinginfo.com ATRI summary", "truckingresearch.org"],
+      "current_score": "Medium",
+      "issue": "ATRI summaries in web search return 8.7 cents/mile ($0.087) insurance cost, not $0.102/mile. Discrepancy may be due to: different carrier size segments in ATRI report, or the $0.102 including cargo/liability combined. Must verify against primary ATRI report PDF.",
+      "suggested_action": "Retrieve primary ATRI 2025 Operational Costs of Trucking report. Direct URL: https://truckingresearch.org/2025/07/an-analysis-of-the-operational-costs-of-trucking-2025-update/ — access the PDF from that landing page and find the exact insurance per-mile line item for 2024. Clarify if $0.102 is auto liability only, cargo + liability combined, or a specific fleet-size segment.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP35-cost-1",
+      "claim_text": "Reactive maintenance downtime: $448–$760/vehicle/day; 8.7 days unplanned downtime/year; $2,000/vehicle savings from predictive maintenance",
+      "current_sources": ["fleetrabbit.com/blogs (vendor blog)", "fleetrabbit.com/case-study (vendor case study)"],
+      "current_score": "Low",
+      "issue": "PP3.5 fleet maintenance cost claims are sourced almost entirely from FleetRabbit (vendor) and Fleetio (vendor benchmark report). Both are auto-low-vendor. No independent third-party or audited source for downtime costs, unplanned maintenance rates, or predictive maintenance savings.",
+      "suggested_action": "Search for fleet maintenance cost benchmarks from ATA (American Trucking Associations), ATRI, TMC (Technology & Maintenance Council), or NACFE (North American Council for Freight Efficiency). Specific query: 'fleet unplanned maintenance cost per day truck downtime ATRI TMC NACFE 2024 2025 site:truckingresearch.org OR site:atri-online.org OR site:nacfe.org'. Also search: 'Decisiv fleet maintenance repair data commercial truck downtime 2024' as Decisiv holds the largest third-party repair-order dataset.",
+      "priority": "medium"
+    }
+  ],
+
+  "gate_decision_recommendation": "ship-with-flag",
+
+  "gate_reasoning": "Stage 3 has a structurally strong primary-filing core for vendor financials (Samsara 10-K, Motive S-1, Karooooo 6-K, EROAD NZX, Full Truck Alliance 20-F, NHTSA FARS, WHO, BPS Indonesia, FMCSA, ATRI, CVSA primary) that makes the audit trail on the most load-bearing claims (vendor revenues, regulatory context, road safety statistics) auditable and sound. However, three material issues block full 'ship-as-is': (1) Factual discrepancies: the combined ratio figure (113 vs. confirmed ~108.5) and the per-mile insurance cost ($0.102 vs. confirmed ~$0.087 in ATRI summaries) are cited as precise PP3.2 cost figures and must be resolved against the primary AM Best and ATRI reports before downstream use; (2) The 58,382 FMCSA falsification-violation count in PP3.3 is unverified against any primary government source and conflicts with CVSA's own published Roadcheck data — this figure anchors the 'second most-cited driver violation' claim in PP3.3 and needs primary FMCSA database verification; (3) PP3.5 (fleet maintenance) is almost entirely sourced from vendor marketing material (FleetRabbit blog, Fleetio benchmark report as vendor document) and scores Low across its cost and frequency claims. The top-5 deep-research targets address all three issues. The pain points framework and narrative analysis are analytically sound and well-structured; the source weaknesses are in specific quantitative claims, not the structural diagnosis."
+}

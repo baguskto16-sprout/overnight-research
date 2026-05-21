@@ -1,0 +1,122 @@
+{
+  "claim_id": "VC-36",
+  "original_claim": "ASEAN road freight market $119.43B (Mordor Intelligence, 2024 figure)",
+  "outcome": "refined",
+  "research_summary": "Extensive search across ADB, World Bank, ASEAN Secretariat, ITF/OECD, national statistics offices (BPS Indonesia, Thailand NESDB, Malaysia DOSM), and Tier-1 consulting firms found NO independent government or multilateral source that publishes an ASEAN road freight market revenue figure in USD. The ITF-OECD Southeast Asia Transport Outlook (2022, OECD Publishing No.103) measures freight only in tonne-kilometres, not monetary value. World Bank LPI 2023 covers performance indices, not market size. The $119.43B figure is a Mordor Intelligence proprietary model estimate; Research and Markets resells the identical figure. A separate bottom-up triangulation using independently modeled country-level figures (Mordor: Indonesia $53.68B at 44.95% share; Thailand $21.63B; Malaysia $8.60B; remainder $35.52B for Vietnam, Philippines, Singapore, others) yields an implied range of $115-$123B, which brackets the $119.43B estimate tightly. IMARC Group independently estimates the broader SEA logistics market at $223.6B (2025), with road freight as the dominant mode — consistent directionally. The claim year requires clarification: Mordor's base year is 2025, not 2024.",
+  "new_evidence": [
+    {
+      "finding": "ITF Southeast Asia Transport Outlook (2022) measures SEA road freight at 771 billion tonne-kilometres (2015 baseline), growing to 2.10-2.63 trillion tonne-km by 2050. Road freight = 7-9.4% of non-urban tonne-km but 45-60% of freight emissions. No USD revenue market size provided.",
+      "source": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/05/itf-southeast-asia-transport-outlook_2ff2e1b9/cce75f15-en.pdf",
+      "source_type": "primary",
+      "confidence": "H",
+      "note": "ITF is an OECD-integrated intergovernmental body. This is a Tier-1 source confirming road freight dominance by emissions/activity, but does not publish market revenue figures."
+    },
+    {
+      "finding": "World Bank Logistics Performance Index 2023 covers 139 countries including all ASEAN members. Singapore ranks 1st globally (4.3 LPI score); Malaysia 31st; Thailand 37th; Philippines 47th; Vietnam 50th; Indonesia 63rd. LPI measures logistics capability, not market size in USD.",
+      "source": "https://lpi.worldbank.org/sites/default/files/2023-04/LPI_2023_report_with_layout.pdf",
+      "source_type": "primary",
+      "confidence": "H",
+      "note": "Tier-1 World Bank source. Confirms ASEAN logistics market is large and growing, but does not provide road freight revenue market size."
+    },
+    {
+      "finding": "Mordor Intelligence confirms $119.43B base year is 2025 (not 2024 as referenced in Stage 1 files). Methodology is proprietary four-step model using GDP distribution, trade statistics, fleet data, and manufacturing output. Primary sources not disclosed. Projection: $160.11B by 2030 at 6.04% CAGR.",
+      "source": "https://www.mordorintelligence.com/industry-reports/asean-road-freight-transport-market",
+      "source_type": "tertiary",
+      "confidence": "M",
+      "note": "Tier-3 source. Base year corrected to 2025. Research and Markets resells identical data — not an independent cross-check."
+    },
+    {
+      "finding": "Krungsri Bank (Thailand) independent industry research: Road transport = ~80% of all domestic freight volume in Thailand (2022 data). Fleet: 1.2M trucks registered end-2023, 420K commercial. 2023 goods volume growth: +1.6%. Growth forecast 2024-2026: 2-3% CAGR. No USD revenue figure stated.",
+      "source": "https://www.krungsri.com/en/research/industry/industry-outlook/logistics/road-freight-transportation/io/road-freight-transportation-2024-2026",
+      "source_type": "secondary",
+      "confidence": "M",
+      "note": "Published by Krungsri Research (Bank of Ayudhya / MUFG subsidiary). Tier-2 secondary source. Corroborates market structure and road freight dominance; does not contradict Mordor sizing."
+    },
+    {
+      "finding": "IMARC Group independently estimates Southeast Asia logistics market at USD 223.6B in 2025 (CAGR 5.43% to $360B by 2034). Roadways is cited as dominant mode. If road freight is ~53% of total (consistent with Mordor's road/non-road split in broader ASEAN), implied road freight = ~$118-$120B — consistent with Mordor's $119.43B.",
+      "source": "https://www.imarcgroup.com/southeast-asia-logistics-market",
+      "source_type": "tertiary",
+      "confidence": "M",
+      "note": "IMARC is independently modeled from Mordor. The implied back-calculation from IMARC's broader logistics figure corroborates the $119B order of magnitude."
+    },
+    {
+      "finding": "Bottom-up country triangulation from separately modeled country estimates: Indonesia $53.68B (44.95% share per Mordor), Thailand $21.63B, Malaysia $8.60B, subtotal $83.91B. Implied Vietnam + Philippines + Singapore + others = $35.52B, consistent with Vietnam's high CAGR trajectory. Bottom-up range: $115-$123B brackets $119.43B.",
+      "source": "Computed from: https://www.mordorintelligence.com/industry-reports/indonesia-road-freight-transport-market + https://www.mordorintelligence.com/industry-reports/thailand-road-freight-transport-market + https://www.mordorintelligence.com/industry-reports/malaysia-road-freight-transport-market",
+      "source_type": "tertiary",
+      "confidence": "M",
+      "note": "Triangulation exercise. Country reports are separate Mordor models — not fully independent methodologies, but separate calibration points."
+    },
+    {
+      "finding": "BPS Indonesia Land Transportation Statistics 2023 (official) covers road length, vehicle counts, traffic accidents, freight tonnage volume (230.7M tons Jan-Aug 2023, +9.78% YoY), but does NOT publish monetary road freight market revenue in USD or IDR.",
+      "source": "https://www.bps.go.id/en/publication/2024/11/25/cdcf9b5e74dd2e9bb3458ee4/land-transportation-statistics-2023.html",
+      "source_type": "primary",
+      "confidence": "H",
+      "note": "Tier-1 official government source. Confirms road freight activity growth but no monetary market size."
+    },
+    {
+      "finding": "ASEAN Secretariat Statistical Yearbook 2023 contains transport and trade statistics including merchandise trade by mode of transport for 2021-2022. Does not appear to publish road freight market revenue in USD.",
+      "source": "https://asean.org/wp-content/uploads/2023/12/ASEAN-Statistical-Yearbook-2023.pdf",
+      "source_type": "primary",
+      "confidence": "M",
+      "note": "Tier-1 ASEAN official source. Transport chapter available but focuses on physical/tonnage indicators, not market revenue."
+    }
+  ],
+  "revised_claim": "ASEAN road freight market: estimated $115–$125B (base year 2025). The most frequently cited figure is $119.43B (Mordor Intelligence, 2025 base year — note original claim misstated as 2024). No government or multilateral source publishes a USD market size for ASEAN road freight revenue; all sizing relies on proprietary commercial models. Mordor's figure is internally consistent: bottom-up country triangulation (Indonesia ~$53.7B at 44.95% share, Thailand ~$21.6B, Malaysia ~$8.6B, plus Vietnam/Philippines/Singapore/others ~$35.5B) implies a $115–$123B range. IMARC Group's independently modeled broader SEA logistics market ($223.6B) implies ~$118-$120B road freight component at ~53% modal share. The $119B order of magnitude is plausible and consistent across multiple commercial estimates, but cannot be validated against a primary government or multilateral source. Treat as a well-supported commercial estimate with ±5% model uncertainty.",
+  "revised_citations": [
+    "https://www.mordorintelligence.com/industry-reports/asean-road-freight-transport-market",
+    "https://www.imarcgroup.com/southeast-asia-logistics-market",
+    "https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/05/itf-southeast-asia-transport-outlook_2ff2e1b9/cce75f15-en.pdf",
+    "https://lpi.worldbank.org/sites/default/files/2023-04/LPI_2023_report_with_layout.pdf",
+    "https://www.krungsri.com/en/research/industry/industry-outlook/logistics/road-freight-transportation/io/road-freight-transportation-2024-2026",
+    "https://www.bps.go.id/en/publication/2024/11/25/cdcf9b5e74dd2e9bb3458ee4/land-transportation-statistics-2023.html",
+    "https://asean.org/wp-content/uploads/2023/12/ASEAN-Statistical-Yearbook-2023.pdf"
+  ],
+  "still_assumed": true,
+  "assumption_note": "No Tier-1 primary source (government, multilateral, or development bank) publishes a USD road freight market revenue figure for ASEAN. The $119B figure remains a commercial model estimate. The base year is 2025, not 2024 as originally cited. The claim should be presented as 'estimated ~$115-$125B (2025, commercial estimates)' rather than a precise single figure.",
+  "year_correction": "Original claim cited '2024 figure' — Mordor Intelligence base year is 2025. At 6.04% CAGR, the implied 2024 figure would be approximately $112-$113B.",
+  "country_breakdown_if_available": {
+    "Indonesia": "$53.68B (44.95% share, Mordor Intelligence 2025 base, ~$51B in 2024)",
+    "Thailand": "$21.63B (Mordor Intelligence 2025 base, ~$20.4B in 2024)",
+    "Malaysia": "$8.60B (Mordor Intelligence 2025 base, ~$8.1B in 2024)",
+    "Vietnam": "Not explicitly stated; implied ~$14-$16B based on residual calculation and 6.40% CAGR trajectory (Mordor Intelligence)",
+    "Philippines": "Not found; implied ~$8-$10B",
+    "Singapore": "Minimal road freight market; logistics sector GDP ~SGD 43.5B ($33B USD) total (Statista/DOS)",
+    "Others_ASEAN": "Brunei, Cambodia, Laos, Myanmar combined implied ~$3-5B"
+  },
+  "confidence_spread": {
+    "low_estimate": "$112B (2024 back-calculated at 6.04% CAGR)",
+    "central_estimate": "$119B (Mordor Intelligence 2025 base, corroborated by IMARC back-calculation)",
+    "high_estimate": "$125B (upper bound of bottom-up triangulation range)",
+    "confidence_level": "Medium — commercially corroborated but no Tier-1 primary validation possible"
+  },
+  "searches_performed": [
+    "ASEAN road freight market size USD billion ADB Asian Development Bank 2023 2024",
+    "World Bank logistics performance index ASEAN road freight market size 2023",
+    "ASEAN transport strategic plan road freight market value billion 2024",
+    "ADB Asian Development Bank Southeast Asia logistics freight transport value GDP site:adb.org",
+    "ASEAN secretariat transport statistics freight tonnage value 2023 2024 site:asean.org",
+    "Indonesia BPS transportation statistics road freight 2023 value billion rupiah",
+    "McKinsey Bain Roland Berger Southeast Asia logistics freight market size 2023 2024 report",
+    "McKinsey Southeast Asia logistics freight market size $100 billion OR $120 billion OR $130 billion road 2023",
+    "ITF OECD Southeast Asia freight transport market value billion road 2022 2023",
+    "Statista Southeast Asia transportation logistics revenue market size 2023 2024 road freight",
+    "Indonesia Thailand Malaysia Vietnam Singapore road freight transport GDP contribution value added 2023 national statistics",
+    "Research and Markets ASEAN road freight market 2024 size competitors independent validation",
+    "ASEAN freight logistics market size 211 billion OR 200 billion OR 220 billion 2024 independent source",
+    "road freight ASEAN 119 OR 120 billion market size 2024 2025 cross validation secondary source",
+    "Thailand road freight market size 2023 2024 21 billion OR 22 billion billion USD NESDB government statistics",
+    "Vietnam Malaysia Singapore Philippines road freight transport market size billion 2024 government report",
+    "ASEAN road freight market size Technavio OR Grand View Research OR Allied Market Research billion 2024 2025",
+    "Indonesia road freight 53 billion OR 54 billion OR 55 billion 2024 2025 source data"
+  ],
+  "primary_sources_searched_with_null_result": [
+    "ADB Key Indicators Database (kidb.adb.org) — no ASEAN road freight USD market size",
+    "World Bank LPI 2023 full report (PDF fetched) — performance indices only, no market size",
+    "ITF Southeast Asia Transport Outlook 2022 (PDF fetched, 8.4MB) — tonne-km metrics only, no USD revenue",
+    "BPS Indonesia Land Transportation Statistics 2023 — physical metrics (tonnage, fleet), no revenue",
+    "ASEAN Statistical Yearbook 2023 (PDF attempted) — trade data by mode, no road freight revenue",
+    "Malaysia DOSM Economic Census 2023 — SSL error prevented access",
+    "Thailand NESDB Logistics Report 2024 — redirect loop prevented access",
+    "ADB Data Library transport value-added dataset — HTTP 403"
+  ]
+}

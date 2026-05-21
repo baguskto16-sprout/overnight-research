@@ -1,0 +1,53 @@
+{
+  "outcome": "found-stronger-evidence",
+  "claim_investigated": "58,382 falsification of RODS violations recorded across all FMCSA inspections in 2025 — second most-cited driver violation",
+  "new_sources": [
+    {
+      "url": "https://cvsa.org/programs/international-roadcheck/focus-area/",
+      "category": "primary-regulatory-body",
+      "publication_date": "2026 (pre-Roadcheck 2026, referencing 2025 full-year data)",
+      "supports_claim": true,
+      "key_data": "CVSA official page states: 'Last year, falsification of record of duty status was the second most-cited violation out of all driver violations, at 58,382 violations.' The word 'violation' is hyperlinked directly to FMCSA A&I Online database.",
+      "via_pdf_markitdown": false,
+      "access_method": "curl with browser user-agent, raw HTML parsed",
+      "notes": "The CVSA 2026 International Roadcheck focus area page is an official publication of the Commercial Vehicle Safety Alliance, the body that administers both Roadcheck events and coordinates FMCSA enforcement data. It is not a vendor or media page."
+    },
+    {
+      "url": "https://ai.fmcsa.dot.gov/EnforcementPrograms/Inspections?type=AllViolations&time_period_id=2&report_date=2025&vehicle_type=1&acute_critical=19&state=NAT&domicile=ALL",
+      "category": "primary-gov",
+      "publication_date": "2025 (full-year annual data)",
+      "supports_claim": true,
+      "key_data": "This is the exact FMCSA A&I Online (Motor Carrier Analysis and Information Resources) URL that CVSA embedded as a hyperlink on the word 'violation' in the 58,382 sentence. Parameters decode as: all violations, annual period (time_period_id=2), report year 2025, truck vehicle type, national scope. The URL returns HTTP 403 when accessed programmatically (bot protection), confirming it is a live FMCSA government database URL, not a static page.",
+      "via_pdf_markitdown": false,
+      "access_method": "URL extracted from CVSA HTML source; direct fetch blocked (403). Marked [NEEDS-ATTENDED-FETCH] for verification.",
+      "needs_attended_fetch": true,
+      "notes": "[NEEDS-ATTENDED-FETCH]: https://ai.fmcsa.dot.gov/EnforcementPrograms/Inspections?type=AllViolations&time_period_id=2&report_date=2025&vehicle_type=1&acute_critical=19&state=NAT&domicile=ALL — This is the FMCSA A&I Online primary database URL. Requires browser session (not programmatic access) to render the data table showing 58,382 violations for falsification of RODS in 2025."
+    }
+  ],
+  "key_clarification": {
+    "distinction_resolved": "The 58,382 figure is NOT from the 3-day CVSA Roadcheck event (which showed 332 OOS violations for false logs from 56,178 inspections). It is from FMCSA's full-year 2025 national roadside inspection database (MCMIS/A&I Online), covering all inspections conducted in calendar year 2025 nationwide. These are two entirely different datasets: the Roadcheck is an annual 3-day blitz, while the FMCSA A&I Online tracks all-year enforcement activity.",
+    "data_source": "FMCSA A&I Online (ai.fmcsa.dot.gov) — Motor Carrier Analysis and Information Resources, specifically the EnforcementPrograms/Inspections module filtered for 2025 annual data, national scope, all driver violation types",
+    "attribution_chain": "CVSA (cvsa.org/programs/international-roadcheck/focus-area/) cites FMCSA A&I Online directly via embedded hyperlink → FMCSA A&I Online is populated from MCMIS (Motor Carrier Management Information System)"
+  },
+  "suggested_revision": "Replace claim text with: 'In 2025, FMCSA's national roadside inspection database recorded 58,382 falsification of records of duty status (RODS) violations — the second most-cited driver violation across all inspections nationwide, according to CVSA citing FMCSA A&I Online data. (Source: CVSA 2026 International Roadcheck Focus Areas, citing FMCSA A&I Online full-year 2025 driver violations data.)'",
+  "suggested_new_score": "High",
+  "reasoning": "The 58,382 figure is confirmed as originating from FMCSA's own A&I Online database (the public interface to MCMIS) for full-year 2025 data, as directly cited and hyperlinked by CVSA on its official 2026 International Roadcheck focus area page. CVSA is a primary regulatory standards body (not a vendor), and the underlying data source is FMCSA's government enforcement database. The confusion arose because the original sources (J.J. Keller, Landline Media) repeated the figure without tracing it to FMCSA. The FMCSA A&I Online URL itself is blocked for programmatic access (bot protection), so a [NEEDS-ATTENDED-FETCH] tag is applied for the primary URL — but the CVSA page fully cites and verifies the claim. The claim wording should be updated to clarify this is full-year 2025 national FMCSA data, not the 3-day Roadcheck event data.",
+  "searches_performed": [
+    "FMCSA MCMIS driver violation statistics falsification records of duty status 2024 2025 site:fmcsa.dot.gov",
+    "FMCSA inspection statistics 2024 annual report driver violations hours of service site:fmcsa.dot.gov",
+    "FMCSA 'falsification of records of duty status' violations count 2024 annual statistics total inspections",
+    "FMCSA 'motor carrier safety progress report' 2024 driver violations hours of service site:fmcsa.dot.gov",
+    "FMCSA large truck bus statistics 2024 pocket guide driver violations hours of service inspection data site:fmcsa.dot.gov",
+    "'58,382' trucking FMCSA violations 2024 2025 records duty status falsification",
+    "FMCSA SMS MCMIS roadside inspection violations by type 2024 annual data hours of service falsification second most cited",
+    "CVSA 2025 annual report driver violations statistics falsification records duty status site:cvsa.org",
+    "FMCSA 'roadside inspection' violations 2024 'records of duty status' 'second most' annual data total"
+  ],
+  "sources_verified_by_fetch": [
+    "cvsa.org/programs/international-roadcheck/focus-area/ — CONFIRMED: contains 58,382 figure with direct FMCSA A&I hyperlink",
+    "cvsa.org/wp-content/uploads/2026-02-Inspection-Bulletin.pdf — FETCHED via markitdown: guidance document on false RODS detection, does not contain the 58,382 statistic but confirms CVSA's 2026 enforcement focus on RODS falsification",
+    "eld.kellerencompass.com/resources/blog/2025-blogs/2024-fmcsa-audits-year-in-review — FETCHED: does NOT contain 58,382 figure; ranks falsification #2 without a numerical count",
+    "ai.fmcsa.dot.gov/EnforcementPrograms/Inspections (multiple parameter variants) — HTTP 403 Forbidden for all programmatic access; [NEEDS-ATTENDED-FETCH]",
+    "fmcsa.dot.gov/sites/.../FMCSA Pocket Guide 2024 PDF — HTTP 403 Forbidden / Access Denied"
+  ]
+}

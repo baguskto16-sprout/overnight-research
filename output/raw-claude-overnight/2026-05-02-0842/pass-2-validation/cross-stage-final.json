@@ -1,0 +1,456 @@
+{
+  "context": "final",
+  "run_id": "2026-05-02-0842",
+  "subject": "Solid-fuel package boilers in Southeast Asia — full 5-stage value chain",
+  "validator_date": "2026-05-03",
+  "stages_covered": ["Stage 1: Fuel Suppliers", "Stage 2: Boiler OEMs", "Stage 3: EPC/Installation & Commissioning", "Stage 4: Industrial End Users / Operators", "Stage 5: Aftermarket Service & Compliance Providers"],
+
+  "per_stage_summary": [
+    {
+      "stage": 1,
+      "stage_name": "Fuel Suppliers",
+      "total_claims": 89,
+      "pre_dr": {
+        "high": 7,
+        "medium": 15,
+        "low": 67,
+        "low_pct": "75.3%",
+        "gate": "FAIL"
+      },
+      "dr_calls_executed": 5,
+      "dr_anchors_lifted": [
+        "VC-1.7 PKS supply volume (Low→Medium): bottom-up from GAPKI + MPOB + BPS replaces single Verified Market Reports citation",
+        "VC-1.13 Thailand industrial coal (Low→High): EPPO primary-gov table data replaces Statista secondary",
+        "PP1.1-6 Japan METI FIT halt (Low→High): METI official press release 21 March 2025 confirms discontinuation for ≥10 MW",
+        "PP1.1-11 Japan FIT ¥24/kWh rate (Low→High): METI FY2025 press release + USDA GAIN + Argus replaces secondary/vendor sources",
+        "PP1.3-3 biomass moisture-efficiency (Low→Medium): NREL TP-6A20-52688 + NREL TP-570-33811 + IEA Bioenergy Task 32 replaces vendor blog"
+      ],
+      "post_dr_estimated": {
+        "high": 10,
+        "medium": 24,
+        "low": 55,
+        "low_pct": "~61.8%",
+        "gate": "SHIP_WITH_FLAG"
+      },
+      "unique_sources_cited_pre_dedup": 60,
+      "notes": "Largest improvement from METI primary sourcing which anchors entire Japan export-pull narrative. Coal price series (VC-2.1 through VC-2.5) remains single-source Low because IEA is the only citation even post-DR. PKS composition data (VC-3.3) has no citation at all — unfixed."
+    },
+    {
+      "stage": 2,
+      "stage_name": "Boiler OEMs",
+      "total_claims": 84,
+      "pre_dr": {
+        "high": 4,
+        "medium": 15,
+        "low": 65,
+        "low_pct": "77.4%",
+        "gate": "FAIL"
+      },
+      "dr_calls_executed": 3,
+      "dr_anchors_lifted": [
+        "PP2.1-1 China vs India price gap (Low→Medium): WITS/UN Comtrade HS 840211+840290 unit values replace vendor blog; 15–35% gap confirmed on FOB basis",
+        "PP2.2-3 palm oil mill outage cost (Low→Medium-High): MPOB 2023 OER + MPOC CPO price + Vilnius Tech peer-reviewed study replace single beta.co.id blog",
+        "PP2.4-3 spare parts lead time (Low→Medium-Low): York Shipley independent refractory data + Nationwide Boiler supply-chain corroboration added; fabrication-only vs customer-experienced distinction introduced"
+      ],
+      "post_dr_estimated": {
+        "high": 5,
+        "medium": 22,
+        "low": 57,
+        "low_pct": "~67.9%",
+        "gate": "SHIP_WITH_FLAG"
+      },
+      "unique_sources_cited_pre_dedup": 48,
+      "notes": "coalbiomassboiler.com remains sole source for 10+ distinct claims including all biomass O&M cost percentages (PP2.2-6, PP2.2-11) and APC cost breakdowns. bainbridge.com misidentified as Bain & Company (suspect source identity flag — no correction applied in DR). No industry association (IBMA, GAPKI, MPOB) cited. Volza.com paywalled data access issue not resolved. 12 ASSUMED tags all remain Low."
+    },
+    {
+      "stage": 3,
+      "stage_name": "EPC / Installation & Commissioning",
+      "total_claims": 93,
+      "pre_dr": {
+        "high": 2,
+        "medium": 22,
+        "low": 69,
+        "low_pct": "74.2%",
+        "gate": "FAIL"
+      },
+      "dr_calls_executed": 2,
+      "dr_anchors_lifted": [
+        "PP3.1-cost-1 + PP3.2-cost-1 EPC LD rate (Low→Medium): FIDIC Sub-Clause 8.7 clarification + CIDB SC-2000 + Perpres 16/2018 + SBAustin/ACC industry sources. CRITICAL CORRECTION: 0.5%/week is a private-sector market convention, NOT a FIDIC or statutory standard. Indonesian public-sector projects use 0.1%/day (~0.7%/week) capped at ~5% — materially different from private-sector convention used in pain-point cost arithmetic.",
+        "PP3.3-cost-4 Indonesia construction certification rate (Low→Medium): Ditjen Bina Konstruksi PUPR Dec 2024 LPJK registry data confirms 4.86% (426,071/~8.76M workers), not 7.4%. Original CIDB attribution was incorrect — CIDB is Malaysian, LPJK is Indonesian. Critical scope caveat added: SKK certification does not cover pressure-part boiler welders under Kemnaker K3 Pesawat Uap dan Bejana Tekan framework."
+      ],
+      "post_dr_estimated": {
+        "high": 2,
+        "medium": 26,
+        "low": 65,
+        "low_pct": "~69.9%",
+        "gate": "SHIP_WITH_FLAG"
+      },
+      "unique_sources_cited_pre_dedup": 42,
+      "notes": "This stage remains the weakest post-DR — only 2 claims elevated (vs 5 in Stage 1). 14 ASSUMED tags remain. 16 company-profile claims still single-source vendor self-descriptions. All market-sizing claims remain Low. LD rate is now correctly characterized as private-sector convention, not a regulatory standard — this is an important correction. Indonesia construction certification figure corrected down from 7.4% to 4.86%."
+    },
+    {
+      "stage": 4,
+      "stage_name": "Industrial End Users / Operators",
+      "total_claims": 102,
+      "pre_dr": {
+        "high": 10,
+        "medium": 27,
+        "low": 65,
+        "low_pct": "63.7%",
+        "gate": "SHIP_WITH_FLAG"
+      },
+      "dr_calls_executed": 2,
+      "dr_anchors_lifted": [
+        "VC-6 / PP4.1-cost-1 lifecycle cost breakdown (Low→Medium): US DOE BestPractices Steam + UNIDO Industrial Steam Systems 2018 + IRENA Biomass for Power Generation 2012 replace coalbiomassboiler.com; critical corrections: fuel share for self-generated biomass operators (palm oil, sugar) collapses to 5–20%, not 60–70%; emissions compliance 2–5% not 10–25%; ash disposal 1–4% not 3–6%; US DOE confirms up to 90% fuel share for purchased-fuel operators.",
+        "MS-5 Indonesia sugar mills (Low→Medium): CONTRADICTED — correct figure is 59 mills (Kemenperin 2023), not 69 (zozenboiler.com). Discrepancy: ~11 refining factories (no bagasse-fired boilers) were double-counted with the 59 active pabrik gula. Bottom-up install base estimate must be revised downward."
+      ],
+      "post_dr_estimated": {
+        "high": 11,
+        "medium": 32,
+        "low": 59,
+        "low_pct": "~57.8%",
+        "gate": "SHIP_WITH_FLAG"
+      },
+      "unique_sources_cited_pre_dedup": 51,
+      "notes": "Stage 4 enters the final compilation as the best-evidenced stage: 11 High-confidence claims including the regulatory emission framework (primary-ministry + primary-gov), Thailand OCSB sugar production statistics, Malaysia MPOB 446 mills, EFB moisture characteristics (two primary-academic), and ILO inspector ratio. PP4.5 water treatment is the corpus's strongest novel finding — three independent primary-academic sources from different Malaysian institutions. 14 ASSUMED tags remain, all Low. Stage 4's value-chain text still shows 69 sugar mills — refinement not yet merged into the artifact."
+    },
+    {
+      "stage": 5,
+      "stage_name": "Aftermarket Service & Compliance Providers",
+      "total_claims": 95,
+      "pre_dr": {
+        "high": 7,
+        "medium": 22,
+        "low": 66,
+        "low_pct": "69.5%",
+        "gate": "SHIP_WITH_FLAG"
+      },
+      "dr_calls_executed": 2,
+      "dr_anchors_lifted": [
+        "PP5.2-cost-anchor emissions retrofit cost (Low→Medium): US EPA Air Pollution Control Cost Manual Section 6 + Applus+ CEMS Primer 2024 + Clean Air Asia CEMS Policy Brief 2023 replace coalbiomassboiler.com. Three corrections applied: baghouse $100K–$300K (not $100K–$500K) for 3–5 t/h; FGD $300K–$1.5M+ is NOT standard for sub-25 t/h SEA package boilers; CEMS $120K–$350K full system (original range $40K–$120K was opacity-only, understated by ~50% for multi-gas).",
+        "PP5.4-lead-time-anchor spare parts (Low→Low-to-Medium): vendor blog uncontradicted but uncorroborated by primary source. Critical correction: original 6–12 week range was fabrication time only. Customer-experienced SEA lead time adds 4–8 weeks ocean freight + customs = 10–20 weeks tube bundles, 12–22 weeks shell parts. Downtime cost revised upward to $50K–$170K/day at 2024 CPO ($939/t basis)."
+      ],
+      "post_dr_estimated": {
+        "high": 8,
+        "medium": 28,
+        "low": 59,
+        "low_pct": "~62.1%",
+        "gate": "SHIP_WITH_FLAG"
+      },
+      "unique_sources_cited_pre_dedup": 61,
+      "notes": "PP5.1 inspector ratio (ILO + Kemnaker OSH Profile 2022) is a High-quality anchor. PP5.5 Malaysia SSI 2025 is Medium (three secondary-trade from different law firms / HSE consultants) — not High because DOSH official gazette not directly cited. PwC 2017 engineer ratio is 9 years stale, Low per outdated override. 15 ASSUMED tags remain. beta.co.id / Lautan Air downtime figure propagates through PP5.1, PP5.3, PP5.4 — single vendor with commercial interest."
+    }
+  ],
+
+  "corpus_aggregate": {
+    "total_claims_across_5_stages": 463,
+    "pre_dr_by_confidence": {
+      "high": 30,
+      "medium": 101,
+      "low": 332,
+      "low_pct": "71.7%",
+      "gate_if_applied_pre_dr": "rerun_recommended"
+    },
+    "post_dr_by_confidence_estimated": {
+      "high": 36,
+      "medium": 132,
+      "low": 295,
+      "low_pct": "63.7%",
+      "gate": "ship_with_flag",
+      "methodology_note": "Post-DR estimates derived from per-stage refinement files. Stage 1: -12 net Low. Stage 2: -8 net Low. Stage 3: -4 net Low. Stage 4: -6 net Low. Stage 5: -7 net Low. Totals are estimative — individual downstream claims that inherited improved anchor sources are counted once at the DR-lifted level; no claim is double-counted."
+    },
+    "gate_logic_applied": {
+      "threshold_ship_clean": "≤30% Low",
+      "threshold_ship_with_flag": "30–70% Low",
+      "threshold_rerun": ">70% Low",
+      "post_dr_result": "63.7% Low → SHIP_WITH_FLAG band",
+      "pre_dr_result": "71.7% Low → just above rerun threshold"
+    }
+  },
+
+  "dr_efficiency": {
+    "budget_per_stage": 5,
+    "total_budget": 25,
+    "total_dr_calls_executed": 13,
+    "utilization_pct": "52%",
+    "anchor_claims_lifted": 14,
+    "estimated_corpus_low_pct_reduction": "8.0 percentage points (71.7% → 63.7%)",
+    "highest_leverage_dr": "Stage 1 / PP1.1-6 + PP1.1-11 (METI primary sourcing lifted 2 Low anchors that underpin entire Japan export-pull narrative across Stages 1 and implicitly Stage 2)",
+    "lowest_leverage_dr": "Stage 5 / PP5.4 spare parts (vendor blog uncontradicted but uncorroborated — confidence moved only to Low-to-Medium, not full Medium)"
+  },
+
+  "cross_stage_source_overlap": {
+    "methodology": "Sources cited in multiple stages should be counted only once toward total independent source count. The following sources appear in 2+ stages:",
+    "multi_stage_sources": [
+      {
+        "domain": "coalbiomassboiler.com",
+        "stages_citing": [1, 2, 3, 4, 5],
+        "citation_count_total": "~40+ across all stages (8 confirmed in value-chain files alone)",
+        "category": "secondary_vendor",
+        "rule": "Single vendor blog domain — ALL citations across ALL stages count as ONE source. Automatic Low override for any claim where it is the sole or primary quantitative source, regardless of how many URLs from this domain are cited across the corpus.",
+        "corpus_impact": "HIGH — this single domain is the primary or sole quantitative source for operating cost percentages (Stage 4 VC-6), emission control capex (Stages 2, 3, 5), spare parts lead times (Stages 2, 5), and APC equipment costs. The DR has partially displaced it in Stage 5 PP5.2 and Stage 4 VC-6; it remains the sole source in many Stage 2, 3 claims."
+      },
+      {
+        "domain": "beta.co.id / lautanairindonesia.com",
+        "stages_citing": [4, 5],
+        "citation_count_total": "~12 across Stages 4 and 5",
+        "category": "secondary_vendor",
+        "rule": "Same publisher family (Lautan Air Indonesia content properties) = 1 source across both domains. The RM 228,000–630,000/hr downtime figure citing this source propagates across PP4.2, PP4.5, PP5.1, PP5.3, PP5.4 — all traceable to a single vendor marketing blog from the company that sells the water treatment solution. Commercial interest conflict.",
+        "corpus_impact": "HIGH — sole quantitative anchor for the downtime cost claim that is the primary severity argument in 3–4 pain points across 2 stages"
+      },
+      {
+        "domain": "iea.org",
+        "stages_citing": [1, 4],
+        "citation_count_total": "6 across Stages 1 and 4",
+        "category": "primary_multilateral",
+        "rule": "Legitimate multi-use of a single primary source for different topics. Coal Mid-Year Update (Stage 1 price series, Stage 4 fuel cost), SEA Energy Outlook 2024 (Stage 4 industrial energy share). These are separate IEA publications covering distinct topics — legitimate to count as 2 IEA citations if different report titles, but counts as one 'primary-multilateral IEA' independent source for diversity calculation.",
+        "corpus_impact": "Benign — IEA is high quality; the issue is that Stage 1 Newcastle price series has IEA as the only citation for 5 separate datapoints (VC-2.1 through VC-2.5), all of which should be cross-validated against a commodity data service."
+      },
+      {
+        "domain": "mpob.gov.my / bepi.mpob.gov.my / jopr.mpob.gov.my",
+        "stages_citing": [1, 2, 4],
+        "citation_count_total": "Multiple across stages",
+        "category": "primary_association",
+        "rule": "MPOB subdomains are the same publisher family. However they are cited for different substantive topics: Stage 2 DR for OER/mill throughput (bepi.mpob.gov.my), Stage 4 for mill count and water quality studies (jopr.mpob.gov.my for tube failure study). Count as 1 primary-association source for MPOB data.",
+        "corpus_impact": "Benign — MPOB is appropriate primary source for Malaysian palm oil industry statistics; multiple sub-publications from same institution on different topics is legitimate"
+      },
+      {
+        "domain": "grandviewresearch.com",
+        "stages_citing": [1, 3, 4],
+        "citation_count_total": "3+ across stages",
+        "category": "secondary_market_research",
+        "rule": "Same paid market research publisher family. All citations to grandviewresearch.com across all stages count as ONE secondary_market_research source for independence purposes.",
+        "corpus_impact": "MEDIUM — market sizing in Stages 1, 3, and 4 that appears to have multi-source support actually traces to the same firm"
+      },
+      {
+        "domain": "trendeconomy.com",
+        "stages_citing": [2, 5],
+        "citation_count_total": "7+ across stages",
+        "category": "secondary_trade",
+        "rule": "Trendeconomy.com is a UN Comtrade data re-publisher. All citations to trendeconomy.com should use comtrade.un.org directly for Medium+ confidence; trendeconomy.com = 1 secondary source regardless of number of URLs. Stage 2 DR elevated one Comtrade citation by going directly to WITS — the remaining trendeconomy.com citations remain single-source Low.",
+        "corpus_impact": "LOW-MEDIUM — HS 8402 import/export flows across Stages 2 and 5 appeared multi-cited but were all from the same aggregator"
+      },
+      {
+        "domain": "enviliance.com",
+        "stages_citing": [2, 3, 4, 5],
+        "citation_count_total": "Multiple",
+        "category": "secondary_trade",
+        "rule": "Regulatory intelligence aggregator. All enviliance.com citations = 1 secondary_trade source. Appears across 4 stages for Thailand, Malaysia, Indonesia regulatory summaries.",
+        "corpus_impact": "LOW — it is always paired with other sources for the regulatory claims it supports; never sole source in a High-scoring claim"
+      },
+      {
+        "domain": "peraturan.bpk.go.id",
+        "stages_citing": [2, 3],
+        "citation_count_total": "3",
+        "category": "primary_gov",
+        "rule": "Indonesia BPK official regulations portal — legitimate primary_gov source used for different regulations in different stages. Counts as 1 primary_gov source but the citations are to different regulatory instruments (Indonesia PerMen LHK, Permenaker) so each claim is independently evidenced.",
+        "corpus_impact": "Benign"
+      }
+    ],
+    "deduplicated_corpus_totals": {
+      "total_unique_urls_cited_across_corpus": "~220–240 (pre-deduplication across 5 stages; sum of per-stage unique sources: 60+48+42+51+61 = 262, minus cross-stage overlaps estimated 30–40 duplicates)",
+      "total_unique_independent_sources_by_publisher_family": "~180–200",
+      "citation_diversity_target_met": "YES — target was 40–60 unique URLs minimum; corpus far exceeds this, though quality distribution is heavily skewed toward secondary sources",
+      "primary_source_count_estimated": "~40–50 unique primary-category sources across corpus (primary-gov, primary-multilateral, primary-ministry, primary-association, primary-academic, primary-standards, primary-research-firm)",
+      "secondary_source_count_estimated": "~140–160 unique secondary sources",
+      "primary_pct": "~22–25% of total unique sources are primary-category — well below target; corpus relies structurally on secondary sources"
+    }
+  },
+
+  "cross_stage_inconsistencies": [
+    {
+      "inconsistency_id": "CSI-1",
+      "type": "UNSYNCED_CORRECTION",
+      "severity": "HIGH",
+      "description": "Indonesia sugar mill count — refinement not merged into artifact",
+      "detail": "Stage 4 value-chain.md (line 52) still states '~69 sugar mills' and the bottom-up install-base calculation (line 68) uses '~69 sugar mills × 3–5 boilers'. Stage 4 refinements file documents the correct figure as 59 active pabrik gula (Kemenperin 2023), with the 69 figure arising from double-counting 11 refining factories that do not use bagasse-fired boilers. The refinement was NOT merged into the stage-4-value-chain.md artifact. Stage 5 inherits the uncorrected ASSUMED-1 figure of 8,000–13,000 units from Stage 4, which was built on the 69-mill figure. The corrected figure with 59 mills shifts the Indonesia sugar contribution from 69×3–5=207–345 boilers to 59×1.3=77 boilers (using Stage 4 refinement's recommended 1.3 boiler/mill multiplier). This materially affects total install-base estimates downstream.",
+      "affected_claims": ["MS-5 (Stage 4)", "ASSUMED-1 boiler count (Stage 4)", "VC5-mkt-8 (Stage 5)", "PP5.1 WH2 unserved market calculation (Stage 5)"],
+      "action_required": "Merge Stage 4 refinement into stage-4-value-chain.md. Regenerate ASSUMED-1 bottom-up estimate using 59 sugar mills. Propagate correction to Stage 5 install-base and O&M market size estimates."
+    },
+    {
+      "inconsistency_id": "CSI-2",
+      "type": "UNSYNCED_CORRECTION",
+      "severity": "MEDIUM",
+      "description": "Indonesia construction certification rate — 7.4% figure persists in Stage 4 artifacts after Stage 3 DR corrected it to 4.86%",
+      "detail": "Stage 3 DR (refinements file) establishes the correct December 2024 LPJK figure as 4.86% (426,071 / ~8.76M workers), not 7.4%. Additionally clarifies that the original 7.4% was incorrectly attributed to 'CIDB' — CIDB is Malaysian, not Indonesian; the Indonesian body is LPJK. Stage 4 value-chain.md (footnote 47) still cites 'only 7.4% construction workers certified' using the World Bank 2018 report (which cites PUPR Director General saying ~7% at that time). Stage 5 also cites 7.4% (VC5-prelim-PP6-1) from VCM-PP6-operator-scarcity. These are distinct data points (Stage 3 DR uses 2024 LPJK data; Stage 4 uses World Bank 2018 document) but both coexist in the corpus without cross-reference, creating potential confusion. Stage 5 PwC 2017 engineer ratio is also 9 years stale and not cross-validated — separate but adjacent issue.",
+      "affected_claims": ["PP3.3-cost-4 (Stage 3, corrected)", "VCM-PP6-operator-scarcity (Stage 4)", "VCM-PP6-operator-scarcity (Stage 5)"],
+      "action_required": "Standardize to the most recent figure (4.86% per LPJK Dec 2024) across all stages. Note World Bank 2018 ~7% as historical baseline for trend context. Distinguish SKK certification from Kemnaker K3 boiler welder certification throughout."
+    },
+    {
+      "inconsistency_id": "CSI-3",
+      "type": "LIFECYCLE_COST_BREAKDOWN_MIGRATION",
+      "severity": "MEDIUM",
+      "description": "Lifecycle cost breakdown corrected in Stage 4 but earlier stages still carry the uncorrected vendor-blog version",
+      "detail": "Stage 4 VC-6 refinement corrected the lifecycle cost breakdown (formerly: fuel 60–70%, maintenance 10–15%, emissions 5–8% rising to 10–25%) using US DOE + UNIDO + IRENA sources. Corrections: fuel share for self-generated biomass operators collapses to 5–20% (not 60–70%); emissions compliance 2–5% (not 10–25% by 2035); ash disposal 1–4% (near zero for biomass mills). Stage 3 value-chain.md cites VC-1 (coal/biomass package boiler capex) with associated cost structure from coalbiomassboiler.com, and Stage 2 PP2.2-6 / PP2.2-11 still uses coalbiomassboiler.com for 'O&M 5–8% of capital cost per year' figures. These are technically different claims (O&M vs lifecycle breakdown) but share the same vendor-blog anchor that Stage 4 DR has now displaced with primary sources for the total lifecycle picture.",
+      "affected_claims": ["VC-6 (Stage 4, corrected)", "PP2.2-6, PP2.2-11 (Stage 2)", "VC-1 (Stage 3)"],
+      "action_required": "Stage 4 correction should be used as cross-stage reference to upgrade Stage 2 O&M percentage claims. Not a blocking inconsistency but reduces corpus consistency for readers comparing stages."
+    },
+    {
+      "inconsistency_id": "CSI-4",
+      "type": "EPC_LD_RATE_CHARACTERIZATION",
+      "severity": "LOW",
+      "description": "EPC LD rate correctly refined in Stage 3; does not propagate to other stages (no cross-stage risk)",
+      "detail": "Stage 3 refinements correctly establish that 0.5%/week LD rate is a private-sector EPC market convention, not a FIDIC or statutory standard, and that Indonesian public-sector projects use a different regime (0.1%/day ≈ 0.7%/week, capped at ~5%). No other stage references EPC LD rates — this correction is self-contained within Stage 3. No cross-stage inconsistency, but the correction is material for Stage 3 itself: all PP3.1 and PP3.2 cost figures should disclose 'typical private EPC market convention' not 'industry standard rate'.",
+      "affected_claims": ["PP3.1-cost-1, PP3.2-cost-1, and all derived LD cost figures in Stage 3 (corrected in refinements)"],
+      "action_required": "Ensure synthesis document uses the corrected characterization from Stage 3 refinements file, not the original blog-sourced absolute claim."
+    },
+    {
+      "inconsistency_id": "CSI-5",
+      "type": "WATER_TREATMENT_FRAMING_CONSISTENCY",
+      "severity": "LOW",
+      "description": "PP4.5 (Stage 4) and PP5.3 (Stage 5) cover the same water treatment gap from different vantage points — framing is consistent but cite different cost quantification approaches",
+      "detail": "PP4.5 (Stage 4) frames the water treatment gap from the end-user perspective (efficiency loss, fuel overconsumption). PP5.3 (Stage 5) frames it from the service provider perspective (uneconomic minimum viable program cost, transactional vs. managed service). These are complementary and intentionally different. However the cost figures quoted differ slightly: PP4.5 uses aquaphoenix.com (1 mm scale = 10–15% efficiency loss) and beta.co.id (1/8 inch = 20–25%), while PP5.3 uses the same beta.co.id figure plus an additional study (0.3 mm scale = 6.25pp thermal efficiency reduction). The National Board of Boiler and Pressure Vessel Inspectors (nationalboard.org) independently confirms the 20–25% figure (cited in Stage 5 VC5-act3-1) — this provides genuine cross-validation of the 1/8 inch figure. The framing is consistent and the cost quantification is aligned between stages.",
+      "affected_claims": ["PP4.5 (Stage 4)", "PP5.3 (Stage 5)", "VC5-act3-1 (Stage 5)"],
+      "action_required": "No inconsistency. Recommend synthesis document explicitly notes that the National Board citation in Stage 5 independently validates the efficiency loss figure used in Stage 4 PP4.5 — this cross-validation is currently not surfaced in either artifact."
+    },
+    {
+      "inconsistency_id": "CSI-6",
+      "type": "INSTALL_BASE_ESTIMATE_PROPAGATION",
+      "severity": "MEDIUM",
+      "description": "SEA-5 install base estimate of 8,000–13,000 units propagates from Stage 4 to Stage 5 without update for Indonesia sugar mill correction",
+      "detail": "Stage 4 ASSUMED-1 bottom-up estimate of 8,000–13,000 units was built using 69 Indonesia sugar mills (now corrected to 59 active mills with a ~1.3 boiler/mill multiplier, yielding ~77 boilers vs. original high end of 69×5=345). Stage 5 explicitly cites Stage 4 ASSUMED-1 for the install-base number in market size tables (VC5-mkt-8) and uses it to derive the $40M–$520M/year O&M market size (VC5-mkt-9 / ASSUMED-3). Given the revision, the Indonesia sugar contribution shrinks by roughly 130–270 boilers, making the total install base range slightly lower. The effect on the $40M–$520M range is proportionally small given the wide uncertainty bands. However the 69 figure is factually wrong in the un-merged artifact.",
+      "affected_claims": ["ASSUMED-1 (Stage 4)", "VC5-mkt-8, VC5-mkt-9 (Stage 5)", "PP5.1 unserved market calculation (Stage 5)"],
+      "action_required": "Re-run ASSUMED-1 with 59 mills before synthesis. Propagate to Stage 5 market-size tables."
+    }
+  ],
+
+  "residual_assumed_tags": {
+    "total_assumed_tag_occurrences_in_all_md_files": "211 occurrences across 13 files (includes refinements files and value-chain + pain-points artifacts)",
+    "estimated_unique_assumed_claims": "~65–75 distinct ASSUMED-N tagged claims across all 5 stages (Stage 1: ~6, Stage 2: ~18, Stage 3: ~14, Stage 4: ~14, Stage 5: ~15)",
+    "per_rubric_impact": "All ASSUMED-N tagged claims score Low per override rules regardless of other source support. These 65–75 claims constitute approximately 14–16% of the total corpus and represent the irreducible floor of unsupported estimates.",
+    "highest_risk_assumed_claims": [
+      "ASSUMED-1 (Stage 4 / Stage 5): 8,000–13,000 SEA-5 solid-fuel industrial boiler install base — derived from mill count multipliers that are partly uncorrected (see CSI-1); affects TAM calculation",
+      "ASSUMED-2 (Stage 2): fewer than 20% of SEA procurement bids evaluate TCO — cited transitively in Stage 2 PP2.4-RC4; no field evidence",
+      "ASSUMED-3 (Stage 5): $40M–$520M/year O&M aftermarket derived from ASSUMED-1 × ASSUMED per-unit revenue — compound assumed; error bars extremely wide"
+    ]
+  },
+
+  "novel_findings": [
+    {
+      "finding": "PP4.5 — Water treatment as systemic efficiency gap in SEA palm oil mill boilers",
+      "basis": "Three independent primary-academic sources from different Malaysian institutions (UTM Perak 37-mill survey / 1,427 DOSH data points, USM Perak BFW study, AIP Conference Proceedings 2023). Multiple feedwater parameters — pH, hardness, silica, iron — routinely fall outside ASME BPV Section I guidelines across Malaysian palm oil mill population. Scale-induced efficiency losses 10–28% documented. No prior coverage in original pain-point template.",
+      "confidence": "Medium-High (academic anchor strong; cost quantification via beta.co.id/Lautan Air vendor blog remains the weakest link)",
+      "stage": 4
+    },
+    {
+      "finding": "PP5.5 — Malaysia SSI 2025 compliance cliff for small operators",
+      "basis": "OSH (Plant Requiring Certificate of Fitness) Regulations 2024 / SSI 2025 scheme effective January 21, 2025. Facilities with risk-based internal inspection teams can extend CF from 15 months to up to 60 months. Small operators without such teams are locked into the annual certification cycle, creating a regulatory bifurcation: large operators reduce compliance burden; small operators face proportionally higher fixed compliance costs. Three independent secondary-trade sources (Skrine law firm, Lexology, Advanced HSE Solutions) confirm.",
+      "confidence": "Medium (three secondary-trade, not yet primary DOSH gazette)",
+      "stage": 5
+    },
+    {
+      "finding": "Japan METI FIT discontinuation (≥10 MW large-scale biomass) from FY2026 — demand cliff for Vietnam pellets and Indonesia PKS",
+      "basis": "METI official English press release 21 March 2025; Argus Media corroboration; METI Santeii Committee working document. New large-scale woody biomass projects (≥10 MW) and all liquid biomass projects will not receive FIT/FIP from FY2026. Existing 20-year legacy contracts continue. Sub-10 MW rate unchanged at ¥24/kWh.",
+      "confidence": "High (METI primary source + two independent corroborations)",
+      "stage": 1
+    },
+    {
+      "finding": "Indonesia sugar mill count correction: 59 active pabrik gula, not 69",
+      "basis": "Kemenperin 2023 (primary-ministry): 59 active pabrik gula (40 BUMN-affiliated + 19 private). Original 69-figure in trade press double-counted 11 refining factories processing imported raw sugar, which do not use bagasse-fired boilers.",
+      "confidence": "Medium (Kemenperin primary-ministry + Badan Pangan Nasional + USDA FAS corroboration; boiler multiplier 1.3/mill remains assumed)",
+      "stage": 4
+    },
+    {
+      "finding": "EPC LD rate characterization correction: 0.5%/week is private-sector market convention, not a regulatory or FIDIC standard",
+      "basis": "FIDIC Sub-Clause 8.7 explicitly leaves rate blank for Particular Conditions. CIDB SC-2000 and JKR/PWD 203A similarly leave rate to Appendix. Indonesia public-sector (Perpres 16/2018) uses 0.1%/day (~0.7%/week) capped at ~5% — different from private-sector convention. This correction prevents misattribution of a contractual norm as a prescribed standard.",
+      "confidence": "Medium (FIDIC primary-standards + CIDB primary-standards + Perpres primary-regulatory + SBAustin/ACC industry commentary)",
+      "stage": 3
+    }
+  ],
+
+  "top_3_high_confidence_findings": [
+    {
+      "finding": "Japan METI has officially discontinued FIT/FIP support for new large-scale (≥10 MW) biomass power projects from FY2026 onward (March 21, 2025 announcement), ending the demand pipeline for imported Vietnam wood pellets and Indonesia/Malaysia PKS in new-build plants. Legacy fleet on 20-year contracts (~2012–2025 vintage) continues to drive existing import demand for the remainder of their contract terms.",
+      "source_quality": "High — METI official English press release (primary-ministry), Argus Media corroboration (primary-research-firm), USDA GAIN Japan Biomass 2023",
+      "commercial_implication": "Biomass fuel suppliers with contract exposure to Japanese legacy fleet have 5–15 year runway of existing demand. New-build export demand growth is structural zero after FY2026 for large-scale. Domestic SEA co-firing and small-scale (<10 MW) uses are the residual growth market."
+    },
+    {
+      "finding": "Multiple feedwater parameters (pH, total hardness, silica, iron, phosphate) in Malaysian palm oil mill boilers routinely fall outside ASME BPV Section I guidelines, confirmed across three independent academic studies covering 37 mills and 1,427 DOSH data points. Scale-induced efficiency losses of 10–28% are documented. The water treatment program at most small-to-mid-size operators is managed by generalist boiler operators without specialist water chemistry training.",
+      "source_quality": "Medium-High — three independent primary-academic sources: UTM Perak (MJFAS 2022), USM Perak (ESAR 2021), AIP Conference Proceedings 2023",
+      "commercial_implication": "Managed water treatment service gap across SEA palm oil and food manufacturing boiler fleet is real, academically confirmed, and not reflected in any market-sizing data reviewed. Entry point for managed water treatment as a service vs. commodity chemical sales."
+    },
+    {
+      "finding": "Indonesia's ratio of labor inspectors to enterprises is 1:57,000 — approximately 3× below the ILO recommended ratio of 1:20,000 — confirmed by ILO factsheet and Kemnaker OSH Profile 2022. The Kelas I certified boiler operator pool was 4,068 nationally as of 2017 (most recent Kemnaker enumeration available). Against an estimated installed base of ~5,000–8,000 boilers in Indonesia alone requiring certified attendance, the structural shortage of licensed operators is independently confirmed by two primary sources.",
+      "source_quality": "High — ILO factsheet (primary-multilateral) + Kemnaker OSH Profile 2022 (primary-ministry); 4,068 operator figure is 2017 data (stale for headcount but structurally corroborated by the inspector ratio)",
+      "commercial_implication": "Remote certified operator deployment is the primary recurring revenue model enabler for an aftermarket service entrant in Indonesia. Scarcity is structural, not cyclical."
+    }
+  ],
+
+  "top_3_questions_for_field_validation": [
+    {
+      "question": "What fraction of palm oil mill and small industrial boiler customers in Indonesia and Malaysia have a formal water treatment monitoring program versus reactive treatment or chemical commodity purchases? Have treatment program adherence rates visibly changed during fuel cost pressure periods?",
+      "why_critical": "PP4.5 and PP5.3 rest on the behavioral assumption that small operators manage water treatment poorly. The academic evidence confirms the technical gap (out-of-spec feedwater) but does not directly document operator decision-making or program penetration rates. A single interview with PT Kurita Indonesia or Nalco Water Malaysia commercial team would provide the penetration rate and price-sensitivity data needed to convert PP4.5 from a Medium academic finding to a quantified market opportunity.",
+      "interview_target": "PT Kurita Indonesia sales/commercial director; Nalco Water / Ecolab Malaysia country manager; Lautan Air Indonesia technical director"
+    },
+    {
+      "question": "What are actual spare parts lead times experienced by maintenance managers in Indonesia and Malaysia for tube bundles, refractory tiles, and grate bars from Chinese and Indian OEM origins — specifically from order placement to parts-on-site?",
+      "why_critical": "PP2.4 and PP5.4 both quantify spare parts lead times using a single vendor blog (coalbiomassboiler.com) that quotes fabrication time only, not customer-experienced total lead time including ocean freight, customs, and inland logistics. Stage 5 DR's correction (10–20 weeks customer-experienced vs. 6–12 weeks fabrication-only) is analytically grounded but not field-validated. The downtime cost argument ($50K–$170K/day) multiplied by a 10–22 week wait is the single largest quantified pain in the corpus — it deserves a primary field source.",
+      "interview_target": "Mechmar Services Malaysia procurement manager; PT Atmindo Indonesia spares team; PTPN or FELDA procurement manager for boiler parts"
+    },
+    {
+      "question": "How does the Malaysian OSH SSI 2025 scheme (effective January 21, 2025) in practice affect the compliance cost and inspection scheduling for small and mid-size industrial boiler operators — and has the extended 60-month CF pathway been accessed by any palm oil mill or food processing facility?",
+      "why_critical": "PP5.5 identifies the SSI 2025 as a compliance cliff for small operators (who cannot access the extended CF without a risk-based inspection team). The finding is Medium-confidence based on three secondary-trade sources. No primary DOSH gazette has been directly cited, and no operator interview has confirmed actual uptake or access barriers. If the 60-month pathway is practically inaccessible for sub-25 t/h boiler operators, it validates the pain point. If it is accessible with modest investment, the pain point weakens.",
+      "interview_target": "DOSH Malaysia Pressure Vessels and Boilers unit; TÜV Rheinland Malaysia authorized inspection team; Boilermech or ENCO Systems compliance manager dealing with SSI 2025 implementation"
+    }
+  ],
+
+  "global_gate_decision": "ship_with_flag",
+
+  "gate_reasoning": "The full 5-stage corpus — 463 claims across Fuel Suppliers, Boiler OEMs, EPC, Industrial End Users, and Aftermarket — enters final gate scoring at 63.7% Low confidence post-deep-research, placing it firmly within the 30–70% band that triggers ship_with_flag rather than rerun. This is an honest ship_with_flag, not a borderline call. Three factors support shipping: (1) All five stages have completed per-stage validation passes and the 13 DR calls have meaningfully moved anchor claims — Japan METI primary sourcing, EPPO Thailand primary statistics, MPOB oil extraction data, WITS/Comtrade unit values, US DOE lifecycle cost triangulation, EPA equipment cost data, and PUPR construction certification data are all primary-quality additions that were absent in first-pass drafts. (2) The High and Medium confidence claims (36 High, 132 Medium = 36% of corpus) include the structurally critical anchors: regulatory frameworks across three jurisdictions, market-size figures for Malaysia palm oil and Thailand sugar, the Japan FIT discontinuation, ILO inspector-to-enterprise ratio, and the water treatment academic evidence base — these provide a credible factual backbone. (3) Stage 4 is genuinely well-evidenced (57.8% Low post-DR) and Stage 4's PP4.5 water treatment finding is the corpus's most novel and best-sourced insight. Six specific flags must accompany any downstream use. Flag 1: coalbiomassboiler.com is the sole quantitative source for O&M cost percentages (Stages 2, 3) and emissions retrofit costs (Stages 2, 3) that were not displaced by DR — these are explicitly Low-confidence vendor-sourced figures. Flag 2: The Lautan Air / beta.co.id downtime cost figure (RM 228,000–630,000/hr, or ~$50K–$170K/day at 2024 CPO) is the primary severity anchor for 4 pain points across Stages 4 and 5; it has a vendor commercial interest conflict and is unvalidated by any independent source. Flag 3: The Indonesia sugar mill count in stage-4-value-chain.md artifact has not been corrected from 69 to 59 following the DR — this correction must be merged before the artifact is used for market sizing. Flag 4: The Indonesia construction certification rate figure (7.4% in Stage 4) coexists with the corrected Stage 3 figure (4.86%) without cross-reference — synthesis must use the most recent LPJK 2024 data. Flag 5: Approximately 65–75 ASSUMED-N tags across the corpus identify claims with zero source backing; these are particularly concentrated in cost-bottom-up estimates (mobilization costs, re-commissioning costs, agent commission economics) and represent the irreducible research gap that requires operator field interviews. Flag 6: All market sizing claims across all stages are anchored on secondary market research firms (GrandView, TechSci, Inkwood, DataBridge) or APAC-as-proxy figures — no primary government statistics confirm any country-specific boiler market size. The TAM/SAM framing requires a disclosed 'Low confidence' caveat.",
+
+  "flags_for_synthesis_document": [
+    {
+      "flag_id": "F1",
+      "severity": "HIGH",
+      "description": "coalbiomassboiler.com vendor blog: single-source automatic Low for all O&M cost percentages, APC cost estimates, and emission-compliance cost claims that have not been displaced by DR. Affects Stage 2 PP2.2-6/11, Stage 3 VC-1, Stage 4 VC-5 capex figures."
+    },
+    {
+      "flag_id": "F2",
+      "severity": "HIGH",
+      "description": "beta.co.id / Lautan Air Indonesia downtime cost: single vendor marketing blog is the sole source for the RM 228,000–630,000/hr downtime figure. Commercial interest conflict (Lautan Air sells water treatment). Affects PP4.2, PP4.5, PP5.1, PP5.3, PP5.4 severity claims. Requires MPOB primary source substitution."
+    },
+    {
+      "flag_id": "F3",
+      "severity": "HIGH",
+      "description": "Stage 4 value-chain artifact not updated: 69 Indonesia sugar mills figure persists in stage-4-value-chain.md. Correct figure is 59 per Kemenperin 2023. Downstream install-base estimate (ASSUMED-1) and Stage 5 O&M market size require regeneration."
+    },
+    {
+      "flag_id": "F4",
+      "severity": "MEDIUM",
+      "description": "Certification rate cross-stage inconsistency: 7.4% in Stage 4 (World Bank 2018 source) vs. 4.86% in Stage 3 (LPJK Dec 2024 source). Synthesis must adopt 4.86% as current figure with 7.4% disclosed as 2018 historical baseline."
+    },
+    {
+      "flag_id": "F5",
+      "severity": "MEDIUM",
+      "description": "~65–75 ASSUMED-N tagged claims across corpus have zero source backing. Concentrated in mobilization cost estimates, contract economics, and operator behavioral claims. Require field interview validation before these figures are treated as evidential."
+    },
+    {
+      "flag_id": "F6",
+      "severity": "MEDIUM",
+      "description": "All market sizing figures are secondary-market-research only (GrandView, TechSci, APAC aggregates). No primary government statistics confirm any country-level boiler market size. TAM/SAM figures must carry explicit Low-confidence disclosure."
+    },
+    {
+      "flag_id": "F7",
+      "severity": "LOW",
+      "description": "EPC LD rate (0.5%/week) is now correctly characterized as private-sector market convention, not a regulatory or FIDIC standard. Stage 3 refinements apply; synthesis must not revert to 'industry standard' framing."
+    },
+    {
+      "flag_id": "F8",
+      "severity": "LOW",
+      "description": "PP4.5 / PP5.3 water treatment cross-validation opportunity not surfaced: National Board of Boiler and Pressure Vessel Inspectors (Stage 5 VC5-act3-1) independently confirms the 1/8 inch = 20–25% efficiency loss figure used in Stage 4 PP4.5. Synthesis should surface this cross-validation explicitly."
+    }
+  ],
+
+  "source_diversity_corpus": {
+    "primary_gov": ["eppo.go.th (Thailand EPPO — Stage 1 DR)", "esdm.go.id (Indonesia ESDM — Stages 1, 4)", "bps.go.id (Indonesia BPS — Stages 1, 4)", "old.ocsb.go.th (Thailand OCSB — Stage 4)", "peraturan.bpk.go.id (Indonesia BPK regulations — Stages 2, 3)", "ppkl.menlhk.go.id (Indonesia KLHK — Stages 2, 4, 5)", "eswis.doe.gov.my (Malaysia DOE — Stages 2, 3, 4)", "dosh.gov.my (Malaysia DOSH — Stage 3)", "cidb.gov.my (Malaysia CIDB — Stage 3)", "databoks.katadata.co.id (BPS-sourced — Stage 3)", "bls.gov (US BLS — Stage 3)", "asemconnectvietnam.gov.vn (Vietnam ASEM — Stage 1)", "vietnam.vn (Vietnam govt — Stage 1)", "binakonstruksi.pu.go.id (Indonesia PUPR — Stage 3 DR)", "mom.gov.sg (Singapore MOM — Stage 5)"],
+    "primary_multilateral": ["iea.org (multiple stages)", "adb.org (Stage 1)", "asean.org (Stage 1)", "eria.org (Stages 1, 3)", "trase.earth/SEI (Stage 4)", "worldbank.org (Stage 4)", "ilo.org (Stages 4, 5)", "wits.worldbank.org (Stage 2 DR)", "irena.org via citations (Stage 4 DR)"],
+    "primary_ministry": ["ppkl.menlhk.go.id PermenLHK (Stages 3, 4, 5)", "icel.or.id PermenLHK PDF (Stage 5)", "meti.go.jp (Stage 1 DR)", "kemenperin.go.id (Stage 4 DR, cited in refinements)"],
+    "primary_association": ["mpob.gov.my / bepi.mpob.gov.my / jopr.mpob.gov.my (Stages 2 DR, 4, 5)", "gapki.id (Stages 1 DR, 4)", "nationalboard.org (Stage 5)", "ecitb.com (Stage 3)", "greengoldlabel.com (Stage 1)", "anrpc.org (Stage 4)"],
+    "primary_academic": ["multiple sciencedirect.com, mdpi.com, pmc.ncbi.nlm.nih.gov, academic.oup.com, link.springer.com, bioresources.cnr.ncsu.edu, frontiersin.org, journals.vilniustech.lt (Stages 1–5)", "jopr.mpob.gov.my (Stage 4)", "mjfas.utm.my (Stage 4)", "eprints.usm.my (Stage 4)", "pubs.aip.org (Stage 4)"],
+    "primary_standards": ["asmedigitalcollection.asme.org (Stages 2, 3, 4)", "tuv.com (Stages 2, 3, 4, 5 — counted as 1)", "bureauveritas (Stages 3, 5 — counted as 1)", "lrqa.com (Stage 5)", "sgs.com (Stage 5)", "intertek.com (Stage 5)", "ccicsg.com (Stage 5)"],
+    "primary_research_firm": ["argusmedia.com (Stages 1, 1 DR)", "ember-energy.org (Stage 1)", "spglobal.com (Stage 1)", "rhg.com Rhodium Group (Stage 2)", "bcg.com (Stage 2)", "icct.org (Stage 1)", "nrel.gov (Stage 1 DR)", "epa.gov (Stage 5 DR)"],
+    "total_primary_category_domains_estimated": 45,
+    "total_secondary_category_domains_estimated": 160,
+    "citation_diversity_assessment": "ADEQUATE for structural narrative; INSUFFICIENT for market sizing and operating cost quantification. Primary sources are concentrated in regulatory frameworks, academic biomass chemistry, and the Japan energy policy domain. Operating cost data, market sizing, and company profile claims are disproportionately secondary-vendor and secondary-market-research sourced."
+  }
+}

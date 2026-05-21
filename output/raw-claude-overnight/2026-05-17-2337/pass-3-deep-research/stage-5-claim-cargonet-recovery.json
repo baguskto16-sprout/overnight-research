@@ -1,0 +1,31 @@
+{
+  "claim_id": "PP5.1-freq-1",
+  "outcome": "confirmed-scarce",
+  "new_score": "Low",
+  "replacement_or_supplementary_sources": [
+    {
+      "url": "https://tapa.memberclicks.net/assets/2025-National-Cargo-Theft-Conferfence/Presentations-for-Sharing/2024%20Annual%20Verisk%20CargoNet%E2%80%99s%20Supply%20Chain%20Risk%20Report.pdf",
+      "tier": "primary-industry (Verisk/CargoNet non-member version)",
+      "date": "2025 (covers 2024 data)",
+      "supports_claim": false,
+      "what_it_supports": "3,625 theft incidents 2024; total loss $454.9M; avg $202,364/theft. Recovery-by-timing breakdown is gated in member portal."
+    },
+    {
+      "url": "https://truckingresearch.org/2025/10/new-atri-research-confirms-the-high-costs-of-cargo-theft-to-industry/",
+      "tier": "primary-industry (ATRI)",
+      "date": "October 2025",
+      "supports_claim": false,
+      "what_it_supports": "~74% of stolen cargo never recovered → ~26% overall baseline. [NEEDS-ATTENDED-FETCH] — landing page returned 403."
+    },
+    {
+      "url": "https://www.ttclub.com/fileadmin/uploads/tt-club/Documents/files/tt-club/bsi-tt-club-cargo-theft-report/tt-club-report-supply-chain-report-april-2024-final.pdf",
+      "tier": "primary-industry (TT Club/BSI)",
+      "date": "April 2024 (2023 data)",
+      "supports_claim": false,
+      "what_it_supports": "Qualitative: 'Cargo loads may often go for periods of time before being reported stolen, reducing the likelihood of recovery.' No quantitative split."
+    }
+  ],
+  "revised_claim_text": "Industry baseline cargo theft recovery rate is ~26% (ATRI 2025: ~74% of stolen cargo never recovered). Specialized telematics programs report markedly higher rates — Overhaul claims 96% recovery for its FTL clients [vendor self-report]. [ASSUMED-N] The specific 73%/<20% split by alert-timing bucket appears only in vendor-adjacent trade blogs (FleetRabbit, GetSafeAndSound); no CargoNet, NICB, ATRI, FBI, or academic primary source publishes recovery rate broken out by notification-delay bucket — to validate: obtain CargoNet member-portal annual report.",
+  "footnote_for_artifact": "ATRI cargo theft research, October 2025 (truckingresearch.org/2025/10/new-atri-research-confirms-the-high-costs-of-cargo-theft-to-industry — NEEDS-ATTENDED-FETCH); Verisk CargoNet 2024 Annual Supply Chain Risk Report (non-member version via TAPA); TT Club / BSI Cargo Theft Report 2024 (April 2024). The 73%/<20% timing-bucket split remains industry lore without confirmed primary attribution.",
+  "notes": "Replace claim with confirmed ATRI ~26% baseline + caveat that the 73% figure is unattributed. The Overhaul 96% rate (vendor self-report) actually contradicts the implied 73% telematics benchmark. Score stays Low pending CargoNet member access. The discovery itself is useful: it converts a vendor anecdote into a confirmed data gap."
+}

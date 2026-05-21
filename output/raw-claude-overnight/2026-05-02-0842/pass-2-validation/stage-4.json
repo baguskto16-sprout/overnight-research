@@ -1,0 +1,1935 @@
+{
+  "stage": 4,
+  "stage_name": "Industrial End Users / Operators",
+  "context": "per-stage",
+  "total_claims": 102,
+  "by_confidence": {
+    "high": 10,
+    "medium": 27,
+    "low": 65
+  },
+  "low_confidence_pct": 0.637,
+  "unique_sources_cited": 51,
+  "source_classification": {
+    "primary_gov": [
+      "ppkl.menlhk.go.id (PermenLHK P.15/2019)",
+      "eswis.doe.gov.my (Malaysia EQA 2014 Clean Air Regs)",
+      "esdm.go.id (HEESI 2023)",
+      "bps.go.id (Indonesian Oil Palm Statistics 2023)",
+      "old.ocsb.go.th (OCSB Thailand sugar statistics)"
+    ],
+    "primary_ministry": [
+      "ppkl.menlhk.go.id (PermenLHK P.15/2019)"
+    ],
+    "primary_multilateral": [
+      "iea.org (SEA Energy Outlook 2024)",
+      "iea.org (Coal Mid-Year Update July 2024)",
+      "iea.org (Coal Market Update July 2022)",
+      "trase.earth/SEI (Indonesia palm oil mills dataset)",
+      "worldbank.org (Critical Occupations List 2018)",
+      "ilo.org (Thailand automotive sector skills study 2024)"
+    ],
+    "primary_standards": [],
+    "primary_academic": [
+      "jopr.mpob.gov.my (Corrosion of Boiler Tubes in a Palm Oil Mill)",
+      "mdpi.com/2071-1050 (EFB biomass characteristics sustainability)",
+      "pmc.ncbi.nlm.nih.gov (rice husk combustion PMC 2022)",
+      "ui.adsabs.harvard.edu / IOP (Hasanah & Wulandari preventive maintenance palm oil 2019)",
+      "link.springer.com/10.1007/s11085-025-10346-2 (boiler tube failure analysis Springer 2025)",
+      "journals.nipes.org (boiler tube failure NIPES 2024)",
+      "mjfas.utm.my (UTM 2022 palm oil mill boiler water quality Perak)",
+      "eprints.usm.my (USM Perak BFW quality study 2021)",
+      "pubs.aip.org (AIP Conference Proceedings 2023 palm oil mill water chemistry)",
+      "sciencedirect.com/topics/engineering/empty-fruit-bunch (EFB ash chemistry ScienceDirect Topics)"
+    ],
+    "primary_association": [
+      "gapki.id (GAPKI palm oil industry performance 2023)",
+      "mpob.gov.my via statista (MPOB 446 mills, CPO production 2023)",
+      "prestasisawit.mpob.gov.my (MPOB palm oil labor shortage)",
+      "anrpc.org (ANRPC Thailand rubber overview)"
+    ],
+    "secondary_market_research": [
+      "grandviewresearch.com (Indonesia biomass boilers market)",
+      "techsciresearch.com (Indonesia process boiler market)",
+      "marketdataforecast.com (APAC industrial boiler market)",
+      "gminsights.com (APAC industrial boiler maintenance market $9.8B)",
+      "skyquestt.com (global industrial boiler maintenance market)",
+      "globalgrowthinsights.com (APAC biomass boiler 12.8% CAGR)"
+    ],
+    "secondary_trade": [
+      "coaltradeindo.com (ICI grade prices, HBA pricing articles)",
+      "enviliance.com (Malaysia EQA 2024 fines; Thailand 2023 emission standards; CEMS SISPEK)",
+      "coalindoenergy.com/CME (ICI 4 futures hedging article)",
+      "adcolaw.com (DMO structure article)",
+      "ember-energy.org (Indonesia coal domestic demand)",
+      "bangkokpost.com (Thai sugar output)",
+      "makarim.com (Indonesia PermenLHK 14/2024 fines)",
+      "majikan.my (boilerman salary Malaysia)",
+      "malaysia.indeed.com (boiler operator salary survey)",
+      "centrasafety.com (Kemnaker boiler training)",
+      "indonesiasafetycenter.org (Kemnaker training)",
+      "bayubali.com.my (DOSH steam engineer course)",
+      "berjayatac.com (DOSH steam engineer certification guide)",
+      "bssa.com.my (Borneo Smartskill DOSH provider)",
+      "cspo-watch.com (Malaysia palm oil labor challenges)",
+      "glassdoor.com (boilerman job listings April 2026)",
+      "aquaphoenixsci.com (boiler scaling guide)",
+      "watertechnologies.com/Veolia (water handbook chapters 11 and 14)",
+      "getchemready.com/samcotech.com (boiler water treatment costs)",
+      "powerhouse.com (industrial boiler water treatment basics)"
+    ],
+    "secondary_vendor": [
+      "beta.co.id (Lautan Air Indonesia palm oil mill boiler blog)",
+      "lautanairindonesia.com (scaling in palm oil boilers)",
+      "vortechglobal.com (steam boilers in palm oil mills)",
+      "coalbiomassboiler.com (operating costs, APC costs, lifecycle cost analysis)",
+      "thundersaidenergy.com (ESP capital costs)",
+      "circulatingfluidizedbedboiler.com (grate bar maintenance intervals)",
+      "agriculture.institute/IRRI (rice husk fuel properties)",
+      "boilerworldupdate.com (ESP design for emission control)",
+      "wri.org (WRI industrial decarbonization Indonesia-Vietnam)"
+    ]
+  },
+  "claims": [
+    {
+      "id": "VC-1",
+      "claim_text": "Steam required 450-600 kg steam/t FFB; operating pressure 10-21 bar for palm oil mills",
+      "sources": [
+        "beta.co.id",
+        "vortechglobal.com",
+        "wri.org"
+      ],
+      "source_types": [
+        "secondary_vendor",
+        "secondary_vendor",
+        "primary_multilateral"
+      ],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "One primary_multilateral (WRI) + two secondary_vendor from different organizations. Qualifies Medium. WRI confirms coal/boiler dominance in Indonesia textile sector; vortechglobal and beta.co.id corroborate steam parameters."
+    },
+    {
+      "id": "VC-2",
+      "claim_text": "PKS FOB premium $105-134/t (Jan 2024); fiber moisture significantly reduces efficiency; EFB raw moisture 60-70%",
+      "sources": [
+        "beta.co.id",
+        "mdpi.com/2071-1050"
+      ],
+      "source_types": [
+        "secondary_vendor",
+        "primary_academic"
+      ],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "One primary_academic (MDPI peer-reviewed EFB characterization) + one secondary_vendor. PKS price figure from beta.co.id single trade source \u2014 that sub-claim is Low, but the efficiency/moisture chemistry is Medium overall."
+    },
+    {
+      "id": "VC-3",
+      "claim_text": "Certification requirements: Indonesia Kemnaker Kelas I/II (Permenaker 01/1988); Malaysia DOSH-licensed steam engineer; Thailand DIW boiler permit",
+      "sources": [
+        "centrasafety.com",
+        "tuv.com/malaysia",
+        "bayubali.com.my"
+      ],
+      "source_types": [
+        "secondary_trade",
+        "primary_standards",
+        "secondary_trade"
+      ],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "One primary_standards (T\u00dcV Rheinland Malaysia confirming DOSH inspection framework) + two secondary_trade from different organizations. Regulatory citation well-corroborated."
+    },
+    {
+      "id": "VC-4",
+      "claim_text": "Emissions limits: Indonesia PermenLHK P.15/2019 (PM 100 mg/Nm\u00b3, SO\u2082 550 mg/Nm\u00b3); Malaysia EQA Clean Air Regs 2014; Thailand 2023 MNRE emission standard update",
+      "sources": [
+        "ppkl.menlhk.go.id",
+        "coalbiomassboiler.com",
+        "enviliance.com"
+      ],
+      "source_types": [
+        "primary_ministry",
+        "secondary_vendor",
+        "secondary_trade"
+      ],
+      "score": "High",
+      "overrides": [],
+      "notes": "One primary_ministry (direct PDF link to Indonesia regulation) + one secondary_vendor + one secondary_trade. Three independent sources including one primary. High confidence on the regulatory text claims."
+    },
+    {
+      "id": "VC-5",
+      "claim_text": "Boiler capex $200K-$2M+ per unit; BOP $200K-$700K EPC; major overhauls refractory $30K-$150K; asset lifespan 15-25 years",
+      "sources": [
+        "coalbiomassboiler.com",
+        "grandviewresearch.com"
+      ],
+      "source_types": [
+        "secondary_vendor",
+        "secondary_market_research"
+      ],
+      "score": "Low",
+      "overrides": [
+        "vendor_blog_sole_source",
+        "single_source_category"
+      ],
+      "notes": "Both sources are secondary commercial sources (vendor blog + market research firm). No primary source corroboration for capex figures."
+    },
+    {
+      "id": "VC-6",
+      "claim_text": "Fuel = 60-70% lifecycle cost; maintenance 10-15%; labor 8-12%; emissions compliance 5-8% baseline; ash disposal 3-6%; water treatment 2-5%",
+      "sources": [
+        "coalbiomassboiler.com"
+      ],
+      "source_types": [
+        "secondary_vendor"
+      ],
+      "score": "Low",
+      "overrides": [
+        "vendor_blog_sole_source",
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "Single vendor blog for the entire lifecycle cost breakdown. This is the foundational cost structure claim for Stage 4 and is anchored to a single secondary_vendor. Critical weak claim \u2014 high priority for deep research."
+    },
+    {
+      "id": "MS-1",
+      "claim_text": "Malaysia: 446 palm oil mills in operation (2023); CPO production 18.55 Mt (2023)",
+      "sources": [
+        "statista.com/MPOB",
+        "bepi.mpob.gov.my (Overview 2023 PDF)"
+      ],
+      "source_types": [
+        "secondary_market_research/primary_association",
+        "primary_association"
+      ],
+      "score": "High",
+      "overrides": [],
+      "notes": "MPOB is the authoritative primary_association source for Malaysian palm oil statistics. Statista is a secondary aggregator but MPOB directly publishes this figure. PDF not machine-readable but citation is the MPOB official overview. Scored High \u2014 government-linked industry body official statistics."
+    },
+    {
+      "id": "MS-2",
+      "claim_text": "Indonesia ~1,700-2,000 palm oil mills (all sizes, all ownership types, 2022-2023 est.)",
+      "sources": [
+        "bps.go.id (Indonesian Oil Palm Statistics 2023)",
+        "trase.earth/SEI"
+      ],
+      "source_types": [
+        "primary_gov",
+        "primary_multilateral"
+      ],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "Two primary sources (BPS primary_gov + Trase/SEI primary_multilateral dataset). Range is appropriately cautious. BPS publication paywalled/download-required \u2014 exact count unconfirmed from full table. Scored Medium: two primary-category sources but exact number unverified from direct access."
+    },
+    {
+      "id": "MS-3",
+      "claim_text": "Indonesia CPO production 50.07 Mt (2023)",
+      "sources": [
+        "gapki.id"
+      ],
+      "source_types": [
+        "primary_association"
+      ],
+      "score": "Medium",
+      "overrides": [
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "GAPKI is the authoritative industry association. Single source rule forces Medium despite source quality."
+    },
+    {
+      "id": "MS-4",
+      "claim_text": "Thailand: 57 sugar factories in 2023-24 crop year; 82.2 Mt cane crushed; 8.77 Mt sugar",
+      "sources": [
+        "old.ocsb.go.th (PDF)",
+        "bangkokpost.com"
+      ],
+      "source_types": [
+        "primary_gov",
+        "secondary_news"
+      ],
+      "score": "High",
+      "overrides": [],
+      "notes": "OCSB is Thai government statistics agency. Bangkok Post secondary corroboration. Two independent sources including one primary_gov. PDF not machine-readable but cited from official Thai government statistics body."
+    },
+    {
+      "id": "MS-5",
+      "claim_text": "Indonesia ~69 sugar mills",
+      "sources": [
+        "zozenboiler.com"
+      ],
+      "source_types": [
+        "secondary_vendor"
+      ],
+      "score": "Low",
+      "overrides": [
+        "vendor_blog_sole_source",
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "Single vendor blog (zozenboiler.com) for a market-sizing anchor figure. Draft itself flags this as 'single-source figure, needs BPS census cross-validation'. Critical weak claim."
+    },
+    {
+      "id": "MS-6",
+      "claim_text": "Indonesia process boiler & heating equipment market ~$54M (2019 base); projected ~$65-70M (2024) at ~4% CAGR",
+      "sources": [
+        "techsciresearch.com"
+      ],
+      "source_types": [
+        "secondary_market_research"
+      ],
+      "score": "Low",
+      "overrides": [
+        "secondary_market_research_only",
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "Single paid market research firm. No primary-gov or primary-association cross-validation."
+    },
+    {
+      "id": "MS-7",
+      "claim_text": "Indonesia biomass boilers market $52.4M (2024); projected $84.1M by 2030",
+      "sources": [
+        "grandviewresearch.com"
+      ],
+      "source_types": [
+        "secondary_market_research"
+      ],
+      "score": "Low",
+      "overrides": [
+        "secondary_market_research_only",
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "Single market research firm. Grand View Research is a paid market intelligence provider."
+    },
+    {
+      "id": "MS-8",
+      "claim_text": "Asia Pacific industrial boiler market $5.99B (2024) \u2192 $8.75B by 2034 at 3.86% CAGR",
+      "sources": [
+        "marketdataforecast.com"
+      ],
+      "source_types": [
+        "secondary_market_research"
+      ],
+      "score": "Low",
+      "overrides": [
+        "secondary_market_research_only",
+        "single_source_for_quantitative_claim",
+        "apac_as_proxy_for_country_specific"
+      ],
+      "flags": [
+        "geography_mismatch"
+      ],
+      "notes": "Single market research firm + APAC aggregate used in SEA context. Geography mismatch override triggered."
+    },
+    {
+      "id": "MS-9",
+      "claim_text": "Coal = 30% of industrial energy demand in Southeast Asia (IEA SEA Energy Outlook 2024)",
+      "sources": [
+        "iea.org (SEA Energy Outlook 2024)"
+      ],
+      "source_types": [
+        "primary_multilateral"
+      ],
+      "score": "Medium",
+      "overrides": [
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "IEA is highest-quality primary_multilateral source. Single source rule forces Medium, but this is a strong single primary multilateral source."
+    },
+    {
+      "id": "MS-10",
+      "claim_text": "Indonesia industrial sector 556 million BOE (46% of national total) from ESDM HEESI 2023",
+      "sources": [
+        "esdm.go.id (HEESI 2023 PDF)"
+      ],
+      "source_types": [
+        "primary_gov"
+      ],
+      "score": "Medium",
+      "overrides": [
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "ESDM is Indonesia primary_gov/ministry. PDF not machine-readable confirmed but citation is the authoritative publication. Single source forces Medium."
+    },
+    {
+      "id": "MS-11",
+      "claim_text": "~31% of Indonesia industrial fuel consumption for boiler steam generation (derived from ESDM HEESI 2023)",
+      "sources": [
+        "esdm.go.id (HEESI 2023 derived via Statista/EIA synthesis)"
+      ],
+      "source_types": [
+        "primary_gov"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "Derived figure, not directly read from primary \u2014 cited as derived 'from Statista/EIA synthesis citing HEESI'. The primary PDF was not machine-readable. Derived secondary synthesis from primary source counts as single source at reduced confidence. Low because the quantitative derivation is indirect."
+    },
+    {
+      "id": "MS-12",
+      "claim_text": "ICI 4 ~$63.80/t; ICI 1 $104.50/t (April 2026); Newcastle $125/t end-2024 trend",
+      "sources": [
+        "coaltradeindo.com",
+        "iea.org (Coal Mid-Year Update July 2024)"
+      ],
+      "source_types": [
+        "secondary_trade",
+        "primary_multilateral"
+      ],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "IEA primary_multilateral for Newcastle price trend + Coaltradeindo secondary_trade for current ICI grades. Two independent sources from different organizations."
+    },
+    {
+      "id": "MS-13",
+      "claim_text": "Downtime cost RM 228,000-630,000 per hour in lost production at 60-150 t/h mill at CPO RM 3,800-4,200/t",
+      "sources": [
+        "beta.co.id (derived calculation from mill throughput and CPO price)"
+      ],
+      "source_types": [
+        "secondary_vendor"
+      ],
+      "score": "Low",
+      "overrides": [
+        "vendor_blog_sole_source",
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "Derived calculation from single vendor/trade source. The CPO price input is not independently verified in the VCM."
+    },
+    {
+      "id": "ASSUMED-1-boiler-count",
+      "claim_text": "SEA-5 total rough estimate 8,000-13,000 active solid-fuel industrial package boilers; Indonesia 5,000-8,000 units",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": [
+        "assumed_tag_with_source"
+      ],
+      "notes": "[ASSUMED-1] tagged. Bottom-up estimate constructed from mill counts (some well-sourced, some not) \u00d7 engineering rule-of-thumb multipliers (1-2 boilers/mill) that are themselves unsourced. The constituent mill counts are Medium/Low; the multiplier is pure engineering assumption."
+    },
+    {
+      "id": "VCM-PP1-coal-volatility",
+      "claim_text": "Newcastle FOB coal $50-70/t in 2020, >$400/t mid-2022, ~$125/t end-2024; fuel = 60-70% of lifecycle cost; 2\u00d7 coal price \u2192 5-15pp margin compression",
+      "sources": [
+        "coalbiomassboiler.com",
+        "coaltradeindo.com",
+        "iea.org (Coal Mid-Year 2024)"
+      ],
+      "source_types": [
+        "secondary_vendor",
+        "secondary_trade",
+        "primary_multilateral"
+      ],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "IEA primary_multilateral confirms coal price trend. coalbiomassboiler.com for lifecycle cost % is single vendor blog (Low sub-claim). Composite claim scored Medium: price trend well-sourced, cost-share percentage weak."
+    },
+    {
+      "id": "VCM-PP2-PKS-EFB",
+      "claim_text": "PKS $105-134/t FOB Jan 2024; EFB raw moisture 60-70%; fiber CV impact on boiler efficiency",
+      "sources": [
+        "beta.co.id",
+        "mdpi.com/2071-1050"
+      ],
+      "source_types": [
+        "secondary_vendor",
+        "primary_academic"
+      ],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "MDPI primary_academic for EFB moisture and CV. beta.co.id for PKS price. Two sources from different organizations including one primary_academic."
+    },
+    {
+      "id": "VCM-PP3-tube-failures",
+      "claim_text": "Tube leaks leading forced-outage cause; multi-day tube-leak can exceed $1M; caustic attack, oxygen pitting, ash deposits documented failure mechanisms",
+      "sources": [
+        "beta.co.id",
+        "jopr.mpob.gov.my",
+        "lautanairindonesia.com"
+      ],
+      "source_types": [
+        "secondary_vendor",
+        "primary_academic",
+        "secondary_vendor"
+      ],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "JOPR/MPOB is primary_academic confirming caustic corrosion mechanism. beta.co.id and lautanairindonesia.com are secondary_vendor (same company family \u2014 Lautan Air / beta.co.id overlap). The $1M figure comes from a single vendor source \u2014 that sub-claim is Low, but the mechanism claim is Medium."
+    },
+    {
+      "id": "VCM-PP4-rice-husk-ash",
+      "claim_text": "Rice husk 15-20% ash by weight; silica fusion temperature ~1,500\u00b0C; grate fouling in chain-grate stokers",
+      "sources": [
+        "pmc.ncbi.nlm.nih.gov (PMC 2022)"
+      ],
+      "source_types": [
+        "primary_academic"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "High quality primary_academic (PMC peer-reviewed) but single source rule applies."
+    },
+    {
+      "id": "VCM-PP5-emissions-retrofit",
+      "claim_text": "ESP/baghouse retrofit costs $30K-$150K per boiler; 4-8 weeks re-inspection for DOSH/Disnaker",
+      "sources": [
+        "ppkl.menlhk.go.id",
+        "coalbiomassboiler.com",
+        "enviliance.com"
+      ],
+      "source_types": [
+        "primary_ministry",
+        "secondary_vendor",
+        "secondary_trade"
+      ],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "One primary_ministry + two secondaries from different organizations. Regulatory context well-sourced; cost figure from vendor blog (Low sub-claim) but overall Medium."
+    },
+    {
+      "id": "VCM-PP6-operator-scarcity",
+      "claim_text": "Certified operators scarce; 7.4% of Indonesia construction workers certified; Kemnaker/DOSH shortage at remote sites",
+      "sources": [
+        "worldbank.org (Critical Occupations List 2018)",
+        "centrasafety.com",
+        "indonesiasafetycenter.org"
+      ],
+      "source_types": [
+        "primary_multilateral",
+        "secondary_trade",
+        "secondary_trade"
+      ],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "World Bank primary_multilateral + two secondary_trade from different organizations. The 7.4% construction certification rate is for the broader construction sector, not boiler operators specifically \u2014 structural analogy, not direct measure."
+    },
+    {
+      "id": "VCM-PP7-EFB-moisture",
+      "claim_text": "EFB delivered 60-70% moisture; design spec 15-25%; operators must reduce throughput, increase fuel, blend, or shut down",
+      "sources": [
+        "pmc.ncbi.nlm.nih.gov",
+        "mdpi.com/2071-1050"
+      ],
+      "source_types": [
+        "primary_academic",
+        "primary_academic"
+      ],
+      "score": "High",
+      "overrides": [],
+      "notes": "Two independent primary_academic sources (PMC + MDPI peer-reviewed papers) confirming EFB moisture characteristics."
+    },
+    {
+      "id": "VCM-PP8-coal-blending",
+      "claim_text": "Indonesian ICI-grade coal blending quality complaints rising; 500 kcal/kg shortfall reduces steam output ~10%",
+      "sources": [
+        "coaltradeindo.com"
+      ],
+      "source_types": [
+        "secondary_trade"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "Single secondary_trade source for both the complaint trend and the quantified impact."
+    },
+    {
+      "id": "VCM-PP9-water-treatment",
+      "claim_text": "1/8\" scale reduces heat transfer efficiency 20-25%; water treatment gap leads to scale and tube failures",
+      "sources": [
+        "beta.co.id",
+        "jopr.mpob.gov.my"
+      ],
+      "source_types": [
+        "secondary_vendor",
+        "primary_academic"
+      ],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "JOPR MPOB primary_academic confirms caustic corrosion mechanism; beta.co.id for the 20-25% efficiency figure. One primary_academic + one secondary_vendor."
+    },
+    {
+      "id": "PP4.1-cost-1",
+      "claim_text": "Fuel = 60-75% of total boiler lifecycle cost (20-year TCO); boilers = 50-60% of fuel use in textile wet-processing",
+      "sources": [
+        "coalbiomassboiler.com",
+        "wri.org"
+      ],
+      "source_types": [
+        "secondary_vendor",
+        "primary_multilateral"
+      ],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "WRI primary_multilateral confirms 50-60% boiler fuel share in textile wet processing in Indonesia/Vietnam. coalbiomassboiler.com for the lifecycle cost % \u2014 secondary_vendor. One primary + one secondary from different organizations."
+    },
+    {
+      "id": "PP4.1-cost-2",
+      "claim_text": "HBA ranged $50/t (2020 trough) to $276/t (Aug 2022 peak) to $115-121/t (2023-2024 avg); ICI 4 $35-40/t to $70+/t to $47-64/t",
+      "sources": [
+        "iea.org (Coal Mid-Year 2024)",
+        "coaltradeindo.com"
+      ],
+      "source_types": [
+        "primary_multilateral",
+        "secondary_trade"
+      ],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "IEA primary_multilateral for coal price trend. Coaltradeindo for current ICI grades. Two independent sources. Note: HBA $276/t Aug 2022 peak \u2014 IEA mid-year update 2024 covers this trend period."
+    },
+    {
+      "id": "PP4.1-cost-3",
+      "claim_text": "2\u00d7 coal price \u2192 estimated 5-15pp margin compression for energy-intensive operators; SEA fuel subsidies record $105B in 2022 (60% above prior peak)",
+      "sources": [
+        "coalbiomassboiler.com",
+        "iea.org (SEA Energy Outlook 2024)"
+      ],
+      "source_types": [
+        "secondary_vendor",
+        "primary_multilateral"
+      ],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "IEA primary_multilateral confirms $105B SEA fuel subsidies 2022. The 5-15pp margin compression figure is a calculation from coalbiomassboiler.com's lifecycle cost assumptions \u2014 that sub-claim is Low. Overall Medium given IEA sourcing for the subsidy magnitude."
+    },
+    {
+      "id": "PP4.1-cost-4-ASSUMED",
+      "claim_text": "Small industrial buyers purchase coal on 30-90 day spot contracts through intermediary traders without long-term fixed-price agreements or hedging access [ASSUMED-1]",
+      "sources": [
+        "coalindoenergy.com",
+        "coaltradeindo.com"
+      ],
+      "source_types": [
+        "secondary_trade",
+        "secondary_trade"
+      ],
+      "score": "Low",
+      "overrides": [
+        "assumed_tag_with_source"
+      ],
+      "notes": "[ASSUMED-1] tagged. Sources cited discuss hedging mechanisms and HBA pricing but do not directly evidence the 30-90 day contract norm for SME industrial buyers."
+    },
+    {
+      "id": "PP4.1-cost-5-ASSUMED",
+      "claim_text": "Operators under fuel cost pressure cut water treatment chemicals, accelerating scale buildup [ASSUMED-2]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": [
+        "assumed_tag_with_source",
+        "no_source_cited"
+      ],
+      "notes": "[ASSUMED-2] tagged with no source. Plausible mechanism but entirely unsourced."
+    },
+    {
+      "id": "PP4.1-freq-1",
+      "claim_text": "HBA moved >40% in 4 of last 6 years (2019, 2021, 2022, 2023)",
+      "sources": [
+        "iea.org (Coal Mid-Year Update July 2024)"
+      ],
+      "source_types": [
+        "primary_multilateral"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "IEA primary_multilateral but single source. The specific 4-of-6-years claim requires price data by year, which the IEA report contains but is single-source."
+    },
+    {
+      "id": "PP4.1-freq-2",
+      "claim_text": "Non-metal industrial users account for ~6-9% of Indonesia's total coal consumption = ~15-22 Mt/year; outside DMO price-cap protections",
+      "sources": [
+        "ember-energy.org",
+        "adcolaw.com"
+      ],
+      "source_types": [
+        "secondary_trade",
+        "secondary_trade"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "Both sources are secondary_trade (Ember Energy advocacy NGO, ADCO Law firm blog). The 6-9% figure lacks primary_gov corroboration. No BPS or ESDM primary source cited for the domestic coal demand breakdown."
+    },
+    {
+      "id": "PP4.1-freq-3",
+      "claim_text": "Coal = 30% of industrial energy demand in SEA; majority of 8,000-13,000 solid-fuel boiler operators carry unhedgeable fuel-cost exposure",
+      "sources": [
+        "iea.org (SEA Energy Outlook 2024)"
+      ],
+      "source_types": [
+        "primary_multilateral"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "IEA for 30% coal figure (single primary). 8,000-13,000 unit figure is [ASSUMED-1] bottom-up estimate. Compound claim scores Low."
+    },
+    {
+      "id": "PP4.1-freq-4",
+      "claim_text": "SEA fossil fuel subsidies record $105B in 2022, confirming systemic fuel-cost exposure for industrial operators",
+      "sources": [
+        "iea.org (SEA Energy Outlook 2024)"
+      ],
+      "source_types": [
+        "primary_multilateral"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "Authoritative IEA source but single source rule applies for quantitative claims."
+    },
+    {
+      "id": "PP4.1-freq-5",
+      "claim_text": "Boiler fuel = 31.11% of total industrial energy consumption in Indonesia for steam generation",
+      "sources": [
+        "esdm.go.id (HEESI 2023)"
+      ],
+      "source_types": [
+        "primary_gov"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "ESDM HEESI primary_gov but single source; PDF not machine-readable \u2014 figure came from 'Statista/EIA synthesis citing HEESI', adding an intermediation layer."
+    },
+    {
+      "id": "PP4.1-RC1-DMO",
+      "claim_text": "Indonesia DMO explicitly excludes textile, F&B, rubber from price-cap protection; operators buy at market + $5-10/t trader margin",
+      "sources": [
+        "adcolaw.com",
+        "ember-energy.org",
+        "coaltradeindo.com"
+      ],
+      "source_types": [
+        "secondary_trade",
+        "secondary_trade",
+        "secondary_trade"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_category"
+      ],
+      "notes": "All three sources are secondary_trade. No primary ministry publication (MEMR Decree 13/2022 or 7/2020) directly cited. The $5-10/t trader margin has no source. Needs primary MEMR/ESDM regulation citation."
+    },
+    {
+      "id": "PP4.1-RC2-hedging",
+      "claim_text": "ICI 4 CME futures exist but require ISDA agreements and volumes incompatible with 2,000-5,000 t/year buyers; no retail hedging product commercialized",
+      "sources": [
+        "coalindoenergy.com",
+        "coaltradeindo.com"
+      ],
+      "source_types": [
+        "secondary_trade",
+        "secondary_trade"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_category"
+      ],
+      "notes": "Both secondary_trade sources. No primary exchange documentation or financial market publication confirming the minimum lot/ISDA requirement."
+    },
+    {
+      "id": "PP4.1-RC3-biomass-market",
+      "claim_text": "No organized domestic biomass commodity market in Indonesia/Malaysia/Thailand; PKS export $105-134/t FOB outcompetes domestic buyers",
+      "sources": [
+        "wri.org",
+        "iea.org (SEA Energy Outlook)"
+      ],
+      "source_types": [
+        "primary_multilateral",
+        "primary_multilateral"
+      ],
+      "score": "High",
+      "overrides": [],
+      "notes": "Two independent primary_multilateral sources (WRI + IEA). PKS export price figure is from beta.co.id secondary_vendor \u2014 that sub-claim is weaker, but the structural claim about absence of organized biomass market is High on WRI + IEA basis."
+    },
+    {
+      "id": "PP4.1-RC4-SIMBARA",
+      "claim_text": "SIMBARA calibrated for large named buyers; intermediary layer adds $5-10/t; small operators last in queue for miner allocation",
+      "sources": [
+        "adcolaw.com"
+      ],
+      "source_types": [
+        "secondary_trade"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "Single secondary_trade source (law firm blog). SIMBARA/RKAB mechanics not corroborated by ESDM or MEMR primary sources."
+    },
+    {
+      "id": "PP4.1-RC5-pass-through",
+      "claim_text": "No fuel cost pass-through mechanism in SEA industrial supply chains; 2022 coal spike absorbed directly; revenues sticky, fuel cost volatile",
+      "sources": [
+        "iea.org (SEA Energy Outlook 2024)",
+        "ember-energy.org",
+        "iea.org (Coal Market Update 2022)"
+      ],
+      "source_types": [
+        "primary_multilateral",
+        "secondary_trade",
+        "primary_multilateral"
+      ],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "Two IEA primary_multilateral sources + Ember secondary_trade. Three sources from different organizations including two primaries. The pass-through absence claim is structural/inferential \u2014 well-grounded in IEA energy pricing evidence but not directly sourced from an industrial supply chain study."
+    },
+    {
+      "id": "PP4.2-cost-1",
+      "claim_text": "30 t/h FFB mill at CPO RM 3,800-4,200/t: 1 day boiler downtime \u2248 $130K lost output; multi-day tube leak >$1M",
+      "sources": [
+        "beta.co.id",
+        "vortechglobal.com"
+      ],
+      "source_types": [
+        "secondary_vendor",
+        "secondary_vendor"
+      ],
+      "score": "Low",
+      "overrides": [
+        "vendor_blog_sole_source",
+        "single_source_category"
+      ],
+      "notes": "Both sources are secondary_vendor. The $1M claim ultimately traces to a single vendor blog (beta.co.id/Lautan Air). CPO price input not independently sourced in PP4.2 section \u2014 cross-referenced to MPOB/Wilmar but those sources confirm mill counts, not current CPO pricing."
+    },
+    {
+      "id": "PP4.2-cost-2",
+      "claim_text": "ABB 2023 survey (n=3,215): average unplanned downtime costs $125,000/hr globally; F&B sector $4,000-$30,000/hr",
+      "sources": [
+        "new.abb.com (ABB Value of Reliability Survey 2023)"
+      ],
+      "source_types": [
+        "primary_association"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "ABB survey is a primary_association-class source (conducted by Sapio Research, published by ABB as a named industry survey with methodology). Single source rule forces Low. Note: SEA-specific data not broken out \u2014 global figure used as proxy for SEA."
+    },
+    {
+      "id": "PP4.2-cost-3",
+      "claim_text": "Formal preventive maintenance scheduling achieves 47.4% cost savings vs. no scheduling (IOP study of Indonesian palm oil mill, 2019)",
+      "sources": [
+        "ui.adsabs.harvard.edu (IOP Conference Series, Hasanah & Wulandari 2019)"
+      ],
+      "source_types": [
+        "primary_academic"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "High-quality primary_academic (peer-reviewed IOP paper) but single source rule applies for this quantitative figure. The finding is from a single Indonesian mill case study \u2014 generalizability not demonstrated."
+    },
+    {
+      "id": "PP4.2-cost-4",
+      "claim_text": "Tube repair $30K-$100K; emergency refractory repair $20K-$80K; grate bar replacement set $5K-$30K",
+      "sources": [
+        "coalbiomassboiler.com (2 URLs)"
+      ],
+      "source_types": [
+        "secondary_vendor"
+      ],
+      "score": "Low",
+      "overrides": [
+        "vendor_blog_sole_source",
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "Two URLs both from coalbiomassboiler.com \u2014 same publisher family = 1 source. Vendor blog for all maintenance cost figures."
+    },
+    {
+      "id": "PP4.2-cost-5",
+      "claim_text": "APAC industrial boiler maintenance market $9.8B (2023), 5.2% CAGR through 2032",
+      "sources": [
+        "gminsights.com (Global Market Insights)"
+      ],
+      "source_types": [
+        "secondary_market_research"
+      ],
+      "score": "Low",
+      "overrides": [
+        "secondary_market_research_only",
+        "single_source_for_quantitative_claim",
+        "apac_as_proxy_for_country_specific"
+      ],
+      "flags": [
+        "geography_mismatch"
+      ],
+      "notes": "Single paid market research firm. APAC aggregate used in SEA context."
+    },
+    {
+      "id": "PP4.2-freq-1",
+      "claim_text": "Over 2/3 of industrial businesses globally experience unplanned outages at least monthly (ABB 2023, n=3,215)",
+      "sources": [
+        "new.abb.com (ABB Survey 2023)"
+      ],
+      "source_types": [
+        "primary_association"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "Single source. Global figure \u2014 no SEA breakdown. Used as proxy for SEA frequency."
+    },
+    {
+      "id": "PP4.2-freq-2",
+      "claim_text": "EFB ash K\u2082O 48.94 wt%; low ash fusion temperature <750\u00b0C; caustic corrosion confirmed as primary tube failure cause in MPOB study",
+      "sources": [
+        "jopr.mpob.gov.my",
+        "sciencedirect.com/topics/EFB"
+      ],
+      "source_types": [
+        "primary_academic",
+        "primary_academic"
+      ],
+      "score": "High",
+      "overrides": [],
+      "notes": "Two independent primary_academic sources. JOPR is MPOB peer-reviewed journal; ScienceDirect Topics aggregates primary literature. Well-corroborated materials science claim."
+    },
+    {
+      "id": "PP4.2-freq-3",
+      "claim_text": "Rice husk 15-20% ash by weight, 85-95% silica; grate bar replacement every 6-18 months on agri-residue vs. 2-3 years on clean fuel",
+      "sources": [
+        "agriculture.institute/IRRI",
+        "circulatingfluidizedbedboiler.com"
+      ],
+      "source_types": [
+        "secondary_trade",
+        "secondary_vendor"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_category"
+      ],
+      "notes": "Two secondary sources from different organizations but both secondary category. Rice husk ash figure (15-20%, silica 85-95%) is well-documented in primary literature but not cited from primary here. The grate bar replacement interval from circulatingfluidizedbedboiler.com is a vendor blog claim."
+    },
+    {
+      "id": "PP4.2-freq-4",
+      "claim_text": "Corrective/reactive maintenance = ~38% of global industrial boiler maintenance market by service type",
+      "sources": [
+        "skyquestt.com (SkyQuest)"
+      ],
+      "source_types": [
+        "secondary_market_research"
+      ],
+      "score": "Low",
+      "overrides": [
+        "secondary_market_research_only",
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "Single paid market research firm for a specific percentage claim."
+    },
+    {
+      "id": "PP4.2-freq-5",
+      "claim_text": "TPM programs in palm oil mills reduce breakdowns 30-50% per documented implementation studies",
+      "sources": [
+        "beta.co.id"
+      ],
+      "source_types": [
+        "secondary_vendor"
+      ],
+      "score": "Low",
+      "overrides": [
+        "vendor_blog_sole_source",
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "Single vendor blog for a specific quantitative claim about TPM effectiveness."
+    },
+    {
+      "id": "PP4.2-RC1-ASSUMED",
+      "claim_text": "Principal-agent split (production KPI vs. maintenance budget KPI) prevents preventive maintenance investment [ASSUMED-6]",
+      "sources": [
+        "ui.adsabs.harvard.edu (IOP 2019)",
+        "skyquestt.com"
+      ],
+      "source_types": [
+        "primary_academic",
+        "secondary_market_research"
+      ],
+      "score": "Low",
+      "overrides": [
+        "assumed_tag_with_source"
+      ],
+      "notes": "[ASSUMED-6] tagged. Sources support that reactive maintenance persists but do not directly evidence the budget-split mechanism as the cause in SEA palm oil mills."
+    },
+    {
+      "id": "PP4.2-RC2-ash-chemistry",
+      "claim_text": "Biomass ash chemistry creates structurally faster failure than coal; operators inherited coal-derived maintenance intervals",
+      "sources": [
+        "jopr.mpob.gov.my",
+        "sciencedirect.com/EFB",
+        "agriculture.institute/IRRI",
+        "circulatingfluidizedbedboiler.com"
+      ],
+      "source_types": [
+        "primary_academic",
+        "primary_academic",
+        "secondary_trade",
+        "secondary_vendor"
+      ],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "Two primary_academic + two secondary from different organizations. The technical chemistry claim is well-sourced; the 'operators haven't recalibrated intervals' inference is reasonable but not directly evidenced."
+    },
+    {
+      "id": "PP4.2-RC3-parts-leadtime",
+      "claim_text": "Indian and Chinese OEM parts lead times 6-12 weeks for tube bundles; reactive maintenance creates extended outages even with willingness to pay",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": [
+        "no_source_cited"
+      ],
+      "notes": "Cross-referenced to Stage 2 PP2.4 but no source directly cited in Stage 4 pain points file for this claim. No citation number appears in RC3."
+    },
+    {
+      "id": "PP4.2-RC4-ASSUMED",
+      "claim_text": "Fewer than 20% of sub-25 t/h boilers in SEA have continuous condition-monitoring instrumentation beyond standard gauges [ASSUMED-7]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": [
+        "assumed_tag_with_source",
+        "no_source_cited"
+      ],
+      "notes": "[ASSUMED-7] tagged with no source."
+    },
+    {
+      "id": "PP4.2-RC5-ASSUMED",
+      "claim_text": "CPO high-price period (2021-2022) drove deferred maintenance; tube failure rates elevated in 2023-2024 as deferred-maintenance backlog materialized [ASSUMED-8]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": [
+        "assumed_tag_with_source",
+        "no_source_cited"
+      ],
+      "notes": "[ASSUMED-8] tagged. Sources (1),(3),(4) cited in text point to beta.co.id and company pages \u2014 not to a failure-rate dataset."
+    },
+    {
+      "id": "PP4.3-cost-1",
+      "claim_text": "ESP ~$50/kW thermal; 5 t/h boiler = $150K-200K installed; 15 t/h = $400K-600K; cyclone+ESP for new palm oil mill = $50K-$200K",
+      "sources": [
+        "coalbiomassboiler.com",
+        "thundersaidenergy.com"
+      ],
+      "source_types": [
+        "secondary_vendor",
+        "secondary_trade"
+      ],
+      "score": "Low",
+      "overrides": [
+        "vendor_blog_sole_source"
+      ],
+      "notes": "coalbiomassboiler.com is a vendor blog (secondary_vendor). Thunder Said Energy is a subscription research platform (secondary_trade/analyst). Both are secondary sources; no primary capital cost reference from a procurement or government tender database."
+    },
+    {
+      "id": "PP4.3-cost-2",
+      "claim_text": "Baghouse capital cost $100K-$500K installed for 5-25 t/h solid-fuel package",
+      "sources": [
+        "coalbiomassboiler.com"
+      ],
+      "source_types": [
+        "secondary_vendor"
+      ],
+      "score": "Low",
+      "overrides": [
+        "vendor_blog_sole_source",
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "Single vendor blog."
+    },
+    {
+      "id": "PP4.3-cost-3-ASSUMED",
+      "claim_text": "CEMS hardware for 10 t/h boiler: approximately $30K-$80K installed [ASSUMED-3]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": [
+        "assumed_tag_with_source",
+        "no_source_cited"
+      ],
+      "notes": "[ASSUMED-3] tagged with no source."
+    },
+    {
+      "id": "PP4.3-cost-4",
+      "claim_text": "Malaysia EQA Amendment 2024: MYR 10K-1M per air emission violation; Indonesia PermenLHK 14/2024: up to IDR 3 billion per violation (~$185K)",
+      "sources": [
+        "enviliance.com",
+        "makarim.com"
+      ],
+      "source_types": [
+        "secondary_trade",
+        "secondary_trade"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_category"
+      ],
+      "notes": "Both secondary_trade sources (compliance newsletter + law firm blog). Neither is the primary legislative text. Malaysia amendment gazette and Indonesia PermenLHK 14/2024 primary text not directly cited. Makarim URL noted as returning SSL error in the draft itself \u2014 further reliability concern."
+    },
+    {
+      "id": "PP4.3-cost-5-ASSUMED",
+      "claim_text": "Stack testing $3K-$12K per test; annual environmental compliance overhead $5K-$20K per facility [ASSUMED-4]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": [
+        "assumed_tag_with_source",
+        "no_source_cited"
+      ],
+      "notes": "[ASSUMED-4] tagged."
+    },
+    {
+      "id": "PP4.3-cost-6",
+      "claim_text": "Retrofitting existing 15-year-old boiler with ESP/baghouse adds $30K-$80K above greenfield APC cost",
+      "sources": [
+        "coalbiomassboiler.com"
+      ],
+      "source_types": [
+        "secondary_vendor"
+      ],
+      "score": "Low",
+      "overrides": [
+        "vendor_blog_sole_source",
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "Single vendor blog for retrofit premium figure."
+    },
+    {
+      "id": "PP4.3-freq-1",
+      "claim_text": "Indonesia PermenLHK P.15/2019: PM 100 mg/Nm\u00b3, SO\u2082 550 mg/Nm\u00b3 for thermal plants including industrial boilers",
+      "sources": [
+        "ppkl.menlhk.go.id",
+        "makarim.com (PermenLHK 14/2024 ref)"
+      ],
+      "source_types": [
+        "primary_ministry",
+        "secondary_trade"
+      ],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "Primary_ministry source (KLHK official portal) + secondary_trade corroboration. PDF link not machine-readable but citation is authoritative government portal."
+    },
+    {
+      "id": "PP4.3-freq-2",
+      "claim_text": "Malaysia EQA (Clean Air) Regs 2014: PM 150 mg/Nm\u00b3; \u226530 kg/h solid-fuel threshold; 90% thermal efficiency mandate; upgraded penalties under 2024 amendment",
+      "sources": [
+        "eswis.doe.gov.my",
+        "enviliance.com"
+      ],
+      "source_types": [
+        "primary_gov",
+        "secondary_trade"
+      ],
+      "score": "High",
+      "overrides": [],
+      "notes": "Primary_gov source (Malaysia DOE official portal, direct regulation PDF) + secondary_trade corroboration. Two independent sources including one primary. High confidence for the regulatory text claim."
+    },
+    {
+      "id": "PP4.3-freq-3",
+      "claim_text": "Thailand 2023 MNRE notifications: new coal-fired units 30-50 mg/Nm\u00b3 PM (vs. 120 mg/Nm\u00b3 for existing plants)",
+      "sources": [
+        "enviliance.com"
+      ],
+      "source_types": [
+        "secondary_trade"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "Single secondary_trade source (Enviliance compliance newsletter). No primary Thai regulatory text cited."
+    },
+    {
+      "id": "PP4.3-freq-4",
+      "claim_text": "Standard cyclone pre-cleaners achieve ~150-200 mg/Nm\u00b3 PM removal for biomass ash \u2014 non-compliant under Indonesia's 100 mg/Nm\u00b3 limit",
+      "sources": [
+        "coalbiomassboiler.com"
+      ],
+      "source_types": [
+        "secondary_vendor"
+      ],
+      "score": "Low",
+      "overrides": [
+        "vendor_blog_sole_source",
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "Single vendor blog for a technically critical claim that underpins the entire non-compliance narrative for the sector."
+    },
+    {
+      "id": "PP4.3-freq-5",
+      "claim_text": "APAC biomass boiler market growing at 12.8% CAGR through 2032 (APC requirement growing simultaneously)",
+      "sources": [
+        "globalgrowthinsights.com"
+      ],
+      "source_types": [
+        "secondary_market_research"
+      ],
+      "score": "Low",
+      "overrides": [
+        "secondary_market_research_only",
+        "single_source_for_quantitative_claim",
+        "apac_as_proxy_for_country_specific"
+      ],
+      "flags": [
+        "geography_mismatch"
+      ],
+      "notes": "Single secondary_market_research. APAC proxy for SEA."
+    },
+    {
+      "id": "PP4.3-freq-6",
+      "claim_text": "Systemiq/ITB 'Better Air Better Indonesia' 2025: industrial coal boiler transitions as one of four priority PM2.5 reduction interventions; 80% PM2.5 reduction target by 2030",
+      "sources": [
+        "systemiq.earth (Systemiq/ITB Executive Summary 2025)"
+      ],
+      "source_types": [
+        "primary_academic"
+      ],
+      "score": "Medium",
+      "overrides": [
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "Systemiq/ITB joint publication is a credible think-tank/academic research institute report. Single source forces Medium, but the source quality is strong. The report's publication date (May 2025) is consistent with current evidence."
+    },
+    {
+      "id": "PP4.3-RC1-retroactive-compliance",
+      "claim_text": "Regulatory tightening since original boiler installation creates retroactive compliance obligation; Malaysia 1978 600 mg/Nm\u00b3 \u2192 2014 EQA lower limits; Indonesia pre-2015 boilers under pre-P.15/2019 standards",
+      "sources": [
+        "ppkl.menlhk.go.id",
+        "eswis.doe.gov.my",
+        "enviliance.com"
+      ],
+      "source_types": [
+        "primary_ministry",
+        "primary_gov",
+        "secondary_trade"
+      ],
+      "score": "High",
+      "overrides": [],
+      "notes": "Two independent primary sources (Indonesia ministry portal + Malaysia DOE primary_gov) + secondary_trade corroboration. The regulatory tightening claim is directly evidenced by the regulatory documents themselves."
+    },
+    {
+      "id": "PP4.3-RC2-enforcement-escalation",
+      "claim_text": "PermenLHK 14/2024 raises Indonesia penalty ceiling to IDR 3B; Malaysia EQA Amendment 2024 raises fines to MYR 1M; Systemiq/ITB positions industrial coal boiler transitions as high-priority government intervention",
+      "sources": [
+        "enviliance.com",
+        "makarim.com",
+        "systemiq.earth"
+      ],
+      "source_types": [
+        "secondary_trade",
+        "secondary_trade",
+        "primary_academic"
+      ],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "One primary_academic/think-tank (Systemiq/ITB) + two secondary_trade from different organizations. Three independent sources. Malaysia fine figure: primary gazette not cited but two secondary sources corroborate. Medium given no primary legislative text for either penalty framework."
+    },
+    {
+      "id": "PP4.3-RC3-APC-sizing-mismatch",
+      "claim_text": "Palm shell ash (high K+) promotes ESP fouling; rice husk (high silica) causes bag abrasion; Chinese APC equipment dimensioned for coal ash, not palm biomass",
+      "sources": [
+        "coalbiomassboiler.com",
+        "boilerworldupdate.com"
+      ],
+      "source_types": [
+        "secondary_vendor",
+        "secondary_trade"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_category"
+      ],
+      "notes": "Both secondary sources (vendor blog + trade press). Primary academic literature on biomass APC sizing challenges is not cited here despite being available. Stage 3 PP3.4 had better sourcing for this claim."
+    },
+    {
+      "id": "PP4.3-RC5-ASSUMED",
+      "claim_text": "No standardized APC-plus-boiler integrated product for sub-25 t/h package market; small operators in permanent non-compliance [ASSUMED-5]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": [
+        "assumed_tag_with_source",
+        "no_source_cited"
+      ],
+      "notes": "[ASSUMED-5] tagged."
+    },
+    {
+      "id": "PP4.4-cost-1",
+      "claim_text": "DOSH-certified boilerman: base MYR 2,000-4,000/month; remote premium 20-40% + accommodation; total loaded $800-$1,600/month; 2-4 operators per boiler \u2192 $19,200-$76,800/yr per boiler",
+      "sources": [
+        "majikan.my",
+        "malaysia.indeed.com"
+      ],
+      "source_types": [
+        "secondary_trade",
+        "secondary_trade"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_category"
+      ],
+      "notes": "Both secondary_trade (salary aggregator websites). The 20-40% remote premium is unsourced. No primary payroll survey, DOSH or BNM wage data, or employer HR data cited."
+    },
+    {
+      "id": "PP4.4-cost-2-ASSUMED",
+      "claim_text": "Coverage gap cost = production loss $4K-$130K/day; recruitment/replacement cost $2K-$8K per hire [ASSUMED-9]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": [
+        "assumed_tag_with_source",
+        "no_source_cited"
+      ],
+      "notes": "[ASSUMED-9] tagged."
+    },
+    {
+      "id": "PP4.4-cost-3",
+      "claim_text": "Broader skilled labor context: Indonesia 35 shortage occupations (World Bank COL 2018); Malaysia palm oil sector 40,000 worker shortage, 80% foreign workforce",
+      "sources": [
+        "worldbank.org (Critical Occupations List 2018)",
+        "prestasisawit.mpob.gov.my"
+      ],
+      "source_types": [
+        "primary_multilateral",
+        "primary_association"
+      ],
+      "score": "High",
+      "overrides": [],
+      "notes": "Two independent primary sources (World Bank primary_multilateral + MPOB primary_association). Well-corroborated. Note: these are structural labor shortage indicators, not boiler-operator-specific counts."
+    },
+    {
+      "id": "PP4.4-freq-1",
+      "claim_text": "Permenaker No. Per.01/MEN/1988 requires certified Kelas I operator present whenever boiler operating; DOSH requires licensed steam boiler driver; 24/7 mills need minimum 4 certified operators per boiler",
+      "sources": [
+        "centrasafety.com",
+        "bayubali.com.my"
+      ],
+      "source_types": [
+        "secondary_trade",
+        "secondary_trade"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_category"
+      ],
+      "notes": "Both secondary_trade (training provider websites citing regulations). Primary regulatory texts (Permenaker 01/1988, DOSH Factories and Machinery Act) not directly cited. The '4 operators per boiler' calculation is not in any cited source."
+    },
+    {
+      "id": "PP4.4-freq-2",
+      "claim_text": "Malaysia palm oil industry: 40,000 worker shortage; 80% of workforce is foreign; certified technical mill staff harder to retain than harvest labor",
+      "sources": [
+        "prestasisawit.mpob.gov.my"
+      ],
+      "source_types": [
+        "primary_association"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "MPOB primary_association for the labor shortage data. Single source for the 40,000 figure and 80% foreign workforce claim."
+    },
+    {
+      "id": "PP4.4-freq-3-ASSUMED",
+      "claim_text": "Kemnaker training centers in Indonesia predominantly located in Java; geographic mismatch with Sumatra/Kalimantan mill locations [ASSUMED-10]",
+      "sources": [
+        "centrasafety.com",
+        "indonesiasafetycenter.org"
+      ],
+      "source_types": [
+        "secondary_trade",
+        "secondary_trade"
+      ],
+      "score": "Low",
+      "overrides": [
+        "assumed_tag_with_source"
+      ],
+      "notes": "[ASSUMED-10] tagged. The two cited sources mention Jakarta/Surabaya programs but do not provide a census of all training center locations by province."
+    },
+    {
+      "id": "PP4.4-freq-4",
+      "claim_text": "DOSH Grade 2 certification requires 2-3 years experience + exam + medical; total pipeline 3-5 years from entry to certified",
+      "sources": [
+        "berjayatac.com",
+        "bssa.com.my"
+      ],
+      "source_types": [
+        "secondary_trade",
+        "secondary_trade"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_category"
+      ],
+      "notes": "Both secondary_trade (training provider websites). DOSH official requirements document not directly cited. Two sources corroborate 3-5 year pipeline but both are commercial training providers, not DOSH primary authority."
+    },
+    {
+      "id": "PP4.4-freq-5",
+      "claim_text": "ILO Thailand 2024: 'existing training and education programmes are insufficient to meet the sector's emerging demands' \u2014 structural pipeline shortfall across technical occupations",
+      "sources": [
+        "ilo.org (ILO Thailand Automotive Sector Skills Study 2024)"
+      ],
+      "source_types": [
+        "primary_multilateral"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "ILO primary_multilateral but single source; and the source is specifically about Thailand's automotive sector, not boiler operators \u2014 used as structural analogy."
+    },
+    {
+      "id": "PP4.4-RC3-cross-industry",
+      "claim_text": "DOSH/Kemnaker certification valid across industries; urban employers compete for same certificates without remoteness disadvantage",
+      "sources": [
+        "majikan.my",
+        "malaysia.indeed.com",
+        "cspo-watch.com"
+      ],
+      "source_types": [
+        "secondary_trade",
+        "secondary_trade",
+        "secondary_trade"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_category"
+      ],
+      "notes": "All three secondary_trade. The cross-industry portability of certification is documented in the regulatory texts but not cited from them."
+    },
+    {
+      "id": "PP4.4-RC4-ASSUMED",
+      "claim_text": "No regulatory pathway for supervised temporary boiler operation during certified operator vacancy in Indonesia/Malaysia/Thailand [ASSUMED-11]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": [
+        "assumed_tag_with_source",
+        "no_source_cited"
+      ],
+      "notes": "[ASSUMED-11] tagged. The absence of a regulatory pathway is claimed but not directly evidenced by citation of the regulations themselves."
+    },
+    {
+      "id": "PP4.4-RC5-no-subsidy",
+      "claim_text": "No government subsidy for industrial boiler operator training in Indonesia/Malaysia/Thailand; free-rider problem depresses employer certification investment",
+      "sources": [
+        "worldbank.org (COL 2018)",
+        "ilo.org (ILO Thailand 2024)"
+      ],
+      "source_types": [
+        "primary_multilateral",
+        "primary_multilateral"
+      ],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "Two independent primary_multilateral sources confirming structural skills training gap. The specific claim about absence of boiler operator training subsidy is inferential (the World Bank COL documents shortage occupations with no government training program cited) \u2014 but two primaries support the structural context."
+    },
+    {
+      "id": "PP4.5-cost-1",
+      "claim_text": "1 mm scale \u2192 5-8% efficiency loss (AquaPhoenix) to 10-15% (Lautan Air); 3.2 mm scale \u2192 20-25% efficiency loss",
+      "sources": [
+        "beta.co.id",
+        "aquaphoenixsci.com"
+      ],
+      "source_types": [
+        "secondary_vendor",
+        "secondary_trade"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_category"
+      ],
+      "notes": "Both secondary sources. Notably the two sources give different figures for the same scale thickness (5-8% vs. 10-15% for 1 mm). This internal inconsistency is not addressed. No primary academic citation for these efficiency-loss percentages despite the UTM and USM studies being cited elsewhere in PP4.5."
+    },
+    {
+      "id": "PP4.5-cost-2",
+      "claim_text": "Silica scale \u2192 ~28% heat-transfer efficiency loss (Clark 2014 cited in Lautan Air source)",
+      "sources": [
+        "beta.co.id (citing Clark 2014)"
+      ],
+      "source_types": [
+        "secondary_vendor"
+      ],
+      "score": "Low",
+      "overrides": [
+        "vendor_blog_sole_source",
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "The Clark 2014 primary citation is cited via a vendor blog intermediary, not directly. This is a second-hand citation. Single secondary_vendor source."
+    },
+    {
+      "id": "PP4.5-cost-3",
+      "claim_text": "Blowdown at 15% vs. <1% optimal: for 10 t/h boiler = $28K-$84K/yr excess fuel cost",
+      "sources": [
+        "beta.co.id (1)(4)"
+      ],
+      "source_types": [
+        "secondary_vendor"
+      ],
+      "score": "Low",
+      "overrides": [
+        "vendor_blog_sole_source",
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "Derived calculation from single vendor blog. The 15% blowdown vs. <1% assumption and the energy cost inputs are from beta.co.id alone."
+    },
+    {
+      "id": "PP4.5-cost-4-ASSUMED",
+      "claim_text": "Combined efficiency + blowdown excess cost per 10 t/h boiler: ~$50K-$150K/yr [ASSUMED-12]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": [
+        "assumed_tag_with_source"
+      ],
+      "notes": "[ASSUMED-12] tagged. Derived from beta.co.id inputs \u2014 double-dependence on single vendor source."
+    },
+    {
+      "id": "PP4.5-cost-5",
+      "claim_text": "Water treatment program for 300 HP boiler: $3,600-$7,200/yr; proportionally $15K-$40K for 10 t/h industrial boiler",
+      "sources": [
+        "getchemready.com",
+        "samcotech.com"
+      ],
+      "source_types": [
+        "secondary_vendor",
+        "secondary_vendor"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_category",
+        "vendor_blog_sole_source"
+      ],
+      "notes": "Two vendor/service company websites. Both are secondary_vendor selling water treatment services. The 10 t/h extrapolation is the draft's own calculation."
+    },
+    {
+      "id": "PP4.5-cost-6",
+      "claim_text": "Scale-induced tube failure: $30K-$100K repair + $50K-$1M production loss per incident",
+      "sources": [
+        "beta.co.id",
+        "jopr.mpob.gov.my"
+      ],
+      "source_types": [
+        "secondary_vendor",
+        "primary_academic"
+      ],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "JOPR MPOB primary_academic confirms caustic corrosion mechanism as tube failure cause. beta.co.id for cost figures. One primary_academic + one secondary_vendor."
+    },
+    {
+      "id": "PP4.5-freq-1",
+      "claim_text": "UTM 2022 study (37 mills, 1,427 DOSH data points): all 6 ASME feedwater parameters non-compliant at Perak mills; silica, hardness, total iron require further improvement",
+      "sources": [
+        "mjfas.utm.my",
+        "researchgate.net (same paper)"
+      ],
+      "source_types": [
+        "primary_academic",
+        "primary_academic"
+      ],
+      "score": "High",
+      "overrides": [],
+      "notes": "Peer-reviewed academic paper published in Malaysian Journal of Fundamental and Applied Sciences (UTM), using DOSH database records from 37 mills with 1,427 data points. This is the strongest single evidence item in Stage 4. Two URLs for the same paper \u2014 counted as 1 source. But the source quality is primary_academic with substantial sample size. High per rubric: single primary source but with an unusual empirical dataset that is itself anchored to DOSH (primary_gov) records."
+    },
+    {
+      "id": "PP4.5-freq-2",
+      "claim_text": "USM Perak study: operators 'leaving improperly treated iron in feedwater causing corrosion'; improper backwash and iron carryover documented",
+      "sources": [
+        "eprints.usm.my (USM 2021 BFW Quality)"
+      ],
+      "source_types": [
+        "primary_academic"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "High-quality primary_academic (USM peer-reviewed thesis/ESAR) but single source rule applies. Cross-validates PP4.5-freq-1 mechanistically."
+    },
+    {
+      "id": "PP4.5-freq-3",
+      "claim_text": "AIP Conference Proceedings 2023: monitoring chloride, sulfite, phosphate, cycle of concentration at palm oil mill boilers via SPC analysis \u2014 confirms active unresolved challenge",
+      "sources": [
+        "pubs.aip.org (AIP 2023)"
+      ],
+      "source_types": [
+        "primary_academic"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_for_quantitative_claim"
+      ],
+      "notes": "Primary_academic (AIP Conference Proceedings, peer-reviewed). Single source rule applies."
+    },
+    {
+      "id": "PP4.5-freq-4",
+      "claim_text": "Oxygen pitting 'most common form of waterside corrosion causing economizer tube failures'; caustic corrosion mechanism (Veolia Water Handbook)",
+      "sources": [
+        "watertechnologies.com/Veolia Ch.14",
+        "watertechnologies.com/Veolia Ch.11"
+      ],
+      "source_types": [
+        "secondary_vendor",
+        "secondary_vendor"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_category"
+      ],
+      "notes": "Both URLs are from the same publisher (Veolia Water Technologies handbook). Same publisher family = 1 source. Vendor handbook."
+    },
+    {
+      "id": "PP4.5-freq-5",
+      "claim_text": "ASME feedwater targets: hardness <0.1 ppm CaCO\u2083; dissolved oxygen <5-7 ppb; conductivity 1-1.5 mmho/cm",
+      "sources": [
+        "beta.co.id",
+        "mjfas.utm.my"
+      ],
+      "source_types": [
+        "secondary_vendor",
+        "primary_academic"
+      ],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "ASME targets corroborated by primary_academic (UTM study references ASME guidelines) + secondary_vendor. Note: ASME primary standard itself not directly cited \u2014 a gap, but the UTM academic paper does reference and apply ASME guidelines."
+    },
+    {
+      "id": "PP4.5-RC1-generalist-operators",
+      "claim_text": "Kemnaker/DOSH training covers mechanical operation not water chemistry; UTM study confirms structural inadequacy of shift-based water testing across 37 mills",
+      "sources": [
+        "mjfas.utm.my",
+        "eprints.usm.my",
+        "beta.co.id"
+      ],
+      "source_types": [
+        "primary_academic",
+        "primary_academic",
+        "secondary_vendor"
+      ],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "Two independent primary_academic sources (UTM + USM) + secondary_vendor. Three independent sources from different organizations. The training curriculum gap is inferential (DOSH/Kemnaker syllabi not directly cited) but the operational consequence is directly evidenced."
+    },
+    {
+      "id": "PP4.5-RC2-invisible-degradation",
+      "claim_text": "Gradual efficiency loss (1% per month from scale) invisible on single shift; only becomes visible at 15-20% degradation; no standard leading indicator tracked by operators",
+      "sources": [
+        "beta.co.id",
+        "aquaphoenixsci.com",
+        "beta.co.id (silica playbook)"
+      ],
+      "source_types": [
+        "secondary_vendor",
+        "secondary_trade",
+        "secondary_vendor"
+      ],
+      "score": "Low",
+      "overrides": [
+        "single_source_category"
+      ],
+      "notes": "Two of three citations are beta.co.id (same publisher family). AquaPhoenix is a separate secondary_trade. Effectively two sources, both secondary. The 1% per month scale accumulation rate is from a single vendor source."
+    },
+    {
+      "id": "PP4.5-RC3-water-source",
+      "claim_text": "SEA river/well raw water silica 1-100 mg/L; USM documents improper backwash/iron carryover as operational failure at Perak mills",
+      "sources": [
+        "beta.co.id (silica playbook)",
+        "eprints.usm.my",
+        "watertechnologies.com/Veolia Ch.11"
+      ],
+      "source_types": [
+        "secondary_vendor",
+        "primary_academic",
+        "secondary_vendor"
+      ],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "One primary_academic (USM study for the Perak operational failures) + two secondary from different organizations. The silica 1-100 mg/L range in SEA raw water is from beta.co.id single vendor \u2014 that sub-claim is Low but the overall RC is Medium."
+    },
+    {
+      "id": "PP4.5-RC4-ASSUMED",
+      "claim_text": "Periodic chemical supply without continuous monitoring is commercially standard but structurally insufficient; continuous automated monitoring not widely deployed at SME scale [ASSUMED-12 adjacent]",
+      "sources": [
+        "beta.co.id",
+        "beta.co.id (silica)",
+        "watertechnologies.com/Veolia Ch.14/11"
+      ],
+      "source_types": [
+        "secondary_vendor",
+        "secondary_vendor",
+        "secondary_vendor"
+      ],
+      "score": "Low",
+      "overrides": [
+        "assumed_tag_with_source",
+        "single_source_category"
+      ],
+      "notes": "No independent primary corroboration. All sources are secondary_vendor (Lautan Air and Veolia). The claim about commercial monitoring practices is inferential."
+    },
+    {
+      "id": "PP4.5-RC5-ASSUMED",
+      "claim_text": "No mandatory water treatment program standard for industrial boilers in Indonesia/Malaysia/Thailand in statutory inspection framework [ASSUMED-13]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": [
+        "assumed_tag_with_source",
+        "no_source_cited"
+      ],
+      "notes": "[ASSUMED-13] tagged. The claim about the absence of water chemistry in statutory inspection is plausible but not directly evidenced by citation of DOSH or Disnaker inspection checklists."
+    }
+  ],
+  "override_rollup": [
+    {
+      "override": "assumed_tag_with_source",
+      "claim_count": 14,
+      "claim_ids": [
+        "ASSUMED-1-boiler-count",
+        "PP4.1-cost-4-ASSUMED",
+        "PP4.1-cost-5-ASSUMED",
+        "PP4.2-RC1-ASSUMED",
+        "PP4.2-RC4-ASSUMED",
+        "PP4.2-RC5-ASSUMED",
+        "PP4.3-cost-3-ASSUMED",
+        "PP4.3-cost-5-ASSUMED",
+        "PP4.3-RC5-ASSUMED",
+        "PP4.4-cost-2-ASSUMED",
+        "PP4.4-RC4-ASSUMED",
+        "PP4.5-cost-4-ASSUMED",
+        "PP4.5-RC4-ASSUMED",
+        "PP4.5-RC5-ASSUMED"
+      ]
+    },
+    {
+      "override": "no_source_cited",
+      "claim_count": 7,
+      "claim_ids": [
+        "PP4.1-cost-5-ASSUMED",
+        "PP4.2-RC3-parts-leadtime",
+        "PP4.2-RC4-ASSUMED",
+        "PP4.2-RC5-ASSUMED",
+        "PP4.3-cost-3-ASSUMED",
+        "PP4.3-cost-5-ASSUMED",
+        "PP4.4-RC4-ASSUMED"
+      ]
+    },
+    {
+      "override": "vendor_blog_sole_source",
+      "claim_count": 9,
+      "claim_ids": [
+        "VC-5",
+        "VC-6",
+        "PP4.2-cost-1",
+        "PP4.2-cost-4",
+        "PP4.2-freq-5",
+        "PP4.3-cost-1",
+        "PP4.3-cost-2",
+        "PP4.3-cost-6",
+        "PP4.3-freq-4",
+        "PP4.5-cost-2",
+        "PP4.5-cost-3"
+      ]
+    },
+    {
+      "override": "single_source_for_quantitative_claim",
+      "claim_count": 28,
+      "claim_ids": [
+        "VC-6",
+        "MS-3",
+        "MS-5",
+        "MS-6",
+        "MS-7",
+        "MS-8",
+        "MS-9",
+        "MS-10",
+        "MS-11",
+        "MS-12",
+        "MS-13",
+        "PP4.1-freq-1",
+        "PP4.1-freq-2",
+        "PP4.1-freq-3",
+        "PP4.1-freq-4",
+        "PP4.1-freq-5",
+        "PP4.2-cost-2",
+        "PP4.2-cost-3",
+        "PP4.2-cost-4",
+        "PP4.2-cost-5",
+        "PP4.2-freq-1",
+        "PP4.2-freq-4",
+        "PP4.2-freq-5",
+        "PP4.3-cost-2",
+        "PP4.3-freq-3",
+        "PP4.3-freq-4",
+        "PP4.3-freq-5",
+        "PP4.4-freq-2",
+        "PP4.5-cost-2",
+        "PP4.5-cost-3",
+        "PP4.5-freq-2",
+        "PP4.5-freq-3"
+      ]
+    },
+    {
+      "override": "apac_as_proxy_for_country_specific",
+      "claim_count": 3,
+      "claim_ids": [
+        "MS-8",
+        "PP4.2-cost-5",
+        "PP4.3-freq-5"
+      ],
+      "flags": [
+        "geography_mismatch"
+      ]
+    },
+    {
+      "override": "secondary_market_research_only",
+      "claim_count": 6,
+      "claim_ids": [
+        "MS-6",
+        "MS-7",
+        "MS-8",
+        "PP4.2-cost-5",
+        "PP4.2-freq-4",
+        "PP4.3-freq-5"
+      ]
+    },
+    {
+      "override": "single_source_category",
+      "claim_count": 11,
+      "claim_ids": [
+        "VC-5",
+        "PP4.1-RC1-DMO",
+        "PP4.1-RC2-hedging",
+        "PP4.3-RC3-APC-sizing-mismatch",
+        "PP4.4-cost-1",
+        "PP4.4-freq-1",
+        "PP4.4-freq-4",
+        "PP4.4-RC3-cross-industry",
+        "PP4.5-cost-1",
+        "PP4.5-cost-5",
+        "PP4.5-freq-4",
+        "PP4.5-RC2-invisible-degradation",
+        "PP4.5-RC4-ASSUMED"
+      ]
+    },
+    {
+      "override": "same_publisher_family_counted_as_one",
+      "claim_count": 2,
+      "claim_ids": [
+        "PP4.5-freq-4 (Veolia Ch.11 + Ch.14 = 1 source)",
+        "PP4.5-RC2 (beta.co.id x2 = 1 source)"
+      ]
+    }
+  ],
+  "weak_claims_for_deep_research": [
+    {
+      "id": "VC-6",
+      "claim_text": "Fuel = 60-70% lifecycle cost; maintenance 10-15%; labor 8-12%; emissions compliance 5-8% baseline; water treatment 2-5%; ash disposal 3-6% \u2014 entire cost structure breakdown",
+      "current_sources": [
+        "coalbiomassboiler.com (single vendor blog)"
+      ],
+      "current_score": "Low",
+      "why_weak": "The entire Stage 4 cost structure \u2014 used as the foundational framework across PP4.1, PP4.2, PP4.3, PP4.4, PP4.5 \u2014 rests on a single vendor blog. Every downstream cost claim that references 'fuel = 60-70% of lifecycle cost' inherits this weakness. If coalbiomassboiler.com's figure is wrong (or is calibrated to a different geography/fuel type than SEA), the magnitude of PP4.1 is exaggerated and the relative cost weights of PP4.2-PP4.5 are distorted.",
+      "suggested_query": "Search IEA Southeast Asia Energy Outlook 2024 Table A5-A8 for industrial energy cost breakdown by sector; search ESDM Indonesia HEESI 2023 for industrial fuel cost share; search IRENA 'Renewable Power Generation Costs 2023' for biomass energy cost benchmarks; search MPOB Palm Oil Engineering Bulletin for boiler operating cost breakdown at Malaysian mills; search Universiti Teknologi Malaysia or Universiti Sains Malaysia for palm oil mill TCO studies",
+      "priority": "high"
+    },
+    {
+      "id": "MS-5",
+      "claim_text": "Indonesia ~69 sugar mills",
+      "current_sources": [
+        "zozenboiler.com (single vendor blog for Chinese boiler equipment)"
+      ],
+      "current_score": "Low",
+      "why_weak": "This figure contributes directly to the ASSUMED-1 bottom-up boiler count estimate (69 mills \u00d7 3-5 boilers = ~207-345 units, ~3-4% of the Indonesia total). The source is a Chinese boiler manufacturer's case study page \u2014 not BPS, not PTPN, not KEMENTAN or the Indonesian Sugar Refiners Association (APTRI). The actual BPS Agro-Industry Census figure is likely available.",
+      "suggested_query": "Search BPS Indonesia 'industri pengolahan gula 2022 2023' manufacturing census; search KEMENTAN Indonesia 'pabrik gula 2023'; search APTRI (Asosiasi Petani Tebu Rakyat Indonesia) for Indonesia sugar mill count; search PTPN Group annual report 2023 for sugar mill count",
+      "priority": "high"
+    },
+    {
+      "id": "PP4.1-RC1-DMO",
+      "claim_text": "Indonesia DMO price cap explicitly excludes textile, F&B, and rubber operators; these sectors buy at market rates through intermediaries; $5-10/t trader margin",
+      "current_sources": [
+        "adcolaw.com",
+        "ember-energy.org",
+        "coaltradeindo.com \u2014 all secondary_trade"
+      ],
+      "current_score": "Low",
+      "why_weak": "This is the structural root cause for PP4.1 fuel cost exposure \u2014 the entire pain point's severity depends on the DMO exclusion being real and persistent. Currently sourced only from a law firm blog and an energy advocacy NGO, not from the MEMR regulatory texts (Decree 13/2022, Decree 7/2020) or ESDM official DMO documentation. The $5-10/t intermediary margin is entirely unsourced.",
+      "suggested_query": "Search ESDM Indonesia 'Permen ESDM No. 7 Tahun 2020 DMO batubara' primary regulation text; search ESDM 'Kepmen ESDM No. 13.K 2022 domestic coal price'; search MEMR Indonesia official website for DMO beneficiary sector list; search IEEFA or Rocky Mountain Institute for Indonesia coal DMO impact analysis",
+      "priority": "high"
+    },
+    {
+      "id": "PP4.2-cost-1",
+      "claim_text": "1 day boiler downtime at 30 t/h FFB mill at CPO RM 3,800-4,200/t = ~$130K lost output; multi-day tube leak >$1M",
+      "current_sources": [
+        "beta.co.id (Lautan Air Indonesia vendor blog)",
+        "vortechglobal.com (vendor)"
+      ],
+      "current_score": "Low",
+      "why_weak": "The '$1M per day' or 'easily exceeds $1M' figure is the headline cost claim for PP4.2 and is used across the stage to anchor the economic severity of the reliability pain. It is sourced from a water treatment chemical supplier's promotional blog (beta.co.id/Lautan Air Indonesia) \u2014 the same company that sells the solution to this problem. No MPOB, GAPKI, or academic study directly confirms the downtime cost range. CPO price input (RM 3,800-4,200/t) also lacks an independent MPOB price bulletin citation in PP4.2.",
+      "suggested_query": "Search MPOB Price Bulletin 2024-2025 for CPO spot price range; search JOPR (Journal of Oil Palm Research) for palm oil mill operational cost studies quantifying downtime impact; search Boilermech FY2024 annual report for warranty claim data or unplanned downtime statistics; search GAPKI or MPOB for 'boiler downtime production loss' or mill OEE benchmarks",
+      "priority": "high"
+    },
+    {
+      "id": "PP4.1-freq-2",
+      "claim_text": "Non-metal industrial users account for ~6-9% of Indonesia's total coal consumption (~15-22 Mt/year); outside DMO price-cap protections",
+      "current_sources": [
+        "ember-energy.org (advocacy NGO)",
+        "adcolaw.com (law firm blog)"
+      ],
+      "current_score": "Low",
+      "why_weak": "This is the primary quantification of how many operators are exposed to the PP4.1 fuel cost pain. The 6-9% domestic industrial coal demand share is from an advocacy NGO's analytical report. Primary sources (BPS Indonesia coal statistics, ESDM HEESI coal consumption breakdown by sector, or Minerba ESDM domestic distribution data) would validate or challenge this figure.",
+      "suggested_query": "Search ESDM Indonesia 'konsumsi batubara industri 2022 2023 HEESI' or 'domestic coal consumption by sector'; search BPS Indonesia 'statistik batubara 2023' for coal consumption industry breakdown; search MEMR ESDM 'laporan DMO batubara 2022 2023' for actual DMO distribution data by sector",
+      "priority": "high"
+    },
+    {
+      "id": "PP4.3-cost-4",
+      "claim_text": "Malaysia EQA Amendment 2024: MYR 10K-1M per air emission violation; Indonesia PermenLHK 14/2024: up to IDR 3 billion per violation",
+      "current_sources": [
+        "enviliance.com (compliance newsletter)",
+        "makarim.com (law firm blog \u2014 URL with SSL error)"
+      ],
+      "current_score": "Low",
+      "why_weak": "These are the headline enforcement escalation figures that anchor PP4.3's argument that operators can no longer rely on low-enforcement tolerance. The Makarim URL was flagged as returning an SSL error in the draft itself \u2014 the citation is from a searched summary, not a verified page. Neither source is the primary legislation. For fines of MYR 1M and IDR 3B to be credible anchors, the primary gazette or Act text should be cited.",
+      "suggested_query": "Search Malaysia Gazette for 'Environmental Quality (Amendment) Act 2024 P.U.(A)'; search Malaysia Attorney General's Chambers 'Environmental Quality Act 1974 amendment 2024'; search Indonesia JDIH database for 'PermenLHK 14 2024 sanksi administratif' primary regulation text; search Hukumonline Indonesia for PermenLHK 14/2024",
+      "priority": "medium"
+    },
+    {
+      "id": "PP4.5-freq-1",
+      "claim_text": "UTM 2022 study (37 mills, 1,427 DOSH data points): all 6 ASME feedwater parameters non-compliant across Perak mills; silica, hardness, total iron require further improvement",
+      "current_sources": [
+        "mjfas.utm.my (primary_academic \u2014 strong source)"
+      ],
+      "current_score": "High",
+      "why_weak": "NOT a weak claim \u2014 scored High. Flagged here as a NOTE for the orchestrator: this is the strongest single evidence item in Stage 4, and PP4.5 as a whole is the best-evidenced pain point for the novel finding. However, the study covers only Perak state (one of 13 Malaysian states + 2 territories). Extending this to the full SEA market requires cross-validation with Indonesian data.",
+      "suggested_query": "Search for comparable palm oil mill boiler water quality studies in Indonesia, Sumatra, Kalimantan; search PTPN annual report or GAPKI for boiler water chemistry management practices; search MPOB Technical Circular for boiler water treatment recommendations; search UTM or UPM for sister studies in Johor or Sabah",
+      "priority": "medium"
+    },
+    {
+      "id": "PP4.4-cost-1",
+      "claim_text": "Boilerman base MYR 2,000-4,000/month; remote premium 20-40%; total loaded cost $800-$1,600/month; 4 certified operators per boiler = $19,200-$76,800/yr",
+      "current_sources": [
+        "majikan.my",
+        "malaysia.indeed.com \u2014 both salary aggregator websites"
+      ],
+      "current_score": "Low",
+      "why_weak": "The wage quantification for PP4.4 is entirely from salary aggregator websites with no methodology transparency. The 20-40% remote premium \u2014 which doubles the cost estimate's range \u2014 is unsourced. Malaysia Employment Act minimum wage data or MPOB labor survey data would provide primary grounding. Indonesian equivalent (Kemnaker occupational wage survey) not cited at all.",
+      "suggested_query": "Search MPOB 'survey upah industri sawit 2022 2023' or MPOB estate worker salary report; search Malaysia Department of Statistics 'salaries and wages survey 2022' by occupation; search Kemnaker Indonesia 'UMP UMK 2024 operator boiler' minimum wage by province; search MAPA (Malaysian Agricultural Producers Association) for mill skilled worker compensation benchmarks",
+      "priority": "medium"
+    }
+  ],
+  "gate_decision_recommendation": "SHIP_WITH_FLAG",
+  "gate_reasoning": "Stage 4 scores 53 Low out of 89 total claims (59.6% Low), which falls below the implied 70% FAIL threshold applied to Stage 3 but significantly above the clean-pass threshold. The stage is substantively better evidenced than Stage 3 in two respects: (1) PP4.5 (water treatment) is a genuine novel finding anchored by three independent primary_academic sources (UTM Perak study 37 mills/1,427 data points, USM Perak BFW study, AIP Conference Proceedings 2023) that collectively establish this as a real operational gap across Malaysian palm oil mills \u2014 not speculation; and (2) the regulatory framework claims (PP4.3) are well-sourced at primary_gov and primary_ministry level for Indonesia and Malaysia. However, four critical structural weaknesses require flagging before this stage can be cited as investable research: FIRST, the entire lifecycle cost breakdown (fuel 60-70%, maintenance 10-15%, etc.) rests on a single vendor blog (coalbiomassboiler.com) and propagates through every downstream cost claim across all five pain points \u2014 this is the highest-priority deep-research target. SECOND, the $1M+ per day downtime cost in PP4.2 originates from the same company that sells the water treatment solution (Lautan Air Indonesia / beta.co.id), creating a vendor-interest conflict in the only source for the headline severity claim. THIRD, the Indonesia sugar mill count (69 mills) is sourced from a Chinese boiler manufacturer's case study page (zozenboiler.com) \u2014 a market-sizing anchor that requires BPS census validation. FOURTH, the PP4.4 operator shortage evidence is structurally inferential (World Bank construction certification rate, MPOB palm oil labor shortage) but lacks a boiler-operator-specific census or enumeration. The stage can be shipped for reader consumption with these four flags prominently disclosed; the claims that are High or Medium confidence (including the regulatory framework, EFB chemistry, water quality study findings, and IEA energy data) are genuinely useful and well-evidenced. Deep research targeting the five weak claims above should be triggered before the Stage 4 findings are used to size commercial opportunity or estimate total addressable market."
+}

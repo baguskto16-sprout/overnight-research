@@ -1,0 +1,55 @@
+{
+  "claim_id": "PP1.3-3",
+  "verdict": "REFINED",
+  "updated_claim": "Every 10 percentage-point increase in biomass moisture content (wet basis) reduces the as-received heating value of wood by approximately 10–14% and reduces boiler thermal efficiency by a further 2–5 percentage points, resulting in a combined fuel consumption increase of roughly 15–25% per 10 pp of added moisture over the typical industrial operating range of 20–50% MC (wet basis). The original vendor-sourced figure of 8–12% understates the total fuel consumption impact; it approximates the heat-content-only effect at the lower end of the moisture range but does not capture the additional boiler efficiency penalty from increased latent heat losses in flue gas. A more defensible range for total fuel requirement increase per 10 pp moisture increase is 15–25% in the 20–40% MC range, consistent with NREL engineering methodology (Babcock & Wilcox Btu Combustion Method, SAM/TP-6A20-52688) and NREL cofiring reference data (NREL/TP-570-33811).",
+  "sources_found": [
+    {
+      "url": "https://docs.nrel.gov/docs/fy11osti/52688.pdf",
+      "type": "primary",
+      "publication": "NREL Technical Report NREL/TP-6A20-52688: Technical Manual for the SAM Biomass Power Generation Model",
+      "date": "2011",
+      "key_quote": "Section 3.2.2 'Moisture in Fuel': Moisture in fuel adversely affects the plant efficiency in two primary ways. [First, as dead weight; second, the water absorbs heat from the combustion reaction that is unlikely to be recovered.] The efficiency loss (e_fuel_moisture) is calculated as a percent of total heat input: e_fuel_moisture = Mdb * (H2 - H1) / HHV — following the Btu Combustion Method in Chapter 21 of Babcock & Wilcox's Steam. Applying this formula across the 10–50% MC range yields 2–5 pp absolute boiler efficiency loss per 10 pp of moisture increase (wet basis), rising non-linearly with moisture level.",
+      "via_pdf_markitdown": true
+    },
+    {
+      "url": "https://docs.nrel.gov/docs/fy04osti/33811.pdf",
+      "type": "primary",
+      "publication": "NREL/TP-570-33811: Biomass Cofiring in Coal-Fired Boilers (US DOE/NREL, 2004)",
+      "date": "2004",
+      "key_quote": "Reference table of as-received biomass heating values: Dry biomass (10% moisture) = 7,500 BTU/lb; Moist biomass (30% moisture) = 6,000 BTU/lb; Wet biomass (50% moisture) = 4,500 BTU/lb. This implies a 10% reduction in as-received heat content per 10 pp moisture increase at the lower end (10–30%), rising to 12.5% per 10 pp at 30–50% range. Also states: 'losses in boiler efficiency caused by cofiring are small and are usually due to high moisture content in the biomass fuels.'",
+      "via_pdf_markitdown": true
+    },
+    {
+      "url": "https://docs.nrel.gov/docs/fy00osti/26946.pdf",
+      "type": "primary",
+      "publication": "NREL/SR-570-26946: Lessons Learned from Existing Biomass Power Plants (US DOE/NREL, 2000)",
+      "date": "2000",
+      "key_quote": "Kettle Falls plant boiler design: 'The design efficiency of the boiler is 70%' at 50% moisture wood waste (rated 480,000 lb/h). Separately, stoker boilers at 10–20% moisture achieve boiler efficiencies of 83–86%, consistent with industry practice. This 13–16 pp efficiency gap over a 30–40 pp moisture range implies 3–5 pp efficiency drop per 10 pp moisture increase, in line with the NREL SAM formula.",
+      "via_pdf_markitdown": true
+    },
+    {
+      "url": "https://task32.ieabioenergy.com/wp-content/uploads/sites/2/2017/03/IEA-_Verenum_2006_Efficiency.pdf",
+      "type": "primary",
+      "publication": "IEA Bioenergy Task 32 / Verenum: Determination of the Efficiencies of Automatic Biomass Combustion Plants (Good, Nussbaumer et al., 2006)",
+      "date": "2006",
+      "key_quote": "Measured boiler efficiency (indirect determination method) on 550 kW biomass grate boiler at 100% load with 32% MC fuel: 86.2 ± 1.7%. The report provides full formulas for combustion efficiency and boiler efficiency using the indirect determination method (DIN 4702 basis), establishing that moisture in fuel is a primary contributor to boiler efficiency loss through latent heat of vaporization in flue gas. 'Thermal losses by sensible heat of dry flue gas and water vapour' and 'thermal gain from latent heat of condensed water vapour in flue gas (from water content in the fuel)' are explicitly enumerated.",
+      "via_pdf_markitdown": true
+    }
+  ],
+  "confidence_after": "medium",
+  "research_notes": {
+    "original_claim_assessment": "The 8–12% figure is low and internally ambiguous. It may refer to (a) reduction in effective heat output (heating value only, not fuel consumption), which is approximately correct for the 10–30% MC range, or (b) total fuel consumption increase, which is understated. The vendor source did not specify which metric it was using or the moisture range.",
+    "what_authoritative_sources_confirm": "The moisture-combustion efficiency relationship is well-documented in NREL engineering literature. The primary mechanisms — reduced as-received heating value plus increased latent heat loss in flue gas — are both captured in the NREL SAM Btu Combustion Method formula (Babcock & Wilcox basis). The combined effect on fuel consumption per unit of useful heat is 15–25% per 10 pp moisture increase in the 20–40% MC range.",
+    "what_is_missing": "No single authoritative source provides a clean '8–12%' or '15–25%' per-10pp rule; the relationship is non-linear and depends on the starting moisture level, boiler type, and excess air. For a defensible business claim, either (1) cite the NREL formula with explicit assumptions, (2) use the narrower heat-content-only metric (~10–14% per 10pp, NREL TP-570-33811), or (3) cite the combined fuel consumption range and note boiler type dependence.",
+    "searches_performed": [
+      "NREL biomass moisture content combustion efficiency boiler fuel consumption percentage",
+      "IEA Bioenergy Task 32 biomass moisture combustion efficiency boiler heat output",
+      "biomass moisture content boiler efficiency 10 percent engineering study peer reviewed",
+      "EPA AP-42 wood biomass combustion moisture heating value efficiency factor",
+      "biomass moisture boiler thermal efficiency lower heating value peer reviewed journal",
+      "NREL biomass moisture boiler efficiency site:nrel.gov site:energy.gov",
+      "biomass moisture boiler efficiency 70% 83% stoker NREL",
+      "biomass moisture content combustion efficiency per 10 pp fuel consumption peer reviewed 2015 2020"
+    ]
+  }
+}

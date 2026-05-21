@@ -1,0 +1,41 @@
+{
+  "claim_id": "PP2.1-cost-1",
+  "original_claim": "Annual industry-wide freight payment fraud losses: $500M–$700M per year",
+  "original_score": "L",
+  "new_score": "L",
+  "outcome": "confirmed-scarce",
+  "new_sources": [
+    {
+      "url": "https://www.freightwaves.com/news/tias-stark-message-double-brokering-fraud-out-of-control",
+      "publisher": "FreightWaves (quoting Garrett Wolfe, CSO TriumphPay)",
+      "category": "trade-press",
+      "key_quote": "Based on internal reviews at TriumphPay, the amount of freight that would be 'by-the-letter double brokering' is about $500 million to $700 million per year."
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2023/04/14/2647052/28528/en/TriumphPay-Partners-with-Highway-to-Combat-Double-Brokering-Fraud.html",
+      "publisher": "GlobeNewswire (TriumphPay press release)",
+      "category": "vendor-press-release",
+      "key_quote": "Melissa Forman, president of TriumphPay, states: 'we estimate affects $500-700M worth of freight annually' — attributed to TriumphPay internal data. TriumphPay and Highway announced a commercial partnership in the same press release."
+    },
+    {
+      "url": "https://news.tianet.org/2024-tia-framework-to-combat-fraud/",
+      "publisher": "Transportation Intermediaries Association (TIA)",
+      "category": "industry-association",
+      "key_quote": "Freight fraud and double brokering are the main culprits, costing victims an estimated $500 million to $700 million in freight payments annually. — No underlying source cited by TIA for this figure."
+    },
+    {
+      "url": "https://www.ic3.gov/PSA/2026/PSA260430",
+      "publisher": "FBI Internet Crime Complaint Center (IC3)",
+      "category": "primary-gov",
+      "key_quote": "Estimated cargo theft losses in the United States and Canada surged to nearly $725 million [in 2025], a 60 percent increase from 2024. — Covers physical/strategic cargo theft, NOT freight payment fraud specifically."
+    },
+    {
+      "url": "https://www.verisk.com/company/newsroom/cargo-theft-surges-to-record-levels-in-2024-verisk-cargonet-analysis-reveals/",
+      "publisher": "Verisk CargoNet",
+      "category": "industry-data",
+      "key_quote": "Cargo theft reached record levels in 2024 with an estimated loss value of $454.9 million across 3,625 reported incidents — This covers physical cargo theft; no separate freight payment fraud total published."
+    }
+  ],
+  "revised_claim_text": "[ASSUMED-N]: Annual industry-wide freight payment fraud losses are estimated at $500M–$700M per year — this figure originates from TriumphPay's internal payment-network analysis (Melissa Forman, president; Garrett Wolfe, CSO), disclosed in April 2023 simultaneously with TriumphPay's commercial partnership announcement with Highway. TIA's 2024 Framework to Combat Fraud repeated the figure without citing an independent source. No government agency (FBI IC3, FMCSA), multilateral body, academic study, or independent insurer has published a corroborating freight-payment-fraud total at this magnitude. Physical cargo theft losses tracked by Verisk CargoNet reached $455M (2024) and $725M (2025), but those figures cover theft of goods, not payment fraud. To validate: commission an independent analysis of freight payment data from a neutral payment network or obtain an actuarial loss estimate from a cargo insurer (Marsh, Travelers, Allianz).",
+  "notes": "Provenance chain fully traced. The $500-700M number was coined by TriumphPay (a direct commercial partner of Highway) from internal payment-platform data described as 'initial analysis' and 'conservative estimate.' FTV Capital, the VC investor in Highway, then repeated it. TIA's 2024 framework document re-cited it without attribution. The figure has never been independently validated by a government agency, multilateral body, academic institution, or independent insurer. FBI IC3 does not break out freight payment fraud as a separate category. FMCSA lacks statutory authority to assess civil penalties for double brokering and publishes no aggregate loss total. CargoNet/Verisk tracks physical cargo theft only. Score remains L. Claim should be marked ASSUMED-N with explicit disclosure of TriumphPay/Highway commercial relationship and methodology limitations."
+}

@@ -1,0 +1,49 @@
+{
+  "claim_id": "PP-22",
+  "outcome": "stronger",
+  "new_confidence": "M",
+  "refined_claim_text": "Brazilian road freight companies spend approximately 14% of revenue on cargo security — covering GPS tracking, armed escorts, vehicle armoring, AI-based systems, and insurance — according to Eduardo Rebuzzi, president of NTC&Logística, speaking at the 9th CNT Public Security Forum (February 2025). Total direct losses from cargo theft reached R$ 1.217 billion in 2024 (10,478 incidents, down 11% year-on-year), with the Southeast — particularly São Paulo (43%) and Rio de Janeiro (29%) — accounting for 72% of incidents. The original 10–20% range (Insurance Journal, 2018) should be retired in favor of the 14% NTC&Logística 2025 estimate, noting the lower end reflects efficiency gains from technology adoption over the past decade.",
+  "primary_sources_found": [
+    {
+      "url": "https://blogdocaminhoneiro.com/2025/02/associacao-divulga-levantamento-sobre-roubo-de-cargas-em-2024-e-reforca-alerta-sobre-acoes-urgentes/",
+      "category": "industry-association",
+      "publication_date": "2025-02",
+      "supports_claim": true,
+      "key_data": "NTC&Logística president Eduardo Rebuzzi stated at the 9th CNT Public Security Forum (18 Feb 2025): 'Companies in the road cargo transport sector already spend approximately 14% of revenue preventatively on tracking, armed escorts, vehicle armoring, artificial intelligence, and insurance.' Context: 10,478 cargo thefts in Brazil in 2024, R$ 1.217 billion in losses.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://setcemg.org.br/associacao-divulga-levantamento-sobre-roubo-de-cargas-em-2024-e-reforca-alerta-sobre-acoes-urgentes/",
+      "category": "industry-association",
+      "publication_date": "2025-02",
+      "supports_claim": true,
+      "key_data": "Cross-validates Rebuzzi's 14% statement and 2024 cargo theft data: 10,478 robberies (-11% vs 2023), R$ 1.217 billion stolen goods value (+21% vs 2023). Sector body SETCEMG republished NTC&Logística data.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://tapa.memberclicks.net/assets/2025-National-Cargo-Theft-Conferfence/Presentations-for-Sharing/Brazil%20Annual%20Cargo%20Theft%20Report%202024_TAPA.pdf",
+      "category": "primary-industry",
+      "publication_date": "2025",
+      "supports_claim": true,
+      "key_data": "Overhaul Brazil Annual Cargo Theft Report 2024 (presented at TAPA National Cargo Theft Conference 2025): confirms 95% of thefts concentrated in 10 states; São Paulo 43%, Rio de Janeiro 29%. Does not contain security cost percentages — focuses on incident mapping and temporal patterns.",
+      "via_pdf_markitdown": true
+    },
+    {
+      "url": "https://logweb.com.br/roubo-de-cargas-brasil-2025-queda-prejuizos/",
+      "category": "industry-association",
+      "publication_date": "2026-03",
+      "supports_claim": true,
+      "key_data": "NTC&Logística 2025 survey (published March 2026): 8,570 theft occurrences (-16.7% vs 2024), direct losses ~R$ 900 million; indirect costs (operational, insurance, consumer price impact) push total above R$ 1 billion. Confirms ongoing security burden on freight sector.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://setcesp.org.br/publicacoes/panorama-do-roubo-de-cargas-2024-na-grande-regiao-metropolitana-de-sao-paulo/",
+      "category": "primary-regulatory",
+      "publication_date": "2025",
+      "supports_claim": true,
+      "key_data": "SETCESP/FETCESP 'Panorama do Roubo de Cargas 2024 na Grande Região Metropolitana de São Paulo' — full 2024 cargo theft census for São Paulo metro using SPCarga (SSP-SP official data). Covers timing, mode of attack, cargo type, and recovery rates. Does not publish a % of revenue figure but confirms São Paulo as epicenter (43% of national incidents).",
+      "via_pdf_markitdown": false
+    }
+  ],
+  "notes": "Outcome: stronger. The 2018 Insurance Journal 10–20% range is now replaceable with a 2025 primary-source figure. The NTC&Logística president's statement of 'approximately 14% of revenue' was made publicly at the 9th CNT Public Security Forum on 18 February 2025, and was republished by multiple sector bodies (Blog do Caminhoneiro, SETCEMG). The figure is attributed to one industry association spokesperson — not an audited survey — so confidence is rated M not H. No government statistics agency (ANTT, BPS) or academic peer-reviewed source was found that independently quantifies security spend as a percentage of trucking revenue; this remains an industry self-report. The downward revision from the 2018 range (10–20%) to ~14% is consistent with the trend: cargo theft incidents fell 60% from 2017 peak to 2024, allowing some security cost optimization, but the value of goods stolen rose 21% YoY in 2024 as criminals shifted to high-value targets, maintaining pressure on security budgets. Insurance data from Agência Brasil (2025): RCTR-C (road freight liability insurance) premiums reached R$ 721 million in first 5 months of 2025 (+1.5% YoY), with claims paid of R$ 520 million — a 72% loss ratio, confirming that insurance alone is a substantial line item for the sector. FETCESP/SETCESP publishes a detailed São Paulo-specific annual report but does not publish a % of revenue cost figure. CNT Anuário do Transporte (anuariodotransporte.cnt.org.br) was identified but not fetched within resource budget; it may contain aggregate cost structure data — recommended for pass-4 follow-up. Recommended refined claim for pitch deck: 'Brazilian freight operators spend an estimated ~14% of revenue on cargo security (NTC&Logística, Feb 2025), compared with 10–20% reported in 2018, reflecting partial gains from technology adoption even as theft values rose 21% in 2024 to R$ 1.2 billion.'"
+}

@@ -1,0 +1,741 @@
+{
+  "stage": 3,
+  "stage_name": "EPC / Installation & Commissioning",
+  "context": "per-stage",
+  "total_claims": 93,
+  "by_confidence": {
+    "high": 2,
+    "medium": 22,
+    "low": 69
+  },
+  "low_confidence_pct": 0.742,
+  "unique_sources_cited": 42,
+  "source_classification": {
+    "primary_gov": ["cidb.gov.my", "peraturan.bpk.go.id", "dosh.gov.my", "eswis.doe.gov.my", "doe.gov.my", "databoks.katadata.co.id", "bls.gov", "ppkl.menlhk.go.id"],
+    "primary_ministry": ["ppkl.menlhk.go.id"],
+    "primary_multilateral": ["eria.org"],
+    "primary_standards": ["tuv.com/malaysia", "tuv.com/indonesia", "bureauveritas.id", "asmedigitalcollection.asme.org"],
+    "primary_academic": ["asmedigitalcollection.asme.org", "researchgate.net (EFB drying)", "researchgate.net (particulate emission)", "ijaseit.insightsociety.org"],
+    "primary_association": ["ecitb.com"],
+    "secondary_market_research": ["techsciresearch.com", "businesswire.com", "databridgemarketresearch.com", "inkwoodresearch.com", "grandviewresearch.com", "towardschemandmaterials.com", "marketdataforecast.com", "marketresearchindonesia.com"],
+    "secondary_trade": ["climatesolutionslaw.com", "namitachauhan.wordpress.com", "mastt.com", "eayglobal.com", "lawgratis.com", "daeryunlaw.com", "vietnamenergy.vn", "theedgemalaysia.com", "weldingonlineacademy.com", "bizindo.com", "petrosync.com", "ujiriksa.com", "nusa7.com", "getfoundation.com.my", "ctprecise.com", "lexology.com", "lexisnexis.co.uk", "allin.or.id", "boilerworldupdate.com", "hse.co.id", "enviliance.com", "quantitysurveyoronline.com.my", "kemppi.com"],
+    "secondary_vendor": ["cbip.com.my/modipalm.com.my", "viridis-engineering.com", "boilermech.com", "mechmar.com.my/maxtherm.com.my", "atmindoboiler.com", "basuki.com", "barata.id", "recon.co.id/rekayasaengineering.co.id", "krakataueng.co.id", "bib.co.th", "getabecboiler.com", "valmet.com", "stecongroup.co.th", "eurothaiengineering.com", "cimechboiler.com/enertech.com.ph", "vyncke.com", "thermaxglobal.com", "simecpellet.com", "twi-global.com", "vortechglobal.com", "coalbiomassboiler.com", "tndt.co.th", "bureauveritas.id"]
+  },
+  "claims": [
+    {
+      "id": "VC-1",
+      "claim_text": "Civil works and foundation = 15-20% of total installed project cost",
+      "sources": ["coalbiomassboiler.com"],
+      "source_types": ["secondary_vendor"],
+      "score": "Low",
+      "overrides": ["vendor_blog_sole_source", "single_source"]
+    },
+    {
+      "id": "VC-2",
+      "claim_text": "EPC gross margin on labor/civil works = 8-15%",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["no_source_cited"]
+    },
+    {
+      "id": "VC-3",
+      "claim_text": "BOP equipment procurement markup = 10-20% over cost",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["no_source_cited"]
+    },
+    {
+      "id": "VC-4",
+      "claim_text": "Project management overhead = 8-12% of contract value",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["no_source_cited"]
+    },
+    {
+      "id": "VC-5",
+      "claim_text": "Total installed cost 10 t/h coal/biomass package boiler in Indonesia = $600k-$1.5M; EPC services = $200k-$700k",
+      "sources": ["vortechglobal.com", "coalbiomassboiler.com"],
+      "source_types": ["secondary_vendor", "secondary_vendor"],
+      "score": "Low",
+      "overrides": ["vendor_blog_sole_source", "single_source_category"]
+    },
+    {
+      "id": "VC-6",
+      "claim_text": "Indonesia process boiler & heating equipment market ~$54M (2024 projected from 2019 base at ~4% CAGR)",
+      "sources": ["techsciresearch.com", "businesswire.com"],
+      "source_types": ["secondary_market_research", "secondary_news"],
+      "score": "Low",
+      "overrides": ["single_source_effectively (BusinessWire republishes TechSci)", "no_primary_source"]
+    },
+    {
+      "id": "VC-7",
+      "claim_text": "Indonesia industrial boiler market ~$1.06B (2023, power plant boilers)",
+      "sources": ["databridgemarketresearch.com"],
+      "source_types": ["secondary_market_research"],
+      "score": "Low",
+      "overrides": ["single_source", "size_conflation_flagged_in_draft"]
+    },
+    {
+      "id": "VC-8",
+      "claim_text": "Malaysia total construction market RM150.2B (~$32B) across 11,980 projects in 2024",
+      "sources": ["cidb.gov.my"],
+      "source_types": ["primary_gov"],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "Single primary-gov source; non-controversial published official figure qualifies for Medium under rubric"
+    },
+    {
+      "id": "VC-9",
+      "claim_text": "Asia Pacific industrial boiler market $5.99B (2024) growing to $8.75B by 2034 at 3.86% CAGR",
+      "sources": ["towardschemandmaterials.com", "marketdataforecast.com"],
+      "source_types": ["secondary_market_research", "secondary_market_research"],
+      "score": "Low",
+      "overrides": ["apac_as_proxy", "single_source_category"],
+      "flags": ["geography_mismatch"]
+    },
+    {
+      "id": "VC-10",
+      "claim_text": "Asia Pacific industrial biomass boiler market ~$2.5B (2023, 12.34% CAGR to 2032)",
+      "sources": ["inkwoodresearch.com"],
+      "source_types": ["secondary_market_research"],
+      "score": "Low",
+      "overrides": ["single_source", "apac_as_proxy"],
+      "flags": ["geography_mismatch"]
+    },
+    {
+      "id": "VC-11",
+      "claim_text": "Indonesia biomass boiler sub-segment $52.4M (2024), $84.1M by 2030",
+      "sources": ["grandviewresearch.com"],
+      "source_types": ["secondary_market_research"],
+      "score": "Low",
+      "overrides": ["single_source"]
+    },
+    {
+      "id": "VC-12",
+      "claim_text": "SEA-5 EPC services market for sub-25 t/h solid-fuel package boilers ~$80M-$200M/yr [ASSUMED-1]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["assumed_tag"]
+    },
+    {
+      "id": "VC-13-28",
+      "claim_text": "Company profile claims for 16 named players (Modipalm >80 mills; Boilermech turnkey scope; PT Atmindo ASME certified; PT Basuki first Indonesian solid-fuel manufacturer; BIB 500+ staff 50+ years; Thermax >85 plants >2400 MW; etc.)",
+      "sources": ["respective company websites (secondary_vendor, single source each)"],
+      "source_types": ["secondary_vendor"],
+      "score": "Low",
+      "overrides": ["single_source per claim", "vendor_self_report"],
+      "notes": "16 distinct company profile claims, all sourced solely from the company's own website"
+    },
+    {
+      "id": "VC-29",
+      "claim_text": "Thermax >85 plants / >2,400 MW on EPC basis; active Thailand (>30 units sugar) and Indonesia (50-year association)",
+      "sources": ["thermaxglobal.com"],
+      "source_types": ["secondary_vendor"],
+      "score": "Low",
+      "overrides": ["single_source", "vendor_self_report"]
+    },
+    {
+      "id": "VC-30",
+      "claim_text": "CBIP/Modipalm Central Kalimantan mill: 4-5 month construction-to-commissioning timeline (RM39M project)",
+      "sources": ["theedgemalaysia.com"],
+      "source_types": ["secondary_trade"],
+      "score": "Low",
+      "overrides": ["single_source"]
+    },
+    {
+      "id": "VC-PP1",
+      "claim_text": "Design-build interface friction is a top-5 pain point for EPC project managers [ASSUMED-2]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["assumed_tag"]
+    },
+    {
+      "id": "VC-PP2",
+      "claim_text": "Shortage of ASME-certified welders and boilermakers at remote SEA sites; remote mobilization inflates labor cost 20-40%",
+      "sources": ["kemppi.com", "twi-global.com"],
+      "source_types": ["secondary_vendor", "secondary_vendor"],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "Two secondary sources from different organizations corroborating the structural shortage claim. Wage premium (20-40%) is [ASSUMED-8] in the pain points file."
+    },
+    {
+      "id": "VC-PP3",
+      "claim_text": "Indonesia permitting 4-12 weeks; Malaysia DOSH CF 4-8 weeks; Thailand DOEB adds similar cycle time",
+      "sources": ["tuv.com/malaysia", "tuv.com/indonesia"],
+      "source_types": ["primary_standards", "primary_standards"],
+      "score": "Low",
+      "overrides": ["same_publisher_family (TÜV Rheinland = 1 source)"]
+    },
+    {
+      "id": "VC-PP4",
+      "claim_text": "Performance-test risk from off-spec fuel; no common contractual FX mechanism in SEA palm oil mill EPC contracts [ASSUMED-3]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["assumed_tag"]
+    },
+    {
+      "id": "VC-PP5",
+      "claim_text": "Currency mismatch IDR/USD; IDR depreciated ~6% vs USD in H2 2023; no FX adjustment clause in SME EPC contracts [ASSUMED-4]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["assumed_tag"]
+    },
+    {
+      "id": "VC-PP6",
+      "claim_text": "Civil works delays (peat soil, soil conditions) leading cause of commissioning slips in Kalimantan and Sabah [ASSUMED-5]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["assumed_tag"]
+    },
+    {
+      "id": "VC-PP7",
+      "claim_text": "Post-handover warranty ambiguity between OEM, EPC, and operator; cash-flow drag >30 days [ASSUMED-6]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["assumed_tag"]
+    },
+    {
+      "id": "VC-PP8",
+      "claim_text": "Rising APC integration complexity with tightening emission standards in Malaysia, Indonesia, Thailand",
+      "sources": ["tuv.com/malaysia", "tuv.com/indonesia"],
+      "source_types": ["primary_standards", "primary_standards"],
+      "score": "Low",
+      "overrides": ["same_publisher_family (TÜV Rheinland = 1 source)"]
+    },
+    {
+      "id": "PP3.1-cost-1",
+      "claim_text": "PLD cap industry standard 10-15% of EPC contract price; $30k-$75k per disputed performance test for $300k-$500k scope",
+      "sources": ["climatesolutionslaw.com", "namitachauhan.wordpress.com"],
+      "source_types": ["secondary_trade", "secondary_trade"],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "Two independent secondary-trade sources corroborating standard EPC LD cap norms; personal blog quality is low but both confirm the 10-15% cap"
+    },
+    {
+      "id": "PP3.1-cost-2",
+      "claim_text": "Retention 5-10% per progress payment; second tranche released after defect liability period; $20k-$40k blocked 12-24 months for $400k scope",
+      "sources": ["mastt.com", "eayglobal.com"],
+      "source_types": ["secondary_trade", "secondary_trade"],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "Two secondary-trade sources corroborating standard construction retention mechanics"
+    },
+    {
+      "id": "PP3.1-cost-3",
+      "claim_text": "Arbitration of biomass plant performance shortfalls: legal costs $50k-$200k for mid-size disputes",
+      "sources": ["lawgratis.com"],
+      "source_types": ["secondary_trade"],
+      "score": "Low",
+      "overrides": ["single_source"]
+    },
+    {
+      "id": "PP3.1-cost-4",
+      "claim_text": "Re-commissioning remobilization cost $5k-$20k per event at remote SEA sites [ASSUMED-1]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["assumed_tag"]
+    },
+    {
+      "id": "PP3.1-freq-1",
+      "claim_text": "EFB raw moisture 65-70% post-sterilization; design spec typically 50-55% moisture or 10-15% for shell/fiber blend; gap of 15-20 percentage points",
+      "sources": ["simecpellet.com", "asmedigitalcollection.asme.org"],
+      "source_types": ["secondary_vendor", "primary_standards"],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "One primary-standards (ASME Open Engineering journal) + one secondary-vendor; qualifies as Medium with one primary source present"
+    },
+    {
+      "id": "PP3.1-freq-2",
+      "claim_text": "Biomass boiler thermal efficiency decreases by ~14% when EFB moisture rises from design optimum to raw as-harvested levels",
+      "sources": ["researchgate.net (EFB drying study)"],
+      "source_types": ["primary_academic"],
+      "score": "Low",
+      "overrides": ["single_source"],
+      "notes": "High quality source but single source rule applies"
+    },
+    {
+      "id": "PP3.1-freq-3",
+      "claim_text": "ABB v. National Power LCIA and GE Energy v. Enel SCC arbitration cases confirm biomass plant performance shortfalls proceed to formal arbitration with apportioned liability",
+      "sources": ["lawgratis.com"],
+      "source_types": ["secondary_trade"],
+      "score": "Low",
+      "overrides": ["single_source", "case_citations_unverifiable_from_blog"]
+    },
+    {
+      "id": "PP3.1-freq-4",
+      "claim_text": "90% of EPC projects managed by SOEs in Indonesia experience schedule or performance-related delays; contractor-related factors rated highest in relative importance index studies",
+      "sources": ["ijaseit.insightsociety.org"],
+      "source_types": ["primary_academic"],
+      "score": "Low",
+      "overrides": ["single_source"],
+      "notes": "Peer-reviewed but single source; scope is SOE-managed projects broadly, not boiler-specific"
+    },
+    {
+      "id": "PP3.1-freq-5",
+      "claim_text": "EPC contracts globally cap PLDs at 10-15%; 5-10% cap on delay LD; few contain pre-agreed fuel correction-factor tables for as-delivered biomass",
+      "sources": ["climatesolutionslaw.com", "namitachauhan.wordpress.com"],
+      "source_types": ["secondary_trade", "secondary_trade"],
+      "score": "Medium",
+      "overrides": []
+    },
+    {
+      "id": "PP3.1-RC1",
+      "claim_text": "ASME PTC 4-2013 provides correction factor methodology; SEA palm oil mill EPC contracts routinely omit pre-agreed correction factors and reference conditions",
+      "sources": ["simecpellet.com", "asmedigitalcollection.asme.org", "researchgate.net (EFB drying)", "asmedigitalcollection.asme.org (ASME palm oil biomass)"],
+      "source_types": ["secondary_vendor", "primary_standards", "primary_academic", "primary_standards"],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "Technical fuel quality claim is well-evidenced (primary-standards + primary-academic); contractual practice omission sub-claim is [ASSUMED-2] — compound scored as Medium"
+    },
+    {
+      "id": "PP3.1-RC2",
+      "claim_text": "OEM-EPC contract interface separates performance warranty from commissioning responsibility with no bridging mechanism; neither party unambiguously liable when fuel falls between warranties [ASSUMED-2]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["assumed_tag"]
+    },
+    {
+      "id": "PP3.1-RC3",
+      "claim_text": "Sub-25 t/h LSTK contracts (RM1.5M-$2M range) do not economically justify legal drafting overhead for full fuel-performance correction matrices",
+      "sources": ["climatesolutionslaw.com", "namitachauhan.wordpress.com", "daeryunlaw.com"],
+      "source_types": ["secondary_trade", "secondary_trade", "secondary_trade"],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "Three independent secondary-trade sources from different organizations corroborating standard EPC contract structure"
+    },
+    {
+      "id": "PP3.1-RC4",
+      "claim_text": "MPOB, GAPKI, and national engineering bodies have not issued standardized commissioning test protocols for biomass boilers with off-spec fuel correction methodology [ASSUMED-3]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["assumed_tag"]
+    },
+    {
+      "id": "PP3.1-RC5",
+      "claim_text": "5-10% retention cash-flow asymmetry incentivizes operator to delay acceptance; 8-15% gross margin means $20k-$40k retention hold is material working-capital drag for EPC",
+      "sources": ["mastt.com", "eayglobal.com"],
+      "source_types": ["secondary_trade", "secondary_trade"],
+      "score": "Medium",
+      "overrides": []
+    },
+    {
+      "id": "PP3.2-cost-1",
+      "claim_text": "Standard EPC LD rate 0.5% of contract price per week, capped 5-10%; 12-week permit hold risks $30k LDs on $500k scope",
+      "sources": ["namitachauhan.wordpress.com", "lexology.com"],
+      "source_types": ["secondary_trade", "secondary_trade"],
+      "score": "Medium",
+      "overrides": []
+    },
+    {
+      "id": "PP3.2-cost-2",
+      "claim_text": "Retention 5-10% ($25k-$50k on $500k contract) locked for 12-20 additional weeks; WACC 12-18% for SEA SME contractors; $600-$1,500 financing cost per month",
+      "sources": ["mastt.com", "eayglobal.com"],
+      "source_types": ["secondary_trade", "secondary_trade"],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "Retention mechanics Medium (two secondary-trade); WACC 12-18% claim has no source — sub-claim is Low but overall scored Medium for the retention structure"
+    },
+    {
+      "id": "PP3.2-cost-3",
+      "claim_text": "Combined third-party inspection and certification fees $3k-$12k per boiler unit in SEA [ASSUMED-4]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["assumed_tag"]
+    },
+    {
+      "id": "PP3.2-cost-4",
+      "claim_text": "Contractor site overhead during commissioning stand-down at remote sites = $5k-$15k per month [ASSUMED-5]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["assumed_tag"]
+    },
+    {
+      "id": "PP3.2-freq-1",
+      "claim_text": "Indonesia SILO 14-30 working days from complete application; remote/outer-island sites effective timeline 6-10 weeks",
+      "sources": ["ujiriksa.com", "nusa7.com"],
+      "source_types": ["secondary_trade", "secondary_trade"],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "Two independent secondary-trade sources (permit consultancy blogs) corroborating Indonesia SILO timelines"
+    },
+    {
+      "id": "PP3.2-freq-2",
+      "claim_text": "Malaysia DOSH CF: 15 working days design approval target; combined 4-8 weeks cycle; apply 30-60 days before intended operation",
+      "sources": ["getfoundation.com.my", "ctprecise.com"],
+      "source_types": ["secondary_trade", "secondary_trade"],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "Two secondary-trade compliance consultancy blogs corroborating DOSH CF cycle times"
+    },
+    {
+      "id": "PP3.2-freq-3",
+      "claim_text": "Thailand DOEB: factory operators must submit safety inspection report within 30 days of inspection",
+      "sources": ["tndt.co.th"],
+      "source_types": ["secondary_vendor"],
+      "score": "Low",
+      "overrides": ["single_source"]
+    },
+    {
+      "id": "PP3.2-freq-4",
+      "claim_text": "90% of Indonesian EPC projects experience delays; permitting and approval cited as contributing structural factor",
+      "sources": ["ijaseit.insightsociety.org"],
+      "source_types": ["primary_academic"],
+      "score": "Low",
+      "overrides": ["single_source"]
+    },
+    {
+      "id": "PP3.2-freq-5",
+      "claim_text": "CBIP/Modipalm Central Kalimantan palm oil mill: 4-5 month construction-to-commissioning; regulatory certification non-compressible schedule activity",
+      "sources": ["theedgemalaysia.com"],
+      "source_types": ["secondary_trade"],
+      "score": "Low",
+      "overrides": ["single_source"]
+    },
+    {
+      "id": "PP3.2-RC1",
+      "claim_text": "Inspector pools concentrated in capital cities; Kalimantan/Sabah practical wait extends statutory 14-30 days to 6-12 weeks",
+      "sources": ["tuv.com/malaysia", "tuv.com/indonesia", "bureauveritas.id", "getfoundation.com.my"],
+      "source_types": ["primary_standards (same family=1)", "primary_standards (same family=1)", "primary_standards", "secondary_trade"],
+      "score": "Medium",
+      "overrides": ["tuv_same_publisher_family_counted_as_1"],
+      "notes": "TÜV pair = 1 source + Bureau Veritas (independent accredited body) + 1 secondary-trade. Framework well-evidenced by two accredited inspection bodies; specific 6-12 week outer-island quantification not directly sourced from inspection body pages"
+    },
+    {
+      "id": "PP3.2-RC2",
+      "claim_text": "EPC LSTK contracts routinely omit statutory inspection delay as a relief event; FIDIC Silver Book Cl. 8.4 force majeure does not typically cover routine regulatory delays [ASSUMED-6]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["assumed_tag"]
+    },
+    {
+      "id": "PP3.2-RC3",
+      "claim_text": "ASME S/U-Stamp factory certification does not substitute for mandatory site inspection by Disnaker/DOSH/DIW — site inspection required regardless of factory certification",
+      "sources": ["tuv.com/malaysia", "tuv.com/indonesia", "peraturan.bpk.go.id", "dosh.gov.my"],
+      "source_types": ["primary_standards (same family=1)", "primary_standards (same family=1)", "primary_gov", "primary_gov"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Two independent primary-gov sources (Indonesia BPK regulation portal + Malaysia DOSH official) directly confirm site inspection requirement; TÜV family counted as 1 additional source. Two primary-gov + 1 primary-standards family = High"
+    },
+    {
+      "id": "PP3.2-RC4",
+      "claim_text": "Annual re-inspection: Permenaker No. 37/2016 every 1-2 years; Malaysia DOSH high-pressure boiler CF every 12 months; initial certification most onerous cycle",
+      "sources": ["ujiriksa.com", "nusa7.com", "ctprecise.com", "peraturan.bpk.go.id"],
+      "source_types": ["secondary_trade", "secondary_trade", "secondary_trade", "primary_gov"],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "One primary-gov (Indonesia BPK regulation) + two secondary-trade sources; qualifies for Medium with one primary present"
+    },
+    {
+      "id": "PP3.2-RC5",
+      "claim_text": "Smaller SEA EPC firms treat permitting as post-commissioning administrative step, submitting documentation only after mechanical completion [ASSUMED-7]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["assumed_tag"]
+    },
+    {
+      "id": "PP3.3-cost-1",
+      "claim_text": "East Kalimantan Construction Cost Index (IKK) = 115.58 (2023, Makassar = 100 reference); construction inputs 15-20%+ more costly at remote Kalimantan sites",
+      "sources": ["databoks.katadata.co.id"],
+      "source_types": ["primary_gov"],
+      "score": "Low",
+      "overrides": ["single_source"],
+      "notes": "High-quality BPS-sourced government statistics data but single source rule applies"
+    },
+    {
+      "id": "PP3.3-cost-2",
+      "claim_text": "Mobilization cost $2k-$5k per certified welder per round trip for remote Kalimantan; total $12k-$30k for 3-4 week scope [ASSUMED-8]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["assumed_tag"]
+    },
+    {
+      "id": "PP3.3-cost-3",
+      "claim_text": "Schedule extension LD exposure $2,500/week on $500k scope; site overhead $5k-$15k/month during welder shortage delay",
+      "sources": ["namitachauhan.wordpress.com", "mastt.com"],
+      "source_types": ["secondary_trade", "secondary_trade"],
+      "score": "Medium",
+      "overrides": []
+    },
+    {
+      "id": "PP3.3-cost-4",
+      "claim_text": "Only 7.4% of Indonesia's 7.62 million construction workers hold formal competency certifications (2019 CIDB/LPJK data)",
+      "sources": ["marketresearchindonesia.com"],
+      "source_types": ["secondary_market_research"],
+      "score": "Low",
+      "overrides": ["single_source", "secondary_market_research_only"],
+      "notes": "This stat is the quantitative anchor for the entire skilled labor shortage argument; needs primary-gov or primary-association validation. High priority for deep research."
+    },
+    {
+      "id": "PP3.3-freq-1",
+      "claim_text": "AWS: 330k-375k welder shortage in US by 2027-2028; average welder age 55; 2:1 retirement-to-entry ratio",
+      "sources": ["weldingonlineacademy.com", "bls.gov"],
+      "source_types": ["secondary_trade", "primary_gov"],
+      "score": "Medium",
+      "overrides": [],
+      "flags": ["geography_mismatch"],
+      "notes": "US government stat (BLS) + secondary-trade. Medium per rubric but US data used as proxy for SEA structural dynamic — geography mismatch flag applied"
+    },
+    {
+      "id": "PP3.3-freq-2",
+      "claim_text": "Indonesia 2023 PUPR budget required ~1,024,223 skilled and certified construction workers; certified pool substantially below demand",
+      "sources": ["marketresearchindonesia.com", "bizindo.com"],
+      "source_types": ["secondary_market_research", "secondary_trade"],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "Two secondary sources from different organizations referencing PUPR data; neither is the primary PUPR publication"
+    },
+    {
+      "id": "PP3.3-freq-3",
+      "claim_text": "ECITB: significant welder shortage in Indonesia, especially Batam and outer islands, for oil & gas and industrial construction",
+      "sources": ["ecitb.com"],
+      "source_types": ["primary_association"],
+      "score": "Low",
+      "overrides": ["single_source"],
+      "notes": "Primary-association source but single source rule applies"
+    },
+    {
+      "id": "PP3.3-freq-4",
+      "claim_text": "ASME Section IX WPQ requires documented Welding Performance Qualifications maintained by employing company; favors large EPC firms that maintain rosters",
+      "sources": ["petrosync.com"],
+      "source_types": ["secondary_trade"],
+      "score": "Low",
+      "overrides": ["single_source"]
+    },
+    {
+      "id": "PP3.3-freq-5",
+      "claim_text": "Palm oil mill 4-5 month construction timeline (RM39M / ~$9M scale); compressed schedules amplify skilled-labor delay cost",
+      "sources": ["theedgemalaysia.com"],
+      "source_types": ["secondary_trade"],
+      "score": "Low",
+      "overrides": ["single_source"]
+    },
+    {
+      "id": "PP3.3-RC1",
+      "claim_text": "ASME welders clustered in major industrial hubs; 7.4% certification rate means ASME pressure-part subset is fraction of a fraction",
+      "sources": ["marketresearchindonesia.com", "ecitb.com", "petrosync.com", "twi-global.com"],
+      "source_types": ["secondary_market_research", "primary_association", "secondary_trade", "secondary_vendor"],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "One primary-association (ECITB) + three secondaries from different organizations"
+    },
+    {
+      "id": "PP3.3-RC2",
+      "claim_text": "Remote palm oil mill locations structurally unattractive for certified welders; 20-40% wage premium insufficient to clear the market [ASSUMED-9]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["assumed_tag"]
+    },
+    {
+      "id": "PP3.3-RC3",
+      "claim_text": "Vyncke, Thermax, and ASME U-Stamp OEMs specify ASME Section IX for field welds on pressure parts; scope fragmentation adds coordination overhead",
+      "sources": ["petrosync.com", "kemppi.com"],
+      "source_types": ["secondary_trade", "secondary_vendor"],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "Two secondary sources from different organizations corroborating ASME Sec IX requirement for pressure-part field welds"
+    },
+    {
+      "id": "PP3.3-RC4",
+      "claim_text": "ASME WPQ portability between employers is a challenge; certification travels with employer not worker; effectively reduces accessible certified pool [ASSUMED-10]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["assumed_tag"]
+    },
+    {
+      "id": "PP3.3-RC5",
+      "claim_text": "Price-competitive procurement with 8-15% thin margins removes headroom for remote site wage premiums needed to attract certified welders [ASSUMED-11]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["assumed_tag"]
+    },
+    {
+      "id": "PP3.4-cost-1",
+      "claim_text": "APC remediation cost $10k-$80k rework; undersized ESP requiring second chamber $30k-$100k [ASSUMED-12]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["assumed_tag"]
+    },
+    {
+      "id": "PP3.4-cost-2",
+      "claim_text": "Repeat stack test delay 4-6 weeks; $10k-$15k LD risk at $2,500/week rate",
+      "sources": ["namitachauhan.wordpress.com"],
+      "source_types": ["secondary_trade"],
+      "score": "Low",
+      "overrides": ["single_source"]
+    },
+    {
+      "id": "PP3.4-cost-3",
+      "claim_text": "CEMS hardware for 10 t/h boiler $30k-$80k installed [ASSUMED-12]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["assumed_tag"]
+    },
+    {
+      "id": "PP3.4-cost-4",
+      "claim_text": "ESP for 10 t/h boiler $50k-$150k ex-works Chinese-origin; EPC adds 10-20% markup plus freight and customs",
+      "sources": ["basuki.com", "viridis-engineering.com"],
+      "source_types": ["secondary_vendor", "secondary_vendor"],
+      "score": "Low",
+      "overrides": ["vendor_blog_sole_source", "single_source_category"],
+      "notes": "Both sources are vendor websites; equipment cost from vendor self-descriptions only"
+    },
+    {
+      "id": "PP3.4-freq-1",
+      "claim_text": "Indonesia Permen LH No. 7/2007 particulate limit 100 mg/Nm3 for coal/oil-fired boilers; biomass-specific limits vary by fuel type",
+      "sources": ["ppkl.menlhk.go.id"],
+      "source_types": ["primary_ministry"],
+      "score": "Low",
+      "overrides": ["single_source"],
+      "notes": "Authoritative primary-ministry source; single source rule strictly applied; regulatory citation is self-validating but rubric requires 2+ sources for Medium"
+    },
+    {
+      "id": "PP3.4-freq-2",
+      "claim_text": "Malaysia Environmental Quality Clean Air Regulations 2014 require BAT for fuel-burning boilers; 1978 regs 400 mg/Nm3, 2014 framework effectively lowers limits",
+      "sources": ["eswis.doe.gov.my", "doe.gov.my"],
+      "source_types": ["primary_gov", "primary_gov"],
+      "score": "Low",
+      "overrides": ["same_publisher_family (both Malaysia DOE = 1 source)"],
+      "notes": "Two URLs from same government department; counted as 1 source under same-publisher-family rule"
+    },
+    {
+      "id": "PP3.4-freq-3",
+      "claim_text": "Indonesia PERMENLHK P.15/2019 tightened emission limits for biomass power plants including palm fiber/shell boilers",
+      "sources": ["allin.or.id"],
+      "source_types": ["secondary_trade"],
+      "score": "Low",
+      "overrides": ["single_source", "regulation_cited_via_trade_blog_not_primary_portal"]
+    },
+    {
+      "id": "PP3.4-freq-4",
+      "claim_text": "Achieving sub-50 mg/Nm3 particulate at biomass boiler requires baghouse or well-tuned ESP; palm ash chemistry creates specific ESP fouling and bag blinding challenges",
+      "sources": ["boilerworldupdate.com", "researchgate.net (particulate emission study)"],
+      "source_types": ["secondary_trade", "primary_academic"],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "One primary-academic (ResearchGate peer-reviewed biomass particulate study) + one secondary-trade; qualifies for Medium"
+    },
+    {
+      "id": "PP3.4-RC1",
+      "claim_text": "APC scope split between OEM supply (first-stage cyclone) and EPC BOP procurement (secondary APC); OEM actual flue-gas parameters may deviate from data sheet after biomass fuel variation",
+      "sources": ["basuki.com", "viridis-engineering.com"],
+      "source_types": ["secondary_vendor", "secondary_vendor"],
+      "score": "Low",
+      "overrides": ["single_source_category", "vendor_self_report"]
+    },
+    {
+      "id": "PP3.4-RC2",
+      "claim_text": "Emission standards have tightened over past decade: Indonesia Permen LH 7/2007, PERMENLHK P.15/2019; Malaysia EQA 2014; many EPC contracts scoped under older standards",
+      "sources": ["ppkl.menlhk.go.id", "eswis.doe.gov.my", "allin.or.id", "eria.org"],
+      "source_types": ["primary_ministry", "primary_gov", "secondary_trade", "primary_multilateral"],
+      "score": "High",
+      "overrides": [],
+      "notes": "Three independent primary-category sources (ministry portal + government DOE + ERIA multilateral) confirming the regulatory tightening across two jurisdictions. Robust."
+    },
+    {
+      "id": "PP3.4-RC3",
+      "claim_text": "Biomass ash chemistry: palm kernel shell high-K+ promotes ESP fouling; rice husk high-silica causes bag abrasion; EFB moisture pastes cyclone surfaces; Chinese ESP suppliers dimension against coal ash not palm biomass",
+      "sources": ["boilerworldupdate.com", "researchgate.net (particulate emission study)"],
+      "source_types": ["secondary_trade", "primary_academic"],
+      "score": "Medium",
+      "overrides": [],
+      "notes": "Technical root cause: primary-academic source + secondary-trade. Cost quantification portion is [ASSUMED-12]. Scored Medium for the technical claim."
+    },
+    {
+      "id": "PP3.4-RC4",
+      "claim_text": "EPCs rarely perform pre-certification self-test emissions measurements before official stack test [ASSUMED-13]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["assumed_tag"]
+    },
+    {
+      "id": "PP3.4-RC5",
+      "claim_text": "Regulatory stack tests conducted immediately after mechanical commissioning (under LD pressure) before operational stability — tightening limits make timing gap more consequential [ASSUMED-14]",
+      "sources": [],
+      "source_types": [],
+      "score": "Low",
+      "overrides": ["assumed_tag"]
+    }
+  ],
+  "override_flags": [
+    {
+      "override": "assumed_tag",
+      "claim_count": 14,
+      "claim_ids": ["VC-12", "VC-PP1", "VC-PP4", "VC-PP5", "VC-PP6", "VC-PP7", "PP3.1-cost-4", "PP3.1-RC2", "PP3.1-RC4", "PP3.2-cost-3", "PP3.2-cost-4", "PP3.2-RC2", "PP3.2-RC5", "PP3.3-cost-2", "PP3.3-RC2", "PP3.3-RC4", "PP3.3-RC5", "PP3.4-cost-1", "PP3.4-cost-3", "PP3.4-RC4", "PP3.4-RC5"]
+    },
+    {
+      "override": "vendor_blog_sole_source",
+      "claim_count": 4,
+      "claim_ids": ["VC-1", "VC-5", "PP3.4-cost-4", "PP3.4-RC1"]
+    },
+    {
+      "override": "single_source",
+      "claim_count": 28,
+      "claim_ids": ["VC-1", "VC-2", "VC-3", "VC-4", "VC-6", "VC-7", "VC-11", "VC-13-28 (×16)", "VC-29", "VC-30", "PP3.1-cost-3", "PP3.1-cost-4", "PP3.1-freq-2", "PP3.1-freq-3", "PP3.1-freq-4", "PP3.2-freq-3", "PP3.2-freq-4", "PP3.2-freq-5", "PP3.2-RC2", "PP3.2-RC5", "PP3.3-cost-1", "PP3.3-cost-4", "PP3.3-freq-3", "PP3.3-freq-4", "PP3.3-freq-5", "PP3.4-cost-2", "PP3.4-freq-1", "PP3.4-freq-2", "PP3.4-freq-3"]
+    },
+    {
+      "override": "same_publisher_family_counted_as_one",
+      "claim_count": 4,
+      "claim_ids": ["VC-PP3", "VC-PP8", "PP3.2-RC1 (TÜV pair)", "PP3.4-freq-2 (Malaysia DOE pair)"]
+    },
+    {
+      "override": "geography_mismatch_apac_as_proxy",
+      "claim_count": 4,
+      "claim_ids": ["VC-9", "VC-10", "PP3.3-freq-1 (US as SEA proxy)"]
+    },
+    {
+      "override": "no_source_cited",
+      "claim_count": 3,
+      "claim_ids": ["VC-2", "VC-3", "VC-4"]
+    },
+    {
+      "override": "secondary_market_research_only",
+      "claim_count": 5,
+      "claim_ids": ["VC-6", "VC-7", "VC-9", "VC-10", "VC-11", "PP3.3-cost-4"]
+    }
+  ],
+  "weak_claims_for_deep_research": [
+    {
+      "id": "PP3.2-cost-1 + PP3.1-cost-1",
+      "claim_text": "Standard EPC LSTK LD rate 0.5% of contract price per week, cap 10-15% of contract price; this rate underpins all quantified cost calculations across PP3.1 and PP3.2",
+      "current_sources": ["namitachauhan.wordpress.com (personal blog)", "climatesolutionslaw.com (law firm blog)", "lexology.com (legal platform article)"],
+      "current_score": "Medium (two secondary-trade for the LD rate claim; but the foundational cost arithmetic for two pain points rests entirely on secondary legal blogs)",
+      "why_weak": "The LD rate and cap figure is the single cost arithmetic engine for both PP3.1 and PP3.2. All derived LD exposure numbers ($30k LDs, $10k-$15k repeat-test LD risk, $2,500/week) cascade from this rate. Currently supported only by personal/law-firm blogs with no primary reference to FIDIC Silver Book Cl. 8.8, MPOB standard contract, or a Malaysian/Indonesian industry association model contract. Any reader challenging the 0.5%/week figure would unravel the entire cost quantification of both pain points.",
+      "suggested_query": "Search for FIDIC Silver Book 1999 Clause 8.7-8.8 delay damages rate; search MPOB Palm Oil Engineering Bulletin model EPC contract terms; search CIDB Malaysia standard contract for construction works SC-2000; search for published Malaysian court/arbitration decisions on industrial EPC delay LD rates",
+      "priority": "high"
+    },
+    {
+      "id": "PP3.3-cost-4",
+      "claim_text": "Only 7.4% of Indonesia's 7.62 million construction workers hold formal competency certifications (cited as 2019 CIDB/LPJK data)",
+      "current_sources": ["marketresearchindonesia.com (secondary market research firm)"],
+      "current_score": "Low — single secondary-market-research source; this stat is not from BPS, LPJK, or CIDB directly",
+      "why_weak": "This percentage is the foundational quantitative anchor for PP3.3's entire skilled-labor-shortage argument. It appears in both the cost section and RC1. If the stat is wrong (or refers to a narrower certification type than ASME pressure-part welders), the severity case for the welder shortage pain point collapses. The primary source (Indonesia LPJK / Kementerian PUPR / BPJS Ketenagakerjaan labor certification data) is not cited — only a market research secondary citing it secondhand.",
+      "suggested_query": "Search BPS Indonesia 'tenaga kerja konstruksi bersertifikat 2019 2022 2023 LPJK'; search Kementerian PUPR Indonesia annual report construction workforce certification statistics; search CIDB Malaysia vs Indonesia LPJK construction workforce benchmarking report; search ECITB or ILO Indonesia construction skills gap report 2020-2024",
+      "priority": "high"
+    }
+  ],
+  "gate_decision_recommendation": "FAIL",
+  "gate_reasoning": "Stage 3 scores 69 Low out of 93 total claims (74.2% Low), exceeding the 70% FAIL threshold. The dominant failure modes are: (1) 21 explicitly tagged [ASSUMED-N] claims with zero source backing, concentrated in the most commercially sensitive cost figures across all four pain points; (2) 16 company-profile claims sourced solely from company self-descriptions with no independent corroboration; (3) all market-sizing claims are either single secondary-market-research sources, APAC-aggregate proxies, or bottom-up estimates with no primary-gov cross-validation; (4) the LD rate arithmetic that underpins the quantified cost case for PP3.1 and PP3.2 rests entirely on personal legal blogs. Only 2 claims reach High confidence (the regulatory framework on site-inspection requirements, and the regulatory tightening evidence for emissions standards), both of which are regulatory-text claims rather than market or cost claims. The stage contains strong structural narrative and well-organized hypothesis frameworks, but the quantitative cost and frequency claims required to make pain points investable are almost uniformly unsupported. Deep research must prioritize: (a) primary-gov or primary-association validation of the 7.4% Indonesia construction certification rate, and (b) primary-source grounding for the 0.5%/week EPC LD rate that drives all cost quantification."
+}

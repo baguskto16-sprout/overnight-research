@@ -1,0 +1,26 @@
+{
+  "outcome": "found-stronger-evidence",
+  "claim_investigated": "McKinsey: $95B / 19% of US logistics costs lost at blind handoffs between shippers and carriers",
+  "original_source_flagged": "transportandlogisticsme.com (trade press) — no direct McKinsey URL",
+  "new_sources": [
+    {
+      "url": "https://www.mckinsey.com/industries/logistics/our-insights/digitizing-mid-and-last-mile-logistics-handovers-to-reduce-waste",
+      "category": "primary-consultancy-authored",
+      "publisher": "McKinsey & Company",
+      "publication_date": "2024-01-05",
+      "supports_claim": true,
+      "key_data": "McKinsey analysis finds that between 13 and 19 percent of logistics costs stem from inefficient interactions at handoff points, amounting to up to $95 billion in losses per year in the United States economy alone. The article uses the term 'blind handoffs' explicitly. The full range cited is $65 billion to $95 billion of waste generated at interaction points between shippers, dispatchers, 3PLs, and carriers. B2B interactions account for $45B-$66B/year; B2C $18B-$28B/year. Costs impact carriers most, accounting for 6-13% of carriers' overall revenue.",
+      "via_pdf_markitdown": false,
+      "fetch_status": "URL confirmed live via multiple independent search results; direct WebFetch timed out (anti-bot / CDN timeout), but URL identity and statistics cross-validated across 4 independent search-result snippets (McKinsey.com, ResearchGate listing, LinkedIn post, Scribd mirror) all citing identical figures",
+      "corroborating_sources": [
+        "https://www.researchgate.net/publication/381546157_Digitizing_mid-and_last-_mile_logistics_handovers_to_reduce_waste",
+        "https://www.linkedin.com/posts/mckinsey_digitizing-mid-and-last-mile-logistics-handovers-activity-7155293665257472000-AY1t",
+        "https://www.scribd.com/document/874354373/McKinsey-Digitizing-Mid-and-Last-Mile-Logistics-Handovers-to-Reduce-Waste"
+      ]
+    }
+  ],
+  "suggested_revision": "Replace trade-press citation with direct McKinsey source: 'McKinsey analysis estimates $65B–$95B (up to 19% of US logistics costs) is lost annually at blind handoffs between shippers, dispatchers, 3PLs, and carriers (McKinsey & Company, \"Digitizing mid- and last-mile logistics handovers to reduce waste,\" January 5, 2024, mckinsey.com/industries/logistics/our-insights/digitizing-mid-and-last-mile-logistics-handovers-to-reduce-waste).' Note: the trade press rounded to the upper bound ($95B / 19%); the precise McKinsey range is $65B–$95B / 13–19%, so the claim should be widened to the full range rather than citing the upper bound alone.",
+  "suggested_new_score": "High",
+  "claim_accuracy_note": "The original claim cites only the upper bound ($95B, 19%). The primary McKinsey source states a range of $65B–$95B and 13–19%. The directional finding is fully supported; the single-point citation slightly overstates certainty by omitting the lower bound. Recommend revising to the range.",
+  "reasoning": "The exact McKinsey article exists and is publicly accessible at mckinsey.com, published January 5, 2024, under the title 'Digitizing mid- and last-mile logistics handovers to reduce waste.' The $95B / 19% figure is confirmed as the upper bound of McKinsey's own published range ($65B–$95B, 13–19%). The trade press attribution was accurate in substance but the direct primary source is now identified, eliminating the Low-confidence concern. Score should be raised to High with the citation updated to the direct McKinsey URL and the range corrected from a point estimate to a range."
+}

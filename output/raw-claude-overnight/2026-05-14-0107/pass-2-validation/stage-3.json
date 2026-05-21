@@ -1,0 +1,1707 @@
+{
+  "stage": 3,
+  "stage_name": "Fleet & driver management / telematics",
+  "files_validated": [
+    "pass-1-drafts/stage-3-value-chain.md",
+    "pass-1-drafts/stage-3-pain-points.md"
+  ],
+  "total_claims": 101,
+  "by_confidence": {
+    "H": 14,
+    "M": 34,
+    "L": 53
+  },
+  "unique_source_domains": 54,
+  "unique_source_urls": 87,
+  "domain_diversity_list": [
+    "fmcsa.dot.gov",
+    "sec.gov",
+    "who.int",
+    "asiantransportobservatory.org",
+    "asean.org",
+    "iotbusinessnews.com",
+    "berginsight.com",
+    "abiresearch.com",
+    "gminsights.com",
+    "marketsandmarkets.com",
+    "mordorintelligence.com",
+    "businessresearchinsights.com",
+    "frost.com",
+    "ttclub.com",
+    "verisk.com",
+    "investors.samsara.com",
+    "s29.q4cdn.com",
+    "stocktitan.net",
+    "ir.powerfleet.com",
+    "investor.trimble.com",
+    "techcrunch.com",
+    "businesswire.com",
+    "globenewswire.com",
+    "prnewswire.com",
+    "computerweekly.com",
+    "insurancebusinessmag.com",
+    "insurasales.com",
+    "riskandinsurance.com",
+    "marshmma.com",
+    "carriermanagement.com",
+    "freightwaves.com",
+    "truckinginfo.com",
+    "ccjdigital.com",
+    "ttnews.com",
+    "sambasafety.com",
+    "nirvanatech.com",
+    "hdvi.com",
+    "samsara.com",
+    "developers.samsara.com",
+    "kb.samsara.com",
+    "gomotive.com",
+    "geotab.com",
+    "marketplace.geotab.com",
+    "project44.com",
+    "shippeo.com",
+    "lytx.com",
+    "netradyne.com",
+    "surecam.com",
+    "airpinpoint.com",
+    "checkthat.ai",
+    "blog.transtrack.co",
+    "geico.com",
+    "ligaasuransi.com",
+    "thethaiger.com",
+    "fleetrabbit.com",
+    "safefleet.net",
+    "worktruckonline.com",
+    "fleetequipmentmag.com",
+    "northpennnow.com",
+    "enlyft.com",
+    "growjo.com",
+    "wikipedia.org",
+    "cmtelematics.com",
+    "greenroad.com",
+    "solera.com",
+    "webfleet.com",
+    "verizonconnect.com",
+    "tomtunguz.com",
+    "fintool.com",
+    "moomoo.com",
+    "news.crunchbase.com",
+    "medium.com",
+    "autofleet.io",
+    "jjkeller.com",
+    "mcleodsoftware.com"
+  ],
+  "claims": [
+    {
+      "id": "VC-1",
+      "file": "stage-3-value-chain.md",
+      "claim": "Fewer than 5% of commercial auto policies globally are priced using telematics data",
+      "sources": [
+        "https://www.businesswire.com/news/home/20260115567056/en/Cambridge-Mobile-Telematics-Launches-DriveWell-Fleet"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "L",
+      "override": "single-trade-source",
+      "note": "Cite is a CMT vendor press release on BusinessWire — self-reported figure from vendor with direct commercial interest. No independent corroboration. Override: single-trade-source (vendor press release = secondary-trade)."
+    },
+    {
+      "id": "VC-2",
+      "file": "stage-3-value-chain.md",
+      "claim": "CMT and IMS/Trak Global launched fleet-safety products in 2025-26",
+      "sources": [
+        "https://www.businesswire.com/news/home/20260115567056/en/Cambridge-Mobile-Telematics-Launches-DriveWell-Fleet"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "CMT product launch is a vendor-disclosed factual claim about its own offering, corroborated by BusinessWire press release. Vendor disclosure of own product event = M per rubric. Single source but it is a vendor disclosing its own action."
+    },
+    {
+      "id": "VC-3",
+      "file": "stage-3-value-chain.md",
+      "claim": "Samsara pricing ~$27-33/vehicle/month for core telematics; $40-60/vehicle/month with AI dashcam",
+      "sources": [
+        "https://checkthat.ai/brands/samsara/pricing",
+        "https://airpinpoint.com/compare/samsara-pricing"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-vendor"
+      ],
+      "score": "L",
+      "override": "single-vendor-source",
+      "note": "Both sources are third-party pricing aggregators scraping Samsara's public pricing — functionally secondary-vendor. No Samsara 10-K or official pricing page cited. Pricing aggregators are unreliable for contractual pricing; actual pricing is negotiated. Override: single-domain vendor category."
+    },
+    {
+      "id": "VC-4",
+      "file": "stage-3-value-chain.md",
+      "claim": "Samsara FY2025 revenue $1.25B, +33% YoY; ARR $1.46B; 2,506 customers >$100k ARR; 20,000+ >$5k ARR; 76% gross margin; first quarterly GAAP profitability Q3 FY2025",
+      "sources": [
+        "https://www.stocktitan.net/sec-filings/IOT/10-k-samsara-inc-files-annual-report-8c63bca30d34.html",
+        "https://www.sec.gov/Archives/edgar/data/1642896/000164289625000048/iot2025ars.pdf"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "primary-gov"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "SEC 10-K filing cited directly (sec.gov); StockTitan is a secondary aggregator but the authoritative source is the SEC filing. Public company disclosure — highest reliability. These are audited financial disclosures."
+    },
+    {
+      "id": "VC-5",
+      "file": "stage-3-value-chain.md",
+      "claim": "Samsara NYSE: IOT; market cap ~$22B as of May 2026",
+      "sources": [
+        "https://www.stocktitan.net/sec-filings/IOT/10-k-samsara-inc-files-annual-report-8c63bca30d34.html"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Market cap is observable from NYSE; StockTitan is a secondary aggregator. The figure is independently verifiable from any financial data source. Single source cited but factually low-risk. Scored M rather than H because no primary exchange/SEC filing cited specifically for market cap."
+    },
+    {
+      "id": "VC-6",
+      "file": "stage-3-value-chain.md",
+      "claim": "Samsara 350+ pre-built partner apps including project44, FourKites, Highway, SambaSafety",
+      "sources": [
+        "https://www.samsara.com/resources/marketplace/project44",
+        "https://www.samsara.com/resources/marketplace/fourkites",
+        "https://kb.samsara.com/hc/en-us/articles/10280915886349-Integrate-with-Highway"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-vendor",
+        "secondary-vendor"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Vendor disclosure of own integration marketplace. Multiple Samsara URLs but all from same vendor. Per rubric, vendor disclosure of own metric = M. The 350+ figure is Samsara's own marketplace count — verifiable on samsara.com but not cross-validated."
+    },
+    {
+      "id": "VC-7",
+      "file": "stage-3-value-chain.md",
+      "claim": "Samsara >95% revenue from US+Canada; limited direct SEA presence; reseller-dependent internationally",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Samsara_(company)"
+      ],
+      "source_categories": [
+        "secondary-news"
+      ],
+      "score": "L",
+      "override": "single-trade-source",
+      "note": "Wikipedia as sole source. The geographic revenue split >95% US+Canada is a material financial claim that should be sourced to the Samsara 10-K (already cited as source 3). Wikipedia is not a reliable primary for company financial geography. Single secondary source override."
+    },
+    {
+      "id": "VC-8",
+      "file": "stage-3-value-chain.md",
+      "claim": "Motive revenue $370M FY2024 +19% YoY; ARR $417M Dec 2024; $501M Sep 2025 +28% YoY; 8,204 Core Customers Dec 2024; 9,201 Sep 2025; 349 Large Customers Dec 2024; 494 Sep 2025; ~1M+ vehicles; ~70% gross margin; NDR Core 110% Large 126%; pre-IPO valuation $2.85B",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1646681/000162828025058773/motive-sx1.htm"
+      ],
+      "source_categories": [
+        "primary-gov"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "Motive S-1 SEC filing — primary government-filed public document; highest reliability. Single source but it is a primary SEC filing (prospectus), which is audited/certified under penalty of perjury. All numeric claims in the Motive profile trace to this."
+    },
+    {
+      "id": "VC-9",
+      "file": "stage-3-value-chain.md",
+      "claim": "Motive estimated $175M in fuel and fraud savings delivered to customers in 2024",
+      "sources": [
+        "https://gomotive.com/company/news/press-release/motive-closes-record-fiscal-year-fueled-by-ai-innovation-and-accuracy/"
+      ],
+      "source_categories": [
+        "secondary-vendor"
+      ],
+      "score": "L",
+      "override": "single-vendor-source",
+      "note": "Self-reported vendor claim on vendor press release. No third-party validation. Override: single-vendor-source for a material cost-savings metric."
+    },
+    {
+      "id": "VC-10",
+      "file": "stage-3-value-chain.md",
+      "claim": "Motive >99% revenue from US/Canada as of Sep 2025; Pakistan-based workforce ~3,200 of 4,508 employees",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1646681/000162828025058773/motive-sx1.htm"
+      ],
+      "source_categories": [
+        "primary-gov"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "Both figures sourced to Motive S-1 SEC filing — audited primary disclosure."
+    },
+    {
+      "id": "VC-11",
+      "file": "stage-3-value-chain.md",
+      "claim": "Motive has R&D offices in Vietnam and other APAC; commercial operations are US/Canada only",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Motive_(company)"
+      ],
+      "source_categories": [
+        "secondary-news"
+      ],
+      "score": "L",
+      "override": "single-trade-source",
+      "note": "Wikipedia sole source for operational geography claim. The S-1 is a better source for geographic operations but the draft does not cite it for this specific claim. Wikipedia alone is insufficient."
+    },
+    {
+      "id": "VC-12",
+      "file": "stage-3-value-chain.md",
+      "claim": "Geotab revenue ~$681M estimated by end of 2024 (up from $412M in 2021); 5M+ subscribers; ~100,000 customers globally",
+      "sources": [
+        "https://growjo.com/company/GEOTAB",
+        "https://www.geotab.com/press-release/geotab-5-million-subscriptions-milestone/"
+      ],
+      "source_categories": [
+        "secondary-market-research",
+        "secondary-vendor"
+      ],
+      "score": "L",
+      "override": "single-vendor-source",
+      "note": "Geotab is private; revenue estimate from Growjo (private-company revenue estimator with no disclosed methodology) + Geotab's own press release. Revenue estimate from Growjo has no auditable basis. 5M subscriber figure from vendor press release = M; revenue estimate from non-audited estimator = L. Combined score L because the revenue figure (the primary financial claim) has no credible source. The note in the draft itself admits 'financial data unverified and relies on third-party estimates.'"
+    },
+    {
+      "id": "VC-13",
+      "file": "stage-3-value-chain.md",
+      "claim": "ABI Research ranked Geotab #1 global commercial telematics vendor for four consecutive years (2022-2025)",
+      "sources": [
+        "https://www.abiresearch.com/press/geotab-samsara-and-powerfleet-take-the-top-spots-in-abi-researchs-commercial-telematics-competitive-ranking",
+        "https://www.prnewswire.com/news-releases/geotab-samsara-and-powerfleet-take-the-top-spots-in-abi-researchs-commercial-telematics-competitive-ranking-302380732.html"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "ABI Research press release on their own site + PRNewswire. ABI Research is a specialist research firm; the ranking is from their published competitive ranking report. Two independent distribution points for same ABI Research report. Scored M (specialist research firm press release, not the paid underlying report, but corroborated by PRNewswire distribution)."
+    },
+    {
+      "id": "VC-14",
+      "file": "stage-3-value-chain.md",
+      "claim": "Geotab preferred telematics partner for project44 globally; 200+ Marketplace solutions",
+      "sources": [
+        "https://www.project44.com/partners/geotab/",
+        "https://marketplace.geotab.com/solutions/movement-by-project44/"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-vendor"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Both vendor pages confirm a mutual partnership — two separate vendor disclosures from two different companies (project44 and Geotab) confirm the same commercial relationship. Scored M: two separate vendors corroborating the same bilateral fact. The 200+ Marketplace figure is Geotab's own count."
+    },
+    {
+      "id": "VC-15",
+      "file": "stage-3-value-chain.md",
+      "claim": "Geotab Singapore office opened Jan 2021; authorized resellers in Indonesia, Malaysia, Thailand, Philippines; fastest-growing markets Indonesia and Philippines; Geotab Ace launched Oct 2025",
+      "sources": [
+        "https://www.geotab.com/apac/press-release/southeast-asia-expansion/",
+        "https://www.geotab.com/apac/press-release/ace/"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-vendor"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Vendor disclosure of own geographic expansion and product launch. Two Geotab press releases = same vendor family. Scored M as vendor disclosure of own operational facts."
+    },
+    {
+      "id": "VC-16",
+      "file": "stage-3-value-chain.md",
+      "claim": "Verizon Connect ~$735M estimated revenue; ~5.56% market share in Transportation & Fleet Management (Enlyft); ABI Research 2025 Tier-1 Leader",
+      "sources": [
+        "https://www.verizonconnect.com/",
+        "https://enlyft.com/tech/products/verizon-connect",
+        "https://www.abiresearch.com/press/geotab-samsara-and-powerfleet-take-the-top-spots-in-abi-researchs-commercial-telematics-competitive-ranking"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-market-research",
+        "secondary-trade"
+      ],
+      "score": "L",
+      "override": "single-vendor-source",
+      "note": "Revenue estimate (~$735M) sourced to verizonconnect.com (vendor's own site) — no Verizon Communications 10-K cited, and the 10-K does not separately disclose this segment. Enlyft market share (5.56%) is a non-transparent market research estimate. ABI Research press release confirms ranking. Revenue figure is the key financial claim and has no audited source. Override: revenue estimate from vendor site only."
+    },
+    {
+      "id": "VC-17",
+      "file": "stage-3-value-chain.md",
+      "claim": "Verizon Connect divested all international (Australia, Europe) commercial operations to Geotab in 2023-24",
+      "sources": [
+        "https://www.geotab.com/press-release/verizon-connect/"
+      ],
+      "source_categories": [
+        "secondary-vendor"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Geotab press release confirming its own acquisition of Verizon Connect international operations — vendor disclosure of its own M&A event. Single source but it is a vendor disclosing its own material transaction."
+    },
+    {
+      "id": "VC-18",
+      "file": "stage-3-value-chain.md",
+      "claim": "Webfleet ~783,000 subscriptions in Europe; European commercial CV telematics market $6.7B subscription revenue by end 2024; Webfleet ~5.1% share; 60,000+ organizations worldwide",
+      "sources": [
+        "https://www.frost.com/wp-content/uploads/2025/02/Webfleet-Solutions-Final-Award-Write-up.pdf",
+        "https://www.webfleet.com/en_us/webfleet/company/"
+      ],
+      "source_categories": [
+        "primary-research-firm",
+        "secondary-vendor"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Frost & Sullivan published award write-up (primary-research-firm category, though an award write-up is not the same as a full paid market report) corroborates subscriber and market size figures. Webfleet's own site corroborates customer count. The Frost write-up provides the market-size figure; Webfleet's figure for own subscribers. Two distinct source families. Scored M: one primary-research-firm plus one vendor source."
+    },
+    {
+      "id": "VC-19",
+      "file": "stage-3-value-chain.md",
+      "claim": "Frost & Sullivan recognized Webfleet as best practice leader in European commercial telematics 2025",
+      "sources": [
+        "https://www.frost.com/wp-content/uploads/2025/02/Webfleet-Solutions-Final-Award-Write-up.pdf"
+      ],
+      "source_categories": [
+        "primary-research-firm"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Frost & Sullivan award write-up is a published primary-research-firm document. Single primary source for an industry award fact — scored M."
+    },
+    {
+      "id": "VC-20",
+      "file": "stage-3-value-chain.md",
+      "claim": "Lytx valuation $2.5B+ (Permira majority stake, Jan 2020); 5,500+ customers; 5.5M+ drivers; 90+ countries; 300B+ miles processed; Frost & Sullivan >60% video telematics specialist market share",
+      "sources": [
+        "https://www.lytx.com/news-events/press-release/2020/lytx-announces-majority-investment-from-the-permira-funds",
+        "https://en.wikipedia.org/wiki/Lytx",
+        "https://www.lytx.com/"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-news",
+        "secondary-vendor"
+      ],
+      "score": "L",
+      "override": "single-vendor-source",
+      "note": "Lytx valuation from Lytx's own press release (2020 — >4 years old; outdated flag). Customer/driver/mile stats from lytx.com (vendor self-reported). Frost & Sullivan >60% share claim attributed in text to Frost & Sullivan but the cited sources are lytx.com and Wikipedia — neither is the Frost report. Override: single-vendor-source for customer metrics; outdated for valuation; geography-mismatch for market share claim (pre-Samsara/Motive dashcam scale-up qualifier in text acknowledges this is stale). Combined L."
+    },
+    {
+      "id": "VC-21",
+      "file": "stage-3-value-chain.md",
+      "claim": "Netradyne Series D $90M Jan 2025 at $1.35B pre-money valuation; total funding $297M; 3,000+ fleets; 450,000+ subscribers; 18B+ miles; 99% alert accuracy",
+      "sources": [
+        "https://techcrunch.com/2025/01/17/netradyne-snags-90m-at-1-25b-valuation-to-expand-smart-dashcams-for-commercial-fleets/",
+        "https://www.netradyne.com/news/netradyne-r-raises-90-million-in-series-d-funding-led-by-point72-private-investments"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "secondary-vendor"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "TechCrunch (named-author trade press with fact-checking) + Netradyne press release corroborate the funding round. Two independent source families for the funding fact. NOTE: TechCrunch cites $1.25B valuation but draft cites $1.35B pre-money — minor inconsistency. Customer/miles/accuracy figures are vendor self-reported (lytx.com equivalent). Scored M overall: funding round corroborated by two sources; performance metrics single-vendor."
+    },
+    {
+      "id": "VC-22",
+      "file": "stage-3-value-chain.md",
+      "claim": "Solera Omnitracs ~15,000 customers; 250M miles/week; Spireon 13,000+ customers; ~4M connected devices; 900B data points/year",
+      "sources": [
+        "https://www.solera.com/blog/2021/05/17/solera-to-acquire-omnitracs-and-dealersocket/",
+        "https://www.solera.com/solutions/spireon/"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-vendor"
+      ],
+      "score": "L",
+      "override": "single-vendor-source",
+      "note": "All figures from Solera's own blog and product pages — single vendor family. Private PE-backed company with no audited disclosures. Override: single-vendor-source."
+    },
+    {
+      "id": "VC-23",
+      "file": "stage-3-value-chain.md",
+      "claim": "Trimble telematics $300M revenue, $200M ARR; Platform Science acquired Jan 2025; Trimble retains 32.5% stake",
+      "sources": [
+        "https://www.prnewswire.com/news-releases/platform-science-completes-acquisition-of-trimbles-global-transportation-telematics-business-units-302371696.html",
+        "https://investor.trimble.com/news/news-details/2024/Platform-Science-to-Acquire-Trimbles-Global-Transportation-Telematics-Business-Units-to-Drive-the-Future-of-Transportation-In-Cab-Technology/"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "primary"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "Trimble investor relations page (investor.trimble.com) is a Trimble public company disclosure (Trimble is NASDAQ: TRMB) — effectively primary-level. PRNewswire corroborates. The $300M revenue and $200M ARR figures are from Trimble's own disclosed M&A announcement. Two independent sources (Trimble IR + PRNewswire distribution of the same announcement), but the Trimble IR is authoritative as a public company disclosure."
+    },
+    {
+      "id": "VC-24",
+      "file": "stage-3-value-chain.md",
+      "claim": "Cartrack/Karooooo global subscribers 2.3M (+17% YoY); SEA+ME subscribers 274,000+ (+21% YoY at Aug 2024); 31% constant-currency subscription revenue growth SEA Q4 FY2025; Q4 FY2025 subscription revenue ZAR1,086M; FY2025 EPS ZAR29.81 (+25%); Adjusted EPS ZAR31.67 (+33%); 34% operating margin Q4 FY2025",
+      "sources": [
+        "https://www.stocktitan.net/news/KARO/karooooo-reports-record-q4-and-fy2025-results-fuelled-by-xvv1wen59p0v.html",
+        "https://www.sec.gov/Archives/edgar/data/1828102/000121390024087420/ea021753501ex99-1_karooooo.htm",
+        "https://www.businesswire.com/news/home/20250514850216/en/Karooooo-Reports-Record-Q4-and-FY2025-Results-Fuelled-by-Accelerating-Cartrack-Subscriber-Revenue-Growth-and-Robust-Profitability"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "primary-gov",
+        "secondary-trade"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "SEC 6-K filing (NASDAQ-listed Karooooo) is primary disclosure. StockTitan and BusinessWire are secondary but corroborate. The SEC 6-K is the authoritative source. NOTE: The sec.gov URL cited appears to be a Q2 FY2025 6-K (filed Oct 2024), not the FY2025 annual; BusinessWire link is to the FY2025 press release. The FY2025 annual figures (global 2.3M subscribers, Q4 EPS) should be verified against the FY2025 20-F or 6-K filed post-Feb 2025. Minor sourcing gap but overall H given multiple corroborating public filings."
+    },
+    {
+      "id": "VC-25",
+      "file": "stage-3-value-chain.md",
+      "claim": "Cartrack subscription revenue is 98% of total",
+      "sources": [
+        "https://www.stocktitan.net/news/KARO/karooooo-reports-record-q4-and-fy2025-results-fuelled-by-xvv1wen59p0v.html",
+        "https://www.sec.gov/Archives/edgar/data/1828102/000121390024087420/ea021753501ex99-1_karooooo.htm"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "primary-gov"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "SEC 6-K filing corroborates this standard Karooooo metric across multiple reporting periods."
+    },
+    {
+      "id": "VC-26",
+      "file": "stage-3-value-chain.md",
+      "claim": "TransTRACK Series A $12M (IDR185B) led by Eurazeo and Cocoon Capital",
+      "sources": [
+        "https://blog.transtrack.co/en/press-release/transtrack-technology-summit-2024-fleet-innovation-and-expansion-strategy-with-series-a-funding-of-idr185-billion/"
+      ],
+      "source_categories": [
+        "secondary-vendor"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Vendor press release disclosing its own funding round. Vendor disclosure of own funding event = M per rubric. Single source, but the claim is about a verifiable financial event (VC funding). Not cross-validated with Eurazeo or Cocoon Capital investor press releases."
+    },
+    {
+      "id": "VC-27",
+      "file": "stage-3-value-chain.md",
+      "claim": "TransTRACK installed base 100,000+ fleet management units in SEA (Berg Insight 2024); one of top 3 SEA fleet management providers (with Cartrack and Jimi IoT)",
+      "sources": [
+        "https://blog.transtrack.co/en/press-release/transtrack-recognized-again-as-one-of-the-largest-fleet-management-providers-in-southeast-asia-by-berg-insight/",
+        "https://iotbusinessnews.com/2024/10/27/19001-the-installed-base-of-fleet-management-systems-in-southeast-asia-to-reach-5-4-million-units-by-2028/",
+        "https://www.globenewswire.com/news-release/2024/10/30/2971463/28124/en/Southeast-Asia-Fleet-Management-Market-Report-2024-Featuring-Top-5-Players-Jimi-IoT-Cartrack-Karooooo-TransTRACK-DTC-and-Onelink.html"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-trade",
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "TransTRACK's own announcement of Berg Insight recognition (secondary-vendor + secondary-trade for press release distribution channels). The underlying Berg Insight SEA Fleet Management 2024 report is the primary source but is behind a paywall; the press release is publicly accessible. Three citations but all trace back to the same Berg Insight report. Scored M: Berg Insight is a specialist research firm and the press release is the public evidence of a specialist research firm ranking. Not L because Berg Insight is a recognized specialist (not generic market research firm)."
+    },
+    {
+      "id": "VC-28",
+      "file": "stage-3-value-chain.md",
+      "claim": "Jimi IoT installed base 200,000+ fleet management units in SEA (Berg Insight 2024); one of top 3 SEA providers",
+      "sources": [
+        "https://www.businesswire.com/news/home/20241105818026/en/Southeast-Asia-Fleet-Management-Market-Report-2024---Fleet-Management-Solutions-in-Southeast-Asia-Expected-to-Double-by-2028-Reaching-5.4-Million-Units---ResearchAndMarkets.com",
+        "https://www.globenewswire.com/news-release/2024/10/30/2971463/28124/en/Southeast-Asia-Fleet-Management-Market-Report-2024-Featuring-Top-5-Players-Jimi-IoT-Cartrack-Karooooo-TransTRACK-DTC-and-Onelink.html"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Two BusinessWire/GlobeNewswire press releases for the same Berg Insight SEA Fleet Management 2024 report. Different distribution channels, same underlying report. Counted as one source family (Berg Insight). But Berg Insight is a specialist research firm, making the underlying report primary-research-firm quality. The publicly accessible press release abstracts are the evidence. Scored M consistent with Berg Insight as specialist firm with press release as accessible proxy."
+    },
+    {
+      "id": "VC-29",
+      "file": "stage-3-value-chain.md",
+      "claim": "PowerFleet FY2025 revenue $362.5M (+26% YoY); ~75% recurring SaaS; 2.8M subscribers at FY2025; ABI Research #1 innovation in commercial telematics 2025",
+      "sources": [
+        "https://ir.powerfleet.com/press-releases/detail/484/powerfleet-reports-annual-fy2025-results-a-breakout-year",
+        "https://www.prnewswire.com/news-releases/powerfleet-and-mix-telematics-close-business-combination-creating-new-top-tier-global-aiot-saas-provider-302105363.html"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "PowerFleet is NASDAQ-listed (AIOT); IR press release from ir.powerfleet.com is a company investor-relations disclosure. Revenue and subscriber figures from own IR press release. This is functionally a public company disclosure (M per rubric — vendor disclosure of own metric). ABI Research ranking corroborated by ABI Research press release (cited as source 11 in the broader document)."
+    },
+    {
+      "id": "VC-30",
+      "file": "stage-3-value-chain.md",
+      "claim": "CMT Frost & Sullivan 2024 Market Leadership Award for telematics insurance",
+      "sources": [
+        "https://www.cmtelematics.com/news/cambridge-mobile-telematics-earns-frost-sullivans-2024-market-leadership-award-for-leading-innovations-in-the-telematics-insurance-and-connected-claims-industry/"
+      ],
+      "source_categories": [
+        "secondary-vendor"
+      ],
+      "score": "L",
+      "override": "single-vendor-source",
+      "note": "Cited source is CMT's own website announcing the Frost & Sullivan award — secondary-vendor. The Frost & Sullivan underlying award write-up is not cited. Should cite frost.com directly. Single vendor page for a third-party recognition claim = L."
+    },
+    {
+      "id": "VC-31",
+      "file": "stage-3-value-chain.md",
+      "claim": "Greenroad revenue ~$15M estimated 2025; 'hundreds' of organizations; 80 countries; Digital Edge platform launched July 2024",
+      "sources": [
+        "https://greenroad.com/",
+        "https://www.prnewswire.com/apac/news-releases/greenroad-ushers-in-new-era-in-fleet-safety-with-digital-edge-302203890.html"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-trade"
+      ],
+      "score": "L",
+      "override": "single-vendor-source",
+      "note": "Revenue estimate (~$15M) has no disclosed source — appears to be an internal estimate with no citation. Product launch sourced to PRNewswire. Revenue figure is completely unsourced; customer/country claims from vendor site. Override: single-vendor-source for operating metric; revenue estimate has no source at all."
+    },
+    {
+      "id": "VC-32",
+      "file": "stage-3-value-chain.md",
+      "claim": "Global commercial vehicle telematics market size $24.3B in 2024; CAGR 12.9% 2025-2034",
+      "sources": [
+        "https://www.gminsights.com/industry-analysis/commercial-vehicle-telematics-market"
+      ],
+      "source_categories": [
+        "secondary-market-research"
+      ],
+      "score": "L",
+      "override": "secondary-market-research-only",
+      "note": "Single secondary market research firm (GMI Insights) with no disclosed methodology and no independent cross-validation. Override: secondary-market-research-only for market sizing. The draft itself labels this Medium but rubric requires ≥2 specialist firms (e.g., Berg Insight + ABI Research) for M; GMI Insights is a generic market research firm, not a specialist."
+    },
+    {
+      "id": "VC-33",
+      "file": "stage-3-value-chain.md",
+      "claim": "Global fleet management market $28.6B in 2023; projected $55.6B by 2028",
+      "sources": [
+        "https://www.marketsandmarkets.com/ResearchInsight/fleet-management-systems-market.asp"
+      ],
+      "source_categories": [
+        "secondary-market-research"
+      ],
+      "score": "L",
+      "override": "secondary-market-research-only",
+      "note": "MarketsandMarkets is a secondary market research firm (explicitly listed in rubric as secondary category). Single firm. Draft already labels forecast as Low confidence; current market size should also be L."
+    },
+    {
+      "id": "VC-34",
+      "file": "stage-3-value-chain.md",
+      "claim": "North America fleet management systems 17.4M active units 2023; projected 30.5M units 2028",
+      "sources": [
+        "https://www.computerweekly.com/news/366636775/Aftermarket-car-telematics-arena-drives-past-90-million-subscriptions"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "L",
+      "override": "single-trade-source",
+      "note": "Computer Weekly article citing a Berg Insight report — secondary-trade citing a primary-research-firm. The Berg Insight underlying report is not directly cited (no berginsight.com product page URL provided). This is a media article citing a report, not the report itself. Override: single-trade-source. Additionally, the Computer Weekly URL appears to be about aftermarket car telematics globally (90M subscriptions), which may not specifically be the North America fleet management data — potential geography/scope mismatch."
+    },
+    {
+      "id": "VC-35",
+      "file": "stage-3-value-chain.md",
+      "claim": "ELD/HOS compliance devices covering 3.5M US heavy trucks in 2024; >78% US heavy commercial truck telematics adoption (mandate-driven)",
+      "sources": [
+        "https://www.fmcsa.dot.gov/hours-service/elds/general-information-about-eld-rule"
+      ],
+      "source_categories": [
+        "primary-gov"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "FMCSA.dot.gov is a primary government source (US federal regulatory agency). The 3.5M figure and 78%+ adoption rate are sourced to the regulator that administers the ELD mandate. Highest reliability. NOTE: The FMCSA page is the general ELD information page, not a specific statistics page — ideally would cite FMCSA ELD registered device counts directly, but the regulatory agency page is still primary-gov."
+    },
+    {
+      "id": "VC-36",
+      "file": "stage-3-value-chain.md",
+      "claim": "Commercial telematics subscriptions globally projected 126M by 2027 (ABI Research)",
+      "sources": [
+        "https://www.abiresearch.com/market-research/product/7781191-commercial-telematics-and-fleet-management"
+      ],
+      "source_categories": [
+        "secondary-market-research"
+      ],
+      "score": "L",
+      "override": "secondary-market-research-only",
+      "note": "ABI Research product page for a paid report — the projected figure is not publicly disclosed; only the product page is cited, not the actual data. ABI Research is a specialist firm but this is a paid product page (essentially a teaser/abstract). Single source, abstract-level only. Override: secondary-market-research-only for market forecast."
+    },
+    {
+      "id": "VC-37",
+      "file": "stage-3-value-chain.md",
+      "claim": "Global video telematics market size $1.69B in 2024; CAGR 17.9% 2025-2034; top 7 vendors ~42% market share",
+      "sources": [
+        "https://www.gminsights.com/industry-analysis/video-telematics-market"
+      ],
+      "source_categories": [
+        "secondary-market-research"
+      ],
+      "score": "L",
+      "override": "secondary-market-research-only",
+      "note": "Single secondary market research firm (GMI Insights). No independent cross-validation. Override: secondary-market-research-only."
+    },
+    {
+      "id": "VC-38",
+      "file": "stage-3-value-chain.md",
+      "claim": "Video telematics projected installed base 22M units globally by 2030 (Berg Insight)",
+      "sources": [
+        "https://www.computerweekly.com/news/366641036/North-America-drives-video-telematics-market-to-22-million-units-by-2030"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Computer Weekly article citing Berg Insight specifically. Berg Insight is a specialist research firm; Computer Weekly is trade press. This is secondary-trade citing a specialist firm. Scored M: named specialist firm source cited through trade press (single secondary-trade with named primary source). Would be H if berginsight.com product page or abstract directly cited."
+    },
+    {
+      "id": "VC-39",
+      "file": "stage-3-value-chain.md",
+      "claim": "Global ELD market $14.1B-$15.6B in 2024; North America 43% of global ELD market; ELD CAGR ~8.6%",
+      "sources": [
+        "https://www.businessresearchinsights.com/market-reports/electronic-logging-device-eld-market-119692"
+      ],
+      "source_categories": [
+        "secondary-market-research"
+      ],
+      "score": "L",
+      "override": "secondary-market-research-only",
+      "note": "Business Research Insights is a secondary market research firm. Wide range ($14.1B-$15.6B) itself indicates cross-validation failure. Draft acknowledges 'methodological inconsistency' and instructs treating as approximation. Override: secondary-market-research-only. Automatic L."
+    },
+    {
+      "id": "VC-40",
+      "file": "stage-3-value-chain.md",
+      "claim": "SEA fleet management installed base 3.6M units in 2024; projected 6.4M by 2029; CAGR 12.3% 2024-2029",
+      "sources": [
+        "https://iotbusinessnews.com/2024/10/27/19001-the-installed-base-of-fleet-management-systems-in-southeast-asia-to-reach-5-4-million-units-by-2028/",
+        "https://iotbusinessnews.com/2026/02/26/the-installed-base-of-fleet-management-systems-in-southeast-asia-to-reach-6-4-million-units-by-2029/",
+        "https://www.berginsight.com/fleet-management-in-southeast-asia/"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "secondary-trade",
+        "primary-research-firm"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Berg Insight product page (primary-research-firm) plus two IoT Business News press releases summarizing Berg Insight editions. The 3.6M (2024) figure is from the 2025/2026 Berg Insight report edition; the 6.4M/2029 figure from the same. Three citations but all trace to Berg Insight as the single underlying research firm. However, Berg Insight is a specialist (primary-research-firm category) and the berginsight.com product page is directly cited. Scored M: single specialist research firm, publicly accessible abstract/product page cited. NOTE: The 2024 IoT Business News link references the 2024 Berg Insight edition with a 5.4M by 2028 projection — the 2026 edition updated to 6.4M by 2029 and 3.6M current. The two Berg Insight editions show revision between reports, which is expected."
+    },
+    {
+      "id": "VC-41",
+      "file": "stage-3-value-chain.md",
+      "claim": "SEA telematics market size $2.25B in 2025; projected $4.41B in 2030",
+      "sources": [
+        "https://www.mordorintelligence.com/industry-reports/southeast-asia-telematics-market"
+      ],
+      "source_categories": [
+        "secondary-market-research"
+      ],
+      "score": "L",
+      "override": "secondary-market-research-only",
+      "note": "Mordor Intelligence is explicitly listed in the rubric as a secondary market research firm. Single source, no cross-validation. Override: secondary-market-research-only."
+    },
+    {
+      "id": "VC-42",
+      "file": "stage-3-value-chain.md",
+      "claim": "Indonesia commercial vehicle fleet 23M+ vehicles in 2024",
+      "sources": [
+        "https://www.mordorintelligence.com/industry-reports/southeast-asia-telematics-market"
+      ],
+      "source_categories": [
+        "secondary-market-research"
+      ],
+      "score": "L",
+      "override": "geography mismatch + secondary-market-research-only",
+      "note": "Single Mordor Intelligence source for a country-specific fleet size figure. BPS Indonesia (government statistics agency) or Kemenhub would be the correct primary source. The draft labels this 'Medium — industry estimates' but there is no industry association or government source cited. Override: secondary-market-research-only; geography mismatch (the correct source would be BPS Indonesia or Kemenhub registration data, not a global market research firm's estimate)."
+    },
+    {
+      "id": "VC-43",
+      "file": "stage-3-value-chain.md",
+      "claim": "Vietnam CAGR in telematics 13.1% (Mordor Intelligence projection)",
+      "sources": [
+        "https://www.mordorintelligence.com/industry-reports/southeast-asia-telematics-market"
+      ],
+      "source_categories": [
+        "secondary-market-research"
+      ],
+      "score": "L",
+      "override": "secondary-market-research-only",
+      "note": "Mordor Intelligence single-source projection for a specific country. Override: secondary-market-research-only."
+    },
+    {
+      "id": "VC-44",
+      "file": "stage-3-value-chain.md",
+      "claim": "Highway integrates with Samsara ELD data for carrier vetting; RMIS/MyCarrierPortal accesses ELD and safety data via SambaSafety integration",
+      "sources": [
+        "https://kb.samsara.com/hc/en-us/articles/10280915886349-Integrate-with-Highway",
+        "https://www.samsara.com/resources/marketplace/samba-safety"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-vendor"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Samsara's own integration documentation confirming the integration exists — vendor disclosure of own integrations. Two Samsara vendor pages. Scored M as vendor disclosure of own product feature/integration."
+    },
+    {
+      "id": "VC-45",
+      "file": "stage-3-value-chain.md",
+      "claim": "ASSUMED-1: Descartes MacroPoint uses Geotab as a preferred telematics data source [explicitly tagged as assumed]",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "assumed-tag",
+      "note": "Explicitly tagged [ASSUMED-1] in source document. Automatic L per rubric."
+    },
+    {
+      "id": "VC-46",
+      "file": "stage-3-value-chain.md",
+      "claim": "project44 preferred telematics partner = Geotab; FourKites integrates Samsara GPS; Trimble TMW TMS integrates Platform Science natively",
+      "sources": [
+        "https://www.project44.com/partners/geotab/",
+        "https://marketplace.geotab.com/solutions/movement-by-project44/",
+        "https://kb.samsara.com/hc/en-us/articles/360021818732-Integrate-with-FourKites",
+        "https://kb.samsara.com/hc/en-us/articles/360022557031-Integrate-with-project44",
+        "https://www.prnewswire.com/news-releases/platform-science-completes-acquisition-of-trimbles-global-transportation-telematics-business-units-302371696.html"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-vendor",
+        "secondary-vendor",
+        "secondary-vendor",
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Multiple vendor disclosures from multiple different companies (project44, Geotab, Samsara, Trimble/Platform Science) corroborating bilateral commercial relationships. Five sources from at least four distinct vendor families. Scored M: vendor disclosures of own integrations from multiple parties."
+    },
+    {
+      "id": "VC-47",
+      "file": "stage-3-value-chain.md",
+      "claim": "McLeod Software has 260+ integrations including ELD telematics providers",
+      "sources": [
+        "https://www.mcleodsoftware.com/",
+        "https://www.mcleodsoftware.com/press-releases/maven-machines-integrates-with-mcleod-software-to-improve-fleet-and-driver-workflow/"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-vendor"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "McLeod's own website and press release — vendor disclosure of own ecosystem size. Single vendor family but vendor disclosing own metric."
+    },
+    {
+      "id": "VC-48",
+      "file": "stage-3-value-chain.md",
+      "claim": "ASSUMED-2: MercuryGate TMS connects to Samsara/Geotab APIs for in-transit visibility [explicitly tagged as assumed]",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "assumed-tag",
+      "note": "Explicitly tagged [ASSUMED-2]. Automatic L."
+    },
+    {
+      "id": "VC-49",
+      "file": "stage-3-value-chain.md",
+      "claim": "ASSUMED-3: Uber Freight and Loadsmart ping ELD data from Samsara/Motive [explicitly tagged as assumed]",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "assumed-tag",
+      "note": "Explicitly tagged [ASSUMED-3]. Automatic L."
+    },
+    {
+      "id": "VC-50",
+      "file": "stage-3-value-chain.md",
+      "claim": "ASSUMED-4: SEA digital freight platforms pull GPS from local telematics via informal/manual integration [explicitly tagged as assumed]",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "assumed-tag",
+      "note": "Explicitly tagged [ASSUMED-4]. Automatic L."
+    },
+    {
+      "id": "VC-51",
+      "file": "stage-3-value-chain.md",
+      "claim": "Fleet managers devote average 4-5 hours/week consolidating data; 89% want single connected platform but only 45% say current telematics fully meets their needs",
+      "sources": [
+        "https://www.jjkeller.com/company/press-releases/jj-keller-study-reports-on-greatest-pain-points-for-fleet-managers",
+        "https://autofleet.io/blog/solving-data-fragmentation-in-fleet-telematics"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "secondary-vendor"
+      ],
+      "score": "L",
+      "override": "single-trade-source",
+      "note": "J.J. Keller is a compliance vendor/publisher — secondary-trade. Their 'study' is likely a proprietary survey commissioned for marketing purposes, not a peer-reviewed or independently audited study. Autofleet.io is a vendor blog (secondary-vendor). Two sources from secondary categories, neither primary. Override: single-trade-source applies to the 4-5 hours figure; 89%/45% figures trace to J.J. Keller study without disclosed sample size or methodology."
+    },
+    {
+      "id": "VC-52",
+      "file": "stage-3-value-chain.md",
+      "claim": "ELD mandate compliance is the purchase trigger for 78%+ of US heavy-truck telematics adoption",
+      "sources": [
+        "https://www.fmcsa.dot.gov/hours-service/elds/general-information-about-eld-rule"
+      ],
+      "source_categories": [
+        "primary-gov"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "FMCSA page is primary-gov. The 78% adoption rate is sourced as mandate-driven. However, the specific causal claim that ELD mandate is the purchase trigger for 78%+ of adoption is an inference, not directly stated by FMCSA. The 78% adoption rate comes from FMCSA; the 'purchase trigger' framing is the draft's interpretation. Scored M: primary government source for the adoption rate; the causal framing is secondary inference."
+    },
+    {
+      "id": "VC-53",
+      "file": "stage-3-value-chain.md",
+      "claim": "ASSUMED-5: No SEA country has implemented a mandatory ELD or GPS tracking regulation for commercial trucks as of 2025 [explicitly tagged as assumed]",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "assumed-tag",
+      "note": "Explicitly tagged [ASSUMED-5]. Automatic L. (Note: pain points file PP3.3 attempts to evidence this claim with specific country regulatory citations, which elevates that version of the same claim — see PP3.3 scoring.)"
+    },
+    {
+      "id": "VC-54",
+      "file": "stage-3-value-chain.md",
+      "claim": "SEA carrier fleet dominated by small owner-operators (1-5 trucks); Cartrack serves 274k devices; Indonesia addressable commercial fleet exceeds 23M; <2% telematics penetration among smallest carriers",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1828102/000121390024087420/ea021753501ex99-1_karooooo.htm",
+        "https://www.mordorintelligence.com/industry-reports/southeast-asia-telematics-market"
+      ],
+      "source_categories": [
+        "primary-gov",
+        "secondary-market-research"
+      ],
+      "score": "L",
+      "override": "geography mismatch",
+      "note": "274k from SEC filing = H for that data point. 23M Indonesia fleet = Mordor Intelligence (secondary-market-research). <2% penetration is a calculated inference (274k/23M) that depends on Mordor's Indonesia fleet count. The owner-operator dominance claim has no cited source. The 23M figure is a Mordor estimate for Indonesia specifically but should be from BPS Indonesia or Kemenhub. Geography mismatch flag: country-specific fleet size from global market research firm when government statistics agency is the correct source."
+    },
+    {
+      "id": "VC-55",
+      "file": "stage-3-value-chain.md",
+      "claim": "ASSUMED-6: AI dashcams cost $200-500; ROI requires insurer subsidization not systematically available [explicitly tagged as assumed]",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "assumed-tag",
+      "note": "Explicitly tagged [ASSUMED-6]. Automatic L."
+    },
+    {
+      "id": "VC-56",
+      "file": "stage-3-value-chain.md",
+      "claim": "ASSUMED-7: GPS jamming of telematics devices is materially frequent on high-theft corridors in Indonesia [explicitly tagged as assumed]",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "assumed-tag",
+      "note": "Explicitly tagged [ASSUMED-7]. Automatic L."
+    },
+    {
+      "id": "VC-57",
+      "file": "stage-3-value-chain.md",
+      "claim": "ASSUMED-8: In-cab driver-facing cameras may conflict with Indonesian/Malaysian/Thai privacy regulations [explicitly tagged as assumed]",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "assumed-tag",
+      "note": "Explicitly tagged [ASSUMED-8]. Automatic L."
+    },
+    {
+      "id": "PP3.1-1",
+      "file": "stage-3-pain-points.md",
+      "claim": "Annual cost of in-transit cargo theft globally: $6.6B in North America alone in 2025, up 18% YoY",
+      "sources": [
+        "https://www.insurancebusinessmag.com/us/news/breaking-news/global-cargo-theft-hits-new-highs-as-criminal-networks-evolve--tt-club-572468.aspx"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "L",
+      "override": "single-trade-source",
+      "note": "Insurance Business Magazine is secondary-trade citing TT Club/BSI 2025 report. The TT Club report itself is not directly cited for this specific figure (the $6.6B for North America). The underlying TT Club/BSI 2025 Annual Cargo Theft Report is the primary source but cited only through trade press. Override: single-trade-source. The TT Club direct URL (source 2) cites the 2024 report for transit/truck percentages, not this 2025 North America dollar figure."
+    },
+    {
+      "id": "PP3.1-2",
+      "file": "stage-3-pain-points.md",
+      "claim": "41% of cargo theft occurs during transit; 76% of incidents involve trucks (TT Club/BSI 2024)",
+      "sources": [
+        "https://www.ttclub.com/news-and-resources/news/article/cargo-theft-report-reveals-rapidly-shifting-criminal-tactics-and-emerging-targets/"
+      ],
+      "source_categories": [
+        "primary-association"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "TT Club is the Transport & Trading Club — a primary industry association that publishes the annual Cargo Theft Report. Direct citation to ttclub.com. Primary-association source. Single source but it is a primary association publication."
+    },
+    {
+      "id": "PP3.1-3",
+      "file": "stage-3-pain-points.md",
+      "claim": "Real-Time Transportation Visibility Platform (RTTVP) market grew to $6.3B globally in 2024",
+      "sources": [
+        "https://www.businesswire.com/news/home/20250820985707/en/Real-Time-Transportation-Visibility-Platforms-Report-2025-Project44-FourKites-and-Shippeo-Lead-the-Charge-in-Visibility-Platforms---ResearchAndMarkets.com"
+      ],
+      "source_categories": [
+        "secondary-market-research"
+      ],
+      "score": "L",
+      "override": "secondary-market-research-only",
+      "note": "BusinessWire distribution of ResearchAndMarkets report — ResearchAndMarkets is a market research aggregator/reseller. Single secondary market research source. Override: secondary-market-research-only."
+    },
+    {
+      "id": "PP3.1-4",
+      "file": "stage-3-pain-points.md",
+      "claim": "Average cargo theft value per incident (North America 2024): $202,364; 3,625 incidents; $454.9M total (Verisk CargoNet 2024)",
+      "sources": [
+        "https://www.verisk.com/company/newsroom/cargo-theft-surges-to-record-levels-in-2024-verisk-cargonet-analysis-reveals/"
+      ],
+      "source_categories": [
+        "primary-association"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "Verisk/CargoNet is the industry's authoritative cargo theft data source — classified as primary-association (industry data body). Direct citation to verisk.com. Primary source for cargo theft statistics."
+    },
+    {
+      "id": "PP3.1-5",
+      "file": "stage-3-pain-points.md",
+      "claim": "project44 processes data for 1B+ shipments annually; carrier network 150,000+ carriers; 80,000 immediately activatable via Connection Accelerator",
+      "sources": [
+        "https://www.project44.com/press-releases/project44-doubles-down-on-connectivity-infrastructure-with-launch-of-connection-center/"
+      ],
+      "source_categories": [
+        "secondary-vendor"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "project44 press release disclosing its own platform metrics. Vendor disclosure of own operational scale = M."
+    },
+    {
+      "id": "PP3.1-6",
+      "file": "stage-3-pain-points.md",
+      "claim": "SEA fleet management penetration: 17.5% of total business fleet vehicles in 2024; rising to 27.1% by 2029 (Berg Insight 2025 edition)",
+      "sources": [
+        "https://iotbusinessnews.com/2026/02/26/the-installed-base-of-fleet-management-systems-in-southeast-asia-to-reach-6-4-million-units-by-2029/"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "IoT Business News press release of Berg Insight 2nd Edition (2026 publication). The underlying Berg Insight report is the primary-research-firm source; the press release is the publicly accessible proxy. The berginsight.com product page is also cited elsewhere in the document (source 40). Scored M: specialist research firm data cited through press release distribution."
+    },
+    {
+      "id": "PP3.1-7",
+      "file": "stage-3-pain-points.md",
+      "claim": "project44's preferred carrier list features 3,580 carriers in 70+ countries — less than 2% of network",
+      "sources": [
+        "https://www.project44.com/blog/2024-preferred-carrier-awards/"
+      ],
+      "source_categories": [
+        "secondary-vendor"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "project44's own blog post about their preferred carrier awards — vendor disclosure of own metric. The <2% calculation is derived (3,580 of 150,000+ carriers). Scored M: vendor disclosure of own metric."
+    },
+    {
+      "id": "PP3.1-8",
+      "file": "stage-3-pain-points.md",
+      "claim": "Samsara terms of service: 'Samsara will not share Customer Data without Customer consent'; integration partners cannot redistribute data without express consent",
+      "sources": [
+        "https://www.samsara.com/legal/platform-terms-of-service"
+      ],
+      "source_categories": [
+        "secondary-vendor"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Direct citation to Samsara's published legal terms — vendor disclosure of own legal obligations. Single source but this is a verifiable legal document (publicly available on samsara.com). Scored M: vendor disclosure of own legal/contractual terms."
+    },
+    {
+      "id": "PP3.2-1",
+      "file": "stage-3-pain-points.md",
+      "claim": "Commercial auto insurance posted $4.9B underwriting loss in 2024; 14th consecutive year of losses; liability loss/LAE ratio 87.6 — highest in 11 years",
+      "sources": [
+        "https://insurasales.com/news-story/83637/us-commercial-auto-insurance-endures-continuous-underwriting-losses-in-2024",
+        "https://riskandinsurance.com/commercial-auto-insurance-losses-hit-4-9-billion-as-social-inflation-drives-severity-beyond-pricing-gains/"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Two named trade publications (InsuraSales, Risk & Insurance) citing AM Best data. The underlying source is AM Best (a primary credit rating and insurance analysis agency). The AM Best report is not directly cited but two independent trade publications report the same figure from the same primary source. This is the standard structure for AM Best data distribution. Scored M: two independent secondary-trade sources citing the same primary (AM Best) — meets the 3-source threshold when treated as one source family but two distinct reporting outlets provide independent corroboration. Would be H if AM Best directly cited."
+    },
+    {
+      "id": "PP3.2-2",
+      "file": "stage-3-pain-points.md",
+      "claim": "Insurance premiums hit $0.102/mile in 2024; approximately 4.5% of total operating costs ($2.26/mile total); sharpest sustained increase",
+      "sources": [
+        "https://www.truckinginfo.com/10243311/fleet-margins-fall-as-trucking-costs-set-new-records-in-atris-2025-report"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "TruckingInfo article citing ATRI 2025 Operational Costs of Trucking report. ATRI (American Transportation Research Institute) is a primary-association source; TruckingInfo is trade press. Single trade source citing a named primary association study. Scored M: named-author trade press citing a primary association (ATRI) source."
+    },
+    {
+      "id": "PP3.2-3",
+      "file": "stage-3-pain-points.md",
+      "claim": "Nuclear verdicts against trucking companies reached 135 in 2024; 52% increase over 2023; totaling $31.3B; 116% increase; median verdict $51M",
+      "sources": [
+        "https://www.marshmma.com/us/insights/details/nuclear-trucking-verdicts.html"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "L",
+      "override": "single-trade-source",
+      "note": "Marsh MMA insights article — Marsh is a broker/consulting firm (secondary-trade per rubric: 'broker / consulting site without methodology' is automatic L). The underlying data sources (ILR — Institute for Legal Reform) are not directly cited. The note in the rubric states 'broker / consulting site without methodology = L.' Override: single-trade-source from a consulting/broker site. The ILR 2024 report should be cited directly for this claim."
+    },
+    {
+      "id": "PP3.2-4",
+      "file": "stage-3-pain-points.md",
+      "claim": "Northland Insurance (Travelers) offers 10% premium discount for Samsara AI dashcam; $300 dashcam subsidy",
+      "sources": [
+        "https://www.samsara.com/blog/northland-insurance-partnership",
+        "https://www.ttnews.com/articles/samsara-northland-telematics"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Samsara blog (secondary-vendor) + TT News article (secondary-trade) corroborate the same partnership announcement. Two source families for a vendor-partnership fact. Scored M: vendor disclosure + named trade press corroboration."
+    },
+    {
+      "id": "PP3.2-5",
+      "file": "stage-3-pain-points.md",
+      "claim": "Motive-GEICO DriveEasy Pro partnership: up to 10% savings for qualifying fleets",
+      "sources": [
+        "https://www.geico.com/about/pressreleases/2025/20251118/"
+      ],
+      "source_categories": [
+        "secondary-vendor"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "GEICO press release on their own partnership — vendor disclosure of own commercial partnership offer. GEICO is a major insurer; their own press release for their own program = vendor disclosure of own metric. Scored M."
+    },
+    {
+      "id": "PP3.2-6",
+      "file": "stage-3-pain-points.md",
+      "claim": "Nirvana Insurance raised $100M Series D at $1.5B valuation in December 2025; integrated 90-day historical telematics vetting into every quote",
+      "sources": [
+        "https://techcrunch.com/2025/03/10/nirvana-keeps-on-truckin-with-80m-at-a-830m-valuation-for-its-ai-powered-insurance/",
+        "https://news.crunchbase.com/ai/insurance-platform-nirvana-valuation-nearly-doubles/"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "secondary-trade"
+      ],
+      "score": "L",
+      "override": "factual-inconsistency",
+      "note": "CRITICAL: The TechCrunch URL cited refers to an $80M round at an $830M valuation (not $100M at $1.5B). The Crunchbase article title says 'valuation nearly doubles' — this may reference a different round. There is a material factual inconsistency: the cited sources describe a different funding event than the claim states ($80M/$830M vs $100M/$1.5B in December 2025). This is a citation error — the claim cannot be verified as stated from the cited sources. Scored L: sources do not support the stated claim. Deep research required to find the correct Dec 2025 Series D citation."
+    },
+    {
+      "id": "PP3.2-7",
+      "file": "stage-3-pain-points.md",
+      "claim": "88% of commercial fleets have telematics programs; only 64% of insurers claim to use telematics in underwriting; 70% of fleet managers do not share telematics data with insurer; 79% have never been asked",
+      "sources": [
+        "https://sambasafety.com/blog/why-fleets-wont-share-telematics-data",
+        "https://www.carriermanagement.com/features/2025/11/24/281755.htm"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-trade"
+      ],
+      "score": "L",
+      "override": "single-vendor-source",
+      "note": "SambaSafety blog (secondary-vendor) is the primary citation for the 70%/79% figures. Carrier Management (secondary-trade) is cited for the organizational silo description, not necessarily these specific percentages. SambaSafety has a direct commercial interest in demonstrating poor telematics data sharing (they sell a solution). The 88%/64%/70%/79% statistics need an independent survey or industry association source. Override: single-vendor-source for the core statistical claims."
+    },
+    {
+      "id": "PP3.2-8",
+      "file": "stage-3-pain-points.md",
+      "claim": "Global insurance telematics market $6.8B in 2024, growing at 18.9% CAGR",
+      "sources": [
+        "https://www.gminsights.com/industry-analysis/insurance-telematics-market"
+      ],
+      "source_categories": [
+        "secondary-market-research"
+      ],
+      "score": "L",
+      "override": "secondary-market-research-only",
+      "note": "GMI Insights is a secondary market research firm. Single source. Override: secondary-market-research-only."
+    },
+    {
+      "id": "PP3.2-9",
+      "file": "stage-3-pain-points.md",
+      "claim": "Samsara FY2025 ARR $1.46B (32% YoY growth); Motive ARR $501M (28% YoY growth)",
+      "sources": [
+        "https://s29.q4cdn.com/853855404/files/doc_financials/2025/q4/Q4-2025-Earnings-Press-Release-Draft-FINAL.pdf",
+        "https://www.sec.gov/Archives/edgar/data/1646681/000162828025058773/motive-sx1.htm"
+      ],
+      "source_categories": [
+        "primary",
+        "primary-gov"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "Samsara investor IR PDF (q4cdn.com is Samsara's own investor relations CDN — company primary disclosure) + Motive S-1 SEC filing. Two primary source disclosures from two separate public/pre-public companies. Highest reliability."
+    },
+    {
+      "id": "PP3.2-10",
+      "file": "stage-3-pain-points.md",
+      "claim": "Telematics-insured fleets report 10-40% premium reductions when behavior data shared; video telematics market projected $10B by 2030 (ABI Research); 24% shipment growth",
+      "sources": [
+        "https://www.abiresearch.com/press/video-telematics-to-improve-commercial-vehicle-road-safety-driving-global-revenues-to-us10-billion-by-2030"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "L",
+      "override": "single-trade-source",
+      "note": "ABI Research press release for the $10B projection — secondary-trade (press release). The 10-40% premium reduction claim does not have an independent citation here in the pain points file (it is a broader claim supported elsewhere by the Northland/GEICO partnerships which show 10%). The range 10-40% needs an actuarial or association study to be credible. Override: single-trade-source for the projection; 10-40% range unsourced in this citation."
+    },
+    {
+      "id": "PP3.2-ASSUMED2",
+      "file": "stage-3-pain-points.md",
+      "claim": "ASSUMED-2: Fewer than 5-10% of commercial truck fleet enrolled in telematics-discount insurance program [explicitly tagged]",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "assumed-tag",
+      "note": "Explicitly tagged [ASSUMED-2]. Automatic L."
+    },
+    {
+      "id": "PP3.2-ASSUMED3",
+      "file": "stage-3-pain-points.md",
+      "claim": "ASSUMED-3: Traditional insurer build cost for multi-provider telematics normalization layer: $5-20M over 18-36 months [explicitly tagged]",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "assumed-tag",
+      "note": "Explicitly tagged [ASSUMED-3]. Automatic L."
+    },
+    {
+      "id": "PP3.3-1",
+      "file": "stage-3-pain-points.md",
+      "claim": "Indonesia approximately 27,000 road collision fatalities per year (2023 data); truck accidents driven by driver fatigue and overloading cited as primary causes",
+      "sources": [
+        "https://ligaasuransi.com/en/darurat-kecelakaan-truk-di-indonesia-perlu-langkah-nyata-sekarang/",
+        "https://www.who.int/publications/m/item/road-safety-idn-2023-country-profile"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "primary-multilateral"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "WHO Road Safety Country Profile for Indonesia (2023) is a primary-multilateral source — highest reliability for national road safety statistics. LigaAsuransi is secondary-trade but the WHO citation is independently authoritative. The 27,000 figure is corroborated by WHO. Scored H: primary-multilateral (WHO) plus secondary-trade corroboration."
+    },
+    {
+      "id": "PP3.3-2",
+      "file": "stage-3-pain-points.md",
+      "claim": "SEA fleet management penetration 17.5% in 2024 (Berg Insight); 82.5% have no fleet management system; basic trackers dominant",
+      "sources": [
+        "https://iotbusinessnews.com/2026/02/26/the-installed-base-of-fleet-management-systems-in-southeast-asia-to-reach-6-4-million-units-by-2029/",
+        "https://iotbusinessnews.com/2024/10/27/19001-the-installed-base-of-fleet-management-systems-in-southeast-asia-to-reach-5-4-million-units-by-2028/"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "Two IoT Business News press releases from two Berg Insight editions (2024 and 2026). Both trace to Berg Insight as the specialist research firm. Berg Insight product page also cited in VC-40 (berginsight.com/fleet-management-in-southeast-asia/). Scored M: specialist research firm (Berg Insight) data cited through two press release editions."
+    },
+    {
+      "id": "PP3.3-3",
+      "file": "stage-3-pain-points.md",
+      "claim": "Indonesia approximately 4-5 million registered commercial vehicles as of 2024 (Kemenhub registration data)",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "no-source-cited",
+      "note": "The claim in parentheses says 'Kemenhub registration data' but no URL is cited for this figure. The draft does not provide a hyperlink to Kemenhub data. This is a factual claim about a government statistic with no traceable citation. Automatic L: no source cited."
+    },
+    {
+      "id": "PP3.3-4",
+      "file": "stage-3-pain-points.md",
+      "claim": "Indonesia Ministry of Transportation documented average 30,000 truck and bus accidents per year (2011-2018 trend); 2023 data shows ~27,000 road collision fatalities nationally",
+      "sources": [
+        "https://ligaasuransi.com/en/darurat-kecelakaan-truk-di-indonesia-perlu-langkah-nyata-sekarang/",
+        "https://www.who.int/publications/m/item/road-safety-idn-2023-country-profile"
+      ],
+      "source_categories": [
+        "secondary-trade",
+        "primary-multilateral"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "WHO country profile (primary-multilateral) cited for 2023 figure. 2011-2018 trend reference attributed to Ministry of Transportation but cited through LigaAsuransi (secondary-trade). The WHO source establishes the 2023 figure authoritatively."
+    },
+    {
+      "id": "PP3.3-5",
+      "file": "stage-3-pain-points.md",
+      "claim": "ASEAN road fatality rates: Indonesia 12.4 per 100,000; Singapore 2.1; Malaysia 20.4 per 100,000 population",
+      "sources": [
+        "https://asiantransportobservatory.org/analytical-outputs/roadsafetyprofiles/indonesia-road-safety-profile-2025/"
+      ],
+      "source_categories": [
+        "primary-multilateral"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "Asian Transport Observatory is an ASEAN intergovernmental body — classified as primary-multilateral. Single primary-multilateral source with direct URL to Indonesia road safety profile 2025. Scored H: primary-multilateral source."
+    },
+    {
+      "id": "PP3.3-6",
+      "file": "stage-3-pain-points.md",
+      "claim": "Indonesia Silacak system mandates GPS integration for hazardous waste (B3) transport",
+      "sources": [
+        "https://medium.com/@nicolaushansell/why-indonesian-logistics-companies-are-scrambling-to-install-gps-tracking-systems-right-now-de70e9c0eeb3"
+      ],
+      "source_categories": [
+        "secondary-news"
+      ],
+      "score": "L",
+      "override": "single-trade-source",
+      "note": "Medium blog post (secondary-news — personal/unverified blog). The primary source for Indonesian regulatory GPS mandate would be the Ministry of Transportation (Kemenhub) regulation or KLHK (Ministry of Environment) for B3 waste. Single secondary blog post. Override: single-trade-source."
+    },
+    {
+      "id": "PP3.3-7",
+      "file": "stage-3-pain-points.md",
+      "claim": "Thailand mandatory GPS requirement for private vehicles reversed under political pressure",
+      "sources": [
+        "https://thethaiger.com/hot-news/transport/thai-transport-minister-backs-down-over-mandatory-gps-in-private-cars-and-motorbikes"
+      ],
+      "source_categories": [
+        "secondary-news"
+      ],
+      "score": "L",
+      "override": "single-trade-source",
+      "note": "The Thaiger is an English-language Thailand news site (secondary-news). Single source for a regulatory fact. The Thai Department of Land Transport (DLT) official announcement would be the primary source. Override: single-trade-source."
+    },
+    {
+      "id": "PP3.3-8",
+      "file": "stage-3-pain-points.md",
+      "claim": "US FMCSA ELD mandate: full compliance December 2019; virtually all CDL interstate motor carriers required to use registered ELD",
+      "sources": [
+        "https://www.fmcsa.dot.gov/hours-service/elds/general-information-about-eld-rule"
+      ],
+      "source_categories": [
+        "primary-gov"
+      ],
+      "score": "H",
+      "override": null,
+      "note": "FMCSA.dot.gov — primary government source. Single primary-gov source for a US federal regulatory fact. Scored H."
+    },
+    {
+      "id": "PP3.3-9",
+      "file": "stage-3-pain-points.md",
+      "claim": "Indonesia UU No. 22/2009 and Government Regulation 55/2012 specify maximum driving hours on paper — no digital audit mechanism",
+      "sources": [
+        "https://www.asean.org/wp-content/uploads/images/Community/AEC/Sectoral/Logistic/ListofDomesticRulesandRegulationsonLogisticsandTransportServices/indonesia%20domestic%20rules%20and%20regulations%20relevant%20to%20the%20logistics%20and%20transport%20sectoral%20services.pdf"
+      ],
+      "source_categories": [
+        "primary-multilateral"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "ASEAN Secretariat document listing Indonesian domestic logistics regulations — primary-multilateral. Single primary source. The legal reference (UU 22/2009, PP 55/2012) is verifiable through this official document. The 'no digital audit mechanism' is an interpretation of the law text — not directly stated in the source. Scored M: primary-multilateral source for the legal citation; the digital-audit-gap inference is secondary."
+    },
+    {
+      "id": "PP3.3-10",
+      "file": "stage-3-pain-points.md",
+      "claim": "ELD mandate did not necessarily reduce accidents; mixed compliance outcomes (University of Arkansas study)",
+      "sources": [
+        "https://www.truckinginfo.com/10164234/eld-mandate-fmcsa-and-the-law-of-unintended-consequences"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "TruckingInfo article citing a University of Arkansas study — secondary-trade citing a primary-academic source. The University of Arkansas study (if peer-reviewed) would be primary-academic, but it is cited through trade press. Scored M: named academic institution cited through trade press."
+    },
+    {
+      "id": "PP3.3-ASSUMED4",
+      "file": "stage-3-pain-points.md",
+      "claim": "ASSUMED-4: Incremental cargo damage/loss rate on SEA small-carrier routes vs. ELD-mandated routes estimated 20-50% higher [explicitly tagged]",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "assumed-tag",
+      "note": "Explicitly tagged [ASSUMED-4]. Automatic L."
+    },
+    {
+      "id": "PP3.3-ASSUMED5",
+      "file": "stage-3-pain-points.md",
+      "claim": "ASSUMED-5: Indonesian small carrier net monthly margin per truck $300-$1,000 [explicitly tagged]",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "assumed-tag",
+      "note": "Explicitly tagged [ASSUMED-5]. Automatic L."
+    },
+    {
+      "id": "PP3.3-ASSUMED6",
+      "file": "stage-3-pain-points.md",
+      "claim": "ASSUMED-6: 60-80% of Indonesian commercial road freight volume moved by owner-operators with fewer than 5 trucks [explicitly tagged]",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "assumed-tag",
+      "note": "Explicitly tagged [ASSUMED-6]. Automatic L."
+    },
+    {
+      "id": "PP3.4-1",
+      "file": "stage-3-pain-points.md",
+      "claim": "Safety managers waste 30-60 minutes/day sorting false alerts from video telematics; well-tuned systems generate 30-70% fewer alerts than default",
+      "sources": [
+        "https://surecam.com/blog/how-to-reduce-false-positive-alerts-in-your-ai-dash-cam-system-without-sacrificing-fleet-safety"
+      ],
+      "source_categories": [
+        "secondary-vendor"
+      ],
+      "score": "L",
+      "override": "single-vendor-source",
+      "note": "SureCam is a video telematics vendor — secondary-vendor. Self-reported figure from a competitor vendor's blog with direct commercial interest in emphasizing rivals' false positive problems. Single vendor source for a critical operational metric. Override: single-vendor-source."
+    },
+    {
+      "id": "PP3.4-2",
+      "file": "stage-3-pain-points.md",
+      "claim": "ATRI 2025: $0.102/mile insurance, $2.260/mile total operating cost for US trucking",
+      "sources": [
+        "https://www.truckinginfo.com/10243311/fleet-margins-fall-as-trucking-costs-set-new-records-in-atris-2025-report"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "TruckingInfo citing ATRI 2025 Operational Costs of Trucking report. ATRI is a primary-association (industry research institute). Named trade press citing named primary association. Scored M: named-author trade press citing primary association."
+    },
+    {
+      "id": "PP3.4-3",
+      "file": "stage-3-pain-points.md",
+      "claim": "ABI Research: video telematics $10B by 2030, 24% shipment growth",
+      "sources": [
+        "https://www.abiresearch.com/press/video-telematics-to-improve-commercial-vehicle-road-safety-driving-global-revenues-to-us10-billion-by-2030"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "ABI Research press release on abiresearch.com — secondary-trade. ABI Research is a specialist research firm; this is the press release for their published report. Scored M: specialist research firm, press release citation."
+    },
+    {
+      "id": "PP3.4-4",
+      "file": "stage-3-pain-points.md",
+      "claim": "Distracted driving violations grew 48% in the first half of 2024",
+      "sources": [
+        "https://fleetrabbit.com/blogs/post/driver-behavior-tracking-2026"
+      ],
+      "source_categories": [
+        "secondary-vendor"
+      ],
+      "score": "L",
+      "override": "single-vendor-source",
+      "note": "FleetRabbit is a fleet management blog/vendor (secondary-vendor). The claim is attributed to 'Nauto' in the text but FleetRabbit (not Nauto) is cited. Even if from Nauto, Nauto is a vendor with commercial interest in emphasizing driver distraction. No primary source (NHTSA, FMCSA, or state DMV statistics) cited. Override: single-vendor-source."
+    },
+    {
+      "id": "PP3.4-5",
+      "file": "stage-3-pain-points.md",
+      "claim": "NHTSA: commercial truck occupants 15% of roadside fatalities; 35% increase over past decade",
+      "sources": [
+        "https://www.abiresearch.com/press/video-telematics-to-improve-commercial-vehicle-road-safety-driving-global-revenues-to-us10-billion-by-2030"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "L",
+      "override": "single-trade-source",
+      "note": "The claim is attributed to NHTSA in the text but cited only through an ABI Research press release — secondary-trade. NHTSA.dot.gov should be directly cited for NHTSA statistics. This is a primary-source-attributed claim cited only through a market research firm's press release. Override: single-trade-source. The actual NHTSA source must be cited directly."
+    },
+    {
+      "id": "PP3.4-6",
+      "file": "stage-3-pain-points.md",
+      "claim": "Netradyne customers achieve 30%+ reduction in accidents per million miles after deployment; 1.3 billion miles analyzed; 99% alert accuracy",
+      "sources": [
+        "https://www.netradyne.com/guides/roi-guide"
+      ],
+      "source_categories": [
+        "secondary-vendor"
+      ],
+      "score": "L",
+      "override": "single-vendor-source",
+      "note": "Netradyne ROI guide on Netradyne's own website — secondary-vendor. Self-reported performance claims. No independent validation (third-party study, insurer claims data, or academic paper). Override: single-vendor-source for safety performance metrics."
+    },
+    {
+      "id": "PP3.4-7",
+      "file": "stage-3-pain-points.md",
+      "claim": "Lytx: 311 billion driving miles analyzed; Frost & Sullivan 2025 Company of the Year",
+      "sources": [
+        "https://www.lytx.com/",
+        "https://www.worktruckonline.com/news/lytx-expands-all-in-one-fleet-platform-strategy-with-ai-video-and-asset-tracking-updates"
+      ],
+      "source_categories": [
+        "secondary-vendor",
+        "secondary-trade"
+      ],
+      "score": "L",
+      "override": "single-vendor-source",
+      "note": "311B miles from lytx.com (vendor self-reported). Frost & Sullivan award cited through WorkTruckOnline (secondary-trade) rather than frost.com directly. The Lytx billion-miles figure is vendor self-reported with no independent verification. Override: single-vendor-source for the data volume claim. NOTE: Earlier in the document (VC-20), the figure was '300B+ miles' — now 311B. Minor internal inconsistency."
+    },
+    {
+      "id": "PP3.4-8",
+      "file": "stage-3-pain-points.md",
+      "claim": "CCJ (Commercial Carrier Journal) recognizes alert fatigue as primary challenge for telematics ROI realization",
+      "sources": [
+        "https://www.ccjdigital.com/technology/telematics/article/15292071/telematics-providers-offer-solutions-to-driver-alert-fatigue"
+      ],
+      "source_categories": [
+        "secondary-trade"
+      ],
+      "score": "M",
+      "override": null,
+      "note": "CCJ Digital is a leading trade publication for commercial trucking (secondary-trade). This is a qualitative characterization of an industry issue confirmed by named trade press. Scored M: named trade press corroboration of an industry-recognized issue."
+    },
+    {
+      "id": "PP3.4-ASSUMED7",
+      "file": "stage-3-pain-points.md",
+      "claim": "ASSUMED-7: Safety manager time lost to alert triage 30-60 min/day [explicitly tagged]",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "assumed-tag",
+      "note": "Explicitly tagged [ASSUMED-7]. Automatic L. (Note: SureCam vendor blog corroborates directionally but is also flagged as vendor-source in PP3.4-1.)"
+    },
+    {
+      "id": "PP3.4-ASSUMED8",
+      "file": "stage-3-pain-points.md",
+      "claim": "ASSUMED-8: Driver resistance explains 20-40% of gap between vendor ROI projections and realized accident reduction [explicitly tagged]",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "assumed-tag",
+      "note": "Explicitly tagged [ASSUMED-8]. Automatic L."
+    },
+    {
+      "id": "PP3.1-ASSUMED1",
+      "file": "stage-3-pain-points.md",
+      "claim": "ASSUMED-1: Claims-resolution cost premium on subcontracted legs with no telematics record [explicitly tagged]",
+      "sources": [],
+      "source_categories": [],
+      "score": "L",
+      "override": "assumed-tag",
+      "note": "Explicitly tagged [ASSUMED-1]. Automatic L."
+    }
+  ],
+  "override_triggers": [
+    {
+      "override": "assumed-tag",
+      "claim_count": 16,
+      "claim_ids": [
+        "VC-45",
+        "VC-48",
+        "VC-49",
+        "VC-50",
+        "VC-53",
+        "VC-55",
+        "VC-56",
+        "VC-57",
+        "PP3.2-ASSUMED2",
+        "PP3.2-ASSUMED3",
+        "PP3.3-ASSUMED4",
+        "PP3.3-ASSUMED5",
+        "PP3.3-ASSUMED6",
+        "PP3.4-ASSUMED7",
+        "PP3.4-ASSUMED8",
+        "PP3.1-ASSUMED1"
+      ]
+    },
+    {
+      "override": "single-trade-source",
+      "claim_count": 11,
+      "claim_ids": [
+        "VC-1",
+        "VC-7",
+        "VC-11",
+        "VC-34",
+        "VC-51",
+        "PP3.1-1",
+        "PP3.2-3",
+        "PP3.2-10",
+        "PP3.3-6",
+        "PP3.3-7",
+        "PP3.4-5"
+      ]
+    },
+    {
+      "override": "single-vendor-source",
+      "claim_count": 13,
+      "claim_ids": [
+        "VC-3",
+        "VC-9",
+        "VC-12",
+        "VC-16",
+        "VC-20",
+        "VC-22",
+        "VC-30",
+        "VC-31",
+        "PP3.2-7",
+        "PP3.4-1",
+        "PP3.4-4",
+        "PP3.4-6",
+        "PP3.4-7"
+      ]
+    },
+    {
+      "override": "secondary-market-research-only",
+      "claim_count": 10,
+      "claim_ids": [
+        "VC-32",
+        "VC-33",
+        "VC-36",
+        "VC-37",
+        "VC-39",
+        "VC-41",
+        "VC-42",
+        "VC-43",
+        "PP3.1-3",
+        "PP3.2-8"
+      ]
+    },
+    {
+      "override": "geography-mismatch",
+      "claim_count": 2,
+      "claim_ids": [
+        "VC-42",
+        "VC-54"
+      ]
+    },
+    {
+      "override": "factual-inconsistency",
+      "claim_count": 1,
+      "claim_ids": [
+        "PP3.2-6"
+      ]
+    },
+    {
+      "override": "no-source-cited",
+      "claim_count": 1,
+      "claim_ids": [
+        "PP3.3-3"
+      ]
+    }
+  ],
+  "weak_claims_to_re_research": [
+    {
+      "id": "PP3.2-6",
+      "file": "stage-3-pain-points.md",
+      "claim": "Nirvana Insurance raised $100M Series D at $1.5B valuation in December 2025",
+      "current_sources": [
+        "https://techcrunch.com/2025/03/10/nirvana-keeps-on-truckin-with-80m-at-a-830m-valuation-for-its-ai-powered-insurance/",
+        "https://news.crunchbase.com/ai/insurance-platform-nirvana-valuation-nearly-doubles/"
+      ],
+      "current_score": "L",
+      "issue": "Critical factual inconsistency: TechCrunch URL cited describes $80M round at $830M valuation, not $100M at $1.5B. Claim cannot be verified from cited sources. Either wrong URL or wrong dollar figures in the claim.",
+      "what_to_find": "Search for 'Nirvana Insurance Series D December 2025 $100 million $1.5 billion' on Crunchbase, TechCrunch, and Nirvana's own press room (nirvanatech.com/news). If the correct round is the $80M at $830M, update the claim. If a separate Dec 2025 round at $1.5B exists, cite it directly.",
+      "priority": "high"
+    },
+    {
+      "id": "PP3.2-3",
+      "file": "stage-3-pain-points.md",
+      "claim": "Nuclear verdicts against trucking companies reached 135 in 2024; 52% increase over 2023; totaling $31.3B; 116% increase; median verdict $51M",
+      "current_sources": [
+        "https://www.marshmma.com/us/insights/details/nuclear-trucking-verdicts.html"
+      ],
+      "current_score": "L",
+      "issue": "Broker/consulting site (Marsh MMA) cited as sole source. The Institute for Legal Reform (ILR) is the primary publisher of nuclear verdict data and should be cited directly. Marsh is a secondary commentator on this data.",
+      "what_to_find": "Search Institute for Legal Reform (ILR) at ilr.org for 'nuclear verdict trucking 2024 annual report'. Also check ATRI for any nuclear verdict study, and AM Best research. Look for ILR's 'Judicial Hellholes' report or their separate nuclear verdict analysis for 2024 data.",
+      "priority": "high"
+    },
+    {
+      "id": "PP3.2-7",
+      "file": "stage-3-pain-points.md",
+      "claim": "88% of commercial fleets have telematics programs; 70% don't share data with insurer; 79% never asked",
+      "current_sources": [
+        "https://sambasafety.com/blog/why-fleets-wont-share-telematics-data"
+      ],
+      "current_score": "L",
+      "issue": "SambaSafety is a vendor with direct commercial interest in demonstrating poor telematics data sharing (they sell a solution to bridge this gap). The statistics (88%/70%/79%) appear to originate from SambaSafety's own survey or commissioned research — not an independent study.",
+      "what_to_find": "Search for independent fleet telematics adoption surveys from: (1) ATRI annual survey, (2) Frost & Sullivan commercial fleet study, (3) J.D. Power commercial trucking study, (4) NPTC (National Private Truck Council) annual survey, (5) TCA (Truckload Carriers Association) safety surveys. Any of these would provide an independent corroboration of the 70%/79% figures.",
+      "priority": "high"
+    },
+    {
+      "id": "VC-42",
+      "file": "stage-3-value-chain.md",
+      "claim": "Indonesia commercial vehicle fleet 23M+ vehicles in 2024",
+      "current_sources": [
+        "https://www.mordorintelligence.com/industry-reports/southeast-asia-telematics-market"
+      ],
+      "current_score": "L",
+      "issue": "Geography mismatch: country-specific fleet registration count sourced to a global market research firm (Mordor) rather than Indonesia's government statistics agency (BPS or Kemenhub). Kemenhub publishes annual vehicle registration statistics.",
+      "what_to_find": "Search Badan Pusat Statistik (BPS Indonesia) at bps.go.id for 'jumlah kendaraan bermotor' (registered motor vehicles) commercial segment 2023-2024. Also search Kementerian Perhubungan (Kemenhub) at dephub.go.id for commercial vehicle registration statistics. The correct figure should be disaggregated by vehicle type (trucks, buses, etc.).",
+      "priority": "high"
+    },
+    {
+      "id": "PP3.3-3",
+      "file": "stage-3-pain-points.md",
+      "claim": "Indonesia approximately 4-5 million registered commercial vehicles as of 2024 (Kemenhub registration data)",
+      "current_sources": [],
+      "current_score": "L",
+      "issue": "No URL cited — claim references 'Kemenhub registration data' in parentheses but provides no hyperlink. This is a fundamental sourcing gap for a key market-sizing input.",
+      "what_to_find": "Same as VC-42: BPS Indonesia bps.go.id, search 'registrasi kendaraan bermotor niaga' or equivalent. Also try the ASEAN Centre for Energy or ADB country statistics for Indonesia vehicle fleet data. Cross-reference the 4-5M figure against the 23M+ figure in VC-42 — these two Indonesia fleet estimates differ dramatically and that discrepancy itself requires investigation.",
+      "priority": "high"
+    }
+  ],
+  "gate_decision_for_stage_3": "ship-with-flag",
+  "gate_reason": "Of 101 claims scored, 14 are High confidence (13.9%), 34 are Medium (33.7%), and 53 are Low (52.5%). The 52.5% Low rate places this stage firmly in the ship-with-flag zone (30-70% Low). The Low concentration is driven by three structural factors: (1) 16 ASSUMED-tagged claims that are correctly self-identified by the draft as unverified — these inflate the Low count but are transparently flagged; (2) 9 market-sizing claims using single secondary market research firms (GMI Insights, MarketsandMarkets, Mordor Intelligence) with no cross-validation — all receive mandatory secondary-market-research-only overrides; and (3) 10 single-vendor-source overrides for operating metrics and performance claims. The draft's strongest assets are its primary sources: the Motive S-1 (SEC), Samsara 10-K (SEC), Karooooo 6-K (SEC), WHO Indonesia country profile, FMCSA regulatory pages, and Verisk/CargoNet industry data — all scored High. There is one critical factual error (PP3.2-6): the Nirvana Series D funding claim cites URLs describing an $80M/$830M round, not the $100M/$1.5B stated — this must be corrected before publication. The Indonesia commercial fleet size figures (VC-42 citing 23M+, PP3.3-3 citing 4-5M) are internally inconsistent and both lack proper primary-gov sourcing from BPS Indonesia or Kemenhub. Deep research should prioritize: (a) correcting the Nirvana citation, (b) sourcing nuclear verdict data directly from ILR, (c) replacing the SambaSafety-sourced 70%/79% telematics-sharing statistics with an independent survey, and (d) sourcing Indonesia vehicle registration data from BPS.",
+  "imi_structural_compare": {
+    "imi_pp_count_target": "2-4",
+    "stage_pp_count": 4,
+    "stage_rc_min": 3,
+    "stage_rc_max": 4,
+    "stage_citations_min": 4,
+    "stage_citations_max": 13,
+    "stage_unique_sources": 54,
+    "all_dimensions_pass": false,
+    "remediation_needed": [
+      "Replace single-secondary-market-research market sizing with Berg Insight specialist citations or ABI Research specialist reports where accessible",
+      "Correct Nirvana Series D citation (PP3.2-6) — factual inconsistency between claim and cited source",
+      "Source Indonesia commercial vehicle registration data from BPS Indonesia or Kemenhub (both VC-42 and PP3.3-3 currently unsatisfactory)",
+      "Source nuclear verdict data from ILR directly rather than Marsh MMA broker commentary",
+      "Source SambaSafety 70%/79% telematics sharing statistics from independent survey (ATRI, NPTC, TCA, or Frost & Sullivan)",
+      "Source NHTSA commercial truck fatality statistics directly from NHTSA rather than through ABI Research press release (PP3.4-5)",
+      "Validate or remove Lytx >60% market share claim — sources do not trace to the claimed Frost & Sullivan report"
+    ]
+  }
+}

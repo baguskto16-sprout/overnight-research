@@ -1,0 +1,353 @@
+{
+  "context": "per-stage",
+  "stage": 1,
+  "total_claims_scored": 72,
+  "scoring_distribution": {
+    "high": {
+      "count": 17,
+      "percent": "23.6%",
+      "claim_ids": [
+        "VC-4-cargo-theft-2025",
+        "VC-P10-triumphpay-28B-volume",
+        "VC-P11-triumphpay-revenue",
+        "VC-P15-roper-segment-revenue",
+        "VC-I3-LTA-DataMall-no-freight",
+        "VC-I4-WorldBank-LPI-rankings",
+        "PP1.1-freq1-2646-incidents",
+        "PP1.1-freq2-3625-2024",
+        "PP1.1-cost1-avg-per-incident",
+        "PP1.1-cost2-aggregate-losses",
+        "PP1.1-legal1-montgomery",
+        "PP1.1-freq7-25pct-cyber-enabled",
+        "PP1.2-geo1-WorldBank-LPI",
+        "PP1.2-theft1-TTC-BSI-Asia",
+        "PP1.4-theft1-US-per-incident",
+        "PP1.5-freq1-FinCEN-CTA",
+        "PP1.5-freq3-FBI-IC3-organized-crime"
+      ]
+    },
+    "medium": {
+      "count": 16,
+      "percent": "22.2%",
+      "claim_ids": [
+        "VC-2-descartes-fraud-pct",
+        "VC-3-descartes-revenue",
+        "VC-5-brokerage-fraud-800M",
+        "VC-8-3pl-market-138B",
+        "PP1.1-cost4-TIA-402K-avg-loss",
+        "PP1.1-cost5-TIA-200K-threshold",
+        "PP1.1-freq3-TIA-watchdog-1600",
+        "PP1.1-freq5-TIA-83pct",
+        "PP1.1-freq6-DOJ-armenian-83M",
+        "PP1.1-RC1-FMCSA-80K-complaints",
+        "PP1.2-freq1-no-vetting-SEA",
+        "PP1.2-freq3-malacca-piracy",
+        "PP1.2-freq4-OECD-2021",
+        "PP1.3-cost3-TIA-hours-perday",
+        "PP1.5-cost1-TIA-22pct-200K",
+        "PP1.5-cost2-DOJ-armenian-83M"
+      ]
+    },
+    "low": {
+      "count": 39,
+      "percent": "54.2%",
+      "claim_ids": [
+        "VC-1-market-TAM",
+        "VC-6-asean-road-freight",
+        "VC-7-asean-freight-logistics",
+        "VC-P1-descartes-MCP-acquisition",
+        "VC-P2-descartes-MCP-coverage",
+        "VC-P3-highway-1050-brokers",
+        "VC-P4-highway-914K-fraud-blocked",
+        "VC-P5-loadlock-5M-zero-theft",
+        "VC-P6-loadlock-pricing",
+        "VC-P7-rmis-1-carrier-12-sec",
+        "VC-P8-carrier-assure-2M-DOT",
+        "VC-P9-carrier411-4500-brokers",
+        "VC-P12-transporeon-stats",
+        "VC-P13-trans-eu-stats",
+        "VC-P14-timocom-stats",
+        "VC-P16-blackbuck-IPO-stats",
+        "VC-P17-kargo-funding",
+        "VC-P18-haulio-stats",
+        "VC-I1-indonesia-4M-vehicles",
+        "VC-I2-FMCSA-MC-300-oneweek",
+        "VC-I5-KIR-fragmented",
+        "PP1.1-cost3-500M-700M-payment-fraud",
+        "PP1.1-legal2-36M-nuclear-median",
+        "PP1.1-freq4-highway-527K-emails",
+        "PP1.1-freq8-highway-551-intl",
+        "PP1.1-RC1-FMCSA-IDEMIA-rollout",
+        "PP1.1-WTP1-loadlock-1050",
+        "PP1.2-market1-ASEAN-119B",
+        "PP1.2-cost1-1-4-days-manual",
+        "PP1.2-cost2-SEA-labor-ASSUMED",
+        "PP1.2-freq2-kargo-25K-loads",
+        "PP1.3-cost1-1-4-days-onboarding",
+        "PP1.3-cost2-25K-60K-labor-ASSUMED",
+        "PP1.3-cost4-insurance-60-70-ASSUMED",
+        "PP1.3-WTP1-340-500-pricing",
+        "PP1.3-WTP2-800-1500-ASSUMED",
+        "PP1.3-freq1-RMIS-97-98-pct",
+        "PP1.4-cost1-insurance-penetration-ASSUMED",
+        "PP1.5-freq2-highway-399-ownership"
+      ]
+    }
+  },
+  "override_triggers": [
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "claim_count": 4,
+      "claim_ids": [
+        "VC-1-market-TAM",
+        "VC-6-asean-road-freight",
+        "VC-7-asean-freight-logistics",
+        "PP1.2-market1-ASEAN-119B"
+      ],
+      "note": "GrowthMarketReports and Mordor Intelligence are private aggregator research firms. No primary tier cross-validation (ADB, World Bank, government statistics) found for these market sizing figures."
+    },
+    {
+      "override": "vendor-marketing-override",
+      "claim_count": 17,
+      "claim_ids": [
+        "VC-P3-highway-1050-brokers",
+        "VC-P4-highway-914K-fraud-blocked",
+        "VC-P5-loadlock-5M-zero-theft",
+        "VC-P7-rmis-1-carrier-12-sec",
+        "VC-P8-carrier-assure-2M-DOT",
+        "VC-P9-carrier411-4500-brokers",
+        "VC-P12-transporeon-stats",
+        "VC-P13-trans-eu-stats",
+        "PP1.1-freq4-highway-527K-emails",
+        "PP1.1-freq8-highway-551-intl",
+        "PP1.1-WTP1-loadlock-1050",
+        "PP1.3-WTP1-340-500-pricing",
+        "PP1.3-freq1-RMIS-97-98-pct",
+        "PP1.5-freq2-highway-399-ownership",
+        "VC-P2-descartes-MCP-coverage",
+        "VC-P18-haulio-stats",
+        "VC-P1-descartes-MCP-acquisition"
+      ],
+      "note": "Claims about Highway, RMIS/Truckstop, Carrier Assure, Carrier411, Transporeon, Trans.eu, Haulio sourced primarily from those vendors own websites, press releases on their own domains, or investor blogs (FTV Capital blog) that cite company-provided statistics. FTV Capital blog post treated as vendor-marketing-equivalent: FTV is Highway's investor publishing Highway-supplied operational metrics."
+    },
+    {
+      "override": "press-release-only",
+      "claim_count": 3,
+      "claim_ids": [
+        "VC-P1-descartes-MCP-acquisition",
+        "VC-P2-descartes-MCP-coverage",
+        "PP1.2-freq2-kargo-25K-loads"
+      ],
+      "note": "Descartes MCP acquisition price and coverage claims sourced only from Descartes own IR press release and GlobeNewswire wire distribution of that same press release. Kargo 25,000 loads/5,000 shippers sourced from AirAsia/Teleport press release and tech blog."
+    },
+    {
+      "override": "single-trade-source",
+      "claim_count": 5,
+      "claim_ids": [
+        "VC-P7-rmis-1-carrier-12-sec",
+        "PP1.3-cost1-1-4-days-onboarding",
+        "PP1.3-freq1-RMIS-97-98-pct",
+        "VC-I2-FMCSA-MC-300-oneweek",
+        "PP1.1-RC1-FMCSA-IDEMIA-rollout"
+      ],
+      "note": "Operating efficiency claims (RMIS speed, carrier coverage percentages) and FMCSA procedural facts sourced only from single trade publication or single vendor-via-trade-press. Multiple FreightWaves URLs for RMIS claims count as one source."
+    },
+    {
+      "override": "assumed-tag",
+      "claim_count": 9,
+      "claim_ids": [
+        "VC-P6-loadlock-pricing",
+        "PP1.2-cost2-SEA-labor-ASSUMED",
+        "PP1.3-cost2-25K-60K-labor-ASSUMED",
+        "PP1.3-cost4-insurance-60-70-ASSUMED",
+        "PP1.3-WTP2-800-1500-ASSUMED",
+        "PP1.4-cost1-insurance-penetration-ASSUMED",
+        "VC-I5-KIR-fragmented",
+        "VC-I1-indonesia-4M-vehicles",
+        "PP1.1-legal2-36M-nuclear-median"
+      ],
+      "note": "Claims tagged [ASSUMED-N] in drafts, plus additional claims lacking primary or credible secondary sourcing. KIR fragmentation sourced only from Daihatsu consumer auto blog (daihatsu.co.id). Indonesia 4M vehicles sourced from Sayari and Moody's blog, neither of which is BPS Indonesia or a government statistical agency."
+    },
+    {
+      "override": "outdated-source",
+      "claim_count": 1,
+      "claim_ids": ["PP1.2-freq4-OECD-2021"],
+      "note": "OECD Competition Assessment Reviews: Logistics Sector in ASEAN (2021) is 4+ years old as of research date 2026. The regulatory fragmentation finding may still hold, but the specific OECD policy assessment has not been updated. Capped at Medium."
+    },
+    {
+      "override": "factual-discrepancy-flag",
+      "claim_count": 2,
+      "claim_ids": [
+        "VC-8-3pl-market-138B",
+        "PP1.2-geo1-WorldBank-LPI-thailand-rank"
+      ],
+      "note": "Two factual inconsistencies detected: (1) Armstrong & Associates $138B cited as '2025 actual' in source (9) but Armstrong's report shows $131.5B as 2024 actuals; the $138B is a 2025 forecast/estimate, not an actuals figure. Claim should be corrected. (2) Thailand LPI rank cited as 34th in value-chain file but 37th in pain-points file — internal contradiction. World Bank LPI 2023 actual Thailand rank requires verification."
+    }
+  ],
+  "unique_domains_count": 48,
+  "unique_source_families": {
+    "note": "48 unique domains cited across both files; source families that count as single sources under chain-of-citations rule listed below",
+    "verisk_cargonet": "verisk.com + cargonet.com = 1 source (Verisk/CargoNet publication family)",
+    "descartes_ir": "descartes.com IR press release + fool.com earnings transcript = 2 sources (vendor IR + third-party transcript)",
+    "highway_vendor_surface": "highway.com + ftvcapital.com (investor blog) = 1 vendor-marketing surface for Highway claims",
+    "tia_reports": "tianet.org 2024 + tianet.org 2025 = 2 independent TIA reports (separate survey periods; distinct N and findings)",
+    "mordor_asean": "mordorintelligence.com ASEAN road freight + ASEAN logistics market = 2 reports but same vendor family; for TAM cross-validation they are 1 Mordor source",
+    "tt_club_bsi": "ttclub.com + bsigroup.com = co-published joint report; counts as 1 source (joint publication)"
+  },
+  "primary_source_count_by_category": {
+    "primary-gov": {
+      "count": 6,
+      "sources": [
+        "ic3.gov (FBI IC3 PSA-260430)",
+        "fincen.gov (FinCEN CTA interim final rule)",
+        "fmcsa.dot.gov (SAFER database reference)",
+        "datamall.lta.gov.sg (Singapore LTA DataMall)",
+        "kemenhub.go.id (Indonesia Ministry of Transportation — cited for absence of API)",
+        "infodlt.dlt.go.th (Thailand DLT portal — cited for absence of commercial API)"
+      ]
+    },
+    "primary-multilateral": {
+      "count": 2,
+      "sources": [
+        "World Bank LPI 2023 (lpi.worldbank.org)",
+        "OECD Competition Assessment Reviews: Logistics Sector in ASEAN 2021 (oecd.org) — outdated flag"
+      ]
+    },
+    "primary-legal": {
+      "count": 1,
+      "sources": [
+        "Montgomery v. Caribe Transport II, LLC (No. 24-1238, US Supreme Court, May 14, 2026) — supremecourt.gov"
+      ]
+    },
+    "primary-filing": {
+      "count": 3,
+      "sources": [
+        "Triumph Financial Q3 2024 shareholder letter (ir.triumph.io/sec-filings — shareholder letter filed via SEC 8-K exhibit)",
+        "Roper Technologies 2024 Annual Results (ropertech.com — audited public company disclosure)",
+        "Descartes Systems Group FY2025 Annual Results (descartes.com IR + Motley Fool transcript of audited earnings call)"
+      ]
+    },
+    "primary-association": {
+      "count": 5,
+      "sources": [
+        "Verisk CargoNet 2024 annual analysis",
+        "Verisk CargoNet 2025 annual analysis",
+        "Verisk CargoNet Q1 2025 quarterly report",
+        "TIA State of Fraud 2024 (N=200 members)",
+        "TIA State of Fraud April 2025",
+        "TT Club / BSI 2024 Cargo Theft Report (joint industry association + consulting firm)",
+        "NICB 2025 cargo theft report",
+        "Armstrong & Associates 2025 3PL market report"
+      ],
+      "note": "Armstrong $138B figure is a 2025 projection, not 2025 actuals — factual discrepancy in draft"
+    },
+    "secondary-trade": "Multiple; all capped at Low or Medium per rules",
+    "secondary-market-research": "Mordor Intelligence (2 reports), GrowthMarketReports (1 report) — all auto-Low",
+    "auto-low-vendor": "highway.com, ftvcapital.com (for Highway claims), carrierassure.com, carrier411.com, transporeon.com, trans.eu, descartes.com (for capability claims), rmis/truckstop.com, logisly.com, haulio.io, reliancepartners.com, mycarrierportal.com, sayari.com (for Sayari capability claims)"
+  },
+  "weak_claims_to_deep_research": [
+    {
+      "claim_id": "PP1.1-cost3-500M-700M-payment-fraud",
+      "claim_text": "Annual freight fraud payment losses (distinct from physical cargo): $500M–$700M in fraudulent freight payments annually. Source: FTV Capital industry estimate.",
+      "current_sources": ["ftvcapital.com/insights/driving-trust-in-trucking-why-we-invested-in-highway/"],
+      "current_score": "Low",
+      "issue": "Single investor source (FTV Capital is Highway's investor); investor blog cites industry estimate without independent methodology; this is vendor-marketing-equivalent sourcing for a load-bearing cost figure in the top pain point. Draft itself explicitly flags low confidence.",
+      "suggested_action": "Search for TIA or freight payment processor primary data on payment fraud losses. TriumphPay processes $28.4B annualized — their SEC shareholder letters or 10-Q may contain fraud loss rate disclosures. Also search: 'freight payment fraud annual losses 2024 2025 survey report TIA CSCMP'",
+      "search_query": "freight payment fraud annual losses 2024 2025 \"billion\" site:tianet.org OR site:ir.triumph.io OR site:cscmp.org OR site:transunion.com",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP1.1-freq4-highway-527K-emails",
+      "claim_text": "Highway blocked 527,940 fraudulent inbound emails in Q1 2026 alone (49.9% year-over-year increase); identity theft cases rose 89.6%; change-of-ownership fraud surged 169.6% with 399 ownership changes flagged.",
+      "current_sources": ["globenewswire.com/news-release/2026/05/05/3288141/0/en/Freight-Fraud-Hits-Record-High-in-Q1-2026..."],
+      "current_score": "Low",
+      "issue": "Auto-low-vendor: GlobeNewswire release is Highway's own press release about Highway's own platform statistics. These Q1 2026 fraud trend figures are load-bearing for pain point 1.1 frequency characterization and are cited at least 4 times across the document. No independent corroboration exists. TIA Watchdog data or CargoNet quarterly could provide independent confirmation of Q1 2026 fraud trends.",
+      "suggested_action": "Search for TIA Watchdog Q1 2026 data, CargoNet Q1 2026 quarterly report, or FBI/DOJ Q1 2026 freight fraud statistics that would independently corroborate the fraud volume trends Highway reports.",
+      "search_query": "TIA Watchdog Q1 2026 fraud reports freight OR CargoNet Q1 2026 quarterly report theft trends OR FBI freight fraud statistics 2026",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC-1-market-TAM",
+      "claim_text": "Global carrier onboarding and compliance platform market: $1.62B (2024) → $4.38B (2033), 12.8% CAGR.",
+      "current_sources": ["growthmarketreports.com/report/carrier-onboarding-and-compliance-platform-market"],
+      "current_score": "Low",
+      "issue": "Aggregator market-research auto-downgrade (GrowthMarketReports). The draft correctly flags this and attempts a bottom-up triangulation via Descartes disclosure. However, the bottom-up approach is also incomplete. This is the primary market sizing claim for the entire stage.",
+      "suggested_action": "Attempt bottom-up market size construction using: (a) Trimble 10-K or earnings call for Transporeon revenue contribution, (b) Roper Technologies 10-K DAT segment breakdown (already have: $1.47B Network Software including DAT), (c) TriumphPay shareholder letters for carrier compliance spend estimates, (d) search for any McKinsey/BCG/Deloitte authored report on freight technology market sizing.",
+      "search_query": "freight technology carrier compliance market size McKinsey OR BCG OR Deloitte OR \"Trimble\" annual report Transporeon revenue 2024 2025",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP1.2-market1-ASEAN-119B",
+      "claim_text": "ASEAN road freight market size: $119.43B in 2025 (Mordor Intelligence); Indonesia alone: $53.88B.",
+      "current_sources": ["mordorintelligence.com/industry-reports/asean-road-freight-transport-market", "mordorintelligence.com/industry-reports/indonesia-road-freight-transport-market"],
+      "current_score": "Low",
+      "issue": "Mordor Intelligence auto-downgrade; the draft correctly flags no primary-tier source exists. This is the sole market sizing claim for the SEA opportunity — load-bearing for the PP1.2 market framing. APAC-as-proxy override also applies if this is used as a country-specific proxy.",
+      "suggested_action": "Search ADB (Asian Development Bank) freight transport statistics for ASEAN, ASEAN Secretariat freight data, ITF/OECD Transport Outlook ASEAN chapter, World Bank transport sector data for Indonesia and Thailand specifically.",
+      "search_query": "ASEAN road freight transport market size ADB OR \"Asian Development Bank\" OR \"ASEAN Secretariat\" OR \"ITF\" 2023 2024 statistics billion",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP1.3-cost4-insurance-60-70-ASSUMED",
+      "claim_text": "Insurance verification compliance gap: point-in-time certificate-based COI verification achieves 60–70% compliance rates versus 90%+ for real-time network-based monitoring tools.",
+      "current_sources": ["oipinsurtech.com/data-silos-in-insurance/"],
+      "current_score": "Low",
+      "issue": "[ASSUMED-7] — explicitly tagged as needing validation. This is a key differentiator claim for the PP1.3 pain point (fragmentation and compliance gaps). Currently sourced only from an insurtech blog. The 20–30 percentage point compliance gap is a significant quantitative claim that needs an industry association or actuarial source.",
+      "suggested_action": "Search for RMIS, Certificial, or InsurTech-independent data on insurance compliance rates for freight carriers. Also check Marsh or Aon cargo insurance reports for carrier compliance gap statistics.",
+      "search_query": "freight carrier insurance compliance rate COI verification point-in-time vs real-time monitoring RMIS OR Certificial OR \"compliance rate\" site:marsh.com OR site:aon.com OR site:nicb.org",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "PP1.1-legal2-36M-nuclear-median",
+      "claim_text": "Nuclear verdicts (jury awards >$10M) in trucking litigation have a median of $36M in 2022.",
+      "current_sources": ["beinsure.com/news/freight-brokers-face-new-insurance-gap-after-court-ruling/", "mwl-law.com/scotus-broker-liability/"],
+      "current_score": "Low",
+      "issue": "The $36M median nuclear verdict figure appears in law firm and insurance blog commentary. The underlying data source for this specific statistic (American Transportation Research Institute, ATRA/tort reform institute, or similar) is not cited. Post-Montgomery, this is now a load-bearing legal risk quantification claim.",
+      "suggested_action": "Search for the American Transportation Research Institute (ATRI) nuclear verdict report, or Jury Verdict Research / LexisNexis jury verdict database data for trucking litigation nuclear verdicts 2020-2024.",
+      "search_query": "trucking nuclear verdict median 2022 2023 \"$36 million\" OR \"36M\" ATRI OR \"American Transportation Research Institute\" OR \"jury verdict\" site:atri-online.org",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "VC-P16-blackbuck-IPO-stats",
+      "claim_text": "BlackBuck (Zinka Logistics Solutions) IPO: 963,345 truck operators transacted FY2024 (27.5% of all Indian truck operators); GTV ₹173,961.93M; listed NSE/BSE November 22, 2024.",
+      "current_sources": ["zerodha.com/ipo/383541/blackbuck/", "business-standard.com/markets/news/blackbuck-ipo-allotment..."],
+      "current_score": "Low",
+      "issue": "Press-release-only and aggregator-marketplace override: zerodha.com is a broker marketplace listing (aggregator), business-standard.com is secondary news. The actual BlackBuck DRHP/prospectus filed with SEBI is the primary source for IPO data. No prospectus URL cited.",
+      "suggested_action": "Find BlackBuck/Zinka Logistics Solutions SEBI DRHP or RHP filing. These are publicly filed with SEBI and available on the SEBI EDGAR equivalent or via BSE/NSE direct.",
+      "search_query": "Zinka Logistics Solutions BlackBuck DRHP SEBI prospectus 2024 site:sebi.gov.in OR site:bseindia.com OR site:nseindia.com 963345 truck operators",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "VC-I1-indonesia-4M-vehicles",
+      "claim_text": "Indonesia has 4M+ registered commercial vehicles, predominantly owner-operated.",
+      "current_sources": ["sayari.com/resources/wbr-foreign-ownership-risk-in-supply-chains/", "moodys.com/web/en/us/kyc/resources/insights/kyb-and-why-its-essential-for-corporate-onboarding.html"],
+      "current_score": "Low",
+      "issue": "This claim appears in Stage 1 Pain Point 4 and is used to characterize the SEA fragmentation argument — a structural foundation for PP1.2. The sources cited (Sayari resources page and Moody's KYC blog) are not authoritative sources for Indonesian vehicle registration statistics. BPS Indonesia publishes this data directly.",
+      "suggested_action": "Find BPS Indonesia (Badan Pusat Statistik) commercial vehicle registration statistics, or Indonesia Ministry of Transportation (Kemenhub) annual transport statistics.",
+      "search_query": "BPS Indonesia kendaraan bermotor commercial vehicle registered 2023 2024 statistics site:bps.go.id OR Kemenhub statistik transportasi darat Indonesia",
+      "priority": "medium"
+    }
+  ],
+  "additional_flags": {
+    "factual_discrepancies": [
+      {
+        "discrepancy": "Armstrong & Associates $138B cited as '2025 actual' in value-chain source (9), but Armstrong's published report shows $131.5B as 2024 actuals; $138B appears to be a 2025 projection/prediction, not 2025 reported actuals.",
+        "affected_claim": "VC-8-3pl-market-138B",
+        "severity": "medium",
+        "action_needed": "Correct the claim: label $138B as '2025 projection (Armstrong forecast)' not '2025 actual'; cite $131.5B as 2024 actual."
+      },
+      {
+        "discrepancy": "Thailand World Bank LPI 2023 rank cited as 34th in stage-1-value-chain.md (footnote 11 context) but as 37th in stage-1-pain-points.md (footnote 16). Internal contradiction between the two files.",
+        "affected_claim": "PP1.2-geo1-WorldBank-LPI / VC-I4-WorldBank-LPI-rankings",
+        "severity": "medium",
+        "action_needed": "Verify Thailand's actual LPI 2023 rank from lpi.worldbank.org and correct both files to match."
+      }
+    ],
+    "high_citation_frequency_low_confidence": [
+      {
+        "note": "Highway Q1 2026 GlobeNewswire press release (source 12) is cited at minimum 6 times across both documents but scores Low on every use due to vendor-marketing override. It is the primary source for Q1 2026 fraud trend characterizations. Deep research should prioritize independent corroboration of these figures."
+      }
+    ]
+  },
+  "gate_decision_recommendation": "re-run-recommended",
+  "gate_reasoning": "54.2% of scored claims (39 of 72) are Low confidence, exceeding the ship-as-is threshold. The draft has strong sourcing for its core US cargo theft and legal claims (CargoNet, FBI IC3, World Bank LPI, Montgomery ruling, FinCEN, TriumphPay SEC filings) — these anchor the factual core of pain point 1.1 and the legal risk section credibly. However, the stage has three structural sourcing problems that require remediation before final output. First, all vendor product and operational statistics for Highway, RMIS, Carrier Assure, Carrier411, Transporeon, Trans.eu, and Haulio are sourced from those vendors' own marketing surfaces or their investor's promotional blog — this is the largest single cluster of Low-confidence claims (17 claims under vendor-marketing override). These claims are not load-bearing for the primary pain point analysis but are prominently present in the 'Current Players' section of the value chain and are used to characterize the competitive landscape. Second, the ASEAN market sizing relies entirely on Mordor Intelligence with no ADB, World Bank, or ASEAN Secretariat cross-validation — this is load-bearing for the SEA opportunity framing in PP1.2 and PP1.4. Third, the $500M–$700M freight payment fraud figure (PP1.1-cost3) is sourced from a single investor blog (FTV Capital, which is Highway's investor), making it unreliable as a quantified pain cost — TIA or processor-level data is needed. Recommend deep research targeting: (1) independent corroboration of Q1 2026 freight fraud volume trends via TIA Watchdog data or CargoNet Q1 2026 quarterly, (2) ADB or World Bank ASEAN road freight primary data, (3) BlackBuck SEBI prospectus for the India market data, (4) ATRI nuclear verdict database for the legal risk quantification, (5) direct FMCSA source for the MC registration fraud complaint count statistic currently attributed to TIA. The factual discrepancies in Armstrong $138B (projection vs. actual) and Thailand LPI rank (34th vs. 37th) also require correction before shipment."
+}

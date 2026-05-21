@@ -1,0 +1,33 @@
+{
+  "claim_id": "PP-40",
+  "outcome": "weakened",
+  "new_confidence": "H",
+  "refined_claim_text": "ReCAAP ISC Annual Report 2025 (covering January–December 2025, published January 2026) reports that armed robbery incidents in the Straits of Malacca and Singapore (SOMS) rose 74% — from 62 incidents in 2024 to 108 incidents in 2025 — the highest recorded in SOMS during the 19-year period 2007–2025. Total piracy and armed robbery incidents across Asia reached 132 in 2025, a 23% increase over 107 incidents in 2024.",
+  "primary_sources_found": [
+    {
+      "url": "https://www.recaap.org/resources/ck/files/news/2026/Press%20release%20-%20ReCAAP%20ISC%20annual%20report%20(2025)%20-FINAL.pdf",
+      "category": "primary-intergovernmental",
+      "publication_date": "2026-01-09",
+      "supports_claim": true,
+      "key_data": "108 incidents in SOMS in 2025; 74% increase over 62 incidents in SOMS in 2024; 19-year high for SOMS; 132 total Asia incidents; 23% overall increase vs 2024",
+      "via_pdf_markitdown": true
+    },
+    {
+      "url": "https://www.recaap.org/resources/ck/files/reports/annual/ReCAAP%20ISC%20Annual%20Report%202025.pdf",
+      "category": "primary-intergovernmental",
+      "publication_date": "2026-01",
+      "supports_claim": true,
+      "key_data": "Full annual report confirms: 132 total Asia incidents (+23% vs 2024), SOMS 108 incidents (+74% vs 62 in 2024), 82% of Asia incidents were in SOMS. SOMS incidents declined sharply from Aug–Dec 2025 after Indonesian arrests.",
+      "via_pdf_markitdown": true
+    },
+    {
+      "url": "https://www.recaap.org/resources/ck/files/reports/annual/ReCAAP%20ISC%20Annual%20Report%202024%20-%20Final.pdf",
+      "category": "primary-intergovernmental",
+      "publication_date": "2025-01",
+      "supports_claim": true,
+      "key_data": "2024 Annual Report confirms 107 total Asia incidents in 2024 (baseline year for the 2025 comparison). SOMS had 62 incidents in 2024.",
+      "via_pdf_markitdown": true
+    }
+  ],
+  "notes": "The original claim (PP-40) accurately cites the 74%/108-incident figures but contains two imprecisions that require correction: (1) Geography: The 74% rise and 108-incident count apply specifically to the Straits of Malacca and Singapore (SOMS), not all of Southeast Asia. Total Asia-wide incidents were 132 (up 23% from 107 in 2024). (2) Report year: The figures come from the ReCAAP ISC Annual Report 2025 (data year 2025, published January 2026), not a '2025 report covering 2024 data.' The 2024 Annual Report (data year 2024) showed 107 total Asia incidents and 62 SOMS incidents. Canonical report URL: https://www.recaap.org/reports. Direct PDF: https://www.recaap.org/resources/ck/files/reports/annual/ReCAAP%20ISC%20Annual%20Report%202025.pdf. Both PDFs verified via markitdown. Source is an intergovernmental body (ASEAN-affiliated, Singapore-based) — qualifies as primary/authoritative. Confidence upgraded to H. Claim is weakened only in the sense that geographic scope needed narrowing from 'Southeast Asia' to 'Straits of Malacca and Singapore'; the specific figures are confirmed correct."
+}
