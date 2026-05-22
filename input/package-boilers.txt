@@ -15,6 +15,10 @@ In:
 - Solid fuel types: coal, biomass pellets, agricultural residues (rice husk, EFB, bagasse, sawdust), wood chips
 - Sectors with high concentration of these boilers: textile, food and beverage, palm oil milling, rubber processing, paper and pulp, small-scale chemical and pharmaceutical manufacturing
 - Value chain from fuel suppliers and boiler OEMs through to end users and aftermarket service providers
+- Solution types — both **digital** and **non-digital** are in scope. Capture every solution against one of these buckets:
+  - *Digital* — commercial software / SaaS (CMMS, MES, boiler-management software, fuel-quality analytics dashboards); hardware + SaaS bundles (IoT combustion sensors, automated combustion control units, predictive-maintenance kits, emissions CEMS); insurance-tech (boiler breakdown insurance, parametric reliability cover); in-house systems where publicly documented (refinery SCADA, EPC-installed PLC integrations)
+  - *Non-digital* — physical services (third-party boiler inspection, marine-survey-style boiler audits, OEM aftermarket maintenance contracts, certified-operator staffing agencies, fuel-quality lab testing services); manual workarounds (paper shift logbooks, WhatsApp groups for operator coordination, spreadsheet-based maintenance schedules, tribal-knowledge mentor relationships replacing formal certification gaps, manual ash removal and visual fuel-quality inspection)
+  - Treat manual workarounds as a first-class solution category, **not** a footnote — they are the dominant operating practice for many SEA small-to-mid boiler operators, and the venture's wedge is partly defined by displacing them with affordable digital alternatives
 
 Out:
 - Large utility-scale boilers (>50 tonnes steam per hour) — different value chain
