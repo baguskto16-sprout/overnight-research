@@ -86,6 +86,8 @@ if [[ "$URL" == *.pdf ]] || [[ "$(curl -sI "$URL" | grep -i content-type)" == *p
 fi
 ```
 
+**Retain page excerpts for High-tier-candidate sources** — same obligation as value-chain-mapper. Source-validator's Step 3.5 (verbatim evidence extraction) needs the actual source string for every claim that ends up scored High. Always route fetches through `fetch-with-cache.sh` when available so the page body persists at `.claude/cache/sources/<hash>.<ext>`; for PDFs keep the markitdown markdown on disk. Step 3.5 cannot fabricate quotes — if you skip caching, source-validator may have to re-fetch later, which is slow and wastes budget.
+
 ### Step 4 — Apply hypothesis discipline to each candidate
 
 For each candidate pain point, decide:

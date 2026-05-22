@@ -156,9 +156,39 @@ Return a structured report (JSON-style for machine readability + markdown summar
       "priority": "high|medium|low"
     }
   ],
+  "high_tier_claims_with_evidence": [
+    {
+      "claim_id": "PP1.1-cost-2",
+      "claim_text": "[verbatim claim]",
+      "current_score": "high",
+      "evidence_quotes": [
+        {
+          "url": "https://example.gov/report.pdf",
+          "quote": "Verbatim string from the source, ≤ 500 chars. Used to anchor the claim so an auditor can verify without re-fetching.",
+          "context": "Section 2.3 / page 14 / paragraph identifier",
+          "fetch_method": "WebFetch | Playwright | markitdown"
+        }
+      ]
+    }
+  ],
   "gate_decision_recommendation": "ship-as-is | ship-with-flag | re-run-recommended",
   "gate_reasoning": "[1 paragraph]"
 }
+```
+
+**`high_tier_claims_with_evidence` field** (new, populated during Step 3.5 invocation only):
+
+- Required for **every** claim scored High in per-stage validation.
+- Each `evidence_quotes` entry is the actual source string (≤ 500 chars verbatim, never paraphrased), with the URL it came from and a pointer to the section/page.
+- If the source has already been fetched (by value-chain-mapper or pain-point-researcher), pull the excerpt from `.claude/cache/sources/` rather than re-fetching.
+- For interview-style content the canonical artifact may embed the verbatim quote inline (matching IMI convention); for academic/trade/filings the verbatim text lives only in this JSON.
+- Failure mode: if you cannot extract a verbatim quote (PDF binary, paywall, anti-bot), record the claim with `"evidence_quotes": []` and add an entry to `evidence_quote_gaps` (see below) — do NOT fabricate a quote.
+
+If any High-tier claim has no extractable evidence quote, add to a parallel array:
+```json
+"evidence_quote_gaps": [
+  {"claim_id": "PP1.1-cost-2", "reason": "PDF returned binary; markitdown failed; [NEEDS-ATTENDED-FETCH] tagged"}
+]
 ```
 
 For final cross-stage validation, also include:

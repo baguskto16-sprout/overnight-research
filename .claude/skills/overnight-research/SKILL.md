@@ -243,6 +243,23 @@ For each weak claim flagged in 3c, invoke deep-research agent.
 Save outcomes to `pass-3-deep-research/stage-1/[claim-id].json`.
 Apply outcomes to Stage 1 drafts.
 
+**3.5. Extract verbatim evidence for High-tier claims**
+
+Re-invoke source-validator on the same stage with the directive: enumerate every claim now scored High (post-3d) and populate the `high_tier_claims_with_evidence` array in `pass-2-validation/stage-N.json`. For each High claim, find the actual source string (≤ 500 chars verbatim, never paraphrased) and the URL + section pointer.
+
+**Source for verbatim text** (in priority order, no re-fetching if avoidable):
+
+1. **Source cache** — `.claude/cache/sources/<hash>.<ext>` if value-chain-mapper / pain-point-researcher saved the page body during initial fetch. This is the preferred path.
+2. **markitdown converted markdown** — if the source is a PDF that was processed via markitdown during 3a/3b, grep the markdown for the quote.
+3. **Targeted re-fetch** — only if 1 and 2 fail. Use the same fetch method (WebFetch / Playwright) the original draft used.
+
+**Hard rules:**
+- Never fabricate a quote. If the verbatim text cannot be extracted, mark the claim in `evidence_quote_gaps` with the reason and continue.
+- Canonical `raw-claude-*.md` artifacts stay paraphrased — verbatim text lives in the audit trail JSON, matching IMI convention (which embeds quotes only for interview attribution).
+- Cap budget: max 30 seconds per claim. If extraction is consistently failing on a stage, abort 3.5 for that stage and log `EVIDENCE-EXTRACTION-SKIPPED.md` — the run continues.
+
+**Output:** `pass-2-validation/stage-N.json` is updated with `high_tier_claims_with_evidence` and (if any failures) `evidence_quote_gaps`.
+
 **3e. Structural compare Stage 1 to IMI Stage 1**
 
 Read `.claude/refs/imi-pain-points-template.md` Stage 1 section. Compare:
@@ -286,6 +303,17 @@ Invoke source-validator one more time on the FULL compiled draft (all stages). C
 - Same source counted differently across stages
 - Cross-stage claims that are inconsistent
 - Total citation diversity (should be 40–60 unique URLs)
+
+**5a'. Contradiction-finder pass**
+
+Invoke `contradiction-finder` (`.claude/agents/contradiction-finder.md`) on the run directory immediately after 5a completes. It reads `pass-2-validation/stage-*.json`, the per-stage drafts, and any `pass-3-deep-research/*.json` outcomes, then scans for four contradiction classes:
+
+- **A** — same metric cited with materially different values across stages
+- **B** — same actor characterized inconsistently (status, geography, financials)
+- **C** — deep-research verdict (REFINED / CONTRADICTED) not applied to canonical draft
+- **D** — geography mismatch override applied inconsistently across stages
+
+Output: `pass-2-validation/contradictions.json` (always written, even if empty array). High-severity contradictions are surfaced in the run summary's cross-stage observations section. Warn-and-continue: high-severity contradictions add a flag to the gate narrative but do NOT change the % Low threshold computation.
 
 **5b. Apply gate logic globally**
 
@@ -555,6 +583,7 @@ If a cap is hit, document in run summary as `Resource cap hit at Stage[N] — ou
 - `pain-point-researcher` — per stage pain points
 - `source-validator` — per stage + final cross-stage
 - `deep-research` — per weak claim
+- `contradiction-finder` — once after final cross-stage source-validator (Step 5a')
 
 All defined in `.claude/agents/`. All have `disable-model-invocation: true` — invoke explicitly via Agent tool.
 

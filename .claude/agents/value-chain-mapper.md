@@ -91,6 +91,12 @@ else
 fi
 ```
 
+**Retain page excerpts for High-tier-candidate sources.** Source-validator's Step 3.5 (verbatim evidence extraction) reads from the cache to anchor each High-confidence claim with the actual source string. To enable that:
+
+- Always go through `fetch-with-cache.sh` if available — it persists the page body to `.claude/cache/sources/<hash>.<ext>`.
+- For raw `WebFetch` (no cache helper), write the returned content to `.claude/cache/sources/<URL-hash-first-16-chars>.md` after the call. The cache helper does this automatically; manual fallback only.
+- For PDFs: keep both the original URL AND the markitdown markdown file on disk so verbatim extraction in Step 3.5 doesn't need to re-run markitdown.
+
 **For PDF sources, use markitdown.** When a candidate URL ends in `.pdf` or HEAD returns `application/pdf`:
 
 ```bash

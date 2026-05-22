@@ -36,7 +36,17 @@ Both phases auto-resume on usage limits. Cap is 36h total. tmux session is named
 - `tmux new-session -d -s overnight-unattended` — gives claude its own pty so it doesn't get `SIGTTOU` when the parent shell exits. This is the macOS replacement for the `setsid` approach used on Linux.
 - `caffeinate -i claude --print --dangerously-skip-permissions` — keeps Mac awake during work; `--print` enables non-interactive mode; `--dangerously-skip-permissions` auto-approves all tool calls including MCP.
 - Phase 2 enriches lazily: it only touches URLs the main pass tagged `[NEEDS-ATTENDED-FETCH]` (~5–15 typically), bounding cost.
+- **Phase 2 is tool-locked** — invoked with `--disallowed-tools "Write NotebookEdit"` so claude is mechanically prevented from regenerating the canonical `raw-claude-*.md` files. Auto-merge happens via `Edit` hunks only; the `.bak` backups are preserved.
 - Captcha / MFA / aggressive anti-bot pages defeat headless Playwright. Those URLs are re-tagged `[CONFIRMED-INACCESSIBLE]` (honest) — no fabrication, no retry loop. Estimated lift: 25–35% of `[NEEDS-ATTENDED-FETCH]` URLs become primary citations.
+
+### Auditability & quality gates (added 2026-05-23)
+
+Four cross-cutting checks were added so every run produces an auditable trail:
+
+1. **Tool-lock on Phase 2** (above) — destructive operations physically blocked during enrichment.
+2. **Verbatim quotes for High-tier claims** — `pass-2-validation/stage-N.json` carries an `evidence_quotes` array per High claim with the actual source string (≤500 chars), URL, section pointer, and fetch method. Sourced from the cache helper at `.claude/cache/sources/`, no fabrication. Canonical artifacts stay paraphrased (matching IMI convention, which embeds verbatim text only for interview attribution).
+3. **Contradiction-finder sub-agent** — invoked once after the final cross-stage source-validator pass. Scans for same-metric/different-value, actor-status, deep-research-not-applied, and geography-mismatch contradictions. Output: `pass-2-validation/contradictions.json`. High-severity findings surface in the run summary.
+4. **Output lint gates** (`scripts/lint-output.sh`) — invoked after each phase. Writes `LINT-REPORT.md` to the run dir covering: footnote/source-list bijection, citation density per pain point, unique-domain diversity, `[ASSUMED-N]` sequence + "to validate" follow-up ratio, FINAL-REPORT.html wordmark, `[NEEDS-ATTENDED-FETCH]` tag well-formedness, post-Phase-2 backup-pair byte-delta invariant (<20% sanity check that Phase 2 patched rather than rewrote). Warn-and-continue: failures are recorded but never block the pipeline.
 
 ---
 

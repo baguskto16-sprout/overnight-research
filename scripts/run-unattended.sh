@@ -306,10 +306,22 @@ run_claude_phase() {
   log "Launching claude --print → $phase_log"
   log "Prompt (first 120 chars): ${prompt:0:120}…"
 
-  # Run claude in background so we can poll for both completion AND limit-hit.
-  caffeinate -i claude --print --dangerously-skip-permissions "$prompt" \
-    > "$phase_log" 2>&1 </dev/null &
-  local claude_pid=$!
+  # Phase 2 (enrichment) is tool-locked: Write and NotebookEdit are denied so
+  # claude cannot regenerate canonical raw-claude-*.md files. Auto-merge must
+  # happen via Edit only. Phase 1 keeps the default tool set.
+  # Branch on phase to avoid bash-3.2 empty-array-under-set-u unbound-variable error.
+  local claude_pid
+  if [ "$log_prefix" = "enrichment" ]; then
+    log "Phase 2 tool-lock: --disallowed-tools \"Write NotebookEdit\""
+    caffeinate -i claude --print --dangerously-skip-permissions \
+      --disallowed-tools "Write NotebookEdit" "$prompt" \
+      > "$phase_log" 2>&1 </dev/null &
+    claude_pid=$!
+  else
+    caffeinate -i claude --print --dangerously-skip-permissions "$prompt" \
+      > "$phase_log" 2>&1 </dev/null &
+    claude_pid=$!
+  fi
   log "claude PID $claude_pid"
 
   while true; do
@@ -516,6 +528,13 @@ if [ "${PHASE1_NEED_RUN:-0}" = "1" ]; then
   fi
 fi
 
+# Lint Phase 1 output (warn-and-continue; LINT-REPORT.md written to run dir)
+RUN_DIR_FOR_LINT=$(active_run_dir)
+if [ -n "$RUN_DIR_FOR_LINT" ]; then
+  log "Running post-Phase-1 lint on $RUN_DIR_FOR_LINT"
+  bash "$REPO_DIR/scripts/lint-output.sh" "$RUN_DIR_FOR_LINT" >> "$WATCHDOG_LOG" 2>&1 || true
+fi
+
 # ---------------------------------------------------------------------------
 # Phase 2 — Playwright enrichment (only if Phase 1 produced RUN-COMPLETE.txt)
 # ---------------------------------------------------------------------------
@@ -590,6 +609,10 @@ if [ "$PHASE2_ATTEMPTS" -ge "$PHASE2_MAX_ATTEMPTS" ] && [ "$PHASE2_RC" != "0" ];
   exit 3
 fi
 
+# Lint Phase 2 output (post-merge integrity check; warn-and-continue)
+log "Running post-Phase-2 lint on $RUN_DIR"
+bash "$REPO_DIR/scripts/lint-output.sh" "$RUN_DIR" >> "$WATCHDOG_LOG" 2>&1 || true
+
 # ---------------------------------------------------------------------------
 # Final summary
 # ---------------------------------------------------------------------------
@@ -599,5 +622,6 @@ log "Run dir: $RUN_DIR"
 [ -f "$RUN_DIR/RUN-COMPLETE.txt" ] && log "  RUN-COMPLETE.txt        ✓"
 [ -f "$RUN_DIR/ENRICHMENT-COMPLETE.txt" ] && log "  ENRICHMENT-COMPLETE.txt ✓"
 [ -f "$RUN_DIR/FINAL-REPORT.html" ] && log "  FINAL-REPORT.html       ✓ ($(stat -f '%z bytes' "$RUN_DIR/FINAL-REPORT.html"))"
+[ -f "$RUN_DIR/LINT-REPORT.md" ] && log "  LINT-REPORT.md          ✓"
 
 exit 0
