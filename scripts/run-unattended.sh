@@ -312,9 +312,12 @@ run_claude_phase() {
   # Branch on phase to avoid bash-3.2 empty-array-under-set-u unbound-variable error.
   local claude_pid
   if [ "$log_prefix" = "enrichment" ]; then
-    log "Phase 2 tool-lock: --disallowed-tools \"Write NotebookEdit\""
+    # NB: --disallowed-tools is variadic (<tools...>) so unquoted space-separated
+    # values greedily consume positional args. Use --flag=value with comma
+    # separation to bound the argument to a single token.
+    log "Phase 2 tool-lock: --disallowed-tools=Write,NotebookEdit"
     caffeinate -i claude --print --dangerously-skip-permissions \
-      --disallowed-tools "Write NotebookEdit" "$prompt" \
+      --disallowed-tools=Write,NotebookEdit "$prompt" \
       > "$phase_log" 2>&1 </dev/null &
     claude_pid=$!
   else
