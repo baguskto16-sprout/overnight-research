@@ -117,7 +117,13 @@ Write JSON to `<run-dir>/pass-2-validation/contradictions.json`:
         "source_url": "..."
       },
       "delta_description": "62% spread on identical metric (Indonesia 3PL market); no reconciliation note in either stage",
-      "resolution_suggestion": "Re-cite from primary filing or note as range estimate $4.2B–$6.8B with methodology footnote"
+      "resolution_suggestion": "Re-cite from primary filing or note as range estimate $4.2B–$6.8B with methodology footnote",
+      "resolution_hint": {
+        "metric_phrase": "Indonesia 3PL market 2024 revenue",
+        "primary_source_categories_to_try": ["primary-gov", "primary-multilateral", "primary-academic", "primary-filing"],
+        "academic_search_query": "Indonesia third-party logistics market size 2024",
+        "applied_to_stages": [1, 4]
+      }
     }
   ],
   "summary": {

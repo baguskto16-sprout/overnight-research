@@ -48,6 +48,23 @@ Four cross-cutting checks were added so every run produces an auditable trail:
 3. **Contradiction-finder sub-agent** — invoked once after the final cross-stage source-validator pass. Scans for same-metric/different-value, actor-status, deep-research-not-applied, and geography-mismatch contradictions. Output: `pass-2-validation/contradictions.json`. High-severity findings surface in the run summary.
 4. **Output lint gates** (`scripts/lint-output.sh`) — invoked after each phase. Writes `LINT-REPORT.md` to the run dir covering: footnote/source-list bijection, citation density per pain point, unique-domain diversity, `[ASSUMED-N]` sequence + "to validate" follow-up ratio, FINAL-REPORT.html wordmark, `[NEEDS-ATTENDED-FETCH]` tag well-formedness, post-Phase-2 backup-pair byte-delta invariant (<20% sanity check that Phase 2 patched rather than rewrote). Warn-and-continue: failures are recorded but never block the pipeline.
 
+### Confidence & validity (added 2026-05-25 — Tier 2)
+
+Tier 1 added auditability (surfaces quality issues). Tier 2 makes the pipeline **act** on what Tier 1 surfaces:
+
+5. **Contradiction-resolution pass** (`.claude/agents/contradiction-resolver.md`) — invoked at SKILL.md Step 5a'' immediately after contradiction-finder. For each high-severity contradiction, fetches primary sources (via the existing `deep-research` agent, which now routes through academic APIs first for clinical/macro claims) and applies the resolution via `Edit` to `stages-validated/*.md`. Writes `pass-2-validation/contradictions-resolved.json`. **Gate auto-degrade**: if any high-severity contradiction remains unresolved, the gate degrades one tier (ship → ship-with-flag → re-run-recommended). Honest signal — no hard block.
+6. **Per-PP primary-source floor lint** — every pain point must carry ≥1 Tier-1 citation (government / multilateral / regulator / audited filing / peer-reviewed academic / industry standards). Pass at ≥80% of PPs, warn at 60–79%, warn-fail below 60%. Per-PP detail in `LINT-REPORT.md`.
+7. **Four adversarial critics in parallel** (`critic-dialectic`, `critic-depth`, `critic-width`, `critic-instruction`) — invoked at SKILL.md Step 5.5 after the final cross-stage pass. Each asks a different question (counter-evidence, thin spots, topical gaps, working-hypothesis coverage). Top-3 actionable gaps per critic feed back into `deep-research` for gap-fill (12 calls budget, 30-min cap).
+8. **Academic-API priority for clinical/market claims** — `scripts/academic-search.sh` wraps OpenAlex + Semantic Scholar + PubMed. `deep-research` agent's Step 2.0 triggers it before WebSearch when the claim matches `prevalence|incidence|mortality|market size|CAGR|adoption rate` or disease keywords. Returns DOI-anchored canonical papers; cites as `https://doi.org/<DOI>` — naturally Tier-1.
+9. **Vertical-slice deviation tracking** — when the skill consolidates stages instead of per-stage vertical-slicing, the orchestrator MUST write `pass-0-deviations.md` listing which stages had reduced validation and why. Lint check verifies presence whenever per-stage validation JSONs differ widely in size.
+
+**Tier 2 success criteria (validated on the next run):**
+- Shipped high-severity contradictions ≤1 (was 5 in pre-Tier-2 Brief A)
+- Per-PP Tier-1 source coverage ≥80%
+- Each critic surfaces ≥3 actionable gaps; gap-fill `deep-research` triggered on top-N
+- Academic-API hit rate ≥60% on prevalence/market-size claim types
+- Gate decision narrative explicitly cites contradiction-resolution and critic outcomes
+
 ---
 
 ## Quick start

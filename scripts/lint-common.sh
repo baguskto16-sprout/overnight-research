@@ -216,7 +216,7 @@ lint_check_attended_fetch_tags() {
   if [ -n "$bad_tags" ]; then
     local sample
     sample=$(echo "$bad_tags" | head -1 | cut -c1-80)
-    _lint_record WARN "attended-fetch-tags" "tags missing URL — sample: $sample…"
+    _lint_record WARN "attended-fetch-tags" "tags missing URL — sample: ${sample}..."
   else
     local n_needs n_inacc
     n_needs=$(grep -hoE '\[NEEDS-ATTENDED-FETCH' "${files[@]}" 2>/dev/null | wc -l | tr -d ' ')
@@ -255,6 +255,116 @@ lint_check_backup_invariant() {
   done
   if [ "$found_any" -eq 0 ]; then
     _lint_record PASS "backup-invariant" "no .bak files (Phase 2 not yet run; check skipped)"
+  fi
+}
+
+# ---------------------------------------------------------------------------
+# Check 8 — Per-PP primary-source floor (Tier 2 improvement O)
+# Every pain point must have ≥1 Tier-1 citation (government / multilateral /
+# regulator / audited filing / peer-reviewed academic / industry standards).
+# Pass: ≥80% of PPs hit the floor. Warn: 60–79%. Fail (informational): <60%.
+# ---------------------------------------------------------------------------
+lint_check_primary_source_floor() {
+  local pp="$1"
+  [ -f "$pp" ] || { _lint_record FAIL "primary-source-floor" "PP file missing"; return; }
+
+  # Tier-1 detection regex — broad URL/citation pattern matches
+  local tier1_pattern='(\.gov(\.|/)|bps\.go\.id|ojk\.go\.id|kemkes\.go\.id|kemenkes|mida\.gov\.my|nso\.go\.th|dosm\.gov\.my|singstat|worldbank\.org|oecd\.org|imf\.org|who\.int|iea\.org|adb\.org|aseanenergy\.org|sec\.gov|edgar|\.idx\.co\.id|bursamalaysia\.com|set\.or\.th|doi\.org/|pubmed|lancet\.com|nejm\.org|sciencedirect\.com|wiley\.com|springer\.com|tandfonline|cambridge\.org|jamanetwork|bmj\.com|cochrane|\.iso\.org|ashrae\.org|iec\.ch|imo\.org|fda\.gov|cdc\.gov|nih\.gov|eutils\.ncbi)'
+
+  # Identify pain-point boundaries — heading patterns from value-chain-mapper output
+  # PP boundaries are marked by "### Pain point" or "## Pain point" (sometimes "**Pain point** N.M")
+  local pp_headers
+  pp_headers=$(grep -nE '^### Pain point|^## Pain point|^\*\*Pain point' "$pp" | cut -d: -f1)
+  [ -z "$pp_headers" ] && { _lint_record WARN "primary-source-floor" "no '### Pain point' headings detected — cannot enforce per-PP floor"; return; }
+
+  local total_pps=0
+  local pps_with_tier1=0
+  local pps_without_tier1=""
+
+  # Read all line-numbers including a sentinel for the end
+  local headers_arr=()
+  while IFS= read -r ln; do headers_arr+=("$ln"); done <<< "$pp_headers"
+  local file_lines
+  file_lines=$(wc -l < "$pp" | tr -d ' ')
+  headers_arr+=("$((file_lines+1))")
+
+  local i n_headers=${#headers_arr[@]}
+  for (( i=0; i<n_headers-1; i++ )); do
+    local start="${headers_arr[$i]}"
+    local end=$((${headers_arr[$((i+1))]} - 1))
+    [ "$end" -lt "$start" ] && continue
+    total_pps=$((total_pps+1))
+
+    # Extract PP body and check for Tier-1 citations
+    local pp_body
+    pp_body=$(sed -n "${start},${end}p" "$pp")
+    if echo "$pp_body" | grep -qiE "$tier1_pattern"; then
+      pps_with_tier1=$((pps_with_tier1+1))
+    else
+      # Try to extract PP id (e.g. "Pain point 1.1" or "PP1.1")
+      local pp_id
+      pp_id=$(echo "$pp_body" | head -1 | grep -oE 'Pain point [0-9.]+|PP[0-9.]+' | head -1)
+      [ -z "$pp_id" ] && pp_id="line $start"
+      pps_without_tier1="${pps_without_tier1}${pp_id}, "
+    fi
+  done
+
+  [ "$total_pps" -eq 0 ] && { _lint_record WARN "primary-source-floor" "0 pain points parsed"; return; }
+
+  local pct
+  pct=$(awk "BEGIN {printf \"%.0f\", ($pps_with_tier1 / $total_pps) * 100}")
+  local detail="$pps_with_tier1 / $total_pps PPs have ≥1 Tier-1 source ($pct%)"
+  [ -n "$pps_without_tier1" ] && detail="$detail; PPs without: ${pps_without_tier1%??}"
+
+  if [ "$pct" -ge 80 ]; then
+    _lint_record PASS "primary-source-floor" "$detail (target ≥80%)"
+  elif [ "$pct" -ge 60 ]; then
+    _lint_record WARN "primary-source-floor" "$detail (target ≥80%)"
+  else
+    _lint_record WARN "primary-source-floor" "$detail (target ≥80%, below 60% floor)"
+  fi
+}
+
+# ---------------------------------------------------------------------------
+# Check 9 — Vertical-slice deviation compliance (Tier 2 improvement R)
+# Reads pass-0-deviations.md if present. If absent and per-stage validation
+# JSONs differ widely in size (sign of consolidated validation), warn.
+# ---------------------------------------------------------------------------
+lint_check_vertical_slice_compliance() {
+  local run_dir="$1"
+  local deviations_file="$run_dir/pass-0-deviations.md"
+  local val_dir="$run_dir/pass-2-validation"
+
+  if [ -f "$deviations_file" ]; then
+    local n_lines
+    n_lines=$(wc -l < "$deviations_file" | tr -d ' ')
+    _lint_record PASS "vertical-slice-compliance" "pass-0-deviations.md present ($n_lines lines documenting deviations)"
+    return
+  fi
+
+  [ -d "$val_dir" ] || { _lint_record PASS "vertical-slice-compliance" "no pass-2-validation/ to compare (early stage?)"; return; }
+
+  # Compare per-stage validation JSON sizes — if max/min > 5×, likely consolidated
+  local sizes=()
+  for f in "$val_dir"/stage-*.json; do
+    [ -f "$f" ] || continue
+    sizes+=("$(stat -f '%z' "$f")")
+  done
+
+  [ ${#sizes[@]} -lt 2 ] && { _lint_record PASS "vertical-slice-compliance" "only ${#sizes[@]} stage validation JSON(s) — no comparison possible"; return; }
+
+  local min=${sizes[0]} max=${sizes[0]}
+  for s in "${sizes[@]}"; do
+    [ "$s" -lt "$min" ] && min="$s"
+    [ "$s" -gt "$max" ] && max="$s"
+  done
+
+  local ratio
+  ratio=$(awk "BEGIN {printf \"%.1f\", $max / $min}")
+  if awk "BEGIN {exit !($ratio < 5)}"; then
+    _lint_record PASS "vertical-slice-compliance" "per-stage validation JSONs within ${ratio}× spread (no deviation suspected)"
+  else
+    _lint_record WARN "vertical-slice-compliance" "per-stage validation JSONs spread ${ratio}× (max=$max, min=$min) — likely consolidated validation; pass-0-deviations.md should document this"
   fi
 }
 

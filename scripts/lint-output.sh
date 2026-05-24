@@ -45,13 +45,15 @@ echo ""
 
 lint_init
 
-lint_check_footnote_bijection      "$VC_FILE" "$PP_FILE"
-lint_check_citation_density        "$PP_FILE"
-lint_check_source_diversity        "$VC_FILE" "$PP_FILE"
-lint_check_assumed_sequence        "$PP_FILE" "$VC_FILE"
-lint_check_wordmark                "$HTML_FILE"
-lint_check_attended_fetch_tags     "$VC_FILE" "$PP_FILE"
-lint_check_backup_invariant        "$RUN_DIR"
+lint_check_footnote_bijection         "$VC_FILE" "$PP_FILE"
+lint_check_citation_density           "$PP_FILE"
+lint_check_source_diversity           "$VC_FILE" "$PP_FILE"
+lint_check_assumed_sequence           "$PP_FILE" "$VC_FILE"
+lint_check_wordmark                   "$HTML_FILE"
+lint_check_attended_fetch_tags        "$VC_FILE" "$PP_FILE"
+lint_check_backup_invariant           "$RUN_DIR"
+lint_check_primary_source_floor       "$PP_FILE"
+lint_check_vertical_slice_compliance  "$RUN_DIR"
 
 lint_render_console
 

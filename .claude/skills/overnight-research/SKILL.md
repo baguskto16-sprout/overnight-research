@@ -293,6 +293,26 @@ Same vertical slice pattern as Step 3, but:
 
 After each stage, update checkpoint with status.
 
+**Vertical-slice deviation tracking (Tier 2 improvement R).** If at any point you deviate from per-stage vertical-slicing — e.g., consolidate source-validator across multiple stages instead of per-stage, skip a stage's deep-research budget, run stages in parallel rather than sequential, or use a shared cross-stage validator instead of per-stage — you MUST write `pass-0-deviations.md` to the run dir documenting:
+
+```markdown
+# Vertical-slice deviations (run <run-id>)
+
+## Stages affected
+- Stage 3: consolidated source-validator with Stage 4 (no per-stage stage-3.json)
+- Stage 5: deep-research budget capped at 2 instead of spec'd 5
+
+## Reasons
+- Stage 3+4 consolidated: total-runtime cap hit at Stage 3; per-stage validation would have pushed total runtime past 4h
+- Stage 5 deep-research capped: hit per-stage budget (5 calls) on three weak claims, then skipped 2 because total-budget hit
+
+## Confidence impact
+- Stage 3 confidence figures rest on shared validation logic — treat individual claims as having less independent scrutiny than per-stage runs
+- Stage 5 has 2 unaddressed weak claims (PP5.X-cost-1, PP5.Y-freq-1) — flagged inline as [ASSUMED-N] in the canonical artifact
+```
+
+The lint gate (`scripts/lint-output.sh` improvement R) checks for this file's presence whenever per-stage validation JSONs are unevenly sized (sign of consolidated validation). If you DO vertical-slice correctly, the file is honestly absent — that's the lint pass condition.
+
 ### Step 5 — Cross-stage compare and final pass
 
 After all planned stages are validated:
@@ -313,15 +333,36 @@ Invoke `contradiction-finder` (`.claude/agents/contradiction-finder.md`) on the 
 - **C** — deep-research verdict (REFINED / CONTRADICTED) not applied to canonical draft
 - **D** — geography mismatch override applied inconsistently across stages
 
-Output: `pass-2-validation/contradictions.json` (always written, even if empty array). High-severity contradictions are surfaced in the run summary's cross-stage observations section. Warn-and-continue: high-severity contradictions add a flag to the gate narrative but do NOT change the % Low threshold computation.
+Output: `pass-2-validation/contradictions.json` (always written, even if empty array). High-severity contradictions are surfaced in the run summary's cross-stage observations section.
+
+**5a''. Contradiction-resolution pass (Tier 2 — improvement N)**
+
+Invoke `contradiction-resolver` (`.claude/agents/contradiction-resolver.md`) on the run directory immediately after 5a' produces `contradictions.json`. For each high-severity contradiction, the resolver:
+
+1. Invokes the existing `deep-research` agent (with its Step 2.0 academic-API trigger) to fetch primary sources for the disputed metric
+2. Picks a resolution: `canonical` (one value wins), `range` (both within plausible primary range), or `undecidable`
+3. Applies the resolution to `stages-validated/stage-N.md` via `Edit` only — superseded sources stay annotated, never deleted
+4. Writes `pass-2-validation/contradictions-resolved.json` summarising outcomes
+
+**Gate auto-degrade logic:** if `unresolved_high_severity > 0` after the resolver returns:
+- Original gate `ship-as-is` → degrade to `ship-with-flag`
+- Original gate `ship-with-flag` → degrade to `re-run-recommended` (write `re-run-recommended.md`)
+- Original gate `re-run-recommended` → unchanged
+- Log the degrade in run summary with the specific unresolved contradiction IDs
+
+Budget: max 5 contradictions resolved per invocation, 5 deep-research sub-calls, 15 min wall-clock. Excess high-severity contradictions remain unresolved and trigger gate degrade.
 
 **5b. Apply gate logic globally**
+
+Read `pass-2-validation/contradictions-resolved.json` (from 5a'') to know whether to auto-degrade before applying the threshold table below:
 
 | % Low confidence (full corpus) | Gate |
 |---|---|
 | ≤30% | Ship as-is |
 | 30–70% | Ship with flag |
 | >70% | Re-run recommended (write `re-run-recommended.md`) |
+
+Apply the % Low threshold first, then apply the contradiction auto-degrade on top.
 
 **5c. Generate run summary**
 
@@ -330,6 +371,27 @@ Same as before but include vertical-slice metrics:
 - Per-stage runtime
 - Per-stage source diversity
 - Whether each stage triggered remediation
+
+### Step 5.5 — Adversarial critic pass (Tier 2 — improvement P)
+
+After 5a-5c are done, invoke the four critic sub-agents **in parallel** (send all four `Agent` tool calls in a single orchestrator message):
+
+- `critic-dialectic` — what counter-evidence exists for each top-3 finding?
+- `critic-depth` — which PPs have thin evidence (<5 citations, <3 root causes, single-source anchor)?
+- `critic-width` — which IMI dimensions and input-scope topics are missing from the corpus?
+- `critic-instruction` — does the corpus answer each working hypothesis from `pass-0-plan.md`?
+
+Each critic writes `<run-dir>/pass-2-critics/<critic-name>.json`. Wait for all four to return.
+
+**5.5b. Gap-fill remediation**
+
+Parse each critic's output for `actionable_gap: true` entries. Collect the top-3 actionable gaps per critic (max 12 total, deduplicated by `dimension` / `pp_id` / `wh_id`).
+
+For each gap, invoke `deep-research` with the gap-specific prompt and apply results to relevant `stages-validated/*.md` files via `Edit`. Budget: 12 deep-research calls, 30 minutes wall-clock.
+
+After gap-fill, re-write the run summary's "Adversarial-critic findings" section listing per-critic outcomes and which gaps were filled vs documented.
+
+If `>=1 high-actionability gap` remains unfilled (because of budget cap or `confirmed-scarce` deep-research outcome), surface it in the gate decision narrative — but do NOT auto-degrade the gate based on critic findings alone (that's only contradiction-resolver's prerogative).
 
 ### Step 6 — Write final output files (mode-aware)
 
@@ -582,8 +644,10 @@ If a cap is hit, document in run summary as `Resource cap hit at Stage[N] — ou
 - `value-chain-mapper` — per stage value chain
 - `pain-point-researcher` — per stage pain points
 - `source-validator` — per stage + final cross-stage
-- `deep-research` — per weak claim
+- `deep-research` — per weak claim (Tier 2: routes via `scripts/academic-search.sh` first for clinical/macro claims — improvement Q)
 - `contradiction-finder` — once after final cross-stage source-validator (Step 5a')
+- `contradiction-resolver` — once after contradiction-finder (Step 5a'', Tier 2 improvement N)
+- `critic-dialectic`, `critic-depth`, `critic-width`, `critic-instruction` — four in parallel after Step 5c (Step 5.5, Tier 2 improvement P)
 
 All defined in `.claude/agents/`. All have `disable-model-invocation: true` — invoke explicitly via Agent tool.
 

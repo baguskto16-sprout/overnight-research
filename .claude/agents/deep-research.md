@@ -29,6 +29,40 @@ Read it. What is it asserting? What kind of evidence would prove or disprove it?
 
 ### Step 2 — Search systematically
 
+**Step 2.0 — Academic-API-first trigger** (Tier 2 improvement Q)
+
+If the weak claim text matches ANY of these patterns, query academic APIs BEFORE WebSearch:
+
+- `prevalence|incidence|mortality|undiagnosed|diagnosed|burden`
+- `market\s+(size|value)|\bCAGR\b`
+- `adoption\s+(rate|level)|per\s+(capita|1000|100k)`
+- Disease keywords: `diabetes|hypertension|cholesterol|cancer|covid|cardiovascular|metabolic|chronic|obesity|stroke|tuberculosis`
+
+When triggered, invoke the shared helper:
+
+```bash
+RESULT=$(./scripts/academic-search.sh --max 3 "<concise query distilled from claim>")
+# Inspect:  echo "$RESULT" | jq '.[] | {doi, title, year, citation_count, api_source}'
+```
+
+The helper returns a JSON array of primary papers from OpenAlex / Semantic Scholar / PubMed (deduplicated, sorted by citation_count then year). Each entry has a `url` like `https://doi.org/<DOI>` — that's a Tier-1 (peer-reviewed academic) citation.
+
+**If `RESULT` is non-empty:**
+- Treat the top paper as the primary source for the claim.
+- Fetch the DOI URL (or, if the publisher PDF is paywalled, look at OpenAlex / Semantic Scholar abstract via the API response that's already in `RESULT`).
+- Cite the DOI URL in your output. Skip WebSearch for this claim.
+- Tag the citation `(via academic-search.sh, source: <api_source>, citation_count: N)` for traceability.
+
+**If `RESULT` is empty:**
+- All three academic APIs returned no relevant papers OR the helper failed.
+- Fall back to the WebSearch path below (Step 2.1 onwards).
+
+This priority lane catches academic + clinical + macro-economic claims that secondary trade press routinely mis-rounds. Brief A's prevalence contradictions (DM 11.7% vs 11.3%, HTN 29.2% vs 31.6%) trace to this exact failure mode in pre-Tier-2 runs.
+
+---
+
+**Step 2.1 onwards — Fallback WebSearch ladder**
+
 Run 5–10 focused WebSearches in priority order:
 
 1. **Government statistics agencies** — search for the specific number type
