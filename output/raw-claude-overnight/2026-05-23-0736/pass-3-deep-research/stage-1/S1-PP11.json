@@ -1,0 +1,68 @@
+{
+  "claim_id": "S1-PP11",
+  "claim_text": "Indonesia health check-up / MCU market is approximately $656M in 2024 with 9.9% CAGR.",
+  "original_source": "Grand View Research (auto-downgraded — aggregator)",
+  "outcome": "confirmed-scarce",
+  "searches_performed": [
+    "Indonesia medical check-up MCU market size 2024 revenue Kemenkes BPS OJK statistics",
+    "Indonesia preventive healthcare spending 2024 Kemenkes Profil Kesehatan annual report",
+    "Siloam Mitra Keluarga Hermina MCU medical check-up revenue segment 2024 annual report IDX",
+    "Indonesia health check-up market McKinsey Bain Deloitte BCG 2024 report preventive care size",
+    "WHO Indonesia Health Accounts 2024 (fetched)",
+    "Bain APAC Front Line of Healthcare 2024 (fetched)",
+    "East Ventures Indonesia healthcare landscape article (fetched)"
+  ],
+  "categories_searched": [
+    "primary-gov (Kemenkes Profil Kesehatan, WHO Indonesia Health Accounts 2024)",
+    "primary-multilateral (WHO, Bain APAC report)",
+    "top-tier-consultancy (McKinsey, Bain — no Indonesia MCU-specific sizing found)",
+    "idl-listed-hospital-disclosures (Siloam, Hermina, Mitra Keluarga — IDX PDFs not segment-broken)",
+    "trade-press (East Ventures healthcare article — no market size cited)"
+  ],
+  "findings": {
+    "who_health_accounts_2024": {
+      "url": "https://www.who.int/indonesia/id/news/detail/12-02-2026-indonesia-health-accounts-2024--strengthening-evidence-for-sustainable-health-financing",
+      "total_health_spend_idr": "639.9 trillion IDR (2.9% of GDP)",
+      "preventive_care_breakout": "Not provided — no MCU or preventive-care sub-segment figure",
+      "notes": "Confirms total healthcare at ~$39B USD equivalent; preventive share not quantified"
+    },
+    "bain_apac_2024": {
+      "url": "https://www.bain.com/insights/asia-pacific-front-line-of-healthcare-2024/",
+      "mcU_market_size_found": false,
+      "notes": "Qualitative trends only; no Indonesia preventive-care sizing"
+    },
+    "grand_view_research": {
+      "url": "https://www.grandviewresearch.com/horizon/outlook/health-check-up-market/indonesia",
+      "figure_cited": "$656.2M in 2024, CAGR 9.9% to 2030",
+      "category": "aggregator — cannot verify underlying methodology or primary data"
+    },
+    "hospital_chain_disclosures": {
+      "notes": "IDX annual report PDFs for Siloam (2024) and Hermina (FY23) are publicly linked but do not break out MCU as a named revenue line in available summaries. Fetching full PDFs was not done within budget."
+    }
+  },
+  "cross_validation_result": "No primary government, multilateral, or consultancy source independently produces an Indonesia MCU market size figure. The $656M figure traces exclusively to Grand View Research; no hospital chain segment disclosures or Kemenkes data confirm or contradict it.",
+  "suggested_revision_options": [
+    {
+      "option": "mark-assumed",
+      "revised_claim_text": "[ASSUMED-N]: Indonesia health check-up / MCU market is cited at ~$656M in 2024 (9.9% CAGR) — sourced from Grand View Research aggregator only; no primary government, multilateral, or firm-imprint consultancy source found to validate. To validate: obtain Kemenkes Profil Kesehatan preventive-care spend breakout or IDX hospital-chain MCU segment disclosures.",
+      "suggested_score": "Low"
+    },
+    {
+      "option": "contextual-anchor",
+      "revised_claim_text": "Indonesia total healthcare spend reached ~Rp 639.9 trillion (~$39B USD) in 2024 (WHO Health Accounts 2024); the specific MCU/health-check segment — estimated at ~$656M by market aggregators — lacks primary-source validation.",
+      "suggested_score": "Medium",
+      "notes": "WHO figure is primary; MCU sub-segment remains unverified"
+    },
+    {
+      "option": "drop",
+      "rationale": "If the $656M figure anchors a key pain-point financial claim, dropping it removes the anchor; only use if the contextual-anchor option is insufficient."
+    }
+  ],
+  "recommended_option": "mark-assumed",
+  "reasoning": "All searches through WHO, Kemenkes, Bain, McKinsey, and IDX hospital disclosures failed to surface a primary-source Indonesia MCU market size. The $656M figure is exclusively Grand View Research, an aggregator with opaque methodology. The claim should be marked [ASSUMED-N] pending field validation or access to Kemenkes preventive-care sub-sector data.",
+  "needs_attended_fetch": [
+    "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202504/d24eba6e02_4f7709d0ea.pdf (Siloam 2024 Annual Report — MCU segment may be disclosed in notes to financials)",
+    "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202503/f6cd6640ba_fecd2905da.pdf (Hermina 2024 Annual Report)"
+  ],
+  "research_date": "2026-05-23"
+}

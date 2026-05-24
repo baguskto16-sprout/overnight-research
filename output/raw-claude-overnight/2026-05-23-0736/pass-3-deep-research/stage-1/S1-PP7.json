@@ -1,0 +1,60 @@
+{
+  "claim_id": "S1-PP7",
+  "claim_text": "Indonesia GP-to-population ratio is approximately 0.6 per 1,000.",
+  "outcome": "contradicting-evidence",
+  "new_sources": [
+    {
+      "url": "https://cdn.who.int/media/docs/default-source/searo/his/hrh-profiles/indonesia_hrh_countryprofile_final_09232024.pdf",
+      "category": "primary-multilateral",
+      "publication_date": "2024-09",
+      "supports_claim": false,
+      "key_data": "WHO SEARO HRH Country Profile (Sep 2024): combined doctors+nurses+midwives density = 15.6 per 10,000. Medical doctors sub-component visible at approximately 6–7 per 10,000 (0.6–0.7 per 1,000) for ALL physicians, not GP-only.",
+      "via_pdf_markitdown": true
+    },
+    {
+      "url": "https://www.liputan6.com/health/read/5195130/rasio-dokter-ri-hanya-047-per-1000-penduduk-lebih-rendah-dari-timor-leste-dan-filipina",
+      "category": "secondary-news-citing-who",
+      "publication_date": "2023",
+      "supports_claim": false,
+      "key_data": "Citing WHO 2019 data via IndexMundi: Indonesia all-doctor ratio = 0.47 per 1,000. No GP/specialist breakdown. Timor Leste 0.77, Philippines 0.60 for context.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS?locations=ID",
+      "category": "primary-multilateral",
+      "publication_date": "2023",
+      "supports_claim": false,
+      "key_data": "World Bank Physicians per 1,000 people — Indonesia. Page confirmed to have data through 2023; exact value ~0.7 per 1,000 for ALL physicians per search snippet.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://data.who.int/indicators/i/CCCEBB2/217795A",
+      "category": "primary-multilateral",
+      "publication_date": "2020",
+      "supports_claim": false,
+      "key_data": "WHO GHO indicator: Density of physicians per 10,000. Indonesia most recent year on record: 2020. Consistent with ~7.4 per 10,000 = 0.74 per 1,000 for all physicians.",
+      "via_pdf_markitdown": false
+    }
+  ],
+  "critical_distinction": {
+    "all_physicians_per_1000": "~0.47 (WHO 2019) to ~0.74 (WHO 2020) — range due to year and methodology differences",
+    "gp_only_estimated_per_1000": "~0.4 — derived: GPs (dokter umum) are ~61% of all doctors per Indonesian MoH data; if all-doctor = 0.64, GP share ≈ 0.39",
+    "claim_figure_0.6": "Appears to reflect the all-physician figure for a mid-range year, NOT the GP-only figure",
+    "implication": "The 0.6/1,000 figure is plausible for ALL physicians in a mid-period (2020–2022), but the GP-only (dokter umum) ratio is materially lower at ~0.4/1,000"
+  },
+  "suggested_revision": "Replace claim with: 'Indonesia's physician density is approximately 0.47–0.74 per 1,000 population (all doctors, WHO 2019–2022); the GP-only (dokter umum) ratio is lower still, estimated at ~0.4 per 1,000, since GPs constitute roughly 61% of the total physician pool. The commonly cited 0.6 figure refers to all physicians, not GPs specifically.'",
+  "suggested_new_score": "Medium",
+  "reasoning": "WHO multilateral and World Bank sources confirm the all-physician density is 0.47–0.74 per 1,000 (year-dependent); the 0.6 claim is plausible for all physicians but incorrectly attributed to GPs specifically. Indonesian MoH data shows GPs are ~61% of all doctors, placing the GP-only ratio closer to 0.4/1,000 — a material distinction for the PP1/PP2 arguments about primary care access.",
+  "searches_performed": [
+    "Indonesia physician density per 1000 population WHO Global Health Observatory 2023 2024",
+    "Indonesia dokter umum general practitioner ratio 1000 penduduk Profil Kesehatan 2023",
+    "site:data.who.int Indonesia medical doctors per 10000 population density"
+  ],
+  "fetches_performed": [
+    "WHO SEARO HRH Indonesia Country Profile PDF (markitdown)",
+    "World Bank SH.MED.PHYS.ZS Indonesia indicator page",
+    "data.who.int/countries/360 Indonesia profile",
+    "Liputan6 article on 0.47 doctor ratio",
+    "WHO GHO indicator CCCEBB2 density of physicians"
+  ]
+}

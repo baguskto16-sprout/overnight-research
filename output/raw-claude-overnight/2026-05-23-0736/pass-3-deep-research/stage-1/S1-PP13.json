@@ -1,0 +1,64 @@
+{
+  "claim_id": "S1-PP13",
+  "claim_verbatim": "Indonesia private health insurance market is approximately $2.93B with BPJS commanding ~71.6% share of total health insurance.",
+  "outcome": "contradicting-evidence",
+  "new_sources": [
+    {
+      "url": "https://ojk.go.id/id/kanal/iknb/data-dan-statistik/asuransi/Pages/Statistik-Perasuransian-2023.aspx",
+      "category": "primary-gov",
+      "publication_date": "2024",
+      "supports_claim": false,
+      "key_data": "OJK Statistik Perasuransian 2023 — private health insurance (asuransi kesehatan) premiums: Rp 26.26 trillion (~$1.69B at 15,500 IDR/USD), not $2.93B. Policies issued: 29.29 million in 2023.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://www.antaranews.com/berita/4933489/ojk-catat-nilai-premi-asuransi-kesehatan-naik-4301-persen-pada-2024",
+      "category": "secondary-gov-press",
+      "publication_date": "2025-06-30",
+      "supports_claim": false,
+      "key_data": "ANTARA quoting OJK: private health premi Rp 26.26T in 2023, rose 43.01% to Rp 40.19T in 2024; claim ratio 97.52% in 2023. BPJS figures not included in private premi.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://infobanknews.com/iuran-bpjs-kesehatan-tembus-rp1653-triliun-pada-2024-naik-89-persen/",
+      "category": "secondary-financial-press",
+      "publication_date": "2025",
+      "supports_claim": false,
+      "key_data": "BPJS Kesehatan iuran 2023: Rp 151.4 trillion (~$9.77B). Combined private + BPJS total = Rp 177.66T (~$11.46B). BPJS actual share = 85.2%, not 71.6%.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://investor.id/finance/350848/2023-bpjs-kesehatan-terima-iuran-rp-1514-triliun",
+      "category": "secondary-financial-press",
+      "publication_date": "2024-01",
+      "supports_claim": false,
+      "key_data": "BPJS Kesehatan received Rp 151.4 trillion iuran in 2023 (5.1% YoY growth). Confirms OJK-derived BPJS share of 85.2% of combined market.",
+      "via_pdf_markitdown": false
+    }
+  ],
+  "contradiction_detail": {
+    "private_market_size": {
+      "claim_says": "$2.93B",
+      "ojk_primary_data_says": "Rp 26.26T = ~$1.69B at avg 2023 IDR/USD 15,500",
+      "discrepancy": "Claim overstates private market by ~1.7x. Mordor Intelligence likely includes group life health riders or uses a broader definition."
+    },
+    "bpjs_share": {
+      "claim_says": "71.6%",
+      "ojk_plus_bpjs_primary_data_says": "85.2% (Rp 151.4T BPJS vs Rp 26.26T private = Rp 177.66T combined)",
+      "discrepancy": "Claim understates BPJS dominance by ~13.6 percentage points. The 71.6% figure appears unsourced or uses a different denominator (total national health expenditure ~Rp 614T, where BPJS = 24.6%)."
+    }
+  },
+  "suggested_revision": "Replace with: 'Indonesia private commercial health insurance premiums totalled Rp 26.26 trillion (~$1.7B) in 2023, per OJK Statistik Perasuransian 2023. BPJS Kesehatan collected Rp 151.4 trillion in iuran — approximately 85% of the combined formal health insurance pool. The $2.93B figure cited by Mordor Intelligence appears to use a broader definition (possibly including group life health riders) and the 71.6% BPJS share is inconsistent with OJK primary data.' [ASSUMED-N on $2.93B figure — requires Mordor methodology disclosure]",
+  "suggested_new_score": "Low",
+  "reasoning": "OJK Statistik Perasuransian 2023 (primary regulator) and BPJS annual financials both contradict the claim. Private health premi is ~$1.7B not $2.93B, and BPJS commands ~85% of the formal insurance pool not 71.6%. The Mordor Intelligence $2.93B figure is an unvalidatable aggregator estimate with an opaque methodology.",
+  "searches_performed": [
+    "OJK Statistik Perasuransian Indonesia 2023 2024 asuransi kesehatan total premi",
+    "BPJS Kesehatan annual report 2023 total iuran collected membership revenue",
+    "Indonesia private health insurance market size 2023 OJK statistics premium",
+    "OJK Indonesia asuransi kesehatan premi 2023 total Rp triliun annual statistics",
+    "BPJS Kesehatan 2023 iuran Rp 151 triliun total health spending Indonesia market share",
+    "Indonesia health insurance market $2.93 billion 2023 OJK Rp 26 triliun USD exchange rate",
+    "site:ojk.go.id statistik perasuransian 2023 filetype:pdf indonesia insurance statistics"
+  ],
+  "ojk_pdf_status": "[NEEDS-ATTENDED-FETCH]: https://ojk.go.id/id/kanal/iknb/data-dan-statistik/asuransi/Documents/Pages/Statistik-Perasuransian-2023/Buku%20Statistik%20Asuransi%202023.zip — zip archive, not fetchable via markitdown in this session. Core numbers validated via OJK press coverage (ANTARA, CNBC Indonesia) citing the same publication."
+}

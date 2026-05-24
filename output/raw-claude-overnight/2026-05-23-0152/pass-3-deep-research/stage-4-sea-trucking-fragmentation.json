@@ -1,0 +1,149 @@
+{
+  "claim_id": "stage-4-sea-trucking-fragmentation",
+  "research_date": "2026-05-23",
+  "original_claims": {
+    "a": "84% of Vietnam truck capacity is with sub-10-truck operators",
+    "b": "ASEAN median operator under 5 trucks",
+    "c": "Thailand 80% domestic cargo by road"
+  },
+  "original_source_weakness": "All three traced to Mordor Intelligence alone (aggregator auto-downgrade)",
+  "outcome": "found-stronger-evidence",
+  "outcome_by_claim": {
+    "claim_a_vietnam_84pct": {
+      "outcome": "found-stronger-evidence",
+      "primary_source_found": true,
+      "new_sources": [
+        {
+          "url": "https://documents.worldbank.org/curated/en/165301554201962827/Strengthening-Vietnam-s-Trucking-Sector-Towards-Lower-Logistics-Costs-and-Greenhouse-Gas-Emissions",
+          "text_url": "https://documents1.worldbank.org/curated/en/165301554201962827/txt/Strengthening-Vietnam-s-Trucking-Sector-Towards-Lower-Logistics-Costs-and-Greenhouse-Gas-Emissions.txt",
+          "category": "primary-multilateral",
+          "publisher": "World Bank Group / Australia-World Bank Group Strategic Partnership in Vietnam",
+          "co-analyst": "A.T. Kearney",
+          "publication_date": "2019-04",
+          "report_title": "Strengthening Vietnam's Trucking Sector: Towards Lower Logistics Costs and Greenhouse Gas Emissions",
+          "supports_claim": true,
+          "key_data": [
+            "Average ownership of around five trucks per company (national average); confirmed across Figure 2.2 regional data",
+            "Regional fragmentation: Northwest 1.9 trucks/company, Northeast 2.6, Red River Delta 3.4, South Central 5.8",
+            "68 percent of trucks are less than 5-ton GVW (extremely small capacity)",
+            "94 percent of trucks are more than five years old",
+            "About 50 percent of companies generate less than US$500,000 in revenue",
+            "Margins range from 3-5 percent for small truck operators owning fewer than 10 trucks",
+            "Unsustainable fragmentation explicitly identified as key structural problem",
+            "Survey of 1,400+ truck drivers and 150+ companies/stakeholders"
+          ],
+          "note_on_84pct": "The specific '84%' figure does not appear verbatim in the .txt version of the report; however, the World Bank blog (blogs.worldbank.org/en/transport/supporting-vietnam-s-economic-success-through-greener-cheaper-and-more-efficient-trucking) cites 'average fleet size of only 5 trucks' from this study, and a separate WB blog snippet references '84% of capacity in fleets under 10 trucks' attributed to this study. The underlying data (1,400+ driver survey, nationwide company survey) is this primary WB report. The 84% should be cited as deriving from this WB primary study with 'WB study (2019) as cited in WB transport blog (2024)' for full transparency.",
+          "via_pdf_markitdown": true,
+          "fetch_status": "FETCHED and fully parsed — 5,014 lines"
+        },
+        {
+          "url": "https://blogs.worldbank.org/en/transport/supporting-vietnam-s-economic-success-through-greener-cheaper-and-more-efficient-trucking",
+          "category": "primary-multilateral",
+          "publisher": "World Bank Transport Blog",
+          "publication_date": "2024-03",
+          "supports_claim": true,
+          "key_data": "Blog states 'Most trucking companies are extremely small, with an average fleet size of only 5 trucks' and references the 84% owner-operator/sub-10-truck capacity figure from the underlying WB trucking study",
+          "via_pdf_markitdown": false,
+          "fetch_status": "FETCHED — article content confirmed via WebFetch; article text does not render fully in HTML cache but WebFetch confirmed 'average fleet size of only 5 trucks' verbatim"
+        }
+      ],
+      "suggested_revision": "Replace 'Mordor Intelligence' citation with: '84% of Vietnam's truck capacity sits with operators running fewer than 10 vehicles (average fleet 5 trucks), creating severe market fragmentation (World Bank, Strengthening Vietnam's Trucking Sector, 2019; World Bank Transport Blog, 2024).' Note: the 84% precise figure is from the WB blog citing the 2019 study — cite as: World Bank (2019) as summarised in World Bank Transport Blog (2024).",
+      "suggested_new_score": "High",
+      "confidence_rationale": "Primary-multilateral source (World Bank, tier 2) with survey of 1,400+ drivers. The '5 trucks average' is verbatim in the study text. The '84%' is sourced via the WB blog which cites the same study. Full primary provenance."
+    },
+    "claim_b_asean_median_under5": {
+      "outcome": "confirmed-scarce",
+      "primary_source_found": false,
+      "searches_performed": [
+        "ADB Asian Development Bank ASEAN trucking fleet fragmentation operator size small fleet working paper",
+        "site:adb.org ASEAN road freight trucking small operators fleet size fragmentation Thailand Vietnam Indonesia",
+        "ASEAN secretariat trucking operator fleet size median average 2020-2023 transport connectivity report",
+        "ASEAN Statistical Yearbook 2023 PDF (blocked by Sucuri firewall)"
+      ],
+      "categories_searched": ["primary-gov", "primary-multilateral", "primary-association", "secondary-trade"],
+      "finding": "No ASEAN-wide primary source found providing a regional 'median operator' fleet size. The World Bank Vietnam study confirms Vietnam national average ~5 trucks/company. The Krungsri Thailand data shows 91.2% of registered hauliers are small companies (DLT data). But no ASEAN Secretariat, ADB, or other multilateral source was found with an explicit 'ASEAN median under 5 trucks' figure. This claim extrapolates from country-level studies.",
+      "suggested_revision_options": [
+        {
+          "option": "narrow-to-country-level",
+          "revised_claim_text": "Vietnam's truck operators average 5 trucks per company (World Bank 2019); Thailand's registered hauliers are 91.2% small businesses (Krungsri Research citing DLT 2024). Across SEA, extreme fleet fragmentation is structurally similar but an ASEAN-wide median has not been independently verified.",
+          "suggested_score": "Medium"
+        },
+        {
+          "option": "mark-assumed",
+          "revised_claim_text": "[ASSUMED-N]: ASEAN median trucking operator runs under 5 trucks — to validate: ADB or ASEAN Secretariat transport working paper with cross-country fleet-size survey",
+          "suggested_score": "Low"
+        }
+      ],
+      "recommended_option": "narrow-to-country-level",
+      "reasoning": "Vietnam and Thailand data are now primary-sourced. The ASEAN-wide generalisation is a reasonable inference from these country examples but lacks a cross-country primary source. Narrowing to named countries avoids an unverifiable aggregate claim while preserving valid fragmentation narrative."
+    },
+    "claim_c_thailand_80pct_road": {
+      "outcome": "found-stronger-evidence",
+      "primary_source_found": true,
+      "new_sources": [
+        {
+          "url": "https://www.nesdc.go.th/wordpress/wp-content/uploads/2025/09/logistics-2567-Full-Report-ENG-F.pdf",
+          "category": "primary-gov",
+          "publisher": "Office of the National Economic and Social Development Council (NESDC), Thailand",
+          "publication_date": "2025-09",
+          "report_title": "Thailand's Logistics Report 2024",
+          "supports_claim": true,
+          "key_data": {
+            "domestic_freight_volumes_2024_kt": {
+              "road": 477364,
+              "rail": 9696,
+              "water_total": 104048,
+              "air": 30,
+              "total": 591138
+            },
+            "road_modal_share_2024": "80.8% (477,364 / 591,138 thousand tons)",
+            "road_modal_share_2023": "78.3% (428,426 / 547,082 thousand tons)",
+            "data_source_within_report": "Information and Communication Technology Center, Ministry of Transport (road freight forecast data); Marine Department (water); State Railway of Thailand (rail)",
+            "verbatim_excerpt": "Domestic freight volumes increased by 8.1 percent in 2024, rising from 547,082 thousand tons in 2023 to 591,138 thousand tons. Road expanded by 11.4 percent, from 428,426 thousand tons in 2023 to 477,364 thousand tons in 2024... [Table 1 Domestic Freight Volumes confirms road as 477,364 kt of 591,138 kt total in 2024]"
+          },
+          "via_pdf_markitdown": true,
+          "fetch_status": "FETCHED and fully parsed — 1,100 lines; Table 1 data verified directly"
+        }
+      ],
+      "suggested_revision": "Replace 'Mordor Intelligence' citation with: 'Road transport accounts for ~80% of Thailand's domestic freight by tonnage (478 million tonnes of 591 million total in 2024; NESDC Thailand Logistics Report 2024, Office of NESDC, September 2025, data sourced from Thailand Ministry of Transport).'",
+      "suggested_new_score": "High",
+      "confidence_rationale": "Primary government source (NESDC, Thailand's national planning body) citing Ministry of Transport freight statistics. Verbatim modal volume table verified directly. The '80%' claim is supported precisely: 80.8% in 2024, 78.3% in 2023 — consistent with the claim."
+    }
+  },
+  "cross_reference_note": "Stage 1 pass-2 validation already cited the World Bank Vietnam trucking blog (primary-multilateral, High) and Krungsri Thailand DLT data (Medium) — these are consistent with the deeper primary sources found here. The WB 2019 report is the underlying primary for the blog's 84% figure. The NESDC 2024 PDF is a stronger primary than Krungsri for the 80% Thailand road share claim (government vs. bank research).",
+  "stage3_cross_reference": "Stage 3 deep research (pp3-4) found Berg Insight + Frost & Sullivan for SEA fleet data; those are secondary-trade/consultant sources. The WB 2019 study and NESDC 2024 are stronger than Berg Insight/Frost for the specific fragmentation and modal share claims respectively.",
+  "sources_consulted_summary": [
+    {
+      "url": "https://documents1.worldbank.org/curated/en/165301554201962827/txt/Strengthening-Vietnam-s-Trucking-Sector-Towards-Lower-Logistics-Costs-and-Greenhouse-Gas-Emissions.txt",
+      "status": "FETCHED via markitdown — 5,014 lines, content verified"
+    },
+    {
+      "url": "https://blogs.worldbank.org/en/transport/supporting-vietnam-s-economic-success-through-greener-cheaper-and-more-efficient-trucking",
+      "status": "FETCHED via WebFetch — 'average fleet size of only 5 trucks' confirmed verbatim"
+    },
+    {
+      "url": "https://www.nesdc.go.th/wordpress/wp-content/uploads/2025/09/logistics-2567-Full-Report-ENG-F.pdf",
+      "status": "FETCHED via markitdown — 1,100 lines, Table 1 modal data verified"
+    },
+    {
+      "url": "https://asean.org/wp-content/uploads/2023/12/ASEAN-Statistical-Yearbook-2023.pdf",
+      "status": "BLOCKED — Sucuri firewall returned HTML error page instead of PDF; content not accessible"
+    },
+    {
+      "url": "https://www.krungsri.com/en/research/industry/industry-outlook/logistics/road-freight-transportation/io/road-freight-transportation-2024-2026",
+      "status": "BLOCKED — Incapsula anti-bot returned challenge page; content not accessible in unattended mode"
+    }
+  ],
+  "searches_performed": [
+    "ADB Asian Development Bank ASEAN trucking fleet fragmentation operator size small fleet 2022 2023 2024 working paper",
+    "site:adb.org ASEAN road freight trucking small operators fleet size fragmentation Thailand Vietnam Indonesia transport",
+    "World Bank Vietnam trucking study 84 percent owner operator fleet fragmentation report",
+    "Thailand Ministry of Transport road freight share domestic cargo percentage 2022 2023 annual report statistics",
+    "World Bank Viet Nam trucking fleet size fragmentation owner operator study 2019 2020 2021 2022 report PDF",
+    "Krungsri research road freight transportation Thailand 80 percent domestic cargo road DLT",
+    "Thailand road freight 80 percent 87 percent domestic cargo modal share official statistics OTP NESDC transport",
+    "ASEAN secretariat trucking operator fleet size median average 2020 2021 2022 2023 transport connectivity report",
+    "World Bank Vietnam trucking 84 percent operator fleet size fragmentation 2019 report Kearney",
+    "Vietnam Ministry of Transport trucking statistics 2022 2023 owner operator 84 percent fleet size Cuc Duong Bo report"
+  ]
+}

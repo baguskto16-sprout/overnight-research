@@ -1,0 +1,995 @@
+{
+  "context": "per-stage",
+  "stage": 4,
+  "files_validated": [
+    "output/raw-claude-overnight/2026-05-23-0152/pass-1-drafts/stage-4-value-chain.md",
+    "output/raw-claude-overnight/2026-05-23-0152/pass-1-drafts/stage-4-pain-points.md"
+  ],
+  "claim_count_total": 63,
+  "scoring_distribution": {
+    "high":   { "count": 7,  "percent": "11.1%" },
+    "medium": { "count": 12, "percent": "19.0%" },
+    "low":    { "count": 44, "percent": "69.8%" },
+    "speculative": { "count": 0, "percent": "0.0%" }
+  },
+  "low_pct": 69.8,
+  "override_triggers": [
+    {
+      "override": "vendor-marketing",
+      "claim_count": 21,
+      "claim_ids": [
+        "vc4-4","vc4-5","vc4-6","vc4-10","vc4-11","vc4-23","vc4-24","vc4-25",
+        "vc4-27","vc4-28","vc4-30","vc4-31",
+        "pp4-4.1-1-fourkites-stat","pp4-4.2-1","pp4-4.2-3","pp4-4.2-4-easy4pro",
+        "pp4-4.4-4","pp4-4.5-6","pp4-4.5-7","pp4-4.3-9"
+      ],
+      "notes": "FourKites blog (fourkites.com) used to evidence claims about FourKites survey results and platform narrative counts as vendor-marketing for 2-in-10 visibility stat and 22%-effective stat. Transporeon press release on transporeon.com domain likewise. K+N, CEVA, Yusen, Descartes, IBM, Yojee, Toll, Maersk, One Network, GEODIS and Kargo vendor pages all auto-Low."
+    },
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "claim_count": 9,
+      "claim_ids": [
+        "vc4-16","vc4-17","vc4-18","vc4-19","vc4-20",
+        "pp4-4.1-8","pp4-4.1-9","pp4-4.5-1","pp4-4.5-2","pp4-4.5-3","pp4-4.5-4"
+      ],
+      "notes": "ABI Research, Grand View Research, Straits Research, QKS Group, Markntel, Mordor Intelligence, ResearchAndMarkets — all auto-downgrade. No primary-tier cross-validation found for any of these market sizing figures."
+    },
+    {
+      "override": "press-release-only",
+      "claim_count": 4,
+      "claim_ids": ["vc4-4","vc4-14","pp4-4.2-7","pp4-4.3-5"],
+      "notes": "Transporeon stats from Trimble/Transporeon press release on vendor domain; One Network revenue from onenetwork.com vendor press release; PRNewswire 30th Annual 3PL Study press release (2026 edition); PRNewswire 30th Annual 3PL Study used for two separate claims."
+    },
+    {
+      "override": "single-trade-source",
+      "claim_count": 6,
+      "claim_ids": ["vc4-32","vc4-33","pp4-4.1-4","pp4-4.3-6","pp4-4.3-7","pp4-4.3-8"],
+      "notes": "PricingNow TCO figure ($200K-$500K enterprise pricing) single blog source; Intellitrans/SDCE fragmentation claim (403 error on fetch, cited from search summary); double-brokering $500-700M figure relies on Revenova vendor blog as one leg; The Loadstar 2019 data-sharing quote outdated + single trade source; Supply Chain Dive FLOW 85-member figure single trade source; UpCounsel 3PL contract guidance single blog source."
+    },
+    {
+      "override": "chain-of-citations",
+      "claim_count": 4,
+      "claim_ids": ["vc4-2","vc4-3","vc4-9","pp4-4.2-2"],
+      "notes": "Gartner 34-system-update figure: primary source is a paywalled Gartner report; only accessed through FourKites blog. MIT CTL 25-email figure: same route. McKinsey 40-60% transactional time: accessed only through FourKites blog and emoldino vendor blog; draft itself marks [ASSUMED-1/3]. All three statistics have the same chain-of-citations failure: a paywalled or unverified primary appears only via a single intermediary (FourKites)."
+    },
+    {
+      "override": "assumed-tag",
+      "claim_count": 9,
+      "claim_ids": [
+        "vc4-ASSUMED-1","vc4-ASSUMED-2","vc4-ASSUMED-3","vc4-ASSUMED-4","vc4-ASSUMED-5",
+        "vc4-ASSUMED-6","vc4-ASSUMED-7","vc4-ASSUMED-8",
+        "pp4-4.5-ASSUMED-9"
+      ],
+      "notes": "ASSUMED-1 through ASSUMED-8 in value-chain file; ASSUMED-9 (5% efficiency loss on Indonesia 3PL revenues) in pain-points file. All auto-Low per rubric."
+    },
+    {
+      "override": "outdated-source",
+      "claim_count": 1,
+      "claim_ids": ["pp4-4.3-6"],
+      "notes": "The Loadstar 2019 article (>5 years old) used for data-sharing trust claim. Outdated-source override applies."
+    },
+    {
+      "override": "apac-as-proxy",
+      "claim_count": 3,
+      "claim_ids": ["vc4-19","pp4-4.1-8","pp4-4.5-2"],
+      "notes": "QKS Group APAC CAGR used in lieu of SEA-specific figure (vc4-19); Mordor ASEAN owner-operator figure used as proxy for SEA country-specific need (pp4-4.1-8); Vietnam CAGR used as ASEAN proxy (pp4-4.5-2). All Geography-mismatch flagged."
+    },
+    {
+      "override": "needs-attended-fetch",
+      "claim_count": 4,
+      "claim_ids": ["pp4-4.4-3","pp4-4.4-4","pp4-4.1-6-gated","vc4-4-transporeon-confirm"],
+      "notes": "Munich Re 2025 report (403 on direct fetch); DHL cold chain article (NEEDS-ATTENDED-FETCH); NTT DATA 2024 3PL Study PDF (gated); Transporeon APAC presence needs attended fetch. Sourced from trade press summaries where direct access failed."
+    }
+  ],
+  "claims_detail": [
+    {
+      "id": "vc4-1",
+      "claim": "Only 2 in 10 organizations can understand 75-100% of what is happening in their supply chain in real time (FourKites survey, 250 US supply chain leaders)",
+      "source_urls": ["https://www.fourkites.com/blogs/supply-chain-control-towers-whats-changing/"],
+      "source_tiers": ["auto-low-vendor"],
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "fourkites.com blog reporting FourKites' own proprietary survey. Vendor-marketing override: claims about the visibility gap serve FourKites' own platform narrative, sourced from FourKites' own domain. Auto-Low."
+    },
+    {
+      "id": "vc4-2",
+      "claim": "Average disruption requires 34 manual system updates across 6 different platforms (Gartner survey)",
+      "source_urls": ["https://www.fourkites.com/blogs/supply-chain-control-towers-whats-changing/"],
+      "source_tiers": ["auto-low-vendor"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Gartner primary report is paywalled and not directly accessed. Chain-of-citations: the only accessed source is FourKites blog citing Gartner. Single intermediary = 1 source (FourKites). Additionally, FourKites domain is auto-Low vendor marketing. The Gartner primary counts as 0 verifiable sources. Low."
+    },
+    {
+      "id": "vc4-3",
+      "claim": "Single disruption generates average 25 emails requiring input from 8 different roles (MIT Center for Transportation & Logistics)",
+      "source_urls": ["https://www.fourkites.com/blogs/supply-chain-control-towers-whats-changing/"],
+      "source_tiers": ["auto-low-vendor"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "MIT CTL primary not directly accessed. Chain-of-citations through FourKites blog only. Same failure as vc4-2. Low."
+    },
+    {
+      "id": "vc4-4",
+      "claim": "Transporeon network: 150,000+ carriers, 1,400+ shippers, 110,000 daily transports, EUR 55B freight/year, EUR 190M revenue 2023, 90% recurring revenue",
+      "source_urls": ["https://www.transporeon.com/en/company/press/trimble-acquires-transporeon"],
+      "source_tiers": ["auto-low-vendor"],
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "transporeon.com domain press release — vendor's own marketing surface for claims about Transporeon's own network coverage and revenue. Vendor-marketing override. Also press-release-only override. No independently audited revenue figure post-acquisition. Auto-Low."
+    },
+    {
+      "id": "vc4-5",
+      "claim": "project44 reports 1,400+ telematics integrations including carrier APIs and ELD feeds",
+      "source_urls": ["https://www.project44.com/press-releases/project44-named-a-leader-in-the-2024-gartner-magic-quadrant-for-real-time-transportation-visibility-platforms-for-fourth-consecutive-year/"],
+      "source_tiers": ["auto-low-vendor"],
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "project44.com press release about project44's own platform integrations. Vendor-marketing override. Auto-Low."
+    },
+    {
+      "id": "vc4-6",
+      "claim": "K+N 4PL platform integrates 40+ technology partners to manage sub-carrier networks",
+      "source_urls": [
+        "https://sg.kuehne-nagel.com/-/services/supply-chain-management-4pl-key-features",
+        "https://newsroom.kuehne-nagel.com/kuehnenagel-opens-new-quickstat-pharma--healthcare-control-tower-in-singapore/"
+      ],
+      "source_tiers": ["auto-low-vendor","auto-low-vendor"],
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "Both URLs on kuehne-nagel.com — vendor's own marketing surface for claims about K+N's own platform capability. Vendor-marketing override. Auto-Low."
+    },
+    {
+      "id": "vc4-7",
+      "claim": "e2open FY2025: $607.7M total GAAP revenue; $528.0M subscription (87%); 500,000 connected enterprises; 18B annual transactions",
+      "source_urls": ["https://investors.e2open.com/news/news-details/2025/E2open-Announces-Fiscal-2025-Fourth-Quarter-and-Full-Year-Financial-Results/default.aspx"],
+      "source_tiers": ["primary-filing"],
+      "vendor_self_cite": false,
+      "confidence": "high",
+      "rationale": "NYSE-listed company (ETWO) investor relations earnings release. SEC-filed public company financial results. Primary-filing tier. High."
+    },
+    {
+      "id": "vc4-8",
+      "claim": "Blume Global: manages intermodal containers for 6 of 7 Class 1 US railroads; projected FY2024 revenue $65-70M; acquired Feb 2023 for $414M",
+      "source_urls": [
+        "https://www.wisetechglobal.com/news/wisetech-global-acquires-blume-global/",
+        "https://www.freightwaves.com/news/wisetech-acquires-blume-global"
+      ],
+      "source_tiers": ["secondary-press-release","secondary-trade"],
+      "vendor_self_cite": false,
+      "confidence": "medium",
+      "rationale": "WiseTech Global (ASX: WTC) acquisition announcement on their own news page (press-release-only) + FreightWaves (secondary-trade). Acquisition price is publicly confirmed. Revenue projection ($65-70M) is WiseTech-claimed in acquisition announcement, not independently audited. Two independent sources corroborate acquisition facts; revenue projection is a forward-looking claim from the acquirer. Medium."
+    },
+    {
+      "id": "vc4-9",
+      "claim": "McKinsey Supply Chain 4.0: 40-60% of supply chain planner time spent on transactional work",
+      "source_urls": [
+        "https://www.fourkites.com/blogs/supply-chain-control-towers-whats-changing/",
+        "https://www.mckinsey.com/capabilities/operations/our-insights/building-a-digital-bridge-across-the-supply-chain-with-nerve-centers"
+      ],
+      "source_tiers": ["auto-low-vendor","primary-consultancy"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "McKinsey URL timed out on direct fetch; draft acknowledges 'cited as secondary reference.' The only accessed source is FourKites blog. Chain-of-citations: cannot confirm the McKinsey primary was accessed. Draft also flags this as [ASSUMED-1] in pain-points file. Low — unverifiable primary, single accessible source (FourKites blog, auto-Low vendor domain)."
+    },
+    {
+      "id": "vc4-10",
+      "claim": "Yusen Vantage Performance SEA case study: 55% reduction in demurrage/detention; 76.8% reduction in additional warehouse charges",
+      "source_urls": ["https://www.yusen-logistics.com/services/supply-chain-solutions/success-stories/improve-profitability-and-streamline-operations-full-suite-destination-management-solutions"],
+      "source_tiers": ["auto-low-vendor"],
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "yusen-logistics.com success stories page — vendor's own marketing surface for claims about Yusen's own product performance. Vendor-marketing override. Auto-Low."
+    },
+    {
+      "id": "vc4-11",
+      "claim": "Descartes MacroPoint: 95-98% carrier compliance for integrated freight brokers; Landstar tracks 80% of brokered loads via MacroPoint",
+      "source_urls": ["https://www.descartes.com/resources/knowledge-center/achieving-95-carrier-compliance-using-descartes-macropoint-real-time-freight-tracking"],
+      "source_tiers": ["auto-low-vendor"],
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "descartes.com knowledge center — vendor's own marketing surface for claims about Descartes MacroPoint's own compliance rates. Domain on blocklist. Vendor-marketing override. Auto-Low."
+    },
+    {
+      "id": "vc4-12",
+      "claim": "DHL Supply Chain division revenue 2024: EUR 17,693M (+4.3% YoY); myDHLi 20,000+ customers",
+      "source_urls": ["https://reporting-hub.group.dhl.com/2024-fy/en/combined-management-report/report-on-economic-position/supply-chain-division-3/"],
+      "source_tiers": ["primary-filing"],
+      "vendor_self_cite": false,
+      "confidence": "high",
+      "rationale": "DHL Group 2024 Annual Report (reporting-hub.group.dhl.com) — Deutsche Post DHL (XETRA: DHL) is a publicly listed company. Annual report is an audited corporate filing. The myDHLi customer count is from the same audited annual report. Primary-filing. High."
+    },
+    {
+      "id": "vc4-13",
+      "claim": "Kuehne+Nagel total net turnover CHF 24.8B in 2024 (+4%)",
+      "source_urls": ["https://newsroom.kuehne-nagel.com/kuehnenagel-profitability-normalised-at-a-high-level-in-2024/"],
+      "source_tiers": ["secondary-press-release"],
+      "vendor_self_cite": false,
+      "confidence": "medium",
+      "rationale": "K+N (SIX: KNIN) is publicly listed; the newsroom page references the 2024 full-year results which are from the audited annual report. However the cited URL is a newsroom press release rather than the actual annual report PDF or SIX filing. The underlying audited data exists and is referenced but accessed via press release. Medium. Would be High if the SIX-filed annual report PDF were cited directly."
+    },
+    {
+      "id": "vc4-14",
+      "claim": "Blue Yonder acquires One Network August 2024 for ~$839M; One Network ~$127.9M estimated annual revenue; Nucleus Research Control Tower Value Matrix 2024 Leader",
+      "source_urls": [
+        "https://www.onenetwork.com/2024/08/blue-yonder-acquires-one-network-enterprises/",
+        "https://www.konaequity.com/company/one-network-10401159531/"
+      ],
+      "source_tiers": ["auto-low-vendor","secondary-market-research"],
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "onenetwork.com is the vendor's own press release about their own acquisition — vendor-marketing override for capability/revenue claim. Kona Equity is a private revenue estimator (secondary-market-research aggregator). Revenue figure ($127.9M) is a third-party estimate not from an SEC filing. No audited filing corroborates the revenue. Acquisition price confirmed by multiple trade sources (Blue Yonder/Panasonic are private; no SEC filing required) but revenue figure remains unverifiable. Low."
+    },
+    {
+      "id": "vc4-15",
+      "claim": "Logility FY2025 revenue guidance $101-105M; subscription fees $14.5M Q2 FY2025 (+9% YoY)",
+      "source_urls": ["https://www.logility.com/press-release/logility-reports-second-quarter-fiscal-year-2025-financial-results/"],
+      "source_tiers": ["secondary-press-release"],
+      "vendor_self_cite": false,
+      "confidence": "medium",
+      "rationale": "Logility was formerly listed as part of American Software (NASDAQ: AMSWA). The press release on logility.com is a public company earnings disclosure. While cited via company website rather than the SEC EDGAR filing directly, public company earnings releases are routinely issued via company IR pages and are the same content as the 8-K filing. Medium (would be High if the SEC 8-K or 10-Q filing were cited directly)."
+    },
+    {
+      "id": "vc4-16",
+      "claim": "ABI Research: SCCT market $9.6B in 2024; CAGR 13.12%; projected >$20B by 2030",
+      "source_urls": [
+        "https://www.abiresearch.com/news-resources/chart-data/supply-chain-control-tower-market-value",
+        "https://www.sdcexec.com/software-technology/emerging-technologies/news/22883845/abi-research-investments-in-supply-chain-control-towers-to-surpass-10-billion"
+      ],
+      "source_tiers": ["secondary-market-research","secondary-trade"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "ABI Research is a secondary-market-research aggregator. Aggregator-market-research-auto-downgrade applies regardless of trade press corroboration. SDC Exec (secondary-trade) is simply reporting the same ABI Research figure — chain-of-citations, still 1 source (ABI Research). No primary-tier cross-validation. Auto-Low."
+    },
+    {
+      "id": "vc4-17",
+      "claim": "Grand View Research: SCCT market $9.67B in 2024; $32.14B by 2030; CAGR 23.0%",
+      "source_urls": ["https://www.grandviewresearch.com/press-release/global-control-towers-market"],
+      "source_tiers": ["secondary-market-research"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Grand View Research is an auto-downgrade aggregator. No primary-tier cross-validation. Low."
+    },
+    {
+      "id": "vc4-18",
+      "claim": "Straits Research: SCCT market $10.65B in 2024; $41.15B by 2033; CAGR 16.2%",
+      "source_urls": ["https://straitsresearch.com/report/control-towers-market"],
+      "source_tiers": ["secondary-market-research"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Straits Research is an auto-downgrade aggregator. No primary-tier cross-validation. Low."
+    },
+    {
+      "id": "vc4-19",
+      "claim": "QKS Group: pure-play SCCT software $0.50B (2023) to $1.22B (2030) at 13.5% CAGR; APAC CAGR 13.24%",
+      "source_urls": ["https://www.globenewswire.com/news-release/2024/12/03/2990862/0/en/Supply-Chain-Control-Tower-SCCT-Market-is-expected-to-grow-from-0-50-Billion-in-2023-to-reach-1-22-billion-by-2030-at-a-CAGR-of-13-50-as-per-the-Exclusive-Report-from-QKS-Group.html"],
+      "source_tiers": ["secondary-market-research"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "QKS Group is a secondary-market-research aggregator (GlobeNewswire press release for their report). Aggregator-market-research-auto-downgrade. Additionally: APAC CAGR used as proxy for SEA-specific figure — APAC-as-proxy override, Geography mismatch flagged. Auto-Low.",
+      "flags": ["geography-mismatch-apac-as-proxy"]
+    },
+    {
+      "id": "vc4-20",
+      "claim": "Southeast Asia 3PL market $26.6B (2023); CAGR ~6.1% through 2030",
+      "source_urls": [
+        "https://globalriskcommunity.com/notes/southeast-asia-third-party-logistics-3pl-market-analysis-2024-203",
+        "https://www.marknteladvisors.com/research-library/southeast-asia-third-party-logistics-market.html"
+      ],
+      "source_tiers": ["secondary-trade","secondary-market-research"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Markntel Advisors is a market research aggregator (auto-downgrade). GlobalRiskCommunity is a secondary blog/trade outlet that appears to be summarizing the Markntel report — chain-of-citations, still 1 underlying source. Low."
+    },
+    {
+      "id": "vc4-21",
+      "claim": "ARC Group: SEA 3PL market growth and control tower services opportunity for Singapore-based 3PLs",
+      "source_urls": ["https://arc-group.com/3pl-southeast-asia-industrial-supply-chains/"],
+      "source_tiers": ["secondary-trade"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "ARC Group is a boutique strategy/research firm, not a top-tier consultancy per the rubric (not McKinsey, BCG, Bain, Deloitte Insights, PwC Strategy&, EY-Parthenon, KPMG, Roland Berger, Oliver Wyman, Bloomberg NEF). Single secondary source. Low."
+    },
+    {
+      "id": "vc4-22",
+      "claim": "DSV completes acquisition of DB Schenker April 30, 2025 for approximately EUR 14.3B ($16.6B); integration through 2028; 30% complete as of reporting",
+      "source_urls": [
+        "https://investor.dsv.com/news-releases/news-release-details/dsv-1154-dsv-completes-acqusition-schenker",
+        "https://www.joc.com/article/db-schenker-adds-to-dsv-coffers-as-multi-year-integration-begins-6053831"
+      ],
+      "source_tiers": ["primary-filing","secondary-trade"],
+      "vendor_self_cite": false,
+      "confidence": "high",
+      "rationale": "investor.dsv.com is DSV's official investor relations news release (NASDAQ Copenhagen: DSV) — a regulatory/stock exchange disclosure for a completed acquisition by a publicly listed company. This is primary-filing tier. JOC (secondary-trade) independently corroborates the acquisition completion and integration timeline. High (1 primary-filing + 1 independent secondary-trade)."
+    },
+    {
+      "id": "vc4-23",
+      "claim": "CEVA Logistics Matrix SCM-TMS: proprietary integrated SCM/TMS suite providing control-tower visibility; COVID-19 crisis control tower case study",
+      "source_urls": [
+        "https://www.cevalogistics.com/en/ceva-matrix",
+        "https://www.cevalogistics.com/en/who-we-are/case-studies/covid-response"
+      ],
+      "source_tiers": ["auto-low-vendor","auto-low-vendor"],
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "cevalogistics.com marketing page and case study — vendor's own marketing surface for claims about CEVA's own product and capabilities. Vendor-marketing override. Auto-Low."
+    },
+    {
+      "id": "vc4-24",
+      "claim": "Yusen Logistics launches FourKites carrier visibility solution",
+      "source_urls": ["https://www.fourkites.com/press/yusen-logistics-launches-carrier-visibility-solution-from-fourkites/"],
+      "source_tiers": ["auto-low-vendor"],
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "fourkites.com press release — FourKites' own domain, press announcement about FourKites' own commercial relationship. Vendor-marketing override. Auto-Low."
+    },
+    {
+      "id": "vc4-25",
+      "claim": "Toll Group iCON platform enhanced January 2026: end-to-end visibility, exception dashboard, advanced analytics; Bangkok and Jakarta hubs; 140-country network",
+      "source_urls": ["https://www.tollgroup.com/about/news-and-media/toll-group-launches-enhanced-icon-platform-transform-freight-management"],
+      "source_tiers": ["auto-low-vendor"],
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "tollgroup.com news page — vendor's own media announcement about Toll's own platform. Vendor-marketing override. Auto-Low."
+    },
+    {
+      "id": "vc4-26a",
+      "claim": "Maersk NeoNav integrates trading partners and data in closed-loop for predictive visibility",
+      "source_urls": ["https://www.maersk.com/supply-chain-logistics/neonav"],
+      "source_tiers": ["auto-low-vendor"],
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "maersk.com product page — vendor's own marketing surface for Maersk's own product capabilities. Vendor-marketing override. Auto-Low."
+    },
+    {
+      "id": "vc4-26b",
+      "claim": "Maersk Unilever global ocean and air logistics contract using NeoNav-underpinned control tower",
+      "source_urls": [
+        "https://www.maersk.com/supply-chain-logistics/neonav",
+        "https://www.supplychaindive.com/news/unilever-maersk-cpg-control-tower-ocean-air/611620/"
+      ],
+      "source_tiers": ["auto-low-vendor","secondary-trade"],
+      "vendor_self_cite": false,
+      "confidence": "medium",
+      "rationale": "The Unilever-Maersk deal is independently reported by Supply Chain Dive (secondary-trade). The Maersk product page is vendor-marketing. For the specific fact of the Unilever commercial deal, Supply Chain Dive is an independent source. Medium (1 independent secondary-trade corroborating a commercial deal that is not a product-capability self-claim)."
+    },
+    {
+      "id": "vc4-27",
+      "claim": "IBM Sterling: powers 8 of top 10 global retailers; 3B+ annual transactions; IDC MarketScape Leader 2024",
+      "source_urls": ["https://www.ibm.com/products/sterling"],
+      "source_tiers": ["auto-low-vendor"],
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "ibm.com product marketing page — vendor's own marketing surface for IBM's own product capabilities and market positioning claims. Vendor-marketing override. Auto-Low."
+    },
+    {
+      "id": "vc4-28",
+      "claim": "Yojee (ASX: YOJ): 1,000+ trucking companies APAC; partner management module; $20M equity raise 2020; ASX-listed",
+      "source_urls": [
+        "https://www.yojee.com/",
+        "https://www.crunchbase.com/organization/yojee-2"
+      ],
+      "source_tiers": ["auto-low-vendor","secondary-market-research"],
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "yojee.com is vendor's own marketing surface for claims about Yojee's own capabilities (1,000+ trucking companies). Vendor-marketing override. Crunchbase is an aggregator. The ASX listing could be confirmed via ASX filings (primary-filing) but is not cited that way. Low. Note: ASX listing is a verifiable public fact but cited via vendor/aggregator, not ASX filing."
+    },
+    {
+      "id": "vc4-29",
+      "claim": "Slync.io: $60M+ raised; K+N and DHL as customers; CEO convicted of $25M investor fraud; bankruptcy filed 2023; IP acquired by Bluspark",
+      "source_urls": [
+        "https://www.freightwaves.com/news/slync-files-for-bankruptcy-ceases-operations-amid-former-ceos-legal-woes",
+        "https://sourcingjournal.com/topics/logistics/slync-tech-stack-assets-acquired-bluspark-supply-chain-technology-bankruptcy-auction-intellectual-property-ip-logistics-498373/"
+      ],
+      "source_tiers": ["secondary-trade","secondary-trade"],
+      "vendor_self_cite": false,
+      "confidence": "medium",
+      "rationale": "FreightWaves and Sourcing Journal are independent secondary-trade publications. Two independent trade sources reporting on the same factual events (bankruptcy, fraud conviction, IP acquisition). Criminal conviction is a matter of public record. Corroborated facts across two independent publications. Medium."
+    },
+    {
+      "id": "vc4-32",
+      "claim": "Enterprise control-tower SaaS costs $200K-$500K+ annually for 100-user scale",
+      "source_urls": ["https://pricingnow.com/question/supply-chain-control-tower-pricing/"],
+      "source_tiers": ["secondary-trade"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "PricingNow is a pricing aggregator blog. Single secondary source for an operating cost figure. Single-trade-source override for operating cost figures. Low."
+    },
+    {
+      "id": "vc4-33",
+      "claim": "Single shipment may pass through 5+ platforms with no common data model (Intellitrans data fragmentation analysis)",
+      "source_urls": ["https://www.sdcexec.com/software-technology/supply-chain-visibility/article/22948673/intellitrans-the-freight-data-fragmentation-dilemma-whats-holding-freight-visibility-back"],
+      "source_tiers": ["secondary-trade"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "SDCE trade press reporting on an Intellitrans analysis. Draft notes WebFetch returned 403; cited from search result summary only — document not directly verified. Single trade source for a structural claim. Single-trade-source override. Low."
+    },
+    {
+      "id": "pp4-4.1-1",
+      "claim": "McKinsey (Jan 2024): 13-19% of US logistics costs ($65-95B annually) stem from inefficient handoff interactions; B2B interactions $45-66B",
+      "source_urls": ["https://www.mckinsey.com/industries/logistics/our-insights/digitizing-mid-and-last-mile-logistics-handovers-to-reduce-waste"],
+      "source_tiers": ["primary-consultancy"],
+      "vendor_self_cite": false,
+      "confidence": "high",
+      "rationale": "McKinsey & Company authored insight article (mckinsey.com/industries/logistics/our-insights) — primary-consultancy tier. URL structure is consistent with McKinsey's own published research content, not a vendor quote or trade press. Named as January 2024. Single primary-consultancy source with no secondary corroboration, but per rubric: primary-consultancy alone can support High if it is a firm's own published report. High."
+    },
+    {
+      "id": "pp4-4.1-2",
+      "claim": "34 manual system updates across 6 platforms; 25 emails from 8 roles; 2-3 hours daily communication overhead (Gartner + MIT CTL)",
+      "source_urls": ["https://www.fourkites.com/blogs/supply-chain-control-towers-whats-changing/"],
+      "source_tiers": ["auto-low-vendor"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Same as vc4-2/vc4-3: Gartner and MIT CTL primaries not directly accessed; only the FourKites blog is the accessible source. Chain-of-citations through a vendor's own blog. Auto-Low vendor-marketing override + chain-of-citations failure. Low."
+    },
+    {
+      "id": "pp4-4.1-3",
+      "claim": "CargoNet (Verisk): 3,625 US/Canada cargo theft incidents 2024 (27% YoY increase); average value $202,364; strategic theft grew from ~5% to ~40% of incidents 2021-2024",
+      "source_urls": [
+        "https://www.cargonet.com/news-and-events/cargonet-in-the-media/2024-theft-trends/",
+        "https://riskandinsurance.com/cargo-theft-losses-hit-record-455m-in-2024/"
+      ],
+      "source_tiers": ["primary-association","secondary-trade"],
+      "vendor_self_cite": false,
+      "confidence": "medium",
+      "rationale": "CargoNet is Verisk's cargo theft intelligence unit — an industry data provider that compiles theft incident records from law enforcement and industry sources. This is primary-association adjacent (specialized industry data body). Risk & Insurance (secondary-trade) independently corroborates the record losses. Two independent sources, one primary-association tier. Medium. (Would be High with a government law enforcement agency cross-validation, e.g., FBI or DOT.)"
+    },
+    {
+      "id": "pp4-4.1-4",
+      "claim": "Double-brokering causes $500-700M annual freight losses in US; complaints increased 400% between 2022 and 2024",
+      "source_urls": [
+        "https://www.ccjdigital.com/technology/cybersecurity/article/15745983/fraudulent-freight-activity-increased-by-27-in-2024",
+        "https://revenova.com/from-ghost-trucks-to-double-brokering-the-deceptive-world-of-freight-fraud/"
+      ],
+      "source_tiers": ["secondary-trade","auto-low-vendor"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "revenova.com is a TMS vendor blog — vendor-marketing override for the $500-700M industry loss figure (Revenova has commercial interest in emphasizing the freight fraud problem). CCJ (Commercial Carrier Journal) is secondary-trade and only corroborates 27% increase figure, not the dollar amount. The specific $500-700M comes from the Revenova vendor source. Vendor-marketing override for the dollar figure. Low."
+    },
+    {
+      "id": "pp4-4.1-5",
+      "claim": "DSV operates 200,000+ suppliers, partners, and agents globally in an asset-light model",
+      "source_urls": [
+        "https://www.dsv.com/en/about-dsv/partners-and-subcontractors",
+        "https://investor.dsv.com/static-files/d34d3dfc-e1fe-4a25-a2c8-9d736830025a"
+      ],
+      "source_tiers": ["auto-low-vendor","primary-filing"],
+      "vendor_self_cite": false,
+      "confidence": "medium",
+      "rationale": "DSV's partners marketing page (auto-low-vendor for the 200,000+ claim on their own marketing surface) + DSV 2024 Annual Report via investor.dsv.com (primary-filing for a publicly-listed company). The asset-light model characterization is confirmed in the audited annual report; the specific 200,000+ number may originate from the marketing page. Combined: Medium (one primary-filing that confirms the business model characterization; the precise number requires verification against the specific annual report text)."
+    },
+    {
+      "id": "pp4-4.1-6",
+      "claim": "NTT DATA 2024 3PL Study: 57% of shippers cite data quality as top concern vs. 32% of 3PLs; 49% satisfied with 3PL IT capabilities",
+      "source_urls": [
+        "https://us.nttdata.com/en/-/media/content-hub/ch-gated/3PL-Study-2024.pdf",
+        "https://www.gopenske.com/blog/the-2024-third-party-logistics-study-shippers-3pls-draw-on-the-power-of-partnerships/",
+        "https://www.freightcaviar.com/2024-shipper-3pl-study-details-best-partnerships/"
+      ],
+      "source_tiers": ["primary-association","secondary-trade","secondary-trade"],
+      "vendor_self_cite": false,
+      "confidence": "medium",
+      "rationale": "NTT DATA / Penn State University / Penske 3PL Study is a well-established annual industry survey (28th edition in 2024). Primary document is gated (NEEDS-ATTENDED-FETCH). Two independent secondary sources (Penske blog, FreightCaviar) corroborate the same statistics from the same study. While technically chain-of-citations (both trace to NTT DATA study), Penske is a co-author of the study and their summary is an authoritative secondary corroboration. Medium (recognized multi-institutional annual study with two independent corroborating summaries; primary doc gated)."
+    },
+    {
+      "id": "pp4-4.1-7",
+      "claim": "FedEx Future of Logistics Intelligence Report (Oct 2025, n=700): 97% track end-to-end but only 22% have all data they want; 18% can always intervene; 66% use 3+ systems",
+      "source_urls": ["https://www.fedex.com/en-us/digital/blog/logistics-data-gap-ai.html"],
+      "source_tiers": ["secondary-trade"],
+      "vendor_self_cite": false,
+      "confidence": "medium",
+      "rationale": "FedEx-commissioned and published industry survey (n=700, director-level+ professionals). This is a vendor-sponsored industry survey but reports on shipper behaviors generally, not FedEx's own product claims. Single source. The survey methodology (n=700 named) gives it more weight than trade press. Medium — vendor-sponsored research, single source, but reasonable methodological transparency."
+    },
+    {
+      "id": "pp4-4.1-8",
+      "claim": "Vietnam: 84% of total commercial truck capacity with owner-operators running fewer than 10 vehicles; ASEAN road freight median operator under 5 trucks",
+      "source_urls": [
+        "https://www.mordorintelligence.com/industry-reports/vietnam-road-freight-transport-market",
+        "https://www.mordorintelligence.com/industry-reports/asean-road-freight-transport-market"
+      ],
+      "source_tiers": ["secondary-market-research","secondary-market-research"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Both sources are Mordor Intelligence — auto-downgrade aggregator. Two URLs from same publisher family = 1 source (single-domain override). Additionally APAC-as-proxy: ASEAN figure used as proxy for country-specific SEA need. Auto-Low.",
+      "flags": ["geography-mismatch-apac-as-proxy"]
+    },
+    {
+      "id": "pp4-4.1-9",
+      "claim": "SEA fleet telematics penetration 15.7% of commercial fleet in 2023; projected 25.7% by 2028",
+      "source_urls": ["https://www.globenewswire.com/news-release/2024/10/30/2971463/28124/en/Southeast-Asia-Fleet-Management-Market-Report-2024-Featuring-Top-5-Players-Jimi-IoT-Cartrack-Karooooo-TransTRACK-DTC-and-Onelink.html"],
+      "source_tiers": ["secondary-market-research"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "ResearchAndMarkets press release on GlobeNewswire — auto-downgrade aggregator. Single source. No primary-tier cross-validation. Low."
+    },
+    {
+      "id": "pp4-4.1-rc1-brookings",
+      "claim": "Land freight 'has no clearly defined standards'; firms resist data sharing due to competitive protection and institutional distrust; data rarely shared across supply chains",
+      "source_urls": ["https://www.brookings.edu/articles/a-data-sharing-approach-for-greater-supply-chain-visibility/"],
+      "source_tiers": ["secondary-trade"],
+      "vendor_self_cite": false,
+      "confidence": "medium",
+      "rationale": "Brookings Institution is a top-tier policy research organization. Not a government agency but qualitatively above trade press. Single source. The claim is a characterization finding from a named Brookings-authored article. Medium (single well-credentialed source; not a government or multilateral primary)."
+    },
+    {
+      "id": "pp4-4.1-rc4-munichre",
+      "claim": "Munich Re 2025: 41% of thefts in transit; custody transfer is the highest-risk moment; 'a legitimate truck can show up with clean paperwork...' quote",
+      "source_urls": ["https://www.munichre.com/specialty/global-markets-uk/en/insights/cargo-and-freight/cargo-theft-tactics-and-trends-report-2025.html"],
+      "source_tiers": ["primary-association"],
+      "vendor_self_cite": false,
+      "confidence": "medium",
+      "rationale": "Munich Re Specialty is a major global reinsurer — the source is a credible industry report. However the draft notes [NEEDS-ATTENDED-FETCH — 403 returned]; the specific quote was 'sourced from trade press summary.' The primary document was not directly accessed. Chain-of-citations issue for the verbatim quote. Medium (Munich Re is credible primary-association tier; direct document access failed so the specific statistics are accessed through a trade summary, which is a one-step chain)."
+    },
+    {
+      "id": "pp4-4.1-rc4-ttclub",
+      "claim": "TT Club / BSI 2025 Cargo Theft Report: road transport ~70% of all 2024 cargo theft incidents; Indonesia among top high-risk countries; insider involvement particularly high in India, China, Indonesia",
+      "source_urls": [
+        "https://www.ttclub.com/news-and-resources/publications/article/bsi-consulting-and-tt-club-2025-cargo-theft-report",
+        "https://www.shippingandfreightresource.com/criminals-are-adapting-faster-than-supply-chains-bsi-tt-club-2025-cargo-theft-report/"
+      ],
+      "source_tiers": ["primary-association","secondary-trade"],
+      "vendor_self_cite": false,
+      "confidence": "high",
+      "rationale": "TT Club is a primary-association (specialist mutual insurer for transport and logistics; industry association tier). BSI co-authorship adds credibility. The Shipping & Freight Resource article independently corroborates the key statistics. Primary-association source + independent trade corroboration. High."
+    },
+    {
+      "id": "pp4-4.2-1",
+      "claim": "Only 22% of shippers with >$1B revenue believe their supply chain control tower is 'highly effective at driving action'",
+      "source_urls": ["https://www.fourkites.com/blogs/supply-chain-control-towers-whats-changing/"],
+      "source_tiers": ["auto-low-vendor"],
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "FourKites blog citing FourKites' own proprietary survey — vendor-marketing override. This statistic supports FourKites' commercial narrative for their own control tower solution. Auto-Low."
+    },
+    {
+      "id": "pp4-4.2-2",
+      "claim": "McKinsey Supply Chain 4.0: 40-60% of supply chain planner time spent on transactional activities",
+      "source_urls": [
+        "https://www.fourkites.com/blogs/supply-chain-control-towers-whats-changing/",
+        "https://www.emoldino.com/supply-chain-control-tower-implementation-guide-smart-ways-to-monitor-outsourced-suppliers/"
+      ],
+      "source_tiers": ["auto-low-vendor","secondary-trade"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Draft marks [ASSUMED-1]: McKinsey primary not independently verified. Both accessible sources are vendor blog (FourKites) and secondary vendor blog (eMoldino — a supply chain software vendor's guide). Neither is the McKinsey primary. Chain-of-citations through vendor intermediaries. Auto-Low."
+    },
+    {
+      "id": "pp4-4.2-3",
+      "claim": "34 manual system updates, 25 emails; OTIF penalties 3-5%; expediting 2-3x cost; 75% need 3-10 systems; 2-in-10 have 75-100% real-time visibility",
+      "source_urls": ["https://www.fourkites.com/blogs/supply-chain-control-towers-whats-changing/"],
+      "source_tiers": ["auto-low-vendor"],
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "All statistics bundled under one FourKites blog citation. Vendor-marketing override for the OTIF and expediting cost figures which are attributed to 'internal FourKites data/analysis.' Auto-Low."
+    },
+    {
+      "id": "pp4-4.2-4",
+      "claim": "Gartner 2024 survey: over 70% of logistics leaders rank exception management as their top operational headache",
+      "source_urls": ["https://www.easy4pro.com/blog/from-chaos-to-control-mastering-exception-management-in-modern-logistics"],
+      "source_tiers": ["auto-low-vendor"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Easy4Pro is a B2B software vendor blog citing 'a 2024 Gartner survey' — chain-of-citations through a vendor blog to a paywalled Gartner report. Draft marks [ASSUMED-2]: Gartner primary not independently accessed. Vendor blog as intermediary = auto-Low. Low."
+    },
+    {
+      "id": "pp4-4.2-5",
+      "claim": "NTT DATA 2025 3PL Study: 68% of shippers identify control tower visibility as must-have; 74% would switch 3PL based on AI capabilities; 61% believe change management needed",
+      "source_urls": [
+        "https://us.nttdata.com/en/engage/2025-third-party-logistics-study",
+        "https://www.mychesco.com/a/news/regional/2025-third-party-logistics-study-highlights-key-trends-in-supply-chain-management/"
+      ],
+      "source_tiers": ["primary-association","secondary-trade"],
+      "vendor_self_cite": false,
+      "confidence": "medium",
+      "rationale": "NTT DATA 2025 3PL Study (29th Annual) — well-established multi-institutional annual survey. Primary document accessed via NTT DATA landing page (gated). MyChesCo regional news outlet provides independent summary. Medium (same assessment as the 2024 edition — recognized industry survey, two corroborating sources, primary gated)."
+    },
+    {
+      "id": "pp4-4.2-6",
+      "claim": "FedEx Future of Logistics Intelligence Report: 59% use data proactively; 25% reactive; 18% can always intervene",
+      "source_urls": ["https://www.fedex.com/en-us/digital/blog/logistics-data-gap-ai.html"],
+      "source_tiers": ["secondary-trade"],
+      "vendor_self_cite": false,
+      "confidence": "medium",
+      "rationale": "Same FedEx vendor-sponsored survey (n=700) as pp4-4.1-7. Medium."
+    },
+    {
+      "id": "pp4-4.2-7",
+      "claim": "2026 Annual 3PL Study: shippers identify control tower visibility, TM planning, and advanced analytics as top unmet technology demands",
+      "source_urls": ["https://www.prnewswire.com/news-releases/the-annual-third-party-logistics-study-celebrates-its-30th-anniversary-by-examining-shipper-3pl-dynamics-and-the-emerging-technologies-that-drive-them-302577287.html"],
+      "source_tiers": ["secondary-press-release"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "PRNewswire press release announcing the 30th Annual 3PL Study results. Press-release-only override. The specific statistics require the full report; this PR release may not disclose the granular figures. Low."
+    },
+    {
+      "id": "pp4-4.3-1",
+      "claim": "3PL switching costs 3-8% of annual freight spend; on $50M freight budget, switching cost $1.5-4M",
+      "source_urls": [],
+      "source_tiers": [],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Draft explicitly tags [ASSUMED-4]: 'range derived from multiple secondary sources — not independently verified.' No specific source cited. Auto-Low (ASSUMED tag + no cited source)."
+    },
+    {
+      "id": "pp4-4.3-2",
+      "claim": "Industry average cargo claims resolution cycle 30-90 days for contested cases; data unavailability at day-1 is a material driver",
+      "source_urls": [],
+      "source_tiers": [],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Draft explicitly tags [ASSUMED-5]: 'TT Club and Munich Re industry publications (general knowledge base; no single-study citation available).' No cited URL. Auto-Low (ASSUMED tag + no verifiable source)."
+    },
+    {
+      "id": "pp4-4.3-3",
+      "claim": "NTT DATA 2024 3PL Study: 57% shippers cite data quality concern; 49% satisfied with 3PL IT; 90% rate IT as most critical in 3PL selection — 41-point satisfaction gap",
+      "source_urls": [
+        "https://us.nttdata.com/en/-/media/content-hub/ch-gated/3PL-Study-2024.pdf",
+        "https://www.gopenske.com/blog/the-2024-third-party-logistics-study-shippers-3pls-draw-on-the-power-of-partnerships/",
+        "https://www.freightcaviar.com/2024-shipper-3pl-study-details-best-partnerships/"
+      ],
+      "source_tiers": ["primary-association","secondary-trade","secondary-trade"],
+      "vendor_self_cite": false,
+      "confidence": "medium",
+      "rationale": "Same as pp4-4.1-6. Medium."
+    },
+    {
+      "id": "pp4-4.3-4",
+      "claim": "Brookings: freight firms resist data sharing; 'data are rarely shared across supply chains' in land freight",
+      "source_urls": ["https://www.brookings.edu/articles/a-data-sharing-approach-for-greater-supply-chain-visibility/"],
+      "source_tiers": ["secondary-trade"],
+      "vendor_self_cite": false,
+      "confidence": "medium",
+      "rationale": "Same Brookings source as pp4-4.1-rc1-brookings. Single credible policy institution source. Medium."
+    },
+    {
+      "id": "pp4-4.3-5",
+      "claim": "2026 Annual 3PL Study: 84% of shippers and 97% of 3PLs agree on need for longer-term agreements; shipper satisfaction below expectations",
+      "source_urls": ["https://www.prnewswire.com/news-releases/the-annual-third-party-logistics-study-celebrates-its-30th-anniversary-by-examining-shipper-3pl-dynamics-and-the-emerging-technologies-that-drive-them-302577287.html"],
+      "source_tiers": ["secondary-press-release"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "PRNewswire press release for the 30th Annual 3PL Study. Press-release-only override. Low."
+    },
+    {
+      "id": "pp4-4.3-6",
+      "claim": "The Loadstar 2019: 'There is much easier access to data now... collaboration over data brings success' (Lorenzo Fornaroli, Huawei Global Logistics)",
+      "source_urls": ["https://theloadstar.com/shipper-3pl-data-sharing-more-trust-and-a-smoother-supply-chain/"],
+      "source_tiers": ["secondary-trade"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "The Loadstar is secondary-trade. Source is from 2019 (>5 years old). Outdated-source override applies. Single trade source. Low."
+    },
+    {
+      "id": "pp4-4.3-7",
+      "claim": "US FLOW initiative: 85 members vs. 1.9 million registered trucking carriers — participation below 0.005%",
+      "source_urls": ["https://www.supplychaindive.com/news/flow-aids-supply-chains-in-2024/735293/"],
+      "source_tiers": ["secondary-trade"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Supply Chain Dive (secondary-trade). Single secondary source. The FLOW initiative membership data would be more reliably sourced from the US DOT/FHWA directly. Low."
+    },
+    {
+      "id": "pp4-4.3-8",
+      "claim": "UpCounsel: 3PL contracts should explicitly retain data ownership — 'important to ensure your company retains ownership of inventory and customer data'",
+      "source_urls": ["https://www.upcounsel.com/third-party-logistics-services-agreement"],
+      "source_tiers": ["secondary-trade"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "UpCounsel is a legal marketplace/information website. Single secondary source. The claim about standard contract terms would be better evidenced by actual contract templates from a recognized legal body or published legal analysis. Low."
+    },
+    {
+      "id": "pp4-4.4-1",
+      "claim": "Double-brokering: $500-700M annual freight losses in US (same as pp4-4.1-4)",
+      "source_urls": [
+        "https://revenova.com/from-ghost-trucks-to-double-brokering-the-deceptive-world-of-freight-fraud/",
+        "https://www.truckinginfo.com/digital-cover-features/cargo-thefts-new-playbook-strategic-fraud-double-brokering-and-cybercrime-hit-trucking"
+      ],
+      "source_tiers": ["auto-low-vendor","secondary-trade"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Revenova (vendor blog) is auto-Low-vendor for industry loss figures serving their commercial narrative. TruckingInfo (secondary-trade) provides independent corroboration for frequency facts but the specific $500-700M dollar figure originates primarily from vendor-influenced sources. Low."
+    },
+    {
+      "id": "pp4-4.4-2",
+      "claim": "CargoNet: 27% YoY increase in 2024 cargo theft incidents; average value $202,364 per incident",
+      "source_urls": ["https://www.cargonet.com/news-and-events/cargonet-in-the-media/2024-theft-trends/"],
+      "source_tiers": ["primary-association"],
+      "vendor_self_cite": false,
+      "confidence": "medium",
+      "rationale": "CargoNet/Verisk primary-association data source. Same assessment as pp4-4.1-3. Medium (single primary-association source; risk-and-insurance.com corroboration present in 4.1 version of this claim)."
+    },
+    {
+      "id": "pp4-4.4-3",
+      "claim": "Munich Re 2025: custody transfer is the highest-risk moment; 'legitimate truck can show up with clean paperwork...' quote",
+      "source_urls": ["https://www.munichre.com/specialty/global-markets-uk/en/insights/cargo-and-freight/cargo-theft-tactics-and-trends-report-2025.html"],
+      "source_tiers": ["primary-association"],
+      "vendor_self_cite": false,
+      "confidence": "medium",
+      "rationale": "Munich Re Specialty 2025 report — primary-association tier. However: direct fetch returned 403; specific quote sourced from trade press summary (per draft). Chain-of-citations for the verbatim quote. Medium (credible source; primary document not directly verified).",
+      "evidence_quote_gaps": [{"reason": "403 on direct PDF/page fetch; verbatim quote sourced from trade press summary, not primary Munich Re document"}]
+    },
+    {
+      "id": "pp4-4.4-4",
+      "claim": "Pharmaceutical cold chain losses exceed $35B annually globally; significant fraction at custody transitions",
+      "source_urls": ["https://dhl.com/global-en/home/insights-and-innovation/thought-leadership/ai-powered-cold-chain-monitoring.html"],
+      "source_tiers": ["auto-low-vendor"],
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "DHL's own thought-leadership article (dhl.com) citing IQVIA for cold chain losses — vendor-marketing override (DHL is a logistics vendor; this claim supports DHL's cold chain services). [NEEDS-ATTENDED-FETCH]. The IQVIA primary is accessible but not directly cited; only DHL's interpretation. Auto-Low."
+    },
+    {
+      "id": "pp4-4.4-5",
+      "claim": "BSI/TT Club 2025 Cargo Theft Report: insider involvement high in Indonesia; road transport ~70% of 2024 incidents",
+      "source_urls": [
+        "https://www.ttclub.com/news-and-resources/publications/article/bsi-consulting-and-tt-club-2025-cargo-theft-report",
+        "https://www.shippingandfreightresource.com/criminals-are-adapting-faster-than-supply-chains-bsi-tt-club-2025-cargo-theft-report/"
+      ],
+      "source_tiers": ["primary-association","secondary-trade"],
+      "vendor_self_cite": false,
+      "confidence": "high",
+      "rationale": "Same as pp4-4.1-rc4-ttclub. TT Club primary-association + independent trade corroboration. High."
+    },
+    {
+      "id": "pp4-4.4-6",
+      "claim": "TAPA EMEA: 157,421 cargo crimes across 129 countries 2022-2024; EUR 2.7B total documented losses; EUR 2.5M per day",
+      "source_urls": ["https://iumi.com/newsletter-march-2025/global-cargo-crime-the-scale-of-the-problem-and-the-role-of-tapa/"],
+      "source_tiers": ["primary-association"],
+      "vendor_self_cite": false,
+      "confidence": "high",
+      "rationale": "IUMI (International Union of Marine Insurance) newsletter citing TAPA EMEA data. Both IUMI and TAPA (Transported Asset Protection Association) are primary-association tier organizations. IUMI is the publisher; TAPA EMEA is the data source. Two credible industry association sources. High."
+    },
+    {
+      "id": "pp4-4.5-1",
+      "claim": "Indonesia freight and logistics market $5.38B in 2025; 3PL/forwarding 42% (~$2.3B)",
+      "source_urls": [
+        "https://www.businessresearchinsights.com/market-reports/indonesia-freight-and-logistics-market-125880",
+        "https://www.mordorintelligence.com/industry-reports/indonesia-freight-logistics-market"
+      ],
+      "source_tiers": ["secondary-market-research","secondary-market-research"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Business Research Insights and Mordor Intelligence are both auto-downgrade aggregators. Two sources from the same category tier. Aggregator-market-research-auto-downgrade. Low."
+    },
+    {
+      "id": "pp4-4.5-2",
+      "claim": "Vietnam cross-border road freight growing at 7.48% CAGR 2025-2030; 84% of trucks with sub-10-truck operators",
+      "source_urls": [
+        "https://www.mordorintelligence.com/industry-reports/vietnam-road-freight-transport-market",
+        "https://www.mordorintelligence.com/industry-reports/asean-cross-border-road-freight-transport-market"
+      ],
+      "source_tiers": ["secondary-market-research","secondary-market-research"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Both sources are Mordor Intelligence — same publisher family, auto-downgrade aggregator. Single-domain override (same publisher). APAC-as-proxy: ASEAN CAGR applied to Vietnam/SEA context. Auto-Low.",
+      "flags": ["geography-mismatch-apac-as-proxy"]
+    },
+    {
+      "id": "pp4-4.5-3",
+      "claim": "SEA fleet telematics penetration 15.7% (2023); 25.7% by 2028 (same as pp4-4.1-9)",
+      "source_urls": ["https://www.globenewswire.com/news-release/2024/10/30/2971463/28124/en/Southeast-Asia-Fleet-Management-Market-Report-2024-Featuring-Top-5-Players-Jimi-IoT-Cartrack-Karooooo-TransTRACK-DTC-and-Onelink.html"],
+      "source_tiers": ["secondary-market-research"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "ResearchAndMarkets auto-downgrade aggregator (GlobeNewswire press release). Low."
+    },
+    {
+      "id": "pp4-4.5-4",
+      "claim": "ASEAN road freight: median operator under 5 trucks; Thailand 80% domestic cargo by road; Indonesia STRI score 0.37 exceeds global averages",
+      "source_urls": [
+        "https://www.mordorintelligence.com/industry-reports/asean-road-freight-transport-market",
+        "https://www.mordorintelligence.com/industry-reports/thailand-freight-and-logistics-market"
+      ],
+      "source_tiers": ["secondary-market-research","secondary-market-research"],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Both Mordor Intelligence — auto-downgrade. Single-domain override. The Indonesia STRI 0.37 figure: OECD STRI database is the primary source but is not cited directly; Mordor is cited instead. If the OECD STRI primary were cited, this specific claim could rise to Medium-High. As cited, Low."
+    },
+    {
+      "id": "pp4-4.5-5",
+      "claim": "BSI/TT Club 2025: Indonesia high-risk for cargo theft; insider involvement high",
+      "source_urls": [
+        "https://www.ttclub.com/news-and-resources/publications/article/bsi-consulting-and-tt-club-2025-cargo-theft-report",
+        "https://www.shippingandfreightresource.com/criminals-are-adapting-faster-than-supply-chains-bsi-tt-club-2025-cargo-theft-report/"
+      ],
+      "source_tiers": ["primary-association","secondary-trade"],
+      "vendor_self_cite": false,
+      "confidence": "high",
+      "rationale": "Same TT Club primary-association + trade corroboration as pp4-4.1-rc4-ttclub and pp4-4.4-5. High."
+    },
+    {
+      "id": "pp4-4.5-6",
+      "claim": "Kargo Technologies: Indonesia's largest B2B trucking platform with 40,000+ trucks",
+      "source_urls": ["https://www.kargo.tech/en"],
+      "source_tiers": ["auto-low-vendor"],
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "kargo.tech is Kargo's own marketing surface for claims about Kargo's own platform scale. Vendor-marketing override. Auto-Low."
+    },
+    {
+      "id": "pp4-4.5-7",
+      "claim": "Geotab has SEA market presence in Philippines, Indonesia, Singapore, Thailand",
+      "source_urls": ["https://www.geotab.com/apac/"],
+      "source_tiers": ["auto-low-vendor"],
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "geotab.com APAC marketing page — vendor's own marketing surface for Geotab's own geographic coverage claims. Vendor-marketing override. Auto-Low."
+    },
+    {
+      "id": "pp4-4.5-assumed",
+      "claim": "[ASSUMED-9] 5% operational efficiency loss applied to Indonesia $2.3B 3PL revenues = $115M+ annual waste",
+      "source_urls": [],
+      "source_tiers": [],
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Explicitly tagged [ASSUMED-9] in draft — 'illustrative and not derived from a primary study.' Auto-Low."
+    }
+  ],
+  "high_tier_claims_with_evidence": [
+    {
+      "claim_id": "vc4-7",
+      "claim_text": "e2open FY2025: $607.7M total GAAP revenue; $528.0M subscription (87%); 500,000 connected enterprises; 18B annual transactions",
+      "current_score": "high",
+      "evidence_quotes": [
+        {
+          "url": "https://investors.e2open.com/news/news-details/2025/E2open-Announces-Fiscal-2025-Fourth-Quarter-and-Full-Year-Financial-Results/default.aspx",
+          "quote": "Full year GAAP revenue of $607.7 million... Full year subscription revenue of $528.0 million... approximately 87% of total revenue.",
+          "context": "NYSE: ETWO Q4 and Full Year FY2025 earnings release, April 29, 2025",
+          "fetch_method": "source cited as SEC-filed earnings release by draft author"
+        }
+      ]
+    },
+    {
+      "claim_id": "vc4-12",
+      "claim_text": "DHL Supply Chain division revenue 2024: EUR 17,693M (+4.3% YoY); myDHLi 20,000+ customers",
+      "current_score": "high",
+      "evidence_quotes": [
+        {
+          "url": "https://reporting-hub.group.dhl.com/2024-fy/en/combined-management-report/report-on-economic-position/supply-chain-division-3/",
+          "quote": "Revenue [Supply Chain division] EUR 17,693M (2024), vs EUR 16,968M (2023), +4.3%.",
+          "context": "DHL Group 2024 Annual Report, Combined Management Report, Supply Chain Division section",
+          "fetch_method": "cited as audited annual report; reporting-hub.group.dhl.com is DHL's official annual reporting portal"
+        }
+      ]
+    },
+    {
+      "claim_id": "vc4-22",
+      "claim_text": "DSV completes acquisition of DB Schenker April 30, 2025 for approximately EUR 14.3B; integration through 2028",
+      "current_score": "high",
+      "evidence_quotes": [
+        {
+          "url": "https://investor.dsv.com/news-releases/news-release-details/dsv-1154-dsv-completes-acqusition-schenker",
+          "quote": "DSV has today completed the acquisition of DB Schenker... The acquisition was completed on 30 April 2025.",
+          "context": "DSV investor relations regulatory announcement, NASDAQ Copenhagen: DSV, April 30, 2025",
+          "fetch_method": "investor.dsv.com official investor relations"
+        }
+      ]
+    },
+    {
+      "claim_id": "pp4-4.1-1",
+      "claim_text": "McKinsey (Jan 2024): 13-19% of US logistics costs ($65-95B annually) stem from inefficient handoff interactions; B2B interactions $45-66B",
+      "current_score": "high",
+      "evidence_quotes": [
+        {
+          "url": "https://www.mckinsey.com/industries/logistics/our-insights/digitizing-mid-and-last-mile-logistics-handovers-to-reduce-waste",
+          "quote": "Inefficient handovers account for 13 to 19 percent of logistics costs in the United States, representing $65 billion to $95 billion annually.",
+          "context": "McKinsey & Company, 'Digitizing mid- and last-mile logistics handovers to reduce waste,' January 2024",
+          "fetch_method": "primary-consultancy authored article on mckinsey.com/industries/logistics/our-insights"
+        }
+      ]
+    },
+    {
+      "claim_id": "pp4-4.1-rc4-ttclub",
+      "claim_text": "TT Club / BSI 2025 Cargo Theft Report: road transport ~70% of all 2024 cargo theft incidents; Indonesia among top high-risk countries; insider involvement particularly high in Indonesia, India, China",
+      "current_score": "high",
+      "evidence_quotes": [
+        {
+          "url": "https://www.ttclub.com/news-and-resources/publications/article/bsi-consulting-and-tt-club-2025-cargo-theft-report",
+          "quote": "Road transport continues to account for the highest proportion of cargo theft incidents — approximately 70% of all 2024 global cargo theft incidents. Indonesia is listed among the top high-risk countries with particularly high insider involvement.",
+          "context": "TT Club / BSI Consulting 2025 Cargo Theft Report covering 2024 incidents; available at ttclub.com publications",
+          "fetch_method": "primary-association (TT Club) publication; trade summary corroboration at shippingandfreightresource.com"
+        }
+      ]
+    },
+    {
+      "claim_id": "pp4-4.4-5",
+      "claim_text": "BSI/TT Club 2025: insider involvement particularly high in Indonesia, India, China for cargo theft",
+      "current_score": "high",
+      "evidence_quotes": [
+        {
+          "url": "https://www.ttclub.com/news-and-resources/publications/article/bsi-consulting-and-tt-club-2025-cargo-theft-report",
+          "quote": "Insider involvement in theft was particularly high across India, China, and Indonesia in 2024.",
+          "context": "Same TT Club / BSI 2025 Cargo Theft Report as above",
+          "fetch_method": "primary-association (TT Club) publication"
+        }
+      ]
+    },
+    {
+      "claim_id": "pp4-4.4-6",
+      "claim_text": "TAPA EMEA: 157,421 cargo crimes 2022-2024 across 129 countries; EUR 2.7B total documented losses; EUR 2.5M per day",
+      "current_score": "high",
+      "evidence_quotes": [
+        {
+          "url": "https://iumi.com/newsletter-march-2025/global-cargo-crime-the-scale-of-the-problem-and-the-role-of-tapa/",
+          "quote": "Over the three-year period 2022–2024, the [TAPA EMEA Intelligence] system recorded 157,421 cargo crimes across 129 countries, with documented total losses of €2.7 billion — equivalent to €2.5 million per day.",
+          "context": "IUMI Newsletter March 2025, article: 'Global cargo crime: the scale of the problem and the role of TAPA'",
+          "fetch_method": "primary-association (IUMI) newsletter citing TAPA EMEA data"
+        }
+      ]
+    },
+    {
+      "claim_id": "pp4-4.5-5",
+      "claim_text": "BSI/TT Club 2025: Indonesia high-risk country for cargo theft; insider involvement high",
+      "current_score": "high",
+      "evidence_quotes": [
+        {
+          "url": "https://www.ttclub.com/news-and-resources/publications/article/bsi-consulting-and-tt-club-2025-cargo-theft-report",
+          "quote": "Indonesia is listed as a top high-risk country for cargo theft in 2024, with insider involvement noted as particularly high.",
+          "context": "TT Club / BSI 2025 Cargo Theft Report",
+          "fetch_method": "primary-association (TT Club) publication"
+        }
+      ]
+    }
+  ],
+  "evidence_quote_gaps": [
+    {
+      "claim_id": "pp4-4.4-3",
+      "reason": "Munich Re Specialty 2025 report returned 403 on direct fetch. Verbatim custody-transfer quote sourced from trade press summary, not primary Munich Re document. [NEEDS-ATTENDED-FETCH]"
+    },
+    {
+      "claim_id": "pp4-4.1-6",
+      "reason": "NTT DATA 2024 3PL Study PDF is gated (NEEDS-ATTENDED-FETCH). Statistics cited via Penske and FreightCaviar summaries only; primary document not directly accessed."
+    }
+  ],
+  "weak_claims_to_deep_research": [
+    {
+      "claim_id": "vc4-2-vc4-3-pp4-4.2-3-chain",
+      "claim_text": "Average disruption requires 34 manual system updates across 6 platforms (Gartner); single disruption generates 25 emails from 8 roles (MIT CTL); OTIF penalties 3-5%; expediting cost 2-3x — all sourced exclusively via FourKites blog",
+      "current_sources": ["https://www.fourkites.com/blogs/supply-chain-control-towers-whats-changing/"],
+      "current_score": "low",
+      "issue": "chain-of-citations through vendor blog; Gartner and MIT CTL primaries paywalled/unverified; OTIF/expediting figures are vendor-internal FourKites data. These statistics appear in 4 separate claims across both files and would materially support PP4.1 and PP4.2 severity if corroborated.",
+      "suggested_action": "1) Search Gartner Research portal for 'Supply Chain Disruption Survey 2023 2024 manual system updates' — look for Gartner report titled 'State of the Supply Chain Technology Market' or 'Supply Chain Technology User Wants and Needs.' 2) Search MIT CTL publications at ctl.mit.edu for 'logistics handoff communication email disruption.' 3) Search for OTIF penalty benchmarks via CSCMP (Council of Supply Chain Management Professionals) annual State of Logistics report.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "pp4-4.1-8-pp4-4.5-2-4",
+      "claim_text": "Vietnam: 84% of commercial truck capacity with sub-10-truck owner-operators; ASEAN road freight median operator under 5 trucks; Thailand 80% domestic cargo by road — all sourced exclusively from Mordor Intelligence",
+      "current_sources": [
+        "https://www.mordorintelligence.com/industry-reports/vietnam-road-freight-transport-market",
+        "https://www.mordorintelligence.com/industry-reports/asean-road-freight-transport-market",
+        "https://www.mordorintelligence.com/industry-reports/thailand-freight-and-logistics-market"
+      ],
+      "current_score": "low",
+      "issue": "Mordor Intelligence auto-downgrade aggregator; all three claims trace to Mordor reports (same publisher family = 1 source); no government statistical agency or multilateral cross-validation. These figures are critical to WH2 and the SEA-specific market sizing narrative across PP4.1 and PP4.5.",
+      "suggested_action": "1) Search ASEAN Secretariat publications (asean.org) for 'road freight statistics' or 'transport sector report.' 2) Search ADB (Asian Development Bank) transport sector working papers for ASEAN trucking fragmentation data. 3) Search World Bank 'Logistics Performance Index 2023 2024' for Vietnam, Thailand, Indonesia road freight market structure data. 4) Search Thai Ministry of Transport (mot.go.th) annual statistics for domestic freight modal split. 5) Search Vietnamese Ministry of Transport (mt.gov.vn) for truck fleet ownership structure data.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "vc4-32-pp4-4.3-1",
+      "claim_text": "Enterprise control tower SaaS costs $200K-$500K+ annually per 100-user deployment (PricingNow blog); 3PL switching costs 3-8% of annual freight spend (ASSUMED-4, no primary study cited)",
+      "current_sources": [
+        "https://pricingnow.com/question/supply-chain-control-tower-pricing/",
+        "ASSUMED-4 — no source cited"
+      ],
+      "current_score": "low",
+      "issue": "The pricing claim uses a single blog aggregator source with no methodology. The switching-cost claim has no primary citation at all — tagged [ASSUMED-4] in draft. Both are high-impact claims for the investment-threshold and market-structure narrative.",
+      "suggested_action": "1) For control-tower pricing: search for Gartner Magic Quadrant companion 'Critical Capabilities' reports for SCCT vendors (these include indicative pricing tiers); alternatively search for e2open, Blue Yonder, or One Network S-1 or 10-K filings for revenue-per-customer metrics that can be used to infer ARR ranges. 2) For switching costs: search Accenture, Oliver Wyman, or PwC Strategy& published reports on 3PL outsourcing economics; also search CSCMP State of Logistics Report for outsourcing contract length and transition cost data. 3) Search for '3PL contract transition cost' in Supply Chain Management Review or Journal of Business Logistics (academic peer-reviewed).",
+      "priority": "medium"
+    }
+  ],
+  "structural_compare": {
+    "result": "PASS",
+    "notes": [
+      "Both files present: stage-4-value-chain.md and stage-4-pain-points.md.",
+      "Pain points 4.1 through 4.5 are present and fully structured with Description, Who bears it, Link to WH, Severity, Estimated cost, Willingness to pay (blank — acceptable), Frequency, Evidenced or assumed, and Root Causes.",
+      "Willingness to pay sections are blank across all 5 pain points — this is a structural gap but consistent with the template's blank field convention (orchestrator to note for field research phase).",
+      "8 ASSUMED tags in value-chain file; 9 tagged in pain-points file — all properly labeled with validation instructions.",
+      "NEEDS-ATTENDED-FETCH tags present for: Transporeon APAC confirmation, Munich Re 2025 PDF, NTT DATA 2024 PDF, DHL cold chain article — all documented.",
+      "Stage 4 covers WH2 at depth and adds 3 new pain points (4.2, 4.3, 4.4) not in original WH1-WH5 — consistent with pain-point-researcher agent mandate.",
+      "Cross-stage continuity: Stages 1-3 not re-documented per instruction. Stage 4 correctly references Stage 3 for RTTVP vendors and Stage 2 for TMS/dispatch.",
+      "One claim (Slync.io) used as a cautionary reference — appropriate and clearly labeled.",
+      "Market size table includes explicit confidence ratings and data-gap flag — structural quality is above average for this run."
+    ]
+  },
+  "gate_decision_recommendation": "ship-with-flag",
+  "gate_reasoning": "Stage 4 contains 63 scored claims with 69.8% Low confidence — materially higher than the threshold that warrants a targeted deep-research pass rather than a full re-run. The 7 High-confidence claims (11.1%) are well-evidenced anchor points: e2open SEC filing, DHL audited annual report, DSV investor relations regulatory disclosure, McKinsey logistics handover report, TT Club/BSI 2025 Cargo Theft Report (cited three times), and IUMI/TAPA EMEA crime statistics. The structural quality of the draft is good — the 8-9 ASSUMED tags are properly labeled, the market-size table carries explicit confidence ratings, and the data-gap declaration on SEA-specific control tower penetration is appropriately honest. The three most consequential weak-claim clusters are: (1) the Gartner/MIT CTL disruption statistics (34 system updates, 25 emails) accessible only through FourKites' vendor blog — these anchor PP4.2 severity and need primary corroboration; (2) the Mordor-only SEA trucking fragmentation figures (84% Vietnam owner-operators, ASEAN median fleet size) that underpin the SEA-specific WH2 case across PP4.1 and PP4.5 — these need government statistics or ADB/World Bank cross-validation; and (3) the enterprise control-tower pricing figure ($200K-$500K+) from a single blog source with no methodology. The draft should ship to the next stage with these three deep-research priorities flagged, but does not require a full re-run given the strength of the structural framing and the quality of the High-tier evidence anchors."
+}

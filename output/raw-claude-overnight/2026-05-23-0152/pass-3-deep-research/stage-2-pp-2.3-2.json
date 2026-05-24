@@ -1,0 +1,107 @@
+{
+  "claim_id": "pp-2.3-2",
+  "claim_text": "Indonesia logistics cost = 24% of GDP",
+  "original_source_weakness": "East Ventures VC investor blog post (Tier 10) — commercial document for portfolio company Waresix",
+  "deep_research_date": "2026-05-23",
+  "outcome": "found-stronger-evidence",
+  "provenance_resolution": {
+    "summary": "The 24% figure has a verifiable primary lineage: it traces to the World Bank 'State of Logistics Indonesia 2013' report (joint with Bandung Institute of Technology / Indonesian Logistics Association / Panteia), which headlined 'logistics costs across Indonesia account for some 24% of GDP' based on 2011 data (24.64%). The figure has also been independently cited as 23-24% in academic literature tracing to Wirabrata & Silalahi (2012). The current (2022-2023) Bappenas/BPS figure is 23.27% (domestic 14.29% + export 8.98%). Both the 24% (2011/2013 historical) and 23% (2022/2023 current) are supported by primary government and multilateral sources — they reflect the same structural inefficiency measured at different points in time and with slightly different methodologies.",
+    "24pct_source": "World Bank 'State of Logistics Indonesia 2013' press release (Sept 6 2013) — stated as headline '24% of GDP'; underlying data in the PDF shows 24.64% for 2011. This is the number the East Ventures post was almost certainly citing secondhand.",
+    "23pct_source": "Bappenas/PPPN 2022-2023 data via ANTARA state news agency (Sept 14 2023): domestic 14.29% + export 8.98% = 23.27%. Confirmed independently by Kemenko Perekonomian + BPS (ANTARA Oct 10 2023).",
+    "23_5pct_source": "Indonesian Ministry of Finance / Directorate General of Customs (DJBC) citing 23.5% as of 2021 (Bisnis.com Oct 7 2020; confirmed by Kemenkeu publication). This is the likely provenance of the '23.5%' figure cited in multiple 2021-2022 secondary sources.",
+    "figure_in_stage_1_dr": "Stage 1 DR (pp-1.3-1) found these same primary sources and confirmed 23% (Bappenas 2023) as the best current figure. The 24% in Stage 2 is a historical figure from the World Bank 2013 report that remains widely cited in secondary sources including the East Ventures blog."
+  },
+  "new_sources": [
+    {
+      "url": "https://www.worldbank.org/en/news/press-release/2013/09/06/high-logistics-costs-impede-higher-economic-growth-for-indonesia",
+      "category": "primary-multilateral",
+      "publisher": "World Bank (joint with Bandung Institute of Technology Research Center for Logistics and Supply Chains, Indonesian Logistics Association ALI, STC Group, Panteia Research Institute Netherlands)",
+      "publication_date": "2013-09-06",
+      "supports_claim": true,
+      "key_data": "Indonesia logistics costs = 'some 24% of GDP' per World Bank press release headline; underlying PDF data: 24.64% for 2011, down from 27.61% in 2004. Report explicitly states Indonesia's logistics costs are 'higher than in neighboring countries.'",
+      "via_pdf_markitdown": false,
+      "notes": "This is the primary source for the '24% of GDP' figure. The World Bank 2013 press release is the headline citation; the full PDF (also already fetched via markitdown in Stage 1 DR) contains the 24.64% figure for 2011. The East Ventures blog was citing this figure secondhand."
+    },
+    {
+      "url": "https://en.antaranews.com/news/293688/bappenas-aims-to-lower-indonesias-logistics-costs-to-9-of-gdp",
+      "category": "primary-gov",
+      "publisher": "ANTARA News (Indonesian state news agency) reporting Bappenas head Suharso Monoarfa",
+      "publication_date": "2023-09-14",
+      "supports_claim": true,
+      "key_data": "Bappenas: domestic logistics costs 14.29% of GDP + export logistics 8.98% = combined 23.27% of GDP. This is the most current (2022/2023) primary government figure, slightly below the 2013 World Bank '24%' headline.",
+      "via_pdf_markitdown": false,
+      "notes": "Same source confirmed in Stage 1 DR. Cross-validates that the 24% (2013) and 23.27% (2022) figures reflect the same structural phenomenon measured across different years."
+    },
+    {
+      "url": "https://www.antaranews.com/berita/3765792/pemerintah-sebut-biaya-logistik-nasional-capai-1429-persen-dari-pdb",
+      "category": "primary-gov",
+      "publisher": "ANTARA News reporting Kemenko Perekonomian Secretary Susiwijono Moegiarso",
+      "publication_date": "2023-10-10",
+      "supports_claim": true,
+      "key_data": "Government confirms: national logistics costs = 14.29% of GDP (domestic only) based on BPS data. Combined with export logistics = 23.27% total.",
+      "via_pdf_markitdown": false,
+      "notes": "Same source confirmed in Stage 1 DR. BPS (Statistics Indonesia) is cited as the underlying data source."
+    },
+    {
+      "url": "https://research.e-siber.org/SJTL/article/download/494/268/2281",
+      "category": "primary-academic",
+      "publisher": "Syifa & Tohir, Trisakti Institute of Transportation and Logistics, Jakarta. Published in SJTL Vol. 3 No. 2, July-September 2025.",
+      "publication_date": "2025-07-01",
+      "supports_claim": true,
+      "key_data": "Peer-reviewed paper states: 'Indonesia's logistics costs are still very high... This figure reaches 23-24% of GDP.' The paper explicitly traces the 24% figure to Wirabrata & Silalahi (2012), a separate academic source predating the World Bank 2013 report. Also confirms current Bappenas PPPN data: 14.1% domestic + 8.98% export = 23.08% combined (2022). Explains methodological divergence between the 14% (domestic only) and 23-24% (combined) figures.",
+      "via_pdf_markitdown": true,
+      "notes": "This is the most authoritative cross-validation source found. The paper explicitly resolves the apparent discrepancy between 14% and 24% figures: they measure different scopes (domestic-only vs. domestic+export), not different realities."
+    }
+  ],
+  "sources_already_in_stage_1_dr": [
+    {
+      "url": "https://documents1.worldbank.org/curated/en/993771468285047652/pdf/808710REVISED00rt04SEPT20130ENGLISH.pdf",
+      "note": "World Bank State of Logistics Indonesia 2013 PDF — already found and markitdown-processed in Stage 1 DR. Contains 24.64% figure for 2011 in Table 3.1."
+    },
+    {
+      "url": "https://devtechsys.com/insights/2022/09/19/achieving-economic-growth-through-improved-export-logistics-in-indonesia/",
+      "note": "DevTech/USAID citing Ministry of Finance 2021: 'more than 23.5% of GDP'. Already in Stage 1 DR as secondary-industry with primary citation."
+    }
+  ],
+  "additional_data_point_found": {
+    "vynn_capital_2021_report": {
+      "url": "https://vynncapital.com/wp-content/uploads/2024/11/Indonesia-Logistics-Report.pdf",
+      "key_data": "Vynn Capital (Nov 2021) cites Indonesia logistics costs decreased from 27% of GDP in 2015 to 22% in 2020. This is from a VC-authored market report, confirming the downward trend. Not a primary source but consistent with the trajectory.",
+      "category": "secondary-vc-report",
+      "via_pdf_markitdown": false,
+      "via_cache": true
+    }
+  },
+  "suggested_revision": "Replace Stage 2 claim 'Indonesia logistics cost = 24% of GDP' with: 'Indonesia total logistics costs (domestic + export combined) represent approximately 23–24% of GDP — the 24% figure originates from the World Bank State of Logistics Indonesia 2013 report (Sept 2013), which cited 24.64% for 2011; the most recent Bappenas/BPS figure (2022) is 23.27% (domestic 14.29% + export 8.98%). Both figures are supported by primary government and multilateral sources. [Sources: World Bank press release Sept 6 2013; Bappenas/ANTARA Sept 14 2023; Kemenko Perekonomian/BPS/ANTARA Oct 10 2023; Syifa & Tohir 2025 SJTL peer-reviewed paper]'",
+  "suggested_new_score": "High",
+  "claim_accuracy_assessment": {
+    "24pct_figure_validity": "CONFIRMED as historically accurate — World Bank 2013 press release uses '24%' as headline (based on 2011 data of 24.64%). This is the figure the East Ventures blog was citing secondhand.",
+    "current_figure": "23.27% (Bappenas/BPS 2022, confirmed 2023) — the structural problem persists but has modestly improved from the 24–27% range of 2004–2013.",
+    "recommended_citation": "World Bank 2013 press release for the 24% figure; Bappenas/ANTARA 2023 for the current 23.27% figure. Both should be cited together to show the figure's persistence over time.",
+    "stage_2_vs_stage_1_reconciliation": "Stage 1 used 23% (current Bappenas figure); Stage 2 used 24% (historical World Bank 2013 figure). Both are accurate for their respective time periods and methodologies. The claim should be harmonized to '~23% of GDP (Bappenas 2022/2023) / historically ~24% (World Bank 2013)' to reflect the full picture."
+  },
+  "reasoning": "The 24% figure in Stage 2 is not wrong — it is the direct headline of the World Bank's September 2013 'State of Logistics Indonesia' press release and reflects 2011 data (24.64% in the underlying PDF). The East Ventures blog was citing this figure secondhand, which is why it scored Tier 10. The current primary government figure from Bappenas/BPS (2022/2023) is 23.27%, confirming that the structural inefficiency persists though modestly improved. A 2025 peer-reviewed Indonesian academic paper (Syifa & Tohir, Trisakti Institute) independently confirms both the 23-24% range and the methodological basis. Stage 2's claim is accurate for the historical period and should be upgraded to High confidence by replacing the East Ventures citation with the World Bank 2013 press release and Bappenas 2023 ANTARA article as co-primary sources. The Stage 1 and Stage 2 figures (23% vs. 24%) should be reconciled in the final artifact as reflecting different measurement years (2022/2023 vs. 2011) of the same underlying structural problem.",
+  "searches_performed": [
+    "Indonesia logistics cost 24% GDP Ministry of Finance 2021 primary source BPS statistics",
+    "site:bappenas.go.id logistics cost GDP 2022 2023 biaya logistik",
+    "'biaya logistik' Indonesia '24' OR '23.5' persen PDB 2021 Kemenkeu Kementerian Keuangan",
+    "Indonesia logistics cost GDP percentage ADB Asian Development Bank 2022 2023 report primary",
+    "Indonesia logistics cost 24 percent GDP World Bank 2013 'State of Logistics Indonesia' historical 23.5 2021"
+  ],
+  "categories_searched": [
+    "primary-gov (Bappenas, Kemenkeu, Kemenko Perekonomian, BPS)",
+    "primary-multilateral (World Bank 2013 press release + PDF)",
+    "primary-academic (Syifa & Tohir 2025, SJTL peer-reviewed)",
+    "secondary-vc (Vynn Capital 2021 — cross-check only)"
+  ],
+  "pdf_sources_processed": [
+    "https://research.e-siber.org/SJTL/article/download/494/268/2281 (via markitdown)",
+    "https://vynncapital.com/wp-content/uploads/2024/11/Indonesia-Logistics-Report.pdf (via cache)"
+  ],
+  "fetch_budget_used": {
+    "websearches": 5,
+    "webfetches": 3,
+    "markitdown": 1,
+    "cache_hits": 2
+  }
+}

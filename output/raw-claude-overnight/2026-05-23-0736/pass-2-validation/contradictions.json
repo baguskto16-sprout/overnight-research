@@ -1,0 +1,277 @@
+{
+  "generated_at": "2026-05-23T00:00:00Z",
+  "run_id": "2026-05-23-0736",
+  "scan_method": "contradiction-finder v1",
+  "stages_compared": [1, 2, 3, 4, 5],
+  "contradictions": [
+    {
+      "id": "C-001",
+      "class": "A",
+      "severity": "high",
+      "topic": "Diabetes prevalence 2023: 11.7% (Stage 3) vs 11.3% (Stage 5) vs 11.0% IDF (Stage 5)",
+      "load_bearing": true,
+      "stage_A": {
+        "stage": 3,
+        "file": "stages-validated/stage-3-pain-points.md",
+        "claim": "Indonesia's diabetes prevalence reached 11.7% in 2023 (20 million adults), with 74.4% of cases concentrated in urban areas.",
+        "value": "11.7%",
+        "context": "Pain point 3.1 — cited as headline NCD burden anchor; source cited as PMC12519354"
+      },
+      "stage_B": {
+        "stage": 5,
+        "file": "stages-validated/stage-5-value-chain.md",
+        "claim": "IDF Diabetes Atlas 11th Edition (2025): 20.4 million adults with diabetes (20–79 years), prevalence 11.0% (11.3% age-standardised); Riskesdas 2023 wave 11.3% (95% CI 10.7–11.9%)",
+        "value": "11.0% crude / 11.3% age-standardised",
+        "context": "Stage 5 value chain VC-2 — primary source is IDF Atlas 11th Ed. 2025 and PMC12519354 Riskesdas 2023 wave"
+      },
+      "delta_description": "Stage 3 uses 11.7% for 2023 attributed to PMC12519354; Stage 5 cites the same PMC12519354 as giving 11.3% for the Riskesdas 2023 wave. The cross-stage validator (cross-stage.json) notes 11.7% does not appear in PMC12519354 and may be a conflation with the Riskesdas 2018 figure (11.8%). The IDF Atlas 2025 gives 11.0% crude. Three distinct values coexist in the corpus for the same year with no reconciliation in Stage 3.",
+      "resolution_suggestion": "Update Stage 3 pain-points to use 11.3% (Riskesdas 2023, PMC12519354) or 11.0% (IDF Atlas 11th Ed. 2025). Add footnote: 'Riskesdas 2018 gave 11.8%; IDF Atlas 11th Ed. 2025 gives 11.0% crude prevalence (20–79 years) consistent with 20.4M total cases.' Remove 11.7% — it is not directly stated in any cited source for 2023."
+    },
+    {
+      "id": "C-002",
+      "class": "A",
+      "severity": "high",
+      "topic": "Hypertension prevalence 2023: 29.2% (Stage 3) vs 31.6% (Stage 5) — unstated denominator switch",
+      "load_bearing": true,
+      "stage_A": {
+        "stage": 3,
+        "file": "stages-validated/stage-3-pain-points.md",
+        "claim": "Hypertension prevalence stood at 29.2% of adults in 2023, with a historically high rate of undiagnosed cases (76.3% undiagnosed by 2018 survey).",
+        "value": "29.2%",
+        "context": "Pain point 3.1 — cited as NCD burden anchor; used again in Stage 1 PP22 for addressable hypertensive population calculation"
+      },
+      "stage_B": {
+        "stage": 5,
+        "file": "stages-validated/stage-5-value-chain.md",
+        "claim": "HTN prevalence 34.1% Riskesdas 2018 (63.3 million adults); diagnosis rate 26.9% (2023); BMJ Open 2025 (PMID 41475816) crude prevalence 31.6% in 2023.",
+        "value": "31.6% (2023 crude, BMJ Open 2025)",
+        "context": "Stage 5 VC-7 HTN cascade — reconciliation note present explaining 29.2% is age-standardised from a different denominator"
+      },
+      "delta_description": "29.2% vs 31.6% — a 2.4 pp spread (8% relative). Stage 5 contains an explicit reconciliation note explaining that 29.2% is an age-standardised figure while 31.6% is the crude 2023 Riskesdas-derived rate (BMJ Open 2025, PMID 41475816). Stage 3 uses 29.2% without any standardisation caveat, giving readers a materially lower prevalence figure than the same PMID 41475816 would support. Stage 1 PP22 then uses 29.2% to derive its addressable hypertensive population estimate — a compound error if the figure is mis-stated.",
+      "resolution_suggestion": "Stage 3 pain-points should cite '31.6% (2023 crude prevalence, BMJ Open 2025 PMID 41475816)' or '29.2% (age-standardised per BMJ Open 2025)' with explicit labelling of the standardisation method. Stage 1 PP22 should use whichever denominator matches the addressable population base — crude or age-standardised — and state it explicitly. The core claim ('hypertension is widespread and largely undiagnosed') is not changed by this reconciliation."
+    },
+    {
+      "id": "C-003",
+      "class": "A",
+      "severity": "high",
+      "topic": "Private health insurance market size: $2.93B Mordor (Stage 1 source list) vs ~$1.69B OJK primary (Stage 1 body text and Stage 3)",
+      "load_bearing": true,
+      "stage_A": {
+        "stage": 1,
+        "file": "stages-validated/stage-1-pain-points.md",
+        "claim": "Source 14 listed in footnote: Mordor Intelligence. 'Indonesia Health and Medical Insurance Market.' $2.93B market value 2024; BPJS 71.6% share; private 2.1% CAGR.",
+        "value": "$2.93B / BPJS 71.6%",
+        "context": "Source reference line 87 of stage-1-pain-points.md — the Mordor citation is still present in the source list despite being deprecated in body text"
+      },
+      "stage_B": {
+        "stage": 3,
+        "file": "stages-validated/stage-3-value-chain.md",
+        "claim": "Total health insurance premium time series: Rp 26.26T (2023) sourced to OJK Statistik Perasuransian 2023 (~$1.69B at IDR 15,500/USD); BPJS iuran Rp 151.4T = ~85% of formal pool.",
+        "value": "~$1.69B / BPJS ~85%",
+        "context": "Stage 3 VC3.2.1-premium-series and Stage 1 body text RC2/RC3 both use the OJK-corrected figures"
+      },
+      "delta_description": "The Stage 1 source list still carries the Mordor $2.93B / 71.6% BPJS figures as a live citation even though the Stage 1 body text explicitly deprecates them in favour of OJK-confirmed $1.69B / 85%. Deep-research outcome S1-PP13 (verdict: contradicting-evidence) confirms OJK primary data contradicts both the Mordor market size and BPJS share. The Mordor citation is not annotated as 'deprecated' in the source list. A reader consulting the source list without reading body text RC2/RC3 would take away the wrong headline numbers. This is a Class C issue (deep-research CONTRADICTED not applied to source list) and also a Class A issue (two materially different values in the same document).",
+      "resolution_suggestion": "Annotate Source 14 (Mordor) in stage-1-pain-points.md as: '[DEPRECATED by deep-research S1-PP13 — OJK Statistik Perasuransian 2023 gives ~$1.69B private premi; BPJS ~85% of combined pool. Do not use Mordor $2.93B or 71.6% share figures.]' The body text self-correction is already correct — only the source list needs the deprecation annotation."
+    },
+    {
+      "id": "C-004",
+      "class": "B",
+      "severity": "high",
+      "topic": "Pulse by Prudential Indonesia: discontinued 1 April 2025 (Stage 4 pain-points, confirmed) vs ASSUMED-2 caveat still present in Stage 4 value-chain",
+      "load_bearing": true,
+      "stage_A": {
+        "stage": 4,
+        "file": "stages-validated/stage-4-pain-points.md",
+        "claim": "Pulse by Prudential Indonesia discontinued 1 April 2025; PRUServices replaced it.",
+        "value": "Discontinued — confirmed",
+        "context": "Stage 4 pain points line 25 — stated as confirmed fact with PRUServices URL as source"
+      },
+      "stage_B": {
+        "stage": 4,
+        "file": "stages-validated/stage-4-value-chain.md",
+        "claim": "[ASSUMED-2]: The Pulse discontinuation in Malaysia may extend to Indonesia; if so, Prudential's digital health delivery layer has been removed, widening the gap for an MSO to provide the structured care component.",
+        "value": "Framed as assumed / conditional",
+        "context": "Stage 4 value-chain lines 75 and 325 — ASSUMED-2 tag frames Indonesia discontinuation as unconfirmed hypothesis"
+      },
+      "delta_description": "Within Stage 4 itself, the Pulse Indonesia discontinuation is asserted as confirmed fact in the pain-points file (citing truemission.id and PRUServices portal) but remains hypothetical in the value-chain file under ASSUMED-2 ('if so'). The per-stage validator scored VC4.2-pulse-indonesia-apr2025 as Low (sources: truemission.id trade blog + vendor marketing). Both drafts are in the same stage but are internally inconsistent about the verification status of the same factual claim. A reader consulting one file versus the other gets a different analytical conclusion about Prudential's digital health footprint.",
+      "resolution_suggestion": "Resolve the ASSUMED-2 tag in stage-4-value-chain.md: either (a) confirm the Indonesia discontinuation and cite the same PRUServices evidence used in stage-4-pain-points.md, removing the conditional framing; or (b) downgrade stage-4-pain-points.md to conditional language matching the Low-confidence source quality. Option (a) is preferable given the PRUServices live portal is direct evidence. Add a note that the Indonesia pain-points cite this as confirmed at Low source tier (truemission.id trade blog + vendor marketing surface) rather than independently verified via Prudential Indonesia official announcement."
+    },
+    {
+      "id": "C-005",
+      "class": "A",
+      "severity": "medium",
+      "topic": "IDF Diabetes Atlas edition: 10th Edition (Stage 2) vs 11th Edition (Stage 5)",
+      "load_bearing": true,
+      "stage_A": {
+        "stage": 2,
+        "file": "pass-2-validation/stage-2.json",
+        "claim": "73% of Indonesia's ~20M diabetics are undiagnosed (IDF Diabetes Atlas) — cited in PP-2.2-1 as IDF Diabetes Atlas via PMC12076961, implicitly the 10th Edition (2023)",
+        "value": "73% / ~20M / 10th Edition",
+        "context": "Stage 2 pain points PP-2.2-1; cross-stage.json confirms citation is to 10th Edition"
+      },
+      "stage_B": {
+        "stage": 5,
+        "file": "stages-validated/stage-5-value-chain.md",
+        "claim": "IDF Diabetes Atlas 11th Edition (2025): 20.4 million adults with DM; 73.2% undiagnosed; USD 6.3B direct healthcare spending; USD 308/capita.",
+        "value": "73.2% / 20.4M / 11th Edition (2025)",
+        "context": "Stage 5 VC-2-IDF-Atlas-headline — High confidence, verbatim from IDF 11th Ed. country page and corroborated by secondary Indonesian policy site"
+      },
+      "delta_description": "Stage 2 cites the IDF Atlas 10th Edition (2023) while Stage 5 uses the superseding 11th Edition (2025). The headline figures are directionally consistent (73% vs 73.2% undiagnosed; ~20M vs 20.4M total cases) but using different editions of the same authoritative source across stages creates a version mismatch. The 11th Edition is the current authoritative source. Stage 2 body text that depends on the 10th Edition figures may understate total DM burden by ~0.4M cases and the spending per-capita figure ($308 in 11th Ed.) is not available in Stage 2 at all.",
+      "resolution_suggestion": "Update Stage 2 PP-2.2-1 to cite IDF Diabetes Atlas 11th Edition (2025): '73.2% of Indonesia's 20.4M diabetics are undiagnosed (IDF Diabetes Atlas 11th Ed. 2025).' Replace the chain-of-citations via PMC12076961 with direct IDF Atlas 11th Ed. URL (diabetesatlas.org/data-by-location/country/indonesia/) already confirmed at High in Stage 5. Standardise all cross-stage IDF Atlas citations to 11th Edition."
+    },
+    {
+      "id": "C-006",
+      "class": "A",
+      "severity": "medium",
+      "topic": "GP-to-population ratio: 0.6 per 1,000 (Stage 1 draft claim) vs 0.4 GP-only per 1,000 (deep-research S1-PP7 revised figure)",
+      "load_bearing": false,
+      "stage_A": {
+        "stage": 1,
+        "file": "stages-validated/stage-1-pain-points.md",
+        "claim": "Indonesia's all-physician density was approximately 0.47–0.74 per 1,000 over 2019–2023 (WHO GHO and World Bank); the GP-only (dokter umum) sub-population is approximately 0.4 per 1,000 given GPs are ~61% of all doctors (Indonesia MoH).",
+        "value": "0.4 per 1,000 GP-only (RC2 body text)",
+        "context": "Stage 1 pain-points RC2 — the body text has been partially updated to reflect the deep-research S1-PP7 finding"
+      },
+      "stage_B": {
+        "stage": 5,
+        "file": "stages-validated/stage-5-pain-points.md",
+        "claim": "WHO Indonesia HRH Country Profile (Sept 2024): physician density 15.6 per 10,000 pop (all doctors+nurses+midwives); source 8 cited as WHO SEARO HRH Country Profile Sept 2024.",
+        "value": "15.6 per 10,000 combined workforce; ~6–7 per 10,000 physicians = ~0.6–0.7 per 1,000 all physicians",
+        "context": "Stage 5 PP5.3 source (8) — cites the same WHO SEARO HRH Profile that S1-PP7 used; Stage 5 does not isolate the GP-only figure"
+      },
+      "delta_description": "The original Stage 1 claim (S1-PP7) cited 0.6/1,000 as a GP-specific ratio; deep-research S1-PP7 (verdict: contradicting-evidence) established that 0.6/1,000 is the all-physician figure and the GP-only ratio is ~0.4/1,000. Stage 1 body text in RC2 was partially updated (0.47–0.74 all-physicians; 0.4 GP-only). Stage 5 uses the same WHO SEARO HRH source but does not report the GP-vs-all-physician distinction. The residual claim in the Stage 1 validation JSON (S1-PP7 Medium, original 0.6 framing) has not been superseded by the deep-research outcome in the scored claims file — the stage-1.json still carries the 0.6 per 1,000 framing without the GP/all-physician distinction.",
+      "resolution_suggestion": "Update the stage-1.json claim text for S1-PP7 to reflect the deep-research refined figure: 'All-physician density 0.47–0.74 per 1,000 (WHO 2019–2022); GP-only approximately 0.4 per 1,000 (GPs = ~61% of all doctors per MoH).' Stage 5 should add a clarifying note distinguishing the WHO SEARO HRH combined health workforce density (15.6/10,000) from the physician-only and GP-only sub-components when making primary care access claims."
+    },
+    {
+      "id": "C-007",
+      "class": "C",
+      "severity": "high",
+      "topic": "S1-PP13 deep-research verdict CONTRADICTED — Mordor $2.93B / BPJS 71.6% still present as live citation in source list",
+      "load_bearing": true,
+      "stage_A": {
+        "stage": 1,
+        "file": "pass-3-deep-research/stage-1/S1-PP13.json",
+        "claim": "Deep-research outcome: CONTRADICTING-EVIDENCE. OJK primary data gives private health premi ~$1.69B (not $2.93B). BPJS share ~85% (not 71.6%). Suggested revision provided.",
+        "value": "verdict: contradicting-evidence",
+        "context": "S1-PP13 deep-research JSON — recommended new score Low, full OJK-based revision text provided"
+      },
+      "stage_B": {
+        "stage": 1,
+        "file": "stages-validated/stage-1-pain-points.md",
+        "claim": "Source 14 listed: Mordor Intelligence. 'Indonesia Health and Medical Insurance Market.' $2.93B market value 2024; BPJS 71.6% share.",
+        "value": "$2.93B / 71.6% BPJS — unremediated in source list",
+        "context": "stage-1-pain-points.md line 87 — source list still carries original contradicted figures without deprecation annotation"
+      },
+      "delta_description": "No APPLIED-TO-DRAFTS.md was found in the pass-3-deep-research directory, meaning there is no record of which deep-research revisions were applied. The Stage 1 pain-points body text correctly uses the OJK-derived figures ($1.69B, 85% BPJS) in RC2/RC3 — the narrative has been updated. However, the source list (Source 14) retains the original Mordor figures without any deprecation annotation, creating a direct contradiction within the same file: a reader following Source 14 in the bibliography sees $2.93B / 71.6%, while the body text says $1.69B / ~85%. The deep-research verdict (CONTRADICTING-EVIDENCE) has not been propagated to the source list.",
+      "resolution_suggestion": "Annotate Source 14 in stage-1-pain-points.md: append '[DEPRECATED per deep-research S1-PP13 — OJK Statistik Perasuransian 2023 gives private health premi Rp 26.26T (~$1.69B); BPJS iuran Rp 151.4T = ~85% of formal pool. The $2.93B and 71.6% figures are inconsistent with OJK primary data.]' Also create an APPLIED-TO-DRAFTS.md log in pass-3-deep-research/ tracking which outcomes were applied and to which lines."
+    },
+    {
+      "id": "C-008",
+      "class": "C",
+      "severity": "medium",
+      "topic": "S1-PP7 deep-research verdict (contradicting-evidence: 0.6 is all-physician, not GP-only) not applied to stage-1.json claim record",
+      "load_bearing": false,
+      "stage_A": {
+        "stage": 1,
+        "file": "pass-3-deep-research/stage-1/S1-PP7.json",
+        "claim": "Deep-research outcome: CONTRADICTING-EVIDENCE. The 0.6/1,000 figure is all-physician density, not GP-only. GP-only ~0.4/1,000. Suggested new score: Medium.",
+        "value": "verdict: contradicting-evidence",
+        "context": "S1-PP7 deep-research JSON"
+      },
+      "stage_B": {
+        "stage": 1,
+        "file": "pass-2-validation/stage-1.json",
+        "claim": "S1-PP7: 'Indonesia's GP-to-population ratio was approximately 0.6 per 1,000 in 2023.' Score: Medium. Rationale cites BERNAMA and UMY as sources.",
+        "value": "0.6 per 1,000 — framed as GP ratio",
+        "context": "stage-1.json claim record S1-PP7 — not updated to reflect deep-research distinction"
+      },
+      "delta_description": "The stage-1.json scored claim record for S1-PP7 still carries the original '0.6 per 1,000' framing with the original source attribution (BERNAMA + UMY). The deep-research finding that 0.6 refers to all physicians (not GPs specifically) and that the GP-only rate is ~0.4/1,000 has not been reflected in the scored claims file. The body text in stage-1-pain-points.md was partially corrected (RC2 now says '0.4 per 1,000 GP-only'), but the scored claims record is out of sync.",
+      "resolution_suggestion": "Update stage-1.json claim S1-PP7 text and rationale to: 'All-physician density 0.47–0.74 per 1,000 (WHO GHO 2019–2022, World Bank); GP-only ~0.4 per 1,000 (GPs ~61% of all doctors per MoH). The commonly cited 0.6 figure refers to all physicians in a mid-range year, not GPs specifically.' Sources should be updated to include WHO SEARO HRH Country Profile (Sept 2024) as primary-multilateral, elevating to High confidence per deep-research S1-PP7 suggested new score (Medium for the revised, more precise claim)."
+    },
+    {
+      "id": "C-009",
+      "class": "C",
+      "severity": "medium",
+      "topic": "S1-VC9 deep-research verdict REFINED (Tier-1 concentration 55–65% contradicted by East Ventures DCI 2024 ~30%) not annotated in draft",
+      "load_bearing": false,
+      "stage_A": {
+        "stage": 1,
+        "file": "pass-3-deep-research/stage-1/S1-VC9.json",
+        "claim": "Deep-research verdict: REFINED. The 55–65% Tier-1 concentration figure is contradicted by East Ventures DCI 2024 (~30% Tier-1). apply_to_canonical instructs flagging as [ASSUMED-N] with annotation.",
+        "value": "verdict: REFINED — 55-65% contradicted, only source implies ~30%",
+        "context": "S1-VC9 deep-research JSON"
+      },
+      "stage_B": {
+        "stage": 1,
+        "file": "stages-validated/stage-1-value-chain.md",
+        "claim": "S1-VC20 (implied): Tier-1 cities contain approximately 55–65% of the national affluent + upper-middle (MC2) segment. S1-VC21: approximately 1.0–1.5M affluent + upper-middle households in Tier-1 cities.",
+        "value": "55–65% Tier-1 concentration — retained without ASSUMED-N annotation from deep-research",
+        "context": "Stage 1 value chain geographic concentration claims — the deep-research apply_to_canonical update was not confirmed applied"
+      },
+      "delta_description": "The S1-VC9 deep-research JSON explicitly instructs: 'Flag Tier-1 concentration 55–65% as [ASSUMED-N] — East Ventures DCI 2024 implies ~30%; replace with [ASSUMED-N] annotation.' No APPLIED-TO-DRAFTS.md exists to confirm this was done. The Tier-1 concentration figure is load-bearing because S1-VC21 (1.0–1.5M Tier-1 HH) depends on it, and downstream market opportunity calculations in Stage 2 and Stage 4 inherit this concentration assumption. If the true Tier-1 share is ~30% (vs 55–65%), the primary city-focused addressable market is materially smaller.",
+      "resolution_suggestion": "Search stage-1-value-chain.md for the 55–65% Tier-1 concentration claim and apply the deep-research instruction: replace with '[ASSUMED-N]: 55–65% Tier-1 concentration — only source found (East Ventures DCI 2024) implies ~30%; validate with BPS PODES or urban Susenas tabulation.' Propagate the caveat to S1-VC21 and all downstream Stage 2/4 market size calculations that inherit the Tier-1 concentration."
+    },
+    {
+      "id": "C-010",
+      "class": "D",
+      "severity": "medium",
+      "topic": "APAC-as-proxy geography mismatch override applied in Stage 1 and Stage 2 for Bain 2024 survey, but Stage 2 uses additional APAC statistics without Geography mismatch flag",
+      "load_bearing": false,
+      "stage_A": {
+        "stage": 1,
+        "file": "pass-2-validation/stage-1.json",
+        "claim": "S1-PP1: 91% APAC consumers prefer single touchpoint — override applied: 'APAC-as-proxy: 91% figure is APAC-aggregate; Indonesia-specific trust claim derived from broader APAC survey. Geography mismatch flag.'",
+        "value": "91% — Geography mismatch override APPLIED, capped Medium",
+        "context": "Stage 1 PP1 — APAC-as-proxy override correctly triggered and scored Medium"
+      },
+      "stage_B": {
+        "stage": 2,
+        "file": "pass-2-validation/stage-2.json",
+        "claim": "VC-9: '51% of APAC consumers willing to pay more OOP for better outcomes; 58% of Gen Z; 50% of high-income group increased supplement spend; 85% interested in healthcare maintenance (2024).' Same Bain source. Override: 'APAC-as-proxy — Geography mismatch. Indonesia-specific figures not published.' Scored Medium.",
+        "value": "51% / 58% / 50% / 85% — Geography mismatch override APPLIED, capped Medium"
+      },
+      "delta_description": "The Geography mismatch override is correctly applied in both Stage 1 (S1-PP1) and Stage 2 (VC-9) for the Bain APAC 2024 survey. No inconsistency in the override application itself. However, Stage 1 pain-points body text RC4 also uses Bain data ('91% prefer single touchpoint; consumers expressing interest in health and lifestyle maintenance') without restating the APAC-as-proxy caveat in the draft text — the caveat exists only in the validation JSON. Cross-stage.json separately flags this as a geographic applicability concern for all 5 Bain citations. The inconsistency is that the geography mismatch override is correctly applied in the scoring files but is not visible to readers of the final draft text, where the APAC figures are presented without qualification.",
+      "resolution_suggestion": "In stage-1-pain-points.md Source 11 and wherever Bain APAC 2024 figures appear in body text, add: '[APAC aggregate — Indonesia-specific data not separately published; treat as directional only, Medium confidence]'. Stage 2 drafts using VC-9 figures should carry the same annotation. This is a disclosure gap rather than a scoring error — the validation files are correct."
+    },
+    {
+      "id": "C-011",
+      "class": "B",
+      "severity": "low",
+      "topic": "Siloam hospital count: 41 (Stage 1) vs 43 (Stage 2)",
+      "load_bearing": false,
+      "stage_A": {
+        "stage": 1,
+        "file": "stages-validated/stage-1-pain-points.md",
+        "claim": "Siloam International Hospitals: Largest private chain in Indonesia, 41 hospitals across 23 provinces",
+        "value": "41 hospitals",
+        "context": "Stage 1 PP3 provider landscape — cites IDX press release"
+      },
+      "stage_B": {
+        "stage": 2,
+        "file": "stages-validated/stage-2-pain-points.md",
+        "claim": "Even within networks like Siloam (43 hospitals) or Hermina, referral and record-sharing across sites is inconsistent.",
+        "value": "43 hospitals",
+        "context": "Stage 2 PP-2.1 fragmentation argument"
+      },
+      "delta_description": "41 vs 43 hospitals — a 5% discrepancy. Cross-stage.json already notes this and judges it likely a measurement-date difference (pipeline vs operational facilities). The 41 figure from the IDX press release is more precisely cited. The discrepancy is minor and does not affect the substantive claim (large fragmented network), but creates a small factual inconsistency in the corpus.",
+      "resolution_suggestion": "Standardise to 41 hospitals (FY2023 IDX annual report figure) across all stages, or note the count as '41–43 hospitals depending on measurement date.' Add a parenthetical: '(41 operational as of FY2023 IDX filing; 43 including announced pipeline sites)'."
+    }
+  ],
+  "summary": {
+    "total_contradictions": 11,
+    "by_severity": {
+      "high": 5,
+      "medium": 4,
+      "low": 1
+    },
+    "by_class": {
+      "A": 5,
+      "B": 2,
+      "C": 3,
+      "D": 1
+    },
+    "load_bearing_count": 6
+  },
+  "gate_impact": "high-severity-block",
+  "narrative": "Five high-severity contradictions were found: two Class A metric mismatches (DM prevalence 11.7% vs 11.3%; HTN prevalence 29.2% vs 31.6%) that affect downstream NCD burden calculations across all stages; one Class A market size contradiction ($2.93B Mordor vs $1.69B OJK for private health insurance); one Class B within-stage inconsistency on Pulse Indonesia status; and one Class C failure to propagate the deep-research CONTRADICTED verdict for S1-PP13 to the source list. Three of the five high-severity items are fixable with source-list annotation alone; the DM and HTN prevalence figures require coordinated updates to Stage 3 pain-points body text before final compile."
+}

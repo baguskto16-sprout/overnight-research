@@ -1,0 +1,28 @@
+{
+  "claim_id": "S1-VC9",
+  "verdict": "REFINED",
+  "new_finding": "BPS September 2024 Susenas data (confirmed via multiple independent secondary citations) gives: affluent = 1.29M persons (~380K HH); BPS middle class = 48.41M persons. The claim's '7-9M combined affluent + upper-middle' requires the 'upper-middle' sub-band to be ~5.7-7.7M persons (12-16% of BPS middle class). BPS does not publish this sub-band separately — the [ASSUMED-3] tag is correct and necessary. Household arithmetic using avg HH size 3.4 yields affluent HH ~380K (not 330K as stated in current evidence) and implied upper-middle HH of 1.4-1.9M, putting combined HH range at roughly 1.8-2.3M — consistent with the claim but the upper-middle band remains [ASSUMED]. CRITICAL DISCREPANCY on Tier-1 concentration: east.vc/Jakarta Post citing East Ventures DCI 2024 report states ~70% of Indonesia's population lives in Tier-2/3 cities, implying ~30% in Tier-1 — directly contradicting the claim's 55-65% Tier-1 concentration. No primary BPS or World Bank source found for the 55-65% figure. The BPS October 2024 primary page (bps.go.id/en/news/2024/10/25/622) returns 403.",
+  "new_sources": [
+    {
+      "url": "https://www.bps.go.id/en/news/2024/10/25/622/indonesia-s-middle-class--a-crucial-pillar-for-national-economic-stability.html",
+      "tier": "primary-gov",
+      "what_it_supports": "BPS September 2024 class breakdown: affluent 0.46% = 1.29M, middle 17.25% = 48.41M, aspiring middle 49.29% = 138.31M. Returns 403 on WebFetch — marks as NEEDS-ATTENDED-FETCH."
+    },
+    {
+      "url": "https://www.iseas.edu.sg/wp-content/uploads/2026/02/ISEAS-Perspective_2026_16.pdf",
+      "tier": "primary-academic",
+      "what_it_supports": "ISEAS March 2026 confirms BPS data: secure middle class declined to 17.1% of population in 2024 from peak 22.5% in 2018. Corroborates BPS September 2024 numbers."
+    },
+    {
+      "url": "https://east.vc/news/insights/unlocking-the-urban-middle-class-insights-from-indonesias-fast-growing-consumer-segment",
+      "tier": "secondary-industry",
+      "what_it_supports": "Cites East Ventures DCI 2024 + Jakarta Post Dec 2023: ~70% of Indonesia population in Tier-2/3 cities. CONTRADICTS the 55-65% Tier-1 concentration claim. Source is secondary/industry, not primary-gov."
+    }
+  ],
+  "confidence_after": "Pending-attended-fetch",
+  "apply_to_canonical": "In stage-1-value-chain.md, S1-VC9: (1) Update affluent HH figure from ~330K to ~380K (BPS Sep 2024 via ISEAS 2026 corroboration). (2) Keep [ASSUMED-3] on upper-middle band — BPS does not publish this sub-band. (3) Flag Tier-1 concentration 55-65% as [ASSUMED-N] — only source found (east.vc/DCI 2024) implies ~30% Tier-1, directly contradicting 55-65%; replace with '[ASSUMED-N]: 55-65% Tier-1 concentration — East Ventures DCI 2024 implies ~30%; validate with BPS PODES or urban Susenas tabulation.' (4) Add note: bps.go.id Oct 2024 primary page is 403 — requires attended fetch to confirm urban/rural class breakdown.",
+  "needs_attended_fetch_urls": [
+    "https://www.bps.go.id/en/news/2024/10/25/622/indonesia-s-middle-class--a-crucial-pillar-for-national-economic-stability.html",
+    "https://assets.dataindonesia.id/2025/02/21/1740105003376-97-21.-indikator-kesejahteraan-rakyat-2024.pdf"
+  ]
+}

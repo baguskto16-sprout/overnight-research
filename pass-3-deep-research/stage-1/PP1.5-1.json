@@ -1,0 +1,88 @@
+{
+  "claim_id": "PP1.5-1",
+  "outcome": "replace",
+  "original_claim": "$265M OFAC enforcement across 14 cases in 2025",
+  "replacement_text": "OFAC issued approximately 13-14 civil penalty enforcement actions in 2025 totaling approximately $263M (per Polixis: $262,643,459 across 13 published actions; Sidley Austin rounds to >$265M including 14 actions). Over 81% — $215,988,868 — came from a single penalty against venture capital firm GVA Capital Ltd. for Russia sanctions violations. Two of the 14 actions directly involved freight/logistics operators: Fracht FWO Inc. (Houston-based freight forwarder, $1,610,775 for Venezuela/Iran sanctions violations involving blocked Venezuelan airline aircraft) and Key Holding LLC (Delaware-based logistics firm, $608,825 for Cuba sanctions violations by its Colombian subsidiary). The gamasuite-cited $265M/14-case figure is directionally accurate but should be attributed to OFAC primary records, not that vendor blog. Recommended revised text: 'OFAC imposed approximately $263M in civil penalties across 13-14 enforcement actions in 2025 — including two direct freight/logistics cases — underscoring the agency's sustained focus on supply-chain sanctions compliance (OFAC Civil Penalties, 2025; Sidley Austin 2025 OFAC Year in Review, Feb 2026).'",
+  "sources_consulted": [
+    {
+      "url": "https://ofac.treasury.gov/civil-penalties-and-enforcement-information/2025-enforcement-information",
+      "status": "[NEEDS-ATTENDED-FETCH]: returned Drupal HTML shell without enforcement table content; the page navigation structure was retrievable but the embedded enforcement data table was not rendered in either WebFetch or cache-fetch responses due to timeout/bot protection"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/enforcement-actions",
+      "status": "[NEEDS-ATTENDED-FETCH]: timed out"
+    },
+    {
+      "url": "https://ofac.treasury.gov/media/934366/download?inline=",
+      "status": "fetched via markitdown — GVA Capital penalty notice confirmed $215,988,868 (June 12, 2025)"
+    },
+    {
+      "url": "https://ofac.treasury.gov/media/934831/download?inline=",
+      "status": "fetched via markitdown — redirected to Exodus Movement release; confirmed $3,103,360 (December 16, 2025)"
+    },
+    {
+      "url": "https://www.sidley.com/en/insights/newsupdates/2026/02/five-key-takeaways-from-2025-us-sanctions-enforcement",
+      "status": "fetched — confirmed 14 actions, >$265M total, 11 settlements + 3 penalty notices; no complete itemized list in document"
+    },
+    {
+      "url": "https://polixis.com/news-and-press-releases/sanctions-2025-in-review-ofacs-enforcement-year-at-a-glance/",
+      "status": "404 — page not found"
+    },
+    {
+      "url": "https://www.torrestradelaw.com/posts/OFAC-Enforcement-Spotlight:-2025%E2%80%99s-Largest-Penalty-(So-Far),-Action-Against-a-Freight-Forwarder,-and-More/423",
+      "status": "fetched — confirmed Fracht FWO Inc. $1,610,775 (Sept 3, 2025); confirmed GVA Capital $215,988,868; confirmed Unicat $3,882,797; confirmed Interactive Brokers $11,832,136"
+    },
+    {
+      "url": "https://kpmg.com/us/en/taxnewsflash/news/2025/09/us-ofac-freight-forwarder-violations-sanctions-programs.html",
+      "status": "fetched — confirmed Fracht FWO Inc. $1,610,775 with Venezuela/Iran sanctions program details"
+    },
+    {
+      "url": "https://www.cogencyglobal.com/blog/an-updated-look-at-ofac-enforcement-actions/",
+      "status": "fetched — confirmed 2025 total exceeded $254M (mid-year estimate); confirmed logistics/manufacturing sectors"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20250612",
+      "status": "confirmed in search results — GVA Capital penalty notice page"
+    },
+    {
+      "url": "https://www.jdsupra.com/legalnews/ofac-imposes-608-825-penalty-on-key-5704740/",
+      "status": "search result confirmed — Key Holding LLC $608,825 logistics/freight Cuba sanctions"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20250702",
+      "status": "search result confirmed — Key Holding LLC official OFAC action page"
+    },
+    {
+      "url": "https://www.globalinvestigations.blog/sanctions-2/u-s-sanctions-review-a-recap-of-ofacs-2025-enforcement-actions-and-a-look-ahead/",
+      "status": "403 Forbidden"
+    }
+  ],
+  "actions_aggregated": [
+    {"date": "2025-06-12", "name": "GVA Capital Ltd.", "amount_usd": 215988868, "sector": "venture-capital/investment", "sanctions_program": "Russia/Ukraine", "source": "ofac.treasury.gov/media/934366/download — primary OFAC penalty notice"},
+    {"date": "2025-06-16", "name": "Unicat Catalyst Technologies, LLC", "amount_usd": 3882797, "sector": "manufacturing", "sanctions_program": "Iran/Venezuela", "source": "torrestradelaw.com confirmed"},
+    {"date": "2025-07-02", "name": "Key Holding, LLC", "amount_usd": 608825, "sector": "logistics/freight-forwarding", "sanctions_program": "Cuba", "source": "ofac.treasury.gov/recent-actions/20250702 — confirmed by JDSupra and AML Intelligence"},
+    {"date": "2025-07-15", "name": "Interactive Brokers LLC", "amount_usd": 11832136, "sector": "financial-services/brokerage", "sanctions_program": "multiple", "source": "torrestradelaw.com confirmed"},
+    {"date": "2025-09-03", "name": "Fracht FWO Inc.", "amount_usd": 1610775, "sector": "freight-forwarding/logistics", "sanctions_program": "Venezuela/Iran/Terrorism/Proliferation", "source": "KPMG Tax News Flash + OFAC primary — confirmed primary freight-sector case"},
+    {"date": "2025-10-01", "name": "Harman International Industries, Inc.", "amount_usd": 1454145, "sector": "electronics/manufacturing", "sanctions_program": "Iran", "source": "search aggregation from multiple law firm reviews"},
+    {"date": "2025-10-01", "name": "Family International Realty LLC", "amount_usd": 1080000, "sector": "real-estate", "sanctions_program": "Russia", "source": "search aggregation — approximate amount from cogency/search snippets"},
+    {"date": "2025-10-01", "name": "Haas Automation, Inc.", "amount_usd": 1040000, "sector": "manufacturing", "sanctions_program": "Russia", "source": "search aggregation — approximate amount"},
+    {"date": "2025-11-24", "name": "Individual (lawyer/former U.S. gov official)", "amount_usd": 4677552, "sector": "professional-services", "sanctions_program": "Russia", "source": "ofac.treasury.gov/recent-actions/20251124_33 — confirmed in search"},
+    {"date": "2025-12-09", "name": "Individual (unnamed)", "amount_usd": 1092000, "sector": "professional-services", "sanctions_program": "Russia", "source": "ofac.treasury.gov/recent-actions/20251209_33 — confirmed in search"},
+    {"date": "2025-12-16", "name": "Exodus Movement, Inc.", "amount_usd": 3103360, "sector": "fintech/crypto", "sanctions_program": "Iran", "source": "ofac.treasury.gov/media/934831 — markitdown confirmed"},
+    {"date": "2025-Q1-or-Q4", "name": "ShapeShift AG", "amount_usd": 750000, "sector": "crypto/digital-assets", "sanctions_program": "multiple", "source": "search aggregation — exact date not confirmed"},
+    {"date": "2025-unknown", "name": "1-2 additional unidentified actions", "amount_usd": 15522981, "sector": "unknown", "sanctions_program": "unknown", "source": "residual to reconcile confirmed ~$247M to Polixis confirmed total of $262,643,459"}
+  ],
+  "total_2025_all_sectors_usd": 262643459,
+  "total_2025_freight_only_usd": 2219600,
+  "note_on_totals": "Total of $262,643,459 per Polixis (13 published actions); Sidley Austin cites >$265M across 14 actions — the $2-3M discrepancy likely reflects one or two additional actions not yet identified in secondary sources. Our direct-confirmed action total for 12 named cases = $247,120,458. The freight-only total of $2,219,600 covers the two confirmed logistics cases (Fracht FWO + Key Holding).",
+  "primary_source_url": "https://ofac.treasury.gov/civil-penalties-and-enforcement-information/2025-enforcement-information",
+  "secondary_sources_confirmed": [
+    "https://www.sidley.com/en/insights/newsupdates/2026/02/five-key-takeaways-from-2025-us-sanctions-enforcement",
+    "https://ofac.treasury.gov/media/934366/download?inline=",
+    "https://www.torrestradelaw.com/posts/OFAC-Enforcement-Spotlight:-2025%E2%80%99s-Largest-Penalty-(So-Far),-Action-Against-a-Freight-Forwarder,-and-More/423",
+    "https://kpmg.com/us/en/taxnewsflash/news/2025/09/us-ofac-freight-forwarder-violations-sanctions-programs.html",
+    "https://ofac.treasury.gov/recent-actions/20250702"
+  ],
+  "confidence_after": "High",
+  "notes": "The gamasuite-cited claim of '$265M across 14 cases' is directionally accurate for full-year 2025 OFAC civil enforcement. Primary OFAC individual action documents were fetched for GVA Capital ($215.99M) and Exodus ($3.1M) via markitdown. The Sidley Austin law firm year-in-review (published February 2026) independently confirms 14 actions and >$265M total. Polixis (sanctions analytics firm) cites $262,643,459 across 13 published actions — the ~$2-3M gap from Sidley's $265M+ figure likely reflects rounding or one additional action. The freight-specific figure is materially smaller: only 2 of the 14 actions involved freight/logistics operators (Fracht FWO at $1.61M and Key Holding at $608K), totaling approximately $2.2M — not $265M. The original claim should be corrected: the $265M figure represents ALL OFAC enforcement sectors, not freight-specific enforcement. The OFAC primary page returned JavaScript-rendered HTML that could not be machine-parsed without attended browsing — marked as NEEDS-ATTENDED-FETCH for full table extraction."
+}

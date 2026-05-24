@@ -1,0 +1,90 @@
+{
+  "claim_id": "stage-4-gartner-mit-disruption",
+  "deep_research_date": "2026-05-23",
+  "outcome": "confirmed-scarce",
+  "searches_performed": [
+    "Gartner 'supply chain disruption' 'manual system updates' 'platforms' survey report 2023 2024",
+    "MIT CTL 'supply chain' 'emails' 'disruption' 'roles' logistics communication study site:ctl.mit.edu",
+    "'34 manual' OR '34 system updates' 'supply chain disruption' Gartner",
+    "'25 emails' '8 roles' 'supply chain' disruption MIT CTL logistics",
+    "MIT CTL publications 'supply chain' disruption 'communication' 'email' coordination 2022 2023 site:ctl.mit.edu",
+    "'supply chain' disruption 'manual updates' OR 'system updates' 'platforms' Gartner research 2022 2023 2024 survey",
+    "'34 manual system updates' '6 platforms' supply chain disruption (exact phrase)",
+    "'25 emails' '8 roles' supply chain disruption logistics coordination (exact phrase)",
+    "Gartner 'supply chain resilience' survey 'manual' 'updates' 'platforms' disruption report filetype:pdf OR site:gartner.com 2022 2023",
+    "Gartner 'Supply Chain Control Tower Approaches' 2019 2020 document 3989061 'manual' 'platforms' disruption findings"
+  ],
+  "fetch_attempts": [
+    {
+      "url": "https://www.fourkites.com/blogs/supply-chain-control-towers-whats-changing/",
+      "result": "Confirmed: blog attributes '34 manual system updates across 6 different platforms' to 'A Gartner survey about supply chain resilience' and '25 emails ... from 8 different roles' to 'MIT Center for Transportation & Logistics research'. No hyperlinks or report titles provided for either stat. Section heading: 'The Manual Workaround Problem'.",
+      "verifies_primary": false
+    },
+    {
+      "url": "https://ctl.mit.edu/publications",
+      "result": "MIT CTL publications page reviewed. No publications visible in page-1 summary that quantify emails or roles in disruption response. Full list has 120 publications across 10 pages — not fully enumerable within budget.",
+      "verifies_primary": false
+    },
+    {
+      "url": "https://procurementtactics.com/supply-chain-statistics/",
+      "result": "70 aggregated supply chain statistics — neither '34 manual system updates' nor '25 emails from 8 roles' appears. These stats are not in wide secondary circulation.",
+      "verifies_primary": false
+    },
+    {
+      "url": "https://www.gartner.com/en/documents/3989061",
+      "result": "HTTP 403 Forbidden — Gartner document paywalled. Candidate report: 'Supply Chain Control Tower Approaches' (circa 2019-2020). Cannot verify claim from this source without Gartner subscription.",
+      "verifies_primary": false,
+      "paywall": true,
+      "tag": "[NEEDS-ATTENDED-FETCH]: https://www.gartner.com/en/documents/3989061"
+    },
+    {
+      "url": "https://sc.tadanow.com/gartner-report-all-about-supply-chain-control-towers",
+      "result": "Secondary summary of Gartner control tower content. References Gartner doc 'What You Need to Know About Control Towers but Had No Time to Ask' (Dec 2020, Titze & Coppinger). Neither target stat present.",
+      "verifies_primary": false
+    }
+  ],
+  "categories_searched": [
+    "primary-gov — not applicable for this claim type",
+    "primary-multilateral — not applicable; Gartner and MIT CTL are the named primaries",
+    "primary-academic — MIT CTL publications page reviewed; no matching paper found in page-1 results",
+    "top-tier-consultancy — Gartner document 3989061 ('Supply Chain Control Tower Approaches') identified as the most likely primary; paywalled 403",
+    "aggregator-stats — procurementtactics.com 70-stat roundup does not carry these figures",
+    "secondary-ecosystem — FourKites blog confirmed as origin of both stats in open web; no independent echo found"
+  ],
+  "key_finding": "Both statistics ('34 manual system updates across 6 platforms' attributed to Gartner; '25 emails from 8 roles' attributed to MIT CTL) exist in the open web exclusively through the FourKites vendor blog (March 2025). A thorough search using exact quoted phrases returned zero independent corroboration. The most plausible Gartner primary is document 3989061 ('Supply Chain Control Tower Approaches', ~2019-2020) — paywalled. No MIT CTL working paper or thesis with these specific email/role metrics was locatable via ctl.mit.edu or Google Scholar within the search budget.",
+  "suggested_revision_options": [
+    {
+      "option": "mark-vendor-cited-paywalled",
+      "revised_claim_text": "FourKites (vendor) cites Gartner research finding that an average supply chain disruption requires at least 34 manual system updates across 6 platforms, and MIT CTL research finding that a single disruption generates an average of 25 emails requiring input from 8 roles — primary sources are paywalled / membership-only. [NEEDS-ATTENDED-FETCH]: https://www.gartner.com/en/documents/3989061 (Gartner 'Supply Chain Control Tower Approaches', ~2019-2020). Tier-1 verification pending.",
+      "suggested_score": "Low",
+      "rationale": "Preserves the quantitative specificity (which is useful for the PP4 severity narrative) while being fully transparent that the chain-of-citations runs through a vendor blog with no open-web primary. Flags the specific Gartner document for attended retrieval."
+    },
+    {
+      "option": "widen-range",
+      "revised_claim_text": "Supply chain disruptions require coordination across multiple systems and roles, generating significant manual workload; Gartner and MIT CTL research (cited via FourKites, ~2019-2020) suggest the effort spans multiple platforms and stakeholders, though exact figures require primary-source verification.",
+      "suggested_score": "Low",
+      "rationale": "Drops the precise numbers that cannot be verified, retaining the directional claim."
+    },
+    {
+      "option": "drop",
+      "rationale": "If the artifact requires High or Medium evidence tier for all quantitative claims in PP4.1-PP4.2, these two stats should be removed until attended Gartner fetch is completed."
+    }
+  ],
+  "recommended_option": "mark-vendor-cited-paywalled",
+  "reasoning": "The statistics are plausible and directionally consistent with the Gartner control tower research body (~2019-2020), but they are not independently verifiable in open web. The right editorial posture is transparency: retain the figures with an explicit vendor-cite + [NEEDS-ATTENDED-FETCH] tag so a human researcher can retrieve the Gartner document (doc 3989061) in an attended session. Dropping them entirely would remove material evidence about the manual coordination burden that is central to the PP4.2 severity argument.",
+  "attended_fetch_targets": [
+    {
+      "url": "https://www.gartner.com/en/documents/3989061",
+      "report_title": "Supply Chain Control Tower Approaches",
+      "approximate_date": "2019-2020",
+      "authors_if_known": "Christian Titze and Beth Coppinger (inferred from related doc 3994943)",
+      "why": "Most likely primary for the '34 manual system updates / 6 platforms' Gartner stat cited by FourKites. Requires Gartner subscription login."
+    },
+    {
+      "url": "https://ctl.mit.edu/pub",
+      "report_title": "MIT CTL thesis or working paper on disruption communication / email coordination",
+      "approximate_date": "2020-2023",
+      "why": "MIT CTL publications page has 120 items across 10 pages. Only page 1 was accessible in budget. A candidate thesis: Tewari, Wei & Saenz (2023) 'Detect, Communicate, Collaborate: An agile digital network to manage disruptions' — may contain the email/roles metric."
+    }
+  ]
+}

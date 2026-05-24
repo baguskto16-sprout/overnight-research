@@ -1,0 +1,79 @@
+{
+  "claim_id": "PP3.2-IATA-IQVIA",
+  "outcome": "replace",
+
+  "iqvia_attribution": {
+    "confirmed": true,
+    "report_title": "2019 Biopharma Cold-Chain Logistics Survey (published by Pelican BioThermal / Peli BioThermal; IQVIA Institute for Human Data Science cited as the originating data source within the document)",
+    "year": "2019",
+    "url": "https://cdn2.hubspot.net/hubfs/4107558/general%20content/PEL1046_SurveyReport_v4a.pdf",
+    "verbatim_excerpt_if_findable": "The IQVIA Institute for Human Data Science estimates that the biopharma industry loses approximately $35 billion annually as a result of failures in temperature-controlled logistics — from lost product, clinical trial loss and replacement costs, to wasted logistics costs and the costs of root-cause analysis. [Footnote 4 in the Peli document cites: Pharmaceutical Commerce: 2018 Biopharma Cold Chain Sourcebook, indicating the IQVIA figure was published/cited through Pharmaceutical Commerce's 2018 Sourcebook, not in a standalone IQVIA Institute report.]",
+    "important_nuance": "No standalone IQVIA Institute report titled '2019 Biopharma Cold Chain Logistics Survey' exists. The $35B figure is an IQVIA data point that appears in Pelican BioThermal's 2019 survey publication and is cross-referenced to Pharmaceutical Commerce's 2018 Biopharma Cold Chain Sourcebook (footnote 4). The IQVIA white paper 'Pharma's Frozen Assets' (https://www.iqvia.com/-/media/iqvia/pdfs/library/white-papers/iqvia-pharmas-frozen-assets_final.pdf) is a separate IQVIA document focused on cold chain ESG/volume trends and does not contain the $35B loss figure."
+  },
+
+  "iata_separate_figure": {
+    "confirmed": true,
+    "range_usd": "$2.5B - $12.5B",
+    "url": "https://www.iata.org/contentassets/494bc14afd934b0193735e9a47091d72/ceiv-pharma-infographic.pdf",
+    "publication_title": "IATA CEIV Pharma Infographic (undated; published by IATA in support of its CEIV Pharma certification program)",
+    "important_nuance": "The IATA CEIV Pharma infographic is the primary IATA-published document that carries this figure, but the infographic itself cites 'Pharmaceutical Commerce' as its source. The $2.5B-$12.5B range therefore originates from Pharmaceutical Commerce's Biopharma Cold Chain Sourcebooks and is repeated — not independently generated — by IATA. The IATA PDF returned HTTP 403 in direct fetch attempts; existence and content confirmed via multiple independent search sources including search snippet from iata.org itself and cross-confirmation from Amerijet, Proventainternational, and tempcontrolpack.com secondary citations. The IATA Knowledge Hub page and IATA Pharma program page do not reproduce the figure inline.",
+    "fetch_status": "[NEEDS-ATTENDED-FETCH]: https://www.iata.org/contentassets/494bc14afd934b0193735e9a47091d72/ceiv-pharma-infographic.pdf — returned HTTP 403; content confirmed via search snippets"
+  },
+
+  "sources_consulted": [
+    {
+      "url": "https://cdn2.hubspot.net/hubfs/4107558/general%20content/PEL1046_SurveyReport_v4a.pdf",
+      "status": "FETCHED via markitdown — 842 lines, verbatim IQVIA quote confirmed on pp. 2-3; footnote 4 = Pharmaceutical Commerce 2018 Biopharma Cold Chain Sourcebook"
+    },
+    {
+      "url": "https://www.iqvia.com/-/media/iqvia/pdfs/library/white-papers/iqvia-pharmas-frozen-assets_final.pdf",
+      "status": "FETCHED via markitdown — 1496 lines, IQVIA white paper on cold chain ESG/volume; does NOT contain $35B loss figure; different document"
+    },
+    {
+      "url": "https://www.iqvia.com/insights/the-iqvia-institute/reports-and-publications/reports",
+      "status": "FETCHED — IQVIA Institute reports index; no standalone cold chain losses report visible; cold chain reports listed are volume/market-size oriented"
+    },
+    {
+      "url": "https://www.iata.org/contentassets/494bc14afd934b0193735e9a47091d72/ceiv-pharma-infographic.pdf",
+      "status": "HTTP 403 via markitdown; existence and $2.5B-$12.5B content confirmed by IATA search snippet and multiple secondary sources; needs attended fetch"
+    },
+    {
+      "url": "https://www.iata.org/en/programs/cargo/pharma/",
+      "status": "FETCHED — IATA Pharma & Healthcare program page; no loss dollar figures on this page"
+    },
+    {
+      "url": "https://www.iata.org/en/services/certification/special-cargo/ceiv-pharma/",
+      "status": "FETCHED — IATA CEIV Pharma certification page; no loss dollar figures on this page"
+    },
+    {
+      "url": "https://www.iata.org/en/publications/newsletters/iata-knowledge-hub/tips-on-how-to-handle-temperature-controlled-goods-to-maintain-product-integrity/",
+      "status": "FETCHED — IATA Knowledge Hub article on temperature handling; loss dollar figures not present on this page"
+    },
+    {
+      "url": "https://www.pharmaceuticalcommerce.com/view/pharmaceutical-cold-chain-logistics-13-4-billion-global-industry",
+      "status": "FETCHED — Pharmaceutical Commerce 2017 article on cold chain market size ($13.4B logistics market); does not contain loss figures"
+    },
+    {
+      "url": "https://www.pharmaceuticalcommerce.com/view/pharma-cold-chain-more-growth-more-technology-offerings",
+      "status": "FETCHED — Pharmaceutical Commerce article; references 'tens of billions' in wasted product but not the specific $2.5B-$12.5B figure"
+    },
+    {
+      "url": "https://www.aircargonews.net/failures-in-temperature-controlled-logistics-cost-biopharma-industry-billions/1024281.article",
+      "status": "HTTP 403"
+    },
+    {
+      "url": "https://airlines.iata.org/analysis/pharma-freight-coming-in-from-the-cold",
+      "status": "Redirect to bot-check (airlines.redmed.group); blocked"
+    },
+    {
+      "url": "https://www.tempcontrolpack.com/knowledge/reducing-cold-chain-shipping-loss-in-pharmaceuticals-2025-strategies/",
+      "status": "FETCHED — secondary aggregator; cites $20-35B range from 'industry estimates'; does not independently source IATA $2.5B-$12.5B"
+    }
+  ],
+
+  "replacement_text": "The IQVIA Institute for Human Data Science estimated in 2019 that the biopharma industry loses approximately $35 billion annually from failures in temperature-controlled logistics — including lost product, clinical trial losses, wasted logistics costs, and root-cause analysis — as cited in Pelican BioThermal's 2019 Biopharma Cold-Chain Logistics Survey (https://cdn2.hubspot.net/hubfs/4107558/general%20content/PEL1046_SurveyReport_v4a.pdf), which in turn references Pharmaceutical Commerce's 2018 Biopharma Cold Chain Sourcebook. Separately, IATA's own CEIV Pharma program literature places annual pharmaceutical product losses specifically attributable to air cargo cold-chain failures at US$2.5–12.5 billion — a narrower, air-freight-specific estimate also sourced from Pharmaceutical Commerce (IATA CEIV Pharma Infographic, https://www.iata.org/contentassets/494bc14afd934b0193735e9a47091d72/ceiv-pharma-infographic.pdf). The $35B figure should not be attributed to IATA; the two figures measure different scopes (industry-wide all-mode losses vs. air cargo temperature failures).",
+
+  "confidence_after": "Medium",
+
+  "notes": "The $35B attribution to IQVIA is confirmed via verbatim text in the Peli BioThermal PDF, which is publicly accessible. However, the IQVIA figure was not published in a standalone IQVIA Institute report — it appears to be IQVIA proprietary data cited through Pharmaceutical Commerce's 2018 Biopharma Cold Chain Sourcebook (a paywalled annual industry publication). No open-access standalone IQVIA Institute report with this figure was found. The IATA $2.5B-$12.5B figure is confirmed to appear in IATA's own CEIV Pharma infographic, but IATA itself attributes it to Pharmaceutical Commerce, not to independent IATA research. Both figures ultimately trace to Pharmaceutical Commerce's Biopharma Cold Chain Sourcebook series, with IQVIA as the underlying data provider for the $35B figure. Confidence is Medium (not High) because: (1) the IATA infographic PDF could not be directly fetched (HTTP 403); (2) no standalone IQVIA report was found — the chain is IQVIA data → Pharmaceutical Commerce 2018 Sourcebook → Peli BioThermal 2019 Survey. A reviewer should attempt attended fetch of the IATA infographic and seek the 2018 Pharmaceutical Commerce Sourcebook to fully close the chain."
+}

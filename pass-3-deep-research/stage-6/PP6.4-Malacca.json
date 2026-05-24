@@ -1,0 +1,63 @@
+{
+  "claim_id": "PP6.4-Malacca",
+  "outcome": "replace",
+  "verified_figure": {
+    "percent_change": 281,
+    "base_year": "H1 2024",
+    "comparison_year": "H1 2025",
+    "absolute_incidents_base": 21,
+    "absolute_incidents_comparison": 80,
+    "full_year_percent_change": 74,
+    "full_year_absolute_base": 62,
+    "full_year_absolute_comparison": 108,
+    "geographic_scope": "Straits of Malacca and Singapore (SOMS) — primarily Singapore Strait (79 of 80 H1 incidents); only 1 incident in Malacca Strait proper",
+    "note": "281% is H1-2025 vs H1-2024 comparison; full-year 2025 vs full-year 2024 is +74%. 108 incidents is a 19-year high (2007–2025)."
+  },
+  "bsi_ttclub_report_actual_date": "April 2026 (titled '2025 Cargo Theft Report', covering 2025 data)",
+  "bsi_ttclub_report_url": "https://www.ttclub.com/fileadmin/uploads/tt-club/Documents/Corporate_Literature/TT_Club_BSI_2025_Cargo_Theft_Report_FINAL.pdf",
+  "bsi_ttclub_verbatim_quote": "Maritime risks escalated sharply with the resurgence of sea piracy across Asian waters. Incidents rose by 85% in the first half of 2025, reaching their highest levels in nearly a decade, with the Strait of Malacca and Singapore experiencing a 281% year over year surge. While large cargo losses were rare due to strong shipboard security measures, thieves frequently stole engine spares, ship stores, and other unsecured items. Economic hardship and inconsistent enforcement contributed to this resurgence, though targeted arrests in Indonesia helped moderate activity later in the year.",
+  "date_inconsistency_resolution": "Stage 3 draft ('April 2025') is WRONG — no such report exists covering 2025 piracy data at that date. The correct report is the '2025 Cargo Theft Report' published April 2026. The PDF file at the April 2025 URL covers 2024 cargo theft data only and contains no Malacca piracy statistics.",
+  "recaap_corroboration": {
+    "confirmed": true,
+    "annual_report_year": "2025 (published early 2026)",
+    "verbatim_quote": "Incidents in SOMS have increased by 74%, from 62 incidents in 2024 to 108 in 2025, which is also the highest number of incidents recorded in SOMS during the 19-year period of 2007-2025.",
+    "h1_verbatim": "A total of 80 incidents were reported in the SOMS from January to June 2025. Compared to the same period last year (21 incidents), the number of incidents in the SOMS has almost quadrupled in the first half of 2025.",
+    "url": "https://www.recaap.org/resources/ck/files/reports/annual/ReCAAP%20ISC%20Annual%20Report%202025.pdf",
+    "h1_press_release_url": "https://www.recaap.org/resources/ck/files/news/2025/Press%20release%20-%20ReCAAP%20ISC%20piracy%20and%20sea%20robbery%20report%20(Jan%20to%20Jun%202025).pdf",
+    "math_check": "281% = (80 - 21) / 21 × 100 — exactly matches ReCAAP H1 2025 vs H1 2024 figure",
+    "note": "ReCAAP states 'almost quadrupled' rather than '281%'; the BSI/TT Club report calculated the precise percentage from the same underlying ReCAAP data. Full-year figure is +74% (62→108), not 281%."
+  },
+  "sources_consulted": [
+    {
+      "url": "https://www.ttclub.com/fileadmin/uploads/tt-club/Documents/Corporate_Literature/TT_Club_BSI_2025_Cargo_Theft_Report_FINAL.pdf",
+      "status": "CONFIRMED — PDF converted via markitdown; verbatim 281% text found on page covering Asia maritime section; report dated April 2026, titled '2025 Cargo Theft Report'"
+    },
+    {
+      "url": "https://www.ttclub.com/fileadmin/uploads/tt-club/Documents/TT_and_BSI_annual_theft_report/TT_Club_Report_-_Supply_Chain_Report_April_2025.pdf",
+      "status": "CONFIRMED — This is the April 2025 report covering 2024 cargo theft data. Contains NO Malacca piracy statistics and NO 281% figure. The prior deep-research run cached this file at /tmp/bsi-ttclub-2025.md — this is the WRONG report for the claim."
+    },
+    {
+      "url": "https://www.recaap.org/resources/ck/files/reports/annual/ReCAAP%20ISC%20Annual%20Report%202025.pdf",
+      "status": "CONFIRMED — PDF converted via markitdown. Primary multilateral source. States SOMS +74% full-year (62→108); H1 2025 vs H1 2024 was 21→80 incidents (=281% increase). 19-year high confirmed."
+    },
+    {
+      "url": "https://www.recaap.org/resources/ck/files/news/2025/Press%20release%20-%20ReCAAP%20ISC%20piracy%20and%20sea%20robbery%20report%20(Jan%20to%20Jun%202025).pdf",
+      "status": "CONFIRMED — H1 2025 press release; states 80 incidents in SOMS Jan–Jun 2025 vs 21 in same period 2024; uses 'almost quadrupled' language"
+    },
+    {
+      "url": "https://www.ttclub.com/news-and-resources/news/article/tt-club-bsi-consulting-warn-of-escalating-global-cargo-theft-as-criminal-tactics-grow-increasingly-sophisticated",
+      "status": "CONFIRMED — TT Club press release dated 20 April 2026; confirms 281% figure and April 2026 publication date"
+    },
+    {
+      "url": "https://www.bsigroup.com/en-US/insights-and-media/media-center/press-releases/2026/april/tt-club-and-bsi-report-rise-in-cargo-theft-as-criminal-tactics-evolve/",
+      "status": "IDENTIFIED — BSI Group press release April 2026; consistent with other sources; not fetched (budget)"
+    },
+    {
+      "url": "https://shipandbunker.com/news/apac/866169-piracy-in-the-strait-of-malacca-surged-to-a-19-year-high-in-2025",
+      "status": "IDENTIFIED — trade press corroboration; confirms 19-year high and 74% full-year increase; not fetched directly (confirmed via cache HTML)"
+    }
+  ],
+  "replacement_text": "Piracy and armed robbery incidents in the Straits of Malacca and Singapore surged 281% in H1 2025 vs H1 2024 (21 to 80 incidents), reaching a 19-year high of 108 incidents for the full year 2025 (+74% vs 62 in 2024) — BSI/TT Club 2025 Cargo Theft Report (April 2026 edition); corroborated by ReCAAP ISC Annual Report 2025.",
+  "confidence_after": "High",
+  "notes": "Three errors in the original claim: (1) Report date — the correct edition is April 2026 (the '2025 Cargo Theft Report'), not April 2025. The April 2025 report covered 2024 cargo theft land-based data and contained no Malacca piracy statistics. (2) Geographic precision — 281% covers the full Straits of Malacca AND Singapore (SOMS); within SOMS, 79 of 80 H1 incidents were in the Singapore Strait, not the Malacca Strait proper. The claim 'Strait of Malacca' is a loose shorthand for the full SOMS corridor. (3) Time window — 281% is a H1 2025 vs H1 2024 comparison; the full-year 2025 vs 2024 figure is +74%. Both are defensible but must not be conflated. The 281% figure is precisely verified and correctly attributed to BSI/TT Club, which derived it from the same ReCAAP ISC data confirmed independently here. No attended-fetch needed — all PDFs were successfully converted via markitdown."
+}

@@ -1,0 +1,1646 @@
+# Indonesia Urban Affluent + Upper-Middle: Value Chain & Market Sizing
+
+Run ID: 2026-05-23-0736
+Topic: Indonesia urban affluent + upper-middle population as the addressable market for a GP-anchored, asset-light MSO delivering structured preventive care and CDM (diabetes, hypertension, high cholesterol)
+Geography in scope: Indonesia Tier-1 and Tier-2 cities
+Geography out of scope: rural Indonesia; other SEA markets
+Generated: 2026-05-23
+
+---
+
+## Executive structure
+
+This document combines 5 analytical dimensions (treated as 'stages' in the overnight research pipeline) that together characterize the addressable market for an Indonesian MSO:
+
+1. Population sizing — affluent + upper-middle in Tier-1/Tier-2 cities
+2. Healthcare spending behavior by income segment
+3. Private health insurance — penetration & plan composition
+4. Top insurers — structured preventive/CDM programmes
+5. Chronic disease burden & undiagnosed rate
+
+Each section is self-contained with its own citations. Cross-stage observations and corrections from contradiction detection are documented in cross-stage-observations.md and pass-2-validation/contradictions.json.
+
+---
+
+# Stage 1 — Population Sizing: Indonesia Urban Affluent + Upper-Middle in Tier-1/Tier-2 Cities
+
+---
+
+## 1.1 Definition and Scope
+
+This stage establishes the absolute size, geographic concentration, income thresholds, and healthcare spend headroom of Indonesia's affluent and upper-middle population — the commercially addressable base for a GP-anchored preventive care and CDM platform funded through out-of-pocket (OOP), private insurance, or employer programmes. The analysis excludes the BPJS-reliant mass market.
+
+The primary definitional framework is the five-tier expenditure classification issued by BPS (Badan Pusat Statistik) and operationalized using Susenas (National Socio-Economic Survey) data. BPS classifies consumption classes by multiples of the national poverty line: the affluent (kelas atas) are those spending above 17 times the poverty line per capita per month; the middle class (kelas menengah) ranges from 3.5 to 17 times the poverty line; the aspiring middle class (calon kelas menengah) ranges from 1.5 to 3.5 times. This framework is used in the primary analysis below. The World Bank's 2019 "Aspiring Indonesia" report uses a parallel but slightly different threshold structure (see Section 1.2) and is used as a cross-validation source. [1] [2]
+
+---
+
+## 1.2 Segment Sizing — Indonesia Population by Income Class
+
+### Definitional frameworks in use
+
+**BPS/Susenas framework (September 2024, primary)** [3]
+
+| Class | Expenditure threshold (per capita/month) | Population count | Share of total |
+|---|---|---|---|
+| Affluent (kelas atas) | > IDR 9,909,844 (~> $609/month p.c.) | 1.29 million persons | 0.46% |
+| Middle class | IDR 2,040,262 – 9,909,844 ($125 – $609/month p.c.) | 48.41 million | 17.25% |
+| Aspiring middle class | IDR 1,020,131 – 2,040,262 ($63 – $125/month p.c.) | 138.31 million | 49.29% |
+| Vulnerable poor | IDR 595,242 – 1,020,131 | 68.51 million | 24.42% |
+| Poor | < IDR 595,242 (~$36/month p.c.) | 24.06 million | 8.57% |
+| **Total** | | **~280.6 million** | 100% |
+
+Sources: BPS September 2024 press release; Antara News citing BPS classification data. [3] [4]
+
+Note: These are per capita consumption figures (not household income). At Indonesia's national average household size of ~3.9 persons [ASSUMED-1: current average household size used is 3.9; Susenas 2024 table should confirm — field validation: ask BPS data analyst], the IDR 9,909,844 per capita threshold implies household monthly consumption of roughly IDR 38.6 million (~$2,370/month or ~$28,400/year per household), which approximates an upper-middle or affluent household income threshold in the Indonesian context.
+
+**World Bank "Aspiring Indonesia" framework (2019, Susenas 2016 base)** [1]
+
+The World Bank defines the middle class as those with per-capita consumption above Rp 1.2 million/month (>$7.75/day PPP), and the upper class as those above Rp 6.0 million/month (>$38/day PPP). Under this definition, as of 2016: middle class = ~52 million persons; upper class = ~1.3 million persons (explicitly noted as likely undercounted because Susenas under-samples the very wealthy). [1]
+
+**BCG "mass affluent" framework (2018, cross-reference only)** [5]
+
+BCG defines the "mass affluent" as households with annual income above $24,000 (approximately IDR 370 million/year at current exchange rates). Under this definition, BCG estimated the Indonesia mass affluent at approximately 5% of the population in 2018, projecting growth to 21% by 2030 as incomes rise — implying approximately 14 million persons as of 2018 and up to ~60 million by 2030. This is a significantly broader definition than BPS's "affluent" and is best understood as approximately equivalent to the BPS upper-middle class (MC 2, i.e., top half of the middle class plus all of the upper class). [5]
+
+### Household-level derivation
+
+The BPS affluent class (1.29 million persons as of September 2024) translates to approximately **330,000–380,000 households** at an assumed 3.4–3.9 persons/household [ASSUMED-1]. (Deep-research refinement: using a household-size of 3.4 persons — closer to urban Java norm — yields ~380K HH; using national average 3.9 yields ~330K HH. Both are credible floors; true count is higher given Susenas under-sampling of the wealthy.) The full BPS middle class (48.41 million persons) translates to approximately **12.4 million households**.
+
+The MSO addressable base — combining BPS affluent + upper-middle (top half of middle class, roughly MC 2 in World Bank terms) — is estimated at:
+
+- **Affluent (kelas atas):** ~330,000 households; 1.29 million persons [3]
+- **Upper-middle (top half of middle class, >IDR ~6M per capita/month):** derived from World Bank MC2 segment of ~5 million persons in 2016 [1], updated to approximately **6–8 million persons / 1.5–2.0 million households** by 2024 after adjusting for population growth and income upgrading [ASSUMED-2: exact 2024 count for MC2 segment requires BPS Susenas 2024 full publication — to validate: request BPS Susenas March 2024 Table 4 (per capita expenditure by class); ask field interviews: "What is the current count of Indonesians spending above IDR 3.2 million per capita per month in urban areas?"]
+
+Total combined addressable population for MSO: approximately **7–9 million persons / 1.8–2.3 million households** across all geographies. [ASSUMED-3: this estimate is a BPS-grounded derivation; direct validation requires BPS publication table with per-class population counts by urban/rural split for 2024]
+
+**Data gap:** BPS Susenas full tabulation (BPS publication "Consumption Expenditure of Population of Indonesia, March 2024") provides decile-by-decile expenditure thresholds and health spending shares. Original HTTP 403 — [PHASE2-RESOLVED via Playwright 2026-05-23]: https://www.bps.go.id/en/publication/2024/10/18/b392b2e96c87c090a6f8d9c2/consumption-expenditure-of-population-of-indonesia-march-2024.html — publication page accessible (Catalog 3201004, ISSN 1979-6242, 6.06 MB PDF, semi-annual, Oct 2024 release rev. Dec 2024); abstract confirms food/non-food/health spending coverage; full PDF download still required for decile-by-decile tabulation.
+
+### Key caveat: Susenas under-sampling of the wealthy
+
+The World Bank (2019) explicitly flags that Susenas household surveys under-capture very high-income Indonesians: "initial results indicate that the upper class is much larger and richer than the survey data suggest." [1] This means the BPS 1.29 million affluent figure is a statistical floor, not the true ceiling. A forthcoming World Bank analysis (cited but not yet released in 2019) aimed to estimate the true top end. No updated public figure was found as of this research pass.
+
+---
+
+## 1.3 Tier-1 and Tier-2 City Profile
+
+### City classification
+
+Indonesia's government has formally designated 10 national metropolitan areas (kawasan perkotaan metropolitan nasional) through Presidential Regulation. These are the closest official equivalent to a Tier-1/Tier-2 classification. No single authoritative regulation uses the label "Tier-1" and "Tier-2"; in practice, investment and consumer research firms treat the largest metros as Tier-1 and the next tier as Tier-2. [6]
+
+**Official metropolitan area population (2020 Census base, mid-2024 estimates)** [6]
+
+| Metropolitan area | Core anchor city | Metro area population | Relative scale |
+|---|---|---|---|
+| Jabodetabekjur (Jakarta) | Jakarta DKI | 33,430,285 | Megacity — ~12% of national pop. |
+| Gerbangkertosusila (Surabaya) | Surabaya | 9,570,870 | Tier-1b |
+| Bandung Basin | Bandung | 8,357,393 | Tier-1c |
+| Kedungsepur (Semarang) | Semarang | 5,689,149 | Tier-1d / Tier-2a |
+| Mebidangro (Medan) | Medan | 4,848,885 | Tier-1d / Tier-2a |
+| Mamminasata (Makassar) | Makassar | 2,621,168 | Tier-2 |
+| Patungraya Agung (Palembang) | Palembang | 2,570,981 | Tier-2 |
+| Sarbagita (Denpasar-Bali) | Denpasar | 2,388,680 | Tier-2 (tourism-skewed) |
+| Banjarbakula (Banjarmasin) | Banjarmasin | 1,939,347 | Tier-2 |
+| Bimindo (Manado) | Manado | 830,137 | Tier-2 |
+
+Sources: Wikipedia — List of Metropolitan Areas in Indonesia, citing BPS 2020 Census data. [6]
+
+**Working definition for this research:** Tier-1 = Jakarta, Surabaya, Bandung, Semarang, Medan (top 5 metros; combined ~62 million persons). Tier-2 = Makassar, Palembang, Denpasar, Banjarmasin, Manado plus the next 10–15 large cities not yet in metro classifications (e.g., Yogyakarta, Balikpapan, Pekanbaru, Pontianak). [ASSUMED-4: no single authoritative government source uses "Tier-1/Tier-2" terminology — this mapping follows investment and consumer research convention; to validate: ask Bappenas or MOHA (Ministry of Home Affairs) for official classification of city tiers for economic planning purposes.]
+
+### Urban income concentration
+
+Indonesia's urban population was 58.8% of total (approx. 165 million persons) in 2024 [7], concentrated in Tier-1 metros. Key evidence on income concentration:
+
+- **Jabodetabek GDP per capita:** approximately $8,775 (2019); the core DKI Jakarta posts GDP per capita of approximately $22,000 (~IDR 344 million) — approximately 4× the national average of ~IDR 78.6 million ($4,368) [8]
+- **Surabaya metro GDP per capita:** approximately 1.5× the national average [9]
+- **Surabaya leads Indonesia** on share of high-class consumers (defined as top 10% of global earners by PPP): over 8% of Surabaya's population qualifies, versus a national average of 1.5% [10]
+
+**Urban share of the middle and affluent classes:** The World Bank (2019) noted that the middle class is "predominantly urban" and that urban areas contained the vast majority of the upper class. [1] BPS data and benefit incidence analysis confirm that Java/Bali accounts for approximately 67% of national health spending despite representing 57% of the population — a proxy for the income-weighted concentration of the middle and upper classes on Java. [11]
+
+**Estimated Tier-1 share of MSO addressable base:**
+
+Given that Jabodetabek alone represents ~12% of national population but an estimated 25–30% of household consumption [8], and that the affluent and upper-middle class are disproportionately urban-Java, an initial working assumption was that Tier-1 cities (Jakarta, Surabaya, Bandung, Semarang, Medan) contain approximately **55–65% of the combined affluent + upper-middle (MC2) segment.** [ASSUMED-5]
+
+**Deep-research finding (downgraded, conflicting evidence):** The East Ventures Digital Competitiveness Index 2024 (cited via Jakarta Post Dec 2023) places roughly **70% of Indonesia's population in Tier-2/3 cities**, with only ~30% in Tier-1. Applied uniformly to income classes, this would imply a lower Tier-1 share than the 55–65% above. However, "applied uniformly" is the wrong frame — affluent and upper-middle households are disproportionately concentrated in Jakarta and Surabaya. The corrected working range is therefore **40–60% of the affluent + upper-middle in Tier-1 metros**, with the higher end likely for the affluent decile and the lower end for upper-middle. The single-decimal precision implied by the original 55–65% range is not supported by any primary BPS cross-tab. [ASSUMED-5: BPS Susenas provincial-level income class tables remain the only authoritative path to a verified Tier-1 share — direct fetch returned HTTP 403. Field validation: in each metro, ask: "What proportion of your private-pay patient base is local vs. from peri-urban areas?"]
+
+This implies approximately **0.7–1.4 million affluent + upper-middle households in Tier-1 cities** (revised downward from earlier 1.0–1.5M range to reflect the East Ventures concentration data), and a further **300,000–500,000 in Tier-2 cities**, giving a total Tier-1/Tier-2 addressable household base of **1.0–1.9 million households.** [ASSUMED-5]
+
+---
+
+## 1.4 Growth Dynamics 2015–2024
+
+### Historical growth of the middle and upper class
+
+- **2002–2016:** Indonesia's middle class (World Bank definition) grew at approximately 10% per year, tripling from ~14 million to ~52 million people — the fastest major segment growth. [1]
+- **2016–2019:** Continued growth; BPS middle class peaked at 57.33 million (21.45% of population) in 2019. [12]
+- **2019–2024:** COVID-19 disruption caused significant regression. The BPS middle class declined by approximately 9.48 million persons (−16.5%) between 2019 and 2024, reaching 47.85 million (17.13% of population) in March 2024. The aspiring middle class increased by ~8.65 million over the same period, suggesting the majority of departing middle-class households fell into aspiring middle rather than poverty. [12] [13]
+- **2024 (September):** Partial recovery evident. BPS middle class at 48.41 million; affluent at 1.29 million. [3]
+
+### CAGR calculation (net effect, 2015–2024)
+
+- Middle class (BPS definition): from approximately 52 million (2015 proxy using 2016 data) to 48.41 million (September 2024) — **negative CAGR of approximately −0.8%/year over 9 years**, driven almost entirely by COVID-19 period regression (2020–2022). [ASSUMED-6: 2015 population count used is the 2016 Susenas figure of 52M as an approximation; to validate: request BPS Susenas 2015 income class distribution]
+- **Pre-pandemic trend (2015–2019):** positive CAGR of approximately +2.5% per year (52M → 57M over 4 years). This is the more relevant comparator for projecting post-stabilization growth.
+- **Upper class (affluent):** 1.02 million (2019) → 1.07 million (2021) → 1.29 million (September 2024) — growth of approximately **+26% over 5 years, or ~4.7% CAGR**, consistent with the World Bank observation that the upper class grew faster than other segments. [3] [14]
+
+### "85 million consumers by 2030" — still on track?
+
+McKinsey's 2012 "Archipelago Economy" report projected Indonesia would add 90 million consumers to its consuming class by 2030 (defined as annual net income >$3,600 at 2005 PPP), bringing the total to approximately 135 million. [15] This projection assumed uninterrupted pre-pandemic growth trajectories.
+
+Post-COVID reality as of 2024: The combined middle class + aspiring middle class = 186.7 million persons (66.5% of 280 million), which already exceeds the 135 million target number, but much of this is in the aspiring middle class (lower-spend tier) rather than the economically secure middle class. The consuming class projection appears partially on track in volume but is structurally weaker than projected because more people are in the lower-spend aspiring middle tier than expected. The middle class itself (the economically secure tier) is smaller than the 2012 trajectory implied. [ASSUMED-7-PHASE2-PARTIALLY-RESOLVED]: McKinsey "Enterprising Archipelago" 2025 update now accessible at [PHASE2-RESOLVED via Playwright 2026-05-23]: https://www.mckinsey.com/mgi/our-research/the-enterprising-archipelago-propelling-indonesias-productivity — published April 30, 2025; reframes goal as Indonesia high-income by 2045 (not the 2012 2030 milestone), explicitly notes Indonesia "has not reached that milestone yet" but income has grown 60% since 2012; calls for tripling medium/large company count to raise productivity. Reconciliation: the original 2012 90M-by-2030 trajectory is implicitly de-emphasised in the 2025 update; the 2025 update does not republish a 2030 consuming-class number.]
+
+**Post-2024 currency headwinds:** The Indonesian rupiah was approximately IDR 15,700 to the USD in early 2024, vs. IDR 14,000 in 2019 — approximately −11% depreciation. This reduces USD-denominated purchasing power, particularly for imported healthcare equipment and medications, though it does not affect domestic-currency income class thresholds.
+
+### Outlook
+
+The affluent class (kelas atas) has shown resilience during and after COVID, growing from ~1.07 million (2021) to ~1.29 million (September 2024). The upper-middle tier (MC2) is more exposed to economic volatility but is expected to resume growth as formal employment recovers. Urbanization continues at approximately 1.5%/year, consistently expanding the Tier-1/Tier-2 addressable base. [7]
+
+---
+
+## 1.5 Spend Headroom — Household Healthcare Expenditure by Segment
+
+### National aggregate benchmarks
+
+Indonesia's total health expenditure per capita was approximately **$178/year (2022)**, based on WHO/World Bank data. OOP payments represented approximately **30.5% of total health expenditure** in 2022 [16], down from 34% in 2019 [17] — implying national average OOP health spending of approximately $54/year/person.
+
+National per capita health spending in IDR was approximately **IDR 2.2 million per person per year (2023)**, or roughly IDR 183,000/month. [18]
+
+### Income-gradient evidence
+
+The limited income-stratified data available from Susenas-based studies reveals a pronounced positive income gradient for both total health spending and private facility utilization:
+
+**OOP spending by income quintile (outpatient, IDR 000 per episode, 2018)** [19]
+| Quintile | OOP per outpatient episode (IDR 000) |
+|---|---|
+| Q1 (Poorest) | 118 |
+| Q5 (Richest) | 485 |
+
+**OOP spending by income quintile (inpatient, IDR 000 per episode, 2018)** [19]
+| Quintile | OOP per inpatient episode (IDR 000) |
+|---|---|
+| Q1 (Poorest) | 1,481 |
+| Q5 (Richest) | 2,668 |
+
+**Benefit incidence of healthcare (hospital outpatient, 2017):** The richest quintile received 40.5% of healthcare benefits (in terms of subsidy-equivalent public spend) versus only 9.2% for the poorest — reflecting far higher utilization rates and private facility use among upper-income groups. [11]
+
+**Median annual OOP spending (richest quintile, 2018):** approximately **$20.40/year in Java/Bali**, notably low — a reflection that (a) this is median not mean (heavily skewed by episodic inpatient events), and (b) Susenas OOP data substantially under-reports private clinic and specialist spending, which is typically paid cash without a formal receipt. [20]
+
+### Private facility use
+
+The Lancet Global Health benefit incidence analysis (2023) confirmed that benefit incidence in Indonesia's private health sector is "significantly pro-rich" — concentration index of 0.134 (2018) and 0.190 (2019), meaning private healthcare is highly concentrated among the wealthy. [21]
+
+**Estimated top-decile household healthcare budget:**
+
+Working up from the per capita data: a top-decile urban household of 3.9 persons, spending IDR 9.9 million+/month per capita (household monthly consumption >IDR 38.6 million, or ~$2,370), would represent a household where OOP healthcare is a small but discretionary share. If healthcare accounts for 3–5% of household non-food expenditure (consistent with BPS Susenas data on non-food spending proportions [ASSUMED-8: BPS Susenas March 2024 full publication shows health as % of non-food spending by class; [PHASE2-PARTIALLY-RESOLVED]: BPS publication page accessible (see above), table-level extraction still requires manual PDF download]), the top-decile household healthcare budget is approximately **IDR 1.2–1.9 million/month** ($74–$117/month) — or **$890–$1,400/year per household in healthcare OOP.** This is a rough derivation; direct Susenas table data would sharpen this significantly.
+
+**Data gap:** BPS Health Statistics Profile 2023 (full publication) contains Susenas-based tables showing healthcare expenditure as a share of total expenditure by income decile for urban households. Original HTTP 403 — [PHASE2-RESOLVED via Playwright 2026-05-23]: https://www.bps.go.id/en/publication/2023/12/20/feffe5519c812d560bb131ca/health-statistics-profile-2023.html — publication page accessible, abstract confirms Susenas March 2023 health expenditure tables by economic status (Catalog 4201005, ISSN 2598-5655, 12.04 MB PDF; full PDF download still required for table-level data).
+
+---
+
+## 1.6 Confidence and Data Gaps
+
+### Confidence summary
+
+| Sub-claim | Confidence | Primary source | Gap |
+|---|---|---|---|
+| BPS affluent population (1.29M, Sept 2024) | High | BPS/Antara Sept 2024 [3] | None — confirmed by multiple outlets |
+| BPS middle class population (48.41M, Sept 2024) | High | BPS/Antara Sept 2024 [3] | None |
+| BPS income class definitions and IDR thresholds | High | BPS/World Bank 2024 [3][1] | None — confirmed by multiple sources |
+| MC2 (upper-middle, ~6–8M persons) | Low | Derived from World Bank 2016 MC2 count (~5M) [1] | BPS Susenas 2024 full table needed |
+| Tier-1/Tier-2 city classification | Medium | Wikipedia citing BPS 2020 Census [6]; no official "tier" label | Bappenas classification document needed |
+| Tier-1 share of affluent + MC2 (40–60%, revised down from 55–65%) | Low | Proxy from GDP and health spend concentration data; East Ventures Digital Competitiveness Index 2024 contradicts the higher end | Susenas provincial microdata needed |
+| Total Tier-1/Tier-2 addressable HH (1.0–1.9M, revised down from 1.3–2.0M) | Low | Derived estimate [ASSUMED-3][ASSUMED-5] | Requires cross-tab of Susenas income class × province |
+| Healthcare OOP by income quintile | Medium | PMC study, 2018 data [19] | 2022–2024 update needed; likely BPJS impact understated |
+| Top-decile HH healthcare budget ($890–$1,400/yr) | Low | Derived estimate [ASSUMED-8] | Direct BPS Susenas decile table needed |
+| McKinsey 2030 consuming-class projection | Medium (was Low, upgraded Phase 2) | McKinsey 2012 Archipelago Economy [15]; 2025 Enterprising Archipelago update [PHASE2-RESOLVED] confirms 2030 milestone not yet reached, reframes ambition to 2045 high-income | |
+
+### Assumptions to validate
+
+**[ASSUMED-1]:** Average Indonesian household size used is 3.9 persons.
+- To validate: Confirm against BPS Susenas March 2024 or Population Census 2020 Table SP-2 (average household size by province). Ask field interviewee: "What average household size does your firm use for urban income projections?"
+
+**[ASSUMED-2]:** The MC2 sub-segment (World Bank upper-middle class, per capita > IDR 6M/month) is estimated at 6–8 million persons in 2024, up from ~5 million in 2016.
+- To validate: Request BPS Susenas 2024 full publication "Consumption Expenditure of Population of Indonesia, March 2024" Table that breaks down population by per-capita expenditure class; alternatively, ask a BPS analyst for the 2024 income distribution table by quintile and class.
+
+**[ASSUMED-3]:** Total addressable population (affluent + MC2) is approximately 7–9 million persons nationwide.
+- To validate: Cross-tabulate BPS Susenas 2024 income class data with urban/rural split; or use World Bank PovcalNet data for Indonesia.
+
+**[ASSUMED-4]:** "Tier-1 cities" = Jakarta, Surabaya, Bandung, Semarang, Medan, and "Tier-2" = next 10–15 large metros, following investor convention rather than official government classification.
+- To validate: Ask Bappenas or MOHA for the official policy classification of Indonesian cities by economic tier; check Presidential Regulation 59/2022 on metropolitan areas for any tier terminology.
+
+**[ASSUMED-5]:** Tier-1 cities contain 55–65% of the national affluent + upper-middle population.
+- To validate: Request BPS Susenas provincial breakdown of income class population. Proxy approach: use provincial share of GDP × income elasticity of class size.
+
+**[ASSUMED-6]:** 2015 BPS middle class count approximated from 2016 Susenas (52 million).
+- To validate: Request BPS Susenas 2015 release; alternatively, use World Bank PovcalNet series.
+
+**[ASSUMED-7]:** McKinsey "Enterprising Archipelago" 2024 update on consuming-class trajectory not reviewed.
+- To validate: [PHASE2-RESOLVED via Playwright 2026-05-23]: https://www.mckinsey.com/mgi/our-research/the-enterprising-archipelago-propelling-indonesias-productivity
+
+**[ASSUMED-8]:** Healthcare share of non-food household expenditure for top-decile urban households is approximately 3–5%.
+- To validate: BPS Health Statistics Profile 2023 full PDF; BPS Susenas March 2024 Table showing health expenditure as % of non-food by expenditure class.
+
+---
+
+## Preliminary Pain Points (this stage — data provider and research user perspective)
+
+1. **BPS Susenas under-captures the very wealthy:** The survey by design misses many high-income households; the true affluent population is materially larger than the 1.29 million reported. Any MSO addressable market model built on BPS figures alone will understate the true addressable base. [1]
+
+2. **No official Tier-1/Tier-2 classification exists:** Indonesia's 10 official metropolitan areas are defined in a Presidential Regulation, but there is no government "Tier" label analogous to China's tier system. Investors and operators must derive their own city hierarchy, creating inconsistency across market-sizing models.
+
+3. **Middle class regression post-COVID distorts 2024 snapshot:** The BPS middle class figure of 48.41 million (2024) is the lowest since ~2016, reflecting COVID-driven downward mobility, not a structural ceiling. Using 2024 as the base without accounting for recovery trajectory understates medium-term demand.
+
+4. **Income thresholds are per-capita expenditure, not household income:** BPS reports consumption expenditure, not pre-tax household income. The effective IDR 9.9M threshold for "affluent" is per person per month — an affluent household of 3.9 persons has aggregate monthly consumption of >IDR 38.6M, substantially higher than common lay understanding of "upper class" income in Indonesia.
+
+5. **Susenas OOP data structurally underestimates private healthcare spend:** Cash payments to private GPs, polyclinics, and wellness providers are systematically under-recorded in Susenas. The OOP spending figures (Q5 outpatient: IDR 485K/episode in 2018) represent a significant undercount of actual private healthcare utilization by the affluent. [19]
+
+6. **Urban-rural split of income classes is unavailable without microdata:** No publicly accessible BPS table cross-tabulates income class membership with urban/rural or province status. Estimating the Tier-1/Tier-2 share of the affluent and upper-middle class requires either microdata access or indirect proxies (GDP per capita, health spending concentration). This is the single largest data gap for MSO launch-market sizing.
+
+7. **Currency depreciation erodes USD-denominated threshold comparability:** The IDR has depreciated ~11% vs. USD since 2019. IDR-denominated income class thresholds remain fixed in real terms, but USD-equivalent comparisons with benchmarks from other markets (e.g., BCG's $24,000/year affluent threshold) shift meaningfully over time.
+
+---
+
+## Citations
+
+(1) World Bank (2019). *Aspiring Indonesia: Expanding the Middle Class.* PDF via World Bank Open Knowledge: https://documents1.worldbank.org/curated/en/519991580138621024/pdf/Aspiring-Indonesia-Expanding-the-Middle-Class.pdf (PDF, processed via markitdown)
+
+(2) BPS-Statistics Indonesia. *Consumption Expenditure of Population of Indonesia, September 2024* — publication landing page: https://www.bps.go.id/en/publication/2025/05/28/b67b4702334f3123221372ba/pengeluaran-untuk-konsumsi-penduduk-indonesia-september-2024.html
+
+(3) Antara News (2024, September). "Middle-class resilience key to sustaining Indonesia's economy." https://en.antaranews.com/news/326039/middle-class-resilience-key-to-sustaining-indonesias-economy — citing BPS September 2024 Susenas release; income class counts and IDR thresholds.
+
+(4) Jakarta Post (2024, December 30). "2024 a year of shrinking Indonesian middle class." https://www.thejakartapost.com/business/2024/12/30/2024-a-year-of-shrinking-indonesian-middle-class.html — confirming 17.13% middle class share and BPS class definitions.
+
+(5) Boston Consulting Group (2018). "Beyond the 'Crazy Rich': The Mass Affluent of Southeast Asia." https://www.bcg.com/en-sea/publications/2018/beyond-crazy-rich-mass-affluent-southeast-asia.aspx — Indonesia mass affluent ~5% of population in 2018, projected to 21% by 2030; $24,000/year threshold.
+
+(6) Wikipedia. "List of metropolitan areas in Indonesia." https://en.wikipedia.org/wiki/List_of_metropolitan_areas_in_Indonesia — citing BPS 2020 Census and presidential regulation; 10 official metro areas with populations.
+
+(7) Statista (2024). "Urbanization in Indonesia." https://www.statista.com/statistics/455835/urbanization-in-indonesia/ — 58.8% urban population in 2024.
+
+(8) Jakarta metropolitan area — Wikipedia: https://en.wikipedia.org/wiki/Jakarta_metropolitan_area — citing Jabodetabek 2019 GDP ($297.7B, per capita $8,775); DKI Jakarta per capita ~$22,000 vs. national average $4,368.
+
+(9) World Bank (document). "Indonesia: The Rise of Metropolitan Regions." https://documents1.worldbank.org/curated/en/520931468269430645/pdf/717400WP00PUBL020FINAL0to0PRINTING0.pdf — Surabaya metro GDP per capita ~1.5× national average.
+
+(10) Statista / Tellusant (2024). "Indonesia: high earning consumers by city 2024." https://www.statista.com/statistics/1488484/indonesia-high-earning-consumers-by-city/ — Surabaya leads Indonesian cities with >8% high-class consumers; national average 1.5%.
+
+(11) Does geographic spending variation exacerbate healthcare benefit inequality? A benefit incidence analysis for Indonesia. PMC8359753. https://pmc.ncbi.nlm.nih.gov/articles/PMC8359753/ — Java/Bali 67% of health spending vs. 57% of population; hospital outpatient concentration index pro-rich.
+
+(12) Jakarta Globe (2025). "Indonesia's Shrinking Middle Class Threatens Growth, Consumption." https://jakartaglobe.id/business/indonesias-shrinking-middle-class-threatens-growth-consumption — 2019 peak at 57.33M, 2024 at 47.85M.
+
+(13) The Diplomat (2024, September). "Is Indonesia's Middle Class Really Shrinking?" https://thediplomat.com/2024/09/is-indonesias-middle-class-really-shrinking/ — [PHASE2-RESOLVED via Playwright 2026-05-23]: full article retrieved; confirms BPS data 9.5M middle class decline (57.33M in 2019 → 47.85M in March 2024), BPS expenditure band definition (IDR 2–9M per month), 2019 World Bank baseline; explicitly cites 81M vs 30M range across pre-2019 studies.
+
+(14) Antara News (data table in search snippet). Upper class count: 1.07 million (2021), confirmed consistent with 1.29 million (September 2024) in source (3).
+
+(15) McKinsey Global Institute (2012). "The Archipelago Economy: Unleashing Indonesia's Potential." https://www.mckinsey.com/~/media/McKinsey/Featured%20Insights/Asia%20Pacific/The%20archipelago%20economy/MGI_Unleashing_Indonesia_potential_Full_report.ashx — 90 million new consumers by 2030 projection.
+
+(16) Indonesia Health Purchasing Profile, Thinkwell Global (September 2022): https://thinkwell.global/wp-content/uploads/2022/09/Health-Financing-Fact-Sheet_-Indonesia_September_2022.pdf — [PHASE2-RESOLVED via Playwright + markitdown 2026-05-23]: PDF downloaded (10 pp.) and converted; confirms CHE IDR 354.6T 2019, OOP 34% of CHE (Household OOP 32.1% of Health Expenditure by Purchaser 2019), 84% JKN coverage; source: MOH National Health Account Indonesia 2021.
+
+(17) WHO Indonesia. "Indonesia's success in achieving 90% coverage and minimizing OOP expenses." https://www.who.int/about/accountability/results/who-results-report-2020-mtr/country-story/2023/indonesia-s-success-in-achieving-90-percent-coverage-and-minimizing-out-of-pocket-expenses-through-national-health-insurance-expansion — OOP declining from 40% (2015) to 29% (2023).
+
+(18) Antara News (2024). National per capita health spending IDR 2.2 million/year (2023). Cross-referencing BPS Health Statistics Profile 2023 publication: https://www.bps.go.id/en/publication/2023/12/20/feffe5519c812d560bb131ca/health-statistics-profile-2023.html — [PHASE2-RESOLVED via Playwright 2026-05-23]: publication page accessible; abstract confirms general population/maternal/child health and public health expenditure data from Susenas March 2023, at national + provincial levels by economic status.
+
+(19) Incidence of catastrophic health spending in Indonesia: insights from a Household Panel Study 2018–2019. PMC10483778. https://pmc.ncbi.nlm.nih.gov/articles/PMC10483778/ — OOP per outpatient episode Q1 IDR 118K, Q5 IDR 485K; inpatient Q1 IDR 1.48M, Q5 IDR 2.67M.
+
+(20) Is Indonesia achieving universal health coverage? Secondary analysis of national data. PMC8491299. https://pmc.ncbi.nlm.nih.gov/articles/PMC8491299/ — median annual OOP Q5 Java/Bali $20.40; note of Susenas under-reporting of private spending.
+
+(21) The Lancet Global Health (2023). "The benefits and burden of health financing in Indonesia: analyses of nationally representative cross-sectional data." https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(23)00064-5/fulltext — [PHASE2-RESOLVED via Playwright 2026-05-23]: full Summary retrieved. Confirms ENHANCE survey N=31,864 (2018) and 31,215 (2019); SUSENAS N=1.13M and 1.20M; private-sector benefit incidence concentration index 0.134 (95% CI 0.065–0.203, p=0.0010) in 2018, rising to 0.190 (95% CI –0.192–0.572, p=0.0070) in 2019 — significantly pro-rich. Health-financing incidence shifted from progressive (Kakwani 0.034) 2018 to mildly regressive (–0.030) 2019.
+
+---
+
+*End of Stage 1.*
+
+---
+
+# Stage 2 — Healthcare Spending Behavior by Income Segment
+
+---
+
+## 2.1 Definition and Scope
+
+This stage establishes how Indonesia's affluent and upper-middle households actually allocate health spending — disaggregated by category (OOP consultations, insurance premiums, MCU, pharmaceuticals, preventive/wellness, CDM), and identifies the income threshold at which preventive and CDM spending transitions from aspirational to a routine budget line. It builds on Stage 1's population sizing (330K–380K affluent HH; 1.5–2.0M upper-middle HH; combined 7–9M persons in Tier-1/Tier-2) to establish per-household spend estimates and the dominant driver of the discretionary transition.
+
+The analysis faces a material data constraint: BPS Susenas full-publication tables returning HTTP 403, meaning the primary source for disaggregated health expenditure by income decile (BPS Health Statistics Profile 2023; BPS Consumption Expenditure March 2024) could not be accessed directly. Data below is built from: (a) academic studies using Susenas microdata [1][2][3]; (b) published WHO/World Bank/Lancet analyses of Indonesia health financing [4][5]; (c) Bain APAC Front Line of Healthcare 2024 consumer survey [6]; (d) OJK and industry data on insurance premiums; and (e) market-level data on supplement and pharmaceutical spending.
+
+---
+
+## 2.2 Healthcare Spend by Category for the Addressable Cohort
+
+### Methodology note
+
+No published source provides a single household-level healthcare budget disaggregated by category for Indonesia's top-decile or upper-middle households as of 2024. The table below is constructed from:
+
+- Quintile-level OOP data from PMC studies using 2018–2019 Susenas (the most granular available) [1][3]
+- National OOP share of total health expenditure: 27.5% in 2021 (WHO/JKN expansion data) [4]; 30.5% in 2022 [5]
+- Private health insurance premium market evidence from OJK/industry sources [7][8]
+- MCU package pricing from named providers [9]
+- Supplement market size from Statista/GlobeNewswire, divided by urban adult population [10]
+- Employer retiree health cost data (PMC12425502) as a proxy for formal-sector employee costs [11]
+
+All figures converted to USD at IDR 16,000/USD (2024 prevailing rate).
+
+### Estimated annual healthcare spend per household — affluent vs. upper-middle
+
+| Category | Affluent HH (kelas atas, >IDR 38.6M/month HH consumption) | Upper-middle HH (MC2, ~IDR 12–38M/month HH) | Notes / Confidence |
+|---|---|---|---|
+| **OOP: GP + specialist outpatient consultations** | $280–420/yr (IDR 4.5–6.7M) | $90–180/yr (IDR 1.4–2.9M) | Medium — derived from Q5 OOP IDR 485K/outpatient episode [1]; affluent make 3–5 private visits/yr (ASSUMED-1); upper-middle 2–3 visits |
+| **Health insurance premiums** | $600–1,200/yr (IDR 9.6–19.2M) | $180–480/yr (IDR 2.9–7.7M) | Low — range based on domestic private plan premiums (Cigna IDR 3.6M/yr basic; Allianz/Prudential mid-tier ~IDR 8–12M/yr) [7][8]; employer co-contribution reduces net out-of-pocket for upper-middle (ASSUMED-2) |
+| **MCU (annual medical check-up)** | $100–300/yr (IDR 1.6–4.8M) | $30–95/yr (IDR 0.5–1.5M) | Medium — Tirta basic MCU IDR 435K; comprehensive IDR 1.2–4.8M; executive packages RS Pondok Indah IDR 1.9–15M [9]; affluent likely purchase premium/executive tier annually; upper-middle basic–standard tier if not employer-covered |
+| **Pharmaceuticals — chronic (CDM-related)** | $120–240/yr (IDR 1.9–3.8M) | $60–120/yr (IDR 1.0–1.9M) | Low — employer retiree data shows medications at 26.8% of total health cost [11]; IDR 12.98M/yr/retiree total → IDR 3.5M in meds as proxy floor; affluent likely supplement BPJS formulary with branded drugs OOP (ASSUMED-3) |
+| **Pharmaceuticals — acute (OOP)** | $60–120/yr (IDR 1.0–1.9M) | $30–70/yr (IDR 0.5–1.1M) | Low — no direct source; national OTC pharma spending ~$12/capita nationally [12]; income gradient assumed 3–5× for richest quintile (ASSUMED-4) |
+| **Preventive/wellness (supplements, gym, screening adjuncts)** | $150–400/yr (IDR 2.4–6.4M) | $60–150/yr (IDR 1.0–2.4M) | Low — national dietary supplement market $3.04B (2023) [10] across ~284M population = ~$10.7/capita; Bain reports 50% of high-income APAC consumers increased supplement spend (vs 45% overall) [6]; income gradient of 5–8× for affluent relative to national average assumed (ASSUMED-5) |
+| **CDM-related ongoing management (beyond pharmacy)** | $180–360/yr (IDR 2.9–5.8M) | $60–120/yr (IDR 1.0–1.9M) | Low — no direct Indonesia source; includes lab tests, specialist CDM review, glucose monitoring equipment; BPJS notionally covers PROLANIS but private-pay affluent duplicate in private settings (ASSUMED-6) |
+| **TOTAL estimated HH healthcare spend per year** | **$1,490–3,040/yr** | **$510–1,215/yr** | Low-Medium composite — substantial uncertainty; BPS Susenas full publication needed to validate |
+
+**Key contextual benchmarks:**
+
+- Q5 (richest quintile) outpatient OOP per episode: IDR 485,000 (~$30) in 2018 [1]; falling to IDR 186,000 by 2019 — the 2019 decline likely reflects expanded JKN uptake substituting OOP, but the richest quintile is also more likely to use private-pay facilities not fully captured in Susenas [1]
+- Median annual household OOP, Java/Bali (all quintiles): $20.40 [3] — this is a Susenas-based undercount of actual cash spending on private clinics/pharmacies
+- National per capita health expenditure (2023): $178 USD total (WHO), of which ~27–30% OOP = ~$48–54/person/year nationally [4][5]; a top-decile urban household of 3.9 persons would have proportionally ~5–10× this at the national average ratio, implying $940–2,100/yr if the income gradient is 5–10× (consistent with the Q5:Q1 OOP ratio of ~4:1 for outpatient care [1])
+- Private health insurance premiums: AXA Mandiri International from IDR 3M/month (premium tier); Cigna basic from IDR 300K/month [7]; employer-sponsored group plans typically IDR 1.5–5M/employee/year for domestic coverage
+
+### Category synthesis
+
+For an affluent urban household (3.9 persons, >IDR 38.6M/month consumption), the total all-in healthcare budget including premiums is estimated at **$1,500–3,000/yr (~IDR 24–48M/year)**. The split is roughly 35–40% insurance premiums, 20–25% direct OOP (consultations + pharmacy), 10–15% MCU, 10–15% supplements/wellness, and 10% CDM-related tests and management. For upper-middle households ($510–1,215/yr, ~IDR 8–19M/year), the insurance premium component is smaller (employer-covered) and OOP and supplement spend dominate the discretionary component.
+
+[ASSUMED-1]: Affluent households average 3–5 private specialist outpatient visits per year.
+- To validate: Ask private clinic operators (e.g., Eka Hospital, Siloam, Mitra Keluarga) for anonymized average visit frequency for private-pay patients earning >IDR 15M/month.
+
+---
+
+## 2.3 Income Threshold for Discretionary Preventive/CDM Spend
+
+### Evidence from income-stratified utilization data
+
+The clearest published data comes from Susenas-based academic analyses showing a steep socioeconomic gradient in preventive care utilization:
+
+**Blood glucose screening by income quintile (national, adults ≥31 years):** [2]
+- Q1 (poorest): 6.1% ever screened
+- Q5 (richest): 30.1% ever screened
+
+**Cholesterol screening by income quintile:** [2]
+- Q1: 7.8%
+- Q5: 32.7%
+
+**Blood pressure measurement (routine, not just symptom-triggered):**
+- Q1: 73.6%
+- Q5: 87.9%
+
+The income gradient for glucose/cholesterol screening (30% vs. 6% — a 5:1 ratio) is vastly larger than for blood pressure (88% vs. 74%). This reflects that blood pressure is measured even in low-cost settings (Puskesmas, community health workers), whereas glucose and cholesterol screening requires lab-based testing and is predominantly paid OOP or through private insurance. The education gradient is even steeper: tertiary-educated Indonesians access blood glucose testing at 43.4% versus 6.9% for those with only primary education [2].
+
+A study of 40–70 year olds found that approximately **41% of respondents had never undergone blood pressure or glucose screening** overall; wealth quintile membership significantly predicted screening uptake with odds ratios 1.7–2.6 for higher vs. lowest wealth quintile [13].
+
+**Income threshold inference:**
+
+No published study explicitly defines a monthly household income threshold at which preventive/CDM spend crosses from aspirational to actual. Working from the data above:
+
+- The Q5 threshold in the 2018–2019 Susenas panel was monthly household expenditure of IDR 5.3–6.7M per capita = approximately IDR 20–26M/household at 3.9 persons — significantly below the BPS 2024 "affluent" threshold of IDR 38.6M/HH
+- The Q5 screening rates (30% blood glucose, 33% cholesterol) are substantially higher than Q1–Q4, but still leave 70% of the richest quintile without regular glucose screening
+- The implication: even at the richest-quintile threshold of IDR ~6.7M/capita/month (2018–2019 Susenas), preventive CDM screening is not yet routine
+
+**Working hypothesis (ASSUMED-2):** The transition from aspirational to budgeted preventive/CDM spend occurs at approximately **IDR 15–20M per household per month ($940–1,250/month)**, corresponding to the upper-middle class (MC2) threshold where private insurance is common, education levels are higher, and family-event triggers (chronic disease diagnosed in a parent or spouse) create urgency. Below this level, spending is primarily episodic (symptom-driven); above it, structured prevention begins to appear as a line item.
+- To validate: Ask private GPs, diagnostic labs (Prodia, Kimia Farma), and MCU providers: "What is the minimum monthly household income of patients who purchase annual MCU packages without employer provision?"
+
+---
+
+## 2.4 Drivers of the Discretionary Transition
+
+### Driver 1: Employer insurance triggering preventive uptake
+
+**Evidence for:** Indonesia's largest employers mandate annual MCU as a condition of occupational health regulation (Ministry of Manpower). BPJS Ketenagakerjaan (employment social security) and private group health plans administered by major insurers (AXA Mandiri, Prudential, Allianz) typically include basic annual MCU for white-collar employees. Aon's Global Medical Trend Rates 2023 shows Indonesia's health cost inflation at 12.7%, indicating active employer engagement with healthcare purchasing [11].
+
+Employer provision of health insurance (beyond BPJS) is concentrated in formal-sector companies in Tier-1 cities. Upper-middle households are disproportionately formal-sector employees. Employer-sponsored plans are the primary access route to private outpatient care for the upper-middle segment — individually purchased private insurance is more concentrated in the affluent decile [ASSUMED-3: to validate with OJK insurance penetration data by employment sector].
+
+MCU delivery model: Tirta Medical Centre basic MCU IDR 435,000; comprehensive IDR 1.2–4.8M; RS Pondok Indah IDR 1.9–15M; EMC Healthcare premium MCU IDR 3.3–4.7M [9]. Employers typically contract basic–standard tier MCU (IDR 435K–1.5M range) for all employees and premium tier for senior management.
+
+**Evidence against / caveat:** PROLANIS (BPJS chronic disease management program launched 2014) nominally covers diabetes and hypertension management at primary care level, but only 37% of primary health centers implement it optimally [14]. Overall disease control: fewer than 20% of patients with DM and/or hypertension are well-controlled under BPJS [14]. Employer-sponsored preventive programs therefore do not reliably translate to ongoing CDM enrollment — the MCU is a one-time event, not a longitudinal relationship.
+
+**Verdict:** Employer insurance is a strong **trigger** for initial preventive contact (MCU uptake), but does not reliably sustain CDM management. This creates the gap the MSO aims to fill.
+
+### Driver 2: Income headroom alone
+
+**Evidence for:** The Q5:Q1 OOP spending ratio (~4:1 for outpatient, ~1.8:1 for inpatient) confirms that income headroom translates directly to higher spending on private healthcare services [1]. Non-adherence to chronic medication correlates with annual income below IDR 40M ($2,500/yr) — i.e., monthly household income below ~IDR 3.3M — with an adjusted odds ratio of 1.23 [15]. This implies a floor below which income is a binding constraint on adherence.
+
+**Evidence against:** The 2022 Yogyakarta WTP study found that the highest income group (>IDR 3.5M/month individual) showed *lower* willingness to pay for cost-sharing than middle-income groups, likely because they can access free BPJS services or self-insure for most costs [16]. This paradox — income headroom does not linearly translate to health spending willingness — is consistent with the general literature finding that health is a "necessary good" (income elasticity <1) until very high income levels.
+
+**Verdict:** Income headroom is a necessary but not sufficient condition. At sub-IDR 15M/HH/month, it is a binding constraint; above IDR 15M/HH/month, other factors (awareness, family triggers, employer nudge) determine whether spending actually occurs.
+
+### Driver 3: Health awareness and education
+
+**Evidence for (strongest single predictor for glucose/cholesterol screening):** Education gradient for blood glucose testing: tertiary-educated = 43.4% screened vs. pre-primary = 6.9% [2]. The education relative index of inequality (RII) for preventive care is 30.3 for blood glucose testing — the single largest inequality found in any care category in Indonesia [2]. This suggests that health literacy and proactive health behavior are far more predictive of preventive care uptake than income alone.
+
+Bain APAC 2024: 51% of APAC consumers (58% of Gen Z) are willing to pay more OOP for better health outcomes and experiences [6]; 85% of APAC consumers expressed interest in healthcare maintenance and lifestyle changes, 6 percentage points higher than 2021 [6]. High-income groups showed elevated supplement spending (50% reporting increased spending vs. 45% overall) [6].
+
+**Verdict:** Health awareness — correlated with tertiary education, urban residence, and Gen Z cohort — is the most potent predictor of preventive screening uptake independent of income. For MSO market development, reaching high-awareness, middle-income households is more efficient than targeting solely on income.
+
+### Driver 4: Family event triggers (illness in parent or family member)
+
+**Evidence (indirect):** No Indonesia-specific published study directly quantifies family-event triggers for preventive care uptake. However, the PMC KAP study [13] found that 80% of respondents who did not screen said they "did not go because they were not ill" — confirming that self-perceived health status (not objective risk) drives most screening decisions. This is consistent with international literature showing that an illness in a family member is one of the most reliable triggers for preventive screening uptake in otherwise healthy adults.
+
+The IDF Diabetes Atlas notes 73% of Indonesia's diabetic population is undiagnosed [cited in Stage 1 context]. Given that diabetes runs in families, the prevalence of diagnosed relatives creates a natural trigger event for at-risk upper-middle households.
+
+**Verdict:** Family triggers are likely a real driver but are unquantified for Indonesia. [ASSUMED-4]: A majority of first preventive care purchases in the upper-middle segment are event-driven (family diagnosis, own screening abnormality) rather than schedule-driven.
+- To validate: Ask GP clinic operators or MCU providers: "What proportion of new private-pay MCU customers cite a family health event as the reason for seeking their first comprehensive check-up?"
+
+---
+
+## 2.5 Cross-Country Benchmarks: Singapore, Malaysia, Vietnam
+
+### Singapore: Healthier SG
+
+Singapore's Ministry of Health launched Healthier SG in July 2023 as a national preventive primary care program attaching eligible residents to a single GP for longitudinal preventive care funded through Medisave credits (government-funded prepayment) rather than OOP.
+
+**Enrollment data (September 2023):** Over 310,000 residents enrolled of 954,000 SMS invitations sent = ~32.5% enrollment rate among those invited [17]. Among chronic disease patients who were aware of the program, 44.3% had enrolled and 39.8% planned to enroll [18]. GP participation: ~75% of ~1,300 CHAS GP clinics enrolled [17].
+
+The program uses **capitation-based funding** — clinics receive a fixed annual sum per enrolled patient — explicitly designed to shift incentives toward prevention and away from fee-for-service episodic care [17].
+
+**OOP impact:** OOP share of current health expenditure fell 8.7 percentage points from 2017 to 2021 in Singapore, though this predates Healthier SG and reflects MediShield Life and MediSave expansion [17]. Healthier SG-specific OOP shift data is not yet available (program only 2 years old).
+
+**Indonesia relevance:** Healthier SG's architecture — GP-anchored, capitation-funded, government-subsidized — is the closest structural analogue to the proposed MSO model. The 44% enrollment rate among aware chronic disease patients suggests a substantial willing addressable group exists once engagement infrastructure is in place. Indonesia lacks the government capitation mechanism; the MSO model substitutes employer contracts and private insurance as the funding layer.
+
+### Malaysia: Primary care for chronic disease
+
+Malaysia does not have a "MySihat GP attachment" program equivalent to Healthier SG. MySihat (Malaysian Health Promotion Board) was a health promotion statutory body established in 2006; its functions were restructured into Ministry of Health departments. Malaysia's private GP sector for CDM operates primarily fee-for-service.
+
+Malaysia's private GP penetration for CDM management is high among the private-pay urban population (Kuala Lumpur, Penang, Johor Bahru): an estimated 60–70% of middle/upper-income Malaysians with known hypertension or diabetes use a private GP for ongoing management [ASSUMED-5: no primary source found; derived from Malaysia private healthcare market structure — to validate with Malaysia Department of Statistics or APHM data].
+
+[FIELD-INTERVIEW-REQUIRED, NOT-PLAYWRIGHT-FIXABLE]: A more current Malaysia private CDM GP market analysis would require access to Academy of Medicine Malaysia or Malaysian Medical Association publications.
+
+Data gap — Malaysia MySihat / private GP CDM attachment rates: No published rate found for Malaysia private GP CDM enrollment; this benchmark requires direct contact with the Malaysian MOH or a Malaysian private insurer annual report.
+
+### Vietnam: Vinmec / Pacific Cross affluent preventive products
+
+**Vinmec International Healthcare System** (Vingroup): Operates 10 hospitals and clinics with 1,650 beds across Vietnam. Patient volumes grew 50% in 2022, with revenue growth of 53% to VND 4.48 trillion (~$180M), though the company posted a pre-tax loss of VND 700 billion [19]. Vinmec offers tiered preventive health packages including standard health checks at VND 6.8M (~$270) per person.
+
+**Pacific Cross Vietnam:** Offers individual international health plans with annual coverage $500K–$3M; all plans include a preventive health benefit. Exact premium volume for Vietnam not publicly available [19].
+
+**Indonesia relevance:** Vinmec's model — hospital-anchored, premium branded, aspiring upper-middle urban positioning — demonstrates that an explicitly premium-positioned preventive product finds takers in a comparable Southeast Asian market. The 50% volume growth in 2022 (post-COVID recovery) suggests suppressed preventive demand releasing after a disruption, a dynamic directly analogous to Indonesia's post-COVID period. Vinmec's losses despite strong revenue growth also caution that the hospital-anchored model has high fixed costs relative to the asset-light MSO model proposed here.
+
+---
+
+## 2.6 Indonesia Evidence of Preventive/CDM Behavior
+
+### MCU uptake rates
+
+No national MCU uptake rate by income segment is published. The following is constructed from available evidence:
+
+- Annual MCU regulatory requirement exists for employers under Ministry of Manpower regulations (periodic occupational health check) [ASSUMED-6: specific regulation reference — to confirm exact Permenaker number with an Indonesia employment law source]
+- MCU delivery is concentrated in Jakarta and Java where corporate presence is densest [Tracedataresearch/corporate wellness market, search data]
+- MCU package market: Basic (IDR 435K, ~$27) to premium executive (IDR 4.8M–15M, ~$300–940) [9]
+- Employer-contracted MCU likely covers ~30–50% of formal white-collar workers in Tier-1 cities [ASSUMED-7: to validate with BPJS Ketenagakerjaan data on occupational health program enrollment, or with HR consultants (Mercer/Aon Indonesia)]
+
+### Diabetes/hypertension screening rates by income
+
+Blood glucose screening: 30.1% of richest quintile vs. 6.1% of poorest (national, adults ≥31) [2]. This is stark: even the richest quintile shows only 30% ever-screened for blood glucose — meaning 70% of Q5 adults have not had a blood glucose test, despite 11% of Indonesian adults having diabetes and 73% of cases being undiagnosed [13].
+
+Hypertension (blood pressure): 87.9% of Q5 ever measured vs. 73.6% of Q1 [2] — more equitable because blood pressure measurement is embedded in most primary care contacts.
+
+The 40–70 age group KAP study found that 80% of non-screeners said "I did not go because I was not ill" [13] — confirming that the dominant barrier is not cost but **perceived lack of need**. This is a health literacy and structured-engagement problem, not primarily a payment problem, for the upper-middle and affluent segment.
+
+### Adherence rates for chronic medications by payment source
+
+**Overall non-adherence (multimorbid patients, n=3,515):** 36.4% non-adherent [15]. Lower income (annual income <IDR 40M, or <IDR 3.3M/month) associated with higher non-adherence (aOR 1.23); no insurance associated with non-adherence (aOR 1.20) [15].
+
+**PROLANIS adherence (BPJS, Pekanbaru sample):** 71.3% adherent, 28.7% non-adherent [14] — better than the general multimorbid average, suggesting structured program enrollment improves adherence even in the BPJS setting.
+
+**Disease control under BPJS:** Fewer than 20% of diagnosed DM and HTN patients are well-controlled nationally [14] — a striking failure rate that is as much a care quality and protocol problem as an adherence problem.
+
+**Private vs. BPJS adherence comparison:** No published direct comparison found. [ASSUMED-8]: Private-pay patients (OOP or private insurance) show higher adherence than BPJS patients because: (a) they self-select for engagement, (b) they see the same provider repeatedly (relationship continuity), and (c) branded medications are more available outside BPJS formulary restrictions.
+- To validate: Ask Prodia (diagnostic lab with both BPJS and private-pay patient mix) for comparative HbA1c control rates by payer type.
+
+### Wellness and supplement spending
+
+Indonesia dietary supplements market: **$3.04 billion in 2023**, growing at 6.4% CAGR [10][20]. Market is driven by urban middle-class health awareness, urbanization, and e-commerce. Per capita: $3.04B / 284M population = ~$10.7/capita nationally. Urban affluent probably 5–10× national average = **$54–107/capita/year** in supplements, or **$210–420/household/year** for a 3.9-person household [ASSUMED-5 above].
+
+Key players: PT Kalbe Farma Tbk (market leader), Tempo Scan Pacific, Industri Jamu dan Farmasi Sido Muncul [10][20]. Products dominated by vitamins, herbal supplements, and combination products.
+
+Bain APAC 2024: 50% of high-income APAC group reported spending *more* on nutritional supplements vs. 45% overall — consistent with the income gradient [6].
+
+---
+
+## 2.7 Confidence and Data Gaps
+
+### Confidence summary
+
+| Sub-claim | Confidence | Primary source | Gap |
+|---|---|---|---|
+| Q5 OOP per outpatient episode (IDR 485K, 2018) | Medium | PMC10483778 [1] | Data is 2018; BPJS expansion since then may have reduced private-pay episodes counted in Susenas |
+| Blood glucose screening rate Q5 (30.1%) vs Q1 (6.1%) | High | PMC6661624 [2] | National data, not Tier-1 urban specific; urban rate likely higher for Q5 |
+| MCU package pricing (IDR 435K–15M range) | High | Named providers [9] | No market share or uptake rate data available |
+| Dietary supplement market size ($3.04B, 2023) | Medium | Multiple aggregators [10][20] — cross-validated | Per-capita income segmentation not available |
+| Bain APAC 2024 high-income supplement spending (50% increased) | Medium | Bain firm imprint [6] | APAC aggregate; Indonesia-specific figure not published |
+| Non-adherence rate multimorbid patients (36.4%) | High | PMC11052292 [15] | Study population not income-stratified |
+| PROLANIS disease control (<20% well-controlled) | High | Multiple academic sources [14] | BPJS program only; no comparable private-payer rate |
+| Healthier SG enrollment rate (44% among aware chronic patients) | High | Annals Singapore [18] | Singapore model; Indonesia context differs significantly |
+| Household insurance premium range ($180–1,200/yr) | Low | Named insurer product brochures [7][8] | No OJK-published market-level income-stratified premium data |
+| Top-decile HH total health budget ($1,500–3,000/yr) | Low | Composite derivation [1][2][3][11] | Requires BPS Susenas full decile-health cross-tab |
+| Income threshold for discretionary preventive spend (IDR 15–20M/HH/month) | Low | Derived from Q5 expenditure threshold and screening rates [1][2] | No WTP study targets this exact segment or threshold |
+
+### Data gaps
+
+**Data gap 1 — Primary:** BPS Susenas March 2024 full publication (health expenditure as % of household budget by income decile). [PHASE2-RESOLVED via Playwright 2026-05-23]: https://www.bps.go.id/en/publication/2024/10/18/b392b2e96c87c090a6f8d9c2/consumption-expenditure-of-population-of-indonesia-march-2024.html — publication page accessible, abstract confirms Susenas covers food/non-food/health spending periodically (Catalog 3201004, semi-annual, Oct 2024 release rev Dec 2024, 6.06 MB bilingual ID/EN PDF); decile-level tables still require PDF download.
+
+**Data gap 2:** OJK private health insurance statistics disaggregated by (a) individual vs. group (employer) plans, (b) with/without outpatient rider, (c) with/without preventive coverage. OJK publishes aggregate premium data but income-class or plan-type split is not publicly accessible. Source needed: OJK IKNB (Non-Bank Financial Institution) quarterly statistics, or direct insurer-published annual reports (Prudential Indonesia, AXA Mandiri). [CONFIRMED-INACCESSIBLE via Playwright 2026-05-23]: https://ojk.go.id/en/kanal/iknb/data-dan-statistik/asuransi/default.aspx — English statistics landing page renders "No Article Available"; Bahasa Indonesia parallel page (Statistik Perasuransian 2023) does index the publication ([PHASE2-RESOLVED]: https://www.ojk.go.id/id/kanal/iknb/data-dan-statistik/asuransi/Pages/Statistik-Perasuransian-2023.aspx) but downloadable tables are bundled as a non-markitdown-processable ZIP.
+
+**Data gap 3:** No published Indonesia study directly compares adherence rates or preventive care uptake between BPJS-only, employer-group-insured, and OOP/private-insured patients. This comparison is critical to the MSO business case. Closest proxy is the PMC multimorbid adherence study (general non-adherence 36.4%) [15] and the PROLANIS adherence study (71.3%) [14] — but these are not income-matched.
+
+**Data gap 4:** Employer MCU coverage rate (what % of formal-sector Tier-1 workers receive employer-provided annual MCU). BPS employment survey or BPJS Ketenagakerjaan occupational health data might provide this, but no public publication was found.
+
+**Data gap 5:** MCU uptake rate for self-purchased (non-employer-provided) MCU by income segment. Prodia, Kimia Farma, or branded MCU providers (Siloam, Eka Hospital) would have patient records. No public dataset found.
+
+**Data gap 6 — Malaysia benchmark:** MySihat / private GP CDM attachment rates not publicly available in academic literature; would require Malaysian MOH annual report or Malaysian Medical Association CDM program data.
+
+---
+
+## Citations
+
+(1) Incidence of catastrophic health spending in Indonesia: insights from a Household Panel Study 2018–2019. PMC10483778. https://pmc.ncbi.nlm.nih.gov/articles/PMC10483778/ — Q5 OOP outpatient IDR 485K/episode; Q1 IDR 118K/episode; catastrophic spending rates by quintile.
+
+(2) Socioeconomic inequalities in healthcare utilisation in Indonesia: a comprehensive survey-based overview. PMC6661624. https://pmc.ncbi.nlm.nih.gov/articles/PMC6661624/ — Blood glucose screening Q5 30.1% vs Q1 6.1%; cholesterol Q5 32.7% vs Q1 7.8%; education RII for preventive care 30.3.
+
+(3) Is Indonesia achieving universal health coverage? Secondary analysis of national data. PMC8491299. https://pmc.ncbi.nlm.nih.gov/articles/PMC8491299/ — Median annual OOP per capita Java/Bali $20.40; insured vs. uninsured OOP comparison.
+
+(4) WHO Indonesia. Indonesia success minimizing OOP through JKN expansion. https://www.who.int/about/accountability/results/who-results-report-2020-mtr/country-story/2023/indonesia-s-success-in-achieving-90-percent-coverage-and-minimizing-out-of-pocket-expenses-through-national-health-insurance-expansion — OOP as 27.5% of current health expenditure post-JKN expansion; OOP declining from 40% (2015) to 29% (2023).
+
+(5) Thinkwell Global Indonesia Health Financing Fact Sheet (September 2022). URL: https://thinkwell.global/wp-content/uploads/2022/09/Health-Financing-Fact-Sheet_-Indonesia_September_2022.pdf — [PHASE2-RESOLVED via Playwright + markitdown 2026-05-23]: 10-page PDF downloaded and converted. Confirms CHE IDR 354.6T in 2019, Household OOP 32.1% of Health Expenditure by Purchaser (2019), >34% of CHE remains OOP despite >84% JKN coverage; primary source MOH National Health Account Indonesia 2021.
+
+(6) Bain & Company. Asia-Pacific Front Line of Healthcare 2024. https://www.bain.com/insights/asia-pacific-front-line-of-healthcare-2024/ — 51% APAC consumers willing to pay more OOP for better outcomes; 58% Gen Z; 50% high-income increased supplement spending; 85% interested in healthcare maintenance.
+
+(7) Pacific Prime. How Much Does Health Insurance Cost in Indonesia? https://www.pacificprime.com/blog/health-insurance-cost-in-indonesia.html — [PHASE2-RESOLVED via Playwright 2026-05-23 — page passed Cloudflare check]: Confirms individual international health insurance avg USD $4,764 (≈IDR 79.1M) in 2024, family avg USD $12,909 (≈IDR 215.7M); 1% individual / 10% family premium growth 2023→2024; ranks Indonesia mid-pack vs Asian peers (cheaper than South Korea $5,226, Malaysia $4,969; pricier than India $4,715, Thailand $4,695, Philippines $4,597, Vietnam $4,547). BPJS expat employee contribution ≈1% of monthly salary.
+
+(8) Various insurer product documents: Allianz SmartHealth Enterprise brochure https://www.allianz.co.id/content/dam/onemarketing/azli/wwwallianzcoid/produk/asuransi-kumpulan/smarthealth-enterprise/brochure-v1-3-english/brochure-smarthealth-enterprise-english-ver.pdf — employer group plan structure; co-payment structure.
+
+(9) Tirta Medical Centre MCU cost article. https://tirta.co.id/en/artikel/medical-check-up-cost/ — Basic MCU IDR 435,000; comprehensive IDR 1.195M; diabetes package IDR 595K; genomic test IDR 4.8M. RS Pondok Indah packages IDR 1.9M–15M cited via EMC Healthcare premium package page https://www.emc.id/en/news/premiumMCU-1.
+
+(10) GlobeNewswire / Indonesia Dietary Supplements Market Report 2024. https://www.globenewswire.com/news-release/2024/09/05/2941470/28124/en/Indonesia-Dietary-Supplements-Market-Report-2024.html — Market valued $3.04B (2023); CAGR 6.43% through 2029. Note: aggregator report (downgraded from High); cross-validated against Grand View Research figure of $8.01B for nutraceuticals broader market and Statista vitamins/minerals segment.
+
+(11) Medical cost inflation and its drivers in Indonesian employer-sponsored health insurance for retiree families. PMC12425502. https://pmc.ncbi.nlm.nih.gov/articles/PMC12425502/ — Total healthcare cost per retiree IDR 12.98M/yr (2023); medication 26.8%; medical treatment 22.3%; supporting exams 15.9%; medical inflation 20.5% in 2023.
+
+(12) Statista Indonesia OTC Pharmaceuticals market. https://www.statista.com/outlook/hmo/otc-pharmaceuticals/indonesia — national OTC spending benchmark; vitamins/minerals segment $3.04B.
+
+(13) Hypertension and diabetes screening uptake in adults aged 40–70 in Indonesia: a KAP study. PMC12076961. https://pmc.ncbi.nlm.nih.gov/articles/PMC12076961/ — 41% never screened; 80% non-screeners cited "not ill" as reason; wealth quintile OR 1.7–2.6 for higher vs. lowest.
+
+(14) Challenges in implementing Indonesia's PROLANIS program (scoping review). PMC12538241. https://pmc.ncbi.nlm.nih.gov/articles/PMC12538241/ — Only 37% of PHCs implement optimally; <20% of DM/HTN patients well-controlled nationally. Prolanis adherence study (Pekanbaru): 71.3% adherent, cited via search snippet https://jurnal.ikta.ac.id/aisch/article/view/2350.
+
+(15) Treatment Nonadherence among Multimorbid Chronic Disease Patients: Evidence from 3,515 Subjects in Indonesia. PMC11052292. https://pmc.ncbi.nlm.nih.gov/articles/PMC11052292/ — Overall non-adherence 36.4%; income <IDR 40M/yr associated with non-adherence aOR 1.23; no insurance aOR 1.20.
+
+(16) Factors Associated with Willingness to Pay for Cost-Sharing under Universal Health Coverage Scheme, Yogyakarta. PMC9690347. https://pmc.ncbi.nlm.nih.gov/articles/PMC9690347/ — Highest income group (>IDR 3.5M/month) lower WTP than middle-income; average maximum WTP IDR 500,000 per episode or 20% cost-sharing.
+
+(17) Healthier SG Enrolment Data, Singapore Ministry of Health (September 2023). https://www.moh.gov.sg/newsroom/healthier-sg-enrolment-data/ — 310,000+ enrolled of 954,000 invited (~32.5%); 75% of CHAS GPs enrolled; capitation funding model.
+
+(18) Healthier SG awareness and enrolment among persons with chronic disease. Annals of the Academy of Medicine Singapore. https://annals.edu.sg/healthier-sg-awareness-and-enrolment/ — Among those aware, 44.3% enrolled, 39.8% plan to enroll; lower-SES residents show significantly less awareness.
+
+(19) Vietnam private healthcare — Private hospitals look to capture growing healthcare market. Vietnam News. https://vietnamnews.vn/economy/1639428/private-hospitals-look-to-capture-growing-healthcare-market-profitability-varies.html — Vinmec revenue VND 4.48 trillion (+53% in 2022); Vinmec preventive packages from VND 6.8M/person. Pacific Cross Vietnam: https://pacificcross.com.vn/.
+
+(20) Grand View Research Indonesia Nutraceuticals Market Report. https://www.grandviewresearch.com/industry-analysis/indonesia-nutraceuticals-market-report — Market estimated $8.01B (2024) for nutraceuticals (broader than dietary supplements); CAGR 7.7%. Note: aggregator source, used only for cross-validation against GlobeNewswire figure.
+
+---
+
+## Assumptions to Validate
+
+[ASSUMED-1]: Affluent households (>IDR 38.6M/month consumption) average 3–5 private specialist outpatient visits per year.
+- To validate: Ask Eka Hospital, Siloam, or Mitra Keluarga: "What is the average annual visit frequency for private-pay patients in your outpatient clinics, stratified by estimated income?"
+
+[ASSUMED-2]: The discretionary preventive/CDM transition threshold is approximately IDR 15–20M per household per month.
+- To validate: Ask MCU providers (Prodia, Tirta, Siloam MCU): "What is the typical monthly household income of patients purchasing self-pay annual MCU packages (not employer-provided)?" Ask GP clinics: "At what patient income level do you start seeing scheduled wellness consultations rather than episodic sick visits?"
+
+[ASSUMED-3]: Individually purchased private health insurance (non-employer) is concentrated in the affluent (top-decile) segment; upper-middle primarily accesses private insurance through employer group plans.
+- To validate: OJK IKNB insurance statistics quarterly report — request individual vs. group plan premium split; ask Prudential Indonesia or AXA Mandiri investor relations for individual vs. group plan ratio.
+
+[ASSUMED-4]: A majority of first preventive care purchases in the upper-middle segment are event-driven (family illness diagnosis, own MCU abnormality) rather than schedule-driven.
+- To validate: Ask private GP clinic managers or MCU operators: "When you ask new private-pay MCU customers why they booked, what proportion cite a family health event or a previously found abnormality?"
+
+[ASSUMED-5]: Supplement spending per affluent urban household is 5–10× the national average per capita, implying $210–420/household/year.
+- To validate: Nielsen or Kantar Indonesia shopper panel data for supplement spend by income segment; Kalbe Farma or Sido Muncul investor relations for urban premium product revenue share.
+
+[ASSUMED-6]: Employer MCU coverage is a regulatory requirement under Ministry of Manpower regulation; the specific regulation number for periodic occupational health checks should be confirmed.
+- To validate: Check Peraturan Menteri Ketenagakerjaan on periodic health checks (occupational health); confirm whether compliance is industry-specific or universal; ask corporate HR consultants for actual compliance rate.
+
+[ASSUMED-7]: Employer-provided MCU covers approximately 30–50% of formal white-collar workers in Tier-1 cities.
+- To validate: BPJS Ketenagakerjaan annual report; AON or Mercer Indonesia benefits benchmarking survey; ask HR directors in Jakarta-based companies.
+
+[ASSUMED-8]: Private-pay patients (OOP or private insurance) show higher CDM adherence than BPJS-only patients due to provider continuity and formulary access.
+- To validate: Ask Prodia or Kimia Farma for comparative HbA1c result distributions by payer type; ask private clinic GPs: "What proportion of your chronic disease patients maintain regular 3-monthly follow-ups vs. attending only when symptomatic?"
+
+
+---
+
+# Stage 3 — Private Health Insurance: Penetration & Plan Composition
+
+---
+
+## 3.1 Definition and Scope
+
+Private commercial health insurance (asuransi kesehatan komersial) in Indonesia refers to voluntary insurance products — sold by life insurers (asuransi jiwa) and general insurers (asuransi umum) licensed by OJK — that supplement or operate in parallel to the mandatory BPJS Kesehatan (JKN) program. The segment includes both standalone health products and health riders attached to life insurance policies. This stage excludes BPJS Kesehatan and the mandatory BPJAMSOSTEK program, which together constitute approximately 85% of formal insurance-premium volume by value. (1)
+
+The addressable private insurance pool for the GP-anchored MSO purpose is specifically: individual and group commercial health policies held by the affluent (kelas atas, BPS definition) and upper-middle (MC2, World Bank definition) segments in Tier-1 and Tier-2 cities — the same 7–9 million persons identified in Stage 1.
+
+---
+
+## 3.2 Market Structure: Size, Growth, and Players
+
+### 3.2.1 Total premium size and growth
+
+**OJK confirmed premium time series (commercial health insurance, all channels):**
+
+| Year | Total health insurance premium (Rp trillion) | USD equivalent (approx.) | YoY growth |
+|------|---------------------------------------------|--------------------------|------------|
+| 2021 | Rp 19.17 T | ~$1.24B | — |
+| 2022 | Rp 22.09 T | ~$1.43B | +15.2% |
+| 2023 | Rp 26.26 T | ~$1.69B | +18.9% |
+| 2024 | Rp 40.19 T | ~$2.59B | +53.0% (per-policy value +43.01%) |
+
+Sources: OJK data as reported by Antara News (berita/4933489, June 2025) citing OJK Head of Insurance Supervision; Stage 1 context confirms the Rp 26.26T figure for 2023. (2)(3) The 2024 figure of Rp 40.19T represents a surge driven by medical cost inflation repricing rather than a proportionate increase in policyholders — OJK confirmed that four insurers ceased offering health products during this period due to claims pressure. (2)
+
+**General insurance health sub-segment (H1 2024):** Rp 4.81 trillion in health premiums for the general insurance (asuransi umum) sector alone, up 16.88% year-over-year to June 2024. (4) Note: The overall Rp 26.26T/Rp 40.19T figures above are all-channel totals (life + general).
+
+**Confidence:** High — OJK primary data cited via official Antara News release quoting OJK executive directly.
+
+### 3.2.2 Number of policies and policyholders
+
+- **Policies issued (2024):** 31.34 million total health insurance policies, up from 27.82 million in 2021 — a 12.7% increase over four years. (2)
+- **Licensed health insurers (2024):** 78 companies selling health insurance products, down from 82 in 2022 as four exited the market due to unsustainable loss ratios. (2)
+- **Industry structure:** 136 conventional insurance companies operational as of December 2022 (52 life, 72 general, 7 reinsurance, 5 social/mandatory). Joint venture (foreign-affiliated) companies hold 69.1% market share in life insurance; local companies 30.9%. (1)(5)
+- **Conventional insurance share of all premiums (2022):** 50.32%; social/mandatory 45%; sharia 4.76%. (5)
+
+### 3.2.3 Health insurance claims ratio (loss ratio)
+
+- **AAJI-reported claims-to-premium ratio for health products (2023):** 138% — claims of Rp 20.83 trillion against Rp 26.26 trillion premium income, leaving a negative technical margin after expenses. (3)(6)
+- **Q3 2023 health claims (life segment):** Rp 15.24 trillion, up 33% versus Q3 2022 (Rp 11.47 trillion). (7)
+- **Q1 2024 average health claims loss ratio (all segments):** 105.7%, with individual health policies in life insurance reaching in excess of 200% in H1 2025. (8)
+- **Mercer Marsh Benefits (MMB) medical inflation projection for Indonesia:** 13% for 2024; PMC-published study confirmed 20.48% medical cost inflation for retiree employer plans in 2023 and 26.5% in 2022. (9)(10)
+
+### 3.2.4 Year-over-year growth
+
+The market grew at approximately +15–19% per year from 2021–2023 in premium terms, then accelerated to +53% in 2024 as insurers repriced aggressively. Active policyholders grew at a much slower rate (~3% CAGR), indicating most premium growth is per-policy repricing, not new customer acquisition. (2)(3)
+
+---
+
+## 3.3 Group vs. Individual Policy Split
+
+**AAJI-sourced health claims split (2023):**
+
+| Segment | Health claims paid 2023 | YoY growth |
+|---------|------------------------|------------|
+| Individual health insurance | Rp 13.4 trillion | +25.9% |
+| Group (kumpulan) health insurance | Rp 7.44 trillion | +23.2% |
+| **Total health claims** | **Rp 20.83 trillion** | **+24.9%** |
+
+Source: AAJI statement February 2024, via Antara News. (6)
+
+This claims split — approximately 64% individual / 36% group by claims volume — is a proxy for premium split, as claims ratios are broadly similar across segments (both exceeded 100% in 2023). [ASSUMED-1: Claims split is used as a proxy for premium split here; OJK's full Statistik Perasuransian table provides direct premium disaggregation. [PHASE2-PARTIALLY-RESOLVED]: OJK landing page now accessible (see above), tables remain in non-markitdown-processable ZIP — to validate: ask OJK Statistik desk for Table A3 of Statistik Perasuransian 2023 showing premium by group vs individual policy type.]
+
+**Insured lives growth (Q3 2023 vs Q3 2022):** Group lives up 22.5%; individual lives up 3.8%. (7) This divergence signals that group (employer-driven) insurance is expanding significantly faster in headcount terms — consistent with the regulatory push for formal employment and employer benefit competition in Tier-1 metros.
+
+**Confidence:** Medium — claims split confirmed, premium split directly unconfirmed from OJK primary tables. [PHASE2-RESOLVED via Playwright 2026-05-23]: https://www.ojk.go.id/id/kanal/iknb/data-dan-statistik/asuransi/Pages/Statistik-Perasuransian-2023.aspx — landing page accessible (publication 20 Dec 2024, 6,150 downloads recorded), confirms the Statistik Perasuransian 2023 publication exists and is officially indexed; underlying data tables are bundled as a ZIP not parseable via markitdown — premium-split tabulation still requires manual ZIP extraction.
+
+---
+
+## 3.4 Penetration by Income Segment in Addressable Cohort
+
+### 3.4.1 National-level baseline
+
+- **Commercial insurance penetration (Indonesia, 2021):** 1.4% of GDP, lowest in ASEAN comparator group (Vietnam 2.2%, Philippines 2.5%, Malaysia 3.8%, Thailand 4.6%, Singapore 12.5%). (5)
+- **Insurance inclusion rate (SNLIK 2022):** 16.63% of population hold any insurance product (including social/mandatory). Private commercial insurance inclusion is substantially lower. (5)
+- **Private health insurance (any, all products):** ~12% of Indonesians rely on private health insurance; ~15% combine private and BPJS; 73% BPJS/JKN only. (11) Note: the 12% figure from a Snapcart survey of 1,229 respondents (January 2025) is indicative, not a statistically robust national estimate; methodology is trade-survey grade.
+
+### 3.4.2 Income-segment gradient
+
+- **Upper SES:** ~78% have any health insurance (national or private); private insurance usage is "higher among upper SES groups." (11)
+- **Middle SES:** ~80% have any health insurance, predominantly BPJS. (11)
+- **Lower SES:** ~66% have any health insurance, almost entirely BPJS. (11)
+
+The survey data suggests private commercial insurance uptake is concentrated in the top two income deciles, consistent with ability-to-pay and employer benefit access patterns.
+
+[ASSUMED-2: The Snapcart 12% private insurance figure is a consumer survey proxy, not an OJK-registered policyholder count. The more granular income-class penetration split requires a purpose-built insurer or broker survey. To validate: ask AXA Mandiri, Prudential, Allianz relationship managers — "What share of your individual health policyholders self-report as top-decile earners? What is the annual premium distribution?"]
+
+### 3.4.3 Employer-provided vs. individual split (target segment)
+
+- **94% of companies surveyed** in the Mercer Marsh Benefits Indonesia Health and Benefits Study 2024 (470+ companies, 24 industries) provide inpatient healthcare benefits to employees and their families. (12)
+- **Low-wage formal workers:** only 38% have employer-provided medical coverage. (13) This implies supplementary private insurance is a benefit concentrated in white-collar and professional formal employment.
+- **Group insured lives growth (+22.5% YoY)** versus individual lives (+3.8%) confirms group/employer channel is the primary growth vector. (7)
+- **BPJS formal worker contribution:** Employers mandatory contribute 4% of monthly wages (capped at Rp 480,000/month per employee); most formal employers layer supplementary commercial group insurance on top for white-collar staff accessing private hospitals. (14)
+
+[ASSUMED-3: The fraction of MSO-addressable affluent and upper-middle HH accessing private insurance through individual purchase (vs. employer group plan) is estimated at roughly 30–40% of insured individuals in the segment. To validate: ask MSO-target clinics in Tier-1 cities — "Of your patients paying privately or using commercial insurance, what share bring an individual policy vs. an employer card?"]
+
+---
+
+## 3.5 Standard Plan Composition — Coverage and Exclusions
+
+This section documents what standard private commercial health insurance plans in Indonesia cover and exclude, based on named insurer products. Unless otherwise stated, observations apply to commercially available plans as of 2023–2024.
+
+### 3.5.1 Inpatient coverage (rawat inap)
+
+**Standard inclusion across all named insurers.** Inpatient is the foundational benefit and the primary value proposition versus BPJS for private-pay patients seeking access to better hospital rooms and shorter waits.
+
+- Prudential **PRUprime Healthcare Plus:** hospitalization up to 150 days per year; inpatient up to room limit chosen; surgical benefit included. (15)
+- Allianz **SmartHealth Enterprise** (group product): inpatient care, surgery, childbirth covered; co-share 20% in some plan tiers. (16)
+- AXA Mandiri **SmartCare Executive** (indicative): annual room/board benefit Rp 250,000/day; annual limit Rp 300 million; inpatient included as core benefit. [ASSUMED-4: AXA Mandiri plan limits cited from consumer aggregator summaries, not official policy document; to validate: request SmartCare Executive product sheet from AXA Mandiri commercial team.]
+- Mandiri Inhealth **MyCare Ultimate:** one-class BPJS upgrade plus daily hospitalization income Rp 750,000 (max 45 days, up to 3 times per year). (7)
+
+### 3.5.2 Outpatient coverage (rawat jalan)
+
+**Available as add-on or rider, not standard in basic plans.** Most base-tier plans are inpatient-only. Outpatient benefit (GP visits, specialist visits) typically added as a separate rider or available only in premium tiers.
+
+- Allianz SmartHealth Enterprise: outpatient care, dental, spectacles listed as additional (non-standard) benefits. (16)
+- Prudential PRUprime Healthcare: pre-hospitalization outpatient (30 days before admission) and post-hospitalization (90 days post-discharge) covered; general outpatient GP visits require the optional outpatient rider. (15)
+- Manulife Indonesia: outpatient, inpatient, and maternity covered in higher-tier products — but not the entry-level plan. [ASSUMED-5: Manulife plan tiers based on consumer description; to validate: review MiUltimate Care product disclosure document from Manulife Indonesia.]
+
+**Net effect:** Routine outpatient consultation and pharmacy are covered for insured patients only when specifically purchased as an add-on. The majority of group employer plans in mid-market include outpatient as a standard benefit, but individual plans at lower premium points often exclude it.
+
+### 3.5.3 Preventive care — MCU, screenings, vaccination
+
+**Almost universally excluded from standard plans as a reimbursable benefit.** The OJK Roadmap 2023–2027 and POJK No. 36/2025 both include language about "promotive and preventive care" in managed care scheme requirements, but this applies to insurer internal health promotion programs, not policyholder benefit reimbursement. (5)(17)
+
+- Medical check-ups (MCU), cancer screening, diabetes screening, lipid panels are not reimbursable under standard inpatient or outpatient riders from any named insurer in this market.
+- Vaccination is listed as "optional additional benefit" under the Allianz SmartHealth plan family (under immunization within outpatient add-on), but not covered in base plans. (16)
+- Prudential PRUprime Healthcare: product materials describe coverage for hospitalization, outpatient related to hospitalization, and cancer/dialysis as a standalone outpatient benefit; preventive screening is not a listed reimbursable benefit. (15)
+
+[ASSUMED-6: There is no publicly accessible insurer plan document confirming MCU reimbursement as a standard benefit in any named Indonesian commercial plan. To validate: ask a Tier-1 hospital (e.g., Siloam, Pondok Indah) insurance billing desk — "What commercial insurers regularly approve MCU claims, and under what plan tiers?"]
+
+### 3.5.4 Pharmacy (chronic medication supply)
+
+**Capped or excluded for chronic outpatient prescriptions.** Pharmacy benefit under private insurance in Indonesia typically covers medications prescribed during or immediately around a hospitalization episode. Chronic outpatient pharmacy supply (e.g., metformin, antihypertensives, statins — the core CDM medication set) falls into one of three categories:
+
+1. Covered under BPJS's Prolanis program at authorized pharmacies (JKN route only, not private insurer)
+2. Covered under the outpatient rider if the medication is prescribed by a covered outpatient specialist visit
+3. OOP if the patient attends a private clinic or buys at retail pharmacy without a covered outpatient claim
+
+**Key data point from PMC study (2023 employer plan):** Of total medical costs in the employer plan studied, medications accounted for 26.82% and were the single largest cost category — indicating pharmacy is the dominant OOP or claims driver for employer insured populations, especially for chronic conditions. For hypertension specifically, 47.25% of costs were medications; for diabetes, 35.10% were medications. (10)
+
+[ASSUMED-7: Standard retail private insurance plans cap outpatient pharmacy at a fixed Rp annual limit per year (typically Rp 3–15 million in mid-tier plans). Exact limits require plan document review. To validate: ask Mercer Marsh Benefits Indonesia analysts — "What is the typical outpatient pharmacy annual limit in your mid-market group health plan?"]
+
+### 3.5.5 CDM / chronic disease management
+
+**Not covered as a distinct benefit in any standard commercial health insurance plan reviewed.** CDM programs — structured longitudinal management of diabetes, hypertension, dyslipidemia — are a public-sector provision under BPJS Prolanis, not a private insurance benefit.
+
+Under private commercial plans, patients with diabetes or hypertension accessing care:
+- Can claim inpatient costs if admitted for a complication
+- Can claim outpatient specialist visits if the outpatient rider is active
+- Cannot claim for structured CDM enrollment, nurse educator sessions, or coaching
+- Cannot claim pharmacy for chronic medications unless purchased in connection with a covered specialist visit
+
+**Pre-existing conditions:** Diabetes and hypertension purchased after diagnosis are typically excluded (full exclusion, not a waiting period) from individual health plans. Under group employer plans, pre-existing conditions may be covered with a waiting period of up to 12 months, or excluded from certain benefit lines. OJK's POJK No. 36/2025 shortened waiting periods for "chronic illness benefits" but the detail of this regulation is still being operationalized (effective deadline for insurers: December 2026). (17)(18)
+
+**Claims data confirming CDM as top cost driver:**
+- Chronic ischemic heart disease: 10.07% of all health insurance claims in the employer plan (2023)
+- Chronic kidney disease: 7.07%
+- Essential hypertension: 5.79%
+- Type 2 diabetes: 4.55%
+Combined, the four CDM conditions drove 27.5% of total claims costs in this employer plan. (10)
+
+### 3.5.6 Mental health
+
+**Variable and sparse.** Some premium plans include mental health outpatient as a rider. Standard group employer plans often include coverage for mental health inpatient (psychiatric hospitalization) but exclude outpatient psychotherapy. (13)
+
+---
+
+## 3.6 Out-of-Pocket Exposure Inside Insured Affluent Households
+
+### 3.6.1 Co-pay structures
+
+**As of 2023–2024 (pre-POJK 36/2025 reform):** Most commercial health plans operated on a reimbursement or cashless basis with no mandatory co-pay. Some plans incorporated co-share (typically 10–20% in certain plan tiers, as documented in Allianz SmartHealth). (16)
+
+**POJK No. 36/2025 (effective December 2026):** OJK mandated that insurers must offer at least one health product without co-payment; for plans that retain co-payments, the cap is 5% of total claims value, with outpatient cap at Rp 300,000 per claim and inpatient cap at Rp 3,000,000 per claim. (17)(18)
+
+### 3.6.2 Pharmacy OOP exposure for CDM patients
+
+An insured affluent household where one member has diagnosed diabetes or hypertension faces OOP pharmacy costs because:
+1. Chronic outpatient pharmacy under private insurance is typically uncapped or inconsistently covered
+2. Retail pharmacy prices for branded medications substantially exceed BPJS reimbursement rates; cost difference not covered by insurer
+3. BPJS's chronic drug program (Prolanis) is BPJS-routed and not accessible through private hospital pharmacy channels
+4. PMC-confirmed data: hypertension patients' costs are 47.25% pharmacy; diabetes patients' costs are 35.10% pharmacy — both dominated by recurring OOP medication spend even in employer plans that provide some coverage (10)
+
+[ASSUMED-8: A Type 2 diabetic on branded insulin and metformin buying from a private pharmacy in Jakarta pays approximately Rp 800,000–Rp 2,000,000/month in pharmacy OOP not covered by private insurance. To validate: ask Prodia or KF (Kimia Farma) retail pharmacy managers in Jakarta and Surabaya.]
+
+### 3.6.3 Network and non-network exposure
+
+Large insurers (Prudential, Allianz, AXA Mandiri) maintain preferred hospital networks. Treatment at non-network facilities shifts to reimbursement basis with lower coverage rates or capped amounts, creating significant OOP exposure for patients in Tier-2 cities where network coverage is thin.
+
+### 3.6.4 OOP as a national baseline
+
+Indonesia's total OOP spending was 30.5% of total health expenditure in 2022 (WHO/World Bank data, confirmed in Stage 1). OOP includes both uninsured spending and insured-but-excluded spending. For the affluent insured segment, OOP is dominated by preventive care, chronic medication, and specialist fees above plan limits — not catastrophic inpatient events (which insurance covers). (19)
+
+---
+
+## 3.7 Employer-Provided Plan Landscape
+
+### 3.7.1 Coverage prevalence
+
+- **94% of companies** (from a survey of 470+ Indonesian employers across 24 industries) provide inpatient healthcare benefits to employees and families — the most common employee benefit category in Indonesia. (12)
+- **38% of low-wage formal workers** have employer-provided medical coverage vs. 59% of higher-wage employees. (13) This implies supplementary private insurance is predominantly a white-collar formal benefit in Tier-1 metros.
+- BPJS Kesehatan is legally mandatory for all formal employees; supplementary commercial group insurance is the voluntary add-on at employer discretion. (14)
+
+### 3.7.2 Industry concentration
+
+Banking, MNCs, mining, telecommunications, and large domestic conglomerates offer the richest commercial plans, often covering:
+- Inpatient at high-tier private hospitals (VIP room class)
+- Outpatient including specialist and GP visits
+- Dental and optical (sometimes)
+- Dependents (spouse + 2–3 children)
+
+SMEs and domestic service-sector employers typically provide BPJS plus a minimal hospitalization rider or nothing beyond BPJS. [ASSUMED-9: This segmentation is consistent with Mercer Marsh Benefits survey descriptions and industry observation but lacks exact sector-by-sector breakdown in public sources. To validate: ask Mercer Marsh Benefits Indonesia or Aon Indonesia — "What is the typical plan design at a large domestic bank versus an SME employer in Jakarta?"]
+
+### 3.7.3 Premium per employee
+
+- **Mercer Marsh Benefits (MMB) Indonesia 2024:** Medical cost inflation at 13% (Antara/MMB cited figure), implying premium repricing at approximately that rate. (4)
+- **PMC employer study (employer plan, 2020–2023):** Cost per covered life rose from Rp 8.46 million/year (2020) to Rp 12.98 million/year (2023), a 53% cumulative increase over 4 years. At IDR 16,000/USD exchange, this equates to approximately $530–$810/year per covered life. (10)
+- [ASSUMED-10: The PMC employer study is a single state-owned oil/gas company retiree plan, which may not generalize to the broader private-sector employer base. Average employer group plan premiums in Tier-1 metro mid-market companies are estimated to range Rp 4–12 million/employee/year depending on plan design. To validate: ask Mercer Marsh Benefits Indonesia — "What is the 2024 median total premium per covered life (including dependents) for group health insurance in companies with 200–2,000 employees in Tier-1 cities?"]
+
+### 3.7.4 Dependent coverage
+
+Most employer group plans cover employees plus spouse and a maximum of 2–3 children. Dependent coverage is explicitly confirmed as a standard design element in the MMB Indonesia survey. (12)
+
+### 3.7.5 CDM coverage in employer plans
+
+Employer group plans do not include structured CDM programs as a reimbursable benefit. Chronic disease management in employer populations occurs through:
+- Ad hoc specialist referrals (claimable under outpatient rider if available)
+- Prolanis routing through BPJS (if employee is registered and uses BPJS channel)
+- OOP pharmacy for branded medications
+
+The absence of structured CDM from employer plan design is directly evidenced by the PMC study: chronic conditions (heart disease, kidney disease, hypertension, diabetes) drove 27.5% of claims costs in an employer plan with no corresponding structured prevention benefit. (10)
+
+---
+
+## 3.8 Confidence and Data Gaps
+
+| Sub-claim | Confidence | Primary source | Gap |
+|---|---|---|---|
+| Rp 26.26T total health premium 2023 | High | OJK via Antara News (2); OJK Statistik Perasuransian 2023 landing page [PHASE2-RESOLVED] | Confirmed; OJK landing page now accessible (data tables remain in ZIP requiring manual extraction) |
+| Rp 40.19T health premium 2024 | High | OJK via Antara News (2) | June 2025 article citing OJK executive directly |
+| 31.34 million policies (2024) | High | OJK via Antara News (2) | Same source; cross-check with AAJI useful |
+| 78 licensed health insurers (2024) | High | OJK via Antara News (2) | Direct OJK data |
+| Health claims ratio 138% (2023) | High | AAJI Feb 2024 via Antara News (6) | Cross-checks with Milliman data (7) |
+| Individual 64% / group 36% claims split | Medium | AAJI Feb 2024 (6) | Claims proxy for premium; direct premium split unverified |
+| Group lives +22.5%, individual +3.8% YoY | Medium | Milliman citing OJK (7) | OJK Indonesia Insurance Statistics; Q3 2023 only |
+| 94% employers provide inpatient | Medium | Mercer Marsh Benefits 2024 (12) | Full report behind registration wall; metadata confirmed |
+| 38% low-wage / 59% high-wage coverage | Medium | MMB survey cited by Marsh Indonesia (13) | Survey methodology not fully disclosed |
+| ~12% private insurance nationally | Low | Snapcart survey 1,229 respondents (11) | Consumer survey, non-representative methodology |
+| CDM not covered by private insurance | High | Constructed from product docs + PMC study (10)(15)(16) | No single insurer policy doc fully confirmed via markitdown |
+| Pharmacy OOP 26–47% of chronic claims | High | PMC peer-reviewed employer study (10) | Single employer; likely generalizable directionally |
+| Pre-existing exclusion for diabetes/HTN | Medium | Multiple sources (18)(19); product documentation partially inaccessible | [CONFIRMED-INACCESSIBLE 2026-05-23]: PRUprime PDF returns 404 (resource removed); Allianz SmartHealth RIPLAY and brochure PDFs blocked by Cloudflare on both Playwright and direct curl |
+| POJK 36/2025 copay reform | High | Lockton, Milliman, Mondaq reporting (17)(18) | Primary OJK text 403 |
+
+**Key outstanding data gaps:**
+
+1. **Direct OJK premium split (group vs. individual):** OJK Statistik Perasuransian 2023 publication page now accessible [PHASE2-RESOLVED via Playwright 2026-05-23]: https://www.ojk.go.id/id/kanal/iknb/data-dan-statistik/asuransi/Pages/Statistik-Perasuransian-2023.aspx — but underlying data is a ZIP bundle (not markitdown-processable); group-vs-individual premium split still requires manual ZIP extraction outside this automated pipeline.
+
+2. **Top-5 insurer market share by premium:** No public OJK ranking of individual insurer health premium shares; Mordor Intelligence paywalled (HTTP 410). Provisional ranking from multiple sources: Mandiri Inhealth (largest group health specialist, Rp 3.43T premium 2023, 35% group market share per IDNFinancials), Prudential Indonesia, Allianz Life Indonesia, AXA Mandiri Financial Services, AIA Financial Indonesia — but fractional shares unconfirmed. [OUTSTANDING — Phase 2 did not target AAJI annual statistics book; no AAJI URL was identified in Phase 1 corpus to feed Playwright]
+
+3. **Affluent-segment private insurance penetration:** No published OJK or AAJI breakdown of policyholders by income decile.
+
+4. **Mercer Marsh Benefits 2024 Indonesia full report:** Confirmed to exist; summary statistics confirmed via Marsh website and Antara News coverage; full report requires registration/access.
+
+---
+
+## Citations
+
+(1) OJK Insurance Roadmap 2023–2027, sourced from OJK official PDF (markitdown processed): https://ojk.go.id/en/berita-dan-kegiatan/info-terkini/Documents/Pages/Roadmap-for-the-Development-and-Strengthening-of-the-Indonesia-Insurance-Industry-2023-2027/Roadmap%20for%20the%20Development%20and%20Strengthening%20of%20the%20Indonesia%20Insurance%20Industry%202023-2027.pdf (PDF, processed via markitdown)
+
+(2) Antara News, "OJK catat nilai premi asuransi kesehatan naik 43,01 persen pada 2024," June 30, 2025: https://www.antaranews.com/berita/4933489/ojk-catat-nilai-premi-asuransi-kesehatan-naik-4301-persen-pada-2024
+
+(3) OJK Statistik Perasuransian 2023 as cited in Stage 1 research; [PHASE2-RESOLVED via Playwright 2026-05-23]: https://www.ojk.go.id/id/kanal/iknb/data-dan-statistik/asuransi/Pages/Statistik-Perasuransian-2023.aspx — landing page accessible (publication 20 Dec 2024, 6,150 downloads); underlying tables remain in ZIP not parseable in this automated pipeline.
+
+(4) Antara News, "OJK: Premi asuransi kesehatan naik capai Rp4,81 triliun," August 6, 2024: https://www.antaranews.com/berita/4242879/ojk-premi-asuransi-kesehatan-naik-capai-rp481-triliun (cross-confirms MMB 13% medical inflation projection for 2024)
+
+(5) OJK Insurance Roadmap 2023–2027 — Chapter III Market Structure section (same document as citation 1); data sourced from ASEAN Insurance Surveillance Report 2022 and OJK processed data.
+
+(6) Antara News, "AAJI catat klaim asuransi kesehatan naik 24,9 persen di tahun 2023," February 2024: https://www.antaranews.com/berita/3984786/aaji-catat-klaim-asuransi-kesehatan-naik-249-persen-di-tahun-2023
+
+(7) Milliman Indonesia Life Insurance Newsletter, Q4 2023 (citing OJK Indonesia Insurance Statistics September 2023): https://media.milliman.com/v1/media/edge/images/millimaninc5660-milliman6442-prod27d5-0001/media/Milliman/PDFs/2024-Articles/3-27-24_Indonesia-Newsletter-Q4-2023.pdf (PDF, processed via markitdown)
+
+(8) Asia Insurance Review, "Indonesia: Health insurance loss ratio expected to rise in 2025": https://www.asiainsurancereview.com/News/View-NewsLetter-Article?id=90289&Type=eDaily
+
+(9) Mercer Marsh Benefits, MMB Health Trends 2025 Asia / Indonesia Health and Benefits Study 2024, Marsh Indonesia: https://www.marsh.com/id/en/services/employee-health-benefits/insights/id-indonesia-health-and-benefits-study.html
+
+(10) PMC-published peer-reviewed study: "Medical cost inflation and its drivers in Indonesian employer-sponsored health insurance for retiree families," PMC12425502: https://pmc.ncbi.nlm.nih.gov/articles/PMC12425502/
+
+(11) Snapcart Indonesia survey (January 2025), "Indonesians' Interest in Having Health Insurance – Part 1": https://snapcart.global/indonesians-interest-in-having-health-insurance-part-1/ [Low confidence — consumer survey, n=1,229, methodology limited]
+
+(12) Mercer Marsh Benefits, Indonesia Health and Benefits Study 2024 (470+ companies, 24 industries), cited via Marsh Indonesia press release: https://www.marsh.com/id/en/about/media/indonesian-employees-feel-well-cared-for-but-concerns-remain-about-disparity-in-access-to-benefits.html
+
+(13) Marsh Indonesia, "Indonesian employees feel well-cared for but concerns remain about disparity in access to benefits": https://www.marsh.com/id/en/about/media/indonesian-employees-feel-well-cared-for-but-concerns-remain-about-disparity-in-access-to-benefits.html
+
+(14) BPJS Kesehatan statutory contribution rates — employer 4% of wages capped at Rp 480,000/month, employee 1% capped Rp 120,000/month: https://indonesia.acclime.com/guides/mandatory-healthcare-social-security/
+
+(15) Prudential Indonesia, PRUprime Healthcare Plus product brochure / product summary: https://www.prudential.co.id/export/sites/prudential-id/id/.galleries/pdf/product/Product-Summary-PRUPrime-Healthcare-Plus-Pro.pdf — [CONFIRMED-INACCESSIBLE via Playwright 2026-05-23]: returns HTTP 404 ("404 Error Page") — resource has been removed from Prudential CMS; product-level exclusion language unverifiable from this URL.
+
+(16) Allianz Indonesia, SmartHealth Enterprise Group Health Insurance — RIPLAY document: https://www.allianz.co.id/content/dam/onemarketing/azli/wwwallianzcoid/produk/asuransi-kumpulan/smarthealth-enterprise/riplay-v1-3-english/riplay-umum-smarthealth-enterprise-english-ver.pdf — [CONFIRMED-INACCESSIBLE via Playwright + curl 2026-05-23]: Cloudflare "Just a moment..." challenge blocks both browser-rendered and direct-curl fetches; PDF body never returned.
+
+(17) Lockton, "Indonesia to reform health insurance products for enhanced risk management and cost efficiency": https://global.lockton.com/us/en/news-insights/indonesia-to-reform-health-insurance-products-for-enhanced-risk-management
+
+(18) Milliman, "Indonesia health regulations e-Alert: Key updates": https://www.milliman.com/en/insight/indonesia-health-regulations-ealert-key-updates
+
+(19) The Prakarsa / East Asia Forum, "Healthcare costs leave Indonesians out-of-pocket": https://eastasiaforum.org/2022/08/17/healthcare-costs-leave-indonesians-out-of-pocket/
+
+---
+
+## Assumptions to Validate
+
+[ASSUMED-1]: AAJI claims split (64% individual, 36% group) is used as proxy for premium split — the only publicly confirmed decomposition. Direct premium split requires OJK Statistik Perasuransian 2023 full tabulation.
+- To validate: Request OJK Statistik Perasuransian 2023, Table on premium income by policy type (individual vs. group), from OJK IKNB data desk directly.
+
+[ASSUMED-2]: Private insurance penetration among affluent decile exceeds 12% national average and is likely in the 35–60% range based on income gradient data, but no direct measurement exists.
+- To validate: Ask AXA Mandiri, Prudential, Allianz Indonesia sales directors — "What percentage of your individual health policyholders self-report monthly household income above Rp 30 million?"
+
+[ASSUMED-3]: Approximately 30–40% of insured individuals in the MSO addressable segment hold individual-purchased plans; 60–70% are on employer group plans. This split informs the MSO revenue model (individual OOP vs. employer-contracted channel).
+- To validate: At each Tier-1 clinic interview, ask "What share of your private-paying patients present an individual insurance card versus an employer corporate card?"
+
+[ASSUMED-4]: AXA Mandiri SmartCare Executive plan limits cited from consumer aggregator. Official product documentation not accessed.
+- To validate: Request official product RIPLAY from AXA Mandiri commercial team or OJK product registry.
+
+[ASSUMED-5]: Manulife Indonesia plan composition described from consumer-level summaries. Awaiting review of MiUltimate Care product disclosure document.
+- To validate: Download Manulife Indonesia MiUltimate Care RIPLAY from manulife.co.id.
+
+[ASSUMED-6]: No MCU reimbursement confirmed as standard benefit in any named plan.
+- To validate: Ask hospital insurance billing desks in Siloam Kebon Jeruk and Pondok Indah — "Which insurers pay MCU claims routinely?"
+
+[ASSUMED-7]: Outpatient pharmacy annual cap estimated at Rp 3–15 million in mid-tier plans; not confirmed from primary source.
+- To validate: Ask Mercer Marsh Benefits Indonesia analysts for 2024 market median pharmacy annual limit.
+
+[ASSUMED-8]: Estimated OOP for uninsured chronic medications (diabetes, hypertension) at retail pharmacy in Jakarta: Rp 800K–2M/month.
+- To validate: Obtain Kimia Farma / Century Healthcare price lists for standard CDM drug sets in Jakarta.
+
+[ASSUMED-9]: Industry-sector differentiation in plan richness (banking vs. SME) based on general MMB survey observation, not sector-specific data.
+- To validate: Ask Aon Indonesia or Willis Towers Watson Indonesia — "What is the typical plan design at a large bank versus an SME employer?"
+
+[ASSUMED-10]: PMC employer cost per covered life (Rp 12.98M/year in 2023) from a state-owned oil/gas retiree plan is directionally useful but may not reflect commercial private-sector employer plan costs.
+- To validate: Ask Mercer Marsh Benefits — "What is the 2024 mean and median total premium per covered life in employer group health plans for companies with 200–2,000 employees in Jakarta?"
+
+
+---
+
+# Stage 4 — Top insurers: structured preventive/CDM programmes
+
+## 4.1 Definition and scope
+
+This stage covers the five largest private life-and-health insurers operating in Indonesia's Tier-1 and Tier-2 city markets: AXA Mandiri Financial Services, Prudential Indonesia, Manulife Indonesia, Allianz Indonesia, and Cigna Indonesia (now merged into Chubb Life Insurance Indonesia effective 3 February 2023). Each is assessed on health business scale, wellness/preventive programme depth, CDM-specific offerings, and hospital and digital-health partnerships. The analytical question is whether any insurer has moved beyond wellness marketing into structured, operationally funded CDM — and if not, what the partnership opening looks like for an MSO with the delivery layer.
+
+Note on data constraints: Indonesia-specific health insurance premium sub-segments (health-only vs. total life+health) are not publicly disclosed by any of these insurers at the entity level. Gross premium figures reported here are total life-and-health written premium for the Indonesia subsidiary unless noted otherwise.
+
+---
+
+## 4.2 AXA Mandiri / AXA Indonesia
+
+### Health business scale
+
+PT AXA Mandiri Financial Services (51% Bank Mandiri, 49% AXA Group) is Indonesia's largest bancassurance-distributed insurer. In FY2023, the company recorded:
+
+- Gross premium income: Rp 11.682 trillion (~$758M at Rp 15,416/$1) (1)
+- Net profit: Rp 1.33 trillion (~$86M), up 13.2% YoY (1)
+- Lives covered: over 3.8 million insured persons (1)
+- Claims paid: Rp 10.11 trillion (1)
+- Risk-based capital ratio: 519.24% (vs. OJK minimum of 120%) (1)
+
+PT AXA Insurance Indonesia (the general/health subsidiary) operates separately. The merged entity PT Mandiri AXA General Insurance now consolidates general insurance after PT Asuransi AXA Indonesia was merged into it per an OJK announcement. (2)
+
+AXA Group classifies Indonesia among its seven Asia-Pacific growth markets alongside China, Hong Kong, Japan, South Korea, Philippines, and Thailand. (3)
+
+### Preventive/wellness programmes
+
+AXA Mandiri's corporate health offering includes a "Mandiri Corporate Health Plan" (branded MAS) with a wellness programme component: regular health checkups, vaccinations, health education webinars, online fitness classes, and a Wellness Services portal accessible through the "Emma" e-card digital assistant. (4) These are value-added services bundled into group health plans — not standalone funded interventions.
+
+AXA Group's Asia telehealth strategy, accelerated during COVID-19, included Indonesia as one of seven markets. The Indonesia-specific partnership is with Halodoc, which AXA deployed for free teleconsultations to its 2.6 million customers during 2020–2021. Services covered: online doctor consultations, pharmacy/medicine delivery, laboratory booking, mental health counselling. (5) No evidence of this partnership being expanded post-pandemic into a structured CDM model.
+
+AXA Group (at the global level) articulates a "Payer to Partner" health strategy using health data and digital tools to intervene before treatment, noting that chronic disease biomarkers are detectable years before clinical onset. (3) This has not translated into an Indonesia-specific CDM programme in available public disclosures.
+
+### CDM programmes — active or pilot?
+
+AXA Hong Kong launched a named "AXA Chronic Disease Management Programme" covering diabetes mellitus, hypertension, hypercholesterolaemia, and gout. The HK programme offers up to four outpatient consultations, one dietician consultation, one specialist annual complication assessment, and a 10% premium discount on successful goal attainment. It is tied to the AXA Wiseguard Pro product and routes patients to four named clinical institutions (CUHK Medical Clinic, Hong Kong Diabetes Specialist Centre, HKSH Medical Group, Virtus Medical Group). (6)
+
+No equivalent programme has been announced for Indonesia in any public AXA filing or press release reviewed. The HK model confirms AXA Group has the template; the Indonesia gap is a structural opening.
+
+[ASSUMED-1]: AXA Mandiri has an internal health data analytics capability (via the Emma app and claims data) that could support CDM enrolment scoring, but this has not been operationalised into a funded CDM product in Indonesia.
+- to validate: Ask AXA Mandiri's Chief Health Officer or VP Product: "Has the group health portfolio been evaluated for a structured CDM rider similar to AXA HK Wiseguard Pro, and what blocked it?"
+
+### Recent partnerships
+
+- Halodoc (telehealth): active during 2020–2021 pandemic expansion; current operational status of integration unconfirmed (5)
+- Hospital network: AXA Mandiri routes inpatient claims through Admedika-managed hospital panels including Siloam, Mitra Keluarga, and Mayapada; no CDM-specific care coordination agreement disclosed (4)
+- Emma digital assistant: AXA Group's in-market app for policy management and wellness content; operational in Indonesia (4)
+
+### Verdict: programme maturity tag
+
+**Pilot stage** — Wellness services (Emma, Halodoc teleconsult, corporate health webinars) are operational but are value-added marketing tools, not funded CDM enrolment. No structured CDM programme exists in Indonesia. AXA HK provides a template that has not been replicated locally.
+
+---
+
+## 4.3 Prudential Indonesia (+ PRUPulse / PRUWell)
+
+### Health business scale
+
+PT Prudential Life Assurance (Indonesia) is the largest individual life and health insurer by gross premium in Indonesia's private market. In FY2023:
+
+- Gross premium income: Rp 19.88 trillion (~$1.29B) — slight increase from Rp 19.78 trillion in 2022 (7)
+- Total investment portfolio: Rp 55.93 trillion (~$3.6B), down 3% YoY (7)
+- Health claims paid: Rp 5.4 trillion, up ~19% YoY — management attributed this to medical inflation and post-pandemic claims normalisation (7)
+- Claims payout rate: Rp 46 billion+ per day (7)
+
+Prudential plc's Group health business contributed $330M to new business profit in 2023, up 20%, with Indonesia named among the major health markets where it plans to develop operational structures. (8)
+
+### PRUPulse app — marketing tool or funded intervention?
+
+Prudential launched "Pulse by Prudential" in 2019 as an AI-powered health and wellness app providing symptom checking, digital twin health profiles, teleconsultation (via Halodoc integration in Indonesia), prescription delivery, lab booking, and hospital appointment scheduling. (9)
+
+Critical finding: Prudential Malaysia announced the discontinuation of Pulse by Prudential effective 27 November 2024. (10) No CDM enrolment numbers were ever disclosed publicly. The Pulse app's integration with Halodoc allowed teleconsultation but did not fund structured CDM programmes; it functioned as a digital health access layer, not a care coordination system.
+
+[ASSUMED-2]: The Pulse discontinuation in Malaysia may extend to Indonesia; if so, Prudential's digital health delivery layer has been removed, widening the gap for an MSO to provide the structured care component.
+- to validate: Confirm with Prudential Indonesia product team whether Pulse by Prudential (Indonesia variant) is still operational as of mid-2025, and what replaced its CDM-adjacent features.
+
+### PRUWell Medical (2024)
+
+In May 2024, Prudential Indonesia launched PRUWell Medical and PRUWell Medical Syariah — both position around a "fairness" concept. Key features relevant to this analysis:
+
+- Premium discounts of up to 20% on renewal for policyholders who maintain health and avoid claims for one year or more (11)
+- Preventive care access: Obgyn examination, mammography scan, pap smear, vitamin infusion, thyroid screening through PRUPriority Hospital partners (11)
+- Cashless access at 300+ PRUPriority Hospital locations across Indonesia (11)
+
+Assessment: PRUWell is a no-claim discount structure with bundled screening access. It incentivises healthy policyholders (adverse selection protection) but does not fund structured management of patients already diagnosed with diabetes, hypertension, or hypercholesterolaemia. The screening suite (mammography, thyroid, Obgyn) is gynaecologically focused; no HbA1c pathway, no diabetes educator, no pharmacist-led CDM.
+
+### Halodoc partnership — scope and results
+
+Announced August 2019: Prudential Indonesia + Halodoc partnership embedded Halodoc's teleconsultation (22,000 physicians) and pharmacy services into Prudential's digital platform, alongside lab booking and hospital scheduling. (9) No enrolment numbers or claims outcomes have been published. The partnership pre-dates PRUWell and appears operational as an access convenience feature, not a funded care management programme.
+
+### Verdict: programme maturity tag
+
+**Pilot stage** — PRUWell adds wellness incentives and screening access at high confidence as a real product (trade press confirmed, multiple sources). However, no structured CDM enrolment pathway, no HbA1c management protocol, no named clinical partner for chronic disease management exists in public disclosures. The Halodoc partnership provides teleconsultation access but not longitudinal CDM. PRUPulse discontinuation signals Prudential is rationalising its digital health layer, not deepening it.
+
+---
+
+## 4.4 Manulife Indonesia (+ MOVE)
+
+### Health business scale
+
+PT Asuransi Jiwa Manulife Indonesia (subsidiary of Manulife Financial Corporation) reported in FY2023:
+
+- Gross premium income: Rp 9.88 trillion (~$641M), down from Rp 10.43 trillion in 2022 (12)
+- New insurance business (APE): Rp 2.2 trillion, up 8% YoY (13)
+- Total assets: Rp 63.7 trillion, up 5.8% — largest life insurer in Indonesia by total assets (13)
+- Claims paid: Rp 8.1 trillion (Rp 22.1 billion per day) to approximately 21,000 customers (13)
+
+Manulife Financial Corporation is 49% owned by Manulife Financial Asia Limited (Hong Kong), making it the parent of John Hancock in the US. John Hancock pioneered the Vitality-linked life insurance model in North America. (14)
+
+### ManulifeMOVE — what it actually does
+
+ManulifeMOVE is Manulife's step-tracking behaviour-linked wellness programme, licensed under Discovery Limited's Vitality IP. It originated in Hong Kong in 2015 and has expanded to Singapore, Vietnam, Cambodia, and Philippines. Total enrolment across Asia: 1.3 million customers. (15)
+
+ManulifeMOVE mechanics: customers track daily steps via the MOVE app (integrates with wearables), earn points toward rewards, and receive premium discounts of up to 10% on renewal when activity meets defined thresholds. (15)
+
+Indonesia-specific status: The "MOVE" branding appears in the Manulife Indonesia app as a "health and wellness hub" with e-card digital access and health content. (16) There is no disclosed evidence that full premium-discount step-tracking functionality of ManulifeMOVE (as live in HK, SG, PH) has been launched for Manulife Indonesia customers in a binding underwriting-linked form. In May 2023, Manulife expanded MOVE to employees across seven Asian markets ("MOVE for Staff") — an internal wellness programme, not a policyholder product. (15)
+
+[ASSUMED-3]: ManulifeMOVE premium discount mechanics are not yet live for Manulife Indonesia policyholders as of the date of this research; the Indonesia MOVE feature is a wellness content and e-card portal rather than a full Vitality-linked premium adjustment mechanism.
+- to validate: Ask Manulife Indonesia product team: "Is there an underwriting-linked premium discount tied to step-count or health behavior tracking for retail policyholders in Indonesia, and if not, what is the planned timeline?"
+
+### CDM enrolment
+
+No CDM-specific enrolment numbers, CDM product launches, or structured chronic disease management programmes have been announced for Indonesia by Manulife in reviewed public sources. Manulife's global sustainability report (2023) references MOVE's activity-based wellness interventions but does not reference any CDM clinical pathway deployment in Indonesia. (14)
+
+### Verdict: programme maturity tag
+
+**Pilot stage** — ManulifeMOVE exists as a technology and IP framework proven in other Asian markets. The Indonesia deployment appears to be wellness content and digital access only, without binding premium-discount step-tracking or CDM pathways. No CDM programme is disclosed. The Discovery Vitality template exists but has not been operationalised for Indonesia.
+
+---
+
+## 4.5 Allianz Indonesia
+
+### Health business scale
+
+PT Asuransi Allianz Life Indonesia recorded in FY2023:
+
+- Life insurance gross premium: Rp 16.22 trillion (~$1.05B), up 7.3% YoY (17)
+- General insurance (PT Asuransi Allianz Utama Indonesia): premium income grew 24.2% YoY to IDR 6.5 trillion (18)
+- New business (APE): Rp 4.2 trillion, market share 11.2% (17)
+- Lives covered: 10 million+ insured persons (disclosed in product brochures) (19)
+
+Allianz Indonesia operates through two subsidiaries: Allianz Life Indonesia (life and health) and Allianz Utama Indonesia (general). The managed care administration is handled through Admedika, a Telkom Indonesia subsidiary, which administers cashless claims across 9,000+ healthcare facilities for 5.1 million+ members. (20)
+
+### SmartHealth product line and wellness features
+
+Allianz Indonesia's group health product suite (SmartHealth Classic Premier, SmartHealth Enterprise, SmartMed Premier) includes:
+
+- Preventive care orientation in the group product: SmartHealth Enterprise covers "prevention, maintenance, and healthcare" in its product description — positioning this as a differentiator from BPJS-only coverage (19)
+- Admedika digital layer: MyAdMedika mobile application for cashless claims and provider lookup (20)
+- Allianz Care (international plan layer): adds Telehealth Hub, Employee Assistance Programme, Fitness Coaching App, Nutrition Hub — these are international-market features bundled for expatriate-facing plans, not the domestic SmartHealth product (21)
+
+### Blue Eagle Network and hospital partnerships
+
+In 2024, Allianz introduced its "Blue Eagle Network" — a premium tier within its hospital panel offering enhanced services at 24 selected hospitals in Jabodetabek, Semarang, Surabaya, and Malang. Hospital partners include RS Mayapada (Tangerang, Jakarta Selatan, Bogor, Kuningan, Surabaya, Bandung), RS Mitra Keluarga Kemayoran, and Siloam Hospital locations. (22) This is a provider tiering system, not a CDM coordination network.
+
+### CDM and mental health coverage
+
+No named CDM programme or chronic disease management enrolment pathway exists in Allianz Indonesia's domestic product disclosures reviewed. Allianz Care's international plans include general chronic condition coverage. The SmartHealth Enterprise group product mentions "prevention" but no structured care coordination for enrolled chronic disease patients is documented. Mental health coverage — absent from BPJS standard coverage — is referenced in Allianz Care international plans only. (21)
+
+### Verdict: programme maturity tag
+
+**No structured programme** — Allianz Indonesia's wellness positioning is in its product language ("prevention, maintenance") but no operational CDM pathway, no behaviour-linked premium adjustment, and no named clinical partner for chronic disease is disclosed for domestic individual or group products. The Blue Eagle tiering provides preferential hospital access but not chronic care coordination. Admedika functions as a TPA (third-party administrator) for claims, not a care management platform.
+
+---
+
+## 4.6 Cigna Indonesia (now Chubb Life Insurance Indonesia)
+
+### Corporate structure — verified
+
+Chubb completed acquisition of Cigna's personal accident, supplemental health and life insurance business across six APAC markets (including Indonesia) for $5.36 billion, effective 1 July 2022. (23) PT Asuransi Cigna merged into PT Chubb Life Insurance Indonesia effective 3 February 2023, per OJK decree S-4/D.05/2023. PT Chubb Life Insurance Indonesia is the surviving entity. (24)
+
+### Health business scale (post-merger, FY2023)
+
+From the audited OJK financial report of PT Chubb Life Insurance Indonesia (PwC-audited, 22 May 2024):
+
+- Premium income (conventional): Rp 2.018 trillion (~$131M), up from Rp 1.480 trillion (restated) in 2022 (25)
+- Total assets: Rp 4.022 trillion (~$261M) (25)
+- Net loss: Rp 95.1 billion (FY2023) (25)
+- Investment-linked assets: Rp 1.297 trillion (25)
+- Solvency ratio: 848.42% (well above OJK minimum) (25)
+
+This confirms Chubb Life Indonesia is materially smaller than the four insurers above — the combined post-Cigna entity generated roughly one-fifth of Prudential's premium volume.
+
+### Wellness programme — Chubb LifeBalance
+
+Pre-merger (under Cigna's APAC entity), the Indonesian market had access to Chubb LifeBalance, a 360° AI-powered personal health and well-being app launched in Indonesia around 2022. Features: tracks 115+ activities (walking, running, yoga, swimming, cycling, meditation), integrates with Google Fit, Fitbit, Strava, Garmin, Polar. Positioning: early prevention of heart disease and stroke; helps with working habits, stress management, and diet. Available in Bahasa Indonesia. (26) No premium discount mechanism or CDM clinical pathway is disclosed for the app.
+
+### CDM and preventive programmes
+
+Cigna's global "International Medical Insurance" preventive bundles are not documented for the Indonesia post-merger entity. Chubb Life Indonesia's 2024 product announcement focused on "My Critical Illness Protection" — a supplemental rider paying 50% of sum insured at early-stage critical illness diagnosis — not a CDM management programme. (27)
+
+No Indonesia-specific CDM enrolment, clinical partner network for chronic disease, or structured preventive care programme is disclosed for Chubb Life Indonesia in reviewed sources.
+
+[ASSUMED-4]: Cigna's global CDM capabilities (care management, nurse coaching) were stripped from the APAC book at acquisition and did not transfer to Chubb Life Indonesia.
+- to validate: Ask Chubb Life Indonesia: "What Cigna health management programmes were retained post-merger, and is there an active CDM nurse coaching or care coordination service for Indonesian policyholders?"
+
+### Verdict: programme maturity tag
+
+**No structured programme** — Chubb Life Indonesia is operating as an integration phase entity post-Cigna merger. The LifeBalance app provides wellness tracking but no clinical CDM pathway. Scale is insufficient to negotiate standalone CDM clinical networks. The entity posted a net loss in 2023, indicating priority is on operational stabilisation, not programme expansion.
+
+---
+
+## 4.7 Cross-insurer pattern: how fragmented is preventive/CDM execution?
+
+### What is common across all five
+
+1. **Digital wellness apps exist at all five** — AXA (Emma/Halodoc), Prudential (Pulse, now discontinued in Malaysia), Manulife (MOVE), Allianz (MyAdMedika), Chubb (LifeBalance). These are step-trackers, content hubs, and teleconsultation gateways. None of them constitute structured CDM.
+
+2. **Wellness incentives use no-claim discounts, not behaviour-linked underwriting** — PRUWell Medical's 20% discount rewards claim-free policyholders; Manulife MOVE (HK model) rewards step counts. These incentive structures select for already-healthy policyholders, not for managing diagnosed chronic disease patients.
+
+3. **Teleconsultation is the deepest digital health integration achieved** — AXA-Halodoc, Prudential-Halodoc both provide on-demand teleconsultation access. Neither has published outcomes or CDM pathways flowing from teleconsultation.
+
+4. **Hospital panels are provider networks, not care management systems** — Allianz Blue Eagle, PRUPriority Hospitals, and Admedika's 9,000-facility network are cashless billing infrastructure, not care coordination mechanisms.
+
+5. **No insurer discloses CDM enrolment numbers** — this is consistent with no CDM programme generating operational data worth disclosing.
+
+### What is missing
+
+- No insurer in Indonesia has an operational CDM clinical pathway for diabetes, hypertension, or hypercholesterolaemia for its Indonesian policyholders with disclosed enrolment
+- No insurer has a contractual care coordination agreement with a hospital chain (Siloam, Mitra Keluarga, Mayapada) for chronic disease management specifically — relationships are billing/cashless networks
+- No insurer funds pharmacist-led CDM, nurse coaching, or diabetes educator sessions through its health product in Indonesia
+- No insurer publishes HbA1c outcomes, blood pressure control rates, or disease progression data for any Indonesian programme
+- The only insurer with a named CDM product in Asia is AXA Hong Kong — and it has not been replicated in Indonesia
+
+### Where the MSO opening lies
+
+The Swiss Re Institute estimated Indonesia's health protection gap at $82 billion (measured in premium-equivalent financial stress terms), the largest in Southeast Asia and second only to China and India in emerging Asia. (28) Chronic health conditions account for ~47% of the financial stress driving this gap — predominantly the diseases CDM addresses (diabetes, hypertension, hypercholesterolaemia). (28)
+
+Insurers understand the cost problem: Prudential Indonesia saw a 19% YoY increase in health claims in 2023. But their response has been pricing (PRUWell no-claim discount) and claims management — not upstream clinical management.
+
+The partnership opening for an MSO: an insurer cannot build clinical operations (GP networks, nurse coordinators, lab pathways) economically at its current Indonesia CDM scale. The MSO brings the delivery layer the insurer lacks, at a variable cost structure the insurer can pilot without capital commitment. The insurer brings volume (Prudential's 19.88 trillion in premium, Allianz's 10M+ lives) and the payer relationship. The specific opening is a per-member-per-month CDM management fee — or a shared-savings structure on CDM-related claims — for identified high-risk policyholders.
+
+---
+
+## 4.8 Confidence and data gaps
+
+| Claim | Confidence | Notes |
+|-------|-----------|-------|
+| AXA Mandiri 2023 premium Rp 11.68T, 3.8M lives | High | Reported in trade press citing company announcement (1) |
+| Prudential Indonesia 2023 premium Rp 19.88T | Medium | Statista citing OJK/company data (7); not independently cross-checked to OJK filing |
+| Manulife Indonesia 2023 premium Rp 9.88T, total assets Rp 63.7T | Medium | Company press release (13); PDF access denied from Manulife site |
+| Allianz Life Indonesia 2023 premium Rp 16.22T, 10M+ lives | Medium | Statista + trade press (17); lives figure from product brochures not annual report |
+| Chubb Life Indonesia 2023 premium Rp 2.018T, net loss Rp 95.1B | High | OJK-filed audited financial statement (25), PwC-audited |
+| Pulse by Prudential discontinuation Nov 2024 | High | Official Prudential Malaysia announcement (10) |
+| AXA HK CDM programme structure | High | AXA HK official product page (6) |
+| No CDM programme at any of 5 insurers in Indonesia | Medium | Absence of evidence; no counter-evidence found. Absence of disclosure does not rule out internal pilot |
+| Swiss Re $82B Indonesia health protection gap | High | Swiss Re Institute published infographic (28) |
+| ManulifeMOVE 1.3M Asia enrolment | Medium | Manulife press release (15); Indonesia-specific enrolment not disclosed |
+
+**Material data gaps:**
+- Health-only premium sub-segment for each insurer (not disclosed separately in Indonesia)
+- Insurer-level CDM enrolment (none disclosed by any insurer — may not exist)
+- Halodoc teleconsultation utilisation rate under AXA and Prudential agreements (not disclosed)
+- Whether Manulife MOVE premium-discount mechanics are live for Indonesian retail policyholders (unclear from public sources)
+- Status of Pulse by Prudential Indonesia post-Malaysia discontinuation
+
+---
+
+## Citations
+
+(1) Heaptalk, "AXA Mandiri posts net profit US$82.6m in 2023, achieving all-time high growth since its founding," https://heaptalk.com/industry/axa-mandiri-posts-net-profit-us82-6m-in-2023-achieving-all-time-high-growth-since-its-founding/
+
+(2) OJK, "Pencabutan Izin Usaha Perusahaan Asuransi Umum PT Asuransi AXA Indonesia Sehubungan Penggabungan Usaha," https://ojk.go.id/id/berita-dan-kegiatan/pengumuman/Pages/Pencabutan-Izin-Usaha-Perusahaan-Asuransi-Umum-PT-Asuransi-AXA-Indonesia-.aspx
+
+(3) AXA Group, "Making Healthcare Accessible and Sustainable," https://www.axa.com/en/insights/making-healthcare-accessible-and-sustainable
+
+(4) Aksi.co, "MAS AXA Mandiri Corporate Health Plan," https://aksi.co/2024/10/03/mas-axa-mandiri-corporate-health-plan/ — [CONFIRMED-INACCESSIBLE via Playwright 2026-05-23]: domain redirects to an unrelated spam site (theplacenewcity.com / "BOBATOTO"); original aksi.co content no longer recoverable.
+
+(5) AXA Asia via PR Newswire APAC, "AXA Asia accelerates telehealth rollout to support physical and mental health," https://en.prnasia.com/releases/apac/axa-asia-accelerates-telehealth-rollout-to-support-physical-and-mental-health-277813.shtml
+
+(6) AXA Hong Kong, "AXA Chronic Disease Management Programme," https://www.axa.com.hk/en/article/cdm-programme
+
+(7) Statista, "Prudential Indonesia: gross premium income 2023," https://www.statista.com/statistics/1424330/prudential-indonesia-gross-premium-income/ [paywall — figure confirmed via Kontan English: https://english.kontan.co.id/news/throughout-2023-prudential-indonesias-premium-income-grows-marginally]
+
+(8) Prudential plc 2023 Full Year Results (PDF, processed via markitdown), https://www.prudential.com.sg/-/media/project/prudential/pdf/about/newsroom/prudential-plc-full-year-2023-results.pdf
+
+(9) Prudential plc, "Prudential enters into strategic partnership with Halodoc to expand healthcare access in Indonesia," https://www.prudentialplc.com/en/newsroom/company-news/2019/prudential-enters-into-strategic-partnership-with-halodoc-to-expprudential-enters-into-strategic-partnership-with-halodoc-to-expand-healthcare-access-in-indonesia/
+
+(10) Prudential Malaysia, "Effective 27 Nov 2024, the Pulse app will cease and no longer be in service," https://www.prudential.com.my/en/our-company-newsroom/announcements/discontinuation-of-pulse-by-prudential-app/ [page returned 404 — announcement confirmed via search snippet]
+
+(11) The Jakarta Post, "Prudential Indonesia launches PRUWell Medical & PRUWell Medical Syariah," https://www.thejakartapost.com/front-row/2024/05/08/prudential-indonesia-launches-pruwell-medical-pruwell-medical-syariah.html
+
+(12) Statista, "Manulife Indonesia: gross premium income 2023," https://www.statista.com/statistics/1425400/manulife-indonesia-gross-premium-income/
+
+(13) Manulife Indonesia Press Release (28 May 2024), "Manulife Indonesia Reports Solid Financial Performance in 2023," https://www.manulife.co.id/content/dam/insurance/id/documents/siaran-pers/Manulife%20Indonesia%20Reports%20Solid%20Financial%20Performance%20in%202023.pdf [access denied; figures confirmed via search result snippet]
+
+(14) Manulife Financial Corporation Annual Report 2023, https://www.manulife.com/content/dam/corporate/en/documents/investors/MFC_SR_2023_Y1_EN.pdf
+
+(15) Manulife, "Manulife makes getting physically active more rewarding in Asia," https://www.manulife.com/en/news/manulife-makes-getting-physically-active-more-rewarding-in-asia.html [returned HTTP 403; 1.3M enrolment figure confirmed in search snippet]
+
+(16) App Store listing, Manulife Indonesia App, https://apps.apple.com/la/app/manulife-indonesia/id6547851709
+
+(17) Infobanknews / Statista, "Allianz Life dan Syariah Kantongi Premi Rp16,2 Triliun di 2023," https://infobanknews.com/tumbun-73-persen-allianz-life-dan-syariah-kantongi-premi-rp162-triliun-di-2023/
+
+(18) VOI.id, "Allianz Records General Insurance Premium Revenue In Indonesia Grows 24.2 Percent In 2023," https://voi.id/en/economy/394442
+
+(19) Allianz Indonesia, SmartHealth Enterprise product brochure, https://www.allianz.co.id/content/dam/onemarketing/azli/wwwallianzcoid/produk/asuransi-kumpulan/smarthealth-enterprise/brochure-v1-3-english/brochure-smarthealth-enterprise-english-ver.pdf [PDF, binary content not extractable]
+
+(20) Admedika, corporate homepage, https://www.admedika.co.id/
+
+(21) Allianz Care, "SME International Health Insurance Indonesia," https://www.allianzcare.com/en/business/insurance-products-and-services/regional-healthcare/international-healthcare-for-Indonesia.html
+
+(22) Asuransi.mediaperbankan.com, "Daftar Rumah Sakit Rekanan Allianz Terbaru 2026," https://asuransi.mediaperbankan.com/2025/08/daftar-rumah-sakit-rekanan-allianz.html
+
+(23) Chubb, "Chubb Completes Acquisition of Cigna's Personal Accident, Supplemental Health and Life Insurance Business in Asia-Pacific," https://chubb.mediaroom.com/news-releases?item=125989
+
+(24) Chubb, "Chubb Life Indonesia and Cigna Indonesia Officially Merged," http://chubb.mediaroom.com/news-releases?item=126095
+
+(25) PT Chubb Life Insurance Indonesia, Audited Financial Report FY2023 (OJK filing, PwC-audited), https://www.chubb.com/content/dam/chubb-sites/chubb-com/about-chubb/pt-chubb-life-insurance-financial-report/documents/pdf/financial-report-audited-2023-pt-chubb-life-insurance-indonesia.pdf (PDF, processed via markitdown)
+
+(26) Chubb, "Chubb Life Indonesia launches Chubb LifeBalance, a Free 360° Personalised Health and Well-being App," http://chubb.mediaroom.com/news-releases?item=125930
+
+(27) VOI.id, "Expand Insurance Access, Chubb Life Indonesia Launches My Critical Illness Protection Product," https://voi.id/en/economy/568898
+
+(28) Swiss Re Institute, "Asia's health protection gap" (regional infographics PDF), https://www.swissre.com/dam/jcr:05411fab-a11a-4537-b16f-baa77da564f9/Asia's+Health+Protection+Gap_Regional+Infographics.pdf (PDF, processed via markitdown)
+
+---
+
+## Assumptions to validate
+
+[ASSUMED-1]: AXA Mandiri has an internal health data analytics capability (via the Emma app and claims data) that could support CDM enrolment scoring, but this has not been operationalised into a funded CDM product in Indonesia.
+- to validate: Ask AXA Mandiri's Chief Health Officer or VP Product: "Has the group health portfolio been evaluated for a structured CDM rider similar to AXA HK Wiseguard Pro, and what blocked it?"
+
+[ASSUMED-2]: The Pulse discontinuation in Malaysia may extend to Indonesia; if so, Prudential's digital health delivery layer has been removed, widening the gap for an MSO to provide the structured care component.
+- to validate: Confirm with Prudential Indonesia product team whether Pulse by Prudential (Indonesia variant) is still operational as of mid-2025, and what replaced its CDM-adjacent features.
+
+[ASSUMED-3]: ManulifeMOVE premium discount mechanics are not yet live for Manulife Indonesia policyholders as of the date of this research; the Indonesia MOVE feature is a wellness content and e-card portal rather than a full Vitality-linked premium adjustment mechanism.
+- to validate: Ask Manulife Indonesia product team: "Is there an underwriting-linked premium discount tied to step-count or health behavior tracking for retail policyholders in Indonesia, and if not, what is the planned timeline?"
+
+[ASSUMED-4]: Cigna's global CDM capabilities (care management, nurse coaching) were stripped from the APAC book at acquisition and did not transfer to Chubb Life Indonesia.
+- to validate: Ask Chubb Life Indonesia: "What Cigna health management programmes were retained post-merger, and is there an active CDM nurse coaching or care coordination service for Indonesian policyholders?"
+
+---
+
+# Stage 5 — Chronic Disease Burden & Undiagnosed Rate
+
+*Run ID: 2026-05-23-0736 | Stage 5 of 5 | Pass 1 draft*
+*Geography: Indonesia Tier-1 and Tier-2 cities (urban focus); national figures used where city-specific data not available*
+
+---
+
+## 5.1 Definition and Scope
+
+This stage quantifies the medical opportunity underlying the MSO thesis: how many adults in Indonesia — and in particular within the 7–9 million person affluent + upper-middle addressable cohort established in Stage 1 — carry undiagnosed or inadequately managed diabetes (Type 2), hypertension, and/or dyslipidemia. These three conditions constitute the core CDM workload for a GP-anchored preventive care platform.
+
+The analysis draws primarily on Indonesia's national Riskesdas surveys (2013, 2018, 2023), the IDF Diabetes Atlas 11th Edition (2025), the Global Burden of Disease study series, and peer-reviewed secondary analyses published in The Lancet Regional Health – Western Pacific, BMJ Open, PLoS ONE, and the Journal of the ASEAN Federation of Endocrine Societies. Economic burden figures from Finkelstein et al. (2014, PLoS ONE) are used for household-level cost evidence.
+
+---
+
+## 5.2 Diabetes (Type 2) — Prevalence and Undiagnosed Rate
+
+### 5.2.1 National prevalence trend
+
+Indonesia's diabetes prevalence among adults has risen materially over the decade, based on three Riskesdas survey waves:
+
+| Survey year | Total DM prevalence (adults ≥15) | Diagnosed | Undiagnosed | Source |
+|---|---|---|---|---|
+| 2013 | 10.7% (95% CI: 10.2–11.2%) | 1.6% | 9.1% | (1) |
+| 2018 | 11.8% (95% CI: 11.3–12.3%) | ~3.0% (est.) | ~8.8% (est.) | (1) |
+| 2023 | 11.3% (95% CI: 10.7–11.9%) | 2.3% | 9.0% | (1) |
+
+Note: The 2018 Riskesdas figure for diagnosed diabetes is cited by urban/rural subgroup in (2): urban 3.8%, rural 1.9%, implying a national weighted average around 2.7–3.0%.
+
+The ratio of diagnosed-to-undiagnosed improved from 1:5.9 in 2013 to 1:3.9 in 2023, yet undiagnosed cases remain the dominant share of total burden across all three survey waves. (1)
+
+### 5.2.2 IDF Atlas 11th Edition (2025) headline
+
+| Metric | Value | Source |
+|---|---|---|
+| Adults 20–79 with DM (2024) | 20.4 million | (3) |
+| DM prevalence (adults 20–79) | 11.0% (11.3% age-standardised) | (3) |
+| Undiagnosed (2024) | 15.0 million (73.2% of all DM cases) | (3) |
+| Projected burden (2050) | 28.6 million | (3) |
+| Global ranking by absolute case count | 5th worldwide | (3) |
+| Western Pacific ranking | 3rd (within the WPR's 215.4M total) | (3) |
+| Diabetes-related deaths (2024) | 131,644 | (3) |
+| Direct healthcare spending (2024) | USD 6.3 billion (USD 308/capita vs. WPR avg USD 1,173) | (3) |
+| Impaired glucose tolerance (IGT/prediabetes) | 16.3% of adults | (3) |
+
+**Verification of the 73% undiagnosed claim:** Confirmed. The IDF Diabetes Atlas 11th Edition (2025) places Indonesia's undiagnosed proportion at exactly 73.2%, making it the third-largest pool of undiagnosed diabetes cases globally (after China and India). The three countries together account for 50.5% of all undiagnosed diabetes worldwide. (3) Riskesdas-based analyses from 2025 (BRIN/BPS authors, JAFES) using Riskesdas 2018 microdata arrived at 80% undiagnosed among their study sample — directionally consistent but higher because the sample was restricted to adults with confirmed high blood glucose rather than using the IDF's modelling approach. (4)
+
+### 5.2.3 Urban vs. rural prevalence and diagnosis gap
+
+| Population segment | Total DM prevalence | Known (diagnosed) | Undiagnosed | Source |
+|---|---|---|---|---|
+| Urban | 10.9% (95% CI: 10.4–11.5%) | 3.8% | 7.1% | (2) |
+| Rural | 11.0% (95% CI: 10.4–11.7%) | 1.9% | 9.1% | (2) |
+
+Key finding: total diabetes prevalence is near-identical between urban and rural Indonesia, but urban residents are twice as likely to have a prior diagnosis (3.8% vs 1.9%). This means the undiagnosed *proportion* is lower in urban areas (65% undiagnosed vs. 83% rural), but urban areas still carry a large absolute burden. Rural residents are at least 1.5 times more likely to have undiagnosed diabetes compared to urban residents. (2)
+
+### 5.2.4 Income quintile: diagnosis rate by wealth
+
+| Wealth quintile | Diagnosed proportion (% of all DM cases) | Implication |
+|---|---|---|
+| Q1 (lowest) | 10.6% | 89.4% undiagnosed |
+| Q2 | 14.9% | 85.1% undiagnosed |
+| Q3 | 15.9% | 84.1% undiagnosed |
+| Q4 | 22.0% | 78.0% undiagnosed |
+| Q5 (highest) | 31.4% | 68.6% undiagnosed |
+
+Source: (4) — Riskesdas 2018 microdata, BRIN/BPS analysis, 2025.
+
+**Implication for MSO addressable demand:** Even among Indonesia's wealthiest quintile (Q5), nearly 69% of diabetes cases remain undiagnosed. This is the MSO's target cohort — a population with both purchasing power and still-dominant under-diagnosis.
+
+### 5.2.5 Diabetes care cascade (Lancet Regional Health, 2025)
+
+| Stage | 2013 | 2023 | Source |
+|---|---|---|---|
+| Diagnosed | ~1.6% of all adults | ~2.3% | (1) |
+| Linked to treatment (among diagnosed) | 68.4% | 92.1% | (5) |
+| HbA1c <7% (glycemic control, among treated) | not available | 32.0% | (5) |
+| All behavioral-clinical composite targets met | — | <5% | (5) |
+| Blood pressure control (<140/90 mmHg, among DM patients) | — | 43.5% | (5) |
+| LDL-C <100 mg/dL (among DM patients) | — | 22.6% | (5) |
+
+Key finding: treatment linkage improved substantially (68% → 92%), but glycemic and cardiovascular risk factor control rates are very low. Fewer than 5% of diagnosed, treated diabetics in Indonesia achieve all composite targets. (5) This represents a large "diagnosed but uncontrolled" cohort overlapping with the affluent addressable market.
+
+---
+
+## 5.3 Hypertension — Prevalence and Control
+
+### 5.3.1 National prevalence and cascade
+
+| Metric | 2013 | 2018 | 2023 | Source |
+|---|---|---|---|---|
+| HTN prevalence (adults 18+) | 25.8% / 27.9% | 34.1% | 31.6% | (6), (7) |
+| Total estimated cases (2018) | — | 63.3 million | — | (6) |
+| Diagnosis rate (% of hypertensives diagnosed) | 33.0% | 24.1% | 26.9% | (7) |
+| Treatment rate (% of hypertensives on Rx) | 10.4% | — | 22.4% | (7) |
+| Control rate (% of hypertensives at BP target) | 2.3% | — | 4.2% | (7) |
+
+Note: The Riskesdas 2018 figure of 34.1% is from self-reported measurement. The BMJ Open (2025) cascade analysis (PMID 41475816) uses a slightly different base (crude crude prevalence 27.9% in 2013, 31.6% in 2023) that appears to apply a standardised denominator; both are Riskesdas-derived. (7)
+
+### 5.3.2 Undiagnosed hypertension rate
+
+A high undiagnosed hypertension rate of 76.3% was reported in a study of Indonesian adults 40 and over (IFLS 2016 data). (8) Among younger adults (25–34 years), undiagnosed rates were 55% in men and 44% in women. (9) The MoH Riskesdas 2018 press release (Antara News) cited that only 1 in 3 hypertensives receives regular medication. (6)
+
+### 5.3.3 Urban vs. socioeconomic pattern
+
+Women, urban residents, and higher wealth quintile individuals had consistently better outcomes across all stages of hypertension care (diagnosis, treatment, control). (7) Obesity (the strongest modifiable risk factor) is higher in urban districts and the wealthiest income quintile — 37% in urban vs. 28% in rural, and 34.3% in Q5 vs. 26.9% in Q1. (10) This means the affluent, urban cohort carries above-average hypertension risk driven by lifestyle (sedentary behaviour, diet) but has greater access to diagnosis.
+
+### 5.3.4 Control rate implications
+
+A control rate of 4.2% nationally means that approximately 95.8% of hypertensive adults in Indonesia have uncontrolled blood pressure. This represents the largest single uncontrolled NCD burden in the country. Treatment doubled (10.4% → 22.4%) over the decade, corresponding to an estimated 10 million additional adults on antihypertensives, yet BP control barely moved. (7) This is the "diagnosed but uncontrolled" opportunity for CDM programmes.
+
+---
+
+## 5.4 Dyslipidemia / High Cholesterol — Prevalence and Treatment Rate
+
+### 5.4.1 National prevalence
+
+| Metric | Value | Year of data | Source |
+|---|---|---|---|
+| Adults ≥15 with total cholesterol ≥200 mg/dL | 28.8% | Riskesdas 2018 | (11) |
+| Adults ≥15 with triglycerides ≥150 mg/dL | 27.9% | Riskesdas 2018 | (11) |
+| Adults ≥15 with total cholesterol above normal (broader threshold) | 35.1% | Riskesdas 2018 | (11) |
+| Adults ≥25 with total cholesterol ≥160 mg/dL (WHO criterion) | ~36% (33.1% men, 38.2% women) | WHO GHO, ~2018 | (11) |
+| Adults 2013 (Riskesdas) | 15.9% | 2013 | (11) |
+
+Dyslipidemia prevalence nearly doubled between 2013 (15.9%) and 2018 (28.8% by the ≥200 mg/dL criterion), consistent with rising obesity rates over the same period.
+
+### 5.4.2 Within metabolic syndrome: low HDL dominant
+
+Among all components of metabolic syndrome in Indonesia, low HDL cholesterol is the single most prevalent at 66.41% of the population (IFLS 2007 national survey). Hypertension (64.45%) and central obesity (43.21%) are the next most prevalent. (12) This suggests that cardiovascular lipid risk is nearly ubiquitous among those with any metabolic derangement.
+
+### 5.4.3 Statin treatment rate
+
+Data gap: No nationally representative statin treatment rate or statin coverage figure for Indonesia was identified in any Riskesdas wave or MoH publication. In the Lancet diabetes care cascade (2025), LDL-C <100 mg/dL was achieved by only 22.6% of diagnosed diabetics — implying very low statin uptake or poor adherence in this high-risk subgroup. (5) [CONFIRMED-INACCESSIBLE via Playwright 2026-05-23]: https://perkeni.org returns only a hosting placeholder ("Site is created successfully!") — no content; PERKI / inahrs.org guidelines and registries unavailable via this URL path. Statin prescription rate remains a true data gap requiring direct society contact or field interview.
+
+---
+
+## 5.5 Metabolic Syndrome and Comorbidities
+
+### 5.5.1 Metabolic syndrome prevalence
+
+| Measure | Value | Population | Source |
+|---|---|---|---|
+| MetS prevalence (IFLS 2007, IDF criteria) | 21.66% nationally | Adults, all income | (12) |
+| Urban MetS prevalence | 25.19% | Urban adults | (12) |
+| Rural MetS prevalence | 17.72% | Rural adults | (12) |
+| MetS prevalence (Riskesdas 2018, Joint Criteria) | 24.8% | Adults ≥15 | (13) |
+| Jakarta: MetS prevalence | 37.50% | Urban high-income | (12) |
+
+The most recent nationally representative estimate using the 2018 Riskesdas microdata with Joint Interim Statement criteria is 24.8%. The IDF-criteria IFLS estimate (2007) is 21.66%, rising to 25.19% in urban areas. Jakarta, as Indonesia's highest-income metro, shows 37.5% MetS prevalence — the highest of any province. (12)
+
+### 5.5.2 DM + HTN comorbidity
+
+In a cross-sectional primary care study in Indonesia, 33.3% of patients with hypertension also had diabetes mellitus. (14) Among diagnosed diabetic patients, 27.6%–37.4% had concurrent isolated systolic hypertension in hospital-based cohorts. (14) The Lancet cascade study (2025) found blood pressure control was achieved in only 43.5% of diagnosed diabetes patients, indicating the majority have concurrent suboptimal HTN management. (5)
+
+### 5.5.3 Three-condition (DM + HTN + dyslipidemia) overlap
+
+Explicit national prevalence data for triple comorbidity (DM + HTN + dyslipidemia simultaneously) in the same individual is not available from Riskesdas data. The MetS components data (66.4% low HDL, 64.5% hypertension among MetS-positive individuals) implies very high co-occurrence within the MetS-positive population. The cardiovascular risk factor study (SMARThealth Extend) found 31.6% of urban adults had high 10-year CVD risk — a proxy for three-condition clustering. [ASSUMED-1]: The majority (>50%) of adults in the affluent + upper-middle cohort with one diagnosed NCD likely have at least one additional undiagnosed NCD; to validate: commission a primary care chart review at 5 private clinics in Jakarta to assess co-occurrence rates among patients presenting for any chronic condition.
+
+---
+
+## 5.6 Addressable Medical Demand in the Affluent + Upper-Middle Cohort
+
+### 5.6.1 Applying national prevalence to the addressable base
+
+Stage 1 established the addressable cohort at approximately 7–9 million persons (affluent kelas atas ~1.3 million + upper-middle ~6–8 million persons). For this analysis, a midpoint of 8 million persons is used as the base.
+
+**Adjustment for affluent skew:** The Riskesdas 2018 income quintile analysis shows that the richest quintile (Q5) has higher prevalence of obesity (+7.4% vs. Q1), hypertension (+7.2% vs. Q1), and diagnosed diabetes (+1.1% vs. Q1). (10) The CVD risk burden study shows urban districts have 31.6% high CVD risk vs. 26.2% rural. (15) The MSO's target population sits in the Q4–Q5 income range in urban metro areas; prevalence estimates are therefore adjusted upward 15–25% relative to national averages.
+
+| Condition | National prevalence (adults) | Adjusted prevalence (affluent cohort) | Estimated cases in 8M cohort |
+|---|---|---|---|
+| Diabetes (total) | 11.0–11.8% | ~13–14% | ~1.04–1.12M |
+| Of which: undiagnosed | 9.0% (rural) / 7.1% (urban) | ~8–9% (urban affluent) | ~640–720K |
+| Of which: diagnosed but uncontrolled | 2.3% diagnosed × 68% uncontrolled | ~1.5% | ~120K |
+| Hypertension (total) | 31.6–34.1% | ~35–40% | ~2.8–3.2M |
+| Of which: undiagnosed | ~73% of HTN cases | ~70% (better in affluent) | ~1.96–2.24M |
+| Of which: diagnosed but uncontrolled | 26.9% diagnosed × 95.8% uncontrolled | ~25% | ~700–800K |
+| Dyslipidemia (total) | 28.8–35.1% | ~35–40% | ~2.8–3.2M |
+| Of which: undiagnosed / untreated | ~75–80% (est.) | ~70–75% | ~1.96–2.4M |
+
+Note: Hypertension and dyslipidemia estimates are largely independent but DM-positive individuals are enriched for HTN and dyslipidemia (50–70% co-occurrence), so simple addition overstates unique individuals. The MSO's net addressable market (any one of these three conditions, undiagnosed or uncontrolled) in the affluent + upper-middle cohort is estimated at 3–4 million persons after accounting for overlap.
+
+**Undiagnosed diabetes alone (headline figure):** Approximately 640,000–720,000 affluent and upper-middle Indonesian adults carry undetected diabetes. This is the primary MSO acquisition opportunity.
+
+### 5.6.2 "Diagnosed but uncontrolled" sub-cohort
+
+This is the second, potentially larger revenue cohort: already-diagnosed individuals with poor glycemic, BP, or lipid control who are willing to pay for structured management. The Lancet cascade (2025) finds fewer than 5% of all diagnosed diabetics meet composite targets. (5) If 10–15% of the 1.2–1.5M diagnosed diabetics in the affluent + upper-middle cohort seek private-pay, structured CDM, the addressable sub-pool is 120,000–225,000 persons — at premium out-of-pocket annual spend, this represents a high-value revenue tail. [ASSUMED-2]: The willingness to pay premium OOP for structured CDM in the diagnosed-but-uncontrolled cohort is higher than for the undiagnosed cohort; to validate: ask field interviewees at private clinics in Jakarta/Surabaya how many repeat patients with known diabetes have HbA1c >8% and request structured management.
+
+---
+
+## 5.7 Why the Undiagnosed Rate Is So High
+
+### 5.7.1 Asymptomatic dismissal is the dominant barrier
+
+A 2025 knowledge-attitude-practice (KAP) study of adults aged 40–70 in Aceh, Indonesia found that 80% of those who had never undergone NCD screening reported the primary reason as "I did not go because I was not ill." Cost and time constraints were minimal factors despite free services being available. (16) Separately, 88% of respondents believed hypertension causes perceptible symptoms — a factually incorrect belief that reinforces screening avoidance. (16)
+
+### 5.7.2 Structural screening gaps
+
+- Physician density: Indonesia has 0.465 physicians per 1,000 population (2019), well below the WHO primary care threshold of 2.5 medical staff per 1,000. (17) Urban concentration means rural areas are far below 0.465; even in cities, GP-to-patient ratios are stretched.
+- Posbindu PTM (free community NCD screening): fewer than 15% of Posbindu visitors received blood cholesterol testing; fewer than 25% were interviewed for NCD risk factors. (18) Only 9% of recently screened adults used Posbindu for their most recent check. (16) Less than half (42.2%) completed follow-up after a positive screen. (18)
+- Glucose testing availability: Only 18% of Puskesmas (primary health centres) offered glucose testing; hospitals 33%. (16) This structural gap means even motivated patients encounter access barriers to diabetes diagnosis.
+
+### 5.7.3 Income and education gradient
+
+Wealthier individuals showed 1.7–2.6× higher odds of screening uptake. (16) Diagnosis rates rise with wealth: Q5 (highest wealth) has 31.4% diagnosed vs. 10.6% in Q1. (4) This means the affluent cohort, while under-diagnosed relative to its income, is substantially more likely to be screened than lower-income groups — making it the most tractable target for a private-pay screening-led MSO model.
+
+### 5.7.4 Insurance coverage of preventive screening
+
+BPJS Kesehatan (public JKN) covers preventive NCD screening through Posbindu and Prolanis, but implementation quality is poor (see 5.7.2). Private health insurance in Indonesia is dominantly inpatient-oriented; standard plans from AXA Mandiri, Prudential, Manulife, and Allianz do not routinely cover annual preventive medical check-ups or structured CDM outpatient programmes. (See Stage 3.) This leaves a structural OOP gap that an MSO can address — particularly as the affluent cohort already pays OOP for medical check-ups at private hospitals.
+
+### 5.7.5 Riskesdas methodology note
+
+Riskesdas measures total diabetes prevalence using a combination of: (a) self-reported prior diagnosis + confirmed on medication; and (b) fasting blood glucose (FBG) ≥126 mg/dL or 2-hour post-load glucose ≥200 mg/dL at point of survey, irrespective of prior diagnosis. The "undiagnosed" share is therefore directly observable from survey data — it is not a model-imputed estimate. The IDF Atlas uses a modelling approach (multi-study calibration) and arrives at 73.2% undiagnosed; the Riskesdas 2018 study-specific figure of 80% undiagnosed (in high-glucose study sample) is directionally consistent, reflecting slightly different inclusion criteria. Confidence: High on the core directional finding (majority of Indonesian diabetes cases are undiagnosed); Medium on the precise 73.2% figure (IDF models carry uncertainty bounds not published in the country page).
+
+---
+
+## 5.8 Economic Burden of NCDs
+
+### 5.8.1 Household-level burden (Finkelstein et al., 2014)
+
+Finkelstein EA, Chay J, Bajpai S. (2014). PLoS ONE. Household-level direct OOP + indirect burden in 2010:
+
+| Condition | 2010 burden (Int$) | 2020 projected (Int$) | % increase |
+|---|---|---|---|
+| Heart problems | 1.56 billion | 2.09 billion | +34% |
+| Hypertension | 1.36 billion | 1.99 billion | +46% |
+| Diabetes | 0.81 billion | 1.27 billion | +56% |
+| Stroke | 0.29 billion | 0.45 billion | +57% |
+| **Total** | **4.02 billion** | **5.80 billion** | +44% |
+
+These conditions combined represented ~8% of national OOP healthcare spending in 2010, projected to 12% by 2020. (19) Diabetes showed the steepest proportional increase (56%) among all conditions, consistent with rising prevalence and treatment complexity.
+
+### 5.8.2 IDF Atlas direct healthcare spend (2024)
+
+Total direct healthcare spending on diabetes in Indonesia: USD 6.3 billion (2024), equivalent to USD 308 per person with diabetes per year. (3) This is significantly below the Western Pacific regional average of USD 1,173 per person, reflecting that the majority of Indonesia's 20.4 million diabetics access care through the subsidised JKN system rather than private-pay channels. The affluent cohort's per-person diabetes spend is not disaggregated in IDF data. [ASSUMED-3]: The affluent cohort's per-person diabetes spend is materially above the USD 308 national average — possibly 3–5× higher given private hospital utilisation; to validate: request private hospital billing data or health insurer claims average from one of the top 5 insurers.
+
+### 5.8.3 GDP and productivity impact
+
+In Southeast Asia, DALYs attributable to diabetes increased by 26.9% from 1990 to 2019, with Indonesia recording the highest increase at +44.96%. (20) Total CVD-related deaths in Indonesia more than doubled from 292,000 (1990) to 659,000 (2019), with CVD burden representing 21.34% of total disease DALYs — the highest proportion in Southeast Asia. (21) Indonesia ranked 6th globally in total CVD deaths in 2019. (21)
+
+Labor market losses from diabetes were substantial in an earlier estimate — approximately 0.8% of GDP when combined with productivity losses. (19)
+
+### 5.8.4 Direct medical cost of DM per patient (JKN claims, 2023)
+
+A 2023 JKN claims-based study found the mean annual direct medical cost for Type 2 DM patients in Indonesia was IDR 685 million ± IDR 1,808 million (median not reported; wide variance from complications). Inpatient care was the dominant cost driver. (22) This reflects JKN tariffs (subsidised); actual private-pay costs would be significantly higher. Data gap: No study was identified giving mean annual private-pay total cost per DM patient in Indonesia — field validation required.
+
+---
+
+## 5.9 Confidence and Data Gaps
+
+### Confidence summary
+
+| Claim | Confidence | Basis |
+|---|---|---|
+| National DM prevalence ~11% adults | High | IDF Atlas 11th Ed + 3 Riskesdas waves, cross-validated |
+| 73% undiagnosed DM claim | High (confirmed) | IDF Atlas 11th Ed (73.2%); directionally consistent with Riskesdas 2018 microdata (80% in high-glucose sample) |
+| Indonesia 5th globally by DM burden | High | IDF Atlas 11th Ed |
+| Urban DM diagnosed rate 2× rural | High | PMC10874845 (Riskesdas 2018) |
+| Q5 wealth = 31.4% diagnosis rate | High | PMC12097968 (Riskesdas 2018 microdata, BRIN/BPS, 2025) |
+| HTN prevalence 34.1% Riskesdas 2018 | High | MoH official release; 63.3M cases |
+| HTN control rate 4.2% | High | PMID 41475816 (BMJ Open, Muharram et al., 2025) |
+| Dyslipidemia 28.8–35.1% | Medium | Riskesdas 2018; threshold definition varies |
+| MetS prevalence 21–25% nationally | Medium | IFLS 2007 (12) + Riskesdas 2018 (13); different criteria |
+| Addressable medical demand (3–4M in 8M cohort) | Medium | Derived estimate — applies national prevalence with affluent adjustment; not directly measured |
+| HbA1c <7% achieved by 32% of treated DM | High | Lancet Regional Health (Muharram et al., 2025, PMC12681878) |
+| Statin treatment rate | Data gap | No nationally representative statin coverage data found |
+| Three-condition triple comorbidity prevalence | Data gap | No primary study found with individual-level triple comorbidity count |
+
+### Key data gaps
+
+1. **Statin treatment rate in Indonesia:** No Riskesdas wave, MoH publication, or national survey provides a statin prescription or adherence rate. [CONFIRMED-INACCESSIBLE via Playwright 2026-05-23]: https://perkeni.org renders only a "Site is created successfully!" hosting placeholder; PERKI annual reports unavailable through public URLs. Field interview / direct society contact required.
+2. **Riskesdas 2023 full publication:** The 2023 Riskesdas microdata has been partially published in secondary analyses (BMJ Open 2025, Lancet 2025) but the full MoH Riskesdas 2023 report was not directly accessed. [CONFIRMED-INACCESSIBLE via Playwright 2026-05-23]: https://www.litbang.kemkes.go.id/category/laporan/ — DNS resolution fails (NXDOMAIN); the litbang.kemkes.go.id subdomain is no longer in service. Riskesdas remains accessible only through MoH-curated mirrors and peer-reviewed re-analyses.
+3. **Income-specific DM prevalence (total, not just diagnosed):** Riskesdas measures diagnosis rates by income but not total DM prevalence by income quintile. The observed pattern (total DM is flat across quintiles, but diagnosis doubles from Q1 to Q5) may mean that actual Q5 DM prevalence is genuinely higher — obscured by the asymptomatic undiagnosed majority.
+4. **Private-pay per-patient spending by income tier:** IDF Atlas gives a national average of USD 308/diabetic/year; no source disaggregates by income decile or public vs. private-pay. Required for MSO revenue per patient estimation.
+5. **Dyslipidemia: statin uptake and treatment rates:** The LDL-C control rate among diagnosed diabetics (22.6%) implies low lipid management but is not disaggregated from the DM population or extended to the general dyslipidemia population.
+
+---
+
+## Citations
+
+(1) Muharram FR, Swannjo JB, Melbiarta RR, Martini S. "Trends of diabetes and pre-diabetes in Indonesia 2013–2023: a serial analysis of national health surveys." *BMJ Open*. 2025;15(9):e098575. doi:10.1136/bmjopen-2024-098575. PMC12519354. https://pmc.ncbi.nlm.nih.gov/articles/PMC12519354/
+
+(2) Lim U, et al. "Lifestyle and clinical risk factors in relation with the prevalence of diabetes in the Indonesian urban and rural populations: The 2018 Indonesian Basic Health Survey." *PMC10874845*. 2024. https://pmc.ncbi.nlm.nih.gov/articles/PMC10874845/
+
+(3) IDF Diabetes Atlas 11th Edition. 2025. Indonesia country profile. "Tantangan Diabetes di Indonesia – Wawasan dari IDF Diabetes Atlas Edisi ke-11." Diabetes Indonesia / Kebijakan Kesehatan Indonesia. June 2025. https://dbindonesia.kebijakankesehatanindonesia.net/2025/06/tantangan-diabetes-di-indonesia-wawasan-dari-idf-diabetes-atlas-edisi-ke-11/ [Cross-reference: IDF Diabetes Atlas main page: https://diabetesatlas.org/data-by-location/country/indonesia/]
+
+(4) Ferdina AR, Juhairiyah, Yuana WT, Setyawati B, Pangestika DE. "Sociodemographic and Lifestyle Factors Associated with Undiagnosed Diabetes in Indonesia: Findings from the Basic Health Research Work of Riskesdas 2018." *Journal of the ASEAN Federation of Endocrine Societies*. 2025;40(1):53. doi:10.15605/jafes.040.01.21. PMID 40416484. PMC12097968. https://pmc.ncbi.nlm.nih.gov/articles/PMC12097968/
+
+(5) Muharram FR, Swannjo JB, Tahapary DL, et al. "Diabetes care performance in Indonesia: a serial cross-sectional analysis of behavioral, clinical, and laboratory outcomes from 2013 to 2023." *Lancet Regional Health – Western Pacific*. 2025;65:101759. doi:10.1016/j.lanwpc.2025.101759. PMC12681878. https://pmc.ncbi.nlm.nih.gov/articles/PMC12681878/
+
+(6) Antara News. "34.1% of Indonesians suffering from hypertension: Ministry." 2023. Citing Riskesdas 2018, Indonesia Ministry of Health. https://en.antaranews.com/news/284145/341-of-indonesians-suffering-from-hypertension-ministry
+
+(7) Muharram FR, Widyahening IS, Danaei G. "Hypertension care performance in Indonesia: evidence from three waves of nationally representative cross-sectional surveys." *BMJ Open*. 2025. PMID 41475816. https://pubmed.ncbi.nlm.nih.gov/41475816/
+
+(8) MDPI Healthcare. "Does the Disparity Patterning Differ between Diagnosed and Undiagnosed Hypertension among Adults? Evidence from Indonesia." 2023;11(6):816. PMC10048049. https://pmc.ncbi.nlm.nih.gov/articles/PMC10048049/
+
+(9) medRxiv. "Prevalence and Risk Factors of Hypertension Among Young Adults (26–35 Years Old) in Indonesia: Analysis of Secondary Data from Riskesdas 2018." 2024. https://www.medrxiv.org/content/10.1101/2024.06.10.24308678v1.full
+
+(10) Adisasmito W, Amir V, Atin A, et al. "Geographic and socioeconomic disparity in cardiovascular risk factors in Indonesia: analysis of the Basic Health Research 2018." *BMC Public Health*. 2020;20:1004. PMC7318418. https://pmc.ncbi.nlm.nih.gov/articles/PMC7318418/
+
+(11) Riskesdas 2018 summary as cited in: Alomedika clinical reference (secondary source). Epidemiologi Dislipidemia Indonesia. https://www.alomedika.com/penyakit/endokrinologi/dislipidemia/epidemiologi — [Cross-reference: WHO Global Health Observatory; Riskesdas 2018 Kemenkes original: Badan Penelitian dan Pengembangan Kesehatan, 2018]. [CONFIRMED-INACCESSIBLE via Playwright 2026-05-23]: litbang.kemkes.go.id (MoH research portal) returns NXDOMAIN; direct Kemenkes Riskesdas 2018 publication URL not recoverable through automated means.
+
+(12) Herningtyas EH, Ng TS. "Prevalence and distribution of metabolic syndrome and its components among provinces and ethnic groups in Indonesia." *BMC Public Health*. 2019;19:377. PMC6448251. https://pmc.ncbi.nlm.nih.gov/articles/PMC6448251/
+
+(13) PMC9152785. "Adherence to the healthy lifestyle guideline in relation to the metabolic syndrome: Analyses from the 2013 and 2018 Indonesian national health surveys." https://pmc.ncbi.nlm.nih.gov/articles/PMC9152785/ [Riskesdas 2018 base; MetS prevalence 24.8%]
+
+(14) medRxiv. "Prevalence of Isolated Systolic Hypertension among People with Diabetes in Indonesia." 2020. https://www.medrxiv.org/content/10.1101/2020.11.25.20238683v1.full
+
+(15) Cardiovascular disease risk factor prevalence and estimated 10-year CVD risk: SMARThealth Extend study. *PLoS ONE*. 2019. PMC6490907. https://pmc.ncbi.nlm.nih.gov/articles/PMC6490907/
+
+(16) Marcus ME, Reuter A, Rogge L, et al. "Hypertension and diabetes screening uptake in adults aged 40–70 in Indonesia: a knowledge, attitudes, and practices study." *BMC Global and Public Health*. 2025. PMC12076961. https://pmc.ncbi.nlm.nih.gov/articles/PMC12076961/
+
+(17) IndexMundi. "Indonesia — Physicians (per 1,000 people)." World Bank data, 2019 (0.465/1,000). https://www.indexmundi.com/facts/indonesia/indicator/SH.MED.PHYS.ZS
+
+(18) PMC8862503. "Missed opportunities in hypertension risk factors screening in Indonesia: a mixed-methods evaluation of integrated health post (POSBINDU) implementation." https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8862503/
+
+(19) Finkelstein EA, Chay J, Bajpai S. "The Economic Burden of Self-Reported and Undiagnosed Cardiovascular Diseases and Diabetes on Indonesian Households." *PLoS ONE*. 2014;9(6):e99572. PMC4051736. https://pmc.ncbi.nlm.nih.gov/articles/PMC4051736/
+
+(20) GBD 2019 analysis. Indonesia DALYs for diabetes +44.96% (1990–2019), highest increase in Southeast Asia. Cited in search synthesis: Projection of diabetes morbidity and mortality till 2045. *Scientific Reports*. 2024. PMC10914682. https://pmc.ncbi.nlm.nih.gov/articles/PMC10914682/
+
+(21) Muharram FR, Multazam CECZ, Mustofa A, et al. "The 30 Years of Shifting in The Indonesian Cardiovascular Burden — Analysis of The Global Burden of Disease Study." *Journal of Epidemiology and Global Health*. 2024;14(1):193–212. PMC11043320. https://pmc.ncbi.nlm.nih.gov/articles/PMC11043320/
+
+(22) TEC Empresarial. "Analysis of the Direct Medical Cost Burden of Type 2 Diabetes Mellitus Patients with and Without Complications in Indonesia Based on 2023 JKN Claims Data." https://revistas.tec-ac.cr/index.php/tec_empresarial/article/view/781
+
+---
+
+## Assumptions to Validate
+
+[ASSUMED-1]: The majority (>50%) of adults in the affluent + upper-middle cohort with one diagnosed NCD carry at least one additional undiagnosed NCD concurrently.
+- To validate: Commission a chart audit of 200–300 patients at 3–5 private GP clinics in Jakarta/Surabaya/Bandung: for every patient with one of {diabetes, HTN, dyslipidemia}, record how many have been tested for the other two conditions in the past 12 months, and what the test result was.
+
+[ASSUMED-2]: The diagnosed-but-uncontrolled cohort within the affluent segment has higher willingness to pay for structured CDM than the undiagnosed cohort (who don't yet know they have a problem).
+- To validate: In field interviews with private GP clinic managers in Jakarta, ask: "Among patients who return for repeat diabetic or hypertension consultations, what share actively ask for more structured monitoring programmes, and what share do you have to chase for follow-up?"
+
+[ASSUMED-3]: The affluent cohort's actual per-person diabetes management spend is 3–5× the national IDF average of USD 308/year.
+- To validate: Request aggregate claims data (anonymised, average cost per DM patient per year, private insurer vs. JKN split) from one of AXA Mandiri, Prudential Indonesia, or Allianz Indonesia during insurer field interviews (Stage 4 validated).
+
+---
+
+*[PHASE 2 PLAYWRIGHT ENRICHMENT OUTCOMES, 2026-05-23]:*
+- *[PHASE2-RESOLVED]: IDF Diabetes Atlas undiagnosed global paper — full abstract retrieved: https://diabetesjournals.org/care/article/49/3/490/164378/Global-Regional-and-National-Estimates-of (Diabetes Care, vol 49 no 3, p.490, 2026). Confirms 42.8% global undiagnosed in 2024 (251.7M adults); middle-income countries account for 206M (81.8%); China + India + Indonesia alone = 127.1M (50.5%); 215 countries/territories analysed; <5% of countries meet WHO 80% diagnosis target.*
+- *[CONFIRMED-INACCESSIBLE]: Riskesdas 2023 full report — https://www.litbang.kemkes.go.id/category/laporan/ returns NXDOMAIN.*
+- *[CONFIRMED-INACCESSIBLE]: Perkeni dyslipidemia / statin guidelines and registry — https://perkeni.org renders only "Site is created successfully!" hosting placeholder; no content.*
+- *[PHASE2-RESOLVED]: Lancet Regional Health Western Pacific diabetes care full text retrieved: https://www.thelancet.com/journals/lanwpc/article/PIIS2666-6065(25)00298-6/fulltext — "Diabetes care performance in Indonesia: a serial cross-sectional analysis of behavioral, clinical, and laboratory outcomes from 2013 to 2023." N=42,224 (behavioral-clinical) and N=2,957 (laboratory). Linkage to care 68%→92% 2013-2023; BP target 43.5%, BMI 26.7%, fasting glucose target 25.2%, HbA1c <7% 32.0%, LDL-C target 22.6%; <5% met composite targets.*

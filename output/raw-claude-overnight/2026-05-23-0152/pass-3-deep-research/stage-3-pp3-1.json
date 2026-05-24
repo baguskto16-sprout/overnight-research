@@ -1,0 +1,64 @@
+{
+  "claim_id": "pp3-1",
+  "claim_text": "McKinsey \"$65–95B blind handoff\" cost — headline cost figure for PP3.1 (sub-carrier handoff visibility kills); cited from McKinsey \"digitizing mid and last mile logistics handovers to reduce waste\"",
+  "outcome": "found-stronger-evidence",
+  "primary_source_verified": true,
+  "verbatim_verification": {
+    "source_url": "https://www.mckinsey.com/industries/logistics/our-insights/digitizing-mid-and-last-mile-logistics-handovers-to-reduce-waste",
+    "source_title": "Digitizing mid- and last-mile logistics handovers to reduce waste",
+    "publisher": "McKinsey & Company",
+    "publication_date": "2024-01-05",
+    "verified_via": "Scribd mirror — McKinsey.com timed out (anti-bot); Scribd copy confirmed to contain full article text",
+    "scribd_mirror_url": "https://www.scribd.com/document/874354373/McKinsey-Digitizing-Mid-and-Last-Mile-Logistics-Handovers-to-Reduce-Waste",
+    "key_verbatim_quotes": [
+      "Within this value pool, between $65 billion and $95 billion of waste is generated at interaction points between shippers, dispatchers, third-party logistics companies (3PLs), and carriers at the time of delivery.",
+      "between 13 and 19 percent of logistics costs could stem from these inefficient interactions, amounting to up to $95 billion in losses a year—in the United States economy alone."
+    ],
+    "blind_handoff_term_confirmed": true,
+    "blind_handoff_definition_in_source": "Much of it occurs around what can be called 'blind handoffs'—when two (or more) parties are involved in the handover of goods.",
+    "scope_note": "US economy only; B2B share estimated $45B–$66B/yr; B2C share $18B–$28B/yr (mainly dwell-time costs)"
+  },
+  "claim_characterization_assessment": {
+    "figure_accurate": true,
+    "term_accurate": true,
+    "scope_accurate": "PARTIAL — original claim does not specify US-only scope; the $65–95B figure applies to the United States logistics sector, not global",
+    "article_is_specifically_about_blind_handoffs": true,
+    "original_flagging_resolved": "The article IS specifically about blind handoffs at mid/last-mile handover points — the claim's characterization is accurate, not an overstatement. The article uses 'blind handoffs' as its central organizing concept. The only gap is the missing US-only geographic qualifier."
+  },
+  "new_sources": [
+    {
+      "url": "https://www.mckinsey.com/industries/logistics/our-insights/digitizing-mid-and-last-mile-logistics-handovers-to-reduce-waste",
+      "mirror_url": "https://www.scribd.com/document/874354373/McKinsey-Digitizing-Mid-and-Last-Mile-Logistics-Handovers-to-Reduce-Waste",
+      "category": "primary-tier1-consultancy",
+      "publication_date": "2024-01-05",
+      "supports_claim": true,
+      "key_data": "$65B–$95B waste at interaction points between shippers, dispatchers, 3PLs, and carriers; US economy only; 13–19% of logistics costs",
+      "via_pdf_markitdown": false,
+      "fetch_status": "McKinsey.com timed out — verified via Scribd full-text mirror"
+    }
+  ],
+  "parallel_quantification_search": {
+    "bcg_searched": true,
+    "bcg_result": "BCG 2025 Parcel Study confirms last mile = 50–60% of total parcel logistics cost (directionally corroborating magnitude) but provides no parallel 'blind handoff' cost estimate",
+    "bain_searched": true,
+    "bain_result": "No parallel handoff waste quantification found",
+    "roland_berger_searched": true,
+    "roland_berger_result": "Roland Berger has Southeast Asia last-mile logistics publication but no parallel dollar estimate for handoff waste",
+    "conclusion": "McKinsey January 2024 is the unique primary quantification of $65–95B blind handoff waste; no parallel BCG/Bain/Roland Berger anchor found at the same specificity"
+  },
+  "mckinsey_direct_fetch_status": "[NEEDS-ATTENDED-FETCH]: https://www.mckinsey.com/industries/logistics/our-insights/digitizing-mid-and-last-mile-logistics-handovers-to-reduce-waste — timed out (anti-bot/paywall). Scribd mirror confirmed full article text is accessible and quotes verified.",
+  "suggested_revision": "PP3.1 claim is factually accurate and can be strengthened to verbatim: 'McKinsey estimates $65–95B in annual waste generated at interaction points between shippers, dispatchers, 3PLs, and carriers in the US mid- and last-mile logistics sector — waste that occurs at what the authors term \"blind handoffs,\" where two or more parties exchange custody of goods without real-time visibility. (McKinsey, January 2024)'",
+  "suggested_revision_scope_fix": "Add 'in the United States' qualifier — the original claim omits this and the figure is US-only",
+  "suggested_new_score": "High",
+  "reasoning": "The $65–95B figure and the term 'blind handoffs' are both verbatim from the McKinsey January 2024 article, confirmed via Scribd full-text mirror after McKinsey.com timed out. The claim is not an overstatement — the article is specifically organized around the blind-handoff concept. The one genuine gap is that the claim does not specify 'US economy only,' which the article does; adding that qualifier makes the citation fully defensible.",
+  "searches_performed": [
+    "McKinsey 'digitizing mid and last mile' logistics handovers waste '$65' OR '$95' billion",
+    "BCG OR Bain OR Roland Berger last mile logistics handoff waste cost estimate billion 2023 2024",
+    "McKinsey 'blind handoffs' logistics '$65 billion' '$95 billion' 2024"
+  ],
+  "fetches_performed": [
+    {"url": "https://www.mckinsey.com/industries/logistics/our-insights/digitizing-mid-and-last-mile-logistics-handovers-to-reduce-waste", "result": "TIMEOUT"},
+    {"url": "https://www.scribd.com/document/874354373/McKinsey-Digitizing-Mid-and-Last-Mile-Logistics-Handovers-to-Reduce-Waste", "result": "SUCCESS — full verbatim text retrieved"},
+    {"url": "https://www.ourperspectives.com/article/29564-digitizing-mid-and-last-mile-logistics-handovers-to-reduce-waste", "result": "PAYWALLED — login wall only"}
+  ]
+}

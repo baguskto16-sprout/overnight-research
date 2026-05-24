@@ -1,0 +1,235 @@
+{
+  "generated_at": "2026-05-23T00:00:00Z",
+  "run_id": "2026-05-23-0152",
+  "scan_method": "contradiction-finder v1",
+  "stages_compared": [1, 2, 3, 4, 5, 6],
+  "contradictions": [
+    {
+      "id": "C-001",
+      "class": "A",
+      "severity": "medium",
+      "stages_involved": [1, 2],
+      "claim_a": {
+        "stage": 1,
+        "claim_id": "pp-1.3-1",
+        "text": "Indonesia logistics costs estimated at 23% of GDP vs. ASEAN average of ~13–15%",
+        "value": "23%",
+        "current_score": "low (pre-DR); upgraded to high in stages-validated/stage-1-pain-points.md post-DR",
+        "source_url": "https://en.antaranews.com/news/293688/bappenas-aims-to-lower-indonesias-logistics-costs-to-9-of-gdp (Bappenas 2023, post-DR primary citation)"
+      },
+      "claim_b": {
+        "stage": 2,
+        "claim_id": "pp-2.3-2 (implicit in PP2.3 narrative)",
+        "text": "Indonesia logistics cost = 24% of GDP",
+        "value": "24%",
+        "current_score": "low (pre-DR); upgraded to high in stages-validated/stage-2-pain-points.md post-DR",
+        "source_url": "https://www.worldbank.org/en/news/press-release/2013/09/06/high-logistics-costs-impede-higher-economic-growth-for-indonesia (World Bank 2013 press release, post-DR primary citation)"
+      },
+      "delta_description": "Stage 1 uses 23% (Bappenas 2022/2023 current figure: 14.29% domestic + 8.98% export = 23.27%); Stage 2 uses 24% (World Bank 2013 historical figure: 24.64% for 2011 data). Both are now supported by primary-multilateral and primary-gov sources after DR. They represent the same structural phenomenon at different measurement years — 2011 (WB 2013) vs 2022/2023 (Bappenas). The DR on pp-2.3-2 explicitly resolved this: 'Stage 1 and Stage 2 figures (23% vs. 24%) should be reconciled in the final artifact as reflecting different measurement years of the same underlying structural problem.' The validated drafts now cite both figures in parallel (Stage 1 notes historical 24% context; Stage 2 notes current 23.27%). However, the Stage 2 validated narrative headline still leads with '24% of GDP' while Stage 1 leads with '23%' — a reader comparing sections may perceive a contradiction that is actually a temporal split.",
+      "resolution_suggestion": "Both stages should use a unified formulation: 'Indonesia total logistics costs represent approximately 23–24% of GDP — 24% per the World Bank 2013 report (2011 data) and 23.27% per Bappenas/BPS 2022/2023 data — versus Malaysia at 13% and Thailand at 15–20%.' Stage 2's validated header already moves toward this; confirm the same reconciliation note is visible in Stage 1 body text to avoid reader confusion. No revision needed if the drafts are read in isolation — this is a presentation-layer harmonization note, not a factual error."
+    },
+    {
+      "id": "C-002",
+      "class": "C",
+      "severity": "high",
+      "stages_involved": [4],
+      "claim_a": {
+        "stage": 3,
+        "claim_id": "pp3-4 (DR outcome)",
+        "text": "SEA fleet telematics penetration 15.7% in 2023 → 25.7% by 2028 (Berg Insight 1st Ed, Oct 2024; Tier 3 specialist analyst, not aggregator). Updated baseline: 17.5% in 2024 → 27.1% by 2029 per Berg Insight 2nd Ed (Feb 2026).",
+        "value": "15.7% (2023 baseline) sourced to Berg Insight primary research",
+        "current_score": "medium (post-DR upgrade from low)",
+        "source_url": "https://media.berginsight.com/2024/10/25195648/bi-fmsoutheastasia1-ps.pdf; https://media.berginsight.com/2026/02/25150242/bi-fmsoutheastasia2-ps.pdf"
+      },
+      "claim_b": {
+        "stage": 4,
+        "claim_id": "pp4-4.1-9 / pp4-4.5 (multiple occurrences in stage-4-pain-points.md)",
+        "text": "SEA fleet telematics penetration was only 15.7% of the commercial fleet population in 2023, expected to reach 25.7% by 2028",
+        "value": "15.7% (2023 baseline) still attributed to ResearchAndMarkets via GlobeNewswire (aggregator, Tier 6)",
+        "current_score": "low (aggregator auto-downgrade, stages-validated/stage-4-pain-points.md footnote 9 still cites GlobeNewswire)",
+        "source_url": "https://www.globenewswire.com/news-release/2024/10/30/2971463/28124/en/Southeast-Asia-Fleet-Management-Market-Report-2024-Featuring-Top-5-Players-Jimi-IoT-Cartrack-Karooooo-TransTRACK-DTC-and-Onelink.html"
+      },
+      "delta_description": "Deep research on Stage 3 (pp3-4 DR) established that the 15.7% and 25.7% figures originate from Berg Insight primary research (specialist Tier 3 telematics analyst), not from a Tier 6 aggregator. The GlobeNewswire URL is merely the press-release channel Berg Insight used to distribute its own report — the underlying research is non-aggregator. Stage 3's validated markdown reflects this upgrade (footnotes 58 and 59 cite Berg Insight 1st and 2nd Ed directly). Stage 4's validated markdown still carries the pre-DR attribution (footnote 9 cites 'ResearchAndMarkets, Southeast Asia Fleet Management Market Report 2024' via GlobeNewswire) and the confidence score for this claim remains Low. The same figures appear in both stages with different attributed sources and different confidence tiers — a Class C DR-not-applied contradiction. This matters because Stage 4 uses the 15.7% figure as a load-bearing anchor for three pain points (PP4.1, PP4.3, PP4.5) related to SEA supply-chain visibility, and the aggregator attribution actively suppresses its credibility.",
+      "resolution_suggestion": "Apply the Berg Insight citation upgrade to Stage 4's footnote 9 (and any other occurrences of the ResearchAndMarkets/GlobeNewswire citation for this metric). Replace with: 'Berg Insight, Fleet Management in Southeast Asia, 1st Edition (Oct 2024; Tier 3 specialist analyst): 2.8M installed base; 15.7% penetration (2023) → 25.7% by 2028; CAGR 13.7% — updated in 2nd Edition (Feb 2026) to 17.5% (2024) → 27.1% (2029). Public brochure: https://media.berginsight.com/2024/10/25195648/bi-fmsoutheastasia1-ps.pdf.' Confidence score upgrades from Low to Medium per the Stage 3 DR rationale."
+    },
+    {
+      "id": "C-003",
+      "class": "B",
+      "severity": "medium",
+      "stages_involved": [1],
+      "claim_a": {
+        "stage": 1,
+        "claim_id": "pp-1.1-8 (pre-DR)",
+        "text": "FMCSA granting ~200 authorities/month to entities without verifiable physical address; approval rate fell from ~60–65% to ~30% after April 2025 identity check",
+        "value": "~200 ghost-address authorities per month; approval rate halved",
+        "current_score": "low (pass-2-validation/stage-1.json pp-1.1-8)",
+        "source_url": "https://www.freightwaves.com/news/fmcsa-crackdown-on-carrier-fraud-halves-newly-granted-authorities"
+      },
+      "claim_b": {
+        "stage": 1,
+        "claim_id": "pp-1.1-8 (post-DR, stages-validated/stage-1-pain-points.md)",
+        "text": "FMCSA launched mandatory biometric identity verification (IDEMIA) for all new motor carrier registrations on April 1, 2025. 'Ghost office' concentration: Secretary Duffy stated '200 DOT numbers going to a P.O. Box' (i.e., 200 numbers at one address, NOT 200 monthly fraudulent grants). Post-April approval-rate data from CarrierOK self-described as based on a 'flawed assumption'; official FMCSA statistics confirming a precise before/after magnitude have not been publicly released.",
+        "value": "The '200/month' and 'approval rate halved' quantitative claims are explicitly NOT confirmed; original figures misread Duffy's statement",
+        "current_score": "low (validated draft marks these sub-claims as retracted/unverifiable)",
+        "source_url": "https://www.fmcsa.dot.gov/registration/identity-verification (Tier 1 FMCSA, post-DR)"
+      },
+      "delta_description": "This is an intra-stage Class C contradiction: the pass-2 validation JSON (stage-1.json) carries the original claim at Low confidence as stated, while the validated canonical artifact (stage-1-pain-points.md) has been partially updated per the DR to retract the '200/month' and 'halved approval rate' quantitative claims — replacing them with a corrected reading of Duffy's statement and a caveat that CarrierOK's methodology was retracted. However, the original unrefined claim text (FMCSA '~200 authorities/month to ghost addresses; approval rate fell from ~60-65% to ~30%') still appears in the pass-2 validation claim register (pp-1.1-8) without annotation that the DR REFINED the claim and partly retracted the quantitative specifics. A curator reading only the stage-1.json would see a different claim than the canonical stage-1-pain-points.md.",
+      "resolution_suggestion": "Annotate claim pp-1.1-8 in pass-2-validation/stage-1.json with a DR outcome note: 'REFINED by DR (pp-1.1-8 DR): The FMCSA April 2025 identity verification launch is confirmed by Tier 1 FMCSA sources. The ~200/month ghost-authority grant rate and the 60-65% → 30% approval rate drop are NOT confirmed — the 200 figure misreads Secretary Duffy's ghost-office address concentration statement; the CarrierOK approval-rate data was retracted by that firm. Canonical draft now reflects this; pass-2 score should be updated to Low-retracted for the quantitative sub-claims.' No change needed to the canonical artifact itself — it is already corrected."
+    },
+    {
+      "id": "C-004",
+      "class": "C",
+      "severity": "high",
+      "stages_involved": [6],
+      "claim_a": {
+        "stage": 6,
+        "claim_id": "VC36 (pass-2-validation/stage-6.json) — pre-DR",
+        "text": "Vesttoo collateral fraud totaled $2.8B+; multiple MGAs scrambled for replacement reinsurance capacity.",
+        "value": "$2.8B+",
+        "current_score": "medium (stage-6.json VC36)",
+        "source_url": "https://www.brownejacobson.com/insights/london-market-autumn-2023/downfall-of-vesttoo; https://www.artemis.bm/news/carriers-get-replacement-capacity-requests-for-billions-of-risk-in-vesttoo-fall-out/"
+      },
+      "claim_b": {
+        "stage": 6,
+        "claim_id": "PP6.5-cost3 (pass-2-validation/stage-6.json) — pre-DR",
+        "text": "Vesttoo fraud: over $4B in letters of credit backing reinsurance deals found to be fraudulent, triggering bankruptcy.",
+        "value": "$4B",
+        "current_score": "medium (stage-6.json PP6.5-cost3; internal inconsistency flagged in stage-6.json cross_stage_inconsistency field)",
+        "source_url": "https://www.brownejacobson.com/insights/london-market-autumn-2023/downfall-of-vesttoo"
+      },
+      "delta_description": "Same event, two different dollar figures in two locations within Stage 6: the value-chain artifact said '$2.8B+' (China Construction Bank sub-total of the fraud) while the pain-points artifact said '$4B' (early rounded media estimate from Calcalist, July 2023, pre-investigation). The stage-6.json source-validator already flagged this as an internal inconsistency. The DR (stage-6-Vesttoo-reconcile.json) resolved both figures as incorrect totals: the court-verified total is $3.36B (~$3.4B) per the Vesttoo bankruptcy investigation report filed with US Bankruptcy Court, District of Delaware (Case 23-11160). The canonical validated artifacts (stage-6-value-chain.md footnote 37 marked superseded; stage-6-pain-points.md) have been updated to ~$3.4B with the court citation. HOWEVER, the pass-2-validation/stage-6.json still carries the old $2.8B+ (VC36) and $4B (PP6.5-cost3) claim texts without DR-outcome annotation — so the validation JSON contradicts the corrected canonical artifacts.",
+      "resolution_suggestion": "The canonical stage-6 artifacts are already corrected (both harmonized to ~$3.4B with Delaware bankruptcy court citation). The pass-2-validation/stage-6.json needs annotation on VC36 and PP6.5-cost3 noting: 'DR RESOLVED: both figures superseded by court-verified $3.36B (~$3.4B) per Vesttoo investigation report, US Bankruptcy Court District of Delaware Case 23-11160. Canonical artifacts updated. The $2.8B+ was the CCB-specific sub-portion; the $4B was a pre-investigation media estimate.' No curator action needed on the canonical artifacts — this is a pass-2 JSON annotation gap only."
+    },
+    {
+      "id": "C-005",
+      "class": "A",
+      "severity": "medium",
+      "stages_involved": [1, 5, 6],
+      "claim_a": {
+        "stage": 1,
+        "claim_id": "pp-1.1-1 (validated, post-DR)",
+        "text": "Direct cargo theft losses (US+Canada, all methods including fraud): $455M measured in 2024 (Verisk CargoNet), up 27% from $332M in 2023; projected $725M in 2025",
+        "value": "$455M (2024 measured), $725M (2025 projected/measured)",
+        "current_score": "medium (post-DR upgrade; Verisk CargoNet Tier 3)",
+        "source_url": "https://www.verisk.com/company/newsroom/cargo-theft-surges-to-record-levels-in-2024-verisk-cargonet-analysis-reveals/"
+      },
+      "claim_b": {
+        "stage": 5,
+        "claim_id": "PP5.2-C1",
+        "text": "3,625 reported cargo theft incidents US and Canada 2024; 27% YoY increase; $202,364 average theft value; $454.9M total reported losses",
+        "value": "$454.9M (2024) — consistent with Stage 1",
+        "current_score": "medium (stage-5.json PP5.2-C1; chain-of-citations note)",
+        "source_url": "https://www.verisk.com/company/newsroom/cargo-theft-surges-to-record-levels-in-2024-verisk-cargonet-analysis-reveals/"
+      },
+      "claim_c_stage_1_pp_1_1_1_original": {
+        "stage": 1,
+        "claim_id": "pp-1.1-1 (original, pre-DR, pass-2-validation/stage-1.json)",
+        "text": "Direct cargo loss from fraudulent double-brokering and fictitious pickups: $500M–$700M per year (US+Canada)",
+        "value": "$500M–$700M",
+        "current_score": "low (Travelers Insurance marketing, pass-2 stage-1.json)",
+        "source_url": "https://www.travelers.com/resources/business-topics/supply-chain-management/strategic-cargo-theft"
+      },
+      "delta_description": "The pass-2-validation/stage-1.json still carries claim pp-1.1-1 as '$500M–$700M' (Low, Travelers citation). The validated canonical stage-1-pain-points.md has been updated post-DR to lead with $455M (2024 Verisk CargoNet) as the primary figure, with $500M–$700M retained only as a secondary industry-association context figure (TIA estimate, methodology undisclosed). Stage 5's PP5.2-C1 independently cites $454.9M (consistent with Stage 1 post-DR). Stage 6's PP6.1-cost4 (in stage-6.json) cites the same Verisk URL. The figures are now internally consistent across the canonical artifacts but the stage-1.json validation register still shows the superseded $500M–$700M Travelers figure without DR annotation — creating an apparent but resolved divergence between the validation JSON and the canonical artifact.",
+      "resolution_suggestion": "Annotate pp-1.1-1 in pass-2-validation/stage-1.json: 'REFINED by DR (pp-1.1-1 DR): Primary figure updated from $500M–$700M (Travelers, Low) to $455M measured 2024 / $725M projected 2025 (Verisk CargoNet, Tier 3 actuarial, Medium). TIA $500M–$700M retained as supplementary industry-association estimate context, not primary citation. $500M–$700M Travelers source superseded. Canonical artifact updated.' The Stage 5 ($454.9M) and Stage 6 (same Verisk URL) figures are consistent with the corrected Stage 1 figure."
+    },
+    {
+      "id": "C-006",
+      "class": "D",
+      "severity": "low",
+      "stages_involved": [1, 2, 3, 4],
+      "claim_a": {
+        "stage": 1,
+        "claim_id": "vc-7",
+        "text": "Asia-Pacific carrier onboarding and compliance platform market ~$340M (2024)",
+        "value": "$340M APAC",
+        "current_score": "low (aggregator auto-downgrade + APAC-as-proxy flag: stage-1.json vc-7)",
+        "source_url": "https://growthmarketreports.com/report/carrier-onboarding-and-compliance-platform-market",
+        "geography_flag": "APAC-as-proxy override triggered — flagged as geography mismatch"
+      },
+      "claim_b": {
+        "stage": 4,
+        "claim_id": "vc4-19 (and pp4-4.1-8, pp4-4.5-2)",
+        "text": "APAC/ASEAN market figures used as proxies for SEA-country-specific 3PL and control-tower market sizing",
+        "value": "Multiple APAC aggregator figures used as SEA proxies",
+        "current_score": "low (stage-4.json apac-as-proxy override: vc4-19, pp4-4.1-8, pp4-4.5-2)",
+        "source_url": "Multiple aggregator market research URLs",
+        "geography_flag": "APAC-as-proxy override triggered consistently"
+      },
+      "claim_c": {
+        "stage": 3,
+        "claim_id": "vc3-18, vc3-17, pp3-11",
+        "text": "APAC RTTVP market figures used as proxies without SEA decomposition",
+        "value": "Multiple APAC aggregator figures as SEA proxies",
+        "current_score": "low (stage-3.json apac-as-proxy override: vc3-18, vc3-17, pp3-11)",
+        "source_url": "Multiple aggregator market research URLs",
+        "geography_flag": "APAC-as-proxy override consistently applied"
+      },
+      "delta_description": "This is a Class D observation rather than a true contradiction: the APAC-as-proxy geography mismatch override is applied consistently across Stages 1, 3, and 4 — all correctly flag the same methodological limitation. Stage 2 also flags it (Stage 2 JSON apac-as-proxy override). The consistent application is good. The low-severity note is that Stage 1's APAC carrier-onboarding $340M figure is derived from the same Growth Market Reports aggregator family as Stage 1's global $1.54B–$1.62B figure, and the Stage 1 DR (vc-5 DR, confirmed-scarce) found no Tier-1 source for either — yet both figures continue to appear in the validated value-chain drafts without the DR outcome annotation ('confirmed-scarce') being applied to the text. The vc-5 DR recommendation was to replace with anchored context (Gartner SCM total $33.4B; Descartes acquisition $24M as proxies) rather than the specific aggregator estimates.",
+      "resolution_suggestion": "Low severity — no factual contradiction between stages; the geography override is consistently applied. Action needed: (1) Apply the vc-5 DR confirmed-scarce recommendation to Stage 1's validated value chain — replace the $1.54B–$1.62B and $340M figures with the anchored-context formulation from the DR. (2) Verify Stage 4's market-sizing section similarly notes the absence of a Tier-1 SEA-specific source for control tower and 3PL sub-market sizes."
+    },
+    {
+      "id": "C-007",
+      "class": "C",
+      "severity": "high",
+      "stages_involved": [6],
+      "claim_a": {
+        "stage": 6,
+        "claim_id": "PP6.2-cost4, PP6.2-freq1, PP6.2-freq3 (pass-2-validation/stage-6.json)",
+        "text": "(a) Dynamic pricing pilots using telematics data have reduced claim ratios by 12% in documented pilot programs. (b) Only 25% of high-value cargo shipments globally use IoT-based tracking systems capable of informing per-shipment risk scoring. (c) Parametric cargo insurance adoption grew 23%; over 320 million cubic metres of bulk commodities covered using parametric products.",
+        "value": "12% (claim ratio reduction); 25% (IoT penetration); 23% (parametric adoption); 320M cubic metres",
+        "current_score": "low (stage-6.json; aggregator-auto-downgrade — MarketGrowthReports.com Tier-6)",
+        "source_url": "https://www.marketgrowthreports.com/market-reports/cargo-insurance-market-112938"
+      },
+      "claim_b": {
+        "stage": 6,
+        "claim_id": "PP6.2 (stages-validated/stage-6-pain-points.md, post-DR)",
+        "text": "PP6.2 in the validated canonical artifact has dropped the three specific figures (12%, 25%, 23%, 320M cubic metres) and replaced them with structural framing citing IUMI, McKinsey, and ATRI as confirmed sources. The WH5 argument now rests on structural evidence (IUMI loss ratio improvement despite flat-rate pricing; McKinsey 63% enabler model) rather than the unverifiable aggregator figures.",
+        "value": "Specific figures dropped; structural narrative retained",
+        "current_score": "high/medium (structural framing from IUMI Tier 1 and McKinsey Tier 1 sources)",
+        "source_url": "https://iumi.com/news/press-release/...; https://www.mckinsey.com/..."
+      },
+      "delta_description": "The Stage 6 DR (stage-6-WH5-cluster.json, outcome: confirmed-scarce) established that the three specific MarketGrowthReports figures (12%/25%/23%/320M) have no traceable primary source — they are aggregator artifacts. The DR recommended dropping the specific figures and replacing with structural framing. The canonical stage-6-pain-points.md appears to have applied this recommendation (PP6.2 no longer leads with these percentages in the validated artifact). However, the pass-2-validation/stage-6.json still registers PP6.2-cost4, PP6.2-freq1, and PP6.2-freq3 with their original specific values at Low confidence without noting that the DR established confirmed-scarce status and the canonical artifact was revised. A curator reading the validation JSON would see three Low-confidence claims that were in fact dropped from the canonical artifact — creating an inconsistency between the validation record and the final artifact.",
+      "resolution_suggestion": "Annotate PP6.2-cost4, PP6.2-freq1, PP6.2-freq3 in pass-2-validation/stage-6.json with: 'DR OUTCOME: confirmed-scarce. All three figures (12%/25%/23%/320M) trace exclusively to MarketGrowthReports.com (Tier-6 aggregator). IUMI Stats Report 2025 (full PDF, 5.7MB, Tier-1 primary-association) contains no IoT/parametric/dynamic-pricing data for these claims. LMA Nov 2024 enhanced underwriting report may contain relevant data but is member-only (NEEDS-ATTENDED-FETCH). Canonical artifact PP6.2 revised to structural framing per DR recommendation. These claim IDs are superseded.' This is a validation-record annotation, not a change to the canonical artifact."
+    },
+    {
+      "id": "C-008",
+      "class": "C",
+      "severity": "medium",
+      "stages_involved": [4],
+      "claim_a": {
+        "stage": 4,
+        "claim_id": "vc4-2 / vc4-3 (pass-2-validation/stage-4.json and stages-validated/stage-4-pain-points.md)",
+        "text": "Average disruption requires 34 manual system updates across 6 different platforms (Gartner). Single disruption generates 25 emails requiring input from 8 different roles (MIT CTL).",
+        "value": "34 manual updates / 6 platforms; 25 emails / 8 roles",
+        "current_score": "low (stage-4.json vc4-2, vc4-3; chain-of-citations through FourKites vendor blog only)",
+        "source_url": "https://www.fourkites.com/blogs/supply-chain-control-towers-whats-changing/ (only accessible source; Gartner doc 3989061 and MIT CTL paper paywalled)"
+      },
+      "claim_b": {
+        "stage": 4,
+        "claim_id": "stage-4-gartner-mit-disruption (DR outcome)",
+        "text": "DR (confirmed-scarce): Both statistics exist in the open web exclusively through the FourKites vendor blog. Gartner doc 3989061 (most likely primary for '34 updates') is paywalled (HTTP 403). No MIT CTL paper with '25 emails / 8 roles' was locatable. DR recommends marking as 'vendor-cited-paywalled' with [NEEDS-ATTENDED-FETCH] tag, not dropping.",
+        "value": "Same figures — neither confirmed nor refuted",
+        "current_score": "confirmed-scarce (DR outcome)",
+        "source_url": "https://www.gartner.com/en/documents/3989061 [NEEDS-ATTENDED-FETCH — Gartner subscription required]"
+      },
+      "delta_description": "These two statistics (Gartner 34-system-updates and MIT CTL 25-emails) are load-bearing for PP4.2 (the manual coordination burden pain point for supply-chain control towers). The pass-2-validation/stage-4.json flags them as Low / chain-of-citations. The DR (confirmed-scarce) did not refute the figures but found no independent open-web corroboration — they exist only through the FourKites blog with no direct Gartner or MIT CTL source accessible. The validated stage-4-pain-points.md still appears to cite these figures (from context in the grep; PP4.2 references '25 emails from 8 roles' and '34 system updates'). The DR recommendation was to retain the figures but add an explicit vendor-cite + [NEEDS-ATTENDED-FETCH] tag for Gartner doc 3989061. If the canonical artifact does not carry that tag, it is presenting unverified chain-of-citation figures as if directly sourced.",
+      "resolution_suggestion": "Verify stage-4-pain-points.md carries the [NEEDS-ATTENDED-FETCH] caveat for both statistics. If the Gartner and MIT CTL attributions are presented as if the primaries were directly verified (they were not), add: 'Gartner survey (cited via FourKites vendor blog, March 2025) and MIT CTL research (cited via same FourKites blog) — primary sources paywalled; figures not independently verifiable in open web. [NEEDS-ATTENDED-FETCH: https://www.gartner.com/en/documents/3989061].' Score should remain Low until the Gartner document is fetched. The FedEx Future of Logistics 2025 survey (n=700, stage-4 footnote 7) provides independent corroboration of the general multi-system coordination burden and should be highlighted as the stronger open-source anchor for this pain point."
+    }
+  ],
+  "summary": {
+    "total_contradictions": 8,
+    "by_severity": {
+      "high": 3,
+      "medium": 4,
+      "low": 1
+    },
+    "by_class": {
+      "A": 2,
+      "B": 1,
+      "C": 4,
+      "D": 1
+    }
+  },
+  "gate_impact": "flag-only",
+  "narrative": "Three high-severity contradictions were found, all of Class C (DR verdict not fully propagated): Stage 4 still carries the discredited ResearchAndMarkets attribution for the SEA telematics 15.7% figure despite the Stage 3 DR upgrading it to Berg Insight primary research; Stage 6's pass-2 validation JSON retains the superseded $2.8B/$4B Vesttoo figures that the DR resolved to ~$3.4B (court-verified); and Stage 6's validation JSON still registers the three MarketGrowthReports WH5 percentages (12%/25%/23%) that the DR established as confirmed-scarce and the canonical artifact has already dropped. In all three cases the canonical stage-N artifacts (stages-validated/) are already corrected — the gap is that the pass-2-validation JSONs lack DR-outcome annotations, creating a validation record that contradicts the canonical artifacts. No cross-stage factual contradictions requiring curator judgment on which value is correct were found; the Indonesia GDP logistics cost (23% vs 24%) is a temporal measurement split, not a factual dispute, and is already reconciled in both canonical artifacts."
+}

@@ -1,0 +1,16 @@
+Unattended Phase 2 complete.
+URLs attempted: 30 · Succeeded: 21 · Confirmed inaccessible: 9
+Claims upgraded: 2 (VC2 Med→High via NITL RFP Playbook PDF; pp4-4.1-rc4-munichre Med→High via Munich Re cargo theft report 2025)
+New % Low (post-enrichment): 66.0% · Gate: ship-with-flag
+
+Wall-clock: ~9 minutes (well within 60-min cap).
+30-fetch cap honored; 8 additional known-paywall URLs (Gartner /documents/*, Statista, NTT DATA gated PDFs, CSCMP store) catalogued and skipped without fresh attempts.
+Backups: raw-claude-value-chain.md.bak, raw-claude-pain-points.md.bak.
+Inline retag convention: [NEEDS-ATTENDED-FETCH] -> [FETCHED-OK-2026-05-23] (rendered) or [CONFIRMED-INACCESSIBLE] (captcha/404/paywall).
+Captchas were never solved. No source removed. No claim downgraded.
+
+Full Phase 2 detail:
+- checkpoint.json -> auto_enrichment object
+- raw-claude-summary-logistics-risk-mgmt-worldwide.md -> "Auto-enrichment (Phase 2, Playwright pass)" section
+- FINAL-REPORT.html -> Phase 2 banner added in-place on cover page
+- RENDER-NOTE-PHASE2.md -> render decision rationale

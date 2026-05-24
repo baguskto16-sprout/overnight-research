@@ -1,0 +1,48 @@
+{
+  "claim_id": "PP1.2-9",
+  "outcome": "replace",
+  "original_claim": "Double-brokering soared 400% in certain regions",
+  "replacement_text": "Double-brokering complaints surged 400% in Q4 2022 through Q1 2023 on the Truckstop load board platform — a US-industry-wide spike, not a regional figure and not attributed to BSI/TT Club. BSI/TT Club's 2024 Cargo Theft Report (covering 2023 data) documents a separate but corroborating US trend: fictitious pickups — a closely related strategic-theft category — rose from 1% to 17% of all US cargo thefts between 2022 and 2023, with double/triple brokering schemes cited as a contributing tactic alongside identity theft and document fraud.",
+  "sources_consulted": [
+    {
+      "url": "https://www.ttclub.com/fileadmin/uploads/tt-club/Documents/files/tt-club/bsi-tt-club-cargo-theft-report/tt-club-report-supply-chain-report-april-2024-final.pdf",
+      "status": "ok",
+      "notes": "BSI/TT Club 2024 Cargo Theft Report (April 2024, covering 2023 data). Successfully converted via markitdown. Contains no '400%' figure. Does document fictitious thefts rising from 1% to 17% in the US (2022-2023) and mentions double/triple brokering as a tactic."
+    },
+    {
+      "url": "https://www.ttclub.com/fileadmin/uploads/tt-club/Documents/TT_and_BSI_annual_theft_report/TT_Club_Report_-_Supply_Chain_Report_April_2025.pdf",
+      "status": "ok",
+      "notes": "BSI/TT Club 2025 Cargo Theft Report (April 2025, covering 2024 data). Successfully converted via markitdown. Contains no '400%' figure. Lists 'Double brokering' as a single red-flag bullet in risk mitigation section only. Strategic theft = ~18% of all US incidents."
+    },
+    {
+      "url": "https://www.ttclub.com/media/files/tt-club/bsi-tt-club-cargo-theft-report/tt-club-report-supply-chain-report-april-2024-final-1.pdf",
+      "status": "404",
+      "notes": "Alternate URL for BSI/TT Club 2024 report — 404 not found."
+    },
+    {
+      "url": "https://www.freightcaviar.com/tackling-the-double-brokering-threat-insights-and-solutions-for-freight-brokers/",
+      "status": "ok",
+      "notes": "Trade blog that cites the Truckstop 400% figure with attribution to Brent Hutto, Chief Relationship Officer at Truckstop. Confirms the 400% refers to complaint volume on the Truckstop platform in Q4 2022 through Q1 2023 — not a regional or BSI/TT Club figure."
+    },
+    {
+      "url": "https://www.ttnews.com/articles/double-brokering-increases",
+      "status": "blocked",
+      "notes": "TT News article about double brokering increases — returned 403. Source confirmed via search snippet: attributes 400% complaint increase to Truckstop/Brent Hutto."
+    },
+    {
+      "url": "https://truckstop.com/blog/how-to-report-double-brokering/",
+      "status": "blocked",
+      "notes": "Truckstop blog — returned 403. Cited in multiple secondary sources as origin of the 400% complaint statistic."
+    },
+    {
+      "url": "https://www.freightwaves.com/news/white-paper-the-double-brokering-dilemma",
+      "status": "ok",
+      "notes": "FreightWaves / TriumphPay white paper (Sep 2023). Does NOT contain the 400% figure. Cites $500M-$700M annual freight impact from double brokering."
+    }
+  ],
+  "primary_evidence": "BSI/TT Club 2024 Cargo Theft Report (April 2024, p.10-11): 'Fictitious thefts rose from 1 percent in 2022 to 17 percent in 2023, with a significant increase in recorded strategic theft patterns, where thieves used identity theft and fraud, alongside fictitious pickup, as well as brokering schemes to secure loads at freight locations, such as warehouses and freight facilities... These criminal operations have used fraudulent methods, including double-loading schemes and double/triple brokering, to steal shipments of food and beverages, electronics, alcohol, automotive, and apparel goods from companies.' || Truckstop / Brent Hutto (via FreightCaviar secondary cite): 'In Q4 2022 and Q1 2023, Truckstop, a load board provider, saw a 400% increase in double-brokering complaints' — attributed to Brent Hutto, Chief Relationship Officer at Truckstop.",
+  "primary_source_url": "https://www.ttclub.com/fileadmin/uploads/tt-club/Documents/files/tt-club/bsi-tt-club-cargo-theft-report/tt-club-report-supply-chain-report-april-2024-final.pdf",
+  "primary_source_publisher": "BSI/TT Club (report PDF); Truckstop / Brent Hutto (400% complaint figure, US load-board platform data)",
+  "confidence_after": "Medium",
+  "notes": "The '400%' figure is real but misattributed in the draft. It originates from Truckstop platform complaint data (Q4 2022–Q1 2023), cited by Brent Hutto (Truckstop CRO) and widely reported by FreightWaves, TT News, and trade outlets. It is NOT from BSI/TT Club, and it is NOT a regional breakdown — it reflects US industry-wide complaint volume on one load board. BSI/TT Club's 2024 report provides a corroborating but distinct datapoint: fictitious pickups (which include brokering fraud schemes) rose from 1% to 17% of US cargo thefts between 2022 and 2023. The strongest honest replacement combines both with correct attribution. The Truckstop primary source URL could not be directly fetched (403); attribution is confirmed via multiple secondary sources and search snippets quoting Brent Hutto directly. Confidence is Medium rather than High because the Truckstop original source could not be fetched and verified verbatim."
+}

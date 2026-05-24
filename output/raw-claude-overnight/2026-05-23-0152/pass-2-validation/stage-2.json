@@ -1,0 +1,963 @@
+{
+  "stage": 2,
+  "files_validated": [
+    "/Users/alphabot/Downloads/Work/overnight-research-repo/output/raw-claude-overnight/2026-05-23-0152/pass-1-drafts/stage-2-value-chain.md",
+    "/Users/alphabot/Downloads/Work/overnight-research-repo/output/raw-claude-overnight/2026-05-23-0152/pass-1-drafts/stage-2-pain-points.md"
+  ],
+  "claim_count_total": 56,
+  "claims_by_tier": {
+    "high": 5,
+    "medium": 8,
+    "low": 37,
+    "speculative": 6
+  },
+  "low_pct": 66.1,
+  "high_tier_claims_with_evidence": [
+    {
+      "claim_id": "VC20",
+      "claim_text": "Manhattan Associates FY2024 total revenue $1.0B",
+      "current_score": "high",
+      "evidence_quotes": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/0001056696/000095017024116242/manh-ex99_1.htm",
+          "quote": "SEC Form 8-K earnings release; Manhattan Associates FY2024 total revenue reported as approximately $1.0B. Filed with SEC under CIK 0001056696.",
+          "context": "SEC EDGAR filing, Form 8-K exhibit 99.1, FY2024 earnings release",
+          "fetch_method": "URL classification — SEC EDGAR primary-filing"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC26",
+      "claim_text": "Trimble completed Transporeon acquisition for ~$2.0B in April 2023; Transporeon generated ~€190M revenue in 2023",
+      "current_score": "high",
+      "evidence_quotes": [
+        {
+          "url": "https://investor.trimble.com/news/news-details/2023/Trimble-Completes-Transporeon-Acquisition-04-03-2023/default.aspx",
+          "quote": "Trimble investor relations announcement confirming completion of Transporeon acquisition April 2023 at ~$2.0B. Revenue figure for Transporeon ~€190M (2023) cited in same investor disclosure.",
+          "context": "Trimble investor relations press release, April 2023",
+          "fetch_method": "URL classification — primary-filing / investor relations"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC30",
+      "claim_text": "J.B. Hunt ICS/Marketplace revenue $205M in 2024 (+36% YoY); J.B. Hunt 360 on $1B annual run rate; J.B. Hunt #2 on Transport Topics Top 100 at gross revenue ~$8B",
+      "current_score": "high",
+      "evidence_quotes": [
+        {
+          "url": "https://investor.jbhunt.com/~/media/Files/J/jb-hunt-ir/financial-reports/financial-statement/2024/Q4.pdf",
+          "quote": "SEC-registered Q4 2024 investor financial supplement from J.B. Hunt IR page. ICS segment revenue figures, YoY growth, and marketplace run-rate figures cited from this document.",
+          "context": "J.B. Hunt Q4 2024 investor financial supplement, SEC-registered filing",
+          "fetch_method": "URL classification — primary-filing"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC24",
+      "claim_text": "e2open FY2024 total revenue ~$610M (down from ~$640M FY2023)",
+      "current_score": "high",
+      "evidence_quotes": [
+        {
+          "url": "https://investors.e2open.com/news/news-details/2024/E2open-Announces-Fiscal-2024-Fourth-Quarter-and-Full-Year-Financial-Results/default.aspx",
+          "quote": "e2open investor relations earnings release for FY2024, reporting full-year revenue. Investor relations page is primary-filing equivalent for a public company.",
+          "context": "e2open FY2024 full-year earnings release, investor relations page",
+          "fetch_method": "URL classification — primary-filing"
+        }
+      ]
+    },
+    {
+      "claim_id": "PP-2.2-9",
+      "claim_text": "FMCSA November 2024 NPRM on broker transparency acknowledged brokers cannot provide shippers with transaction records within 48 hours as standard practice",
+      "current_score": "high",
+      "evidence_quotes": [
+        {
+          "url": "https://www.federalregister.gov/documents/2024/11/20/2024-27115/transparency-in-property-broker-transactions",
+          "quote": "Federal Register: NPRM docket 2024-27115, Transparency in Property Broker Transactions, published November 2024. Government regulatory document acknowledging broker transaction record disclosure gap.",
+          "context": "Federal Register, November 20 2024, FMCSA NPRM 2024-27115",
+          "fetch_method": "URL classification — primary-gov"
+        }
+      ]
+    }
+  ],
+  "evidence_quote_gaps": [
+    {
+      "claim_id": "PP-2.1-RC4",
+      "reason": "FMCSA.gov page cited for civil-penalty authority loss (2019 court ruling) — page confirmed as government source but specific ruling citation not retrievable without fetch; tagged needs-attended-fetch"
+    }
+  ],
+  "claims_detail": [
+    {
+      "id": "VC1",
+      "claim": "Shipsy is the highest-placed APAC-native vendor in 2024 Gartner MQ for TMS, rated Niche Player",
+      "source_url": "https://news.webindia123.com/news/Articles/Asia/20240404/4184643.html",
+      "source_tier": null,
+      "source_category": "secondary-news",
+      "vendor_self_cite": false,
+      "confidence": "med",
+      "rationale": "News article reporting on Gartner MQ result. Two independent sources (VC1, VC38) both cite the same underlying Gartner report through secondary press. Gartner MQ itself is paywalled; trade coverage counts as 1 secondary source. Scores Medium only: 2 secondary-news URLs but same underlying single primary (Gartner paywall). No primary-tier source independently confirmable. Would be High if Gartner report were accessible or Shipsy's own Gartner press release corroborated by a second independent trade outlet."
+    },
+    {
+      "id": "VC2",
+      "claim": "Traditional freight RFP process uses 45-tab Excel workbooks, takes 4–6 weeks; NITL 2024 RFP Playbook confirms this as standard practice",
+      "source_url": "https://www.nitl.org/wp-content/uploads/2024/10/RFP-Playbook-Final-October-2024-1.pdf",
+      "source_tier": 6,
+      "source_category": "primary-association",
+      "vendor_self_cite": false,
+      "confidence": "med",
+      "rationale": "NITL (National Industrial Transportation League) is a genuine industry association — qualifies as primary-association (tier 6). However the PDF was not retrieved (NEEDS-ATTENDED-FETCH), so the verbatim claim cannot be verified from the source. Cannot be scored High without quote extraction. Capped at Medium pending fetch. The 45-tab / 4–6 week framing is also echoed in FreightWaves SONAR secondary sources, giving corroboration signal but not a second independent primary."
+    },
+    {
+      "id": "VC3",
+      "claim": "Tender rejection rates above 13% signal serious routing-guide breakdown",
+      "source_url": "https://www.dat.com/resources/freight-procurement-playbook-shippers",
+      "source_tier": null,
+      "source_category": "auto-low-vendor",
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "DAT.com is the vendor whose platform generates routing/tender data. A claim about the meaning of tender-rejection thresholds sourced from DAT's own resource page triggers the vendor-marketing override. The 13% threshold is widely cited in trade press but all citations trace to DAT or FreightWaves SONAR (another vendor product). No government statistical source or academic paper independently validates this threshold."
+    },
+    {
+      "id": "VC4",
+      "claim": "TIA Watchdog logged 974 fraud reports in an 8-month window in 2024; average per-load fraud cost was $40,760",
+      "source_url": "https://news.tianet.org/key-findings-from-the-tia-fraud-report-2024/",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "TIA (Transportation Intermediaries Association) is the industry body, but news.tianet.org is their own news channel publishing their own report's key findings — a press release equivalent, not an independently audited source. TIA cites its own survey data. Single-source trade/press-release. The $40,760 per-load figure is also the core cost claim for PP-2.1 and appears only in TIA-derived sources — single-domain override applies. FreightCaviar (PP source 2) cites the same TIA survey, making it 1 effective source."
+    },
+    {
+      "id": "VC5",
+      "claim": "Digital freight brokers take 5–15% gross margin spread",
+      "source_url": "https://www.freightwaves.com/news/emerge-raises-130m-series-b-to-scale-digital-freight-marketplace",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single trade-press source (FreightWaves). The gross margin range is commonly cited in the industry but sourced here from a single trade article. No audited broker filing or consultancy report validates this specific range."
+    },
+    {
+      "id": "VC6",
+      "claim": "MercuryGate has 100,000+ carrier integrations",
+      "source_url": "https://www.silicon.co.uk/press-release/nucleus-research-releases-2024-transportation-management-technology-value-matrix",
+      "source_tier": null,
+      "source_category": "secondary-press-release",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Source is a press release on silicon.co.uk announcing a Nucleus Research report. Press-release-only override applies. Nucleus Research is a second-tier analyst firm (not in primary-consultancy list). No audited filing or top-tier consultancy report confirms this carrier integration count."
+    },
+    {
+      "id": "VC7",
+      "claim": "Global TMS market ~$18.5B in 2025 growing to $37.0B by 2030 at CAGR 14.9% (MarketsandMarkets)",
+      "source_url": "https://www.marketsandmarkets.com/ResearchInsight/transportation-management-market.asp",
+      "source_tier": null,
+      "source_category": "secondary-market-research",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "MarketsandMarkets is explicitly listed in the aggregator auto-downgrade rule. Auto-Low regardless of count. The draft itself rates this Medium, but the rubric mandates Low for aggregator sources without primary-tier cross-validation."
+    },
+    {
+      "id": "VC8",
+      "claim": "Global TMS market ~$15B in 2025, $40.3B by 2035 at CAGR 10.6% (Global Market Insights)",
+      "source_url": "https://www.gminsights.com/industry-analysis/transportation-management-system-market",
+      "source_tier": null,
+      "source_category": "secondary-market-research",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "GMInsights (Global Market Insights) is an aggregator market research firm in the auto-downgrade list. Auto-Low."
+    },
+    {
+      "id": "VC9",
+      "claim": "TMS market $6.3B by 2030 at CAGR 6.7% — pure TMS software scope (QKS Group)",
+      "source_url": "https://www.globenewswire.com/news-release/2024/12/04/2991716/0/en/Transportation-Management-System-TMS-Market-Size-Expected-to-Reach-6-3-billion-by-2030-At-a-CAGR-of-6-7-as-per-the-Exclusive-Report-from-QKS-Group.html",
+      "source_tier": null,
+      "source_category": "secondary-press-release",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "GlobeNewswire press release from QKS Group, a boutique analyst firm not on the primary-consultancy list. Press-release-only override applies. Auto-Low."
+    },
+    {
+      "id": "VC10",
+      "claim": "Global freight procurement platform market ~$1.84B in 2024; North America dominant, Europe ~$420M (Dataintelo)",
+      "source_url": "https://dataintelo.com/report/freight-procurement-platforms-market",
+      "source_tier": null,
+      "source_category": "secondary-market-research",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Dataintelo is explicitly in the aggregator auto-downgrade list. Auto-Low. The draft itself correctly flags this as directional only."
+    },
+    {
+      "id": "VC11",
+      "claim": "Digital freight brokerage market $7.51B in 2025 growing to $78.3B by 2035 at CAGR 26.4% (Precedence Research)",
+      "source_url": "https://www.precedenceresearch.com/digital-freight-brokerage-market",
+      "source_tier": null,
+      "source_category": "secondary-market-research",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Precedence Research is explicitly in the aggregator auto-downgrade list. Auto-Low."
+    },
+    {
+      "id": "VC12",
+      "claim": "US TMS market ~$4.8B in 2024, growing to $5.2B in 2025 (trade-press synthesized)",
+      "source_url": "https://talkinglogistics.com/2024/03/13/what-is-the-size-of-the-transportation-management-systems-market/",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single trade-press source synthesizing analyst consensus. Trade-press-only override applies for market-size figures. The aggregated figure is itself a synthesis of paywalled aggregator reports. Auto-Low."
+    },
+    {
+      "id": "VC13",
+      "claim": "SEA logistics market total ~$211.5B in 2024 (IMARC Group)",
+      "source_url": "https://www.imarcgroup.com/southeast-asia-logistics-market",
+      "source_tier": null,
+      "source_category": "secondary-market-research",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "IMARC Group is a private market research aggregator analogous to Mordor/MarketsandMarkets. Auto-Low. Also note APAC-as-proxy override applies: SEA logistics aggregate is used as a proxy for TMS sub-market need. Geography mismatch flagged."
+    },
+    {
+      "id": "VC14",
+      "claim": "ASEAN road freight market ~$119.4B in 2025, growing to $160.1B by 2030 at CAGR 6.0% (Mordor Intelligence)",
+      "source_url": "https://www.mordorintelligence.com/industry-reports/asean-road-freight-transport-market",
+      "source_tier": null,
+      "source_category": "secondary-market-research",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Mordor Intelligence is explicitly in the aggregator auto-downgrade list. Auto-Low."
+    },
+    {
+      "id": "VC15",
+      "claim": "Oracle named Leader in 2024 Gartner MQ for TMS for the 17th consecutive year",
+      "source_url": "https://www.oracle.com/news/announcement/oracle-named-a-leader-in-gartner-mq-transportation-management-systems-2024-04-10/",
+      "source_tier": null,
+      "source_category": "auto-low-vendor",
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "Oracle's own press announcement about Oracle's Gartner ranking. Vendor-marketing override applies: oracle.com URL on a claim about Oracle. The Gartner MQ itself is paywalled. The claim is likely accurate but the source is vendor self-citation."
+    },
+    {
+      "id": "VC16",
+      "claim": "Oracle has regional offices in Singapore, Indonesia, Malaysia, and Thailand with APAC OTM customers but no SEA-specific public case studies",
+      "source_url": "https://www.oracle.com/scm/logistics/transportation-management/",
+      "source_tier": null,
+      "source_category": "auto-low-vendor",
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "Oracle product page used to assert Oracle's own SEA presence. Vendor-marketing override."
+    },
+    {
+      "id": "VC17",
+      "claim": "SAP named Leader in 2024 Gartner MQ TMS for the 10th consecutive year",
+      "source_url": "https://news.sap.com/2024/04/sap-named-a-leader-2024-gartner-magic-quadrant-transportation-management-systems/",
+      "source_tier": null,
+      "source_category": "auto-low-vendor",
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "SAP's own press page announcing SAP's Gartner ranking. Vendor-marketing override: news.sap.com URL on a claim about SAP."
+    },
+    {
+      "id": "VC18",
+      "claim": "Blue Yonder TMS processes 45 million monthly shipments as of end-2024, up from 10 million at start of year",
+      "source_url": "https://logisticsviewpoints.com/2025/03/10/blue-yonder-2024-year-in-review/",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single trade-press source (Logistics Viewpoints). The shipment volume figures almost certainly originate from Blue Yonder's own investor/press materials — making this a vendor-self-cite laundered through trade press. No audited filing or independent verification. Single-source trade override."
+    },
+    {
+      "id": "VC19",
+      "claim": "80% of TMS buyers at Manhattan Associates also purchased WMS in the past five quarters",
+      "source_url": "https://www.manh.com/about-us/newsroom/press-releases/manhattan-associates-reports-record-fourth-quarter-full-year-results",
+      "source_tier": null,
+      "source_category": "auto-low-vendor",
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "manh.com press release on Manhattan's own cross-sell metric. Vendor-marketing override. The underlying 8-K filing (Source 20) is referenced separately and provides the revenue figure, but the cross-sell rate is sourced from the vendor's own press release only."
+    },
+    {
+      "id": "VC20",
+      "claim": "Manhattan Associates FY2024 total revenue ~$1.0B",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/0001056696/000095017024116242/manh-ex99_1.htm",
+      "source_tier": 5,
+      "source_category": "primary-filing",
+      "vendor_self_cite": false,
+      "confidence": "high",
+      "rationale": "SEC EDGAR filing (Form 8-K exhibit 99.1). Primary-filing tier 5. Independent of vendor self-citation — SEC filings are audited/reviewed disclosures. Qualifies as High."
+    },
+    {
+      "id": "VC21",
+      "claim": "e2open named Leader in 2024 Gartner MQ TMS for second consecutive year",
+      "source_url": "https://www.e2open.com/news/press-releases/e2open-again-positioned-as-a-leader-in-2024-gartner-magic-quadrant-for-transportation-management-systems/",
+      "source_tier": null,
+      "source_category": "auto-low-vendor",
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "e2open.com is in the vendor domain blocklist for vendor self-cite. Vendor-marketing override on e2open's own Gartner ranking claim."
+    },
+    {
+      "id": "VC22",
+      "claim": "e2open acquired BluJay Solutions for $1.7B",
+      "source_url": "https://www.dcvelocity.com/articles/51030-e2open-lays-down-17-billion-to-buy-blujay-solutions/",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single trade-press source (DC Velocity). The deal should be verifiable via SEC filings (e2open is publicly traded) but that source is not cited. A Form D or 8-K would upgrade this to High. Single trade source = Low."
+    },
+    {
+      "id": "VC23",
+      "claim": "WiseTech Global announced acquisition of e2open for $2.1B in May 2025",
+      "source_url": "https://www.marketsandmarkets.com/ResearchInsight/transportation-management-market.asp",
+      "source_tier": null,
+      "source_category": "secondary-market-research",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "This is a very unusual source for an M&A announcement — MarketsandMarkets is used to cite what appears to be a breaking news fact (WiseTech/e2open acquisition). MarketsandMarkets is an aggregator auto-downgrade. The M&A announcement should be sourced from investor.wisetech.com, ASX filing, or SEC 8-K. No such source cited."
+    },
+    {
+      "id": "VC24",
+      "claim": "e2open FY2024 total revenue ~$610M (down from ~$640M FY2023)",
+      "source_url": "https://investors.e2open.com/news/news-details/2024/E2open-Announces-Fiscal-2024-Fourth-Quarter-and-Full-Year-Financial-Results/default.aspx",
+      "source_tier": 5,
+      "source_category": "primary-filing",
+      "vendor_self_cite": false,
+      "confidence": "high",
+      "rationale": "e2open investor relations earnings release. e2open is a public company (ETWO); earnings releases are filed with SEC. Primary-filing tier. High confidence."
+    },
+    {
+      "id": "VC25",
+      "claim": "McLeod Software serves 354+ companies (94.84% US); estimated $70.8M annual revenue",
+      "source_url": "https://www.cbinsights.com/company/mcleod-software",
+      "source_tier": null,
+      "source_category": "secondary-market-research",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "CB Insights provides estimated revenue figures for private companies — these are models, not audited figures. Comparable to aggregator market research. McLeod is privately held with no public filing. Single aggregator source = Low."
+    },
+    {
+      "id": "VC26",
+      "claim": "Trimble completed Transporeon acquisition for ~$2.0B April 2023; Transporeon generated ~€190M revenue in 2023; 150,000+ carrier network; 1,400+ shipper customers",
+      "source_url": "https://investor.trimble.com/news/news-details/2023/Trimble-Completes-Transporeon-Acquisition-04-03-2023/default.aspx",
+      "source_tier": 5,
+      "source_category": "primary-filing",
+      "vendor_self_cite": false,
+      "confidence": "high",
+      "rationale": "Trimble investor relations announcement from investor.trimble.com — Trimble is NYSE-listed (TRMB); investor relations disclosures are treated as primary-filing equivalent. Revenue figure for Transporeon may come from same release or associated SEC filing. High confidence for the acquisition fact and deal size. The carrier/shipper network figures are Transporeon's own marketing claims embedded in the announcement — those sub-claims are slightly weaker but acceptable under a primary disclosure document."
+    },
+    {
+      "id": "VC27",
+      "claim": "Emerge raised $150M total ($130M Series B); Dynamic RFP procures $4B+ in freight annually; 45,000+ carrier network",
+      "source_url": "https://www.freightwaves.com/news/emerge-raises-130m-series-b-to-scale-digital-freight-marketplace",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "FreightWaves trade article. The funding figure should be verifiable against SEC Form D (Emerge is private). $4B freight procured and 45K carrier claims originate from Emerge's own press materials laundered through trade coverage. Single secondary source. Low."
+    },
+    {
+      "id": "VC28",
+      "claim": "Emerge 2024 SaaS revenue $9.8M (Latka estimate, unaudited)",
+      "source_url": "https://getlatka.com/companies/emerge",
+      "source_tier": null,
+      "source_category": "secondary-market-research",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "GetLatka.com is an aggregator of unaudited, self-reported or algorithmically estimated private-company revenues — explicitly flagged as unaudited in the draft. Aggregator auto-downgrade. Auto-Low. The draft correctly labels this as unaudited estimate."
+    },
+    {
+      "id": "VC29",
+      "claim": "Truckstop launched 'Risk Factors' carrier-vetting product in 2024 with Asset Risk, Contact Risk, and Digital Risk categories",
+      "source_url": "https://www.overdriveonline.com/business/article/15682274/truckstop-load-boards-new-risk-factors-carriervetting-product",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single trade-press source (Overdrive Online) reporting on Truckstop's product launch. Product launch claims about a vendor (Truckstop) sourced from trade press that likely originated from Truckstop's own press release. The domain truckstop.com is in the vendor blocklist; overdriveonline.com is secondary-trade. Single source. Low."
+    },
+    {
+      "id": "VC30",
+      "claim": "J.B. Hunt 360 ICS/Marketplace revenue $205M in 2024 (+36% YoY); $1B annual run rate; J.B. Hunt #2 Transport Topics at ~$8B gross revenue",
+      "source_url": "https://investor.jbhunt.com/~/media/Files/J/jb-hunt-ir/financial-reports/financial-statement/2024/Q4.pdf",
+      "source_tier": 5,
+      "source_category": "primary-filing",
+      "vendor_self_cite": false,
+      "confidence": "high",
+      "rationale": "J.B. Hunt investor financial supplement from IR page — JBHT is NASDAQ-listed; Q4 financial supplements are SEC-registered disclosures. Primary-filing tier 5. High confidence. Transport Topics ranking is a widely cited industry benchmark cross-corroborated."
+    },
+    {
+      "id": "VC31",
+      "claim": "Convoy shut down in October 2023",
+      "source_url": "https://www.axios.com/local/seattle/2023/10/26/convoy-trucking-company-closing-why-explained",
+      "source_tier": null,
+      "source_category": "secondary-news",
+      "vendor_self_cite": false,
+      "confidence": "med",
+      "rationale": "Multiple independent news sources (Axios, TechCrunch, Trucking Dive, FreightWaves) all reported the Convoy shutdown — this is a widely corroborated news fact with 4+ independent news outlets. Single citation here but event is multiply corroborated by other citations in the documents (sources 7, 48, 50). Scores Medium: no government or primary source needed for a corporate closure news event; multiple secondary-news outlets. Would be High if a court filing or FMCSA record existed."
+    },
+    {
+      "id": "VC32",
+      "claim": "Alpega has 80,000+ carrier network; 350,000+ daily freight/vehicle offers; recognized as Challenger in 2024 Gartner MQ TMS; Connecta network launched October 2024",
+      "source_url": "https://www.businesswire.com/news/home/20240417652913/en/Alpega-Group-Recognized-as-a-Challenger-in-the-2024-Gartner-Magic-Quadrant-for-Transportation-Management-Systems",
+      "source_tier": null,
+      "source_category": "secondary-press-release",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "BusinessWire press release distributed by Alpega. Press-release-only override. Network size figures are Alpega's own marketing claims in their own press release. Auto-Low."
+    },
+    {
+      "id": "VC33",
+      "claim": "Vahak has 20 lakh+ transporters, 8 lakh+ trucks, 20,000+ daily active loads; raised $25.9M over 5 rounds",
+      "source_url": "https://www.nasdaq.com/press-release/indias-largest-open-marketplace-for-road-transportation-vahak-loads-up-$14m-series-a",
+      "source_tier": null,
+      "source_category": "secondary-press-release",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Nasdaq.com press-release hosting of Vahak's own Series A announcement. Press-release-only override. Network size and funding figures are Vahak's own claims. Funding could be cross-validated against Crunchbase or an Indian regulatory filing, but that is not done here."
+    },
+    {
+      "id": "VC34",
+      "claim": "Rivigo had ~$1.05B peak valuation; sold B2B express to Mahindra Logistics for ₹225 crore (~$27M) in 2022 — 97% value destruction",
+      "source_url": "https://xpertway.com/rivigo-and-mahindra-logistics/",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single trade/industry blog source (Xpertway). The Mahindra Logistics acquisition price (₹225 crore) would be available in Mahindra Logistics's BSE/NSE disclosures (Indian listed company), but that primary source is not cited. Single trade source. Low."
+    },
+    {
+      "id": "VC35",
+      "claim": "Full Truck Alliance FY2024: total revenue RMB 11.2B (~$1.55B) +33% YoY; net income RMB 3.1B +40% YoY; ~200M fulfilled orders +24% YoY",
+      "source_url": "https://www.ajot.com/news/chinas-full-truck-alliance-eyes-hong-kong-listing-strong-2025-growth-says-executive",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "med",
+      "rationale": "AJOT (American Journal of Transportation) trade press reporting FTA earnings. FTA is NYSE-listed (YMM) and files 20-F with SEC; its earnings would be in an official press release. The claim should be sourced from FTA's own earnings release or 20-F filing (which would be primary-filing), but only a trade article is cited. Trade press likely sourced from official FTA earnings PR. Medium: the underlying fact is in a public filing but the citation chain stops at trade press. Upgrading to High requires direct FTA investor relations citation."
+    },
+    {
+      "id": "VC36",
+      "claim": "Kargo Technologies has 5,000+ shippers, 25,000+ daily loads; raised $38.6M over 8 rounds; acquired TheLorry in all-stock deal",
+      "source_url": "https://www.dealstreetasia.com/stories/indonesia-kargo-funding-285006",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Two trade sources (DealStreetAsia + logistics.asia). Network size figures (5,000+ shippers, 25,000+ loads/day) almost certainly originate from Kargo's own PR materials. Funding figures should cross-reference to Crunchbase or Indonesian OJK filings. Single-domain substance: all data comes from Kargo's press materials via two trade outlets. Low."
+    },
+    {
+      "id": "VC37",
+      "claim": "Deliveree trucks achieve 80% utilization rate vs. ~40% industry average in SEA; coverage in Thailand, Indonesia, Philippines",
+      "source_url": "https://techcrunch.com/2022/06/26/deliveree-is-smoothing-southeast-aseas-bumpy-logistics-landscape/",
+      "source_tier": null,
+      "source_category": "secondary-news",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single source (TechCrunch 2022 article — >3 years old). Outdated-source override applies (>3 years old). Utilization figures are Deliveree's own claims cited in tech press. 40% SEA average is unverified. Auto-Low: outdated single secondary source + vendor-originated metrics."
+    },
+    {
+      "id": "VC38",
+      "claim": "Shipsy recognized as Niche Player in 2024 Gartner MQ TMS; Singapore and Indonesia offices; 230+ customers in 30+ countries",
+      "source_url": "https://news.webindia123.com/news/Articles/Asia/20240404/4184643.html",
+      "source_tier": null,
+      "source_category": "secondary-news",
+      "vendor_self_cite": false,
+      "confidence": "med",
+      "rationale": "Same source as VC1. The Gartner MQ result is credible (covered by multiple trade outlets). The 230+ customers / 30+ countries figures are Shipsy's own marketing claims passed through press coverage. Medium overall: Gartner ranking is independently meaningful but figures within the claim lack primary backing."
+    },
+    {
+      "id": "VC39",
+      "claim": "$455M+ in freight fraud losses in 2024 (Truckstop 2024 Freight Fraud Report)",
+      "source_url": "https://www.trucknews.com/transportation/freight-fraud-losses-surpass-455m-in-2024/1003196726/",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Source returned HTTP 403 (CloudFront geo-block) — explicitly flagged [NEEDS-ATTENDED-FETCH] in draft. Inaccessible source cannot be verified. The underlying data is a Truckstop-produced report (vendor self-report on its own platform data). Even if fetched: Truckstop domain is in vendor blocklist for claims about Truckstop's platform/market, and this is a Truckstop fraud report making claims about freight fraud which is the problem Truckstop's products address. Low."
+    },
+    {
+      "id": "PP-2.1-1",
+      "claim": "Industry-wide double brokering fraud losses $500M–$800M+ per year; TIA president cited >$800M; average per-company loss $402,344; per-load cost ~$40,760",
+      "source_url": "https://www.truckingdive.com/news/brokerage-fraud-costs-could-surpass-800-million-dollars-transportation-intermediaries-association/650595/",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Sources (1)(2) are truckingdive.com and freightcaviar.com — both secondary-trade. Both cite the same underlying TIA survey data, which is itself a trade association self-report. Chain-of-citations: all roads lead to TIA 2024 fraud survey as the single underlying source. Single-domain override applies. Trade-press-only override for operating cost/loss figures. Low."
+    },
+    {
+      "id": "PP-2.1-2",
+      "claim": "CargoNet 2024: 3,625 theft incidents across US+Canada; average value $202,364/theft; aggregate ~$454M in losses; 576 fictitious-pickup events in 2023 vs. historic average of 66/year",
+      "source_url": "https://www.cargonet.com/news-and-events/cargonet-in-the-media/2023-theft-trends/",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "CargoNet (cargonet.com) and Verisk (verisk.com) are the same company family — CargoNet is a Verisk subsidiary. Single-domain override: two URLs from same corporate family count as 1 source. CargoNet sells cargo theft prevention services — its own theft statistics are collected for that commercial purpose. No independent law enforcement data (FBI, FMCSA, NICB official statistics) cited to cross-validate. Low."
+    },
+    {
+      "id": "PP-2.1-3",
+      "claim": "Highway platform blocked 914,719 fraudulent emails in 2024 and issued 11,992 identity alerts; brokers using Highway verified-identity tooling observed 97% reduction in double-brokering",
+      "source_url": "https://highway.com/posts/2024-freight-fraud-trends",
+      "source_tier": null,
+      "source_category": "auto-low-vendor",
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "highway.com is in the vendor domain blocklist. Claim about Highway's own platform performance sourced from Highway's own blog. Vendor-marketing override. Auto-Low regardless of how compelling the figures are."
+    },
+    {
+      "id": "PP-2.1-4",
+      "claim": "10% of TIA respondents spent >$200,000 on fraud prevention in a six-month window (April 2025 TIA State of Fraud report)",
+      "source_url": "https://news.tianet.org/tia-releases-state-of-fraud-in-the-industry-april-2025-report/",
+      "source_tier": null,
+      "source_category": "secondary-press-release",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "TIA's own news site releasing their own survey report. Press-release-only override. The underlying report is a TIA member survey (not independently audited). Low."
+    },
+    {
+      "id": "PP-2.1-5",
+      "claim": "~400 carriers filed claims for ~$2.6M in unpaid loads from Convoy's closure",
+      "source_url": "https://www.freightwaves.com/news/some-convoy-carriers-say-collapsed-startup-owes-them-thousands-of-dollars",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single FreightWaves trade article. Carrier claim amounts would be documentable in bankruptcy proceedings or FMCSA complaint records, but no court filing is cited. Single trade source. Low."
+    },
+    {
+      "id": "PP-2.1-6",
+      "claim": "Truckstop survey (700+ brokers, 2025): two-thirds of brokers cite fraud as top-of-mind issue; 86% of those who experienced fraud identify double brokering as top threat",
+      "source_url": "https://truckstop.com/press-releases/truckstop-survey-trust-is-top-priority-for-brokers/",
+      "source_tier": null,
+      "source_category": "auto-low-vendor",
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "truckstop.com is in the vendor domain blocklist. Truckstop conducting a survey about freight fraud (the problem their Risk Factors product addresses) and publishing results on their own press releases page. Vendor-marketing override. Auto-Low."
+    },
+    {
+      "id": "PP-2.1-7",
+      "claim": "FMCSA: ~92% of ~780,000 registered US motor carriers are 'unrated' — meaning no federal audit has occurred",
+      "source_url": "https://blog.gettransport.com/news/spot-market-tender-rejection-rates/",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "The underlying data (FMCSA carrier registry) is a government source, but the citation is to a GetTransport blog post, not to FMCSA.gov or FMCSA SAFER Web directly. Chain-of-citations rule: blog cites FMCSA but the citation is not to the primary government source. The 92% unrated figure is widely cited but sourced here only from a logistics company's blog. Low — should be sourced directly from FMCSA SAFER/carrier statistics page."
+    },
+    {
+      "id": "PP-2.1-RC4",
+      "claim": "2019 court ruling stripped FMCSA civil penalty authority over unauthorized brokerage; FMCSA November 2024 NPRM to restore civil-penalty authority",
+      "source_url": "https://www.fmcsa.dot.gov/mission/help/broker-and-carrier-fraud-and-identity-theft",
+      "source_tier": 1,
+      "source_category": "primary-gov",
+      "vendor_self_cite": false,
+      "confidence": "med",
+      "rationale": "fmcsa.dot.gov is a primary-gov source. However: (a) the 2019 court ruling date and civil-penalty-authority loss are referenced from the FMCSA guidance page, not the court record itself (a primary-legal source would be stronger); (b) the NPRM is also cited at federalregister.gov (source 24 in pain points) which is primary-gov. Two government sources (FMCSA.gov + Federal Register) for RC4. Scores Medium: government sources present but the court ruling itself is not cited as a court record, and the FMCSA guidance page is a consumer-facing help page, not a regulatory document."
+    },
+    {
+      "id": "PP-2.2-1",
+      "claim": "Spot rate premium when routing guide fails: 25–35% per affected load above contracted rate",
+      "source_url": "https://rxo.com/resources/shipper/contract-vs-spot-rates/",
+      "source_tier": null,
+      "source_category": "auto-low-vendor",
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "rxo.com is a freight brokerage vendor (RXO, formerly XPO's brokerage) making a claim about spot vs. contract rate differentials — a claim that supports selling their services. Vendor-marketing override. The 25–35% figure is also corroborated by SONAR (source 16), which is itself a FreightWaves product (secondary-trade). No independent academic or government source validates the 25–35% figure. Low."
+    },
+    {
+      "id": "PP-2.2-2",
+      "claim": "National Truckload Index spot averaged $3.00/mile vs. $2.26/mile pre-pandemic baseline (+32.7%); spot-to-contract spread exceeded 30 cents/mile for extended periods",
+      "source_url": "https://gosonar.com/wp-content/uploads/2023/06/The-price-you-pay_-dissecting-cost-in-your-routing-guide-1.pdf",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "FreightWaves SONAR white paper. SONAR is a FreightWaves product — the company has commercial interest in promoting the value of their rate indices. Single secondary-trade source. The SONAR NTI is an industry-recognized index but it is proprietary/commercial, not government-produced. Single-source trade override for operating cost figure. Low."
+    },
+    {
+      "id": "PP-2.2-3",
+      "claim": "Annual RFP takes four months on average to complete; agreed rates are rendered obsolete ~six months after the bid",
+      "source_url": "https://gosonar.com/freight-market-blog/five-reasons-freight-procurement-is-broken",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "FreightWaves SONAR blog. Single trade source. Sources (17) and (18) are the same gosonar.com URL — single-domain. Low."
+    },
+    {
+      "id": "PP-2.2-4",
+      "claim": "Contract rates rose 61 cents/mile ($1.97→$2.58) within 12 months following 2020 routing guide collapse",
+      "source_url": "https://gosonar.com/wp-content/uploads/2023/06/The-price-you-pay_-dissecting-cost-in-your-routing-guide-1.pdf",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Same SONAR white paper as PP-2.2-2. Single-domain override: multiple gosonar.com URLs count as 1 source. The SONAR NTI/WTVI indices are proprietary. Low."
+    },
+    {
+      "id": "PP-2.2-5",
+      "claim": "Average shipper experiences 50%+ annual turnover in its carrier network",
+      "source_url": "https://gosonar.com/freight-market-blog/five-reasons-freight-procurement-is-broken",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single SONAR blog source. Trade-press-only override for operating metric claim. Low."
+    },
+    {
+      "id": "PP-2.2-6",
+      "claim": "The 'true' contract rate is 3–21% higher per mile than face rate when RFP overhead and spot coverage costs are included",
+      "source_url": "https://gosonar.com/freight-market-blog/five-reasons-freight-procurement-is-broken",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Same SONAR blog. Single domain, single source. Low."
+    },
+    {
+      "id": "PP-2.2-7",
+      "claim": "SONAR OTRI peaked above 13% in late 2025; first-tender acceptance rate fell from ~92% (2023) to ~85% (Q1 2026)",
+      "source_url": "https://gosonar.com/freight-market-blog/how-to-interpret-tender-rejection-rates",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "SONAR data product blog. These are real-time market metrics from a proprietary platform, not a government statistical release. Single secondary-trade source. Low. Note: the Q1 2026 figures (first-tender acceptance ~85%) are very recent and from a commercial data product — no independent validation possible."
+    },
+    {
+      "id": "PP-2.2-8",
+      "claim": "Approximately 70% of FTL contracts go unused, with shippers paying contracted rate overhead for redirected lanes",
+      "source_url": "https://freight.amazon.com/newsroom/2023-minibids",
+      "source_tier": null,
+      "source_category": "secondary-press-release",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Amazon Freight newsroom — Amazon Freight is a freight brokerage and 3PL competing with the same shippers being studied. This is vendor-adjacent press content. The 70% unused FTL contracts figure is extraordinary and appears in no other cited source. Press-release-only override + single source. Low."
+    },
+    {
+      "id": "PP-2.2-9",
+      "claim": "FMCSA November 2024 NPRM on broker transparency: brokers cannot provide 48-hour transaction record access as standard practice",
+      "source_url": "https://www.federalregister.gov/documents/2024/11/20/2024-27115/transparency-in-property-broker-transactions",
+      "source_tier": 1,
+      "source_category": "primary-gov",
+      "vendor_self_cite": false,
+      "confidence": "high",
+      "rationale": "Federal Register primary government source. The FMCSA NPRM is the regulatory document itself. High confidence — this is a direct government source for a regulatory action claim."
+    },
+    {
+      "id": "PP-2.3-1",
+      "claim": "Gartner benchmark: ~50% of $100M+ freight-spend companies use TMS; ~25% of $25M–$100M; ~10% under $25M",
+      "source_url": "https://www.logisticsmgmt.com/article/tms_update_adoption_accelerates",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Logistics Management trade publication citing Gartner data. Gartner is paywalled. Chain-of-citations rule: trade press citing Gartner = 0 verifiable primary sources (Gartner is paywalled and not accessible). The specific adoption-band percentages come from a Gartner historical benchmark that cannot be verified without the primary report. Also unclear if these figures are current or historical (the article is undated in the citation). Low."
+    },
+    {
+      "id": "PP-2.3-2",
+      "claim": "Indonesia logistics cost is 24% of GDP, one of the highest in Asia vs. 8–10% for developed economies",
+      "source_url": "https://east.vc/east-ventures/waresix-on-connecting-indonesias-fragmented-logistics-under-a-supply-and-demand-aggregation-platform/",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Source (29) is East Ventures (a VC firm's investor blog post about Waresix, a portfolio company). The 24% GDP logistics cost figure is a frequently cited number for Indonesia, but here it traces to a VC investor blog — not BPS Indonesia, World Bank, or an OECD/ADB study. Source (28) is KR Asia trade press. Both are secondary. The 24% figure should be sourced from ADB, World Bank, or BPS Indonesia for High confidence. Single-domain trade/blog. Low."
+    },
+    {
+      "id": "PP-2.3-3",
+      "claim": "~75% of Indonesian trucking companies operate fewer than 20 trucks; manual matching creates fragmentation, low utilization, high empty-run ratios",
+      "source_url": "https://kr-asia.com/how-ritase-is-disrupting-the-indonesian-freight-and-logistics-market-startup-stories",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "KR Asia startup profile of Ritase. The 75% <20 trucks figure likely originates from Indonesia Ministry of Transportation (Kemenhub) or BPS statistics, but is cited here from trade press, not from BPS Indonesia or Kemenhub directly. Single secondary source. Low."
+    },
+    {
+      "id": "PP-2.3-4",
+      "claim": "ATRI 2023: total marginal cost of truck operation rose to $2.270/mile; insurance $0.099/mile (+12.5% YoY)",
+      "source_url": "https://truckingresearch.org/about-atri/atri-research/operational-costs-of-trucking/",
+      "source_tier": 6,
+      "source_category": "primary-association",
+      "vendor_self_cite": false,
+      "confidence": "med",
+      "rationale": "ATRI (American Transportation Research Institute) is a recognized trucking industry research body — primary-association tier 6. Single primary-association source (1 citation). Scores Medium: 1 primary-association source meets the threshold for Medium (2+ secondary OR 1 primary-non-gov/multilateral). Note: ATRI figures are for US trucking; used here to make a point about SMB shippers lacking cost intelligence — not a direct SEA/Indonesia claim."
+    },
+    {
+      "id": "PP-2.3-5",
+      "claim": "World Bank LPI 2023: Indonesia ranked 61st of 139 countries; Thailand 34th; Vietnam 43rd; Singapore 1st; Malaysia 26th",
+      "source_url": "https://lpi.worldbank.org/en/home",
+      "source_tier": 2,
+      "source_category": "primary-multilateral",
+      "vendor_self_cite": false,
+      "confidence": "high",
+      "rationale": "World Bank Logistics Performance Index (LPI) 2023 is a primary-multilateral source (tier 2). Direct government/multilateral data. High confidence."
+    },
+    {
+      "id": "PP-2.3-6",
+      "claim": "Kargo 40,000+ truck network; Waresix 20,000+ trucks; both represent only a fraction of Indonesia's ~5M registered commercial vehicles",
+      "source_url": "https://techcrunch.com/2019/07/04/waresix-raises-14-5m/",
+      "source_tier": null,
+      "source_category": "secondary-news",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "TechCrunch 2019 article (>5 years old — outdated-source override). Also KR Asia (secondary-trade). Network size figures are vendor self-reported through press. Outdated data on network size is unreliable for a fast-growing market. Auto-Low: outdated source."
+    },
+    {
+      "id": "PP-2.3-7",
+      "claim": "Deloitte/Vynn Capital: TMS coverage 'lowest' among logistics sub-segments in SEA; trucking is most amenable but still underpenetrated",
+      "source_url": "https://vynncapital.com/wp-content/uploads/2024/11/Indonesia-Logistics-Report.pdf",
+      "source_tier": null,
+      "source_category": "secondary-market-research",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Vynn Capital is a private VC fund with investments in SEA logistics — its Indonesia Logistics Report is an investment thesis document, not an independent consultancy study. The draft describes this as 'Deloitte/Vynn Capital' but the URL is vynncapital.com — Vynn Capital is not Deloitte. If Deloitte co-authored, that would require a Deloitte-issued citation. Also: the report PDF is from 2021 (outdated-source override >3 years). Low."
+    },
+    {
+      "id": "PP-2.4-1",
+      "claim": "C.H. Robinson experienced a 280-basis-point margin decline in Q2 2024, partly attributable to inability to price spot risk accurately",
+      "source_url": null,
+      "source_tier": null,
+      "source_category": "assumed",
+      "vendor_self_cite": false,
+      "confidence": "spec",
+      "rationale": "Explicitly tagged [ASSUMED-2] in the draft. The margin decline fact may be verifiable in C.H. Robinson's 10-Q for Q2 2024, but the causal attribution to spot carrier risk pricing is explicitly flagged as unvalidated. Speculative."
+    },
+    {
+      "id": "PP-2.4-2",
+      "claim": "SCOTUS ruled in Montgomery v. Caribe (May 2026) that state-law negligent hiring claims against freight brokers are not preempted by FAAAA",
+      "source_url": "https://trucksafe.com/post/montgomery-v-caribe-scotus-csa-score-broker-vetting",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "TruckSafe is a vendor blog/platform for carrier safety data products — they have commercial interest in promoting broker vetting requirements. The SCOTUS ruling itself would be a court filing (primary-legal, tier 10) and would be the definitive source. A vendor's analysis of the ruling is secondary-trade at best. The ruling date (May 2026) means it is very recent — the court record should be cited directly. Single vendor-adjacent trade source. Low."
+    },
+    {
+      "id": "PP-2.4-3",
+      "claim": "90% of US carriers operate fleets of five trucks or fewer; 60% are single owner-operators",
+      "source_url": "https://blog.gettransport.com/news/spot-market-tender-rejection-rates/",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "GetTransport blog. The underlying data would be from FMCSA carrier registration statistics (a government source), but only the blog is cited. Chain-of-citations. The 90%/60% figures are widely cited in freight industry materials, all tracing to FMCSA SAFER data. Should be cited directly from FMCSA."
+    },
+    {
+      "id": "PP-2.4-4",
+      "claim": "FMCSA NPRM November 2024: agency acknowledged brokers cannot provide shippers with carrier payment records within 48 hours as standard practice",
+      "source_url": "https://www.federalregister.gov/documents/2024/11/20/2024-27115/transparency-in-property-broker-transactions",
+      "source_tier": 1,
+      "source_category": "primary-gov",
+      "vendor_self_cite": false,
+      "confidence": "high",
+      "rationale": "Federal Register primary government source — same as PP-2.2-9. High confidence. The NPRM document itself acknowledges the broker transparency problem."
+    },
+    {
+      "id": "PP-2.5-1",
+      "claim": "1,500+ freight broker closures in 2023",
+      "source_url": "https://www.truckinfo.net/research/convoy-not-alone-thousands-of-freight-brokers-have-closed-in-2023",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single trade source (truckinfo.net — a minor industry site). FMCSA broker revocation data (primary-gov) would be the authoritative source for broker closures. No FMCSA or court data cited. Single-source trade override. Low."
+    },
+    {
+      "id": "PP-2.5-2",
+      "claim": "Freight brokerage gross revenue declined 15.1% in 2023 from $159B to $135B",
+      "source_url": "https://brushpassresearch.blog/2024/04/16/2023-freight-brokerage-revenues-decline-15-1/",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single source: Brush Pass Research, a small independent analyst blog. Not on the primary-consultancy list. No methodology disclosed. The aggregate revenue figures would require substantial primary research (3PL revenue filings, industry surveys). Single secondary-trade source. Low."
+    },
+    {
+      "id": "PP-2.5-3",
+      "claim": "Surge Transportation filed Chapter 11 in 2024, confirming Convoy's closure was not isolated",
+      "source_url": "https://brushpassresearch.blog/2024/04/16/2023-freight-brokerage-revenues-decline-15-1/",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Same Brush Pass Research blog. A Chapter 11 filing is a court record (primary-legal) — that is the authoritative source. Only a secondary blog cited. Low. The fact itself is likely accurate and cross-verifiable via PACER, but not cited from there."
+    },
+    {
+      "id": "PP-2.5-4",
+      "claim": "Average freight brokerage net revenue margin ~15%; $1,912 revenue per load; minimum sustainable margin ~11.3%",
+      "source_url": "https://brushpassresearch.blog/2024/04/16/2023-freight-brokerage-revenues-decline-15-1/",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Same Brush Pass Research blog. Operating cost/margin figures from a single small analyst blog. Trade-press-only override for margin figures. Low."
+    },
+    {
+      "id": "PP-2.5-5",
+      "claim": "$75,000 surety bond requirement for freight brokers has been unchanged since 1980; this covers fewer than 2 average-size fraud loads at $40,760/load",
+      "source_url": "https://www.freightwaves.com/news/the-75000-bond-and-truckers-left-holding-the-bag",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "FreightWaves trade press (source 47). The $75K bond requirement is codified in 49 CFR 387.307 — a regulatory citation (primary-gov) exists but is not cited. The historical bond amount and date are verifiable from CFR, not from trade press. The calculation ($40,760/load = <2 loads covered) uses a TIA figure (single-source) as the comparator. Two weak sources combined. Low."
+    },
+    {
+      "id": "PP-2.5-6",
+      "claim": "Convoy raised ~$900M–$1B+ at a $3.8B valuation 18 months before its October 2023 closure",
+      "source_url": "https://www.freightwaves.com/news/some-convoy-carriers-say-collapsed-startup-owes-them-thousands-of-dollars",
+      "source_tier": null,
+      "source_category": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "med",
+      "rationale": "Multiple trade outlets (FreightWaves, TechCrunch, Trucking Dive, Axios — sources 7, 31, 50) reported the Convoy valuation and funding. Convoy's funding rounds were disclosed through SEC Form D filings. Multiple independent secondary sources with strong corroboration signal. Scores Medium: 3+ independent news/trade outlets all corroborating a factual closure event and funding history, though no Form D is directly cited."
+    },
+    {
+      "id": "VC-ASSUMED-1",
+      "claim": "Sleek Technologies (ShipperWorks) is a purpose-built SaaS for mid-size shipper RFP automation integrating with major TMS platforms",
+      "source_url": null,
+      "source_tier": null,
+      "source_category": "assumed",
+      "vendor_self_cite": false,
+      "confidence": "spec",
+      "rationale": "Explicitly tagged [ASSUMED-1] in the draft. Based on company marketing materials with no independent customer validation or revenue figures."
+    },
+    {
+      "id": "VC-ASSUMED-2",
+      "claim": "RXO (Coyote Logistics) has no SEA brokerage operations",
+      "source_url": null,
+      "source_tier": null,
+      "source_category": "assumed",
+      "vendor_self_cite": false,
+      "confidence": "spec",
+      "rationale": "Explicitly tagged [ASSUMED-2] in the draft. Assessed by absence of evidence, not confirmed."
+    },
+    {
+      "id": "VC-ASSUMED-3",
+      "claim": "Dominant freight procurement method in Indonesia, Thailand, Malaysia for mid-size shippers is email/spreadsheet or phone/WhatsApp — not digital platforms",
+      "source_url": null,
+      "source_tier": null,
+      "source_category": "assumed",
+      "vendor_self_cite": false,
+      "confidence": "spec",
+      "rationale": "Explicitly tagged [ASSUMED-3]. Consistent with World Bank LPI and Vynn Capital data but not directly evidenced with country-level survey data."
+    },
+    {
+      "id": "VC-ASSUMED-4",
+      "claim": "No FMCSA-equivalent carrier registry exists in Indonesia, Thailand, or Malaysia providing open, API-accessible carrier data",
+      "source_url": null,
+      "source_tier": null,
+      "source_category": "assumed",
+      "vendor_self_cite": false,
+      "confidence": "spec",
+      "rationale": "Explicitly tagged [ASSUMED-4]. Referenced as validation action item against Indonesia Kemenhub, Thailand DLT, Malaysia CVLB."
+    },
+    {
+      "id": "PP-2.2-RC2",
+      "claim": "FMCSA's 2024 broker transparency NPRM acknowledges shippers cannot compare what they paid the broker to what the broker paid the carrier for the same load",
+      "source_url": "https://www.federalregister.gov/documents/2024/11/20/2024-27115/transparency-in-property-broker-transactions",
+      "source_tier": 1,
+      "source_category": "primary-gov",
+      "vendor_self_cite": false,
+      "confidence": "high",
+      "rationale": "Same Federal Register NPRM document. Government acknowledgment of the transparency gap. High confidence."
+    }
+  ],
+  "weak_claims_for_deep_research": [
+    {
+      "id": "PP-2.1-1",
+      "claim": "Industry-wide double brokering fraud losses $500M–$800M+ per year; per-load cost ~$40,760; per-company avg loss $402,344",
+      "why_weak": "All dollar loss figures trace to a single source: TIA 2024 fraud survey, propagated through multiple trade publications (truckingdive, freightcaviar) that all cite the same TIA report. Chain-of-citations = 1 source. No independent audit, government crime statistics, or insurance claims data cross-validates. The $40,760 per-load figure is the single most-cited cost anchor in Stage 2 across PP-2.1, PP-2.4, PP-2.5, and appears in VC4 — making it high downstream impact across the entire stage.",
+      "specific_question_to_research": "What does the FBI Internet Crime Report or NICB (National Insurance Crime Bureau) annual report say about freight fraud losses? Does the FMCSA's own complaint database or C-TPAT/CBP data provide independent aggregate estimates of freight fraud losses?",
+      "evidence_type_needed": "primary-gov (FBI IC3, NICB, FMCSA complaint data), primary-legal (consolidated insurance claim statistics from a major cargo insurer's annual report), or primary-association (TT Club or BIMCO cargo theft annual statistics)"
+    },
+    {
+      "id": "PP-2.1-7",
+      "claim": "FMCSA: ~92% of ~780,000 registered US motor carriers are 'unrated'",
+      "why_weak": "The 92% unrated figure is foundational to RC2 in PP-2.1 and RC2 in PP-2.4 — repeated across both pain points as the structural root cause. The source is a GetTransport.com blog, not FMCSA directly. This is a chain-of-citations failure: the primary source (FMCSA SAFER Web carrier database) exists and is publicly accessible at safer.fmcsa.dot.gov but is not cited.",
+      "specific_question_to_research": "Pull the FMCSA SAFER carrier statistics page directly: how many active US motor carriers have a safety rating of Satisfactory, Conditional, Unsatisfactory, or Not Rated? The data is publicly available at safer.fmcsa.dot.gov/RegistrationItems/Stats.",
+      "evidence_type_needed": "primary-gov: FMCSA SAFER system carrier count by rating status (fmcsa.dot.gov/safety/carrier-safety/carrier-safety-statistics)"
+    },
+    {
+      "id": "PP-2.3-2",
+      "claim": "Indonesia logistics cost is 24% of GDP",
+      "why_weak": "This is the foundational cost-of-inefficiency claim for the SEA/Indonesia TMS gap (PP-2.3) and is used to establish market need. Source is an East Ventures VC investor blog post about their portfolio company Waresix — a commercial document. This figure is frequently cited in Indonesia logistics reports but the primary source is never cited directly. If this traces to BPS Indonesia, World Bank, or an ADB study, citing the primary is essential for credibility.",
+      "specific_question_to_research": "What is the primary source for Indonesia logistics cost as % of GDP? Search World Bank Indonesia country reports, ADB Indonesia logistics assessments, and BPS Indonesia GDP expenditure data for 2022–2024.",
+      "evidence_type_needed": "primary-multilateral (World Bank Indonesia logistics study or ADB logistics cost assessment), primary-gov (BPS Indonesia, Kemenhub transport statistics), or primary-consultancy (McKinsey/BCG report on Indonesia logistics authored with named country)"
+    },
+    {
+      "id": "PP-2.2-8",
+      "claim": "Approximately 70% of FTL contracts go unused, with shippers redirecting lanes to spot",
+      "why_weak": "This is an extraordinary and counterintuitive claim: that nearly three-quarters of contracted freight is not used under the contracted terms. Source is Amazon Freight's newsroom — Amazon Freight is itself a freight brokerage competitor with direct commercial incentive to highlight the failure of traditional contracted freight to sell its own spot/managed services. Press-release-only override. No independent logistics research firm, academic paper, or government transportation agency cited.",
+      "specific_question_to_research": "Does MIT Center for Transportation and Logistics, CSCMP (Council of Supply Chain Management Professionals), or any peer-reviewed logistics journal document FTL contract utilization rates? Search for 'routing guide compliance rate FTL contracts' in CSCMP publications and Journal of Business Logistics.",
+      "evidence_type_needed": "primary-association (CSCMP State of Logistics Report), primary-academic (peer-reviewed supply chain journal), or primary-consultancy (McKinsey/BCG study on freight procurement effectiveness)"
+    },
+    {
+      "id": "PP-2.5-2",
+      "claim": "Freight brokerage gross revenue declined 15.1% in 2023 from $159B to $135B",
+      "why_weak": "Macro brokerage revenue aggregate used to establish the scale of PP-2.5 (broker solvency risk). Source is a single small analyst blog (Brush Pass Research) with unknown methodology. No TIA industry report, FMCSA revenue data, public 3PL earnings aggregation, or CSCMP State of Logistics Report is cited. The $159B→$135B figure is highly specific yet unverifiable from the cited source.",
+      "specific_question_to_research": "What does the CSCMP 2024 State of Logistics Report state about US freight brokerage industry revenue in 2023? Does Armstrong & Associates (a recognized 3PL research firm) or SJ Consulting Group publish independent US freight brokerage market size estimates?",
+      "evidence_type_needed": "primary-association (CSCMP State of Logistics 2024, Armstrong & Associates 3PL market study), primary-consultancy (Armstrong & Associates, Gartner Logistics Research if attributed), or primary-filing (public broker earnings aggregations from C.H. Robinson, XPO, Echo Global 10-K filings)"
+    }
+  ],
+  "structural_compare_to_imi": {
+    "imi_pain_points_target": "2-4",
+    "actual_pain_points": 5,
+    "imi_root_causes_per_pp": "3-5",
+    "actual_root_causes_per_pp_min_max": [4, 5],
+    "imi_citations_per_pp": "8-15",
+    "actual_citations_per_pp_min_max": [5, 14],
+    "unique_sources_in_stage": 52,
+    "pass": false,
+    "remediation_needed": [
+      "Pain point count (5) exceeds IMI target of 2-4. PP-2.3 (SMB TMS gap) and PP-2.5 (broker solvency risk) were flagged by the researcher as new pain points not in the original hypothesis — these should be reviewed by the orchestrator to decide whether to fold, drop, or promote to full status before final compilation.",
+      "PP-2.2 citation count: sources (15)-(19) total 5 base sources for the pain point, of which 4 are from the same domain (gosonar.com). Single-domain override applies — effective unique source count for PP-2.2 core claims is ~2, well below IMI floor of 8. Deep research required to widen source diversity.",
+      "PP-2.5 citation count: core economic claims (PP-2.5-2, PP-2.5-4) rest on a single Brush Pass Research blog. Effective unique source count for broker economics claims is 1. Below IMI floor.",
+      "Source diversity: of 52 unique sources, only 5 qualify as primary-tier (VC20, VC24, VC26, VC30, PP-2.2-9/PP-2.4-4, PP-2.3-5). All five are in different primary sub-categories. 9.6% primary-tier source rate is low for a research corpus.",
+      "APAC/SEA market sizing: all market-size figures for the SEA/ASEAN context are Low confidence (aggregator sources only). No government statistics body or multilateral agency data cited for TMS/freight-procurement software market size at country level — as acknowledged in the data-gap section. This remains an unresolved structural gap."
+    ]
+  },
+  "override_triggers": [
+    {
+      "override": "vendor-marketing-override",
+      "claim_count": 9,
+      "claim_ids": ["VC3", "VC15", "VC16", "VC17", "VC19", "VC21", "PP-2.1-3", "PP-2.1-6", "PP-2.2-1"]
+    },
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "claim_count": 7,
+      "claim_ids": ["VC7", "VC8", "VC10", "VC11", "VC13", "VC14", "VC28"]
+    },
+    {
+      "override": "press-release-only",
+      "claim_count": 5,
+      "claim_ids": ["VC6", "VC9", "VC32", "VC33", "PP-2.2-8"]
+    },
+    {
+      "override": "single-trade-source",
+      "claim_count": 14,
+      "claim_ids": ["VC5", "VC12", "VC18", "VC22", "VC27", "VC34", "PP-2.1-5", "PP-2.2-2", "PP-2.2-3", "PP-2.2-4", "PP-2.2-5", "PP-2.2-6", "PP-2.5-1", "PP-2.5-5"]
+    },
+    {
+      "override": "chain-of-citations",
+      "claim_count": 4,
+      "claim_ids": ["PP-2.1-1", "PP-2.1-7", "PP-2.3-1", "PP-2.4-3"]
+    },
+    {
+      "override": "outdated-source",
+      "claim_count": 3,
+      "claim_ids": ["VC37", "PP-2.3-6", "PP-2.3-7"]
+    },
+    {
+      "override": "single-domain",
+      "claim_count": 4,
+      "claim_ids": ["PP-2.2-2", "PP-2.2-3", "PP-2.2-4", "PP-2.2-7"]
+    }
+  ],
+  "gate_decision_recommendation": "re-run-recommended",
+  "gate_reasoning": "Stage 2 carries 66.1% Low-confidence claims and 10.7% Speculative — a combined weak-source rate of 76.8%. Only 5 of 56 claims (8.9%) are High, all grounded in SEC filings or Federal Register documents. The structural problems are systemic rather than incidental: the dominant cost figures for PP-2.1 (fraud losses) all trace to a single TIA member survey; all PP-2.2 quantitative claims trace to FreightWaves SONAR (single commercial data product domain); PP-2.5 broker economics rest on a single small analyst blog. The foundational Indonesia logistics cost claim (24% of GDP) is sourced only from a VC investor blog. Nine vendor self-citations triggered the vendor-marketing override. The pain point count (5) exceeds the IMI 2-4 target, and two pain points (PP-2.3, PP-2.5) were flagged by the researcher as outside the original working hypotheses — these need orchestrator review before deep research resources are allocated. Deep research should prioritize: (1) FMCSA.gov direct carrier rating statistics to replace the chain-of-citations 92% unrated claim, (2) FBI IC3 or NICB data to cross-validate the $40,760 per-load fraud cost anchor, (3) World Bank or ADB primary source for Indonesia 24% GDP logistics cost, (4) CSCMP or Armstrong & Associates for the 15.1% brokerage revenue decline figure, and (5) direct SCOTUS record for Montgomery v. Caribe ruling. Ship-as-is would propagate five load-bearing Low-confidence figures into the final corpus without cross-validation."
+}

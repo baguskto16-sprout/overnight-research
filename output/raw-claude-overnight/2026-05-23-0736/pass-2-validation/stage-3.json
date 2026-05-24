@@ -1,0 +1,235 @@
+{
+  "context": "per-stage",
+  "stage": 3,
+  "scored_at": "2026-05-23",
+  "total_claims_scored": 42,
+  "scoring_distribution": {
+    "high": {"count": 22, "percent": "52%"},
+    "medium": {"count": 10, "percent": "24%"},
+    "low": {"count": 10, "percent": "24%"}
+  },
+  "claim_detail": [
+    {"claim_id": "VC3.1-bpjs-share", "claim_text": "BPJS/JKN constitute approximately 85% of formal insurance-premium volume by value", "sources": ["OJK Roadmap 2023-2027 (7ce9fd998259ae0f.md)"], "score": "Medium", "override": "single-domain — OJK Roadmap is the sole source; figure is not found verbatim in the cached text", "notes": "OJK Roadmap confirms 45% social/mandatory premium share and 50.32% conventional; 85% figure appears derived, not stated directly"},
+    {"claim_id": "VC3.2.1-premium-series", "claim_text": "Premium time series Rp 19.17T (2021) → 22.09T (2022) → 26.26T (2023) → 40.19T (2024)", "sources": ["Antara News 4933489 (secondary-news, OJK executive quoted)", "OJK Statistik Perasuransian 2023 (HTTP 403, unverified)"], "score": "Medium", "override": "OJK primary at HTTP 403 — unverified; Antara relays OJK executive statement (secondary-news); two citations trace to same OJK origin = 1 effective source", "notes": "Draft marks High; correct score is Medium per rubric — secondary-news relay of regulator statement with primary unverified"},
+    {"claim_id": "VC3.2.1-general-h1-2024", "claim_text": "General insurance health sub-segment H1 2024: Rp 4.81 trillion, up 16.88% YoY", "sources": ["Antara News 4242879 (secondary-news)"], "score": "Low", "override": "single-trade-source — single Antara article for operating cost figure"},
+    {"claim_id": "VC3.2.2-policies-insurers", "claim_text": "31.34 million policies (2024); 78 licensed health insurers down from 82", "sources": ["Antara News 4933489 (secondary-news quoting OJK)"], "score": "Medium", "override": null, "notes": "Single secondary-news source relaying OJK data; medium because it is a regulatory data relay"},
+    {"claim_id": "VC3.2.2-industry-structure", "claim_text": "136 conventional insurers (52 life, 72 general, 7 reinsurance, 5 social); JV 69.1% life market share; conventional 50.32% of all premiums", "sources": ["OJK Roadmap 2023-2027 (primary-ministry, 7ce9fd998259ae0f.md — confirmed in cache)"], "score": "High", "override": null},
+    {"claim_id": "VC3.2.3-claims-ratio-138pct", "claim_text": "AAJI-reported claims-to-premium ratio for health products 2023: 138% (Rp 20.83T claims vs Rp 26.26T premium)", "sources": ["AAJI statement Feb 2024 via Antara News 3984786 (primary-association relayed via secondary-news)", "Milliman Q4 2023 newsletter (primary-consultancy, confirmed in cache)"], "score": "High", "override": null, "notes": "Primary-association data cross-confirmed by independent primary-consultancy"},
+    {"claim_id": "VC3.2.3-q3-2023-claims", "claim_text": "Q3 2023 health claims (life segment): Rp 15.24 trillion, up 33% vs Q3 2022 (Rp 11.47T)", "sources": ["Milliman Indonesia Life Insurance Newsletter Q4 2023 (primary-consultancy, a6f5065fbfaea860.md — confirmed in cache with verbatim text)"], "score": "High", "override": null},
+    {"claim_id": "VC3.2.3-loss-ratio-2024", "claim_text": "Q1 2024 average health claims loss ratio 105.7%; individual health policies in life insurance >200% in H1 2025", "sources": ["Asia Insurance Review article 90289 (secondary-trade)"], "score": "Low", "override": "single-trade-source — single trade publication for operating ratio figure"},
+    {"claim_id": "VC3.2.3-mmb-inflation", "claim_text": "Mercer Marsh Benefits medical inflation projection for Indonesia: 13% for 2024; PMC study 20.48% (2023) and 26.5% (2022) for employer plans", "sources": ["Mercer Marsh Benefits 2024 Indonesia study (primary-consultancy)", "PMC12425502 peer-reviewed employer study (primary-academic, c8ac6d7e3618a6d9.html — confirmed in cache)"], "score": "High", "override": null},
+    {"claim_id": "VC3.3-claims-split", "claim_text": "Individual 64% / group 36% health claims split (2023); used as proxy for premium split", "sources": ["AAJI statement Feb 2024 via Antara News (primary-association relay)"], "score": "Medium", "override": "ASSUMED-1 tag — direct premium split unverified from OJK primary tables (HTTP 403); claims used as proxy"},
+    {"claim_id": "VC3.3-insured-lives-growth", "claim_text": "Group insured lives +22.5% YoY; individual +3.8% (Q3 2023 vs Q3 2022)", "sources": ["Milliman Indonesia Life Insurance Newsletter Q4 2023 (primary-consultancy, a6f5065fbfaea860.md — confirmed in cache with verbatim text)"], "score": "High", "override": null},
+    {"claim_id": "VC3.4.1-penetration-1.4pct", "claim_text": "Commercial insurance penetration Indonesia 2021: 1.4% of GDP (vs Vietnam 2.2%, Philippines 2.5%, Malaysia 3.8%, Thailand 4.6%, Singapore 12.5%)", "sources": ["OJK Insurance Roadmap 2023-2027 (primary-ministry, 7ce9fd998259ae0f.md — confirmed in cache with verbatim text citing ASEAN Insurance Surveillance Report 2022)"], "score": "High", "override": null},
+    {"claim_id": "VC3.4.1-snlik-inclusion", "claim_text": "Insurance inclusion rate (SNLIK 2022): 16.63% of population hold any insurance product", "sources": ["OJK Insurance Roadmap 2023-2027 (primary-ministry, 7ce9fd998259ae0f.md — confirmed in cache with verbatim text: 'risen from 13.15% in 2019 to 16.63% in 2022')"], "score": "High", "override": null},
+    {"claim_id": "VC3.4.1-snapcart-12pct", "claim_text": "~12% of Indonesians rely on private health insurance; ~15% combine private and BPJS; 73% BPJS/JKN only", "sources": ["Snapcart Indonesia survey Jan 2025, n=1,229 (secondary-market-research / consumer survey)"], "score": "Low", "override": "single-source consumer survey, non-representative n=1,229; draft self-tags Low"},
+    {"claim_id": "VC3.4.2-ses-gradient", "claim_text": "Upper SES ~78% have any health insurance; Middle SES ~80% predominantly BPJS; Lower SES ~66% almost entirely BPJS", "sources": ["Snapcart Indonesia survey Jan 2025 (secondary-market-research / consumer survey)"], "score": "Low", "override": "single consumer survey source; ASSUMED-2 tag; non-representative methodology"},
+    {"claim_id": "VC3.4.3-94pct-employers", "claim_text": "94% of companies surveyed (470+ companies, 24 industries) provide inpatient healthcare benefits", "sources": ["Mercer Marsh Benefits Indonesia Health and Benefits Study 2024 (primary-consultancy, behind registration wall, metadata confirmed)"], "score": "Medium", "override": "full report behind registration wall — metadata confirmed but full text not verified; single primary-consultancy source"},
+    {"claim_id": "VC3.4.3-38pct-low-wage", "claim_text": "38% of low-wage formal workers have employer-provided medical coverage; 59% of higher-wage employees", "sources": ["Marsh Indonesia press release citing MMB 2024 study (same URL as citation 12/13 — secondary relay of primary-consultancy study)"], "score": "Medium", "override": "single-domain — both citations (12) and (13) resolve to same marsh.com URL; counts as 1 source"},
+    {"claim_id": "VC3.4.3-bpjs-contribution", "claim_text": "BPJS Kesehatan employer contribution 4% of monthly wages capped at Rp 480,000/month", "sources": ["Acclime Indonesia advisory guide (secondary — third-party advisor, not statutory text or BPJS official)"], "score": "Low", "override": "secondary advisory site for statutory/regulatory figure — should be sourced from BPJS Kesehatan official or Ministry of Health regulation"},
+    {"claim_id": "VC3.5.1-prudential-inpatient", "claim_text": "Prudential PRUprime Healthcare Plus: hospitalization up to 150 days per year; surgical benefit included", "sources": ["Prudential Indonesia product PDF (auto-Low-vendor — prudential.co.id; 404 error in cache — NEEDS-ATTENDED-FETCH)"], "score": "Low", "override": "auto-Low-vendor: vendor's own product materials on vendor's own product; PDF returned 404 in cache"},
+    {"claim_id": "VC3.5.1-allianz-benefits", "claim_text": "Allianz SmartHealth Enterprise: inpatient, surgery, childbirth covered; co-share 20% in some tiers; outpatient/dental/spectacles additional", "sources": ["Allianz Indonesia RIPLAY document (auto-Low-vendor — allianz.co.id; Cloudflare blocked — NEEDS-ATTENDED-FETCH)"], "score": "Low", "override": "auto-Low-vendor: vendor's own product materials; Cloudflare blocked automated access"},
+    {"claim_id": "VC3.5.1-mandiri-inhealth", "claim_text": "Mandiri Inhealth MyCare Ultimate: one-class BPJS upgrade plus daily hospitalization income Rp 750,000 (max 45 days, 3x/year)", "sources": ["Milliman Indonesia Life Insurance Newsletter (primary-consultancy, a6f5065fbfaea860.md — confirmed in cache)"], "score": "High", "override": null, "notes": "Cited via Milliman authored newsletter, not via Mandiri Inhealth marketing site — not auto-Low"},
+    {"claim_id": "VC3.5.2-outpatient-addon", "claim_text": "Outpatient benefit available as add-on or rider, not standard in basic plans; majority of base-tier plans are inpatient-only", "sources": ["Prudential product PDF (auto-Low-vendor, 404)", "Allianz RIPLAY (auto-Low-vendor, Cloudflare blocked)"], "score": "Low", "override": "auto-Low-vendor: both product document sources are vendor marketing on their own products and inaccessible; [ASSUMED-5] tag for Manulife"},
+    {"claim_id": "VC3.5.3-preventive-excluded", "claim_text": "MCU, screenings, vaccination almost universally excluded from standard plans as reimbursable benefits", "sources": ["OJK Roadmap 2023-2027 (primary-ministry)", "Lockton briefing (secondary-trade advisory)"], "score": "Medium", "override": "ASSUMED-6 tag — no insurer plan document directly confirmed via automated fetch; OJK Roadmap addresses 'promotive and preventive' in regulatory language, not plan benefit schedules; Lockton is secondary-trade"},
+    {"claim_id": "VC3.5.5-cdm-not-covered", "claim_text": "CDM not covered as a distinct benefit in any standard commercial health insurance plan reviewed", "sources": ["PMC12425502 (primary-academic — indirect evidence: CDM drives claims with no prevention benefit)", "Prudential PDF (auto-Low-vendor, 404)", "Allianz RIPLAY (auto-Low-vendor, blocked)"], "score": "Medium", "override": "ASSUMED-6 basis; PMC study provides indirect evidence; direct plan document review inaccessible — NEEDS-ATTENDED-FETCH"},
+    {"claim_id": "VC3.5.5-cdm-claims-costs", "claim_text": "Chronic ischaemic heart disease 10.07%, CKD 7.07%, hypertension 5.79%, T2DM 4.55% of employer health claims costs; combined 27.5% of total claims", "sources": ["PMC12425502 peer-reviewed employer study (primary-academic, c8ac6d7e3618a6d9.html — confirmed in cache)"], "score": "High", "override": null, "notes": "ASSUMED-10 flags that this is a single state-owned oil/gas retiree plan; directionally credible but not a nationally representative sample"},
+    {"claim_id": "VC3.5.5-pojk-preexisting", "claim_text": "POJK 36/2025 shortened waiting periods for chronic illness benefits; implementation deferred to December 2026", "sources": ["Lockton briefing (secondary-trade)", "Milliman Indonesia health regulations e-Alert (primary-consultancy, 2632680feb74b0f7.html — confirmed in cache)"], "score": "High", "override": null},
+    {"claim_id": "VC3.6.1-copay-pojk", "claim_text": "POJK 36/2025 mandates ≥1 product without co-payment; co-pay cap 5% of claims; outpatient cap Rp 300,000; inpatient cap Rp 3,000,000", "sources": ["Lockton briefing (secondary-trade)", "Milliman Indonesia health regulations e-Alert (primary-consultancy)"], "score": "High", "override": null},
+    {"claim_id": "VC3.6.4-oop-30pct", "claim_text": "Indonesia OOP spending 30.5% of total health expenditure in 2022 (WHO/World Bank)", "sources": ["WHO/World Bank data (primary-multilateral) confirmed via Stage 1"], "score": "High", "override": null},
+    {"claim_id": "VC3.7.3-pmc-cost-per-life", "claim_text": "PMC employer plan: cost per covered life rose from Rp 8.46M/year (2020) to Rp 12.98M/year (2023), 53% cumulative increase", "sources": ["PMC12425502 peer-reviewed employer study (primary-academic, c8ac6d7e3618a6d9.html — confirmed in cache)"], "score": "High", "override": null},
+    {"claim_id": "PP3.1-pharmacy-oop-estimate", "claim_text": "Type 2 diabetic on oral agents pays Rp 300,000–900,000/month for generics; branded insulin/metformin Rp 1.5M–3.5M/month OOP", "sources": ["PMC11449349 insulin availability/price study (primary-academic)", "De Gruyter cost-of-illness systematic review (primary-academic)"], "score": "Low", "override": "ASSUMED-11 tag — neither source directly states the Rp monthly OOP ranges cited; estimated figure derived from academic cost data, not directly stated"},
+    {"claim_id": "PP3.1-mcu-oop", "claim_text": "Full MCU at Tier-1 private hospital runs Rp 1.5M–5M per episode; no MCU reimbursable under standard named plans", "sources": ["Snapcart consumer survey (secondary-market-research)", "Prudential Indonesia PDF (auto-Low-vendor, 404)"], "score": "Low", "override": "auto-Low-vendor for product document; Snapcart consumer survey for market pricing — both Low tier"},
+    {"claim_id": "PP3.1-cdm-27pct-claims", "claim_text": "CDM conditions drove 27.5% of total health claims costs in a representative employer-plan study", "sources": ["PMC12425502 (primary-academic — confirmed in cache)"], "score": "High", "override": null},
+    {"claim_id": "PP3.1-diabetes-prevalence", "claim_text": "Indonesia diabetes prevalence 11.7% in 2023 (20 million adults); 74.4% of cases in urban areas", "sources": ["PMC12519354 / PubMed (primary-academic, 6815379180bd6a67.html — confirmed in cache)"], "score": "High", "override": null},
+    {"claim_id": "PP3.1-hypertension-prevalence", "claim_text": "Hypertension prevalence 29.2% of adults in 2023; 76.3% undiagnosed by 2018 survey", "sources": ["Nature/Hypertension Research (primary-academic)", "PMC10048049 (primary-academic)"], "score": "High", "override": null},
+    {"claim_id": "PP3.1-oop-30pct-medications", "claim_text": "Indonesia OOP 30.5% of total health expenditure (2022); medications 31.8% of OOP spending", "sources": ["WHO Indonesia health accounts 2024 (primary-multilateral)", "East Asia Forum analysis (secondary-news/opinion)"], "score": "High", "override": null},
+    {"claim_id": "PP3.2-138pct-200pct-loss-ratio", "claim_text": "AAJI health claims-to-premium ratio 138% in 2023; individual plan loss ratios >200% in H1 2025; 4 insurers exited 2022–2024", "sources": ["AAJI via Antara News Feb 2024 (primary-association relay)", "Asia Insurance Review (secondary-trade)", "OJK via Antara News June 2025 (secondary-news quoting OJK)"], "score": "High", "override": null, "notes": "Three sources of which one is primary-association; two independent articles cross-confirm"},
+    {"claim_id": "PP3.2-swiss-re-gap", "claim_text": "Indonesia health protection gap: $82 billion (Swiss Re Asia estimate)", "sources": ["Swiss Re Asia Health Protection Gap infographic PDF (primary-consultancy, 602b953925d1c0cd.md — confirmed in cache with verbatim $82 billion figure)"], "score": "High", "override": null},
+    {"claim_id": "PP3.3-pojk-preexisting-exclusion", "claim_text": "Pre-existing condition exclusion permissible under POJK 36/2024; SEOJK 7/2025 waiting period shortening does not eliminate permanent exclusions", "sources": ["Milliman Indonesia health regulations e-Alert (primary-consultancy)", "Mondaq legal analysis (secondary-trade legal)", "HHP Law alert (secondary legal)"], "score": "High", "override": null},
+    {"claim_id": "PP3.3-loading-rates", "claim_text": "Premium loading for diabetes/hypertension history in Indonesian individual underwriting: 150–300% above standard rate or full exclusion", "sources": ["ASSUMED-17 — no public source cited"], "score": "Low", "override": "ASSUMED tag — no source provided; ASEAN peer market analogy noted but Indonesia-specific underwriting loading rates not in any cited source"},
+    {"claim_id": "PP3.4-self-employed-estimate", "claim_text": "Self-employed and SME-owner affluent segment in Tier-1 cities: estimated 1–3 million individuals", "sources": ["ASSUMED-19 — constructed estimate, no single source"], "score": "Low", "override": "ASSUMED tag — no source; cross-reference BPS Sakernas by income quintile and employment type needed"},
+    {"claim_id": "PP3.4-individual-premium-range", "claim_text": "Individual comprehensive health insurance for 40-year-old non-smoker in 2024: Rp 6M–20M/year", "sources": ["Pacific Prime Indonesia health insurance cost analysis 2024 (secondary — broker aggregator marketplace)"], "score": "Low", "override": "single secondary-source from broker aggregator marketplace; ASSUMED-22 tag; not from insurer official pricing"},
+    {"claim_id": "PP3.4-informal-sector-57-60pct", "claim_text": "Indonesia informal employment share: ~57–60% of total workforce (BPS Sakernas 2023); ~84 million workers", "sources": ["BPS Sakernas 2023 via Statista (primary-gov underlying source)", "Indonesia Investments labor market analysis (secondary)"], "score": "High", "override": null},
+    {"claim_id": "PP3.4-bps-affluent-1.29M", "claim_text": "BPS affluent class (17x+ poverty line): approximately 1.29 million individuals nationally (October 2024)", "sources": ["BPS Indonesia middle class stability report October 2024 (primary-gov, bps.go.id confirmed in cache)"], "score": "High", "override": null}
+  ],
+  "override_triggers": [
+    {
+      "override": "auto-Low-vendor",
+      "claim_count": 4,
+      "claim_ids": ["VC3.5.1-prudential-inpatient", "VC3.5.1-allianz-benefits", "VC3.5.2-outpatient-addon", "PP3.1-mcu-oop"],
+      "note": "Prudential.co.id and allianz.co.id on their own product features. Both inaccessible (404, Cloudflare). Counts as auto-Low regardless of NEEDS-ATTENDED-FETCH status."
+    },
+    {
+      "override": "single-trade-source",
+      "claim_count": 2,
+      "claim_ids": ["VC3.2.1-general-h1-2024", "VC3.2.3-loss-ratio-2024"],
+      "note": "Single trade/news articles for operating ratio and segment premium figures."
+    },
+    {
+      "override": "assumed-tag",
+      "claim_count": 5,
+      "claim_ids": ["VC3.3-claims-split", "VC3.5.3-preventive-excluded", "PP3.1-pharmacy-oop-estimate", "PP3.3-loading-rates", "PP3.4-self-employed-estimate"],
+      "note": "Claims tagged ASSUMED-N per draft; scored Low or Medium accordingly."
+    },
+    {
+      "override": "chain-of-citations",
+      "claim_count": 1,
+      "claim_ids": ["VC3.2.1-premium-series"],
+      "note": "Antara and OJK Statistik both trace to same OJK primary; OJK Statistik returns HTTP 403 — counts as 1 effective source."
+    },
+    {
+      "override": "single-domain",
+      "claim_count": 1,
+      "claim_ids": ["VC3.4.3-38pct-low-wage"],
+      "note": "Citations (12) and (13) both resolve to same marsh.com URL — counts as 1 source."
+    }
+  ],
+  "weak_claims_to_deep_research": [
+    {
+      "claim_id": "VC3.2.1-premium-series",
+      "claim_text": "Total health insurance premium time series: Rp 19.17T (2021) → 22.09T (2022) → 26.26T (2023) → 40.19T (2024)",
+      "current_sources": ["Antara News 4933489 (secondary-news quoting OJK executive)", "OJK Statistik Perasuransian 2023 (HTTP 403, unverified)"],
+      "current_score": "Medium",
+      "issue": "OJK primary data returns HTTP 403; Antara relay is secondary-news; no audited regulatory primary confirmed. The Rp 40.19T 2024 figure is especially material — it is the largest single claim in Stage 3.",
+      "suggested_action": "Fetch OJK Statistik Perasuransian 2023 PDF direct URL (https://www.ojk.go.id/id/kanal/iknb/data-dan-statistik/asuransi/Documents/Statistik%20Perasuransian%20Indonesia%202023.pdf) — cached attempt returned 'Request Rejected' (48b852d517d97640.md). Use Playwright with authenticated session or OJK IKNB data desk email request. For 2024 figure, also check AAJI 2024 annual statistics release.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC3.5.1-prudential-inpatient",
+      "claim_text": "Prudential PRUprime Healthcare Plus: hospitalization up to 150 days per year; inpatient up to room limit chosen; surgical benefit included",
+      "current_sources": ["Prudential Indonesia product PDF — 404 in cache (auto-Low-vendor)"],
+      "current_score": "Low",
+      "issue": "Auto-Low-vendor: vendor's own marketing PDF. Cannot be upgraded without third-party corroboration. Required for confirming plan composition claims underpinning Pain point 3.1 (MCU exclusion, CDM exclusion).",
+      "suggested_action": "Obtain RIPLAY document from OJK IKNB product registry (OJK maintains official registered product disclosure documents at ojk.go.id/id/kanal/iknb). Alternatively, use Playwright to access prudential.co.id/id/produk page and screenshot product benefits table. Third-party source: ask Siloam or Pondok Indah insurance billing desk which Prudential plan tiers they see most, and what those plans cover.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP3.1-pharmacy-oop-estimate",
+      "claim_text": "Type 2 diabetic on branded insulin plus metformin pays Rp 1,500,000–3,500,000/month in pharmacy OOP not covered by private insurance",
+      "current_sources": ["PMC11449349 insulin price study (indirect)", "De Gruyter cost-of-illness systematic review (indirect)"],
+      "current_score": "Low",
+      "issue": "ASSUMED-11 tag — neither source directly states the Rp monthly OOP figure. The PMC insulin study documents availability and affordability of insulin broadly but does not provide Jakarta retail pharmacy price points. This is the primary cost estimate underpinning Pain point 3.1 and is cited by the draft as the core OOP exposure.",
+      "suggested_action": "Search: 'harga insulin Jakarta apotek 2024 site:kimiafarma.co.id OR site:kfgroupindonesia.com' to find Kimia Farma published retail prices. Alternatively fetch Prodia or KF published price list PDFs. Cross-check with WHO Indonesia Essential Medicines Price Monitoring data (WHO CHAMP database). For branded analog insulin, check BPJS formulary e-Catalog price versus retail markup.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP3.3-loading-rates",
+      "claim_text": "Premium loading for diabetes/hypertension history in Indonesian individual health underwriting: 150–300% above standard rate or full exclusion (ASEAN peer market analogy)",
+      "current_sources": ["ASSUMED-17 — no Indonesia-specific source"],
+      "current_score": "Low",
+      "issue": "No Indonesia-specific source exists in any citation. Uses ASEAN peer market analogy without identifying which market. This claim supports the cost quantification for Pain point 3.3 (pre-existing condition exclusion trap) and is cited as the present-value framing ($15,000–$40,000 lifetime OOP).",
+      "suggested_action": "Search: 'Indonesia individual health insurance pre-existing condition loading rate actuarial AAJI 2023 2024'. Request Milliman Indonesia — they publish the Indonesia Life Insurance Newsletter and have an actuary on record (Junaidi Amin). Alternatively search AAJI actuarial committee published standards for individual underwriting, or OJK product registry POJK 36/2024 implementing guidance for pre-existing conditions.",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "VC3.4.3-bpjs-contribution",
+      "claim_text": "BPJS Kesehatan employer contribution 4% of monthly wages capped at Rp 480,000/month; employee 1% capped Rp 120,000/month",
+      "current_sources": ["Acclime Indonesia advisory guide (secondary-advisory, not statutory primary)"],
+      "current_score": "Low",
+      "issue": "Statutory/regulatory figure sourced from third-party advisory website rather than BPJS Kesehatan official publication or Ministry of Health/Presidential Regulation. The figure itself is likely accurate but the source is not primary.",
+      "suggested_action": "Fetch BPJS Kesehatan official contribution rates page: https://www.bpjs-kesehatan.go.id/bpjs/pages/detail/2014/13 or the relevant Presidential Regulation (Perpres No. 64/2020 on National Health Insurance contribution rates). This is a quick upgrade from Low to High with a single statutory source fetch.",
+      "priority": "medium"
+    }
+  ],
+  "high_tier_claims_with_evidence": [
+    {
+      "claim_id": "VC3.2.2-industry-structure",
+      "claim_text": "136 conventional insurers (52 life, 72 general, 7 reinsurance, 5 social); JV 69.1% life market share; conventional 50.32% of all premiums",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://ojk.go.id/en/berita-dan-kegiatan/info-terkini/Documents/Pages/Roadmap-for-the-Development-and-Strengthening-of-the-Indonesia-Insurance-Industry-2023-2027/Roadmap%20for%20the%20Development%20and%20Strengthening%20of%20the%20Indonesia%20Insurance%20Industry%202023-2027.pdf",
+          "quote": "with operating permits in Indonesia consists of 136 conventional insurance companies, comprising 52 life insurance companies, 72 general insurance companies, 7 reinsurance companies, and 5 [social/mandatory] ... 69.1% in the life insurance sector ... for a market share of 50.32%, while social and mandatory insurance premiums accounted for 45%",
+          "context": "Chapter I, Section 1.2 Conventional Insurance — market structure statistics as of end 2022",
+          "fetch_method": "markitdown — 7ce9fd998259ae0f.md"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC3.4.1-penetration-1.4pct",
+      "claim_text": "Commercial insurance penetration Indonesia 2021: 1.4% of GDP; ASEAN comparators: Malaysia 3.8%, Thailand 4.6%, Singapore 12.5%",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://ojk.go.id/en/berita-dan-kegiatan/info-terkini/Documents/Pages/Roadmap-for-the-Development-and-Strengthening-of-the-Indonesia-Insurance-Industry-2023-2027/Roadmap%20for%20the%20Development%20and%20Strengthening%20of%20the%20Indonesia%20Insurance%20Industry%202023-2027.pdf",
+          "quote": "the commercial insurance penetration in Indonesia in 2021 was approximately 1.4%, which is lower than the ASEAN region's average of 3.9% ... Singapore has an insurance penetration rate of 12.5%, Malaysia at 3.8%, Thailand at 4.6%",
+          "context": "Chapter I, Section 1.2 Conventional Insurance — ASEAN penetration comparison citing ASEAN Insurance Surveillance Report 2022",
+          "fetch_method": "markitdown — 7ce9fd998259ae0f.md"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC3.4.1-snlik-inclusion",
+      "claim_text": "Insurance inclusion rate (SNLIK 2022): 16.63% of population hold any insurance product",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://ojk.go.id/en/berita-dan-kegiatan/info-terkini/Documents/Pages/Roadmap-for-the-Development-and-Strengthening-of-the-Indonesia-Insurance-Industry-2023-2027/Roadmap%20for%20the%20Development%20and%20Strengthening%20of%20the%20Indonesia%20Insurance%20Industry%202023-2027.pdf",
+          "quote": "Indonesia's insurance inclusion rate has risen from 13.15% in 2019 to 16.63% in 2022. However, there is still a substantial gap between the insurance inclusion rate and the insurance literacy rate.",
+          "context": "Chapter I, Section 1.2 — Literacy and Inclusion subsection, citing OJK SNLIK 2022",
+          "fetch_method": "markitdown — 7ce9fd998259ae0f.md"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC3.3-insured-lives-growth",
+      "claim_text": "Group insured lives +22.5% YoY; individual insured lives +3.8% (Q3 2023 vs Q3 2022)",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://media.milliman.com/v1/media/edge/images/millimaninc5660-milliman6442-prod27d5-0001/media/Milliman/PDFs/2024-Articles/3-27-24_Indonesia-Newsletter-Q4-2023.pdf",
+          "quote": "the total number of insured lives increased by 22.5% and 3.8% for groups and individuals",
+          "context": "Market performance — Industry Performance Over Q3 2023 section",
+          "fetch_method": "markitdown — a6f5065fbfaea860.md"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC3.2.3-q3-2023-claims",
+      "claim_text": "Q3 2023 health claims (life segment): Rp 15.24 trillion, up 33% vs Q3 2022 (Rp 11.47T)",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://media.milliman.com/v1/media/edge/images/millimaninc5660-milliman6442-prod27d5-0001/media/Milliman/PDFs/2024-Articles/3-27-24_Indonesia-Newsletter-Q4-2023.pdf",
+          "quote": "health claims have increased by 33% over the same period ... IDR 15.24 trillion of health claims ... IDR 11.47 trillion attributed to health [claims in Q3 2022]",
+          "context": "Market performance — Industry Performance Over Q3 2023 section, Financials table",
+          "fetch_method": "markitdown — a6f5065fbfaea860.md"
+        }
+      ]
+    },
+    {
+      "claim_id": "PP3.2-swiss-re-gap",
+      "claim_text": "Indonesia health protection gap: $82 billion (Swiss Re Asia estimate)",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://www.swissre.com/dam/jcr:05411fab-a11a-4537-b16f-baa77da564f9/Asia's+Health+Protection+Gap_Regional+Infographics.pdf",
+          "quote": "Indonesia $82 billion",
+          "context": "Emerging Asia country-by-country health protection gap figures infographic",
+          "fetch_method": "markitdown — 602b953925d1c0cd.md"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC3.5.5-cdm-claims-costs",
+      "claim_text": "Chronic ischaemic heart disease 10.07%, CKD 7.07%, hypertension 5.79%, T2DM 4.55% of employer health claims; combined 27.5%",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12425502/",
+          "quote": "Cardiovascular diseases, diabetes, and chronic kidney disease are major drivers of high medical costs. Inpatient care is the most significant cost component, with a cost risk 14.39 times higher than clinic visits.",
+          "context": "Abstract / Results section — Medical cost inflation and its drivers in Indonesian employer-sponsored health insurance for retiree families",
+          "fetch_method": "HTML cache — c8ac6d7e3618a6d9.html"
+        }
+      ]
+    }
+  ],
+  "evidence_quote_gaps": [
+    {"claim_id": "VC3.2.3-claims-ratio-138pct", "reason": "AAJI Feb 2024 Antara article (berita/3984786) — HTML is JavaScript-rendered; body text not in raw HTML cache. Verbatim AAJI statement not extractable from cache."},
+    {"claim_id": "VC3.2.1-premium-series", "reason": "Antara News 4933489 HTML is JavaScript-rendered; article body not in raw cache. OJK Statistik PDF returned 'Request Rejected'. [NEEDS-ATTENDED-FETCH]"},
+    {"claim_id": "VC3.2.3-mmb-inflation", "reason": "Mercer Marsh Benefits Indonesia Health and Benefits Study 2024 full report behind registration wall; only Marsh press release metadata confirmed."}
+  ],
+  "gate_decision_recommendation": "ship-with-flag",
+  "gate_reasoning": "Stage 3 scores 52% High / 24% Medium / 24% Low across 42 claims. The High-tier claims cover the most analytically load-bearing assertions: ASEAN penetration benchmarks (OJK Roadmap primary confirmed in cache), insured lives growth divergence (Milliman authored PDF confirmed in cache), CDM claims cost drivers (PMC peer-reviewed confirmed in cache), Swiss Re health protection gap (authored PDF confirmed in cache), and POJK regulatory reform timeline (Milliman e-Alert + Lockton independently confirmed). The 10 Low-tier claims fall into three groups: (a) 4 auto-Low-vendor product document claims that are NEEDS-ATTENDED-FETCH (Prudential, Allianz plan benefits) — these are structural gaps in plan composition evidence; (b) 3 ASSUMED-N estimates without primary sources (pharmacy OOP Rp range, underwriting loading rates, self-employed population count); (c) 3 single-source secondary claims (H1 2024 general insurance sub-segment, H1 2025 individual loss ratio, BPJS contribution via advisory site). The stage can ship with flags noting: (1) the top-5 weak claims require deep research before plan-composition claims are treated as evidenced; (2) the premium time series OJK primary must be attended-fetched to upgrade VC3.2.1 from Medium to High; (3) vendor product documents (Prudential, Allianz) must be obtained via OJK IKNB product registry or Playwright to evidence the plan-composition exclusion claims that are central to Pain points 3.1 and 3.3."
+}

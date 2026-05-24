@@ -1,0 +1,32 @@
+Run complete — Phase 1 overnight research
+
+Run ID: 2026-05-23-0736
+Topic: Indonesia urban affluent + upper-middle as addressable market for GP-anchored preventive/CDM MSO
+Mode: sandbox
+Started: 2026-05-23 07:36
+Completed: 2026-05-23 (mid-day)
+Final gate decision: Ship with flag
+
+Stages: 5/5 complete (1 tracer + 4 parallel)
+Pain points delivered: 21
+Root causes: 86
+Unique sources: 211
+Citation diversity: 36% government / multilateral / academic anchor
+
+Phase 2 handoff: 15 NEEDS-ATTENDED-FETCH URLs documented in cross-stage-observations.md.
+A separate Phase 2 Playwright orchestrator pass will handle attended enrichment.
+
+Artifacts:
+- raw-claude-value-chain-indonesia-affluent-preventive-cdm-market.md   (combined 5-dimension value chain)
+- raw-claude-pain-points-indonesia-affluent-preventive-cdm-market.md   (combined 5-dimension pain points)
+- raw-claude-summary-indonesia-affluent-preventive-cdm-market.md       (run summary)
+- cross-stage-observations.md                                          (working hypotheses verdicts + corrections + carry-forward)
+- FINAL-REPORT.html                                                    (Wright-branded HTML report, A4 print-ready)
+- pass-0-plan.md                                                       (stage roster + WH test plan)
+- pass-1-drafts/                                                       (10 raw drafts pre-correction)
+- pass-2-validation/                                                   (5 stage JSONs + cross-stage.json + contradictions.json)
+- pass-3-deep-research/stage-1/                                        (5 deep-research outcomes + APPLIED-TO-DRAFTS.md)
+- stages-validated/                                                    (10 corrected canonical stage files)
+- checkpoint.json                                                      (run state)
+
+STOP. Phase 2 Playwright enrichment is a separate orchestrator pass.

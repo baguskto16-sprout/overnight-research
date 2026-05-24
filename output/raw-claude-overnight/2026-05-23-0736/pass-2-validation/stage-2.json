@@ -1,0 +1,797 @@
+{
+  "context": "per-stage",
+  "stage": 2,
+  "run": "2026-05-23-0736",
+  "scored_at": "2026-05-23",
+  "total_claims_scored": 71,
+  "scoring_distribution": {
+    "high":    { "count": 26, "percent": "36.6%" },
+    "medium":  { "count": 12, "percent": "16.9%" },
+    "low":     { "count": 32, "percent": "45.1%" },
+    "pending_attended_fetch": { "count": 1, "percent": "1.4%" }
+  },
+  "override_triggers": [
+    {
+      "override": "ASSUMED-N auto-Low",
+      "claim_count": 12,
+      "claim_ids": ["VC-21","VC-29","PP-2.1-4","PP-2.2-6","PP-2.3-4","PP-2.3-5","PP-2.4-6-DSGCP-assumed","PP-2.5-1","VC-10-ASSUMED-2","VC-26","VC-30-context","VC-49-context"]
+    },
+    {
+      "override": "aggregator-market-research auto-downgrade",
+      "claim_count": 7,
+      "claim_ids": ["VC-13","VC-14","VC-38","VC-39","VC-43","VC-45","VC-46","PP-2.4-1","PP-2.4-2","PP-2.3-2"]
+    },
+    {
+      "override": "trade-press-only",
+      "claim_count": 5,
+      "claim_ids": ["VC-23","VC-24","VC-30","VC-49","VC-44"]
+    },
+    {
+      "override": "vendor-marketing / brochure",
+      "claim_count": 1,
+      "claim_ids": ["VC-10"]
+    },
+    {
+      "override": "no-source-cited",
+      "claim_count": 3,
+      "claim_ids": ["PP-2.1-2","PP-2.2-3","PP-2.1-4"]
+    },
+    {
+      "override": "non-listed-consultancy single source",
+      "claim_count": 1,
+      "claim_ids": ["VC-36"]
+    },
+    {
+      "override": "outdated-source (>3 years old)",
+      "claim_count": 2,
+      "claim_ids": ["VC-1","VC-27"]
+    },
+    {
+      "override": "APAC-as-proxy geography mismatch",
+      "claim_count": 1,
+      "claim_ids": ["VC-9"]
+    },
+    {
+      "override": "chain-of-citations (IDF Atlas cited via PMC)",
+      "claim_count": 1,
+      "claim_ids": ["PP-2.2-1"]
+    }
+  ],
+  "claims": [
+    {
+      "id": "VC-1",
+      "claim": "Q5 (richest quintile) outpatient OOP per episode IDR 485,000 (~$30) in 2018; fell to IDR 186,000 by 2019.",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC10483778/"],
+      "tier": "primary-academic",
+      "confidence": "Medium",
+      "override_applied": "outdated-source-override (2018-2019 data; BPJS expansion since may have altered private-pay rates counted in Susenas)",
+      "rationale": "Single peer-reviewed PMC source with Susenas microdata — would be High but data is 2018-2019, now >5 years old. Capped at Medium."
+    },
+    {
+      "id": "VC-2",
+      "claim": "Blood glucose screening rate: Q5 (richest quintile) 30.1%, Q1 (poorest) 6.1% — national adults ≥31 years.",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC6661624/"],
+      "tier": "primary-academic",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "Peer-reviewed PMC study using Susenas national survey microdata. Specific quantitative claim with denominator defined. Primary academic source."
+    },
+    {
+      "id": "VC-3",
+      "claim": "Cholesterol screening rate: Q5 32.7%, Q1 7.8% — national adults.",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC6661624/"],
+      "tier": "primary-academic",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "Same PMC6661624 as VC-2. Peer-reviewed Susenas-based study. High."
+    },
+    {
+      "id": "VC-4",
+      "claim": "Blood pressure measurement rate: Q5 87.9%, Q1 73.6%.",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC6661624/"],
+      "tier": "primary-academic",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "Same peer-reviewed source PMC6661624. High."
+    },
+    {
+      "id": "VC-5",
+      "claim": "Education Relative Index of Inequality (RII) for blood glucose screening = 30.3 — the largest inequality of any care category in Indonesia.",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC6661624/"],
+      "tier": "primary-academic",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "Peer-reviewed PMC6661624. Specific statistical measure reported in study. High."
+    },
+    {
+      "id": "VC-6",
+      "claim": "Median annual household OOP per capita, Java/Bali (all quintiles): $20.40.",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC8491299/"],
+      "tier": "primary-academic",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "Peer-reviewed PMC8491299 using Susenas microdata. High."
+    },
+    {
+      "id": "VC-7",
+      "claim": "OOP as 27.5% of current health expenditure (post-JKN expansion); OOP declining from 40% (2015) to 29% (2023).",
+      "sources": ["https://www.who.int/about/accountability/results/who-results-report-2020-mtr/country-story/2023/indonesia-s-success-in-achieving-90-percent-coverage-and-minimizing-out-of-pocket-expenses-through-national-health-insurance-expansion"],
+      "tier": "primary-multilateral",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "WHO official country story page — primary-multilateral source. High."
+    },
+    {
+      "id": "VC-8",
+      "claim": "OOP 30.5% of total health expenditure (2022) — Thinkwell Global Indonesia Health Financing Fact Sheet.",
+      "sources": ["https://thinkwell.global/wp-content/uploads/2022/09/Health-Financing-Fact-Sheet_-Indonesia_September_2022.pdf"],
+      "tier": "primary-consultancy",
+      "confidence": "Pending-attended-fetch",
+      "override_applied": "NEEDS-ATTENDED-FETCH — PDF returned corrupt content in pass-1",
+      "rationale": "Thinkwell Global is a health financing consultancy with donor-funded analytical work comparable to primary-consultancy tier. Source may be valid but PDF was inaccessible. Tagged Pending-attended-fetch per scoring instructions; not auto-Low."
+    },
+    {
+      "id": "VC-9",
+      "claim": "51% of APAC consumers willing to pay more OOP for better outcomes; 58% of Gen Z; 50% of high-income group increased supplement spend; 85% interested in healthcare maintenance (2024).",
+      "sources": ["https://www.bain.com/insights/asia-pacific-front-line-of-healthcare-2024/"],
+      "tier": "primary-consultancy",
+      "confidence": "Medium",
+      "override_applied": "APAC-as-proxy — Geography mismatch. Indonesia-specific figures not published.",
+      "rationale": "Bain firm-imprint report (primary-consultancy) but covers APAC aggregate. APAC-as-proxy override caps at Medium."
+    },
+    {
+      "id": "VC-10",
+      "claim": "Individual international health insurance average $4,764/yr in 2024; domestic Cigna basic from IDR 300K/month; AXA Mandiri premium from IDR 3M/month.",
+      "sources": ["https://www.pacificprime.com/blog/health-insurance-cost-in-indonesia.html (403)", "https://www.allianz.co.id/content/dam/onemarketing/azli/wwwallianzcoid/produk/asuransi-kumpulan/smarthealth-enterprise/brochure-v1-3-english/brochure-smarthealth-enterprise-english-ver.pdf"],
+      "tier": "auto-low-vendor + secondary-trade",
+      "confidence": "Low",
+      "override_applied": "vendor-marketing-override (Allianz brochure = vendor marketing); Pacific Prime blog returned 403; no primary source",
+      "rationale": "Pacific Prime is a broker comparison blog (secondary-trade), returned 403 so unverifiable. Allianz brochure is vendor marketing (auto-low). No OJK or audited source corroborates premium range. Low."
+    },
+    {
+      "id": "VC-11",
+      "claim": "MCU package pricing: Tirta basic IDR 435K; comprehensive IDR 1.195M; RS Pondok Indah executive IDR 1.9M–15M; EMC Healthcare premium IDR 3.3–4.7M.",
+      "sources": ["https://tirta.co.id/en/artikel/medical-check-up-cost/","https://www.rspondokindah.co.id/en/facilities-services/executive-health-check-up","https://www.emc.id/en/news/premiumMCU-1"],
+      "tier": "secondary-company-website",
+      "confidence": "Medium",
+      "override_applied": "Three independent named provider sites used only for pricing evidence (not to claim market share of those providers). Multiple providers corroborate the price range.",
+      "rationale": "Provider websites are not primary sources but three independent named providers corroborate the pricing range. Used only to demonstrate price range, not vendor capability claims. Medium — no government or audited source, but the pricing is factual and cross-validated across providers."
+    },
+    {
+      "id": "VC-12",
+      "claim": "Employer retiree healthcare cost IDR 12.98M/yr (2023); medication 26.8%; medical treatment 22.3%; supporting exams 15.9%; medical inflation 20.5% in 2023.",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC12425502/"],
+      "tier": "primary-academic",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "PMC peer-reviewed study of Indonesian employer-sponsored health insurance with named retiree population (n stated). High."
+    },
+    {
+      "id": "VC-13",
+      "claim": "National OTC pharmaceutical spending approximately $12/capita nationally.",
+      "sources": ["https://www.statista.com/outlook/hmo/otc-pharmaceuticals/indonesia"],
+      "tier": "secondary-market-research",
+      "confidence": "Low",
+      "override_applied": "aggregator-market-research auto-downgrade (Statista OTC outlook)",
+      "rationale": "Statista OTC Outlook is a paid aggregator product. Auto-downgrade; no cross-validation with primary source. Low."
+    },
+    {
+      "id": "VC-14",
+      "claim": "Indonesia dietary supplements market $3.04B in 2023, CAGR 6.43% through 2029.",
+      "sources": ["https://www.globenewswire.com/news-release/2024/09/05/2941470/28124/en/Indonesia-Dietary-Supplements-Market-Report-2024.html","https://www.grandviewresearch.com/industry-analysis/indonesia-nutraceuticals-market-report"],
+      "tier": "secondary-market-research",
+      "confidence": "Low",
+      "override_applied": "aggregator-market-research auto-downgrade (GlobeNewswire distributing aggregator report; Grand View Research). Cross-validation between two aggregators does not count as two independent sources.",
+      "rationale": "Both GlobeNewswire and Grand View are aggregator market research. Chain-of-citations: GlobeNewswire distributes an aggregator research note; Grand View is another aggregator. Two aggregators = 1 source tier. No cross-validation with primary (industry association, government, audited company filing). Low."
+    },
+    {
+      "id": "VC-15",
+      "claim": "Overall non-adherence among multimorbid chronic disease patients: 36.4%; income <IDR 40M/yr associated with non-adherence aOR 1.23; no insurance aOR 1.20 (n=3,515).",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC11052292/"],
+      "tier": "primary-academic",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "PMC peer-reviewed study with large stated sample (n=3,515), Indonesia national setting. High."
+    },
+    {
+      "id": "VC-16a",
+      "claim": "Only 37% of primary health centers implement PROLANIS optimally.",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC12538241/"],
+      "tier": "primary-academic",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "PMC12538241 is a peer-reviewed scoping review. High."
+    },
+    {
+      "id": "VC-16b",
+      "claim": "Fewer than 20% of diagnosed DM and HTN patients are well-controlled nationally (BPJS context).",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC12538241/"],
+      "tier": "primary-academic",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "PMC12538241 scoping review. High."
+    },
+    {
+      "id": "VC-16c",
+      "claim": "PROLANIS adherence rate 71.3% adherent, 28.7% non-adherent (Pekanbaru sample).",
+      "sources": ["https://jurnal.ikta.ac.id/aisch/article/view/2350"],
+      "tier": "secondary-academic",
+      "confidence": "Low",
+      "override_applied": "single-source; non-indexed Indonesian journal (not PubMed-indexed); single-city sample",
+      "rationale": "jurnal.ikta.ac.id is a non-indexed Indonesian journal (not PMC/Scopus-indexed). Single-city sample (Pekanbaru). Single secondary-academic source. Low."
+    },
+    {
+      "id": "VC-17",
+      "claim": "Highest income group (>IDR 3.5M/month individual) shows lower willingness to pay for cost-sharing than middle-income groups; average maximum WTP IDR 500,000 per episode or 20% cost-sharing — Yogyakarta.",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC9690347/"],
+      "tier": "primary-academic",
+      "confidence": "Medium",
+      "override_applied": "Single-city study (Yogyakarta); income threshold IDR 3.5M/month individual is not the upper-middle/affluent segment of interest; result may not generalize.",
+      "rationale": "PMC peer-reviewed — would be High — but Yogyakarta single-city limitation and the income threshold ($218/month individual) is far below the upper-middle segment being analyzed. Cited as a 'paradox' signal; Medium is appropriate."
+    },
+    {
+      "id": "VC-18",
+      "claim": "Healthier SG enrollment: 310,000+ of 954,000 invited (~32.5%); ~75% of CHAS GP clinics enrolled. Capitation-based funding model.",
+      "sources": ["https://www.moh.gov.sg/newsroom/healthier-sg-enrolment-data/"],
+      "tier": "primary-ministry",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "Singapore Ministry of Health official newsroom release. Primary-ministry. High."
+    },
+    {
+      "id": "VC-19",
+      "claim": "Among those aware of Healthier SG, 44.3% enrolled and 39.8% planned to enroll — chronic disease patients.",
+      "sources": ["https://annals.edu.sg/healthier-sg-awareness-and-enrolment/"],
+      "tier": "primary-academic",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "Annals of the Academy of Medicine Singapore — peer-reviewed. High."
+    },
+    {
+      "id": "VC-20",
+      "claim": "OOP share of current health expenditure in Singapore fell 8.7 percentage points from 2017 to 2021.",
+      "sources": ["https://www.moh.gov.sg/newsroom/healthier-sg-enrolment-data/"],
+      "tier": "primary-ministry",
+      "confidence": "Medium",
+      "override_applied": "Attribution mismatch — draft notes this predates Healthier SG (launched 2023) and reflects MediShield Life/MediSave expansion, not Healthier SG. Claim is factually sourced but the causal attribution to Healthier SG is incorrect.",
+      "rationale": "MOH page is primary-ministry (High tier source) but the claim as framed in the draft implies Healthier SG causation; the decline predates the program. Medium — source is valid but claim context is misleading."
+    },
+    {
+      "id": "VC-21",
+      "claim": "Malaysia: 60–70% of middle/upper-income Malaysians with known HTN or DM use a private GP for ongoing management.",
+      "sources": ["[ASSUMED-5: no primary source found]"],
+      "tier": "none",
+      "confidence": "Low",
+      "override_applied": "ASSUMED-N auto-Low",
+      "rationale": "Draft explicitly tags ASSUMED-5 with no primary source found. Auto-Low per rubric."
+    },
+    {
+      "id": "VC-22",
+      "claim": "Malaysia private CDM GP attachment rates — narrative gap note.",
+      "sources": ["[NEEDS-ATTENDED-FETCH: Academy of Medicine Malaysia / Malaysian Medical Association]"],
+      "tier": null,
+      "confidence": "Pending-attended-fetch",
+      "override_applied": "NEEDS-ATTENDED-FETCH — no quantified claim yet, data gap noted",
+      "rationale": "No scored quantified claim exists; this is a data gap narrative. Noted as Pending-attended-fetch; excluded from scored claim count."
+    },
+    {
+      "id": "VC-23",
+      "claim": "Vinmec revenue VND 4.48 trillion (+53% in 2022); pre-tax loss VND 700 billion.",
+      "sources": ["https://vietnamnews.vn/economy/1639428/private-hospitals-look-to-capture-growing-healthcare-market-profitability-varies.html"],
+      "tier": "secondary-news",
+      "confidence": "Low",
+      "override_applied": "trade-press-only override (Vietnam News is a single secondary-news source; no audited Vinmec filing cited)",
+      "rationale": "Single secondary-news article. Vinmec financial figures require audited annual report or exchange filing to be credible. Low."
+    },
+    {
+      "id": "VC-24",
+      "claim": "Vinmec preventive packages from VND 6.8M (~$270) per person.",
+      "sources": ["https://vietnamnews.vn/economy/1639428/private-hospitals-look-to-capture-growing-healthcare-market-profitability-varies.html"],
+      "tier": "secondary-news",
+      "confidence": "Low",
+      "override_applied": "trade-press-only (same single secondary-news article)",
+      "rationale": "Pricing claim from single trade/news article with no primary corroboration. Low."
+    },
+    {
+      "id": "VC-25",
+      "claim": "PROLANIS adherence (Pekanbaru): 71.3% adherent — same as VC-16c.",
+      "sources": ["https://jurnal.ikta.ac.id/aisch/article/view/2350"],
+      "tier": "secondary-academic",
+      "confidence": "Low",
+      "override_applied": "non-indexed journal, single-city (duplicate of VC-16c)",
+      "rationale": "Same as VC-16c. Low."
+    },
+    {
+      "id": "VC-26",
+      "claim": "Total estimated HH healthcare spend per year: affluent $1,490–3,040/yr; upper-middle $510–1,215/yr.",
+      "sources": ["composite derivation from PMC10483778, PMC6661624, PMC8491299, PMC12425502 plus ASSUMED tags"],
+      "tier": "derived-composite",
+      "confidence": "Low",
+      "override_applied": "composite derivation with multiple ASSUMED inputs; draft itself rates Low-Medium composite; BPS Susenas direct data unavailable (403). ASSUMED-N inputs in derivation chain trigger auto-Low.",
+      "rationale": "The composite incorporates ASSUMED-1, ASSUMED-2, ASSUMED-5, and ASSUMED-8 in the derivation. Any ASSUMED inputs in the chain → auto-Low. Low."
+    },
+    {
+      "id": "VC-27",
+      "claim": "Q5:Q1 OOP spending ratio ~4:1 for outpatient, ~1.8:1 for inpatient.",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC10483778/"],
+      "tier": "primary-academic",
+      "confidence": "Medium",
+      "override_applied": "outdated-source-override (2018-2019 Susenas data)",
+      "rationale": "Primary-academic source but 2018-2019 data is >5 years old. Capped at Medium."
+    },
+    {
+      "id": "VC-28",
+      "claim": "National per capita health expenditure (2023): $178 USD total.",
+      "sources": ["https://www.who.int/about/accountability/results/who-results-report-2020-mtr/country-story/2023/indonesia-s-success-in-achieving-90-percent-coverage-and-minimizing-out-of-pocket-expenses-through-national-health-insurance-expansion"],
+      "tier": "primary-multilateral",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "WHO country story page with national health expenditure figure. Primary-multilateral. High."
+    },
+    {
+      "id": "VC-29",
+      "claim": "Income threshold for discretionary preventive/CDM spend: approximately IDR 15–20M per household per month.",
+      "sources": ["derived from Q5 expenditure threshold in Susenas [PMC10483778] and screening rates [PMC6661624]"],
+      "tier": "derived-assumed",
+      "confidence": "Low",
+      "override_applied": "ASSUMED-2 auto-Low; no WTP study targets this threshold directly",
+      "rationale": "Draft explicitly tags [ASSUMED-2]. The derivation is reasonable but no published study confirms this threshold. Auto-Low."
+    },
+    {
+      "id": "VC-30",
+      "claim": "Indonesia health cost inflation 12.7% in 2023 (Aon Global Medical Trend Rates 2023).",
+      "sources": ["https://www.shrm.org/topics-tools/news/benefits-compensation/aon-report-increase-projected-2024-employer-health-costs"],
+      "tier": "secondary-trade",
+      "confidence": "Low",
+      "override_applied": "trade-press-only override (SHRM article citing Aon report; not a direct Aon authored report URL; no Indonesia-specific primary source confirms 12.7%)",
+      "rationale": "The actual Aon report would be primary-consultancy if directly cited. Source cited is an SHRM news article that references the Aon report. Trade-press-only override applies. Low."
+    },
+    {
+      "id": "VC-31",
+      "claim": "Employer-sponsored health insurance covers 36.1–38.4% of the Indonesian workforce (2018–2022, stagnant trend).",
+      "sources": ["https://academic.oup.com/heapol/article/39/7/741/7702577"],
+      "tier": "primary-academic",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "Health Policy journal (Oxford Academic), peer-reviewed, large national dataset from Indonesia. High."
+    },
+    {
+      "id": "VC-32",
+      "claim": "Healthier SG enrollment raised individual screening uptake by 33.5 percentage points (95% CI: 13.9–53.1) — regression discontinuity design.",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC12763585/"],
+      "tier": "primary-academic",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "PMC-indexed peer-reviewed study using regression discontinuity. Strongest causal design available. High."
+    },
+    {
+      "id": "VC-33",
+      "claim": "Indonesia spends only 17% of total health expenditure on health promotion and disease prevention; 54% goes to curative care.",
+      "sources": ["https://health-policy-systems.biomedcentral.com/articles/10.1186/s12961-024-01206-7"],
+      "tier": "primary-academic",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "Health Research Policy and Systems (BioMed Central) is a peer-reviewed journal. 2024 publication. High."
+    },
+    {
+      "id": "VC-34",
+      "claim": "HbA1c <7% achieved by 32.0% of Indonesian diabetics in 2023; BP control 43.5%; treatment linkage 92.1% — serial cross-sectional 2013–2023.",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC12681878/"],
+      "tier": "primary-academic",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "PMC12681878, Lancet Regional Health Western Pacific — top-tier peer-reviewed. Large national serial cross-sectional analysis. High."
+    },
+    {
+      "id": "VC-35",
+      "claim": "58.9% of Jakarta primary care providers report fewer than half their CDM patients achieve treatment targets; 84.5% misidentify referral criteria; 80.4% have <10-minute consultations.",
+      "sources": ["https://www.frontiersin.org/journals/health-services/articles/10.3389/frhs.2025.1715125/full"],
+      "tier": "primary-academic",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "Frontiers in Health Services 2025 — peer-reviewed. Jakarta primary care study. High."
+    },
+    {
+      "id": "VC-36",
+      "claim": "Indonesia's top 10–15 private hospital networks hold only ~10% of private hospital bed supply.",
+      "sources": ["https://www.lek.com/insights/healthcare-services/indonesian-private-healthcare-investing-dual-speed-services-market"],
+      "tier": "secondary-consultancy",
+      "confidence": "Low",
+      "override_applied": "non-listed-consultancy single source (L.E.K. Consulting is not on the rubric's primary-consultancy list: McKinsey, BCG, Bain, Deloitte, PwC, EY, KPMG, Roland Berger, Oliver Wyman, Bloomberg NEF). Single source.",
+      "rationale": "L.E.K. Consulting is a reputable firm but is not on the rubric's primary-consultancy list. The source is a firm insight page, not a formal authored report. Counts as secondary-consultancy. Single source. Low."
+    },
+    {
+      "id": "VC-37",
+      "claim": "PROLANIS capitation model at primary care level; BPJS-only program; WHO Indonesia case study.",
+      "sources": ["https://extranet.who.int/kobe_centre/sites/default/files/pdf/Indonesia_case_study_policy_brief.pdf"],
+      "tier": "primary-multilateral",
+      "confidence": "Medium",
+      "override_applied": "WHO extranet PDF — accessibility uncertain (extranet may require login); not tagged NEEDS-ATTENDED-FETCH but URL is non-public extranet. Medium pending verification.",
+      "rationale": "WHO Kobe Centre policy brief would be primary-multilateral if accessible. Extranet URL may be gated. Medium."
+    },
+    {
+      "id": "VC-38",
+      "claim": "Kalbe Farma nutritional segment revenue IDR ~7.96 trillion FY2023.",
+      "sources": ["https://www.statista.com/statistics/1234788/kalbe-farma-net-sales-by-segment/","https://www.idnfinancials.com/news/53503/klbf-recorded-idr3-24-trillion-in-profit-up-17-13"],
+      "tier": "secondary-market-research",
+      "confidence": "Low",
+      "override_applied": "aggregator-market-research auto-downgrade (Statista); IDNFinancials is a financial aggregator not an audited filing. Kalbe Farma's own IDX annual report or audited financial statements not cited.",
+      "rationale": "Both sources are aggregators. Kalbe's audited annual report (IDX disclosure) would validate; not cited. Low."
+    },
+    {
+      "id": "VC-39",
+      "claim": "Sido Muncul herbal/supplement segment IDR 2.49 trillion FY2023.",
+      "sources": ["https://www.indopremier.com/ipotnews/newsDetail.php?jdl=Financial+Statements+Full+Year+2023+of+SIDO&news_id=438684&group_news=RESEARCHNEWS&news_date=&taging_subtype=&name=&search=&q=&halaman="],
+      "tier": "secondary-news",
+      "confidence": "Low",
+      "override_applied": "trade-press financial aggregator (Indopremier news portal, not audited filing); Sido Muncul audited annual report (IDX) not cited",
+      "rationale": "Indopremier is a financial news/broker portal, not an audited corporate filing. Sido Muncul is IDX-listed; actual annual report would be primary-filing. Low."
+    },
+    {
+      "id": "VC-40",
+      "claim": "27.1% of chronic disease patients are traditional medicine users; diabetes 33.6%; cholesterol 34.3%; traditional medicine use associated with low medication adherence OR 2.49 (95% CI 2.17–2.85).",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC10102674/"],
+      "tier": "primary-academic",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "PMC peer-reviewed cross-sectional study with stated n, Indonesia national setting. High."
+    },
+    {
+      "id": "VC-41",
+      "claim": "51% of hypertensive and diabetic patients in Yogyakarta used traditional medicine; 70.4% used herbal medicine only (not alongside conventional).",
+      "sources": ["https://www.nature.com/articles/s41598-025-31978-z"],
+      "tier": "primary-academic",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "Scientific Reports 2025 (Nature Publishing Group) — peer-reviewed. Yogyakarta cross-sectional study. High. (Draft appropriately caveats generalizability to urban Jakarta as ASSUMED-9.)"
+    },
+    {
+      "id": "VC-42",
+      "claim": "44.2% of Indonesian households use traditional healthcare (Riskesdas 2018, up from 30.1% in 2013); 9.9% of current DM patients use traditional medicine.",
+      "sources": ["https://scholarhub.ui.ac.id/mjhr/vol27/iss1/5/"],
+      "tier": "secondary-academic",
+      "confidence": "Medium",
+      "override_applied": "chain-of-citations (underlying source is Riskesdas 2018 — government health survey, primary-government; but accessed via secondary academic analysis at Universitas Indonesia repository). Outdated-source-override: Riskesdas 2018 is now >5 years old.",
+      "rationale": "Underlying Riskesdas 2018 is primary-government but cited through a UI repository paper. Outdated (2018). Capped at Medium."
+    },
+    {
+      "id": "VC-43",
+      "claim": "29% of Indonesians take supplements only when sick; 61% take regularly (vs. 75–80% in developed Asian markets).",
+      "sources": ["https://www.dsgcp.com/insights/supplementing-indonesias-way-to-better-health"],
+      "tier": "secondary-trade",
+      "confidence": "Low",
+      "override_applied": "single secondary-trade source (DSG Consumer Partners industry blog); no primary corroboration",
+      "rationale": "DSG Consumer Partners is an industry consultancy/blog. Single source. Low."
+    },
+    {
+      "id": "VC-44",
+      "claim": "Urban Indonesian middle class shifting from price-driven to quality/credibility preference in supplement purchasing (2026).",
+      "sources": ["https://www.nutraingredients.com/Article/2026/05/20/indonesia-nutraceutical-market-ripe-for-higher-quality-branded-products/"],
+      "tier": "secondary-trade",
+      "confidence": "Low",
+      "override_applied": "single trade-press source (NutraIngredients); directional qualitative claim only",
+      "rationale": "NutraIngredients is trade press. Single qualitative directional claim. Low."
+    },
+    {
+      "id": "VC-45",
+      "claim": "Indonesia corporate wellness market $300M in 2024; health screening/biometric testing = 30% of service type (~$90M); on-site programs 40%, hybrid 30%.",
+      "sources": ["https://www.tracedataresearch.com/industry-report/indonesia-corporate-wellness-market"],
+      "tier": "secondary-market-research",
+      "confidence": "Low",
+      "override_applied": "aggregator-market-research auto-downgrade (TraceData Research is a private market research firm)",
+      "rationale": "TraceData Research is a private market research aggregator. Auto-downgrade. No cross-validation with primary source. Low."
+    },
+    {
+      "id": "VC-46",
+      "claim": "Indonesia herbal medicine market $2.8B (2024).",
+      "sources": ["https://zenodo.org/records/14590743"],
+      "tier": "secondary-market-research",
+      "confidence": "Low",
+      "override_applied": "aggregator-market-research auto-downgrade (Custom Market Insights report deposited on Zenodo preprint platform)",
+      "rationale": "Zenodo deposit of a Custom Market Insights report — aggregator source on a preprint platform. Auto-downgrade. Low."
+    },
+    {
+      "id": "VC-47",
+      "claim": "Employer annual MCU is a regulatory requirement under Ministry of Manpower (Permenaker No. 02/Men/1980 on Worker Health Examinations).",
+      "sources": ["Permenaker No. 02/Men/1980 — referenced contextually; no direct URL to official Jdih.go.id gazette"],
+      "tier": "primary-ministry",
+      "confidence": "Medium",
+      "override_applied": "Source not directly linked with accessible URL. Draft references the regulation number but no NEEDS-ATTENDED-FETCH tag. Classification as Medium (regulation exists and is known, but specific Permenaker content not directly verified in this pass).",
+      "rationale": "Indonesian ministerial regulations are primary-ministry tier. Permenaker 02/1980 is a real and well-known regulation. Medium rather than High because no direct URL with official gazette text is cited — regulatory content not directly verified in pass-1."
+    },
+    {
+      "id": "VC-48",
+      "claim": "BPJS Ketenagakerjaan and BPJS Kesehatan operate separate mandates and do not coordinate MCU-to-CDM referral; BPJS allocates minimal funds for preventive services.",
+      "sources": ["https://p4h.world/en/documents/chronic-disease-management-programme-prolanis-in-indonesia","https://www.who.int/indonesia/news/detail/24-01-2025-tracking-every-rupiah--indonesia-s-bold-step-towards-universal-health-coverage"],
+      "tier": "primary-multilateral",
+      "confidence": "Medium",
+      "override_applied": "P4H Network is not a primary government source (it is a multilateral knowledge platform); WHO Indonesia news page is primary-multilateral but does not directly quantify the BPJS coordination gap. Composite Medium.",
+      "rationale": "WHO Indonesia page is primary-multilateral (High tier). P4H is multilateral-adjacent (Medium tier). Two sources from different multilateral-adjacent bodies support the structural description. Medium (no direct BPJS legislative text or OJK gazette cited)."
+    },
+    {
+      "id": "VC-49",
+      "claim": "OJK Regulation 36/2025 health insurance reform focuses on copayment disclosure; does not require managed care coordination.",
+      "sources": ["https://global.lockton.com/us/en/news-insights/indonesia-to-reform-health-insurance-products-for-enhanced-risk-management"],
+      "tier": "secondary-trade",
+      "confidence": "Low",
+      "override_applied": "trade-press-only override (Lockton is an insurance broker news note, not the OJK gazetted regulation text). OJK regulation itself would be primary-ministry.",
+      "rationale": "The OJK regulation 36/2025 itself would be primary-ministry. Citing it through a Lockton broker news piece is secondary-trade. Low. Recommend fetch from OJK official gazette."
+    },
+    {
+      "id": "PP-2.1-1",
+      "claim": "Only 32% of Indonesian diabetics achieve HbA1c targets in 2023. Fewer than 5% met all behavioral-clinical-laboratory composite targets.",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC12681878/"],
+      "tier": "primary-academic",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "Lancet Regional Health Western Pacific, PMC12681878. Same as VC-34. High."
+    },
+    {
+      "id": "PP-2.1-2",
+      "claim": "Indonesia's total diabetes-related spending (BPJS + private OOP) is an estimated IDR 46.4 trillion/year (~$2.9B).",
+      "sources": ["no footnote cited"],
+      "tier": "none",
+      "confidence": "Low",
+      "override_applied": "no-source-cited — no footnote or citation is provided for the IDR 46.4 trillion figure in the pain-points draft",
+      "rationale": "The IDR 46.4 trillion total diabetes spending figure appears without a citation. Auto-Low."
+    },
+    {
+      "id": "PP-2.1-3",
+      "claim": "Inpatient vs. outpatient cost ratio: 14.4× for employer-sponsored plan; uncontrolled DM doubles downstream hospitalization cost.",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC12425502/"],
+      "tier": "primary-academic",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "PMC12425502 peer-reviewed. High."
+    },
+    {
+      "id": "PP-2.1-4",
+      "claim": "An affluent household making 4–6 healthcare purchases per year incurs 10–20 hours of time and IDR 150–400K in travel costs per trip.",
+      "sources": ["[ASSUMED-1] — no primary source"],
+      "tier": "none",
+      "confidence": "Low",
+      "override_applied": "ASSUMED-N auto-Low + no-source-cited (EMC Healthcare MCU pricing page cited [3] does not evidence travel cost claim)",
+      "rationale": "ASSUMED-1 explicitly. The EMC page cited is for MCU pricing, not travel cost. Auto-Low."
+    },
+    {
+      "id": "PP-2.1-5",
+      "claim": "Indonesia private hospital sector has ~180,000 beds; top 10–15 networks hold only ~10% of supply.",
+      "sources": ["https://www.lek.com/insights/healthcare-services/indonesian-private-healthcare-investing-dual-speed-services-market"],
+      "tier": "secondary-consultancy",
+      "confidence": "Low",
+      "override_applied": "non-listed-consultancy single source (same as VC-36)",
+      "rationale": "L.E.K. not on primary-consultancy list. Single source. Low."
+    },
+    {
+      "id": "PP-2.1-6",
+      "claim": "Indonesia spends only 17% of total health expenditure on health promotion and disease prevention.",
+      "sources": ["https://health-policy-systems.biomedcentral.com/articles/10.1186/s12961-024-01206-7"],
+      "tier": "primary-academic",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "Same as VC-33. Peer-reviewed 2024. High."
+    },
+    {
+      "id": "PP-2.2-1",
+      "claim": "73% of Indonesia's ~20M diabetics are undiagnosed (IDF Diabetes Atlas).",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC12076961/ (citing IDF Diabetes Atlas)"],
+      "tier": "primary-association (indirect)",
+      "confidence": "Medium",
+      "override_applied": "chain-of-citations — PMC12076961 cites IDF Diabetes Atlas; IDF Atlas itself is primary-association (top-tier). Accessed via secondary PMC citation, not directly from IDF Atlas. Medium.",
+      "rationale": "The IDF Diabetes Atlas is a primary-association source. Cited here only via a PMC paper that references it. Chain-of-citations rule: count as 1 source (IDF), but accessed indirectly. Medium."
+    },
+    {
+      "id": "PP-2.2-2",
+      "claim": "In the affluent cohort (~1.3M persons), approximately 77,000–104,000 are undiagnosed diabetics; in the upper-middle cohort (~6M persons), approximately 480,000–520,000 are undiagnosed diabetics.",
+      "sources": ["derived calculation from IDF 73% undiagnosis + WHO 11% prevalence + Stage 1 population sizing"],
+      "tier": "derived-composite",
+      "confidence": "Low",
+      "override_applied": "composite derivation — stacks IDF indirect citation, WHO prevalence, and Stage 1 assumed population sizes; multiple approximation layers",
+      "rationale": "Multi-step derived calculation with each input carrying its own uncertainty. Low."
+    },
+    {
+      "id": "PP-2.2-3",
+      "claim": "Each undiagnosed year of DM costs ~$2,000–4,000 in downstream complication treatment that could have been prevented with $300–500/year in managed primary care.",
+      "sources": ["no primary source cited for these specific figures"],
+      "tier": "none",
+      "confidence": "Low",
+      "override_applied": "no-source-cited — citations (3)(4) in the pain-points draft refer to PMC12425502 and PMC12681878, neither of which contains the $2,000–4,000 undiagnosed complication cost figure",
+      "rationale": "The $2,000–4,000/year complication cost and $300–500 managed care cost figures are not sourced to any cited document. Auto-Low."
+    },
+    {
+      "id": "PP-2.2-4",
+      "claim": "Healthier SG enrollment raised screening rates by 33.5 percentage points among enrolled individuals.",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC12763585/"],
+      "tier": "primary-academic",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "Same as VC-32. PMC RDD study. High."
+    },
+    {
+      "id": "PP-2.2-5",
+      "claim": "Among those aware of Healthier SG, 44.3% enrolled and 39.8% planned to enroll — combined 84% intent rate.",
+      "sources": ["https://annals.edu.sg/healthier-sg-awareness-and-enrolment/"],
+      "tier": "primary-academic",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "Same as VC-19. Annals of the Academy of Medicine Singapore. High."
+    },
+    {
+      "id": "PP-2.2-6",
+      "claim": "A comparable enrollment rate among Indonesia's upper-middle DM/HTN risk population would yield 200,000–400,000 households willing to pay for GP-anchored managed preventive care.",
+      "sources": ["[ASSUMED-4]"],
+      "tier": "none",
+      "confidence": "Low",
+      "override_applied": "ASSUMED-N auto-Low",
+      "rationale": "Draft tags ASSUMED-4 explicitly. Auto-Low."
+    },
+    {
+      "id": "PP-2.3-1",
+      "claim": "Indonesia employer health cost inflation 12.7% in 2023 (Aon Global Medical Trend Rates).",
+      "sources": ["https://www.shrm.org/topics-tools/news/benefits-compensation/aon-report-increase-projected-2024-employer-health-costs"],
+      "tier": "secondary-trade",
+      "confidence": "Low",
+      "override_applied": "trade-press-only (SHRM article citing Aon; same as VC-30)",
+      "rationale": "Same as VC-30. Low."
+    },
+    {
+      "id": "PP-2.3-2",
+      "claim": "Indonesia corporate wellness market $300M (2024); health screening 30% of service type (~$90M).",
+      "sources": ["https://www.tracedataresearch.com/industry-report/indonesia-corporate-wellness-market"],
+      "tier": "secondary-market-research",
+      "confidence": "Low",
+      "override_applied": "aggregator auto-downgrade (same as VC-45)",
+      "rationale": "TraceData Research aggregator. Low."
+    },
+    {
+      "id": "PP-2.3-3",
+      "claim": "Employer-sponsored health insurance covers 36.1–38.4% of Indonesian workforce (2018–2022 trend, stagnant).",
+      "sources": ["https://academic.oup.com/heapol/article/39/7/741/7702577"],
+      "tier": "primary-academic",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "Same as VC-31. Health Policy journal. High."
+    },
+    {
+      "id": "PP-2.3-4",
+      "claim": "An employer paying IDR 1.5–5M/employee/year would pay IDR 300K–600K/employee/year for post-MCU CDM management.",
+      "sources": ["[ASSUMED-5]"],
+      "tier": "none",
+      "confidence": "Low",
+      "override_applied": "ASSUMED-N auto-Low",
+      "rationale": "Draft tags ASSUMED-5. Auto-Low."
+    },
+    {
+      "id": "PP-2.3-5",
+      "claim": "Employer-provided MCU covers approximately 30–50% of formal white-collar workers in Tier-1 cities.",
+      "sources": ["[ASSUMED-6]"],
+      "tier": "none",
+      "confidence": "Low",
+      "override_applied": "ASSUMED-N auto-Low",
+      "rationale": "Draft tags ASSUMED-6 explicitly. Auto-Low."
+    },
+    {
+      "id": "PP-2.3-6",
+      "claim": "BPJS Ketenagakerjaan and BPJS Kesehatan have separate mandates; abnormal MCU finding in occupational health system does not auto-generate PROLANIS enrollment in health insurance system.",
+      "sources": ["https://p4h.world/en/documents/chronic-disease-management-programme-prolanis-in-indonesia","https://www.who.int/indonesia/news/detail/24-01-2025-tracking-every-rupiah--indonesia-s-bold-step-towards-universal-health-coverage"],
+      "tier": "primary-multilateral",
+      "confidence": "Medium",
+      "override_applied": "P4H is multilateral-adjacent; WHO Indonesia is primary-multilateral but does not specifically document the MCU-to-PROLANIS gap. Medium composite.",
+      "rationale": "Same as VC-48. Medium."
+    },
+    {
+      "id": "PP-2.4-1",
+      "claim": "Supplement + herbal market combined ~$5.8–6.0B annually (dietary supplements $3.04B + herbal $2.8B).",
+      "sources": ["https://www.globenewswire.com/news-release/2024/09/05/2941470/28124/en/Indonesia-Dietary-Supplements-Market-Report-2024.html","https://zenodo.org/records/14590743"],
+      "tier": "secondary-market-research",
+      "confidence": "Low",
+      "override_applied": "aggregator auto-downgrade (both are aggregator sources; same as VC-14 + VC-46)",
+      "rationale": "Two aggregator sources summed. Auto-downgrade both. Low."
+    },
+    {
+      "id": "PP-2.4-2",
+      "claim": "Kalbe + Sido Muncul + Tempo Scan estimated to hold 40–60% of organized supplement/herbal market.",
+      "sources": ["https://www.statista.com/statistics/1234788/kalbe-farma-net-sales-by-segment/","https://www.idnfinancials.com/news/53503/klbf-recorded-idr3-24-trillion-in-profit-up-17-13","https://www.indopremier.com/ipotnews/newsDetail.php?jdl=Financial+Statements+Full+Year+2023+of+SIDO&news_id=438684&group_news=RESEARCHNEWS&news_date=&taging_subtype=&name=&search=&q=&halaman="],
+      "tier": "secondary-market-research",
+      "confidence": "Low",
+      "override_applied": "aggregator auto-downgrade for all three sources; 40–60% market share figure is itself a derived estimate not directly sourced; audited IDX filings for Kalbe and Sido Muncul not cited",
+      "rationale": "Revenue figures from aggregators; market share estimate derived. Low."
+    },
+    {
+      "id": "PP-2.4-3",
+      "claim": "27.1% of chronic disease patients are traditional medicine users; DM 33.6%; cholesterol 34.3%; low adherence OR 2.49 (95% CI 2.17–2.85).",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC10102674/"],
+      "tier": "primary-academic",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "Same as VC-40. PMC peer-reviewed. High."
+    },
+    {
+      "id": "PP-2.4-4",
+      "claim": "51% of Yogyakarta hypertensive/diabetic patients used traditional medicine; 70.4% used herbal-only among users.",
+      "sources": ["https://www.nature.com/articles/s41598-025-31978-z"],
+      "tier": "primary-academic",
+      "confidence": "High",
+      "override_applied": null,
+      "rationale": "Same as VC-41. Scientific Reports 2025. High."
+    },
+    {
+      "id": "PP-2.4-5",
+      "claim": "44.2% of Indonesian households use traditional healthcare (Riskesdas 2018); 9.9% of diabetes patients are traditional medicine users.",
+      "sources": ["https://scholarhub.ui.ac.id/mjhr/vol27/iss1/5/"],
+      "tier": "secondary-academic",
+      "confidence": "Medium",
+      "override_applied": "same as VC-42 — underlying Riskesdas 2018 is primary-government but cited via secondary academic analysis; outdated (>5 years)",
+      "rationale": "Medium. Outdated-source and indirect citation."
+    },
+    {
+      "id": "PP-2.4-6",
+      "claim": "29% of Indonesians take supplements only when sick; 61% take regularly.",
+      "sources": ["https://www.dsgcp.com/insights/supplementing-indonesias-way-to-better-health"],
+      "tier": "secondary-trade",
+      "confidence": "Low",
+      "override_applied": "single-trade-source (DSG Consumer Partners blog)",
+      "rationale": "Same as VC-43. Low."
+    },
+    {
+      "id": "PP-2.5-1",
+      "claim": "A majority of first preventive care purchases in the upper-middle segment are event-driven (family illness diagnosis) rather than schedule-driven.",
+      "sources": ["[ASSUMED-11]"],
+      "tier": "none",
+      "confidence": "Low",
+      "override_applied": "ASSUMED-N auto-Low",
+      "rationale": "Draft tags ASSUMED-11 explicitly. Auto-Low."
+    }
+  ],
+  "weak_claims_to_re_research": [
+    {
+      "claim_id": "PP-2.1-2",
+      "claim_text": "Indonesia's total diabetes-related spending (BPJS + private OOP) is an estimated IDR 46.4 trillion/year (~$2.9B).",
+      "current_sources": ["none"],
+      "current_score": "Low",
+      "issue": "No source cited. The IDR 46.4 trillion figure is unsourced in the draft.",
+      "suggested_action": "Search BPJS Kesehatan Annual Report 2023 (bpjs-kesehatan.go.id/laporan-tahunan) for diabetes (DM/HTN) claim cost totals. Alternative: WHO Global Health Expenditure Database Indonesia diabetes cost estimate or Lancet PMC12681878 supplementary data.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP-2.2-3",
+      "claim_text": "Each undiagnosed year of DM costs ~$2,000–4,000 in downstream complication treatment that could have been prevented with $300–500/year in managed primary care.",
+      "current_sources": ["PMC12425502 and PMC12681878 cited but neither contains these figures"],
+      "current_score": "Low",
+      "issue": "No source cited for either the $2,000–4,000 complication cost or the $300–500 prevention cost. The citations listed do not support these specific figures.",
+      "suggested_action": "Search 'Indonesia diabetes complication cost hospitalization site:pmc.ncbi.nlm.nih.gov' for Indonesia-specific cost-of-illness studies. Alternatively fetch IDF Diabetes Atlas cost-of-illness country table for Indonesia or WHO-CHOICE Indonesia unit costs.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC-36",
+      "claim_text": "Indonesia's top 10–15 private hospital networks hold only ~10% of private hospital bed supply; ~180,000 private beds total.",
+      "current_sources": ["https://www.lek.com/insights/healthcare-services/indonesian-private-healthcare-investing-dual-speed-services-market"],
+      "current_score": "Low",
+      "issue": "L.E.K. Consulting is not on the rubric's primary-consultancy list. Single non-primary-consultancy source for a claim cited multiple times (PP-2.1-5 uses same figure). Critical to the fragmentation root-cause narrative.",
+      "suggested_action": "Search Indonesian Hospital Association (PERSI — Perhimpunan Rumah Sakit Seluruh Indonesia) statistics report for private hospital bed count by network type. Alternative: Indonesian Ministry of Health RS Online database (sirs.kemkes.go.id) for registered private hospital beds. Query: 'PERSI hospital statistics 2023 private beds Indonesia'.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC-30",
+      "claim_text": "Indonesia health cost inflation 12.7% in 2023 (Aon Global Medical Trend Rates 2023).",
+      "current_sources": ["https://www.shrm.org/topics-tools/news/benefits-compensation/aon-report-increase-projected-2024-employer-health-costs"],
+      "current_score": "Low",
+      "issue": "Trade-press-only override. SHRM article cites the Aon report but is not the Aon authored report. Indonesia-specific 12.7% figure is cited in PP-2.3 as a key cost driver for the B2B employer pain point.",
+      "suggested_action": "Fetch the Aon Global Medical Trend Rates 2023 report directly (aon.com/insurance/global-medical-trend-rates). If paywalled, search Willis Towers Watson Global Medical Trends Survey 2023 (wtwco.com) or Mercer Marsh Benefits Medical Trend Survey 2023 for Indonesia-specific figure as corroboration.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC-14",
+      "claim_text": "Indonesia dietary supplements market $3.04B in 2023, CAGR 6.43% through 2029.",
+      "current_sources": ["GlobeNewswire aggregator report (2024/09/05)", "Grand View Research Indonesia Nutraceuticals (broader market)"],
+      "current_score": "Low",
+      "issue": "Both sources are market-research aggregators (auto-downgrade). Cross-validation between two aggregators does not rescue the score. The supplement market size is the foundation for the $210–420/HH/year affluent spend estimate and the PP-2.4 leaky-bucket narrative.",
+      "suggested_action": "Search Euromonitor International Indonesia health and wellness supplement market 2023 (if accessible via library). Alternative: Kalbe Farma or PT Industri Jamu dan Farmasi Sido Muncul IDX annual reports (audited, primary-filing tier) for segment revenue as a floor check. Query BPOM Indonesia registered dietary supplement product count growth 2019–2023 as a proxy for market expansion rate.",
+      "priority": "medium"
+    }
+  ],
+  "evidence_quote_gaps": [],
+  "high_tier_claims_with_evidence": [],
+  "gate_decision_recommendation": "ship-with-flag",
+  "gate_reasoning": "Stage 2 scores 36.6% High, 16.9% Medium, and 45.1% Low across 71 scored claims. The High-tier cluster is strong: all key utilization-inequality statistics (PMC6661624), non-adherence data (PMC11052292), Lancet diabetes control figures (PMC12681878), the Frontiers Jakarta CDM barriers study, and the Singapore Healthier SG RDD study are well-sourced peer-reviewed academic work. However, 45% of claims are Low primarily because (a) 12 claims carry ASSUMED-N tags with no primary source, (b) market sizing figures (supplement market, corporate wellness market, Aon medical inflation, Vinmec financials) rely on aggregator or trade-press sources only, (c) three claims have no source at all (IDR 46.4 trillion diabetes spend, complication cost $2,000–4,000/year, travel friction costs), and (d) the private hospital bed-supply fragmentation figure relies solely on a non-listed consultancy (L.E.K.). The five weak claims flagged for deep research are actionable — three require specific government or primary-filing source fetches (BPJS annual report, PERSI/Kemkes hospital database, Aon direct report). The ASSUMED-N claims are inherently field-interview dependencies and cannot be resolved by web research alone. The core epidemiological and policy narrative is well-evidenced. Ship with flag: mark the three unsourced claims as data gaps in the final report and queue the five deep-research actions before final stage compilation."
+}

@@ -1,0 +1,297 @@
+{
+  "context": "per-stage",
+  "stage": 5,
+  "run_id": "2026-05-23-0736",
+  "total_claims_scored": 52,
+  "scoring_distribution": {
+    "high": {"count": 9, "percent": "17%"},
+    "medium": {"count": 25, "percent": "48%"},
+    "low": {"count": 18, "percent": "35%"}
+  },
+  "override_triggers": [
+    {
+      "override": "outdated-source",
+      "description": "Sources >3 years old with no recent cross-validation",
+      "claim_count": 3,
+      "claim_ids": ["VC-20-physician-density", "VC-25-finkelstein-table", "PP5.2-HTN-household-burden"]
+    },
+    {
+      "override": "auto-low-vendor",
+      "description": "AWS/Amazon press release amplifying Halodoc's own platform metrics (aboutamazon.com) — vendor-marketing surface for claim about Halodoc",
+      "claim_count": 1,
+      "claim_ids": ["PP5.1-halodoc-20M-MAU"]
+    },
+    {
+      "override": "ASSUMED-N",
+      "description": "Claims explicitly tagged ASSUMED without primary source",
+      "claim_count": 7,
+      "claim_ids": ["VC-16-ASSUMED-1", "VC-18-ASSUMED-2", "VC-26-ASSUMED-3", "PP5.1-ASSUMED-4", "PP5.1-ASSUMED-5", "PP5.2-ASSUMED-7", "PP5.3-ASSUMED-9-10"]
+    },
+    {
+      "override": "single-secondary-source",
+      "description": "Dyslipidemia prevalence routed through Alomedika (secondary clinical aggregator); Riskesdas original tagged NEEDS-ATTENDED-FETCH and not directly accessed",
+      "claim_count": 1,
+      "claim_ids": ["VC-11-dyslipidemia-prevalence"]
+    },
+    {
+      "override": "preprint-only",
+      "description": "medRxiv preprints (not peer-reviewed) used as sole source",
+      "claim_count": 2,
+      "claim_ids": ["VC-15-DM-HTN-comorbidity", "PP5.2-young-adult-HTN-55-44pct"]
+    },
+    {
+      "override": "no-citation",
+      "description": "Claim about private insurer inpatient-only coverage has no footnote in Stage 5 (deferred to Stage 3)",
+      "claim_count": 1,
+      "claim_ids": ["VC-24-insurer-coverage"]
+    },
+    {
+      "override": "non-indexed-journal",
+      "description": "JKN direct medical cost IDR 685M sourced from TEC Empresarial (Latin American business journal, not PMC-indexed or established public health journal)",
+      "claim_count": 2,
+      "claim_ids": ["VC-28-JKN-DM-cost", "PP5.1-cost-JKN"]
+    }
+  ],
+  "weak_claims_to_deep_research": [
+    {
+      "claim_id": "VC-11-dyslipidemia-prevalence",
+      "claim_text": "Adults ≥15 with total cholesterol ≥200 mg/dL: 28.8% (Riskesdas 2018); adults with total cholesterol above normal: 35.1%; dyslipidemia doubled from 15.9% (2013) to 28.8% (2018)",
+      "current_sources": ["https://www.alomedika.com/penyakit/endokrinologi/dislipidemia/epidemiologi"],
+      "current_score": "Low",
+      "issue": "Single secondary-aggregator source (Alomedika clinical reference); Riskesdas 2018 original MoH document tagged NEEDS-ATTENDED-FETCH; chain traces to Riskesdas but primary not directly accessed",
+      "suggested_action": "Attended-fetch of Riskesdas 2018 full report at https://www.litbang.kemkes.go.id/category/laporan/ OR access the WHO GHO country page for Indonesia lipids data; cross-validate with PMC-indexed secondary analysis of Riskesdas 2018 dyslipidemia data",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC-28-PP5.1-JKN-DM-cost",
+      "claim_text": "Mean annual direct medical cost for Type 2 DM patients under JKN 2023 was IDR 685 million ± IDR 1,808 million",
+      "current_sources": ["https://revistas.tec-ac.cr/index.php/tec_empresarial/article/view/781"],
+      "current_score": "Low",
+      "issue": "TEC Empresarial is a Costa Rican business/management journal not indexed in major medical databases; not a peer-reviewed public health or health economics journal of record for Indonesia JKN data; single non-primary source",
+      "suggested_action": "Search PubMed/PMC for JKN claims-based DM cost analyses in Indonesia (e.g., Andayani et al., or BPJS Kesehatan annual statistics report); alternatively search 'diabetes mellitus direct medical cost Indonesia JKN 2023 PMC'",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC-20-physician-density",
+      "claim_text": "Indonesia has 0.465 physicians per 1,000 population (2019), well below the WHO primary care threshold of 2.5 medical staff per 1,000",
+      "current_sources": ["https://www.indexmundi.com/facts/indonesia/indicator/SH.MED.PHYS.ZS"],
+      "current_score": "Low",
+      "issue": "Outdated-source override: 2019 data accessed via aggregator (IndexMundi), 7 years old. WHO HRH Country Profile (Sept 2024) is already cited as source (22) in PP5.3 and supersedes this figure — should cross-reference WHO HRH 2024 for current physician density",
+      "suggested_action": "Replace IndexMundi with the WHO Indonesia HRH Country Profile (already in corpus: cdn.who.int/media/docs/default-source/searo/his/hrh-profiles/indonesia_hrh_countryprofile_final_09232024.pdf) — extract the current physician density figure from that document",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "PP5.3-endocrinologist-count",
+      "claim_text": "Approximately 900–1,100 endocrinologists practicing in Indonesia; ratio ~0.35–0.40 per 100,000 adults",
+      "current_sources": ["https://www.devex.com/organizations/indonesian-society-of-endocrinology-perkeni-100863"],
+      "current_score": "Low",
+      "issue": "ASSUMED-10: figure derived from 48,212 total specialists × estimated 2% endocrinology share (WHO upper-middle-income proxy) — not a primary Perkeni membership count. Devex profile only confirms Perkeni exists and has 14 branches; it does not give a member headcount",
+      "suggested_action": "Attended-fetch of https://perkeni.org for membership/annual report data; alternatively search 'PERKENI number of endocrinologists Indonesia 2023 2024' in Google Scholar or via MoH SISDMK (health workforce information system)",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "PP5.2-young-adult-HTN-preprint",
+      "claim_text": "Among young adults 25–34: 55% undiagnosed hypertension in men, 44% in women",
+      "current_sources": ["https://www.medrxiv.org/content/10.1101/2024.06.10.24308678v1.full"],
+      "current_score": "Low",
+      "issue": "Single medRxiv preprint (not peer-reviewed); no peer-reviewed cross-validation for this age-specific undiagnosed HTN rate",
+      "suggested_action": "Check whether this medRxiv paper has been published in a peer-reviewed journal since June 2024; alternatively search BMC Public Health or J Hypertension for Indonesia young adult undiagnosed hypertension Riskesdas 2018 analysis",
+      "priority": "low"
+    }
+  ],
+  "high_tier_claims_with_evidence": [
+    {
+      "claim_id": "VC-2-IDF-Atlas-headline",
+      "claim_text": "Adults 20-79 with DM (2024): 20.4 million; DM prevalence 11.0% (11.3% age-standardised); Undiagnosed: 15.0 million (73.2%); Projected burden 2050: 28.6 million; Global ranking: 5th; Western Pacific: 3rd; Diabetes-related deaths 2024: 131,644; Direct healthcare spending: USD 6.3 billion (USD 308/capita); IGT/pre-diabetes: 16.3%",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://diabetesatlas.org/data-by-location/country/indonesia/",
+          "quote": "IDF Diabetes Atlas 11th Edition (2025) Indonesia country page: 20.4 million adults with diabetes (20-79 years), 73.2% undiagnosed, 5th globally by case count, 3rd largest undiagnosed pool in Western Pacific region.",
+          "context": "IDF Diabetes Atlas 11th Edition, Indonesia country data page, 2025",
+          "fetch_method": "WebFetch"
+        },
+        {
+          "url": "https://dbindonesia.kebijakankesehatanindonesia.net/2025/06/tantangan-diabetes-di-indonesia-wawasan-dari-idf-diabetes-atlas-edisi-ke-11/",
+          "quote": "Secondary Indonesian policy-site summary of IDF Atlas 11th Ed. data: 20.4 juta orang dewasa hidup dengan diabetes; 15,0 juta tidak terdiagnosis (73,2%); pengeluaran layanan kesehatan langsung USD 6,3 miliar (USD 308/orang vs rata-rata WPR USD 1.173).",
+          "context": "Kebijakan Kesehatan Indonesia / Diabetes Indonesia summary of IDF Atlas 11th Ed., June 2025",
+          "fetch_method": "WebFetch"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC-3-73pct-cross-validation",
+      "claim_text": "73.2% undiagnosed DM confirmed by IDF Atlas 11th Ed.; BRIN/BPS JAFES 2025 Riskesdas 2018 microdata analysis found 80% undiagnosed in high-glucose study sample — directionally consistent",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12097968/",
+          "quote": "Ferdina AR et al. JAFES 2025 (PMC12097968): analysis of Riskesdas 2018 microdata; Q5 wealth quintile diagnosed proportion 31.4% (68.6% undiagnosed); national pattern confirms large undiagnosed majority across all wealth quintiles.",
+          "context": "PMC12097968, JAFES 2025, Table 2 / wealth quintile subgroup analysis",
+          "fetch_method": "WebFetch"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC-7-HTN-cascade",
+      "claim_text": "HTN prevalence 34.1% Riskesdas 2018 (63.3 million adults); diagnosis rate 26.9% (2023); treatment 22.4%; control rate 4.2%",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41475816/",
+          "quote": "Muharram FR, Widyahening IS, Danaei G. BMJ Open 2025 (PMID 41475816): 'control rates have remained stagnant' — HTN control rate 2.3% (2013) to 4.2% (2023); treatment coverage doubled 10.4% to 22.4%; wealth disparities persist.",
+          "context": "PubMed abstract, BMJ Open 2025, PMID 41475816",
+          "fetch_method": "WebFetch"
+        },
+        {
+          "url": "https://en.antaranews.com/news/284145/341-of-indonesians-suffering-from-hypertension-ministry",
+          "quote": "Antara News citing Indonesia MoH Riskesdas 2018: 34.1% of Indonesians suffering from hypertension; approximately 63.3 million cases; only one in three hypertensives receives regular medication.",
+          "context": "Antara News English service, 2023, citing MoH Riskesdas 2018 press release",
+          "fetch_method": "WebFetch"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC-14-MetS-prevalence",
+      "claim_text": "MetS prevalence 21.66% nationally (IDF criteria, IFLS 2007); urban 25.19%; rural 17.72%; Jakarta 37.5%; Riskesdas 2018 Joint Criteria: 24.8%",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6448251/",
+          "quote": "Herningtyas EH, Ng TS. BMC Public Health 2019 (PMC6448251): MetS prevalence nationally 21.66% by IDF criteria; urban 25.19%, rural 17.72%; DKI Jakarta highest province at 37.50%; low HDL most prevalent component at 66.41%.",
+          "context": "PMC6448251, BMC Public Health 2019, Results section",
+          "fetch_method": "WebFetch"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9152785/",
+          "quote": "PMC9152785 (2022 Riskesdas 2018 analysis): MetS prevalence 24.8% using Joint Interim Statement criteria in Indonesian adults; consistent with rising NCD burden.",
+          "context": "PMC9152785, Riskesdas 2013 and 2018 analysis, 2022",
+          "fetch_method": "WebFetch"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC-27-DALY-CVD-burden",
+      "claim_text": "Indonesia DALYs for diabetes +44.96% (1990-2019), highest increase in SEA; CVD represents 21.34% of total Indonesia DALYs; CVD deaths doubled from 292K (1990) to 659K (2019); Indonesia 6th globally for CVD deaths",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10914682/",
+          "quote": "Wahidin et al. Scientific Reports 2024 (PMC10914682): Indonesia recorded highest DALYs increase for diabetes among SEA countries at +44.96% from 1990 to 2019 per GBD 2019 data.",
+          "context": "PMC10914682, Scientific Reports 2024, GBD analysis section",
+          "fetch_method": "WebFetch"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11043320/",
+          "quote": "Muharram et al. J Epidemiol Global Health 2024 (PMC11043320): CVD deaths in Indonesia more than doubled from 292,000 (1990) to 659,000 (2019); CVD burden 21.34% of total disease DALYs — highest proportion in SEA; Indonesia ranked 6th globally for CVD deaths.",
+          "context": "PMC11043320, J Epidemiol Global Health 2024, Results",
+          "fetch_method": "WebFetch"
+        }
+      ]
+    },
+    {
+      "claim_id": "PP5.1-frequency-640K-720K",
+      "claim_text": "640,000–720,000 affluent and upper-middle adults in the 8M addressable cohort carry undetected diabetes",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://diabetesatlas.org/data-by-location/country/indonesia/",
+          "quote": "IDF Atlas 11th Ed. (2025): Indonesia national undiagnosed proportion 73.2% of 20.4M diabetics = 15.0M undiagnosed; base rate applied to affluent urban cohort with downward urban adjustment to ~65% per PMC10874845 urban diagnosed rate data.",
+          "context": "IDF Diabetes Atlas 11th Edition, Indonesia country page; cross-referenced with PMC12519354 urban subgroup analysis",
+          "fetch_method": "WebFetch"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12519354/",
+          "quote": "Muharram et al. BMJ Open 2025 (PMC12519354): undiagnosed proportion confirmed dominant across all three Riskesdas waves (2013, 2018, 2023); undiagnosed share nationally 9.0% of all adults in 2023 wave.",
+          "context": "PMC12519354, BMJ Open 2025, serial analysis 2013-2023",
+          "fetch_method": "WebFetch"
+        }
+      ]
+    },
+    {
+      "claim_id": "PP5.1-Prolanis-Mobile-JKN",
+      "claim_text": "Mobile JKN averages fewer than 10 monthly consultations per contracted primary care facility; Thinkwell FGDs confirm platforms limited to teleconsultation and medicine delivery, not structured CDM",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://thinkwell.global/wp-content/uploads/2025/03/Telemedicine_in_Indonesia-FINAL-1.pdf",
+          "quote": "Thinkwell (March 2025, processed via markitdown): qualitative FGDs with Halodoc, Good Doctor, Alodokter, SehatQ, Vaskular Indonesia, GetWell, YesDok; platforms 'typically limited to teleconsultation and medicine delivery'; Mobile JKN under 10 consults/month per facility; in-demand specialties paediatrics, obstetrics, internal medicine, dermatology — not chronic disease monitoring.",
+          "context": "Thinkwell Telemedicine in Indonesia report, March 2025, FGD findings section",
+          "fetch_method": "markitdown"
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31860469/",
+          "quote": "Rachmawati et al. 2019 (PMID 31860469): Prolanis literature review — 'programme inadequacy in managing chronic diseases' despite BPJS Kesehatan coverage expansion.",
+          "context": "PubMed PMID 31860469, Prolanis literature review, 2019",
+          "fetch_method": "WebFetch"
+        }
+      ]
+    },
+    {
+      "claim_id": "PP5.2-HTN-control-stagnant",
+      "claim_text": "HTN control rate 2.3% (2013) → 4.2% (2023) despite treatment doubling from 10.4% to 22.4%; 'control rates have remained stagnant'",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41475816/",
+          "quote": "Muharram FR, Widyahening IS, Danaei G. BMJ Open 2025 (PMID 41475816): verbatim abstract — 'control rates have remained stagnant'; HTN controlled at target 2.3% (2013) → 4.2% (2023); treatment 10.4% → 22.4%; disparities between wealth groups persist.",
+          "context": "PubMed abstract PMID 41475816, BMJ Open 2025",
+          "fetch_method": "WebFetch"
+        }
+      ]
+    },
+    {
+      "claim_id": "PP5.2-undiagnosed-HTN-76pct",
+      "claim_text": "Undiagnosed hypertension rate 76.3% in adults 40 and over (IFLS 2016 data)",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10048049/",
+          "quote": "MDPI Healthcare 2023 (PMC10048049): undiagnosed hypertension 76.3% in Indonesian adults aged 40 and over using IFLS 2016 data; disparity patterning between diagnosed and undiagnosed hypertension documented.",
+          "context": "PMC10048049, MDPI Healthcare 2023, Results",
+          "fetch_method": "WebFetch"
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41475816/",
+          "quote": "Corroborated directionally by Muharram et al. BMJ Open 2025 (PMID 41475816): diagnosis rate only 26.9% of all hypertensives nationally in 2023 — implying 73.1% undiagnosed nationally, consistent with IFLS 2016 figure.",
+          "context": "PMID 41475816 cross-validation for direction of undiagnosed HTN estimate",
+          "fetch_method": "WebFetch"
+        }
+      ]
+    }
+  ],
+  "evidence_quote_gaps": [
+    {
+      "claim_id": "VC-2-IDF-Atlas-journal-paper",
+      "reason": "IDF Diabetes Atlas 11th Ed. journal article at diabetesjournals.org/care returns 403 error; tagged [NEEDS-ATTENDED-FETCH] in source document. Evidence quotes use country-page and policy-site secondary."
+    },
+    {
+      "claim_id": "VC-6-Lancet-DM-cascade",
+      "reason": "Lancet Regional Health Western Pacific full text (thelancet.com/journals/lanwpc) returns 403 error; tagged [NEEDS-ATTENDED-FETCH]. PMC12681878 open-access version is cited as alternative."
+    },
+    {
+      "claim_id": "VC-28-JKN-DM-cost",
+      "reason": "TEC Empresarial article at revistas.tec-ac.cr; not verified via standard fetch; scored Low on journal quality grounds; no verbatim quote extracted."
+    }
+  ],
+  "source_diversity": {
+    "primary_academic_pmc": 20,
+    "primary_multilateral_IDF_WHO": 2,
+    "primary_ministry_MOH": 1,
+    "primary_consultancy": 1,
+    "secondary_news": 2,
+    "secondary_trade_preprint": 3,
+    "secondary_aggregator": 1,
+    "auto_low_vendor_press_release": 1,
+    "non_indexed_journal": 1
+  },
+  "notable_source_quality_flags": [
+    "IDF Diabetes Atlas 11th Ed. accessed via Indonesian policy proxy site (kebijakankesehatanindonesia.net) rather than IDF direct; diabetesatlas.org country page is cited as cross-reference. Core figures defensible but attended-fetch of IDF journal paper recommended.",
+    "Dyslipidemia prevalence (VC-11) routed through Alomedika secondary aggregator with Riskesdas original on NEEDS-ATTENDED-FETCH — this is the highest-priority gap for Stage 5.",
+    "JKN DM cost IDR 685M (VC-28) sourced from TEC Empresarial, a non-standard journal for Indonesia health economics. This figure is cited as a cost anchor in PP5.1 and PP5.3. Recommend PMC-indexed replacement.",
+    "Physician density (VC-20) uses 2019 IndexMundi data; the WHO HRH Country Profile September 2024 is already in the corpus (PP5.3 source 8) and should be used to update this figure.",
+    "Halodoc 20M MAU (PP5.1) sourced from AWS/Halodoc co-issued press release — auto-low-vendor for capability/platform-scale claim about Halodoc."
+  ],
+  "gate_decision_recommendation": "ship-with-flag",
+  "gate_reasoning": "Stage 5 has strong epidemiological foundations. The core thesis claims — 73.2% undiagnosed DM, HTN control rate 4.2%, MetS enrichment in urban affluent cohort, DALYs trajectory — are all High confidence backed by peer-reviewed primary-academic or primary-multilateral sources. However, 35% of claims are Low, driven by four distinct issues: (1) dyslipidemia prevalence routed through a secondary aggregator rather than primary Riskesdas access; (2) the JKN DM cost figure (IDR 685M) sourced from a non-standard journal, making PP5.1 and PP5.3 cost anchors fragile; (3) multiple ASSUMED-N tags on commercially critical figures (endocrinologist count, affluent cohort per-patient spend, DPP cost-effectiveness); and (4) physician density outdated by 7 years. The stage can ship for downstream analysis but requires deep-research on three specific gaps before the JKN cost figure and dyslipidemia claims are used in financial modelling: (a) Riskesdas dyslipidemia direct fetch, (b) PMC-indexed JKN DM cost replacement, and (c) WHO HRH 2024 physician density substitution."
+}

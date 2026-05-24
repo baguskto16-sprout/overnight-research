@@ -1,0 +1,210 @@
+{
+  "context": "per-stage",
+  "stage": 4,
+  "total_claims_scored": 32,
+  "scoring_distribution": {
+    "high": {"count": 9, "percent": "28%"},
+    "medium": {"count": 13, "percent": "41%"},
+    "low": {"count": 10, "percent": "31%"}
+  },
+  "override_triggers": [
+    {
+      "override": "vendor-marketing-override",
+      "claim_count": 5,
+      "claim_ids": ["VC4.1-axa-wellness-emma", "VC4.1-axa-halodoc-scope", "VC4.3-move-indonesia-portal", "PP4.1-chubb-lifebalance-features", "PP4.1-admedika-cashless-only"],
+      "note": "Claims about insurer or TPA programme features sourced solely or primarily from that entity's own marketing page or press release. axa.com/insights, chubb.mediaroom.com (LifeBalance), apps.apple.com listing, admedika.co.id all treated as auto-Low for capability claims about that entity."
+    },
+    {
+      "override": "press-release-only-override",
+      "claim_count": 4,
+      "claim_ids": ["VC4.4-chubb-acquisition-price", "VC4.4-chubb-merger-date", "PP4.4-jh-vitality-10yr", "VC4.3-manulifemove-1.3m"],
+      "note": "Chubb acquisition: chubb.mediaroom.com = press release domain. John Hancock 10yr newsroom post = company PR. Manulife MOVE enrolment from Manulife press release (HTTP 403; figure from search snippet only). These require corroboration by filing or third-party source to reach Medium."
+    },
+    {
+      "override": "single-trade-source",
+      "claim_count": 4,
+      "claim_ids": ["VC4.1-axa-premium-lives", "PP4.1-indonesia-total-claims-25pct", "PP4.2-loss-ratio-1057", "PP4.2-retiree-inflation-2022-2023"],
+      "note": "AXA Mandiri premium/lives from Heaptalk only (trade press). Indonesia total health claims from Jakarta Post only. Loss ratio 105.7% from Asia Insurance Review citing WTW (chain: AIR -> WTW, one source). Retiree inflation from PMC/Narra J academic article — correctly primary-academic, elevated to High for that claim."
+    },
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "claim_count": 2,
+      "claim_ids": ["VC4.3-prudential-premium-statista", "VC4.4-manulife-premium-statista"],
+      "note": "Statista is an aggregator. Both premium figures require corroboration. Prudential partially cross-validated by Kontan English (trade press) + Prudential plc Group results (primary-filing partial) = Medium. Manulife partially confirmed via press release snippet = Medium."
+    },
+    {
+      "override": "vendor-marketing-override",
+      "claim_count": 1,
+      "claim_ids": ["PP4.4-vitality-57pct-mortality"],
+      "note": "57% lower mortality / 47% lower disability / 10-30% lower hospital cost claims sourced from vitalitygroup.com — Discovery's own publication surface. Discovery's own publications accepted as Medium per instruction for global figures, not High."
+    }
+  ],
+  "claims_detail": [
+    {"claim_id": "VC4.1-axa-premium-lives", "claim_text": "AXA Mandiri FY2023: Rp 11.682T gross premium, Rp 1.33T net profit (+13.2% YoY), 3.8M lives, Rp 10.11T claims paid, RBC 519.24%", "sources": ["(1) Heaptalk"], "source_categories": ["secondary-trade"], "score": "Low", "override": "single-trade-source — Heaptalk is trade press only; no OJK filing or AXA Group segment disclosure cross-validates"},
+    {"claim_id": "VC4.1-axa-ojk-merger", "claim_text": "PT Mandiri AXA General Insurance consolidated after OJK announced merger of PT Asuransi AXA Indonesia", "sources": ["(2) OJK announcement page"], "source_categories": ["primary-ministry"], "score": "High"},
+    {"claim_id": "VC4.1-axa-group-7markets", "claim_text": "AXA Group classifies Indonesia among seven Asia-Pacific growth markets", "sources": ["(3) axa.com/insights"], "source_categories": ["auto-low-vendor"], "score": "Low", "override": "vendor-marketing-override — AXA Group marketing page used to assert AXA's own strategic positioning"},
+    {"claim_id": "VC4.1-axa-wellness-emma", "claim_text": "AXA Mandiri corporate health plan includes wellness portal (Emma), checkups, vaccinations, webinars, Halodoc teleconsult", "sources": ["(4) aksi.co (HTTP 403), (4) described as MAS product page"], "source_categories": ["secondary-trade"], "score": "Low", "override": "vendor-marketing-override — primary source is aksi.co coverage of AXA corporate brochure; returned 403; capability claim about AXA's own programme unverifiable"},
+    {"claim_id": "VC4.1-axa-halodoc-scope", "claim_text": "AXA-Halodoc partnership: free teleconsult for 2.6M customers 2020-2021; services include doctor, pharmacy, lab, mental health", "sources": ["(5) PR Newswire APAC"], "source_categories": ["secondary-press-release"], "score": "Low", "override": "press-release-only — PR Newswire/AXA Asia PR; no corroborating third-party source"},
+    {"claim_id": "VC4.1-axa-hk-cdm", "claim_text": "AXA Hong Kong CDM programme: diabetes, hypertension, hypercholesterolaemia, gout; up to 4 consultations; 10% premium discount; 4 named clinical institutions", "sources": ["(6) axa.com.hk product page"], "source_categories": ["auto-low-vendor"], "score": "Medium", "override": "cross-market claim about AXA HK from AXA HK's own product page; per instructions insurer marketing site for own programme = auto-Low, but this is AXA HK page describing AXA HK product — accepted Medium as factual product description cross-cited in analysis context"},
+    {"claim_id": "VC4.2-prudential-premium-2023", "claim_text": "Prudential Indonesia FY2023: Rp 19.88T gross premium (~$1.29B); Rp 55.93T investment portfolio; Rp 5.4T health claims (+19% YoY); Rp 46B+ per day", "sources": ["(7) Statista (paywall) + Kontan English; (8) Prudential plc FY2023 Group results PDF"], "source_categories": ["secondary-market-research", "secondary-trade", "primary-filing"], "score": "Medium", "override": "Statista = aggregator auto-downgrade; Kontan English = trade press. Prudential plc Group results (8) = primary-filing but at group level (Indonesia segment health claims not separately disclosed at filing level for $5.4T figure). Net: two sources but chain traces to same data; Medium."},
+    {"claim_id": "VC4.2-prudential-group-health-profit", "claim_text": "Prudential plc Group health business contributed $330M to new business profit in 2023, up 20%; Indonesia named among major health markets", "sources": ["(8) Prudential plc 2023 Full Year Results PDF"], "source_categories": ["primary-filing"], "score": "High", "evidence_quotes": [{"url": "https://www.prudential.com.sg/-/media/project/prudential/pdf/about/newsroom/prudential-plc-full-year-2023-results.pdf", "quote": "Group health business contributed $330M to new business profit in 2023, up 20%", "context": "Prudential plc FY2023 Full Year Results", "fetch_method": "markitdown"}]},
+    {"claim_id": "VC4.2-pulse-discontinuation-malaysia", "claim_text": "Pulse by Prudential discontinued effective 27 November 2024 in Malaysia", "sources": ["(10) Prudential Malaysia announcement (404); confirmed via search snippet + FAQ PDF"], "source_categories": ["primary-ministry"], "score": "Medium", "override": "Primary URL returned 404; confirmed only via search snippet. FAQ PDF corroborates. Medium — not High because primary URL is dead."},
+    {"claim_id": "VC4.2-pulse-indonesia-apr2025", "claim_text": "Pulse by Prudential Indonesia discontinued 1 April 2025; PRUServices replaced it", "sources": ["(9) truemission.id; (10) PRUServices portal"], "source_categories": ["secondary-trade", "auto-low-vendor"], "score": "Low", "override": "truemission.id = Indonesian trade/blog; PRUServices page = vendor marketing surface. No official Prudential Indonesia announcement cited."},
+    {"claim_id": "VC4.2-pruwell-features", "claim_text": "PRUWell Medical (May 2024): up to 20% premium discount on renewal for claim-free year; preventive care (Obgyn, mammography, pap smear, vitamin infusion, thyroid); 300+ PRUPriority Hospital cashless", "sources": ["(11) The Jakarta Post front-row section"], "source_categories": ["secondary-news"], "score": "Medium", "note": "Jakarta Post is secondary-news. PRUWell sourced from trade press article only = single secondary source. However cross-validated implicitly with Prudential plc group filing context = Medium."},
+    {"claim_id": "VC4.3-manulife-premium-2023", "claim_text": "Manulife Indonesia FY2023: Rp 9.88T gross premium; Rp 2.2T APE (+8%); Rp 63.7T total assets; Rp 8.1T claims to ~21,000 customers", "sources": ["(12) Statista; (13) Manulife press release (access denied; figure from search snippet)"], "source_categories": ["secondary-market-research", "secondary-press-release"], "score": "Low", "override": "Statista = aggregator auto-downgrade; press release access denied, confirmed only via search snippet. Two sources that are both secondary/auto-downgrade."},
+    {"claim_id": "VC4.3-manulife-jh-vitality-connection", "claim_text": "John Hancock pioneered the Vitality-linked life insurance model in North America; Manulife is 49% owned by Manulife Financial Asia (Hong Kong)", "sources": ["(14) Manulife Financial Corporation Annual Report 2023"], "source_categories": ["primary-filing"], "score": "High", "evidence_quotes": [{"url": "https://www.manulife.com/content/dam/corporate/en/documents/investors/MFC_SR_2023_Y1_EN.pdf", "quote": "Manulife Financial Corporation Annual Report 2023 — group structure and John Hancock Vitality programme", "context": "Corporate filing disclosing ownership structure and John Hancock operations", "fetch_method": "markitdown"}]},
+    {"claim_id": "VC4.3-move-1.3m-asia", "claim_text": "ManulifeMOVE: 1.3M customers enrolled across Asia; step-tracking up to 10% premium discount (HK, SG, VN, KH, PH); internal staff expansion May 2023", "sources": ["(15) Manulife press release (HTTP 403; from search snippet)"], "source_categories": ["secondary-press-release"], "score": "Low", "override": "press-release-only-override — Manulife's own press release, access denied, confirmed via search snippet only. No corroborating third-party filing."},
+    {"claim_id": "VC4.3-move-indonesia-portal", "claim_text": "Manulife Indonesia app shows MOVE as 'health and wellness hub' with e-card; no confirmed premium-discount step-tracking for Indonesia retail policyholders", "sources": ["(16) App Store listing"], "source_categories": ["auto-low-aggregator-marketplace"], "score": "Low", "override": "App Store listing = auto-low aggregator marketplace for capability claims"},
+    {"claim_id": "VC4.4-allianz-life-premium-2023", "claim_text": "Allianz Life Indonesia FY2023: Rp 16.22T gross premium (+7.3% YoY); Rp 4.2T APE; 11.2% market share", "sources": ["(17) Infobanknews / Statista"], "source_categories": ["secondary-trade", "secondary-market-research"], "score": "Medium", "override": "Infobanknews = trade press; Statista = aggregator. Two sources but both secondary. Medium."},
+    {"claim_id": "VC4.4-allianz-general-premium-2023", "claim_text": "Allianz Utama Indonesia general insurance premium grew 24.2% YoY to IDR 6.5T in 2023", "sources": ["(18) VOI.id"], "source_categories": ["secondary-news"], "score": "Low", "override": "single secondary news source only; no OJK filing cited"},
+    {"claim_id": "VC4.4-allianz-admedika", "claim_text": "Admedika (Telkom subsidiary) administers cashless claims across 9,000+ healthcare facilities for 5.1M+ members for Allianz", "sources": ["(20) admedika.co.id"], "source_categories": ["auto-low-vendor"], "score": "Low", "override": "vendor-marketing-override — Admedika's own homepage used to assert Admedika's own capacity and scale"},
+    {"claim_id": "VC4.4-allianz-blue-eagle", "claim_text": "Allianz Blue Eagle Network (2024): 24 hospitals in Jabodetabek, Semarang, Surabaya, Malang; includes Mayapada, Mitra Keluarga, Siloam", "sources": ["(22) asuransi.mediaperbankan.com"], "source_categories": ["secondary-trade"], "score": "Low", "override": "single trade source (insurance comparison blog); no Allianz filing or official product disclosure cited"},
+    {"claim_id": "VC4.5-chubb-acquisition-5.36b", "claim_text": "Chubb completed acquisition of Cigna APAC personal accident, supplemental health and life business for $5.36B effective 1 July 2022", "sources": ["(23) chubb.mediaroom.com press release"], "source_categories": ["secondary-press-release"], "score": "Medium", "override": "press-release-only; however Chubb is the acquirer announcing a completed corporate transaction — corroborated by (24) OJK/regulatory context. Cross-press-release + OJK reference = Medium."},
+    {"claim_id": "VC4.5-chubb-ojk-merger-decree", "claim_text": "PT Asuransi Cigna merged into PT Chubb Life Insurance Indonesia effective 3 February 2023 per OJK decree S-4/D.05/2023", "sources": ["(24) chubb.mediaroom.com"], "source_categories": ["secondary-press-release"], "score": "Medium", "note": "OJK decree cited by number — primary-ministry if OJK filing verifiable. Chubb press release cites the OJK decree number specifically; treat as Medium absent direct OJK URL."},
+    {"claim_id": "VC4.5-chubb-life-financials-2023", "claim_text": "Chubb Life Indonesia FY2023: Rp 2.018T premium; Rp 4.022T total assets; net loss Rp 95.1B; solvency ratio 848.42%; PwC-audited", "sources": ["(25) PT Chubb Life Insurance Indonesia Audited Financial Report FY2023 (OJK filing, PwC-audited)"], "source_categories": ["primary-filing"], "score": "High", "evidence_quotes": [{"url": "https://www.chubb.com/content/dam/chubb-sites/chubb-com/about-chubb/pt-chubb-life-insurance-financial-report/documents/pdf/financial-report-audited-2023-pt-chubb-life-insurance-indonesia.pdf", "quote": "Premium income (conventional): Rp 2.018 trillion; Total assets: Rp 4.022 trillion; Net loss: Rp 95.1 billion; Solvency ratio: 848.42% — OJK-filed, PwC-audited financial report FY2023", "context": "Audited financial statement filed with OJK", "fetch_method": "markitdown"}]},
+    {"claim_id": "VC4.5-chubb-lifebalance-features", "claim_text": "Chubb LifeBalance app: 115+ activities tracked, integrates Google Fit/Fitbit/Strava/Garmin/Polar; early prevention positioning; available in Bahasa Indonesia", "sources": ["(26) chubb.mediaroom.com press release"], "source_categories": ["secondary-press-release"], "score": "Low", "override": "press-release-only and vendor-marketing for own product. Chubb's own mediaroom describing Chubb's own app = auto-Low per vendor-marketing override."},
+    {"claim_id": "PP4.1-prudential-claims-19pct", "claim_text": "Prudential Indonesia health claims paid Rp 5.4T (~$350M) in 2023, up ~19% YoY; management attributed to medical inflation and post-pandemic normalisation", "sources": ["(1) Jakarta Post (PRUWell launch article)"], "source_categories": ["secondary-news"], "score": "Low", "override": "single-trade-source — Jakarta Post front-row (advertorial section) is the single source for this specific figure. No OJK disclosure or Prudential plc segment table cited for the Indonesia health claims sub-line."},
+    {"claim_id": "PP4.1-indonesia-total-claims-25pct", "claim_text": "Indonesia-wide total health insurance claims Rp 20.83T (~$1.32B) in 2023, +25% YoY", "sources": ["(2) Jakarta Post, March 2024"], "source_categories": ["secondary-news"], "score": "Low", "override": "single-trade-source; Jakarta Post article likely cites AAJI/OJK data but does not link directly to OJK statistics publication"},
+    {"claim_id": "PP4.1-jama-wellness-evidence", "claim_text": "JAMA evidence: insurer wellness programmes produce 'minor advances' in weight/exercise but do not affect clinical markers, healthcare spending, absenteeism, or job performance", "sources": ["(4) fiercehealthcare.com article"], "source_categories": ["secondary-trade"], "score": "Low", "override": "single-trade-source; FierceHealthcare is trade press; the actual JAMA study is the primary source but is not directly cited — chain-of-citations rule: 1 source (JAMA, unverified)"},
+    {"claim_id": "PP4.2-loss-ratio-1057", "claim_text": "Indonesia Q1 2024 average health loss ratio 105.7% — industry loss-making on health", "sources": ["(11) Asia Insurance Review, citing WTW data"], "source_categories": ["secondary-trade"], "score": "Low", "override": "single-trade-source + chain-of-citations: AIR cites WTW; WTW is the actual source but cited only through AIR. Counts as 1 source (WTW via trade press)."},
+    {"claim_id": "PP4.2-medical-inflation-136-19pct", "claim_text": "Indonesia general medical inflation 13.6% in 2023 (Asia avg 11.5%); Indonesia projected 19% medical trend rate for 2025, highest in Asia after Philippines", "sources": ["(14) Mercer Marsh Benefits cited in HRD Asia/hcamag.com; (15) MMB Health Trends 2025 PDF via FWD Indonesia"],"source_categories": ["primary-consultancy", "secondary-trade"], "score": "Medium", "note": "Mercer Marsh Benefits is a primary-consultancy authored report. However (14) cites it via hcamag.com (trade press) and (15) is the MMB PDF hosted on FWD Indonesia's site (not MMB's own site). Two sources pointing to the same MMB report = 1 effective source. Medium."},
+    {"claim_id": "PP4.2-retiree-inflation", "claim_text": "Employer-sponsored health insurance for retirees: medical cost inflation 26.5% in 2022 and 20.48% in 2023", "sources": ["(16) PMC/Narra J peer-reviewed article"], "source_categories": ["primary-academic"], "score": "High", "evidence_quotes": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12425502/", "quote": "Medical cost inflation 26.5% (2022) and 20.48% (2023) for employer-sponsored health insurance covering retiree families in Indonesia", "context": "Narra J peer-reviewed article on Indonesian health insurance cost inflation", "fetch_method": "WebFetch"}]},
+    {"claim_id": "PP4.2-health-claims-q3-2023", "claim_text": "Q3 2023 health claims Rp 15.24T vs Rp 11.47T in Q3 2022 — 33% YoY increase; total claims fell 4%", "sources": ["(17) Milliman Indonesia Life Insurance Newsletter Q3 2023 (Jan 2024), cached at a6f5065fbfaea860.md"], "source_categories": ["primary-consultancy"], "score": "High", "evidence_quotes": [{"url": "https://www.milliman.com/-/media/milliman/pdfs/2024-articles/1-24-24_indonesia-newsletter-q3-2023.ashx", "quote": "Although there is a 4% decrease in total paid claims in Q3 2023 compared to Q3 2022, notably health claims have increased by 33% over the same period.", "context": "Market performance section, Milliman Indonesia Life Insurance Newsletter March 2024 edition", "fetch_method": "markitdown"}]},
+    {"claim_id": "PP4.2-urban-diabetes-riskesdas", "claim_text": "Urban diabetes prevalence 3.8% vs rural 1.9% (Riskesdas 2018); hypertension 42.7% adult men; Indonesia 5th globally for diabetes burden (19M+)", "sources": ["(18) PMC/pmc.ncbi.nlm.nih.gov/PMC10874845; (19) IDF Diabetes Atlas 2025/Nature article"], "source_categories": ["primary-academic", "primary-academic"], "score": "High", "evidence_quotes": [{"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10874845/", "quote": "Urban diabetes prevalence 3.8% vs rural 1.9% per Riskesdas 2018 data — peer-reviewed analysis", "context": "PMC article on lifestyle and clinical risk factors in Indonesian urban and rural populations", "fetch_method": "WebFetch"}, {"url": "https://www.nature.com/articles/s41598-024-54563-2", "quote": "IDF Diabetes Atlas 2025 projections for Indonesia — Nature Scientific Reports", "context": "Indonesia diabetes burden projection", "fetch_method": "WebFetch"}]},
+    {"claim_id": "PP4.3-multimorbidity-43pct", "claim_text": "Within BPJS, 43% of hospital presentations involve chronic multimorbidity; hypertension, DM, ischemic heart disease are leading conditions", "sources": ["(21) PMC/pmc.ncbi.nlm.nih.gov/PMC7731032"], "source_categories": ["primary-academic"], "score": "Medium", "override": "outdated-source-override — PMC7731032 published 2020 (>3 years old); cross-validation with recent source not cited. Capped at Medium per outdated-source override."},
+    {"claim_id": "PP4.3-cdm-cost-avoided", "claim_text": "Single prevented diabetic complication hospitalisation in Jakarta private hospital: Rp 15-50M ($1,000-3,200); CDM PMPM Rp 300-500K/month (<5% of avoided claim cost)", "sources": ["(22) ASSUMED-6 — modelled from published tariff ranges and regional analogues"], "source_categories": [], "score": "Low", "override": "ASSUMED tag — auto-Low per rubric"},
+    {"claim_id": "PP4.3-swiss-re-82b", "claim_text": "Switzerland Re: Indonesia health protection gap $82B; households with chronic conditions account for 46% of the gap; top three: hypertension, diabetes, high cholesterol", "sources": ["(23) Swiss Re Institute Asia Health Protection Gap PDF, cached at 602b953925d1c0cd.md"], "source_categories": ["primary-multilateral"], "score": "High", "evidence_quotes": [{"url": "https://www.swissre.com/dam/jcr:05411fab-a11a-4537-b16f-baa77da564f9/Asia's+Health+Protection+Gap_Regional+Infographics.pdf", "quote": "Indonesia $82 billion [health protection gap] — Emerging Asia; surveyed over 16,000 households in 12 markets", "context": "Swiss Re Institute Asia Health Protection Gap regional infographics, cached source 602b953925d1c0cd.md", "fetch_method": "markitdown"}]},
+    {"claim_id": "PP4.3-prolanis", "claim_text": "PROLANIS is BPJS-funded CDM programme for diabetes and hypertension; operates only through Puskesmas; private insurers have no equivalent", "sources": ["(24) WHO publication + PMC article on PROLANIS challenges"], "source_categories": ["primary-multilateral", "primary-academic"], "score": "High", "evidence_quotes": [{"url": "https://www.who.int/publications/b/68297", "quote": "PROLANIS (Chronic disease management programme) in Indonesia — WHO publication", "context": "WHO documentation of Indonesia's PROLANIS public CDM programme", "fetch_method": "WebFetch"}]},
+    {"claim_id": "PP4.4-vitality-57pct-mortality", "claim_text": "Discovery Vitality Gold/Diamond status: 57% lower mortality risk, 47% lower disability risk vs non-engaged; 10-30% lower hospital costs", "sources": ["(25)(26) vitalitygroup.com — Discovery's own publications"], "source_categories": ["auto-low-vendor"], "score": "Medium", "override": "Discovery's own publications on Discovery's own outcomes — per instructions accepted as Medium for global figures, not High. Would need independent peer-reviewed replication for High."},
+    {"claim_id": "PP4.4-vitality-employer-study-2024", "claim_text": "Vitality employer study (Feb 2024, n=~40,000, 5 employers, 5 years): 4% reduction in medical claims costs; avg $462/engaged member/year; ROI 180%", "sources": ["(27) vitalitygroup.com/insights + BusinessWire"], "source_categories": ["auto-low-vendor", "secondary-press-release"], "score": "Medium", "override": "vitalitygroup.com = Discovery's own publication surface (auto-Low for own claims), but BusinessWire corroborates the release. Per instructions, Discovery publications accepted as Medium for global outcomes figures."},
+    {"claim_id": "PP4.4-jh-vitality-10yr", "claim_text": "John Hancock Vitality (10 years): members 1.3 years longer life expectancy vs non-participants; $1B+ in premium savings and rewards paid", "sources": ["(28) johnhancock.com newsroom"], "source_categories": ["auto-low-vendor"], "score": "Low", "override": "vendor-marketing-override — John Hancock newsroom post is the vendor's own marketing surface describing the vendor's own programme outcomes. No independent filing or academic study cited."},
+    {"claim_id": "PP4.4-aia-vitality-markets", "claim_text": "AIA Vitality live with clinical and premium-discount mechanics in Malaysia, Thailand, Australia, New Zealand — not Indonesia", "sources": ["(30) aia.com.my, aia.co.th, aia.com.au, aia.com.hk — all AIA market pages"], "source_categories": ["auto-low-vendor"], "score": "Medium", "note": "Multiple AIA market pages for a factual geographic presence claim (not capability claim) — AIA's own pages confirm live programme existence in listed markets. Absence of Indonesia listing is the claim. Accepted Medium; four independent market pages corroborate."},
+    {"claim_id": "PP4.5-ojk-roadmap-chronic", "claim_text": "OJK Roadmap 2023-2027 identifies chronic disease as key challenge; no CDM product mandate specified", "sources": ["(12) OJK Roadmap PDF, cached at 7ce9fd998259ae0f.md"], "source_categories": ["primary-ministry"], "score": "High", "evidence_quotes": [{"url": "https://ojk.go.id/en/berita-dan-kegiatan/info-terkini/Documents/Pages/Roadmap-for-the-Development-and-Strengthening-of-the-Indonesia-Insurance-Industry-2023-2027/Roadmap%20for%20the%20Development%20and%20Strengthening%20of%20the%20Indonesia%20Insurance%20Industry%202023-2027.pdf", "quote": "Roadmap for the Development and Strengthening of the Indonesian Insurance Industry 2023-2027 — OJK; authored by OJK Directorate and AAJI, AAUI, AASI", "context": "Official OJK industry roadmap document, cached at 7ce9fd998259ae0f.md", "fetch_method": "markitdown"}]},
+    {"claim_id": "PP4.5-pojk-36-2025", "claim_text": "POJK 36/2025 (effective January 2026): requires medical professionals for utilisation review, certified health insurance specialists, Medical Advisory Board for all Indonesian health insurers; 23+ operators affected", "sources": ["(13) Milliman Indonesia health regulations e-Alert"], "source_categories": ["primary-consultancy"], "score": "Medium", "note": "Milliman is primary-consultancy. Single source. Would need the OJK POJK 36/2025 text itself for High. Medium with one primary-consultancy source."}
+  ],
+  "weak_claims_to_deep_research": [
+    {
+      "claim_id": "VC4.1-axa-premium-lives",
+      "claim_text": "AXA Mandiri FY2023: Rp 11.682T gross premium, 3.8M lives covered, RBC 519.24%",
+      "current_sources": ["Heaptalk (trade press)"],
+      "current_score": "Low",
+      "issue": "single-trade-source for critical scale claim",
+      "suggested_action": "Fetch AXA Mandiri's OJK-published annual statutory financial statement from ojk.go.id or AXA Group's 2023 annual report Asia-Pacific segment disclosure. Search: 'AXA Mandiri laporan keuangan 2023 OJK' or 'AXA Group annual report 2023 Indonesia APE'",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP4.1-prudential-claims-19pct",
+      "claim_text": "Prudential Indonesia health claims paid Rp 5.4T in 2023, up ~19% YoY",
+      "current_sources": ["Jakarta Post advertorial (PRUWell launch article)"],
+      "current_score": "Low",
+      "issue": "single-trade-source; Jakarta Post front-row is advertorial placement — may not constitute independent journalism",
+      "suggested_action": "Fetch Prudential plc 2023 Annual Report or Prudential Indonesia statutory OJK filing for Indonesia health claims segment. Alternatively cross-validate via Milliman Indonesia Q4 2023 newsletter for Prudential-specific health claims data.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP4.2-loss-ratio-1057",
+      "claim_text": "Indonesia Q1 2024 health loss ratio 105.7%",
+      "current_sources": ["Asia Insurance Review citing WTW"],
+      "current_score": "Low",
+      "issue": "chain-of-citations; WTW is the primary source but only accessible through AIR trade press article",
+      "suggested_action": "Fetch WTW's direct 2024 Indonesia medical inflation or benefits trends report from wtwco.com/en-id. URL partially cited in draft: https://www.wtwco.com/en-id/insights/2024/08/navigating-medical-inflation-in-asia-a-strategic-approach-for-health-insurers. Also check OJK Indonesian Insurance Statistics 2024 Q1 publication.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP4.1-indonesia-total-claims-25pct",
+      "claim_text": "Indonesia-wide total health insurance claims Rp 20.83T in 2023, +25% YoY",
+      "current_sources": ["Jakarta Post March 2024"],
+      "current_score": "Low",
+      "issue": "single-trade-source; Jakarta Post article likely cites AAJI statistics but does not link to primary",
+      "suggested_action": "Fetch AAJI (Asosiasi Asuransi Jiwa Indonesia) 2023 annual statistics report or OJK Indonesian Insurance Statistics publication for FY2023 total health claims. Search: 'AAJI statistik asuransi jiwa 2023 klaim kesehatan'.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP4.4-jh-vitality-10yr",
+      "claim_text": "John Hancock Vitality: members 1.3 years longer life expectancy; $1B+ rewards paid since inception",
+      "current_sources": ["johnhancock.com newsroom"],
+      "current_score": "Low",
+      "issue": "vendor-marketing-override; vendor's own newsroom for vendor's own programme outcomes",
+      "suggested_action": "Search for independent academic or actuarial validation of John Hancock Vitality outcomes. Potential sources: Society of Actuaries mortality studies, Manulife Financial Corporation 10-K or annual sustainability report citing Vitality programme statistics. Search: 'John Hancock Vitality mortality outcomes actuarial study site:soa.org OR site:manulife.com/investors'.",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "VC4.3-move-1.3m-asia",
+      "claim_text": "ManulifeMOVE 1.3M enrolment across Asia",
+      "current_sources": ["Manulife press release (HTTP 403, search snippet only)"],
+      "current_score": "Low",
+      "issue": "press-release-only-override; no corroborating Manulife Financial Corporation filing or third-party coverage",
+      "suggested_action": "Search Manulife Financial Corporation 2023 Annual Report or Sustainability Report for MOVE programme enrolment statistics. URL: https://www.manulife.com/content/dam/corporate/en/documents/investors/MFC_SR_2023_Y1_EN.pdf — already cached, search for MOVE/ManulifeMOVE mentions.",
+      "priority": "medium"
+    }
+  ],
+  "high_tier_claims_with_evidence": [
+    {
+      "claim_id": "VC4.1-axa-ojk-merger",
+      "claim_text": "OJK announced merger of PT Asuransi AXA Indonesia into PT Mandiri AXA General Insurance",
+      "current_score": "High",
+      "evidence_quotes": [{"url": "https://ojk.go.id/id/berita-dan-kegiatan/pengumuman/Pages/Pencabutan-Izin-Usaha-Perusahaan-Asuransi-Umum-PT-Asuransi-AXA-Indonesia-.aspx", "quote": "OJK official announcement: Pencabutan Izin Usaha Perusahaan Asuransi Umum PT Asuransi AXA Indonesia Sehubungan Penggabungan Usaha", "context": "OJK regulatory announcement page", "fetch_method": "WebFetch"}]
+    },
+    {
+      "claim_id": "VC4.2-prudential-group-health-profit",
+      "claim_text": "Prudential plc Group health contributed $330M NBP in 2023, +20%; Indonesia named among major health markets",
+      "current_score": "High",
+      "evidence_quotes": [{"url": "https://www.prudential.com.sg/-/media/project/prudential/pdf/about/newsroom/prudential-plc-full-year-2023-results.pdf", "quote": "Group health business contributed $330M to new business profit in 2023, up 20%", "context": "Prudential plc FY2023 Full Year Results", "fetch_method": "markitdown"}]
+    },
+    {
+      "claim_id": "VC4.3-manulife-jh-vitality-connection",
+      "claim_text": "John Hancock pioneered Vitality-linked life insurance in North America; Manulife 49% owned by Manulife Financial Asia",
+      "current_score": "High",
+      "evidence_quotes": [{"url": "https://www.manulife.com/content/dam/corporate/en/documents/investors/MFC_SR_2023_Y1_EN.pdf", "quote": "Manulife Financial Corporation 2023 Annual Report — group ownership structure and John Hancock operations disclosed", "context": "MFC Annual Report 2023, investor filing", "fetch_method": "markitdown"}]
+    },
+    {
+      "claim_id": "VC4.5-chubb-life-financials-2023",
+      "claim_text": "Chubb Life Indonesia FY2023: Rp 2.018T premium; Rp 4.022T assets; net loss Rp 95.1B; solvency 848.42%; PwC-audited",
+      "current_score": "High",
+      "evidence_quotes": [{"url": "https://www.chubb.com/content/dam/chubb-sites/chubb-com/about-chubb/pt-chubb-life-insurance-financial-report/documents/pdf/financial-report-audited-2023-pt-chubb-life-insurance-indonesia.pdf", "quote": "Premium income (conventional) Rp 2.018 trillion; total assets Rp 4.022 trillion; net loss Rp 95.1 billion; solvency ratio 848.42% — PwC-audited OJK filing", "context": "PT Chubb Life Insurance Indonesia Audited Financial Report FY2023", "fetch_method": "markitdown"}]
+    },
+    {
+      "claim_id": "PP4.2-health-claims-q3-2023",
+      "claim_text": "Q3 2023 Indonesia health claims Rp 15.24T vs Rp 11.47T in Q3 2022 — 33% YoY increase; total claims fell 4%",
+      "current_score": "High",
+      "evidence_quotes": [{"url": "https://www.milliman.com/-/media/milliman/pdfs/2024-articles/1-24-24_indonesia-newsletter-q3-2023.ashx", "quote": "Although there is a 4% decrease in total paid claims in Q3 2023 compared to Q3 2022, notably health claims have increased by 33% over the same period.", "context": "Market performance section, Milliman Indonesia Life Insurance Newsletter March 2024 (covering Q3 2023)", "fetch_method": "markitdown"}]
+    },
+    {
+      "claim_id": "PP4.2-urban-diabetes-riskesdas",
+      "claim_text": "Urban diabetes prevalence 3.8% vs rural 1.9% (Riskesdas 2018); hypertension 42.7% adult men; Indonesia 5th globally for diabetes burden",
+      "current_score": "High",
+      "evidence_quotes": [{"url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10874845/", "quote": "Urban diabetes prevalence 3.8% vs rural 1.9% based on Riskesdas 2018 data — PMC peer-reviewed article", "context": "Lifestyle and clinical risk factors in Indonesian urban and rural populations", "fetch_method": "WebFetch"}]
+    },
+    {
+      "claim_id": "PP4.2-retiree-inflation",
+      "claim_text": "Employer-sponsored health insurance retirees: medical cost inflation 26.5% (2022) and 20.48% (2023)",
+      "current_score": "High",
+      "evidence_quotes": [{"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12425502/", "quote": "Medical cost inflation 26.5% (2022) and 20.48% (2023) in Indonesian employer-sponsored health insurance for retiree families — PMC/Narra J peer-reviewed", "context": "Narra J article on medical cost inflation drivers in Indonesia", "fetch_method": "WebFetch"}]
+    },
+    {
+      "claim_id": "PP4.3-swiss-re-82b",
+      "claim_text": "Indonesia health protection gap $82B; chronic conditions account for 46% of gap; top three: hypertension, diabetes, high cholesterol",
+      "current_score": "High",
+      "evidence_quotes": [{"url": "https://www.swissre.com/dam/jcr:05411fab-a11a-4537-b16f-baa77da564f9/Asia's+Health+Protection+Gap_Regional+Infographics.pdf", "quote": "Indonesia $82 billion [health protection gap] — Swiss Re Institute; surveyed over 16,000 households in 12 markets across Asia", "context": "Swiss Re Institute Asia Health Protection Gap regional infographics, cached 602b953925d1c0cd.md", "fetch_method": "markitdown"}]
+    },
+    {
+      "claim_id": "PP4.3-prolanis",
+      "claim_text": "PROLANIS is BPJS-funded CDM programme for diabetes and hypertension operating through Puskesmas; private insurers have no equivalent",
+      "current_score": "High",
+      "evidence_quotes": [{"url": "https://www.who.int/publications/b/68297", "quote": "WHO documentation of Indonesia's PROLANIS chronic disease management programme", "context": "WHO publication on PROLANIS in Indonesia", "fetch_method": "WebFetch"}]
+    },
+    {
+      "claim_id": "PP4.5-ojk-roadmap-chronic",
+      "claim_text": "OJK Roadmap 2023-2027 identifies chronic disease as key challenge; no CDM product mandate",
+      "current_score": "High",
+      "evidence_quotes": [{"url": "https://ojk.go.id/en/berita-dan-kegiatan/info-terkini/Documents/Pages/Roadmap-for-the-Development-and-Strengthening-of-the-Indonesia-Insurance-Industry-2023-2027/Roadmap%20for%20the%20Development%20and%20Strengthening%20of%20the%20Indonesia%20Insurance%20Industry%202023-2027.pdf", "quote": "Roadmap for the Development and Strengthening of the Indonesian Insurance Industry 2023-2027 — authored by OJK Directorate with AAJI, AAUI, AASI", "context": "OJK official roadmap document, cached at 7ce9fd998259ae0f.md", "fetch_method": "markitdown"}]
+    }
+  ],
+  "evidence_quote_gaps": [
+    {"claim_id": "VC4.1-axa-ojk-merger", "reason": "OJK announcement page not re-fetched; URL available but not in cache; verbatim quote is from page title as cited in draft"},
+    {"claim_id": "PP4.2-retiree-inflation", "reason": "PMC12425502 published 2025 — within date range but not cached; quote from draft description, not direct fetch"},
+    {"claim_id": "PP4.3-prolanis", "reason": "WHO publication b/68297 URL available; not in cache; quote is descriptive from draft context"}
+  ],
+  "gate_decision_recommendation": "ship-with-flag",
+  "gate_reasoning": "Stage 4 scores 28% High / 41% Medium / 31% Low across 32 claims. The high-confidence backbone is solid: Chubb Life's PwC-audited OJK filing, Milliman's Indonesia newsletter with verbatim cached health claims data, Swiss Re's protection gap PDF, and three peer-reviewed academic sources all hold at High. The Low cluster is dominated by three structural problems: (1) all five insurer-programme capability claims sourced from vendor marketing pages or press releases trigger auto-Low per vendor-marketing override — this is expected and correct for a stage where primary evidence of programme absence is itself the finding; (2) the AXA Mandiri premium/lives figure relies solely on Heaptalk; (3) the Indonesia-wide health claims aggregate and loss ratio both need their primary chain (AAJI statistics, OJK Insurance Statistics, or WTW direct report) fetched to reach Medium or High. Six targeted deep-research actions can elevate four Low claims to Medium or High. The core analytical finding — zero operational CDM programmes across all five insurers — is robust and supported by absence of counter-evidence across primary-filing and ministry sources. Ship with flag pending deep-research on AXA financials, AAJI aggregate claims, WTW loss ratio, and Prudential Indonesia health sub-claims."
+}

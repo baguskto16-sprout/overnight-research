@@ -1,0 +1,84 @@
+{
+  "claim_id": "pp-1.3-1",
+  "claim_text": "Indonesia logistics costs 23% of GDP vs ASEAN average 13–15%",
+  "original_weakness": "Mordor Intelligence (aggregator) — auto-downgraded",
+  "deep_research_date": "2026-05-23",
+  "outcome": "found-stronger-evidence",
+  "new_sources": [
+    {
+      "url": "https://documents1.worldbank.org/curated/en/993771468285047652/pdf/808710REVISED00rt04SEPT20130ENGLISH.pdf",
+      "canonical_page": "https://documents.worldbank.org/curated/en/993771468285047652/State-of-logistics-Indonesia-2013",
+      "category": "primary-multilateral",
+      "publisher": "World Bank (joint with Bandung Institute of Technology / Indonesian Ministry of Transport)",
+      "publication_date": "2013-09",
+      "supports_claim": true,
+      "key_data": "Indonesia logistics costs: 24.64% of GDP in 2011 (down from 27.61% in 2004); 8-year average 26.03% of GDP. Table 3.1 ASEAN comparison: Malaysia 13%, Singapore 8%, Indonesia 27% (upper bound per SISLOGNAS 2012).",
+      "via_pdf_markitdown": true,
+      "notes": "Primary World Bank authored report, not aggregator. Directly supports Indonesia being materially above ASEAN peers. The 13% Malaysia figure aligns with the ASEAN lower-end in the claim, but Thailand (20%) and Vietnam (25%) were also high — so 'ASEAN average 13–15%' understates ASEAN spread."
+    },
+    {
+      "url": "https://www.worldbank.org/en/news/press-release/2016/11/02/indonesia-400-million-approved-for-logistics-reform",
+      "category": "primary-multilateral",
+      "publisher": "World Bank",
+      "publication_date": "2016-11-02",
+      "supports_claim": true,
+      "key_data": "Indonesia logistics costs = 25% of manufacturing sales vs. Malaysia 13%, Thailand 15%. Press release by World Bank Country Director Rodrigo Chaves and Senior Economist Massimiliano Calì.",
+      "via_pdf_markitdown": false,
+      "notes": "Manufacturing-sales metric differs from GDP metric, but directionally confirms Indonesia substantially above Malaysia (13%) and Thailand (15%), which maps to the claim's ASEAN comparison range of 13–15%."
+    },
+    {
+      "url": "https://en.antaranews.com/news/293688/bappenas-aims-to-lower-indonesias-logistics-costs-to-9-of-gdp",
+      "category": "primary-gov",
+      "publisher": "ANTARA News (Indonesian state news agency) reporting National Development Planning Minister / Bappenas head Suharso Monoarfa",
+      "publication_date": "2023-09-14",
+      "supports_claim": true,
+      "key_data": "Bappenas: domestic logistics costs 14.29% of GDP + export logistics 8.98% of GDP = combined ~23.27% of GDP. Target reduction to 9% of GDP by 2045.",
+      "via_pdf_markitdown": false,
+      "notes": "This is the direct provenance of the '23%' figure: Bappenas combined domestic+export logistics cost. Government minister statement citing Bappenas own study."
+    },
+    {
+      "url": "https://www.antaranews.com/berita/3765792/pemerintah-sebut-biaya-logistik-nasional-capai-1429-persen-dari-pdb",
+      "category": "primary-gov",
+      "publisher": "ANTARA News (Indonesian state news agency) reporting Kemenko Perekonomian (Coordinating Ministry for Economic Affairs) Secretary Susiwijono Moegiarso",
+      "publication_date": "2023-10-10",
+      "supports_claim": true,
+      "key_data": "National logistics costs = 14.29% of GDP based on BPS (Statistics Indonesia) data. Quote: 'Biaya logistik nasional yang mendasarkan pada perhitungan kita pada tingkat nasional, dengan menggunakan basis data BPS, biaya logistik kita mencapai 14,29 persen dari PDB.' (Government: national logistics costs reach 14.29% of GDP using BPS data.)",
+      "via_pdf_markitdown": false,
+      "notes": "Kemenko Perekonomian + Bappenas + BPS jointly confirmed the 14.29% domestic figure in 2023. Combined with 8.98% export = 23.27% total, matching the claim."
+    },
+    {
+      "url": "https://devtechsys.com/insights/2022/09/19/achieving-economic-growth-through-improved-export-logistics-in-indonesia/",
+      "category": "secondary-industry",
+      "publisher": "DevTech Systems (USAID contractor), citing Indonesia Ministry of Finance 2021",
+      "publication_date": "2022-09-19",
+      "supports_claim": true,
+      "key_data": "Indonesia spends 'more than 23.5 percent of its gross domestic product (GDP) on logistics-related costs' — citing Ministry of Finance 2021. Global average 13% (World Bank). No specific ASEAN average given.",
+      "via_pdf_markitdown": false,
+      "notes": "Secondary source but cites primary Indonesian government (Ministry of Finance) and World Bank. Corroborates 23%+ figure independently."
+    }
+  ],
+  "suggested_revision": "Replace claim with: 'Indonesia's total logistics costs (domestic + export) represent approximately 23% of GDP — comprising 14.29% domestic and 8.98% export components per Bappenas/BPS 2022 data (Antara, Sept 2023) — versus Malaysia at 13% and Thailand at 15–20% per World Bank analysis (2013, 2016). The claim's framing of an ASEAN average of 13–15% is directionally accurate for lower-cost peers (Malaysia, Singapore) but does not reflect higher-cost ASEAN peers (Vietnam ~25%, Thailand ~20% as of 2013). A more precise formulation: Indonesia logistics costs ~23% of GDP vs lower-end ASEAN peers Malaysia (13%) and Singapore (8%); the regional spread is wide. [Sources: World Bank State of Logistics Indonesia 2013 PDF; World Bank Press Release Nov 2016; Bappenas/Antara Sept 2023; Kemenko Perekonomian/BPS/Antara Oct 2023]'",
+  "suggested_new_score": "High",
+  "claim_accuracy_assessment": {
+    "indonesia_23pct_figure": "CONFIRMED — Bappenas (2022/2023) via ANTARA state news agency and Kemenko Perekonomian, combining domestic (14.29%) + export (8.98%) logistics costs. Historical World Bank figures: 24.64% (2011), ~24% (2013), ~25% manufacturing sales (2016).",
+    "asean_average_13_15pct": "PARTIALLY CONFIRMED — The 13–15% range fits Malaysia (13%) and Thailand (15%) as named peers per World Bank 2016 press release and World Bank 2013 Table 3.1. However, 'ASEAN average' is imprecise: Thailand was ~20%, Vietnam ~25% as of 2013 per same World Bank report. The claim is accurate when interpreted as comparing Indonesia to selected lower-cost ASEAN peers, not a weighted ASEAN average.",
+    "directional_claim_valid": true
+  },
+  "reasoning": "The 23% figure is directly supported by Bappenas (Indonesia's national planning agency) combined with BPS (Statistics Indonesia) data published via Indonesia's state news agency ANTARA in September–October 2023, and corroborated by World Bank primary reports from 2013 and 2016 showing Indonesia at 24–27% during that earlier period. The ASEAN 13–15% comparison figure is accurate for named peers Malaysia and Thailand, and directly stated in the World Bank 2016 press release; however, 'ASEAN average' is misleading since Vietnam and Thailand were also high-cost at the time. The claim is substantially correct and evidenced by Tier 1 government/multilateral sources; recommend upgrading to High confidence with a minor caveat on the ASEAN average framing.",
+  "searches_performed": [
+    "Indonesia logistics cost percentage GDP World Bank Logistics Performance Index 2023 2024",
+    "site:worldbank.org Indonesia logistics cost GDP percentage",
+    "site:adb.org Indonesia logistics cost GDP percentage ASEAN comparison",
+    "Indonesia logistics cost 23% GDP Bappenas national logistics blueprint 2025",
+    "Bappenas Indonesia logistics cost GDP 23 percent 2023 site:bappenas.go.id OR site:antaranews.com",
+    "World Bank 'State of Logistics Indonesia' 2013 24 percent GDP ASEAN comparison PDF",
+    "ASEAN logistics cost percentage GDP comparison Malaysia Thailand Vietnam 13 15 percent ADB 2022 2023",
+    "Indonesia logistics cost GDP percentage 23 percent 2022 2023 site:pwc.com OR site:deloitte.com OR site:mckinsey.com",
+    "Indonesia 'biaya logistik' '23' OR '14.29' persen PDB Bappenas BPS 2022 2023 GDP",
+    "Indonesia logistics cost 23 percent GDP 2022 2023 Kemenko Perekonomian OR BKPM OR Ministry of Trade"
+  ],
+  "categories_searched": ["primary-gov", "primary-multilateral", "secondary-consultancy"],
+  "pdf_sources_processed": [
+    "https://documents1.worldbank.org/curated/en/993771468285047652/pdf/808710REVISED00rt04SEPT20130ENGLISH.pdf"
+  ]
+}

@@ -1,0 +1,539 @@
+{
+  "stage": 1,
+  "files_validated": [
+    "output/raw-claude-overnight/2026-05-23-0152/pass-1-drafts/stage-1-value-chain.md",
+    "output/raw-claude-overnight/2026-05-23-0152/pass-1-drafts/stage-1-pain-points.md"
+  ],
+  "claim_count_total": 45,
+  "claims_by_tier": {
+    "high": 7,
+    "medium": 11,
+    "low": 27,
+    "speculative": 0
+  },
+  "low_pct": 60.0,
+  "high_tier_claims_with_evidence": [],
+  "claims_detail": [
+    {
+      "id": "vc-1",
+      "claim": "Manual carrier packet collection averages 35–45 minutes per carrier per new engagement",
+      "source_url": "https://www.dat.com/resources/carrier-onboarding-guide",
+      "source_tier": "secondary-trade (vendor marketing / advisory blog)",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single source. DAT is a vendor; this is their own educational/marketing content. No independent time study cited. Trade-press-only override applies — single source, vendor-adjacent."
+    },
+    {
+      "id": "vc-2",
+      "claim": "DAT OnBoard pricing: $50/month base for up to 50 carriers",
+      "source_url": "https://www.dat.com/blog/new-carrier-onboarding-software-fast-accurate-100-mobile",
+      "source_tier": "auto-low-vendor",
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "DAT.com blog citing DAT OnBoard's own pricing — vendor-marketing override. Claim is about DAT's own product."
+    },
+    {
+      "id": "vc-3",
+      "claim": "Highway entry-price $349/month via AscendTMS integration for SMB brokers",
+      "source_url": "https://www.brokerpro.com/integrations/partners/highway/",
+      "source_tier": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single secondary source (BrokerPro partner page). Not Highway's own site, but still only one source for a pricing claim. Trade-press-only override: single trade/partner source for a pricing claim."
+    },
+    {
+      "id": "vc-4",
+      "claim": "Carrier411 aggregates 18–20 FMCSA data sources; 3,000+ broker subscribers including 97 of top 100 US brokers",
+      "source_url": "https://www.freightwaves.com/news/carrier411-strives-to-protect-brokers-from-unsafe-carriers",
+      "source_tier": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single FreightWaves article. The underlying metrics are Carrier411's own self-reported figures laundered through trade press. Vendor-marketing override (vendor's own statistics about its own product and reach, cited via trade press). Single-domain override also applies."
+    },
+    {
+      "id": "vc-5",
+      "claim": "Global carrier onboarding and compliance platform market size $1.54B–$1.62B (2024)",
+      "source_url": "https://growthmarketreports.com/report/carrier-onboarding-and-compliance-platform-market; https://dataintelo.com/report/carrier-onboarding-platform-market",
+      "source_tier": "secondary-market-research",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Both sources are aggregator market-research firms (Growth Market Reports / MarketIntelo, Dataintelo). Aggregator market-research auto-downgrade applies. No primary-tier cross-validation. Draft itself flags Data gap."
+    },
+    {
+      "id": "vc-6",
+      "claim": "Global freight broker software market ~$20B (2024, broader scope including TMS, rate tools, compliance)",
+      "source_url": "https://markwideresearch.com/global-freight-broker-software-market/",
+      "source_tier": "secondary-market-research",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single aggregator market-research source (MarkWide Research). Aggregator auto-downgrade. No methodology disclosed."
+    },
+    {
+      "id": "vc-7",
+      "claim": "Asia-Pacific carrier onboarding and compliance platform market ~$340M (2024)",
+      "source_url": "https://growthmarketreports.com/report/carrier-onboarding-and-compliance-platform-market",
+      "source_tier": "secondary-market-research",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Aggregator market-research auto-downgrade. APAC-as-proxy override also triggered — APAC aggregate used as proxy for SEA/country-specific need. Geography mismatch flagged."
+    },
+    {
+      "id": "vc-8",
+      "claim": "Global carrier onboarding platform CAGR 12.8%–13.7% (2025–2033)",
+      "source_url": "https://growthmarketreports.com/report/carrier-onboarding-and-compliance-platform-market; https://dataintelo.com/report/carrier-onboarding-platform-market",
+      "source_tier": "secondary-market-research",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Both sources from same aggregator market-research family (chain-of-citations rule: both likely share same primary dataset). Aggregator auto-downgrade applies."
+    },
+    {
+      "id": "vc-9",
+      "claim": "North America holds ~38% share of global carrier onboarding platform market (=$590M–$615M)",
+      "source_url": "https://growthmarketreports.com/report/carrier-onboarding-and-compliance-platform-market",
+      "source_tier": "secondary-market-research",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Derived figure from aggregator source. Aggregator auto-downgrade. Additionally a derived calculation from an already-Low-confidence market size figure."
+    },
+    {
+      "id": "vc-10",
+      "claim": "Highway blocked ~915,000 fraud attempts in 2024; serves 1,050+ brokers including 70 of top 100",
+      "source_url": "https://www.freightwaves.com/news/carrier-identity-platform",
+      "source_tier": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "FreightWaves reporting Highway's own self-disclosed metrics from a fundraise announcement. Vendor-marketing override applies — Highway's own statistics about its own platform coverage and performance cited via trade press proxy. Single trade source."
+    },
+    {
+      "id": "vc-11",
+      "claim": "Highway launched Trusted Freight Exchange (TFX) in 2025",
+      "source_url": "https://www.freightwaves.com/news/highway-launches-trusted-freight-exchange-to-counter-fraud-and-improve-transparency",
+      "source_tier": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "med",
+      "rationale": "Single secondary trade source (FreightWaves), but this is a product-launch fact (existence claim, not a performance/market claim). Not a vendor self-cite from highway.com. Scored Medium — factual event, single trade source, but product launch news is corroborated by the nature of the coverage."
+    },
+    {
+      "id": "vc-12",
+      "claim": "Highway SMB pricing range $50–$500/seat/month (entry via AscendTMS at $349/month)",
+      "source_url": "https://www.brokerpro.com/integrations/partners/highway/; https://carrieratlas.com/carrier-packets.php",
+      "source_tier": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "med",
+      "rationale": "Two independent secondary sources (BrokerPro partner page + Carrier Atlas comparison site) from different publication families confirming the same pricing range. Not highway.com. Two secondary sources, neither primary. Medium."
+    },
+    {
+      "id": "vc-13",
+      "claim": "Descartes acquired MyCarrierPortal for $24M upfront + up to $6M earn-out (September 2024)",
+      "source_url": "https://www.globenewswire.com/news-release/2024/09/18/2948080/0/en/Descartes-Acquires-MyCarrierPortal.html",
+      "source_tier": "secondary-press-release",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Press-release-only override: GlobeNewswire is a press-release wire. Descartes (DSGX) is a public company; this acquisition would be disclosed in SEC filings (20-F), but no filing is cited — only the press release. Press-release-only override applies. Needs corroboration from DSGX 20-F or 10-K."
+    },
+    {
+      "id": "vc-14",
+      "claim": "RMIS accelerates onboarding 80% vs. manual process",
+      "source_url": "https://tekpon.com/software/truckstop-rmis/reviews/",
+      "source_tier": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single trade/review site sourcing a vendor performance claim. Trade-press-only override for an operating-efficiency claim. Effectively a vendor marketing figure cited via review aggregator."
+    },
+    {
+      "id": "vc-15",
+      "claim": "RMIS Lite pricing $340/month",
+      "source_url": "https://tekpon.com/software/truckstop-rmis/reviews/",
+      "source_tier": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single review site. Pricing claims for SaaS products from review sites are single-source and often outdated. Low."
+    },
+    {
+      "id": "vc-16",
+      "claim": "Legal experts warned FreightGuard creates open-ended tort liability for brokers from false reporting",
+      "source_url": "https://www.overdriveonline.com/business/article/15705912/carrier411-makes-big-changes-to-its-freightguard-carrier-reports",
+      "source_tier": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single trade press source (Overdrive) for a legal-risk claim. Trade-press-only override for a legal/liability claim. Needs primary legal source (court filing, law review, or named attorney statement in legal journal)."
+    },
+    {
+      "id": "vc-17",
+      "claim": "Carrier Assure integrates with Descartes MyCarrierPortal (partner relationship)",
+      "source_url": "https://www.mycarrierportal.com/partners/carrier-assure/",
+      "source_tier": "auto-low-vendor",
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "mycarrierportal.com partner page describing MyCarrierPortal's own partnership — vendor marketing about its own product ecosystem. Auto-Low vendor-marketing override."
+    },
+    {
+      "id": "vc-18",
+      "claim": "Overhaul FraudWatch: 14% of carriers flagged high-risk, 7% potential bad actors, 12% operating without proper FMCSA authority",
+      "source_url": "https://www.freightwaves.com/news/overhauls-fraudwatch-a-new-paradigm-in-the-freight-industry",
+      "source_tier": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "FreightWaves citing Overhaul's own internal data/metrics about Overhaul's own product performance. Vendor-marketing override applies — vendor's own statistics about its own platform, laundered through trade press. Single source."
+    },
+    {
+      "id": "vc-19",
+      "claim": "Overhaul serves 350+ customers including Microsoft, Dyson, Bristol Myers Squibb; safeguards $1.4T in cargo trade; raised $55M + $105M Series C",
+      "source_url": "https://techcrunch.com/2025/01/10/overhaul-keeps-tabs-on-cargo-for-customers-like-microsoft-and-dyson/",
+      "source_tier": "secondary-news",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single tech press source (TechCrunch) reporting Overhaul's own marketing figures. PRNewswire cited for Series C = press release only. Series C amount needs Form D or SEC filing. Vendor-marketing override for customer/revenue metrics. Single secondary."
+    },
+    {
+      "id": "vc-20",
+      "claim": "Trans.eu: 40,000+ users across 40+ countries, 25,000 active spot carriers, 21,000-entity database",
+      "source_url": "https://enterprise.trans.eu/en/; GetApp/Capterra reviews",
+      "source_tier": "auto-low-vendor",
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "Trans.eu platform page + GetApp/Capterra reviews. trans.eu on trans.eu's own user counts = vendor-marketing override. Capterra/GetApp for capability/reach claims = auto-low aggregator-marketplace."
+    },
+    {
+      "id": "vc-21",
+      "claim": "FreightValidate is a carrier/broker identity verification system serving shippers, carriers, brokers, load boards, and factoring companies",
+      "source_url": "https://freightvalidate.com/aboutus; CargoRex listing",
+      "source_tier": "auto-low-vendor",
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "freightvalidate.com About page = vendor marketing about FreightValidate's own product. CargoRex = secondary marketplace listing. Both auto-low. Product existence is the only claim, so flagged Low but notes this is an existence claim only."
+    },
+    {
+      "id": "vc-22",
+      "claim": "Vahak: 10 lakh+ verified carriers, 1.5M+ shippers/transporters registered, $25.9M total funding, Series A June 2022 (Nexus Venture Partners)",
+      "source_url": "https://tracxn.com/d/companies/vahak/; https://www.itln.in/supply-chain/vahak-loads-up-14m-series-a-funding-led-by-nexus-venture-partners-1345739",
+      "source_tier": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "med",
+      "rationale": "Two independent secondary sources from different publication families (Tracxn startup database + ITLN trade news). Neither is vendor's own site. Funding round corroborated by two different sources. Medium — no primary filing cross-validation but two independent secondary sources on different facts."
+    },
+    {
+      "id": "vc-23",
+      "claim": "RoaDo trusted by 650+ enterprises managing ₹50,000 Cr+ monthly GMV; automates 90% of compliance",
+      "source_url": "https://roado.co.in/blog/carrier-onboarding-process-the-complete-checklist-for-logistics-managers/",
+      "source_tier": "auto-low-vendor",
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "roado.co.in blog = vendor marketing about RoaDo's own platform, enterprise count, and GMV. Auto-Low vendor-marketing override. Domain is on blocklist sketch analog."
+    },
+    {
+      "id": "vc-24",
+      "claim": "Full Truck Alliance $27.2B GMV (2020); connected 70% of trucks on arterial roads and 80% of logistics firms nationally",
+      "source_url": "https://www.scmp.com/business/banking-finance/article/3137463/full-truck-chinas-uber-trucks-raise-us157-billion-us",
+      "source_tier": "secondary-news",
+      "vendor_self_cite": false,
+      "confidence": "med",
+      "rationale": "SCMP reporting FTA's IPO prospectus figures. The underlying data source is FTA's S-1/IPO filing (primary-filing tier 5), though it's cited through SCMP news coverage. Chain-of-citations: SCMP → IPO prospectus. One secondary source pointing to a primary. Medium — figures are prospectus-based, source is news only. Note: 2020 GMV figure may trigger outdated-source override (>3 years old relative to 2026 research date). Capped at Medium."
+    },
+    {
+      "id": "vc-25",
+      "claim": "FMCSA SAFER Web provides free, ad-hoc carrier safety data queries (one-at-a-time)",
+      "source_url": "https://safer.fmcsa.dot.gov/",
+      "source_tier": "primary-gov",
+      "vendor_self_cite": false,
+      "confidence": "high",
+      "rationale": "FMCSA SAFER Web is a US government source (primary-gov, tier 1). Directly verified by the government agency that operates the system. High confidence."
+    },
+    {
+      "id": "vc-26",
+      "claim": "3,625 cargo theft incidents in US and Canada in 2024, up 27% YoY; fictitious pickups surged from avg 66/yr to 576 in 2023 (870% increase)",
+      "source_url": "https://www.ccjdigital.com/technology/cybersecurity/article/15745983/fraudulent-freight-activity-increased-by-27-in-2024",
+      "source_tier": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single trade press source (CCJ Digital). The underlying data appears to originate from CargoNet (Verisk subsidiary), a private industry data provider. Chain-of-citations to a single private firm. Trade-press-only override for an operating-cost/incident-frequency figure."
+    },
+    {
+      "id": "pp-1.1-1",
+      "claim": "Direct cargo loss from fraudulent double-brokering and fictitious pickups: $500M–$700M per year (US+Canada)",
+      "source_url": "https://www.travelers.com/resources/business-topics/supply-chain-management/strategic-cargo-theft",
+      "source_tier": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single source: Travelers Insurance marketing/resource page. Travelers is an insurer, not a government agency or independent body. This is effectively insurer marketing content. Single source for a headline market-sizing loss figure. Trade-press-only override for a cost figure."
+    },
+    {
+      "id": "pp-1.1-2",
+      "claim": "Average per-company broker fraud loss: $402,000/year; average per-load loss: $40,760; 83% of brokers experienced 3+ fraud types in 6 months",
+      "source_url": "https://news.tianet.org/key-findings-from-the-tia-fraud-report-2024/",
+      "source_tier": "primary-association",
+      "vendor_self_cite": false,
+      "confidence": "med",
+      "rationale": "TIA (Transportation Intermediaries Association) is an industry association (tier 6 primary). TIA 2024 Fraud Report is a named association survey (~200 respondents). Single primary-association source. Qualifies as Medium (1 primary-association source). Survey methodology and sample size noted."
+    },
+    {
+      "id": "pp-1.1-3",
+      "claim": "Total annualized cargo theft/supply-chain fraud up to $6.6B/year in US ($18M+/day); NMFTA: logistics providers lose avg $1.84M annually, motor carriers $520K",
+      "source_url": "https://nmfta.org/news/the-fight-against-freight-fraud-begins-with-one-change-that-can-transform-the-industry/",
+      "source_tier": "primary-standards",
+      "vendor_self_cite": false,
+      "confidence": "med",
+      "rationale": "NMFTA (National Motor Freight Traffic Association) is an industry standards body (tier 8 primary). Single primary-standards source. No corroborating independent primary. Medium — one primary-standards source."
+    },
+    {
+      "id": "pp-1.1-4",
+      "claim": "Montgomery v. Caribe Transport II, LLC SCOTUS ruling (May 2026): brokers face uncapped state tort liability for negligent carrier selection",
+      "source_url": "https://www.crowell.com/en/insights/client-alerts/bad-match-big-consequences-supreme-court-holds-freight-brokers-accountable-for-negligent-carrier-selection",
+      "source_tier": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Crowell & Moring client alert is a law firm's own publication — secondary. The actual SCOTUS opinion is the primary-legal source but is only directly cited in PP1.5. Here, only the Crowell alert is cited. Single secondary for a legal claim. However the SCOTUS opinion existence is not in doubt; scoring the citation quality, not the underlying fact."
+    },
+    {
+      "id": "pp-1.1-5",
+      "claim": "3,625 cargo theft incidents in US+Canada 2024, up 27% YoY; fictitious pickups from avg 66/yr (2012–2022) to 576 events in 2023 (870% increase)",
+      "source_url": "https://www.cnbc.com/2024/01/22/cargo-theft-up-57percent-in-2023-vs-2022-new-cargonet-data-shows.html",
+      "source_tier": "secondary-news",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "CNBC citing CargoNet data. Chain-of-citations: news article → CargoNet (private industry data firm). Single chain. Also note: CNBC article is from January 2024 (reporting on 2023 data), while the 3,625 figure is described as 2024 data — possible data inconsistency in sourcing. Single secondary source."
+    },
+    {
+      "id": "pp-1.1-6",
+      "claim": "Strategic cargo theft grew 1,475% from 2022 to 2024, now ~one-third of all cargo crime",
+      "source_url": "https://www.truckinginfo.com/digital-cover-features/cargo-thefts-new-playbook-strategic-fraud-double-brokering-and-cybercrime-hit-trucking",
+      "source_tier": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single trade press source (TruckingInfo). Trade-press-only override for a dramatic percentage-growth claim. The 1,475% figure appears in multiple articles but they all trace back to the same underlying source (likely CargoNet or BSI), making it 1 source."
+    },
+    {
+      "id": "pp-1.1-7",
+      "claim": "Identity theft was top attack vector in 2024; ~one-third of all cargo thefts involved identity-based scams, up from 8% in 2020",
+      "source_url": "https://www.ccjdigital.com/technology/cybersecurity/article/15745983/fraudulent-freight-activity-increased-by-27-in-2024",
+      "source_tier": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single trade press source (CCJ Digital), also tagged NEEDS-ATTENDED-FETCH. Content unverified. Trade-press-only override. Low."
+    },
+    {
+      "id": "pp-1.1-8",
+      "claim": "FMCSA granting ~200 authorities/month to entities without verifiable physical address; approval rate fell from ~60–65% to ~30% after April 2025 identity check; 7% of new applicants failed, 5% were bot/ghost",
+      "source_url": "https://www.freightwaves.com/news/fmcsa-crackdown-on-carrier-fraud-halves-newly-granted-authorities",
+      "source_tier": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single FreightWaves article. The FMCSA data referenced would be authoritative if obtained from FMCSA directly, but it is cited only through trade press. Single-trade-source override for a specific regulatory/statistical claim. FMCSA's own press releases or NPRM would be the primary source."
+    },
+    {
+      "id": "pp-1.1-9",
+      "claim": "Double-brokering complaints to FMCSA and watchdogs surged 400% from Q4 2022 to Q1 2023",
+      "source_url": "https://www.freightwaves.com/news/fmcsa-says-it-has-too-little-data-to-assess-double-brokering-fraud",
+      "source_tier": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single FreightWaves article. Ironically, the FMCSA itself is cited as stating it has 'too little data' — undermining the confidence of the surge claim. Trade-press-only override."
+    },
+    {
+      "id": "pp-1.1-10",
+      "claim": "78% of freight brokers cite identity fraud as a top business challenge",
+      "source_url": "https://riskandinsurance.com/cargo-theft-losses-hit-record-455m-in-2024/",
+      "source_tier": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single trade press source (Risk & Insurance). No underlying survey or methodology cited. Single-source override for a survey percentage claim."
+    },
+    {
+      "id": "pp-1.2-1",
+      "claim": "$455M in reported US+Canada cargo losses 2024; true losses estimated $3.5B–$10B; $202,364 avg per strategic theft event; 75% of cargo never recovered",
+      "source_url": "https://www.verisk.com/company/newsroom/cargo-theft-surges-to-record-levels-in-2024-verisk-cargonet-analysis-reveals/",
+      "source_tier": "secondary-market-research",
+      "vendor_self_cite": false,
+      "confidence": "med",
+      "rationale": "Verisk/CargoNet is a professional actuarial and analytics firm (not a pure aggregator like Mordor/MarketsandMarkets). CargoNet is Verisk's freight-theft data subsidiary used by law enforcement and insurers. This is closer to a primary-association/industry body source. Single source but from a specialized, authoritative data provider. Medium — not government statistics but more credible than trade aggregators. Note: $3.5B–$10B range is Travelers' estimate (separate source), so only the $455M figure is from Verisk."
+    },
+    {
+      "id": "pp-1.2-2",
+      "claim": "Road transport accounts for 71–76% of all global cargo theft incidents; Asia is a high-incident region with India, Indonesia, China, Bangladesh, Vietnam most affected",
+      "source_url": "https://www.ttclub.com/news-and-resources/publications/article/bsi-consulting-and-tt-club-2024-cargo-theft-report/",
+      "source_tier": "primary-association",
+      "vendor_self_cite": false,
+      "confidence": "high",
+      "rationale": "TT Club is a major mutual insurer and industry association for transport operators (tier 6 primary-association). BSI/TT Club 2024 Cargo Theft Report is a named, dated authored report (April 2025 publication). TT Club + BSI = two independent organizations co-authoring one report. This constitutes a primary-association report with strong provenance. High confidence — named report from an industry association with insurer-grade data."
+    },
+    {
+      "id": "pp-1.2-3",
+      "claim": "FBI IC3 PSA260430 (April 2026): cyber threat actors targeting US transportation and logistics companies since at least 2024, posting fake loads in the tens of thousands",
+      "source_url": "https://www.ic3.gov/PSA/2026/PSA260430",
+      "source_tier": "primary-gov",
+      "vendor_self_cite": false,
+      "confidence": "high",
+      "rationale": "FBI Internet Crime Complaint Center (IC3) Public Service Alert is a US government source (tier 1 primary-gov). The PSA URL is a direct government publication. High confidence."
+    },
+    {
+      "id": "pp-1.3-1",
+      "claim": "Indonesia logistics costs estimated at 23% of GDP vs. ASEAN average of ~13–15%",
+      "source_url": "https://www.mordorintelligence.com/industry-reports/indonesia-road-freight-transport-market",
+      "source_tier": "secondary-market-research",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Mordor Intelligence is an aggregator market-research firm (explicit auto-downgrade list). Even though Mordor cites Indonesian MoT data, the direct government source is not cited. Aggregator market-research auto-downgrade. Low."
+    },
+    {
+      "id": "pp-1.3-2",
+      "claim": "World Bank LPI 2023: Indonesia 61st, Thailand 34th, Vietnam 43rd, Singapore 1st globally",
+      "source_url": "https://www.worldbank.org/en/news/press-release/2023/04/21/world-bank-releases-logistics-performance-index-2023",
+      "source_tier": "primary-multilateral",
+      "vendor_self_cite": false,
+      "confidence": "high",
+      "rationale": "World Bank LPI 2023 is a primary-multilateral source (tier 2). Direct World Bank press release. High confidence."
+    },
+    {
+      "id": "pp-1.3-3",
+      "claim": "Vietnam: 84% of trucks belong to owner-operators with fleets under 10 vehicles; avg company fleet ~5 trucks",
+      "source_url": "https://blogs.worldbank.org/en/transport/supporting-vietnam-s-economic-success-through-greener-cheaper-and-more-efficient-trucking",
+      "source_tier": "primary-multilateral",
+      "vendor_self_cite": false,
+      "confidence": "high",
+      "rationale": "World Bank transport blog (primary-multilateral, tier 2) reporting findings of a World Bank trucking study. Direct World Bank publication. High confidence."
+    },
+    {
+      "id": "pp-1.3-4",
+      "claim": "Thailand: 91.2% of registered road hauliers (5,671 of 6,218) are small companies; 92–99% of each sub-segment classified as SME or micro",
+      "source_url": "https://www.krungsri.com/en/research/industry/industry-outlook/logistics/road-freight-transportation/io/road-freight-transportation-2024-2026",
+      "source_tier": "secondary-market-research",
+      "vendor_self_cite": false,
+      "confidence": "med",
+      "rationale": "Krungsri Research (Thailand's Bank of Ayudhya research arm) Road Freight Outlook 2024–2026. Krungsri cites DLT (Department of Land Transport) registry data. This is private financial institution research citing government data, not the government data directly. Single source. Medium — credible Thai financial institution research, but not a primary-gov or multilateral source. The specific counts (5,671 of 6,218) suggest underlying DLT data, which is primary."
+    },
+    {
+      "id": "pp-1.3-5",
+      "claim": "Indonesia: only 15% of corporations (318,061 of 2,053,844) disclosed beneficial ownership by 2020; Thailand has no BO requirement; Vietnam has no public BO register",
+      "source_url": "https://www.unodc.org/roseap/en/what-we-do/anti-corruption/topics/2021/05-beneficial-ownership-disclosure-indonesia.html",
+      "source_tier": "primary-multilateral",
+      "vendor_self_cite": false,
+      "confidence": "high",
+      "rationale": "UNODC is a UN agency (primary-multilateral, tier 2). Direct UNODC publication on beneficial-ownership disclosure. High confidence. Note: 2021 publication — the Indonesia data is from 2020, which triggers the outdated-source override (>3 years old). However, this is institutional policy data (the absence of a BO registry is a legal/structural fact that changes slowly). Scored High but note the data vintage."
+    },
+    {
+      "id": "pp-1.3-6",
+      "claim": "5 of 11 ASEAN countries lack a legal framework for beneficial-ownership transparency as of 2024",
+      "source_url": "https://www.openownership.org/en/blog/advancing-beneficial-ownership-transparency-in-south-east-asia/",
+      "source_tier": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Open Ownership is an NGO/civil-society organization. Their blog is a secondary source. Single source. The specific count (5 of 11 ASEAN countries) is not from a government or multilateral. Low — needs corroboration from FATF, World Bank, or ASEAN secretariat."
+    },
+    {
+      "id": "pp-1.4-1",
+      "claim": "Manual carrier vetting: 30–45 minutes per new carrier",
+      "source_url": "https://vettaverify.com/guides/carrier-vetting",
+      "source_tier": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Vettaverify.com is an industry guide on their own platform's landing page — effectively vendor marketing or a vendor-adjacent industry blog. Single source. Trade-press-only / vendor-marketing override for an operating time-cost claim."
+    },
+    {
+      "id": "pp-1.4-2",
+      "claim": "19% of freight broker companies spend an entire day per quarter solely on fraud prevention",
+      "source_url": "https://news.tianet.org/key-findings-from-the-tia-fraud-report-2024/",
+      "source_tier": "primary-association",
+      "vendor_self_cite": false,
+      "confidence": "med",
+      "rationale": "TIA 2024 Fraud Report (primary-association). Same strong source as pp-1.1-2. Single primary-association source. Medium."
+    },
+    {
+      "id": "pp-1.4-3",
+      "claim": "Brokerage reduced manual onboarding from 3.5 days to under 2 hours, improving verification accuracy by 28%",
+      "source_url": "https://www.dat.com/resources/carrier-onboarding-guide",
+      "source_tier": "auto-low-vendor",
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "DAT Resources guide citing a DAT-related case study (DAT's own content marketing). Vendor-marketing override. Single vendor-marketing source for a quantified efficiency claim."
+    },
+    {
+      "id": "pp-1.4-4",
+      "claim": "Only 12% of carriers pass all verification steps on first attempt when systematic checking is applied",
+      "source_url": "https://www.certificial.com/blog-post/how-to-detect-fraudulent-certificates-of-insurance-complete-coi-verification-guide",
+      "source_tier": "auto-low-vendor",
+      "vendor_self_cite": true,
+      "confidence": "low",
+      "rationale": "Certificial.com blog post — Certificial is a COI verification vendor. This is vendor marketing claiming a statistic about certificate verification rejection rates that presumably validates their own product need. Auto-Low vendor-marketing override."
+    },
+    {
+      "id": "pp-1.5-1",
+      "claim": "Average trucking personal-injury verdict $27.5M (2020–2023); verdicts exceeding $100M growing exponentially",
+      "source_url": "https://www.freightwaves.com/news/broker-liability-ruling-carriers-brokers-analysts-weigh-in",
+      "source_tier": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single FreightWaves article. Verdict data would be available from court records or industry actuarial studies. Single trade press. Low — needs American Transportation Research Institute (ATRI), Jury Verdict Research, or court filing corroboration."
+    },
+    {
+      "id": "pp-1.5-2",
+      "claim": "42% of monetary exposure in carrier crashes is uninsured at the $750,000 minimum coverage level",
+      "source_url": "https://www.freightwaves.com/news/the-freight-broker-insurance-gap-is-now-real",
+      "source_tier": "secondary-trade",
+      "vendor_self_cite": false,
+      "confidence": "low",
+      "rationale": "Single FreightWaves article for a specific financial-exposure percentage. Trade-press-only override for a cost/exposure claim."
+    },
+    {
+      "id": "pp-1.5-3",
+      "claim": "Montgomery v. Caribe Transport II, LLC SCOTUS ruling — decided May 14, 2026, unanimous, eliminates FAAAA preemption defense for freight broker negligent hiring",
+      "source_url": "https://www.supremecourt.gov/opinions/25pdf/24-1238_1b7d.pdf",
+      "source_tier": "primary-legal",
+      "vendor_self_cite": false,
+      "confidence": "high",
+      "rationale": "Direct SCOTUS opinion (supremecourt.gov) is a primary-legal source (tier 10). Additionally corroborated by Crowell & Moring client alert, FleetOwner, Landline, mwl-law, mcfarlanelaw — multiple secondary sources corroborating the same primary-legal document. High confidence — the ruling itself is the primary source."
+    }
+  ],
+  "weak_claims_for_deep_research": [
+    {
+      "id": "pp-1.1-1",
+      "claim": "$500M–$700M annual direct cargo loss from fraudulent double-brokering and fictitious pickups (US+Canada)",
+      "why_weak": "Single source: Travelers Insurance marketing/resource page. Insurer marketing content is not an audited loss figure. This is the headline cost number for Pain Point 1.1 — the most critical WH1 pain point. If challenged, the entire quantified case for PP1.1 magnitude rests on an insurer's own website. No independent corroboration from actuarial, government, or consultancy source.",
+      "specific_question_to_research": "What is the FMCSA's or FBI's published estimate of annual US cargo fraud losses attributable to fictitious pickups and identity-enabled theft? Does ATRI, TT Club, or the FBI IC3 publish an annual dollar-loss figure for identity-based freight fraud in North America?",
+      "evidence_type_needed": "primary-gov (FBI, FMCSA annual report), primary-association (TT Club, CargoNet Verisk annual report direct citation), or primary-consultancy (Deloitte, Oliver Wyman insurance actuarial study)"
+    },
+    {
+      "id": "pp-1.1-8",
+      "claim": "FMCSA granting ~200 authorities/month to entities without verifiable physical address; approval rate fell from 60–65% to ~30% after April 2025 identity check rollout",
+      "why_weak": "Single FreightWaves article. This is a critical regulatory-baseline claim — the most specific evidence that the FMCSA system itself was structurally broken pre-2025. Cited only through trade press, not from an FMCSA press release, rulemaking notice, or congressional testimony. Load-bearing for RC1 in PP1.1.",
+      "specific_question_to_research": "Did FMCSA publish a press release, NPRM, or congressional testimony documenting the identity-check results (approval rate drop, ghost addresses)? Search FMCSA.dot.gov newsroom and Federal Register for 'new entrant identity verification' 2025.",
+      "evidence_type_needed": "primary-gov (FMCSA.dot.gov press release, Federal Register NPRM, or FMCSA administrator congressional testimony)"
+    },
+    {
+      "id": "vc-5",
+      "claim": "Global carrier onboarding and compliance platform market $1.54B–$1.62B (2024); CAGR 12.8%–13.7%; APAC $340M",
+      "why_weak": "All market-size figures come from aggregator market-research firms (Growth Market Reports / MarketIntelo, Dataintelo) with no disclosed methodology and likely shared primary data. Aggregator auto-downgrade applies to all figures. This is the only market-sizing data for the solution category and is foundational to the business case. The draft itself flags this as a Data gap.",
+      "specific_question_to_research": "Do McKinsey, BCG, Bain, Roland Berger, or Oliver Wyman have any published (even paywalled) reports on the freight compliance software or carrier risk management software market? Alternatively, are there public company (Descartes DSGX, TruckStop parent, DAT) segment revenue disclosures in their 10-K or 20-F that allow bottom-up market sizing?",
+      "evidence_type_needed": "primary-consultancy (McKinsey/BCG/Roland Berger authored report on logistics tech) OR primary-filing (DSGX 20-F segment revenue data for compliance products) OR government industrial survey (US Census NAICS 5415/54151 software revenue data)"
+    },
+    {
+      "id": "pp-1.3-1",
+      "claim": "Indonesia logistics costs at 23% of GDP vs. ASEAN average ~13–15%",
+      "why_weak": "Sourced only from Mordor Intelligence, which is an auto-downgrade aggregator. This is the primary cost-burden anchor for Pain Point 1.3 (SEA carrier vetting gap). The stat appears in multiple trade articles but they all trace to the same Mordor report or a World Bank report cited by Mordor — making it 1 source. The World Bank LPI report does not directly state the 23% GDP figure.",
+      "specific_question_to_research": "Does the World Bank, ADB, or OECD ASEAN logistics review directly publish Indonesia logistics cost as % of GDP? Search World Bank Indonesia country logistics reports and ADB ASEAN logistics cost benchmarks. Also check Indonesia Ministry of National Development Planning (Bappenas) statistics.",
+      "evidence_type_needed": "primary-multilateral (World Bank Indonesia logistics cost report, ADB Southeast Asia logistics cost study) or primary-gov (Bappenas/BPS Indonesia GDP and logistics sector data)"
+    },
+    {
+      "id": "pp-1.3-6",
+      "claim": "5 of 11 ASEAN countries lack a legal framework for beneficial-ownership transparency as of 2024",
+      "why_weak": "Sourced only from an Open Ownership NGO blog post. Single NGO source for a claim that is used to support the SEA structural registry gap argument in PP1.3. FATF, World Bank, or ASEAN Secretariat would be authoritative primary sources for this. Load-bearing for RC2 in PP1.3.",
+      "specific_question_to_research": "Does FATF's Mutual Evaluation Reports for ASEAN member states (Indonesia, Thailand, Vietnam, Malaysia, Philippines) document the absence of beneficial-ownership registries or legal frameworks as of 2023–2024? Search FATF.org for 'ASEAN beneficial ownership' mutual evaluations.",
+      "evidence_type_needed": "primary-multilateral (FATF Mutual Evaluation Reports for SEA countries, World Bank FATA data, OECD ASEAN beneficial ownership review) or primary-gov (ASEAN Secretariat policy report)"
+    }
+  ],
+  "structural_compare_to_imi": {
+    "imi_pain_points_target": "2-4",
+    "actual_pain_points": 5,
+    "imi_root_causes_per_pp": "3-5",
+    "actual_root_causes_per_pp_min_max": [3, 5],
+    "imi_citations_per_pp": "8-15",
+    "actual_citations_per_pp_min_max": [8, 10],
+    "unique_sources_in_stage": 31,
+    "pass": false,
+    "remediation_needed": [
+      "Pain point count (5) exceeds IMI target of 2–4. PP1.5 (Montgomery v. Caribe SCOTUS ruling) is a novel legal development that is real and load-bearing but pushes the count above the template target. Orchestrator should evaluate whether PP1.5 should be folded into PP1.1 as an 'RC5/consequence' rather than a standalone pain point, or whether the template target should be explicitly waived for this run.",
+      "Low% is 60% (27 of 45 claims). This is above the acceptable threshold for a gate-passing draft. Specifically: all market-size claims are Low; all vendor-capability/coverage claims are Low; most frequency claims for US cargo fraud are Low (single-trade-source). Deep research on the top 5 weak claims is required before the draft can ship.",
+      "The 35–45 min manual vetting time figure (vc-1, pp-1.4-1) appears in both files with a single vendor-marketing source (DAT). This claim is cited multiple times across sections — high downstream impact — but only has one vendor-adjacent source. Needs an independent time-study citation.",
+      "Citations per PP are at the low end of the 8–15 target range (8–10 per PP). Citation count passes the minimum but leaves no buffer. Several citations are auto-Low or vendor-marketing and should be replaced, not counted toward the quality standard."
+    ]
+  }
+}

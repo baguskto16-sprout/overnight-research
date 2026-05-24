@@ -1,0 +1,118 @@
+{
+  "claim_id": "PP2.1-freq-1",
+  "claim_text": "IDScan.net 0.53% → 2.15% fraud rate trajectory over two years, 1M+ transaction dataset",
+  "outcome": "found-stronger-evidence",
+  "primary_source_confirmed": {
+    "url": "https://idscan.net/press-release/surging-id-fraud-in-us-cargo-and-logistics-report-finds/",
+    "title": "Surging ID fraud in US cargo and logistics, report finds — IDScan.net 2026 Cargo and Logistics ID Fraud Report",
+    "category": "vendor-primary",
+    "publication_date": "2026-02",
+    "fetched": true,
+    "dataset_size": "More than 1 million identity verification transactions",
+    "sector_coverage": "Processing, manufacturing, transport, and warehousing operations (US)",
+    "fraud_rates_by_year": {
+      "2023": "0.53%",
+      "2024": "1.66%",
+      "2025": "2.15%"
+    },
+    "trajectory_note": "213% increase over two years; Q2 2025 was highest quarterly rate on record, running 75% above historical average",
+    "methodology_disclosed": false,
+    "independent_audit": false,
+    "notes": "Vendor-produced report from IDScan.net's own platform transaction data. No independent verification. IDScan.net processes 21M+ verifications/month across 20,000+ global locations."
+  },
+  "corroborating_sources": [
+    {
+      "url": "https://www.dcvelocity.com/supply-chain/other-services/supply-chain-security/identity-fraud-attempts-in-logistics-sector-rise-4x-over-two-years",
+      "title": "Identity fraud attempts in logistics sector rise 4x over two years — DC Velocity",
+      "category": "trade-press-relay",
+      "publication_date": "2026-02",
+      "fetched": true,
+      "key_data": "Relays identical IDScan.net figures (0.53% → 1.66% → 2.15%), no independent data added",
+      "independent_corroboration": false
+    },
+    {
+      "url": "https://idscan.net/press-release/2025-id-fraud-report/",
+      "title": "2025 ID Fraud Report: Business risk skyrockets as ID fraud rises — IDScan.net",
+      "category": "vendor-primary",
+      "publication_date": "2025-05-28",
+      "fetched": true,
+      "dataset_size": "Over 150 million ID scans during 2024",
+      "key_data": "Cross-sector report confirming cargo/logistics 61.4% increase in Q4 2024; does NOT supply an overall fraud rate percentage for logistics",
+      "independent_corroboration": false,
+      "notes": "Same vendor, different report. Confirms directional trend but uses breakdown-by-detection-method rather than overall fraud rate %."
+    },
+    {
+      "url": "https://news.tianet.org/tia-releases-state-of-fraud-in-the-industry-april-2025-report/",
+      "title": "TIA State of Fraud in the Industry — April 2025 Report",
+      "category": "industry-association",
+      "publication_date": "2025-04",
+      "fetched": true,
+      "key_data": "1,600+ fraud reports filed on TIA Watchdog (Sep 2024–Feb 2025), 65% increase from prior period; 83% of respondents experienced 3+ fraud types in 6 months; 97% cite truckload as most fraud-prone mode",
+      "independent_corroboration": "partial — confirms strong upward trajectory but uses report-count and survey-% metrics, not transaction-level fraud rates",
+      "limitations": "Survey sample size (N) not disclosed publicly; no per-100-loads incidence rate"
+    },
+    {
+      "url": "https://truckstop.com/blog/2025-freight-fraud-report/",
+      "title": "Truckstop 2025 Freight Fraud Report: What 63,000 Fraud Checks Reveal About Prevention",
+      "category": "industry-platform",
+      "publication_date": "2025",
+      "fetched": false,
+      "fetch_status": "HTTP 403 Forbidden",
+      "key_data_from_search": "63,000 entities reviewed; 12,768 suspicious RMIS onboarding attempts blocked; 9,984 suspicious load board access attempts blocked in 2024; does NOT express as % of total transactions",
+      "independent_corroboration": "partial — confirms large-scale booking-layer fraud volume but no comparable transaction-rate metric"
+    },
+    {
+      "url": "https://highway.com/reports/q1-2025-freight-fraud-index",
+      "title": "Highway Q1 2025 Freight Fraud Index",
+      "category": "industry-platform",
+      "publication_date": "2025-Q1",
+      "fetched": true,
+      "fetch_status": "Landing page only — full data behind download gate",
+      "key_data_from_search": "400,000 sophisticated fraud attempts in Q1 2025; 352,134 fraudulent inbound emails; 406 unauthorized FMCSA contact changes; 30,921 fraudulent/spoofed calls. Q1 2026: 527,940 blocked email threats, 169.6% YoY surge in ownership-change fraud",
+      "independent_corroboration": "directional — confirms accelerating identity/impersonation fraud at booking layer, but metric is absolute count not transaction rate"
+    }
+  ],
+  "sources_not_found": [
+    {
+      "target": "DAT Solutions fraud load-incidence percentage",
+      "searches_performed": ["DAT freight fraud 2025 percentage fraudulent loads blog", "DAT freight fraud fight 2025 statistics percentage"],
+      "result": "DAT publishes anti-fraud blog posts and tools but does NOT publish a fraud incidence rate as % of posted loads in any public document found"
+    },
+    {
+      "target": "Carrier411 annual freight fraud impact study",
+      "searches_performed": ["Carrier411 annual freight fraud impact study 2024 2025 statistics"],
+      "result": "No Carrier411 annual study found; Carrier411 maintains FreightGuard report database but publishes no aggregate fraud rate statistics publicly"
+    },
+    {
+      "target": "FreightWaves SONAR fraud benchmark",
+      "searches_performed": ["FreightWaves SONAR fraud rate benchmark freight identity 2024 2025 percentage"],
+      "result": "SONAR does not publish a fraud rate benchmark; FreightWaves covers fraud via editorial/news, not SONAR dataset metrics"
+    }
+  ],
+  "claim_correction_note": "The original claim states '0.53% → 2.15% over two years.' This is accurate directionally but omits the intermediate 2024 datapoint of 1.66%. The full trajectory is 0.53% (2023) → 1.66% (2024) → 2.15% (2025). Consider updating claim to reflect three-year progression.",
+  "suggested_revision": "IDScan.net's 2026 Cargo and Logistics ID Fraud Report — drawing on 1M+ identity verification transactions across US transport and warehousing — found identity fraud attempt rates rose from 0.53% (2023) to 1.66% (2024) to 2.15% (2025), a 4x increase over two years [IDScan.net primary, vendor-produced]. TIA Watchdog (April 2025) independently corroborates accelerating trajectory with a 65% jump in fraud reports over the prior six-month period [industry-association, partial corroboration].",
+  "suggested_new_score": "Medium",
+  "score_rationale": "Primary IDScan.net URL confirmed with exact figures (0.53%/1.66%/2.15%, 1M+ dataset). However the dataset is vendor-proprietary with no independent audit or disclosed methodology. No second source publishes a comparable transaction-rate metric. TIA and Highway data corroborate the trend direction but use incommensurable metrics (report counts, blocked emails). Score upgrades from Low to Medium: primary source confirmed but remains single-vendor, unaudited.",
+  "searches_performed": [
+    "IDScan.net freight fraud rate 0.53% 2.15% transaction dataset report 2024",
+    "IDScan.net Fortra HelpSystems freight logistics identity fraud statistics annual report",
+    "DAT Solutions freight fraud incidence percentage posted loads 2024 2025 statistics",
+    "Truckstop ITS Watch annual freight fraud report percentage incidence 2024 2025",
+    "TIA Transportation Intermediaries Association state of fraud 2025 report methodology survey N incidence per 100 loads",
+    "Carrier411 annual freight fraud impact study 2024 2025 statistics",
+    "FreightWaves SONAR fraud rate benchmark freight identity 2024 2025 percentage",
+    "DAT freight fraud fight 2025 statistics percentage fraudulent loads blog",
+    "Highway freight fraud index Q4 2025 OR Q1 2025 percentage fraudulent loads statistics",
+    "IDScan.net cargo and logistics fraud report 2026 1 million OR million transactions methodology primary source"
+  ],
+  "webfetch_calls": [
+    "https://idscan.net/press-release/surging-id-fraud-in-us-cargo-and-logistics-report-finds/ — confirmed",
+    "https://idscan.net/press-release/2025-id-fraud-report/ — confirmed",
+    "https://truckstop.com/blog/2025-freight-fraud-report/ — HTTP 403",
+    "https://www.dat.com/blog/whats-new-in-dats-fight-against-fraud — confirmed (no rate data)",
+    "https://highway.com/reports/q1-2025-freight-fraud-index — landing page only",
+    "https://news.tianet.org/tia-releases-state-of-fraud-in-the-industry-april-2025-report/ — confirmed",
+    "https://idscan.net/press-release/id-fraud-in-cargo-and-logistics-on-the-rise/ — HTTP 503",
+    "https://www.dcvelocity.com/supply-chain/other-services/supply-chain-security/identity-fraud-attempts-in-logistics-sector-rise-4x-over-two-years — confirmed"
+  ]
+}

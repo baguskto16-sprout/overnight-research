@@ -1,0 +1,191 @@
+{
+  "corpus_scope": {
+    "stages_count": 5,
+    "files_count": 10,
+    "approximate_word_count": 82000
+  },
+  "unique_sources": {
+    "total_unique_urls": 211,
+    "note_on_count": "Raw grep yields 304 URL instances; 211 after deduplication and trailing-punctuation cleanup. Significantly above the 40–60 target — this is expected for a 10-file corpus and does not indicate a problem, but the concentration analysis below is the more relevant metric.",
+    "primary_gov_share": "9.5%",
+    "primary_gov_count": 20,
+    "primary_gov_examples": ["bps.go.id (8 URLs)", "who.int (6)", "ojk.go.id (6)", "kemkes.go.id", "moh.gov.sg"],
+    "academic_share": "26.5%",
+    "academic_count": 56,
+    "academic_note": "42 PMC/PubMed + 14 peer-reviewed journals (Lancet, BMJ Open, Nature, Frontiers, PLOS, Annals SG, BioMedCentral). 3 medrxiv preprints included — these are not peer-reviewed and should be flagged as secondary-grade within the academic tier.",
+    "consultancy_share": "7.1%",
+    "consultancy_count": 15,
+    "consultancy_examples": ["bain.com (5)", "milliman.com (7)", "marsh.com (6)", "swissre.com (5)", "lek.com (2)", "aon.com"],
+    "trade_press_share": "11.8%",
+    "trade_press_count": 25,
+    "trade_press_examples": ["thejakartapost.com (8)", "antaranews.com (6)", "en.antaranews.com (6)", "asiainsurancereview.com (4)", "jakartaglobe.id", "voi.id", "heaptalk.com"],
+    "aggregator_share": "8.1%",
+    "aggregator_count": 17,
+    "aggregator_examples": ["statista.com (7)", "grandviewresearch.com (3)", "globenewswire.com (2)", "mordorintelligence.com (1)", "kenresearch.com (1)", "tracedataresearch.com (1)", "insights10.com (1)", "zenodo.org (1)", "dsgcp.com (1)"],
+    "vendor_marketing_share": "19.4%",
+    "vendor_marketing_count": 41,
+    "vendor_marketing_note": "Includes insurer product pages (prudential.co.id, allianz.co.id, manulife.com, axa.com, chubb.mediaroom), regulator/legal commentary (lockton.com, mondaq, nusantaralegal, hhp.co.id, ssek.com, abnrlaw), industry org pages (p4h.world, admedika.co.id, devex.com), and MCU provider pages (tirta.co.id, emc.id, rspondokindah.co.id). Most of these are evidence for provider capabilities or plan structures — the auto-Low vendor-marketing override applies to claims about those vendors' own market positions only.",
+    "other_gov_policy_share": "7.1%",
+    "other_gov_policy_count": 15,
+    "other_gov_policy_examples": ["commonwealthfund.org", "eastasiaforum.org", "shrm.org", "acclime.com", "indonesia-investments.com", "povertyactionlab.org", "dbindonesia.kebijakankesehatanindonesia.net (5)"]
+  },
+  "over_cited_sources": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12681878/",
+      "citation_count": 9,
+      "stages": [1, 2, 3, 5],
+      "category": "primary-academic",
+      "concern": "High citation count is APPROPRIATE — this is the Lancet Regional Health Western Pacific 2025 diabetes care cascade study (Muharram et al., PMC12681878). It is the single most authoritative source for HbA1c control rates, treatment linkage, and BP control among Indonesian diabetics. No over-citation concern."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12519354/",
+      "citation_count": 9,
+      "stages": [1, 2, 3, 5],
+      "category": "primary-academic",
+      "concern": "BMJ Open 2025 diabetes trends 2013–2023 serial analysis (Muharram et al.). Appropriate cross-stage use — this is the primary epidemiological trend source. No over-citation concern."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12425502/",
+      "citation_count": 9,
+      "stages": [2, 3, 4],
+      "category": "primary-academic",
+      "concern": "Employer plan medical cost inflation study (PMC12425502). Used heavily in Stages 2–4 to anchor medical cost inflation and CDM-as-claims-driver claims. STRUCTURAL CONCERN: this is a SINGLE state-owned oil/gas company retiree plan — the corpus uses it as a proxy for the broader private-sector employer market. The study's own limitation is flagged in ASSUMED-10 (Stage 3) but the figure is re-used without that caveat in Stages 2 and 4. Flag for downstream users: $12.98M/covered life/year is a retiree-plan figure, not a general market figure."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12076961/",
+      "citation_count": 7,
+      "stages": [2, 4, 5],
+      "category": "primary-academic",
+      "concern": "KAP study (Marcus et al. 2025): hypertension and diabetes screening uptake in adults 40–70. The '80% of non-screeners cited not ill' figure is used correctly and consistently across stages. No concern."
+    },
+    {
+      "url": "https://www.milliman.com/en/insight/indonesia-health-regulations-ealert-key-updates",
+      "citation_count": 6,
+      "stages": [3, 4],
+      "category": "primary-consultancy",
+      "concern": "Milliman e-Alert on POJK 36/2025 and SEOJK 7/2025. Appropriate — this is the primary secondary source for the OJK regulatory reform. No concern."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4051736/",
+      "citation_count": 6,
+      "stages": [1, 3, 4, 5],
+      "category": "primary-academic",
+      "concern": "Finkelstein et al. 2014 PLOS ONE household NCD burden. OUTDATED-SOURCE CONCERN: data is from 2010 with projections to 2020. Now 6+ years past the projection endpoint, and Indonesia's healthcare context has changed significantly (JKN expansion, COVID). The study is used as the primary economic burden anchor across 4 stages without a more recent update. Per rubric, sources >3 years old are capped at Medium unless cross-validated. The corpus does partially cross-validate with IDF Atlas 2025 spending data, but the Finkelstein burden figures (IDR 4.02B in 2010) are used as standalone anchors in some claims."
+    },
+    {
+      "url": "https://www.bain.com/insights/asia-pacific-front-line-of-healthcare-2024/",
+      "citation_count": 5,
+      "stages": [1, 2],
+      "category": "primary-consultancy",
+      "concern": "Bain APAC Front Line of Healthcare 2024. GEOGRAPHIC APPLICABILITY CONCERN: the survey is APAC-wide (2,300 respondents). Indonesia-specific data within this APAC report is not separately cited — the 91% single-touchpoint preference and 51% OOP-more-willing figures may not represent Indonesia specifically. This triggers the APAC-as-proxy override: claims using these figures should be capped at Medium confidence and flagged 'Geography mismatch'."
+    },
+    {
+      "url": "https://www.swissre.com/dam/jcr:05411fab-a11a-4537-b16f-baa77da564f9/Asia%27s+Health+Protection+Gap_Regional+Infographics.pdf",
+      "citation_count": 5,
+      "stages": [3, 4],
+      "category": "primary-consultancy",
+      "concern": "Swiss Re Asia health protection gap infographic. Source is a Swiss Re Institute published document — qualifies as top-tier consultancy (secondary-primary borderline). The $82B Indonesia health protection gap is used as a headline anchor in Stages 3 and 4 consistently. One concern: an 'infographic' PDF may not carry the same methodological transparency as a full report. Flag as Medium-High rather than High."
+    },
+    {
+      "url": "https://dbindonesia.kebijakankesehatanindonesia.net/2025/06/tantangan-diabetes-di-indonesia-wawasan-dari-idf-diabetes-atlas-edisi-ke-11/",
+      "citation_count": 5,
+      "stages": [5],
+      "category": "secondary-trade",
+      "concern": "This is a secondary BLOG citation of the IDF Diabetes Atlas 11th Edition — not the IDF Atlas itself. The domain is 'Kebijakan Kesehatan Indonesia' (Indonesian Health Policy), a policy analysis blog. All IDF Atlas statistics should cite the primary IDF Atlas URL (diabetesatlas.org) not this derivative blog post. The primary IDF Atlas URL (diabetesatlas.org/data-by-location/country/indonesia/) is also cited but used less. This is a chain-of-citations issue: the derivative blog may not accurately represent the IDF source."
+    },
+    {
+      "url": "https://thinkwell.global/wp-content/uploads/2022/09/Health-Financing-Fact-Sheet_-Indonesia_September_2022.pdf",
+      "citation_count": 4,
+      "stages": [1, 2],
+      "category": "primary-consultancy",
+      "concern": "Thinkwell Global 2022 Health Financing Fact Sheet — PDF returned binary/corrupt in all unattended fetches (confirmed NEEDS-ATTENDED-FETCH in both Stage 1 and Stage 2). The OOP 30.5% figure derived from this source is cited multiple times but the source was NEVER VERIFIED in content. This is a significant evidentiary gap for a number used across stages. Classification: cited as consultancy but unverified content = functionally Low confidence for the specific 30.5% figure."
+    },
+    {
+      "url": "https://www.grandviewresearch.com/horizon/outlook/health-check-up-market/indonesia",
+      "citation_count": 3,
+      "stages": [1, 2],
+      "category": "secondary-market-research",
+      "concern": "Grand View Research aggregator — the $656M MCU market figure. Triggers aggregator-auto-downgrade rule: any claim sourced primarily from Grand View Research is auto-Low unless cross-validated against a primary source. The corpus explicitly flags this as [ASSUMED-A8] with ±50% uncertainty and notes no cross-validation found. Correctly handled in the text but downstream users must apply the Low confidence tag."
+    }
+  ],
+  "cross_stage_inconsistencies": [
+    {
+      "topic": "Siloam International Hospitals: hospital count",
+      "stage_A_claim": "Stage 1 pain points (PP3 description and RC2): 'Siloam (41 hospitals, IDX-listed)' and 'Siloam, the market leader with 41 hospitals'",
+      "stage_B_claim": "Stage 2 pain points (RC2): 'Even within networks like Siloam (43 hospitals) or Hermina, referral and record-sharing across sites is inconsistent.'",
+      "severity": "low",
+      "suggested_resolution": "41 vs 43 hospitals — likely reflects the same FY2023 data cited differently (the Siloam IDX filing and press releases have used both figures depending on inclusion of pipeline/under-development sites). The Stage 1 figure (41) sourced from IDX press release is more precisely cited. Standardize to 41 (FY2023 IDX-cited figure) or add a note that the count varies by measurement date."
+    },
+    {
+      "topic": "Indonesia OOP share of total health expenditure",
+      "stage_A_claim": "Stage 1 value chain (Section 1.5): 'OOP payments represented approximately 30.5% of total health expenditure in 2022' citing Thinkwell 2022 fact sheet. Also: 'OOP declining from 40% (2015) to 29% (2023)' citing WHO Indonesia.",
+      "stage_B_claim": "Stage 2 value chain (Section 2.2 methodology note): 'National OOP share of total health expenditure: 27.5% in 2021 (WHO/JKN expansion data); 30.5% in 2022' — these are cited as two different figures from two different sources for two different years and are reconciled correctly.",
+      "severity": "low",
+      "suggested_resolution": "Not a genuine inconsistency — the 27.5% (2021) and 30.5% (2022) figures refer to different years and different sources. Both are plausible given measurement variation. However, the Thinkwell 30.5% figure is NEVER VERIFIED (PDF returned binary in all fetches). Flag Thinkwell-sourced 30.5% figure as unverified in final corpus."
+    },
+    {
+      "topic": "Private health insurance market size: $2.93B (Mordor) vs $1.69B (OJK/Antara)",
+      "stage_A_claim": "Stage 1 pain points (Source 14): Mordor Intelligence cited as '$2.93B market value 2024; BPJS 71.6% share'",
+      "stage_B_claim": "Stage 1 pain points (RC2 body text): explicitly flags the $2.93B as an 'aggregator figure originally cited' and corrects to 'Rp 26.26 trillion (~$1.69 billion) in 2023 per OJK Statistik Perasuransian 2023'. Stage 3 value chain consistently uses Rp 26.26T / $1.69B from OJK.",
+      "severity": "low",
+      "suggested_resolution": "The corpus correctly self-corrects — the $2.93B Mordor figure is explicitly deprecated in Stage 1 pain points RC2 in favor of the OJK-confirmed $1.69B. The Mordor citation (Source 14) should be removed or annotated as 'deprecated' to avoid confusion for downstream readers who read source lists without body text context. No action needed on the substance."
+    },
+    {
+      "topic": "BPJS share of formal insurance pool: 72% vs 85%",
+      "stage_A_claim": "Stage 1 pain points (RC3): 'BPJS commands ~85% of the formal Indonesian health insurance pool by premium volume (revised from earlier ~72% figure which could not be reconciled with OJK/BPJS primary data)'",
+      "stage_B_claim": "Stage 3 value chain (Section 3.1): 'This stage excludes BPJS Kesehatan and the mandatory BPJAMSOSTEK program, which together constitute approximately 85% of formal insurance-premium volume by value.' — consistent with the 85% figure.",
+      "severity": "low",
+      "suggested_resolution": "No inconsistency — both use 85%. The 72% figure from Mordor was explicitly revised upward in Stage 1. Consistent across corpus."
+    },
+    {
+      "topic": "Diabetes prevalence: 11% vs 11.3% vs 11.7%",
+      "stage_A_claim": "Stage 2 pain points: '11% DM prevalence' (rounded); Stage 2 value chain: '11% of Indonesian adults having diabetes'",
+      "stage_B_claim": "Stage 3 pain points: '11.7% in 2023 (20 million adults)' citing PMC12519354. Stage 5 value chain: IDF Atlas 2025 gives '11.0% (11.3% age-standardised)'; Riskesdas 2023 wave '11.3% (95% CI 10.7–11.9%)'. Riskesdas 2018 wave: '11.8%'.",
+      "severity": "medium",
+      "suggested_resolution": "These figures are from different sources and different years: Riskesdas 2018 = 11.8%; Riskesdas 2023 = 11.3% (crude); IDF Atlas 2025 = 11.0% (adults 20–79). Stage 3 pain points uses '11.7% in 2023' — this is not directly supported by any single cited source (PMC12519354 gives Riskesdas 2023 at 11.3%, not 11.7%). The 11.7% in Stage 3 appears to be a rounding or reading error from the Riskesdas 2018 figure (11.8%) misattributed to 2023 data. RECOMMENDED: Stage 3 pain points should use 11.3% for 2023 prevalence, not 11.7%. The downstream claim ('20 million adults') is directionally consistent with IDF Atlas 2025 (20.4 million), so the headline number is not materially affected."
+    },
+    {
+      "topic": "Hypertension prevalence: 29.2% vs 31.6% vs 34.1%",
+      "stage_A_claim": "Stage 3 pain points: 'Hypertension prevalence stood at 29.2% of adults in 2023' and 'hypertension at 29.2%' — both citing Nature 2026 and PMC10048049",
+      "stage_B_claim": "Stage 5 value chain: Riskesdas 2018 = 34.1%; BMJ Open 2025 (PMID 41475816) cascade analysis = 31.6% (2023, age-standardised). Stage 5 explicitly reconciles these as different measurement approaches and denominator definitions.",
+      "severity": "medium",
+      "suggested_resolution": "Stage 3 uses 29.2% without reconciling it against the Riskesdas/BMJ Open figures. Stage 5 correctly explains the discrepancy (different denominators, different standardisation methods). The 29.2% in Stage 3 comes from the BMJ Open 2025 hypertension care performance study (PMID 41475816) — specifically the 2023 crude prevalence figure (31.6%) vs the age-standardised prevalence (27.9% in 2013; Stage 3 may have conflated the 2013 age-standardised with the 2023 crude). RECOMMENDED: Stage 3 should cite '31.6% (2023, Riskesdas-derived, BMJ Open 2025)' or '29.2% (age-standardised, 2023)' with clarification. The discrepancy is methodological, not factual error, but the unstated switch between crude and standardised is a cross-stage inconsistency."
+    },
+    {
+      "topic": "Healthier SG enrollment: 310,000 (Sep 2023) vs 700,000 (Jan 2024)",
+      "stage_A_claim": "Stage 2 value chain: 'Over 310,000 residents enrolled of 954,000 SMS invitations sent = ~32.5% enrollment rate' citing Singapore MoH September 2023 data",
+      "stage_B_claim": "Stage 5 pain points: 'Singapore's Healthier SG programme (launched July 2023; 700,000 enrolled in GP-anchored CDM by January 2024)' citing Singapore MoH Chronic Tier announcement Feb 2024",
+      "severity": "low",
+      "suggested_resolution": "Not an inconsistency — these are different time points (September 2023 vs January 2024). The programme ramped from 310K to 700K enrolled in ~4 months, consistent with rapid scale-up. Both figures are from primary government sources. No correction needed; a parenthetical clarifying the timeline difference would improve readability."
+    },
+    {
+      "topic": "IDF Diabetes Atlas citation: 10th Edition (2023) vs 11th Edition (2025)",
+      "stage_A_claim": "Stage 2 pain points (Source 1): 'IDF Diabetes Atlas 10th Edition — Indonesia 73% undiagnosed'",
+      "stage_B_claim": "Stage 5 value chain and pain points: 'IDF Diabetes Atlas 11th Edition (2025) — 73.2% undiagnosed, 20.4 million total DM'",
+      "severity": "medium",
+      "suggested_resolution": "Stage 2 pain points cites the 10th Edition while Stage 5 uses the 11th Edition (2025). The 11th Edition is the current authoritative source. Stage 2 should be updated to cite IDF Atlas 11th Ed. consistently. The 73% figure is the same (73.2% in the 11th Ed.) but the total case count differs: 10th Ed. cited ~20M, 11th Ed. confirms 20.4M. The Stage 2 use of 10th Ed. introduces potential staleness but does not materially change the argument."
+    },
+    {
+      "topic": "Indonesia total population used as denominator",
+      "stage_A_claim": "Stage 1 value chain table: total population '~280.6 million' (September 2024 BPS Susenas)",
+      "stage_B_claim": "Various stages use '284 million' (e.g., Stage 2 dietary supplement per-capita calculation: '$3.04B / 284M population') and '280 million' (Stage 1 other references). Stage 3 references 'approximately 144–147 million' for employed workforce.",
+      "severity": "low",
+      "suggested_resolution": "The ~280.6M (Sep 2024 BPS) vs ~284M reflects a ~1-year difference in base population estimate — minor inconsistency. Standardize to 280–281M for 2024 (BPS Susenas primary) and note that per-capita calculations using 284M introduce ~1% rounding error."
+    }
+  ],
+  "global_gate": {
+    "total_claims_estimated": 280,
+    "rough_pct_low_corpus_level": "28%",
+    "low_confidence_breakdown": {
+      "assumed_tags_counted": "~85 ASSUMED-tagged claims across 10 files — all auto-Low per rubric",
+      "aggregator_sourced_only": "~15 claims sourced solely from Grand View, Mordor, Statista, TraceData, Ken Research — auto-Low",
+      "unverified_pdf_sources": "~8 claims citing Thinkwell 2022 Fact Sheet (never fetched successfully) or Siloam IDX annual report (Cloudflare-blocked) — auto-Low",
+      "vendor_marketing_primary": "~5 claims about specific insurer capabilities sourced primarily from those insurers' product pages — auto-Low per vendor-marketing override",
+      "apac_as_proxy": "~12 claims using Bain APAC 2024 survey as Indonesia proxy without Indonesia-specific data"
+    },
+    "high_confidence_core": "The epidemiological core of the corpus is strong. IDF Atlas 11th Ed., three Riskesdas waves, four Lancet/BMJ Open peer-reviewed cascade analyses, and OJK primary premium data all cross-validate at High confidence. The structural market gap argument (no private-pay CDM programme exists) is supported at High confidence across all five stages through convergent evidence from multiple independent academic and primary government sources.",
+    "decision": "Ship with flag",
+    "rationale": "The corpus clears the gate on its primary thesis: the Indonesia urban affluent and upper-middle CDM market gap is evidenced at High confidence by converging primary sources (IDF Atlas 2025, Riskesdas 2023, OJK premium data, PMC peer-reviewed cascade studies, Singapore MoH Healthier SG data). The key structural claims — 73.2% undiagnosed DM, 4.2% HTN control rate, 0 operational private-pay CDM programmes, 138% insurer loss ratio — are all sourced at High or Medium-High. However, three flag conditions apply: (1) Approximately 28% of specific quantitative claims are ASSUMED-tagged or aggregator-sourced and should not be used in commercial models without field validation. (2) The DM prevalence discrepancy (11.3% vs 11.7% in 2023 across stages) and HTN prevalence variance (29.2% vs 31.6%) require reconciliation in a final clean version. (3) The Thinkwell 2022 OOP figure (30.5%) cited four times was never verified due to PDF fetch failure and constitutes an unresolved evidentiary gap. A targeted deep-research pass on (a) the Thinkwell PDF fetch via attended mode and (b) BPS Susenas March 2024 full publication would close the two largest outstanding data gaps and push this corpus to Ship as-is.",
+    "over_cited_source_risk": "None of the most-cited sources (PMC12681878 × 9, PMC12519354 × 9, PMC12425502 × 9) represent a single-source risk for the corpus's core claims — these are peer-reviewed academic studies appropriate for cross-stage use. The one structural risk is PMC12425502 (employer retiree plan) being used as a general market proxy, which is flagged in-text but inconsistently applied across stages."
+  }
+}

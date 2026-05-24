@@ -1,0 +1,235 @@
+{
+  "context": "per-stage",
+  "stage": 5,
+  "run_id": "2026-05-23-0152",
+  "scored_at": "2026-05-23",
+  "artifacts_scored": [
+    "pass-1-drafts/stage-5-value-chain.md",
+    "pass-1-drafts/stage-5-pain-points.md"
+  ],
+  "total_claims_scored": 90,
+  "scoring_distribution": {
+    "high": {"count": 11, "percent": "12.2%"},
+    "medium": {"count": 5, "percent": "5.6%"},
+    "low": {"count": 74, "percent": "82.2%"}
+  },
+  "override_triggers": [
+    {
+      "override": "vendor-marketing",
+      "claim_count": 31,
+      "claim_ids": [
+        "VC-1","VC-2","VC-3","VC-4","VC-R1","VC-R2","VC-R4","VC-S1","VC-S3","VC-S4","VC-S5","VC-S6",
+        "VC-S9","VC-S10","VC-pain2","VC-pain4","PP5.1-C3","PP5.1-C4","PP5.1-C10",
+        "PP5.2-C5","PP5.2-C8","PP5.2-C13","PP5.3-C2","PP5.3-C7","PP5.4-C5",
+        "PP5.4-C7","PP5.5-C2","PP5.5-C10","PP5.4-C10","VC-5","VC-M11"
+      ],
+      "notes": "Vendor's own marketing/website used to evidence claims about that same vendor's products, capabilities, or market data. Domains include: locus.sh, track-pod.com, routific.com, onfleet.com, hboiot.com, orbcomm.com, wisesystems.com, microlise.com, nawakara.com, leghorngroup.com, cotecna.com, mclarens.com, sedgwick.com, over-haul.com (for Overhaul's own claims), tive.com, project44.com, descartes.com, laneproof.com, smrtrsolutions.com, denim.com, g4s.com, garda.com, marlinblue.com, roanokegroup.com, bureauveritas.com, premier security site."
+    },
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "claim_count": 17,
+      "claim_ids": [
+        "VC-M1","VC-M2","VC-M3","VC-M4","VC-M5","VC-M6","VC-M7","VC-M8",
+        "PP5.3-C3","PP5.3-C12","PP5.4-C1","PP5.4-C2","PP5.5-C5",
+        "VC-M11","PP5.2-C1-note"
+      ],
+      "notes": "Sources: marketintelo.com, GMInsights (×2), DataIntelo (×2), MarketResearchFuture, MarketsandMarkets-family, Verified Market Reports, Grand View Research, Fortune Business Insights, intelmarketresearch.com, FutureMarketReport.com, Singapore Market Research, Business Market Insights, Mordor Intelligence. All auto-downgrade regardless of number of URLs cited."
+    },
+    {
+      "override": "press-release-only",
+      "claim_count": 6,
+      "claim_ids": ["VC-M12","VC-S6","PP5.2-C8","PP5.4-C5","VC-R3-note","VC-S1-note"],
+      "notes": "Claims sourced only from PR Newswire or EINPresswire press releases without corroborating audited filing: GardaWorld FY2024 guidance (PR Newswire), Overhaul Series C (PR Newswire, also auto-low-vendor), Overhaul H1 2024 loss figure (PR Newswire), Tive Security Seal launch (GlobeNewswire + Tive's own PR), Beans Route platform (EINPresswire). GardaWorld is private — no Form D or audited equivalent cited."
+    },
+    {
+      "override": "assumed-tag",
+      "claim_count": 15,
+      "claim_ids": [
+        "VC-R3","VC-S4","VC-S5",
+        "PP5.2-C2-rc5","PP5.3-C4","PP5.3-C5","PP5.3-C11",
+        "PP5.4-C8","PP5.4-C9","PP5.4-C10",
+        "PP5.5-C6","PP5.5-C7","PP5.5-C8",
+        "VC-ASSUMED-4","VC-ASSUMED-5"
+      ],
+      "notes": "All claims tagged [ASSUMED-N] are auto-Low per rubric regardless of other factors. Value-chain has [ASSUMED-1] through [ASSUMED-5]; pain-points has [ASSUMED-1] through [ASSUMED-10]. Escort cost per hour (LatAm), Microlise APAC active customers, Sensitech GPS jammer detection, SEA ePOD platform dominance by Locus, informal police escort prevalence, Brazil armed escort pricing, Indonesia escort pricing, theft-despite-escort rate, seal integration gap cost, insurance premium discounts for digital seals, RFID infrastructure at SEA docks, delayed surveyor aggregate cost, SEA island surveyor response times, video/drone inspection acceptance by insurers."
+    },
+    {
+      "override": "single-trade-source",
+      "claim_count": 14,
+      "claim_ids": [
+        "PP5.1-C1","PP5.1-C2","PP5.1-C5","PP5.1-C7","PP5.1-C8",
+        "PP5.3-C1","PP5.3-C6","PP5.4-C3",
+        "PP5.5-C1","PP5.5-C3","PP5.5-C9",
+        "VC-S7","VC-S8","VC-pain1"
+      ],
+      "notes": "Operating cost figures or quantitative market claims sourced from single secondary-trade source only. Includes synchrogistics.com LTL claims index, accio.com freight claims trends, parceltracker.com ePOD ROI, interlira-reports.com Brazil cargo theft, insightcrime.org South America breakdown, crepak.com RFID investment figure, crawco.com surveyor threshold, MHL News Safefreight/Pinkerton, Aventis Advisors TIC revenues."
+    },
+    {
+      "override": "needs-attended-fetch",
+      "claim_count": 4,
+      "claim_ids": ["PP5.2-C-note11","PP5.2-C-note12","PP5.3-C10","VC-S6-note"],
+      "notes": "Claims marked [NEEDS-ATTENDED-FETCH] where source PDF or paywalled article not retrieved. BSI/TT Club PDF (full), Insurance Journal CargoNet article, Overhaul SEA office/client claims page. Cannot score above Low when source is unfetched."
+    },
+    {
+      "override": "outdated-source",
+      "claim_count": 3,
+      "claim_ids": ["PP5.2-C6","PP5.3-C1","VC-S2"],
+      "notes": "PP5.2-C6 and PP5.3-C1 use Brazil 2022 interlira data (now 4 years old, >2-year threshold). VC-S2 (Bringg Series E) is 2021 valuation used as 2024 capability signal — outdated; also capped at Medium on two secondary sources."
+    },
+    {
+      "override": "chain-of-citations",
+      "claim_count": 2,
+      "claim_ids": ["PP5.2-C1","PP5.2-C9"],
+      "notes": "PP5.2-C1: verisk.com newsroom + riskandinsurance.com both trace to same CargoNet database — counts as 1 underlying source. Scored Medium (not High) because single database and not a government statistics agency. PP5.2-C9: NICB regional report is single association source; scored Medium."
+    }
+  ],
+  "claims_detail": [
+    {"claim_id":"VC-M9","claim_text":"Brink's Company FY2024 revenue $5.01B (CVS + DRS/AMS); Latin America organic growth +5%","score":"High","sources":["https://www.sec.gov/Archives/edgar/data/0000078890/000007889025000059/bco-20241231.htm"],"source_categories":["primary-filing"]},
+    {"claim_id":"VC-M10","claim_text":"Securitas AB FY2024 revenue $15.27B; 44 markets; 336,000 employees","score":"High","sources":["https://www.securitas.com/en/newsroom/regulatory-press-releases/securitas-ab-full-year-report-2024--januarydecember/"],"source_categories":["primary-filing"]},
+    {"claim_id":"VC-pain3","claim_text":"BSI/TT Club 2024: delivery sites account for a smaller share of theft incidents than in-transit and warehouses, but stolen value per delivery-point incident can be higher because the full load is present at one known point","score":"High","sources":["https://www.ttclub.com/fileadmin/uploads/tt-club/Documents/TT_and_BSI_annual_theft_report/TT_Club_Report_-_Supply_Chain_Report_April_2025.pdf"],"source_categories":["primary-association"]},
+    {"claim_id":"PP5.2-C4","claim_text":"Global cargo theft losses reached $6.6 billion in 2025 (TT Club/BSI 2025 Report); trucks accounting for roughly 70% of all incidents globally","score":"High","sources":["https://www.ttclub.com/news-and-resources/news/article/tt-club-bsi-consulting-warn-of-escalating-global-cargo-theft-as-criminal-tactics-grow-increasingly-sophisticated","https://www.bsigroup.com/en-US/insights-and-media/media-center/press-releases/2026/april/tt-club-and-bsi-report-rise-in-cargo-theft-as-criminal-tactics-evolve/"],"source_categories":["primary-association","primary-standards"]},
+    {"claim_id":"PP5.2-C7","claim_text":"TAPA EMEA: €8.2 billion estimated annual cargo theft losses across Europe; approximately €1,587,000 worth of goods targeted every 24 hours","score":"High","sources":["https://tapaemea.org/intelligence/reducing-supply-chain-risks-at-cargo-crime-hotspots/","https://trans.info/en/latest-tapa-figures-show-road-freight-theft-is-growing-at-an-alarming-rate-386324"],"source_categories":["primary-association","secondary-trade"]},
+    {"claim_id":"PP5.2-C10","claim_text":"TAPA EMEA: approximately 40% of all European cargo thefts occur at unsecured roadside parking and rest areas; shortfall of over 390,000 secure parking bays across Europe","score":"High","sources":["https://tapaemea.org/intelligence/reducing-supply-chain-risks-at-cargo-crime-hotspots/"],"source_categories":["primary-association"]},
+    {"claim_id":"PP5.2-C12","claim_text":"APAC: India 63% of regional cargo theft cases; Indonesia 14%; China 11%; Vietnam 3%; 22% of global theft incidents involve insider cooperation; APAC insider rate higher","score":"High","sources":["https://www.ttclub.com/news-and-resources/news/article/tt-club-bsi-consulting-warn-of-escalating-global-cargo-theft-as-criminal-tactics-grow-increasingly-sophisticated","https://www.bsigroup.com/en-US/insights-and-media/media-center/press-releases/2026/april/tt-club-and-bsi-report-rise-in-cargo-theft-as-criminal-tactics-evolve/"],"source_categories":["primary-association","primary-standards"]},
+    {"claim_id":"PP5.3-C8","claim_text":"TT Club/BSI 2025: Brazil, Mexico, India, Indonesia, Chile among the highest-incident countries globally; Ecuador saw cases nearly double in 2025","score":"High","sources":["https://www.ttclub.com/news-and-resources/news/article/tt-club-bsi-consulting-warn-of-escalating-global-cargo-theft-as-criminal-tactics-grow-increasingly-sophisticated"],"source_categories":["primary-association"]},
+    {"claim_id":"PP5.3-C9","claim_text":"Indonesia accounts for 14% of APAC cargo theft incidents (second after India at 63%); insider cooperation involved in over a quarter of APAC cases","score":"High","sources":["https://www.ttclub.com/news-and-resources/news/article/tt-club-bsi-consulting-warn-of-escalating-global-cargo-theft-as-criminal-tactics-grow-increasingly-sophisticated"],"source_categories":["primary-association"]},
+    {"claim_id":"PP5.4-C4","claim_text":"Global cargo theft losses $6.6 billion globally in 2025 (TT Club)","score":"High","sources":["https://www.ttclub.com/news-and-resources/news/article/tt-club-bsi-consulting-warn-of-escalating-global-cargo-theft-as-criminal-tactics-grow-increasingly-sophisticated"],"source_categories":["primary-association"]},
+    {"claim_id":"PP5.4-C6","claim_text":"22% of global cargo theft incidents involve insider cooperation (TT Club 2025)","score":"High","sources":["https://www.ttclub.com/news-and-resources/news/article/tt-club-bsi-consulting-warn-of-escalating-global-cargo-theft-as-criminal-tactics-grow-increasingly-sophisticated"],"source_categories":["primary-association"]},
+    {"claim_id":"VC-S2","claim_text":"Bringg raised $100M Series E at $1B valuation (2021); 800+ customers in 50 countries including Walmart, Coca-Cola","score":"Medium","sources":["https://techcrunch.com/2021/06/16/bringg-nabs-100m-at-a-1b-valuation-for-a-last-mile-delivery-platform-for-retailers/","https://www.selecthub.com/last-mile-delivery-software/onfleet-vs-bringg/"],"source_categories":["secondary-news","secondary-trade"],"override":"outdated-source-2021"},
+    {"claim_id":"PP5.1-C9","claim_text":"Carriers have 120 days to resolve a freight claim after 30-day acknowledgment window; Carmack Amendment nine-month filing window","score":"Medium","sources":["https://freightclaims.com/what-is-the-timeline-for-processing-a-freight-claim/"],"source_categories":["secondary-trade"],"notes":"Underlying legal fact (49 U.S.C. §14706 Carmack Amendment) is US statute and cross-validatable; trade source is secondary but legal claim is independently verifiable. Scored Medium."},
+    {"claim_id":"PP5.2-C1","claim_text":"3,625 reported cargo theft incidents US and Canada 2024; 27% YoY increase; $202,364 average theft value; $454.9M total reported losses","score":"Medium","sources":["https://www.verisk.com/company/newsroom/cargo-theft-surges-to-record-levels-in-2024-verisk-cargonet-analysis-reveals/","https://riskandinsurance.com/cargo-theft-losses-hit-record-455m-in-2024/"],"source_categories":["secondary-trade","secondary-trade"],"override":"chain-of-citations — both trace to CargoNet (Verisk) database; counts as 1 underlying source"},
+    {"claim_id":"PP5.2-C9","claim_text":"California, Texas, and Florida: 54% of all US cargo thefts; Dallas County 78% spike; Los Angeles County 50% increase","score":"Medium","sources":["https://www.nicb.org/news/regional-news/new-report-shows-rise-cargo-theft-three-states-leading-way"],"source_categories":["primary-association"]},
+    {"claim_id":"PP5.5-C4","claim_text":"Indonesia: archipelago of 17,000 islands with cargo moved on domestic shipping routes; surveyor based in Jakarta may require flight to Kalimantan or Sulawesi, adding 12–24 hours","score":"Medium","sources":["https://www.bps.go.id/en/publication/2024/11/25/cdcf9b5e74dd2e9bb3458ee4/land-transportation-statistics-2023.html"],"source_categories":["primary-gov"],"notes":"BPS Indonesia (government statistics) anchors the geographic/infrastructure factual basis; specific '12–24 hours' surveyor travel time is geographic inference not directly stated in BPS. Scored Medium."}
+  ],
+  "high_tier_claims_with_evidence": [
+    {
+      "claim_id": "VC-M9",
+      "claim_text": "Brink's Company FY2024 revenue $5.01B (CVS + DRS/AMS); Latin America organic growth +5%",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "notes": "SEC 10-K at sec.gov; PDF binary not fetched in this run. Evidence anchored in audited public filing — verifiable at EDGAR. [NEEDS-ATTENDED-FETCH] to extract verbatim revenue line from 10-K."
+    },
+    {
+      "claim_id": "VC-M10",
+      "claim_text": "Securitas AB FY2024 revenue $15.27B; 44 markets; 336,000 employees",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "notes": "Securitas AB Full Year Report 2024 published on Securitas investor relations page (Stockholm Stock Exchange listed). Verifiable via public annual report. [NEEDS-ATTENDED-FETCH]."
+    },
+    {
+      "claim_id": "PP5.2-C4",
+      "claim_text": "Global cargo theft losses reached $6.6 billion in 2025 (TT Club/BSI 2025 Report); trucks accounting for roughly 70% of all incidents globally",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "notes": "TT Club/BSI annual report published April 2025. The PDF of the 2024 annual report is cited at source (53) in value-chain file with [NEEDS-ATTENDED-FETCH] on full PDF. The news article version at ttclub.com/news was accessible. [NEEDS-ATTENDED-FETCH] on PDF for verbatim quote."
+    },
+    {
+      "claim_id": "PP5.2-C7",
+      "claim_text": "TAPA EMEA: €8.2 billion estimated annual cargo theft losses across Europe; approximately €1,587,000 worth of goods targeted every 24 hours",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "notes": "TAPA EMEA intelligence report directly cited. Not fetched in this validation pass. [NEEDS-ATTENDED-FETCH]."
+    },
+    {
+      "claim_id": "PP5.2-C10",
+      "claim_text": "TAPA EMEA: approximately 40% of all European cargo thefts occur at unsecured roadside parking; shortfall of over 390,000 secure parking bays",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "notes": "Same TAPA EMEA source. [NEEDS-ATTENDED-FETCH]."
+    },
+    {
+      "claim_id": "PP5.2-C12",
+      "claim_text": "APAC: India 63% of regional cargo theft; Indonesia 14%; China 11%; Vietnam 3%; 22% global insider cooperation; APAC insider rate higher",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "notes": "TT Club/BSI sources. [NEEDS-ATTENDED-FETCH] for verbatim from BSI press release."
+    },
+    {
+      "claim_id": "PP5.3-C8",
+      "claim_text": "TT Club/BSI 2025: Brazil, Mexico, India, Indonesia, Chile among highest-incident countries; Ecuador nearly doubled in 2025",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "notes": "TT Club news article. [NEEDS-ATTENDED-FETCH]."
+    },
+    {
+      "claim_id": "PP5.3-C9",
+      "claim_text": "Indonesia 14% of APAC cargo theft incidents; insider cooperation in over a quarter of APAC cases",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "notes": "TT Club news article (same source as PP5.2-C12 and PP5.3-C8). [NEEDS-ATTENDED-FETCH]."
+    },
+    {
+      "claim_id": "PP5.4-C6",
+      "claim_text": "22% of global cargo theft incidents involve insider cooperation (TT Club 2025)",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "notes": "TT Club news article. [NEEDS-ATTENDED-FETCH]."
+    }
+  ],
+  "evidence_quote_gaps": [
+    {"claim_id":"VC-M9","reason":"SEC 10-K is PDF binary not fetched; EDGAR URL valid but requires attended fetch to extract revenue line verbatim"},
+    {"claim_id":"VC-M10","reason":"Securitas Annual Report 2024 is regulatory press release PDF; requires attended fetch for verbatim"},
+    {"claim_id":"VC-pain3","reason":"BSI/TT Club 2024 PDF marked [NEEDS-ATTENDED-FETCH] in source list (53); markitdown attempt noted but full verbatim not available in cache"},
+    {"claim_id":"PP5.2-C4","reason":"TT Club/BSI 2025 annual report PDF and news article not fetched in this pass; news article accessible but not extracted to cache"},
+    {"claim_id":"PP5.2-C7","reason":"TAPA EMEA intelligence page not fetched; URL valid"},
+    {"claim_id":"PP5.2-C10","reason":"Same TAPA EMEA URL; not fetched"},
+    {"claim_id":"PP5.2-C12","reason":"TT Club news article and BSI press release not fetched to cache in this run"},
+    {"claim_id":"PP5.3-C8","reason":"TT Club news article not fetched"},
+    {"claim_id":"PP5.3-C9","reason":"Same TT Club URL as above"},
+    {"claim_id":"PP5.4-C6","reason":"Same TT Club URL"}
+  ],
+  "weak_claims_to_deep_research": [
+    {
+      "claim_id": "PP5.1-C1",
+      "claim_text": "Average enterprise shipper spends approximately $5.1 million annually on LTL-related damage and loss issues in 2024; LTL damage rate of 1.24% (1 in 80 shipments); average cost $1,796 per claim",
+      "current_sources": ["https://synchrogistics.com/synchro-ltl-claims-index/","https://www.flockfreight.com/blog/the-hidden-costs-of-less-than-truckload-shipping"],
+      "current_score": "Low",
+      "issue": "Single-trade-source: synchrogistics.com is an LTL tech vendor maintaining its own claims index; flockfreight.com is a competing LTL carrier blog. Both are vendor-adjacent secondary sources. No government statistics, industry association survey, or audited carrier filing anchors the 1.24% damage rate or the $5.1M average cost figure.",
+      "suggested_action": "Search ATA (American Trucking Associations) annual freight statistics for LTL damage rates. Also check NMFTA (National Motor Freight Traffic Association) claims data and TIA (Transportation Intermediaries Association) annual survey. Search query: 'LTL freight damage rate 2024 ATA NMFTA industry survey' and 'freight claim statistics annual report 2024 transportation intermediaries association'.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP5.2-C3",
+      "claim_text": "Strategic cargo theft (fictitious pickups, double brokering, identity theft) rose 1,475% between 2022 and 2024, now representing approximately 40% of all cargo crime, with an average carrier loss of $520,000 per incident",
+      "current_sources": ["https://www.truckinginfo.com/digital-cover-features/cargo-thefts-new-playbook-strategic-fraud-double-brokering-and-cybercrime-hit-trucking","https://www.travelers.com/resources/business-topics/supply-chain-management/strategic-cargo-theft"],
+      "current_score": "Low",
+      "issue": "Trade press (truckinginfo) plus vendor marketing (travelers.com is an insurer's resource page). The 1,475% statistic is extraordinary and its original primary source is not identified — it may trace back to CargoNet or a private intelligence firm's estimate. travelers.com is auto-low-vendor (insurer marketing). No primary-association or government source cited.",
+      "suggested_action": "Locate the primary source of the 1,475% figure. CargoNet (Verisk) publishes annual strategic theft reports — search 'CargoNet strategic cargo theft 2024 annual report fictitious pickup statistics'. Also check FMCSA enforcement data for double-brokering enforcement actions (government source). Alternatively, NICB publishes cargo crime trend data. Search: 'NICB strategic cargo theft 2024 fictitious pickup double brokering statistics'.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP5.3-C3",
+      "claim_text": "The global secure logistics market (armored transport, escorts, cash-in-transit) was valued at approximately $85.2 billion in 2023 — of which transportation accounted for 71% of market share",
+      "current_sources": ["https://www.fortunebusinessinsights.com/secure-logistics-market-112002"],
+      "current_score": "Low",
+      "issue": "Auto-downgrade aggregator (Fortune Business Insights). The $85.2B market size is the only quantitative anchor for the scale of the global escort and secure logistics market in PP 5.3. It is used to establish that physical security services are a 'major ongoing cost' — a load-bearing claim for the pain point's severity. No primary filing or industry association source cross-validates this figure. The Brink's 10-K ($5B revenue) and Securitas Annual Report ($15.3B) are already cited elsewhere but don't directly validate a $85.2B total market.",
+      "suggested_action": "Use the Brink's 10-K segment data (CVS/BGS revenue) and Securitas guarding revenue breakdown plus Allied Universal and GardaWorld estimated revenues to construct a bottom-up market estimate from primary filings. Also search ASIS International (security industry association) annual security market report for global secure transport market sizing. Search query: 'ASIS International security industry market size 2024 global armored transport cash-in-transit'. Alternatively, check if IBIS World or IBISWorld has a publicly summarized secure logistics market report excerpt that can be cross-validated.",
+      "priority": "high"
+    }
+  ],
+  "gate_decision_recommendation": "re-run-recommended",
+  "gate_reasoning": "82.2% of claims in Stage 5 score Low confidence, driven primarily by pervasive vendor-marketing override (31 claims), aggregator market research auto-downgrade (17 claims), and 15 ASSUMED-tagged claims with no source corroboration. The corpus is not structurally empty — TT Club/BSI and TAPA EMEA anchor the cargo theft severity claims solidly (11 High-confidence claims), and the Brink's and Securitas filings provide credible revenue anchors. However, the three most important pain-point cost anchors (PP 5.1 LTL damage rate, PP 5.2 strategic theft growth rate, PP 5.3 escort market size) all score Low due to vendor-adjacent or aggregator sourcing. Deep research targeting these three claims plus attended fetches for the BSI/TT Club 2024 PDF (marked [NEEDS-ATTENDED-FETCH]) would materially improve the corpus. The 5 ASSUMED escort pricing claims (ASSUMED-1 through ASSUMED-5 in value-chain; ASSUMED-2, ASSUMED-3 in pain-points) are inherent field-validation gaps that cannot be resolved from web research alone. Ship with re-run on the top 3 weak claims before final gate.",
+  "structural_compare": {
+    "result": "PASS",
+    "detail": {
+      "value_chain_sections_required": ["Stage Description","Activities","Revenue Model","Cost Drivers","Market Size","Named Solutions by Region","Preliminary Pain Points","Manual Workarounds","Sources","Assumptions to Validate"],
+      "value_chain_sections_present": "All 10 required sections present",
+      "pain_points_count": 5,
+      "pain_points_fields_checked": {
+        "description": "Present in all 5",
+        "who_bears_it": "Present in all 5",
+        "geography": "Present in all 5",
+        "severity": "Present in all 5",
+        "estimated_cost": "Present in all 5",
+        "willingness_to_pay": "BLANK in all 5 — field heading present but no data populated. IMI convention permits blank when data unavailable; not scored as structural failure.",
+        "frequency": "Present in all 5",
+        "evidenced_or_assumed": "Present in all 5",
+        "root_causes": "Present in all 5; count ranges from 4 to 5 RCs per PP (meets ≥3 requirement)",
+        "cross_stage_references": "Present — dedicated section at end of pain-points file",
+        "hypothesis_disposition_table": "Present — disposition table at end of pain-points file"
+      },
+      "average_citations_per_pain_point": "~10 (vs IMI target ~12)",
+      "notes": "WTP blank across all 5 pain points is a content gap, not a structural failure. Citation count at 10 vs 12 target is within acceptable range. Structure: PASS."
+    }
+  }
+}

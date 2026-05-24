@@ -1,0 +1,108 @@
+{
+  "claim_id": "PP5.1-C1",
+  "claim_text": "LTL freight damage rate = 1.24%; enterprise shipper annual LTL claims = $5.1-$6.3M",
+  "outcome": "confirmed-scarce",
+  "searches_performed": [
+    "ATA American Trucking Associations LTL freight damage claim rate statistics annual report",
+    "NMFTA National Motor Freight Traffic Association freight damage statistics LTL claims rate",
+    "TIA Transportation Intermediaries Association annual survey LTL freight claims damage rate statistics",
+    "Travelers insurance LTL freight damage claims rate study shipper annual loss statistics",
+    "Bureau of Transportation Statistics freight damage loss rate LTL carrier claims data annual",
+    "Marsh McLennan AIG cargo claims loss ratio trucking freight damage statistics published report",
+    "Surface Transportation Board annual report LTL carrier freight claims damage loss statistics trucking",
+    "LTL freight damage rate 1.24 percent source data methodology industry benchmark peer-reviewed",
+    "FreightWaves SONAR LTL damage claims rate industry benchmark shipper annual cost 2023 2024",
+    "Flock Freight Wasted Space Wasted Dollars 2024 research methodology sample size shipper survey",
+    "Flock Freight 1.24% LTL damage rate 2025 shipper research study"
+  ],
+  "categories_searched": [
+    "primary-gov (ATA, BTS, Surface Transportation Board)",
+    "primary-multilateral (none applicable — domestic US trucking)",
+    "primary-regulatory (NMFTA — found no damage-rate publications)",
+    "primary-insurance (Travelers, Marsh McLennan, AIG — found no public damage-rate reports)",
+    "industry-association (TIA — members-only data, not publicly accessible)",
+    "trade-media (FreightWaves SONAR — rate benchmarks only, not damage claims)",
+    "vendor-authored-survey (Flock Freight 2024 + 2025 whitepapers — fetched and verified via markitdown)"
+  ],
+  "source_verification": {
+    "flock_freight_2024_whitepaper": {
+      "url": "https://uploads-ssl.webflow.com/656b56e5fc9ae6eba29a2fcf/6644e610e9c1ff398e500e36_Wasted-Space-Wasted-Dollars-Research-Study-2024-Whitepaper-v1.1.pdf",
+      "fetched_via": "markitdown (PDF)",
+      "verified": true,
+      "key_findings": "2023 data: average LTL damage rate 1.94% (1 in 51 shipments); largest enterprise shippers incurred up to $6.3M annually in damage and loss claims. Average cost per claim $3,777. Footnote 1: 'Source: 2023 Drive Research Study & Flock claims data'. Methodology: 1,000-respondent online survey conducted by Drive Research (third party), Feb–Apr 2024, 57 questions, 95% confidence level ±3% margin of error.",
+      "notes": "The $6.3M figure is the upper bound for the largest shippers (company size $3B+). The 1.94% is the 2023 damage rate from this study. This study does NOT contain the 1.24% figure."
+    },
+    "flock_freight_2025_study": {
+      "url": "https://www.flockfreight.com/the-need-for-speed-research-study-25",
+      "pdf_url": "https://cdn.prod.website-files.com/656b56e5fc9ae6eba29a2fcf/683616423c5c446d77f76361_Flock-Freight-Shipper-Research-Study-2025-min.pdf",
+      "fetched_via": "markitdown (PDF — returned empty, likely DRM/dynamic)",
+      "verified_via_search_snippet": true,
+      "key_findings": "2024 data: average LTL damage rate 1.24% (1 in 80 shipments); largest shippers incurred up to $5.1M in damage and loss claims in 2024. Average cost per claim $1,796. Same Drive Research methodology.",
+      "notes": "PDF empty on markitdown. Figures corroborated by search snippet. This is the source of the 1.24% and $5.1M figures. $5.1M is the upper bound for large shippers in 2024."
+    },
+    "synchrogistics_claims_index": {
+      "url": "https://synchrogistics.com/synchro-ltl-claims-index/",
+      "fetched_via": "cache/curl — blocked (Wordfence 503)",
+      "notes": "The Synchro LTL Claims Ratio Index uses a different metric: claims paid ($) / carrier revenue = 0.34–0.35% in Q1–Q2 2025. This is NOT the same as the shipment damage incidence rate (1.24%). The two metrics measure fundamentally different things and should not be conflated."
+    },
+    "ata_trucking_org": {
+      "url": "https://trucking.org",
+      "notes": "ATA publishes American Trucking Trends (annual). ATA also has freight claims law review events. No freely accessible published LTL damage rate statistics found. Paywall/membership required for detailed data."
+    },
+    "bts_freight_facts": {
+      "url": "https://www.bts.gov/product/freight-facts-and-figures",
+      "fetched_via": "cache — Access Denied (403)",
+      "notes": "BTS Freight Facts and Figures covers freight movement volumes and transportation system performance, not carrier claims rates."
+    },
+    "nmfta": {
+      "notes": "NMFTA is focused on freight classification (NMFC codes), not aggregate damage rate statistics. No published damage-rate data found."
+    },
+    "tia_tianet": {
+      "url": "https://tianet.org",
+      "notes": "TIA publishes 3PL market reports and covers cargo claims topics, but survey data is members-only and not publicly indexed."
+    },
+    "marsh_aig_travelers": {
+      "notes": "No publicly available Marsh, AIG, or Travelers LTL cargo damage rate report found. Insurance industry cargo loss data not publicly published in accessible form."
+    }
+  },
+  "critical_finding": "The claim conflates two separate Flock Freight surveys: the 1.24% damage rate and $5.1M figure come from the 2025 study (reporting 2024 data), while the $6.3M figure comes from the 2024 study (reporting 2023 data). When combined as '$5.1-$6.3M', the range spans two different survey years (2023 and 2024). The 2024 study reported 1.94%, not 1.24%. So '1.24%' and '$5.1-$6.3M' cannot be used as a single coherent data point — they originate from different year surveys. Both surveys are vendor-authored (Flock Freight, an LTL alternative carrier that profits from demonstrating LTL is problematic), conducted via Drive Research (legitimate third-party firm), with 1,000-respondent samples. No government, multilateral, academic, or major insurer source confirms these specific figures. The Synchrogistics claims ratio (0.34–0.35%) uses a revenue-denominated metric that is not comparable.",
+  "suggested_revision_options": [
+    {
+      "option": "split-and-mark-assumed",
+      "revised_claim_text": "[ASSUMED-N based on Flock Freight/Drive Research shipper surveys]: LTL freight damage incidence rate was reported at 1.24% of shipments in 2024 (down from 1.94% in 2023), with the largest enterprise shippers ($3B+ revenue) incurring up to $5.1M annually in damage and loss claims — to validate: ATA American Trucking Trends data purchase, TIA member survey, or Marsh/Aon cargo loss actuarial data",
+      "suggested_score": "Low",
+      "rationale": "The 1.24% and $5.1M figures come exclusively from a single vendor-sponsored shipper survey (Flock Freight 2025 study). No independent primary source confirms these figures. The combined '$5.1-$6.3M' range is also misleading as it spans two different survey years."
+    },
+    {
+      "option": "widen-range",
+      "revised_claim_text": "LTL freight damage incidence rates are reported in the range of 1-2% of shipments by industry surveys, with enterprise shippers potentially incurring millions annually in claims costs — specific figures vary materially by methodology and company size.",
+      "suggested_score": "Medium",
+      "rationale": "The 1-2% range for LTL damage rates appears consistently across multiple logistics industry sources (including Nuvocargo benchmarks and multiple blog-cited industry benchmarks), even if no single government or academic source publishes it. The wider range is defensible."
+    },
+    {
+      "option": "drop-specific-numbers",
+      "rationale": "The specific 1.24% and $5.1-$6.3M figures are too precisely vendor-sourced and methodologically fragile (vendor survey, cross-year conflation) to be stated as fact in a primary research artifact without clearer caveating."
+    }
+  ],
+  "recommended_option": "split-and-mark-assumed",
+  "reasoning": "No government agency (BTS, ATA-published public data), insurer (Marsh, Travelers, AIG), multilateral, or academic source publishes a verifiable LTL shipment damage rate. The specific 1.24% and $5.1-6.3M figures trace exclusively to Flock Freight vendor-commissioned surveys (Drive Research, 1,000 respondents), where Flock Freight has a commercial interest in demonstrating LTL damage is costly. The cross-year conflation of the range ($5.1M from 2025 study / 2024 data; $6.3M from 2024 study / 2023 data) further weakens the claim's precision. The claim should be marked ASSUMED-N with a validation path to ATA Trucking Trends, TIA membership data, or insurer actuarial sources.",
+  "attended_fetch_candidates": [
+    {
+      "url": "https://cdn.prod.website-files.com/656b56e5fc9ae6eba29a2fcf/683616423c5c446d77f76361_Flock-Freight-Shipper-Research-Study-2025-min.pdf",
+      "reason": "Markitdown returned empty — likely DRM-protected. Attended browser fetch needed to read 2025 study methodology and confirm 1.24% and $5.1M figures directly from PDF."
+    },
+    {
+      "url": "https://synchrogistics.com/synchro-ltl-claims-index/",
+      "reason": "Blocked by Wordfence. Attended fetch could retrieve the actual quarterly claims index data to provide an independent (though differently-metric) benchmark."
+    }
+  ],
+  "deep_research_metadata": {
+    "searches_run": 11,
+    "fetches_attempted": 6,
+    "fetches_successful": 2,
+    "fetches_blocked": 4,
+    "pdf_markitdown_used": true,
+    "cache_used": true,
+    "research_date": "2026-05-23"
+  }
+}

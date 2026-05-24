@@ -1,0 +1,57 @@
+{
+  "claim_id": "VC-Nirvana",
+  "outcome": "replace",
+  "verified_nirvana_valuation": {
+    "latest_round": "Series D",
+    "post_money_usd": 1500000000,
+    "date": "2025-12-18",
+    "amount_raised_usd": 100000000,
+    "lead_investors": ["Valor Equity Partners"],
+    "participating_investors": ["Lightspeed Venture Partners", "General Catalyst"],
+    "prior_rounds": [
+      {"round": "Seed", "date": "2021-01", "amount_usd": 3200000},
+      {"round": "Series A", "date": "2022-02-23", "amount_usd": 22000000},
+      {"round": "Series B", "date": "2023-10-17", "amount_usd": 57000000},
+      {"round": "Series C", "date": "2025-03-10", "amount_usd": 80000000, "post_money_usd": 830000000}
+    ],
+    "total_raised_usd": 262000000,
+    "source": "https://www.prnewswire.com/news-releases/nirvana-raises-100-million-series-d-to-further-redefine-trillion-dollar-industry-302645840.html"
+  },
+  "tokio_marine_connection": {
+    "confirmed_investor": true,
+    "vehicle": "Tokio Marine Future Fund (managed by WiL, LLC on behalf of Tokio Marine & Nichido Fire Insurance Co., Ltd.)",
+    "round_or_date": "Series A (2022) — named as early-stage portfolio company in TMFF fund launch announcement April 2022",
+    "primary_evidence_url": "https://www.tmfuturefund.com/",
+    "secondary_evidence_url": "https://techcrunch.com/2022/04/19/japanese-insurance-company-tokio-marine-launches-cvc-fund-to-back-early-stage-startups/",
+    "verbatim_quote": "The fund has made several early-stage investments to date, including [...] Nirvana Insurance, a platform that delivers commercial insurance for fleets and transportation from the ground up [...] — TechCrunch, April 19 2022, citing fund launch",
+    "fund_size_note": "$42M CVC fund; TMFF check sizes $500K–$3M into seed/Series A; Nirvana listed on live portfolio page as of May 2026",
+    "caveat": "TMFF invested at Series A stage ($22M, Feb 2022). Tokio Marine Future Fund is NOT confirmed as participant in Series C ($830M, Mar 2025) or Series D ($1.5B, Dec 2025). The pitch deck claim that Tokio Marine 'validates' the model is accurate for early-stage entry but should not imply current lead-round participation."
+  },
+  "sec_form_d": {
+    "found": false,
+    "searches_performed": [
+      "EDGAR full-text: 'Nirvana Insurance' + forms=D — 0 results",
+      "EDGAR full-text: 'Nirvana Technology' + forms=D — 0 results",
+      "EDGAR full-text: 'Nirvana Technology, Inc' + forms=D — 0 results",
+      "EDGAR full-text: 'nirvanatech' + forms=D — 0 results",
+      "EDGAR company browser: 'nirvana insurance', type=D — no matching entities",
+      "EDGAR company browser: 'nirvana technology', type=D — no matching entities",
+      "EDGAR broad: 'nirvana' + forms=D, 2022-2026 — 14 hits, none are Nirvana Insurance/Tech"
+    ],
+    "note": "Nirvana Insurance (legal entity likely 'Nirvana Technology, Inc.' or similar) has filed NO Form D on SEC EDGAR for any funding round. This is unusual but not uncommon for VC-backed startups using Reg D 506(b) exemptions with delayed or omitted filings; does not invalidate the funding rounds which are confirmed via press releases and fund portfolio pages."
+  },
+  "sources_consulted": [
+    {"url": "https://www.prnewswire.com/news-releases/nirvana-raises-100-million-series-d-to-further-redefine-trillion-dollar-industry-302645840.html", "status": "ok", "type": "primary-press-release", "notes": "Official Nirvana Series D announcement; confirms $100M, $1.5B valuation, Valor EP lead"},
+    {"url": "https://www.tmfuturefund.com/", "status": "ok", "type": "primary-fund-website", "notes": "Tokio Marine Future Fund live portfolio page; Nirvana explicitly listed as portfolio company; managed by WiL LLC on behalf of Tokio Marine & Nichido Fire"},
+    {"url": "https://techcrunch.com/2022/04/19/japanese-insurance-company-tokio-marine-launches-cvc-fund-to-back-early-stage-startups/", "status": "ok", "type": "secondary-news-primary-confirmation", "notes": "TechCrunch April 2022 covers fund launch; verbatim names Nirvana Insurance as portfolio company"},
+    {"url": "https://www.nirvanatech.com/resources/series-d", "status": "ok", "type": "primary-company-announcement", "notes": "Nirvana's own Series D page; confirms round, names Valor EP / Lightspeed / General Catalyst; no Tokio Marine mention (expected — TMFF invested at Series A, not D)"},
+    {"url": "https://www.nirvanatech.com/press", "status": "ok", "type": "primary-company", "notes": "Nirvana press page listing all rounds with dates"},
+    {"url": "https://news.crunchbase.com/ai/insurance-platform-nirvana-valuation-nearly-doubles/", "status": "ok", "type": "secondary-news", "notes": "Crunchbase confirms $1.5B Series D valuation; $830M Series C valuation; total $262M raised"},
+    {"url": "https://www.businesswire.com/news/home/20220419005075/en/Global-Insurance-Company-Tokio-Marine-Launches-Tokio-Marine-Future-Fund-a-42M-CVC-Arm-to-Support-Early-Stage-Startups", "status": "timeout", "type": "primary-press-release", "notes": "[NEEDS-ATTENDED-FETCH]: BusinessWire Tokio Marine Future Fund launch announcement — timed out, but content confirmed via TechCrunch coverage of same event"},
+    {"url": "https://efts.sec.gov/LATEST/search-index?q=%22Nirvana+Insurance%22&forms=D", "status": "ok", "type": "sec-edgar", "notes": "0 results — no Form D on file for Nirvana Insurance"},
+    {"url": "https://efts.sec.gov/LATEST/search-index?q=%22Nirvana+Technology%22&forms=D", "status": "ok", "type": "sec-edgar", "notes": "0 results"}
+  ],
+  "replacement_text": "Nirvana Insurance is an AI-native commercial trucking insurer that reached a $1.5 billion post-money valuation in its $100 million Series D round (December 2025, led by Valor Equity Partners), bringing total funding to over $260 million. Tokio Marine Future Fund — the $42 million CVC arm of Tokio Marine & Nichido Fire Insurance Co., Ltd., managed by WiL, LLC — is a confirmed portfolio investor, having backed Nirvana at the Series A stage (February 2022), and continues to list Nirvana as an active portfolio company on its fund website as of 2026.",
+  "confidence_after": "High",
+  "notes": "Both sub-claims are now confirmed at High confidence. (1) The $1.5B valuation is confirmed via Nirvana's own PRNewswire Series D press release (Dec 2025) — not merely Crunchbase secondary. (2) Tokio Marine Future Fund's investment is confirmed via the fund's own live portfolio page (tmfuturefund.com) AND verbatim TechCrunch coverage of the April 2022 fund-launch press release. Key pitch-deck nuance: TMFF invested at Series A (~$22M raise) with a check size likely $500K–$3M; the $1.5B Series D was led by Valor Equity Partners, Lightspeed, and General Catalyst — NOT Tokio Marine. The original draft text ('Tokio Marine Future Fund is an investor') is correct but should clarify it is an early-stage investor, not a current-round lead, to avoid misleading the ID&E venture pitch audience. No SEC Form D was found for any Nirvana entity across comprehensive EDGAR searches — the company appears to have not filed Form D for its rounds, which is unusual but not disqualifying."
+}

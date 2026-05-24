@@ -1,0 +1,24 @@
+{
+  "claim_id": "PP1.2-2",
+  "outcome": "replace",
+  "original_claim": "organized cargo theft increased 1,500% since 2021",
+  "replacement_text": "Strategic cargo theft — identity fraud, fictitious pickups, and double-brokering schemes — surged nearly 1,500% since 2021, according to CargoNet (Verisk). Overall recorded cargo theft incidents rose from approximately 1,546 in 2021 to 3,625 in 2024 (a 135% cumulative increase), with dollar losses hitting a record $454.9M in 2024 (a 60% year-over-year increase from 2023's $331.9M).",
+  "sources_consulted": [
+    {"url": "https://www.verisk.com/company/newsroom/cargo-theft-surges-to-record-levels-in-2024-verisk-cargonet-analysis-reveals/", "status": "ok-html-only"},
+    {"url": "https://tapa.memberclicks.net/assets/2025-National-Cargo-Theft-Conferfence/Presentations-for-Sharing/2024%20Annual%20Verisk%20CargoNet%E2%80%99s%20Supply%20Chain%20Risk%20Report.pdf", "status": "ok-pdf-markitdown"},
+    {"url": "https://www.cargonet.com/news-and-events/cargonet-in-the-media/2024-theft-trends/", "status": "ok"},
+    {"url": "https://www.cargonet.com/news-and-events/cargonet-in-the-media/2025-theft-trends/", "status": "ok"},
+    {"url": "https://www.cargonet.com/news-and-events/cargonet-in-the-media/2023-Q2-theft-trends/", "status": "ok"},
+    {"url": "https://www.cargonet.com/news-and-events/cargonet-in-the-media/2024-q3-theft-trends/", "status": "ok"},
+    {"url": "https://www.atsinc.com/blog/cargo-theft-rising-protect-shipments", "status": "ok"},
+    {"url": "https://www.trucking.org/news-insights/freight-under-fire-explosive-rise-cargo-theft", "status": "blocked-403"},
+    {"url": "https://losspreventionmedia.com/strategic-cargo-theft-what-it-is-how-it-started-and-what-you-can-do-to-stop-it/", "status": "blocked-403"},
+    {"url": "https://www.ic3.gov/PSA/2026/PSA260430", "status": "ok"},
+    {"url": "https://www.freightwaves.com/news/strategic-cargo-theft-growth-pushes-industry-fraud-toward-all-time-high", "status": "ok"}
+  ],
+  "primary_evidence": "\"There has been an astonishing increase in strategic cargo theft as of late — nearly 1,500 percent since 2021, according to CargoNet.\" The 1,500% figure is specifically and consistently attributed by multiple secondary sources (ATA, ATS Logistics, Loss Prevention Media, FreightWaves) to CargoNet data, and refers to STRATEGIC THEFT incidents (identity fraud, fictitious pickups, double-brokering) — not total organized cargo theft incidents or dollar losses. Overall cargo theft incidents grew from ~1,546 (2021) to 3,625 (2024) per CargoNet, a 135% total increase, not 1,500%.",
+  "primary_source_url": "https://www.atsinc.com/blog/cargo-theft-rising-protect-shipments",
+  "primary_source_publisher": "CargoNet (Verisk), cited via ATS Logistics and American Trucking Associations",
+  "confidence_after": "Medium",
+  "notes": "The 1,500% figure IS real and IS attributed to CargoNet, but the draft claim is materially misleading in two ways: (1) The metric is STRATEGIC THEFT specifically (fraud/identity-based schemes), not 'organized cargo theft' broadly. Using it to describe all organized theft inflates the overall picture. (2) The baseline year and endpoint vary slightly across secondary sources — some cite 'since 2021', others 'Q1 2021 to Q4 2024', one FreightWaves reference says '1,475% between Q1 2022 and Q4 2024'. The primary CargoNet publications (member-gated annual report and public quarterly summaries) do not contain the exact 1,500% figure in publicly readable pages — it surfaces via ATA congressional testimony and industry press. Because the figure refers specifically to a sub-category (strategic/fraud-based theft) rather than all organized cargo theft, the draft claim is misleading if presented without that qualification. The replacement text corrects the scope to 'strategic cargo theft' and adds the verified overall incident and loss figures for context. Confidence is Medium rather than High because the exact CargoNet primary source page could not be directly fetched (member-gated) — attribution is confirmed through multiple credible secondary sources citing CargoNet."
+}

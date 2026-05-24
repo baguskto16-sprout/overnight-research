@@ -1,0 +1,121 @@
+{
+  "claim_id": "PP6.1-CargoNet-cluster",
+  "claim_text": "Six CargoNet stats (3,625 incidents, +27% YoY, $454.9M, $202,364 avg, 1,475% strategic theft rise, FBI $1B est) all from single Verisk newsroom press release",
+  "outcome": "found-stronger-evidence",
+  "research_summary": "The six statistics cited in PP6.1 do NOT all originate from the Verisk newsroom press release alone. The first four statistics (3,625 incidents, +27% YoY, $454.9M total, $202,364 avg) are confirmed in BOTH the press release AND the full TAPA-hosted CargoNet 2024 Annual Supply Chain Risk Report PDF — a distinct primary-source document. The 1,475% strategic theft rise originates from a FreightWaves article citing CargoNet quarterly data (Q1 2022 to Q4 2024), not the press release. The FBI $1B estimate is NOT in the Verisk press release; it likely refers to expert-consensus framing cited in CNBC/industry media. The FBI's own IC3 does publish cargo theft PSAs corroborating the trend (2026 PSA confirming $725M in 2025 losses). TT Club/BSI independently corroborates strategic theft growth in the US (18% of all US incidents by 2024). Separation of provenance is critical: four stats have a distinct primary source (the full annual report PDF, not just the press release); the 1,475% and FBI $1B need separate sourcing.",
+  "new_sources": [
+    {
+      "url": "https://tapa.memberclicks.net/assets/2025-National-Cargo-Theft-Conferfence/Presentations-for-Sharing/2024%20Annual%20Verisk%20CargoNet%E2%80%99s%20Supply%20Chain%20Risk%20Report.pdf",
+      "category": "primary-industry-data",
+      "publisher": "Verisk CargoNet (actuarial/insurance-industry cargo theft database aggregator)",
+      "publication_date": "2025-01 (covering full-year 2024)",
+      "via_pdf_markitdown": true,
+      "supports_claim": true,
+      "key_data": "Full-year 2024 Annual Supply Chain Risk Report (non-member summary version, presented at TAPA National Cargo Theft Conference). Confirms verbatim: 3,625 theft incidents in 2024; 27% increase from 2023; total loss value $454,914,764; average value per theft $202,364 (up from $187,895 in 2023). Covers US and Canada. Methodology: CargoNet database of reported incidents since January 2010, with 144 data fields per incident. Full member version contains state/province breakdown, location type breakdown, day-of-week analysis.",
+      "distinguishes_from_press_release": "This is the underlying annual report document from which the press release is derived. It pre-dates or accompanies the press release (Jan 21, 2025) and contains additional quarterly and commodity breakdowns not in the press release. Citing this document upgrades the core four statistics from 'press-release-only' to 'primary annual report' status.",
+      "caveat": "This is the non-member summary version; the full member-only report contains more granular breakdowns. The 1,475% strategic theft figure does NOT appear in this document."
+    },
+    {
+      "url": "https://www.freightwaves.com/news/strategic-cargo-theft-is-a-rapidly-growing-concern",
+      "category": "secondary-trade-media",
+      "publisher": "FreightWaves (trade publication, citing CargoNet quarterly data)",
+      "publication_date": "2024-2025 (specific date not confirmed in search snippet)",
+      "via_pdf_markitdown": false,
+      "supports_claim": true,
+      "key_data": "Strategic cargo theft (deception/identity-theft-based) rose 1,475% from Q1 2022 to Q4 2024, going from approximately 3% of all theft incidents to approximately 33%. This is a quarterly-to-quarterly comparison (Q1 2022 vs Q4 2024), not a simple YoY figure. Source attributed to CargoNet data.",
+      "distinguishes_from_press_release": "The 1,475% figure does NOT appear in the Verisk press release. It originates in FreightWaves reporting on CargoNet's quarterly tracking data. This is Tier 4 secondary sourcing for that specific statistic; the underlying CargoNet database is the primary source but the specific computed percentage appears in trade-media interpretation.",
+      "caveat": "FreightWaves is a Tier 4 trade publication. The 1,475% is a computed metric from quarterly snapshots, not an annual-report headline figure. The specific Q1 2022 baseline is a low base (3% of incidents), making the percentage dramatic but methodologically tied to period selection. URL requires verification via attended fetch — blocked on WebFetch."
+    },
+    {
+      "url": "https://www.ttclub.com/fileadmin/uploads/tt-club/Documents/TT_and_BSI_annual_theft_report/TT_Club_Report_-_Supply_Chain_Report_April_2025.pdf",
+      "category": "primary-industry-insurer",
+      "publisher": "TT Club (transport insurer) and BSI Consulting — independent from Verisk/CargoNet",
+      "publication_date": "2025-04",
+      "via_pdf_markitdown": true,
+      "supports_claim": true,
+      "key_data": "BSI/TT Club 2024 Cargo Theft Report independently corroborates: (1) strategic theft now represents ~18% of all US cargo theft incidents in 2024; (2) United States is among top 3 countries globally for cargo theft incidents (11% of global share, behind Brazil 23% and Mexico 13%); (3) food and beverage most-stolen commodity globally (22% of incidents), with electronics 9%; (4) 76% of all thefts involve trucks. Does NOT cite the specific dollar figures (CargoNet's $454.9M), but independently validates the strategic theft surge trend and US incident-level significance.",
+      "distinguishes_from_press_release": "This is a fully independent source (different insurer, different data methodology) that corroborates the qualitative trend of strategic theft growth in the US without depending on CargoNet data.",
+      "caveat": "TT Club/BSI does not publish a US-specific aggregate dollar loss figure. Their strategic theft percentage (18%) is lower than CargoNet's ~33% endpoint, reflecting different definitions or counting methodologies."
+    },
+    {
+      "url": "https://www.ic3.gov/PSA/2026/PSA260430",
+      "category": "primary-gov",
+      "publisher": "FBI Internet Crime Complaint Center (IC3) — federal law enforcement",
+      "publication_date": "2026-04-30",
+      "via_pdf_markitdown": false,
+      "supports_claim": "partial",
+      "key_data": "FBI IC3 PSA on cyber-enabled strategic cargo theft (April 30, 2026). Confirms: 2025 US+Canada cargo theft losses surged to nearly $725M (60% increase from 2024's ~$455M baseline); confirmed incidents rose 18%; average theft value up 36% to $273,990. FBI explicitly corroborates the CargoNet data and trend trajectory. Does NOT contain a '$1 billion' FBI estimate — that figure is not in this document.",
+      "distinguishes_from_press_release": "This is an official FBI/federal law enforcement corroboration of the CargoNet trend data. It validates the 2024 baseline ($455M) by treating it as a confirmed reference point for 2025 comparison. Importantly, it does NOT provide an independent FBI estimate of $1 billion — the $1B figure may originate from DHS/HSI or expert-consensus framing in trade media.",
+      "caveat": "This PSA covers 2025 data, not 2024. It does not independently validate the 1,475% figure. The $1B annual FBI estimate, if cited in the original claim, may originate from an older FBI archive page ('Cargo Thieves Stealing Billions Annually,' 2006) or from HSI/DHS aggregate estimates rather than CargoNet. Needs separate sourcing."
+    },
+    {
+      "url": "https://www.nicb.org/news/news-releases/nicb-warns-increased-cargo-theft-2025",
+      "category": "primary-industry-data",
+      "publisher": "National Insurance Crime Bureau (NICB) — non-profit insurance industry body",
+      "publication_date": "2025",
+      "via_pdf_markitdown": false,
+      "supports_claim": true,
+      "key_data": "NICB independently confirms cargo crime incidents rose 27% in 2024. NICB is a separate organization from Verisk/CargoNet (though they share data). This is a second independent publication confirming the +27% YoY incident increase.",
+      "distinguishes_from_press_release": "Provides independent corroboration of the +27% figure from a separate insurance-industry body, distinct from the Verisk newsroom.",
+      "caveat": "NICB does not publish an independent aggregate dollar loss figure. Their incident-count data partially overlaps with CargoNet's database through law-enforcement data sharing arrangements."
+    }
+  ],
+  "stat_by_stat_provenance": {
+    "3625_incidents": {
+      "in_verisk_press_release": true,
+      "in_cargonet_annual_report_pdf": true,
+      "independent_corroboration": "NICB (27% figure), BSI/TT Club (US = #3 globally), FBI IC3 PSA (treats 2024 as confirmed baseline)",
+      "verdict": "Well-sourced; upgrades from press-release-only to annual-report + corroboration"
+    },
+    "27pct_YoY": {
+      "in_verisk_press_release": true,
+      "in_cargonet_annual_report_pdf": true,
+      "independent_corroboration": "NICB independently confirmed 27% increase",
+      "verdict": "Well-sourced; NICB provides independent corroboration"
+    },
+    "454_9M_total": {
+      "in_verisk_press_release": true,
+      "in_cargonet_annual_report_pdf": true,
+      "independent_corroboration": "FBI IC3 PSA treats it as confirmed 2024 baseline; Risk & Insurance trade publication confirms figure citing CargoNet",
+      "verdict": "Well-sourced from CargoNet annual report; no independent government dollar-loss figure but FBI treats it as established"
+    },
+    "202364_avg": {
+      "in_verisk_press_release": true,
+      "in_cargonet_annual_report_pdf": true,
+      "independent_corroboration": "Burns & Wilcox insurance broker publication cites same figure",
+      "verdict": "Well-sourced from CargoNet annual report"
+    },
+    "1475pct_strategic_rise": {
+      "in_verisk_press_release": false,
+      "in_cargonet_annual_report_pdf": false,
+      "source": "FreightWaves citing CargoNet quarterly data (Q1 2022 to Q4 2024 comparison). NOT in the press release.",
+      "independent_corroboration": "BSI/TT Club confirms strategic theft ~18% of US incidents; CargoNet quarterly reports document the trend",
+      "verdict": "NEEDS SEPARATE CITATION. This is a trade-media-computed metric from CargoNet quarterly data, not an annual-report headline. Should cite CargoNet quarterly trend data via FreightWaves or the Q3 2024 quarterly report, not the annual press release. The percentage is mathematically derived from quarterly snapshots and depends on the low Q1 2022 baseline."
+    },
+    "fbi_1b_estimate": {
+      "in_verisk_press_release": false,
+      "in_cargonet_annual_report_pdf": false,
+      "source": "NOT FOUND in Verisk press release, CargoNet annual report, or FBI IC3 2026 PSA. Likely originates from: (a) DHS/Homeland Security Investigations aggregate estimate ('$35 billion' total often cited), or (b) trade-media expert consensus statements (CNBC: 'experts estimate close to $1 billion'), or (c) archived FBI statements from 2006-2010 era ('billions annually'). TIA January 2025 revised its own estimate to '$1 billion-plus.'",
+      "independent_corroboration": "TIA revised estimate 'in excess of $1 billion' (January 2025); CNBC 'experts estimate close to $1 billion or more'; FBI IC3 confirms $725M in 2025 (exceeding $1B trajectory)",
+      "verdict": "NEEDS SEPARATE CITATION AND CLARIFICATION. If the $1B figure is attributed to 'FBI estimate,' this cannot be verified from UCR data or IC3 PSAs. The FBI's UCR cargo theft program reports incident counts and values from participating agencies (which significantly undercount due to voluntary participation). The $1B likely refers to DHS/HSI estimates, TIA revised estimate, or expert-consensus framing. Citing it as 'FBI estimate' without a specific FBI source URL is problematic."
+    }
+  },
+  "suggested_revision": "Disaggregate the six statistics by source. Revised claim for PP6.1: 'Cargo theft across the US and Canada reached record levels in 2024: 3,625 reported incidents (+27% YoY), with total estimated losses of $454.9M ($202,364 average per incident), per Verisk CargoNet's 2024 Annual Supply Chain Risk Report (January 2025) — independently corroborated by NICB (+27% incident count) and the FBI IC3's April 2026 PSA treating the 2024 figure as confirmed baseline. Strategic deception-based theft grew from ~3% of incidents (Q1 2022) to ~33% by end-2024, a 1,475% rise in share per CargoNet quarterly tracking (FreightWaves analysis). Industry-consensus loss estimates exceed $1 billion annually when accounting for unreported incidents, per TIA (revised January 2025) and expert sources cited by CNBC.' Separate footnotes for: (1) CargoNet annual report PDF; (2) NICB 2025 press release; (3) FBI IC3 PSA260430; (4) FreightWaves/CargoNet quarterly data for 1,475%; (5) TIA '$1B+' estimate for the $1B figure.",
+  "suggested_new_score": "Medium-High",
+  "score_rationale": "Four of the six statistics (3,625 / 27% / $454.9M / $202,364) are now sourced to the full CargoNet annual report PDF (distinct from the press release, accessed via TAPA conference hosting) and are independently corroborated by NICB and FBI IC3. This upgrades from 'press-release-only' to 'primary annual report + independent corroboration.' The 1,475% figure is a FreightWaves-computed metric from CargoNet quarterly data — legitimate but a secondary interpretation, not an annual-report headline stat. The FBI $1B estimate cannot be pinned to a specific FBI document and should be reattributed to TIA's revised estimate or expert consensus. Score is Medium-High (not High) because: CargoNet is Tier 3 (insurance-industry aggregator, not government UCR), the 1,475% needs a direct CargoNet quarterly citation, and the FBI $1B reattribution leaves a residual gap.",
+  "needs_attended_fetch": [
+    {
+      "url": "https://www.freightwaves.com/news/strategic-cargo-theft-is-a-rapidly-growing-concern",
+      "reason": "FreightWaves article containing the 1,475% strategic theft calculation from CargoNet quarterly data. WebFetch blocked. Need to verify exact wording, time period of comparison (Q1 2022 to Q4 2024), and specific CargoNet quarterly report cited. Attended fetch recommended to confirm this is the primary source of the 1,475% figure."
+    },
+    {
+      "url": "https://archives.fbi.gov/archives/news/stories/2006/july/cargo_theft072106",
+      "reason": "FBI archive page 'Cargo Thieves Stealing Billions Annually' (2006). If the '$1B FBI estimate' in the original claim traces to an older FBI statement, this archive page may be the source. Attended fetch to check what dollar figures FBI used historically."
+    },
+    {
+      "url": "https://ucr.fbi.gov/cargo-theft-update/view",
+      "reason": "FBI UCR Cargo Theft Update page (HTTP 403 from WebFetch). This is the FBI's own summary of their cargo theft data collection. Attended fetch may reveal whether FBI UCR publishes any aggregate dollar loss estimate, or whether the $1B figure in the claim has no FBI UCR basis."
+    }
+  ],
+  "cross_reference_note": "Stage 1 DR (pp-1.1-1) already confirmed these statistics and identified the TAPA PDF as a needed fetch. That DR's findings are now confirmed and expanded: the TAPA PDF was successfully fetched via markitdown in this session, confirming the four core statistics in the annual report. Stage 1 also confirmed TIA's '$1B+' revised estimate (January 2025) as the most defensible source for the $1B figure. The CargoNet/TIA provenance chain is: CargoNet incident database (primary measurement) → Verisk annual report PDF → Verisk press release → trade media amplification. The 1,475% figure lives in the FreightWaves layer, not the primary Verisk documents."
+}

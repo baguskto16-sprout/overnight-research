@@ -1,0 +1,661 @@
+{
+  "stage": 1,
+  "run_id": "2026-05-23-0736",
+  "validated_by": "source-validator",
+  "context": "per-stage",
+  "claims": [
+    {
+      "id": "S1-VC1",
+      "claim": "BPS five-tier expenditure classification (kelas atas, kelas menengah, calon kelas menengah, vulnerable, poor) based on multiples of national poverty line; World Bank 2019 parallel framework used as cross-validation.",
+      "sources": ["https://documents1.worldbank.org/curated/en/519991580138621024/pdf/Aspiring-Indonesia-Expanding-the-Middle-Class.pdf", "https://www.bps.go.id/en/publication/2025/05/28/b67b4702334f3123221372ba/pengeluaran-untuk-konsumsi-penduduk-indonesia-september-2024.html"],
+      "tier": "primary-multilateral + primary-gov",
+      "confidence": "High",
+      "override_applied": "none",
+      "rationale": "World Bank 2019 authored report (primary-multilateral) plus BPS publication landing page (primary-gov). Two independent primary sources confirming the definitional framework."
+    },
+    {
+      "id": "S1-VC2",
+      "claim": "BPS affluent (kelas atas) population = 1.29 million persons, September 2024.",
+      "sources": ["https://en.antaranews.com/news/326039/middle-class-resilience-key-to-sustaining-indonesias-economy", "https://www.thejakartapost.com/business/2024/12/30/2024-a-year-of-shrinking-indonesian-middle-class.html"],
+      "tier": "secondary-news citing primary-gov (BPS Sept 2024 Susenas release)",
+      "confidence": "High",
+      "override_applied": "none",
+      "rationale": "Two independent news outlets (Antara, Jakarta Post) both citing the same BPS September 2024 Susenas press release. The underlying BPS release is primary-gov; two secondary-news sources corroborating from the same primary = High per rubric (2+ independent sources where ≥1 traces to primary-gov)."
+    },
+    {
+      "id": "S1-VC3",
+      "claim": "BPS middle class (kelas menengah) = 48.41 million persons, 17.25% of population, September 2024.",
+      "sources": ["https://en.antaranews.com/news/326039/middle-class-resilience-key-to-sustaining-indonesias-economy", "https://www.thejakartapost.com/business/2024/12/30/2024-a-year-of-shrinking-indonesian-middle-class.html"],
+      "tier": "secondary-news citing primary-gov",
+      "confidence": "High",
+      "override_applied": "none",
+      "rationale": "Same BPS September 2024 release cited by two independent outlets. High by same logic as S1-VC2."
+    },
+    {
+      "id": "S1-VC4",
+      "claim": "BPS income class IDR thresholds: affluent >IDR 9,909,844/month per capita; middle class IDR 2,040,262–9,909,844; aspiring middle IDR 1,020,131–2,040,262.",
+      "sources": ["https://en.antaranews.com/news/326039/middle-class-resilience-key-to-sustaining-indonesias-economy", "https://documents1.worldbank.org/curated/en/519991580138621024/pdf/Aspiring-Indonesia-Expanding-the-Middle-Class.pdf"],
+      "tier": "primary-gov (BPS via Antara) + primary-multilateral (World Bank 2019)",
+      "confidence": "High",
+      "override_applied": "none",
+      "rationale": "BPS thresholds confirmed by two independent primary-tier sources: BPS September 2024 release (via Antara) and World Bank 2019 Aspiring Indonesia report."
+    },
+    {
+      "id": "S1-VC5",
+      "claim": "Average Indonesian household size is 3.9 persons (used to derive household counts from per-capita population data).",
+      "sources": [],
+      "tier": "assumed",
+      "confidence": "Low",
+      "override_applied": "ASSUMED tag: [ASSUMED-1] — auto-Low by definition",
+      "rationale": "Explicitly tagged [ASSUMED-1]. No source cited for this specific figure. Auto-Low."
+    },
+    {
+      "id": "S1-VC6",
+      "claim": "World Bank MC2 (upper-middle class, per capita >IDR 6M/month): approximately 5 million persons in 2016 under World Bank definition.",
+      "sources": ["https://documents1.worldbank.org/curated/en/519991580138621024/pdf/Aspiring-Indonesia-Expanding-the-Middle-Class.pdf"],
+      "tier": "primary-multilateral",
+      "confidence": "High",
+      "override_applied": "none",
+      "rationale": "World Bank 2019 Aspiring Indonesia authored report (primary-multilateral). Single strong primary source for a historical figure. 2016 base year noted — data is from Susenas 2016 used within a 2019 report, accepted as historical reference."
+    },
+    {
+      "id": "S1-VC7",
+      "claim": "MC2 upper-middle segment updated to approximately 6–8 million persons in 2024 after adjusting for population growth and income upgrading.",
+      "sources": ["https://documents1.worldbank.org/curated/en/519991580138621024/pdf/Aspiring-Indonesia-Expanding-the-Middle-Class.pdf"],
+      "tier": "assumed/derived",
+      "confidence": "Low",
+      "override_applied": "ASSUMED tag: [ASSUMED-2] — auto-Low by definition",
+      "rationale": "Explicitly tagged [ASSUMED-2]. Derived from 2016 World Bank figure with no BPS Susenas 2024 tabulation. The 2024 count is an unvalidated estimate."
+    },
+    {
+      "id": "S1-VC8",
+      "claim": "BCG 'mass affluent' (~$24,000/year HH income threshold): approximately 5% of Indonesia's population in 2018, projected to 21% by 2030.",
+      "sources": ["https://www.bcg.com/en-sea/publications/2018/beyond-crazy-rich-mass-affluent-southeast-asia.aspx"],
+      "tier": "primary-consultancy (BCG 2018)",
+      "confidence": "Medium",
+      "override_applied": "Outdated-source override: 2018 data is >3 years old for a market sizing claim; stale for 2024 comparison.",
+      "rationale": "BCG authored report qualifies as primary-consultancy. However, 2018 data exceeds 3-year staleness threshold for market sizing. Capped at Medium."
+    },
+    {
+      "id": "S1-VC9",
+      "claim": "Total MSO addressable population approximately 7–9 million persons / 1.8–2.3 million households across all geographies.",
+      "sources": [],
+      "tier": "assumed/derived",
+      "confidence": "Low",
+      "override_applied": "ASSUMED tag: [ASSUMED-3] — auto-Low by definition",
+      "rationale": "Explicitly tagged [ASSUMED-3]. Derived estimate combining ASSUMED-1 (HH size) and ASSUMED-2 (MC2 2024 count). Compound assumption, auto-Low."
+    },
+    {
+      "id": "S1-VC10",
+      "claim": "BPS/Susenas surveys structurally under-capture very high-income Indonesians; the 1.29M affluent figure is a statistical floor, not a true ceiling.",
+      "sources": ["https://documents1.worldbank.org/curated/en/519991580138621024/pdf/Aspiring-Indonesia-Expanding-the-Middle-Class.pdf"],
+      "tier": "primary-multilateral",
+      "confidence": "High",
+      "override_applied": "none",
+      "rationale": "World Bank 2019 explicitly flags this: 'initial results indicate that the upper class is much larger and richer than the survey data suggest.' Primary-multilateral authored report."
+    },
+    {
+      "id": "S1-VC11",
+      "claim": "Indonesia has 10 officially designated national metropolitan areas (kawasan perkotaan metropolitan nasional) via Presidential Regulation.",
+      "sources": ["https://en.wikipedia.org/wiki/List_of_metropolitan_areas_in_Indonesia"],
+      "tier": "secondary (Wikipedia citing primary-gov BPS 2020 Census and Presidential Regulation)",
+      "confidence": "Medium",
+      "override_applied": "Wikipedia is auto-low-tier as direct source; underlying primary is BPS 2020 Census. Indirect citation capped at Medium.",
+      "rationale": "The underlying source (BPS 2020 Census + Presidential Regulation) is primary-gov, but accessed only via Wikipedia intermediary. Medium due to indirect citation."
+    },
+    {
+      "id": "S1-VC12",
+      "claim": "Metropolitan area population figures: Jabodetabek 33.4M, Surabaya metro 9.6M, Bandung Basin 8.4M, Semarang 5.7M, Medan 4.8M (mid-2024 estimates, 2020 Census base).",
+      "sources": ["https://en.wikipedia.org/wiki/List_of_metropolitan_areas_in_Indonesia"],
+      "tier": "secondary (Wikipedia citing BPS 2020 Census)",
+      "confidence": "Medium",
+      "override_applied": "Wikipedia intermediary; underlying BPS 2020 Census is primary-gov. Same issue as S1-VC11.",
+      "rationale": "Same indirect citation issue. Medium. Direct BPS Census table citation would elevate to High."
+    },
+    {
+      "id": "S1-VC13",
+      "claim": "Tier-1 cities = Jakarta, Surabaya, Bandung, Semarang, Medan; Tier-2 = Makassar, Palembang, Denpasar, Banjarmasin, Manado plus next 10–15 large cities. No official government 'Tier' classification exists.",
+      "sources": [],
+      "tier": "assumed",
+      "confidence": "Low",
+      "override_applied": "ASSUMED tag: [ASSUMED-4] — auto-Low; no authoritative government source uses this tier terminology.",
+      "rationale": "Explicitly tagged [ASSUMED-4]. Investor/consumer research convention only. Auto-Low."
+    },
+    {
+      "id": "S1-VC14",
+      "claim": "Indonesia's urban population was 58.8% of total (approximately 165 million persons) in 2024.",
+      "sources": ["https://www.statista.com/statistics/455835/urbanization-in-indonesia/"],
+      "tier": "secondary-market-research (Statista aggregator)",
+      "confidence": "Low",
+      "override_applied": "Aggregator auto-downgrade: Statista is a private data aggregator. Single secondary source. No BPS or World Bank cross-validation cited.",
+      "rationale": "Statista is a commercial aggregator, not a primary statistics agency. BPS or World Bank urbanization data would be required for Medium or High. Auto-downgrade to Low."
+    },
+    {
+      "id": "S1-VC15",
+      "claim": "Jabodetabek GDP per capita approximately $8,775 (2019); DKI Jakarta per capita ~$22,000 (~4× national average of $4,368).",
+      "sources": ["https://en.wikipedia.org/wiki/Jakarta_metropolitan_area"],
+      "tier": "secondary (Wikipedia citing regional economic data)",
+      "confidence": "Medium",
+      "override_applied": "Wikipedia intermediary. 2019 data is >3 years old (stale). Outdated-source override partially applies — but this is used as supporting proxy, not headline claim.",
+      "rationale": "Wikipedia sourcing with 2019 GDP data. Medium due to indirect citation and data age. The directional concentration claim (Jakarta >> national average) is well-established and corroborated by general economic context."
+    },
+    {
+      "id": "S1-VC16",
+      "claim": "Surabaya metro GDP per capita approximately 1.5× the national average.",
+      "sources": ["https://documents1.worldbank.org/curated/en/520931468269430645/pdf/717400WP00PUBL020FINAL0to0PRINTING0.pdf"],
+      "tier": "primary-multilateral (World Bank publication)",
+      "confidence": "Medium",
+      "override_applied": "Outdated-source override: World Bank document URL structure suggests pre-2020 publication; data age likely >3 years. Cannot confirm date from URL alone but document ID pattern (717400WP) consistent with older publications.",
+      "rationale": "World Bank is primary-multilateral, but document appears significantly older than 3 years. Capped at Medium pending date confirmation."
+    },
+    {
+      "id": "S1-VC17",
+      "claim": "Surabaya leads Indonesia with >8% high-class consumers (top 10% global earners by PPP); national average 1.5%.",
+      "sources": ["https://www.statista.com/statistics/1488484/indonesia-high-earning-consumers-by-city/"],
+      "tier": "secondary-market-research (Statista / Tellusant 2024)",
+      "confidence": "Low",
+      "override_applied": "Aggregator auto-downgrade: Statista commercial aggregator. Single secondary source with no primary-gov or multilateral corroboration.",
+      "rationale": "Statista/Tellusant 2024 data. No BPS or academic cross-validation. Auto-downgrade to Low."
+    },
+    {
+      "id": "S1-VC18",
+      "claim": "Java/Bali accounts for approximately 67% of national health spending despite representing 57% of the population.",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC8359753/"],
+      "tier": "primary-academic (PMC8359753)",
+      "confidence": "High",
+      "override_applied": "none",
+      "rationale": "Peer-reviewed benefit incidence analysis published in PMC (primary-academic). Single strong primary source sufficient for High under rubric criteria (≥1 primary-gov-equivalent or ≥1 primary-academic with specific Indonesia data)."
+    },
+    {
+      "id": "S1-VC19",
+      "claim": "Private healthcare in Indonesia has concentration index of 0.134 (2018) and 0.190 (2019), confirming pro-rich distribution.",
+      "sources": ["https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(23)00064-5/fulltext"],
+      "tier": "primary-academic (Lancet Global Health 2023) — NEEDS-ATTENDED-FETCH",
+      "confidence": "Pending-attended-fetch",
+      "override_applied": "NEEDS-ATTENDED-FETCH: URL returned HTTP 403. Source is Lancet Global Health (primary-academic) but content unverified.",
+      "rationale": "The underlying source is Lancet Global Health 2023 which would be primary-academic and sufficient for High. However, the full text is behind HTTP 403 and cited only via search snippet. Cannot confirm verbatim. Confidence pending attended fetch."
+    },
+    {
+      "id": "S1-VC20",
+      "claim": "Tier-1 cities (Jakarta, Surabaya, Bandung, Semarang, Medan) contain approximately 55–65% of the national affluent + upper-middle (MC2) segment.",
+      "sources": [],
+      "tier": "assumed/derived",
+      "confidence": "Low",
+      "override_applied": "ASSUMED tag: [ASSUMED-5] — auto-Low. No BPS Susenas income class × city cross-tab available.",
+      "rationale": "Explicitly tagged [ASSUMED-5]. Derived via GDP proxy + health spend concentration. Auto-Low."
+    },
+    {
+      "id": "S1-VC21",
+      "claim": "Approximately 1.0–1.5M affluent + upper-middle households in Tier-1 cities; 300K–500K in Tier-2 cities; total 1.3–2.0M households.",
+      "sources": [],
+      "tier": "assumed/derived",
+      "confidence": "Low",
+      "override_applied": "ASSUMED tags: [ASSUMED-3][ASSUMED-5] — compound assumed, auto-Low.",
+      "rationale": "Derived from compound assumptions on city tier share and total addressable HH count. Both parent assumptions are tagged. Auto-Low."
+    },
+    {
+      "id": "S1-VC22",
+      "claim": "Indonesia middle class (World Bank definition) grew at approximately 10%/year 2002–2016, from ~14 million to ~52 million people.",
+      "sources": ["https://documents1.worldbank.org/curated/en/519991580138621024/pdf/Aspiring-Indonesia-Expanding-the-Middle-Class.pdf"],
+      "tier": "primary-multilateral",
+      "confidence": "High",
+      "override_applied": "none",
+      "rationale": "World Bank 2019 Aspiring Indonesia report (primary-multilateral). Historical growth trajectory data from the same survey series. High."
+    },
+    {
+      "id": "S1-VC23",
+      "claim": "BPS middle class peaked at 57.33 million (21.45% of population) in 2019.",
+      "sources": ["https://jakartaglobe.id/business/indonesias-shrinking-middle-class-threatens-growth-consumption"],
+      "tier": "secondary-news (Jakarta Globe 2025 citing BPS)",
+      "confidence": "Medium",
+      "override_applied": "Trade-press-only: single secondary-news source citing BPS data without direct BPS citation. Max Medium.",
+      "rationale": "Jakarta Globe 2025 cites BPS data but is not the primary BPS publication. Single secondary-news source. Medium."
+    },
+    {
+      "id": "S1-VC24",
+      "claim": "BPS middle class declined by approximately 9.48 million persons (−16.5%) between 2019 and 2024, reaching 47.85 million in March 2024.",
+      "sources": ["https://jakartaglobe.id/business/indonesias-shrinking-middle-class-threatens-growth-consumption", "https://thediplomat.com/2024/09/is-indonesias-middle-class-really-shrinking/"],
+      "tier": "secondary-news (Jakarta Globe) + secondary-news (The Diplomat — NEEDS-ATTENDED-FETCH)",
+      "confidence": "Medium",
+      "override_applied": "NEEDS-ATTENDED-FETCH on The Diplomat (HTTP 403); confirmed via search snippet only. Both are secondary-news. Two trade/news sources from different publishers citing same BPS data = Medium.",
+      "rationale": "Two independent secondary-news sources from different publishers, both citing BPS underlying data. The Diplomat citation is from search snippet due to HTTP 403. Medium."
+    },
+    {
+      "id": "S1-VC25",
+      "claim": "Affluent class grew from ~1.07M (2021) to 1.29M (Sept 2024), approximately +26% or ~4.7% CAGR.",
+      "sources": ["https://en.antaranews.com/news/326039/middle-class-resilience-key-to-sustaining-indonesias-economy"],
+      "tier": "secondary-news (Antara, citing BPS data for both years)",
+      "confidence": "Medium",
+      "override_applied": "Single-domain override: both the 2024 figure and the 2021 comparator figure come from Antara/BPS family (Source 14 is described as 'Antara News data table in search snippet'). The underlying primary is BPS, but only one source family used for the CAGR derivation.",
+      "rationale": "The 1.29M Sept 2024 is High on its own (S1-VC2). The 2021 1.07M figure is from the same Antara/BPS publication family. CAGR calculation rests on single-source-family comparator. Medium."
+    },
+    {
+      "id": "S1-VC26",
+      "claim": "McKinsey 2012 'Archipelago Economy' projected Indonesia would add 90 million new consumers by 2030 (to ~135 million total consuming class).",
+      "sources": ["https://www.mckinsey.com/~/media/McKinsey/Featured%20Insights/Asia%20Pacific/The%20archipelago%20economy/MGI_Unleashing_Indonesia_potential_Full_report.ashx"],
+      "tier": "primary-consultancy (McKinsey Global Institute 2012)",
+      "confidence": "Medium",
+      "override_applied": "Outdated-source override: 2012 data is >3 years old. The claim is about a historical projection (existence of projection), so age is less critical than for current market sizing — but the projection's continued validity is unclear without the 2024/2025 McKinsey update.",
+      "rationale": "MGI authored report (primary-consultancy). The projection itself is accurately reported. However, the 12-year age makes the forward-looking comparison uncertain. Medium."
+    },
+    {
+      "id": "S1-VC27",
+      "claim": "McKinsey 2030 consuming-class projection remains partially on track in volume but structurally weaker than projected due to aspiring-middle-class overhang.",
+      "sources": ["https://www.mckinsey.com/mgi/our-research/the-enterprising-archipelago-propelling-indonesias-productivity"],
+      "tier": "assumed — NEEDS-ATTENDED-FETCH",
+      "confidence": "Low",
+      "override_applied": "ASSUMED tag: [ASSUMED-7]; NEEDS-ATTENDED-FETCH. The 2024 McKinsey update has not been reviewed. Auto-Low.",
+      "rationale": "Explicitly tagged [ASSUMED-7]. The McKinsey 'Enterprising Archipelago' 2024 update cited but not fetched. Reconciliation claim is unvalidated. Auto-Low."
+    },
+    {
+      "id": "S1-VC28",
+      "claim": "Indonesia total health expenditure per capita ~$178/year (2022); OOP payments ~30.5% of total health expenditure in 2022, down from 34% in 2019.",
+      "sources": ["https://thinkwell.global/wp-content/uploads/2022/09/Health-Financing-Fact-Sheet_-Indonesia_September_2022.pdf", "https://www.who.int/about/accountability/results/who-results-report-2020-mtr/country-story/2023/indonesia-s-success-in-achieving-90-percent-coverage-and-minimizing-out-of-pocket-expenses-through-national-health-insurance-expansion"],
+      "tier": "secondary-trade (Thinkwell — NEEDS-ATTENDED-FETCH) + primary-multilateral (WHO Indonesia page)",
+      "confidence": "Medium",
+      "override_applied": "NEEDS-ATTENDED-FETCH on Thinkwell PDF (binary/corrupt). WHO source is accessible and confirms OOP is declining (cites 40% in 2015 to 29% in 2023). The specific 30.5% for 2022 and $178 per-capita figure rely on Thinkwell which is unverified. WHO corroborates the directional trend.",
+      "rationale": "WHO source (primary-multilateral) is accessible and confirms declining OOP trend; Thinkwell provides the specific 2022 figure but is pending fetch. Medium — directionally supported by primary-multilateral; specific number from unverified secondary."
+    },
+    {
+      "id": "S1-VC29",
+      "claim": "National per capita health spending IDR 2.2 million/year (2023).",
+      "sources": ["https://www.bps.go.id/en/publication/2023/12/20/feffe5519c812d560bb131ca/health-statistics-profile-2023.html"],
+      "tier": "primary-gov (BPS Health Statistics Profile 2023) — NEEDS-ATTENDED-FETCH",
+      "confidence": "Pending-attended-fetch",
+      "override_applied": "NEEDS-ATTENDED-FETCH: BPS URL returned HTTP 403. Antara News used as intermediary for the IDR 2.2M figure. Underlying source is BPS (primary-gov) but unverified.",
+      "rationale": "The primary source is BPS Health Statistics Profile 2023 (primary-gov) which would yield High confidence. However, it returned HTTP 403 and only the Antara News intermediary is confirmable. Pending-attended-fetch."
+    },
+    {
+      "id": "S1-VC30",
+      "claim": "OOP per outpatient episode: Q1 IDR 118,000; Q5 IDR 485,000 (2018 data).",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC10483778/"],
+      "tier": "primary-academic (PMC10483778, peer-reviewed)",
+      "confidence": "High",
+      "override_applied": "none",
+      "rationale": "Peer-reviewed study using Household Panel Study 2018–2019 data. Primary-academic. Note: 2018 data is approaching 6 years old; no more recent Indonesia OOP quintile study found. High for what it is, but flagged as potentially stale."
+    },
+    {
+      "id": "S1-VC31",
+      "claim": "OOP per inpatient episode: Q1 IDR 1,481,000; Q5 IDR 2,668,000 (2018 data).",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC10483778/"],
+      "tier": "primary-academic (PMC10483778)",
+      "confidence": "High",
+      "override_applied": "none",
+      "rationale": "Same source as S1-VC30. Primary-academic. Same staleness caveat."
+    },
+    {
+      "id": "S1-VC32",
+      "claim": "Richest quintile received 40.5% of healthcare benefits (hospital outpatient subsidy-equivalent) vs. 9.2% for the poorest (2017).",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC8359753/"],
+      "tier": "primary-academic (PMC8359753)",
+      "confidence": "High",
+      "override_applied": "none",
+      "rationale": "Peer-reviewed benefit incidence analysis for Indonesia (PMC8359753). Primary-academic. Strong."
+    },
+    {
+      "id": "S1-VC33",
+      "claim": "Median annual OOP spending for richest quintile (Q5) in Java/Bali approximately $20.40/year (2018); note that Susenas structurally under-reports private clinic and specialist spending.",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC8491299/"],
+      "tier": "primary-academic (PMC8491299)",
+      "confidence": "High",
+      "override_applied": "none",
+      "rationale": "Peer-reviewed secondary analysis of national data (PMC8491299). Primary-academic. Both the figure and the under-reporting caveat are from this source."
+    },
+    {
+      "id": "S1-VC34",
+      "claim": "Top-decile urban household healthcare budget approximately $890–$1,400/year (3–5% of non-food household expenditure at >IDR 38.6M/month household consumption).",
+      "sources": [],
+      "tier": "assumed/derived — NEEDS-ATTENDED-FETCH for BPS table",
+      "confidence": "Low",
+      "override_applied": "ASSUMED tag: [ASSUMED-8]; derived estimate; BPS Susenas table for health as % of non-food by class is NEEDS-ATTENDED-FETCH. Auto-Low.",
+      "rationale": "Explicitly tagged [ASSUMED-8]. Derived calculation without direct BPS Susenas decile table. Auto-Low."
+    },
+    {
+      "id": "S1-PP1",
+      "claim": "91% of APAC consumers prefer a single touchpoint to manage their health; Indonesia trusts hospitals most, a proxy for absence of established primary care entry point.",
+      "sources": ["https://www.bain.com/insights/asia-pacific-front-line-of-healthcare-2024/"],
+      "tier": "primary-consultancy (Bain & Company 2024 APAC consumer survey, 2,300 respondents including Indonesia)",
+      "confidence": "Medium",
+      "override_applied": "APAC-as-proxy override: 91% figure is APAC-aggregate; the Indonesia-specific trust claim is derived from the broader APAC survey. Geography mismatch flag.",
+      "rationale": "Bain 2024 authored survey (primary-consultancy). However, the 91% statistic is APAC-wide. Indonesia-specific result not separately cited. APAC-as-proxy caps at Medium. Geography mismatch flag applied."
+    },
+    {
+      "id": "S1-PP2",
+      "claim": "Annual private-pay primary care market opportunity approximately $170M–$450M/year for the addressable affluent + MC2 segment.",
+      "sources": [],
+      "tier": "assumed/derived",
+      "confidence": "Low",
+      "override_applied": "ASSUMED tag: [ASSUMED-A1]. Derived from addressable population (itself assumed) × assumed visit frequency × assumed price. Triple assumption chain. Auto-Low.",
+      "rationale": "Explicitly tagged [ASSUMED-A1]. No published source for private-pay primary care visit volume or aggregate market size. Auto-Low."
+    },
+    {
+      "id": "S1-PP3",
+      "claim": "Private outpatient specialist consultations at Siloam/RS Pondok Indah/Mitra Keluarga range IDR 300,000–800,000 per consultation; GP consultations IDR 100,000–250,000.",
+      "sources": [],
+      "tier": "no source cited",
+      "confidence": "Low",
+      "override_applied": "No source cited for price ranges. These price figures appear as stated fact without a footnote or citation.",
+      "rationale": "No citation found for these specific price ranges. Could be from field knowledge or unacknowledged source. Low by default — no source."
+    },
+    {
+      "id": "S1-PP4",
+      "claim": "Avoidable specialist premium spend approximately $180M–$460M/year across 1.8–2.3M affluent + MC2 households.",
+      "sources": [],
+      "tier": "assumed/derived",
+      "confidence": "Low",
+      "override_applied": "ASSUMED tag: [ASSUMED-A2]. Derived from assumed specialist self-referral rate (unmeasured) × assumed price premium × assumed HH count (itself ASSUMED-3). Auto-Low.",
+      "rationale": "Explicitly tagged [ASSUMED-A2]. Compound assumption. Auto-Low."
+    },
+    {
+      "id": "S1-PP5",
+      "claim": "Heart disease, hypertension, diabetes, and stroke imposed combined direct + indirect burden of Int$4.02 billion on Indonesian households in 2010, projected to reach Int$5.80 billion by 2020.",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC4051736/"],
+      "tier": "primary-academic (Finkelstein et al. PLOS ONE 2014, PMC4051736)",
+      "confidence": "High",
+      "override_applied": "none",
+      "rationale": "Peer-reviewed PLOS ONE 2014 study (PMC4051736) by Finkelstein et al. of Duke-NUS. Primary-academic. Historical figures (2010) from representative study."
+    },
+    {
+      "id": "S1-PP6",
+      "claim": "Undiagnosed diabetes alone imposed Int$0.81 billion economic burden in Indonesia in 2010.",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC4051736/"],
+      "tier": "primary-academic (PMC4051736)",
+      "confidence": "High",
+      "override_applied": "none",
+      "rationale": "Same Finkelstein et al. PLOS ONE 2014 study. Primary-academic."
+    },
+    {
+      "id": "S1-PP7",
+      "claim": "Indonesia's GP-to-population ratio was approximately 0.6 per 1,000 in 2023, against WHO threshold of 1.0 per 1,000; approximately 120,000 more doctors needed.",
+      "sources": ["https://www.bernama.com/en/news.php?id=2341705", "https://www.umy.ac.id/en/rasio-dokter-indonesia-jauh-dari-standar-who-apa-implikasinya/"],
+      "tier": "secondary-news (BERNAMA citing Indonesia MoH) + secondary (UMY university website citing WHO standard)",
+      "confidence": "Medium",
+      "override_applied": "None triggered that drops below Medium. Two sources from different publishers: BERNAMA (citing MoH as primary-ministry) + UMY (university, secondary). The GP ratio is well-corroborated. Capped at Medium because neither is the direct MoH or WHO publication.",
+      "rationale": "Two independent secondary sources from different publishers, both tracing to primary authorities (MoH, WHO). Consistent with well-known Indonesia health system data. Medium — needs direct MoH or WHO GHO citation for High."
+    },
+    {
+      "id": "S1-PP8",
+      "claim": "JKN gatekeeping applies only to BPJS-funded care; private-pay patients have no structural incentive to see a GP first and can access private specialists directly without referral.",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC7780672/", "https://www.commonwealthfund.org/international-health-policy-center/countries/indonesia"],
+      "tier": "primary-academic (PMC7780672) + secondary (Commonwealth Fund — independent think-tank)",
+      "confidence": "High",
+      "override_applied": "none",
+      "rationale": "BMC Family Practice 2021 peer-reviewed study on GP gatekeeper role in Indonesia (primary-academic) plus Commonwealth Fund Indonesia country profile (credible independent think-tank). Two independent sources, one primary-academic."
+    },
+    {
+      "id": "S1-PP9",
+      "claim": "Siloam International Hospitals FY2023: 4 million+ outpatient visits; 82% of revenue from private payers (OOP, corporate, insurance).",
+      "sources": ["https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202403/731587cc9e_b0b5f51270.pdf"],
+      "tier": "primary-filing (IDX press release / annual announcement) — NEEDS-ATTENDED-FETCH",
+      "confidence": "Pending-attended-fetch",
+      "override_applied": "NEEDS-ATTENDED-FETCH: IDX URL blocked by Cloudflare. Source is IDX-listed company announcement (primary-filing equivalent) but content unverified. Revenue mix confirmed 'via search snippets' per draft.",
+      "rationale": "IDX annual announcement is a primary-filing. If confirmed, would yield High. Pending attended fetch to verify specific 82% private-payer figure."
+    },
+    {
+      "id": "S1-PP10",
+      "claim": "Halodoc holds 67.2% of Indonesia's telemedicine market share; 20 million monthly users as of 2023.",
+      "sources": ["https://www.dealstreetasia.com/partner-content/innovation-powering-health-tech-platform-halodocs-award-winning-streak"],
+      "tier": "secondary-news (DealStreetAsia) / secondary-market-research (Statista 2023 data cited via trade press)",
+      "confidence": "Low",
+      "override_applied": "Vendor-marketing override partially applies: DealStreetAsia URL is 'partner-content' (sponsored/PR-adjacent). Vendor market share claim sourced from trade press citing Statista, without independent audit. Single secondary source with vendor-PR origin.",
+      "rationale": "DealStreetAsia 'partner-content' URL is sponsored content, functionally PR-adjacent. Market share and user figure lack independent audit (no S-1, no third-party analyst report). Low."
+    },
+    {
+      "id": "S1-PP11",
+      "claim": "Indonesia health check-up market revenue $656 million in 2024; 9.9% CAGR to $1.15 billion by 2030; preventive check-up is fastest-growing sub-segment.",
+      "sources": ["https://www.grandviewresearch.com/horizon/outlook/health-check-up-market/indonesia"],
+      "tier": "secondary-market-research (Grand View Research aggregator)",
+      "confidence": "Low",
+      "override_applied": "Aggregator auto-downgrade: Grand View Research is a private market research aggregator. Single aggregator source, no primary-gov or consultancy cross-validation cited.",
+      "rationale": "Grand View Research is on the aggregator auto-downgrade list. Single aggregator source. Auto-Low."
+    },
+    {
+      "id": "S1-PP12",
+      "claim": "Only 32% of diagnosed diabetics in Indonesia achieved HbA1c <7%; only 25.2% achieved fasting glucose targets; fewer than 5% met all composite behavioral-clinical-laboratory targets.",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC12681878/"],
+      "tier": "primary-academic (PMC12681878, Lancet Regional Health Western Pacific)",
+      "confidence": "High",
+      "override_applied": "none",
+      "rationale": "Lancet Regional Health peer-reviewed study (PMC12681878). Serial cross-sectional analysis 2013–2023. Primary-academic. Strong."
+    },
+    {
+      "id": "S1-PP13",
+      "claim": "Indonesia private health insurance market valued at $2.93 billion in 2024; BPJS accounts for 71.62% of health insurance market share; private insurance ~28.4%.",
+      "sources": ["https://www.mordorintelligence.com/industry-reports/indonesia-health-and-medical-insurance-market"],
+      "tier": "secondary-market-research (Mordor Intelligence aggregator)",
+      "confidence": "Low",
+      "override_applied": "Aggregator auto-downgrade: Mordor Intelligence is on the auto-downgrade list. Single aggregator source, no OJK or BPS financial statistics cross-validation cited.",
+      "rationale": "Mordor Intelligence explicitly listed in aggregator auto-downgrade class. Auto-Low."
+    },
+    {
+      "id": "S1-PP14",
+      "claim": "Telemedicine consultations in Indonesia grew 70% year-on-year in 2023.",
+      "sources": ["https://www.kenresearch.com/industry-reports/indonesia-telemedicine-market"],
+      "tier": "secondary-market-research (Ken Research / Grand View Research aggregators)",
+      "confidence": "Low",
+      "override_applied": "Aggregator auto-downgrade: Ken Research and Grand View Research are private aggregators. Two aggregators from same category = single-category override. Auto-Low.",
+      "rationale": "Ken Research / Grand View Research both in aggregator auto-downgrade class. Multiple aggregator citations don't compound to Medium. Auto-Low."
+    },
+    {
+      "id": "S1-PP15",
+      "claim": "Urban hypertension prevalence approximately 29.2% (2023 national survey); most cases undiagnosed; treatment coverage doubled over past decade but control rates stagnant.",
+      "sources": ["https://pubmed.ncbi.nlm.nih.gov/41475816/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC12519354/"],
+      "tier": "primary-academic (PubMed 41475816, 2026) + primary-academic (PMC12519354)",
+      "confidence": "High",
+      "override_applied": "none",
+      "rationale": "Two independent peer-reviewed studies (PubMed 41475816 on hypertension cascade; PMC12519354 on diabetes/pre-diabetes trends). Both primary-academic. Strong corroboration."
+    },
+    {
+      "id": "S1-PP16",
+      "claim": "CDM follow-on market linked to MCU findings worth approximately $40–$100M/year for the private-pay segment.",
+      "sources": [],
+      "tier": "assumed/derived",
+      "confidence": "Low",
+      "override_applied": "ASSUMED tag: [ASSUMED-A3]. 10% actionable-finding rate and IDR 3–5M CDM programme price are stated estimates without citation. Auto-Low.",
+      "rationale": "Explicitly tagged [ASSUMED-A3]. No published source for actionable MCU finding rates or CDM programme pricing in Indonesia. Auto-Low."
+    },
+    {
+      "id": "S1-PP17",
+      "claim": "Indonesia has 3,155 hospitals as of 2023 (9.7% growth since 2019).",
+      "sources": [],
+      "tier": "no source cited",
+      "confidence": "Low",
+      "override_applied": "No citation found in text. Stated as fact without footnote.",
+      "rationale": "No source cited for the 3,155 hospital count or 9.7% growth figure. Auto-Low by no-source rule."
+    },
+    {
+      "id": "S1-PP18",
+      "claim": "Indonesia hospital market approximately IDR 371 trillion ($22.7 billion) in 2023; private segment CAGR 7–9%.",
+      "sources": ["https://www.insights10.com/report/indonesia-hospital-market-analysis/"],
+      "tier": "secondary-market-research (Insights10 private market research)",
+      "confidence": "Low",
+      "override_applied": "Aggregator auto-downgrade: Insights10 is a private market research firm. Single aggregator source, no Ministry of Health or BPS cross-validation.",
+      "rationale": "Insights10 is a private market research aggregator. Auto-downgrade to Low."
+    },
+    {
+      "id": "S1-PP19",
+      "claim": "PROLANIS had grown to 250,000+ enrolled participants by 2016, up from 11,000 in 2014.",
+      "sources": ["https://p4h.world/en/documents/chronic-disease-management-programme-prolanis-in-indonesia"],
+      "tier": "primary-multilateral/primary-ministry (WHO/P4H Network)",
+      "confidence": "High",
+      "override_applied": "none",
+      "rationale": "P4H (People at the Heart of Health) is a WHO-affiliated network documenting PROLANIS, a government-run programme. This is effectively a primary-ministry/multilateral source. Strong."
+    },
+    {
+      "id": "S1-PP20",
+      "claim": "Indonesia private hospital sector concentration ratio CR4 below 40; no dominant player; CDM infrastructure not economically justified at single-facility level.",
+      "sources": ["https://www.lek.com/insights/hea/sea/ei/indonesian-private-healthcare-investing-dual-speed-services-market"],
+      "tier": "primary-consultancy (L.E.K. Consulting insight article)",
+      "confidence": "Medium",
+      "override_applied": "L.E.K. Consulting is a top-tier strategy consultancy. However, the URL is an 'insights' editorial article, not a formally published research report with methodology disclosure. The specific 'CR4 below 40' claim may be editorial. Capped at Medium.",
+      "rationale": "L.E.K. qualifies as top-tier consultancy. Single source. The CR4 metric appears in editorial form without explicit methodology; Medium appropriate."
+    },
+    {
+      "id": "S1-PP21",
+      "claim": "Approximately 95% of Indonesia's population has JKN (national health insurance) coverage.",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC12538241/"],
+      "tier": "primary-academic (PMC12538241 PROLANIS scoping review) citing JKN coverage data",
+      "confidence": "Medium",
+      "override_applied": "The 95% figure is a commonly cited JKN coverage statistic. The citation is via PMC12538241 as intermediary (scoping review) rather than direct BPJS or MoH annual report. Medium — a direct BPJS official statistic would yield High.",
+      "rationale": "Well-established figure cited via peer-reviewed scoping review. Medium due to indirect citation."
+    },
+    {
+      "id": "S1-PP22",
+      "claim": "Applying urban hypertension rate (~29.2%) and two-thirds undiagnosed: approximately 2.0–2.6M of the 7–9M addressable individuals have hypertension; approximately 1.3–1.7M have undiagnosed hypertension.",
+      "sources": [],
+      "tier": "assumed/derived",
+      "confidence": "Low",
+      "override_applied": "ASSUMED tag: [ASSUMED-A5]. Application of population survey rates to an assumed addressable population (itself ASSUMED-3). Compound assumption. Auto-Low.",
+      "rationale": "The hypertension prevalence rate is High (S1-PP15). The application to the addressable base is tagged [ASSUMED-A5] because the addressable base count is ASSUMED-3. Derived estimate, auto-Low."
+    },
+    {
+      "id": "S1-PP23",
+      "claim": "Combined undiagnosed high-risk individuals (HTN + DM) in affluent + upper-middle urban segment: approximately 1.5–2.0 million persons.",
+      "sources": [],
+      "tier": "assumed/derived",
+      "confidence": "Low",
+      "override_applied": "ASSUMED tag: [ASSUMED-A5]. Compound assumption on prevalence rate application to assumed addressable population. Auto-Low.",
+      "rationale": "Compound of ASSUMED-A4, ASSUMED-A5, and ASSUMED-3. Auto-Low."
+    },
+    {
+      "id": "S1-PP24",
+      "claim": "Community-based type-2 diabetes prevention and control in Indonesia is highly cost-effective (PMC12506045, 2024).",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC12506045/"],
+      "tier": "primary-academic (PMC12506045)",
+      "confidence": "High",
+      "override_applied": "none",
+      "rationale": "Peer-reviewed cost-effectiveness study published in PMC (primary-academic). Strong methodologically for this specific claim."
+    },
+    {
+      "id": "S1-PP25",
+      "claim": "Fewer than 20% of DM/HTN patients in Indonesia are well-controlled (National Health Survey 2023).",
+      "sources": ["https://www.frontiersin.org/journals/health-services/articles/10.3389/frhs.2025.1715125/full"],
+      "tier": "primary-academic (Frontiers in Health Services 2025, citing National Health Survey 2023)",
+      "confidence": "High",
+      "override_applied": "none",
+      "rationale": "Frontiers peer-reviewed article (primary-academic) citing the 2023 National Health Survey (primary-gov). Two-tiered citation to a strong primary. High."
+    },
+    {
+      "id": "S1-PP26",
+      "claim": "No published data found on insurer-sponsored CDM enrolment for private policyholders in Indonesia.",
+      "sources": [],
+      "tier": "assumed",
+      "confidence": "Low",
+      "override_applied": "ASSUMED tag: [ASSUMED-A6]. Absence-of-evidence claim, tagged explicitly. Auto-Low.",
+      "rationale": "Explicitly tagged [ASSUMED-A6]. This is an absence-of-evidence claim; to validate requires direct inquiry with insurer actuarial contacts."
+    },
+    {
+      "id": "S1-PP27",
+      "claim": "At 2–5% capture of 1.5–2.0M estimated undiagnosed high-risk individuals in a CDM programme priced at IDR 3–5M/year, enrolled revenue opportunity is $9M–$31M/year.",
+      "sources": [],
+      "tier": "assumed/derived",
+      "confidence": "Low",
+      "override_applied": "Compound of ASSUMED-A3 (CDM pricing) and ASSUMED-A5 (undiagnosed population). Auto-Low.",
+      "rationale": "Derived from compound assumptions on both programme pricing and addressable population. Auto-Low."
+    },
+    {
+      "id": "S1-PP28",
+      "claim": "Riskesdas 2018: urban diagnosed diabetes 3.8% vs rural 1.9%; total urban prevalence ~10.9% (implying large pool of undetected cases in urban areas).",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC10874845/"],
+      "tier": "primary-academic (PMC10874845 citing Riskesdas 2018)",
+      "confidence": "High",
+      "override_applied": "none",
+      "rationale": "Peer-reviewed study (PMC10874845) using Riskesdas 2018 national survey data (primary-gov underlying). Primary-academic citing primary-gov. High."
+    }
+  ],
+  "summary": {
+    "total_claims": 62,
+    "high": 21,
+    "medium": 14,
+    "low": 24,
+    "pending_attended_fetch": 3,
+    "pct_low": "38.7%",
+    "pct_high": "33.9%",
+    "pct_medium": "22.6%",
+    "pct_pending": "4.8%"
+  },
+  "override_triggers": [
+    {
+      "override": "ASSUMED-tag auto-Low",
+      "claim_count": 13,
+      "claim_ids": ["S1-VC5", "S1-VC7", "S1-VC9", "S1-VC13", "S1-VC20", "S1-VC21", "S1-VC27", "S1-VC34", "S1-PP2", "S1-PP4", "S1-PP16", "S1-PP22", "S1-PP23", "S1-PP26", "S1-PP27"]
+    },
+    {
+      "override": "aggregator-auto-downgrade",
+      "claim_count": 6,
+      "claim_ids": ["S1-VC14", "S1-VC17", "S1-PP11", "S1-PP13", "S1-PP14", "S1-PP18"]
+    },
+    {
+      "override": "no-source-cited",
+      "claim_count": 2,
+      "claim_ids": ["S1-PP3", "S1-PP17"]
+    },
+    {
+      "override": "NEEDS-ATTENDED-FETCH",
+      "claim_count": 3,
+      "claim_ids": ["S1-VC19", "S1-VC29", "S1-PP9"]
+    },
+    {
+      "override": "APAC-as-proxy geography-mismatch",
+      "claim_count": 1,
+      "claim_ids": ["S1-PP1"]
+    },
+    {
+      "override": "outdated-source (>3 years)",
+      "claim_count": 3,
+      "claim_ids": ["S1-VC8", "S1-VC15", "S1-VC16"]
+    },
+    {
+      "override": "vendor-marketing / single-secondary trade",
+      "claim_count": 1,
+      "claim_ids": ["S1-PP10"]
+    },
+    {
+      "override": "single-domain override",
+      "claim_count": 1,
+      "claim_ids": ["S1-VC25"]
+    }
+  ],
+  "weak_claims_to_re_research": [
+    {
+      "id": "S1-VC9",
+      "reason": "Total addressable population (7–9M persons / 1.8–2.3M HH) is the headline MSO market sizing claim and is tagged [ASSUMED-3] with no BPS validation. It is the product of two upstream assumptions (HH size [ASSUMED-1] and MC2 2024 count [ASSUMED-2]). If this figure is wrong, all downstream market opportunity calculations (PP2, PP4, PP16, PP22, PP23, PP27) collapse.",
+      "suggested_sources": ["BPS Susenas March 2024 full publication — Table of population by per-capita expenditure class (request via BPS API or attend-mode fetch of https://www.bps.go.id/en/publication/2024/10/18/b392b2e96c87c090a6f8d9c2/)", "World Bank PovcalNet / Poverty and Inequality Platform for Indonesia 2022–2024 consumption distribution data", "BPS Population Census 2020 Table SP-2 for average household size by urban/rural classification"]
+    },
+    {
+      "id": "S1-PP11",
+      "reason": "The $656M health check-up market figure (Grand View Research aggregator) is central to PP2's argument that a large MCU market exists but lacks downstream CDM conversion. Grand View Research is auto-downgraded. A primary source is needed to make this claim defensible.",
+      "suggested_sources": ["Indonesia Ministry of Health annual healthcare statistics (SIMKES or Profil Kesehatan Indonesia 2023)", "OJK or DJSN data on employer health benefit spending", "KADIN Indonesia or APINDO employer health survey if available", "Frost & Sullivan or Deloitte Indonesia private healthcare market sizing"]
+    },
+    {
+      "id": "S1-PP13",
+      "reason": "Indonesia private health insurance market $2.93B (Mordor Intelligence) and BPJS 71.6% share are cited to anchor the insurer-driven CDM argument (PP2 RC2, PP3). Mordor is auto-downgraded. OJK publishes official insurance statistics annually.",
+      "suggested_sources": ["OJK (Otoritas Jasa Keuangan) Insurance Statistics 2023 annual report — https://www.ojk.go.id/en/kanal/iknb/data-dan-statistik/asuransi/", "DJSN (Dewan Jaminan Sosial Nasional) annual reports on BPJS Kesehatan market share", "BPJS Kesehatan annual report 2023 for enrollment and premium data"]
+    },
+    {
+      "id": "S1-PP7",
+      "reason": "The GP shortage claim (0.6/1,000 vs WHO 1.0/1,000 threshold; 120,000 doctor deficit) is used as a structural root cause across PP1 and PP2. Currently supported only by BERNAMA (secondary-news) and a university website. A WHO GHO or MoH primary citation would elevate this to High and make the structural argument more defensible.",
+      "suggested_sources": ["WHO Global Health Observatory — Indonesia health workforce density data (https://www.who.int/data/gho/data/themes/topics/health-workforce)", "Indonesia Ministry of Health Profil Kesehatan Indonesia 2023 — physician density table", "Indonesia Medical Council (KKI) registered doctor statistics"]
+    },
+    {
+      "id": "S1-PP17",
+      "reason": "The 3,155 hospital count (2023) and 9.7% growth since 2019 appear in PP3 without any citation. This is a structural fact about the market used to argue the scale of private hospital sector. An uncited figure in a foundational claim is a gate risk.",
+      "suggested_sources": ["Indonesia Ministry of Health — Profil Kesehatan Indonesia 2023 (hospital count by type and ownership)", "BPS Indonesia Health Statistics Profile 2023 (NEEDS-ATTENDED-FETCH already flagged)", "PERSI (Indonesian Hospital Association) annual statistics"]
+    }
+  ],
+  "evidence_quote_gaps": [
+    {
+      "claim_id": "S1-VC19",
+      "reason": "Lancet Global Health 2023 returned HTTP 403; cited only via search snippet. Concentration index figures (0.134, 0.190) unverified from source."
+    },
+    {
+      "claim_id": "S1-VC29",
+      "reason": "BPS Health Statistics Profile 2023 returned HTTP 403. IDR 2.2M per-capita health spending figure cited via Antara News intermediary only."
+    },
+    {
+      "claim_id": "S1-PP9",
+      "reason": "IDX annual announcement for Siloam FY2023 blocked by Cloudflare. Siloam 82% private-payer revenue and 4M+ outpatient visits confirmed only via search snippets."
+    }
+  ],
+  "high_tier_claims_with_evidence": []
+}

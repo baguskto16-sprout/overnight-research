@@ -1,0 +1,101 @@
+{
+  "claim_id": "pp-1.1-1",
+  "original_claim": "$500M–$700M annual direct fraud loss (US + Canada) from cargo identity-theft / double-brokering fraud",
+  "verdict": "REFINED",
+  "refined_claim": "Cargo identity-theft and double-brokering fraud across the US and Canada caused estimated direct losses of approximately $330M (2023) to $455M (2024), per Verisk CargoNet’s annual actuarial tracking of US+Canada incidents (Tier 3). The Transportation Intermediaries Association (TIA) has separately cited a range of $500M–$700M in freight-payment losses attributable to freight fraud and double brokering (methodology not publicly disclosed), and by January 2025 revised that estimate upward to ‘$1 billion-plus.’ ATRI’s 2025 survey-extrapolation puts total direct and indirect industry costs at $1.8B–$6.6B. The original $500M–$700M range sits above Verisk’s directly measured 2023 figure ($332M) but below the 2024 measured figure ($455M) and below TIA’s own revised estimate; it appears to be a reasonable order-of-magnitude estimate for ~2022–2023, now likely understated for 2024–2025.",
+  "new_sources": [
+    {
+      "url": "https://www.verisk.com/company/newsroom/cargo-theft-surges-to-record-levels-in-2024-verisk-cargonet-analysis-reveals/",
+      "tier": 3,
+      "publisher": "Verisk CargoNet (actuarial / insurance-industry data aggregator)",
+      "publication_date": "2025-01-21",
+      "geographic_scope": "United States + Canada",
+      "key_figures": "$454.9M estimated total cargo theft losses in 2024 (3,625 incidents, avg $202,364/incident); $331.9M in 2023; 27% YoY increase; fraud/deception methods rising to ~one-third of all incidents by 2024. Published January 21, 2025.",
+      "supports": "Partially supports the $500M–$700M range directionally but the measured figure for 2024 is $455M (below range). Confirms US+Canada scope and rising trend. Methodology: incident-based tracking via CargoNet platform, covering reported events.",
+      "methodology_note": "Incident-count × average-value methodology; known undercount due to voluntary reporting. Does NOT separate direct-fraud (identity theft, double brokering) from physical theft within the $455M total, though fraud-type incidents are a large and growing share."
+    },
+    {
+      "url": "https://www.verisk.com/company/newsroom/cargo-theft-losses-surge-to-estimated-$725-million-in-2025-verisk-cargonet-analysis-reveals/",
+      "tier": 3,
+      "publisher": "Verisk CargoNet",
+      "publication_date": "2026-01-22",
+      "geographic_scope": "United States + Canada",
+      "key_figures": "$725M estimated total cargo theft losses in 2025 (60% increase from 2024’s $455M). Published January 22, 2026.",
+      "supports": "Confirms accelerating trend; 2025 figure now exceeds the original $500M–$700M claim range. Strengthens the claim as a reasonable near-term baseline for 2024–2025."
+    },
+    {
+      "url": "https://news.tianet.org/2024-tia-framework-to-combat-fraud/",
+      "tier": 4,
+      "publisher": "Transportation Intermediaries Association (TIA) — industry association for freight brokers and 3PLs",
+      "publication_date": "2024-07-31",
+      "geographic_scope": "United States (implied; not explicitly stated)",
+      "key_figures": "Cites ‘$500 million to $700 million in freight payments annually’ attributable to freight fraud and double brokering. Source of underlying methodology not disclosed within document.",
+      "supports": "This is likely the primary origin of the $500M–$700M figure cited by Travelers and others. TIA cites it as an estimate without naming its own source. Tier 4 (industry association) not Tier 1–2 government/actuarial. Supports use of the figure as an industry-consensus estimate, not a government-measured statistic."
+    },
+    {
+      "url": "https://news.tianet.org/making-fraud-protection-a-priority/",
+      "tier": 4,
+      "publisher": "Transportation Intermediaries Association (TIA)",
+      "publication_date": "2025-01-22",
+      "geographic_scope": "United States",
+      "key_figures": "TIA revised its own estimate upward to ‘in excess of $1 billion’ annually by January 2025, indicating the $500M–$700M figure is now considered understated by TIA itself.",
+      "supports": "Confirms the $500M–$700M claim is no longer TIA’s current estimate. The claim should be updated to reflect the revised upward trajectory."
+    },
+    {
+      "url": "https://truckingresearch.org/2025/10/new-atri-research-confirms-the-high-costs-of-cargo-theft-to-industry/",
+      "tier": 3,
+      "publisher": "American Transportation Research Institute (ATRI) — trucking industry research non-profit, ATA affiliate",
+      "publication_date": "2025-10",
+      "geographic_scope": "United States",
+      "key_figures": "Surveyed 95 for-hire carriers representing ~90,000 combination trucks; $16.2M in reported theft losses in 2023 across 555 incidents (avg $521K/carrier/year). Extrapolated industry-wide cost: $1.8B–$6.6B in direct and indirect costs. Note: this broader figure includes physical theft and indirect costs, not fraud-only.",
+      "supports": "Provides US-specific context. The broader $1.8B–$6.6B ATRI range is not directly comparable to the $500M–$700M direct-fraud-only claim; they measure different things. ATRI’s survey-based direct theft losses alone are much lower ($16M for the surveyed pool, extrapolated), but ATRI explicitly notes severe underreporting."
+    },
+    {
+      "url": "https://riskandinsurance.com/cargo-theft-losses-hit-record-455m-in-2024/",
+      "tier": 5,
+      "publisher": "Risk & Insurance (trade publication, citing Verisk CargoNet)",
+      "publication_date": "2025-01-30",
+      "geographic_scope": "United States + Canada",
+      "key_figures": "Confirms $454.9M in 2024 losses from Verisk CargoNet; $331.9M in 2023. 27% YoY increase. Quarterly breakdown provided.",
+      "supports": "Corroborating secondary source for the Verisk CargoNet figures."
+    },
+    {
+      "url": "https://www.foxbusiness.com/economy/cargo-theft-us-canada-soars-record-2024",
+      "tier": 5,
+      "publisher": "Fox Business (citing Verisk CargoNet VP Keith Lewis)",
+      "publication_date": "2025-01-24",
+      "geographic_scope": "United States + Canada",
+      "key_figures": "$454M combined US+Canada losses in 2024 (3,625 incidents). Fraud-related theft up 1,445% in the period tracked; traditional direct theft up ~20%. Published January 24, 2025.",
+      "supports": "Corroborates the Verisk figure and confirms the extraordinary growth rate of fraud-type theft within the total."
+    },
+    {
+      "url": "https://www.nicb.org/news/news-releases/nicb-warns-increased-cargo-theft-2025",
+      "tier": 3,
+      "publisher": "National Insurance Crime Bureau (NICB) — non-profit funded by insurance industry, closely tracks cargo crime",
+      "publication_date": "2025",
+      "geographic_scope": "United States",
+      "key_figures": "NICB confirmed cargo crime incidents rose 27% in 2024; expects 22% further increase in 2025. Does not publish its own aggregate dollar-loss figure independently of CargoNet data.",
+      "supports": "Corroborates incident growth trend; NICB does not publish a separate aggregate dollar-loss figure that would validate or contradict the $500M–$700M claim independently."
+    }
+  ],
+  "needs_attended_fetch": [
+    {
+      "url": "https://www.fmcsa.dot.gov/mission/help/broker-and-carrier-fraud-and-identity-theft",
+      "reason": "HTTP 403 — FMCSA page blocked. FMCSA’s own guidance page may contain complaint volume statistics or references to loss estimates. Attended fetch recommended to check whether FMCSA cites any specific aggregate dollar loss figure."
+    },
+    {
+      "url": "https://truckingresearch.org/2025/10/new-atri-research-confirms-the-high-costs-of-cargo-theft-to-industry/",
+      "reason": "HTTP 403 from WebFetch. The ATRI press release was accessible via search summary but the full PDF of the ATRI cargo theft report was not fetched. Attended fetch of the full ATRI report PDF would allow exact methodology and whether the survey extrapolates to fraud-only losses separately."
+    },
+    {
+      "url": "https://tapa.memberclicks.net/assets/2025-National-Cargo-Theft-Conferfence/Presentations-for-Sharing/2024%20Annual%20Verisk%20CargoNet%E2%80%99s%20Supply%20Chain%20Risk%20Report.pdf",
+      "reason": "TAPA-hosted Verisk CargoNet 2024 annual Supply Chain Risk Report PDF. This slide deck from the National Cargo Theft Conference may contain methodology details and breakdowns by fraud type (identity theft vs double brokering vs physical theft) not available in the press release. Attended fetch via markitdown recommended."
+    },
+    {
+      "url": "https://www.ttclub.com/fileadmin/uploads/tt-club/Documents/TT_and_BSI_annual_theft_report/TT_Club_Report_-_Supply_Chain_Report_April_2025.pdf",
+      "reason": "TT Club / BSI 2024 Cargo Theft Report PDF (April 2025). TT Club is a Tier 3 marine and logistics insurer with North America freight data. This PDF may contain independent loss estimates for cargo identity theft and strategic fraud in North America that would corroborate or refine the $500M–$700M claim. Attended fetch via markitdown recommended."
+    }
+  ],
+  "source_genealogy_note": "The $500M–$700M figure’s provenance chain appears to be: TIA industry estimate (undisclosed methodology, circa 2022–2023) → picked up by Travelers Insurance marketing → widely cited in industry media. TIA itself does not disclose a primary source for this figure. By contrast, Verisk CargoNet’s incident-based actuarial tracking (Tier 3) directly measured $332M in 2023 and $455M in 2024 for all US+Canada cargo theft (physical + fraud combined). The fraud-only subset would be lower than these totals, but fraud as a share of incidents grew rapidly to ~one-third of all incidents by end-2024, and fraud-type thefts have disproportionately higher per-incident values. A reasonable fraud-only estimate for 2024 would be $150M–$225M (one-third of $455M) under conservative assumptions, or higher if fraud loads have above-average values. The $500M–$700M TIA figure likely includes broader freight-payment fraud (non-delivery of payment to legitimate carriers) beyond cargo theft measured by CargoNet, which would explain the gap.",
+  "recommendation_for_canonical_draft": "REFINE with new sources. Replace the Travelers citation entirely. Use: ‘Cargo identity-theft and double-brokering fraud across the US and Canada resulted in an estimated $455M in measured losses in 2024 (Verisk CargoNet annual analysis, January 2025) — up 27% from $332M in 2023 — with fraud-type incidents (fictitious pickups, carrier identity theft, strategic theft) now comprising approximately one-third of all incidents. Industry-association estimates citing broader freight-payment fraud losses range from $500M–$700M (TIA, 2023 estimate, methodology not publicly disclosed) to “in excess of $1 billion” (TIA revised estimate, January 2025). For 2025, Verisk CargoNet estimated total losses of $725M (published January 2026).’ Tier should be upgraded to 3 (Verisk CargoNet) with TIA as Tier 4 corroboration. The $500M–$700M range is directionally defensible as a historical midpoint but should not be presented as a government-measured figure; it is an industry-association estimate. The canonical draft should cite Verisk CargoNet as primary and note TIA’s estimate as context."
+}

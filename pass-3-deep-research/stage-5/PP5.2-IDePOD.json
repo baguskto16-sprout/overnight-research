@@ -1,0 +1,90 @@
+{
+  "claim_id": "PP5.2-IDePOD",
+  "outcome": "drop",
+  "verified_mandate": {
+    "exists": false,
+    "regulator": null,
+    "regulation_name": null,
+    "effective_date": null,
+    "scope": null,
+    "source": null,
+    "notes": "Exhaustive search of JDIH Kemenhub (Ministry of Transportation regulation database), kemenhub.go.id, dephub.go.id, kominfo.go.id, komdigi.go.id, Indonesia.go.id, ALFI/ILFA association site, and full-text web searches in both English and Bahasa Indonesia returned zero government publications referencing an ePOD mandate. The Kemkominfo citation surfaced by Mordor Intelligence ('Kemkominfo Dorong Implementasi e-POD Logistik Nasional') is unverifiable: no such document appears on jdih.komdigi.go.id, kominfo.go.id, or any indexed government page. Mordor Intelligence market reports are secondary/commercial and known to include unverifiable AI-generated policy summaries. Kemkomdigi did publish Permenkominfo No. 8/2025 on commercial postal services, but it addresses postal licensing, not a mandatory ePOD rollout with a Q3 2026 enforcement deadline."
+  },
+  "fraud_loss_figure": {
+    "verified": false,
+    "amount_idr": null,
+    "amount_usd": null,
+    "source": null,
+    "notes": "The IDR 2.1 trillion ($130M) figure for logistics delivery-receipt fraud appears only in: (1) the original blog.cfglobal.co post (unverified industry consultancy blog, no citation chain provided), and (2) Mordor Intelligence's Indonesia e-commerce logistics market report which itself cites 'Kemkominfo Dorong Implementasi e-POD Logistik Nasional' — a document that cannot be located on any official Indonesian government portal. BPS statistics, OJK fraud reports, and Indonesian financial crime data reference fraud losses in financial services, banking, and online scams (IDR 4.6T–9.1T ranges) but none are logistics-POD-fraud specific. The IDR 2.1T figure is unverifiable and likely fabricated or misattributed."
+  },
+  "sources_consulted": [
+    {
+      "url": "https://jdih.kemenhub.go.id/peraturan/index",
+      "status": "ok",
+      "finding": "Full regulation database of Kemenhub; no ePOD-related Permenhub found in 2024–2026 regulations visible"
+    },
+    {
+      "url": "https://kemenhub.go.id/",
+      "status": "blocked",
+      "finding": "URL rejected by server; inaccessible",
+      "attended_fetch_needed": true
+    },
+    {
+      "url": "https://blog.cfglobal.co/air-sea-and-tech-the-future-of-indonesias-supply-chain-in-2025/",
+      "status": "ok",
+      "finding": "No mention of ePOD, Q3 2026 mandate, or IDR 2.1T fraud in article body"
+    },
+    {
+      "url": "https://blog.cfglobal.co/",
+      "status": "ok",
+      "finding": "No article on Indonesia ePOD mandate visible across blog front page"
+    },
+    {
+      "url": "https://www.mordorintelligence.com/industry-reports/indonesia-ecommerce-logistics-market",
+      "status": "ok",
+      "finding": "Contains the IDR 2.1T figure and Q3 2026 date, citing 'Kemkominfo Dorong Implementasi e-POD Logistik Nasional'. This is a commercial market report with AI-augmented content; the cited government document cannot be verified on any official portal. Not a primary source."
+    },
+    {
+      "url": "https://indonesia.go.id/kategori/ekonomi-bisnis/9369/perkuat-ekosistem-logistik-nasional-kemkomdigi-rilis-regulasi-layanan-pos-komersial?lang=1",
+      "status": "ok",
+      "finding": "Kemkomdigi regulation on postal services (Permenkominfo 8/2025) — addresses postal licensing, not ePOD mandate"
+    },
+    {
+      "url": "https://jdih.komdigi.go.id/",
+      "status": "ok",
+      "finding": "Searched via web queries; no ePOD-specific regulation or press release found"
+    },
+    {
+      "url": "https://www.alfi.or.id/",
+      "status": "ok",
+      "finding": "Searched via web queries; ALFI CONVEX 2025 covered logistics digital transformation but no ePOD regulatory mandate announced"
+    },
+    {
+      "url": "https://www.bps.go.id/",
+      "status": "ok",
+      "finding": "No logistics fraud loss statistics matching IDR 2.1T found via web search"
+    },
+    {
+      "url": "https://www.ekon.go.id/publikasi/detail/4878/tingkatkan-daya-saing-perekonomian-nasional-implementasi-dan-pengembangan-national-logistic-ecosystem-terus-diakselerasi",
+      "status": "ok",
+      "finding": "Coordinating Ministry of Economic Affairs NLE update — addresses port/airport clearance digitalization, not ePOD mandate for carrier-level delivery confirmation"
+    }
+  ],
+  "replacement_text": "[ASSUMED-N, UNVERIFIABLE]: Indonesia's logistics sector is undergoing digitalization through the National Logistics Ecosystem (NLE) initiative, with the government encouraging adoption of electronic documentation including delivery proof systems. No specific mandatory ePOD regulation with a Q3 2026 enforcement deadline has been identified in official Indonesian government publications. The IDR 2.1 trillion fraud-loss figure is unverifiable from government sources. — To validate: direct inquiry to Kemenhub Ditjen Hubdat or Kemkomdigi for any Circular/Permenhub referencing mandatory ePOD; check ALFI member circulars from 2025.",
+  "confidence_after": "Low",
+  "searches_performed": [
+    "Indonesia Kemenhub ePOD mandate 2026 elektronik proof of delivery Permenhub",
+    "Indonesia Ministry of Transportation ePOD regulation logistics 2025 2026",
+    "\"elektronik bukti pengiriman\" OR \"tanda terima elektronik\" OR \"ePOD\" kewajiban Indonesia 2026 logistik",
+    "Indonesia ePOD fraud losses IDR 2.1 trillion logistics mandate",
+    "site:dephub.go.id OR site:kemenhub.go.id ePOD \"bukti penerimaan\" elektronik logistik",
+    "Indonesia ALFI logistics association ePOD digital proof delivery regulation 2025",
+    "blog.cfglobal.co Indonesia ePOD mandate 2026",
+    "Indonesia \"Permenhub\" logistics digitalization ePOD \"Q3 2026\" OR \"2026\" electronic delivery proof regulation",
+    "\"Kemkominfo\" \"ePOD\" OR \"e-POD\" logistik nasional implementasi 2025 2026",
+    "site:kominfo.go.id OR site:komdigi.go.id ePOD \"bukti pengiriman elektronik\" logistik nasional",
+    "Indonesia logistics regulation 2025 digitalization mandatory electronic document freight delivery BPS Kemenhub announcement",
+    "Indonesia \"National Logistics Ecosystem\" NLE ePOD electronic delivery mandate 2025 2026 Kemenko Marves"
+  ],
+  "notes": "ATTENDED-FETCH NEEDED: kemenhub.go.id returns a server-level rejection ('URL was rejected') in automated fetches. A logged-in or browser-rendered fetch of https://www.dephub.go.id/ search for 'ePOD' or 'bukti pengiriman elektronik' is recommended to definitively rule out any unpublicized directive. Additionally, the ALFI member portal (members-only circulars at alfi.or.id) and the Kemkomdigi internal communications archive may contain draft policy documents not indexed publicly. The Mordor Intelligence citation chain — which is the only secondary source that echoes the IDR 2.1T figure — traces back to a named-but-unfindable government document, a hallmark pattern of AI-hallucinated citations in commercial market reports. Verdict: the claim as written should be dropped from the artifact unless attended-mode verification of Kemenhub and ALFI member archives produces a government document."
+}

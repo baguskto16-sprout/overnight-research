@@ -1,0 +1,30 @@
+{
+  "claim_id": "S1-PP17",
+  "claim_text": "Indonesia has approximately 3,155 hospitals as of 2023.",
+  "outcome": "found-stronger-evidence",
+  "new_sources": [
+    {
+      "url": "https://kemkes.go.id/app_asset/file_content_download/172231123666a86244b83fd8.51637104.pdf",
+      "category": "primary-gov",
+      "publisher": "Indonesia Ministry of Health (Kemenkes)",
+      "publication_date": "2023",
+      "supports_claim": true,
+      "key_data": "Total 3,155 hospitals in 2023: 2,636 general hospitals (RSU) and 519 specialized hospitals (RSK). Of general hospitals: 242 central government (9.2%), 849 regional government (32.2%), 1,545 private (58.6%). Up from 3,072 in 2022 (+2.70%).",
+      "via_pdf_markitdown": false,
+      "note": "Profil Kesehatan Indonesia 2023 — canonical MoH annual health profile; PDF URL confirmed via search result snippet"
+    },
+    {
+      "url": "https://www.bps.go.id/en/statistics-table/2/MjMyIzI=/jumlah-rumah-sakit-umum-rumah-sakit-khusus-dan-puskesmas.html",
+      "category": "primary-gov",
+      "publisher": "BPS — Statistics Indonesia",
+      "publication_date": "2024",
+      "supports_claim": true,
+      "key_data": "BPS Statistical Yearbook independently confirms 3,155 total hospitals in 2023 (2,636 general + 519 specialized), up from 3,072 in 2022.",
+      "via_pdf_markitdown": false,
+      "note": "BPS page returned HTTP 403; figure confirmed via BPS-attributed search snippet cross-matching MoH data"
+    }
+  ],
+  "suggested_revision": "Indonesia had 3,155 hospitals as of 2023, comprising 2,636 general hospitals and 519 specialised hospitals; of general hospitals, 58.6% were privately owned. Source: Indonesia Ministry of Health, Profil Kesehatan Indonesia 2023; BPS Statistical Yearbook 2024.",
+  "suggested_new_score": "High",
+  "reasoning": "The 3,155 figure originates from the MoH Profil Kesehatan Indonesia 2023, the canonical government source, and is independently corroborated by BPS. Public/private and general/specialised breakdowns are also available from the same source."
+}

@@ -1,0 +1,71 @@
+{
+  "claim_id": "pp-1.1-8",
+  "original_claim": "FMCSA granting ~200 ghost-address authorities/month; approval rate halved after April 2025 identity-verification rollout",
+  "verdict": "REFINED",
+  "refined_claim": "FMCSA launched mandatory biometric identity verification (via IDEMIA) for all new motor carrier, broker, and freight forwarder applications on April 1, 2025, targeting a long-standing vulnerability in the Unified Registration System. Industry analytics firm CarrierOK initially reported a ~50% drop in the filed-to-published conversion rate (from a typical 60-65% down to ~30% in April 2025), though the firm subsequently acknowledged its methodology was flawed. The '~200 ghost-address authorities/month' figure as stated conflates two separate issues: Secretary Duffy's documented remark about '200 DOT numbers going to a P.O. Box' (referring to ghost-office/PPOB concentration at a single address, not a monthly grant rate), and a broader industry claim about fraudulent monthly approvals that has no traceable primary-source citation. The April 2025 rollout itself is confirmed by official FMCSA sources; the quantified before/after approval-rate drop and the '~200/month' grant figure remain unsupported by any government statistical release, OIG audit, Federal Register data, or Congressional testimony.",
+  "new_sources": [
+    {
+      "url": "https://www.fmcsa.dot.gov/registration/identity-verification",
+      "tier": 1,
+      "publisher": "FMCSA (U.S. Department of Transportation)",
+      "supports": "Confirms April 2025 launch of mandatory identity verification via IDEMIA for all new URS registrations; official FMCSA program page. Does not quantify before/after approval rates or monthly ghost-authority volume."
+    },
+    {
+      "url": "https://www.fmcsa.dot.gov/sites/fmcsa.dot.gov/files/2025-03/URS_ID-Verification_FactSheet.pdf",
+      "tier": 1,
+      "publisher": "FMCSA (U.S. Department of Transportation)",
+      "supports": "Official FMCSA fact sheet (March 2025) explaining the IDEMIA identity verification process within URS. Confirms rollout date and mechanism. Access was blocked by server during this research session — marked [NEEDS-ATTENDED-FETCH] for content verification."
+    },
+    {
+      "url": "https://www.fmcsa.dot.gov/registration/identity-verification-fact-sheet",
+      "tier": 1,
+      "publisher": "FMCSA (U.S. Department of Transportation)",
+      "supports": "Secondary FMCSA fact sheet page. Access was blocked (403) during this session — marked [NEEDS-ATTENDED-FETCH]."
+    },
+    {
+      "url": "https://www.fmcsa.dot.gov/faq/what-system-will-incorporate-new-identity-verification-process",
+      "tier": 1,
+      "publisher": "FMCSA (U.S. Department of Transportation)",
+      "supports": "Confirms identity verification incorporated into Unified Registration System beginning April 2025; official FAQ."
+    },
+    {
+      "url": "https://www.federalregister.gov/documents/2026/04/29/2026-08334/availability-of-motus-fmcsas-new-registration-system",
+      "tier": 1,
+      "publisher": "Federal Register (U.S. Government Publishing Office)",
+      "supports": "Federal Register notice (April 29, 2026) confirming FMCSA's new Motus registration system, which builds on the April 2025 identity verification initiative and cites fraud reduction as primary rationale. Does not quantify ghost-authority grant rate or before/after approval percentages."
+    },
+    {
+      "url": "https://www.freightwaves.com/news/fmcsa-crackdown-on-carrier-fraud-halves-newly-published-authorities",
+      "tier": 6,
+      "publisher": "FreightWaves",
+      "supports": "Original trade-media source for 'approval rate halved' claim (published May 29, 2025). Reports filed-to-published conversion dropped from ~60-65% to ~30% in April 2025. Cites CarrierOK research as the data source — not FMCSA official statistics. No direct FMCSA official quotation supporting the numerical claims."
+    },
+    {
+      "url": "https://www.carrier-ok.com/post/fmcsa-s-new-id-verification-slows-motor-carrier-approvals-early-data-signals-fraud-crackdown-impac",
+      "tier": 7,
+      "publisher": "CarrierOK (industry analytics firm)",
+      "supports": "Original source of the 60-65% → 30% approval-rate statistic. The same firm subsequently published a correction acknowledging their 'Filed-to-Published ratio' methodology was flawed ('based on a flawed assumption'). Self-contradicting; cannot be treated as reliable primary data."
+    },
+    {
+      "url": "https://www.overdriveonline.com/regulations/article/15817793/fmcsa-announces-rapid-actions-to-shut-down-chameleon-carriers-cdl-mills-eld-cheating",
+      "tier": 5,
+      "publisher": "Overdrive Online (trade media)",
+      "supports": "Documents Secretary Duffy's statement 'You can't have 200 DOT numbers going to a P.O. Box' — establishing that the '200' figure refers to DOT numbers at a single ghost-office address, NOT the monthly rate of fraudulent authority grants. Confirms FMCSA's 'ghost office' enforcement focus and that investigators found addresses with 400-500 registered carriers."
+    },
+    {
+      "url": "https://www.transportation.gov/briefing-room/trumps-transportation-secretary-sean-p-duffy-launches-new-anti-fraud-registration",
+      "tier": 1,
+      "publisher": "U.S. Department of Transportation (official press release)",
+      "supports": "DOT press release confirming Motus launch and anti-fraud registration initiative. Cites 'several thousand suspicious registration numbers tied to fraudulent carriers' as scale indicator, but does not provide a monthly ghost-authority grant rate. Access returned 403 during this session — [NEEDS-ATTENDED-FETCH] for full text."
+    }
+  ],
+  "needs_attended_fetch": [
+    "https://www.fmcsa.dot.gov/sites/fmcsa.dot.gov/files/2025-03/URS_ID-Verification_FactSheet.pdf",
+    "https://www.fmcsa.dot.gov/registration/identity-verification-fact-sheet",
+    "https://www.fmcsa.dot.gov/registration/identity-verification",
+    "https://www.fmcsa.dot.gov/newsroom/trumps-transportation-secretary-sean-p-duffy-launches-new-anti-fraud-registration-system",
+    "https://www.transportation.gov/briefing-room/trumps-transportation-secretary-sean-p-duffy-launches-new-anti-fraud-registration",
+    "https://www.overdriveonline.com/regulations/article/15820771/dots-duffy-spot-rates-are-going-to-go-up-as-fmcsa-cracks-down-on-fraud"
+  ],
+  "recommendation_for_canonical_draft": "Split the original claim into two separate assertions with different confidence levels: (1) CONFIRMED (Tier 1 sources): 'FMCSA launched mandatory biometric identity verification (IDEMIA) for all new motor carrier registrations on April 1, 2025, as part of its Unified Registration System modernization to combat carrier registration fraud.' Cite fmcsa.dot.gov/registration/identity-verification and the Federal Register Motus notice. (2) MARK AS [ASSUMED-N] or DROP: The specific figures — '~200 ghost-address authorities/month' and 'approval rate halved' — lack primary-source grounding. The '200' figure misrepresents Secretary Duffy's statement (which referred to 200 DOT numbers at one P.O. Box, not 200 monthly fraudulent grants). The approval-rate-halved statistic comes from a single industry analytics firm (CarrierOK) that publicly retracted its methodology. If a quantified impact claim is needed, the most defensible language based on available evidence is: 'Industry tracking data suggested newly published authorities fell roughly 50% in April–May 2025, though official FMCSA statistics confirming this magnitude have not been publicly released.' Flag for attended fetch of the DOT press release and FMCSA fact sheet PDFs before publishing."
+}

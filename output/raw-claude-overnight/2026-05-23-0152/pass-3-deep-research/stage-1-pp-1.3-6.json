@@ -1,0 +1,89 @@
+{
+  "claim_id": "pp-1.3-6",
+  "claim_text": "5 of 11 ASEAN countries lack a beneficial-ownership legal framework (as of 2024)",
+  "original_source_flagged": "Open Ownership NGO blog post — 'Advancing beneficial ownership transparency in South East Asia', February 2024",
+  "deep_research_date": "2026-05-23",
+  "outcome": "found-stronger-evidence",
+  "verdict_on_original_claim": "partially-supported-with-important-nuance",
+  "nuance_explanation": "The claim is directionally accurate but requires precise qualification. The Open Ownership blog stated '5 out of 11 countries still in the process of putting in place a legal framework for BO.' The UNODC 2024 primary report (multilateral UN agency, May 2024) clarifies that ALL 11 ASEAN member states have some AML/CFT-based legal definition of 'beneficial owner' in their domestic law. However, only 6 of 11 ASEAN states have established a dedicated central beneficial ownership registry (Brunei Darussalam, Indonesia, Malaysia, Myanmar, Philippines, Singapore). The remaining 5 — Cambodia, Lao PDR, Thailand, Vietnam, and Timor-Leste (observer) — lack a central BO register and rely solely on AML/CFT or financial-institution-level collection, which aligns with the Open Ownership '5 countries' count if interpreted as 'no comprehensive BO disclosure framework with a central register.' FATF compliance data (from UNODC Table 2) confirms Lao PDR is the only country rated Non-Compliant on both R24 and R25; Brunei Darussalam is NC on R25 only. Myanmar, Cambodia, Thailand, Malaysia, Vietnam are all Partially Compliant on R24.",
+  "new_sources": [
+    {
+      "url": "https://www.unodc.org/roseap/uploads/documents/Publications/2024/Implementation_of_Beneficial_Ownership_Transparency_in_ASEAN_Member_States_and_Timor-Leste.pdf",
+      "title": "Implementation of Beneficial Ownership Transparency in ASEAN Member States and Timor-Leste",
+      "publisher": "United Nations Office on Drugs and Crime (UNODC), Regional Office for Southeast Asia and the Pacific",
+      "category": "primary-multilateral",
+      "publication_date": "2024-05",
+      "supports_claim": true,
+      "key_data": "Table 4 shows that only 6 of 11 ASEAN states have a central BO registry (Brunei, Indonesia, Malaysia, Philippines, Singapore, Myanmar). Cambodia, Lao PDR, Thailand, Vietnam, and Timor-Leste have no central registry. All focus states do have some legal definition of 'beneficial owner' in AML/CFT law. FATF compliance table (Table 2, citing FATF Consolidated Assessment Ratings accessed April 2024): Lao PDR rated NC for R24 and R25; Brunei rated PC for R24, NC for R25; Indonesia LC for R24; Philippines LC for R24; Singapore LC for R24, C for R25; Cambodia, Malaysia, Myanmar, Thailand, Vietnam rated PC for R24.",
+      "via_pdf_markitdown": true,
+      "verified": true
+    },
+    {
+      "url": "https://www.openownership.org/en/blog/advancing-beneficial-ownership-transparency-in-south-east-asia/",
+      "title": "Advancing beneficial ownership transparency in South East Asia",
+      "publisher": "Open Ownership",
+      "category": "ngo-advocacy",
+      "publication_date": "2024-03",
+      "supports_claim": true,
+      "key_data": "States verbatim: '5 out of 11 countries still in the process of putting in place a legal framework for BO.' This is the original source of the claim. Now corroborated by UNODC 2024 on the '5 without central registry' reading.",
+      "via_pdf_markitdown": false,
+      "verified": true
+    },
+    {
+      "url": "https://www.unodc.org/roseap/uploads/documents/topics/anti-corruption/2022/Beneficial_ownership_regulations_and_company_registries_in_Southeast_Asia.pdf",
+      "title": "Beneficial Ownership Regulations and Company Registries in Southeast Asia — Analysis of Regulatory Deficiencies",
+      "publisher": "United Nations Office on Drugs and Crime (UNODC)",
+      "category": "primary-multilateral",
+      "publication_date": "2022-03",
+      "supports_claim": true,
+      "key_data": "Earlier UNODC analysis (updated March 2022) covering Cambodia, Indonesia, Malaysia, Philippines, Thailand, Vietnam confirms that Thailand and Cambodia lack mechanisms to record and report beneficial ownership and confirms regional pattern of AML/CFT-only BO definitions without central registers. Cross-validates the 2024 UNODC findings.",
+      "via_pdf_markitdown": true,
+      "verified": true
+    },
+    {
+      "url": "https://www.fatf-gafi.org/en/publications/Mutualevaluations/Assessment-ratings.html",
+      "title": "FATF Consolidated Assessment Ratings (2014–2026 assessments)",
+      "publisher": "Financial Action Task Force (FATF)",
+      "category": "primary-gov-intergovernmental",
+      "publication_date": "2024-04",
+      "supports_claim": true,
+      "key_data": "Underlying source for UNODC Table 2. Provides R24 and R25 ratings for all ASEAN states. Not directly fetchable (403 on FATF site) but confirmed through UNODC 2024 cross-reference (UNODC footnote 20 cites FATF Assessment Ratings accessed 1 April 2024).",
+      "via_pdf_markitdown": false,
+      "verified": false,
+      "note": "FATF site returned HTTP 403 during fetch; data confirmed via UNODC 2024 Table 2 cross-reference"
+    },
+    {
+      "url": "https://www.fatf-gafi.org/content/dam/fatf-gafi/fsrb-mer/Brunei-Darussalam-MER-2023.odf.pdf.coredownload.inline.pdf",
+      "title": "Anti-money laundering and counter-terrorist financing measures: Brunei Darussalam — Mutual Evaluation Report 2023",
+      "publisher": "Asia/Pacific Group on Money Laundering (APG) / FATF",
+      "category": "primary-gov-intergovernmental",
+      "publication_date": "2023-08",
+      "supports_claim": true,
+      "key_data": "Cited in UNODC 2024 at footnote 84 as source for Brunei Darussalam's R24=PC, R25=NC rating. Confirms Brunei Darussalam partially compliant on beneficial ownership of legal persons but non-compliant on legal arrangements.",
+      "via_pdf_markitdown": false,
+      "verified": false,
+      "note": "URL confirmed from UNODC 2024 citation; not directly fetched due to budget constraints but UNODC cross-reference provides sufficient validation"
+    }
+  ],
+  "searches_performed": [
+    "FATF mutual evaluation reports ASEAN countries beneficial ownership legal framework 2023 2024",
+    "site:fatf-gafi.org beneficial ownership ASEAN mutual evaluation 2023 2024",
+    "site:apgml.org beneficial ownership ASEAN countries mutual evaluation report",
+    "FATF assessment ratings R24 R25 beneficial ownership Indonesia Thailand Vietnam Philippines Cambodia Laos Myanmar 2022 2023 2024",
+    "Open Ownership beneficial ownership ASEAN 5 countries no legal framework 2024",
+    "Open Ownership advancing beneficial ownership transparency Southeast Asia ASEAN 2024 blog 5 countries",
+    "FATF 4th round assessment ratings beneficial ownership R24 R25 ASEAN 2024 non-compliant",
+    "APG mutual evaluation 2023 Brunei Darussalam beneficial ownership R24 site:apgml.org OR site:fatf-gafi.org",
+    "beneficial ownership ASEAN no legal framework OR lack legal framework 2024 Cambodia Laos Thailand Vietnam Myanmar"
+  ],
+  "categories_searched": [
+    "primary-multilateral (UNODC — found, verified, directly on-point)",
+    "primary-gov-intergovernmental (FATF Mutual Evaluation Reports — confirmed via UNODC cross-reference; FATF site 403 on direct fetch)",
+    "primary-multilateral (ADB 2022 report — found, partially relevant)",
+    "ngo-advocacy (Open Ownership — original source, verified text of claim)",
+    "primary-multilateral (FATF APG — referenced in UNODC, confirmed ratings)"
+  ],
+  "suggested_revision": "Replace claim with: 'As of May 2024, 5 of the 11 ASEAN member states — Cambodia, Lao PDR, Thailand, Vietnam, and Timor-Leste — have not established a central beneficial ownership registry and rely solely on AML/CFT-level customer due diligence obligations; all 11 states have at least a legal definition of \"beneficial owner\" in domestic law. FATF compliance assessments rate Lao PDR as Non-Compliant on both R24 and R25, the only ASEAN state with that dual rating. [Sources: UNODC 2024; FATF APG Mutual Evaluation Reports 2022–2023; Open Ownership 2024]'",
+  "suggested_new_score": "High",
+  "reasoning": "The UNODC May 2024 report is a directly on-point, multilateral primary source that covers all 11 ASEAN states with country-level detail, cites FATF Mutual Evaluation Reports, and was peer-reviewed by both UNODC and Open Ownership staff. It confirms the '5 countries' count (Cambodia, Lao PDR, Thailand, Vietnam, Timor-Leste have no central BO registry) and provides FATF technical compliance ratings per country for R24 and R25. The claim's core number (5 of 11) is directionally accurate, but the framing 'lack a beneficial-ownership legal framework' is imprecise: all 11 states have some domestic legal definition of beneficial ownership; the gap is in comprehensive disclosure frameworks with central registries. The revised claim with UNODC as the primary citation and the precise qualification elevates this to a High-confidence, well-sourced claim."
+}

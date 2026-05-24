@@ -1,0 +1,148 @@
+{
+  "claim_id": "PP2.1-cost-1",
+  "claim_text": "$500M–$700M industry-wide freight fraud loss annually",
+  "original_source_flagged": "FTV Capital (Highway investor) — not independent",
+  "research_date": "2026-05-14",
+  "outcome": "confirmed-scarce-with-partial-upgrade",
+
+  "key_finding": "No government or multilateral primary source publishes a dollar-denominated annual aggregate specifically for booking-layer freight fraud (double brokering, fictitious pickups, identity spoofing). The $500M–$700M figure circulates widely but traces back to industry trade sources — predominantly TIA survey data, not an independently audited statistic. The best available independent proxies are (1) Verisk CargoNet's 2024 reported-incident loss total of ~$455M covering strategic/fraudulent cargo theft (distinct from physical theft), and (2) TIA's April 2025 State of Fraud report which documents 1,611 fraud reports in a 6-month window with 22% of brokerages losing >$200K each period, implying industry-wide losses well above $500M annually but without a stated aggregate. FBI IC3 does not break out freight fraud as a subcategory. DOT OIG tracks individual case restitution, not annual aggregates. NICB covers cargo-theft insurance losses, not booking-layer fraud specifically.",
+
+  "searches_performed": [
+    "FBI IC3 Internet Crime Complaint Center 2024 annual report freight fraud transportation losses",
+    "TIA Transportation Intermediaries Association 2025 state of fraud report freight total market estimate",
+    "CargoNet Verisk 2024 annual cargo theft fraud report total losses statistics",
+    "DOT Office Inspector General freight fraud investigations 2023 2024 annual summary losses",
+    "freight broker fraud billion annual losses industry estimate 2023 2024 site:fmcsa.dot.gov OR site:dot.gov",
+    "NICB cargo fraud insurance claims staged accidents freight 2023 2024 annual report",
+    "freight fraud 800 million OR 900 million OR 1 billion annual industry losses booking layer double brokering 2023 2024",
+    "NMFTA freight fraud annual losses total estimate 2023 2024 double brokering 500 million OR 700 million source",
+    "Grant Thornton double brokering fraud transportation annual losses total estimate primary source 2023",
+    "Truckstop DAT freight fraud total annual aggregate loss 2024 industry-wide statistics report",
+    "FreightWaves freight fraud 2024 annual total losses $ billion cited primary source original report",
+    "500 million OR 700 million freight fraud double brokering original source attribution TIA OR DAT OR Truckstop OR FMCSA 2022 2023"
+  ],
+
+  "categories_searched": [
+    "primary-gov (FBI IC3, DOT OIG, FMCSA, DOT)",
+    "primary-multilateral (none found applicable)",
+    "industry-association (TIA, NMFTA, NICB, CargoNet/Verisk)",
+    "audited-research-firm (Grant Thornton — no aggregate figure found)",
+    "trade-press (FreightWaves, Logistics Management, CCJ — all cite back to TIA/industry surveys)"
+  ],
+
+  "sources_evaluated": [
+    {
+      "url": "https://news.tianet.org/tia-releases-state-of-fraud-in-the-industry-april-2025-report/",
+      "category": "industry-association",
+      "publication_date": "2025-04-28",
+      "supports_claim": "partial",
+      "key_data": "TIA Watchdog recorded 1,611 fraud reports Sep 2024–Feb 2025 (65% increase YoY); 22% of brokerages lost >$200K in that 6-month period; truckload fraud up across all categories. Does NOT state an industry-wide annual aggregate dollar figure.",
+      "via_pdf_markitdown": false,
+      "independence_rating": "trade-association — TIA represents brokers; not a disinterested source",
+      "pdf_url": "https://member.tianet.org/common/Uploaded%20files/MemberResourceLibrary/Whitepapers/TIA-Fraud-Report-April-2025.pdf"
+    },
+    {
+      "url": "https://www.ic3.gov/AnnualReport/Reports/2024_IC3Report.pdf",
+      "category": "primary-gov",
+      "publication_date": "2025 (reporting 2024 data)",
+      "supports_claim": false,
+      "key_data": "IC3 2024 report covers $16.6B total internet crime losses. Does NOT break down by industry vertical or freight subcategory. Freight fraud is not a listed crime category.",
+      "via_pdf_markitdown": true,
+      "independence_rating": "primary-government — but irrelevant; no freight subcategory"
+    },
+    {
+      "url": "https://www.verisk.com/company/newsroom/cargo-theft-losses-surge-to-estimated-$725-million-in-2025-verisk-cargonet-analysis-reveals/",
+      "category": "industry-data-provider",
+      "publication_date": "2026-01-22",
+      "supports_claim": "partial",
+      "key_data": "Verisk CargoNet: 2025 estimated cargo theft losses $725M; 2024 reported incident value ~$455M. CargoNet includes 'strategic cargo theft' (fraud-initiated incidents) but bundles it with physical theft; does not isolate booking-layer fraud separately.",
+      "via_pdf_markitdown": false,
+      "independence_rating": "semi-independent data provider (insurance industry consortium)"
+    },
+    {
+      "url": "https://www.cargonet.com/news-and-events/cargonet-in-the-media/2025-theft-trends/",
+      "category": "industry-data-provider",
+      "publication_date": "2026-01",
+      "supports_claim": "partial",
+      "key_data": "CargoNet 2025 full-year: $725M estimated losses including strategic fraud; 60% YoY increase. Confirms scale of problem exceeds $500M mark when fraud-type theft is included.",
+      "via_pdf_markitdown": false,
+      "independence_rating": "semi-independent"
+    },
+    {
+      "url": "https://nmfta.org/the-fight-against-freight-fraud-begins-with-one-change-that-can-transform-the-industry/",
+      "category": "industry-association",
+      "publication_date": "2025",
+      "supports_claim": "partial",
+      "key_data": "NMFTA cites $6.6B annualized cost of cargo theft (source: truckingresearch.org / ATRI); $35B broader supply-chain crime estimate (NICB). These figures are broader than booking-layer fraud alone.",
+      "via_pdf_markitdown": false,
+      "independence_rating": "trade-association"
+    },
+    {
+      "url": "https://www.grantthornton.com/insights/articles/transportation/2023/double-brokering-fraud-in-the-transportation-industry",
+      "category": "audited-research-firm",
+      "publication_date": "2023-07",
+      "supports_claim": false,
+      "key_data": "Grant Thornton article on double brokering discusses legal cases only; contains NO aggregate annual loss figures or methodology.",
+      "via_pdf_markitdown": false,
+      "independence_rating": "consulting firm — but no relevant data"
+    },
+    {
+      "url": "https://www.freightwaves.com/news/freight-fraud-burgeoning-double-brokering-scheme-like-game-of-whack-a-mole",
+      "category": "trade-press",
+      "publication_date": "2023",
+      "supports_claim": false,
+      "key_data": "Carrier411 CEO estimated double-brokering costs $100M/year — far below $500M–$700M. Confirms the $500–700M figure does NOT originate from this source.",
+      "via_pdf_markitdown": false,
+      "independence_rating": "trade-press citing single CEO estimate"
+    },
+    {
+      "url": "https://www.freightwaves.com/news/is-cargo-theft-costing-60-billion-annually-what-that-number-actually-represents",
+      "category": "trade-press-analysis",
+      "publication_date": "2024",
+      "supports_claim": false,
+      "key_data": "FreightWaves analysis finds all large cargo-theft/fraud loss estimates involve extrapolation from reported-incident data (typically 10–15% reporting rate). No primary source for $500–700M identified; ATRI baseline cited as $6B for physical theft only.",
+      "via_pdf_markitdown": false,
+      "independence_rating": "trade-press analysis"
+    }
+  ],
+
+  "traceability_of_500_700M_figure": {
+    "finding": "The $500M–$700M double-brokering-specific figure could not be traced to a verifiable primary source. Search results attribute it variously to 'the Wall Street Journal,' 'a TIA 2023 study,' and 'industry sources' — none of which, upon direct verification, contain this figure as a first-party calculation. The most likely origin is a TIA member survey extrapolation or a vendor-cited estimate that entered circulation without documented methodology. FTV Capital's use of this figure likely reflects the same industry-folklore number.",
+    "closest_verifiable_proxy": "CargoNet/Verisk $455M (2024 reported incidents including strategic fraud) — a reported-incident floor, not a total market estimate"
+  },
+
+  "revised_claim_options": [
+    {
+      "option": "narrow-to-verifiable-with-caveat",
+      "revised_claim_text": "Verisk CargoNet recorded ~$455M in 2024 cargo theft losses including fraud-initiated (strategic) incidents — a reported floor; with an estimated 10–15% reporting rate, total booking-layer and cargo fraud losses are likely in the $1B–$3B range, though no independently audited aggregate exists.",
+      "suggested_score": "Medium",
+      "primary_sources": [
+        "https://www.verisk.com/company/newsroom/cargo-theft-losses-surge-to-estimated-$725-million-in-2025-verisk-cargonet-analysis-reveals/",
+        "https://news.tianet.org/tia-releases-state-of-fraud-in-the-industry-april-2025-report/"
+      ]
+    },
+    {
+      "option": "mark-assumed",
+      "revised_claim_text": "[ASSUMED-N]: $500M–$700M industry-wide annual freight fraud loss — widely cited but not independently audited; to validate: commission analysis of TIA survey raw data + CargoNet strategic-theft subcategory + FMCSA enforcement restitution totals.",
+      "suggested_score": "Low"
+    },
+    {
+      "option": "replace-with-floor-and-ceiling",
+      "revised_claim_text": "Industry estimates of annual freight fraud losses range from $455M (Verisk CargoNet 2024 reported incidents) to $6.6B (ATRI/NMFTA broader cargo crime) with the booking-layer fraud subcategory unquantified by any government agency.",
+      "suggested_score": "Medium",
+      "note": "This accurately represents the state of knowledge without fabricating a single-point estimate."
+    }
+  ],
+
+  "recommended_option": "replace-with-floor-and-ceiling",
+  "reasoning": "No government or multilateral source publishes a booking-layer-specific fraud aggregate. The $500–$700M figure is industry folklore — plausible but unaudited. The strongest defensible approach is to cite Verisk CargoNet's $455M (2024 confirmed-incident floor, semi-independent data provider) alongside the NMFTA/ATRI $6.6B broader cargo-crime ceiling, and note that the booking-layer subcategory is not independently quantified. This is more credible than retaining FTV Capital as the source.",
+
+  "suggested_new_score": "Medium",
+
+  "residual_gaps": [
+    "FBI IC3 does not track freight fraud as a subcategory — confirmed after checking 2024 PDF",
+    "DOT OIG tracks individual restitution cases, not aggregate annual losses — no usable figure",
+    "NICB 2024 Annual Report covers cargo theft insurance, not booking-layer fraud specifically",
+    "TIA April 2025 PDF is member-gated (403 on direct fetch); press coverage confirms no industry-wide aggregate dollar figure stated"
+  ]
+}

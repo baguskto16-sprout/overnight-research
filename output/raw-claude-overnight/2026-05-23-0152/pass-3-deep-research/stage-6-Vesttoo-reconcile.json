@@ -1,0 +1,84 @@
+{
+  "claim_id": "stage-6-vesttoo",
+  "research_date": "2026-05-23",
+  "contradiction_summary": {
+    "figure_A": "$2.8B+",
+    "figure_A_location": "Stage 6 value-chain footnote 37",
+    "figure_B": "$4B in letters of credit",
+    "figure_B_location": "Stage 6 pain-points PP6.5-cost3"
+  },
+  "verdict": "both_figures_are_real_but_represent_different_things",
+  "correct_figure_for_fraudulent_collateral": "$3.36B (approximately $3.4B)",
+  "figure_breakdown": {
+    "$4B": {
+      "origin": "Early media reporting — Calcalist (Israeli tech press), July 19, 2023",
+      "what_it_represents": "Initial estimate of total fraudulent LOCs on the Vesttoo platform, cited before full internal investigation was complete",
+      "accuracy": "Rounded/estimated; widely repeated by industry press but not from a court filing",
+      "sources": [
+        "https://www.calcalistech.com/ctechnews/article/rjpbxmhc2",
+        "https://insurancefraud.org/news_archives/vesttoo-investigation-reveals-4b-fraud-involving-fake-letters-of-credit/"
+      ]
+    },
+    "$3.36B": {
+      "origin": "Vesttoo's own interim investigation report filed with US Bankruptcy Court, District of Delaware (Case 23-11160), and independently confirmed by Artemis.bm and Browne Jacobson analysis of court documents",
+      "what_it_represents": "The court-verified total of standby letters of credit (LOCs) assumed to have been fraudulently created — the precise investigated figure",
+      "sub_breakdown": {
+        "China_Construction_Bank_portion": "$2.81B",
+        "Standard_Chartered_portion": "$362.5M",
+        "Santander_portion": "$186M"
+      },
+      "accuracy": "Court-filed; this is the primary-source verified number",
+      "sources": [
+        "https://www.artemis.bm/news/over-4-8bn-in-claims-levelled-against-vesttoo-entities-by-bankruptcy-creditors/",
+        "https://www.brownejacobson.com/insights/london-market-quarterly-spring-2024/vesttoo",
+        "https://www.artemis.bm/news/vesttoo-bankruptcy-creditors-sue-aon-and-china-construction-bank-for-fraudulent-conduct/"
+      ]
+    },
+    "$2.8B": {
+      "origin": "Two sources: (1) court-allowed claims figure (~$2.8B deemed allowable by bankruptcy court out of $4.8B filed), and (2) the China Construction Bank sub-total ($2.81B) of the $3.36B total",
+      "what_it_represents": "Either the CCB-specific portion of the fraud, or the court-determined allowable creditor claims — NOT the total fraudulent collateral",
+      "accuracy": "Technically accurate for what it represents, but incomplete as a total fraud figure",
+      "sources": [
+        "https://www.artemis.bm/news/vesttoo-creditors-bankruptcy-plan-goes-to-vote-recoveries-could-be-sub-100m/",
+        "https://finance.yahoo.com/news/vesttoo-creditors-file-landmark-lawsuit-040000757.html"
+      ]
+    },
+    "$4.8B": {
+      "origin": "US Bankruptcy Court, District of Delaware — aggregate creditor claims filed",
+      "what_it_represents": "Total claims filed by all creditors (exceeds fraudulent LOC face value due to consequential damages, transaction failures, etc.)",
+      "accuracy": "Court-filed figure; distinct from fraudulent collateral amount",
+      "sources": [
+        "https://www.artemis.bm/news/over-4-8bn-in-claims-levelled-against-vesttoo-entities-by-bankruptcy-creditors/"
+      ]
+    }
+  },
+  "primary_source": {
+    "type": "US Bankruptcy Court filing + independent investigation report",
+    "court": "US Bankruptcy Court, District of Delaware",
+    "case_number": "23-11160",
+    "docket_tracker": "https://dm.epiq11.com/case/vesttoo/info",
+    "best_secondary_source": "https://www.artemis.bm/news/over-4-8bn-in-claims-levelled-against-vesttoo-entities-by-bankruptcy-creditors/",
+    "creditor_lawsuit_press_release": "https://finance.yahoo.com/news/vesttoo-creditors-file-landmark-lawsuit-040000757.html"
+  },
+  "recommendation": {
+    "action": "align_both_files_to_court_verified_figure",
+    "recommended_figure": "approximately $3.4B in fraudulent letters of credit",
+    "recommended_claim_text": "Vesttoo's collapse in 2023 involved approximately $3.4 billion in fraudulent letters of credit (per the company's investigation report filed with the US Bankruptcy Court, District of Delaware, Case 23-11160); total creditor claims reached $4.8 billion",
+    "rationale": "The $3.36B figure is from Vesttoo's own court-filed investigation report and is the most precise, primary-source verified total of fraudulent LOCs. The $4B figure is a rounded early media estimate from before the full investigation concluded. The $2.8B figure conflates either (a) the CCB sub-portion alone or (b) court-allowed claims — neither represents total fraudulent collateral. Both artifact locations should use $3.4B (rounded from $3.36B) with a reference to the Delaware bankruptcy case.",
+    "footnote_37_revision": "Replace '$2.8B+' with '~$3.4B' and cite: Vesttoo investigation report filed with US Bankruptcy Court, District of Delaware, Case 23-11160 (2023); Artemis.bm coverage at https://www.artemis.bm/news/over-4-8bn-in-claims-levelled-against-vesttoo-entities-by-bankruptcy-creditors/",
+    "PP6_5_cost3_revision": "Replace '$4B in letters of credit' with '~$3.4B in fraudulent letters of credit' with the same citation — the $4B was an early unverified media estimate",
+    "confidence": "High — $3.36B is cross-confirmed by: (1) Vesttoo's own court-filed investigation report, (2) Artemis.bm analysis of court documents, (3) Browne Jacobson legal review, (4) Creditors' lawsuit complaint citing the same sub-breakdown (CCB $2.81B + StanChart $362.5M + Santander $186M = $3.36B)"
+  },
+  "searches_performed": [
+    "Vesttoo fraud total fraudulent collateral amount bankruptcy filing 2023",
+    "Vesttoo $2.8 billion OR $2.81 billion letters of credit China Construction Bank bankruptcy court",
+    "Vesttoo $4 billion letters of credit total fraud figure source Reuters Bloomberg",
+    "Vesttoo bankruptcy court Delaware total letters of credit $3.36 billion OR $3.3 billion OR $2.81 billion fraud amount verified"
+  ],
+  "fetches_performed": [
+    "https://www.artemis.bm/news/over-4-8bn-in-claims-levelled-against-vesttoo-entities-by-bankruptcy-creditors/",
+    "https://www.calcalistech.com/ctechnews/article/rjpbxmhc2"
+  ],
+  "outcome": "contradicting_evidence_resolved",
+  "finding": "Neither the $2.8B+ nor the $4B figure is correct as a standalone total-fraud figure. The court-verified total is $3.36B (~$3.4B rounded). The $4B was an early rounded media estimate; the $2.8B+ was the CCB-only sub-portion or alternatively the court-allowed claims figure. Both artifact locations should be updated to the same $3.4B figure with the Delaware bankruptcy court citation."
+}

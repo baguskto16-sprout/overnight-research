@@ -1,0 +1,131 @@
+{
+  "deep_research_meta": {
+    "agent": "deep-research",
+    "run_id": "2026-05-23-0152",
+    "research_date": "2026-05-23",
+    "claim_cluster": "PP6.2-cost4, PP6.2-freq1, PP6.2-freq3",
+    "stage": 6,
+    "hypothesis": "WH5",
+    "budget_used": {
+      "web_searches": 10,
+      "web_fetches": 4,
+      "markitdown_calls": 5,
+      "cache_checks": 4
+    }
+  },
+  "claims_researched": [
+    {
+      "claim_id": "PP6.2-cost4",
+      "claim_text": "Dynamic pricing pilots using telematics data have reduced claim ratios by 12% in documented pilot programs.",
+      "original_source": "https://www.marketgrowthreports.com/market-reports/cargo-insurance-market-112938",
+      "original_score": "Low",
+      "original_override": "aggregator-auto-downgrade"
+    },
+    {
+      "claim_id": "PP6.2-freq1",
+      "claim_text": "Only 25% of high-value cargo shipments globally use IoT-based tracking systems capable of informing per-shipment risk scoring.",
+      "original_source": "https://www.marketgrowthreports.com/market-reports/cargo-insurance-market-112938",
+      "original_score": "Low",
+      "original_override": "aggregator-auto-downgrade"
+    },
+    {
+      "claim_id": "PP6.2-freq3",
+      "claim_text": "Parametric cargo insurance adoption grew 23%; over 320 million cubic metres of bulk commodities covered using parametric products.",
+      "original_source": "https://www.marketgrowthreports.com/market-reports/cargo-insurance-market-112938",
+      "original_score": "Low",
+      "original_override": "aggregator-auto-downgrade"
+    }
+  ],
+  "searches_performed": [
+    "IUMI 2024 cargo insurance IoT telematics digitalization penetration statistics site:iumi.com",
+    "parametric cargo insurance market size 2024 statistics IUMI Swiss Re Munich Re Lloyd's adoption growth",
+    "telematics dynamic pricing cargo freight insurance claim ratio reduction actuarial study CAS 2023 2024",
+    "IoT tracking high-value cargo shipments penetration rate 2024 percentage global logistics statistics 25% OR 30% OR 15%",
+    "Swiss Re sigma parametric insurance cargo 2024 market statistics report",
+    "McKinsey BCG parametric insurance cargo adoption statistics 2023 2024 cubic metres bulk commodities",
+    "Lloyd's Market Association cargo telematics IoT underwriting data report 2024 penetration statistics",
+    "telematics usage-based insurance commercial cargo claim loss ratio improvement 12% study actuarial evidence",
+    "320 million cubic metres parametric insurance cargo bulk commodities source",
+    "Artemis parametric cargo insurance 2024 market volume statistics adoption site:artemis.bm",
+    "Parsyl IoT cargo tracking penetration marine insurance Lloyd's syndicate 1796 data statistics 2024",
+    "IUMI Stats Report 2025 cargo insurance IoT digitalization telematics penetration data 2024"
+  ],
+  "sources_fetched": [
+    {
+      "url": "https://iumi.com/wp-content/uploads/2026/02/IUMI-Stats-Report-2025-2.pdf",
+      "method": "curl + markitdown",
+      "outcome": "Downloaded and parsed (5.7MB). Contains no IoT penetration, parametric adoption, or dynamic pricing claim ratio data. All percentage figures found (25%, 23%, 12%, 7%, etc.) are loss-location distribution pie chart segments, not technology penetration statistics.",
+      "relevant_quote": "IUMI Stats Report 2025 focuses on premium volume by region, loss ratios by segment, and hull/cargo/offshore energy market dynamics. Zero references to IoT tracking penetration, parametric adoption volume, or telematics-driven claim ratio improvements.",
+      "supports_any_claim": false
+    },
+    {
+      "url": "https://www.swissre.com/dam/jcr:0cd24f12-ebfb-425a-ab42-0187c241bf4a/parametric-insurance-guide.pdf",
+      "method": "markitdown",
+      "outcome": "Swiss Re Corporate Solutions marketing guide — vendor marketing document. No quantitative cargo parametric adoption statistics. Cites Swiss Re Sigma 2023 natural catastrophe losses ($280B economic, $108B insured) as context, but no cargo-specific penetration figures.",
+      "supports_any_claim": false,
+      "category": "vendor-marketing — not a primary source"
+    },
+    {
+      "url": "https://www.lmalloyds.com/LMA/News/Releases/lma_181124.aspx",
+      "method": "cache fetch",
+      "outcome": "[NEEDS-ATTENDED-FETCH]: LMA website returned a login redirect. Content is member-only. The November 2024 LMA Enhanced Underwriting report (co-authored with Oxbow Partners, 77% of Lloyd's GWP surveyed) may contain IoT underwriting data but cannot be verified without authenticated access.",
+      "supports_any_claim": false,
+      "category": "blocked — members-only"
+    },
+    {
+      "url": "https://iumi.com/statistics/iumi-stats-report-2025/",
+      "method": "WebFetch",
+      "outcome": "Index page confirms PDF exists at iumi.com/wp-content/uploads/2026/02/IUMI-Stats-Report-2025-2.pdf. Page itself contains no IoT/parametric/telematics data.",
+      "supports_any_claim": false
+    }
+  ],
+  "categories_searched": [
+    "primary-gov: None found for any of the three claims",
+    "primary-multilateral: Swiss Re Sigma (3/2024, 5/2024, 2/2025, 3/2025) — none cover cargo IoT penetration or parametric cargo adoption volume",
+    "primary-association: IUMI Stats Report 2025 (full PDF verified) — no IoT, parametric, or dynamic pricing claim ratio data",
+    "primary-association: Lloyd's Market Association November 2024 enhanced underwriting report — blocked (member-only, NEEDS-ATTENDED-FETCH)",
+    "primary-consultancy: McKinsey, BCG — no search result matched cargo-specific IoT penetration or 320M cubic metres parametric figure",
+    "secondary-specialist: Artemis.bm — parametric cargo content is Parsyl ColdCover product and cat bond statistics, no 23%/320M figure",
+    "secondary-specialist: CAS actuarial papers — no 12% claim ratio reduction from telematics cargo study found",
+    "secondary-specialist: TruckerCloud, IMS.tech, Carrier Management — telematics impact studies cite 5-10 point combined ratio improvement in auto/trucking; no cargo-specific 12% claim ratio figure found",
+    "aggregator-trace: 23% adoption and 320M cubic metres figure traced back exclusively to MarketGrowthReports.com and its derivative repostings across openpr.com, marketresearchfuture.com, researchnester.com"
+  ],
+  "key_finding_on_23pct_320M": "The '23% parametric adoption' and '320 million cubic metres' figures appear in multiple search results but ALL trace back to the same MarketGrowthReports.com report. Secondary sites (openpr.com, marketresearchfuture.com, researchnester.com) restate the same figures verbatim with no independent sourcing. Artemis.bm — the most authoritative parametric insurance trade publisher — contains no such statistic. IUMI Stats Report 2025 (full PDF, 5.7MB, parsed via markitdown) contains no reference to parametric cargo adoption volume or cubic metres covered.",
+  "key_finding_on_25pct_iot": "The '25% IoT penetration for high-value cargo' figure exists only in MarketGrowthReports.com. IUMI Stats Report 2025 (full PDF verified) does not contain any IoT tracking penetration percentage. IUMI's own December 2024 newsletter article on data/digitalization describes IoT as an emerging opportunity and notes '500 million signals daily for commercial fleet operations worldwide' — structural framing, not a penetration rate. Lloyd's/Parsyl IoT initiative (reinsurancene.ws, Parsyl press releases) describes Parsyl as pioneering sensor-based underwriting — framing consistent with nascent/low penetration, not the 25% figure. No multilateral, government, or primary-consultancy source contains a cargo IoT penetration rate.",
+  "key_finding_on_12pct_claim_ratio": "The '12% claim ratio reduction from dynamic pricing pilots' appears nowhere in actuarial literature, CAS publications, or primary-consultancy reports. Telematics insurance studies (British Actuarial Journal, MDPI, IMS.tech, TruckerCloud) cite 5-10 point combined ratio improvements and 10%+ claims cost reduction in personal/commercial auto contexts. None are cargo-specific or cite 12%. The closest substantiated figure is 'claims costs can be reduced by 10% or more through telematics implementation' (commercial auto, not cargo-specific, from IMS.tech — a vendor). The 12% figure is not traceable beyond MarketGrowthReports.com.",
+  "outcome": "confirmed-scarce",
+  "confirmed_scarce_reasoning": "After 12 searches, 4 verified fetches, and full parsing of the IUMI Stats Report 2025 PDF, no primary-government, primary-multilateral, primary-association, or primary-consultancy source was found for any of the three claims. The 23%/320M cubic metres and 25% IoT penetration figures trace exclusively to MarketGrowthReports.com with no independent corroboration. The 12% claim ratio reduction figure does not appear in any actuarial, academic, or primary-consultancy publication. The IUMI Stats Report 2025 — the highest-authority source already cited in this corpus — contains no IoT penetration, parametric adoption volume, or dynamic pricing claim ratio data. The LMA November 2024 enhanced underwriting report is the one source that MIGHT contain relevant data but requires attended access (member-only). The Swiss Re sigma series contains no cargo-specific parametric adoption statistics.",
+  "possible_attended_sources": [
+    {
+      "url": "https://www.lmalloyds.com/LMA/News/Releases/lma_181124.aspx",
+      "description": "Lloyd's Market Association / Oxbow Partners 'Growth of Enhanced Underwriting in the Lloyd's Market: The New Normal?' (November 2024). Based on survey of 77% of Lloyd's GWP. May contain data on IoT/telematics adoption in cargo underwriting. Requires LMA member login.",
+      "priority": "High"
+    }
+  ],
+  "suggested_revision_options": [
+    {
+      "option": "drop-specific-figures-rewrite-structural",
+      "revised_claim_text_PP6_2_cost4": "Telematics-driven underwriting has demonstrated claim cost reductions in commercial auto insurance contexts (studies indicate 10%+ reduction in claims costs and 5-10 point combined ratio improvements where implemented), but no published actuarial study has quantified the equivalent reduction specifically for cargo insurance. The transfer of these results to cargo is directionally plausible but undemonstrated.",
+      "revised_claim_text_PP6_2_freq1": "IoT-based tracking capable of generating per-shipment risk signals is nascent in the cargo insurance market. The IUMI has identified IoT as an emerging data source for marine insurers, and the Parsyl/Lloyd's initiative (Syndicate 1796) represents the most advanced documented use of sensor data in cargo underwriting — but no primary-association or multilateral source has published a global penetration rate for IoT-capable shipment tracking. Fleet telematics penetration in SEA was 15.7% in 2023 (Stage 3), structurally confirming low data availability in this region even if global figures were higher.",
+      "revised_claim_text_PP6_2_freq3": "Parametric cargo insurance exists as a proven product (Parsyl ColdCover, Munich Re parametric solutions, Swiss Re Corporate Solutions) concentrated in high-value perishables and pharmaceutical cold chain. No primary-association or multilateral source has published an aggregate adoption rate or covered-volume figure for parametric cargo products. The market is growing but remains structurally niche — confirmed by Artemis.bm coverage, which shows parametric cargo as a specialist product rather than a mass-market segment.",
+      "suggested_score_all_three": "Low — structural framing, no quantified primary-source evidence",
+      "rationale": "The specific percentages (12%, 25%, 23%) and volume figures (320M cubic metres) are unverifiable aggregator artifacts. Removing them and replacing with structural framing supported by IUMI and Artemis secondary evidence is both more honest and more defensible."
+    },
+    {
+      "option": "mark-assumed",
+      "revised_claim_text_PP6_2_cost4": "[ASSUMED-N]: Dynamic pricing pilots using telematics have reduced claim ratios by approximately 12% — no primary actuarial source found. To validate: request pilot program data from Nirvana Insurance, HDVI, or Loadsure; or search CAS/IAA actuarial papers directly.",
+      "revised_claim_text_PP6_2_freq1": "[ASSUMED-N]: Only 25% of high-value cargo shipments globally use IoT tracking capable of per-shipment risk scoring — no primary source found. To validate: request from IUMI Data and Digitalization Forum, Lloyd's Market Association, or Parsyl.",
+      "revised_claim_text_PP6_2_freq3": "[ASSUMED-N]: Parametric cargo insurance adoption grew 23%; 320M cubic metres covered — figures traceable only to MarketGrowthReports.com (Tier-6 aggregator). To validate: request from IUMI, Artemis.bm, Swiss Re Institute, or Munich Re parametric team.",
+      "suggested_score_all_three": "Low — ASSUMED tag",
+      "rationale": "Preserves the directional claims while being transparent about the absence of primary-source evidence."
+    },
+    {
+      "option": "drop",
+      "rationale": "All three specific percentages are unverifiable. If the WH5 argument requires quantified penetration statistics that cannot be sourced, the hypothesis should be evidenced structurally (parametric exists, IoT is nascent, per-shipment pricing is commercially unproven at scale) rather than with specific numbers that could be challenged in due diligence."
+    }
+  ],
+  "recommended_option": "drop-specific-figures-rewrite-structural",
+  "recommended_action": "Remove the specific figures (12%, 25%, 23%, 320M cubic metres) from PP6.2-cost4, PP6.2-freq1, and PP6.2-freq3. Replace with structural framing citing IUMI (primary-association, confirmed) on IoT as an emerging but nascent capability, Artemis.bm (secondary-specialist) on parametric cargo as a specialist niche, and the ATRI + telematics literature (primary-association via secondary) on commercial insurance claim improvement from telematics in directional terms. Flag the LMA November 2024 enhanced underwriting report as a NEEDS-ATTENDED-FETCH for potential IoT adoption data. The WH5 hypothesis remains structurally sound — the absence of quantitative penetration data is itself evidence that the market lacks the data infrastructure for per-shipment pricing.",
+  "structural_implication_for_WH5": "WH5 (risk and insurance pricing disconnected from real journey data) is structurally evidenced by: (1) IUMI Stats Report 2025 confirming loss ratios improve despite no per-shipment pricing mechanism (primary-association, High); (2) McKinsey commercial lines insurtech report noting 63% of insurtechs act as enablers rather than replacers — confirming nascent not mature market (primary-consultancy, High); (3) IUMI Data and Digitalization Forum framing IoT as an opportunity to be grasped, not an established practice (primary-association); (4) Parsyl/Lloyd's as a boutique proof-of-concept, not a market standard. The hypothesis does not require the three specific percentages to stand — those figures were additive decoration, not load-bearing foundation.",
+  "iumi_iot_article_note": "IUMI June 2025 newsletter article 'How telematics is transforming underwriting and claims practices in marine insurance' (iumi.com/newsletter-june-2025/...) returned empty via markitdown — possible paywalled/restricted content. If accessible, this article may contain the most authoritative characterization of IoT adoption in marine insurance from a primary-association source. Recommend attended fetch."
+}

@@ -1,0 +1,56 @@
+Unattended Phase 2 complete.
+URLs attempted: 20 · Succeeded: 12 · Confirmed inaccessible: 8
+Claims upgraded: 12
+New % Low (post-enrichment): ~28% · Gate: ship-with-flag
+
+Run ID: 2026-05-23-0736
+Started: 2026-05-23T01:08:32Z
+Completed: 2026-05-23T01:24:41Z
+Wall-clock: ~16 minutes (well within 60-minute cap)
+Hard rules honored:
+  - NEVER downgraded a claim's confidence: enforced
+  - NEVER removed an existing source: enforced (additive only)
+  - NEVER fabricated content for inaccessible URLs: marked [CONFIRMED-INACCESSIBLE]
+  - NEVER attempted to solve captchas: skipped + tagged inaccessible
+  - 30-fetch / 60-minute cap: well under both
+
+Backups:
+  - raw-claude-value-chain.md.bak
+  - raw-claude-pain-points.md.bak
+  - FINAL-REPORT.html.phase1.bak
+
+Updated artifacts:
+  - raw-claude-value-chain-indonesia-affluent-preventive-cdm-market.md (NEEDS-ATTENDED-FETCH tags replaced with PHASE2-RESOLVED / CONFIRMED-INACCESSIBLE)
+  - raw-claude-pain-points-indonesia-affluent-preventive-cdm-market.md (same)
+  - cross-stage-observations.md ("Outstanding" section replaced with Phase 2 outcomes table)
+  - raw-claude-summary-indonesia-affluent-preventive-cdm-market.md ("Auto-enrichment (Phase 2, Playwright pass)" section appended)
+  - checkpoint.json (auto_enrichment object added)
+  - FINAL-REPORT.html (new page 11 "Phase 2 auto-enrichment" injected between sources and closing; page footers renumbered 11→12; closing now page 12 of 12)
+
+Key claim upgrades:
+  - McKinsey 2030 consuming-class projection: Low → Medium (2025 Enterprising Archipelago update retrieved)
+  - The Diplomat middle class decline 9.5M: Low → Medium (article retrieved)
+  - Thinkwell OOP 32.1% of CHE: Low → Medium (PDF downloaded + markitdown)
+  - Lancet GH benefit incidence index 0.134/0.190: Low → Medium (Summary retrieved)
+  - Pacific Prime $4,764 insurance premium 2024: Low → Medium (page retrieved)
+  - OJK Rp 26.26T 2023 premium traceability: Medium → High (publication landing accessible)
+  - BPS Health Statistics Profile 2023 traceability: Low → Medium (page accessible)
+  - BPS Susenas March 2024 traceability: Low → Medium (page accessible)
+  - Siloam outpatient revenue + payer mix: Medium → High (FY2023 AR via Stockbit + markitdown)
+  - IDF Atlas 2025 undiagnosed diabetes paper: Medium → High (abstract retrieved)
+  - Lancet WPC Indonesia diabetes care cascade: Medium → High (Summary retrieved)
+  - MMB Health Trends 2025 Asia regional: Low → Medium (PDF retrieved)
+
+Confirmed inaccessible (8):
+  - Prudential PRUprime PDF (HTTP 404, resource removed from CMS)
+  - Allianz SmartHealth RIPLAY PDF (Cloudflare)
+  - Allianz SmartHealth brochure PDF variant (Cloudflare)
+  - Aksi.co AXA Mandiri article (domain hijacked, redirects to spam)
+  - Litbang Kemkes laporan (DNS NXDOMAIN)
+  - IDX Siloam press release PDF (Cloudflare; alternative Stockbit mirror used)
+  - OJK Insurance Statistics EN landing (no article available)
+  - Perkeni.org (hosting placeholder only)
+
+Gate decision: Ship with flag (unchanged from Phase 1).
+Phase 2 strengthened, did not weaken, the WH1-WH5 thesis chain.
+Phase 1 source-snippet citations for IDF, Lancet WPC, Lancet GH, BPS, McKinsey, and The Diplomat are now backed by directly retrieved primary content.

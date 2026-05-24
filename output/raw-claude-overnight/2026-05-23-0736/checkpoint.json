@@ -1,0 +1,123 @@
+{
+  "run_id": "2026-05-23-0736",
+  "input_file": "./input/2026-05-23-indonesia-affluent-preventive-cdm-market.md",
+  "topic_slug": "indonesia-affluent-preventive-cdm-market",
+  "mode": "sandbox",
+  "current_pass": 5,
+  "stages_planned": [
+    {"n": 1, "name": "Population sizing — Indonesia urban affluent + upper-middle in Tier-1/Tier-2 cities"},
+    {"n": 2, "name": "Healthcare spending behavior by income segment"},
+    {"n": 3, "name": "Private health insurance — penetration & plan composition"},
+    {"n": 4, "name": "Top insurers — structured preventive/CDM programmes"},
+    {"n": 5, "name": "Chronic disease burden & undiagnosed rate"}
+  ],
+  "stages_completed": [1, 2, 3, 4, 5],
+  "stages_in_progress": [],
+  "weak_claims_to_re_research": [],
+  "final_gate_decision": "Ship with flag",
+  "interruption": null,
+  "started_at": "2026-05-23T07:36:00Z",
+  "completed_at": "2026-05-23T14:30:00Z",
+  "agents_invoked": 19,
+  "total_unique_sources": 211,
+  "total_pain_points": 21,
+  "total_root_causes": 86,
+  "contradictions_applied": 3,
+  "deep_research_outcomes": "Stage 1: 3 CONTRADICTED, 1 REFINED, 1 CONFIRMED-SCARCE — applied to canonical drafts",
+  "phase_2_handoff": {
+    "needs_attended_fetch_urls": 15,
+    "stop_reason": "Unattended-Playwright mode — Phase 2 orchestrator handles enrichment"
+  },
+  "auto_enrichment": {
+    "started_at": "2026-05-23T01:08:32Z",
+    "completed_at": "2026-05-23T01:24:41Z",
+    "urls_attempted": 20,
+    "urls_succeeded": 12,
+    "urls_confirmed_inaccessible": 8,
+    "claims_upgraded": [
+      {
+        "id": "stage1.vc.mckinsey-2030-consuming-class-projection",
+        "from": "low",
+        "to": "medium",
+        "new_source": "https://www.mckinsey.com/mgi/our-research/the-enterprising-archipelago-propelling-indonesias-productivity"
+      },
+      {
+        "id": "stage1.vc.diplomat-middle-class-decline",
+        "from": "low",
+        "to": "medium",
+        "new_source": "https://thediplomat.com/2024/09/is-indonesias-middle-class-really-shrinking/"
+      },
+      {
+        "id": "stage1.vc.thinkwell-oop-share-of-che",
+        "from": "low",
+        "to": "medium",
+        "new_source": "https://thinkwell.global/wp-content/uploads/2022/09/Health-Financing-Fact-Sheet_-Indonesia_September_2022.pdf"
+      },
+      {
+        "id": "stage1.vc.lancet-private-benefit-incidence-concentration-index",
+        "from": "low",
+        "to": "medium",
+        "new_source": "https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(23)00064-5/fulltext"
+      },
+      {
+        "id": "stage2.vc.household-insurance-premium-range",
+        "from": "low",
+        "to": "medium",
+        "new_source": "https://www.pacificprime.com/blog/health-insurance-cost-in-indonesia.html"
+      },
+      {
+        "id": "stage3.vc.ojk-rp26.26t-2023-premium-traceability",
+        "from": "medium",
+        "to": "high",
+        "new_source": "https://www.ojk.go.id/id/kanal/iknb/data-dan-statistik/asuransi/Pages/Statistik-Perasuransian-2023.aspx"
+      },
+      {
+        "id": "stage1.vc.bps-health-stats-profile-2023-source-traceability",
+        "from": "low",
+        "to": "medium",
+        "new_source": "https://www.bps.go.id/en/publication/2023/12/20/feffe5519c812d560bb131ca/health-statistics-profile-2023.html"
+      },
+      {
+        "id": "stage1.vc.bps-susenas-march-2024-source-traceability",
+        "from": "low",
+        "to": "medium",
+        "new_source": "https://www.bps.go.id/en/publication/2024/10/18/b392b2e96c87c090a6f8d9c2/consumption-expenditure-of-population-of-indonesia-march-2024.html"
+      },
+      {
+        "id": "stage1pp.siloam-outpatient-revenue-payer-mix",
+        "from": "medium",
+        "to": "high",
+        "new_source": "https://emitten-announcement.stockbit.com/attachments/f-31632942-0_AnnualReport2023-SILO-att2.pdf"
+      },
+      {
+        "id": "stage5.vc.idf-atlas-undiagnosed-diabetes-global-paper",
+        "from": "medium",
+        "to": "high",
+        "new_source": "https://diabetesjournals.org/care/article/49/3/490/164378/Global-Regional-and-National-Estimates-of"
+      },
+      {
+        "id": "stage5.vc.lancet-wpc-indonesia-diabetes-care-cascade",
+        "from": "medium",
+        "to": "high",
+        "new_source": "https://www.thelancet.com/journals/lanwpc/article/PIIS2666-6065(25)00298-6/fulltext"
+      },
+      {
+        "id": "stage2pp.mmb-health-trends-2025-asia-regional",
+        "from": "low",
+        "to": "medium",
+        "new_source": "https://www.fwd.co.id/files/v3/assets/blt0c90459332411c22/bltea93d95ff78d64c5/67b8270218515989b9a6916c/Mercer_Marsh_Benefit_Health_Trend_2025_(1).pdf"
+      }
+    ],
+    "urls_confirmed_inaccessible_list": [
+      "https://www.prudential.co.id/export/sites/prudential-id/id/.galleries/pdf/product/Product-Summary-PRUPrime-Healthcare-Plus-Pro.pdf",
+      "https://www.allianz.co.id/content/dam/onemarketing/azli/wwwallianzcoid/produk/asuransi-kumpulan/smarthealth-enterprise/riplay-v1-3-english/riplay-umum-smarthealth-enterprise-english-ver.pdf",
+      "https://www.allianz.co.id/content/dam/onemarketing/azli/wwwallianzcoid/produk/asuransi-kumpulan/smarthealth-enterprise/brochure-v1-3-english/brochure-smarthealth-enterprise-english-ver.pdf",
+      "https://aksi.co/2024/10/03/mas-axa-mandiri-corporate-health-plan/",
+      "https://www.litbang.kemkes.go.id/category/laporan/",
+      "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202403/731587cc9e_b0b5f51270.pdf",
+      "https://ojk.go.id/en/kanal/iknb/data-dan-statistik/asuransi/default.aspx",
+      "https://perkeni.org"
+    ],
+    "gate_decision_post_enrichment": "Ship with flag (unchanged) — Low-confidence cluster reduced via accessibility confirmations; remaining Lows are vendor-marketing overrides (correctly retained) and field-interview-required claims"
+  }
+}

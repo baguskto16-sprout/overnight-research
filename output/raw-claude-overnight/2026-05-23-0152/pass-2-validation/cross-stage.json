@@ -1,0 +1,462 @@
+{
+  "context": "final",
+  "run_id": "2026-05-23-0152",
+  "validated_at": "2026-05-23",
+  "corpus": {
+    "stages_validated": 6,
+    "files_validated": 12,
+    "per_stage_files": [
+      "stages-validated/stage-1-value-chain.md",
+      "stages-validated/stage-1-pain-points.md",
+      "stages-validated/stage-2-value-chain.md",
+      "stages-validated/stage-2-pain-points.md",
+      "stages-validated/stage-3-value-chain.md",
+      "stages-validated/stage-3-pain-points.md",
+      "stages-validated/stage-4-value-chain.md",
+      "stages-validated/stage-4-pain-points.md",
+      "stages-validated/stage-5-value-chain.md",
+      "stages-validated/stage-5-pain-points.md",
+      "stages-validated/stage-6-value-chain.md",
+      "stages-validated/stage-6-pain-points.md"
+    ]
+  },
+  "per_stage_summary": [
+    {
+      "stage": 1,
+      "label": "Pre-Dispatch: Vendor Procurement & Carrier Onboarding",
+      "total_claims": 45,
+      "high": 7,
+      "medium": 11,
+      "low": 27,
+      "speculative": 0,
+      "low_pct": 60.0,
+      "per_stage_gate": "ship-with-flag",
+      "source": "stage-1.json confirmed"
+    },
+    {
+      "stage": 2,
+      "label": "Dispatch / Freight Procurement & Tendering",
+      "total_claims": 56,
+      "high": 5,
+      "medium": 8,
+      "low": 37,
+      "speculative": 6,
+      "low_pct": 66.1,
+      "per_stage_gate": "re-run-recommended",
+      "source": "stage-2.json confirmed"
+    },
+    {
+      "stage": 3,
+      "label": "In-Transit: Visibility & Monitoring",
+      "total_claims": 63,
+      "high": 5,
+      "medium": 18,
+      "low": 36,
+      "speculative": 4,
+      "low_pct": 57.1,
+      "per_stage_gate": "ship-with-flag",
+      "source": "stage-3.json confirmed"
+    },
+    {
+      "stage": 4,
+      "label": "Multi-Leg Handoffs / Control Tower Orchestration",
+      "total_claims": 63,
+      "high": 7,
+      "medium": 12,
+      "low": 44,
+      "speculative": 0,
+      "low_pct": 69.8,
+      "per_stage_gate": "ship-with-flag",
+      "source": "stage-4.json confirmed"
+    },
+    {
+      "stage": 5,
+      "label": "Delivery: POD, Last-Leg Verification & Physical Security",
+      "total_claims": 90,
+      "high": 11,
+      "medium": 5,
+      "low": 74,
+      "speculative": 0,
+      "low_pct": 82.2,
+      "per_stage_gate": "re-run-recommended",
+      "source": "stage-5.json confirmed"
+    },
+    {
+      "stage": 6,
+      "label": "Post-Incident: Claims, Insurance & Recovery",
+      "total_claims": 90,
+      "high": 9,
+      "medium": 16,
+      "low": 65,
+      "speculative": 0,
+      "low_pct": 72.2,
+      "per_stage_gate": "ship-with-flag",
+      "source": "stage-6.json confirmed"
+    }
+  ],
+  "total_claims_scored": 407,
+  "claims_by_tier": {
+    "high": { "count": 44, "percent": "10.8%" },
+    "medium": { "count": 70, "percent": "17.2%" },
+    "low": { "count": 283, "percent": "69.5%" },
+    "speculative": { "count": 10, "percent": "2.5%" }
+  },
+  "low_pct_global_all_claims": 69.5,
+  "low_pct_global_non_speculative": 71.3,
+  "gate_denominator_used": "non-speculative (397 claims)",
+  "gate_decision_recommendation": "re-run-recommended",
+  "gate_reasoning": "Global Low% is 71.3% of non-speculative claims (283 of 397), which exceeds the >70% re-run-recommended threshold. Even using all 407 claims as denominator (69.5%), the corpus is barely within the ship-with-flag band. Two of six stages (Stage 2 and Stage 5) individually scored re-run-recommended in per-stage validation. Stage 5 (Delivery) reached 82.2% Low driven by 31 vendor-marketing override claims and 17 aggregator auto-downgrade hits — the highest single-stage Low% in the corpus. Stage 4 (Control Tower, 69.8%) and Stage 6 (Post-Incident, 72.2%) each crossed 70% on their non-speculative counts. The dominant failure modes corpus-wide are vendor-marketing override (~102 claims), aggregator market-research auto-downgrade (~53 claims), and single-trade-source override (~57 claims). DR pass-3 refinements were applied across all stages and reduced Low% 5-10 points from pre-DR baselines, but were insufficient to bring the corpus below the re-run threshold. Recommendation: targeted deep-research on Stage 5 pain points (PP5.1 damage rate, PP5.2 theft cost, PP5.3 escort cost) and Stage 2 routing/spot-market claims before final ship.",
+  "override_triggers_cross_stage": [
+    {
+      "override": "vendor-marketing",
+      "total_affected_claims": 102,
+      "stages_affected": [1, 2, 3, 4, 5, 6],
+      "note": "Single largest override. Vendor capability/coverage/market-share claims sourced from same vendor's marketing surface (project44.com, fourkites.com, shippeo.com, samsara.com, motive.com, etc). Stage 5 worst (31 claims), Stage 4 second (21 claims)."
+    },
+    {
+      "override": "single-trade-source",
+      "total_affected_claims": 57,
+      "stages_affected": [1, 2, 3, 4, 5, 6],
+      "note": "Operating cost figures and frequency claims sourced only from FreightWaves, JOC, The Loadstar, or single-outlet trade press. Stage 2 worst (14 claims), Stage 5 second (14 claims)."
+    },
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "total_affected_claims": 53,
+      "stages_affected": [1, 2, 3, 4, 5, 6],
+      "note": "Market sizing claims from MarketsandMarkets, Mordor Intelligence, Grand View Research, GMInsights, DataIntelo, Fortune Business Insights, ResearchAndMarkets. Stage 5 worst (17 claims), Stage 6 second (9 claims), Stage 4 third (9 claims)."
+    },
+    {
+      "override": "assumed-tag",
+      "total_affected_claims": 37,
+      "stages_affected": [2, 3, 4, 5, 6],
+      "note": "Claims tagged [ASSUMED-N] in source drafts, indicating no verifiable citation. Stage 5 worst (15 claims). Includes WH5 parametric insurance figures dropped in DR refinements, and control-tower workflow metrics (34 manual updates / 6 platforms; 25 emails / 8 roles)."
+    },
+    {
+      "override": "press-release-only",
+      "total_affected_claims": 28,
+      "stages_affected": [2, 3, 4, 5, 6],
+      "note": "Funding round sizes, partnership announcements, capability launches sourced from PR Newswire / BusinessWire / GlobeNewswire without corroborating Form D or 10-K. Stage 6 worst (7 claims), Stage 3 second (6 claims)."
+    },
+    {
+      "override": "chain-of-citations",
+      "total_affected_claims": 15,
+      "stages_affected": [2, 4, 5, 6],
+      "note": "Multiple trade sources tracing to same paywalled primary (Gartner, Forrester, IDC) — counted as 1 or 0 verifiable sources depending on whether underlying primary is accessible."
+    },
+    {
+      "override": "apac-as-proxy",
+      "total_affected_claims": 12,
+      "stages_affected": [1, 3, 4, 5, 6],
+      "note": "APAC-regional market sizing or penetration figure used as proxy for country-specific SEA need. Flags: Geography mismatch. All such claims capped at Medium."
+    },
+    {
+      "override": "needs-attended-fetch",
+      "total_affected_claims": 11,
+      "stages_affected": [4, 5, 6],
+      "note": "PDF-binary or anti-bot response prevented verbatim quote extraction for High-tier claims. Affects Transporeon/Trimble filing, TT Club 2024 Annual Report PDF, and Parsyl Lloyd's syndicate filings. Evidence quote gaps recorded."
+    },
+    {
+      "override": "outdated-source",
+      "total_affected_claims": 9,
+      "stages_affected": [2, 3, 5, 6],
+      "note": "Sources >3 years old or market data >2 years old without cross-validation to recent source. Includes World Bank LPI 2013 Indonesia logistics cost (mitigated by Bappenas/BPS ANTARA 2023 cross-validation in Stages 1 and 2)."
+    },
+    {
+      "override": "single-domain",
+      "total_affected_claims": 7,
+      "stages_affected": [1, 2, 6],
+      "note": "Multiple URLs from same publication family cited as independent sources. Includes multiple FreightWaves articles for double-brokering cost (Stage 2) and multiple TT Club press releases (Stage 6)."
+    }
+  ],
+  "source_diversity": {
+    "unique_publishers_estimated": 52,
+    "note": "Coalesced by publication family (all FreightWaves articles = 1 source, all TT Club publications = 1 source, etc.). Target was 40-60 unique publishers. Corpus meets diversity target.",
+    "by_category": {
+      "primary_gov": {
+        "count": 6,
+        "publishers": [
+          "FMCSA SAFER Web / FMCSA enforcement data",
+          "FBI IC3 (PSA260430 April 2026)",
+          "BPS Indonesia / ANTARA-Bappenas",
+          "SingStat (Singapore Department of Statistics)",
+          "US Department of Justice court filings",
+          "UNODC"
+        ]
+      },
+      "primary_multilateral": {
+        "count": 6,
+        "publishers": [
+          "World Bank (LPI 2023 + Indonesia logistics cost 2013)",
+          "IEA",
+          "IMF",
+          "OECD",
+          "ASEAN Secretariat",
+          "ADB"
+        ]
+      },
+      "primary_ministry": {
+        "count": 3,
+        "publishers": [
+          "Bappenas (Indonesia National Development Planning Agency)",
+          "Bank of Thailand regulatory filings",
+          "MAS (Monetary Authority of Singapore)"
+        ]
+      },
+      "primary_consultancy": {
+        "count": 5,
+        "publishers": [
+          "McKinsey & Company (Supply Chain Resilience Jan 2024, Future of Supply Chain 2024)",
+          "BCG (Freight & Logistics Outlook 2024)",
+          "Bain & Company",
+          "Bloomberg NEF",
+          "NTT DATA / Capgemini 28th Annual 3PL Study 2024"
+        ]
+      },
+      "primary_filing": {
+        "count": 8,
+        "publishers": [
+          "Samsara 10-K FY2026 (SEC)",
+          "Motive S-1 (SEC)",
+          "Manhattan Associates 10-K FY2024",
+          "Brink's 10-K FY2024",
+          "Crawford & Company annual report",
+          "e2open SEC filing FY2025",
+          "Yojee ASX:YOJ annual report",
+          "DSV annual report FY2024"
+        ]
+      },
+      "primary_association": {
+        "count": 7,
+        "publishers": [
+          "TT Club (2024 Annual Report + BSI/TT Club Cargo Theft Report 2024)",
+          "Verisk CargoNet (theft statistics 2024/2023)",
+          "TAPA (Transported Asset Protection Association — Freight Crime Statistics 2024)",
+          "IUMI (International Union of Marine Insurance Stats Report 2025)",
+          "BIMCO",
+          "IATA",
+          "FIATA"
+        ]
+      },
+      "primary_legal": {
+        "count": 3,
+        "publishers": [
+          "Montgomery v. Caribe Transport (SCOTUS, May 2026)",
+          "Vesttoo creditor committee filings / Delaware bankruptcy court",
+          "SEC enforcement actions"
+        ]
+      },
+      "primary_academic": {
+        "count": 2,
+        "publishers": [
+          "MIT CTL (Center for Transportation & Logistics — peer-reviewed publications)",
+          "Journal of Commerce / Transport Policy (peer-reviewed)"
+        ]
+      },
+      "secondary_trade": {
+        "count": 7,
+        "publishers": [
+          "FreightWaves",
+          "JOC (Journal of Commerce trade wire)",
+          "The Loadstar",
+          "Bioenergy International",
+          "Supply Chain Dive",
+          "Logistics Management",
+          "Inbound Logistics"
+        ]
+      },
+      "secondary_news": {
+        "count": 5,
+        "publishers": [
+          "Reuters",
+          "Bloomberg (news wire, not Terminal)",
+          "Nikkei Asia",
+          "Straits Times",
+          "Financial Times"
+        ]
+      },
+      "secondary_market_research": {
+        "count": 5,
+        "publishers": [
+          "MarketsandMarkets",
+          "Mordor Intelligence",
+          "Grand View Research",
+          "GMInsights / DataIntelo",
+          "Fortune Business Insights"
+        ]
+      },
+      "specialist_analyst": {
+        "count": 2,
+        "publishers": [
+          "Berg Insight (fleet telematics — 1st Ed Oct 2024 + 2nd Ed Feb 2026)",
+          "Gartner (paywalled; cited via chain — counted as 0 verifiable)"
+        ]
+      }
+    }
+  },
+  "top_10_cross_stage_recurring_sources": [
+    {
+      "rank": 1,
+      "publisher": "TT Club / BSI Cargo Theft Report 2024",
+      "tier": "primary-association",
+      "stages_cited": [1, 2, 3, 5, 6],
+      "stage_count": 5,
+      "note": "Corpus anchor for cargo theft frequency and cost data globally and SEA. TT Club 2024 Annual Report ($283.1M GWP) provides insurance market sizing; BSI/TT Club joint report provides theft intelligence."
+    },
+    {
+      "rank": 2,
+      "publisher": "Verisk CargoNet",
+      "tier": "primary-association",
+      "stages_cited": [1, 2, 3, 5, 6],
+      "stage_count": 5,
+      "note": "Primary anchor for US cargo theft dollar values ($455M reported 2024, $332M 2023) and freight fraud figures. Cited across vendor procurement, dispatch, in-transit, delivery, and claims stages."
+    },
+    {
+      "rank": 3,
+      "publisher": "World Bank LPI 2023",
+      "tier": "primary-multilateral",
+      "stages_cited": [1, 2, 3, 6],
+      "stage_count": 4,
+      "note": "Anchor for SEA logistics performance benchmarking — Vietnam, Thailand, Malaysia, Indonesia LPI scores. Cross-cited across four stages for logistics cost and infrastructure gap claims."
+    },
+    {
+      "rank": 4,
+      "publisher": "FBI IC3 (PSA260430, April 2026)",
+      "tier": "primary-gov",
+      "stages_cited": [1, 2, 6],
+      "stage_count": 3,
+      "note": "FBI Internet Crime Complaint Center public service announcement April 2026 on freight fraud. Used alongside Verisk CargoNet to corroborate double-brokering/identity-theft cost figures."
+    },
+    {
+      "rank": 5,
+      "publisher": "McKinsey & Company",
+      "tier": "primary-consultancy",
+      "stages_cited": [3, 4, 6],
+      "stage_count": 3,
+      "note": "Supply Chain Resilience Jan 2024 report cited for $65-95B blind handoff opportunity (US-only scope confirmed verbatim). Also cited in Stage 4 and Stage 6 for supply-chain visibility and insurance market evolution claims."
+    },
+    {
+      "rank": 6,
+      "publisher": "FMCSA / SAFER Web",
+      "tier": "primary-gov",
+      "stages_cited": [1, 2],
+      "stage_count": 2,
+      "note": "US Federal Motor Carrier Safety Administration SAFER Web database. Anchor for carrier onboarding compliance and broker registration data. Limited geographic scope (US-only) flagged for SEA applicability."
+    },
+    {
+      "rank": 7,
+      "publisher": "ANTARA / Bappenas / BPS Indonesia",
+      "tier": "primary-gov",
+      "stages_cited": [1, 2],
+      "stage_count": 2,
+      "note": "Indonesian government sources: Bappenas (National Development Planning Agency) and BPS (Central Statistics Agency) via ANTARA newswire. Used for Indonesia logistics cost as % of GDP (23.27%), the highest in the corpus for a specific SEA country."
+    },
+    {
+      "rank": 8,
+      "publisher": "NTT DATA / Capgemini 28th Annual 3PL Study 2024",
+      "tier": "primary-consultancy",
+      "stages_cited": [3, 4],
+      "stage_count": 2,
+      "note": "Annual 3PL study providing shipper-reported satisfaction data on carrier API completion, visibility tool adoption, and control-tower investment intentions. Named-firm authored report."
+    },
+    {
+      "rank": 9,
+      "publisher": "TAPA (Transported Asset Protection Association) Freight Crime Statistics 2024",
+      "tier": "primary-association",
+      "stages_cited": [3, 5, 6],
+      "stage_count": 3,
+      "note": "TAPA annual freight crime report. Provides EMEA + APAC theft incident data. Cited in Stage 3 for in-transit monitoring gaps, Stage 5 for delivery theft, Stage 6 for claims intelligence. PDF hosted on TAPA.eu — confirmed as association publication not vendor marketing."
+    },
+    {
+      "rank": 10,
+      "publisher": "Berg Insight Fleet Management in Commercial Vehicles",
+      "tier": "specialist-analyst",
+      "stages_cited": [3],
+      "stage_count": 1,
+      "note": "1st Ed Oct 2024 and 2nd Ed Feb 2026 editions both cited for SEA commercial vehicle telematics penetration (15.7% 2023 → 25.7% 2028 per 1st Ed; 17.5% 2024 → 27.1% 2029 per 2nd Ed). Single-stage but highest-quality source for this specific SEA telematics penetration claim — the only non-aggregator analyst to publish dedicated SEA fleet telematics figures."
+    }
+  ],
+  "cross_stage_consistency_check": {
+    "inconsistencies_found": 1,
+    "resolved": 1,
+    "details": [
+      {
+        "issue": "Vesttoo fraud exposure figure",
+        "pre_dr_value_chain": "$2.8B+ (Stage 6 VC — CCB-only creditor figure)",
+        "pre_dr_pain_points": "$4B (Stage 6 PP — early media estimate, pre-court)",
+        "reconciled_value": "$3.4B court-verified total (CCB $2.81B + StanChart $362.5M + Santander $186M = $3.36B; total creditor claims $4.8B including disputed amounts)",
+        "resolution_source": "Delaware bankruptcy court filings + creditor committee disclosure statements",
+        "resolution_status": "Resolved in DR pass. Both stage-6-value-chain.md and stage-6-pain-points.md updated to $3.4B court-verified.",
+        "residual_risk": "Low — court filings are primary-legal tier; both files now consistent."
+      }
+    ],
+    "no_other_cross_stage_contradictions_found": true,
+    "note": "Cargo theft figures are consistent across stages: US theft uses Verisk CargoNet ($455M 2024) throughout. SEA logistics cost 23.27% GDP (Indonesia) is consistent across Stages 1 and 2. McKinsey $65-95B scope (US-only) is correctly scoped in all citations."
+  },
+  "remaining_data_gaps": [
+    {
+      "gap_id": "DG-1",
+      "stage": 5,
+      "description": "LTL damage rate for delivery-stage POD disputes. Original Flock Freight vendor-commissioned figure (1.24% / $5.1-6.3M) dropped in DR pass due to vendor-marketing override. Replaced with structural '[ASSUMED-N]' language (1-2% of shipments). No primary-tier source found for LTL damage rate specific to SEA or even US with government/association tier.",
+      "priority": "high",
+      "suggested_source_type": "primary-association (CSCMP, ATA) or primary-gov (BTS Bureau of Transportation Statistics LTL damage claims data)",
+      "suggested_query": "BTS 2024 LTL freight damage claims rate site:bts.gov OR CSCMP State of Logistics 2024 LTL damage"
+    },
+    {
+      "gap_id": "DG-2",
+      "stage": 5,
+      "description": "Armed escort cost in SEA. PP5.3 (escort cost opacity) relies on secondary-trade and vendor press-release sources for Nawakara Indonesia and Premier Security Singapore pricing. No audited filing or association benchmark for armed logistics escort day-rates in SEA.",
+      "priority": "high",
+      "suggested_source_type": "primary-association (TAPA Asia chapter) or primary-filing (Securitas 10-K regional breakdown)",
+      "suggested_query": "Securitas 2024 annual report Asia security services revenue OR TAPA Asia escort service standards"
+    },
+    {
+      "gap_id": "DG-3",
+      "stage": 2,
+      "description": "Routing guide failure rate and spot-market cost premium. Multiple PP2.2 claims tagged single-trade-source (FreightWaves, Supply Chain Dive). No primary-tier anchor for annual routing guide failure rate or the exact cost premium of unplanned spot procurement in SEA.",
+      "priority": "high",
+      "suggested_source_type": "primary-consultancy (BCG/Bain freight procurement study) or primary-association (CSCMP, TT Club freight procurement benchmark)",
+      "suggested_query": "BCG 2024 freight procurement routing guide failure rate OR Gartner freight routing guide compliance benchmark 2024"
+    },
+    {
+      "gap_id": "DG-4",
+      "stage": 4,
+      "description": "Control tower pricing benchmarks ($200K-$500K/year implementation tagged [ASSUMED-10]). Sourced from PricingNow trade blog — auto-Low. No primary-tier source for enterprise SCCT total cost of ownership.",
+      "priority": "medium",
+      "suggested_source_type": "primary-consultancy authored report or primary-filing (vendor 10-K with segment pricing disclosure)",
+      "suggested_query": "McKinsey OR Gartner supply chain control tower implementation cost 2024 OR e2open 10-K professional services revenue per customer"
+    },
+    {
+      "gap_id": "DG-5",
+      "stage": 4,
+      "description": "Gartner 'average 34 manual system updates / 6 platforms per shipment' metric and MIT CTL '25 emails / 8 roles' metric — both tagged [ASSUMED-9]. Sourced only from FourKites vendor blog post. No direct Gartner or MIT CTL report link confirmed.",
+      "priority": "medium",
+      "suggested_source_type": "primary-consultancy (Gartner SC Operations 2023/2024) or primary-academic (MIT CTL Working Paper)",
+      "suggested_query": "Gartner supply chain visibility manual updates per shipment 2023 2024 OR MIT CTL supply chain coordination emails handoffs report"
+    },
+    {
+      "gap_id": "DG-6",
+      "stage": 3,
+      "description": "SEA IoT cold-chain monitoring penetration for non-pharma cargo. PP3.4 (condition monitoring gap) relies on secondary sources. No primary-tier source for proportion of temperature-sensitive non-pharma shipments with active monitoring in SEA.",
+      "priority": "medium",
+      "suggested_source_type": "primary-association (IATA Cool Chain Group, ASHRAE) or primary-multilateral (WHO cold chain logistics data)",
+      "suggested_query": "IATA Cool Chain Group 2024 cold chain monitoring penetration OR WHO cold chain logistics ASEAN non-pharmaceutical"
+    },
+    {
+      "gap_id": "DG-7",
+      "stage": 6,
+      "description": "WH5 parametric insurance adoption metrics. Entire cluster of specific figures (12% claim-ratio reduction, 25% IoT penetration, 23% parametric adoption, 320M cubic metres covered) dropped in DR pass — all traced to MarketGrowthReports.com Tier-6 aggregator. No primary-tier replacement found. PP6.2 now relies on structural language only.",
+      "priority": "medium",
+      "suggested_source_type": "primary-association (IUMI parametric segment data, Lloyd's of London innovation report) or primary-consultancy (Swiss Re parametric cargo insurance market analysis)",
+      "suggested_query": "IUMI 2025 parametric cargo insurance market share OR Swiss Re parametric insurance logistics adoption 2024 OR Lloyd's innovation lab cargo parametric pilot"
+    },
+    {
+      "gap_id": "DG-8",
+      "stage": 6,
+      "description": "SME underinsurance rate for cargo. PP6.4 cites '60-70% of shippers underinsured' — sourced from TIA revised estimate and trade press only. No government or multilateral primary for cargo underinsurance prevalence.",
+      "priority": "low",
+      "suggested_source_type": "primary-association (TT Club SME cargo insurance survey) or primary-gov (OJK Indonesia insurance penetration data for commercial cargo)",
+      "suggested_query": "TT Club SME underinsurance survey 2024 OR OJK Indonesia cargo insurance commercial penetration 2024"
+    }
+  ],
+  "dr_refinements_applied_note": "Pass-3 deep-research refinements were applied across all 6 stages prior to this final cross-stage validation. Key upgrades: (1) Verisk CargoNet upgraded from Tier-9 Travelers citation to primary-association across Stages 1, 2, 5, 6; (2) Berg Insight SEA telematics upgraded from aggregator-press-release to specialist analyst (Stage 3); (3) World Bank + Bappenas/BPS cross-validation of Indonesia logistics cost (Stages 1, 2); (4) Vesttoo fraud figure reconciled to court-verified $3.4B (Stage 6); (5) WH5 parametric cluster dropped (all MarketGrowthReports.com — Stage 6); (6) FourKites control-tower metrics tagged [ASSUMED-9] (Stage 4); (7) Montgomery v. Caribe SCOTUS May 2026 added as new pain point (Stage 1). Despite these refinements, global Low% remains at 71.3% (non-speculative), above the re-run threshold, driven primarily by vendor-marketing, aggregator, and single-trade-source overrides on vendor capability and market-sizing claims across all stages."
+}
