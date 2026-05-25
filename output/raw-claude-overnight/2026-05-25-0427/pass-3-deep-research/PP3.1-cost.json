@@ -1,0 +1,120 @@
+{
+  "claim": "Manual MCU multi-lab results collation consumes 250–500 staff-hours per 1,000-employee MCU campaign; direct labor cost USD 445–1,395 per campaign",
+  "research_date": "2026-05-25",
+  "outcome": "confirmed-scarce",
+  "searches_performed": [
+    "academic-search.sh: 'occupational health MCU medical check-up report collation labor time staff hours'",
+    "academic-search.sh: 'medical check-up report generation time occupational health programme'",
+    "academic-search.sh: 'corporate health screening programme administrative burden Indonesia Malaysia staff hours'",
+    "WebSearch: Prodia PROD.JK IPO prospectus 2016 IDX annual report operational MCU",
+    "WebSearch: occupational health medical check-up report generation time per employee staff hours benchmark",
+    "WebSearch: BP Healthcare Group Malaysia annual report operational occupational health MCU services",
+    "WebSearch: Raffles Medical Fullerton Health Singapore occupational health programme administrative cost staff",
+    "WebSearch: ILO WHO occupational health programme delivery cost Southeast Asia administrative hours per worker",
+    "WebSearch: medical check-up report compilation OR hasil MCU OR collation staff hours Indonesia hospital IS",
+    "WebSearch: BPS Indonesia upah tenaga administrasi kesehatan 2023 2024",
+    "WebSearch: DOSM Malaysia wages salary administrative workers healthcare sector 2023 2024",
+    "WebSearch: Permata Cibubur hospital information system evaluation 2025 MCU collation time Indonesia",
+    "WebSearch: McKinsey BCG Deloitte occupational health digital transformation report collation time productivity",
+    "WebSearch: Perancangan Sistem Informasi MCU RSUD Brebes 3 days 1 week manual report",
+    "WebSearch: ICOH conference proceedings occupational health programme delivery time cost developing countries"
+  ],
+  "categories_searched": [
+    "primary-gov (BPS Indonesia, DOSM Malaysia — wage data only, no MCU time data)",
+    "primary-multilateral (ILO, WHO — no MCU collation time metrics found)",
+    "primary-academic (OpenAlex, Semantic Scholar, PubMed via academic-search.sh — no relevant papers)",
+    "industry-academic-Indonesian (Jurnal Kesehatan Polije, JSRCS Ubharajaya — partial)",
+    "company-filings (Prodia 2022 Annual Report PDF — no operational MCU time granularity)",
+    "operator-websites (BP Healthcare Malaysia, Aviat.id — qualitative only, no figures)",
+    "top-tier-consultancy (McKinsey, BCG, Deloitte, Roland Berger — no public SEA occupational health admin cost reports found)"
+  ],
+  "partial_evidence_found": [
+    {
+      "url": "https://jurkes.polije.ac.id/index.php/journal/article/view/140",
+      "doi": "10.25047/j-kes.v8i1.140",
+      "category": "secondary-academic (Indonesian health informatics journal, SINTA-indexed)",
+      "publication_date": "2020-04",
+      "title": "Perancangan Sistem Informasi Medical Check Up Guna Mempercepat Pelayanan MCU di RSUD Brebes",
+      "authors": "Gunawan, I.; Agushybana, F.; Kartasurya, M.I.",
+      "key_data": "Manual MCU report processing at Brebes Regional Hospital took 3 days to 1 week to generate reports (quote: 'hasil pemeriksaan medis masih diproses secara manual, sehingga dapat diselesaikan dalam waktu 3 hari hingga 1 minggu'). Study involved 20 staff managing the MCU information system. Information quality weighted average score improved from 1.91 (pre-system) to 3.16 (post-system). No per-employee time or staff-hours-per-campaign figure provided.",
+      "supports_claim": "partially — confirms manual collation is a multi-day bottleneck but does not quantify staff-hours per 1,000-employee campaign",
+      "limitation": "Public hospital outpatient MCU context, not corporate multi-lab batch MCU. No per-employee hours figure. Single-hospital case study, not a benchmark study.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://d3ftma7dyyzt91.cloudfront.net/2023/03/23/072804/Prodia_Annual%20Report%202022_Final.pdf",
+      "category": "primary — IDX-listed company annual report (PT Prodia Widyahusada Tbk, PRDA.JK)",
+      "publication_date": "2023-03",
+      "key_data": "Prodia operates 152 clinics, 259 outlets in 67 regencies. 3,600 staff including >250 HIPERKES doctors and 1,200 paramedics. Corporate Client segment = 15.7% of revenue. Mentions 'turn around time and costs' minimization as key operational goal. No staff-hours or collation-time metrics disclosed.",
+      "supports_claim": false,
+      "limitation": "Annual report does not disclose operational MCU collation time, admin labor hours, or per-employee processing cost. Corporate client MCU volume not disclosed.",
+      "via_pdf_markitdown": true
+    },
+    {
+      "url": "https://www.researchgate.net/publication/393187270_EVALUATION_OF_MEDICAL_CHECK-UP_MCU_SERVICES_WITH_INFORMATION_SYSTEMS_AT_PERMATA_CIBUBUR_HOSPITAL",
+      "category": "secondary-academic (Jurnal Indonesia Sosial Sains, 2025)",
+      "publication_date": "2025-06",
+      "key_data": "Confirms IS implementation at Permata Cibubur Hospital accelerated MCU administration process and improved data accuracy. Study involved 30 informants (4 GPs, 1 specialist, 5 health staff, 5 MCU nurses, 5 management, 5 admin officers, 5 MCU patients). No quantitative before/after time data extractable (ResearchGate returned 403; abstract only accessible via search snippet).",
+      "supports_claim": "qualitatively — confirms manual MCU administration is a pain point requiring IS intervention, but no time/cost figures",
+      "via_pdf_markitdown": false,
+      "access_note": "[NEEDS-ATTENDED-FETCH]: ResearchGate blocked automated access"
+    },
+    {
+      "url": "https://the-shiv.com/average-salary-in-indonesia/",
+      "category": "secondary (BPS data aggregator)",
+      "publication_date": "2025",
+      "key_data": "Human Health Services and Social Work Activities sector average monthly wage: IDR 3,415,963 (earlier period) rising to IDR 3,750,376 (later period). Source: BPS Indonesia. No breakdown for clerical/administrative sub-category.",
+      "supports_claim": "partially — provides salary anchor for health-sector admin workers in Indonesia (IDR 3.4–3.75M/month ≈ USD 210–235/month at IDR 16,000/USD), replacing JobStreet proxies",
+      "bps_primary_url": "https://www.bps.go.id/en/statistics-table/2/MTUyMSMy/average-of-net-wage-",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://www.dosm.gov.my/portal-main/release-content/salaries-and-wages-survey-report-2024",
+      "category": "primary-gov (DOSM Malaysia)",
+      "publication_date": "2024",
+      "key_data": "Malaysia Clerical Support Workers mean monthly salary: MYR 2,931 (2024). Health and social work activities sector mean monthly salary: part of Services sector at MYR 3,831. Source confirmed via DOSM search result snippet (direct page returned SSL error).",
+      "supports_claim": "partially — provides Malaysia salary anchor for admin/clerical workers (MYR 2,931/month ≈ USD 665/month at MYR 4.4/USD), replacing Indeed/Glassdoor proxies",
+      "dosm_primary_url": "https://open.dosm.gov.my/publications/salaries_wages_2023",
+      "via_pdf_markitdown": false
+    }
+  ],
+  "key_finding": "No primary or secondary source provides a direct benchmark for staff-hours consumed in multi-lab MCU result collation per 1,000-employee corporate campaign. The 250–500 staff-hour range and the derived USD 445–1,395 cost model remain fully assumed. The closest evidence — the Brebes RSUD IS study (2020) — confirms manual MCU report generation takes 3 days to 1 week for a public hospital's batch, but does not give a per-employee or per-campaign hours figure. No government, multilateral, academic, or consultancy source for the specific claim was found after 15 searches across all priority categories.",
+  "suggested_revision_options": [
+    {
+      "option": "mark-assumed",
+      "revised_claim_text": "[ASSUMED-N]: Manual MCU multi-lab results collation consumes 250–500 staff-hours per 1,000-employee MCU campaign; direct labor cost USD 445–1,395 per campaign (Indonesia: IDR 3.4–3.75M/month admin wage per BPS; Malaysia: MYR 2,931/month per DOSM 2024). Operational time range is estimated from Brebes RSUD case (3 days to 1 week per batch) scaled to 1,000-employee campaign — no direct benchmark source exists. To validate: field interview with Prodia, BP Healthcare, or Fullerton Health operations teams.",
+      "suggested_score": "Low",
+      "notes": "Wage inputs can be upgraded from JobStreet to BPS (Indonesia) and DOSM (Malaysia) official sources. Time estimate remains unvalidated."
+    },
+    {
+      "option": "widen-range",
+      "revised_claim_text": "Manual MCU multi-lab results collation is a documented multi-day bottleneck in Indonesian hospitals (3 days to 1 week per batch per Brebes RSUD, 2020). For corporate campaigns of 1,000 employees, administrative labor cost is estimated at USD 350–2,000 per campaign based on official wage benchmarks (BPS Indonesia: IDR 3.4–3.75M/month; DOSM Malaysia: MYR 2,931/month for clerical support workers, 2024) applied to an assumed 100–500 staff-hours — no validated time benchmark found.",
+      "suggested_score": "Low-Medium",
+      "notes": "Widens range to reflect genuine uncertainty; upgrades salary anchors to official government sources."
+    },
+    {
+      "option": "drop",
+      "rationale": "If PP3.1 requires a defensible cost figure for investor materials, the 250–500 staff-hour range has no evidentiary basis and should be removed until field validation is obtained."
+    }
+  ],
+  "recommended_option": "mark-assumed",
+  "wage_anchor_upgrade": {
+    "indonesia": {
+      "source": "BPS Indonesia (via the-shiv.com aggregator referencing BPS statistical table MTUyMSMy)",
+      "url": "https://www.bps.go.id/en/statistics-table/2/MTUyMSMy/average-of-net-wage-",
+      "health_sector_avg_monthly_idr": "3,415,963–3,750,376",
+      "approximate_usd_monthly": "213–234",
+      "approximate_hourly_usd": "1.22–1.34 (assuming 174 working hours/month)",
+      "replaces": "JobStreet proxy"
+    },
+    "malaysia": {
+      "source": "DOSM Malaysia Salaries and Wages Survey Report 2024",
+      "url": "https://www.dosm.gov.my/portal-main/release-content/salaries-and-wages-survey-report-2024",
+      "clerical_support_workers_mean_myr": 2931,
+      "approximate_usd_monthly": 665,
+      "approximate_hourly_usd": "3.82 (assuming 174 working hours/month)",
+      "replaces": "Indeed/Glassdoor proxy"
+    }
+  },
+  "reasoning": "The MCU collation time claim (250–500 staff-hours per 1,000 employees) is unverifiable through any public source. Evidence from Indonesian academic literature confirms that manual MCU report processing is a genuine multi-day bottleneck (Brebes RSUD: 3 days to 1 week per batch), providing qualitative support for the pain point but no quantifiable time benchmark. The wage components of the cost model can be partially upgraded from job-board proxies to official government statistics (BPS Indonesia, DOSM Malaysia). The specific staff-hour range requires primary field research — operator interviews with Prodia, BP Healthcare Malaysia, or Fullerton Health occupational health units would be the direct path to validation."
+}

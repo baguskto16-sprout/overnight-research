@@ -1,0 +1,25 @@
+{
+  "claim_id": "PP2.4g",
+  "verdict": "contradicting-evidence",
+  "primary_number": "51.29% (life insurance health claims ratio as of April 2025, OJK); 105.7% (AAJI H1 2024 aggregate all-segment); 139.5% (AAJI Q3 2024 aggregate). No primary source confirms 200%+ for any segment or period.",
+  "primary_url": "https://www.antaranews.com/berita/4873513/ojk-rasio-klaim-kesehatan-di-asuransi-jiwa-5129-persen-april-2025",
+  "publisher": "Antara News, citing Ogi Prastomiyono (Head of OJK Insurance, Guarantee and Pension Fund Supervision) — official OJK statement June 2, 2025",
+  "publisher_tier": 2,
+  "methodology_note": "OJK defines the claims ratio as claims paid against gross premiums (premi bruto), explicitly excluding claim reserves and operational expenses. The 51.29% April 2025 figure covers the entire life insurance industry health line, not individual policies in isolation. AAJI H1 2024 figure of 105.7% covers all health insurance within life insurance companies, with individual health claims (Rp 7.62 trillion) separated from group. The 200%+ figure does not appear in OJK statistical releases, AAJI public data, AAUI publications, or any credible trade press citing a named regulator or association. The trustedhealthguides.com source article (the original flagged source) does not actually contain a 200% figure — it discusses rising medical inflation pressuring individual policies without quoting a specific loss ratio. The 200%+ number appears only in AI-generated search summaries and an unverified Mordor Intelligence snippet, both without traceable primary citations.",
+  "what_was_attempted": [
+    "Academic API search (academic-search.sh) — returned irrelevant results (AFOLU, PV market papers); no academic papers on Indonesia health insurance loss ratio found",
+    "OJK statistics page search (site:ojk.go.id) — confirmed OJK publishes monthly insurance statistics; could not directly access PDF data within budget",
+    "WebFetch: Asia Insurance Review article on Indonesia health insurance loss ratio rising in 2025 — paywalled, confirmed WTW cited 105.7% for Q1 2024",
+    "WebFetch: trustedhealthguides.com/archives/30175 — the original flagged source does NOT contain a 200% figure; discusses qualitative pressure on individual plans only",
+    "WebFetch: ligaasuransi.com on general insurance loss ratio 2025 — cites AAUI Q3 2025 data; no 200%+ for individual health; focuses on general insurance approaching critical levels without specifying percentages",
+    "WebFetch: mediaasuransinews.co.id on medical inflation and loss ratio — AAJI data from Dr. Kiki Oditya (Tugu Re): 45-46% (2019-20), 66% (2021), 94% (2022), 107% (Aug 2023). No 200% figure",
+    "WebSearch: OJK deputy commissioner statements — found Antara News June 2025 citing Ogi Prastomiyono: 51.29% life, 49.97% general as of April 2025",
+    "WebFetch: Antara News article — confirmed OJK official figure 51.29% (life) and 49.97% (general) for health insurance as of April 2025, methodology verified, no mention of 200%",
+    "WebFetch: OJK SEOJK 7/2025 article (mediaasuransinews.co.id) — same OJK figures confirmed; no 200% mentioned",
+    "WebSearch: AAJI H1 2024 105.7% claim ratio — confirmed through TradingView/Kontan article; AAJI Q3 2024 139.5%",
+    "WebFetch: TradingView/Kontan article on AAJI H1 2024 105.7% — confirmed AAJI published this; individual health claims Rp 7.62 trillion +29.3% YoY; no 200% figure",
+    "WebSearch: direct search for '200 percent' Indonesia individual health insurance 2025 — no primary source returned; AI-generated summaries paraphrase a Mordor Intelligence claim not verifiable without paid access",
+    "Bisnis.com article on 2024 health insurance claims ratio — returned HTTP 403 Forbidden [NEEDS-ATTENDED-FETCH]: https://finansial.bisnis.com/read/20250313/215/1861151/rasio-klaim-asuransi-kesehatan-pada-2024-turun-ojk-ungkap-faktornya"
+  ],
+  "recommended_edit_to_canonical": "Replace claim PP2.4g with: 'AAJI data show the aggregate health insurance claims ratio peaked at 139.5% in Q3 2024 and 105.7% in H1 2024, before declining to approximately 51% by April 2025 following OJK-mandated repricing actions (OJK statement, June 2025; AAJI H1 2024 industry report). Individual health policies showed steeper loss ratios than group policies during 2023-2024 due to higher utilization, but no primary regulatory or association source confirms a 200%+ ratio for H1 2025. The 200% figure cited by trustedhealthguides.com is unverifiable from the article itself and should be treated as [ASSUMED-N] pending direct AAJI H1 2025 data release or attended fetch of AAJI membership report.'"
+}

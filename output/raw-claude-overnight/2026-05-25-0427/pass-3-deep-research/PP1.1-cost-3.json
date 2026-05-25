@@ -1,0 +1,57 @@
+{
+  "claim_id": "PP1.1-cost-3",
+  "verdict": "CONFIRMED-SCARCE",
+  "new_sources_found": [
+    {
+      "citation": "Sinsky C, Colligan L, et al. Allocation of Physician Time in Ambulatory Practice: A Time and Motion Study in 4 Specialties. Annals of Internal Medicine, 2016;165(11):753-760. doi:10.7326/M16-0961",
+      "url": "https://www.acpjournals.org/doi/10.7326/M16-0961",
+      "tier": "Tier 1 (peer-reviewed academic, Annals of Internal Medicine)",
+      "relevance": "STRONGEST available evidence for documentation burden claim. Observed 57 US physicians across 4 specialties (including family medicine) for 430 hours. Found physicians spent 49.2% of total ambulatory time on EHR/desk work vs 27.0% on direct clinical face time. For every 1 hour of direct patient care, ~2 hours spent on EHR/desk work. Does not cover Indonesia/Malaysia but is the primary global benchmark. CAUTION: US-specific; Indonesian and Malaysian private GPs operate without the insurance-billing complexity that inflates US EHR time. Likely overstates documentation burden for ID/MY context.",
+      "supports_claim": "partially — supports the general direction (documentation is a major time sink) but the 40-50% figure applied to ID/MY private GP context is not directly supported",
+      "key_data": "49.2% of ambulatory office day on EHR/desk work; 27.0% direct face time with patients"
+    },
+    {
+      "citation": "Ab Rahman N, Husin M, et al. Job satisfaction of public and private primary care physicians in Malaysia: analysis of findings from QUALICO-PC. Human Resources for Health, 2019;17:82. doi:10.1186/s12960-019-0410-4",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6829856/",
+      "tier": "Tier 1 (peer-reviewed academic, PubMed Central, Malaysia NIH / MOH study)",
+      "relevance": "PRIMARY Malaysia-specific evidence. QUALICO-PC survey of Malaysian public and private primary care physicians. Found private GPs spent 95.4% of total working hours on direct patient care, implying ~4.6% on administrative/non-clinical tasks. Public doctors: 92.2% direct care, ~7.8% administrative. CONTRADICTS the 40-50% documentation burden claim for Malaysian private GP context. Separately, 36.0% of private doctors (vs 59.7% public) reported feeling overloaded with unnecessary administrative details.",
+      "supports_claim": false,
+      "key_data": "Private GPs: 95.4% direct patient care hours; only ~4.6% residual non-clinical time. BUT: this is self-reported working hours allocation, not time-motion observation within consultations."
+    },
+    {
+      "citation": "Young RA, et al. A Time-Motion Study of Primary Care Physicians' Work in the Electronic Health Record Era. Family Medicine, 2018;50(2):91-99.",
+      "url": "https://journals.stfm.org/familymedicine/2018/february/young-2017-0121/",
+      "tier": "Tier 1 (peer-reviewed academic, Family Medicine journal)",
+      "relevance": "US time-motion study. Found EHR work (18.6 min per visit) exceeded face-to-face time (16.5 min per visit) in a 35.8-min average visit. Non-face time (mostly EHR) rose from 29% to 54% of total visit time. After-hours documentation: 6.9 min per visit. Strong evidence for US burden but likely inapplicable to ID/MY private clinics with shorter consultations (3-10 min) and simpler billing systems.",
+      "supports_claim": "partially for US context only",
+      "key_data": "EHR work 18.6 min vs face-to-face 16.5 min per visit; 54% non-face time; 65% of physicians documented after hours"
+    },
+    {
+      "citation": "Rotenstein LS, et al. More Tethered to the EHR: EHR Workload Trends Among Academic Primary Care Physicians, 2019-2023. Annals of Family Medicine, 2024. PMC11233089.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11233089/",
+      "tier": "Tier 1 (peer-reviewed academic — already cited in original claim)",
+      "relevance": "Already cited source. Confirms trend of rising EHR time in US academic primary care. Not applicable to ID/MY private clinics.",
+      "supports_claim": "partially for US academic primary care only",
+      "key_data": "EHR time per 8-hour scheduled clinic day increased +28.4 min (+7.8%) from pre-COVID to 2022-2023"
+    },
+    {
+      "citation": "Pham Thi Lan, et al. International variations in primary care physician consultation time: a systematic review of 67 countries. BMJ Open, 2017;7(10):e017902. PMC5695512.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5695512/",
+      "tier": "Tier 1 (peer-reviewed systematic review)",
+      "relevance": "Provides SEA consultation time context. Indonesia: ~3.0 minutes per consultation (1993-1999 data); no Malaysia data. Very short consultation durations imply documentation cannot be 40-50% of total working time in the same way as in the US. However, data is from 1990s-early 2000s and may not reflect current electronic documentation context.",
+      "supports_claim": "contextual — short consultation durations make US-derived 40-50% figures even less transferable to ID/MY",
+      "key_data": "Indonesia consultation time: 3.0 minutes (historical); no Malaysia-specific data"
+    }
+  ],
+  "refined_claim": "Documentation tasks (SOAP authoring, EHR entry, ICD coding, administrative paperwork) consume a substantial share of GP working time, with peer-reviewed time-motion studies in the US finding 49% of the ambulatory office day consumed by EHR/desk work (Sinsky et al. 2016, Ann Intern Med) and EHR work time exceeding face-to-face consultation time (Young et al. 2018). However, no peer-reviewed time-use or time-motion study specifically measuring documentation burden for private GP clinics in Indonesia or Malaysia was found. The closest Malaysia-specific evidence (QUALICO-PC, 2019, PMC6829856) measured private Malaysian GPs spending 95.4% of working hours on direct patient care, implying only ~4.6% residual administrative time — which contradicts a 40-50% documentation burden unless the original claim refers specifically to within-consultation time rather than full working-day allocation. The 40-50% figure should be flagged as [ASSUMED from US/high-income country evidence] when applied to ID/MY private primary care clinics, and the derived USD 5,760-14,400/year cost anchor should be qualified accordingly. A more defensible approach would be to use the Sinsky (2016) figure as an upper bound (US context) with explicit acknowledgment that SEA private GP documentation burden likely lies in the 20-35% range given shorter consultations (~5-10 min vs US ~16 min), simpler billing environments, and lower EHR adoption at baseline.",
+  "narrative_summary": "A full nine-lane search was conducted to find primary evidence for the claim that documentation accounts for 40-50% of GP working time specifically in Indonesian or Malaysian private clinic settings. Academic API queries returned no relevant results; the systematic WebSearch ladder found no government, multilateral, or peer-reviewed study directly measuring documentation time proportions for private GP clinics in Indonesia or Malaysia. The closest evidence is: (1) The Sinsky et al. (2016, Ann Intern Med) landmark US time-motion study showing 49.2% of ambulatory day on EHR/desk work — which is the likely source of the 40-50% range in the original claim, but is derived from US physicians with complex insurance billing environments; (2) The QUALICO-PC Malaysia study (Ab Rahman et al. 2019, Human Resources for Health, PMC6829856) — the only peer-reviewed study found with Malaysia-specific primary care time data — which found private Malaysian GPs allocated 95.4% of working hours to direct patient care, implying only ~4.6% residual administrative time, significantly contradicting the 40-50% claim; (3) A Chinese physician outpatient study found 38% of service time per patient on paperwork, but in public hospital outpatient settings; and (4) Historical SEA consultation time data showing Indonesian GP consultations averaged ~3 minutes, making a 40-50% documentation overhead figure implausible for historical practice patterns. The conclusion is that the 40-50% figure is confirmed as sourced from US/high-income country evidence and cannot be directly validated for ID/MY private GP clinics; the QUALICO-PC finding actively contradicts it for the Malaysian private sector. The claim and its derivative cost calculations should be reflagged as [ASSUMED from US HIC evidence, SEA applicability unverified] and the model should note that the true ID/MY private GP documentation burden may be substantially lower (possibly 10-25% of consultation day), which would reduce the ambient-scribe ROI case unless offset by per-consultation volume or adoption of formal electronic documentation mandates such as Indonesia's SATUSEHAT EHR mandate (2023-2024).",
+  "needs_attended_fetch_urls": [
+    "https://journal.arimbi.or.id/index.php/Lokawati/article/download/966/1012/4193",
+    "https://link.springer.com/article/10.1186/s12911-021-01447-4"
+  ],
+  "academic_apis_used": [
+    "openalex (via academic-search.sh) — 3 queries run, no relevant results returned for SEA primary care documentation burden topic",
+    "semantic_scholar (via academic-search.sh) — same result",
+    "pubmed (via academic-search.sh) — same result"
+  ]
+}

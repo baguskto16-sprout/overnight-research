@@ -1,0 +1,87 @@
+{
+  "generated_at": "2026-05-25T15:00:00Z",
+  "run_id": "2026-05-25-1216",
+  "critic": "instruction",
+  "wh_verdicts": [
+    {
+      "wh_id": 1,
+      "hypothesis": "Employers cannot see metabolic cost burden in claims data",
+      "tested": true,
+      "verdict": "confirmed",
+      "stages_tested": [1, 2, 3, 4],
+      "strongest_pain_point": "PP 2.1",
+      "citation_strength": "moderate",
+      "caveats": ["Self-funded share assumed <5% (ASSUMED-1)", "No specimen TPA contract reviewed", "HealthMetrics 2025 partial crack on absolute claim"],
+      "actionable_gap": false
+    },
+    {
+      "wh_id": 2,
+      "hypothesis": "Standard MCU panels exclude HbA1c and lipid panels",
+      "tested": true,
+      "verdict": "confirmed",
+      "stages_tested": [1, 3, 4],
+      "strongest_pain_point": "PP 4.1",
+      "citation_strength": "strong",
+      "caveats": ["Numeric HbA1c inclusion rate (% of contracts) ASSUMED-1 / ASSUMED-2 — no survey", "FBG miss-rate (26.5%/45%) is Thailand-only proxy"],
+      "actionable_gap": false
+    },
+    {
+      "wh_id": 3,
+      "hypothesis": "Productivity loss is largest unmeasured cost component, exceeds direct claims",
+      "tested": true,
+      "verdict": "partial",
+      "stages_tested": [1, 6],
+      "strongest_pain_point": "PP 6.1",
+      "citation_strength": "moderate",
+      "caveats": ["No Indonesia employer-level presenteeism survey for metabolic disease", "ADA 6.6:1 ratio applied as international transfer to Indonesia", "Uli 2020 Indonesia data is CHD-proxy not T2DM"],
+      "actionable_gap": true,
+      "actionability": "medium",
+      "recommended_action": "Document explicitly that 'exceeds direct claims' relies on international ratio transfer; primary Indonesia presenteeism study recommended for next-phase research"
+    },
+    {
+      "wh_id": 4,
+      "hypothesis": "TPA incentives misaligned with prevention",
+      "tested": true,
+      "verdict": "confirmed",
+      "stages_tested": [2, 3],
+      "strongest_pain_point": "PP 2.2",
+      "citation_strength": "moderate",
+      "caveats": ["TPA PMPM fee structures undisclosed publicly (ASSUMED-3)", "HealthMetrics Indonesia April 2025 launch partial market crack", "No insurer published claims-reduction CDM evidence; absence treated as evidence of absence"],
+      "actionable_gap": false
+    },
+    {
+      "wh_id": 5,
+      "hypothesis": "Incremental cost of metabolic screening small vs. surfaced burden",
+      "tested": true,
+      "verdict": "confirmed",
+      "stages_tested": [1, 4],
+      "strongest_pain_point": "PP 4.3",
+      "citation_strength": "moderate",
+      "caveats": ["HR/GA procurement ownership inferred not surveyed (ASSUMED-4)", "Cost-avoidance ROI framing availability to HR ASSUMED-10"],
+      "actionable_gap": false
+    }
+  ],
+  "scope_in_coverage": [
+    {"topic": "Annual cost per managed vs unmanaged metabolic patient", "covered": "partially"},
+    {"topic": "Prevalence applied to 500/1,000/5,000 cohorts", "covered": "partially", "notes": "Only 1,000-employee cohort modeled; 500 and 5,000 not separately computed"},
+    {"topic": "Indonesia corporate health benefits market sizing", "covered": "partially"},
+    {"topic": "TPA landscape and key players", "covered": "fully"},
+    {"topic": "Standard MCU panel composition, HbA1c inclusion rate", "covered": "partially", "notes": "Composition fully covered; rate ASSUMED"},
+    {"topic": "Incremental cost of adding metabolic screening", "covered": "fully"}
+  ],
+  "scope_out_respected": true,
+  "scope_out_notes": "BPJS Prolanis discussed as context only; consumer OOP not covered; SME <500 HC not covered; Indonesia Tier-1/Tier-2 geography consistently respected with international comparators explicitly labeled.",
+  "actionable_gaps": [
+    {"wh_id": 3, "description": "WH3 quantitative claim relies on international ratio transfer", "actionability": "medium"},
+    {"wh_id": null, "description": "5,000-employee cohort not computed", "actionability": "low", "recommended_action": "Apply 1,000 model at 5x scale"},
+    {"wh_id": null, "description": "Private hospital complication cost Rp 100-400M un-anchored", "actionability": "high"}
+  ],
+  "summary": {
+    "total_whs": 5,
+    "confirmed": 4,
+    "partially_confirmed": 1,
+    "contradicted": 0,
+    "untested": 0
+  },
+  "overall_instruction_compliance": "high"
+}

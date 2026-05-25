@@ -1,0 +1,58 @@
+{
+  "run_id": "2026-05-25-0427",
+  "input_file": "./input/2026-05-23-ai-process-efficiency-healthcare-id-my.md",
+  "topic_slug": "ai-process-efficiency-healthcare-id-my",
+  "mode": "sandbox",
+  "current_pass": 5,
+  "stages_planned": [
+    {"n": 1, "name": "GP Clinic — Consultation & Clinical Documentation (1a)"},
+    {"n": 2, "name": "GP Clinic — Patient & Care Operations (1b+1c+1d)"},
+    {"n": 3, "name": "MCU — Programme execution & multi-lab results collation (2a+2b)"},
+    {"n": 4, "name": "MCU — Reporting, sign-off & post-MCU coordination (2c+2d)"},
+    {"n": 5, "name": "Insurance/TPA — Pre-auth, claims submission, adjudication (3a+3b+3c)"},
+    {"n": 6, "name": "Insurance/TPA — CDM programme admin + ID-vs-MY readiness compare (3d + cross)"}
+  ],
+  "stages_completed": [1, 2, 3, 4, 5, 6],
+  "stages_in_progress": [],
+  "weak_claims_to_re_research": [],
+  "final_gate_decision": "Re-run-recommended",
+  "interruption": null,
+  "started_at": "2026-05-25T04:27:00Z",
+  "completed_at": "2026-05-25T11:05:00Z",
+  "agents_invoked": 26,
+  "total_unique_sources": "~150",
+  "total_pain_points": 19,
+  "total_root_causes": "~86",
+  "deep_research_outcomes": "8 DR calls total. Stage 1 (6): PP1.1-cost-3 CONFIRMED-SCARCE w/ MY QUALICO-PC contradiction; PP1.2-freq-1 REFINED (FKTP 33-73% replaces inpatient 18%); VC-MS-6 CONTRADICTED (8.9% is single-vendor share; SATUSEHAT 34K-40K integrated); PP1.3-freq-3 CONTRADICTED (PMCare 1.3% outpatient denial, not 67% specialist GL); PP1.1-cost-1 PARTIALLY CONTRADICTED (DOSM/Jobstreet primary salary anchors); VC-MS-2 CONFIRMED-SCARCE-BUT-PRIMARY. Stage 2 (1): PP2.1-cost split — error rate UPGRADED to High via JAMIA 2019, labor hours stays ASSUMED. Stage 3 (1): PP3.1-cost CONFIRMED-SCARCE; BPS/DOSM salary inputs documented for future use.",
+  "critics_run": ["dialectic", "depth", "width", "instruction"],
+  "contradiction_finder": "not invoked (time budget; contradictions documented inline in cross-stage-observations.md)",
+  "contradiction_resolver": "C1 SATUSEHAT-denominator-confusion resolved inline in stage-6.md; C2 PMCare-1.3%-vs-67%-GL resolved inline in stage-1.md",
+  "vertical_slice_deviation": "Stages 2-6 used combined VC+PP single-agent invocation (instead of separate value-chain-mapper + pain-point-researcher). Reason: per-stage runtime budget. Documented for transparency. Stage 1 ran the full canonical slice as tracer.",
+  "phase_2_handoff": {
+    "needs_attended_fetch_urls": 5,
+    "stop_reason": "Unattended-Playwright mode (Phase 1) — Phase 2 orchestrator handles Playwright enrichment"
+  },
+  "auto_enrichment": {
+    "started_at": "2026-05-25T23:07:30Z",
+    "completed_at": "2026-05-25T23:12:00Z",
+    "urls_attempted": 4,
+    "urls_succeeded": 1,
+    "urls_confirmed_inaccessible": 3,
+    "url_outcomes": [
+      {"url": "https://klinify.com/", "outcome": "confirmed-inaccessible", "reason": "DNS resolution failed (net::ERR_NAME_NOT_RESOLVED)"},
+      {"url": "https://www.statista.com/statistics/1464154/malaysia-number-of-private-medical-clinics/", "outcome": "confirmed-inaccessible", "reason": "paywall — all numeric values masked as `******` behind Statista Premium login dialog"},
+      {"url": "https://www.statista.com/statistics/1016330/malaysia-medical-insurance-claim-ratio/", "outcome": "confirmed-inaccessible", "reason": "paywall — precise numeric values masked behind Statista Premium login; qualitative '>60% paid' text accessible but numeric precision unverifiable; secondary-market-research override retained"},
+      {"url": "https://www.kompas.id/artikel/en-biaya-diabetes-dan-hipertensi-capai-rp-305-triliun-banyak-pasien-yang-tidak-terkontrol", "outcome": "succeeded", "reason": "full article body accessible; substantiates Rp 30.5T DM+HT cost, 20.5M HT-diagnosed / 5.6M active FKTP (27.3%), 7.4M DM-diagnosed / 2.8M active FKTP (37.8%); attributed to BPJS Kesehatan Director Lily Kresnowati 20/10/2025"}
+    ],
+    "claims_upgraded": [
+      {"id": "PP4.4-cost-1", "from": "low", "to": "medium", "new_source": "https://www.kompas.id/artikel/en-biaya-diabetes-dan-hipertensi-capai-rp-305-triliun-banyak-pasien-yang-tidak-terkontrol", "note": "paywall-unverifiable override lifted; secondary-news override remains → Medium tier"},
+      {"id": "PP2.2-cost-3 (Rp 30.5T population-level CDM cost anchor)", "from": "low", "to": "medium", "new_source": "https://www.kompas.id/artikel/en-biaya-diabetes-dan-hipertensi-capai-rp-305-triliun-banyak-pasien-yang-tidak-terkontrol", "note": "Rp 30.5T figure verifiable from primary BPJS Kesehatan source quoted in article"},
+      {"id": "PP2.2-freq (37.8% DM / 27.3% HT FKTP utilization)", "from": "low", "to": "medium", "new_source": "https://www.kompas.id/artikel/en-biaya-diabetes-dan-hipertensi-capai-rp-305-triliun-banyak-pasien-yang-tidak-terkontrol", "note": "exact arithmetic source for the utilization gap figures — primary BPJS Kesehatan data quoted by named Director"}
+    ],
+    "confidence_distribution_pre": {"high": 4, "medium": 43, "low": 253, "total": 300, "pct_low": 84.3},
+    "confidence_distribution_post": {"high": 4, "medium": 46, "low": 250, "total": 300, "pct_low": 83.3},
+    "gate_decision_pre": "re-run-recommended",
+    "gate_decision_post": "re-run-recommended",
+    "gate_change_reason": "Only 1 of 4 URLs successfully fetched; 3 claims upgraded Low→Medium reduces %Low from 84.3% to 83.3% — still 13.3 pp above the 70% re-run threshold. Underlying scarcity drivers (labor-cost JobStreet anchoring, CodeBlue n=855 single source, single-source 32% FKTP RPPT, 46 ASSUMED-N willingness-to-pay claims) are not Playwright-fixable."
+  }
+}

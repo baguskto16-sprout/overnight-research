@@ -1,0 +1,294 @@
+{
+  "generated_at": "2026-05-25T00:00:00Z",
+  "run_id": "2026-05-25-0715",
+  "scan_method": "contradiction-finder v1",
+  "stages_compared": [1, 2, 3, 4, 5, 6],
+  "contradictions": [
+    {
+      "id": "C-001",
+      "class": "A",
+      "severity": "high",
+      "stages_involved": [1, 2, 4, 6],
+      "claim_a": {
+        "stage": 1,
+        "claim_id": "PP1.2.5",
+        "text": "Medical cost inflation for employer health insurance populations in Indonesia: 26.5% in 2022 and 20.48% in 2023 — far exceeding headline CPI inflation (~3–4%), rapidly eroding the real purchasing power of employer-provided health benefit envelopes.",
+        "value": "26.5% (2022), 20.48% (2023)",
+        "current_score": "low",
+        "source_url": "https://global.lockton.com/us/en/news-insights/indonesia-to-reform-health-insurance-products-for-enhanced-risk-management"
+      },
+      "claim_b": {
+        "stage": 2,
+        "claim_id": "VC2.23",
+        "text": "Medical cost inflation 12.3% (2022), 13.6% (2023) — Mercer Marsh Benefits / Stage 1 corrections.",
+        "value": "12.3% (2022), 13.6% (2023)",
+        "current_score": "medium",
+        "source_url": "https://www.mercer.com/en-sg/insights/total-rewards/employee-benefits-optimization/mmb-health-trends/"
+      },
+      "delta_description": "Stage 1 draft (pass-1) still carries the 26.5%/20.48% figures sourced to Lockton. Stage 2 validation already carries the corrected 12.3%/13.6% figures from MMB. Stage 6 draft also still carries 26.5%/20.48% in citation footnote (8), citing the Narra J paper. The deep-research verdict on PP1.2.5 is 'contradicted' — the 26.5%/20.48% figures are a single-SOE retiree cohort, NOT market-wide. The MMB market-wide figures are 12.3%/13.6%, a 116%/51% spread vs. the old values. The stage-1-corrections.md records the fix but the pass-1-draft text was NOT updated — the superseded values remain in the canonical Stage 1 draft. Stage 4 draft also still uses 26.5%/20.48% (PP4 pain-points footnote 9).",
+      "resolution_suggestion": "Replace 26.5%/20.48% with MMB market-wide 12.3%/13.6% in Stage 1 draft (PP1.2.5), Stage 2 draft (citation footnote 5), Stage 4 draft (pain-points footnote 9), and Stage 6 draft (citation footnote 8). The pain-point narrative still holds — 12.3%/13.6% is still ~5x CPI — but quote the correct figure with explicit note: '26.5%/20.48% figures from Prastyo & Gani 2025 (Narra J, PMC12425502) represent a single SOE oil-and-gas retiree cohort, not general market medical trend.'",
+      "resolution_hint": {
+        "metric_phrase": "Indonesia medical cost inflation 2022 2023 employer health insurance",
+        "primary_source_categories_to_try": ["primary-consultancy"],
+        "academic_search_query": "Mercer Marsh Benefits Global Medical Trends Survey Indonesia 2023",
+        "applied_to_stages": [1, 2, 4, 6]
+      }
+    },
+    {
+      "id": "C-002",
+      "class": "C",
+      "severity": "high",
+      "stages_involved": [2],
+      "claim_a": {
+        "stage": 2,
+        "claim_id": "PP2.4g",
+        "text": "Individual health insurance loss ratios exceeded 200% in H1 2025 in Indonesia, prompting insurer withdrawal and product redesign.",
+        "value": ">200% (H1 2025)",
+        "current_score": "low",
+        "source_url": "https://www.trustedhealthguides.com/archives/30175"
+      },
+      "claim_b": {
+        "stage": 2,
+        "claim_id": "PP2.4g (deep-research verdict)",
+        "text": "Deep-research verdict: AAJI data show the aggregate health insurance claims ratio peaked at 139.5% in Q3 2024. OJK April 2025 figure is 51.29% (life insurance health line). The 200%+ figure is not in any primary regulatory or association source. The source article itself (trustedhealthguides.com) does not contain the 200% figure — it appears to originate from AI-generated search summaries.",
+        "value": "139.5% peak (Q3 2024); 51.29% (April 2025 OJK)",
+        "current_score": "contradicted",
+        "source_url": "https://www.antaranews.com/berita/4873513/ojk-rasio-klaim-kesehatan-di-asuransi-jiwa-5129-persen-april-2025"
+      },
+      "delta_description": "Deep-research verdict is 'contradicting-evidence.' The 200%+ figure is unverifiable from any primary source and the cited source article does not contain it. The stage-2-corrections.md records the fix, but the pass-1-draft for Stage 2 still contains the line 'Individual health insurance loss ratios >200% (H1 2025): https://www.trustedhealthguides.com/archives/30175' as a cited reference. The Stage 3 draft correctly uses the 139.5% Q3 2024 figure. The fabricated 200% persists in Stage 2 pass-1-draft only.",
+      "resolution_suggestion": "Remove the 200% citation from Stage 2 draft. Replace with: 'AAJI aggregate health insurance claims ratio peaked at 139.5% (Q3 2024) and 105.7% (H1 2024) before declining to 51.29% by April 2025 after OJK-mandated repricing (OJK official statement via Antara News, June 2025; AAJI H1 2024 data).' The 200%+ figure should be struck from the artifact entirely.",
+      "resolution_hint": {
+        "metric_phrase": "Indonesia individual health insurance loss ratio 2024 2025",
+        "primary_source_categories_to_try": ["primary-ministry", "primary-association"],
+        "academic_search_query": "OJK AAJI Indonesia health insurance loss ratio 2024",
+        "applied_to_stages": [2]
+      }
+    },
+    {
+      "id": "C-003",
+      "class": "A",
+      "severity": "high",
+      "stages_involved": [3, 6],
+      "claim_a": {
+        "stage": 3,
+        "claim_id": "PP3.4.2 (and via Stage 3 deep-research)",
+        "text": "Group/corporate health insurance GWP approximately USD 910–945M (Mordor Intelligence), representing the employer-segment health insurance market.",
+        "value": "USD 910–945M (group health)",
+        "current_score": "low",
+        "source_url": "https://www.mordorintelligence.com/industry-reports/indonesia-health-and-medical-insurance-market"
+      },
+      "claim_b": {
+        "stage": 6,
+        "claim_id": "VC-mkt-5",
+        "text": "Indonesia group/corporate health insurance GWP approximately USD 776M in 2024–2025 (51.1% of USD 1.52B total private health insurance market).",
+        "value": "USD 776M (group health, 51.1% of USD 1.52B total)",
+        "current_score": "low",
+        "source_url": "https://www.giiresearch.com/report/moi1404495-indonesia-health-medical-insurance-market-share.html"
+      },
+      "delta_description": "Two stages cite the same type of figure — Indonesia group health GWP — with materially different values: USD 910–945M (Stage 3, Mordor) vs. USD 776M (Stage 6, GII/Mordor). The 21–22% spread is material. Furthermore, deep-research on PP3.4.2 found the correct primary-source figure is approximately Rp 11.82T / USD ~743M for AAUI (general insurance, predominantly group) alone, with AAJI group segment adding another ~USD 785M. Combined, the actual employer/group market is ~USD 1,528M — nearly double the Mordor range. Both stage drafts under-count the true size by anchoring on a Mordor figure that captures only the non-life general insurance segment.",
+      "resolution_suggestion": "Replace both Mordor-sourced group health GWP anchors with the AAUI-confirmed primary figure: AAUI Q4 2024 health GWP Rp 11.82T / USD ~743M (general insurance, predominantly group), plus AAJI 2024 group health claims-proxy estimate ~Rp 12.5T / USD ~785M. Combined group market ~Rp 24.3T / USD ~1.53B. Flag the individual:group split assumption (Stage 3 draft states 63:37 group:individual, which deep-research suggests may be reversed in the AAJI data).",
+      "resolution_hint": {
+        "metric_phrase": "Indonesia group health insurance GWP 2024",
+        "primary_source_categories_to_try": ["primary-association", "primary-ministry"],
+        "academic_search_query": "AAUI AAJI Indonesia group health insurance premium 2024",
+        "applied_to_stages": [3, 6]
+      }
+    },
+    {
+      "id": "C-004",
+      "class": "C",
+      "severity": "high",
+      "stages_involved": [3],
+      "claim_a": {
+        "stage": 3,
+        "claim_id": "VC3.7",
+        "text": "PA&H insurance GWP projected 2025: Rp 38.6 trillion (~$2.38B); projected 2029: Rp 63.8 trillion (~$3.94B) at 13.4% CAGR.",
+        "value": "Rp 38.6T (2025 projected)",
+        "current_score": "low",
+        "source_url": "https://www.globaldata.com/media/insurance/indonesian-pah-insurance-industry-surpass-4-billion-2029-forecasts-globaldata/"
+      },
+      "claim_b": {
+        "stage": 3,
+        "claim_id": "VC3.7 (deep-research verdict)",
+        "text": "Deep-research verdict: BROKEN-FORECAST. OJK 2024 actual health insurance GWP is Rp 40.19T — already above GlobalData's 2025 projected figure of Rp 38.6T. The forecast series is invalidated by the 2024 actuals.",
+        "value": "Rp 40.19T (2024 OJK actual, already exceeds the 2025 GlobalData projection)",
+        "current_score": "broken-forecast",
+        "source_url": "https://www.antaranews.com/berita/4933489/ojk-catat-nilai-premi-asuransi-kesehatan-naik-4301-persen-pada-2024"
+      },
+      "delta_description": "GlobalData's 2025 base figure (Rp 38.6T) is already below the OJK-confirmed 2024 actual (Rp 40.19T, +53% YoY). This makes the entire GlobalData forward series (2025–2029) arithmetically impossible on an absolute-Rp basis. The stage-3-corrections.md records this, but the pass-1-draft for Stage 3 still carries VC3.7 with the GlobalData figures as a load-bearing market size anchor. This is not a reconcilable version difference — GlobalData's starting point for their forecast is definitively superseded by OJK primary data.",
+      "resolution_suggestion": "Drop GlobalData PA&H forecast series entirely from Stage 3 draft. Anchor to OJK 2024 actual Rp 40.19T (source: ANTARA/OJK DPR testimony, June 2025) with historical series: 2021 Rp 19.17T → 2022 Rp 22.09T → 2023 Rp 26.26T → 2024 Rp 40.19T. For forward projection, use author-extrapolated 15–20% CAGR explicitly labeled [AUTHOR EXTRAPOLATION] yielding ~Rp 46–48T (2025) → ~Rp 81–99T (2029).",
+      "resolution_hint": {
+        "metric_phrase": "Indonesia health insurance GWP 2024 2025 OJK actual",
+        "primary_source_categories_to_try": ["primary-ministry"],
+        "academic_search_query": "OJK Indonesia health insurance premi 2024 actual",
+        "applied_to_stages": [3]
+      }
+    },
+    {
+      "id": "C-005",
+      "class": "C",
+      "severity": "medium",
+      "stages_involved": [1],
+      "claim_a": {
+        "stage": 1,
+        "claim_id": "VC1.15",
+        "text": "Tier-1 total urban MC (2024 estimate): ~13.5–14.5 million (Jabodetabek ~11.3M, Surabaya ~1.1–1.5M, Bandung ~1.1–1.5M).",
+        "value": "~13.5–14.5M (Tier-1 urban MC, 2024)",
+        "current_score": "low",
+        "source_url": "ASSUMED-2 — derived from World Bank 2016 data"
+      },
+      "claim_b": {
+        "stage": 1,
+        "claim_id": "VC1.15 (deep-research verdict)",
+        "text": "Deep-research verdict: REFINED. The 13.5–14.5M figure corresponds to Jabodetabek at the 2019 national MC peak (57.33M × 25% = 14.3M). The 2024 figure, scaled from BPS confirmed 47.85M national MC, is ~11.6–12.0M for Jabodetabek only. All major Tier-1 metros combined (Jabodetabek + others): ~24M.",
+        "value": "~11.6–12.0M (Jabodetabek 2024); ~24M (all major Tier-1 metros)",
+        "current_score": "refined",
+        "source_url": "https://documents1.worldbank.org/curated/en/519991580138621024/pdf/Aspiring-Indonesia-Expanding-the-Middle-Class.pdf"
+      },
+      "delta_description": "The pass-1-draft still states '~13.5–14.5 million' for Tier-1 urban MC (2024). Deep-research found this reflects the 2019 national peak, not 2024 post-decline figures. The revised Jabodetabek-only estimate is ~12M — a ~13–17% downward revision to a load-bearing addressable-population figure. Downstream derived claims VC1.17, VC1.19, VC1.20, PP1.4.8 all inherit this inflated starting point. The corrections.md notes the fix but the pass-1-draft was not updated.",
+      "resolution_suggestion": "Update VC1.15 in Stage 1 draft to ~12M for Jabodetabek (2024) and ~24M for all major Tier-1 metro agglomerations. Annotate that the original 13.5–14.5M corresponds to the 2019 peak. Update all downstream derived claims that use the 13.5–14.5M figure as a starting point. Flag as ASSUMED-DERIVED pending BPS Susenas 2024 provincial disaggregation via attended fetch.",
+      "resolution_hint": {
+        "metric_phrase": "Indonesia middle class Jabodetabek urban 2024",
+        "primary_source_categories_to_try": ["primary-gov"],
+        "academic_search_query": "BPS Susenas 2024 kelas menengah Jabodetabek provincial",
+        "applied_to_stages": [1]
+      }
+    },
+    {
+      "id": "C-006",
+      "class": "C",
+      "severity": "medium",
+      "stages_involved": [1],
+      "claim_a": {
+        "stage": 1,
+        "claim_id": "VC1.28",
+        "text": "Informality rate 51.5% of total workforce (2023), up from 49.5% (2018).",
+        "value": "51.5% (2023 informality rate)",
+        "current_score": "low",
+        "source_url": "https://fulcrum.sg/growing-or-shrinking-how-indonesias-middle-class-is-really-doing/"
+      },
+      "claim_b": {
+        "stage": 1,
+        "claim_id": "VC1.28 (deep-research verdict)",
+        "text": "Deep-research verdict: REFINED. BPS official Sakernas August 2023 headline: 59.11% informal / 40.89% formal. The ISEAS/Fulcrum 51.5% uses a non-standard authors' calculation from Sakernas microdata with a different 'simplified' definition, not the BPS headline classification.",
+        "value": "59.11% (BPS official Sakernas August 2023)",
+        "current_score": "refined",
+        "source_url": "https://www.bps.go.id/en/pressrelease/2023/11/06/2002/"
+      },
+      "delta_description": "The pass-1-draft still states 51.5% sourced to ISEAS/Fulcrum. Deep-research confirmed the BPS official headline is 59.11% — a 15% higher figure using the authoritative definition. The corrections.md notes the fix but the pass-1-draft text was not updated. The higher figure strengthens the pain-point argument (larger informal workforce excluded from employer health plans), so this correction is directionally important for the commercial case narrative. The corrected figure is not in contradiction with the narrative — it makes the case stronger — but the currently-stated 51.5% is non-authoritative.",
+      "resolution_suggestion": "Replace 51.5% with BPS official 59.11% (August 2023 Sakernas) in Stage 1 draft. Add methodology note distinguishing BPS headline classification from the ISEAS 'simplified' definition. Cite directly: BPS Berita Resmi Statistik November 2023 [NEEDS-ATTENDED-FETCH].",
+      "resolution_hint": {
+        "metric_phrase": "Indonesia informal employment rate 2023 BPS Sakernas",
+        "primary_source_categories_to_try": ["primary-gov"],
+        "academic_search_query": "BPS Sakernas 2023 informal employment Indonesia official",
+        "applied_to_stages": [1]
+      }
+    },
+    {
+      "id": "C-007",
+      "class": "A",
+      "severity": "medium",
+      "stages_involved": [1, 2],
+      "claim_a": {
+        "stage": 1,
+        "claim_id": "PP1.2.6",
+        "text": "Private health insurance gross written premium projected at ~$945M in 2025.",
+        "value": "$945M (total private health insurance GWP, 2025 projection)",
+        "current_score": "low",
+        "source_url": "https://www.mordorintelligence.com/industry-reports/indonesia-health-and-medical-insurance-market"
+      },
+      "claim_b": {
+        "stage": 3,
+        "claim_id": "VC3.1",
+        "text": "Total health insurance GWP across all lines (life + general) — 2024: Rp 40.19 trillion (~$2.48B).",
+        "value": "$2.48B (2024 OJK actual, all lines)",
+        "current_score": "high",
+        "source_url": "https://www.antaranews.com/berita/4933489/ojk-catat-nilai-premi-asuransi-kesehatan-naik-4301-persen-april-2025"
+      },
+      "delta_description": "Stage 1 cites Mordor's $945M projection for total private health insurance GWP (2025). Stage 3 carries OJK's confirmed 2024 actual of $2.48B — already 2.6x the Mordor projection for the following year. While the two figures may differ in scope (Mordor may use a narrower definition), the 162% spread with no reconciliation note creates a material consistency risk. Stage 2 also carries Mordor's $945M for 2025. A curator must determine whether Mordor's scope excludes group/life-insurer health riders (which would explain some of the gap) and reconcile the definitions explicitly.",
+      "resolution_suggestion": "Stage 1 and Stage 2 should reconcile Mordor's $945M against OJK's $2.48B actuals. Define scope explicitly: (a) if $945M is non-life only (AAUI segment), OJK confirms Rp 11.82T / ~$743M AAUI health GWP for 2024, making $945M a 2025 forecast that may be plausible; (b) if $945M covers all private health insurance (life + non-life), the figure is more than 2.6x below the OJK 2024 actual and should be replaced. Add a reconciliation footnote in both Stage 1 and Stage 2.",
+      "resolution_hint": {
+        "metric_phrase": "Indonesia private health insurance GWP 2024 OJK total all lines",
+        "primary_source_categories_to_try": ["primary-ministry", "primary-association"],
+        "academic_search_query": "OJK Indonesia health insurance GWP 2024 premi",
+        "applied_to_stages": [1, 2]
+      }
+    },
+    {
+      "id": "C-008",
+      "class": "B",
+      "severity": "medium",
+      "stages_involved": [3, 5],
+      "claim_a": {
+        "stage": 3,
+        "claim_id": "Stage 3 value-chain actor characterization",
+        "text": "Prodia PHC wellness clinics listed as offering CDM. [Implied: Prodia is a CDM-capable actor in the payor/provider landscape].",
+        "value": "Prodia PHC = CDM-capable",
+        "current_score": "mixed (not a single claim_id)",
+        "source_url": "multiple — Prodia marketing page + secondary-trade"
+      },
+      "claim_b": {
+        "stage": 5,
+        "claim_id": "PP5.3-RC1",
+        "text": "Prodia PHC CDM label not supported by disclosed clinical infrastructure: no published GP headcount at PHC, no CDM protocol documentation, no enrolled-patient registry, no outcome reporting in FY2024 AR. Prolanis scoping review confirms structural CDM barriers in Indonesia primary care.",
+        "value": "Prodia PHC has NO verifiable CDM infrastructure despite the marketing label",
+        "current_score": "high",
+        "source_url": "Prodia AR 2024 PDF; PMC12538241 Prolanis scoping review"
+      },
+      "delta_description": "Stage 3 includes Prodia PHC among actors offering CDM (used in the competitive landscape map of preventive/CDM providers). Stage 5 directly contradicts this: Prodia's FY2024 Annual Report contains zero enrolled-CDM patient count, zero CDM outcome data, and zero CDM revenue line. The 'CDM offering' is a marketing label only. Stage 5 rates this as High-confidence (sourced to Prodia's own primary-filing AR). This is not a minor characterization difference — it affects the structural conclusion about whether Prodia is a competitive CDM player the MSO must position against.",
+      "resolution_suggestion": "Align Stage 3 with Stage 5's verified finding: Prodia PHC markets CDM services but has no disclosed clinical infrastructure, enrolled-patient registry, or outcome data as of FY2024. Reclassify Prodia as a diagnostic/lab player with CDM marketing aspiration only — not an operationally validated CDM provider — in the Stage 3 competitive landscape section.",
+      "resolution_hint": {
+        "metric_phrase": "Prodia PHC CDM programme Indonesia",
+        "primary_source_categories_to_try": ["primary-filing"],
+        "academic_search_query": "Prodia Widyahusada FY2024 annual report CDM wellness",
+        "applied_to_stages": [3, 5]
+      }
+    },
+    {
+      "id": "C-009",
+      "class": "D",
+      "severity": "low",
+      "stages_involved": [1, 2, 5],
+      "claim_a": {
+        "stage": 1,
+        "claim_id": "PP1.2.6 / PP1.3.7",
+        "text": "Private health insurance gross written premium projected at ~$945M in 2025 [Mordor Intelligence, national figure]. Stage 1 flags this as [Geography mismatch]: 'National figure; no disaggregated Tier-1/Tier-2 city breakdown is publicly available.'",
+        "value": "$945M (Mordor, national, geography mismatch flagged)",
+        "current_score": "low",
+        "source_url": "https://www.mordorintelligence.com/industry-reports/indonesia-health-and-medical-insurance-market"
+      },
+      "claim_b": {
+        "stage": 5,
+        "claim_id": "VC5.39 / VC5.40",
+        "text": "Indonesia health check-up market USD 656.2M total (~Rp 10.6T) in 2024; CAGR 9.9% to 2030 [Grand View Research, aggregator auto-downgrade]. No geography mismatch flag applied, even though the figure is a national aggregate cited in the context of Tier-1/Tier-2 city analysis.",
+        "value": "USD 656.2M (Grand View Research, national, geography mismatch NOT flagged)",
+        "current_score": "low",
+        "source_url": "https://www.grandviewresearch.com/horizon/outlook/health-check-up-market/indonesia"
+      },
+      "delta_description": "Stage 1 correctly applies a [Geography mismatch] flag to national insurance GWP figures used in Tier-1/Tier-2 city context. Stage 5 uses the Grand View Research $656.2M MCU national market figure in tables and narrative anchoring the Stage 5 Tier-1/Tier-2 analysis, without a geography mismatch flag. This is an inconsistent application of the geography mismatch override — the same logic that caused Stage 1 to flag its national figures applies equally to Stage 5's use of GVR's national MCU figure in a city-tier analysis context.",
+      "resolution_suggestion": "Add [Geography mismatch] flag to Stage 5 instances of the GVR $656.2M figure: 'National aggregate; no Tier-1/Tier-2 city breakdown published.' This is consistent with Stage 1's treatment of the Mordor national insurance GWP figure. The correction does not change the underlying claim but ensures override application is uniform across stages.",
+      "resolution_hint": {
+        "metric_phrase": "Indonesia MCU market Tier-1 cities health check-up",
+        "primary_source_categories_to_try": ["primary-filing", "primary-gov"],
+        "academic_search_query": "Indonesia health check-up market Jakarta Tier-1 city breakdown",
+        "applied_to_stages": [1, 5]
+      }
+    }
+  ],
+  "summary": {
+    "total_contradictions": 9,
+    "by_severity": {
+      "high": 4,
+      "medium": 3,
+      "low": 1
+    },
+    "by_class": {
+      "A": 4,
+      "B": 1,
+      "C": 3,
+      "D": 1
+    }
+  },
+  "gate_impact": "high-severity-block",
+  "narrative": "Four high-severity contradictions require curator resolution before canonical artifact consolidation: (1) the 26.5%/20.48% medical inflation figures — CONTRADICTED by deep-research and replaced with MMB market-wide 12.3%/13.6% — persist in Stage 1, Stage 2, Stage 4, and Stage 6 pass-1-drafts despite the corrections.md recording the fix; (2) the Stage 2 draft still cites a fabricated >200% H1 2025 loss ratio not present in any primary source; (3) the GlobalData PA&H forecast (2025 base Rp 38.6T) is factually superseded by OJK's confirmed 2024 actual of Rp 40.19T; and (4) the group health GWP figure differs by 21–22% across Stage 3 (USD 910–945M) and Stage 6 (USD 776M) with primary-source data from deep-research showing the actual combined figure is approximately USD 1.53B, roughly double both stage estimates."
+}

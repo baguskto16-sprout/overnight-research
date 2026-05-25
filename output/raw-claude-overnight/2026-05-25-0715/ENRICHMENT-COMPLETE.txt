@@ -1,0 +1,28 @@
+Unattended Phase 2 complete.
+URLs attempted: 17 · Succeeded: 10 · Confirmed inaccessible: 7
+Claims upgraded: 10 (3 reach High: Sakernas 40.89% formal, OJK April-2025 LR 51.29%, OJK FY2024 LR 71.2%; 1 medium→high: POJK 36/2025 managed-care)
+New % Low (post-enrichment): ~35% · Gate: ship-with-flag
+
+Window: 2026-05-25T04:04Z → 2026-05-25T04:10Z
+Run: 2026-05-25-0715 (Indonesia affluent preventive care + CDM)
+
+Canonical edits applied:
+  raw-claude-value-chain-indonesia-affluent-preventive-cdm.md — 4 [NEEDS-ATTENDED-FETCH] tags replaced (3 resolved with primary URL, 1 marked [CONFIRMED-INACCESSIBLE] for BPS BUKLE microdata)
+  raw-claude-summary-indonesia-affluent-preventive-cdm.md — appended "Auto-enrichment (Phase 2, Playwright pass)" section with full URL inventory and recomputed gate
+  checkpoint.json — added auto_enrichment object with claim-by-claim upgrade list and inaccessibility reasons
+  FINAL-REPORT.html — appended PAGE 15 covering Phase 2 outcomes; gate-decision line updated from ~40% to ~35% Low
+
+Backups:
+  raw-claude-value-chain.md.bak
+  raw-claude-pain-points.md.bak (no inline tags found in canonical pain-points; backup is identity copy)
+
+Inaccessible URLs (per Phase-2 rules: PDFs without DOM, captchas, 404s, timeouts):
+  allianz.co.id Flexi Medical RIPLAY PDF (empty DOM)
+  prudential.co.id PRUWell brochure (404)
+  kemkes.go.id app_asset PDF (auto-download, no DOM)
+  researchgate.net publication 380285294 (Cloudflare Turnstile captcha — skipped)
+  thinkwell.global Telemedicine PDF (empty DOM)
+  ramsaysimedarby.co.id:8443 (navigation timeout 60s)
+  BPS Susenas BUKLE cell-level microdata (no public URL; requires microdata licence)
+
+Net Phase-2 effect: the 3 BPS Cloudflare blockers (most-cited inaccessibility issue across Stages 1, 2, 6) are now closed with verbatim primary-source quotes. RIPLAY and MMB HBS PDF binaries remain inaccessible to Playwright; these continue to drive Stage 4/6 citation-tier flags but do not change the gate.

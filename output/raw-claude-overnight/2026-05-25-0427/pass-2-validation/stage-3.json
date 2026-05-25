@@ -1,0 +1,578 @@
+{
+  "context": "per-stage",
+  "stage": 3,
+  "stage_name": "MCU Programme Execution & Multi-Lab Results Collation (Sub-processes 2a + 2b)",
+  "run_id": "2026-05-25-0427",
+  "validated_by": "source-validator",
+  "validated_date": "2026-05-25",
+  "total_claims_scored": 60,
+  "scoring_distribution": {
+    "high": { "count": 0, "percent": "0%" },
+    "medium": { "count": 26, "percent": "43%" },
+    "low": { "count": 34, "percent": "57%" }
+  },
+  "claim_detail": [
+    {
+      "claim_id": "VC-MS-1",
+      "claim_text": "Indonesia health check-up market revenue USD 656.2M (2024), growing at 9.9% CAGR 2025-2030",
+      "sources": ["https://www.grandviewresearch.com/horizon/outlook/health-check-up-market/indonesia"],
+      "source_categories": ["secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade — Grand View Research is an aggregator; single source"
+    },
+    {
+      "claim_id": "VC-MS-2",
+      "claim_text": "Malaysia health check-up market revenue USD 283.8M (2024), growing at 10.8% CAGR 2025-2030",
+      "sources": ["https://www.grandviewresearch.com/horizon/outlook/health-check-up-market/malaysia"],
+      "source_categories": ["secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade — Grand View Research is an aggregator; single source"
+    },
+    {
+      "claim_id": "VC-MS-3",
+      "claim_text": "Combined Indonesia + Malaysia MCU TAM ~USD 940M; enterprise/corporate segment fastest growing sub-segment in both markets",
+      "sources": ["https://www.grandviewresearch.com/horizon/outlook/health-check-up-market/indonesia", "https://www.grandviewresearch.com/horizon/outlook/health-check-up-market/malaysia"],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade — both sources Grand View Research same publisher family; single-domain override also applies"
+    },
+    {
+      "claim_id": "VC-MS-4",
+      "claim_text": "Indonesia formal sector workers 57.18M (40.89% of total labor force), August 2023 BPS Sakernas",
+      "sources": ["https://www.bps.go.id/en/pressrelease/2023/11/06/2002/tingkat-pengangguran-terbuka--tpt--sebesar-5-32-persen-dan-rata-rata-upah-buruh-sebesar-3-18-juta-rupiah-per-bulan.html"],
+      "source_categories": ["primary-gov"],
+      "score": "Medium",
+      "override": "none — single primary-gov source qualifies for Medium; High requires 2+ sources with ≥1 gov/multilateral"
+    },
+    {
+      "claim_id": "VC-MS-5",
+      "claim_text": "Permenaker 02/1980: all formal employers must conduct periodic worker health exams at least annually",
+      "sources": ["https://legalcentric.com/content/view/98665", "https://smartcolaw.com/2017/08/04/companys-obligation-to-carry-out-periodic-medical-examination-for-its-employee/"],
+      "source_categories": ["secondary-trade", "secondary-trade"],
+      "score": "Low",
+      "override": "trade-press-only override — both sources are legal commentary blogs, not the actual Permenaker gazette or Ministry of Manpower publication; 2 secondary sources, no primary regulatory source"
+    },
+    {
+      "claim_id": "VC-MS-6",
+      "claim_text": "Malaysia VP(TE) foreign worker holders 1,459,196 as of December 2022; ~2.2M total migrant workers in 2022",
+      "sources": ["https://codeblue.galencentre.org/2023/02/improving-medical-screening-in-view-of-the-foreign-worker-employment-relaxation-plan-jason-loh-juhi-todi/"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "single secondary source — CodeBlue is trade press / think-tank commentary; underlying EMIR Research figures not independently verifiable via government dataset"
+    },
+    {
+      "claim_id": "VC-MS-7",
+      "claim_text": "FOMEMA panel network: 3,100+ panel clinics, 140 labs, Peninsular Malaysia + Labuan",
+      "sources": ["https://www.fomema2u.com.my/employer-agency/frequent-asked-questions-and-forms/foreign-workers-medical-examination/"],
+      "source_categories": ["secondary-press-release"],
+      "score": "Low",
+      "override": "single source — fomema2u.com is the operator's own FAQ/marketing page; functions as operator self-reported data; no MOH or independent verification"
+    },
+    {
+      "claim_id": "VC-MS-8",
+      "claim_text": "FOMEMA examination volume (historical): 5,819,426 foreign workers screened 2014-2018 (avg ~1.16M/year)",
+      "sources": ["https://codeblue.galencentre.org/2023/02/improving-medical-screening-in-view-of-the-foreign-worker-employment-relaxation-plan-jason-loh-juhi-todi/"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "single secondary source — CodeBlue/EMIR Research trade press; figures originally from FOMEMA annual report not independently crosschecked"
+    },
+    {
+      "claim_id": "VC-MS-9",
+      "claim_text": "FOMEMA new annual examination mandate from Dec 2023: all foreign workers must be examined annually",
+      "sources": ["https://www.fomema2u.com.my/employer-agency/frequent-asked-questions-and-forms/foreign-workers-medical-examination/", "https://theedgemalaysia.com/node/698207", "https://www.freemalaysiatoday.com/category/nation/2024/01/22/fmm-disappointed-with-govt-over-changes-to-foreign-worker-medical-exams/"],
+      "source_categories": ["secondary-press-release", "secondary-news", "secondary-news"],
+      "score": "Medium",
+      "override": "3+ secondary sources — operator FAQ + 2 independent news outlets qualifies for Medium under 3+ secondary sources rule; no primary ministry gazette source cited"
+    },
+    {
+      "claim_id": "VC-MS-10",
+      "claim_text": "FOMEMA examination fee MYR 207 male / MYR 217 female; FMM estimates annual cost to manufacturers ~RM 124.4M/year",
+      "sources": ["https://theedgemalaysia.com/node/698207", "https://www.freemalaysiatoday.com/category/nation/2024/01/22/fmm-disappointed-with-govt-over-changes-to-foreign-worker-medical-exams/"],
+      "source_categories": ["secondary-news", "secondary-news"],
+      "score": "Medium",
+      "override": "2 secondary-news sources; FMM (primary-association) quoted within news — underlying FMM figure traced through trade press; meets Medium threshold (3 sources including FOMEMA FAQ) but not High"
+    },
+    {
+      "claim_id": "VC-MS-11",
+      "claim_text": "Prodia corporate MCU scale: serves >2,000 companies/year; >500,000 employees/year; 263 outlets across 128 cities",
+      "sources": ["https://www.prodia.co.id/en/klien-korporasi", "https://prodiaohi.co.id/en/home"],
+      "source_categories": ["auto-low-vendor", "auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override — prodia.co.id and prodiaohi.co.id are Prodia's own marketing pages making claims about Prodia's own scale; auto-Low regardless of number of vendor URLs"
+    },
+    {
+      "claim_id": "VC-MS-12",
+      "claim_text": "~12-13M Malaysians covered via employer group insurance; enterprise segment fastest-growing in health check-up market",
+      "sources": ["https://www.grandviewresearch.com/horizon/outlook/health-check-up-market/malaysia", "https://www.marsh.com/my/services/employee-health-benefits/insights/employee-insurance-and-benefits-insights-2022-malaysia.html"],
+      "source_categories": ["secondary-market-research", "primary-consultancy"],
+      "score": "Medium",
+      "override": "none — 2 sources where ≥1 is primary-consultancy (Marsh authored report); aggregator second source does not elevate to High but combination meets Medium"
+    },
+    {
+      "claim_id": "VC-MS-13",
+      "claim_text": "Prodia OHI revenue ~USD 6.2M (2026); Prodia parent ~USD 133M total revenue",
+      "sources": ["https://www.prodia.co.id/en/klien-korporasi", "https://prodiaohi.co.id/en/home"],
+      "source_categories": ["auto-low-vendor", "auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override — revenue figures about Prodia sourced from Prodia's own marketing pages; no audited filing (IDX annual report) cited; auto-Low"
+    },
+    {
+      "claim_id": "VC-S2a1-1",
+      "claim_text": "No standardized digital tendering or package comparison platform identified in either Indonesia or Malaysia MCU market",
+      "sources": [],
+      "source_categories": [],
+      "score": "Low",
+      "override": "no citation — qualitative absence claim with zero sources cited"
+    },
+    {
+      "claim_id": "VC-S2a2-1",
+      "claim_text": "Per-employee MCU scheduling labor time is 15-30 minutes total lifecycle",
+      "sources": [],
+      "source_categories": [],
+      "score": "Low",
+      "override": "ASSUMED-1 tag — explicitly marked assumed; no source cited; auto-Low"
+    },
+    {
+      "claim_id": "VC-S2a2-2",
+      "claim_text": "Prodia OHI scheduling 664 participants across 130+ work units in a single hospital MCU cycle (Khazanah Sosial 2025 study)",
+      "sources": ["https://khazanah.uinsgd.ac.id/index.php/ks/article/view/34229"],
+      "source_categories": ["primary-academic"],
+      "score": "Medium",
+      "override": "single primary-academic source — qualifies for Medium; not High (only 1 source)"
+    },
+    {
+      "claim_id": "VC-S2a2-3",
+      "claim_text": "FOMEMA 18-day window breaches: Auditor General 2018 found >11,000 workers exceeded 30-day window",
+      "sources": ["https://codeblue.galencentre.org/2023/02/improving-medical-screening-in-view-of-the-foreign-worker-employment-relaxation-plan-jason-loh-juhi-todi/"],
+      "source_categories": ["secondary-trade"],
+      "score": "Medium",
+      "override": "chain-of-citations — primary source is Malaysia Auditor General 2018 (primary-gov) accessed via CodeBlue trade press; underlying government audit report is primary-gov but not directly cited; scored Medium per secondhand primary-gov rule"
+    },
+    {
+      "claim_id": "VC-S2b1-1",
+      "claim_text": "Typical time per employee per MCU execution: 45-90 minutes for a standard MCU package across all stations",
+      "sources": [],
+      "source_categories": [],
+      "score": "Low",
+      "override": "no citation — no source cited for this time estimate"
+    },
+    {
+      "claim_id": "VC-S2b2-1",
+      "claim_text": "Clotted samples 32-37% of all rejected samples; Asia pooled rejection rate 2.82% in systematic review",
+      "sources": ["https://ebpj.e-iph.co.uk/index.php/EBProceedings/article/view/2104", "https://pmc.ncbi.nlm.nih.gov/articles/PMC9792348/"],
+      "source_categories": ["primary-academic", "primary-academic"],
+      "score": "Medium",
+      "override": "2 independent primary-academic sources — qualifies for Medium; High requires 2+ where ≥1 is gov/multilateral (not met) or 3+ with ≥1 primary (not met)"
+    },
+    {
+      "claim_id": "VC-S2b2-2",
+      "claim_text": "Sample transport: collection to lab receipt 1-4 hours in-city; results turnaround 4-24 hours routine, 3-7 days specialty",
+      "sources": [],
+      "source_categories": [],
+      "score": "Low",
+      "override": "no citation — operational assertion with zero sources"
+    },
+    {
+      "claim_id": "VC-S2b2-3",
+      "claim_text": "FOMEMA-specific rejection rate assumed broadly consistent with published Malaysian lab data (~3% range)",
+      "sources": [],
+      "source_categories": [],
+      "score": "Low",
+      "override": "ASSUMED-2 tag — explicitly marked assumed; no FOMEMA-specific data cited"
+    },
+    {
+      "claim_id": "VC-S2b3-1",
+      "claim_text": "Permata Cibubur Hospital MCU evaluation: results still in printed physical documents; LIS integration not fully achieved",
+      "sources": ["https://www.researchgate.net/publication/393187270_EVALUATION_OF_MEDICAL_CHECK-UP_MCU_SERVICES_WITH_INFORMATION_SYSTEMS_AT_PERMATA_CIBUBUR_HOSPITAL"],
+      "source_categories": ["primary-academic"],
+      "score": "Medium",
+      "override": "single primary-academic source — ResearchGate publication qualifies as peer-reviewed/academic; single source = Medium"
+    },
+    {
+      "claim_id": "VC-S2b3-2",
+      "claim_text": "Khazanah Sosial 2025 study, 664-employee hospital MCU: aggregate reporting implemented via manual collation into K3RS database, not automated extraction",
+      "sources": ["https://khazanah.uinsgd.ac.id/index.php/ks/article/view/34229"],
+      "source_categories": ["primary-academic"],
+      "score": "Medium",
+      "override": "single primary-academic source — qualifies for Medium"
+    },
+    {
+      "claim_id": "VC-S2b3-3",
+      "claim_text": "Per-employee manual collation time for multi-source MCU results: 15-30 minutes",
+      "sources": [],
+      "source_categories": [],
+      "score": "Low",
+      "override": "ASSUMED-3 tag — explicitly marked assumed; foundational cost claim with zero direct sourcing; critical vulnerability"
+    },
+    {
+      "claim_id": "VC-S2b3-4",
+      "claim_text": "JAMIA 2019: 3.7% discrepancy rate on manually transcribed POC glucose values",
+      "sources": ["https://academic.oup.com/jamia/article/26/3/269/5287977"],
+      "source_categories": ["primary-academic"],
+      "score": "Medium",
+      "override": "single primary-academic source (JAMIA is top-tier peer-reviewed journal) — qualifies for Medium; note this is a US study, APAC-as-proxy concern applies for extrapolation to ID/MY context"
+    },
+    {
+      "claim_id": "VC-S2b3-5",
+      "claim_text": "Indonesian MCU admin salary IDR 5-6M/month (~$309-$370/month)",
+      "sources": ["https://id.jobstreet.com/career-advice/role/general-practitioner/salary"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "single secondary source — JobStreet is a job aggregator/trade platform, not BPS wage survey or Ministry of Manpower data; single-trade-source override for operating cost figure"
+    },
+    {
+      "claim_id": "VC-S2b3-6",
+      "claim_text": "No turnkey OCR/LLM extraction product for MCU multi-lab PDF aggregation has achieved documented mass adoption in either market",
+      "sources": [],
+      "source_categories": [],
+      "score": "Low",
+      "override": "no citation — qualitative market absence claim with zero sources"
+    },
+    {
+      "claim_id": "VC-S2b4-1",
+      "claim_text": "Physician exception review time: 10-30 minutes per complex exception; 1-2 minutes per routine sign-off",
+      "sources": [],
+      "source_categories": [],
+      "score": "Low",
+      "override": "no citation — time estimate with zero sources"
+    },
+    {
+      "claim_id": "VC-S2b4-2",
+      "claim_text": "FOMEMA fit/unfit determination: physician sign-off mandatory; no automation of fit/unfit decision permitted under current FOMEMA protocol",
+      "sources": ["https://www.fomema2u.com.my/employer-agency/frequent-asked-questions-and-forms/foreign-workers-medical-examination/"],
+      "source_categories": ["secondary-press-release"],
+      "score": "Low",
+      "override": "single operator-site source — fomema2u.com is the operator's own FAQ; no MOH/Ministry of Home Affairs gazette or circular cited for the regulatory requirement"
+    },
+    {
+      "claim_id": "PP3.1-cost-1",
+      "claim_text": "Indonesian admin/medical records salary IDR 5-6M/month; effective hourly ~$1.78-$2.14",
+      "sources": ["https://id.jobstreet.com/career-advice/role/general-practitioner/salary"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "single secondary source — JobStreet job aggregator; note source cited is GP salary page, not admin/records staff; methodology gap compounds single-source weakness"
+    },
+    {
+      "claim_id": "PP3.1-cost-2",
+      "claim_text": "Malaysian admin salary MYR 2,249/month (~$2.79/hr effective)",
+      "sources": ["https://malaysia.indeed.com/career/nurse/salaries"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "single secondary source — Indeed is a job aggregator; source cited is nurse salary, not admin/records staff salary; methodology gap noted"
+    },
+    {
+      "claim_id": "PP3.1-cost-3",
+      "claim_text": "Manual transcription error rate 3.7% discrepancy on numeric POC values (JAMIA 2019)",
+      "sources": ["https://academic.oup.com/jamia/article/26/3/269/5287977"],
+      "source_categories": ["primary-academic"],
+      "score": "Medium",
+      "override": "single primary-academic — Medium; APAC-as-proxy concern: JAMIA 2019 is US-based; extrapolation to ID/MY MCU admin context is stated assumption"
+    },
+    {
+      "claim_id": "PP3.1-cost-4",
+      "claim_text": "Manual data entry error handling cost $45-65 per incident; $150K/year admin burden baseline",
+      "sources": ["https://www.rovinghealth.com/articles/healthcare-administrative-burden-manual-data-entry-150k"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "single secondary source — rovinghealth.com is a trade/industry blog; US-context figure extrapolated to MCU without validation; APAC-as-proxy concern plus single-trade-source override for operating cost"
+    },
+    {
+      "claim_id": "PP3.1-cost-5",
+      "claim_text": "Indonesia health check-up market USD 656M (2024); Malaysia USD 284M; corporate segment 30-40% of both markets",
+      "sources": ["https://www.grandviewresearch.com/horizon/outlook/health-check-up-market/indonesia", "https://www.grandviewresearch.com/horizon/outlook/health-check-up-market/malaysia"],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "score": "Low",
+      "override": "aggregator-market-research-auto-downgrade — Grand View Research is an aggregator; single publisher family; the 30-40% corporate segment split is unattributed (no source cited)"
+    },
+    {
+      "claim_id": "PP3.1-freq-1",
+      "claim_text": "No HL7/FHIR mandate for inter-facility structured result delivery between independent labs and MCU vendor LIS; SATUSEHAT FHIR R4 mandate covers national platform submission, not inter-facility routing",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC12036547/", "https://www.researchgate.net/publication/392464953_Evaluasi_Implementasi_SATUSEHAT_sebagai_Sistem_Interoperabilitas_Data_Kesehatan_di_Indonesia_Kajian_Literatur"],
+      "source_categories": ["primary-academic", "primary-academic"],
+      "score": "Medium",
+      "override": "2 independent primary-academic sources — qualifies for Medium; High requires ≥1 gov/multilateral or 3+ total (not met)"
+    },
+    {
+      "claim_id": "PP3.1-freq-2",
+      "claim_text": "Prodia handles >500,000 employees/year across >2,000 companies",
+      "sources": ["https://www.prodia.co.id/en/klien-korporasi"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override — prodia.co.id is Prodia's own marketing page making claims about Prodia's own scale; auto-Low"
+    },
+    {
+      "claim_id": "PP3.1-freq-3",
+      "claim_text": "Permata Cibubur: system integration between MCU module and lab/radiology still in discussion and coordination stages with service providers",
+      "sources": ["https://www.researchgate.net/publication/393187270_EVALUATION_OF_MEDICAL_CHECK-UP_MCU_SERVICES_WITH_INFORMATION_SYSTEMS_AT_PERMATA_CIBUBUR_HOSPITAL"],
+      "source_categories": ["primary-academic"],
+      "score": "Medium",
+      "override": "single primary-academic — Medium"
+    },
+    {
+      "claim_id": "PP3.1-freq-4",
+      "claim_text": "Khazanah Sosial 2025 study: 664-employee MCU aggregate reporting mechanism implemented via manual aggregation of 124 health findings, not automated extraction",
+      "sources": ["https://khazanah.uinsgd.ac.id/index.php/ks/article/view/34229"],
+      "source_categories": ["primary-academic"],
+      "score": "Medium",
+      "override": "single primary-academic — Medium"
+    },
+    {
+      "claim_id": "PP3.1-freq-5",
+      "claim_text": "Healthcare administrative burden: manual data entry costs average multi-provider US clinic $150K/year; 8-12 minutes per document",
+      "sources": ["https://www.rovinghealth.com/articles/healthcare-administrative-burden-manual-data-entry-150k"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "single secondary source — trade/industry blog; US-context figure not validated for ID/MY; single-trade-source override for operating cost figure"
+    },
+    {
+      "claim_id": "PP3.1-freq-6",
+      "claim_text": "OCR+LLM systems achieve 0.93 accuracy on lab report text detection and F1=0.86 on entity extraction from paper-based lab reports",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC10629084/"],
+      "source_categories": ["primary-academic"],
+      "score": "Medium",
+      "override": "single primary-academic — Medium"
+    },
+    {
+      "claim_id": "PP3.1-freq-7",
+      "claim_text": "~80% of healthcare data is unstructured",
+      "sources": ["https://www.netguru.com/blog/ocr-ai-medical-data-extraction"],
+      "source_categories": ["secondary-trade"],
+      "score": "Low",
+      "override": "single secondary source — netguru.com is a vendor/tech blog; widely cited industry figure but traceable to no primary study via this URL"
+    },
+    {
+      "claim_id": "PP3.1-freq-8",
+      "claim_text": "LLM extraction for clinical data — capability claim supported by LlamaIndex",
+      "sources": ["https://www.llamaindex.ai/insights/top-clinical-data-extraction-solutions-ocr"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "Low",
+      "override": "vendor-marketing override — llamaindex.ai is LlamaIndex's own marketing/insights page promoting their own product for clinical data extraction; auto-Low"
+    },
+    {
+      "claim_id": "PP3.1-assumed-4",
+      "claim_text": "MCU vendors would pay $0.50-$2.00 per employee per campaign for a validated OCR+LLM extraction tool",
+      "sources": [],
+      "source_categories": [],
+      "score": "Low",
+      "override": "ASSUMED-4 tag — explicitly marked assumed; willingness-to-pay with zero primary sourcing"
+    },
+    {
+      "claim_id": "PP3.2-cost-1",
+      "claim_text": "Direct cost per rejected sample: €2.1 (Turkey 2022 hospital study, 836-bed hospital, 32,783 PA errors analyzed)",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC9514066/"],
+      "source_categories": ["primary-academic"],
+      "score": "Medium",
+      "override": "single primary-academic — Medium; note geography: Turkey 2022 figure extrapolated to ID/MY MCU context without local cost validation; APAC-as-proxy concern (reverse: non-APAC figure applied to APAC)"
+    },
+    {
+      "claim_id": "PP3.2-cost-2",
+      "claim_text": "US clinical chemistry lab re-collection cost ~$21.9 per incident",
+      "sources": ["https://www.sciencedirect.com/science/article/abs/pii/S0009898116302078"],
+      "source_categories": ["primary-academic"],
+      "score": "Medium",
+      "override": "single primary-academic — Medium; US figure extrapolated to ID/MY without local cost calibration"
+    },
+    {
+      "claim_id": "PP3.2-cost-3",
+      "claim_text": "FOMEMA 18-day window breach: Auditor General 2018 documented >11,000 workers exceeding 30-day window; re-draw logistics a contributing factor",
+      "sources": ["https://codeblue.galencentre.org/2023/02/improving-medical-screening-in-view-of-the-foreign-worker-employment-relaxation-plan-jason-loh-juhi-todi/"],
+      "source_categories": ["secondary-trade"],
+      "score": "Medium",
+      "override": "chain-of-citations — Auditor General 2018 is primary-gov accessed via CodeBlue trade press; scores Medium as secondhand primary-gov; the re-draw logistics attribution is inferential, not directly from AG report"
+    },
+    {
+      "claim_id": "PP3.2-assumed-5",
+      "claim_text": "Re-draw requirement extends report delivery by 1-7 days per affected employee in on-site MCU",
+      "sources": [],
+      "source_categories": [],
+      "score": "Low",
+      "override": "ASSUMED-5 tag — explicitly marked assumed"
+    },
+    {
+      "claim_id": "PP3.2-freq-1",
+      "claim_text": "Global pooled blood specimen rejection rate 1.99% (95% CI 1.73-2.25) across 48 studies; Asia pooled 2.82% (95% CI 2.21-3.43)",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC9792348/"],
+      "source_categories": ["primary-academic"],
+      "score": "Medium",
+      "override": "single primary-academic — systematic review covering 48 studies; counts as 1 source by chain-of-citations rule; Medium"
+    },
+    {
+      "claim_id": "PP3.2-freq-2",
+      "claim_text": "UiTM Medical Specialist Centre Malaysia (2019, n=32,726): 3.31% rejection rate; clotted samples 36.6% leading cause; duplicate requests 22.9%; insufficient volume 16.9%",
+      "sources": ["https://ebpj.e-iph.co.uk/index.php/EBProceedings/article/view/2104"],
+      "source_categories": ["primary-academic"],
+      "score": "Medium",
+      "override": "single primary-academic — Malaysia-specific data point; qualifies for Medium"
+    },
+    {
+      "claim_id": "PP3.2-freq-3",
+      "claim_text": "Malaysia haematology laboratory study: 44.81% of rejections from clots, 36.24% from haemolysis; combined >80% of rejections addressable at pre-analytical stage",
+      "sources": ["https://journal.unisza.edu.my/ajmb/index.php/ajmb/article/view/723"],
+      "source_categories": ["primary-academic"],
+      "score": "Medium",
+      "override": "single primary-academic — Malaysia-specific haematology journal; qualifies for Medium"
+    },
+    {
+      "claim_id": "PP3.2-freq-4",
+      "claim_text": "Malaysian hospital sample rejection consistently 2-4x above MSQH target of <1% monthly",
+      "sources": ["https://ebpj.e-iph.co.uk/index.php/EBProceedings/article/view/2104", "https://journal.unisza.edu.my/ajmb/index.php/ajmb/article/view/723"],
+      "source_categories": ["primary-academic", "primary-academic"],
+      "score": "Medium",
+      "override": "2 independent primary-academic sources — both Malaysia-based; High requires ≥1 gov/multilateral (MSQH standard cited but no primary MSQH document URL provided); Medium"
+    },
+    {
+      "claim_id": "PP3.2-freq-5",
+      "claim_text": "Preanalytical errors account for 60-70% of all laboratory errors; direct cost 0.2-1.2% of total hospital operating costs",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC9514066/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC10456202/"],
+      "source_categories": ["primary-academic", "primary-academic"],
+      "score": "Medium",
+      "override": "2 independent primary-academic sources — both PMC peer-reviewed; qualifies for Medium; High requires ≥1 gov/multilateral (not met)"
+    },
+    {
+      "claim_id": "PP3.2-freq-6",
+      "claim_text": "TAT extension from re-collection: average 108 minutes in US outpatient lab study; in MCU batch context extension may be measured in days",
+      "sources": ["https://www.sciencedirect.com/science/article/abs/pii/S0009898116302078"],
+      "source_categories": ["primary-academic"],
+      "score": "Low",
+      "override": "ASSUMED extrapolation — the 108-min TAT figure from US outpatient lab is directly sourced (Medium), but the MCU-batch-context inference (days not hours) is marked [ASSUMED-5] and has no source; the critical operative claim is the extrapolation, scored Low"
+    },
+    {
+      "claim_id": "PP3.2-freq-7",
+      "claim_text": "Specimen rejection systematic review leading causes: clotted 32.23%, haemolysis 22.87%, insufficient volume 22.81%",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC9792348/"],
+      "source_categories": ["primary-academic"],
+      "score": "Medium",
+      "override": "single primary-academic — same systematic review as PP3.2-freq-1; chain-of-citations: same source, counts once; Medium"
+    },
+    {
+      "claim_id": "PP3.2-freq-8",
+      "claim_text": "FOMEMA 3,100+ panel clinics, 140 labs (restatement)",
+      "sources": ["https://www.fomema2u.com.my/employer-agency/frequent-asked-questions-and-forms/foreign-workers-medical-examination/"],
+      "source_categories": ["secondary-press-release"],
+      "score": "Low",
+      "override": "single operator-site source — same as VC-MS-7"
+    },
+    {
+      "claim_id": "PP3.2-assumed-6",
+      "claim_text": "MCU vendors would pay $0.10-$0.50 per sample drawn for a point-of-collection QA tool",
+      "sources": [],
+      "source_categories": [],
+      "score": "Low",
+      "override": "ASSUMED-6 tag — explicitly marked assumed; willingness-to-pay with zero sourcing"
+    },
+    {
+      "claim_id": "PP3.3-assumed-7",
+      "claim_text": "No-show rate for corporate in-clinic MCU (executive tier) is 5-15%, lower than GP general population (15-30%)",
+      "sources": [],
+      "source_categories": [],
+      "score": "Low",
+      "override": "ASSUMED-7 tag — explicitly marked assumed"
+    },
+    {
+      "claim_id": "PP3.4-assumed-8",
+      "claim_text": "Average MCU vendor sales cycle for new >500-employee corporate account is 4-8 weeks for bespoke packages vs 1-2 weeks for standardized",
+      "sources": [],
+      "source_categories": [],
+      "score": "Low",
+      "override": "ASSUMED-8 tag — explicitly marked assumed"
+    }
+  ],
+  "override_triggers": [
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "claim_count": 5,
+      "claim_ids": ["VC-MS-1", "VC-MS-2", "VC-MS-3", "PP3.1-cost-5"],
+      "note": "Grand View Research is a paid aggregator; all GVR-sourced market size figures auto-Low regardless of number of GVR URLs cited"
+    },
+    {
+      "override": "vendor-marketing-override",
+      "claim_count": 5,
+      "claim_ids": ["VC-MS-11", "VC-MS-13", "PP3.1-freq-2", "PP3.1-freq-8"],
+      "note": "Prodia scale/revenue from prodia.co.id; LlamaIndex capability from llamaindex.ai — vendor marketing pages describing their own products/scale"
+    },
+    {
+      "override": "assumed-tag-auto-low",
+      "claim_count": 8,
+      "claim_ids": ["VC-S2a2-1", "VC-S2b2-3", "VC-S2b3-3", "PP3.1-assumed-4", "PP3.2-assumed-5", "PP3.2-assumed-6", "PP3.3-assumed-7", "PP3.4-assumed-8"],
+      "note": "All ASSUMED-N tagged claims auto-Low per rubric"
+    },
+    {
+      "override": "single-trade-source-operating-cost",
+      "claim_count": 4,
+      "claim_ids": ["VC-S2b3-5", "PP3.1-cost-1", "PP3.1-cost-2", "PP3.1-cost-4"],
+      "note": "Operating cost / salary figures sourced only from job aggregators (JobStreet, Indeed) or trade blog (rovinghealth); BPS wage data or DOSM salary survey not cited"
+    },
+    {
+      "override": "no-citation",
+      "claim_count": 5,
+      "claim_ids": ["VC-S2a1-1", "VC-S2b1-1", "VC-S2b2-2", "VC-S2b3-6", "VC-S2b4-1"],
+      "note": "Operational assertions with zero sources cited"
+    },
+    {
+      "override": "chain-of-citations-secondhand-primary-gov",
+      "claim_count": 2,
+      "claim_ids": ["VC-S2a2-3", "PP3.2-cost-3"],
+      "note": "Malaysia Auditor General 2018 accessed via CodeBlue trade press; scored Medium (not High) as secondhand primary-gov"
+    },
+    {
+      "override": "apac-as-proxy-or-geography-mismatch",
+      "claim_count": 3,
+      "claim_ids": ["VC-S2b3-4", "PP3.2-cost-1", "PP3.2-cost-2"],
+      "note": "JAMIA 2019 is US-based (extrapolated to ID/MY admin context); Turkey 2022 and US re-collection costs applied to ID/MY MCU context without local cost calibration"
+    }
+  ],
+  "weak_claims_to_deep_research": [
+    {
+      "claim_id": "VC-S2b3-3 / PP3.1-assumed-3",
+      "claim_text": "Per-employee manual collation time for multi-source MCU results is 15-30 minutes — foundational basis for the 250-500 staff-hours per 1,000-employee campaign estimate that underpins all PP3.1 direct cost calculations",
+      "current_sources": [],
+      "current_score": "Low",
+      "issue": "ASSUMED-3 tag; zero direct sourcing; this is the single most load-bearing assumption in PP3.1 — the entire $445-$1,395 per 1,000-employee labor cost estimate flows from it; no time-motion study for Indonesian or Malaysian MCU admin found",
+      "suggested_action": "Search for time-motion studies on clinical document processing or medical records reconciliation in Southeast Asia; search 'medical records reconciliation time per document Indonesia OR Malaysia'; alternatively search 'laboratory result aggregation manual time healthcare Asia' in PubMed/Google Scholar; the JAMIA 2019 article (PMC10629084) and Roving Health figure of 8-12 min/document can be cross-referenced if a second independent source on document-processing time in clinical admin is found",
+      "suggested_source_types": ["primary-academic (time-motion study in SEA clinical setting)", "primary-association (PAFI Indonesia, Malaysian Medical Association operational data)", "primary-consultancy (McKinsey/Deloitte healthcare ops benchmarks)"],
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC-S2b3-5 / PP3.1-cost-1",
+      "claim_text": "Indonesian MCU admin/medical records salary IDR 5-6M/month used to calculate direct labor cost of collation ($309-$370/month; ~$1.78-$2.14/hr effective) — note: source cited is JobStreet GP salary page, not admin/records staff salary",
+      "current_sources": ["https://id.jobstreet.com/career-advice/role/general-practitioner/salary"],
+      "current_score": "Low",
+      "issue": "Single job-aggregator source; source URL is for GP (doctor) salary not admin/records staff; methodology gap is double: wrong occupational category AND non-official source; BPS Sakernas publishes sector-level wage data that would resolve this with primary-gov authority",
+      "suggested_action": "Fetch BPS Indonesia wage/salary data for health sector workers: search 'BPS Indonesia rata-rata upah buruh kesehatan 2023 2024' or navigate to https://www.bps.go.id/en/statistics-table/2/MTA5MSMy/average-wages-employees.html for sector breakdown; alternatively search 'Kemnaker Indonesia upah minimum tenaga administrasi rumah sakit 2024' for health-sector admin wage floors; DOSM Malaysia publishes equivalent at https://www.dosm.gov.my/v1/index.php?r=column/cthemeByCat&cat=111",
+      "suggested_source_types": ["primary-gov (BPS Indonesia wage survey)", "primary-gov (DOSM Malaysia salary survey)", "primary-ministry (Kemnaker minimum wage gazette for health sector)"],
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC-MS-5",
+      "claim_text": "Permenaker 02/1980: all formal employers must conduct periodic worker health exams at least annually — critical regulatory claim establishing the entire MCU mandate foundation for Indonesia corporate health market",
+      "current_sources": ["https://legalcentric.com/content/view/98665", "https://smartcolaw.com/2017/08/04/companys-obligation-to-carry-out-periodic-medical-examination-for-its-employee/"],
+      "current_score": "Low",
+      "issue": "Both sources are legal commentary blogs (legalcentric.com, smartcolaw.com), not the actual Permenaker gazette or Ministry of Manpower (Kemnaker) publication; the regulatory claim is foundational — if Permenaker 02/1980 does not say what is claimed (or has been superseded), the entire Indonesia MCU mandate argument is undermined; PP 50/2012 is also referenced in the text but not directly cited",
+      "suggested_action": "Search for the actual Permenaker 02/1980 gazette via JDIH Kemnaker (https://jdih.kemnaker.go.id/) or JDIH BPK (https://peraturan.bpk.go.id/); search query: 'Permenaker Nomor 2 Tahun 1980 pemeriksaan kesehatan tenaga kerja'; also verify PP 50/2012 K3 provisions at JDIH; a direct Kemnaker or BPK source would elevate this to primary-gov/primary-ministry and High confidence",
+      "suggested_source_types": ["primary-ministry (JDIH Kemnaker gazette — Permenaker 02/1980 full text)", "primary-ministry (JDIH BPK — PP 50/2012 K3 provisions)", "primary-gov (Kemnaker annual report citing compliance mandate)"],
+      "priority": "high"
+    }
+  ],
+  "high_tier_claims_with_evidence": [],
+  "evidence_quote_gaps": [],
+  "stage_flags": [
+    {
+      "flag": "Stage <3 quantified metrics — Data gap",
+      "note": "Per rubric, all claims in Stage 3 (index <3 means stages numbered from 0 — however this is Stage 3 in content, not sub-stage) are not auto-capped; flag does not apply as this is Stage 3 content-wise; no automatic cap triggered"
+    },
+    {
+      "flag": "Zero High-confidence claims",
+      "note": "No claim in this stage meets the High threshold (3+ independent sources with ≥1 primary, OR 2+ with ≥1 gov/multilateral). The highest-quality evidence clusters (PP3.2 sample rejection data with 2 Malaysia-specific academic sources) reaches only Medium. The PP3.1 cost case rests on three ASSUMED-tagged claims and job-aggregator salary data."
+    },
+    {
+      "flag": "Foundational cost model is assumption-dependent",
+      "note": "The PP3.1 primary cost argument ('250-500 staff-hours per 1,000-employee campaign at $445-$1,395') is constructed from ASSUMED-3 (collation time) × JobStreet salary data — both Low. The error-cost layer ($33,300-$48,100) requires the JAMIA 3.7% rate (Medium, US-context) × rovinghealth $45-65/incident (Low, trade blog, US-context). The entire PP3.1 cost model is anchored in Low-confidence inputs."
+    },
+    {
+      "flag": "Vendor scale claims unverified",
+      "note": "Prodia OHI's '500,000 employees/year' and '>2,000 companies' figures, cited multiple times as evidence of market scale, are sourced exclusively from Prodia's own marketing pages. No audited IDX filing or independent verification cited. These figures should be treated as marketing claims only."
+    }
+  ],
+  "gate_decision_recommendation": "re-run-recommended",
+  "gate_reasoning": "Stage 3 scores 0% High, 43% Medium, 57% Low across 60 claims. The most critical deficiencies are structural: (1) the entire PP3.1 direct cost model rests on ASSUMED-3 (collation time, zero sourcing) and job-aggregator salary data rather than BPS/DOSM wage surveys, making the '250-500 staff-hours' and '$445-$1,395 per campaign' figures unverifiable; (2) market size anchors (Indonesia USD 656M, Malaysia USD 284M) come exclusively from Grand View Research, an auto-downgrade aggregator with no crossvalidation from MOH health expenditure statistics, IFC private health market reports, or World Bank health financing data; (3) the foundational regulatory claim (Permenaker 02/1980 mandating annual MCU for all formal employers) cites only legal commentary blogs rather than the JDIH Kemnaker gazette; (4) Prodia scale figures (500K employees, >2,000 companies) used repeatedly as evidence of market scale are sourced entirely from Prodia's own marketing pages. PP3.2 is in better shape — Malaysia-specific academic data on sample rejection rates is solid at Medium — but even PP3.2's cost-per-incident figures are transplanted from Turkey and US studies without local calibration. Deep research should prioritize: BPS/DOSM wage data for admin staff, JDIH Kemnaker for Permenaker 02/1980 text, a time-motion study or clinical document processing benchmark for collation time, and a World Bank or ADB source to crossvalidate market sizing."
+}

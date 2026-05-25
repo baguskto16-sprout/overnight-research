@@ -1,0 +1,38 @@
+RUN COMPLETE — 2026-05-25-0427
+Phase: 1 (unattended-Playwright)
+Topic: AI Process Efficiency in Healthcare Back-Office (Indonesia & Malaysia)
+Started:   2026-05-25T04:27Z
+Completed: 2026-05-25T11:05Z (approx)
+Runtime:   ~6h 38min
+
+Mode:                sandbox
+Output directory:    ./output/raw-claude-overnight/2026-05-25-0427/
+Stages tracer-fired: 6 of 6
+Pain points written: 19 across 6 stages (4 + 3 + 2 + 4 + 4 + 3, includes 1 unexpected)
+Root causes:         ~86 total
+Unique sources:      ~150 URLs across the corpus
+Gate decision:       Re-run-recommended (84.3% Low on 300 scored claims)
+Gate marker file:    re-run-recommended.md
+
+Canonical artifacts:
+- raw-claude-value-chain-ai-process-efficiency-healthcare-id-my.md  (~192 KB)
+- raw-claude-pain-points-ai-process-efficiency-healthcare-id-my.md  (~259 KB)
+- raw-claude-summary-ai-process-efficiency-healthcare-id-my.md
+- FINAL-REPORT.html (Wright-branded, 8-page A4 print-ready, ~1.9 MB inline wordmark)
+
+Audit trail:
+- pass-0-plan.md
+- pass-1-drafts/ (12 files: VC + PP per stage)
+- pass-2-validation/stage-{1..6}.json + cross-stage.json
+- pass-2-critics/critic-{dialectic,depth,width,instruction}.json
+- pass-3-deep-research/ (8 weak claims re-researched)
+- stages-validated/stage-{1..6}.md
+- cross-stage-observations.md
+- checkpoint.json
+
+Phase 2 handoff:
+- 5 [NEEDS-ATTENDED-FETCH] URLs catalogued for Playwright MCP enrichment
+- See raw-claude-summary for the explicit list
+
+NO further action by Phase 1 orchestrator.
+Phase 2 orchestrator (separate process) handles Playwright enrichment.

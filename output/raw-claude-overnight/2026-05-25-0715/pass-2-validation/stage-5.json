@@ -1,0 +1,327 @@
+{
+  "context": "per-stage",
+  "stage": 5,
+  "stage_name": "Existing Preventive / CDM Delivery Landscape — Indonesia Tier-1 & Tier-2 Cities",
+  "run_id": "2026-05-25-0715",
+  "scored_at": "2026-05-25",
+  "artifacts_scored": [
+    "pass-1-drafts/stage-5-value-chain.md",
+    "pass-1-drafts/stage-5-pain-points.md"
+  ],
+  "total_claims_scored": 92,
+  "scoring_distribution": {
+    "high":   { "count": 23, "percent": "25.0%" },
+    "medium": { "count": 18, "percent": "19.6%" },
+    "low":    { "count": 51, "percent": "55.4%" }
+  },
+  "source_diversity": {
+    "total_unique_domains": 31,
+    "primary_gov": 0,
+    "primary_multilateral": 0,
+    "primary_ministry": 0,
+    "primary_consultancy": 1,
+    "primary_filing": 2,
+    "primary_association": 0,
+    "primary_academic": 9,
+    "primary_standards": 0,
+    "primary_interview": 0,
+    "primary_legal": 0,
+    "secondary_trade": 9,
+    "secondary_news": 5,
+    "secondary_market_research": 7,
+    "secondary_press_release": 0,
+    "auto_low_vendor": 4,
+    "auto_low_aggregator_marketplace": 0,
+    "diversity_floor_8_distinct_primaries": "PASS — 12 distinct primary-tier sources (9 unique academic journals/papers + 2 primary filings [SRAJ AR, Prodia AR] + 1 primary-consultancy [Bain]); however 0 government-statistics and 0 multilateral-agency sources across the full stage"
+  },
+  "override_triggers": [
+    {
+      "override": "vendor-marketing-auto-low",
+      "claim_count": 5,
+      "claim_ids": ["VC5.17","VC5.25","PP5.4-freq2","VC5.2 (partial — siloamhospitals.com/mcu)","VC5.4 (partial — siloam MCU product page)"],
+      "note": "ramsaysimedarby.co.id (claims about Ramsay Sime Darby's own services); prodia.co.id/en/prodia-health-care (PHC service menu claims about Prodia's own CDM offering); naluri.life/news-and-reports/* (two Naluri press releases used to evidence Naluri's own corporate expansion — BNI launch, H&M partnership). These auto-Low regardless of number of pages cited."
+    },
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "claim_count": 4,
+      "claim_ids": ["VC5.39","VC5.40","VC5.26","PP5.3-cost1 (partial Grand View)"],
+      "note": "grandviewresearch.com (Indonesia health check-up market USD 656.2M, CAGR 9.9%) and thereportcubes.com/insights10.com (private hospital market USD 21.8B–44.7B) are explicitly listed auto-downgrade aggregators. mordorintelligence.com (Bio Medika/Pramita/Cito secondary players, fragmentation claim) is Mordor — auto-downgrade. All → Low regardless of other corroboration absent."
+    },
+    {
+      "override": "trade-press-only",
+      "claim_count": 8,
+      "claim_ids": ["VC5.3","VC5.13","VC5.20","VC5.29","VC5.30","PP5.2-cost3","PP5.2-freq4","PP5.2-RC4"],
+      "note": "SILO payer mix 82/18 sourced solely from Ciptadana brokerage report. HEAL payer mix 73–79% JKN sourced from RHB TradesSmart sell-side. Klinik Pintar $5M round sourced from TechNode alone (no Form D filed publicly or VentureCapital database cited). Alodokter 30M MAUs and profitability from DailySocial only. WhiteCoat/Good Doctor acquisition details from TechNode only. Indonesia 26.4% SEA telehealth share from TechNode reporting WhiteCoat PR. Post-COVID MAU metrics / platform retention from DailySocial + TechNode. Funding-cycle incentive analysis from DailySocial + 2x TechNode. Multiple URLs from same publication family counted as 1 source."
+    },
+    {
+      "override": "assumed-tag",
+      "claim_count": 11,
+      "claim_ids": ["VC5.5 [ASSUMED-1]","VC5.9 [ASSUMED-6 partial]","VC5.21 [ASSUMED-2]","VC5.24 [ASSUMED-3]","VC5.32 [ASSUMED-5]","VC5.42 [ASSUMED-7]","PP5.1-assumed1 [ASSUMED-1]","PP5.2-cost1 [ASSUMED-2]","PP5.3-cost2 [ASSUMED-3]","PP5.4-cost2 [ASSUMED-5]","PP5.4-cost3 [ASSUMED-6]"],
+      "note": "All 11 ASSUMED-tagged claims are auto-Low per rubric. Notably PP5.4-assumed7 (WTP Rp 2–5M/month for CDM subscription) and PP5.3-RC4 (GP workforce scarcity for affluent CDM) are also ASSUMED — added to Low count but not explicitly ASSUMED-tagged in the text."
+    },
+    {
+      "override": "outdated-source",
+      "claim_count": 2,
+      "claim_ids": ["PP5.3-freq4","VC5.4"],
+      "note": "PubMed 21063040 (Jakarta MetS 28.4%) is 2006 data — >3 years old, >2 years stale. Draft itself notes 'likely higher given obesity trends since 2006' but cites no recent update. Ciptadana 2024 report citing Siloam 2021-2022 per-visit revenue is also stale data (2021-2022 figures, >2 years old for a 2024/2025 analysis)."
+    },
+    {
+      "override": "apac-as-proxy",
+      "claim_count": 2,
+      "claim_ids": ["PP5.2-freq2","VC5.28 (partial)"],
+      "note": "Bain 2024 APAC Front Line of Healthcare: '91% of APAC consumers prefer a single touchpoint' used as evidence for Indonesian consumer preference without Indonesia-disaggregated breakdown. Also: Bain's Halodoc MAU figure (20M+ MAUs) is Indonesia-specific but the '3x cheaper' teleconsultation claim is APAC-aggregate. Capped at Medium for these claims; Geography-mismatch flag applied."
+    },
+    {
+      "override": "single-domain-capped",
+      "claim_count": 5,
+      "claim_ids": ["VC5.6","VC5.7","VC5.8","VC5.11","VC5.38"],
+      "note": "All MIKA financial metrics (revenue, EBITDA margin, outpatient volume, payer mix, inpatient share) sourced exclusively from KB Valbury Securities company report — a single brokerage-research document. Single-domain override applies even if multiple data points extracted from same PDF. All → Low. The underlying MIKA IDX annual report for FY2024 is not directly cited anywhere in the Stage 5 drafts."
+    },
+    {
+      "override": "single-source-secondary-news",
+      "claim_count": 4,
+      "claim_ids": ["VC5.1","VC5.2","VC5.12","PP5.1-RC2"],
+      "note": "Siloam FY2024 results (revenue, EBITDA, OPD visits, hospital count) sourced from ANTARA News alone — secondary-news wire reporting on earnings; IDX annual report not directly cited. Hermina FY2024 results from IDNFinancials alone — secondary-news. SatuSehat 43% adoption figure cross-referenced from Stage 4 without a primary Ministry of Health or government source in Stage 5. Single secondary source → Low."
+    }
+  ],
+  "weak_claims_to_deep_research": [
+    {
+      "claim_id": "VC5.6 / VC5.7 / VC5.8 / VC5.11 / VC5.38 / PP5.3-freq2",
+      "claim_text": "MIKA FY2024 revenue Rp 4.87T (+14.3%), EBITDA margin 37.7%, outpatient revenue Rp 1.612T, outpatient visits 4.154M (+5.2%), private payer 85.2%, inpatient 67% of revenue — sourced only from KB Valbury Securities sell-side brokerage report.",
+      "current_sources": ["https://www.kbvalbury.com/cfind/source/files/mika-after-fy24-results.pdf"],
+      "current_score": "Low",
+      "issue": "single-domain sell-side brokerage; no IDX annual report or audited filing cited; single-domain override applies; MIKA's FY2024 Annual Report (available at investor.mitrakeluarga.com) would qualify as primary-filing and lift all derived claims to High",
+      "suggested_action": "Fetch MIKA FY2024 Annual Report PDF directly from IDX: https://www.idx.co.id/en/listed-companies/company-filings/?kodeEmiten=MIKA — look for 'Laporan Tahunan 2024' or 'Annual Report 2024'. Alternative: investor.mitrakeluarga.com investor relations page. Confirm revenue breakdown, EBITDA, payer mix, and outpatient volume from the audited consolidated financial statements.",
+      "deep_research_question": "What are MIKA (Mitra Keluarga) FY2024 audited financials — total revenue, inpatient vs outpatient breakdown, EBITDA margin, private vs JKN payer mix, and outpatient visit count — per the IDX-filed Annual Report 2024?",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC5.1 / VC5.2 / PP5.1-freq1 (Siloam component)",
+      "claim_text": "Siloam FY2024 net revenue Rp 12.2T, EBITDA Rp 2.76T, net profit Rp 950B, outpatient 4.24M visits (+7.5%), 41 hospitals, 73 clinics — sourced from ANTARA News wire (secondary-news) only; IDX annual report or investor press release not directly cited.",
+      "current_sources": ["https://www.antaranews.com/berita/4891897/siloam-hospitals-cetak-laba-rp122-triliun-pada-2024"],
+      "current_score": "Low",
+      "issue": "single secondary-news source; IDX primary filing (SILO annual report or investor press release) not cited; Siloam IR page (siloamhospitals.com/tentang-kami/hubungan-investor) should have FY2024 press release or Annual Report as primary-filing",
+      "suggested_action": "Fetch Siloam FY2024 investor press release or Annual Report from IDX: https://www.idx.co.id/en/listed-companies/company-filings/?kodeEmiten=SILO or from https://www.siloamhospitals.com/tentang-kami/hubungan-investor. Confirm revenue, EBITDA, OPD visit count, hospital network size from the primary IDX disclosure, not the news wire.",
+      "deep_research_question": "What are Siloam International Hospitals (IDX: SILO) FY2024 audited financial results — net revenue, EBITDA, net profit, outpatient visit count, hospital and clinic network count — per the IDX-filed annual report or investor press release?",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP5.1-cost3 / PP5.1-freq4 / PP5A-finding",
+      "claim_text": "JKN accumulated $2.17B deficit by 2023 with NCD hospitalisation driving claims; KBK performance-based capitation achieves only 4.1% of chronic disease control target vs 5% benchmark — sourced exclusively from ThinkWell policy brief (secondary-trade).",
+      "current_sources": ["https://thinkwell.global/wp-content/uploads/2025/09/KBK-brief-md_final.pdf"],
+      "current_score": "Low",
+      "issue": "ThinkWell is a policy consulting firm, not a primary-tier source (not MOH, BPJS, OJK, or World Bank); single secondary-trade source for two high-impact quantified metrics used in root-cause analysis; KBK target-achievement rate and JKN deficit are critical to the incentive-misalignment argument",
+      "suggested_action": "Search BPJS Kesehatan Laporan Pengelolaan Program (annual programme report) at bpjs-kesehatan.go.id for JKN deficit figure and NCD claims growth. Also search Kementerian Kesehatan (Ministry of Health Indonesia) or WHO Indonesia country office for KBK/capitation performance data. Query: 'BPJS Kesehatan laporan keuangan 2023 defisit' or 'KBK kinerja penyakit kronis 2023 Indonesia Ministry of Health'.",
+      "deep_research_question": "What is the primary government or multilateral source (BPJS Kesehatan annual report, Ministry of Health Indonesia, World Bank, or WHO Indonesia) documenting (a) JKN's financial deficit through 2023 and (b) KBK performance-based capitation's chronic disease control achievement rate vs the 5% benchmark?",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC5.12 / VC5.13",
+      "claim_text": "Medikaloka Hermina (HEAL) FY2024 net revenue Rp 6.72T (+16.1%), net profit Rp 535.9B (+22.5%), 52 hospitals; FY2023 OPD 8.0M visits, BOR 71%, JKN payer mix 73–79% — sourced from IDNFinancials (secondary-news) and RHB TradesSmart sell-side (secondary-market-research).",
+      "current_sources": [
+        "https://www.idnfinancials.com/heal/pt-medikaloka-hermina-tbk",
+        "https://research.rhbtradesmart.com/files_preview?hash=f02b3029-c611-44cd-b430-ac154ccebba5"
+      ],
+      "current_score": "Low",
+      "issue": "IDX-listed company with annual reports filed at idx.co.id; both cited sources are secondary (news aggregator and sell-side broker); HEAL's FY2024 annual report or investor press release would provide primary-filing evidence; also note FY2023 volume data used for a FY2024 section — outdated-source risk",
+      "suggested_action": "Fetch Hermina (HEAL) FY2024 Annual Report or investor press release from IDX: https://www.idx.co.id/en/listed-companies/company-filings/?kodeEmiten=HEAL or from investor.hermina.co.id. Confirm FY2024 revenue, hospital count, OPD volume, and JKN payer mix from the primary IDX disclosure.",
+      "deep_research_question": "What are Medikaloka Hermina (IDX: HEAL) FY2024 audited financial results — net revenue, net profit, hospital count, outpatient visit volume, and BPJS vs private payer mix — per the IDX-filed Annual Report 2024?",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "PP5.2-freq2 / VC5.28 (APAC-proxy)",
+      "claim_text": "'91% of APAC consumers prefer a single touchpoint for managing their health' (Bain 2024) used as Indonesia-specific evidence for consumer preference and as support for the individual-membership CDM white-space argument.",
+      "current_sources": ["https://www.bain.com/insights/asia-pacific-front-line-of-healthcare-2024/"],
+      "current_score": "Medium (APAC-proxy flag; geography mismatch)",
+      "issue": "APAC-as-proxy for Indonesia: the 91% figure is APAC-aggregate across multiple markets; Indonesia-specific disaggregation not confirmed. The Bain report covers Indonesia as one of the surveyed markets but the 91% may not apply specifically to Indonesia. Geography-mismatch flag required; capped at Medium.",
+      "suggested_action": "Fetch the full Bain 2024 APAC Front Line of Healthcare report to check whether Indonesia-specific single-touchpoint preference data is available. Also check: IFC/World Bank 'Digital Health in Indonesia' country note, or ThinkWell 'Mapping Telemedicine in Indonesia' (already cited as source 19) for Indonesia-specific consumer preference survey data. Query: 'Indonesia consumer health preference survey 2023 2024 single provider touchpoint chronic disease'.",
+      "deep_research_question": "Is there an Indonesia-specific (not APAC-aggregate) consumer survey showing preference for a single touchpoint or integrated healthcare provider — disaggregated from Bain's APAC Front Line of Healthcare 2024 survey, or from an independent Indonesian health consumer study?",
+      "priority": "medium"
+    }
+  ],
+  "high_tier_claims_with_evidence": [
+    {
+      "claim_id": "VC5.22 / VC5.23",
+      "claim_text": "Prodia Widyahusada FY2024 net revenue Rp 2.25T (+1.3%), net profit Rp 270.2B (+3.97%), 354 active outlets in 80 cities and 107 kabupaten across 34 provinces; B2C 58% of revenue, corporate 5%, esoteric testing 21.86%.",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "evidence_quote_gaps": [
+        {
+          "reason": "Prodia AR 2024 PDF hosted at d3ftma7dyyzt91.cloudfront.net; not in .claude/cache/sources/; PDF binary not re-fetched in this validation pass. Source is IDX annual report filing — primary-filing classification confirmed by IDX: PRDA listing. [NEEDS-ATTENDED-FETCH] to extract verbatim page-level quote."
+        }
+      ]
+    },
+    {
+      "claim_id": "VC5.14 / VC5.15",
+      "claim_text": "Mayapada SRAJ FY2024 revenue Rp 3.2T (+25.8%), outpatient visits 581,775 (+23.2%), MCU patients 31,753, inpatient days 49,669, net loss Rp 23.5B, operating profit Rp 182.5B (+71.8%); MCU Climber and Spesial packages; BMW Astra corporate MCU.",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "evidence_quote_gaps": [
+        {
+          "reason": "SRAJ_Laporan-Tahunan_2024_LKA.pdf hosted at mayapadahospital.com/file/investor/; not in .claude/cache/sources/; PDF binary not re-fetched in this validation pass. Source is IDX annual report — primary-filing classification confirmed. [NEEDS-ATTENDED-FETCH]."
+        }
+      ]
+    },
+    {
+      "claim_id": "VC5.34 / PP5.4-cost1",
+      "claim_text": "Naluri 16-week CDMP for 774 Indonesian employees (2021-2022): active coaching group showed HbA1c mean difference -0.14 (p=0.008), total cholesterol -11.45 mg/dL (p<0.001), HDL +2.14 mg/dL (p<0.001) vs no-coaching control group that deteriorated.",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "evidence_quote_gaps": [
+        {
+          "reason": "PMC article PMC11422728 (JMIR Medical Informatics, 2024) not in .claude/cache/sources/. PMC is open-access; could be fetched. [NEEDS-ATTENDED-FETCH] to extract verbatim abstract/results section quote."
+        }
+      ]
+    },
+    {
+      "claim_id": "PP5.1-cost1 / PP5.3-freq5",
+      "claim_text": "Direct medical cost of T2DM with complications in Indonesia averages $930/patient/year vs $421 without complications (2.2x differential); 56% of total cost attributable to hospitalisation ($521 complicated vs $236 uncomplicated per patient per year).",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "evidence_quote_gaps": [
+        {
+          "reason": "Value in Health Regional Issues article (DOI: S2212-1099(21)00072-8) is a peer-reviewed journal article; not in cache. Elsevier journal — may be paywalled. [NEEDS-ATTENDED-FETCH]."
+        }
+      ]
+    },
+    {
+      "claim_id": "PP5.1-cost2 / PP5.4-freq3",
+      "claim_text": "Indonesia diabetes patients: 18.69 million in 2020, projected to 40.7 million by 2045.",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "evidence_quote_gaps": [
+        {
+          "reason": "Scientific Reports article s41598-024-54563-2 is open-access at nature.com; not in .claude/cache/sources/. [NEEDS-ATTENDED-FETCH] to extract verbatim projection figures."
+        }
+      ]
+    },
+    {
+      "claim_id": "PP5.1-freq2",
+      "claim_text": "Fewer than 20% of patients with DM and/or hypertension in Indonesia are well-controlled as reported by the 2023 National Health Survey.",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "evidence_quote_gaps": [
+        {
+          "reason": "PMC12852415 (Frontiers in Health Services, 2025) not in cache. Open-access PMC article. [NEEDS-ATTENDED-FETCH]."
+        }
+      ]
+    },
+    {
+      "claim_id": "PP5.1-freq3",
+      "claim_text": "Only 32.0% of Indonesian diabetes patients achieved HbA1c <7% in 2023; fewer than 5% met all composite behavioural-clinical targets (Lancet Regional Health – Western Pacific analysis 2013-2023).",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "evidence_quote_gaps": [
+        {
+          "reason": "PMC12681878 (Lancet Regional Health, 2025) not in cache. Open-access PMC. [NEEDS-ATTENDED-FETCH]."
+        }
+      ]
+    },
+    {
+      "claim_id": "PP5.2-freq3",
+      "claim_text": "Only a few telemedicine CDM pilots in Indonesia have been embedded in everyday practice; many projects were discontinued at the end of their pilot studies — JMIR 2026 qualitative study.",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "evidence_quote_gaps": [
+        {
+          "reason": "JMIR article e83462 (2026) not in cache. JMIR is open-access. [NEEDS-ATTENDED-FETCH]."
+        }
+      ]
+    },
+    {
+      "claim_id": "PP5.2-freq5",
+      "claim_text": "48.2% of healthcare providers in Jakarta primary care always adhered to national DM/HTN management guidelines; 35.7% only frequently; 28.6% rarely conducted kidney function monitoring for diabetic patients.",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "evidence_quote_gaps": [
+        {
+          "reason": "PMC12852415 (Frontiers in Health Services, same as PP5.1-freq2) not in cache. [NEEDS-ATTENDED-FETCH]."
+        }
+      ]
+    },
+    {
+      "claim_id": "PP5.2-RC2 / PP5.2-RC3",
+      "claim_text": "Digital health platforms' physician workforce is shift-based and lacks named-GP longitudinal relationships; cardiometabolic CDM requires physical clinical touchpoints (lab, BP monitoring, medication dispensing) that cannot be delivered fully via video call.",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "evidence_quote_gaps": [
+        {
+          "reason": "Bain APAC Front Line of Healthcare 2024 (bain.com) + JMIR e83462 (2026) — both not in cache. Bain report may be gated; JMIR is open-access. [NEEDS-ATTENDED-FETCH] for both."
+        }
+      ]
+    },
+    {
+      "claim_id": "PP5.3-freq1",
+      "claim_text": "Prodia FY2024: 354 active outlets, 80 cities, 107 kabupaten; B2C revenue 58%; PHC wellness clinics listed as offering CDM but zero enrolled-CDM patient count, CDM outcome data, or CDM revenue line disclosed in FY2024 IDX annual report.",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "evidence_quote_gaps": [
+        {
+          "reason": "Prodia AR 2024 PDF — same as VC5.22 gap. [NEEDS-ATTENDED-FETCH]."
+        }
+      ]
+    },
+    {
+      "claim_id": "PP5.3-freq3",
+      "claim_text": "Indonesia diabetes prevalence 11.3% of adults above 15, pre-diabetes 39.2% per 2023 National Health Survey (BMJ Open, Muharram et al., 2025); undiagnosed diabetes 9.0%; urban diabetes 11.5%.",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "evidence_quote_gaps": [
+        {
+          "reason": "PMC12519354 (BMJ Open, 2025) not in cache. Open-access PMC. [NEEDS-ATTENDED-FETCH]."
+        }
+      ]
+    },
+    {
+      "claim_id": "PP5.3-RC1",
+      "claim_text": "Prodia PHC CDM label not supported by disclosed clinical infrastructure: no published GP headcount at PHC, no CDM protocol documentation, no enrolled-patient registry, no outcome reporting in FY2024 AR. Prolanis scoping review confirms structural CDM barriers in Indonesia primary care.",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "evidence_quote_gaps": [
+        {
+          "reason": "Prodia AR 2024 PDF + PMC12538241 (AIMS Public Health Prolanis review, 2025) not in cache. [NEEDS-ATTENDED-FETCH] for both."
+        }
+      ]
+    },
+    {
+      "claim_id": "PP5.4-freq4",
+      "claim_text": "38 peer-reviewed studies on Prolanis (2014-2024) document structural failure: five barrier categories identified; within JKN, 43% of users presenting to hospitals have chronic multimorbidity (AIMS Public Health scoping review, 2025).",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "evidence_quote_gaps": [
+        {
+          "reason": "PMC12538241 (AIMS Public Health) not in cache. Open-access PMC. [NEEDS-ATTENDED-FETCH]."
+        }
+      ]
+    },
+    {
+      "claim_id": "PP5.4-RC4",
+      "claim_text": "No Indonesian private insurer has an outcomes-based CDM payment mechanism for self-pay individuals; the absence of insurer-linked CDM benefit forces pure self-pay subscription model (cross-validated: Lancet Regional Health PP5.1-freq3 + Prolanis scoping review PP5.4-freq4).",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "evidence_quote_gaps": [
+        {
+          "reason": "PMC12681878 + PMC12538241 — both not in cache. [NEEDS-ATTENDED-FETCH]. Note: this is a negative-evidence claim ('no insurer has X') — verbatim quote confirmation requires full text review of both papers plus Stage 4 insurer disclosures."
+        }
+      ]
+    }
+  ],
+  "evidence_quote_gaps": [
+    { "claim_id": "VC5.22/VC5.23", "reason": "Prodia AR 2024 PDF binary; not cached; [NEEDS-ATTENDED-FETCH]" },
+    { "claim_id": "VC5.14/VC5.15", "reason": "SRAJ_Laporan-Tahunan_2024_LKA.pdf binary; not cached; [NEEDS-ATTENDED-FETCH]" },
+    { "claim_id": "VC5.34/PP5.4-cost1", "reason": "PMC11422728 (JMIR Medical Informatics); not cached; open-access; [NEEDS-ATTENDED-FETCH]" },
+    { "claim_id": "PP5.1-cost1/PP5.3-freq5", "reason": "Value in Health Regional Issues S2212-1099(21)00072-8; not cached; may be paywalled Elsevier; [NEEDS-ATTENDED-FETCH]" },
+    { "claim_id": "PP5.1-cost2/PP5.4-freq3", "reason": "Scientific Reports s41598-024-54563-2; not cached; open-access; [NEEDS-ATTENDED-FETCH]" },
+    { "claim_id": "PP5.1-freq2/PP5.2-freq5", "reason": "PMC12852415 (Frontiers in Health Services); not cached; open-access PMC; [NEEDS-ATTENDED-FETCH]" },
+    { "claim_id": "PP5.1-freq3", "reason": "PMC12681878 (Lancet Regional Health); not cached; open-access PMC; [NEEDS-ATTENDED-FETCH]" },
+    { "claim_id": "PP5.2-freq3", "reason": "JMIR e83462 (2026); not cached; open-access; [NEEDS-ATTENDED-FETCH]" },
+    { "claim_id": "PP5.2-RC2/PP5.2-RC3", "reason": "Bain APAC 2024 (gated) + JMIR e83462; neither cached; [NEEDS-ATTENDED-FETCH]" },
+    { "claim_id": "PP5.3-freq1/PP5.3-RC1", "reason": "Prodia AR 2024 PDF + PMC12538241; neither cached; [NEEDS-ATTENDED-FETCH]" },
+    { "claim_id": "PP5.3-freq3", "reason": "PMC12519354 (BMJ Open); not cached; open-access PMC; [NEEDS-ATTENDED-FETCH]" },
+    { "claim_id": "PP5.4-freq4/PP5.4-RC4", "reason": "PMC12538241 + PMC12681878; not cached; [NEEDS-ATTENDED-FETCH]" }
+  ],
+  "notes_on_lek_consulting": "L.E.K. Consulting is NOT included in the rubric's explicit primary-consultancy list (McKinsey, BCG, Bain, Deloitte Insights, PwC Strategy&, EY-Parthenon, KPMG Global, Roland Berger, Oliver Wyman, A.T. Kearney, Bloomberg NEF). Despite being a recognized strategy consultancy, L.E.K. is classified as secondary-trade for rubric-compliance purposes. All L.E.K.-sourced claims capped at Medium at best, Low if single source.",
+  "notes_on_thinkwell": "ThinkWell Global is a global health policy consulting firm, not a primary-tier consultancy per rubric. Classified as secondary-trade. ThinkWell policy briefs are influential in global health circles but are not audited or peer-reviewed; they lack the authorship-imprint standard of the rubric's primary-consultancy list.",
+  "gate_decision_recommendation": "ship-with-flag",
+  "gate_reasoning": "Stage 5 scores 55.4% Low confidence across 92 claims — the highest Low-rate of the stages scored to date (Stage 4 was 65.5%; Stage 5 at 55.4% is marginally better but still majority-Low). The stage is salvaged by a strong academic spine: 9 unique peer-reviewed sources anchor the clinical and epidemiological claims with High confidence, producing 23 High-confidence claims (25%). The primary structural weakness is hospital financial metrics: Siloam (SILO), Mitra Keluarga (MIKA), and Hermina (HEAL) financial figures are all sourced from sell-side brokerage reports and news wires rather than from IDX primary filings — a fixable gap since all three companies' annual reports are publicly available at idx.co.id. A targeted deep-research pass fetching the MIKA FY2024 Annual Report, the SILO FY2024 investor press release, and the HEAL FY2024 Annual Report would lift approximately 12–15 Low claims to High, shifting the distribution materially. Additionally, the KBK/JKN $2.17B deficit and 4.1% target-achievement figures — central to the incentive-misalignment argument — need corroboration from a BPJS Kesehatan annual report or Ministry of Health publication rather than relying solely on the ThinkWell policy brief. Diversity floor passes at 12 distinct primary-tier sources, but 0 government-statistics and 0 multilateral-agency sources is a structural gap for a market-sizing and healthcare-system-characterization stage. Ship with flag; recommend pass-3 deep research targeting the three IDX annual reports and the BPJS/MoH primary source for KBK performance data."
+}

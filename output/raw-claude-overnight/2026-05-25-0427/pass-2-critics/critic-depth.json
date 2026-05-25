@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-05-25T09:30:00Z",
+  "run_id": "2026-05-25-0427",
+  "critic": "depth",
+  "stage_summaries": [
+    {"stage": 1, "total_pps": 4, "pps_with_depth_gaps": 0, "notes": "All 4 PPs carry >=8 citations, >=3 RCs. Source quality flagged by validator."},
+    {"stage": 2, "total_pps": 3, "pps_with_depth_gaps": 2, "notes": "PP2.1 cost anchor = single tier-3 blog; PP2.2 32% RPPT = single tier-1 source no methodology cross-check"},
+    {"stage": 3, "total_pps": 2, "pps_with_depth_gaps": 1, "notes": "PP3.1 cost anchor (250-500 staff-hours per 1000-employee campaign) is ASSUMED-3 zero-source"},
+    {"stage": 4, "total_pps": 3, "pps_with_depth_gaps": 2, "notes": "PP4.1 admin salary URL category mismatch (GP/nurse URLs for admin cost); PP4.3 leakage rate is ASSUMED-8 with SG/FR/JP proxies, zero ID/MY data"},
+    {"stage": 5, "total_pps": 4, "pps_with_depth_gaps": 2, "notes": "PP5.1 ENTIRE frequency case (80/67/99/83/73%) from single CodeBlue trade press survey; PP5.3 auto-adjudication rate from InterPixels vendor blog"},
+    {"stage": 6, "total_pps": 3, "pps_with_depth_gaps": 2, "notes": "PP6.1 system cost = ASSUMED-2 x ASSUMED-3; PP6.3 nurse salary URL for TPA account manager"}
+  ],
+  "thin_spots": [
+    {"pp_id": "PP2.1", "actionable_gap": true, "actionability": "medium", "deficit": "single tier-3 blog as cost anchor"},
+    {"pp_id": "PP2.2", "actionable_gap": true, "actionability": "medium", "deficit": "32% RPPT single primary-ministry source"},
+    {"pp_id": "PP3.1", "actionable_gap": true, "actionability": "medium", "deficit": "ASSUMED-3 zero-source 250-500 staff-hours"},
+    {"pp_id": "PP4.1", "actionable_gap": true, "actionability": "medium", "deficit": "URL category mismatch for admin salary"},
+    {"pp_id": "PP4.3", "actionable_gap": true, "actionability": "high", "deficit": "Zero ID/MY data; SG/FR/JP proxies only for 30-60% leakage"},
+    {"pp_id": "PP5.1", "actionable_gap": true, "actionability": "high", "deficit": "ALL 5 frequency metrics from single CodeBlue n=855 trade press survey"},
+    {"pp_id": "PP5.3", "actionable_gap": true, "actionability": "medium", "deficit": "InterPixels vendor blog for APAC auto-adjudication rate"},
+    {"pp_id": "PP6.1", "actionable_gap": true, "actionability": "low", "deficit": "Compound ASSUMED-2 x ASSUMED-3 for $2.4M-$10.8M/yr system cost"},
+    {"pp_id": "PP6.3", "actionable_gap": true, "actionability": "low", "deficit": "Nurse salary URL for TPA account manager"}
+  ],
+  "summary": {
+    "total_pps_assessed": 19,
+    "thin_spots_found": 9,
+    "high_actionability_gaps": 2,
+    "high_actionability_gap_percent": "22%",
+    "notes": "High gaps: PP5.1 (single CodeBlue survey for entire frequency case) and PP4.3 (no ID/MY data for post-MCU follow-up leakage)"
+  }
+}

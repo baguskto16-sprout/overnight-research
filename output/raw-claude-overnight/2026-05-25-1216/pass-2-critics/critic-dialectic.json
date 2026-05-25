@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-05-25T14:45:00Z",
+  "run_id": "2026-05-25-1216",
+  "critic": "dialectic",
+  "findings_assessed": [
+    {
+      "finding_id": "F1",
+      "finding_summary": "73.2% of Indonesian adults with diabetes are undiagnosed (IDF Diabetes Atlas 2024)",
+      "counter_evidence_found": "partial",
+      "counter_evidence_description": "IDF Atlas methodology note (2025) acknowledges that only 68 of 215 countries had reliable in-country biomarker surveys; Indonesia's data is interpolated from neighboring countries plus partial Riskesdas inputs. SKI 2023 arithmetic (11.7% blood-glucose prevalence vs. 2.2% self-reported diagnosis) implies an even higher undiagnosed rate (~81%). The 73.2% number is conservative methodologically; corporate-workforce-specific undiagnosed rate may differ from general adult population (younger, urban skew).",
+      "actionable_gap": true,
+      "gap_description": "Stage 6 PP 6.1 footnote implies 81% from SKI arithmetic; canonical claim is 73.2%. Reconcile in Stage 6 explicitly.",
+      "recommended_remediation": "Stage 6 footnote should disclose both estimates and explain which is used in cohort model."
+    },
+    {
+      "finding_id": "F2",
+      "finding_summary": "TPAs systematically do not offer condition-level cohort reporting in Indonesia",
+      "counter_evidence_found": "partial",
+      "counter_evidence_description": "HealthMetrics Indonesia (April 2025 launch, formerly Across Asia Assist) markets 'real-time health trends, wellness strategies' as a differentiator. Meditap markets MediLytics. AdMedika has analytics modules. However: no specimen contract was reviewed; no public evidence of ICD-10 condition cohort views as live enterprise feature; these may be marketing positioning rather than delivered product. Stage 2 explicitly notes this partially weakens the absolute version of WH4 framing.",
+      "actionable_gap": false,
+      "gap_description": "Marketing-vs-delivered distinction is acknowledged in corpus; field validation pathway documented."
+    },
+    {
+      "finding_id": "F3",
+      "finding_summary": "Standard MCU panels exclude HbA1c",
+      "counter_evidence_found": "no",
+      "counter_evidence_description": "Cross-verified across Prodia, Kimia Farma Diagnostika, Pramita, Parahita, RSBP Batam, Tzu Chi, Mandaya. HbA1c consistently appears at Executive Female tier (Rp 1.8M+) or as Rp 75-224K add-on. Prodia OHI explicitly advocates adding HbA1c to corporate panels — implicitly confirming current exclusion. No major provider found that includes HbA1c at base tier as default.",
+      "actionable_gap": false
+    },
+    {
+      "finding_id": "F4",
+      "finding_summary": "Productivity loss exceeds direct claims cost (WH3)",
+      "counter_evidence_found": "partial",
+      "counter_evidence_description": "Indonesian published studies (Kristina 2020) report indirect cost at 12% of total (USD 146 of USD 1,208). Soewondo 2013 explicitly: 'There is no published evidence on the indirect costs of diabetes' in Indonesia. ADA 2022 (US) shows presenteeism 6.6x absenteeism (USD 35.8B vs USD 5.4B); applied to Indonesia formal-sector wages would imply USD 300-1,500/year indirect — but this is international transfer, not Indonesia measurement. The WH3 claim is directionally supported but quantitatively model-dependent.",
+      "actionable_gap": true,
+      "gap_description": "Indonesia presenteeism measurement gap is the most challengeable element of CDM ROI case.",
+      "recommended_remediation": "Document explicitly in Stage 6 + summary that 'exceeds direct claims' is modeled via international transfer; primary Indonesia presenteeism study is recommended for next-phase research."
+    },
+    {
+      "finding_id": "F5",
+      "finding_summary": "Annual repricing cycle structurally blocks CDM ROI",
+      "counter_evidence_found": "partial",
+      "counter_evidence_description": "Mandiri Inhealth's capitation managed-care model + IFG Naluri CDM partnership (Dec 2024) is a partial counter-example: capitation aligns insurer + clinic incentives multi-year. However: Mandiri Inhealth serves primarily BUMN segment; the model is not standard in commercial group health market. The general finding holds with Mandiri Inhealth as a documented exception.",
+      "actionable_gap": false
+    },
+    {
+      "finding_id": "F6",
+      "finding_summary": "No insurer has structural CDM programme in Indonesia",
+      "counter_evidence_found": "partial",
+      "counter_evidence_description": "Naluri partnerships with IFG/Mandiri Inhealth (Dec 2024) and Modalku-Mandiri AXA are documented; these are CDM partnerships, not insurer-built. AXA Emma, Prudential PRUWell, Allianz Halodoc-integration are marketing-layer wellness without clinical CDM structure (Stage 3 conclusion). Naluri-Mandiri Inhealth is the strongest counter-example and is documented as a partial crack in the absolute claim.",
+      "actionable_gap": false
+    },
+    {
+      "finding_id": "F7",
+      "finding_summary": "GP-anchored CDM is structurally feasible but currently absent",
+      "counter_evidence_found": "partial",
+      "counter_evidence_description": "Prolanis (BPJS) is GP-anchored CDM that EXISTS — Alkaff 2021 shows HbA1c achievement 53% baseline → 40% at 18 months, meaning Prolanis is operating but with declining adherence. Widyahening 2014 shows GP T2DM protocol adherence 2-45% across specific recommendations. The model is structurally feasible (Prolanis proves it can be done) but adherence is variable. This refines rather than refutes the WH-feasibility claim.",
+      "actionable_gap": false
+    },
+    {
+      "finding_id": "F8",
+      "finding_summary": "Implied corporate burden USD 200-500K/year for 1,000-employee workforce",
+      "counter_evidence_found": "partial",
+      "counter_evidence_description": "Stage 6 final range is USD 150,000-600,000/year. Lower-bound risks: (a) corporate-workforce age skew (typically 25-55, vs national 11.7% prevalence age 15+) means lower diabetes prevalence than general population; (b) IDF undiagnosed rate may be conservative for urban formal-sector workers. Upper-bound risks: (a) presenteeism multiplier from international transfer may not hold; (b) private hospital complication cost Rp 100-400M is industry-knowledge not primary-sourced.",
+      "actionable_gap": true,
+      "gap_description": "Cohort model relies on general-population prevalence applied to corporate workforce; sensitivity analysis on age skew would strengthen.",
+      "recommended_remediation": "Add sensitivity note in Stage 6 PP 6.3: 'corporate workforce age skew may reduce prevalence by 20-30% vs national average; complication rate may be lower in shorter-duration diabetics.'"
+    }
+  ],
+  "summary": {
+    "findings_with_meaningful_counter_evidence": 5,
+    "actionable_gaps": 3,
+    "overall_verdict": "Core findings hold under adversarial pressure. The most challengeable elements are (1) the productivity-exceeds-direct-cost claim (WH3, depends on international transfer), (2) the Stage 6 73.2% vs 81% reconciliation, and (3) the private hospital complication cost denominator. Corpus correctly acknowledges all three as ASSUMED."
+  }
+}

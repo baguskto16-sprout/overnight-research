@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-05-25T09:30:00Z",
+  "run_id": "2026-05-25-0427",
+  "critic": "width",
+  "note_on_imi_reference": "IMI ref describes a Data Center cooling value chain (different industry). Used as structural quality target only -- field inventory, actor-segmentation depth, market-sizing methodology, PP format are the benchmark. Healthcare actor taxonomy derived from input file's 3 process layers.",
+  "imi_dimensions_assessed": [
+    {"dimension": "Market sizing table per stage", "corpus_status": "present-partial", "notes": "Stage 1 has it; Stage 3 has it (TAM USD 656M ID, 284M MY); Stages 2, 4, 5 partial; Stage 6 has comparative matrix"},
+    {"dimension": "Named players per region", "corpus_status": "present", "notes": "Comprehensive: Kimia Farma, Klinik Pintar, Halodoc, Siloam, Prodia, Pramita, Mediviron, Qualitas, PMCare, Medilink, OWLEXA, AdMedika, Naluri, BookDoc, AIA Vitality"},
+    {"dimension": "Revenue model per actor", "corpus_status": "present-thin", "notes": "Capitation/FFS/panel-fee in Stage 1; TPA fees in Stages 5-6; thinner for MCU stages"},
+    {"dimension": "Cost drivers per actor", "corpus_status": "present", "notes": "Documented across stages"},
+    {"dimension": "PP fields complete", "corpus_status": "present-with-WTP-gap", "notes": "Description/Who/Cost/Frequency/Evidenced/RCs all present per PP. WTP blank everywhere -- no SEA published WTP studies found"},
+    {"dimension": "Regulatory/compliance theme per stage", "corpus_status": "present", "notes": "BPJS/JKN, Permenkes 24/2022, SATUSEHAT, PDPA MY 2010+2024, UU PDP ID 2022, BNM directives all cited"},
+    {"dimension": "ESG/privacy theme", "corpus_status": "present", "notes": "PDPA/UU PDP tensions surfaced in PP4.2/PP4.3/PP6.2 (employer access to employee health data)"}
+  ],
+  "topical_coverage_assessment": {
+    "12_sub_processes_all_covered": true,
+    "sub_process_coverage": {
+      "1a": "Stage 1 -- 11 sub-steps mapped",
+      "1b": "Stage 2 -- 5 sub-steps mapped",
+      "1c": "Stage 2 -- 4 sub-steps mapped",
+      "1d": "Stage 2 -- 4 sub-steps mapped",
+      "2a": "Stage 3 -- mapped",
+      "2b": "Stage 3 -- mapped (PP3.1 dominant)",
+      "2c": "Stage 4 -- mapped",
+      "2d": "Stage 4 -- mapped",
+      "3a": "Stage 5 -- pre-auth mapped",
+      "3b": "Stage 5 -- claims submission mapped",
+      "3c": "Stage 5 -- adjudication mapped",
+      "3d": "Stage 6 -- mapped"
+    }
+  },
+  "missing_dimensions": [
+    {"dimension": "Foreign-worker MCU pathway (FOMEMA Malaysia)", "in_corpus": "mentioned in Stage 3 (3,100+ panel clinics, 1.16M exams/yr, MYR 207-217/exam)", "depth": "thin -- no dedicated PP on FOMEMA-specific friction (visa-tie, medical fitness retesting, employer-pay-rate cap)", "actionable_gap": false},
+    {"dimension": "Mental-health programmes within MCU/CDM", "in_corpus": "absent", "depth": "missing -- Naluri mental health coaching mentioned but no PP on workplace mental health intake/coordination", "actionable_gap": false, "reasoning": "Out of original input scope which focused on physical CDM"},
+    {"dimension": "Mid-tier insurers (not just top-5)", "in_corpus": "named (Sequis, MNC Life) but no operational characterisation", "depth": "thin", "actionable_gap": false},
+    {"dimension": "Tier-2 city operator economics (vs Tier-1)", "in_corpus": "implied but not differentiated", "depth": "thin -- input asked for Tier-1 AND Tier-2 cities; differentiation between Jakarta and Bandung, KL and Penang not surfaced", "actionable_gap": false}
+  ],
+  "summary": {
+    "imi_structural_alignment": "good",
+    "input_scope_coverage": "complete -- all 12 sub-processes covered, all 6 WHs addressed",
+    "high_actionability_gaps": 0,
+    "notes": "Corpus is structurally complete vs IMI template and input scope. Gaps that exist are either out of scope (mental health) or thin (mid-tier insurers, Tier-2 city differentiation) without rising to actionable. The actionable gaps surfaced live in critic-depth and critic-dialectic, not critic-width."
+  }
+}

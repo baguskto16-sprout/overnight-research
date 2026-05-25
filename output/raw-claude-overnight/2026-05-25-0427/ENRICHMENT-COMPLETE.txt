@@ -1,0 +1,22 @@
+Unattended Phase 2 complete.
+URLs attempted: 4 · Succeeded: 1 · Confirmed inaccessible: 3
+Claims upgraded: 3
+New % Low (post-enrichment): 83.3% · Gate: re-run-recommended
+
+URL outcomes:
+- klinify.com → CONFIRMED-INACCESSIBLE (DNS resolution failed)
+- statista.com/statistics/1464154 (Malaysia private clinics) → CONFIRMED-INACCESSIBLE (paywall-numeric)
+- statista.com/statistics/1016330 (Malaysia claim ratio) → CONFIRMED-INACCESSIBLE (paywall-numeric; qualitative ">60% paid" confirmed)
+- kompas.id BPJS DM+HT article → SUCCEEDED (full article accessible; Rp 30.5T + 37.8%/27.3% utilization figures substantiated, BPJS Director Lily Kresnowati 20/10/2025)
+
+Claims upgraded:
+- PP4.4-cost-1 (Indonesia BPJS DM+HT IDR 30.5T): Low → Medium
+- PP2.2-cost-3 (population-level CDM cost anchor): Low → Medium
+- PP2.2-freq (37.8% DM / 27.3% HT FKTP utilization): Low → Medium
+
+Confidence distribution:
+- Pre:  4 High / 43 Medium / 253 Low (84.3% Low)
+- Post: 4 High / 46 Medium / 250 Low (83.3% Low)
+
+Gate decision unchanged (re-run-recommended): %Low still 13.3 pp above the 70% threshold.
+Reason: Phase 2 lifts only the paywall-unverifiable override on Kompas.id; underlying drivers (JobStreet labor-cost anchoring, CodeBlue n=855 single-source poll, Grand View MCU aggregator, single-source 32% FKTP RPPT figure, 46 ASSUMED-N willingness-to-pay claims) are not Playwright-fixable.

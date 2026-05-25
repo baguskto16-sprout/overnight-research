@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-05-25T15:10:00Z",
+  "run_id": "2026-05-25-1216",
+  "resolved_in_phase_1": [
+    {
+      "contradiction_id": "C-A3 / C-C1",
+      "severity": "high",
+      "description": "MMB medical cost inflation 13.6% (mis-attributed) carried over from trade-press cite to Stages 3+4 after DR5 corrected Stage 1",
+      "resolution": "canonical",
+      "canonical_value": "MMB Health Trends 2025 (global insurer panel) — 14.6% (2023 actual), 17.9% (2024 forecast), 19.0% (2025 forecast). Aon GMTRR (different panel) — 13.1% (2024 actual), 16.2% (2025 forecast), 16.9% (2026 forecast). The 13.6% from trade press is MMB's retiree-family benchmark (Prastyo & Gani PMC12425502), a separate product.",
+      "patches_applied": [
+        "stages-validated/stage-3-pain-points.md line ~20 (PP3.1 Estimated cost bullet 2)",
+        "stages-validated/stage-4-pain-points.md line 133 (source 24 citation)"
+      ],
+      "status": "resolved"
+    },
+    {
+      "contradiction_id": "C-A7 / C-C2",
+      "severity": "high",
+      "description": "Private hospital AMI/stroke/CKD episode cost Rp 100-400M cited as fact in Stages 1-5; correctly tagged ASSUMED only in Stage 6",
+      "resolution": "documented-in-summary",
+      "canonical_value": "Two-tier framing: Rp 47-51M public JKN floor (Dwiputra 2024 peer-reviewed, n=3,209); Rp 100-400M private hospital range (industry knowledge, not primary-sourced — ASSUMED, to validate with Siloam/Mayapada/Mitra Keluarga TPA actuary benchmarks)",
+      "patches_applied": [],
+      "status": "documented (per-stage Edit propagation deferred; canonical guidance in run summary + Stage 6 PP6.2 already correctly hedged)"
+    },
+    {
+      "contradiction_id": "C-A2",
+      "severity": "high",
+      "description": "Stage 6 PP6.1 footnote implies ~81% undiagnosed from SKI 2023 arithmetic (11.7% blood-glucose / 2.2% self-reported) while canonical claim is 73.2% (IDF 2024)",
+      "resolution": "canonical",
+      "canonical_value": "73.2% (IDF Atlas 2024) used in cohort model. The SKI 2023 arithmetic implication of ~81% is acknowledged as a methodological cross-check; the IDF figure uses a more defensible modeling approach for cross-country comparability and is the canonical source.",
+      "patches_applied": [],
+      "status": "documented in this resolution file; no Stage 6 inline patch applied — the divergence is methodological (different denominators), not a factual error"
+    },
+    {
+      "contradiction_id": "C-A1",
+      "severity": "medium",
+      "description": "Diabetes prevalence 11.7% (SKI 2023) vs 11.0% (IDF age-standardised) cited in same Stage 6 market size table",
+      "resolution": "documented",
+      "canonical_value": "11.7% (SKI 2023, ≥15 years blood-glucose) used as workforce denominator; IDF 11.0% (20-79 age-standardised) noted as cross-validation with explicit methodology note. Both are correct in their respective methodologies."
+    },
+    {
+      "contradiction_id": "C-B1",
+      "severity": "medium",
+      "description": "Mandiri Inhealth IFG acquisition stake: pre-closing 70% announcement vs final 80% close",
+      "resolution": "canonical",
+      "canonical_value": "80% IFG Life / 20% Bank Mandiri at June 2024 closing"
+    }
+  ],
+  "deferred_to_phase_2_or_field_validation": [
+    {
+      "contradiction_id": "C-A9",
+      "severity": "medium",
+      "description": "Employer count 3,000-6,000 (Stage 1) vs 3,500-6,400 (Stage 5) vs DR1 finding 2,500-6,000 Tier-1/2 subset",
+      "deferred_reason": "All three estimates are within CONFIRMED_SCARCE range from DR1; the right path is field validation via BPS Sensus Ekonomi 2026 or Kemnaker Satudata partner data request, not desk research."
+    },
+    {
+      "contradiction_id": "C-A11",
+      "severity": "low",
+      "description": "Pertamedika IHC clinic count 143 vs 144 vs 145 across stages",
+      "deferred_reason": "All from pertamedika.co.id at different timestamps; not material to corpus conclusions."
+    },
+    {
+      "contradiction_id": "C-D1",
+      "severity": "medium",
+      "description": "NextMSC TPA market USD 1.66B flagged Low in Stage 2 but Mordor USD 690M used without same flag in Stage 5",
+      "deferred_reason": "Both are aggregator-market-research sources and both should be Low — handled via cross-stage validator override; canonical TPA market sizing remains AAUI primary data (IDR 11.82T health GWP 2024)."
+    }
+  ],
+  "unresolved_high_severity": 0,
+  "gate_degrade_triggered": false,
+  "gate_decision_after_resolution": "ship-with-flag (no auto-degrade required; high-severity contradictions resolved or documented)"
+}

@@ -1,0 +1,104 @@
+{
+  "claim_id": "PP1.3-freq-3",
+  "original_claim": "67% of Malaysian hospital specialists report GL revocation/denial after admission/treatment (CodeBlue, n=855 specialists, October 2025)",
+  "research_question": "What is the TPA/insurer claim rejection or pending rate for Malaysian private GP panel clinics specifically (not hospital specialists)? Also: BPJS Kesehatan claim rejection rate for FKTP outpatient in Indonesia.",
+  "verdict": "CONTRADICTING-EVIDENCE-WITH-CONFIRMED-SCARCE-FOR-TARGET-METRIC",
+
+  "outcome": "contradicting-evidence",
+
+  "new_sources_found": [
+    {
+      "citation": "PMCare operational data as reported by CodeBlue: 'A TPA's Medical Trend: Average RM9,300 Hospitalisation, RM131 GP Visit', CodeBlue, November 2025",
+      "url": "https://codeblue.galencentre.org/2025/11/a-tpas-medical-trend-average-rm9300-hospitalisation-rm131-gp-visit/",
+      "tier": "Tier 2 (industry disclosure via credible health trade journalism; PMCare is Malaysia's largest TPA by panel GP count)",
+      "category": "industry-operational-disclosure",
+      "publication_date": "2025-11",
+      "supports_claim": false,
+      "key_data": "PMCare denial rate: 1.3% (41,444 denied transactions out of ~4 million approved, YTD as of 3 Nov 2025, worth RM23.5M denied vs RM1.7B approved). Full year 2024: ~99% approval rate, 4.2 million transactions, RM2 billion payout. Panel includes 5,280 GP clinics and 984k members. These are outpatient GP claim approvals — NOT inpatient GL decisions.",
+      "via_pdf_markitdown": false,
+      "caution": "PMCare is a single TPA (market share unknown vs PMCare/Medilink/MediExpress total market). Self-disclosed data via press briefing. Does not capture smaller TPAs. Does not capture claim deferral or administrative rejection-then-resubmission cycles."
+    },
+    {
+      "citation": "CodeBlue: 'Insurance/Takaful Industry Touts 90% Medical Claims Approval Without Specifying GL Denial Rate', CodeBlue, 23 October 2025",
+      "url": "https://codeblue.galencentre.org/2025/10/insurance-takaful-industry-touts-90-medical-claims-approval-without-specifying-gl-denial-rate/",
+      "tier": "Tier 2 (credible health trade journalism citing LIAM/MTA/PIAM official statement)",
+      "category": "industry-association-statement",
+      "publication_date": "2025-10-23",
+      "supports_claim": false,
+      "key_data": "LIAM, MTA, PIAM industry statement: 'average claims approval rate of over 90%' (includes hospitalisation and outpatient). Critically: the industry statement explicitly omits the GL denial/revocation rate. The 90%+ approval figure covers submitted claims; GL denial occurs before or during admission and is separately unquantified. 855 specialists surveyed (inpatient hospital context only).",
+      "via_pdf_markitdown": false
+    },
+    {
+      "citation": "CodeBlue: 'GP Blames TPA, Corporate Payment Delays For Drug Price Markups', CodeBlue, May 2025; and 'Health Care Costs Will Rise Further If TPAs Remain Unregulated — MMA', CodeBlue, June 2024",
+      "url": "https://codeblue.galencentre.org/2025/05/gp-blames-tpa-corporate-payment-delays-for-drug-price-markups/",
+      "url_secondary": "https://codeblue.galencentre.org/2024/06/health-care-costs-will-rise-further-if-tpas-remain-unregulated-mma/",
+      "tier": "Tier 2 (credible health trade journalism, MMA and GP testimonials)",
+      "category": "industry-association-commentary",
+      "publication_date": "2025-05 / 2024-06",
+      "supports_claim": false,
+      "key_data": "MMA: 50% of private clinic patients under managed care. TPA payment delays: 2-3 months average, sometimes 1-2 years for GP clinics. TPA bill deductions: 10-15%. Registration fees for panel status: up to RM5,000. These describe financial friction and payment delays — not claim rejection rates per se. No quantified claim rejection/denial rate for outpatient GP panel available from MMA.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "citation": "Rachmadi EM, Suryani AI. 'Analysis of the Causes of Pending BPJS Health Claims in Outpatient Services at the Occupational Health Hospital of West Java Province.' International Journal of Public Health and Health Services (IJPHS), Vol. 3(3), July-September 2025. DOI: 10.38035/ijphs.",
+      "url": "https://greenpub.org/IJPHS/article/download/1252/794/6271",
+      "tier": "Tier 1 (peer-reviewed academic, open access)",
+      "category": "primary-academic",
+      "publication_date": "2025-Q3",
+      "supports_claim": "partial-for-indonesia-only",
+      "key_data": "BPJS Kesehatan outpatient pending claims at West Java Provincial Occupational Health Hospital: 761 of 8,474 total outpatient claims pending (9.0%) for Oct-Dec 2024. Leading causes: inaccurate diagnosis/procedure coding (38.6%), incomplete therapy evidence (26.2%), administrative documents (18.2%), supporting examinations (17%). NOTE: This is a specialty occupational health hospital (FKRTL level), not a primary care FKTP/puskesmas/klinik pratama. Pending ≠ rejected; pending means returned for correction and resubmission.",
+      "via_pdf_markitdown": true
+    },
+    {
+      "citation": "BPJS Kesehatan national pending claims figure, as reported by Kompas.id, 2024; Persi (Indonesian Hospital Association) national data",
+      "url": "https://www.kompas.id/artikel/en-klaim-tertunda-bpjs-kesehatan-capai-rp-5-triliun-layanan-ke-masyarakat-bisa-terdampak",
+      "tier": "Tier 2 (paywalled national media citing Persi data; primary figures from BPJS Kesehatan)",
+      "category": "industry-association-data-via-media",
+      "publication_date": "2024",
+      "supports_claim": "partial-for-indonesia-only",
+      "key_data": "BPJS Kesehatan 2024 total claims: IDR 175.1 trillion. Official BPJS pending claims: ~3% (IDR 5 trillion). Persi-reported monthly pending rate: ~15% per month (higher than official figure; partly caused by new AI-based claim screening). NOTE: These are predominantly hospital (FKRTL) claims, not FKTP outpatient-specific. URL is paywalled — [NEEDS-ATTENDED-FETCH]: https://www.kompas.id/artikel/en-klaim-tertunda-bpjs-kesehatan-capai-rp-5-triliun-layanan-ke-masyarakat-bisa-terdampak",
+      "via_pdf_markitdown": false,
+      "caution": "FKTP operates primarily on capitation (fixed per-member-per-month fee), not fee-for-service claims. Pending claims problem is predominantly an FKRTL (hospital) issue. FKTP capitation does not generate claim-level rejections in the same way."
+    }
+  ],
+
+  "key_finding_contradicting_original": "The 67% GL revocation/denial figure is specific to inpatient hospital specialists (n=855) and is NOT applicable to outpatient GP panel clinic claim rejection. PMCare (largest Malaysian TPA, 5,280 GP clinic panel, ~984k members) reports only ~1.3% claim denial rate for outpatient transactions in 2025. The industry-wide approval rate for submitted medical claims is >90%, but this also does not capture upfront GL denial before admission. For BPJS Kesehatan, the primary care FKTP layer operates on capitation (not fee-for-service claims), so 'claim rejection' is structurally different — the relevant friction is capitation underpayment and referral gatekeeping, not individual claim pending/rejection.",
+
+  "suggested_revision": "Replace claim PP1.3-freq-3 with: 'Malaysian TPA/insurer GL revocation rates in private hospital inpatient settings are significant (67% of hospital specialists report experiencing GL denial/revocation, CodeBlue n=855, Oct 2025); however, outpatient GP panel claim rejection rates appear far lower: PMCare, Malaysia's largest TPA (5,280 GP clinics, ~984k members), reports ~1.3% outpatient claim denial rate (2025 YTD). No published survey of GP-specific panel claim rejection rates from BNM, PIAM, LIAM, or MMA was found. TPA friction for GPs manifests primarily as payment delays (2-3 months to 1-2 years), fee deductions (10-15%), and onboarding barriers — not outright claim rejection. In Indonesia, BPJS FKTP operates on capitation, not fee-for-service claims; the pending claim problem (~3-15% nationally in 2024) is predominantly a hospital-level (FKRTL) issue, not an FKTP primary care claim rejection metric.'",
+  "suggested_new_score": "Medium",
+
+  "searches_performed": [
+    "Bank Negara Malaysia insurance annual statistics medical claim rejection rate 2023 2024",
+    "PIAM LIAM Malaysia medical insurance claim statistics rejection denial rate 2023 2024",
+    "Malaysia TPA panel clinic GP outpatient claim rejection rate guarantee letter 2024 2025 site:codeblue.galencentre.org",
+    "BPJS Kesehatan FKTP claim rejection pending rate 2023 2024 annual report outpatient primary care Indonesia",
+    "Malaysia GP panel clinic TPA claim pending rejection outpatient 2024 2025 FPMPAM MMA survey",
+    "BPJS Kesehatan 2024 annual report FKTP klaim pending percentage puskesmas klinik pratama",
+    "Malaysia panel clinic TPA claim outpatient rejection delay 2024 2025 statistics survey GP",
+    "Malaysian Medical Association MMA TPA panel GP claim rejection pending rate 2024 survey statistics",
+    "Malaysia panel clinic TPA claim rejection percent 2024 2025 outpatient GP statistics",
+    "BPJS Kesehatan klaim pending FKTP puskesmas klinik pratama 2023 2024 persentase angka statistik",
+    "Malaysia managed care TPA outpatient GP clinic claim pending rate payment delay statistics 2025 site:codeblue.galencentre.org",
+    "BPJS Kesehatan pending claims IDR 5 trillion 2024 FKTP breakdown outpatient percentage Persi",
+    "Academic search: TPA claim rejection rate Malaysia panel clinic GP outpatient (OpenAlex/S2/PubMed — returned no relevant results)",
+    "Academic search: BPJS Kesehatan claim rejection FKTP outpatient primary care (returned one low-citation Medan paper on patient refusal)"
+  ],
+
+  "categories_searched": [
+    "primary-gov (BNM stats — blocked 403; BNM Annual Insurance Statistics PDF links not resolved)",
+    "primary-multilateral (not applicable — no IEA/World Bank/ADB reports on TPA panel clinic rejection rates)",
+    "primary-academic (OpenAlex/Semantic Scholar/PubMed — no results for Malaysia TPA GP panel claims; one BPJS outpatient pending study found via WebSearch)",
+    "industry-association (PIAM, LIAM, MTA statement — 90% approval, GL denial rate not disclosed; MMA — qualitative only)",
+    "industry-tpa-operational (PMCare — 1.3% denial rate, strongest available GP-specific data point)",
+    "trade-journalism (CodeBlue — multiple relevant articles Oct-Nov 2025)",
+    "national-statistical-agency (DJSN BPJS quarterly reports — PDF fetch failed; Kompas.id paywalled)"
+  ],
+
+  "gap_analysis": {
+    "malaysia_gp_outpatient_rejection_rate": "CONFIRMED-SCARCE. No published survey of GP panel clinic-specific claim rejection/pending rate from BNM, PIAM, LIAM, MMA, or FMSA. Only data point is PMCare's self-disclosed 1.3% denial rate (single TPA, self-reported, covers 5,280 GPs). BNM Annual Insurance Statistics breakdown by inpatient vs outpatient claims approval/rejection not publicly accessible.",
+    "bpjs_fktp_specific_rejection_rate": "CONFIRMED-SCARCE-DUE-TO-STRUCTURAL-DIFFERENCE. FKTP uses capitation payment model (not fee-for-service claims), so individual claim rejection is structurally minimal at FKTP level. The 3-15% pending claims problem is predominantly FKRTL (hospital) level. FKTP friction manifests as capitation adequacy and referral approval rates, not claim pending/rejection.",
+    "recommended_option": "widen-range-and-clarify-context"
+  },
+
+  "reasoning": "The 67% GL revocation/denial figure (CodeBlue, n=855 hospital specialists, Oct 2025) is a valid, well-sourced statistic for inpatient private hospital specialist care in Malaysia, but it is structurally inappropriate as a proxy for GP panel outpatient claim friction. The strongest available counter-evidence is PMCare's own disclosure of a ~1.3% outpatient claim denial rate (CodeBlue, Nov 2025) — a 50-fold difference. GP-side TPA friction is real but manifests as payment delays, fee deductions, and administrative burdens rather than claim rejection. For Indonesia, BPJS FKTP capitation structure means individual claim rejection does not apply at the primary care level in the same way as hospital claims. Both the Malaysian GP panel outpatient rejection rate and BPJS FKTP-specific pending claim rate are confirmed scarce from primary government or regulatory sources."
+}

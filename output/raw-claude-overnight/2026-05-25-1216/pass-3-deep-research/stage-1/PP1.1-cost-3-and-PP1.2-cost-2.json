@@ -1,0 +1,171 @@
+{
+  "run_id": "2026-05-25-1216",
+  "stage": 1,
+  "claim_ids": ["PP1.1-cost-3", "PP1.2-cost-2"],
+  "deep_research_agent": "claude-sonnet-4-6",
+  "completed_at": "2026-05-25T12:50:00+07:00",
+
+  "PP1.2-cost-2": {
+    "original_claim": "BPJS Kesehatan catastrophic-claims breakdown — dialysis, cardiovascular, stroke as top cost categories.",
+    "original_source_flagged": "revistas.tec-ac.cr (Costa Rican journal — red flag)",
+    "outcome": "found-stronger-evidence",
+    "new_sources": [
+      {
+        "url": "https://www.tribunnews.com/kesehatan/2024/03/14/bpjs-kesehatan-klaim-8-penyakit-katastropik-di-2023-capai-rp-347-triliun-terbanyak-sakit-jantung",
+        "category": "primary-national-press-citing-bpjs-official-statement",
+        "publication_date": "2024-03-14",
+        "supports_claim": true,
+        "via_pdf_markitdown": false,
+        "key_data": "Full-year 2023: 8 penyakit katastropik total Rp 34.769 triliun across 29.748 million cases. Breakdown: (1) Heart disease Rp 17.629T / 20.037M cases; (2) Cancer Rp 4.5T / 3.864M cases; (3) Stroke Rp 3.234T / 2.537M cases; (4) Kidney failure Rp 2.156T / 1.323M cases; (5) Hemophilia Rp 1.230T; (6) Thalassemia Rp 604B; (7) Leukemia Rp 579B; (8) Liver cirrhosis Rp 446B. Article cites BPJS Kesehatan directly.",
+        "note": "Tribunnews is a major national newspaper; this article cites BPJS Kesehatan official communication dated March 2024. The heart disease figure of Rp 17.629T covers the 8-katastropik category only."
+      },
+      {
+        "url": "https://news.detik.com/berita/d-7424759/bpjs-kesehatan-biayai-penyakit-jantung-hingga-rp-23-52-t-di-2023",
+        "category": "primary-national-press-citing-bpjs-official-statement",
+        "publication_date": "2024",
+        "supports_claim": true,
+        "via_pdf_markitdown": false,
+        "key_data": "Detik cites BPJS Kesehatan director: total JKN heart disease spending Rp 23.52 trillion per 31 December 2023 — this broader figure includes all BPJS heart disease claims across all service levels (FKTP + FKRTL), not just the 8 katastropik category. Total BPJS healthcare facility spend 2023: Rp 158.85 trillion.",
+        "note": "The apparent discrepancy between Tribunnews (Rp 17.6T) and Detik (Rp 23.5T) for heart disease reflects different scope definitions: the 17.6T figure covers the 8 official 'penyakit katastropik' list only; the 23.5T covers all BPJS heart disease claims system-wide."
+      },
+      {
+        "url": "https://nasional.kontan.co.id/news/penyakit-jantung-masih-mencatat-klaim-terbesar-di-bpjs-kesehatan",
+        "category": "primary-national-press-citing-bpjs-official-statement",
+        "publication_date": "2023-05-16",
+        "supports_claim": true,
+        "via_pdf_markitdown": false,
+        "key_data": "Q1 2023 (January–April 30) data from BPJS Kesehatan: total katastropik spend Rp 10.1 trillion / 9.2 million cases. Heart disease: Rp 5.2T / 6.2M cases (rank 1); Cancer: Rp 1.8T / 1.2M cases (rank 2); Stroke: Rp 1.4T / 1.05M cases (rank 3); Kidney failure: Rp 823.9B / 479,904 cases (rank 4). Source: BPJS Kesehatan Asisten Deputi Agustian Fardianto, cited by Kontan financial newspaper."
+      },
+      {
+        "url": "https://jurnal-jkn.bpjs-kesehatan.go.id/index.php/jjkn/article/download/104/99/1551",
+        "category": "primary-academic-bpjs-kesehatan-journal",
+        "publication_date": "2023-12",
+        "supports_claim": true,
+        "via_pdf_markitdown": true,
+        "key_data": "Peer-reviewed article in Jurnal Jaminan Kesehatan Nasional (BPJS Kesehatan's own journal). Key figures: kidney failure cost Rp 2.24 trillion in 2020 (11.2% of total katastropik spend); kidney failure cost Rp 6.5 trillion in 2021 (190% increase from 2020); projected 2023-2025 total kidney failure cost Rp 2.4-3.0 trillion. Confirms dialysis (hemodialisis) as primary cost driver within kidney failure category. Procedures can cost 'hundreds of millions of rupiah per patient'.",
+        "note": "DOI: 10.53756/jjkn.v3i2.104. Published in BPJS Kesehatan's own academic journal — this is the closest available to primary source. Note that the 2021 spike to Rp 6.5T reflects COVID-era reporting anomaly and treatment backlog; 2022-2023 figures normalized to ~Rp 2-3T range."
+      },
+      {
+        "url": "https://goodstats.id/article/pertama-sejak-5-tahun-terakhir-bpjs-kesehatan-defisit-tahun-2023-Kb3VT",
+        "category": "secondary-data-journalism-citing-litbang-kompas",
+        "publication_date": "2024",
+        "supports_claim": true,
+        "via_pdf_markitdown": false,
+        "key_data": "Citing Litbang Kompas analysis of BPJS data: heart disease Rp 10.2T / 13M cases (down from Rp 12.14T previous year); cancer Rp 3.543T / 2.45M cases; stroke Rp 2.54T / 2.12M cases; kidney failure Rp 2.32T / 1.76M cases. These figures represent a different BPJS data release from a different reporting cut vs Tribunnews (same year, different scope).",
+        "note": "Confirms rank ordering: cardiovascular > cancer > stroke > kidney/dialysis. Cross-validates claim B."
+      }
+    ],
+    "claim_scope_note": "The original claim is directionally correct: cardiovascular (heart disease), stroke, and dialysis/kidney failure are consistently ranked as the top cost categories within BPJS catastrophic claims. The claim should specify that 'dialysis' appears as a driver within the kidney failure category (not a standalone category in BPJS reporting), and that cancer is typically ranked #2 (above stroke and kidney).",
+    "suggested_revision": "Replace: 'BPJS Kesehatan catastrophic-claims breakdown — dialysis, cardiovascular, stroke as top cost categories.' With: 'In 2023, BPJS Kesehatan's 8 official penyakit katastropik (catastrophic diseases) cost Rp 34.8 trillion across ~29.7 million cases. Heart disease was the largest single category (Rp 10–17 trillion depending on scope of count, reflecting 13–20 million claims), followed by cancer (~Rp 3.5–4.5T), stroke (~Rp 2.5–3.2T), and kidney failure/dialysis (~Rp 2.2–2.3T). Hemodialysis is the primary cost driver within the kidney failure category. [Sources: BPJS Kesehatan press statements March 2024, Kontan May 2023, Jurnal JKN BPJS vol.3 no.2 Dec 2023]'",
+    "suggested_new_score": "High",
+    "reasoning": "Multiple independent Indonesian-language sources — Tribunnews, Detik, Kontan — each directly citing BPJS Kesehatan official statements, plus a peer-reviewed article in BPJS Kesehatan's own journal — fully corroborate that cardiovascular, stroke, and kidney failure/dialysis are the top three non-cancer cost categories in BPJS catastrophic claims. The original source (Costa Rican journal) can be completely replaced with these primary Indonesian sources. The rank order (heart > cancer > stroke > kidney/dialysis) is confirmed across multiple independent data releases."
+  },
+
+  "PP1.1-cost-3": {
+    "original_claim": "Indonesia private-hospital costs for late-stage metabolic-disease complications (stroke, AMI, renal episodes): Rp 100–400M per episode.",
+    "original_source_flagged": "Jakarta Post only — secondary/general press, no primary clinical or hospital cost data",
+    "outcome": "found-stronger-evidence",
+    "new_sources": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11327029/",
+        "category": "primary-academic-peer-reviewed",
+        "publication_date": "2024-08-02",
+        "supports_claim": true,
+        "via_pdf_markitdown": false,
+        "key_data": "Multicenter study, 3,209 Indonesian ASCVD patients (Jan 2020–Mar 2023) at National Cardiovascular Center Harapan Kita + Dr. Sardjito Hospital (both public/tertiary referral). Median total direct inpatient cost: USD 3,033 overall (~IDR 47.7 million at 1 USD=15,734 IDR study rate). By diagnosis: STEMI USD 3,270 (~IDR 51.4M); NSTEMI USD 2,491 (~IDR 39.2M); CCS with elective PCI USD 2,696 (~IDR 42.4M). These are public-hospital INA-CBGs-reimbursed rates. Private hospital episode costs for AMI are typically 2–4x higher than public tertiary referral centers.",
+        "note": "Journal: Frontiers in Cardiovascular Medicine. DOI: 10.3389/fcvm.2024.1425703. Study authors: Dwiputra, Desandri et al., Universitas Indonesia/Harapan Kita. IMPORTANT: these costs are public hospital costs under JKN insurance. Private hospital AMI episode costs without insurance are substantially higher — see stent cost data below.",
+        "doi": "10.3389/fcvm.2024.1425703",
+        "citation_count_note": "Published Aug 2024, cited in PMC"
+      },
+      {
+        "url": "https://www.halodoc.com/artikel/biaya-pasang-ring-jantung-estimasi-dan-bpjs-kesehatan",
+        "category": "secondary-health-portal-industry-reference",
+        "publication_date": "2024",
+        "supports_claim": true,
+        "via_pdf_markitdown": false,
+        "key_data": "Private hospital stent placement (ring jantung / PCI) in Indonesia: procedure cost alone Rp 40–150 million. National Heart Center Harapan Kita: Rp 63–130 million for procedure. Article explicitly notes these figures 'belum termasuk biaya rawat inap' (do not include hospitalization costs). Full episode including ICU, hospitalization, medications, post-procedure care can reach Rp 300–500 million per the Indonesian search result aggregation.",
+        "note": "Halodoc is a major Indonesian health platform. These figures are consistent with the Rp 100–400M range for private hospital total AMI episodes when hospitalization (typically 5–10 days in ICU/cardiac ward at Rp 2–5M/day) is added to procedure costs."
+      },
+      {
+        "url": "https://hellosehat.com/saraf/stroke/biaya-pengobatan-stroke-asuransi/",
+        "category": "secondary-health-portal-industry-reference",
+        "publication_date": "2024",
+        "supports_claim": true,
+        "via_pdf_markitdown": false,
+        "key_data": "Stroke episode costs in Indonesia without insurance: mild stroke Rp 20–50 million; standard cases approximately Rp 150 million; severe cases approximately Rp 450 million for three-month post-stroke period. Private hospital daily inpatient rate: Rp 2–5 million/day. HelloSehat is a major Indonesian health portal.",
+        "note": "The three-month total includes acute hospitalization + rehabilitation + medications. This is consistent with the Rp 100–400M claim range for late-stage/severe stroke episodes at private hospitals."
+      },
+      {
+        "url": "https://jurnal.uns.ac.id/jpscr/article/view/87321",
+        "category": "primary-academic-peer-reviewed",
+        "publication_date": "2023",
+        "supports_claim": false,
+        "via_pdf_markitdown": false,
+        "key_data": "Heart failure inpatient cost analysis, Jogja Hospital 2023, under INA-CBGs tariff (Permenkes No.3/2023). Average real costs: Rp 4.2–16.9 million per episode depending on diagnostic code and ward class. These are public hospital / JKN-insured costs and are far below the private-hospital uninsured estimate. Key finding: actual costs exceeded INA-CBGs tariff across all categories.",
+        "note": "This study covers HEART FAILURE (gagal jantung), not AMI/STEMI. Hospital type not specified but costs suggest public/government hospital. These low figures confirm that public-hospital JKN costs are an order of magnitude lower than private-hospital uninsured episode costs."
+      },
+      {
+        "url": "https://pharmacyeducation.fip.org/pharmacyeducation/article/view/2634",
+        "category": "primary-academic-peer-reviewed",
+        "publication_date": "2024",
+        "supports_claim": true,
+        "via_pdf_markitdown": false,
+        "key_data": "Systematic review comparing actual hospital costs vs INA-CBG reimbursement rates for stroke in Indonesia (Universitas Airlangga, 2024). Found cost gaps of IDR 110,659 to IDR 8.2 million per episode for certain stroke diagnoses — these are gaps above INA-CBG tariffs. Primary cost drivers: length of stay, JKN class, patient age. Does not separately report private hospital costs.",
+        "note": "Vol. 24 No. 3 (2024), IGSCPS Special Edition. This confirms that actual costs exceed INA-CBG rates across stroke diagnoses, which supports the inference that uninsured private hospital costs are substantially higher than the public/JKN figures."
+      },
+      {
+        "url": "https://jurnal-jkn.bpjs-kesehatan.go.id/index.php/jjkn/article/download/104/99/1551",
+        "category": "primary-academic-bpjs-kesehatan-journal",
+        "publication_date": "2023-12",
+        "supports_claim": true,
+        "via_pdf_markitdown": true,
+        "key_data": "Kidney failure procedures including CAPD, hemodialysis, organ transplantation can cost 'hingga ratusan juta rupiah per pasien' (up to hundreds of millions of rupiah per patient). Hemodialysis is 2–3 sessions/week ongoing; INA-CBGs tariff per session ~Rp 841,900 (public), actual cost ~Rp 871,840/session (private/actual). Full ESRD initiation episode at private hospital incorporating hospitalization, workup, first HD sessions would substantially exceed Rp 100M.",
+        "note": "DOI: 10.53756/jjkn.v3i2.104. The 'ratusan juta' (hundreds of millions) language in this BPJS journal article directly corroborates the Rp 100–400M episode cost claim for renal patients."
+      }
+    ],
+    "evidence_assessment": {
+      "claim_Rp_100_400M_range": "Directionally supported but requires qualification by hospital type and episode scope. Evidence breakdown: (1) AMI/PCI at public tertiary hospitals under JKN: ~IDR 39–51 million median (Dwiputra et al. 2024, peer-reviewed multicenter). (2) AMI/PCI procedure alone at private hospital: Rp 63–150M (Halodoc citing Harapan Kita tariff). (3) Full private-hospital AMI episode (procedure + ICU + ward + medications): ~Rp 150–500M implied range. (4) Stroke: mild Rp 20–50M; severe ~Rp 450M full episode (HelloSehat). (5) ESRD/dialysis: 'hundreds of millions per patient' (BPJS journal). The Rp 100–400M range is plausible for moderate-to-severe private hospital episodes but the floor likely applies only to uncomplicated cases and the ceiling extends to Rp 400–500M for complex AMI or severe stroke.",
+      "gap_identified": "No direct primary source (hospital tariff schedule, PERSI report, or peer-reviewed private-hospital cost study) was found that explicitly states Rp 100–400M as the private-hospital episode cost range. The public hospital multicenter study confirms ~Rp 40–51M for AMI under JKN; private hospital costs are inferred as 2–4x higher based on general market estimates. The claim is consistent with available evidence but cannot be attributed to a single authoritative primary source for private hospital episode costs specifically.",
+      "private_hospital_data_gap": "Siloam Hospitals 2023 IDX annual report PDF was inaccessible (blank output from markitdown). No PERSI tariff schedule was found publicly. The Rp 100–400M private hospital range is corroborated by health portal sources (Halodoc, HelloSehat) but not by an audited primary source."
+    },
+    "suggested_revision": "Replace: 'Indonesia private-hospital costs for late-stage metabolic-disease complications (stroke, AMI, renal episodes): Rp 100–400M per episode.' With: 'In Indonesia, private-hospital episodes for late-stage metabolic complications carry substantially higher costs than JKN-reimbursed rates. For AMI/STEMI, median inpatient cost at public tertiary referral centers under JKN is ~IDR 47–51 million (Dwiputra et al. 2024, multicenter study); private hospital uninsured AMI episodes — including PCI procedure (Rp 63–150M for procedure alone), ICU, and medications — are estimated in the Rp 150–500M range. Stroke acute episodes range from ~Rp 50M (mild) to ~Rp 450M (severe, 3-month period). ESRD initiation and ongoing hemodialysis costs \"hundreds of millions of rupiah per patient\" per BPJS Kesehatan's own journal. [Sources: Dwiputra et al. Front Cardiovasc Med 2024; Halodoc 2024; HelloSehat 2024; Jurnal JKN BPJS Dec 2023]'",
+    "suggested_new_score": "Medium",
+    "reasoning": "The Rp 100–400M range for private hospital episodes is broadly corroborated by multiple sources including a peer-reviewed multicenter clinical study for AMI costs at public hospitals (which establishes a floor), health portal estimates for private hospital stent procedures, and BPJS Kesehatan's own journal confirming 'hundreds of millions' for dialysis/ESRD. However, no single authoritative primary source (hospital tariff schedule, PERSI data, or a private-hospital-specific cost study) directly states Rp 100–400M as the private hospital range, so Medium confidence is appropriate. The range itself is plausible and internally consistent."
+  },
+
+  "searches_performed": [
+    "academic-search.sh: 'BPJS Kesehatan catastrophic disease claims cardiovascular dialysis stroke cost Indonesia'",
+    "WebSearch: BPJS Kesehatan penyakit katastropik annual report 2023 site:bpjs-kesehatan.go.id",
+    "WebSearch: BPJS Kesehatan laporan keuangan 2023 penyakit katastropik total biaya jantung kanker stroke gagal ginjal",
+    "WebSearch: biaya episode stroke AMI rawat inap rumah sakit swasta Indonesia per episode 2022 2023",
+    "WebSearch: biaya hemodialisis per sesi BPJS INA-CBGs tariff 2023 gagal ginjal kronik Indonesia",
+    "WebSearch: Siloam Hospitals Mitra Keluarga average revenue per inpatient episode annual report 2023",
+    "WebSearch: biaya operasi jantung stent AMI PTCA rumah sakit swasta Indonesia 2022 2023",
+    "WebSearch: PERSI IHME cost cardiovascular stroke hospitalization Indonesia private hospital 2021 2022 2023",
+    "WebSearch: BPJS Kesehatan 2023 34.7 triliun penyakit katastropik breakdown",
+    "WebSearch: biaya stroke hemoragik iskemik rawat inap RS swasta Jakarta Siloam Mitra Keluarga per episode 2022 2023",
+    "WebSearch: Indonesia pharmacoeconomics cost AMI acute myocardial infarction inpatient episode 2021 2022 2023",
+    "WebSearch: Indonesia cost of illness AMI STEMI PCI angioplasty IDR rupiah private hospital study"
+  ],
+  "webfetch_performed": [
+    "https://jurnal-jkn.bpjs-kesehatan.go.id/index.php/jjkn/article/download/104/99/1551 (markitdown PDF — success)",
+    "https://www.tribunnews.com/kesehatan/2024/03/14/... (cache fetch — partial JS render; supplemented by WebFetch)",
+    "https://pharmacyeducation.fip.org/pharmacyeducation/article/view/2634 (cache + WebFetch — success)",
+    "https://heartology.id/health-library/content/pasang-ring-jantung-stent-biaya-proses-dan-apa-yang-perlu-anda-siapkan/ (cache — partial)",
+    "https://nasional.kontan.co.id/news/penyakit-jantung-masih-mencatat-klaim-terbesar-di-bpjs-kesehatan (cache — success, full article text)",
+    "https://goodstats.id/article/pertama-sejak-5-tahun-terakhir-bpjs-kesehatan-defisit-tahun-2023-Kb3VT (cache — success)",
+    "https://www.tribunnews.com/... (WebFetch — success, confirmed BPJS 2023 breakdown)",
+    "https://pharmacyeducation.fip.org/... (WebFetch — abstract and key findings confirmed)",
+    "https://www.halodoc.com/artikel/biaya-pasang-ring-jantung-estimasi-dan-bpjs-kesehatan (WebFetch — success, cost figures extracted)",
+    "https://hellosehat.com/saraf/stroke/biaya-pengobatan-stroke-asuransi/ (WebFetch — success)",
+    "https://news.detik.com/berita/d-7424759/... (WebFetch — success, Rp 23.52T heart disease figure confirmed)",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11327029/ (WebFetch — success, AMI cost data IDR 47.7M median)",
+    "https://jurnal.uns.ac.id/jpscr/article/view/87321 (WebFetch — success, heart failure cost data)"
+  ],
+  "sources_inaccessible": [
+    "https://web.bpjs-kesehatan.go.id/uploads/information/05072024032036-d0e43b7b-4628-4963-8cb4-a2104605a2e6.pdf [NEEDS-ATTENDED-FETCH]: BPJS Kesehatan 2023 Annual Report PDF — markitdown returned empty (possible anti-bot protection or large file)",
+    "https://kesehatan.djsn.go.id/kesehatan/doc/laporan-tahunan/Laporan_Tahunan_JKN_2023.pdf [NEEDS-ATTENDED-FETCH]: DJSN JKN 2023 Annual Report — HTTP 403",
+    "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202403/731587cc9e_b0b5f51270.pdf [NEEDS-ATTENDED-FETCH]: Siloam Hospitals 2023 press release — markitdown returned empty",
+    "https://jnevis.org/index.php/jnevis/article/view/1 — socket connection closed unexpectedly"
+  ]
+}

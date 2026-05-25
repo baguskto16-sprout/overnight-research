@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-05-25T15:00:00Z",
+  "run_id": "2026-05-25-1216",
+  "critic": "width",
+  "dimensions_well_covered": [
+    "Pain point count and structure: 4 PPs per stage across all 6 stages",
+    "Description, Who bears it, Evidenced/assumed, Root causes — all populated on all 24 PPs",
+    "Value chain activities, revenue model, cost drivers per stage — all 6 stages complete",
+    "Market size tables with confidence flags and data-gap disclosures",
+    "Named players: AdMedika, Owlexa, Meditap, Fullerton, HealthMetrics, Naluri, Klinik Pintar, Pertamedika IHC, Prodia, Kimia Farma, major insurers",
+    "MCU panel composition and HbA1c inclusion (Stage 4 detailed per-provider pricing table)",
+    "TPA landscape with 7+ named TPAs and lives/claims data",
+    "POJK 36/2025 / SEOJK 7/2025 regulatory environment (not originally in scope but material width add)",
+    "CDM delivery layer assessment in Stage 5",
+    "WH1, WH2, WH4, WH5 confirmed with structural evidence"
+  ],
+  "dimensions_thinly_covered": [
+    "Estimated cost: anchored in JKN/BPJS public-payer data; no private-channel Indonesia benchmark",
+    "Frequency: present in most PPs but several use directional language rather than quantified rates",
+    "WH3 presenteeism: directionally evidenced via international proxies; no Indonesia corporate measurement",
+    "Total addressable employer count (3,000-6,000 [ASSUMED-1])",
+    "TPA PMPM fee (IDR 8,000-25,000 [ASSUMED-1])",
+    "Employer self-funded vs fully-insured share (assumed <5% [ASSUMED-6])"
+  ],
+  "dimensions_missing": [
+    "Willingness to pay: blank on all 24 PPs — the most significant IMI structural gap",
+    "Specialist visit costs as disaggregated line item",
+    "Pharmaceutical costs as disaggregated line item",
+    "Cohort model for 500-employee workforce (scope said 500/1,000/5,000)",
+    "Cohort model for 5,000-employee workforce",
+    "Emergency care costs disaggregated"
+  ],
+  "wh_coverage": [
+    {"wh": 1, "tested": true, "verdict": "confirmed", "stages": [1, 2]},
+    {"wh": 2, "tested": true, "verdict": "confirmed", "stages": [3, 4]},
+    {"wh": 3, "tested": true, "verdict": "partial", "stages": [1, 6]},
+    {"wh": 4, "tested": true, "verdict": "confirmed", "stages": [2, 3]},
+    {"wh": 5, "tested": true, "verdict": "confirmed", "stages": [1, 4]}
+  ],
+  "actionable_gaps": [
+    {"gap_id": "W1", "description": "WTP blank on all 24 PPs — highest priority IMI structural gap", "actionability": "high", "recommended_remediation": "Document WTP explicitly as 'not yet established — primary research required (employer interviews, conjoint survey, broker price-sensitivity data)' rather than leaving field literally blank"},
+    {"gap_id": "W2", "description": "500-employee and 5,000-employee cohort models missing (1,000 only) despite explicit input scope request", "actionability": "high", "recommended_remediation": "Apply 1,000-employee model parameters at 0.5x and 5x scale with Poisson notes on small-n complication event rates"},
+    {"gap_id": "W3", "description": "Specialist visit and pharmaceutical cost line items not disaggregated", "actionability": "high", "recommended_remediation": "Extract from Hidayat 2022, Adnan 2025 (already retrieved) into Stage 6 standalone line items"},
+    {"gap_id": "W4", "description": "TPA PMPM fee ASSUMED-1 throughout; not validated", "actionability": "medium"},
+    {"gap_id": "W5", "description": "Private hospital complication cost Rp 100-400M ASSUMED with no published source; the ROI denominator", "actionability": "medium"}
+  ],
+  "summary": {
+    "imi_dimensions_total": 14,
+    "imi_dimensions_full": 10,
+    "imi_dimensions_partial": 3,
+    "imi_dimensions_missing": 1,
+    "topic_scope_dimensions_total": 17,
+    "topic_scope_dimensions_full": 5,
+    "topic_scope_dimensions_partial": 7,
+    "topic_scope_dimensions_missing": 5,
+    "high_actionability_gaps": 3,
+    "medium_actionability_gaps": 2,
+    "wh_confirmed": 4,
+    "wh_partial": 1
+  }
+}

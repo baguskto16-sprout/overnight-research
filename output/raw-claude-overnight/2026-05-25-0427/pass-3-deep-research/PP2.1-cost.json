@@ -1,0 +1,87 @@
+{
+  "claim_id": "PP2.1-cost",
+  "original_claim": "Lab result transcription labor consumes 3–4 hrs/week per GP clinic; transcription error rate 3–5%",
+  "original_source": "rovinghealth.com blog post (single vendor-adjacent source)",
+  "research_date": "2026-05-25",
+
+  "verdict": "found-stronger-evidence",
+
+  "new_sources_found": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6351970/",
+      "doi": "10.1093/jamia/ocy170",
+      "category": "peer-reviewed-academic",
+      "journal": "Journal of the American Medical Informatics Association (JAMIA)",
+      "publication_date": "2019-03",
+      "citation_count": "cited in AHRQ PSNet patient safety literature",
+      "supports_claim": true,
+      "key_data": "Retrospective study of 6,930 manual POC glucose entries across 60 outpatient clinics (2 academic medical centers, 2015–2017). Overall discrepancy rate: 3.7% (260/6,930). Clinically significant errors (>20% discrepant): 14.2% of errors = 0.5% of all entries (5 per 1,000 results). Flag discrepancy rate: 73.9%. No specific labor-hours figure reported.",
+      "note": "Directly confirms the 3–5% error-rate component of the claim (3.7% actual, within range). Does NOT quantify weekly labor hours.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://relaymed.com/blog/prairie-pediatrics-putting-patient-care-at-the-forefront/",
+      "category": "vendor-case-study-single-clinic",
+      "publication_date": "undated",
+      "supports_claim": true,
+      "key_data": "Prairie Pediatrics (Sioux City, Iowa — single pediatric clinic). Urinalysis POC entries took 3–5 minutes each; cumulative weekly manual transcription time ~3 hrs/week before automation. 95% reduction in unbilled results post-interface. Staff estimation-based, not time-motion study.",
+      "note": "Single-clinic vendor testimonial. Methodology is informal (staff estimate, not observed time-motion). Corroborates 3 hrs/week figure but is not an independent source from rovinghealth.com — both are vendor-adjacent content."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3049252/",
+      "category": "peer-reviewed-academic",
+      "journal": "Journal of Clinical Microbiology / PubMed Central",
+      "publication_date": "2011",
+      "supports_claim": "partial — provides denominator for time calculation",
+      "key_data": "Laboratory LIS interface study: manual data entry per sample ~20 seconds; automated <1 second. Allows back-calculation — a clinic processing 50–60 results/week would spend ~17–20 minutes on data entry alone (excluding retrieval, printing, filing). Does not reach 3 hrs unless broader workflow steps included.",
+      "note": "Laboratory-side (technologist) study, not GP-clinic-side. The 20 sec/sample figure likely underestimates total GP clinic burden which includes printing PDFs, patient-record lookup, result transcription, and flagging."
+    },
+    {
+      "url": "https://academic.oup.com/jamia/article/26/3/269/5287977",
+      "category": "peer-reviewed-academic",
+      "journal": "JAMIA",
+      "publication_date": "2019-03",
+      "supports_claim": true,
+      "key_data": "Same study as PMC6351970 — canonical peer-reviewed citation for 3.7% transcription error rate in outpatient POC testing across 60 clinics.",
+      "note": "Use PMC open-access URL as primary citation; this Oxford URL may require subscription."
+    }
+  ],
+
+  "searches_performed": [
+    "academic-search.sh: 'manual lab result transcription error rate primary care EHR' (returned irrelevant results)",
+    "academic-search.sh: 'laboratory result manual transcription time burden outpatient workflow' (returned irrelevant results)",
+    "WebSearch: 'manual laboratory result transcription error rate EHR primary care time-motion study'",
+    "WebSearch: 'laboratory data entry time motion study manual vs automated interface minutes per result clinical staff'",
+    "WebSearch: 'preanalytical transcription error laboratory results primary care time spent hours per week'",
+    "WebSearch: 'AHRQ time motion study EHR lab results manual entry minutes nurse physician workflow'",
+    "WebSearch: 'Singapore Malaysia Indonesia GP clinic laboratory result manual transcription workflow hours EMR'",
+    "WebSearch: 'point-of-care lab result manual entry workflow time burden general practice minutes per patient OR hours per day'",
+    "WebSearch: 'CAP College of American Pathologists laboratory result transcription error rate benchmark clinical data'",
+    "WebSearch: 'JAMIA lab interface manual entry time saved hours week outpatient clinic ROI automation'",
+    "WebSearch: 'WHO eHealth atlas Southeast Asia laboratory connectivity LIS integration primary care statistics'",
+    "WebSearch: 'Relaymed manual transcription error outpatient point-of-care study labor time savings workflow'",
+    "WebSearch: 'Relaymed three hours OR 3 hours staff time week case study clinic transcription savings'"
+  ],
+
+  "categories_searched": [
+    "peer-reviewed-academic (JAMIA, PMC, PubMed)",
+    "government-AHRQ-time-motion-database",
+    "vendor-case-study",
+    "SEA-government-sources (BPS, MOH Malaysia, SingHealth — no relevant results found)",
+    "CAP-benchmarking",
+    "WHO-eHealth-atlas"
+  ],
+
+  "evidence_gap_notes": {
+    "error_rate": "CONFIRMED by peer-reviewed JAMIA 2019 study (3.7%, within the claimed 3–5% range). This component of the claim is now well-sourced.",
+    "labor_hours": "NOT confirmed by any peer-reviewed or government source. The 3–4 hrs/week figure is corroborated only by a single-clinic vendor testimonial (Prairie Pediatrics via Relaymed). Back-calculation from the 20-sec/sample laboratory study suggests ~17–20 min/week for pure data entry at a moderate-volume GP; reaching 3 hrs/week requires accounting for full workflow (PDF retrieval, patient lookup, result filing, re-check). No SEA-specific data found. No government statistic or academic study provides a per-clinic weekly hour estimate for GP-side transcription.",
+    "SEA_specificity": "No peer-reviewed or government data found for Indonesia, Malaysia, or Singapore specifically on manual lab result transcription labor in GP clinics. EMR penetration data for SEA confirms the relevance of manual workflows (Malaysia: ~15% of public hospitals have EMR; many private GP clinics not interfaced), but does not quantify the labor burden."
+  },
+
+  "refined_claim": "Manual transcription of laboratory results into outpatient EHRs generates a discrepancy rate of approximately 3.7% (peer-reviewed: JAMIA 2019, n=6,930 across 60 clinics), consistent with the 3–5% range cited. Labor time for GP-side transcription is estimated at approximately 3 hrs/week per clinic based on a single vendor case study (Prairie Pediatrics, Relaymed); no independent academic or government source quantifies the weekly hour burden. [ASSUMED-N] on the 3–4 hr/week figure — to validate: time-motion study in SEA or comparable GP clinic setting.",
+
+  "suggested_new_score": "Medium",
+  "suggested_score_rationale": "Error-rate component is now High (confirmed by JAMIA peer-reviewed study at 3.7%). Labor-hours component remains Low-to-Medium (single vendor case study, not independently validated). Composite score: Medium — one half of the claim is well evidenced, one half is assumed.",
+
+  "narrative_summary": "The error-rate half of this claim (3–5%) is now strongly supported: a 2019 JAMIA peer-reviewed retrospective study of 6,930 manual POC glucose entries across 60 outpatient clinics found a 3.7% overall discrepancy rate, with 0.5% of all results clinically dangerous (>20% error). This directly validates the claimed range and should replace the rovinghealth.com blog as the primary citation. The labor-hours half (3–4 hrs/week per GP clinic) remains weakly sourced: the only concrete figure found is a single Prairie Pediatrics clinic testimonial via Relaymed's vendor blog, reporting ~3 hrs/week for urinalysis transcription at one pediatric practice. No peer-reviewed time-motion study, no government statistic, and no SEA-specific data was found quantifying the weekly transcription labor burden per GP clinic. Back-calculation from a lab-technologist study (20 sec/sample) suggests the true data-entry time alone is likely under 30 min/week at moderate volume, so 3 hrs/week requires the broader workflow (PDF retrieval, filing, re-checking). Recommended action: retain the error-rate claim with JAMIA citation elevated to primary source; tag the 3–4 hr/week figure as [ASSUMED-N] pending a time-motion study, and widen the range to 2–5 hrs/week to reflect uncertainty."
+}

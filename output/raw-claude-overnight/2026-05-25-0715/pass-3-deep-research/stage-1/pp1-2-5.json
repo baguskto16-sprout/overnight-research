@@ -1,0 +1,24 @@
+{
+  "claim_id": "PP1.2.5",
+  "verdict": "contradicted",
+  "primary_number": "12.30% (2022), 13.60% (2023) — Mercer Marsh Benefits (MMB) market-wide Indonesia medical trend rates. The 26.5%/20.48% figures are retiree-cohort-specific from a single state-owned oil & gas employer, not general market medical cost inflation.",
+  "primary_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12425502/",
+  "publisher": "Narra J (peer-reviewed journal, PubMed Central) — Prastyo & Gani (2025). The paper internally cites Mercer Marsh Benefits (MMB) as the 12.30%/13.60% market-wide benchmark.",
+  "publisher_tier": 2,
+  "methodology_note": "The PMC article (published May 8, 2025) is a retrospective cohort study of 29,695 retirees' healthcare claims from a single Indonesian state-owned oil and gas company (2020–2023). It reports 26.50% inflation (2022) and 20.48% (2023) for that specific retiree population, which the authors explicitly contrast against the MMB market-wide Indonesia figure of 12.30% (2022) and 13.60% (2023). The 26.5%/20.48% figures reflect a narrow, unrepresentative employer cohort — retirees of a single oil/gas SOE — not the Indonesian employer-sponsored health insurance market at large. The MMB figures (12.30%/13.60%) are the firm-imprint, insurer-survey-based market-wide numbers. BPS (Indonesia Central Bureau of Statistics) general CPI inflation for reference: 5.51% (2022) and 2.61% (2023).",
+  "what_was_attempted": [
+    "Academic API (OpenAlex/Semantic Scholar/PubMed via academic-search.sh) — returned unrelated papers; no direct academic match",
+    "WebSearch: Mercer Marsh Global Medical Trends Survey Indonesia 2023 2024 — found MMB 13.6% figure for 2023 Indonesia from Jakarta Daily citing MMB Health Trends 2023 survey",
+    "WebSearch: Aon Global Medical Trends Report Indonesia 2023 2024 — found Aon 2024 report PDF; snippet suggested 12.7% for 2023 but country-table detail not confirmed in snippet",
+    "PMC article fetch (https://pmc.ncbi.nlm.nih.gov/articles/PMC12425502/) — CONFIRMED: 26.5%/20.48% are retiree-cohort figures from single employer; MMB market-wide benchmarks cited as 12.30%/13.60%",
+    "markitdown on Aon 2024 PDF (https://assets.aon.com/-/media/files/aon/reports/2024-aon-global-medical-trend-rates-report.pdf) — Indonesia appears in country list but country-level table values not extractable from text layer",
+    "WebFetch: MMB Health Trends 2023 PDF from Marsh CDN — returned binary/image-based PDF, no readable Indonesia data",
+    "WebFetch: mercer.com/id-id MMB Health Trends 2023 page — no country-specific percentages on landing page",
+    "WebSearch: AAJI annual report 2022 2023 health insurance claims — AAJI reports aggregate premium/claims volume data but not medical cost inflation rate as a percentage",
+    "WebSearch: OJK Statistik Perasuransian 2022 2023 asuransi kesehatan — OJK publishes PDF (https://ojk.go.id/.../Statistik%20Perasuransian%202022.pdf) with insurance sector data; OJK tracks claims ratios not medical cost inflation rates [NEEDS-ATTENDED-FETCH]: https://ojk.go.id/id/kanal/iknb/data-dan-statistik/asuransi/Documents/Pages/Statistik-Perasuransian-2022/Statistik%20Perasuransian%202022.pdf",
+    "WebFetch: Lockton Indonesia health insurance reform article — 2026 article, no historical inflation percentages, no reference to 26.5% or 20.48%",
+    "WebFetch: insurance-edge.net GlobalData Indonesia report — refers to general medical inflation without specific percentage for 2022/2023",
+    "WebSearch: Jakarta Daily / MMB 13.6% Indonesia 2023 — confirmed MMB published 13.6% as Indonesia medical trend for 2023 (firm-imprint, insurer survey methodology)"
+  ],
+  "recommended_edit_to_canonical": "REPLACE the claim as currently written. The 26.5% (2022) and 20.48% (2023) figures represent retiree-cohort medical inflation for a single Indonesian state-owned oil & gas employer — they are NOT general market medical cost inflation rates. Using them to justify broad 'employer benefit envelope erosion' across Indonesia is methodologically unsound. RECOMMENDED REPLACEMENT: 'Medical cost inflation in Indonesia reached 12.3% in 2022 and 13.6% in 2023 per Mercer Marsh Benefits (MMB) Global Medical Trends Survey — more than double general CPI inflation of 5.5% (2022) and 2.6% (2023) — placing Indonesia among the highest medical trend markets in Asia.' Source: MMB Health Trends 2023 (firm-imprint, insurer survey of 226 carriers), corroborated by Jakarta Daily reporting (https://www.jakartadaily.id/health/1628177918/health-costs-in-indonesia-projected-to-increase-by-136-percent-higher-than-inflation). If the 26.5%/20.48% retiree-cohort figures are retained for any purpose, they must be clearly labelled as 'retiree-only cohort, single state-owned oil & gas employer, Prastyo & Gani (2025), Narra J' and must NOT be presented as general market medical cost inflation."
+}

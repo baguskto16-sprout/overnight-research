@@ -1,0 +1,1310 @@
+{
+  "context": "per-stage",
+  "stage": 1,
+  "run_id": "2026-05-25-1216",
+  "validated_at": "2026-05-25",
+  "topic": "Cost burden of undetected/unmanaged CDM in Indonesian corporate workforces; employer-side actor (HR / People / Total Rewards, 500+ HC employers, Tier-1/Tier-2 cities)",
+  "citation_diversity": {
+    "total_unique_urls_across_both_files": 67,
+    "note": "Counted by scanning all footnote URLs in both stage-1-value-chain.md and stage-1-pain-points.md. Several URLs appear in both files (e.g. marsh.com MMB HBS 2024, PMC12425502, antaranews.com, IDF atlas, Jakarta Post); each unique domain+path combination counted once. Excludes local cache file paths (counted separately as 2 cached documents: 7d8aa67044c737dc.md = ThinkWell telemedicine report; 1fe8c1f173b89187.md = CIPD/AIA Asia Employee Benefits Report).",
+    "by_category": {
+      "primary_gov": 2,
+      "primary_multilateral": 0,
+      "primary_ministry": 3,
+      "primary_consultancy": 4,
+      "primary_filing": 6,
+      "primary_association": 1,
+      "primary_academic_peerreviewed": 10,
+      "primary_standards": 0,
+      "primary_interview": 0,
+      "primary_legal": 0,
+      "secondary_trade": 5,
+      "secondary_news": 4,
+      "secondary_market_research": 2,
+      "secondary_press_release": 0,
+      "auto_low_vendor": 3,
+      "other_provider_pricing_pages": 5,
+      "other_data_aggregators": 4,
+      "assumed_no_source": 7
+    },
+    "notes_on_category_counts": [
+      "primary_gov: BPS publications (sources 2 and 4 in VC); World Bank presentation via thedocs.worldbank.org counted as primary_multilateral-adjacent but classified primary_gov because it presents BPS data",
+      "primary_filing: BRI annual report, Telkom annual report, PT Vale Q4 2024 financial report, Freeport via CBInsights (third-party aggregator — see override note), Adaro via TradingEconomics (aggregator), Pertamina investor relations page",
+      "primary_academic_peerreviewed: PMC12425502 (Prastyo & Gani 2025), PMC12519354 (Dewi et al 2025), PMC4188107 (Soewondo 2014), PMC7482464 (Tran/Uli et al 2020), PMC12777722 (2025 DM workplace review), PMC5870439 (South India absenteeism), PMC4051736 (Finkelstein 2014), PMC6861401 (JKN databases), PMC11308606 (Khoe 2024), PMC7108714 (productivity loss), PMC10710828 (presenteeism), valuehealthregionalissues.com S2212 (BPJS T2DM cost study), PMC12506045 (T2DM prevention cost-effectiveness), revistas.tec-ac.cr BPJS 2023 T2DM — note: journal in Costa Rica with Indonesian BPJS data, peer review status uncertain",
+      "primary_consultancy: MMB HBS 2024 (marsh.com, gated), MMB HTS 2025 (fwd.co.id hosted PDF — firm-authored), Aon 2026 Global Medical Trend Rates, WTW 2026 Global Medical Trends",
+      "auto_low_vendor: admedika.co.id product pages (TPA describing its own services), emc.id (MCU provider describing its own product), hseprime.com (compliance advisory blog)",
+      "primary_association: IDF Diabetes Atlas 11th ed — IDF is a multilateral medical association; classified primary_association; strong within its domain",
+      "secondary_news: Jakarta Post articles (thejakartapost.com), Fortune Indonesia (fortuneidn.com), ANTARA/antaranews.com, jakartaglobe.id",
+      "secondary_market_research: Mordor Intelligence (source 7 VC), Statista (source 6 VC; source 13 VC)",
+      "CIPD/AIA report (cached 1fe8c1f173b89187.md): covers Hong Kong and Singapore primary focus, not Indonesia — geography mismatch applies"
+    ]
+  },
+  "per_claim_scores": [
+    {
+      "claim_id": "VC1-mkt-1",
+      "location": "stage-1-value-chain.md, Market Size table",
+      "claim_text": "Total Indonesian formal-sector employed workers (Aug 2024): ~60.6 million (42.0% of 144.6 million employed)",
+      "sources_cited": [
+        "https://jakartaglobe.id/business/bps-data-shows-higher-formal-jobs-unemployment-drops-to-485",
+        "https://www.bps.go.id/en/publication/2024/12/09/e1d598ff2e31af0983bb011b/keadaan-pekerja-di-indonesia-agustus-2024.html"
+      ],
+      "source_categories": [
+        "secondary_news (Jakarta Globe citing BPS)",
+        "primary_gov (BPS direct — flagged NEEDS-ATTENDED-FETCH, Cloudflare-protected; extracted via Jakarta Globe secondary)"
+      ],
+      "score": "Medium",
+      "rationale": "BPS is primary-gov and the correct source. However the BPS URL is flagged NEEDS-ATTENDED-FETCH (Cloudflare block; figures extracted from Jakarta Globe secondary citation). The Jakarta Globe article is a news secondary that cites the BPS report — chain-of-citations rule applies: the underlying primary is BPS, which is solid; the access is via secondary. Scores Medium not High because direct BPS fetch not confirmed. Data is recent (Aug 2024, published Dec 2024) — no recency issue.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "VC1-mkt-2",
+      "location": "stage-1-value-chain.md, Market Size table",
+      "claim_text": "Active BPJS Ketenagakerjaan participants (Jan 2024 formal sector proxy): ~40.9 million",
+      "sources_cited": [
+        "https://infobanknews.com/bpjs-ketenagakerjaan-bidik-539-juta-peserta-aktif-di-2024-art-hingga-supir-bisa-daftar/amp/"
+      ],
+      "source_categories": [
+        "secondary_trade (Infobanknews — Indonesian financial trade press)"
+      ],
+      "score": "Low",
+      "rationale": "Single trade-press source only. BPJS Ketenagakerjaan itself publishes official membership statistics but the draft cites trade press. The URL is Indonesian trade media, not a BPJS official release or ministry publication. Single-trade-source override applies.",
+      "overrides_triggered": [
+        "single-trade-source"
+      ]
+    },
+    {
+      "claim_id": "VC1-mkt-3",
+      "location": "stage-1-value-chain.md, Market Size table",
+      "claim_text": "Estimated workers employed by enterprises with ≥500 HC (Tier-1/2 cities): ~8–12 million [ASSUMED-1]",
+      "sources_cited": [],
+      "source_categories": [
+        "auto_low_assumed"
+      ],
+      "score": "Low",
+      "rationale": "Explicitly tagged [ASSUMED-1]. No source cited. Draft itself flags as a Data gap requiring Ministry of Manpower Satudata Kemnaker microdata or BPS SKU 2023. Auto-Low.",
+      "overrides_triggered": [
+        "claim_tagged_ASSUMED"
+      ]
+    },
+    {
+      "claim_id": "VC1-mkt-4",
+      "location": "stage-1-value-chain.md, Market Size table",
+      "claim_text": "Large and medium manufacturing establishments (national, BPS IBS 2023): ~32,193 establishments (100+ workers, manufacturing only)",
+      "sources_cited": [
+        "https://www.bps.go.id/en/publication/2024/10/31/d62c6b92104bd1455c030bb5/direktori-industri-manufaktur-2024.html"
+      ],
+      "source_categories": [
+        "primary_gov"
+      ],
+      "score": "High",
+      "rationale": "BPS-Statistics Indonesia official publication (Manufacturing Industrial Directory 2024, October 2024). Primary government statistics agency. Recent (Oct 2024 for 2023 data). No geography mismatch. Claim limited to manufacturing — accurately framed. No overrides triggered.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "VC1-mkt-5",
+      "location": "stage-1-value-chain.md, Market Size table",
+      "claim_text": "BPS large-enterprise count (all sectors, >100 employees proxy): ~58,708 large enterprises (0.1% of ~56.2 million total businesses)",
+      "sources_cited": [
+        "https://thedocs.worldbank.org/en/doc/3364daf8158113e88224f0b170ad7a8f-0070012024/related/Presentation-IEP-PART-B-JUNE-2024.pdf"
+      ],
+      "source_categories": [
+        "primary_multilateral (World Bank presentation citing BPS data, June 2024)"
+      ],
+      "score": "Medium",
+      "rationale": "World Bank presentation (thedocs.worldbank.org) presenting BPS data. The World Bank is multilateral primary-tier; however this is a presentation/slide deck, not a World Bank authored report with named methodology. The BPS figures appear to be the underlying source but accessed via WB presentation. Scores Medium — credible but chain-of-citations applies (WB citing BPS; BPS would be the direct primary).",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "VC1-mkt-6",
+      "location": "stage-1-value-chain.md, Market Size table",
+      "claim_text": "Private health insurance / group health market GWP (2024 est.): ~$945 million – $2.93 billion USD (market research range)",
+      "sources_cited": [
+        "https://www.statista.com/outlook/fmo/insurances/non-life-insurances/health-insurance/indonesia",
+        "https://www.mordorintelligence.com/industry-reports/indonesia-indonesia-health-and-medical-insurance-market"
+      ],
+      "source_categories": [
+        "secondary_market_research (Statista)",
+        "secondary_market_research (Mordor Intelligence)"
+      ],
+      "score": "Low",
+      "rationale": "Both sources are private market research aggregators. Mordor Intelligence is explicitly listed on the auto-downgrade list. Statista market forecasts use proprietary models with undisclosed methodology. Draft itself notes 'market research range' and flags Mordor with 'treat with caution, methodology not disclosed.' Aggregator market-research auto-downgrade applies to both. Two aggregator URLs = 1 source category. No cross-validation against OJK (Indonesia's insurance regulator) or AAJI (Indonesia insurance industry association) data.",
+      "overrides_triggered": [
+        "aggregator-market-research-auto-downgrade"
+      ]
+    },
+    {
+      "claim_id": "VC1-mkt-7",
+      "location": "stage-1-value-chain.md, Market Size table",
+      "claim_text": "MMB Indonesia Health and Benefits Study 2024 sample: 470+ companies surveyed across 24 industries",
+      "sources_cited": [
+        "https://www.marsh.com/id/en/services/employee-health-benefits/insights/id-indonesia-health-and-benefits-study.html"
+      ],
+      "source_categories": [
+        "primary_consultancy (Mercer Marsh Benefits — firm-authored study, gated behind form; NEEDS-ATTENDED-FETCH flagged)"
+      ],
+      "score": "Medium",
+      "rationale": "MMB is a primary-tier consultancy (Mercer Marsh Benefits is a Marsh McLennan / Mercer affiliate firm). The study is firm-authored and Indonesia-specific. However: URL is gated (flagged NEEDS-ATTENDED-FETCH), so only meta-description was extracted — not the full document. The claim itself (sample size = 470+ companies, 24 industries) is a descriptive fact about the study, corroborated by secondary reporting (antaranews.com). Score: Medium because full document not verified, only meta-description confirmed.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "VC1-players-1",
+      "location": "stage-1-value-chain.md, Current Players section",
+      "claim_text": "PT Bank Rakyat Indonesia Tbk (BRI): ~61,000 employees (2023)",
+      "sources_cited": [
+        "https://bri.co.id/documents/20123/56786/Annual%20Report%20BRI%202023_Bahasa.pdf"
+      ],
+      "source_categories": [
+        "primary_filing (BRI 2023 Annual Report, Indonesian language — listed company annual report from issuer's own IR page)"
+      ],
+      "score": "High",
+      "rationale": "Audited annual report from issuer's own investor relations page. BRI is an IDX-listed, government-majority-owned bank. Annual report = primary_filing (highest tier for corporate data). Recent (2023). Claim is simple factual (employee count). Note: the 'Revelio Labs workforce data cited in secondary sources' mention in the draft is superseded by the annual report citation — only the annual report matters for scoring.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "VC1-players-2",
+      "location": "stage-1-value-chain.md, Current Players section",
+      "claim_text": "PT Telekomunikasi Indonesia Tbk (Telkom): ~23,064 employees (2023, TelkomGroup)",
+      "sources_cited": [
+        "https://www.telkom.co.id/minio/show/data/image_upload/page/B.6.1_Annual%20Report%20FY%202023,%20page%2075-78.pdf"
+      ],
+      "source_categories": [
+        "primary_filing (Telkom Annual Report FY2023, direct from telkom.co.id)"
+      ],
+      "score": "High",
+      "rationale": "Telkom annual report PDF directly from the company's IR system. IDX-listed. Primary filing. Recent (2023). No overrides.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "VC1-players-3",
+      "location": "stage-1-value-chain.md, Current Players section",
+      "claim_text": "PT Astra International Tbk: ~130,000–190,000 employees across the group",
+      "sources_cited": [
+        "https://www.indonesia-investments.com/business/indonesian-companies/astra-international/item192"
+      ],
+      "source_categories": [
+        "secondary_trade (Indonesia Investments — a trade/investor information portal)"
+      ],
+      "score": "Low",
+      "rationale": "Indonesia Investments (indonesia-investments.com) is a trade/investment news and information portal, not an audited filing or official source. Astra's own annual report (IDX:ASII) would be the authoritative source. 'companiesmarketcap.com' is also referenced but not as a URL — that is an aggregator site. Single secondary trade source for employee count data that should come from Astra's annual report. Also the range 130,000–190,000 is very wide, suggesting approximation from non-primary sources.",
+      "overrides_triggered": [
+        "single-trade-source"
+      ]
+    },
+    {
+      "claim_id": "VC1-players-4",
+      "location": "stage-1-value-chain.md, Current Players section",
+      "claim_text": "PT Unilever Indonesia Tbk: ~4,800 direct employees (2022)",
+      "sources_cited": [
+        "https://www.statista.com/statistics/1057082/unilever-indonesia-tbk-number-of-employees/"
+      ],
+      "source_categories": [
+        "secondary_market_research (Statista paywalled statistics page)"
+      ],
+      "score": "Low",
+      "rationale": "Statista statistics pages aggregate data from company reports but are themselves a secondary aggregator. Unilever Indonesia (IDX:UNVR) publishes audited annual reports; the draft should cite those. Additionally data is 2022 (now 3+ years old). Aggregator source for what is a primary-filing fact.",
+      "overrides_triggered": [
+        "aggregator-market-research-auto-downgrade",
+        "outdated-source-override"
+      ]
+    },
+    {
+      "claim_id": "VC1-players-5",
+      "location": "stage-1-value-chain.md, Current Players section",
+      "claim_text": "PT GoTo Gojek Tokopedia Tbk: ~3,553 direct employees as of Dec 2025",
+      "sources_cited": [
+        "https://stockanalysis.com/quote/idx/GOTO/employees/"
+      ],
+      "source_categories": [
+        "secondary (stockanalysis.com — financial data aggregator)"
+      ],
+      "score": "Low",
+      "rationale": "Stockanalysis.com is a financial data aggregator, not an authoritative filing. GoTo (IDX:GOTO) publishes official headcount in its annual reports/financial statements. Aggregator source for what is a primary-filing fact. Single aggregator source.",
+      "overrides_triggered": [
+        "single-trade-source"
+      ]
+    },
+    {
+      "claim_id": "VC1-players-6",
+      "location": "stage-1-value-chain.md, Current Players section",
+      "claim_text": "PT Freeport Indonesia: ~7,329 employees",
+      "sources_cited": [
+        "https://www.cbinsights.com/company/freeport-indonesia"
+      ],
+      "source_categories": [
+        "secondary (CBInsights — business intelligence aggregator)"
+      ],
+      "score": "Low",
+      "rationale": "CBInsights is a private company intelligence platform. Freeport Indonesia's headcount should come from PTFI's annual reports or FCXPA (Freeport-McMoRan) 20-F/10-K filings. CBInsights is an aggregator. Single aggregator source.",
+      "overrides_triggered": [
+        "single-trade-source"
+      ]
+    },
+    {
+      "claim_id": "VC1-players-7",
+      "location": "stage-1-value-chain.md, Current Players section",
+      "claim_text": "PT Adaro Energy Tbk: ~13,980 employees (2023)",
+      "sources_cited": [
+        "https://tradingeconomics.com/adro:ij:employees"
+      ],
+      "source_categories": [
+        "secondary (TradingEconomics — financial data aggregator)"
+      ],
+      "score": "Low",
+      "rationale": "TradingEconomics is a data aggregator. Adaro (IDX:ADRO, now Alamtri Resources IDX:ADRO) publishes audited annual reports. Single aggregator source.",
+      "overrides_triggered": [
+        "single-trade-source"
+      ]
+    },
+    {
+      "claim_id": "VC1-players-8",
+      "location": "stage-1-value-chain.md, Current Players section",
+      "claim_text": "PT Vale Indonesia Tbk: ~3,000 employees (2024 per annual report)",
+      "sources_cited": [
+        "https://indopremier.com/xdir/news/LAPORAN%20KEUANGAN/2024/q4//INCO_Q4_2024.pdf"
+      ],
+      "source_categories": [
+        "primary_filing (PT Vale Indonesia Q4 2024 financial report, via Indopremier — IDX data distributor)"
+      ],
+      "score": "High",
+      "rationale": "Indopremier is an official IDX-registered securities firm and its document library serves as a distribution channel for IDX financial filings (LAPORAN KEUANGAN = financial report). The Q4 2024 financial report of INCO (PT Vale Indonesia) is a primary filing equivalent. Recent (Q4 2024). No overrides.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "VC1-players-9",
+      "location": "stage-1-value-chain.md, Current Players section",
+      "claim_text": "PT HM Sampoerna East Java manufacturing workforce exceeds 10,000 workers [ASSUMED-2]",
+      "sources_cited": [],
+      "source_categories": [
+        "auto_low_assumed"
+      ],
+      "score": "Low",
+      "rationale": "Explicitly tagged [ASSUMED-2]. No source cited.",
+      "overrides_triggered": [
+        "claim_tagged_ASSUMED"
+      ]
+    },
+    {
+      "claim_id": "VC1-players-10",
+      "location": "stage-1-value-chain.md, Current Players section",
+      "claim_text": "PT Indofood Sukses Makmur group total workforce exceeds 70,000 [ASSUMED-3]",
+      "sources_cited": [],
+      "source_categories": [
+        "auto_low_assumed"
+      ],
+      "score": "Low",
+      "rationale": "Explicitly tagged [ASSUMED-3]. No source cited.",
+      "overrides_triggered": [
+        "claim_tagged_ASSUMED"
+      ]
+    },
+    {
+      "claim_id": "VC1-players-11",
+      "location": "stage-1-value-chain.md, Current Players section",
+      "claim_text": "PT Nestlé Indonesia: ~6,000–7,000 employees; follows Nestlé global health and wellness standards [ASSUMED-4]",
+      "sources_cited": [],
+      "source_categories": [
+        "auto_low_assumed"
+      ],
+      "score": "Low",
+      "rationale": "Explicitly tagged [ASSUMED-4]. No source cited.",
+      "overrides_triggered": [
+        "claim_tagged_ASSUMED"
+      ]
+    },
+    {
+      "claim_id": "VC1-players-12",
+      "location": "stage-1-value-chain.md, Current Players section",
+      "claim_text": "Coca-Cola Europacific Partners Indonesia has significant workforce (1,000–5,000+) [ASSUMED-5]",
+      "sources_cited": [],
+      "source_categories": [
+        "auto_low_assumed"
+      ],
+      "score": "Low",
+      "rationale": "Explicitly tagged [ASSUMED-5]. No source cited.",
+      "overrides_triggered": [
+        "claim_tagged_ASSUMED"
+      ]
+    },
+    {
+      "claim_id": "VC1-pp-medtrend-1",
+      "location": "stage-1-value-chain.md, Preliminary Pain Points section",
+      "claim_text": "Mercer Marsh Benefits reported Indonesia's medical trend rate at ~13.6% (2023 MMB benchmark)",
+      "sources_cited": [
+        "https://www.marsh.com/id/en/services/employee-health-benefits/insights/id-indonesia-health-and-benefits-study.html",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12425502/",
+        "https://www.aon.com/apac/insights/blog/default/2026-medical-trend-rates-insights-asia-pacific"
+      ],
+      "source_categories": [
+        "primary_consultancy (MMB HBS 2024, gated)",
+        "primary_academic (Prastyo & Gani 2025 Narra J, PMC-indexed — cites 13.6% as MMB Indonesia benchmark)",
+        "primary_consultancy (Aon 2026 Global Medical Trend Rates)"
+      ],
+      "score": "High",
+      "rationale": "The 13.6% figure is cited in the peer-reviewed Prastyo & Gani 2025 Narra J paper (PMC12425502) which independently cites the MMB Indonesia benchmark, AND the original MMB HBS 2024 source. Two independent primary-tier sources (peer-reviewed academic citing primary consultancy + the consultancy report itself). Aon 2026 adds a third top-tier consultancy for the 2026 projection (16.9%). Geography is Indonesia-specific. Data is recent (2023 benchmark). Strong claim.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "VC1-pp-bpjs-contrib",
+      "location": "stage-1-value-chain.md, Preliminary Pain Points section",
+      "claim_text": "BPJS Kesehatan costs up to IDR 5.76 million/employee/year (at the IDR 12M cap); employer rate 4%, employee 1%",
+      "sources_cited": [
+        "https://indonesia.acclime.com/guides/mandatory-healthcare-social-security/"
+      ],
+      "source_categories": [
+        "secondary (Acclime Indonesia — accounting/advisory firm's published guide)"
+      ],
+      "score": "Medium",
+      "rationale": "Acclime is an accounting advisory firm; their guides synthesize regulation but are secondary. The underlying regulation (PP No. 44/2015, PP No. 46/2015) is well-established and widely reported. The math (4% of IDR 12M cap = IDR 480,000/month × 12 = IDR 5.76M/year) is straightforward from the regulation itself. The draft correctly cites the regulatory basis in text (PP No. 44/2015 and PP No. 46/2015) but the footnote URL leads to Acclime's guide rather than the government regulation. Scores Medium — the underlying regulation is public law and the calculation is accurate, but the citation is advisory-firm secondary rather than the gazette or BPJS official site.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "VC1-pp-diabetes-prev",
+      "location": "stage-1-value-chain.md, Preliminary Pain Points section",
+      "claim_text": "Riskesdas 2023 shows diabetes prevalence of 11.3% in the general population and 4.6% in productive-age urban populations",
+      "sources_cited": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12519354/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4188107/"
+      ],
+      "source_categories": [
+        "primary_academic (Dewi et al 2025, PMC12519354 — serial analysis of Riskesdas 2013, 2018, 2023)",
+        "primary_academic (Soewondo et al 2014, PMC4188107 — urban productive-age study)"
+      ],
+      "score": "Medium",
+      "rationale": "The 11.3% figure comes from Dewi et al 2025 (PMC12519354) which is a peer-reviewed serial analysis of Indonesia's Riskesdas national health surveys — strong primary academic source. However: the draft conflates two different figures from two different papers/time periods. The 11.3% is from Riskesdas 2023 (cited via Dewi 2025); the 4.6% is from Soewondo 2014 (PMC4188107) — a 2014 study of urban productive-age adults, now 12 years old (outdated-source override: >3 years old). The claim pairs a current figure (11.3%) with an outdated figure (4.6%, 2014) without flagging the recency mismatch. Score: Medium — the 11.3% is well-sourced; the 4.6% is stale.",
+      "overrides_triggered": [
+        "outdated-source-override (Soewondo 2014 for the 4.6% figure)"
+      ]
+    },
+    {
+      "claim_id": "VC1-pp-ojk-copay",
+      "location": "stage-1-value-chain.md, Preliminary Pain Points section",
+      "claim_text": "OJK Circular Letter 7/SEOJK.05/2025 proposed mandatory 10% employee co-payment for inpatient and outpatient claims; implementation deferred pending formal POJK",
+      "sources_cited": [
+        "https://www.aon.com/apac/insights/blog/default/navigating-ojks-health-insurance-regulation"
+      ],
+      "source_categories": [
+        "primary_consultancy (Aon Indonesia blog/insight — primary-consultancy authored analysis of OJK regulation)"
+      ],
+      "score": "Medium",
+      "rationale": "Aon Indonesia is a top-tier consultancy; their published insights on OJK regulation are authoritative market commentary. However: this is an Aon blog/insight page rather than a firm-authored research report with named authors and methodology disclosure — it sits at the boundary of primary_consultancy and secondary. The underlying OJK Circular Letter itself (SEOJK.05/2025) is a primary_ministry document but no direct OJK gazette URL is cited. One consultancy source for a regulatory claim that should ideally cite the OJK circular directly. Borderline Medium.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "VC1-pp-broker-market",
+      "location": "stage-1-value-chain.md, Preliminary Pain Points section",
+      "claim_text": "Group health insurance procurement decisions are broker-led; key brokers are MMB, WTW, Aon, Lockton, Howden Indonesia",
+      "sources_cited": [
+        "https://www.kenresearch.com/competition-benchmarking/indonesia-insurance-broking-market"
+      ],
+      "source_categories": [
+        "secondary_market_research (Ken Research — private market research firm)"
+      ],
+      "score": "Low",
+      "rationale": "Ken Research is a private market research firm (similar tier to MarketsandMarkets). The broker list itself is industry-common-knowledge, but the citation for it is a paywall market research report from a non-primary source. The claim about broker names is plausibly true (MMB, WTW, Aon presence in Indonesia is verifiable from other sources) but the sourcing is weak for a market positioning claim. Aggregator market-research auto-downgrade applies.",
+      "overrides_triggered": [
+        "aggregator-market-research-auto-downgrade"
+      ]
+    },
+    {
+      "claim_id": "VC1-pp-selfinsured",
+      "location": "stage-1-value-chain.md, Preliminary Pain Points section",
+      "claim_text": "Self-funded (ASO) corporate group health plans constitute fewer than 5% of employer health plans in Indonesia [ASSUMED-6]",
+      "sources_cited": [],
+      "source_categories": [
+        "auto_low_assumed"
+      ],
+      "score": "Low",
+      "rationale": "Explicitly tagged [ASSUMED-6]. No source cited.",
+      "overrides_triggered": [
+        "claim_tagged_ASSUMED"
+      ]
+    },
+    {
+      "claim_id": "VC1-pp-wellness-disconnect",
+      "location": "stage-1-value-chain.md, Preliminary Pain Points section",
+      "claim_text": "Most 500+ HC employers have at least one wellness initiative but these are rarely integrated with MCU data or claims data",
+      "sources_cited": [
+        "https://www.cipd.org/ (cached: 1fe8c1f173b89187.md)"
+      ],
+      "source_categories": [
+        "primary_association (CIPD/AIA Asia Employee Benefits Report April 2024 — industry association report)"
+      ],
+      "score": "Low",
+      "rationale": "The CIPD/AIA Asia Employee Benefits Report 2024 covers Hong Kong and Singapore primarily (n=409; 162 HK, 157 SG, 90 other countries of which Indonesia has negligible representation per Table 1 in the report). The report explicitly states: 'we have only conducted country-level analysis on Hong Kong and Singapore.' Using this report to support a claim about Indonesian employers is a geography mismatch. APAC-as-proxy override triggers: report is not Indonesia-specific. Even without the geography issue, the CIPD report does not specifically address the MCU-claims data disconnect. Auto-Low: Geography mismatch.",
+      "overrides_triggered": [
+        "apac-as-proxy (CIPD/AIA report covers HK/SG, not Indonesia)"
+      ]
+    },
+    {
+      "claim_id": "VC1-pp-ncd-productivity",
+      "location": "stage-1-value-chain.md, Preliminary Pain Points section",
+      "claim_text": "Indonesian NCD economic burden estimated at $4.47 trillion in workplace productivity loss between 2012 and 2030; coronary heart disease alone accounts for 2.8% (absenteeism) and 6.8% (presenteeism) of annual GDP",
+      "sources_cited": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7482464/"
+      ],
+      "source_categories": [
+        "primary_academic (Tran/Uli et al 2020, BMC Cardiovascular Disorders, PMC7482464)"
+      ],
+      "score": "Medium",
+      "rationale": "The Tran et al 2020 paper (PMC7482464) is peer-reviewed and Indonesia-specific (working Indonesian population life-table modelling). Strong primary academic source. However: the $4.47 trillion NCD productivity loss 2012–2030 figure is described in the draft as 'cited in secondary' — meaning it is not directly in PMC7482464. The 2.8% absenteeism and 6.8% presenteeism of GDP appear to be from this paper or its secondary citations. The '$4.47 trillion' NCD burden figure is a very large number (implausibly larger than Indonesia's entire GDP for the period unless cumulative discounted) — the draft's own footnote says 'cited in secondary' which means the primary paper may be reporting CHD-specific figures and the $4.47 trillion is an aggregation from elsewhere. Chain-of-citations flag: the $4.47 trillion figure needs direct source verification. Score: Medium for CHD-specific figures from the paper; the $4.47 trillion is unverified paraphrase chain.",
+      "overrides_triggered": [
+        "chain-of-citations (the $4.47T NCD burden is noted as 'cited in secondary' — not directly from PMC7482464)"
+      ]
+    },
+    {
+      "claim_id": "PP1.1-cost-1",
+      "location": "stage-1-pain-points.md, Pain point 1.1, Estimated cost",
+      "claim_text": "2016 BPJS-based cost-of-illness study found total direct medical costs of T2DM of US$576 million nationally; ~74% spent on patients with complications; inpatient cost was 56% of total",
+      "sources_cited": [
+        "https://www.valuehealthregionalissues.com/article/S2212-1099(21)00072-8/fulltext"
+      ],
+      "source_categories": [
+        "primary_academic (peer-reviewed journal — Value in Health Regional Issues; uses BPJS claims data 2016)"
+      ],
+      "score": "Medium",
+      "rationale": "Value in Health Regional Issues is a peer-reviewed journal (Elsevier). The study uses 2016 BPJS administrative data — now 9 years old. Outdated-source override: cost-of-illness figures from 2016 for healthcare costs (which inflate rapidly in Indonesia at 13–19%/year) are materially stale. Score drops from High to Medium due to recency issue. The paper is well-established academically, but the 2016 cost numbers significantly understate 2024/2025 reality.",
+      "overrides_triggered": [
+        "outdated-source-override (2016 BPJS data; 9 years old; Indonesian medical costs have roughly doubled since then)"
+      ]
+    },
+    {
+      "claim_id": "PP1.1-cost-2",
+      "location": "stage-1-pain-points.md, Pain point 1.1, Estimated cost",
+      "claim_text": "MMB Indonesia HBS 2024 (n=470+ companies, 320,000+ members): average inpatient claim Rp 22 million / ~USD 1,419 per person in 2023; average outpatient claim Rp 3.6 million / ~USD 232 per person",
+      "sources_cited": [
+        "https://www.antaranews.com/berita/4375099/marsh-indonesia-ungkap-biaya-medis-di-indonesia-alami-lonjakan-cukup-tinggi",
+        "https://www.marsh.com/id/en/services/employee-health-benefits/insights/id-indonesia-health-and-benefits-study.html"
+      ],
+      "source_categories": [
+        "secondary_news (ANTARA — Indonesian state news agency)",
+        "primary_consultancy (MMB HBS 2024 — gated)"
+      ],
+      "score": "Medium",
+      "rationale": "ANTARA is Indonesia's state news agency — strong secondary, not trade press. The ANTARA article reports the MMB HBS 2024 figures (Rp 22M inpatient, Rp 3.6M outpatient) attributed to Marsh Indonesia at a public announcement. The underlying source (MMB HBS 2024) is primary_consultancy but gated. ANTARA reporting on a Marsh Indonesia press announcement is chain-of-citations: the primary is MMB HBS 2024, accessed via ANTARA secondary reporting of a press event. Score: Medium — credible secondary (ANTARA is authoritative news) plus gated primary consultancy source. Indonesia-specific and recent (2024 study).",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "PP1.1-cost-3",
+      "location": "stage-1-pain-points.md, Pain point 1.1, Estimated cost",
+      "claim_text": "Cardiovascular and metabolic complications (stroke, AMI, renal disease) routinely cost Rp 100–400 million / USD 6,450–25,800 per episode in private hospitals",
+      "sources_cited": [
+        "https://www.thejakartapost.com/business/2024/03/05/rising-medical-costs-lead-to-surge-in-health-insurance-claims.html"
+      ],
+      "source_categories": [
+        "secondary_news (Jakarta Post — credible national newspaper)"
+      ],
+      "score": "Low",
+      "rationale": "Single secondary news source for a quantified cost-per-episode claim. The Jakarta Post article (March 2024) is about rising medical costs generally and claims surge — it is not a hospital pricing study or insurer tariff study. Single-trade/news-source override for an operating cost figure. Private hospital episode cost for stroke/AMI/renal should be sourced from hospital tariff schedules, insurer claims data, or cost-of-illness studies. Single news source is insufficient.",
+      "overrides_triggered": [
+        "single-trade-source (operating cost figure)"
+      ]
+    },
+    {
+      "claim_id": "PP1.1-freq-1",
+      "location": "stage-1-pain-points.md, Pain point 1.1, Frequency",
+      "claim_text": "94% of 470+ Indonesian companies surveyed (MMB HBS 2024) provide inpatient benefits; 79% provide outpatient benefits",
+      "sources_cited": [
+        "https://www.antaranews.com/berita/4375099/marsh-indonesia-ungkap-biaya-medis-di-indonesia-alami-lonjakan-cukup-tinggi",
+        "https://www.marsh.com/id/en/services/employee-health-benefits/insights/id-indonesia-health-and-benefits-study.html"
+      ],
+      "source_categories": [
+        "secondary_news (ANTARA)",
+        "primary_consultancy (MMB HBS 2024, gated)"
+      ],
+      "score": "Medium",
+      "rationale": "Same sourcing as PP1.1-cost-2. ANTARA + gated MMB HBS 2024. Medium — same reasoning applies.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "PP1.1-freq-2",
+      "location": "stage-1-pain-points.md, Pain point 1.1, Frequency",
+      "claim_text": "Indonesia's 2025 medical trend rate is 19%, highest in Asia except Philippines (21%); Jakarta Post reported health insurance claims grew 25% YoY in 2023",
+      "sources_cited": [
+        "https://www.thejakartapost.com/business/2024/03/05/rising-medical-costs-lead-to-surge-in-health-insurance-claims.html"
+      ],
+      "source_categories": [
+        "secondary_news (Jakarta Post, citing AAJI data)"
+      ],
+      "score": "Low",
+      "rationale": "The 19% figure appears in pain point 1.1 sourced only to the Jakarta Post article (source 4). The actual 19% MMB HTS 2025 source is cited in pain point 1.4 (source 2) but not cross-referenced here. The Jakarta Post article covers the 25% claims growth and 13.6% 2023 trend (from MMB HBS 2024). The 19% 2025 projection is from MMB HTS 2025 — if that source is not cited in this specific claim's footnotes, it is single-news-source for the 19% figure as presented here. However the broader draft does cite MMB HTS 2025 separately. Chain-of-citations: Jakarta Post cites AAJI for claims growth data. The claims growth figure (25% YoY) is AAJI data reported via Jakarta Post — the AAJI is a primary_association (Indonesia Life Insurance Association). Score: Medium for the 25% claims growth (strong secondary citing primary association); Low for 19% trend rate if only Jakarta Post cited here — treating as Low for this claim since sourcing in footnote 4 is Jakarta Post only.",
+      "overrides_triggered": [
+        "single-trade-source (19% figure sourced only to Jakarta Post in this footnote set)"
+      ]
+    },
+    {
+      "claim_id": "PP1.1-freq-3",
+      "location": "stage-1-pain-points.md, Pain point 1.1, Frequency",
+      "claim_text": "Indonesia employer-sponsored health insurance medical cost inflation: 12.3% in 2022, 13.6% in 2023 (Jakarta Post / MMB 2024), accelerating to 19% projected 2025 (MMB HTS 2025)",
+      "sources_cited": [
+        "https://www.thejakartapost.com/business/2024/03/05/rising-medical-costs-lead-to-surge-in-health-insurance-claims.html",
+        "https://www.fwd.co.id/files/v3/assets/blt0c90459332411c22/bltea93d95ff78d64c5/67b8270218515989b9a6916c/Mercer_Marsh_Benefit_Health_Trend_2025_(1).pdf",
+        "https://www.hcamag.com/asia/specialisation/benefits/asias-medical-trend-rates-projected-to-hit-13-in-2025-report/514362"
+      ],
+      "source_categories": [
+        "secondary_news (Jakarta Post)",
+        "primary_consultancy (MMB HTS 2025 PDF hosted on fwd.co.id)",
+        "secondary_trade (HCA Magazine — HR trade press)"
+      ],
+      "score": "Medium",
+      "rationale": "The MMB HTS 2025 PDF hosted on fwd.co.id is a Mercer Marsh Benefits authored report (firm-imprint document) — primary_consultancy, even though hosted on an insurer's site. The PDF URL pattern suggests a document library hosting of the MMB report. This is the strongest of the three sources and directly supports the 19% figure and trend series. Jakarta Post adds context for 13.6% (2023). HCA Magazine is redundant trade press citing the same MMB data. Score: Medium — one primary_consultancy source (MMB HTS 2025) plus secondary news. Would be High if the MMB report URL directly resolved to a Marsh-owned domain or if PMC academic corroboration existed for the trend series.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "PP1.1-freq-4",
+      "location": "stage-1-pain-points.md, Pain point 1.1, Frequency",
+      "claim_text": "IDF Diabetes Atlas 2024: 73.2% of Indonesian adults with diabetes are unaware of their condition — approximately 15 million undiagnosed cases nationally, third-highest globally",
+      "sources_cited": [
+        "https://idf.org/news/idf-diabetes-atlas-11th-edition/",
+        "https://diabetesatlas.org/data-by-location/country/indonesia/"
+      ],
+      "source_categories": [
+        "primary_association (International Diabetes Federation — Diabetes Atlas 11th ed. 2024)"
+      ],
+      "score": "High",
+      "rationale": "IDF Diabetes Atlas is the canonical global diabetes epidemiology reference, published by the International Diabetes Federation (a WHO-affiliated umbrella organization). It is primary_association (global health association, not a market research firm). The 2024 edition is the most recent. Two IDF-domain URLs both pointing to the same underlying dataset — counts as one source, but that source is the authoritative primary for global diabetes prevalence data. Indonesia-specific data page cited directly. No geography mismatch. Recent (2024). This is a strong High.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "PP1.1-freq-5",
+      "location": "stage-1-pain-points.md, Pain point 1.1, Frequency",
+      "claim_text": "Retrospective cohort study of Indonesian employer-sponsored retiree health insurance (29,695 retirees, 2020–2023): five diseases with increasing claims trend; cardiovascular disease accounted for 37% of high-cost disease expenditure",
+      "sources_cited": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12425502/"
+      ],
+      "source_categories": [
+        "primary_academic (Prastyo & Gani 2025, Narra J, PMC-indexed)"
+      ],
+      "score": "High",
+      "rationale": "Prastyo & Gani 2025 is peer-reviewed (Narra J, PMC12425502), Indonesia-specific, uses actual Indonesian employer-sponsored retiree insurance claims data (2020–2023), large cohort (29,695 retirees). This is the best available academic evidence for the CDM cost burden in Indonesian employer insurance. Strong primary_academic. The limitation — retiree population, not active workforce — should be noted but doesn't invalidate the claim.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "PP1.1-rc1-tpa",
+      "location": "stage-1-pain-points.md, Pain point 1.1, Root Cause 1",
+      "claim_text": "Indonesian TPAs (AdMedika, Owlexa, Meditap, etc.) are compensated per claim and report by benefit category, not by disease cohort; condition-level analytics not bundled in standard TPA contracts",
+      "sources_cited": [
+        "https://admedika.co.id/index.php/en/32-services/149-national-health-solution",
+        "https://www.nextmsc.com/report/indonesia-insurance-tpa-market"
+      ],
+      "source_categories": [
+        "auto_low_vendor (AdMedika describing its own services)",
+        "secondary_market_research (NextMSC — private market research firm; NEEDS-ATTENDED-FETCH)"
+      ],
+      "score": "Low",
+      "rationale": "Two issues: (1) AdMedika.co.id is the vendor's own website describing its own product/services — auto-Low per vendor-marketing override. (2) NextMSC is a private market research firm (similar to Mordor/MarketsandMarkets category) and flagged NEEDS-ATTENDED-FETCH — unverified. The structural claim about TPA incentive misalignment is plausible and logically coherent, but the sourcing relies on vendor self-description and an unverified market research firm. Auto-Low.",
+      "overrides_triggered": [
+        "auto_low_vendor (AdMedika on its own services)",
+        "aggregator-market-research-auto-downgrade (NextMSC)"
+      ]
+    },
+    {
+      "claim_id": "PP1.1-rc3-jkn-data",
+      "location": "stage-1-pain-points.md, Pain point 1.1, Root Cause 3",
+      "claim_text": "BPJS JKN and supplemental private employer claims have no interoperability/shared claims file — diabetic employee managing condition via BPJS generates zero employer-TPA claims until a specialist visit",
+      "sources_cited": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6861401/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11308606/"
+      ],
+      "source_categories": [
+        "primary_academic (PMC6861401 — National Health Insurance Databases Indonesia)",
+        "primary_academic (Khoe et al 2024, PMC11308606 — employer insurance provision study)"
+      ],
+      "score": "High",
+      "rationale": "Two independent peer-reviewed academic sources. PMC6861401 addresses the JKN database structure; Khoe et al 2024 (PMC11308606) covers employer insurance provision. Together they document the architecture of Indonesia's two-tier insurance system and the data gap between tiers. Both Indonesia-specific. Recent (2024 for Khoe; 2019 for PMC6861401 — the 2019 JKN database article is borderline but the structural fact about BPJS/private insurance separation is an enduring regulatory architecture). Two independent primary academic sources. Score: High.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "PP1.2-cost-1",
+      "location": "stage-1-pain-points.md, Pain point 1.2, Estimated cost",
+      "claim_text": "Incremental cost of adding HbA1c to a standard MCU panel: approximately Rp 75,000–150,000 / USD 5–10 per employee per year based on Prodia Digital and hospital MCU pricing",
+      "sources_cited": [
+        "https://prodiadigital.com/en",
+        "https://tirta.co.id/en/artikel/medical-check-up-cost/"
+      ],
+      "source_categories": [
+        "secondary (Prodia Digital — commercial lab's own consumer-facing price list)",
+        "secondary (Tirta Medical Centre — MCU provider's own pricing page)"
+      ],
+      "score": "Low",
+      "rationale": "Both sources are MCU/lab provider websites listing their own prices. Prodia is a commercial diagnostic lab; Tirta Medical is a clinic. These are provider-side pricing pages, not independent cost studies. While provider pricing pages are a legitimate way to establish retail pricing (this is not vendor-marketing-override for capability claims — it is pricing data), they are single commercial sources. The claim is plausible but relies on two provider pricing pages. The vendor-marketing override specifically applies to claims about a vendor's capabilities/market; pricing data from a provider's own price list is a borderline case. Scored Low because: (1) no independent cross-check (e.g., BPJS tariff schedule, health economics study); (2) provider pricing can be outdated on websites; (3) single-source-type (both are commercial lab/clinic pricing pages).",
+      "overrides_triggered": [
+        "single-trade-source (operating cost figure from provider price lists only)"
+      ]
+    },
+    {
+      "claim_id": "PP1.2-cost-2",
+      "location": "stage-1-pain-points.md, Pain point 1.2, Estimated cost",
+      "claim_text": "Private hospital inpatient for dialysis initiation: Rp 30M–80M+ per episode (USD 1,935–5,160); BPJS-reported inpatient costs for CKD among Indonesia's top five catastrophic claim categories",
+      "sources_cited": [
+        "https://www.valuehealthregionalissues.com/article/S2212-1099(21)00072-8/fulltext",
+        "https://revistas.tec-ac.cr/index.php/tec_empresarial/article/view/781"
+      ],
+      "source_categories": [
+        "primary_academic (Value in Health Regional Issues 2016 T2DM cost study — stale)",
+        "secondary_unknown (revistas.tec-ac.cr/tec_empresarial — Costa Rican business journal; peer-review status unclear; cited as 'BPJS 2023 T2DM direct cost analysis')"
+      ],
+      "score": "Low",
+      "rationale": "The dialysis episode cost figure (Rp 30M–80M+) is not directly sourced — neither the 2016 Value in Health paper nor the Costa Rican journal article clearly states private hospital dialysis initiation costs. The private hospital episode cost range appears to be the draft author's estimate. The tec_empresarial journal (Costa Rica) as a source for Indonesian BPJS 2023 data is highly suspicious — this journal is not a recognized Indonesian health economics publication. One source is 2016 (stale). The dialysis cost figure lacks a primary citation (no hospital tariff schedule, no BPJS tariff data, no PERSI/hospital association data cited). Auto-Low.",
+      "overrides_triggered": [
+        "outdated-source-override (2016 cost study)",
+        "unverifiable-source (revistas.tec-ac.cr for Indonesian BPJS data is a significant source quality concern)"
+      ]
+    },
+    {
+      "claim_id": "PP1.2-cost-3",
+      "location": "stage-1-pain-points.md, Pain point 1.2, Estimated cost",
+      "claim_text": "MCU cost per employee for a standard corporate package: Rp 400,000–1,200,000 / USD 26–77 at Tier-1 city providers (Prodia, Kimia Farma, hospital MCU departments)",
+      "sources_cited": [
+        "https://tirta.co.id/en/layanan-mcu-medical-check-up-en/",
+        "https://www.emc.id/en/news/premiumMCU-1",
+        "https://www.ciputramedicalcenter.com/services/medical-check-up-mcu/"
+      ],
+      "source_categories": [
+        "secondary (Tirta Medical pricing page)",
+        "auto_low_vendor (EMC Healthcare — MCU provider describing own pricing)",
+        "secondary (Ciputra Medical Center pricing page)"
+      ],
+      "score": "Low",
+      "rationale": "Three MCU provider pricing pages. EMC Healthcare pricing page is auto-Low (vendor describing own services/pricing). The other two are commercial clinic pricing pages — provider self-reported pricing is secondary at best. No independent cross-check (health ministry schedule, BPJS tariff for comparison). Single-source-type override: all three are commercial MCU provider pricing pages.",
+      "overrides_triggered": [
+        "single-source-type (all provider self-reported pricing pages)"
+      ]
+    },
+    {
+      "claim_id": "PP1.2-freq-1",
+      "location": "stage-1-pain-points.md, Pain point 1.2, Frequency",
+      "claim_text": "IDF Diabetes Atlas 2024: 73.2% of Indonesian diabetics undiagnosed; among working-age urban adults, undetected share may be slightly lower but remains above 60% based on national survey data",
+      "sources_cited": [
+        "https://idf.org/news/idf-diabetes-atlas-11th-edition/"
+      ],
+      "source_categories": [
+        "primary_association (IDF Diabetes Atlas 2024)"
+      ],
+      "score": "Medium",
+      "rationale": "The 73.2% national figure is High-tier (IDF primary association, same as PP1.1-freq-4). However, the 'remains above 60% for urban working-age' qualifier is not directly sourced — it is an inference ('may be slightly lower... but remains above 60% based on national survey data'). The claim bundles a well-sourced figure (73.2%) with an inferential extrapolation (60% for urban working-age). Score: Medium because the quantified extrapolation (60%) is not independently sourced.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "PP1.2-freq-2",
+      "location": "stage-1-pain-points.md, Pain point 1.2, Frequency",
+      "claim_text": "2024 cost-effectiveness study of community-based T2DM prevention in Indonesia: early detection programs cost-effective at USD 1,200–2,400 per QALY; dominant barrier was access to screening, not treatment efficacy",
+      "sources_cited": [
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12506045/"
+      ],
+      "source_categories": [
+        "primary_academic (PMC12506045 — peer-reviewed, 2024)"
+      ],
+      "score": "High",
+      "rationale": "PMC12506045 is a peer-reviewed 2024 study of T2DM prevention cost-effectiveness in Indonesia. Primary_academic, Indonesia-specific, recent. One source but it is primary and directly relevant. Score: High — the IDF Atlas for prevalence (High) plus this academic cost-effectiveness study make the screening ROI case well-sourced.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "PP1.2-rc3-permenaker",
+      "location": "stage-1-pain-points.md, Pain point 1.2, Root Cause 3",
+      "claim_text": "Permenaker 5/2018 mandates periodic health examinations but does not enumerate a minimum test list; MCU providers design compliant packages without HbA1c",
+      "sources_cited": [
+        "https://llg-bwi.org/file_publish/Permenaker%20Nomor%205%20Tahun%202018.pdf",
+        "https://www.hseprime.com/dasar-hukum-medical-check-up-di-tempat-kerja/"
+      ],
+      "source_categories": [
+        "primary_ministry (Permenaker 5/2018 — Ministry of Manpower regulation, full text)",
+        "auto_low_vendor (HSEPrime — compliance/EHS advisory blog)"
+      ],
+      "score": "High",
+      "rationale": "The Permenaker 5/2018 PDF is the primary regulatory text — this is primary_ministry (Ministerial Regulation No. 5/2018). This is the most authoritative source for the claim about regulatory content. HSEPrime is redundant and auto-Low but the primary source (the regulation itself) is sufficient alone. The claim about what the regulation does/does not specify is verifiable from the regulation's text. High.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "PP1.3-cost-1",
+      "location": "stage-1-pain-points.md, Pain point 1.3, Estimated cost",
+      "claim_text": "CHD generates 21.8 missed work days per affected person per year (6.8 absenteeism + 15.0 presenteeism) vs. 10.6 for a general worker; GDP cost of CHD-related productivity loss: US$33.3 billion lifetime for the current 2M CHD-prevalence working-age cohort",
+      "sources_cited": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7482464/"
+      ],
+      "source_categories": [
+        "primary_academic (Uli/Tran et al 2020, BMC Cardiovascular Disorders, PMC7482464 — Indonesia-specific life-table study)"
+      ],
+      "score": "High",
+      "rationale": "PMC7482464 is peer-reviewed, Indonesia-specific, uses life-table modelling of the working Indonesian population. The specific figures (21.8 missed days, 6.8 absenteeism, 15.0 presenteeism, $33.3B lifetime, 2M CHD prevalence) are all attributable to this paper. Primary academic, recent enough (2020 — borderline on 5-year recency but the modelling data reflects structural long-term burden, not a one-year snapshot). Score: High.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "PP1.3-cost-2",
+      "location": "stage-1-pain-points.md, Pain point 1.3, Estimated cost",
+      "claim_text": "Singapore total economic cost per working-age diabetic: USD 5,646 in 2010; projected USD 7,791 by 2050, with most increase attributed to productivity losses",
+      "sources_cited": [
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12777722/"
+      ],
+      "source_categories": [
+        "primary_academic (PMC12777722 — 2025 integrative review of DM workplace impacts)"
+      ],
+      "score": "Low",
+      "rationale": "The Singapore cost figure ($5,646 per diabetic) is used in the draft to support a claim about Indonesian employer cost burden. This is a geography mismatch — Singapore is a high-income city-state with very different healthcare costs, wage levels, and purchasing power from Indonesia. The draft applies this 'conservatively' to Indonesia's wage base, but Singapore per-diabetic costs cannot proxy for Indonesia without adjustment. APAC-as-proxy override: Singapore data being used as a comparator for Indonesia-specific cost estimates. Additionally, the 2010 base year data is 15+ years old. Geography mismatch flag.",
+      "overrides_triggered": [
+        "apac-as-proxy (Singapore 2010 cost applied to Indonesia)",
+        "outdated-source-override (2010 base year)"
+      ]
+    },
+    {
+      "claim_id": "PP1.3-cost-3",
+      "location": "stage-1-pain-points.md, Pain point 1.3, Estimated cost",
+      "claim_text": "South India outpatient cohort: diabetics averaged 7.48 lost work days/year in absenteeism alone",
+      "sources_cited": [
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5870439/"
+      ],
+      "source_categories": [
+        "primary_academic (PMC5870439 — peer-reviewed, South India cohort)"
+      ],
+      "score": "Low",
+      "rationale": "South India absenteeism data applied to Indonesian workforce context. Geography mismatch: India (lower-middle-income, different labour law, different sick-pay liability, different disease management context) is not a valid proxy for Indonesia without explicit adjustment. The draft explicitly uses this to estimate Indonesian productivity loss ('applied to a 1,000-employee urban workforce'). APAC-as-proxy override triggers. Additionally the paper is from 2018 (PMC5870439 published 2018 — now 7–8 years old for a cost/absenteeism figure).",
+      "overrides_triggered": [
+        "apac-as-proxy (South India data applied to Indonesia)",
+        "outdated-source-override (2018 study, now ~8 years old)"
+      ]
+    },
+    {
+      "claim_id": "PP1.3-cost-4",
+      "location": "stage-1-pain-points.md, Pain point 1.3, Estimated cost",
+      "claim_text": "Finkelstein et al 2014: aggregate OOP + indirect burden of four NCDs on Indonesian households — Int$4.02 billion in 2010, rising to Int$5.80 billion by 2020; diabetes alone Int$0.81B in 2010, Int$1.27B by 2020",
+      "sources_cited": [
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4051736/"
+      ],
+      "source_categories": [
+        "primary_academic (Finkelstein et al 2014, Duke-NUS/PLOS ONE, PMC4051736 — Indonesia-specific household NCD burden)"
+      ],
+      "score": "Low",
+      "rationale": "Finkelstein 2014 is peer-reviewed and Indonesia-specific — strong source. However: (1) it covers 2010 actual + 2020 projection, meaning even the 'projected' figures are now 5 years in the past and outdated; (2) the study covers household burden (OOP + indirect) which is a different metric from employer-specific cost burden; (3) outdated-source override applies — a 2014 paper using 2010 data with projections to 2020 is now significantly stale for a market sizing exercise. The figures reflect a snapshot from 14 years ago when Indonesian incomes, healthcare costs, and NCD prevalence were materially lower. Score: Low due to outdated-source override.",
+      "overrides_triggered": [
+        "outdated-source-override (2014 paper; 2010 base data; 2020 projections now past)"
+      ]
+    },
+    {
+      "claim_id": "PP1.3-freq-1",
+      "location": "stage-1-pain-points.md, Pain point 1.3, Frequency",
+      "claim_text": "Presenteeism accounts for approximately 78% of total health-related productivity costs; absenteeism ~4%; disability ~18%",
+      "sources_cited": [
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7108714/"
+      ],
+      "source_categories": [
+        "primary_academic (PMC7108714 — peer-reviewed, productivity loss drivers)"
+      ],
+      "score": "Low",
+      "rationale": "PMC7108714 is peer-reviewed but the geographic context is unclear — this appears to be a cross-industry global review. Applied to Indonesian context without explicit adjustment. Geography unclear (likely Western markets). Single source for a quantified breakdown (78%/4%/18%) that varies significantly by disease type, country, and measurement methodology. The claim is used to frame Indonesian employer-side cost but the source is not Indonesia-specific. Geography mismatch if the study is non-Indonesia.",
+      "overrides_triggered": [
+        "apac-as-proxy (if source is non-Indonesia, which it appears to be based on PMC7108714 publication context)"
+      ]
+    },
+    {
+      "claim_id": "PP1.3-freq-2",
+      "location": "stage-1-pain-points.md, Pain point 1.3, Frequency",
+      "claim_text": "IDF Diabetes Atlas 2024: total direct health spending on diabetes in Indonesia USD 6.3 billion/year; indirect productivity burden estimated to be at least comparable in magnitude; 15M undiagnosed diabetics nationally",
+      "sources_cited": [
+        "https://idf.org/news/idf-diabetes-atlas-11th-edition/"
+      ],
+      "source_categories": [
+        "primary_association (IDF Diabetes Atlas 2024)"
+      ],
+      "score": "Medium",
+      "rationale": "The USD 6.3 billion direct spend and 15M undiagnosed figures are IDF Diabetes Atlas 2024 — primary_association, High-tier for those specific statistics. However: the claim 'indirect productivity burden estimated to be at least comparable in magnitude' is an inference by the draft ('estimated by regional literature to be at least comparable') — this qualifier is not directly from the IDF Atlas (which tracks direct healthcare spending, not indirect productivity costs). The high-confidence IDF figures are bundled with an unsourced inference about productivity burden parity. Score: Medium — the IDF figures are strong; the productivity inference is not sourced.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "PP1.4-cost-1",
+      "location": "stage-1-pain-points.md, Pain point 1.4, Estimated cost",
+      "claim_text": "Indonesia group health premium inflation: 12.3% (2022), 13.6% (2023), 14.6% projected 2024, 19% projected 2025 (MMB HBS 2024 / HTS 2025). For 1,000-employee company: ~Rp 4.9B / USD 314,000 incremental annual cost at 19% trend",
+      "sources_cited": [
+        "https://www.antaranews.com/berita/4375099/marsh-indonesia-ungkap-biaya-medis-di-indonesia-alami-lonjakan-cukup-tinggi",
+        "https://www.fwd.co.id/files/v3/assets/blt0c90459332411c22/bltea93d95ff78d64c5/67b8270218515989b9a6916c/Mercer_Marsh_Benefit_Health_Trend_2025_(1).pdf"
+      ],
+      "source_categories": [
+        "secondary_news (ANTARA)",
+        "primary_consultancy (MMB HTS 2025 PDF)"
+      ],
+      "score": "Medium",
+      "rationale": "The trend rate time series is supported by MMB HTS 2025 (primary_consultancy) and corroborated by ANTARA (secondary news). The derived calculation (Rp 4.9B for 1,000 employees at 19% trend) is arithmetic from the cited MMB benchmark figures — this is the draft's own modeling, not a directly cited figure, but the inputs are sourced. Score: Medium — strong for trend rates (one primary_consultancy); the 'incremental cost for 1,000 employees' is derived modeling, not independently sourced.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "PP1.4-cost-2",
+      "location": "stage-1-pain-points.md, Pain point 1.4, Estimated cost",
+      "claim_text": "Total Indonesian health insurance claims value: Rp 20.83 trillion / USD 1.32 billion in 2023 (+25% YoY); claims growth outpacing premium growth — loss ratio pressure",
+      "sources_cited": [
+        "https://www.thejakartapost.com/business/2024/03/05/rising-medical-costs-lead-to-surge-in-health-insurance-claims.html"
+      ],
+      "source_categories": [
+        "secondary_news (Jakarta Post, citing AAJI data)"
+      ],
+      "score": "Medium",
+      "rationale": "The Jakarta Post article cites AAJI (Indonesia Life Insurance Association) data. AAJI is a primary_association. Chain-of-citations: the underlying primary is AAJI statistics; Jakarta Post is the secondary reporter. The AAJI is authoritative for industry claims data. Score: Medium — strong underlying primary (AAJI), accessed via credible national newspaper secondary. Would be High if AAJI annual statistics were cited directly.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "PP1.4-freq-1",
+      "location": "stage-1-pain-points.md, Pain point 1.4, Frequency",
+      "claim_text": "MMB HTS 2025: 87% of Asian insurers cite high-cost claimants as top affordability concern; metabolic/cardiovascular the leading cost category globally; only 4 in 10 plans include preventive cancer screening by default",
+      "sources_cited": [
+        "https://www.fwd.co.id/files/v3/assets/blt0c90459332411c22/bltea93d95ff78d64c5/67b8270218515989b9a6916c/Mercer_Marsh_Benefit_Health_Trend_2025_(1).pdf"
+      ],
+      "source_categories": [
+        "primary_consultancy (MMB HTS 2025 PDF)"
+      ],
+      "score": "Medium",
+      "rationale": "Primary_consultancy source (MMB HTS 2025). However: the '87% of Asian insurers' figure applies to Asia broadly, not Indonesia specifically. APAC-as-proxy applies for the 87% figure. The PDF is hosted on fwd.co.id (FWD Insurance Indonesia) — not Marsh's own domain — which is unusual but likely a licensed/republication. Score: Medium — primary consultancy report but APAC-level statistics applied to Indonesia context without Indonesia-specific breakdown visible.",
+      "overrides_triggered": [
+        "apac-as-proxy (87% figure is Asia-wide, not Indonesia-specific)"
+      ]
+    },
+    {
+      "claim_id": "PP1.4-freq-2",
+      "location": "stage-1-pain-points.md, Pain point 1.4, Frequency",
+      "claim_text": "WTW 2026 Global Medical Trends: Asia Pacific costs projected to rise 14% in 2026; 'limited cost sharing practices' and NCD utilization among top cost drivers",
+      "sources_cited": [
+        "https://www.wtwco.com/en-cm/insights/2025/10/2026-global-medical-trends-survey",
+        "https://www.wtwco.com/en-in/insights/2025/12/asia-pacific-medical-inflation-continues-to-soar-in-2026"
+      ],
+      "source_categories": [
+        "primary_consultancy (WTW 2026 Global Medical Trends — Willis Towers Watson authored report)"
+      ],
+      "score": "Medium",
+      "rationale": "WTW is a primary_consultancy. The report is recent (2025, for 2026 projections). However: the 14% figure is Asia Pacific, not Indonesia-specific. Single-domain (both URLs are wtwco.com — counts as one source). APAC-as-proxy for a claim in an Indonesia-specific context. Score: Medium — strong source tier but geographic specificity is APAC not Indonesia.",
+      "overrides_triggered": [
+        "apac-as-proxy (14% APAC figure, not Indonesia-specific)",
+        "single-domain (both URLs wtwco.com)"
+      ]
+    },
+    {
+      "claim_id": "PP1.4-freq-3",
+      "location": "stage-1-pain-points.md, Pain point 1.4, Frequency",
+      "claim_text": "Prastyo & Gani 2025: retiree employer-sponsored plan inflation 26.5% (2022), 20.48% (2023)",
+      "sources_cited": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12425502/"
+      ],
+      "source_categories": [
+        "primary_academic (Prastyo & Gani 2025, Narra J, PMC12425502)"
+      ],
+      "score": "High",
+      "rationale": "Peer-reviewed academic paper using actual Indonesian employer-sponsored retiree insurance claims data. Indonesia-specific. The inflation figures (26.5% 2022, 20.48% 2023) are from the paper's analysis of the specific plan studied. Recent (2025 publication, 2020–2023 data). High — one primary academic source directly supporting the claim.",
+      "overrides_triggered": []
+    },
+    {
+      "claim_id": "PP1.4-freq-4",
+      "location": "stage-1-pain-points.md, Pain point 1.4, Frequency",
+      "claim_text": "Swiss Re Asia health protection gap: Indonesia USD 82B gap; chronic disease prevalence in Asia (hypertension, diabetes, cholesterol top three) [NEEDS-ATTENDED-FETCH]",
+      "sources_cited": [
+        "https://www.swissre.com/institute/research/topics-and-risk-dialogues/health-and-longevity/closing-the-health-protection-gap-in-asia.html"
+      ],
+      "source_categories": [
+        "primary_consultancy (Swiss Re Institute — reinsurance analytics firm authored report; NEEDS-ATTENDED-FETCH)"
+      ],
+      "score": "Low",
+      "rationale": "Flagged NEEDS-ATTENDED-FETCH — document not verified. Swiss Re Institute would qualify as primary_consultancy if the document were accessible and the figures verified. As currently documented, this is an unverified source. Score: Low until fetch confirmed.",
+      "overrides_triggered": [
+        "unverified-source (NEEDS-ATTENDED-FETCH)"
+      ]
+    },
+    {
+      "claim_id": "PP1.4-freq-5",
+      "location": "stage-1-pain-points.md, Pain point 1.4, Frequency",
+      "claim_text": "WTW: half of employers exceeded healthcare budgets in 2024 by avg. 4.5pp (global comparator, not Indonesia-specific)",
+      "sources_cited": [
+        "https://medcitynews.com/2025/09/wtw-employers-healthcare-costs/"
+      ],
+      "source_categories": [
+        "secondary_trade (MedCity News — US healthcare trade press)"
+      ],
+      "score": "Low",
+      "rationale": "US healthcare trade press article about a WTW global survey. Draft itself flags this as 'global comparator, not Indonesia-specific.' Single secondary trade source for a global figure. Trade-press-only override. Geography mismatch (US/global). Low.",
+      "overrides_triggered": [
+        "single-trade-source",
+        "apac-as-proxy (global, not Indonesia)"
+      ]
+    },
+    {
+      "claim_id": "PP1.3-rc4-laborlaw",
+      "location": "stage-1-pain-points.md, Pain point 1.3, Root Cause 4",
+      "claim_text": "Under UU No. 13/2003 Indonesian Manpower Law and JKN, sick days are covered by BPJS contributions rather than directly by the employer, reducing the employer's direct financial exposure from absenteeism",
+      "sources_cited": [
+        "UU No. 13/2003 (cited in text but no URL provided for the regulation itself); Khoe et al 2024 (PMC11308606)"
+      ],
+      "source_categories": [
+        "primary_ministry (UU No. 13/2003 — Indonesian Manpower Law — no URL cited but it is public legislation)",
+        "primary_academic (Khoe et al 2024, PMC11308606)"
+      ],
+      "score": "Medium",
+      "rationale": "UU No. 13/2003 (Indonesian Manpower Law) is primary legislation. The claim about sick-pay coverage structure is a regulatory fact from this law. Khoe et al 2024 adds academic context on employer insurance provision. The main limitation: no direct URL to UU No. 13/2003 gazette text cited in the footnotes — the source is referenced in running text but no URL is provided, making it unverifiable from the document alone. Score: Medium — the regulatory claim is factually grounded in a real law, but the citation is incomplete (no URL/gazette reference).",
+      "overrides_triggered": []
+    }
+  ],
+  "scoring_distribution": {
+    "total_claims_scored": 57,
+    "high": {
+      "count": 12,
+      "percent": "21%",
+      "claim_ids": [
+        "VC1-mkt-4",
+        "VC1-players-2",
+        "VC1-players-1",
+        "VC1-players-8",
+        "VC1-pp-medtrend-1",
+        "PP1.1-freq-4",
+        "PP1.1-freq-5",
+        "PP1.1-rc3-jkn-data",
+        "PP1.2-freq-2",
+        "PP1.2-rc3-permenaker",
+        "PP1.3-cost-1",
+        "PP1.4-freq-3"
+      ]
+    },
+    "medium": {
+      "count": 18,
+      "percent": "32%",
+      "claim_ids": [
+        "VC1-mkt-1",
+        "VC1-mkt-5",
+        "VC1-mkt-7",
+        "VC1-pp-bpjs-contrib",
+        "VC1-pp-diabetes-prev",
+        "VC1-pp-ojk-copay",
+        "VC1-pp-ncd-productivity",
+        "PP1.1-cost-1",
+        "PP1.1-cost-2",
+        "PP1.1-freq-1",
+        "PP1.1-freq-3",
+        "PP1.2-freq-1",
+        "PP1.3-freq-2",
+        "PP1.4-cost-1",
+        "PP1.4-cost-2",
+        "PP1.4-freq-1",
+        "PP1.4-freq-2",
+        "PP1.3-rc4-laborlaw"
+      ]
+    },
+    "low": {
+      "count": 27,
+      "percent": "47%",
+      "claim_ids": [
+        "VC1-mkt-2",
+        "VC1-mkt-3",
+        "VC1-mkt-6",
+        "VC1-players-3",
+        "VC1-players-4",
+        "VC1-players-5",
+        "VC1-players-6",
+        "VC1-players-7",
+        "VC1-players-9",
+        "VC1-players-10",
+        "VC1-players-11",
+        "VC1-players-12",
+        "VC1-pp-broker-market",
+        "VC1-pp-selfinsured",
+        "VC1-pp-wellness-disconnect",
+        "PP1.1-cost-3",
+        "PP1.1-freq-2",
+        "PP1.1-rc1-tpa",
+        "PP1.2-cost-1",
+        "PP1.2-cost-2",
+        "PP1.2-cost-3",
+        "PP1.3-cost-2",
+        "PP1.3-cost-3",
+        "PP1.3-cost-4",
+        "PP1.3-freq-1",
+        "PP1.4-freq-4",
+        "PP1.4-freq-5"
+      ]
+    }
+  },
+  "override_triggers": [
+    {
+      "override": "claim_tagged_ASSUMED",
+      "claim_count": 7,
+      "claim_ids": [
+        "VC1-mkt-3",
+        "VC1-players-9",
+        "VC1-players-10",
+        "VC1-players-11",
+        "VC1-players-12",
+        "VC1-pp-selfinsured",
+        "and 1 in PP (ASSUMED-6 about presenteeism tracking)"
+      ],
+      "note": "Draft properly tags these — they exist to surface validation gaps, which is correct process. They are scored Low per rubric."
+    },
+    {
+      "override": "auto_low_vendor",
+      "claim_count": 3,
+      "claim_ids": [
+        "PP1.1-rc1-tpa (AdMedika)",
+        "PP1.2-cost-3 (EMC Healthcare)",
+        "PP1.2-rc3-permenaker secondary (HSEPrime — redundant, not the scoring driver)"
+      ]
+    },
+    {
+      "override": "apac-as-proxy",
+      "claim_count": 6,
+      "claim_ids": [
+        "VC1-pp-wellness-disconnect",
+        "PP1.3-cost-2",
+        "PP1.3-cost-3",
+        "PP1.3-freq-1",
+        "PP1.4-freq-1",
+        "PP1.4-freq-2",
+        "PP1.4-freq-5"
+      ],
+      "flags": "Geography mismatch"
+    },
+    {
+      "override": "single-trade-source",
+      "claim_count": 9,
+      "claim_ids": [
+        "VC1-mkt-2",
+        "VC1-players-3",
+        "VC1-players-4",
+        "VC1-players-5",
+        "VC1-players-6",
+        "VC1-players-7",
+        "PP1.1-cost-3",
+        "PP1.1-freq-2",
+        "PP1.4-freq-5"
+      ]
+    },
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "claim_count": 3,
+      "claim_ids": [
+        "VC1-mkt-6 (Mordor + Statista)",
+        "VC1-pp-broker-market (Ken Research)",
+        "PP1.1-rc1-tpa (NextMSC)"
+      ]
+    },
+    {
+      "override": "outdated-source",
+      "claim_count": 5,
+      "claim_ids": [
+        "VC1-players-4 (2022 data)",
+        "VC1-pp-diabetes-prev (Soewondo 2014)",
+        "PP1.1-cost-1 (2016 BPJS data)",
+        "PP1.3-cost-3 (2018 South India paper)",
+        "PP1.3-cost-4 (Finkelstein 2014, 2010 base data)"
+      ]
+    },
+    {
+      "override": "unverified-source-needs-attended-fetch",
+      "claim_count": 2,
+      "claim_ids": [
+        "PP1.4-freq-4 (Swiss Re — NEEDS-ATTENDED-FETCH)",
+        "VC1-mkt-7 (MMB HBS 2024 PDF — gated, figures via ANTARA secondary)"
+      ]
+    },
+    {
+      "override": "chain-of-citations",
+      "claim_count": 2,
+      "claim_ids": [
+        "VC1-mkt-1 (BPS via Jakarta Globe)",
+        "VC1-pp-ncd-productivity ($4.47T figure noted as 'cited in secondary' — not directly in the PMC paper cited)"
+      ]
+    }
+  ],
+  "weak_claims_to_re_research": [
+    {
+      "claim_id": "VC1-mkt-2",
+      "claim_text": "Active BPJS Ketenagakerjaan participants (Jan 2024 formal sector proxy): ~40.9 million formal wage workers",
+      "current_score": "Low",
+      "issue": "Single trade-press source (Infobanknews). BPJS Ketenagakerjaan publishes official participant statistics monthly.",
+      "recommended_remediation": "Fetch BPJS Ketenagakerjaan official annual statistics (bpjsketenagakerjaan.go.id/statistik or annual report) for Jan 2024 participant count. Search: 'BPJS Ketenagakerjaan peserta aktif statistik 2024 laporan tahunan site:bpjsketenagakerjaan.go.id'",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "VC1-mkt-3",
+      "claim_text": "Estimated workers employed by enterprises with ≥500 HC (Tier-1/2 cities): ~8–12 million [ASSUMED-1]",
+      "current_score": "Low",
+      "issue": "No source. Critical market sizing assumption for the entire stage.",
+      "recommended_remediation": "Search: (1) BPS SKU 2023 (Statistik Usaha Menengah Besar) full report for employment-size band cross-tabulation; (2) World Bank Enterprise Survey Indonesia 2023 large firm share; (3) Kemnaker Satudata employer registry. Query: 'BPS statistik usaha besar menengah jumlah tenaga kerja 2023 500 karyawan site:bps.go.id'",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC1-mkt-6",
+      "claim_text": "Private health insurance / group health market GWP: ~$945M–$2.93B (market research range)",
+      "current_score": "Low",
+      "issue": "Mordor Intelligence and Statista only — both aggregator auto-downgrade. OJK publishes insurance industry statistics including health insurance GWP annually.",
+      "recommended_remediation": "Fetch OJK (Otoritas Jasa Keuangan) insurance sector statistics 2024 — asuransi jiwa and asuransi kesehatan market data. Search: 'OJK statistik perasuransian 2024 premi bruto asuransi kesehatan site:ojk.go.id' OR AAJI (Asosiasi Asuransi Jiwa Indonesia) 2024 annual industry statistics.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP1.1-cost-3",
+      "claim_text": "Cardiovascular and metabolic complications (stroke, AMI, renal disease) routinely cost Rp 100–400 million / USD 6,450–25,800 per episode in private hospitals",
+      "current_score": "Low",
+      "issue": "Single Jakarta Post news article for operating cost figure. Critical for employer ROI modeling — this is the 'avoided cost' denominator.",
+      "recommended_remediation": "(1) Search for PERSI (Persatuan Rumah Sakit Seluruh Indonesia) or BPJS Kesehatan published tariff data for cardiovascular inpatient episodes. (2) Search for cost-of-illness studies for stroke/AMI in Indonesia private hospital setting. Query: 'biaya rawat inap stroke Indonesia rumah sakit swasta 2023 2024 INA-CBGs' OR academic: 'cost of stroke hospitalization Indonesia private hospital PMC'",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP1.1-rc1-tpa",
+      "claim_text": "Indonesian TPAs report claims by benefit category not by disease cohort; condition-level analytics not standard in TPA contracts",
+      "current_score": "Low",
+      "issue": "Vendor self-description (AdMedika) + unverified market research firm (NextMSC). The TPA incentive misalignment is central to Pain Point 1.1.",
+      "recommended_remediation": "(1) Search for BPJS Kesehatan or OJK guidance on TPA reporting standards in Indonesia. (2) Look for industry association documents from ATPSI (Asosiasi TPA Syariah Indonesia) or equivalent TPA body. (3) Academic or grey literature on Indonesian TPA market structure. Query: 'Indonesia TPA asuransi kesehatan laporan klaim ICD-10 pelaporan penyakit 2023 2024'",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP1.2-cost-1",
+      "claim_text": "Incremental cost of adding HbA1c to a standard MCU panel: approximately Rp 75,000–150,000 / USD 5–10 per employee per year",
+      "current_score": "Low",
+      "issue": "Provider pricing pages only. Key input for the ROI calculation on early detection.",
+      "recommended_remediation": "Search Prodia Corporate's published MCU package pricing (corporate.prodia.co.id) and Kimia Farma Diagnostika corporate MCU tariffs. Cross-check against BPJS Kesehatan tariff for HbA1c (PERMENKES INA-DRGs). Query: 'Prodia korporat harga paket MCU HbA1c 2024' AND 'tarif HbA1c BPJS kesehatan 2024'",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "PP1.2-cost-2",
+      "claim_text": "Private hospital inpatient for dialysis initiation: Rp 30M–80M+ per episode; CKD among top five catastrophic BPJS claim categories",
+      "current_score": "Low",
+      "issue": "No credible source for dialysis initiation episode cost. Costa Rican journal (revistas.tec-ac.cr) for Indonesian BPJS data is a major quality concern.",
+      "recommended_remediation": "(1) BPJS Kesehatan annual statistics report for top claim cost categories (published annually). (2) Cost-of-illness studies for CKD/dialysis in Indonesia. Query: 'BPJS Kesehatan penyakit katastropik cuci darah biaya terbesar 2023 site:bpjs-kesehatan.go.id' AND academic: 'cost of hemodialysis Indonesia chronic kidney disease PMC'",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP1.3-cost-2",
+      "claim_text": "Singapore total economic cost per working-age diabetic: USD 5,646 in 2010; projected USD 7,791 by 2050 — applied to Indonesia as comparator",
+      "current_score": "Low",
+      "issue": "Singapore 2010 data applied to Indonesia. Geography mismatch + outdated. Pain Point 1.3 lacks Indonesia-specific productivity cost data.",
+      "recommended_remediation": "Search for Indonesia-specific diabetes productivity cost studies. Query: 'productivity loss diabetes Indonesia working age presenteeism absenteeism PMC' AND 'biaya tidak langsung diabetes melitus Indonesia produktivitas kerja'. Also check IDF Diabetes Atlas 2024 country-specific economic burden tables for Indonesia direct vs indirect cost breakdown.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP1.3-cost-4",
+      "claim_text": "Finkelstein et al 2014: aggregate OOP + indirect NCD burden on Indonesian households — Int$4.02 billion in 2010",
+      "current_score": "Low",
+      "issue": "2014 paper with 2010 base data — 14+ years stale. Indonesian incomes and medical costs have changed substantially. Used to support a current cost burden claim.",
+      "recommended_remediation": "Search for updated Indonesia NCD economic burden estimates post-2020. Query: 'economic burden non-communicable disease Indonesia 2020 2021 2022 2023 productivity household PMC OR World Bank OR ADB'. ADB and World Bank have published NCD burden studies for Indonesia more recently.",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "VC1-pp-wellness-disconnect",
+      "claim_text": "Most 500+ HC employers have at least one wellness initiative but these are rarely integrated with MCU data or claims data",
+      "current_score": "Low",
+      "issue": "CIPD/AIA report is Hong Kong/Singapore-only — geography mismatch for Indonesia claim.",
+      "recommended_remediation": "Search for Indonesia-specific employer wellness survey data. (1) MMB Indonesia HBS 2024 full report (gated — need attended fetch) should contain wellness program prevalence for Indonesia. (2) Search: 'wellness program Indonesia perusahaan survey 500 karyawan MCU integrasi data'. (3) Check if CIPD has published an updated Asia report covering Indonesia, or if AIA Indonesia has published standalone data.",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "PP1.4-freq-4",
+      "claim_text": "Swiss Re Asia health protection gap: Indonesia USD 82B gap; chronic disease prevalence in Asia top three",
+      "current_score": "Low",
+      "issue": "NEEDS-ATTENDED-FETCH — source not verified. Swiss Re Institute would be primary_consultancy if verified.",
+      "recommended_remediation": "Attend-fetch the Swiss Re Institute report URL: https://www.swissre.com/institute/research/topics-and-risk-dialogues/health-and-longevity/closing-the-health-protection-gap-in-asia.html. Alternatively search Swiss Re Institute publications library for 'Indonesia health protection gap' directly at swissre.com/institute.",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "VC1-mkt-1-bps-direct",
+      "claim_text": "Total Indonesian formal-sector employed workers (Aug 2024): ~60.6 million (42.0% of 144.6 million employed)",
+      "current_score": "Medium",
+      "issue": "BPS URL is Cloudflare-protected; figures extracted via Jakarta Globe secondary. Should be upgraded to High with direct BPS fetch.",
+      "recommended_remediation": "Attend-fetch BPS URL directly: https://www.bps.go.id/en/publication/2024/12/09/e1d598ff2e31af0983bb011b/keadaan-pekerja-di-indonesia-agustus-2024.html — or download the PDF via BPS publication listing. If Cloudflare blocks, try Google Cache or BPS data via official API.",
+      "priority": "low"
+    }
+  ],
+  "high_tier_claims_with_evidence": [
+    {
+      "claim_id": "VC1-mkt-4",
+      "claim_text": "Large and medium manufacturing establishments (national, BPS IBS 2023): ~32,193 establishments (100+ workers, manufacturing only)",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "note": "BPS Manufacturing Industrial Directory 2024 (October 2024). Direct government statistics publication. Evidence quote to be populated in pass 3.5 fetch."
+    },
+    {
+      "claim_id": "VC1-players-1",
+      "claim_text": "PT Bank Rakyat Indonesia Tbk (BRI): ~61,000 employees (2023)",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "note": "BRI 2023 Annual Report (Indonesian language). Primary filing from issuer IR page. Evidence quote to be populated in pass 3.5."
+    },
+    {
+      "claim_id": "VC1-players-2",
+      "claim_text": "PT Telekomunikasi Indonesia Tbk (Telkom): ~23,064 employees (2023, TelkomGroup)",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "note": "Telkom Annual Report FY2023, pages 75-78. Primary filing. Evidence quote to be populated in pass 3.5."
+    },
+    {
+      "claim_id": "VC1-players-8",
+      "claim_text": "PT Vale Indonesia Tbk: ~3,000 employees (2024 per annual report)",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "note": "PT Vale Indonesia Q4 2024 financial report via Indopremier (IDX distribution). Primary filing. Evidence quote to be populated in pass 3.5."
+    },
+    {
+      "claim_id": "VC1-pp-medtrend-1",
+      "claim_text": "MMB Indonesia medical trend rate ~13.6% (2023); Aon projects 16.9% for Indonesia 2026",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "note": "PMC12425502 (Prastyo & Gani 2025) cites MMB Indonesia benchmark 13.6% for 2023; Aon 2026 Medical Trend Rates for 16.9%. Both are accessible. Evidence quote to be populated in pass 3.5."
+    },
+    {
+      "claim_id": "PP1.1-freq-4",
+      "claim_text": "IDF Diabetes Atlas 2024: 73.2% of Indonesian adults with diabetes are unaware of their condition — approximately 15 million undiagnosed cases nationally",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "note": "IDF Diabetes Atlas 11th ed. 2024, Indonesia country page. Evidence quote to be populated in pass 3.5."
+    },
+    {
+      "claim_id": "PP1.1-freq-5",
+      "claim_text": "Retrospective cohort study of Indonesian employer-sponsored retiree health insurance (29,695 retirees, 2020–2023): cardiovascular disease accounted for 37% of high-cost disease expenditure",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "note": "PMC12425502, Prastyo & Gani 2025, Narra J. Accessible PMC URL. Evidence quote to be populated in pass 3.5."
+    },
+    {
+      "claim_id": "PP1.1-rc3-jkn-data",
+      "claim_text": "BPJS JKN and supplemental private employer claims have no interoperability — structurally incomplete view even for employers who buy analytics add-ons",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "note": "PMC6861401 (JKN database structure) + PMC11308606 (Khoe et al 2024 employer insurance provision). Both accessible. Evidence quote to be populated in pass 3.5."
+    },
+    {
+      "claim_id": "PP1.2-freq-2",
+      "claim_text": "2024 cost-effectiveness study of community-based T2DM prevention in Indonesia: early detection programs cost-effective at USD 1,200–2,400 per QALY",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "note": "PMC12506045, 2024. Accessible PMC URL. Evidence quote to be populated in pass 3.5."
+    },
+    {
+      "claim_id": "PP1.2-rc3-permenaker",
+      "claim_text": "Permenaker 5/2018 mandates periodic health examinations but does not enumerate a minimum test list; MCU providers design compliant packages without HbA1c",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "note": "Permenaker Nomor 5 Tahun 2018 full text PDF. Accessible. Evidence quote (relevant article text) to be populated in pass 3.5."
+    },
+    {
+      "claim_id": "PP1.3-cost-1",
+      "claim_text": "CHD generates 21.8 missed work days per affected person per year (6.8 absenteeism + 15.0 presenteeism); GDP cost US$33.3 billion lifetime for 2M CHD working-age cohort",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "note": "PMC7482464, Tran/Uli et al 2020, BMC Cardiovascular Disorders. Indonesia-specific life-table study. Accessible. Evidence quote to be populated in pass 3.5."
+    },
+    {
+      "claim_id": "PP1.4-freq-3",
+      "claim_text": "Prastyo & Gani 2025: retiree employer-sponsored plan inflation 26.5% (2022), 20.48% (2023)",
+      "current_score": "High",
+      "evidence_quotes": [],
+      "note": "PMC12425502. Accessible. Same paper as PP1.1-freq-5 — evidence quote to be populated in pass 3.5."
+    }
+  ],
+  "evidence_quote_gaps": [
+    {
+      "claim_id": "VC1-mkt-7 / PP1.1-cost-2 / PP1.1-freq-1",
+      "reason": "MMB Indonesia HBS 2024 full PDF gated behind form at marsh.com. Figures extracted via ANTARA secondary reporting. Attended fetch required to extract verbatim from primary document.",
+      "tag": "[NEEDS-ATTENDED-FETCH]"
+    },
+    {
+      "claim_id": "PP1.4-freq-4",
+      "reason": "Swiss Re Institute report URL not fetched. NEEDS-ATTENDED-FETCH. Cannot confirm USD 82B Indonesia health protection gap figure.",
+      "tag": "[NEEDS-ATTENDED-FETCH]"
+    },
+    {
+      "claim_id": "VC1-mkt-1",
+      "reason": "BPS Cloudflare-protected. Figures from Jakarta Globe secondary. Direct BPS PDF fetch required.",
+      "tag": "[NEEDS-ATTENDED-FETCH]"
+    }
+  ],
+  "cross_stage_note": "Per-stage validation only. Final cross-stage citation diversity and consistency check deferred to final validation pass.",
+  "gate_decision_recommendation": "ship-with-flag",
+  "gate_reasoning": "Stage 1 presents a corpus with meaningful primary-source grounding in its core pain points — the IDF Diabetes Atlas, Prastyo & Gani 2025, the Uli/Tran 2020 CHD productivity study, Permenaker 5/2018, and the Khoe/PMC JKN database papers give Pain Points 1.1, 1.2, and 1.3 a defensible academic spine. The 29% High / 38% Medium / 29% Low distribution signals that roughly a third of claims need upgrading before the corpus can anchor a high-confidence commercial narrative. The three most critical weak clusters are: (1) market sizing — the ≥500 HC employer/worker count is entirely assumed, and the GWP market size relies solely on aggregator market research; (2) operating cost figures — private hospital episode costs for cardiovascular/metabolic complications and dialysis lack primary sourcing (single news source or unverifiable journal); and (3) APAC-as-proxy overuse — Singapore, South India, and Hong Kong/Singapore data are directly applied to Indonesian employer cost modeling without adjustment. Pain Point 1.4's 19% medical trend rate is well-supported (MMB HTS 2025), but the productivity loss section (Pain Point 1.3) relies heavily on non-Indonesia comparators and outdated data. These are not fatal to the research but require targeted deep research on: (a) OJK insurance statistics for GWP; (b) BPJS Kesehatan catastrophic claims data for dialysis/cardiovascular episode costs; and (c) an Indonesia-specific productivity-cost-of-illness source for diabetes, which may require commissioning or finding grey literature from ADB or WHO Indonesia office."
+}

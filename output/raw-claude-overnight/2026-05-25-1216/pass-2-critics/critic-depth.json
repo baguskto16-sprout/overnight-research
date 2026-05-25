@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-05-25T14:50:00Z",
+  "run_id": "2026-05-25-1216",
+  "critic": "depth",
+  "pain_points_scored": [
+    {"pp_id": "PP1.1", "citations_count": 10, "root_causes_count": 5, "thinness_score": "strong"},
+    {"pp_id": "PP1.2", "citations_count": 9, "root_causes_count": 4, "thinness_score": "acceptable", "soft_spots": ["HbA1c pricing single-vendor anchor (Reblood / Prodia / Tirta only)"]},
+    {"pp_id": "PP1.3", "citations_count": 8, "root_causes_count": 4, "thinness_score": "acceptable", "soft_spots": ["Uli 2020 is CHD-proxy not T2DM"]},
+    {"pp_id": "PP1.4", "citations_count": 8, "root_causes_count": 4, "thinness_score": "acceptable", "soft_spots": ["MMB trend numbers patched per DR5"]},
+    {"pp_id": "PP2.1", "citations_count": 10, "root_causes_count": 5, "thinness_score": "strong"},
+    {"pp_id": "PP2.2", "citations_count": 10, "root_causes_count": 4, "thinness_score": "acceptable", "soft_spots": ["TPA PMPM fee ASSUMED-3"]},
+    {"pp_id": "PP2.3", "citations_count": 10, "root_causes_count": 3, "thinness_score": "acceptable"},
+    {"pp_id": "PP2.4", "citations_count": 10, "root_causes_count": 3, "thinness_score": "acceptable"},
+    {"pp_id": "PP3.1", "citations_count": 11, "root_causes_count": 4, "thinness_score": "strong"},
+    {"pp_id": "PP3.2", "citations_count": 10, "root_causes_count": 4, "thinness_score": "acceptable", "soft_spots": ["insurer MCU rider spec ASSUMED-2"]},
+    {"pp_id": "PP3.3", "citations_count": 10, "root_causes_count": 3, "thinness_score": "acceptable"},
+    {"pp_id": "PP3.4", "citations_count": 10, "root_causes_count": 3, "thinness_score": "acceptable"},
+    {"pp_id": "PP4.1", "citations_count": 15, "root_causes_count": 4, "thinness_score": "strong", "soft_spots": ["FBG miss-rate is Thailand-only (PMC10773892)"]},
+    {"pp_id": "PP4.2", "citations_count": 8, "root_causes_count": 4, "thinness_score": "acceptable"},
+    {"pp_id": "PP4.3", "citations_count": 13, "root_causes_count": 3, "thinness_score": "strong"},
+    {"pp_id": "PP4.4", "citations_count": 3, "root_causes_count": 2, "thinness_score": "thin", "soft_spots": ["Below floor on both citations and RCs", "POCT discordance n=108 single Indonesia study"], "actionable_gap": true},
+    {"pp_id": "PP5.1", "citations_count": 14, "root_causes_count": 4, "thinness_score": "strong"},
+    {"pp_id": "PP5.2", "citations_count": 10, "root_causes_count": 3, "thinness_score": "acceptable"},
+    {"pp_id": "PP5.3", "citations_count": 11, "root_causes_count": 4, "thinness_score": "strong"},
+    {"pp_id": "PP5.4", "citations_count": 7, "root_causes_count": 4, "thinness_score": "acceptable"},
+    {"pp_id": "PP6.1", "citations_count": 12, "root_causes_count": 4, "thinness_score": "strong"},
+    {"pp_id": "PP6.2", "citations_count": 12, "root_causes_count": 4, "thinness_score": "strong", "soft_spots": ["Rp 100-400M private hospital cost is ASSUMED-3"]},
+    {"pp_id": "PP6.3", "citations_count": 10, "root_causes_count": 3, "thinness_score": "acceptable"},
+    {"pp_id": "PP6.4", "citations_count": 11, "root_causes_count": 3, "thinness_score": "acceptable"}
+  ],
+  "stage_summary": [
+    {"stage": 1, "avg_thinness": "acceptable", "pps": 4},
+    {"stage": 2, "avg_thinness": "acceptable", "pps": 4},
+    {"stage": 3, "avg_thinness": "acceptable", "pps": 4},
+    {"stage": 4, "avg_thinness": "acceptable", "pps": 4, "top_concerns": ["PP4.4 below floor"]},
+    {"stage": 5, "avg_thinness": "acceptable", "pps": 4},
+    {"stage": 6, "avg_thinness": "strong", "pps": 4}
+  ],
+  "top_3_thinnest_pps": ["PP4.4 (below floor)", "PP1.2 (single-vendor HbA1c pricing anchor)", "PP1.3 (CHD-proxy for T2DM productivity)"],
+  "high_actionability_gaps": [
+    {"pp_id": "PP4.4", "actionability": "high", "recommended_remediation": "Either find corroborating NGSP / EQAS Indonesia QC study OR demote PP4.4 from documented pain point to hypothesis tag"},
+    {"pp_id": "PP4.1-anchor", "actionability": "high", "recommended_remediation": "Find Indonesia FBG-vs-HbA1c miss-rate study to replace Thailand-only PMC10773892 anchor that appears across 4 PPs in 3 stages"},
+    {"pp_id": "PP6.2-private-hospital", "actionability": "high", "recommended_remediation": "Find Siloam/Mitra/Mayapada/Hermina IR or AAJI/Milliman claims benchmark for private-tier metabolic complication episode cost; currently ASSUMED-3 and the ROI denominator"}
+  ],
+  "overall_corpus_depth": "acceptable",
+  "notes": "No PP falls below 5-citation floor except PP4.4 (3 citations, 2 RCs). Most gaps are anchor-source quality issues, not count deficits. Corpus is systematically strong on structural claims and systematically thin on two cross-cutting quantitative anchors: FBG vs HbA1c miss-rate (Thai-only) and private-hospital complication cost (industry-knowledge)."
+}

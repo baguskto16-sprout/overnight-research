@@ -1,0 +1,583 @@
+{
+  "meta": {
+    "run_id": "2026-05-25-1216",
+    "validator": "source-validator-final-cross-stage",
+    "generated_at": "2026-05-25T00:00:00+07:00",
+    "context": "final",
+    "corpus_files_read": [
+      "stages-validated/stage-1-value-chain.md",
+      "stages-validated/stage-1-pain-points.md",
+      "stages-validated/stage-2-value-chain.md",
+      "stages-validated/stage-2-pain-points.md",
+      "stages-validated/stage-3-value-chain.md",
+      "stages-validated/stage-3-pain-points.md",
+      "stages-validated/stage-4-value-chain.md",
+      "stages-validated/stage-4-pain-points.md",
+      "stages-validated/stage-5-value-chain.md",
+      "stages-validated/stage-5-pain-points.md",
+      "stages-validated/stage-6-value-chain.md",
+      "stages-validated/stage-6-pain-points.md",
+      "pass-2-validation/stage-1.json",
+      "pass-3-deep-research/stage-1/MMB-trend.json",
+      "pass-3-deep-research/stage-1/VC1-mkt-6.json",
+      "pass-3-deep-research/stage-1/PP1.1-cost-3-and-PP1.2-cost-2.json",
+      "pass-3-deep-research/stage-1/VC1-mkt-3.json",
+      "pass-0-deviations.md",
+      "pass-2-validation/contradictions.json"
+    ],
+    "note_on_scope": "Stages 2-6 received mapper + researcher passes only (no per-stage validator, no individual DR sweep) per pass-0-deviations.md. Stage 1 received full vertical slice including per-stage validator and 5 DR sweeps. Cross-stage validator is the PRIMARY quality gate for Stages 2-6."
+  },
+
+  "total_claims_scored": 214,
+  "claim_scoring_method": "Full enumeration per claim for Stage 1 (sourced from stage-1.json). Systematic sampling for Stages 2-6: all market-size rows (table claims), all player characterization claims, all pain-point cost and frequency claims, and all root-cause evidenced claims. ASSUMED-N tags applied as auto-Low per rubric regardless of other sourcing.",
+
+  "score_distribution": {
+    "high": {
+      "count": 74,
+      "percent": "34.6%"
+    },
+    "medium": {
+      "count": 49,
+      "percent": "22.9%"
+    },
+    "low": {
+      "count": 91,
+      "percent": "42.5%"
+    }
+  },
+
+  "global_pct_low": "42.5%",
+
+  "stage_breakdown": [
+    {
+      "stage": 1,
+      "stage_label": "Indonesian Corporate Employers (500+ HC)",
+      "files": ["stage-1-value-chain.md", "stage-1-pain-points.md"],
+      "treatment": "full-vertical-slice-with-DR",
+      "claims_scored": 38,
+      "high": 14,
+      "medium": 10,
+      "low": 14,
+      "pct_low": "36.8%",
+      "low_concentration_flag": "none",
+      "note": "Post-DR correction; pre-DR Low% was approximately 47% per stage-1.json header. DR corrections elevated MMB trend rate (13.6% → 14.6%), BPJS catastrophic sourcing (Jakarta Post → Tribunnews + BPJS journal), and partially addressed AMI episode cost claim. 10 ASSUMED-N tags from pain-points file remain as Low.",
+      "weak_claims": [
+        {
+          "claim_id": "VC1-mkt-3",
+          "claim_text": "~3,000-6,000 private-sector employers with ≥500 HC across all sectors",
+          "current_score": "Low",
+          "issue": "ASSUMED tag, CONFIRMED_SCARCE by DR1; no government source publishes employer count at this threshold",
+          "override": "ASSUMED-N auto-Low"
+        },
+        {
+          "claim_id": "VC1-mkt-6",
+          "claim_text": "GWP market size for group/corporate health insurance (Mordor/Statista original sources)",
+          "current_score": "Medium",
+          "issue": "DR corrected to AAJI + AAUI primary association data; still only Medium because corporate sub-segment is inferred from total GWP",
+          "override": "Post-DR elevation from Low to Medium"
+        },
+        {
+          "claim_id": "PP1.1-cost-3",
+          "claim_text": "Private hospital AMI/stroke/renal episode Rp 100-400M per event",
+          "current_score": "Low",
+          "issue": "DR4 found Dwiputra 2024 (JKN public = Rp 47-51M) but private hospital range has no primary source; ASSUMED-3 tag in Stage 6 not consistently applied in Stage 1 text",
+          "override": "vendor-marketing / single secondary source; DR4 recommended ASSUMED tag not fully applied"
+        },
+        {
+          "claim_id": "PP1.3-multiple",
+          "claim_text": "10 ASSUMED-N tagged claims across PP1.1-PP1.4",
+          "current_score": "Low",
+          "issue": "10 [ASSUMED-N] tags in Stage 1 pain-points covering TPA CDM program absence, MCU HbA1c exclusion rates, productivity loss methodology, and CDM ROI estimates",
+          "override": "ASSUMED-N auto-Low (10 instances)"
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "stage_label": "Indonesian TPAs",
+      "files": ["stage-2-value-chain.md", "stage-2-pain-points.md"],
+      "treatment": "mapper-plus-researcher-only",
+      "claims_scored": 35,
+      "high": 11,
+      "medium": 9,
+      "low": 15,
+      "pct_low": "42.9%",
+      "low_concentration_flag": "none",
+      "note": "Strong institutional sources in regulatory layer (AAUI Q4 2024, AAJI FY2024, OJK POJK 36/2025, Prastyo & Gani 2025 PMC) elevate High count. Significant Low drag from: (a) all TPA self-reported member/client/provider figures (AdMedika 5.1M, Meditap 350K, Owlexa 4,000+ providers, Fullerton Health 1.2M, HealthMetrics 4,500+ — all auto-Low vendor-marketing); (b) NextMSC/Ken Research market sizing (auto-Low aggregator); (c) SlideShare TPA Manifesto (Low trade presentation); (d) multiple ASSUMED-N tags on fee structures, ICD coding quality, ASO prevalence.",
+      "weak_claims": [
+        {
+          "claim_id": "VC2-players-TPA-scale",
+          "claim_text": "All 5 named TPA member/provider/client count claims (AdMedika 5.1M, Meditap 350K, Owlexa 4,000+, Fullerton 1.2M, HealthMetrics 4,500+)",
+          "current_score": "Low",
+          "issue": "All sourced exclusively from vendor own websites/press releases; auto-Low vendor-marketing override applies to each",
+          "override": "vendor-marketing auto-Low (5 instances)"
+        },
+        {
+          "claim_id": "VC2-market-size",
+          "claim_text": "Indonesia TPA market USD 1.66B (2024) growing to USD 5.0-5.32B (2030)",
+          "current_score": "Low",
+          "issue": "NextMSC single market research firm; Stage 2 itself flags the figure as 'inconsistent in scale with underlying insurer premium base'",
+          "override": "aggregator-market-research auto-downgrade"
+        },
+        {
+          "claim_id": "PP2-ASSUMED",
+          "claim_text": "TPA fee structures, ICD coding quality, ASO prevalence (multiple ASSUMED-N tags)",
+          "current_score": "Low",
+          "issue": "No published Indonesian data on TPA fee structures; ICD coding accuracy in Indonesian TPAs is unstudied; ASO plan prevalence is not published by OJK",
+          "override": "ASSUMED-N auto-Low (estimated 6 instances across Stage 2 pain points)"
+        }
+      ]
+    },
+    {
+      "stage": 3,
+      "stage_label": "Indonesian Group Health Insurers",
+      "files": ["stage-3-value-chain.md", "stage-3-pain-points.md"],
+      "treatment": "mapper-plus-researcher-only",
+      "claims_scored": 36,
+      "high": 12,
+      "medium": 9,
+      "low": 15,
+      "pct_low": "41.7%",
+      "low_concentration_flag": "none",
+      "note": "Institutional anchors strong: AAUI Q4 2024 (High), AAJI FY2024 (High), OJK POJK 36/2025 FAQ (High), Milliman Q1/Q3 2025 newsletters (Medium). Low drag from: all insurer product pages (Allianz SmartHealth Enterprise, AXA Mandiri Corporate, Prudential PRUWell, AIA, Generali, Great Eastern — all auto-Low vendor marketing); Mandiri Inhealth 35% market share (Medium at best — IFG press release + Kontan trade press, not independently audited); Mordor Intelligence total market (Low); AAJI 2023 claims ratio 138% (Medium — IDNFinancials/Expat Life citing AAJI, chain of citations). Class C contradiction present: 13.6% medical inflation still in PP 3.1 RC2 after DR5 corrected to 14.6% in Stage 1.",
+      "weak_claims": [
+        {
+          "claim_id": "VC3-players-product-pages",
+          "claim_text": "Product feature/coverage claims for Allianz SmartHealth Enterprise, AXA Mandiri, Prudential PRUWell, AIA, Generali, Great Eastern",
+          "current_score": "Low",
+          "issue": "All sourced from each insurer's own product pages/marketing materials; auto-Low vendor-marketing override applies to all",
+          "override": "vendor-marketing auto-Low (6 player instances)"
+        },
+        {
+          "claim_id": "PP3.1-inflation",
+          "claim_text": "Indonesia medical cost inflation at 13.6% (highest in Asia per GAIP 2025)",
+          "current_score": "Low",
+          "issue": "DR5 corrected this to 14.6% (2023 actual, MMB Health Trends 2025) in Stage 1; Stage 3 PP 3.1 RC2 still contains the uncorrected figure. GAIP 2025 is not independently verified as a separate data source — if it is the same Prastyo & Gani retiree benchmark, it is a misattribution. Class C contradiction (DR verdict not applied).",
+          "override": "single-trade-source; DR correction not propagated"
+        },
+        {
+          "claim_id": "VC3-mandiri-inhealth-share",
+          "claim_text": "Mandiri Inhealth holds 35% of group health insurance market",
+          "current_score": "Medium",
+          "issue": "Sourced from IFG Life press release + Kontan trade press citing AAJI Q1 2024; not independently audited; chain-of-citations applies (press release → trade press → claim). Would require audited OJK Statistik Perasuransian or Mandiri Inhealth annual report for High.",
+          "override": "press-release-only + single-domain (partial)"
+        }
+      ]
+    },
+    {
+      "stage": 4,
+      "stage_label": "MCU and Diagnostic Providers",
+      "files": ["stage-4-value-chain.md", "stage-4-pain-points.md"],
+      "treatment": "mapper-plus-researcher-only",
+      "claims_scored": 34,
+      "high": 13,
+      "medium": 8,
+      "low": 13,
+      "pct_low": "38.2%",
+      "low_concentration_flag": "none",
+      "note": "Prodia Annual Report 2024 (IDX-listed audited filing, High) is the single strongest private-sector primary source in the corpus. Lancet Regional Health 2025 PMC12681878 (High), PMC10773892 FBG vs HbA1c Thailand (High with geography flag), BPS SAKERNAS (High), Permenaker 5/2018 (High) provide strong institutional anchors for the core argument. Low drag from: Grand View Research/Ken Research market sizing (auto-Low aggregator); all provider own-site MCU panel data (Kimia Farma, RSBP Batam — auto-Low); MarkNtel/Markntel diagnostic lab market (Low aggregator); EMC Healthcare opinion article (auto-Low vendor); Prodia OHI self-advocacy for HbA1c (auto-Low for vendor-self-claim); lifepal.co.id as Pramita pricing source (secondary aggregator); ASSUMED-N tags on MCU contract composition, TPA-MCU data integration, dokter perusahaan CDM role.",
+      "weak_claims": [
+        {
+          "claim_id": "VC4-market-size",
+          "claim_text": "Indonesia diagnostic labs market USD 656M (Grand View) / USD 2.39B (Ken Research)",
+          "current_score": "Low",
+          "issue": "Two aggregator market research firms with divergent figures ($656M vs $2.39B — 3.6x spread); both auto-Low aggregator",
+          "override": "aggregator-market-research auto-downgrade"
+        },
+        {
+          "claim_id": "PP4.3-inflation-13.6",
+          "claim_text": "Indonesia medical cost inflation at 13.6% in 2025 (highest in Asia)",
+          "current_score": "Low",
+          "issue": "Combines the DR5-corrected-as-wrong 13.6% value with a wrong year attribution (2025, when the 13.6% Prastyo & Gani figure refers to a retiree benchmark, not a forward year). Class C contradiction.",
+          "override": "single-trade-source; DR correction not propagated; year mis-attribution"
+        },
+        {
+          "claim_id": "PP4-MCU-panel-composition",
+          "claim_text": "Pramita Blue/Silver include FBG not HbA1c; Tzu Chi Basic no HbA1c; Tirta basic FBG only",
+          "current_score": "Low",
+          "issue": "Sourced from lifepal.co.id (aggregator), hargabiayaku.id (aggregator), provider own sites; these are commercial pricing aggregators, not primary-source lab protocol documentation",
+          "override": "auto-low-aggregator-marketplace (capability claims from non-primary source)"
+        },
+        {
+          "claim_id": "PP4-ASSUMED",
+          "claim_text": "What % of corporate MCU contracts include HbA1c; MCU-TPA data feed existence; Prodia corporate CDM contract scope; dokter perusahaan CDM role",
+          "current_score": "Low",
+          "issue": "4 ASSUMED-N tags (PP4.1 RC4, PP4.2 RC2, PP4.2 RC3, PP4.2 RC4)",
+          "override": "ASSUMED-N auto-Low (4 instances)"
+        }
+      ]
+    },
+    {
+      "stage": 5,
+      "stage_label": "GP/Occupational Health Clinic Operators",
+      "files": ["stage-5-value-chain.md", "stage-5-pain-points.md"],
+      "treatment": "mapper-plus-researcher-only",
+      "claims_scored": 37,
+      "high": 13,
+      "medium": 7,
+      "low": 17,
+      "pct_low": "45.9%",
+      "low_concentration_flag": "approaching — 45.9% is below 50% threshold but second-highest Low% in corpus",
+      "note": "Multiple strong peer-reviewed anchors: Naluri PMC11422728 (Indonesian mining cohort RWE, High), Hustrini et al. 2025 PMC12852415 (High), WHO HRH Country Profile 2024 (High), Kemenkes fasyankes registry (High), Widyahening 2014 PMC4000317 (High), Prolanis BPJS PMC7829517 (High), SatuSehat Kemenkes (High). Heavy Low drag from: Halodoc '70% cost reduction' and '2,500+ clients' (auto-Low vendor self-report); Good Doctor 3,500+ corporate clients, 15M users (auto-Low); Alodokter 90,000+ doctors (auto-Low); Klinik Pintar Blue Card product scope (auto-Low vendor for capability claim); Naluri '60% clinical improvements' (auto-Low vendor self-report); Pertamedika IHC 490 companies / 300,000+ workers (Medium, not audited); Mordor Intelligence connected healthcare USD 690M (auto-Low aggregator); Ken Research outpatient healthcare $49.6B (auto-Low aggregator); mulamula.id tech blog for market dominance claim (Low secondary); ASSUMED-N tags on capitation rates, telemedicine regulatory status, CDM licensing pathway.",
+      "weak_claims": [
+        {
+          "claim_id": "VC5-digital-platform-scale",
+          "claim_text": "Halodoc 2,500+ corporate partners, 70% chronic cost reduction; Good Doctor 3,500+ clients; Alodokter 90,000 doctors; Naluri 60% clinical improvement",
+          "current_score": "Low",
+          "issue": "All sourced from vendors' own websites, press releases, or marketing materials for claims about their own products; auto-Low vendor-marketing override applies to all",
+          "override": "vendor-marketing auto-Low (4 platform instances)"
+        },
+        {
+          "claim_id": "VC5-market-size",
+          "claim_text": "Indonesia outpatient healthcare USD 19.6B (Ken Research); connected healthcare USD 690M (Mordor)",
+          "current_score": "Low",
+          "issue": "Both are auto-Low aggregator market research; methodology opaque; Ken Research figure covers all payers not corporate channel",
+          "override": "aggregator-market-research auto-downgrade (2 instances)"
+        },
+        {
+          "claim_id": "PP5-capitation-rates",
+          "claim_text": "Corporate panel clinic capitation Rp 15,000-40,000 per employee per month",
+          "current_score": "Low",
+          "issue": "ASSUMED-1 tag in Stage 5 PP 5.1; no primary source; derived from market knowledge not published tariff",
+          "override": "ASSUMED-N auto-Low"
+        },
+        {
+          "claim_id": "PP5-ASSUMED",
+          "claim_text": "Supplemental capitation rates, telemedicine regulatory status, CDM clinic licensing, CDM-enhanced tier pricing",
+          "current_score": "Low",
+          "issue": "4 ASSUMED-N tags across PP5.1-PP5.4 covering commercial and regulatory facts not in public record",
+          "override": "ASSUMED-N auto-Low (4 instances)"
+        }
+      ]
+    },
+    {
+      "stage": 6,
+      "stage_label": "Metabolic-Disease Cost-of-Illness Literature",
+      "files": ["stage-6-value-chain.md", "stage-6-pain-points.md"],
+      "treatment": "mapper-plus-researcher-only",
+      "claims_scored": 34,
+      "high": 11,
+      "medium": 6,
+      "low": 17,
+      "pct_low": "50.0%",
+      "low_concentration_flag": "flag — 50.0% Low; driven by ASSUMED-N concentration in assembled cohort model and by indirect cost uncertainty",
+      "note": "Stage 6 has the highest-quality primary evidence base in the corpus (IDF Atlas 11th 2024, SKI 2023 Kemenkes, Hidayat 2022 Value in Health, Prastyo & Gani 2025 PMC, Adnan 2025 PMC, Dwiputra 2024 Frontiers, Finkelstein 2014 PLoS ONE, Uli 2020 BMJ Open, Hanifa 2025 PMC, PMC12519354, Khambaty 2022 PMC) generating a strong academic-evidence skeleton. However the assembled corporate cohort model (Pain point 6.3) is heavily ASSUMED-N: 6 ASSUMED tags (ASSUMED-1 through ASSUMED-6) in the cohort arithmetic alone, all auto-Low. Additionally: Kristina 2020 (ResearchGate PDF — peer-review status of the journal uncertain, Medium not High); Rosmiati 2024 EAI conference proceedings (Medium); WEF 2015 (outdated-source override, >10 years); CNBC citing WEF (Low secondary news); Databoks/Goodstats citing BPJS (Medium, data aggregator citing primary). The 50% Low is epistemically honest: Stage 6 is doing exactly what it should — assembling a cross-source model and explicitly flagging what is assumed — but those ASSUMED tags must score Low per rubric.",
+      "weak_claims": [
+        {
+          "claim_id": "PP6.3-cohort-model",
+          "claim_text": "Total annual CDM cost burden USD 150,000-600,000/year per 1,000-employee Tier-1 cohort; CDM ROI 10-60x",
+          "current_score": "Low",
+          "issue": "Assembled from 6 ASSUMED-N tagged inputs (ASSUMED-1 through ASSUMED-6); the model itself is explicitly composite. No single Indonesia study validates the full cohort model.",
+          "override": "ASSUMED-N auto-Low (6 model inputs); composite-model sourcing"
+        },
+        {
+          "claim_id": "PP6.2-private-hospital",
+          "claim_text": "Private hospital AMI episode Rp 100-400M (Stage 5 cross-reference)",
+          "current_score": "Low",
+          "issue": "Stage 6 correctly tags this ASSUMED-3. No primary source for private hospital episode tariffs. This is the most consequential unverified claim in the corpus.",
+          "override": "ASSUMED-N auto-Low; vendor-secondary sources only"
+        },
+        {
+          "claim_id": "PP6.1-indirect-cost",
+          "claim_text": "Indirect cost of diabetes in Indonesia USD 20-146/patient/year (published figures); actual burden 3-10x higher (modelled)",
+          "current_score": "Medium",
+          "issue": "Published Indonesian figures from Kristina 2020 (Medium — ResearchGate, journal quality uncertain) and Adnan 2025 (High — PMC). The 3-10x higher modelled figure is derived from ADA methodology applied to Indonesia — classified as Medium per APAC-as-proxy override (methodology transfer, not Indonesia-measured).",
+          "override": "APAC-as-proxy (ADA US methodology applied to Indonesia); Kristina 2020 journal quality uncertain"
+        },
+        {
+          "claim_id": "PP6-WEF-2015",
+          "claim_text": "WEF 2015 USD 500B annual economic cost of NCDs in Asia (macro framing)",
+          "current_score": "Low",
+          "issue": "Source >10 years old (outdated-source override); Stage 6 PP 6.4 appropriately uses this only as framing, but the claim still triggers the outdated-source auto-cap",
+          "override": "outdated-source (>10 years)"
+        }
+      ]
+    }
+  ],
+
+  "unique_urls_total": 147,
+  "unique_url_note": "Count based on distinct domain+path combinations across all 12 stage files. Conservative estimate; some near-duplicates (e.g. diabetesatlas.org/data-by-location/country/indonesia/ and idf.org/news/idf-diabetes-atlas-11th-edition/ count as 2 distinct URLs but represent the same underlying data source). Effective independent source count is lower than URL count.",
+  "urls_over_cited": [
+    {
+      "url_family": "idf.org + diabetesatlas.org (IDF Diabetes Atlas 11th Edition 2024)",
+      "appearance_count": 24,
+      "stages_cited": [1, 2, 3, 4, 5, 6],
+      "classification": "primary-association",
+      "concern": "High citation frequency is APPROPRIATE — IDF Atlas is the canonical Indonesia T2DM prevalence and undiagnosed-rate source. Concentration is by design, not over-reliance on a weak source.",
+      "concern_level": "none"
+    },
+    {
+      "url_family": "pmc.ncbi.nlm.nih.gov/articles/PMC12425502 (Prastyo & Gani 2025)",
+      "appearance_count": 14,
+      "stages_cited": [1, 2, 3, 4, 5, 6],
+      "classification": "primary-academic",
+      "concern": "High citation appropriate — only published peer-reviewed study of Indonesia employer-sponsored health insurance cost inflation. Used for multiple distinct data points (medical trend rate, retiree cost, BPJS structuring). However it is a RETIREE cohort study; active-employee extrapolations are tagged as such.",
+      "concern_level": "minor — watch for over-extrapolation to active-workforce context"
+    },
+    {
+      "url_family": "marsh.com/id (MMB Indonesia HBS 2024)",
+      "appearance_count": 12,
+      "stages_cited": [1, 2, 3, 4, 5],
+      "classification": "primary-consultancy (gated)",
+      "concern": "MMB HBS 2024 is cited for Rp 22M inpatient average, 94% inpatient coverage, 79% outpatient coverage, Rp 3.6M outpatient average. The source is gated (Marsh website) and not independently verifiable without registration. Stage 1 DR confirmed MMB Health Trends 2025 PDF is accessible via fwd.co.id, but the HBS 2024 survey data remains gated. Multiple downstream claims derive from this single gated primary source.",
+      "concern_level": "medium — single gated primary source for multiple quantitative anchors across 5 stages"
+    },
+    {
+      "url_family": "aaui.or.id (AAUI Q4 2024 statistical report)",
+      "appearance_count": 8,
+      "stages_cited": [2, 3, 4],
+      "classification": "primary-association",
+      "concern": "High citation appropriate — official general insurance statistics. No concern.",
+      "concern_level": "none"
+    },
+    {
+      "url_family": "pmc.ncbi.nlm.nih.gov/articles/PMC12681878 (Lancet Regional Health 2025)",
+      "appearance_count": 7,
+      "stages_cited": [3, 4, 5, 6],
+      "classification": "primary-academic",
+      "concern": "High citation appropriate — comprehensive Indonesia diabetes management study published in Lancet journal family 2025. Used for HbA1c control rate (32%), structural deficiency findings, and referral pathway gaps. No concern.",
+      "concern_level": "none"
+    },
+    {
+      "url_family": "ojk.go.id POJK 36/2025",
+      "appearance_count": 9,
+      "stages_cited": [2, 3, 4, 5],
+      "classification": "primary-ministry",
+      "concern": "High citation appropriate — primary regulatory source. No concern.",
+      "concern_level": "none"
+    },
+    {
+      "url_family": "databoks.katadata.co.id",
+      "appearance_count": 11,
+      "stages_cited": [1, 3, 4, 5, 6],
+      "classification": "secondary-news / data aggregator",
+      "concern": "Databoks is a curated data portal that re-publishes government survey data (SKI, BPS, BPJS) and official statistics in translated/formatted form. For SKI 2023 diabetes and hypertension prevalence, Databoks correctly attributes to Kemenkes/BKPK. However it is a secondary aggregator, not the primary source. Claims citing Databoks should trace through to the underlying SKI 2023 BKPK publication for High confidence; those that do (Stage 6 PP 6.1) achieve Medium; those that cite Databoks alone are Medium at best. At 11 appearances, Databoks is functioning as a primary-data proxy across multiple stages — this is a single-domain concern for data claims not independently cross-verified.",
+      "concern_level": "medium — Databoks is a proxy layer over primary government data; direct BKPK/BPS citation is preferable"
+    }
+  ],
+
+  "source_diversity_by_category": {
+    "primary_gov": {
+      "count_unique_sources": 6,
+      "examples": ["BPS manufacturing establishments", "BPS SAKERNAS NLFS", "Kemenkes SKI 2023 BKPK", "Kemenkes fasyankes registry", "BPS wage data 2024", "BPS Susenas"],
+      "stages_present": [1, 2, 3, 4, 5, 6]
+    },
+    "primary_multilateral": {
+      "count_unique_sources": 5,
+      "examples": ["IDF Diabetes Atlas 11th 2024", "WHO NCD Country Profile Indonesia", "WHO HRH Country Profile 2024", "World Bank Indonesia data", "ADB"],
+      "stages_present": [1, 2, 3, 4, 5, 6]
+    },
+    "primary_ministry": {
+      "count_unique_sources": 8,
+      "examples": ["OJK POJK 36/2025", "OJK SEOJK 7/2025", "OJK Roadmap 2023-2027", "Permenaker 5/2018", "Permenkes 9/2014", "Permenkes 24/2022", "KMK 1366/2024 BPJS COB", "OJK Insurance Statistics"],
+      "stages_present": [1, 2, 3, 4, 5, 6]
+    },
+    "primary_consultancy": {
+      "count_unique_sources": 4,
+      "examples": ["MMB Indonesia HBS 2024", "MMB Health Trends 2025", "Aon GMTRR 2025/2026", "Milliman Indonesia Q1/Q3 2025 newsletters"],
+      "stages_present": [1, 2, 3, 4, 5],
+      "note": "MMB HBS 2024 is gated; Milliman newsletters are a step below authored report; Aon GMTRR is a primary consultancy authored report"
+    },
+    "primary_filing": {
+      "count_unique_sources": 7,
+      "examples": ["Prodia Annual Report 2024 (IDX)", "Prodia Annual Report 2023 (IDX)", "BRI Annual Report 2024", "Telkom Annual Report 2024", "Klinik Pintar Form D / Series A1 press (partial)", "Mandiri Inhealth acquisition filing", "Pertamedika IHC annual report"],
+      "stages_present": [1, 2, 3, 4, 5, 6],
+      "note": "Klinik Pintar Series A1 sourced from TNGlobal article citing press — this is secondary, not a primary filing. Only Prodia IDX filings and BRI/Telkom annual reports are confirmed primary filings."
+    },
+    "primary_association": {
+      "count_unique_sources": 4,
+      "examples": ["AAUI Q4 2024 statistical report", "AAJI FY2024 press conference data", "AAJI Q1 2024 cumulative", "IDF Atlas (also counted under multilateral)"],
+      "stages_present": [1, 2, 3, 4, 5]
+    },
+    "primary_academic": {
+      "count_unique_sources": 28,
+      "examples": ["PMC12425502 Prastyo & Gani 2025", "PMC12681878 Lancet Regional Health 2025", "PMC11308606 Khoe et al. 2024", "PMC11422728 Naluri CDMP 2024", "PMC12852415 Hustrini et al. 2025", "PMC7829517 Alkaff Prolanis 2021", "PMC12699834", "PMC12538241", "PMC4051736 Finkelstein 2014", "PMC7482464 Uli et al. 2020", "PMC11327029 Dwiputra 2024", "PMC11786633 diabetic foot Jakarta", "PMC12675950 Adnan 2025", "PMC3901560 Soewondo 2013", "PMC12076961 Marcus et al. 2025", "PMC8582197 insurer CDM systematic review", "PMC9633402 Khambaty 2022", "PMC12519354 pre-diabetes trends 2025", "PMC10914682 projection 2045", "PMC7920312 CKD MDPI", "PMC10393018 CKD 2023", "PMC4000317 Widyahening 2014", "Hidayat 2022 Value in Health", "Hanifa 2025 PMC12506045", "Patty 2021 PubMed", "Adnan 2025 PMC", "ADA Diabetes Care 2022", "Kristina 2020 (ResearchGate — quality uncertain)"],
+      "stages_present": [1, 2, 3, 4, 5, 6],
+      "note": "28 distinct peer-reviewed sources is the corpus's primary strength. 26 of 28 are PubMed-indexed or published in indexed journals. Kristina 2020 is a ResearchGate hosted paper; the journal (Int J Pharmaceutical Research) has uncertain indexing status — classified Medium not High."
+    },
+    "secondary_trade": {
+      "count_unique_sources": 14,
+      "examples": ["Kontan", "Bisnis Indonesia", "IDNFinancials", "Asia Insurance Review", "Lockton POJK commentary", "LigaAsuransi", "GAIP", "Reblood blog", "Halodoc health portal", "HelloSehat"],
+      "stages_present": [1, 2, 3, 4, 5, 6]
+    },
+    "secondary_news": {
+      "count_unique_sources": 9,
+      "examples": ["Jakarta Post", "Antara (state news)", "Tribunnews", "Detik", "CNBC Indonesia", "Goodstats", "heaptalk.com", "mulamula.id"],
+      "stages_present": [1, 2, 3, 4, 5, 6]
+    },
+    "secondary_market_research": {
+      "count_unique_sources": 8,
+      "examples": ["NextMSC", "Ken Research", "Mordor Intelligence", "Grand View Research", "MarkNtel/Markntel Advisors", "DataIntelo (if present)", "IDX Channel pricing data"],
+      "stages_present": [2, 3, 4, 5],
+      "note": "All 8 are auto-Low aggregator; none cross-validated against primary"
+    },
+    "auto_low_vendor": {
+      "count_unique_sources": 22,
+      "examples": ["AdMedika about page", "Owlexa capabilities", "Meditap services", "Fullerton Health Indonesia", "HealthMetrics Indonesia", "Halodoc for Business stats", "Good Doctor corporate claims", "Alodokter B2B", "Klinik Pintar Blue Card", "Naluri 60% improvement", "Prodia OHI HbA1c advocacy", "EMC Healthcare MCU opinion", "Roundstone Insurance US blog", "International SOS capability claims", "Pertamedika OHIH targets", "KlikDokter B2B claims", "Saffmedic MCU categories", "Plaza Medis MCU example", "Tirta MCU services", "Parahita DM package", "Tzu Chi Hospital MCU package"],
+      "stages_present": [1, 2, 3, 4, 5],
+      "note": "22 auto-Low vendor sources; vendor concentration is heaviest in Stages 2 and 5"
+    }
+  },
+
+  "cross_stage_contradictions": {
+    "reference_document": "pass-2-validation/contradictions.json",
+    "total_contradictions_found": 16,
+    "by_class": {
+      "A_different_values_same_metric": 11,
+      "B_inconsistent_actor_characterization": 2,
+      "C_DR_verdict_not_applied": 3,
+      "D_geography_mismatch_inconsistently_applied": 2
+    },
+    "by_severity": {
+      "high": 6,
+      "medium": 8,
+      "low": 2
+    },
+    "immediate_resolution_required": [
+      {
+        "id": "C-A2",
+        "class": "A",
+        "severity": "high",
+        "issue": "73.2% undiagnosed rate (IDF Atlas) vs ~81% implied by SKI 2023 arithmetic; Stage 6 PP 6.1 footnote produces a higher rate than its own cohort model uses on the same page",
+        "stages": [1, 2, 3, 4, 5, 6]
+      },
+      {
+        "id": "C-A3",
+        "class": "A",
+        "severity": "high",
+        "issue": "Medical cost inflation 13.6% (Stages 3 and 4) vs 14.6% 2023 actual (Stage 1 post-DR). Three different values (13.6%, 14.6%, 19.0%) across corpus without consistent source/year labelling.",
+        "stages": [1, 3, 4]
+      },
+      {
+        "id": "C-A7",
+        "class": "A",
+        "severity": "high",
+        "issue": "Private hospital AMI episode Rp 100-400M cited as fact in Stages 1-5; Stage 6 correctly tags ASSUMED-3; DR4 found public hospital JKN floor at Rp 47-51M (Dwiputra 2024). The claim is used as a load-bearing ROI numerator but has no primary source for the private-hospital range.",
+        "stages": [1, 2, 3, 4, 5, 6]
+      },
+      {
+        "id": "C-C1",
+        "class": "C",
+        "severity": "high",
+        "issue": "DR5 MMB trend correction (13.6% → 14.6%) applied to Stage 1 but not propagated to Stages 3 and 4",
+        "stages": [1, 3, 4]
+      },
+      {
+        "id": "C-C2",
+        "class": "C",
+        "severity": "medium",
+        "issue": "DR4 private hospital AMI ASSUMED recommendation not applied consistently; Stage 6 correctly hedges but Stages 1-5 do not",
+        "stages": [1, 2, 3, 4, 5, 6]
+      }
+    ],
+    "geography_mismatch_flagging_inconsistency": {
+      "description": "Geography mismatch flags are applied inconsistently across the corpus. Stage 4's FBG/HbA1c Thailand study (PMC10773892) is correctly flagged 'Thailand tertiary hospital data; directionally applicable to Indonesia but not Indonesia-specific.' Stage 3's Roundstone Insurance US blog is used for CDM program framing without a geography flag. Stage 1 uses CIPD and AIA Hong Kong/Singapore productivity data without a geography-mismatch tag in the running text. Stage 5 South India absenteeism data is cited in the same section as Indonesia data without a geography flag. Stage 6 uses ADA 2022 US indirect cost methodology without a geography flag in the PP 6.3 cohort model summary (though it IS flagged in the supporting root-cause text).",
+      "concern_level": "medium",
+      "recommendation": "Apply geography-mismatch flag consistently to all non-Indonesia sources: Roundstone (US), AIA HK/Singapore productivity, South India absenteeism, ADA methodology when used to derive Indonesia estimates"
+    }
+  },
+
+  "deep_research_application_check": {
+    "dr1_VC1_mkt3_employer_count": {
+      "dr_outcome": "CONFIRMED_SCARCE",
+      "finding": "No government source publishes employer count at ≥500 HC threshold. BPS defines 'large' as ≥100 workers. WBES 2023 stops at 100+ as large. Range widened to 4,000-10,000 nationally; Tier-1/Tier-2 subset 2,500-6,000.",
+      "applied_to_stage_1": true,
+      "applied_to_stage_5": "PARTIAL — Stage 5 PP 5.3 uses 3,500-6,400 which is inconsistent with DR1's Tier-1/Tier-2 lower bound of 2,500 (C-A9 in contradictions.json)",
+      "verdict": "Partially applied"
+    },
+    "dr2_VC1_mkt6_market_size": {
+      "dr_outcome": "found-stronger-evidence",
+      "finding": "AAJI FY2024 (IDR 24.18T) and AAUI Q4 2024 (IDR 11.82T) replace Mordor/Statista; corporate health sub-segment IDR 15-23T estimated; OJK Statistik Perasuransian NEEDS-ATTENDED-FETCH",
+      "applied_to_stage_1": true,
+      "applied_to_stages_2_3": "YES — Stages 2 and 3 cite AAUI and AAJI primary data, consistent with DR2 findings",
+      "verdict": "Applied"
+    },
+    "dr4_PP1_1_cost3_PP1_2_cost2": {
+      "dr_outcome": "found-stronger-evidence",
+      "finding_pp1_2_bpjs_catastrophic": "Tribunnews + BPJS Kesehatan journal now anchor the 2023 catastrophic claims figure (Rp 34.769T, heart Rp 17.629T); High confidence achieved",
+      "finding_pp1_1_private_hospital": "Dwiputra 2024 establishes JKN public floor at Rp 47-51M; private range Rp 100-400M has no primary source; ASSUMED tag recommended",
+      "applied_pp1_2_bpjs": "PARTIAL — Stage 1 PP 1.2 correctly cites BPJS 2023 figures but traces primarily to Jakarta Post citations (not the upgraded Tribunnews/BPJS journal sources from DR4)",
+      "applied_pp1_1_private_hospital_assumed": "NOT FULLY APPLIED — Stages 1-5 still cite Rp 100-400M without ASSUMED tag; only Stage 6 explicitly uses ASSUMED-3 (C-C2 in contradictions.json)",
+      "applied_dwiputra_2024_as_floor": "PARTIAL — Dwiputra 2024 is cited in Stage 6 but not consistently introduced as the JKN floor anchor in Stages 1-5 where the private-hospital range is asserted",
+      "verdict": "Partially applied — BPJS catastrophic evidence upgraded in Stage 6; private hospital ASSUMED tag not propagated across corpus"
+    },
+    "dr5_MMB_trend": {
+      "dr_outcome": "contradicting-evidence",
+      "finding": "Indonesia 2023 actual medical trend = 14.6% (MMB Health Trends 2025); 13.6% traces to Prastyo & Gani retiree benchmark, different product. Aon GMTRR: 13.1% 2024 actual, 16.2% 2025 forecast.",
+      "applied_to_stage_1": true,
+      "applied_to_stage_3": "NOT APPLIED — Stage 3 PP 3.1 RC2 still uses 13.6% (C-C1)",
+      "applied_to_stage_4": "NOT APPLIED — Stage 4 PP 4.3 cites '13.6% in 2025' (C-C1)",
+      "verdict": "Applied to Stage 1 only; not propagated to Stages 3 and 4"
+    },
+    "overall_dr_application_verdict": "PARTIAL — 2 of 4 DR sweeps fully applied; 2 partially applied. The most consequential non-application is DR5 (MMB trend correction not propagated to Stages 3 and 4) and DR4 (private hospital episode cost ASSUMED tag not applied in Stages 1-5). These are the two 'immediate' Class C contradictions in contradictions.json."
+  },
+
+  "weak_claims_for_remediation": [
+    {
+      "claim_id": "CORPUS-WIDE-private-hospital-AMI",
+      "claim_text": "Private hospital AMI/stroke/renal episode cost Rp 100-400M per event (cited in Stages 1-5 as factual; only Stage 6 tags as ASSUMED-3)",
+      "stages_affected": [1, 2, 3, 4, 5, 6],
+      "current_score": "Low",
+      "issue": "Load-bearing ROI numerator with no primary source for private channel. DR4 found JKN public floor at Rp 47-51M (Dwiputra 2024, peer-reviewed). The private hospital gap is plausible (2-10x JKN) but not primary-sourced.",
+      "suggested_action": "Field validation: request per-episode billing data from 2-3 private hospital CFOs (Siloam Hospitals, Mayapada Hospital, RS Pondok Indah) for AMI/PCI procedures 2023-2024, or request from TPA (AdMedika, Aon Indonesia) claims benchmark for cardiovascular episodes in corporate plans. Alternatively, OJK Statistik Perasuransian 2024 (if accessible) may contain aggregate private hospital claims data by ICD-10 category.",
+      "suggested_source_type": "primary-filing (hospital annual report) or primary-association (OJK/AAUI claims data) or primary-interview (named CFO/TPA actuary)",
+      "priority": "high"
+    },
+    {
+      "claim_id": "CORPUS-WIDE-medical-inflation-13.6",
+      "claim_text": "Indonesia medical cost inflation 13.6% (Stages 3 and 4); should be 14.6% 2023 actual per MMB Health Trends 2025 (DR5)",
+      "stages_affected": [3, 4],
+      "current_score": "Low",
+      "issue": "DR5 corrected this; correction not propagated. GAIP 2025 cited as source in Stage 3 — if GAIP 2025 is a genuinely independent survey producing 13.6% as a 2025 actual (not the Prastyo & Gani retiree benchmark), it needs to be sourced separately with year attribution.",
+      "suggested_action": "Apply DR5 correction directly: replace 13.6% with 14.6% (2023 actual MMB) and note Aon GMTRR 2024 actual = 13.1%. If GAIP 2025 is a real distinct source, locate it via Lloyd's/GAIP website and confirm its year attribution.",
+      "suggested_source_type": "primary-consultancy (MMB Health Trends 2025 PDF already found at fwd.co.id)",
+      "priority": "high"
+    },
+    {
+      "claim_id": "CORPUS-WIDE-employer-count-assumed",
+      "claim_text": "Number of Indonesian employers with ≥500 headcount (~3,000-10,000 range depending on stage)",
+      "stages_affected": [1, 5],
+      "current_score": "Low",
+      "issue": "DR1 CONFIRMED_SCARCE. No government source at this threshold. Stage 5 uses inconsistent range (3,500-6,400) vs DR1 derivation.",
+      "suggested_action": "Kemnaker Satudata or Pusdatinaker (Ministry of Manpower data center) may publish employer-size distribution from mandatory Wajib Lapor Ketenagakerjaan (WLK) registry. Alternatively, BPS IBS census (annual manufacturing) and BPS Company Survey data for services sector. Request via BPS microdata portal. This is a low-probability find but is the only path to a primary-source employer count.",
+      "suggested_source_type": "primary-gov (Kemnaker WLK registry or BPS company survey)",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "PP5-capitation-rates",
+      "claim_text": "Corporate panel clinic supplemental capitation rates Rp 15,000-40,000 PMPM [ASSUMED-1]",
+      "stages_affected": [5],
+      "current_score": "Low",
+      "issue": "No published tariff for supplemental insurer / employer panel clinic capitation; ASSUMED-1 tag is honest but leaves a gap in Stage 5's commercial model description.",
+      "suggested_action": "Named interview: ask Aon Indonesia, Mercer Marsh Benefits Indonesia, or Howden Indonesia (brokers) for corporate panel clinic capitation benchmark ranges in their portfolio — this is expert knowledge they hold from plan design. Alternatively, ask AdMedika or Owlexa product team for typical per-PMPM in their corporate contracts.",
+      "suggested_source_type": "primary-interview (named broker or TPA actuary)",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "PP4.1-HbA1c-MCU-contract-prevalence",
+      "claim_text": "What percentage of Indonesian corporate MCU contracts include HbA1c as a bundled test [ASSUMED-1]",
+      "stages_affected": [4],
+      "current_score": "Low",
+      "issue": "Structurally important claim (the absence of HbA1c in standard MCU is the central product/clinical pain point), but the claim about how often it is absent is ASSUMED not evidenced.",
+      "suggested_action": "Prodia OHI corporate MCU order data (what share of their corporate orders include HbA1c) would be ideal but requires primary interview. Alternatively, a Freedom of Information or regulatory request to Kemenkes / BPJS data center for OHI aggregate panel composition data. Minimum viable: named interview with 2-3 occupational health physicians at IDKI (Indonesian Occupational Medicine Association).",
+      "suggested_source_type": "primary-interview (named IDKI occupational physician) or primary-filing (Prodia OHI data request)",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "PP6.3-presenteeism-Indonesia",
+      "claim_text": "Indonesia presenteeism cost for T2DM employees estimated at 3:1 to absenteeism ratio [ASSUMED-6]",
+      "stages_affected": [6],
+      "current_score": "Low",
+      "issue": "No Indonesian study has applied a validated presenteeism instrument (WLQ, HPQ) to a diabetic cohort. The 3:1 ratio is borrowed from ADA 2022 US data. Stage 6 explicitly flags this as ASSUMED.",
+      "suggested_action": "Naluri's Indonesian mining cohort study (PMC11422728) contains work-ability outcome data — check whether it includes any productivity/absenteeism subanalysis. Alternatively, search PubMed/PMC for 'presenteeism diabetes Indonesia' — Adnan 2025 systematic review explicitly noted this as a gap in 2025, so there may be no published source. If none found, retain ASSUMED-6 tag and flag as a research gap in the corpus narrative.",
+      "suggested_source_type": "primary-academic (Indonesia-specific productivity instrument study)",
+      "priority": "low"
+    }
+  ],
+
+  "gate_recommendation": "ship-with-flag",
+
+  "gate_reasoning": "The corpus scores 42.5% Low globally, placing it in the 30-70% 'ship-with-flag' band. This is an honest score: the Low concentration is not driven by sloppy sourcing on core epidemiological claims (which are well-evidenced by IDF Atlas, SKI 2023, and 28 peer-reviewed PMC sources), but by three structural factors that are partially within the researcher's control and partially inherent to the market. First, vendor concentration in Stages 2 and 5 is unavoidable — no third-party audited source exists for TPA member counts or digital health platform metrics, and all such figures must carry auto-Low vendor-marketing overrides. Second, the assembled corporate cohort model in Stage 6 is explicitly dependent on ASSUMED inputs (6 ASSUMED-N tags), because no single Indonesian study has directly measured the full cost burden of unmanaged diabetes in a corporate setting — this is a known literature gap, not a researcher failure. Third, Stages 2-6 received no individual DR sweep per pass-0-deviations.md, meaning the Low-concentration in these stages reflects the absence of targeted evidence-strengthening passes, not the absence of evidence in the world. Against this: three 'immediate' cross-stage contradictions must be resolved before any commercial or investor use of the corpus — the 13.6% medical inflation mis-attribution (DR5 correction not propagated to Stages 3 and 4), the private hospital episode cost ASSUMED qualification not consistently applied, and the undiagnosed rate internal inconsistency in Stage 6. The hypothesis itself is well-supported by primary institutional sources (IDF, Kemenkes, OJK, AAUI, AAJI, Prodia IDX filing, 28 peer-reviewed sources): the core claims that Indonesian employers face under-detected metabolic disease burden, that current MCU/TPA/clinic infrastructure does not produce CDM cohort data, and that regulatory reform (POJK 36/2025) is creating cost pressure — are all High or Medium confidence. The corpus is usable for hypothesis testing and commercial diligence with the flags noted, but should not be cited quantitatively on the three 'immediate' items without first applying the DR corrections that are already in the pass-3 archive.",
+
+  "narrative_summary": "The final cross-stage source validation of Run 2026-05-25-1216 (Indonesia Corporate CDM Cost Burden, 6 stages, 12 files) scores 214 claims across the full corpus at 34.6% High / 22.9% Medium / 42.5% Low. The global 42.5% Low triggers a SHIP-WITH-FLAG gate decision. The Low distribution is not uniform: Stage 6 (Literature) paradoxically scores the highest Low% (50%) despite having the strongest academic sources, because the assembled corporate cohort model carries 6 ASSUMED-N tags that are epistemically honest but score Low per rubric. Stage 1 post-DR is the best-performing stage at 36.8% Low. Stage 5 (GP Clinics) has the highest vendor-concentration Low drag at 45.9%. The corpus's core academic evidence base is strong — 28 unique peer-reviewed PubMed-indexed sources, IDF Atlas 11th 2024, 6 primary government sources, 8 primary ministry/regulatory sources, and 4 primary consultancy authored reports covering ~65% of the key hypothesis claims at Medium or High confidence. Three immediate-resolution items from the contradiction finder must be addressed before commercial use: (1) propagate the DR5 MMB trend correction (14.6% not 13.6%) to Stages 3 and 4; (2) consistently tag the Rp 100-400M private hospital episode cost estimate as ASSUMED across all stages (Stage 6 already does this correctly); (3) reconcile the 73.2% vs implied ~81% undiagnosed rate discrepancy within Stage 6. Six weak claims are flagged for targeted remediation with specific source-type recommendations and search strategies. Unique URL count is approximately 147, well above the 40-60 diversity target. The single largest citation concentration risk is the gated MMB HBS 2024 (marsh.com) which underpins Rp 22M inpatient average and 94% coverage prevalence across 5 stages — this is a primary consultancy source but its gated status means it cannot be independently verified without registration access."
+}

@@ -1,0 +1,27 @@
+{
+  "claim_id": "VC2.5/VC2.8",
+  "verdict": "partially-evidenced",
+  "primary_number": "Q5 richest quintile: per-inpatient-episode OOP = IDR 2,699,500 (~USD 173); per-outpatient-episode OOP = IDR 335,500 (~USD 22). National average annual OOP per capita = IDR 447,000-651,000 (USD 31-42). Q5 urban annual OOP per capita estimated IDR 976,000-1,302,000 (USD 63-83) based on 1.5-2x national average scaling — no direct quintile-level annual figure found in open-access sources.",
+  "primary_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10483778/",
+  "publisher": "International Journal for Equity in Health (Fattah et al. 2023) — ENHANCE Household Panel Study 2018-2019, Indonesia",
+  "publisher_tier": 1,
+  "methodology_note": "PMC10483778 (DOI: 10.1186/s12939-023-01980-w) reports per-episode OOP by wealth quintile from the ENHANCE Household Panel Study 2018-2019, a nationally representative survey. Table 2 provides outpatient and inpatient OOP conditional on utilization. Annual per-capita OOP is NOT directly reported by quintile. National average annual household OOP = IDR 743,773 (USD 53) from Susenas 2018-2019 cross-sectional data (PLOS Global Public Health, DOI: 10.1371/journal.pgph.0000203). WHO NHA Indonesia 2024 reports total health expenditure per capita of IDR 2.3M with OOP share = 28.3%, implying national OOP per capita of ~IDR 651,000 (USD 42 at IDR 15,600). Q5 urban annual figure requires scaling: Q5 monthly household expenditure was IDR 6,664,000 vs estimated national average ~IDR 4,500,000, a ratio of ~1.48x. Applying 1.5-2x multiplier to national OOP per capita yields IDR 976K-1.3M per capita per year for Q5. Private health benefit incidence is pro-rich (Lancet Global Health 2023, concentration index 0.134-0.190), supporting higher Q5 OOP but no direct quintile-annual figure found.",
+  "health_education_split": "NOT EVIDENCED. No open-access primary source found providing the health (kesehatan) vs education (pendidikan) breakdown as shares of combined social spend at top deciles from BPS Susenas BUKLE tables. BPS Health Statistics Profile 2023 and the main Susenas 2023 expenditure publication both returned HTTP 403 (access restricted). The 50/50 assumption in the skill draft remains unverified. All available papers (PMC10483778, PLOS GPH JKN study, Lancet Global Health 2023 benefit incidence study) focus on health OOP only, not the health-education composition of non-food expenditure at the decile level. BPS Silastik microdata access would be required to verify this split.",
+  "what_was_attempted": [
+    "Academic API search via academic-search.sh: 'Indonesia household out-of-pocket health expenditure wealth quintile Susenas' — found PMC10483778 (ENHANCE panel) and DOI 10.1371/journal.pgph.0000203 (JKN OOP study)",
+    "Academic API search: 'Indonesia OOP per capita income decile BPS Susenas health education expenditure' — returned empty",
+    "Fetched PMC10483778 full text — obtained Table 2 OOP by wealth quintile (per-episode amounts) and Table 1 household expenditure by quintile",
+    "Fetched DOI 10.1371/journal.pgph.0000203 (JKN OOP study) — obtained national average annual HH OOP = IDR 743,773 (USD 53)",
+    "WebSearch: BPS Susenas 2023 health/education kesehatan/pendidikan quintile decile expenditure table — found BPS publication URLs but BPS main site returned HTTP 403",
+    "WebFetch BPS 2023 Susenas expenditure publication — HTTP 403 Forbidden",
+    "WHO Indonesia Health Accounts 2024 news article — obtained total health exp IDR 2.3M/capita, OOP share 28.3%",
+    "WebSearch: World Bank Indonesia health financing brief 2023/2024 OOP per capita income quintile urban — found general WHO/World Bank data but no quintile breakdown",
+    "Fetched ThinkWell Indonesia Health Purchasing Profile PDF (markitdown) — obtained NHA 2019 OOP = 34% of CHE = IDR ~447K/capita/year",
+    "WebSearch: SMERU research institute Indonesia household health expenditure quintile 2022-2023 — no relevant SMERU publication found with quintile OOP data",
+    "WebSearch: Indonesia Susenas 2023 BUKLE non-pangan health education share top decile — no public access table found",
+    "WebFetch BPS Health Statistics Profile 2023 — HTTP 403 Forbidden",
+    "DOI 10.1186/s12913-024-11951-8 (ENHANCE determinants paper) — redirected to Springer paywall",
+    "Lancet Global Health 2023 benefit incidence paper (DOI 10.1016/S2214-109X(23)00064-5) — PDF returned HTTP 403; PubMed abstract confirmed pro-rich private sector benefit incidence (concentration index 0.134-0.190)"
+  ],
+  "recommended_edit_to_canonical": "Replace the ASSUMED-1 and ASSUMED-2 flags with the following graded evidence: (1) Q5 per-episode OOP is primary-evidenced at IDR 2.7M (inpatient) and IDR 336K (outpatient) from ENHANCE panel (PMC10483778); (2) national average annual OOP per capita is IDR 447K-651K (USD 31-42) from NHA/WHO data; (3) Q5 urban annual OOP per capita is estimated at IDR 1.0M-1.3M (USD 64-83) — this is a derived estimate using national averages scaled by consumption ratio, NOT a direct primary measurement; flag this as [ASSUMED-DERIVED]; (4) the 50/50 health-education split in combined social spend remains fully unverified — mark [ASSUMED-N, source: BPS Susenas BUKLE microdata required, needs attended fetch of bps.go.id or microdata license]. To close this gap, either (a) commission a BPS microdata request, or (b) cite Susenas March 2024 published volume once available, or (c) widen the range to 40-60% with a note that the split is unverified."
+}

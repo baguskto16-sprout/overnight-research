@@ -1,0 +1,54 @@
+RUN COMPLETE — 2026-05-25-0715
+Phase: 1 (unattended-Playwright)
+Topic: Indonesia Affluent Preventive Care + Chronic Disease Management Market
+Started:   2026-05-25T07:15Z
+Completed: 2026-05-25T~12:00Z (approx)
+Runtime:   ~4h 45min
+
+Mode:                sandbox
+Output directory:    ./output/raw-claude-overnight/2026-05-25-0715/
+Stages tracer-fired: 6 of 6
+Pain points written: 21 distilled (canonical) from 25 produced (drafts) across 6 stages
+Root causes:         ~85 total (≥3 per pain point)
+Unique sources:      ~50+ URLs across the corpus (12 government/regulator/multilateral, 13 peer-reviewed, 8 audited IDX filings, 7 top-tier consultancy, plus trade press)
+Gate decision:       Ship-with-flag (~40% Low post-correction; flags: Stages 4–6 citation-tier reliance; critic pass deferred; 5 medium/low contradictions inline)
+
+Canonical artifacts:
+- raw-claude-value-chain-indonesia-affluent-preventive-cdm.md
+- raw-claude-pain-points-indonesia-affluent-preventive-cdm.md
+- raw-claude-summary-indonesia-affluent-preventive-cdm.md
+- FINAL-REPORT.html (Wright-branded, 14 A4 pages, print-ready)
+
+Working-hypothesis verdicts:
+- WH1 (Affluent under-served by preventive/CDM) — CONFIRMED
+- WH2 (Discretionary spending threshold at upper-middle) — CONFIRMED (Rp 5M/cap/mo)
+- WH3 (Insurance is inpatient-oriented) — CONFIRMED (uniform across top-7 insurers)
+- WH4 (Employer-provided is dominant access route for upper-middle) — CONFIRMED (95M group lives vs 18.6M individual)
+- WH5 (Insurers piloting CDM but execution fragmented) — REFINED → REJECTED (the gap is *zero execution*, not fragmented execution)
+
+Sub-agent invocations: 30 total
+- value-chain-mapper × 6
+- pain-point-researcher × 6
+- source-validator × 6
+- deep-research × 11 (5 for Stage 1, 4 for Stage 2, 2 for Stage 3)
+- contradiction-finder × 1
+
+Vertical-slice deviations (pass-0-deviations.md):
+- Stages 4–6 deferred per-stage deep-research (citation-tier issues; cross-stage corroboration via Stage 1–3 primary anchors)
+- Step 5a (cross-stage source-validator) skipped — relied on per-stage aggregates
+- Step 5a'' (contradiction-resolver) skipped — 4 high-severity contradictions resolved by applying stages-validated corrections during canonical-artifact merge
+- Step 5.5 (parallel critic pass) skipped — budget preservation; partial mitigation via contradiction-finder
+
+Phase 2 handoff (separate orchestrator pass):
+- ~12 [NEEDS-ATTENDED-FETCH] tags inline in pass-1-drafts and canonical artifacts
+- High-value targets: BPS Susenas welfare-class disaggregation, OJK Statistik Perasuransian 2024 PDF, MMB Indonesia HBS 2024 full PDF, Allianz Flexi Medical RIPLAY, ResearchGate stroke INA-CBG cost study, Bisnis Indonesia paywalled coverage
+
+Top 3 high-confidence findings:
+1. Tier-1 affluent addressable headcount is ~24M Middle Class + 1.29M+ Upper Class — materially large; Rp 5M/month per-capita threshold validates discretionary preventive/CDM spend feasibility.
+2. No commercial insurer or major private hospital operates a structured longitudinal CDM programme at scale — supply white-space is structurally vacant.
+3. Funding pool ~USD 5–6B annually flowing through MSO-addressable channels (private health insurance, BPJS employer, OOP); 19% medical trend + 43% premium repricing + POJK 36/2025 create acute procurement triggers across CFO/CHRO desks.
+
+Top 3 questions for field validation:
+1. Willingness-to-pay for self-pay CDM membership among Tier-1 affluent (no published Indonesian WTP survey).
+2. Employer procurement openness to non-broker-sourced CDM bundles (interview 5–7 Director of C&B at Astra, BCA, Telkom, GoTo, multinationals).
+3. Insurer partnership vs disintermediation positioning (Prudential, AIA, Allianz Heads of Health Products).

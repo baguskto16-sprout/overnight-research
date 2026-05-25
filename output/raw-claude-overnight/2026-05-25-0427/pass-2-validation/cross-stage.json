@@ -1,0 +1,347 @@
+{
+  "run_id": "2026-05-25-0427",
+  "generated_at": "2026-05-25",
+  "validator": "source-validator",
+  "context": "final-cross-stage",
+  "stages_covered": [1, 2, 3, 4, 5, 6],
+  "note_on_stage_1": "Stage 1 had a pass-3 deep-research pass applied (6 weak claims re-researched: PP1.1-cost-3, PP1.2-freq-1, PP1.3-freq-3, PP1.1-cost-1, VC-MS-2, VC-MS-6). The per-stage JSON stage-1.json reflects pre-DR scores. The stages-validated/stage-1.md reflects post-DR narrative corrections. Cross-stage rollup uses the pre-DR per-stage JSON counts as the authoritative scored distribution; post-DR upgrades are not yet re-scored in a revised stage-1.json, so Stage 1 scores remain as filed.",
+
+  "total_unique_sources": {
+    "note": "De-duplication is by full URL. Same URL cited in multiple stages counts once. Vendor auto-low sources counted in their own bucket.",
+    "methodology": "Sourced from the 42 unique source catalogs logged in per-stage JSONs. Estimated via domain-pair deduplication across all 6 stages.",
+    "estimated_unique_urls": 148,
+    "breakdown_by_category": {
+      "primary-gov": 5,
+      "primary-ministry": 9,
+      "primary-multilateral": 2,
+      "primary-consultancy": 3,
+      "primary-filing": 0,
+      "primary-association": 2,
+      "primary-academic": 67,
+      "primary-standards": 0,
+      "primary-interview": 0,
+      "primary-legal": 0,
+      "secondary-trade": 32,
+      "secondary-news": 12,
+      "secondary-market-research": 8,
+      "secondary-press-release": 4,
+      "auto-low-vendor": 29,
+      "auto-low-aggregator-marketplace": 0,
+      "unverifiable-or-paywalled": 5
+    },
+    "total_primary_tier_sources": 88,
+    "total_secondary_tier_sources": 56,
+    "total_auto_low_sources": 34,
+    "diversity_assessment": "148 unique URLs across 6 stages is within the IMI 40-60 URL target for a single stage but well exceeds it for a 6-stage corpus. Corpus-level source diversity is structurally adequate in count but severely skewed: 29 auto-low vendor URLs (20% of total) and 8 aggregator-market-research URLs (5%) pull in the wrong direction. The 67 primary-academic sources are the strongest category but are predominantly single-citation (no claim in any stage reaches High via academic sources alone because the rubric requires 3+ for High without a gov/multilateral). Only 5 primary-gov and 9 primary-ministry sources appear across the entire 6-stage corpus — a structural weakness for a research programme focused on heavily regulated healthcare markets in Indonesia and Malaysia where BPS, DOSM, Kemenkes, MOH Malaysia, BPJS Kesehatan, and OJK all publish directly relevant primary statistics."
+  },
+
+  "source_overlap_observations": [
+    {
+      "observation_id": "SO-1",
+      "type": "cross-stage-repeated-citation",
+      "url": "https://jurnal-jkn.bpjs-kesehatan.go.id/index.php/jjkn/article/view/273",
+      "cited_in_stages": [2, 6],
+      "claim_anchored": "Only 32% of 273 assessed FKTPs met Level 4 RPPT target by December 2023",
+      "issue": "This is the single most important quantitative claim in the corpus — the foundation of the CDM recall failure case across PP2.2 and PP6.1. It is cited in two stages but only from a single URL (BPJS Kesehatan Journal). Cross-stage repetition does not create a second independent source. The claim remains Low in both stages due to single-source override. A corroborating BPJS Kesehatan annual report PDF or Kemenkes monitoring publication is the single highest-leverage gap in the entire corpus.",
+      "severity": "critical"
+    },
+    {
+      "observation_id": "SO-2",
+      "type": "cross-stage-salary-source-reuse",
+      "urls": [
+        "https://id.jobstreet.com/career-advice/role/general-practitioner/salary",
+        "https://malaysia.indeed.com/career/nurse/salaries"
+      ],
+      "cited_in_stages": [1, 2, 3, 4, 5, 6],
+      "issue": "The same two job-aggregator URLs — JobStreet Indonesia GP salary and Indeed Malaysia nurse salary — are used as the labor cost anchor across all 6 stages. Both are (a) secondary-trade, (b) frequently cited for occupational categories other than what is being measured (the GP URL is used for admin salary, the nurse URL is used for admin salary), and (c) single-source. The effect is that every labor cost model in the corpus compounds the same two weak salary references into different cost equations. A single BPS Indonesia Sakernas wage table and a single DOSM Malaysia Salaries and Wages Survey entry would simultaneously upgrade cost anchors in all 6 stages.",
+      "severity": "high"
+    },
+    {
+      "observation_id": "SO-3",
+      "type": "cross-stage-repeated-citation",
+      "url": "https://www.rovinghealth.com/articles/healthcare-administrative-burden-manual-data-entry-150k",
+      "cited_in_stages": [2, 3],
+      "claim_anchored": "Manual data entry generates 3-5% error rate at $45-65/incident; $150K/year admin burden for multi-provider US clinic",
+      "issue": "A single US industry blog (rovinghealth.com) provides the transcription error rate and rework cost cited in both Stage 2 (PP2.1) and Stage 3 (PP3.1). Trade-press-only override applies to operating cost figures. Citing the same blog twice across two stages does not increase source independence — it remains one source family. A JAMIA, BMC Health Services Research, or similar peer-reviewed study on healthcare data entry error rates is needed.",
+      "severity": "high"
+    },
+    {
+      "observation_id": "SO-4",
+      "type": "cross-stage-market-sizing-aggregator-dependence",
+      "publisher": "Grand View Research",
+      "urls": [
+        "https://www.grandviewresearch.com/horizon/outlook/health-check-up-market/indonesia",
+        "https://www.grandviewresearch.com/horizon/outlook/health-check-up-market/malaysia"
+      ],
+      "cited_in_stages": [3, 4],
+      "claim_anchored": "Indonesia health check-up market USD 656M (2024), 9.9% CAGR; Malaysia health check-up market USD 283.8M (2024), 10.8% CAGR",
+      "issue": "The entire MCU market sizing for both countries rests on Grand View Research, a private aggregator subject to the auto-low-aggregator override. The same two URLs appear in Stage 3 and again in Stage 4's market context table without any primary-tier cross-validation in either stage. No World Bank health expenditure data, ADB health sector assessment, IFC private health market study, or national health accounts statistic corroborates these figures.",
+      "severity": "high"
+    },
+    {
+      "observation_id": "SO-5",
+      "type": "cross-stage-repeated-citation",
+      "url": "https://codeblue.galencentre.org/2025/10/poll-nearly-all-specialists-perceive-insurer-interference-with-clinical-decisions/",
+      "cited_in_stages": [1, 5],
+      "claim_anchored": "67% of Malaysian hospital specialists report GLs revoked; 83% rate TPA clinical competency as 'little or no understanding'; 99% perceive insurer interference; 73% report patients experienced delayed treatment",
+      "issue": "The CodeBlue October 2025 specialist poll (n=855) is cited in Stage 1 (PP1.3) and cited no fewer than 6 times across different claims in Stage 5 (PP5.1, PP5.3). This single survey, run and published by CodeBlue trade press with no independent peer review of methodology, carries essentially the entire evidentiary weight for the Malaysian specialist-TPA conflict pain point. Single-source override applies to every individual claim. The volume of cross-claim repetition is a red flag for downstream readers who might mistake citation frequency for source independence.",
+      "severity": "high"
+    },
+    {
+      "observation_id": "SO-6",
+      "type": "cross-stage-repeated-citation",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12538241/",
+      "cited_in_stages": [2, 6],
+      "claim_anchored": "PROLANIS scoping review 2025: East Java 34.3% of eligible enrolled, 56.8% regular attendance, WhatsApp non-participation and supply barriers as recall failure modes",
+      "issue": "This is a legitimate primary-academic source cited appropriately in both Stage 2 and Stage 6. Cross-citation is noted but does not create an issue — the scoping review is directly relevant to both stages. However, treating cross-stage citations of the same PMC source as independent evidence in a composite score would be an error; each stage must demonstrate independent corroboration.",
+      "severity": "informational"
+    },
+    {
+      "observation_id": "SO-7",
+      "type": "cross-stage-repeated-citation",
+      "url": "https://www.researchgate.net/publication/393187270_EVALUATION_OF_MEDICAL_CHECK-UP_MCU_SERVICES_WITH_INFORMATION_SYSTEMS_AT_PERMATA_CIBUBUR_HOSPITAL",
+      "cited_in_stages": [3, 4],
+      "claim_anchored": "Permata Cibubur Hospital IS evaluation 2025: MCU results still in printed physical documents; LIS integration not achieved",
+      "issue": "Single primary-academic source (Permata Cibubur 2025 evaluation) cited in both Stage 3 and Stage 4 as structural evidence for manual MCU operations. This is a single-facility study at one Indonesian hospital — cited as the primary published evidence of MCU manual operations across both stages. Khazanah Sosial 2025 (also cited) covers a different hospital, which together provide two case examples; neither is a national survey or representative sample.",
+      "severity": "medium"
+    },
+    {
+      "observation_id": "SO-8",
+      "type": "vendor-marketing-saturation",
+      "vendors": ["Prodia/Prodia OHI", "Naluri", "PMCare", "AIA Vitality", "BP Healthcare POPE", "Medilink Global", "InterPixels AI", "Scribeberry", "Klinify", "LlamaIndex"],
+      "auto_low_vendor_count": 29,
+      "issue": "29 auto-low vendor sources appear across the 6-stage corpus. Notably, Prodia OHI (prodia.co.id + prodiaohi.co.id) is cited 4-5 times across Stages 3 and 4 as evidence for Prodia's own scale (>500,000 employees/year, >2,000 companies). The '500,000 employees' figure, which is used repeatedly to scale the MCU collation pain point, is unverified by any audited filing or independent third-party confirmation. In Indonesia, Prodia (PT Prodia Widyahusada Tbk) is a listed company on IDX — its 20-F equivalent (annual report) would provide audited revenue and service volume data that would immediately replace the marketing-page citations.",
+      "severity": "high"
+    },
+    {
+      "observation_id": "SO-9",
+      "type": "cross-stage-kompas-paywall",
+      "url": "https://www.kompas.id/artikel/en-biaya-diabetes-dan-hipertensi-capai-rp-305-triliun-banyak-pasien-yang-tidak-terkontrol",
+      "cited_in_stages": [2, 4],
+      "claim_anchored": "Indonesia BPJS Kesehatan spends >IDR 30.5 trillion ($1.88B) annually on DM and HT management; FKTP CDM utilization rates",
+      "issue": "A single paywalled Kompas.id article is cited in both Stage 2 (PP2.1 and PP2.2) and Stage 4 (PP4.4) for the BPJS DM+HT total expenditure figure and CDM utilization gap. The article is tagged [NEEDS-ATTENDED-FETCH] and cannot be directly verified. Cross-stage citation of an unverifiable paywall source does not improve evidentiary standing. BPJS Kesehatan publishes official data on program expenditure in its annual report (laporan tahunan) which would replace this citation.",
+      "severity": "medium"
+    },
+    {
+      "observation_id": "SO-10",
+      "type": "assumed-tag-recurrence",
+      "note": "ASSUMED-tagged claims appear in every stage: Stage 1 (7 tagged), Stage 2 (8 tagged), Stage 3 (8 tagged), Stage 4 (7 tagged), Stage 5 (5 tagged), Stage 6 (11 tagged). Total: 46 explicitly assumed claims across the corpus. These are appropriately flagged and do not inflate confidence scores, but they signal that all willingness-to-pay figures, labor time benchmarks, and operating cost model inputs remain unvalidated by primary data in all 6 stages. No primary interview transcript, no time-motion study, and no WTP survey result appears in any stage's footnotes.",
+      "severity": "high"
+    }
+  ],
+
+  "cross_stage_inconsistencies": [
+    {
+      "inconsistency_id": "CI-1",
+      "type": "same-figure-cited-at-different-confidence",
+      "claim": "Only 32% of 273 assessed FKTPs met Level 4 RPPT target by December 2023",
+      "stage_2_treatment": "Cited in PP2.2 as frequency claim; scored Low (single primary-ministry source; same URL cited twice within Stage 2 does not create two sources)",
+      "stage_6_treatment": "Cited in PP6.1 as central frequency/severity metric; also scored Low for same single-source reason",
+      "consistency_verdict": "Consistent (both Low). No discrepancy in score, but the repeated single-source status across two stages highlights that no corroborating second source was found even after the claims were identified as high-priority in both per-stage validations.",
+      "action": "Priority target for pass-4 deep research: BPJS Kesehatan laporan tahunan 2023 PDF"
+    },
+    {
+      "inconsistency_id": "CI-2",
+      "type": "scope-boundary-tension",
+      "claim": "Malaysia GP consultation fee: MYR 10–35 per visit (regulated under Private Healthcare Facilities Act Schedule 7); doctors seeking MYR 50–150",
+      "stage_1_treatment": "Cited in Stage 1 PP1.3 as context for consultation revenue",
+      "stage_2_treatment": "Cited in Stage 2 PP2.3 as denominator for no-show revenue loss calculation",
+      "consistency_verdict": "Consistent (same MYR 10-35 regulated floor used in both stages). No numerical conflict. Both correctly flagged: CodeBlue single-domain override applies (same publication family for both CodeBlue URLs cited).",
+      "action": "None — consistent application. Upgrade both with a direct citation to the Private Healthcare Facilities Act Schedule 7 gazette."
+    },
+    {
+      "inconsistency_id": "CI-3",
+      "type": "figure-attribution-difference",
+      "claim": "Malaysia NHMS 2023: DM prevalence 15.6%; HT prevalence 29.2%",
+      "stages_citing": [2, 4, 6],
+      "stage_2_treatment": "Cited via Scientific Reports 2025 (nature.com) — scored Medium (2 independent sources: Scientific Reports + MOH NDR 2023 URL, though NDR URL returned 404)",
+      "stage_4_treatment": "Cited via same nature.com URL alone — scored Low (single source, no second citation added)",
+      "stage_6_treatment": "Cited via nature.com — scored part of Medium for DM control rate claim with PMC10576047 as second source",
+      "consistency_verdict": "Minor inconsistency: Stage 2 correctly identifies this as a 2-source Medium (Scientific Reports + MOH NDR), while Stage 4 incorrectly applies the same URL as a single-source Low without acknowledging Stage 2's Medium rating for the same underlying claim. Stage 6 correctly elevates to Medium when both sources are cited together. Stages 4 and 6 should be internally consistent with Stage 2's treatment of this figure.",
+      "action": "Flag: Stage 4 under-scores NHMS 2023 DM/HT prevalence. When the second source (PMC10576047) is co-cited, as in Stage 2 and Stage 6, the rating is Medium."
+    },
+    {
+      "inconsistency_id": "CI-4",
+      "type": "scope-overlap-cross-stage",
+      "claim": "PP2.4 / Stage 3: Malaysia TPA-clinic CDM coordination fragmentation (continuity disruption on employer switch)",
+      "stage_2_treatment": "PP2.4 explicitly assessed and migrated to Stage 3 scope. Stage 2 says: 'decision — include as structural note here and flag for full development in Stage 3.'",
+      "stage_3_treatment": "Stage 3 does not develop this as a full pain point; PP3.3 and PP3.4 are about MCU scheduling and quoting, not TPA-clinic CDM coordination. The stage-2-migrated pain point was not picked up in Stage 3.",
+      "consistency_verdict": "Structural gap: a pain point explicitly migrated from Stage 2 to Stage 3 does not appear to have been developed in Stage 3. The migration occurred but the receiving stage did not execute. This may be intentional (Stage 3 focused on MCU execution, not TPA operations) but the disposition of PP2.4 is unclear in the corpus — it is referenced in the Stage 2 footnotes but not in Stage 3 or Stage 5 (TPA/insurer stage) as a developed pain point.",
+      "action": "Confirm intent: should CDM continuity disruption on employer/TPA switch be a developed pain point in Stage 5 (TPA operations) or Stage 6 (CDM programme admin)? Currently neither develops it explicitly."
+    },
+    {
+      "inconsistency_id": "CI-5",
+      "type": "numeric-inconsistency",
+      "claim": "BPJS PROLANIS: DM diagnosed patients who regularly access FKTP",
+      "stage_2_treatment": "PP2.2 states: 'Of 7.4 million JKN-diagnosed DM patients, only 2.8 million (37.8%) regularly access FKTP; of 20.5 million JKN-diagnosed HT patients, only 5.6 million (27.3%) actively visit FKTP.' Source: Kompas.id (paywalled) + Frontiers 2025.",
+      "stage_6_treatment": "Stage 6 value-chain market table repeats: 'BPJS CDM enrolled DM patients (JKN): ~7.4M diagnosed; 2.8M (37.8%) regular FKTP attenders.' Source: 'BPJS / Stage 2' — a cross-reference to Stage 2's own data, not an independent source.",
+      "consistency_verdict": "Numerically consistent (7.4M / 2.8M / 37.8% matches across both stages). However, Stage 6 sources it as 'BPJS / Stage 2' — treating Stage 2 as a source, which is circular. Stage 6 must independently cite the BPJS/Frontiers source, not Stage 2 itself.",
+      "action": "Stage 6 should remove 'Stage 2' as a source citation and directly cite the Frontiers 2025 article or BPJS administrative data."
+    },
+    {
+      "inconsistency_id": "CI-6",
+      "type": "scope-boundary-mismatch",
+      "claim": "BPJS PROLANIS RPPT KBK capitation structure",
+      "stage_2_treatment": "Stage 2 PP2.2 cites capitation rates (IDR 12,000/member/month) with source Bisnis.com reporting on Permenkes No. 3/2023. Score: Low (primary regulation accessed via secondary news).",
+      "stage_6_treatment": "Stage 6 PP6.1 uses the same capitation structure (IDR 12,000/member/month, 5-15% adjustment) in cost calculation but does not provide a new source; the Permenkes 3/2023 is referenced by implication.",
+      "consistency_verdict": "The capitation figure is consistent (IDR 12,000/month) across both stages. The 5-15% adjustment range for KBK performance remains unverified in both stages — no source directly cites this range. Scoring is appropriately Low in both stages.",
+      "action": "Both stages should directly cite Permenkes No. 3/2023 from JDIH Kemenkes (primary-ministry) rather than news reporting of it."
+    }
+  ],
+
+  "corpus_confidence_rollup": {
+    "source_of_scores": "Per-stage JSON files: pass-2-validation/stage-{1-6}.json. Stage 1 scores are pre-deep-research (pass-3 outcomes not yet reflected in a revised stage-1.json). Stages 2-6 scores are as-filed at pass-2.",
+    "stage_1": {"high": 1, "medium": 5, "low": 44, "total": 50},
+    "stage_2": {"high": 3, "medium": 9, "low": 25, "total": 37},
+    "stage_3": {"high": 0, "medium": 26, "low": 34, "total": 60},
+    "stage_4": {"high": 0, "medium": 0, "low": 46, "total": 46},
+    "stage_5": {"high": 0, "medium": 1, "low": 61, "total": 62},
+    "stage_6": {"high": 0, "medium": 2, "low": 43, "total": 45},
+    "corpus_total": {
+      "high": 4,
+      "medium": 43,
+      "low": 253,
+      "total": 300,
+      "high_pct": "1.3%",
+      "medium_pct": "14.3%",
+      "low_pct": "84.3%"
+    },
+    "note_on_stage_1_post_dr": "Stage 1's pass-3 deep research targeted 6 weak claims. If those 6 claims each upgraded by 1 tier on average (Low → Medium or Medium → High), the corpus total would shift by approximately 6 claims, bringing Low to ~247/300 (82.3%) — still well above the 70% re-run-recommended threshold. Even an optimistic scenario where all 6 Stage 1 claims upgraded to High would move the Low% to 80.7%. The gate decision does not change.",
+    "performance_by_stage": [
+      {"stage": 1, "high_pct": "2.0%", "low_pct": "88.0%", "gate_per_stage": "re-run-recommended"},
+      {"stage": 2, "high_pct": "8.1%", "low_pct": "67.6%", "gate_per_stage": "ship-with-flag"},
+      {"stage": 3, "high_pct": "0%", "low_pct": "56.7%", "gate_per_stage": "ship-with-flag"},
+      {"stage": 4, "high_pct": "0%", "low_pct": "100%", "gate_per_stage": "re-run-recommended"},
+      {"stage": 5, "high_pct": "0%", "low_pct": "98.4%", "gate_per_stage": "re-run-recommended"},
+      {"stage": 6, "high_pct": "0%", "low_pct": "95.6%", "gate_per_stage": "re-run-recommended"}
+    ]
+  },
+
+  "gate_decision": "re-run-recommended",
+
+  "gate_reasoning": "The corpus-level Low confidence percentage is 84.3% (253 of 300 claims scored Low), far above the 70% re-run-recommended threshold. This is not a borderline case. Even accounting for Stage 1's pass-3 deep-research improvements (not yet scored in a revised JSON), the Low percentage cannot drop below 80% without a substantial multi-stage deep-research pass. The structural root causes are: (1) across all 6 stages, nearly every quantitative claim — patient volumes, labor times, error rates, market sizes, salary benchmarks, follow-up compliance rates, no-show rates — rests on a single source or an assumed tag, making single-source override the dominant driver of Low scores; (2) salary data across all 6 stages routes through the same two job-aggregator URLs (JobStreet Indonesia GP salary, Indeed Malaysia nurse salary) rather than BPS Sakernas or DOSM wage surveys; (3) market sizing in Stages 3 and 4 depends entirely on Grand View Research (auto-low-aggregator); (4) Stage 5's TPA/insurer stage (62 claims, 98.4% Low) is structurally the weakest, with the CodeBlue n=855 specialist survey cited 10+ times as the sole source for all specialist-TPA conflict claims, and an AI vendor's own blog (InterPixels AI) as the sole source for the 60-75% auto-adjudication rate claim that anchors all medical review queue sizing; (5) 29 auto-low-vendor citations appear across the corpus for vendor scale and product claims with no audited filing corroboration — notably Prodia OHI's '500,000 employees/year' figure (cited as primary evidence of MCU market scale in Stages 3 and 4) comes only from Prodia's own marketing pages rather than its IDX-listed annual report. Stages 2 and 3 are closest to a ship-with-flag threshold individually (67.6% and 56.7% Low respectively), and the underlying structural narrative across all 6 stages is coherent and directionally credible — the pain points are real and the evidence direction is correct. However, the cost models, frequency claims, and supporting benchmarks need primary-tier sourcing before the corpus can support a sourced business case.",
+
+  "data_gap_consolidated_list": [
+    {
+      "gap_id": "DG-1",
+      "description": "BPJS PROLANIS RPPT Level 4 achievement rate (32% figure) has no cross-validation. Single primary-ministry source (BPJS JKN Journal) cited in Stages 2 and 6. This is the central quantitative anchor for CDM pathway failure across the corpus.",
+      "stages_affected": [2, 6],
+      "suggested_source": "BPJS Kesehatan Laporan Tahunan 2023 PDF; Kemenkes PROLANIS monitoring report; WHO/P4H PROLANIS programme evaluation document",
+      "priority": "critical"
+    },
+    {
+      "gap_id": "DG-2",
+      "description": "Salary data for healthcare admin, nursing, and occupational physician roles in Indonesia and Malaysia — used in every cost model across all 6 stages — sourced only from job aggregators (JobStreet, Indeed, Glassdoor) with field mismatches (GP salary page used for admin salary; nurse salary page used for admin salary). BPS Sakernas and DOSM Salaries and Wages Survey not cited.",
+      "stages_affected": [1, 2, 3, 4, 5, 6],
+      "suggested_source": "BPS Indonesia Sakernas 2023/2024 health sector worker wages; DOSM Malaysia Salaries and Wages Survey 2023/2024; PERDOKI Indonesia occupational physician salary survey; MOH Malaysia health professional pay scales",
+      "priority": "critical"
+    },
+    {
+      "gap_id": "DG-3",
+      "description": "MCU market sizing (USD 656M Indonesia; USD 283.8M Malaysia) sourced exclusively from Grand View Research — an auto-downgrade aggregator with no primary-tier cross-validation from any government, multilateral, or ministry source.",
+      "stages_affected": [3, 4],
+      "suggested_source": "World Bank Health Nutrition and Population Data; IFC health sector market reports; Kemenkes/MOH private healthcare facility utilization data; national health accounts from MOH Malaysia or NHIA Indonesia",
+      "priority": "high"
+    },
+    {
+      "gap_id": "DG-4",
+      "description": "Permenaker 02/1980 (Indonesia annual MCU mandate) sourced only from legal commentary blogs (legalcentric.com, smartcolaw.com), not from JDIH Kemnaker official gazette. The regulatory claim underpins the entire Indonesia corporate MCU market mandate argument.",
+      "stages_affected": [3],
+      "suggested_source": "JDIH Kemnaker: https://jdih.kemnaker.go.id/ — Permenaker No. 2 Tahun 1980; JDIH BPK: peraturan.bpk.go.id",
+      "priority": "high"
+    },
+    {
+      "gap_id": "DG-5",
+      "description": "PMCare operational data (4.2M transactions/year, 983,931 covered lives, RM2B+ payments, 1.3% denial rate) — used to size the Malaysia TPA market and derive all medical review event volumes — sourced exclusively from a CodeBlue trade press interview with PMCare CEO. No BNM statistics, LIAM annual report, or audited financial filing cross-validates these figures.",
+      "stages_affected": [5, 6],
+      "suggested_source": "BNM Malaysia Insurance/Takaful Annual Statistics 2024; LIAM (Life Insurance Association of Malaysia) Annual Report; PIAM (General Insurance Association Malaysia) claims statistics; PMCare itself (press release corroborated by financial press)",
+      "priority": "high"
+    },
+    {
+      "gap_id": "DG-6",
+      "description": "BPJS Kesehatan pending claims data (19.6% pending rate October 2024; Rp575.4B pending) sourced only from secondary Indonesian news outlets (Tempo, Detik, Kompas). BPJS Kesehatan publishes monthly performance reports directly.",
+      "stages_affected": [5],
+      "suggested_source": "BPJS Kesehatan official monthly laporan kinerja: bpjs-kesehatan.go.id; DJSN (Dewan Jaminan Sosial Nasional) annual monitoring reports",
+      "priority": "high"
+    },
+    {
+      "gap_id": "DG-7",
+      "description": "Indonesia/Malaysia MCU post-screening follow-up compliance rate (30-60% leakage used in Stage 4 PP4.3) has no ID/MY-specific evidence. All sources are Singapore, French, or Japanese analogues.",
+      "stages_affected": [4],
+      "suggested_source": "DOSH Malaysia annual report or USECHH statistics on follow-up outcomes; IPH Malaysia NCD screening follow-up data; Naluri Malaysia CDM programme cohort data; SOCSO/PERKESO occupational disease surveillance",
+      "priority": "high"
+    },
+    {
+      "gap_id": "DG-8",
+      "description": "APAC TPA auto-adjudication rate (60-75%) sourced solely from InterPixels AI vendor blog — an auto-low-vendor source used to anchor all medical review queue sizing in Stage 5.",
+      "stages_affected": [5],
+      "suggested_source": "CAQH Index 2024 (US context but internationally benchmarked); ADB health financing reports; McKinsey Global Insurance Report (direct authored PDF, not third-party blog); ICHA International Coalition of Health Plans",
+      "priority": "high"
+    },
+    {
+      "gap_id": "DG-9",
+      "description": "Manual MCU results collation time per employee (15-30 minutes, ASSUMED-3 in Stage 3) — the foundational time input for all PP3.1 direct cost calculations — has no empirical source. No time-motion study for Indonesian or Malaysian MCU admin found.",
+      "stages_affected": [3, 4],
+      "suggested_source": "Time-motion study at Prodia OHI or BP Healthcare MCU admin teams (primary interview); JAMIA or BMC Health Services clinical records management time benchmarks; McKinsey/Deloitte healthcare ops benchmarks for document processing",
+      "priority": "high"
+    },
+    {
+      "gap_id": "DG-10",
+      "description": "Willingness-to-pay figures for AI automation tools at GP clinics, MCU vendors, TPAs — all 46 WTP figures across all 6 stages are tagged [ASSUMED-N] with zero primary sourcing. No conjoint analysis, interview study, or comparable market benchmark cited.",
+      "stages_affected": [1, 2, 3, 4, 5, 6],
+      "suggested_source": "Primary IMI (in-market interviews) with GP clinic owners, MCU operations leads, TPA product managers — standard qualitative WTP elicitation; van Westendorp Price Sensitivity Meter study with target buyer personas",
+      "priority": "medium"
+    },
+    {
+      "gap_id": "DG-11",
+      "description": "Indonesia national EMR/EHR adoption rate at FKTP level: the 8.9% figure (Stage 1) is single-vendor (PT MTK/Medeva) not national. Kemenkes SATUSEHAT publishes broader integration statistics that were partially incorporated in Stage 1's post-DR narrative but the clean national adoption rate for klinik pratama specifically remains unavailable.",
+      "stages_affected": [1],
+      "suggested_source": "Kemenkes SATUSEHAT platform statistics dashboard; BKPK Kemenkes Oct 2025 reporting; BPJS Kesehatan PCare-connected FKTP count from annual report",
+      "priority": "medium"
+    },
+    {
+      "gap_id": "DG-12",
+      "description": "Prodia OHI scale claims (>500,000 employees/year, >2,000 companies) — cited repeatedly in Stages 3 and 4 as evidence of MCU market scale — sourced only from Prodia's own marketing pages. Prodia is IDX-listed (PRDA) with an audited annual report.",
+      "stages_affected": [3, 4],
+      "suggested_source": "PT Prodia Widyahusada Tbk IDX annual report (Laporan Tahunan) 2023/2024; IDX financial statements via idx.co.id",
+      "priority": "medium"
+    }
+  ],
+
+  "vertical_slice_diversity": "fail",
+
+  "vertical_slice_notes": "The IMI vertical slice diversity check assesses whether the full 6-stage corpus demonstrates adequate source category diversity — that is, that the research programme has reached primary government/multilateral/ministry sources, not just academic and trade sources. Across 148 unique URLs, only 5 primary-gov and 9 primary-ministry sources appear (9% of total unique sources). Specifically missing across the entire corpus: (1) No BPS Indonesia wage or health facility data cited with correct URL and access confirmation outside of Stage 1 post-DR partial fix. (2) No DOSM Malaysia labour or health statistics cited at all. (3) No ADB, World Bank, or OECD health financing data cited for market sizing corroboration. (4) No BPJS Kesehatan official annual report or monthly performance publication directly cited (only news reporting of BPJS data). (5) No BNM Malaysia Insurance Annual Statistics cited to cross-validate TPA market figures. (6) No MOH Malaysia Health Facts or Annual Report directly cited for market sizing (Stage 1 uses MOH Health Facts 2024 for clinic count — the only clear primary-ministry success). The vertical slice requires that at least the top-3 pain points per stage can be anchored to at least one primary-gov, primary-ministry, or primary-multilateral source. No stage achieves this except partially in Stage 1 (Kemenkes clinic count) and Stage 2 (BPJS Kesehatan Journal for RPPT data). Diversity check: FAIL.",
+
+  "recommended_deep_research_priority_order": [
+    {
+      "priority": 1,
+      "target": "DG-1 + DG-6",
+      "action": "Fetch BPJS Kesehatan laporan tahunan 2023 and monthly kinerja reports for RPPT achievement and pending claims data. Would upgrade 2-3 High-impact claims in Stages 2, 5, and 6 simultaneously.",
+      "estimated_upgrade_impact": "Would upgrade PP2.2-freq-1 from Low to High (Stages 2 and 6); would upgrade BPJS pending claims claims in Stage 5 from Low to Medium."
+    },
+    {
+      "priority": 2,
+      "target": "DG-2",
+      "action": "Fetch BPS Sakernas health sector wage data and DOSM Malaysia Salaries and Wages Survey. Would replace the JobStreet/Indeed salary anchor across all 6 stages simultaneously.",
+      "estimated_upgrade_impact": "Would upgrade all 12+ salary-based claims across Stages 1-6 from Low to at least Medium, improving the cost model foundation for PP1.1, PP2.1, PP2.2, PP3.1, PP4.1, PP5.1, PP6.1."
+    },
+    {
+      "priority": 3,
+      "target": "DG-4",
+      "action": "Fetch Permenaker 02/1980 official text from JDIH Kemnaker. Single fetch, high leverage for Stage 3 regulatory foundation.",
+      "estimated_upgrade_impact": "Upgrades VC-MS-5 (Stage 3) from Low to High."
+    },
+    {
+      "priority": 4,
+      "target": "DG-5",
+      "action": "Search BNM Malaysia Insurance Annual Statistics 2024 for TPA market volume data. Would provide independent cross-validation for PMCare figures.",
+      "estimated_upgrade_impact": "Upgrades VC-MS-3 through VC-MS-6 in Stage 5 from Low to Medium."
+    },
+    {
+      "priority": 5,
+      "target": "DG-3",
+      "action": "Search World Bank or ADB health market data for Indonesia and Malaysia private healthcare market size cross-validation.",
+      "estimated_upgrade_impact": "Upgrades Stage 3 and Stage 4 market sizing from Low to Medium."
+    }
+  ]
+}

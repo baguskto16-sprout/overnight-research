@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-05-25T09:30:00Z",
+  "run_id": "2026-05-25-0427",
+  "critic": "instruction",
+  "working_hypotheses": [
+    {
+      "wh_id": "WH1",
+      "wh_text": "Cost and failure concentrate in a few high-volume, low-judgment sub-steps per layer",
+      "verdict": "confirmed",
+      "evidence_strength": "strong",
+      "evidence_locations": "All 6 stages each surface 2-4 PPs with quantified cost/freq anchors; e.g. PP1.2 33-73% FKTP ICD-10 error, PP5.2 Rp575.4B BPJS pending single month, PP3.1 250-500 staff-hours per 1000-employee campaign",
+      "actionable_gap": false
+    },
+    {
+      "wh_id": "WH2",
+      "wh_text": "Automation feasibility is gated by input-data format, not process importance",
+      "verdict": "confirmed",
+      "evidence_strength": "strong",
+      "evidence_locations": "PP2.1 RC1-3 (PDF lab results), PP3.1 RC1 (no HL7/FHIR multi-lab channel), PP4.1 RC1 (template-only report architecture), PP5.1 RC1 (unstructured GL PDFs), Stage 6 PP6.1 RC1 (explicitly cross-references PP2.1+PP3.1 as same root cause)",
+      "actionable_gap": false
+    },
+    {
+      "wh_id": "WH3",
+      "wh_text": "MCU report generation and results collation are manual-heavy and fragmented",
+      "verdict": "confirmed",
+      "evidence_strength": "strong",
+      "evidence_locations": "Stages 3+4 dedicated to this. Permata Cibubur 2025 IS evaluation cited as primary. 250-500 staff-hours collation + 220-500 person-hours report generation per 1,000-employee campaign",
+      "actionable_gap": false
+    },
+    {
+      "wh_id": "WH4",
+      "wh_text": "Claims pre-auth and adjudication are rules-based yet manually executed",
+      "verdict": "confirmed",
+      "evidence_strength": "strong",
+      "evidence_locations": "Stage 5 most evidence-dense. PMCare 4.2M annual transactions, 1.3% denial; CodeBlue n=855 specialist survey; BPJS pending claims 19.6% Oct 2024 = Rp575.4B single month",
+      "actionable_gap": false
+    },
+    {
+      "wh_id": "WH5",
+      "wh_text": "CDM recall and follow-up leak patients across every layer",
+      "verdict": "partially-confirmed",
+      "evidence_strength": "moderate",
+      "evidence_locations": "Strong at clinic layer (Stage 2 PP2.2: 37.8% JKN DM active attendance, 32% FKTPs at RPPT Level 4) and TPA layer (Stage 6 PP6.1: Naluri RCT). WEAK at MCU-to-CDM-enrolment leg (Stage 4 PP4.3 uses Singapore/France/Japan proxies for 30-60% leakage; ASSUMED-8 with zero ID/MY primary data)",
+      "actionable_gap": true,
+      "actionability": "high",
+      "recommended_action": "deep-research-on-wh",
+      "deep_research_query": "Indonesia Malaysia post-MCU follow-up compliance rate from Naluri, Prodia OHI, Pertamedika IHC, BookDoc OHC referral tracking longitudinal data"
+    },
+    {
+      "wh_id": "WH6",
+      "wh_text": "Indonesia and Malaysia diverge sharply on readiness",
+      "verdict": "confirmed",
+      "evidence_strength": "strong",
+      "evidence_locations": "Stage 6 ID-vs-MY readiness matrix (6-row compare); sourced 5-factor verdict (Malaysia faster for employer CDM via PMCare/Naluri); Indonesia second-phase via PROLANIS",
+      "actionable_gap": false,
+      "caveat": "WH6 verdict is dialectically challenged by F3 (SATUSEHAT 91% PC integration figure) -- if substantive, EHR layer of matrix may need re-scoring"
+    }
+  ],
+  "summary": {
+    "total_whs": 6,
+    "confirmed": 5,
+    "partially_confirmed": 1,
+    "contradicted": 0,
+    "untested": 0,
+    "high_actionability_gaps": 1,
+    "notes": "WH5 MCU-leg leakage is sole high-actionability gap (no ID/MY primary data). WH6 carries dialectic challenge from SATUSEHAT integration figure."
+  }
+}

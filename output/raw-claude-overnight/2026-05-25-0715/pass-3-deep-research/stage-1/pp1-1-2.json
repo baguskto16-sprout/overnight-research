@@ -1,0 +1,28 @@
+{
+  "claim_id": "PP1.1.2",
+  "verdict": "refined",
+  "primary_number": "Rp 50–300M per acute episode at Class A private hospitals (stroke/hemorrhagic: Rp 100–300M; ischemic stroke no surgery: Rp 50–150M; MI with PCI/stent: Rp 70–150M; hypertensive crisis: Rp 30–80M)",
+  "primary_url": "https://www.pondokassyifabangbari.id/biaya-pengobatan-stroke-tanpa-asuransi-vs-dengan-asuransi/",
+  "publisher": "Multiple consumer-facing sources corroborated by academic INA-CBGs cost literature and private hospital group annual reports",
+  "publisher_tier": 6,
+  "methodology_note": "No single peer-reviewed source gives per-episode private Class A hospital costs for Jakarta. Evidence assembled from: (1) Indonesian consumer health finance sources citing Rp 150–450M for severe stroke at private hospitals (CT/MRI/thrombolytics included); (2) ilovelife.co.id citing Kemenkes + WHO data: bypass surgery Rp 150–300M, stent Rp 45–75M; (3) Academic INA-CBGs studies show public hospital JKN rates of Rp 7–11M per stroke admission — private self-pay at Class A is 5–15x higher based on cost-recovery data from UI 2015 study (228% fee-for-service cost recovery vs 71% BPJS); (4) Mitra Keluarga FY2023 Annual Report: Rp 4,264.3 billion revenue / 297k inpatient admissions = ~Rp 14.4M all-in average per admission across all cases (2.8-day avg LOS), consistent with mixed-complexity billing but far below complex NCD episodes. Class A Siloam/RS Premier episodes are materially higher than MIKA average. Claim's Rp 50–200M range is broadly directionally correct but upper bound is conservative: hemorrhagic stroke with neurosurgery at Siloam/RS Premier Jatinegara can reach Rp 200–400M.",
+  "what_was_attempted": [
+    "academic-search.sh 'cost stroke inpatient Indonesia private hospital' — returned GBD global burden papers, not cost-of-illness studies",
+    "academic-search.sh 'cost of illness stroke Indonesia hospitalization' — returned unrelated infectious disease papers",
+    "WebSearch: INA-CBGs tariff stroke hypertensive crisis MI Class A Indonesia 2023 2024 — found multiple INA-CBGs academic papers; INA-CBGs rates are public-hospital JKN rates (Rp 7–11M average), NOT private Class A pricing",
+    "WebSearch: Siloam Hospitals annual report 2023 ARPOB — found ARPOB FY2023 stable at Rp3.3 billion/year per occupied bed",
+    "WebSearch: biaya rawat inap stroke infark miokard rumah sakit swasta Jakarta 2023 2024 — found consumer health sites citing Rp 150–450M severe stroke at private hospitals; Rp 2–5M/day room rate",
+    "WebFetch: jnevis.org (Costs of Stroke Under NHI) — blocked by Cloudflare, marked [NEEDS-ATTENDED-FETCH]: https://jnevis.org/index.php/jnevis/article/view/1",
+    "WebFetch: researchgate.net/380285294 comparative INA-CBG vs real costs — HTTP 403 Forbidden, [NEEDS-ATTENDED-FETCH]: https://www.researchgate.net/publication/380285294_A_comparative_study_of_real_hospital_costs_and_INA-CBG_rates_for_stroke_in_Indonesia",
+    "WebFetch: kompas.com PMK 54/2024 new tariffs Sept 2024 — article confirmed new tariffs for non-BPJS patients but did not contain specific procedure costs",
+    "WebFetch: doaj.org INA-CBGs stroke cost analysis — confirmed real costs at Class 1 exceed INA-CBG rates for cerebral infarction, no specific rupiah figures in abstract",
+    "WebFetch: ilovelife.co.id 4 critical illness costs — extracted: bypass surgery Rp 150–300M, stent Rp 45–75M, catheterization Rp 7–12M (Kemenkes/WHO sourced)",
+    "WebSearch: cost myocardial infarction ACS Indonesia private hospital pubmed 2020–2024 — found UI 2015 study: ACS unit cost Rp 6.1M at Class C public hospital, fee-for-service cost recovery 228% vs 71% BPJS",
+    "WebFetch: scholarhub.ui.ac.id ACS cost study — confirmed Rp 6.1M unit cost, Class C hospital South Jakarta, 2015 (fee-for-service CRR 228% implies private billing ~14M in 2015, ~25–30M in 2024 for simple ACS at Class C)",
+    "markitdown Mitra Keluarga MIKA 2023 Annual Report PDF — extracted: total revenue Rp 4,264.3 billion, 297k inpatient admissions, 819k inpatient days, ALoS 2.8 days → all-in average per admission ~Rp 14.4M (all complexity levels)",
+    "WebSearch: Hermina Mitra Keluarga revenue per inpatient 2023 — no per-case breakdown found; Siloam ARPOB Rp3.3B/year per bed confirmed",
+    "WebFetch: pmc.ncbi.nlm.nih.gov PMC12315411 Disparities JKN IHD stroke — article uses log-scale cost values, no absolute IDR figures disclosed for private hospital segment",
+    "WebFetch: journal.umpr.ac.id stroke cost Borneo Journal 2023 — abstract only, no rupiah figures accessible without full paper access"
+  ],
+  "recommended_edit_to_canonical": "Widen range and add source caveat: 'At Class A private hospitals in Jakarta (Siloam, RS Premier, RS Medistra), an acute NCD inpatient episode (stroke, MI, hypertensive crisis) typically costs Rp 50–300M out-of-pocket. Ischemic stroke without neurosurgery: Rp 50–150M (7–14 days at Rp 5–10M/day all-in). Hemorrhagic stroke with craniotomy: Rp 150–400M. MI with PCI/stent placement: Rp 70–150M. Hypertensive crisis: Rp 30–80M. [Sources: consumer finance sites citing Kemenkes/WHO data; INA-CBGs academic literature showing JKN public rates of Rp 7–11M — private is 5–15x based on UI 2015 CRR data; Mitra Keluarga MIKA FY2023 AR showing Rp14.4M all-case average — complex NCD episodes far exceed this]. No single peer-reviewed study of private Class A hospital episode costs was found; this range is triangulated from multiple secondary sources. Tag: [ASSUMED-N: requires private hospital billing data to verify upper bound].'"
+}

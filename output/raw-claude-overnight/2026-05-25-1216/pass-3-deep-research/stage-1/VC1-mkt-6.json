@@ -1,0 +1,118 @@
+{
+  "run_id": "2026-05-25-1216",
+  "stage": 1,
+  "claim_id": "VC1-mkt-6",
+  "claim_text": "Indonesia group health insurance market size (gross written premium for corporate/group medical).",
+  "deep_research_date": "2026-05-25",
+  "outcome": "found-stronger-evidence",
+  "new_sources": [
+    {
+      "url": "https://aaji.or.id/NewsEvent/industri-asuransi-jiwa-2024--tumbuh-positif,-kian-kokoh-melindungi-masyarakat",
+      "category": "primary-industry-association",
+      "publisher": "AAJI (Asosiasi Asuransi Jiwa Indonesia — Indonesian Life Insurance Association)",
+      "publication_date": "2025-02",
+      "supports_claim": true,
+      "via_pdf_markitdown": false,
+      "key_data": "Full year 2024: total life insurance premium IDR 185.39 trillion (+4.3% YoY); total health claims paid IDR 24.18 trillion (+16.4% YoY); group insured lives 133.05 million (+107.7%). Does NOT separately publish group health premium — only group health claims.",
+      "data_limitation": "Group health premium not separately published by AAJI; only group health claims available (H1 2024: IDR 4.21 trillion group health claims, IDR 7.62 trillion individual health claims)."
+    },
+    {
+      "url": "https://www.aaji.or.id/NewsEvent/optimalkan-kanal-distribusi,-industri-asuransi-jiwa-kembali-catat-peningkatan-total-pendapatan-premi",
+      "category": "primary-industry-association",
+      "publisher": "AAJI",
+      "publication_date": "2024-08",
+      "supports_claim": true,
+      "via_pdf_markitdown": false,
+      "key_data": "H1 2024: total premium IDR 88.49 trillion (+2.6% YoY); group health claims IDR 4.21 trillion (+20.3% YoY); individual health claims IDR 7.62 trillion (+29.3% YoY); total health claims IDR 11.83 trillion (+26% YoY); claims-to-premium ratio 105.7%; group insured 95.07 million (+54.9%)."
+    },
+    {
+      "url": "https://keuangan.kontan.co.id/news/aaui-catat-pendapatan-premi-asuransi-kesehatan-meningkat-772-pada-2024",
+      "category": "primary-industry-association-cited-by-press",
+      "publisher": "Kontan (citing AAUI — Asosiasi Asuransi Umum Indonesia, general insurance association)",
+      "publication_date": "2025-03",
+      "supports_claim": true,
+      "via_pdf_markitdown": false,
+      "key_data": "AAUI full year 2024: general insurance health premium IDR 11.82 trillion (+77.2% from IDR 6.67 trillion in 2023); health claims paid IDR 6.88 trillion (+8.1%); 34 companies in health insurance segment. Premium surge driven by rate adjustments to correct prior-year loss ratios. No group vs individual split published."
+    },
+    {
+      "url": "https://mediaasuransinews.co.id/asuransi/aaui-catat-premi-asuransi-umum-tumbuh-87-jadi-rp1128-triliun-di-kuartal-iv-2024/",
+      "category": "primary-industry-association-cited-by-press",
+      "publisher": "Media Asuransi News (citing AAUI Q4 2024 annual report)",
+      "publication_date": "2025-03",
+      "supports_claim": true,
+      "via_pdf_markitdown": false,
+      "key_data": "Total general insurance GWP 2024: IDR 112.8 trillion (+8.7%); health insurance the fastest-growing product line at +77.2%; property +14.7%; motor vehicle declining. AAUI Chairman noted general insurance 'not in good condition' despite growth."
+    },
+    {
+      "url": "https://www.antaranews.com/berita/4682513/aaji-sebut-industri-asuransi-jiwa-tumbuh-positif-pada-2024",
+      "category": "primary-industry-association-cited-by-press",
+      "publisher": "Antara News (citing AAJI press conference, full year 2024)",
+      "publication_date": "2025-02",
+      "supports_claim": true,
+      "via_pdf_markitdown": false,
+      "key_data": "Life insurance total premium IDR 185.39 trillion (+4.3%); traditional products IDR 110.36 trillion (+18.7%); group insured 133.05 million (+107.7%); total health claims IDR 24.18 trillion; death claims IDR 11.29T; surrender IDR 77.15T."
+    },
+    {
+      "url": "https://media.milliman.com/v1/media/edge/images/millimaninc5660-milliman6442-prod27d5-0001/media/Milliman/PDFs/2025-Articles/12-17-25_Indonesia-Newsletter-Q3-2025.pdf",
+      "category": "primary-actuarial-consulting",
+      "publisher": "Milliman Indonesia Life Insurance Newsletter, December 2025 edition (Q3 2025 coverage)",
+      "publication_date": "2025-12",
+      "supports_claim": true,
+      "via_pdf_markitdown": true,
+      "key_data": "OJK-cited: Life insurance Q2 2025 net premium IDR 69.47 trillion; AAJI H1 2025 total premium IDR 87.60 trillion (-1.0% vs H1 2024); health claims H1 2025 IDR 12.20 trillion (+3.2% from IDR 11.83 trillion in H1 2024). Cross-validates AAJI claims figures."
+    }
+  ],
+  "confirmed_data": {
+    "general_insurance_health_gwp_2024_idr_trillion": 11.82,
+    "general_insurance_health_gwp_2023_idr_trillion": 6.67,
+    "general_insurance_health_gwp_yoy_growth_2024_pct": 77.2,
+    "general_insurance_health_claims_2024_idr_trillion": 6.88,
+    "general_insurance_health_claims_ratio_2024_approx_pct": 58,
+    "life_insurance_total_premium_2024_idr_trillion": 185.39,
+    "life_insurance_total_premium_2023_idr_trillion": 177.66,
+    "life_insurance_health_claims_2024_idr_trillion": 24.18,
+    "life_insurance_health_claims_2023_idr_trillion": 20.83,
+    "life_insurance_health_claims_h1_2024_group_idr_trillion": 4.21,
+    "life_insurance_health_claims_h1_2024_individual_idr_trillion": 7.62,
+    "life_insurance_health_claims_h1_2024_total_idr_trillion": 11.83,
+    "life_insurance_group_insured_lives_2024_million": 133.05,
+    "total_general_insurance_gwp_2024_idr_trillion": 112.8
+  },
+  "group_health_premium_derivation": {
+    "note": "No source directly publishes 'group health insurance GWP' as a standalone segment. The following is a constructed estimate from primary data.",
+    "aaui_general_insurance_health_gwp_2024": "IDR 11.82 trillion — predominantly corporate/group policies (34 companies, broker-heavy distribution at 35.2% of channel); majority of general insurance health in Indonesia is employer-sponsored.",
+    "aaji_group_health_premium_proxy": "AAJI H1 2024 group health claims = IDR 4.21T vs individual IDR 7.62T (35.6% group share). AAJI full-year health claims = IDR 24.18T. At 2023 claims ratio of 138%, implied total health premium from life insurers ≈ IDR 17.5T; at declining ratio toward 100%, implied IDR 18-24T. Group share at 35.6% ≈ IDR 6.3-8.5T from life insurer side.",
+    "combined_total_commercial_health_gwp_estimate": "IDR 30-36 trillion (AAUI general: IDR 11.82T + AAJI life health: estimated IDR 18-24T)",
+    "group_corporate_health_gwp_estimate": "IDR 15-23 trillion (combining AAUI general health ~IDR 11T [majority group] + AAJI group health ~IDR 6-8T from life side)",
+    "usd_equivalent_at_16000_idr_per_usd": "USD 0.9-1.4 billion",
+    "confidence_caveat": "No regulator or association separately reports a 'group health GWP' figure. This range is inferred by combining AAUI's standalone health line + life insurer group health estimated from claims."
+  },
+  "ojk_access_status": "OJK ojk.go.id and iru.ojk.go.id both returned 404/403 errors during this research session. OJK Statistik Perasuransian 2024 exists (confirmed from search results, 5718 downloads, ZIP file available) but could not be accessed directly. OJK monthly statistics accessible via Milliman newsletter cross-reference. NEEDS-ATTENDED-FETCH: https://ojk.go.id/id/kanal/iknb/data-dan-statistik/asuransi/Pages/Statistik-Perasuransian-2024.aspx",
+  "suggested_revision": "Replace Mordor/Statista/Ken Research citations with: 'Indonesia commercial health insurance GWP reached an estimated IDR 30-36 trillion in 2024, combining AAUI-reported general insurance health premium of IDR 11.82 trillion (+77.2% YoY) and estimated AAJI life insurer health premium of IDR 18-24 trillion. Corporate/group health specifically is estimated at IDR 15-23 trillion (USD 0.9-1.4 billion), as general insurance health is predominantly employer-sponsored and life insurer group health claims represent approximately 35-36% of total life insurer health claims. Sources: AAUI Q4 2024 report (via Kontan/Media Asuransi News March 2025); AAJI full year 2024 press release (via Antara February 2025). Note: OJK Statistik Perasuransian 2024 ZIP tables were not accessible during this session and should be retrieved in attended mode for the definitive segment breakdown.'",
+  "suggested_new_score": "Medium",
+  "reasoning": "AAJI and AAUI are Indonesia's two primary insurance industry associations that publish regulator-reported aggregate data — these are primary-tier sources equivalent in standing to the OJK's own statistical releases. The AAUI health GWP figure (IDR 11.82 trillion for general insurance health in 2024) is precise and sourced directly from AAUI's Q4 2024 report. The group corporate share cannot be precisely isolated from these sources alone because neither AAJI nor AAUI separately discloses 'group health GWP' as a line item — only claims by group/individual channel (AAJI) and aggregate health premium without group split (AAUI). The OJK Statistik Perasuransian 2024 data tables (in ZIP format) are the definitive source for this segment-level breakdown and should be retrieved in an attended session.",
+  "searches_performed": [
+    "OJK statistik perasuransian Indonesia 2024 group health insurance premi",
+    "OJK 'statistik perasuransian' 2023 2024 annual report gross written premium site:ojk.go.id",
+    "AAJI 'premi bruto' 'asuransi kumpulan' OR 'asuransi jiwa kumpulan' 2023 2024 group health employee benefits Indonesia",
+    "AAJI 'kinerja industri' 2024 'premi kumpulan' OR 'asuransi kumpulan' annual report health claims Indonesia IDR",
+    "AAJI 2024 full year 'premi kesehatan kumpulan' OR 'group health premium' Indonesia trillion IDR annual statistics",
+    "AAUI 2024 general insurance health premium Indonesia 'asuransi kesehatan' annual statistics IDR trillion",
+    "AAUI 'triwulan 4 2024' OR 'Q4 2024' asuransi kesehatan premi bruto IDR trillion breakdown statistics Indonesia",
+    "OJK Indonesia insurance statistics 2024 'kesehatan' group health premium IDR billion annual report",
+    "'group health' OR 'employee benefits' Indonesia insurance market size 2023 2024 IDR trillion GWP Mercer Marsh Willis Towers Watson",
+    "OJK 'statistik perasuransian Indonesia 2023' PDF filetype:pdf health life insurance group premium breakdown"
+  ],
+  "categories_searched": [
+    "primary-regulator (OJK — blocked by 403/404)",
+    "primary-industry-association (AAJI — confirmed, full year 2024 data)",
+    "primary-industry-association (AAUI — confirmed, full year 2024 health premium IDR 11.82T)",
+    "primary-actuarial-consulting (Milliman Indonesia Newsletter — cross-validation)",
+    "multilateral (World Bank FSAP 2024 — regulatory content only, no premium statistics)",
+    "indonesia-financial-press (Kontan, Bisnis Indonesia, Antara, Media Asuransi News — all citing AAUI/AAJI)"
+  ],
+  "escalation_flags": [
+    "NEEDS-ATTENDED-FETCH: https://ojk.go.id/id/kanal/iknb/data-dan-statistik/asuransi/Pages/Statistik-Perasuransian-2024.aspx — The OJK Statistik Perasuransian 2024 ZIP file (Tabel - Final Buku Asuransi 2024.zip) contains detailed tables that would give the definitive product-line breakdown including group vs individual health premium. This is the single highest-value action for this claim.",
+    "AAJI does not publish 'group health premium' directly — only group health claims. A separate data request to AAJI or access to their full statistical yearbook would resolve this."
+  ]
+}

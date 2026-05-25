@@ -1,0 +1,104 @@
+{
+  "claim_id": "PP1.1-cost-1",
+  "claim_text": "Indonesian private-practice GP earns IDR 10–20 million/month (urban); Malaysian GP earns MYR 8,000–14,000/month",
+  "research_date": "2026-05-25",
+  "outcome": "found-stronger-evidence",
+  "new_sources": [
+    {
+      "url": "https://storage.dosm.gov.my/labour/salaries_wages_2024.pdf",
+      "category": "primary-gov",
+      "publisher": "Department of Statistics Malaysia (DOSM)",
+      "publication_date": "2025-09",
+      "supports_claim": "partial",
+      "key_data": "Professionals (MASCO category including medical doctors): median MYR 5,821/month, mean MYR 6,524/month (2024). Human health and social work activities industry: median MYR 4,698, mean MYR 5,009/month (2024). Kuala Lumpur median/mean wages for all occupations: MYR 4,598/MYR 5,091 (highest state). National professional category median MYR 5,821 is a ceiling for salaried employment; self-employed GP net income not captured.",
+      "via_pdf_markitdown": true,
+      "note": "Table A9 occupation breakdown confirms Professionals median MYR 5,821 / mean MYR 6,524. Health sector industry median MYR 4,698. This covers salaried GPs; private clinic owner-operators earn differently via fee-for-service.",
+      "contradiction_with_claim": "Original claim upper bound of MYR 14,000 appears unsupported for salaried GPs; salaried GP likely falls in MYR 5,000–8,000 range. Owner-operator GPs are not captured in DOSM salary surveys."
+    },
+    {
+      "url": "https://codeblue.galencentre.org/2025/03/doctors-group-demands-gp-fee-correction-to-rm50-to-rm150/",
+      "category": "primary-industry-media",
+      "publisher": "CodeBlue (Galen Centre for Health and Social Policy)",
+      "publication_date": "2025-03-06",
+      "supports_claim": "context",
+      "key_data": "FPMPAM (Federation of Private Medical Practitioners Associations Malaysia) demands GP consultation fees raised from RM10–35 (unchanged since 1992/2006) to RM50–150. Medical inflation-adjusted fair fee cited as RM50–150. Current RM10–35 consultation fee cap depresses GP income structurally. At RM10–35 per consult, 20–30 patients/day = RM200–1,050/day revenue, from which overhead (rent, staff, drugs) must be deducted.",
+      "via_pdf_markitdown": false,
+      "note": "Indirect income evidence: consultation fee cap of RM10–35 since 1992/2006 is primary income constraint for Malaysian private GPs. FPMPAM states current fees inadequate relative to operating costs. This corroborates that net GP take-home is likely lower than MYR 8,000–14,000 range cited in original claim for owner-operators."
+    },
+    {
+      "url": "https://www.metrotvnews.com/read/KdZCAEZO-berapa-gaji-dokter-umum-di-indonesia-ini-daftar-lengkapnya",
+      "category": "secondary-trade-news",
+      "publisher": "MetroTV News Indonesia",
+      "publication_date": "2024",
+      "supports_claim": "partial",
+      "key_data": "Average GP salary Indonesia: IDR 7.25–11.25 million/month. Private hospital/clinic: IDR 6–8 million/month. IDI internal survey (undated, 'several years ago'): >25% of GPs earn below IDR 3 million/month. Government Regulation No. 5 of 2024 sets public-sector GP base salary at Grade III/a: IDR 2,785,700–4,575,200 (base only, before allowances).",
+      "via_pdf_markitdown": false,
+      "contradiction_with_claim": "Original claim lower bound of IDR 10 million is at or above the stated private-clinic range of IDR 7.25–11.25 million. IDI survey data suggesting >25% below IDR 3M indicates wide dispersion, particularly outside urban areas."
+    },
+    {
+      "url": "https://id.jobstreet.com/id/career-advice/role/general-practitioner/salary",
+      "category": "secondary-trade-aggregator",
+      "publisher": "Jobstreet Indonesia (employer-advertised salaries from job postings)",
+      "publication_date": "2026-04",
+      "supports_claim": "partial",
+      "key_data": "Employer-advertised GP salaries by city: Jakarta Selatan IDR 11M, Jakarta Barat IDR 8.5M, Tangerang IDR 9.5M, Semarang IDR 8.5M, Surabaya IDR 12M, Depok IDR 8.5M, Kabupaten Bekasi IDR 13M, Badung (Bali) IDR 18M. Methodology: full-time salary ranges from employer job advertisements.",
+      "via_pdf_markitdown": false,
+      "note": "More reliable than general aggregators (Glassdoor, SalaryExplorer) because it is drawn from employer-published job ads, not self-reported. Urban Jakarta range IDR 8.5–11M is below original claim lower bound of IDR 10M for most locations. Bekasi IDR 13M and Bali IDR 18M are outliers possibly reflecting specialist/senior positions or private hospital roles."
+    }
+  ],
+  "assessment": {
+    "malaysia_gp_salary": {
+      "dosm_finding": "DOSM 2024 Salaries & Wages Survey: 'Professionals' category (covers salaried medical doctors) median MYR 5,821, mean MYR 6,524 nationally. Health sector (Human health and social work activities) median MYR 4,698, mean MYR 5,009.",
+      "original_claim": "MYR 8,000–14,000/month",
+      "assessment": "Original claim range appears HIGH relative to DOSM primary data for salaried GPs. The DOSM Professionals median MYR 5,821 and mean MYR 6,524 covers all salaried professionals. For private clinic owner-operators, income is fee-for-service and not captured in wage surveys. Given consultation fee cap of RM10–35 (FPMPAM article), GP net income from a solo clinic is structurally constrained. A more defensible range is MYR 5,000–8,000 for salaried clinic GPs; owner-operator GPs with high patient volumes could reach MYR 8,000–12,000 but this is upper-range, not typical.",
+      "revised_range": "MYR 5,000–10,000/month (salaried private clinic GP); owner-operators up to MYR 12,000 in high-volume practices",
+      "primary_source_tier": "Tier 1 — DOSM 2024 Salaries & Wages Survey (government statistical agency)"
+    },
+    "indonesia_gp_salary": {
+      "bps_finding": "BPS website Cloudflare-blocked; no direct table extraction possible. BPS publishes occupation-by-industry tables but data could not be retrieved.",
+      "best_available_evidence": "Multiple secondary sources (MetroTV citing IDI data, Jobstreet employer postings, Dealls career site) converge on IDR 7–12 million/month for urban private clinic GPs.",
+      "idi_internal_survey": "IDI internal survey (undated, cited in MetroTV 2024): >25% of GPs earn below IDR 3 million/month — indicates extreme dispersion, particularly for non-urban/BPJS-reliant clinics.",
+      "original_claim": "IDR 10–20 million/month (urban)",
+      "assessment": "Original lower bound of IDR 10M is at the upper end of converging evidence for typical urban GPs. Jobstreet employer ads show Jakarta IDR 8.5–11M, Surabaya IDR 12M. The IDR 20M upper bound appears aspirational/outlier rather than typical. A more defensible range for urban private clinic GPs is IDR 7–13 million/month. The original claim is not falsified but is shifted upward from evidence center.",
+      "revised_range": "IDR 7–13 million/month (urban private clinic GP, employer-advertised or market-rate); IDR 5–8M for non-urban",
+      "primary_source_tier": "Tier 2 — government statistics blocked; best evidence is Jobstreet employer ads + IDI internal survey citation in national news wire"
+    }
+  },
+  "suggested_revision": "Replace claim with: 'Indonesian private-practice GP earns IDR 7–13 million/month in urban centers (Jobstreet employer postings 2026: Jakarta IDR 8.5–11M, Surabaya IDR 12M); IDI internal survey notes >25% of GPs nationally earn below IDR 3M, indicating wide dispersion. Malaysian private-clinic GP earns MYR 5,000–8,000/month for salaried positions (DOSM 2024 Salaries & Wages Survey: Professionals median MYR 5,821, mean MYR 6,524; health sector median MYR 4,698); owner-operators in high-volume practices may reach MYR 10,000–12,000 but net income is constrained by consultation fee cap of RM10–35 unchanged since 2006 (CodeBlue/FPMPAM 2025).'",
+  "suggested_new_score": "Medium",
+  "reasoning": "The original claim's upper bounds (IDR 20M, MYR 14,000) are not supported by available evidence and represent high-end outliers rather than typical private clinic GP earnings. DOSM 2024 primary statistics confirm Malaysian Professionals category median at MYR 5,821/mean MYR 6,524, substantially below the original MYR 8,000–14,000 floor-to-ceiling range. For Indonesia, BPS data was inaccessible due to Cloudflare protection, but convergent employer-advertised salary data (Jobstreet) and IDI-cited survey data from national news wire place the realistic urban range at IDR 7–13M. Score raised from Low to Medium because primary DOSM data is now available for Malaysia and multiple converging employer-ad sources exist for Indonesia, but BPS primary data for Indonesia remains inaccessible and the Jobstreet methodology (employer ads, not verified payslips) carries residual uncertainty.",
+  "searches_performed": [
+    "DOSM Malaysia Salaries and Wages Survey 2023 2024 medical doctor GP occupation salary",
+    "BPS Indonesia SAKERNAS tenaga kesehatan dokter upah gaji 2023 2024",
+    "CodeBlue Malaysia GP doctor salary 2024 2025 private clinic income MYR monthly",
+    "DOSM Malaysia 2024 salary wages survey generalist medical practitioners occupation MYR",
+    "BPS Indonesia jasa kesehatan health services average wage salary 2023 2024 rupiah",
+    "Indonesian private clinic GP salary IDR 2024 klinik pratama klinik swasta dokter umum Tempo Kompas",
+    "BPS Indonesia dokter umum rata-rata gaji upah bersih 2023 2024 klinik swasta",
+    "IDI Indonesia dokter umum klinik swasta gaji IDR 2024",
+    "Malaysian Medical Association MMA 2024 GP salary survey private practice MYR",
+    "DOSM Malaysia Professionals occupation salary 2024 health doctor mean median MYR table A9"
+  ],
+  "fetches_performed": [
+    {"url": "https://storage.dosm.gov.my/labour/salaries_wages_2024.pdf", "method": "markitdown+cache", "result": "SUCCESS - full PDF extracted"},
+    {"url": "https://www.antaranews.com/berita/4388338/standar-gaji-dokter-umum-dan-berbagai-jenis-spesialis-di-indonesia", "method": "cache", "result": "partial - HTML metadata only, body not extracted"},
+    {"url": "https://www.metrotvnews.com/read/KdZCAEZO-berapa-gaji-dokter-umum-di-indonesia-ini-daftar-lengkapnya", "method": "WebFetch", "result": "SUCCESS - salary data extracted"},
+    {"url": "https://codeblue.galencentre.org/2025/03/doctors-group-demands-gp-fee-correction-to-rm50-to-rm150/", "method": "WebFetch", "result": "SUCCESS - consultation fee data extracted"},
+    {"url": "https://id.jobstreet.com/id/career-advice/role/general-practitioner/salary", "method": "WebFetch", "result": "SUCCESS - city-by-city employer-advertised salary data extracted"},
+    {"url": "https://dealls.com/pengembangan-karir/gaji-dokter-umum", "method": "WebFetch", "result": "SUCCESS - IDR 7.25-10.25M range confirmed"},
+    {"url": "https://www.lokerkesehatan.net/gaji-dokter/gaji-dokter-umum-di-klinik/", "method": "WebFetch", "result": "SUCCESS - private clinic IDR 7.25-10.25M confirmed, no official source cited"},
+    {"url": "https://www.bps.go.id/...", "method": "cache", "result": "BLOCKED - Cloudflare protection, JS-challenge required"},
+    {"url": "https://www.idionline.org/article/dokter-butuh-ump-bukan-umr", "method": "WebFetch", "result": "TIMEOUT - IDI article inaccessible"}
+  ],
+  "data_gaps": [
+    "BPS Indonesia SAKERNAS occupation-level table for 'tenaga medis/dokter umum' inaccessible due to Cloudflare JS challenge — would provide tier-1 primary data for Indonesia",
+    "IDI (Ikatan Dokter Indonesia) direct salary survey data inaccessible (IDI website timed out) — only cited indirectly via MetroTV",
+    "DOSM occupation table A9/A10 extracted 'Professionals' aggregate but does not break out 'Generalist Medical Practitioners' (ISCO 2211) separately — need eStatistik portal access for sub-occupation breakdown",
+    "Malaysian Medical Association (MMA) annual salary survey not publicly indexed — may exist for members only",
+    "Kemenkes Indonesia health workforce salary benchmark document not located"
+  ],
+  "needs_attended_fetch": [
+    "https://www.bps.go.id/en/statistics-table/1/MjI1MCMx/rata-rata-upah-gaji-bersih-sebulan-buruh-karyawan-pegawai-menurut-pendidikan-tertinggi-yang-ditamatkan-dan-jenis-pekerjaan-utama--2024.html",
+    "https://www.idionline.org/article/dokter-butuh-ump-bukan-umr"
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "run_id": "2026-05-25-1216",
+  "stage": 1,
+  "claim_id": "PP1.4-mtrend-mmb",
+  "outcome": "contradicting-evidence",
+  "new_sources": [
+    {
+      "url": "https://www.mercer.com/assets/hk/en_hk/shared-assets/local/infographics/pdf-health-trends-2025-infographic-asia.pdf",
+      "category": "primary-consultancy-direct",
+      "publisher": "Mercer Marsh Benefits",
+      "publication_date": "2024-Q4",
+      "supports_claim": false,
+      "key_data": "Indonesia 2024 forecast medical trend = 17.9%; Indonesia 2025 forecast medical trend = 19.0%. Philippines highest at 21%. Asia regional average 13%.",
+      "via_pdf_markitdown": false,
+      "via_cache": true,
+      "note": "Fetched via fetch-with-cache.sh. This is the MMB Health Trends 2025 Asia-specific infographic, a direct Mercer Marsh Benefits publication. Contradicts the 13.6% (2023) and 14-16% (2024) claims in the original."
+    },
+    {
+      "url": "https://www.fwd.co.id/files/v3/assets/blt0c90459332411c22/bltea93d95ff78d64c5/67b8270218515989b9a6916c/Mercer_Marsh_Benefit_Health_Trend_2025_(1).pdf",
+      "category": "primary-consultancy-direct",
+      "publisher": "Mercer Marsh Benefits",
+      "publication_date": "2024-Q4",
+      "supports_claim": false,
+      "key_data": "Table data: Indonesia 2023 actual medical trend = 14.6%; 2024 forecast = 17.9%; 2025 forecast = 19.0%.",
+      "via_pdf_markitdown": false,
+      "via_cache": true,
+      "note": "MMB Health Trends 2025 Global PDF (hosted by FWD Indonesia). Contains the country-level data table. Indonesia 2023 actual = 14.6%, NOT 13.6% as claimed."
+    },
+    {
+      "url": "https://www.fortuneidn.com/business/2024-mercer-marsh-benefits-proyeksi-inflasi-medis-14-6-00-3dhnm-tnmpnf",
+      "category": "secondary-press-indonesia",
+      "publisher": "Fortune Indonesia",
+      "publication_date": "2024-10-04",
+      "supports_claim": "partial",
+      "key_data": "MMB projects medical inflation at 14.6% for 2024. Average inpatient claim = Rp 22 juta; outpatient = Rp 3.6 juta. Inpatient benefit prevalence = 94%; outpatient = 79%. Based on Indonesia Health and Benefits Study 2024, covering 470+ companies, 24 industries.",
+      "via_pdf_markitdown": false,
+      "via_cache": true,
+      "note": "Direct reporting of MMB Indonesia Health and Benefits Study 2024 launch (Oct 3 2024). Confirms Rp 22M inpatient claim, 94% inpatient, 79% outpatient. The '14.6%' here refers to the 2024 medical inflation projection from the Indonesia-specific study, NOT the 2023 actual from the global Health Trends survey."
+    },
+    {
+      "url": "https://www.antaranews.com/berita/4375099/marsh-indonesia-ungkap-biaya-medis-di-indonesia-alami-lonjakan-cukup-tinggi",
+      "category": "secondary-press-indonesia",
+      "publisher": "ANTARA News",
+      "publication_date": "2024-10-03",
+      "supports_claim": "partial",
+      "key_data": "Marsh Indonesia reports medical costs rising significantly post-COVID. Indonesia medical cost inflation among highest in Asia. Report covers 470+ companies, 24 industries. Inpatient and outpatient identified as highest-prevalence benefits.",
+      "via_pdf_markitdown": false,
+      "via_cache": true,
+      "note": "Official Indonesian state wire service reporting of MMB Indonesia Health and Benefits Study 2024 launch event. Corroborates Liputan6 and Fortune Indonesia figures. Does not include the exact percentage in this cached excerpt."
+    },
+    {
+      "url": "https://assets.aon.com/-/media/files/aon/reports/2025/aon-global-medical-trend-rates-report-2025.pdf",
+      "category": "primary-consultancy-direct",
+      "publisher": "Aon",
+      "publication_date": "2024-10",
+      "supports_claim": false,
+      "key_data": "Indonesia 2024 actual gross medical trend = 13.1%; Indonesia 2025 forecast gross = 16.2%.",
+      "via_pdf_markitdown": true,
+      "note": "Aon 2025 Global Medical Trend Rates Report. APAC data table extracted. Confirms 2025 Indonesia forecast (16.2%) is within 16-19% range claimed but 2024 actual (13.1%) is below the 14-16% claim range. Note: Aon and MMB use different survey methodologies and insurer panels."
+    },
+    {
+      "url": "https://www.neebc.org/assets/pdfs/Blogs/Aon%20global%20med%20trends%202026.pdf",
+      "category": "primary-consultancy-direct",
+      "publisher": "Aon",
+      "publication_date": "2025-10",
+      "supports_claim": "partial",
+      "key_data": "Indonesia 2025 gross medical trend = 13.0% (revised from 16.2% forecast); Indonesia 2026 gross forecast = 16.9%.",
+      "via_pdf_markitdown": true,
+      "note": "Aon 2026 Global Medical Trend Rates Report. Table shows the 2025 actual for Indonesia was revised down to 13.0% from the 16.2% forecast in the 2025 report. The 2026 forecast is 16.9%. Confirms the claim's 'Aon 16.2%/16.9%' figures but in different years than implied."
+    }
+  ],
+  "contradictions_found": [
+    {
+      "original_claim_element": "2023 medical trend = 13.6%",
+      "contradicting_source": "MMB Health Trends 2025 Global PDF (multiple cached copies)",
+      "contradicting_data": "Indonesia 2023 actual medical trend rate = 14.6%, not 13.6%",
+      "explanation": "The 13.6% figure appears to originate from a PMC academic paper (pmc.ncbi.nlm.nih.gov/articles/PMC12425502/) which cited 'Medical cost inflation by MMB' for 2023 as 13.60%. This PMC paper used 13.6% as a comparator for a retiree population study. The MMB Health Trends 2025 report itself (the primary source) shows Indonesia 2023 actual = 14.6%."
+    },
+    {
+      "original_claim_element": "2024 trend ~14-16%",
+      "contradicting_source": "MMB Health Trends 2025 Asia Infographic",
+      "contradicting_data": "MMB forecasts Indonesia 2024 = 17.9%, substantially above the 14-16% range",
+      "explanation": "Two distinct MMB products are involved. The 'Indonesia Health and Benefits Study 2024' (survey of 470+ Indonesian companies) projected 14.6% medical inflation for 2024. The 'MMB Health Trends 2025' global insurer survey showed a 17.9% forecast for Indonesia in 2024. These are methodologically different surveys. Aon shows 13.1% actual for 2024 (different methodology, different insurer panel)."
+    },
+    {
+      "original_claim_element": "2025 trend ~16-19%",
+      "contradicting_source": "MMB and Aon data",
+      "contradicting_data": "MMB: 19.0%; Aon 2025 forecast: 16.2%; Aon 2026 (revised 2025 actual): 13.0%",
+      "explanation": "The 16-19% range brackets MMB's 19.0% on the high end and Aon's 16.2% forecast on the low end. However Aon's revised 2025 actual (from the 2026 report) is only 13.0%, suggesting actual realized trend may have come in lower than forecast."
+    }
+  ],
+  "confirmed_elements": [
+    {
+      "element": "Average inpatient claim ~Rp 22 juta",
+      "status": "CONFIRMED",
+      "source": "Fortune Indonesia citing MMB Indonesia Health and Benefits Study 2024",
+      "note": "Exact figure: Rp 22 juta per orang (for inpatient); outpatient Rp 3.6 juta per orang. 2023 data."
+    },
+    {
+      "element": "Inpatient utilization 94%",
+      "status": "CONFIRMED",
+      "source": "Liputan6 and Fortune Indonesia citing MMB Indonesia Health and Benefits Study 2024",
+      "note": "94% of companies surveyed provide inpatient coverage to employees and families."
+    },
+    {
+      "element": "Outpatient utilization 79%",
+      "status": "CONFIRMED",
+      "source": "Liputan6 and Fortune Indonesia citing MMB Indonesia Health and Benefits Study 2024",
+      "note": "79% of companies surveyed provide outpatient coverage."
+    }
+  ],
+  "suggested_revision": "Replace claim text with: 'Mercer Marsh Benefits (MMB) Indonesia Health and Benefits Study 2024 (covering 470+ companies across 24 industries): 2023 average inpatient claim cost ~Rp 22 juta per person; inpatient benefit offered by 94% of employers, outpatient by 79%. MMB Health Trends 2025 (global insurer survey, fielded Jun-Jul 2024): Indonesia 2023 actual medical trend = 14.6%; 2024 forecast = 17.9%; 2025 forecast = 19.0%. Cross-check: Aon 2025 Global Medical Trend Rates (different methodology) shows Indonesia 2024 actual = 13.1%, 2025 forecast = 16.2%; Aon 2026 report revises 2025 actual to 13.0% and forecasts 2026 at 16.9%. The MMB global Health Trends survey and Aon surveys differ because they poll different insurer panels and use different cost definitions.'",
+  "suggested_new_score": "High",
+  "reasoning": "The claim's utilization and claim-cost figures (Rp 22M inpatient, 94% inpatient, 79% outpatient) are directly confirmed by multiple Indonesian press outlets citing the MMB Indonesia Health and Benefits Study 2024 launch event in October 2024. The medical trend rates are correctable: the 2023 figure is 14.6% (not 13.6%) per MMB's own global survey, and 2024/2025 forecasts from MMB (17.9%/19.0%) are substantially higher than the claimed 14-16%/16-19% ranges. The 13.6% figure was a secondary-source mis-attribution from a PMC retiree study. Aon provides independent cross-validation with a different methodology, showing lower actual realized trends (13.1% in 2024, 13.0% actual in 2025) but a higher 2025 forecast (16.2%) before revision. The claim's MMB attribution is real and the study is documented, but specific percentage figures need correction.",
+  "aon_adjacent_claim_validation": {
+    "claim_element": "Aon 2025/2026 Indonesia rate 16.2%/16.9%",
+    "status": "CONFIRMED with year clarification",
+    "sources": [
+      {
+        "url": "https://assets.aon.com/-/media/files/aon/reports/2025/aon-global-medical-trend-rates-report-2025.pdf",
+        "data": "2025 forecast gross = 16.2% (from 2025 Aon report, published Oct 2024)"
+      },
+      {
+        "url": "https://www.neebc.org/assets/pdfs/Blogs/Aon%20global%20med%20trends%202026.pdf",
+        "data": "2026 forecast gross = 16.9% (from 2026 Aon report, published Oct 2025)"
+      }
+    ],
+    "note": "The 16.2% is a 2025 forecast and the 16.9% is a 2026 forecast. The Aon 2026 report also shows the 2025 actual was revised down to 13.0%, meaning the 16.2% forecast was not realized."
+  }
+}

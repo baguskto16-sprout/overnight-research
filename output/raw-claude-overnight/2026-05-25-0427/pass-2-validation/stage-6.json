@@ -1,0 +1,131 @@
+{
+  "context": "per-stage",
+  "stage": 6,
+  "run_id": "2026-05-25-0427",
+  "validated_at": "2026-05-25",
+  "scope": "Insurance/TPA CDM & preventive programme admin (3d) + ID-vs-MY readiness compare",
+  "artifacts_scored": [
+    "pass-1-drafts/stage-6-value-chain.md",
+    "pass-1-drafts/stage-6-pain-points.md"
+  ],
+  "total_claims_scored": 45,
+  "scoring_distribution": {
+    "high": {"count": 0, "percent": "0%"},
+    "medium": {"count": 2, "percent": "4.4%"},
+    "low": {"count": 43, "percent": "95.6%"}
+  },
+  "medium_claims": [
+    {
+      "claim_id": "PP6.1-C5",
+      "claim_text": "Malaysia NHMS 2023: only 34.4% of tracked DM patients achieved HbA1c ≤6.5% target; mean HbA1c 7.7% nationally.",
+      "sources": [
+        "https://www.nature.com/articles/s41598-025-08311-9 [primary-academic]",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10576047 [primary-academic — Malaysia NDR 2023]"
+      ],
+      "score": "Medium",
+      "rationale": "Two independent primary-academic sources corroborating the same metric; neither is a government statistics agency or multilateral, so High threshold not met."
+    },
+    {
+      "claim_id": "PP6.2-C6",
+      "claim_text": "Malaysia NDR 2023: only 34.4% of DM patients achieved HbA1c ≤6.5% target.",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10576047 [primary-academic — Malaysia NDR 2023]",
+        "https://www.nature.com/articles/s41598-025-08311-9 [primary-academic]"
+      ],
+      "score": "Medium",
+      "rationale": "Same two independent primary-academic sources as PP6.1-C5; repeated citation of the same verified figure in PP6.2 context."
+    }
+  ],
+  "override_triggers": [
+    {
+      "override": "assumed-tag",
+      "description": "Claims explicitly tagged [ASSUMED-N] are auto-Low regardless of supporting sources",
+      "claim_count": 11,
+      "claim_ids": ["PP6.1-C2", "PP6.1-C11", "PP6.1-C12", "PP6.2-C2", "PP6.2-C12", "PP6.3-C1", "PP6.3-C8-gap", "PP6.3-C9-gap", "PP6.3-C10-gap", "PP6.4-C1-assumed", "VC-ID-MY-assumed"]
+    },
+    {
+      "override": "vendor-marketing",
+      "description": "Claims about vendor's own product/capability/size sourced from that vendor's own marketing pages or press releases",
+      "claim_count": 9,
+      "claim_ids": ["PP6.1-C12-naluri", "PP6.2-C5", "PP6.2-C7", "PP6.2-C10", "PP6.2-C11", "PP6.3-C4", "VC-C4", "VC-C5", "VC-C6", "ID-MY-C4", "ID-MY-C6"]
+    },
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "description": "Market sizing sourced solely from NextMSC, Faber Consulting, Ken Research — private aggregators with no primary-tier cross-validation",
+      "claim_count": 3,
+      "claim_ids": ["VC-C1", "VC-C3", "VC-C7"]
+    },
+    {
+      "override": "trade-press-only",
+      "description": "Operating cost figures, frequency metrics, or regulatory claims sourced only from trade publications, news wire, or secondary commentary — no primary-tier source",
+      "claim_count": 10,
+      "claim_ids": ["PP6.1-C1", "PP6.1-C7", "PP6.1-C9", "PP6.2-C1", "PP6.2-C3", "PP6.2-C4", "PP6.2-C8", "PP6.2-C9", "PP6.3-C7", "PP6.4-C1"]
+    },
+    {
+      "override": "single-source",
+      "description": "Claims evidenced by exactly one source, regardless of source quality tier",
+      "claim_count": 12,
+      "claim_ids": ["PP6.1-C3", "PP6.1-C4", "PP6.1-C6", "PP6.1-C8", "PP6.1-C10", "PP6.2-C4", "PP6.3-C2", "PP6.3-C3", "PP6.3-C5", "PP6.3-C6", "ID-MY-C5", "VC-C2"]
+    },
+    {
+      "override": "no-citation-in-artifact",
+      "description": "Claims appearing in the ID-vs-MY readiness matrix without a numbered footnote traceable to a source in Stage 6 artifacts",
+      "claim_count": 3,
+      "claim_ids": ["ID-MY-C1", "ID-MY-C2", "ID-MY-C3"]
+    }
+  ],
+  "weak_claims_to_deep_research": [
+    {
+      "claim_id": "PP6.1-C3",
+      "claim_text": "Only 32% of 273 assessed FKTPs met Level 4 RPPT (controlled CDM patient ratio) by December 2023; FKTPs achieving Level 4 receive full KBK capitation, those below receive reduced payments.",
+      "current_sources": ["https://jurnal-jkn.bpjs-kesehatan.go.id/index.php/jjkn/article/view/273 [primary-ministry, single source]"],
+      "current_score": "Low",
+      "issue": "Single primary-ministry source. The BPJS JKN journal is an official publication but lacks corroboration from an independent source. The RPPT figure is the central frequency/severity metric for PP6.1 and is cited four times across the two artifacts. A second independent source confirming the 32% Level 4 rate and KBK structure would raise this to Medium.",
+      "suggested_action": "Search for: (1) BPJS Kesehatan Annual Report 2023 PDF (laporan tahunan) for PROLANIS RPPT national statistics — URL pattern: bpjs-kesehatan.go.id/laporan-tahunan; (2) WHO/P4H PROLANIS programme evaluation documents citing RPPT performance data; (3) peer-reviewed assessment of KBK capitation outcomes post-2022 in PubMed/PMC. Specific query: 'PROLANIS RPPT Level 4 controlled rate 2023 site:bpjs-kesehatan.go.id OR site:pmc.ncbi.nlm.nih.gov'",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP6.1-C7",
+      "claim_text": "PROLANIS biannual HbA1c examinations documented as 'not being carried out' at multiple FKTPs due to supply and staff capacity constraints.",
+      "current_sources": ["https://phcogj.com/article/2352 [secondary-trade — Pharmacognosy Journal, trade-press-only]"],
+      "current_score": "Low",
+      "issue": "Single secondary-trade source (Pharmacognosy Journal). This claim is the structural failure mode underpinning PP6.1's argument that monitoring breaks down at the lab-result collection stage. Without primary-tier corroboration, the claim rests on a single journal article of unclear peer-review status. The same scoping review (PMC12538241) is available and covers PROLANIS barriers — check whether it directly cites the HbA1c gap, which would provide a primary-academic co-citation.",
+      "suggested_action": "Fetch full text of PMC12538241 (PROLANIS 2025 scoping review, already cited at PP6.1-(8)) to check whether it explicitly documents HbA1c examination non-completion as a barrier — if yes, this gives a primary-academic second source at zero additional fetch cost. Also search: 'PROLANIS HbA1c pemeriksaan tidak dilaksanakan site:pmc.ncbi.nlm.nih.gov OR site:bpjs-kesehatan.go.id'; additionally search BPJS Kesehatan monitoring reports (DM program evaluations, laporan kinerja) for HbA1c completion rates.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP6.2-C4",
+      "claim_text": "Malaysia PDPA Amendment Act 2024 (effective January 1, 2025) adds mandatory breach notification; health data remains sensitive personal data under Section 4; employer-TPA CDM data flows without updated consent language may create breach exposure.",
+      "current_sources": [
+        "https://hallboothsmith.com/malaysia-2024-data-privacy-reform/ [secondary-trade — US law firm article]",
+        "https://insightplus.bakermckenzie.com/bm/data-technology/malaysia-personal-data-protection-amendment-act-2024-to-come-into-force [secondary-trade — law firm commentary]"
+      ],
+      "current_score": "Low",
+      "issue": "Two secondary-trade law firm commentary articles only. The PDPA compliance tension is a root cause in both PP6.2 and PP6.3 and underpins the regulatory positioning of the entire Malaysia CDM analytics opportunity. A direct citation from the Malaysian Attorney General's Chambers official gazette, the PDPC (Personal Data Protection Commissioner) official guidance, or Parlimen Malaysia published Act text would provide a primary-ministry source and raise this to Medium. The Baker McKenzie article is closer to authoritative but is still secondary commentary, not the official text.",
+      "suggested_action": "Fetch the Malaysia Personal Data Protection (Amendment) Act 2024 official text from: (1) Attorney General's Chambers Malaysia — agc.gov.my (search for 'Personal Data Protection Amendment Act 2024'); (2) PDPC Malaysia official guidance page — pdp.gov.my; (3) Parlimen Malaysia official act text. Specific query: 'Personal Data Protection Amendment Act 2024 Malaysia site:agc.gov.my OR site:pdp.gov.my'. Confirm Section 4 sensitive personal data definition and the breach notification timeline that is now effective.",
+      "priority": "medium"
+    }
+  ],
+  "high_tier_claims_with_evidence": [],
+  "evidence_quote_gaps": [],
+  "source_diversity_summary": {
+    "primary_gov": 0,
+    "primary_multilateral": 2,
+    "primary_ministry": 1,
+    "primary_consultancy": 0,
+    "primary_filing": 0,
+    "primary_association": 0,
+    "primary_academic": 6,
+    "primary_standards": 0,
+    "primary_interview": 0,
+    "primary_legal": 0,
+    "secondary_trade": 12,
+    "secondary_news": 4,
+    "secondary_market_research": 3,
+    "secondary_press_release": 0,
+    "auto_low_vendor": 9
+  },
+  "total_unique_sources_cited": 37,
+  "gate_decision_recommendation": "re-run-recommended",
+  "gate_reasoning": "Stage 6 scores 0% High, 4.4% Medium, and 95.6% Low across 45 scored claims. The two Medium scores are a repeated citation of the same Malaysia NDR/NHMS DM control figure. Every cost estimate, labor-time estimate, and willingness-to-pay figure is tagged [ASSUMED-N] and auto-Low. The central PROLANIS performance metric (32% Level 4 RPPT) is a single primary-ministry source with no corroboration. Nine distinct vendor-marketing citations (Naluri CDMP page, PMCare homepage, AIA Vitality factsheet, BP Healthcare POPE page) are used to evidence claims about those same vendors' products and member counts — all auto-Low under the vendor-marketing override. Market sizing rests entirely on NextMSC, Faber Consulting, and Ken Research (all aggregator auto-downgrades). The ID-vs-MY readiness matrix contains three claims with no numbered citations traceable within Stage 6 artifacts. Deep research is warranted on at least the three identified weak claims before Stage 6 can support a credible gate-pass; the two High-priority targets (RPPT corroboration via BPJS annual report and PROLANIS HbA1c gap via PMC12538241 full-text check) are low-cost fetches that could meaningfully improve score distribution if successful."
+}

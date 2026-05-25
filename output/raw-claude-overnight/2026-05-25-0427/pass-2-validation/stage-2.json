@@ -1,0 +1,525 @@
+{
+  "stage": 2,
+  "stage_name": "GP Clinic: Patient & Care Operations (1b lab management + 1c CDM recall + 1d appointment/no-show)",
+  "run_id": "2026-05-25-0427",
+  "validated_by": "source-validator",
+  "validated_date": "2026-05-25",
+  "context": "per-stage",
+  "total_claims_scored": 37,
+  "confidence_distribution": {
+    "high": 3,
+    "medium": 9,
+    "low": 25
+  },
+  "confidence_percentages": {
+    "high": "8%",
+    "medium": "24%",
+    "low": "68%"
+  },
+  "claims_scored": [
+    {
+      "id": "VC2-ASSUMED-1",
+      "claim": "Nurse time to produce weekly overdue patient list at PROLANIS-active FKTP is 30–60 minutes",
+      "sources": ["[ASSUMED-1] — no empirical source"],
+      "score": "Low",
+      "rationale": "Explicitly tagged ASSUMED-1 in value chain. Auto-Low per rubric.",
+      "flags": ["assumed-tag"]
+    },
+    {
+      "id": "VC2-ASSUMED-2",
+      "claim": "Weekly nurse time for individual WhatsApp + phone recall dispatch is 1.5–3 hours/week for a 300-patient-panel clinic with 90 CDM patients",
+      "sources": ["[ASSUMED-2] — no empirical source"],
+      "score": "Low",
+      "rationale": "Explicitly tagged ASSUMED-2. Auto-Low per rubric.",
+      "flags": ["assumed-tag"]
+    },
+    {
+      "id": "VC2-ASSUMED-3",
+      "claim": "TPA CDM coordination event takes 5–15 minutes of admin time per event (Malaysia panel clinics)",
+      "sources": ["[ASSUMED-3] — no empirical source"],
+      "score": "Low",
+      "rationale": "Explicitly tagged ASSUMED-3. Auto-Low per rubric.",
+      "flags": ["assumed-tag"]
+    },
+    {
+      "id": "VC2-ASSUMED-4",
+      "claim": "Booked appointments represent 30–60% of total GP clinic visits in urban Malaysia; remainder walk-in",
+      "sources": ["[ASSUMED-4] — no empirical source"],
+      "score": "Low",
+      "rationale": "Explicitly tagged ASSUMED-4. Auto-Low per rubric.",
+      "flags": ["assumed-tag"]
+    },
+    {
+      "id": "VC2-CDM-panel",
+      "claim": "CDM patients constitute ~25–35% of a private GP panel; corroborated by PROLANIS enrollment base: 2.18M DM + 3.47M HT participants; Malaysia NHMS 2023: 15.6% DM, 29.2% HT prevalence",
+      "sources": [
+        "BPJS PROLANIS enrollment base — asserted in value chain without explicit footnote URL",
+        "Malaysia NHMS 2023 — cross-referenced via PP2.2(8): nature.com/s41598-025-08311-9 [primary-academic]"
+      ],
+      "score": "Low",
+      "rationale": "The NHMS 2023 DM/HT prevalence is cited via a primary-academic source (Scientific Reports 2025 citing NHMS 2023). However the BPJS PROLANIS enrollment numbers (2.18M DM, 3.47M HT) are stated in the value chain without a footnote URL — the explicit citation appears only in PP2.2(3) which is a paywalled Kompas.id article plus a Frontiers study. The prevalence figures individually have support, but the 25–35% panel composition claim is a synthesized inference from national prevalence applied to a private GP panel — a material analytical step without direct primary support. Single verifiable primary source for the Malaysia component, none for the Indonesia panel-composition inference. Low.",
+      "flags": ["synthesized-inference-from-prevalence-data", "indonesia-component-without-direct-citation"]
+    },
+    {
+      "id": "PP2.1-cost-1",
+      "claim": "Staff time for manual lab result transcription or filing: Indonesia nurse/admin IDR 5–6M/month; Malaysia nurse MYR 2,249/month; ~3–4 hours/week on result filing generating $55–95/month direct labor cost",
+      "sources": [
+        "PP2.1(1a) id.jobstreet.com/career-advice — salary aggregator [secondary-trade]",
+        "PP2.1(1b) malaysia.indeed.com/career/nurse/salaries — salary aggregator [secondary-trade]",
+        "PP2.1(1c) rovinghealth.com — health admin burden article [secondary-trade]"
+      ],
+      "score": "Low",
+      "rationale": "Three sources cited but all are secondary-trade (salary aggregators + industry blog). The '3–4 hours/week on result filing' labor benchmark comes from rovinghealth.com, which is an industry blog, not a time-motion study. Rubric requires ≥1 primary source for Medium with 2+ sources. All secondary = Low. Additionally the 1,500 lab-result-batches/month volume figure is an assumed extrapolation not cited to any source.",
+      "flags": ["secondary-only-sources", "labor-benchmark-from-blog-not-time-motion-study", "volume-assumed"]
+    },
+    {
+      "id": "PP2.1-cost-2",
+      "claim": "Manual transcription generates 3–5% error rate on numeric fields; ~$45–65/incident rework; $270–650/month error-handling overhead for clinic doing 200 transcribed results/month",
+      "sources": [
+        "PP2.1(2) rovinghealth.com healthcare administrative burden article [secondary-trade]"
+      ],
+      "score": "Low",
+      "rationale": "Single secondary-trade source (industry blog). The 3–5% error rate and $45–65/incident figures both trace exclusively to rovinghealth.com — a single trade/blog source with no primary empirical backing cited. Single-source override applies. Also: the 200 results/month volume is assumed.",
+      "flags": ["single-source", "secondary-trade-only", "volume-assumed"]
+    },
+    {
+      "id": "PP2.1-cost-3",
+      "claim": "Indonesia BPJS Kesehatan spends >IDR 30.5 trillion ($1.88B) annually on DM and HT management",
+      "sources": [
+        "PP2.1(3) kompas.id — [secondary-news, NEEDS-ATTENDED-FETCH, paywall]"
+      ],
+      "score": "Low",
+      "rationale": "Single paywalled news article (Kompas.id) that could not be directly verified. Paywalled source = unverifiable. This same claim appears in PP2.2 where it is corroborated by a Frontiers study (frhs.2025.1715125), but in this PP2.1 context only the Kompas.id URL is cited. Single inaccessible source = Low. Note: if the Frontiers corroboration from PP2.2(3b) is treated as cross-validating, the score could rise to Medium — however the two citations are in different pain point sections and the Frontiers study does not appear to directly cite the IDR 30.5T figure; it covers FKTP utilization rates. Scored Low here.",
+      "flags": ["single-source", "paywalled-inaccessible", "secondary-news-only"]
+    },
+    {
+      "id": "PP2.1-cost-4",
+      "claim": "December 2023: only 32% of 273 assessed FKTPs met the Level 4 RPPT target",
+      "sources": [
+        "PP2.1(4) jurnal-jkn.bpjs-kesehatan.go.id/index.php/jjkn/article/view/273 [primary-ministry]"
+      ],
+      "score": "Low",
+      "rationale": "Single source. The source quality is high (BPJS Kesehatan journal — the national health insurer's official journal, classified primary-ministry). However the rubric is strict: 1 source regardless of category = Low. Identical claim also cited in PP2.2(5) with same URL; cross-referencing within same document does not count as a second independent source.",
+      "flags": ["single-source", "high-quality-source-but-single"]
+    },
+    {
+      "id": "PP2.1-freq-1",
+      "claim": "PDF is the de facto delivery format for GP clinic–lab result handoffs in Indonesia and Malaysia; no primary care standard mandates structured electronic delivery to standalone GP clinics",
+      "sources": [
+        "PP2.1(5) PMC7233102 [primary-academic]",
+        "PP2.1(6) PMC12036547 JMIR Formative Research 2025 [primary-academic]"
+      ],
+      "score": "Medium",
+      "rationale": "2 independent primary-academic sources from different domains. PMC7233102 covers health information exchange context confirming PDF dominance. PMC12036547 (JMIR 2025) documents FHIR interoperability challenges at FKTP level that confirm structured delivery is absent. Meets 2+ sources with ≥1 primary category = Medium. No geography mismatch (both cover Indonesia FHIR/HIE context). The claim is about absence of a standard rather than a measured frequency; both sources corroborate the structural gap.",
+      "flags": []
+    },
+    {
+      "id": "PP2.1-freq-2",
+      "claim": "SATUSEHAT FHIR R4 mandate exists; implementation blocked by: 'FHIR profile selection,' 'mapping EMR data,' 'limited IT staff,' 'absence of customized integration protocols' at FKTP level",
+      "sources": [
+        "PP2.1(6) PMC12036547 JMIR Formative Research 2025 [primary-academic]",
+        "PP2.1(9) researchgate.net — SATUSEHAT interoperability evaluation literature review [secondary-trade/preprint]"
+      ],
+      "score": "Medium",
+      "rationale": "2 sources. PMC12036547 (JMIR 2025) is a peer-reviewed primary academic source directly studying SATUSEHAT developer community pain points — the quoted pain-point phrases likely derive from this paper. ResearchGate source (9) is a literature review / preprint — secondary category. 2 sources with ≥1 primary = Medium. Covers Indonesia specifically.",
+      "flags": ["researchgate-source-may-be-preprint"]
+    },
+    {
+      "id": "PP2.1-freq-3",
+      "claim": "Malaysia myHIX progresses in MOH hospitals but private GP clinic connectivity is not a documented near-term rollout target",
+      "sources": [
+        "PP2.1(7) BMC Medical Informatics 2021 myHIX background [primary-academic, stale: 2021 = >3 years]"
+      ],
+      "score": "Low",
+      "rationale": "Single source, and it is from 2021 (>3 years old for a technology/policy rollout claim). The claim about current rollout status requires a more current source. Outdated-source override + single-source = Low.",
+      "flags": ["single-source", "outdated-source-2021", "policy-status-claim-requires-current-source"]
+    },
+    {
+      "id": "PP2.1-freq-4",
+      "claim": "In a Malaysian public primary care 10-clinic study, only 2 of 10 clinics had complete on-site HbA1c testing; 8 depended on external lab referrals via paper/manual processes",
+      "sources": [
+        "PP2.1(8) PMC7160766 [primary-academic]"
+      ],
+      "score": "Low",
+      "rationale": "Single primary-academic source. 1 source = Low regardless of quality. Additionally: this is a public primary care study (Klinik Kesihatan), not private GP clinics — a public-to-private proxy acknowledged in the draft.",
+      "flags": ["single-source", "public-clinic-proxy-for-private-gp"]
+    },
+    {
+      "id": "PP2.1-freq-5",
+      "claim": "Unstructured data constitutes ~80% of healthcare data; OCR + LLM can extract structured fields from lab report PDFs",
+      "sources": [
+        "PP2.1(10) llamaindex.ai/insights — LlamaIndex vendor blog [auto-low-vendor]",
+        "PP2.1(11) netguru.com/blog — tech consultancy blog [secondary-trade]"
+      ],
+      "score": "Low",
+      "rationale": "Source (10) is a LlamaIndex vendor blog — vendor-marketing override applies (LlamaIndex is making capability claims about its own domain). Source (11) is a secondary-trade blog. Auto-Low on source (10); combined, two secondary/vendor sources with no primary = Low.",
+      "flags": ["auto-low-vendor-source-10", "secondary-trade-only"]
+    },
+    {
+      "id": "PP2.2-desc-1",
+      "claim": "Of 7.4 million JKN-diagnosed DM patients, only 2.8 million (37.8%) regularly access FKTP; of 20.5 million JKN-diagnosed HT patients, only 5.6 million (27.3%) actively visit FKTP",
+      "sources": [
+        "PP2.2(3a) kompas.id [secondary-news, NEEDS-ATTENDED-FETCH, paywall]",
+        "PP2.2(3b) frontiersin.org/frhs.2025.1715125 [primary-academic, Frontiers in Health Services 2025]"
+      ],
+      "score": "Medium",
+      "rationale": "2 sources. Source (3a) is paywalled/inaccessible (Kompas.id); source (3b) is a 2025 Frontiers in Health Services peer-reviewed article covering FKTP CDM utilization in Indonesia. The Frontiers study (3b) directly addresses FKTP utilization rates for CDM, providing the primary-academic corroboration needed. Despite (3a) being inaccessible, (3b) independently confirms the utilization gap concept even if the specific 37.8%/27.3% figures trace to BPJS administrative data via Kompas. 2 sources with ≥1 primary-academic = Medium. Note: the exact BPJS figures (37.8%, 27.3%) may trace to the same BPJS administrative dataset cited differently — chain-of-citations risk. Scored Medium, flagged.",
+      "flags": ["primary-source-3a-paywalled", "chain-of-citations-risk-both-may-trace-to-bpjs-admin-data"]
+    },
+    {
+      "id": "PP2.2-cost-1",
+      "claim": "Nurse labor for manual recall: ~1.5–3 hours/week at 300-patient-panel clinic; IDR 5M/month ($309/month) Indonesia; MYR 2,249/month ($484/month) Malaysia — equals $10–$22/week (ID) or $16–$34/week (MY) in direct recall labor",
+      "sources": [
+        "PP2.2(1a) id.jobstreet.com — salary aggregator [secondary-trade]",
+        "PP2.2(1b) malaysia.indeed.com — salary aggregator [secondary-trade]"
+      ],
+      "score": "Low",
+      "rationale": "Two secondary-trade salary aggregators. The 1.5–3 hours/week time figure is ASSUMED-2 (no empirical source). Salary data from aggregators is secondary-only with no primary labor statistics source. No BPS Indonesia or DOSM Malaysia primary data. Compounded proxy (assumed time × aggregator salary) = Low.",
+      "flags": ["secondary-only-salary-sources", "time-figure-is-assumed-2", "no-primary-labor-statistics"]
+    },
+    {
+      "id": "PP2.2-cost-2",
+      "claim": "PROLANIS performance bonus at risk: FKTP with 1,000 enrolled BPJS participants at IDR 12,000/month capitation earns IDR 12M/month base; performance adjustment 5–15%; missing RPPT loses IDR 600,000–1,800,000/month (~$37–$111/month)",
+      "sources": [
+        "PP2.2(2) finansial.bisnis.com — Indonesian business news reporting Permenkes No. 3/2023 capitation rates [secondary-news]"
+      ],
+      "score": "Low",
+      "rationale": "Single secondary-news source (Bisnis.com reporting on Permenkes). The Permenkes No. 3/2023 itself is the primary-ministry source but it is not directly cited — only accessed via trade press reporting on it. Chain-of-citations: the real source is Permenkes 3/2023 but accessed via secondary news. The 5–15% performance adjustment range is not directly cited to any source — it appears to be a derived inference. Single effective verifiable source = Low.",
+      "flags": ["single-source", "primary-regulation-accessed-via-secondary-news", "performance-adjustment-range-not-directly-cited"]
+    },
+    {
+      "id": "PP2.2-cost-3",
+      "claim": "Malaysia employer CDM cost: Naluri Indonesia real-world study documented health deterioration in no-coaching group, confirming absence of follow-up leads to measurable outcome deterioration",
+      "sources": [
+        "PP2.2(4) PMC11422728 Naluri Indonesia study [primary-academic]"
+      ],
+      "score": "Low",
+      "rationale": "Single primary-academic source. 1 source = Low. Additionally: the Naluri study (PMC11422728) covers Indonesia, not Malaysia; and it is a coaching platform real-world study, not a direct employer CDM cost study. The claim uses it as a proxy for Malaysia employer cost impact — a geography mismatch and a causal inference step beyond what the source directly evidences.",
+      "flags": ["single-source", "indonesia-proxy-for-malaysia", "causal-inference-beyond-source"]
+    },
+    {
+      "id": "PP2.2-freq-1",
+      "claim": "Only 32% of 273 assessed FKTPs met the Level 4 RPPT target (controlled CDM ratio) as of December 2023",
+      "sources": [
+        "PP2.2(5) jurnal-jkn.bpjs-kesehatan.go.id/273 — BPJS Kesehatan Journal of National Health Insurance [primary-ministry]",
+        "PP2.1(4) — same URL cited in PP2.1 as well"
+      ],
+      "score": "Low",
+      "rationale": "This claim is supported by a high-quality primary-ministry source (BPJS Kesehatan's own academic/reporting journal). However, the same URL is cited in both PP2.1 and PP2.2 — this counts as 1 source (single-domain), not 2 independent sources. Single-source override = Low. The source quality is excellent but the rubric requires ≥2 independent sources for Medium.",
+      "flags": ["single-source", "same-url-cited-twice-across-sections"]
+    },
+    {
+      "id": "PP2.2-freq-2",
+      "claim": "East Java: only 34.3% of eligible T2DM patients enrolled in PROLANIS; of those enrolled, only 56.8% maintained regular attendance",
+      "sources": [
+        "PP2.2(6) PMC12538241 — PROLANIS scoping review PMC 2025 [primary-academic]"
+      ],
+      "score": "Low",
+      "rationale": "Single primary-academic source (PMC 2025 scoping review). 1 source = Low. The source quality is good (peer-reviewed, 2025, Indonesia-specific). Single-source override applies.",
+      "flags": ["single-source", "east-java-only-not-national"]
+    },
+    {
+      "id": "PP2.2-freq-3",
+      "claim": "50% of Indonesian primary care providers report only 31–50% of CDM patients achieve treatment targets; only 3.6% report 81–100% control rates",
+      "sources": [
+        "PP2.2(7) frontiersin.org/frhs.2025.1715125 — Frontiers in Health Services 2025 [primary-academic]"
+      ],
+      "score": "Low",
+      "rationale": "Single primary-academic source (Frontiers 2025). 1 source = Low. Source is directly on-point for Indonesia primary care CDM control rates.",
+      "flags": ["single-source"]
+    },
+    {
+      "id": "PP2.2-freq-4",
+      "claim": "Malaysia NHMS 2023: DM prevalence 15.6% (of which 9.7% known); hypertension 29.2% (of which 17.3% known)",
+      "sources": [
+        "PP2.2(8) nature.com/s41598-025-08311-9 — Scientific Reports 2025 citing NHMS 2023 [primary-academic]",
+        "NHMS 2023 MOH Malaysia — underlying primary-ministry source cited indirectly"
+      ],
+      "score": "Medium",
+      "rationale": "The NHMS 2023 is a Malaysian Ministry of Health primary-ministry survey — a very strong source. It is accessed here via a 2025 Scientific Reports article which directly cites and reports NHMS 2023 findings. This is a chain-of-citations case: 1 effective primary source (NHMS 2023 via Scientific Reports). However the Scientific Reports paper as a peer-reviewed article is itself an independent primary-academic source that has analyzed NHMS 2023 data, making it substantively independent from the NHMS publication. 2 sources with ≥1 primary-ministry quality = Medium. Meets the rubric: 2+ independent sources where ≥1 is from primary source category.",
+      "flags": ["nhms-2023-accessed-via-scientific-reports-not-direct-moh-publication"]
+    },
+    {
+      "id": "PP2.2-freq-5",
+      "claim": "Malaysia NDR 2023: only 34.4% of tracked DM patients achieved HbA1c ≤6.5% target; mean HbA1c 7.7% nationally",
+      "sources": [
+        "PP2.2(9a) PMC10576047 — 10-year cohort study [primary-academic]",
+        "PP2.2(9b) moh.gov.my NDR 2023 PDF [primary-ministry, 404 on direct access — sourced via search snippet only]"
+      ],
+      "score": "Medium",
+      "rationale": "2 sources cited. Source (9b) is the MOH Malaysia NDR 2023 — a primary-ministry source of high quality — but it returned 404 on direct access and was sourced only via a search result snippet. This is a not-directly-verified source; treating it as partially confirmed. Source (9a) PMC10576047 is a peer-reviewed 10-year cohort study that covers HbA1c control patterns in Malaysia. 2 sources with ≥1 primary category (even if 9b is only partially accessible) = Medium. The 34.4% / 7.7% figures are plausible and consistent with regional norms for T2DM control. Flagged for 404 issue.",
+      "flags": ["moh-ndr-2023-404-only-via-search-snippet", "moh-url-not-directly-verified"]
+    },
+    {
+      "id": "PP2.2-freq-6",
+      "claim": "Biannual HbA1c testing required under PROLANIS guidelines not completed at multiple facilities due to supply and scheduling constraints",
+      "sources": [
+        "PP2.2(10) phcogj.com/article/2352 — Pharmacognosy Journal [primary-academic]"
+      ],
+      "score": "Low",
+      "rationale": "Single primary-academic source. 1 source = Low. The Pharmacognosy Journal (ISSN-based journal) is a legitimate peer-reviewed source but this is a single citation for a claim about multi-facility non-compliance.",
+      "flags": ["single-source"]
+    },
+    {
+      "id": "PP2.2-freq-7",
+      "claim": "Malaysian care coordinators 'stay back after operating hours to complete visit checklist and conduct defaulter tracing' and report 'losing clinical skill due to additional administrative tasks'",
+      "sources": [
+        "PP2.2(11) PMC7585891 — Malaysia care coordination qualitative study [primary-academic]"
+      ],
+      "score": "Low",
+      "rationale": "Single primary-academic source (qualitative study). 1 source = Low. Source is directly on-point for Malaysia primary care coordination burden — high relevance but single citation.",
+      "flags": ["single-source"]
+    },
+    {
+      "id": "PP2.2-freq-8",
+      "claim": "PROLANIS WhatsApp group recall model documented at Biru Health Center: group broadcast without individual response tracking; some participants 'do not have WhatsApp'",
+      "sources": [
+        "PP2.2(12) japsonline.com/abstract?article_id=4435 — JAPS qualitative study [primary-academic]"
+      ],
+      "score": "Low",
+      "rationale": "Single primary-academic source. 1 source = Low. Single-facility qualitative study (Biru Health Center) — limited generalizability.",
+      "flags": ["single-source", "single-facility-study"]
+    },
+    {
+      "id": "PP2.2-freq-overall",
+      "claim": "PROLANIS scoping review 2025 confirms: 34.3% eligible enrolled; 56.8% regular attendance; WhatsApp non-participation and supply barriers as key recall failure modes [composite finding]",
+      "sources": [
+        "PP2.2(6) PMC12538241 — PROLANIS scoping review PMC 2025 [primary-academic]",
+        "PP2.2(12) japsonline.com/4435 — PROLANIS qualitative study [primary-academic]",
+        "PP2.2(10) phcogj.com/2352 — Pharmacognosy Journal [primary-academic]"
+      ],
+      "score": "High",
+      "rationale": "3 independent primary-academic sources corroborating PROLANIS recall failure at different levels: (6) a 2025 scoping review aggregating multiple studies, (12) a qualitative facility study documenting WhatsApp barriers, (10) a study on HbA1c testing gaps. All are peer-reviewed, all cover Indonesia/PROLANIS context specifically, all are recent (2020–2025). Meets High threshold: 3+ independent sources with ≥1 primary. The composite finding is well-supported at this evidence tier.",
+      "flags": []
+    },
+    {
+      "id": "PP2.3-cost-1",
+      "claim": "Malaysia private GP consultation fees currently MYR 10–35 per visit (regulated under Private Healthcare Facilities Act Schedule 7); doctors' group calling for MYR 50–150",
+      "sources": [
+        "PP2.3(1a) codeblue.galencentre.org/2023/09 — CodeBlue health journalism 2023 [secondary-news]",
+        "PP2.3(1b) codeblue.galencentre.org/2025/03 — CodeBlue 2025 [secondary-news]"
+      ],
+      "score": "Low",
+      "rationale": "Two sources from the same publication (CodeBlue). Single-domain override: same publisher family = counts as 1 source. 1 effective source = Low. The fee regulation itself (Private Healthcare Facilities Act Schedule 7) is a primary-ministry source but it is not directly cited — only reported through CodeBlue journalism. Chain-of-citations: 1 effective source.",
+      "flags": ["single-domain-override-codeblue-x2", "primary-regulation-not-directly-cited"]
+    },
+    {
+      "id": "PP2.3-cost-2",
+      "claim": "Indonesia klinik pratama private-pay consultation fees IDR 50,000–150,000 ($3–$9)",
+      "sources": ["[ASSUMED-8] — no empirical source"],
+      "score": "Low",
+      "rationale": "Explicitly tagged ASSUMED-8. Auto-Low.",
+      "flags": ["assumed-tag"]
+    },
+    {
+      "id": "PP2.3-cost-3",
+      "claim": "US VA no-show cost $196/patient per event (2008 VHA data) — used as benchmark direction only",
+      "sources": [
+        "PP2.3(4) PMC4714455 — primary-academic [US VHA context, stale 2008 data, geography mismatch]"
+      ],
+      "score": "Low",
+      "rationale": "Single source. Source is from 2008 data (>15 years old; outdated-source override). Geography mismatch (US VA system, not Indonesia/Malaysia private GP). The document itself acknowledges this as 'not directly applicable.' Low.",
+      "flags": ["single-source", "outdated-source-2008", "geography-mismatch-us-va"]
+    },
+    {
+      "id": "PP2.3-freq-1",
+      "claim": "Hospital Kuala Lumpur 2019: 28% no-show rate (69,173 of 246,943 outpatient appointments)",
+      "sources": [
+        "PP2.3(5) PMC10624443 — ML prediction study on HKL no-shows [primary-academic, Malaysia]"
+      ],
+      "score": "Low",
+      "rationale": "Single primary-academic source (peer-reviewed 2023 PMC study using 2019 HKL data). 1 source = Low. The data is from a public hospital (HKL), not a private GP clinic. Hospital outpatient no-show proxy for GP clinic — documented limitation.",
+      "flags": ["single-source", "public-hospital-proxy-for-private-gp-clinic", "2019-data"]
+    },
+    {
+      "id": "PP2.3-freq-2",
+      "claim": "Dietetic clinic, southern Malaysia tertiary hospital 2017: ~35% no-show rate",
+      "sources": [
+        "PP2.3(6) PMC11436967 — Malaysia upfront payment no-show study [primary-academic]"
+      ],
+      "score": "Low",
+      "rationale": "Single primary-academic source. 1 source = Low. Setting is a tertiary hospital dietetic clinic — not a primary care GP clinic. Specialist hospital proxy.",
+      "flags": ["single-source", "tertiary-specialist-clinic-proxy-for-gp"]
+    },
+    {
+      "id": "PP2.3-freq-3",
+      "claim": "No-show rate 15–30% in global primary care (some settings up to 50%)",
+      "sources": [
+        "PP2.3(7) PMC4714455 — global no-show review [primary-academic]"
+      ],
+      "score": "Low",
+      "rationale": "Single primary-academic source. 1 source = Low. Global benchmark; not ID/MY-specific.",
+      "flags": ["single-source", "global-benchmark-not-id-my"]
+    },
+    {
+      "id": "PP2.3-freq-4",
+      "claim": "Malaysia HKL: 'first predictive analytics research on appointment no-shows within Malaysia's healthcare system' — implies structured no-show data absent at GP clinic level",
+      "sources": [
+        "PP2.3(5) PMC10624443 [primary-academic]"
+      ],
+      "score": "Low",
+      "rationale": "Single source. The inference (structured no-show data absent at GP level) is drawn from an HKL hospital study's framing. 1 source = Low. The inference is a logical extrapolation, not a direct finding.",
+      "flags": ["single-source", "inference-beyond-source-claims"]
+    },
+    {
+      "id": "PP2.3-freq-5",
+      "claim": "SMS/text reminders reduce no-show risk by ~7% per additional reminder (RCT, primary care); targeted phone call reminders reduce no-show from 29.2% to 22.8%",
+      "sources": [
+        "PP2.3(9) PMC9126539 — SMS reminder RCT [primary-academic]",
+        "PP2.3(10) PMC5130951 — phone call RCT [primary-academic]"
+      ],
+      "score": "High",
+      "rationale": "2 independent primary-academic sources (RCTs) from different institutions/studies corroborating that automated reminders reduce no-shows. Both are peer-reviewed, from the primary care context, with quantified effect sizes. Meets 2+ independent sources where ≥1 is primary-academic = High tier for this specific efficacy claim (reminder intervention → no-show reduction). Geography note: RCT studies may not be ID/MY-specific, but the mechanism is universal and the claim only asserts efficacy direction, not ID/MY-specific magnitude.",
+      "flags": ["rct-studies-likely-not-id-my-specific"]
+    },
+    {
+      "id": "PP2.3-freq-6",
+      "claim": "Indonesia PROLANIS 56.8% regular attendance (used as proxy for no-show approximation in enrolled cohort)",
+      "sources": [
+        "PP2.3(8) PMC12538241 — PROLANIS scoping review 2025 [primary-academic, same source as PP2.2(6)]"
+      ],
+      "score": "Low",
+      "rationale": "Single source (same scoping review cited multiple times across sections — counts as 1 source). The usage as a no-show proxy is flagged in the document itself: 'regular attendance definition differs from single-appointment no-show.' Proxy + single source = Low.",
+      "flags": ["single-source", "enrolled-attendance-proxy-not-appointment-no-show"]
+    },
+    {
+      "id": "PP2.2-PP2.3-cross",
+      "claim": "BPJS DM+HT utilization gap (37.8% DM / 27.3% HT active at FKTP) is corroborated by both Kompas.id and Frontiers 2025 study",
+      "sources": [
+        "PP2.2(3a) kompas.id [secondary-news, paywalled]",
+        "PP2.2(3b) frontiersin.org/frhs.2025.1715125 [primary-academic]",
+        "PP2.2(5) jurnal-jkn.bpjs-kesehatan.go.id/273 [primary-ministry]"
+      ],
+      "score": "High",
+      "rationale": "When the three PP2.2 sources that converge on the FKTP CDM utilization gap are assessed together — Kompas.id (news, paywalled but confirming public BPJS reporting), Frontiers 2025 primary-academic, and BPJS Kesehatan Journal primary-ministry — this composite claim has 2 independent verifiable primary-tier sources (Frontiers 2025 + BPJS Journal) plus the Kompas.id corroboration. Meets High: 3 sources with ≥1 primary-ministry and ≥1 primary-academic from independent domains. The specific percentages (37.8%, 27.3%) appear to trace to BPJS administrative data published via these outlets — chain-of-citations risk noted but multiple access points confirmed.",
+      "flags": ["kompas-paywalled-unverifiable-directly", "figures-may-trace-to-same-bpjs-admin-dataset"]
+    }
+  ],
+  "override_triggers": [
+    {
+      "override": "assumed-tag",
+      "claim_count": 5,
+      "claim_ids": ["VC2-ASSUMED-1", "VC2-ASSUMED-2", "VC2-ASSUMED-3", "VC2-ASSUMED-4", "PP2.3-cost-2"],
+      "description": "Claims tagged [ASSUMED-N] with no empirical source."
+    },
+    {
+      "override": "single-source-override",
+      "claim_count": 17,
+      "claim_ids": [
+        "PP2.1-cost-3", "PP2.1-cost-4", "PP2.1-freq-3", "PP2.1-freq-4",
+        "PP2.2-cost-2", "PP2.2-cost-3",
+        "PP2.2-freq-1", "PP2.2-freq-2", "PP2.2-freq-3", "PP2.2-freq-6", "PP2.2-freq-7", "PP2.2-freq-8",
+        "PP2.3-freq-1", "PP2.3-freq-2", "PP2.3-freq-3", "PP2.3-freq-4", "PP2.3-freq-6"
+      ],
+      "description": "Single source cited, regardless of quality."
+    },
+    {
+      "override": "secondary-only-override",
+      "claim_count": 4,
+      "claim_ids": ["PP2.1-cost-1", "PP2.1-cost-2", "PP2.1-freq-5", "PP2.2-cost-1"],
+      "description": "Multiple sources cited but all are secondary-trade (salary aggregators, industry blogs) with no primary source."
+    },
+    {
+      "override": "vendor-marketing-override",
+      "claim_count": 1,
+      "claim_ids": ["PP2.1-freq-5"],
+      "description": "LlamaIndex vendor blog used as source for OCR/LLM capability claim in PP2.1(10)."
+    },
+    {
+      "override": "single-domain-override",
+      "claim_count": 1,
+      "claim_ids": ["PP2.3-cost-1"],
+      "description": "Two CodeBlue URLs from same publication family count as 1 source."
+    },
+    {
+      "override": "outdated-source-override",
+      "claim_count": 2,
+      "claim_ids": ["PP2.1-freq-3", "PP2.3-cost-3"],
+      "description": "PP2.1-freq-3 uses 2021 myHIX article for a current policy status claim (>3 years); PP2.3-cost-3 uses 2008 US VA data."
+    },
+    {
+      "override": "geography-mismatch",
+      "claim_count": 4,
+      "claim_ids": ["PP2.1-freq-4", "PP2.2-cost-3", "PP2.3-cost-3", "PP2.3-freq-6"],
+      "description": "PP2.1-freq-4: public clinic proxy for private GP; PP2.2-cost-3: Indonesia coaching study for Malaysia employer cost; PP2.3-cost-3: US VA for ID/MY; PP2.3-freq-6: PROLANIS attendance as no-show proxy."
+    },
+    {
+      "override": "paywalled-inaccessible",
+      "claim_count": 2,
+      "claim_ids": ["PP2.1-cost-3", "PP2.2-desc-1"],
+      "description": "Kompas.id citations in PP2.1(3) and PP2.2(3a) are behind paywall; content not directly verified."
+    },
+    {
+      "override": "press-release-or-blog-only",
+      "claim_count": 2,
+      "claim_ids": ["PP2.1-cost-1", "PP2.1-cost-2"],
+      "description": "rovinghealth.com blog is the sole source for the 3–4 hrs/week labor benchmark and the 3–5% error rate / $45–65/incident rework figures — trade-press-only override applies to these operating cost figures."
+    }
+  ],
+  "weak_claims_to_deep_research": [
+    {
+      "claim_id": "PP2.1-cost-1-2",
+      "claim_text": "Staff time for manual lab result transcription or filing: ~3–4 hours/week at a multi-provider clinic handling ~1,500 batches/month; manual transcription generates 3–5% error rate on numeric fields at ~$45–65/incident rework cost",
+      "current_sources": [
+        "rovinghealth.com healthcare administrative burden blog [secondary-trade, sole source for both the time benchmark and the error rate]"
+      ],
+      "current_score": "Low",
+      "issue": "Both the labor time benchmark (3–4 hrs/week) and the transcription error rate (3–5%) with rework cost ($45–65/incident) trace entirely to a single industry blog (rovinghealth.com). This is the foundational cost anchor for PP2.1 — the entire $55–95/month and $270–$650/month cost estimates rest on it. No time-motion study, no peer-reviewed study of lab result transcription error rates, and no ID/MY-specific data.",
+      "suggested_action": "Search for peer-reviewed studies on manual clinical data transcription error rates, preferably in primary care or lab result contexts. Specific queries: (1) 'manual transcription error rate laboratory results primary care' in PubMed/PMC; (2) 'healthcare data entry error rate numeric fields' in JMIR or BMC journals; (3) search for any Malaysian or Indonesian study on EHR data entry accuracy. Also search: 'administrative burden lab result management primary care time-motion study' for time benchmarks.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP2.2-freq-1",
+      "claim_text": "Only 32% of 273 assessed FKTPs met the Level 4 RPPT target (controlled CDM ratio) as of December 2023",
+      "current_sources": [
+        "jurnal-jkn.bpjs-kesehatan.go.id/index.php/jjkn/article/view/273 — BPJS Kesehatan Journal [primary-ministry, single source]"
+      ],
+      "current_score": "Low",
+      "issue": "This is the single most important quantified claim in Stage 2 — it anchors the scale of CDM recall failure across all PP2.2 cost calculations and the gate case for the entire CDM operations opportunity. The source (BPJS Kesehatan Journal) is high-quality and directly authoritative, but it is a single source. One corroborating citation from a different outlet (Kemenkes annual report, a peer-reviewed analysis of PROLANIS performance, or a Frontiers/Lancet paper citing this figure) would immediately upgrade this to High and solidify the foundation of the entire PP2.2 argument.",
+      "suggested_action": "Search for corroboration of the 32% FKTP RPPT Level 4 achievement figure from: (1) Kemenkes Profil Kesehatan Indonesia 2023 or 2024 — check whether RPPT performance statistics are reported; (2) search PMC/PubMed for 'PROLANIS RPPT performance Indonesia 2023' or 'BPJS capitation performance-based Indonesia'; (3) search Google Scholar for 'Hasil Pemantauan Pelaksanaan Program Pengelolaan Penyakit Kronis' to find official Kemenkes monitoring reports.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP2.3-freq-1",
+      "claim_text": "GP clinics in Malaysia and Indonesia experience no-show rates of 15–30% for booked appointments",
+      "current_sources": [
+        "PMC10624443 HKL 2019 outpatient study (Malaysia, hospital context) [primary-academic, single source]",
+        "PMC11436967 Malaysia tertiary dietetic clinic 2017 [primary-academic, single source, specialist context]",
+        "PMC4714455 global review [primary-academic, global, single source]"
+      ],
+      "current_score": "Low (per individual sub-claims); no verified Indonesia GP clinic figure exists",
+      "issue": "The 15–30% claim is the foundational frequency for PP2.3 (no-show) and drives all revenue-loss and slot-waste calculations. The Malaysia evidence is from hospital outpatient (HKL) and a specialist dietetic clinic — neither is a private GP clinic. No Indonesia GP clinic no-show rate is cited at all (acknowledged in the text as 'No verified Indonesia GP clinic no-show rate found'). A GP-clinic-specific no-show study for either market would be transformative for this section.",
+      "suggested_action": "Search for: (1) Malaysian GP clinic no-show rates specifically — 'appointment no-show general practitioner Malaysia private clinic' in PubMed/PMC/Google Scholar; (2) BookDoc or Klinify published analytics on GP booking completion rates (may be in tech press or company blog, but even secondary confirmation helps directionally); (3) any Indonesian study on appointment no-show or patient non-attendance at klinik pratama — search 'tidak hadir janji temu klinik pratama Indonesia'; (4) check if Malaysia MOH Primary Care Division has published statistics on appointment utilization in Klinik Kesihatan (public, but provides directional baseline).",
+      "priority": "medium"
+    }
+  ],
+  "high_tier_claims_with_evidence": [],
+  "source_diversity_by_category": {
+    "primary-academic": 16,
+    "primary-ministry": 3,
+    "secondary-news": 4,
+    "secondary-trade": 7,
+    "auto-low-vendor": 1,
+    "assumed-no-source": 5
+  },
+  "unique_sources_total": 31,
+  "unique_primary_sources": 19,
+  "unique_secondary_sources": 11,
+  "unique_auto_low_sources": 1,
+  "notable_source_improvements_vs_stage_1": [
+    "Multiple peer-reviewed PROLANIS studies (PMC12538241, PMC10576047, PMC11422728) are directly on-topic for Indonesia CDM recall — stronger domain fit than Stage 1's US/proxy reliance",
+    "Malaysia NHMS 2023 and NDR 2023 data cited (via Scientific Reports and MOH publication) — primary-ministry tier for Malaysia CDM prevalence",
+    "BPJS Kesehatan Journal (primary-ministry) cited for RPPT performance — authoritative for Indonesia CDM programme outcomes",
+    "JMIR Formative Research 2025 and Frontiers in Health Services 2025 both directly on-topic for Indonesia FHIR/CDM context",
+    "Two RCTs for reminder efficacy (PMC9126539, PMC5130951) provide strong causal evidence for PP2.3 intervention validity"
+  ],
+  "persistent_gaps_vs_stage_1": [
+    "All cost anchors (labor time for transcription, recall dispatch, no-show handling) remain either assumed or sourced from a single secondary-trade blog (rovinghealth.com) — no time-motion study for ID/MY private GP context",
+    "Salary data still from JobStreet/Indeed aggregators — no BPS Indonesia or DOSM Malaysia primary labor statistics",
+    "No Indonesia GP clinic-level no-show rate found; hospital proxy used",
+    "Malaysia myHIX status claim uses a 2021 article — needs current policy source",
+    "All willingness-to-pay figures ([ASSUMED-5], [ASSUMED-6], [ASSUMED-7]) remain unvalidated"
+  ],
+  "gate_decision_recommendation": "ship-with-flag",
+  "gate_reasoning": "Of 37 claims scored, 3 are High confidence (PROLANIS recall failure composite from 3 independent primary-academic sources; BPJS FKTP CDM utilization gap with Frontiers + BPJS Journal corroboration; reminder-efficacy RCT evidence). 9 claims reach Medium, primarily where 2 independent primary-academic sources converge on the same finding (SATUSEHAT FHIR barriers, NHMS 2023 prevalence, Malaysia HbA1c control rates, FHIR PDF-delivery gap). 25 claims are Low — driven by single-source citations for high-quality BPJS/Kemenkes data (which need one corroborating independent source to upgrade), assumed labor time and fee benchmarks, and secondary-trade sources for operating cost estimates. The central strength of Stage 2 versus Stage 1 is that the core epidemiological and programme-performance claims now have primary-tier sources (BPJS Kesehatan Journal, NHMS 2023, peer-reviewed PROLANIS studies) that directly cover the target geography. The core weakness is that the cost model for PP2.1 (lab result parsing labor) rests entirely on a single industry blog for its two key parameters (time benchmark and error rate), and cost models for PP2.2 and PP2.3 continue to compound assumed-frequency inputs with secondary-trade salary data. Three weak claims are flagged for deep research, prioritized: (1) lab result transcription error rate and labor benchmark — needs a peer-reviewed source to replace the single blog citation; (2) RPPT 32% figure corroboration — one additional citation would upgrade the strongest pain-point anchor from Low to High; (3) GP-clinic-specific no-show rate for Malaysia/Indonesia — hospital proxies currently carry the entire PP2.3 frequency case."
+}

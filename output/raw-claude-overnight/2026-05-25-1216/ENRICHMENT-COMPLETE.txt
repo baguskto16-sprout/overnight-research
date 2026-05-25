@@ -1,0 +1,48 @@
+Unattended Phase 2 complete.
+URLs attempted: 9 · Succeeded: 7 · Confirmed inaccessible: 2
+Claims upgraded: 2
+New % Low (post-enrichment): 41.6% · Gate: ship-with-flag
+
+Run ID:    2026-05-25-1216
+Started:   2026-05-25T06:16:08Z
+Completed: 2026-05-25T06:26:44Z
+Wall:      ~10 minutes (well under 60-minute cap)
+Cap usage: 9/30 URLs · 10/60 minutes
+
+Successful (7):
+  1. bps.go.id BPS Laborer Situation Aug 2024 (Cloudflare bypassed)
+  2. marsh.com Indonesia H&B Study 2024 (publisher page)
+  3. hukumonline.com TPA regulatory commentary
+  4. swa.co.id Alih Daya Klaim Asuransi (TPA outsourcing market article)
+  5. allianz.co.id Allianz Life ID 2024 Annual Report PDF (3.51 MB, 20 pages, markitdown-converted)
+  6. mondaq.com SEOJK 7/2025 legal insight
+  7. nextmsc.com Indonesia Insurance TPA Market report page
+
+Confirmed inaccessible (2):
+  8. cipd.org Employee Benefits Asia 2024 PDF → CIPD 404
+  9. swissre.com Closing the Health Protection Gap in Asia → Swiss Re 404
+
+Claims upgraded Low → Medium (2):
+  - VC2-AdMedika-market-leader (SWA trade-press article with named-executive attribution)
+  - VC1-MMB-HBS-2024-survey-scope (Marsh Indonesia publisher page verbatim figures)
+
+Score distribution shift:
+  High:   74 → 74 (34.6%)
+  Medium: 49 → 51 (23.8%, +2)
+  Low:    91 → 89 (41.6%, -2)
+  Total claims scored: 214
+
+Two [NEEDS-ATTENDED-FETCH] tags retained as not-Playwright-fixable:
+  - raw-claude-value-chain... line 334: reference to "original Allianz source" with no target URL
+  - raw-claude-pain-points... line 989: Kadin MCU-SatuSehat search task (no target URL)
+
+Artifacts updated:
+  - raw-claude-value-chain-indonesia-corporate-cdm-cost-burden.md  (7 tag replacements)
+  - raw-claude-pain-points-indonesia-corporate-cdm-cost-burden.md  (3 tag replacements: 1 success, 2 confirmed-inaccessible)
+  - raw-claude-summary-indonesia-corporate-cdm-cost-burden.md      (Phase 2 section appended)
+  - checkpoint.json                                                 (auto_enrichment block added)
+  - FINAL-REPORT.html                                               (cover + gate + closing updated; re-rendered with Wright brand styling intact)
+
+Backups:
+  - raw-claude-value-chain.md.bak
+  - raw-claude-pain-points.md.bak

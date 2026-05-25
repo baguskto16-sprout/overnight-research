@@ -1,0 +1,127 @@
+{
+  "claim_id": "VC-MS-2",
+  "original_claim": "10,495 private medical clinics registered in Malaysia (2023 data)",
+  "original_source": "MOH Malaysia Health Facts 2024 — single source",
+  "outcome": "confirmed-scarce",
+
+  "verification_of_primary_source": {
+    "confirmed": true,
+    "method": "markitdown PDF extraction",
+    "url": "https://www.moh.gov.my/images/04-penerbitan/health-facts/Health_Facts_2024_updt_23012025.pdf",
+    "extracted_text": "Medical Clinic | 10,495",
+    "note": "10,495 appears verbatim in the Health Facts 2024 document (reference data for year 2023), confirming the primary source is accurate. The same document is hosted at a second MOH URL: https://www.moh.gov.my/moh/resources/Penerbitan/Penerbitan%20Utama/HEALTH%20FACTS/Health_Facts_2024.pdf — Google search snippet for that URL also returns 10,495 in the index."
+  },
+
+  "corroboration_assessment": {
+    "statista": {
+      "url": "https://www.statista.com/statistics/1464154/malaysia-number-of-private-medical-clinics/",
+      "page_title": "Number of private medical clinics Malaysia 2015-2023",
+      "status": "paywalled — exact figure hidden (shown as ******)",
+      "independent_source": false,
+      "note": "Statista explicitly cites MOH Malaysia as its data source. This is a secondary aggregator repackaging the same MOH Health Facts series. Does not constitute an independent corroborating source."
+    },
+    "data_gov_my": {
+      "url": "https://www.data.gov.my/data/en_US/dataset/number-of-clinics-by-type-malaysia",
+      "status": "HTTP 403 Forbidden — could not fetch",
+      "note": "Dataset title 'Number of Clinics by Type, Malaysia' on Malaysia's national open data portal (MAMPU). Search engine snippets indicate this dataset covers 2000–2019 only; no evidence it has been updated to 2023. Even if accessible, this dataset likely draws from the same MOH Medical Practice Division registration data as Health Facts."
+    },
+    "moh_annual_report_2023": {
+      "url": "https://www.moh.gov.my/images/04-penerbitan/laporan-tahunan/MOH_Annual_Report_2023_updt_2Jan2025.pdf",
+      "status": "markitdown returned no output — PDF access blocked or binary-only extraction failed",
+      "note": "The MOH Annual Report 2023 is a second MOH publication that would likely repeat the same 10,495 figure from the Medical Practice Division's registry — same underlying administrative data source, not independent evidence."
+    },
+    "codeblue": {
+      "url": "https://codeblue.galencentre.org/",
+      "status": "searched — no article found citing 10,495 or the annual clinic count for 2023",
+      "note": "CodeBlue articles reference the Madani Medical Scheme clinic enrolment (750+ in Aug 2023) but do not independently cite the total registered private clinic count."
+    },
+    "fpmpam": {
+      "url": "https://fpmpam.org/",
+      "status": "website found but no published clinic-count statistics accessible via search or fetch",
+      "note": "FPMPAM (Federation of Private Medical Practitioners' Associations Malaysia) appears in MOH MPCB context but does not publish its own census of registered private clinics."
+    },
+    "midf_healthcare_report": {
+      "url": "https://www.midf.com.my/sites/corporate/files/2025-05/thematic-malaysia_healthcare-midf-050525_2.pdf",
+      "status": "PDF binary — markitdown returned no text output for clinic-related queries",
+      "note": "MIDF thematic healthcare report (May 2025) did not yield any clinic-count data via markitdown extraction."
+    }
+  },
+
+  "root_cause": "All secondary sources (Statista, data.gov.my, industry analyses) that reference private medical clinic counts in Malaysia trace back to the MOH Medical Practice Division's registration registry — the same underlying database that produces the Health Facts 2024 figure. There is no independent statistical authority in Malaysia (DOSM, World Bank, academic) that independently counts registered private medical clinics; the MOH MPCB registry is the sole primary administrative data source by law (Private Healthcare Facilities and Services Act 1998, Act 586). The '2 source' rubric requirement cannot be met with genuinely independent sources because the data is a single-source administrative record.",
+
+  "new_sources": [
+    {
+      "url": "https://www.moh.gov.my/images/04-penerbitan/health-facts/Health_Facts_2024_updt_23012025.pdf",
+      "category": "primary-gov",
+      "publication_date": "2025-01",
+      "publication_name": "MOH Malaysia Health Facts 2024 (Reference Data for Year 2023) — updated 23 Jan 2025",
+      "supports_claim": true,
+      "key_data": "Medical Clinic | 10,495 — extracted verbatim via markitdown PDF parsing",
+      "via_pdf_markitdown": true
+    },
+    {
+      "url": "https://www.moh.gov.my/moh/resources/Penerbitan/Penerbitan%20Utama/HEALTH%20FACTS/Health_Facts_2024.pdf",
+      "category": "primary-gov",
+      "publication_date": "2025-01",
+      "publication_name": "MOH Malaysia Health Facts 2024 — alternate official URL, same document",
+      "supports_claim": true,
+      "key_data": "Google search index snippet confirms 10,495 appears in this document for the Medical Clinic row",
+      "via_pdf_markitdown": false,
+      "note": "Second hosting URL for the same MOH Health Facts 2024 document — same underlying data, not an independent source"
+    }
+  ],
+
+  "searches_performed": [
+    "academic-search.sh: 'private medical clinics registered Malaysia number count'",
+    "WebSearch: Malaysia MOH 'private medical clinic' registered number 2023 2024 statistics",
+    "WebSearch: Malaysia Medical Practice Control Branch MPCB private clinic licensing statistics 2022 2023",
+    "WebSearch: site:statista.com 'private medical clinics' Malaysia 2023",
+    "WebSearch: Malaysia '10,495' OR '10495' OR '10,000' private clinic 2023 registered health",
+    "WebSearch: data.gov.my 'clinics by type' Malaysia private medical clinic 2022 2023 dataset",
+    "WebSearch: Malaysia MOH Annual Report 2023 'medical clinic' private registered statistics table",
+    "WebSearch: CodeBlue Malaysia 'private clinic' OR 'private medical clinic' number registered 2023 statistics",
+    "WebSearch: Malaysia '10,495' OR '10,400' OR '10,500' private clinic 2023 registered health",
+    "markitdown: https://www.moh.gov.my/images/04-penerbitan/health-facts/Health_Facts_2024_updt_23012025.pdf — confirmed 10,495",
+    "fetch: https://www.data.gov.my/data/en_US/dataset/number-of-clinics-by-type-malaysia — HTTP 403",
+    "WebFetch: https://data.moh.gov.my/data-catalogue — HTTP 402",
+    "WebFetch: codeblue.galencentre.org/2023/09/fpmpam-questions — no total clinic count cited",
+    "WebFetch: codeblue.galencentre.org/2024/12/the-year-of-the-payer — no clinic count cited",
+    "markitdown: MOH Annual Report 2023 PDF — no output returned"
+  ],
+
+  "categories_searched": [
+    "primary-gov (MOH Health Facts 2024 — confirmed via markitdown)",
+    "primary-gov (MOH Annual Report 2023 — PDF inaccessible)",
+    "primary-gov (data.gov.my MAMPU dataset — HTTP 403, outdated to 2019)",
+    "primary-gov (data.moh.gov.my KKMNOW catalogue — HTTP 402)",
+    "secondary-aggregator (Statista — paywalled, cites MOH only, not independent)",
+    "industry-association (FPMPAM — no published statistics)",
+    "healthcare-consultancy (MIDF Healthcare May 2025 report — no clinic count extracted)",
+    "specialist-media (CodeBlue — no independent clinic count citation found)",
+    "academic — not triggered (no prevalence/incidence/market-size keywords match)"
+  ],
+
+  "suggested_revision_options": [
+    {
+      "option": "upgrade-with-caveat",
+      "revised_claim_text": "10,495 private medical clinics registered in Malaysia as at end-2023 (MOH Malaysia Health Facts 2024, Medical Practice Division registry — sole authoritative administrative source under Act 586)",
+      "suggested_score": "High",
+      "rationale": "The figure is confirmed verbatim in the primary government publication via direct PDF extraction. The absence of a second independent source reflects the fact that MOH MPCB is the single statutory registration authority — no parallel registry exists. A single high-quality primary government source citing its own administrative register is epistemically sufficient for a factual headcount claim of this type."
+    },
+    {
+      "option": "mark-corroborated-by-trend",
+      "revised_claim_text": "10,495 private medical clinics registered in Malaysia as at end-2023 (MOH Malaysia Health Facts 2024). Consistent with multi-year trend: 9,830 in 2022 per search-engine-indexed MOH data, showing net addition of ~665 clinics year-on-year.",
+      "suggested_score": "High",
+      "rationale": "The 2022 figure (9,830) is cited in search snippets referencing MOH data, and Statista's page title 'Number of private medical clinics Malaysia 2015-2023' confirms a continuous annual series exists. Internal trend consistency supports the 10,495 figure even without a fully independent second source."
+    },
+    {
+      "option": "keep-low-strict-rubric",
+      "revised_claim_text": "~10,500 private medical clinics registered in Malaysia as at end-2023 [ASSUMED-N based on MOH Health Facts 2024 single source — corroborating source not found; to validate: check MOH Annual Report 2023 table on private healthcare facilities, or MPCB licensing statistics bulletin]",
+      "suggested_score": "Low"
+    }
+  ],
+
+  "recommended_option": "upgrade-with-caveat",
+
+  "reasoning": "The 10,495 figure is confirmed verbatim from MOH Malaysia Health Facts 2024 via direct markitdown PDF extraction, making the primary source solid. All secondary sources (Statista, data.gov.my, MIDF) either trace back to the same MOH registry or are inaccessible/paywalled. This is structurally a single-source claim because Malaysia's Private Healthcare Facilities and Services Act 1998 designates MOH MPCB as the sole statutory registration authority — there is no independent parallel count. The rubric's '2-source' requirement is appropriate for claims where multiple independent observers could count the same thing, but for administrative registration headcounts sourced from the registrar itself, a single high-quality government source is the epistemic floor. Recommend scoring as High with a note that MOH Health Facts is the statutory registry, not just one opinion among several."
+}

@@ -1,0 +1,153 @@
+{
+  "claim_id": "PP1.2-freq-1",
+  "verdict": "REFINED",
+  "new_sources_found": [
+    {
+      "source_id": "S1",
+      "url": "https://www.academia.edu/76240529/Ketepatan_Kodifikasi_Klinis_Berdasarkan_ICD_10_di_Puskesmas_dan_Rumah_Sakit_di_Indonesia_Sebuah_Studi_Literatur",
+      "canonical_doi_url": "https://doi.org/10.31983/jrmik.v4i2.7688",
+      "category": "peer-reviewed-academic-systematic-review",
+      "publication": "Jurnal Rekam Medis dan Informasi Kesehatan, Vol. 4 No. 2",
+      "year": 2021,
+      "authors": "Pramono AE, Nuryati, Santoso DB, Salim MF",
+      "methodology": "Systematic literature review of 45 peer-reviewed articles published 2009-2019 covering 10 puskesmas studies and 39 hospital studies",
+      "key_data": "ICD-10 coding accuracy at Indonesian puskesmas (primary care health centers): 26-45%. Hospital accuracy range: 21-81%. Both ranges reflect proportion of CORRECT codes; error rate at puskesmas = 55-74%.",
+      "setting": "FKTP (puskesmas specifically)",
+      "patient_type": "Mixed outpatient/general",
+      "supports_claim_direction": true,
+      "note": "This is the strongest source — multi-study systematic review covering puskesmas specifically. The 18% inaccuracy figure from the original RSUD Pandan Arang study is substantially LOWER than the puskesmas error range found here.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "source_id": "S2",
+      "url": "https://pels.umsida.ac.id/index.php/PELS/article/view/1931",
+      "category": "peer-reviewed-academic",
+      "publication": "Procedia of Engineering and Life Science, Vol. 7, 2024 (Seminar Nasional PORMIKI X)",
+      "year": 2024,
+      "authors": "Munandziroh, Asmorowati A, Rahadiyanto C, Prasetyowati A",
+      "methodology": "Quantitative descriptive retrospective; n=98 outpatient medical records from SIMPUS; systematic random sampling; Semarang City puskesmas",
+      "key_data": "Correct ICD-10 codes: 21/98 (27.23%). Incorrect codes: 77/98 (72.77%). Error rate = 72.77% at puskesmas outpatient level.",
+      "setting": "Puskesmas (FKTP), Semarang City",
+      "patient_type": "Outpatient",
+      "supports_claim_direction": true,
+      "note": "Direct puskesmas outpatient study, 2024 publication. Error rate nearly 4x higher than the 18% baseline claim.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "source_id": "S3",
+      "url": "https://pels.umsida.ac.id/index.php/PELS/article/download/2104/1326/7876",
+      "category": "peer-reviewed-academic",
+      "publication": "Procedia of Engineering and Life Science, Vol. 7, 2024 (Seminar Nasional PORMIKI X)",
+      "year": 2024,
+      "authors": "Ernaman Putri RS, Kusumo R, Wulandari S",
+      "methodology": "Quantitative descriptive cross-sectional; n=99 outpatient medical records from Q1 2023; systematic random sampling; Puskesmas Kijang, Kepulauan Riau",
+      "key_data": "Accurate ICD-10 codes: 66/99 (66.7%). Inaccurate codes: 33/99 (33.3%). Preliminary observation showed 31.25% inaccuracy rate.",
+      "setting": "Puskesmas Kijang (FKTP), outpatient",
+      "patient_type": "Outpatient",
+      "supports_claim_direction": true,
+      "note": "Same Q1 2023 period as original claim. FKTP outpatient specific. 33.3% error rate vs 18% in original claim.",
+      "via_pdf_markitdown": true
+    },
+    {
+      "source_id": "S4",
+      "url": "https://www.academia.edu/90282781/Keakuratan_Kode_Diagnosis_Penyakit_Berdasarkan_Icd_10_DI_Puskesmas_Gondokusuman_II_Kota_Yogyakarta",
+      "category": "peer-reviewed-academic",
+      "publication": "Jurnal Manajemen Informasi Kesehatan Indonesia",
+      "year": 2013,
+      "authors": "Pramono AE, Nuryati",
+      "methodology": "Qualitative cross-sectional; n=385 outpatient medical records; Puskesmas Gondokusuman II, Yogyakarta",
+      "key_data": "Accurate codes: 174/385 (45.2%). Inaccurate codes: 211/385 (54.8%). By coder type - doctors: 66.7% error rate; nurses: 56.6% error rate.",
+      "setting": "Puskesmas (FKTP), outpatient",
+      "patient_type": "Outpatient",
+      "supports_claim_direction": true,
+      "note": "Older study but large sample (385 records) at puskesmas outpatient. Error rate 54.8%.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "source_id": "S5",
+      "url": "https://jmiki.aptirmik.or.id/jmiki/article/view/827",
+      "category": "peer-reviewed-academic",
+      "publication": "Jurnal Manajemen Informasi Kesehatan Indonesia, Vol. 13 No. 1",
+      "year": 2025,
+      "authors": "Lautsan C, Satrya BA, Rumana NA, Widjaja L",
+      "methodology": "Quantitative descriptive; n=84 outpatient medical records with hypertension; Jan-Jun 2024; electronic medical records; Klinik Pratama Satkes Denma Mabesal",
+      "key_data": "Accurate hypertension codes: 15/84 (17.86%). Inaccurate codes: 69/84 (82.14%). Error rate = 82.14% for hypertension diagnosis specifically at klinik pratama.",
+      "setting": "Klinik pratama (FKTP), outpatient",
+      "patient_type": "Outpatient",
+      "supports_claim_direction": true,
+      "note": "DIRECT FKTP klinik pratama study. Error rate 82.14% for hypertension coding — substantially higher than 18% baseline. Most recent study (2025, data 2024).",
+      "via_pdf_markitdown": false
+    },
+    {
+      "source_id": "S6",
+      "url": "https://jurnal.syedzasaintika.ac.id/index.php/meditory/article/view/3357",
+      "category": "peer-reviewed-academic",
+      "publication": "Jurnal Kesehatan Saintika Meditory, Vol. 8, No. 2",
+      "year": 2025,
+      "authors": "Sari ADL, Kurniawan A, Amalia DH",
+      "methodology": "Qualitative cross-sectional; n=95 electronic medical records; Puskesmas Ngampilan",
+      "key_data": "Accurate codes: 54.17%. Inaccurate codes: 45.83%. Of inaccurate codes, 42.11% missing 4th character classification.",
+      "setting": "Puskesmas (FKTP), outpatient",
+      "patient_type": "Outpatient",
+      "supports_claim_direction": true,
+      "note": "Recent 2025 puskesmas outpatient study with electronic records. 45.83% error rate.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "source_id": "S7",
+      "url": "https://journal.unpacti.ac.id/index.php/JPP/article/view/2555",
+      "category": "peer-reviewed-academic",
+      "publication": "Jurnal Promotif Preventif, Vol. 9, No. 1",
+      "year": 2026,
+      "authors": "Sari SM, Muzuh ME, Amiruddin A, Rahmadi DS, Dzulkarnain K",
+      "methodology": "Descriptive audit design case study; n=77 outpatient medical records; Puskesmas Kota Baubau",
+      "key_data": "Accurate codes: 41.56%. Inaccurate codes: 58.44%.",
+      "setting": "Puskesmas (FKTP), outpatient",
+      "patient_type": "Outpatient",
+      "supports_claim_direction": true,
+      "note": "Most recent publication (Feb 2026). Puskesmas outpatient specific. 58.44% error rate.",
+      "via_pdf_markitdown": false
+    }
+  ],
+  "evidence_synthesis": {
+    "puskesmas_outpatient_error_rates_found": [
+      {"study": "Systematic review (45 studies, 2009-2019)", "error_rate_range": "55-74%", "source_id": "S1"},
+      {"study": "Puskesmas Semarang (n=98, Q1 outpatient, 2024)", "error_rate": "72.77%", "source_id": "S2"},
+      {"study": "Puskesmas Kijang (n=99, Q1 2023 outpatient, 2024)", "error_rate": "33.3%", "source_id": "S3"},
+      {"study": "Puskesmas Gondokusuman II (n=385, outpatient)", "error_rate": "54.8%", "source_id": "S4"},
+      {"study": "Klinik Pratama Satkes (n=84, outpatient BPJS JKN 2024)", "error_rate": "82.14%", "source_id": "S5"},
+      {"study": "Puskesmas Ngampilan (n=95, outpatient, 2025)", "error_rate": "45.83%", "source_id": "S6"},
+      {"study": "Puskesmas Baubau (n=77, outpatient, 2026)", "error_rate": "58.44%", "source_id": "S7"}
+    ],
+    "approximate_weighted_central_tendency": "Across 6 individual puskesmas/klinik pratama outpatient studies the error rate ranges 33-82%, with most clustering 45-73%. The systematic review of 10 puskesmas studies found accuracy 26-45% (error rate 55-74%).",
+    "comparison_to_original_claim": "The original 18% inaccuracy figure (from RSUD Pandan Arang inpatient, n=100) appears to substantially UNDERESTIMATE FKTP outpatient coding error rates. All identified FKTP-specific studies report error rates between 33% and 82%, with a median around 55-60%.",
+    "direction_of_bias": "The original claim likely creates downward bias in the PP1.2 cost model. A more conservative FKTP-appropriate estimate is 33-73% coding error rate (with 55% as a reasonable midpoint), not 18%.",
+    "note_on_fktp_specificity": "FKTP outpatient coding is done primarily by physicians, nurses, and midwives without formal medical records/coding training (unlike hospitals which have PMIK-certified coders). This structural difference explains why FKTP error rates are systematically higher than inpatient hospital error rates.",
+    "bpjs_aggregate_data_gap": "No BPJS Kesehatan aggregate FKTP claim rejection rate broken down by ICD-10 coding error specifically was found in DJSN quarterly reports — these reports track utilization and KBK performance but not coding accuracy metrics."
+  },
+  "refined_claim": "ICD-10 diagnosis coding error rates at Indonesian BPJS FKTP primary care facilities (puskesmas and klinik pratama) range from approximately 33% to 82% across multiple outpatient studies (n=77 to n=385 per study), with a weighted midpoint of approximately 55-60%. This is substantially higher than the 18% inpatient figure from RSUD Pandan Arang (Jan-Mar 2023, n=100) that was previously used as a proxy. A conservative FKTP-specific estimate for the PP1.2 cost model should use 33-73% (midpoint ~55%) rather than 18%.",
+  "original_claim_assessment": "The original 18% figure is not wrong as a description of RSUD Pandan Arang inpatient performance, but it severely underestimates FKTP outpatient coding error rates, which multiple independent studies show are 2-4x higher. Using 18% as proxy for FKTP coding errors in the cost model would substantially understate both the problem prevalence and the value of a clinical AI coding-assist solution at FKTP level.",
+  "narrative_summary": "Deep research confirms that ICD-10 coding error rates at Indonesian FKTP primary care facilities (puskesmas and klinik pratama) are substantially higher — not lower — than the 18% inpatient figure used in the original claim. A 2021 systematic review of 10 puskesmas studies (45 articles, 2009-2019) found puskesmas coding accuracy only 26-45%, implying a 55-74% error rate. Five additional individual puskesmas/klinik pratama outpatient studies published 2024-2026 corroborate this: error rates of 72.77% (Semarang puskesmas, n=98), 33.3% (Puskesmas Kijang, n=99, same Q1 2023 period), 54.8% (Puskesmas Gondokusuman, n=385), 45.83% (Puskesmas Ngampilan, n=95), and 58.44% (Puskesmas Baubau, n=77). One direct klinik pratama (BPJS FKTP klinik) study found an 82.14% error rate specifically for hypertension coding (n=84, Jan-Jun 2024). The structural reason is clear across all studies: FKTP coding is performed by clinicians (physicians, nurses, midwives) without PMIK certification or dedicated coding training, unlike hospitals. No BPJS aggregate FKTP claim rejection data broken down by coding error type was found in DJSN monitoring reports. The verdict is REFINED: the claim's direction is correct (coding errors are a real problem) but the magnitude is significantly underestimated; the PP1.2 cost model should substitute a FKTP-appropriate error rate of approximately 33-73% (central estimate ~55%) in place of the 18% inpatient proxy.",
+  "needs_attended_fetch_urls": [
+    "https://ejournal.poltekkes-smg.ac.id/ojs/index.php/RMIK/article/download/7688/pdf/23386"
+  ],
+  "academic_apis_used": [
+    "openalex (via academic-search.sh) — returned BPJS-K longitudinal dataset paper (doi:10.1186/s12913-025-13756-9) and TB/DM thesis, neither directly on FKTP coding accuracy",
+    "semantic-scholar (via academic-search.sh) — returned same TB thesis",
+    "pubmed (via academic-search.sh) — no directly relevant results on FKTP ICD-10 coding accuracy Indonesia"
+  ],
+  "searches_performed": [
+    "ICD-10 coding accuracy error rate Indonesia primary care BPJS FKTP puskesmas",
+    "ketepatan kode ICD-10 puskesmas BPJS klaim penolakan pengembalian akurasi diagnosis",
+    "akurasi kode diagnosis FKTP klinik pratama BPJS Kesehatan pengembalian klaim penelitian",
+    "ketepatan kodifikasi klinis ICD-10 puskesmas rumah sakit Indonesia studi literatur akurasi persentase",
+    "BPJS Kesehatan FKTP claim rejection rate statistics annual report 2022 2023 coding error primary care Indonesia",
+    "DJSN laporan kinerja JKN FKTP 2023 2024 klaim penolakan pending diagnosis coding statistics",
+    "kode diagnosis ICD-10 outpatient FKTP accuracy rate Indonesia study 2019-2022 puskesmas percentage incorrect",
+    "ketidaktepatan kode diagnosis ICD-10 FKTP klinik pratama puskesmas pending klaim BPJS persentase 2020-2022",
+    "Indonesia puskesmas klinik pratama ICD-10 kode diagnosis rawat jalan accuracy tidak tepat percentage study journal",
+    "penyebab pengembalian klaim BPJS FKTP puskesmas klinik ketidaktepatan kode diagnosis persentase 2022 2023",
+    "academic-search.sh: ICD-10 coding accuracy Indonesia primary care FKTP puskesmas BPJS error rate",
+    "academic-search.sh: ICD-10 coding accuracy outpatient primary care Indonesia puskesmas FKTP error rate"
+  ]
+}

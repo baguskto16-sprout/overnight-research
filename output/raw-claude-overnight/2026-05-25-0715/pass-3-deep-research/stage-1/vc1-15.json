@@ -1,0 +1,28 @@
+{
+  "claim_id": "VC1.15",
+  "verdict": "refined",
+  "primary_number": "~12.0M for Greater Jakarta (Jabodetabek) in 2024; ~14.3M at 2019 national-MC peak",
+  "primary_url": "https://documents1.worldbank.org/curated/en/519991580138621024/pdf/Aspiring-Indonesia-Expanding-the-Middle-Class.pdf",
+  "publisher": "World Bank (2019) — Aspiring Indonesia: Expanding the Middle Class, using 2016 Susenas microdata",
+  "publisher_tier": 2,
+  "methodology_note": "World Bank 2019 report (Figure E.9, Figure 3.3) states ~13 million MC in Greater Jakarta (Jabodetabek) in 2016, equal to 25% of the national MC total (52-53.6M). The report also states 76% of national MC is urban, and two-thirds of urban MC lives in major metropolitan agglomerations. BPS confirmed the national MC peaked at 57.33M in 2019 then declined to 47.85M by 2024 (Mar 2024 Susenas). Scaling the Greater Jakarta 25% share to the 2024 national total gives ~11.6-12.0M for Greater Jakarta in 2024. The claimed 13.5-14.5M range corresponds closely to Greater Jakarta at the 2019 national MC peak (57.33M × 25% = 14.3M) — suggesting the original forward-scaling by Claude inadvertently anchored on a ~2019 peak rather than the 2024 post-decline figure. No provincial or city-level disaggregation of the 47.85M figure was released by BPS in October 2024 (BPS press release confirmed 403 Forbidden; national total only). No SMERU or BCG/McKinsey post-2019 city-level breakdown found within search budget.",
+  "city_breakdown": {
+    "jakarta": "DKI Jakarta proper: not separately quantified — DKI is ~31% of Jabodetabek population (~10.6M of ~34M), implying DKI-only MC ≈ 3.5-4.0M (rough population-share proxy only)",
+    "jabodetabek": "~13M (2016 Susenas, World Bank Aspiring Indonesia Figure E.9); scaled to 2024 national MC decline → ~11.6-12.0M",
+    "surabaya": "Identified in World Bank report as a city with MC rate 'significantly higher' than AMC rate, but no absolute headcount given in the extractable text — chart data not recoverable from PDF extraction",
+    "other_tier_1_total": "Two-thirds of urban MC (40.6M in 2016) live in major metro agglomerations = ~27M total metro MC in 2016; minus Greater Jakarta (13M) = ~14M for all other major metros combined in 2016; scaled to 2024 → ~12.5M for all non-Jakarta major metros"
+  },
+  "what_was_attempted": [
+    "BPS bps.go.id/en/news/2024/10/25/622 — HTTP 403 Cloudflare block [NEEDS-ATTENDED-FETCH]: https://www.bps.go.id/en/news/2024/10/25/622/indonesia-s-middle-class--a-crucial-pillar-for-national-economic-stability.html",
+    "BPS Jakarta DKI Welfare Statistics 2024 jakarta.bps.go.id — HTTP 403 Cloudflare block [NEEDS-ATTENDED-FETCH]: https://jakarta.bps.go.id/en/publication/2024/12/13/ce20289e27a0054b3c2e9362/statistik-kesejahteraan-rakyat-provinsi-dki-jakarta-2024.html",
+    "World Bank Aspiring Indonesia landing page worldbank.org — fetched successfully; confirmed ~52M national MC (2016), no city breakdown on page",
+    "World Bank Aspiring Indonesia PDF markitdown conversion — successful; extracted key stats: 13M Greater Jakarta MC in 2016 = 25% of national, 76% of MC is urban, two-thirds of urban MC in major metro agglomerations",
+    "WebSearch: BPS October 2024 kelas menengah 47.85M provincial breakdown — confirmed 47.85M national figure; no provincial disaggregation found in search results",
+    "WebSearch: SMERU Research Institute Indonesia middle class city estimates 2022-2024 — no city-level SMERU papers found within budget",
+    "WebSearch: McKinsey BCG Indonesia consuming class urban Tier-1 cities 2020-2023 — found McKinsey consuming class concept (55M urban + 15M rural) but no Tier-1 city breakdown",
+    "WebSearch: Indonesia kelas menengah Jabodetabek Pulau Jawa percentage 2023-2024 — no provincial/city breakdown found",
+    "Fulcrum.sg analysis of Indonesia middle class 2024 — national level only, no city breakdown",
+    "Investortrust.id BPS 47.85M profile article — confirmed national figure only, no geographic breakdown"
+  ],
+  "recommended_edit_to_canonical": "Revise VC1.15 as follows: (1) Change the figure from '13.5-14.5M' to '~12M' for Greater Jakarta (Jabodetabek) specifically in 2024, based on the World Bank 2019 finding that Greater Jakarta held ~25% of Indonesia's national MC (13M of 52-53M in 2016), scaled to BPS's confirmed 2024 national MC of 47.85M. (2) Flag that the original 13.5-14.5M range corresponds to the 2019 peak (57.33M × 25% = 14.3M), not 2024. (3) If 'Tier-1 urban MC' means Greater Jakarta (Jabodetabek) only: ~11.6-12.0M [MEDIUM confidence, World Bank 2016 + BPS 2024 scaling]. (4) If 'Tier-1 urban MC' means all major metro agglomerations (Jakarta + Surabaya + Bandung + Medan + Semarang + others): ~24M in 2024 [LOW-MEDIUM confidence]. (5) No BPS provincial disaggregation for 2024 was accessible within the search budget — BPS Cloudflare-blocks direct access. Recommend marking downstream estimates that depend on this figure as ASSUMED until BPS Susenas 2024 provincial table is obtained via attended fetch."
+}

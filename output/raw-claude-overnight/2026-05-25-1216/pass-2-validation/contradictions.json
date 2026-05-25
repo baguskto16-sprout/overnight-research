@@ -1,0 +1,304 @@
+{
+  "generated_at": "2026-05-25T00:00:00+07:00",
+  "run_id": "2026-05-25-1216",
+  "scan_method": "contradiction-finder v1",
+  "stages_compared": [1, 2, 3, 4, 5, 6],
+  "contradictions": [
+    {
+      "id": "C-A1",
+      "class": "A",
+      "severity": "high",
+      "stages_involved": [1, 3, 4, 5, 6],
+      "metric_or_actor": "Indonesia diabetes adult prevalence",
+      "values_compared": {
+        "stage_1_pain_points": "11.7% (IDF Diabetes Atlas 2024, cited as adult prevalence; also SKI 2023 at 11.7% adults ≥15)",
+        "stage_3_pain_points": "11.7% (IDF Diabetes Atlas 2024, cited at PP 3.2)",
+        "stage_4_pain_points": "11.7% (SKI 2023 / Databoks, adults ≥15)",
+        "stage_5_pain_points": "11.7% (SKI 2023, cited multiple times)",
+        "stage_6_value_chain": "Two values cited in same document: 11.7% (SKI 2023, adults ≥15) AND 11.0% age-standardised (IDF Atlas 2024, adults 20-79)"
+      },
+      "description": "Stage 6 value chain explicitly cites two different prevalence figures in the same market-size table: 11.7% from SKI 2023 (≥15 years, blood-glucose criterion) and 11.0% age-standardised from IDF Atlas 2024 (20-79 years). Stages 1-5 all use 11.7% as the single cited figure. The population denominators differ (≥15 vs 20-79, blood glucose vs IDF modelling), making these measures non-interchangeable. Stage 6 PP 6.3 uses 11.7% in its cohort model without noting the 11.0% alternative. No stage reconciles the two measures or notes which denominator a corporate workforce calculation should use. The 6% spread between 11.7% and 11.0% is below the 30% materiality threshold, but the conflation of two methodologically distinct measures in one corpus — presented to a corporate ROI audience — creates a credibility risk when a sophisticated buyer cross-references sources.",
+      "preferred_canonical_value": "Use 11.7% (SKI 2023, blood glucose criterion, ≥15 years) as the corporate workforce denominator with explicit note that IDF Atlas reports 11.0% age-standardised (20-79) using a different methodology; the two are not directly comparable. Where a working-age corporate workforce (25-55) is the target, neither is perfectly calibrated — flag as [ASSUMED-2] per Stage 6's own tagging.",
+      "resolution_priority": "nice-to-have"
+    },
+    {
+      "id": "C-A2",
+      "class": "A",
+      "severity": "high",
+      "stages_involved": [1, 2, 3, 4, 5, 6],
+      "metric_or_actor": "Indonesia diabetes undiagnosed rate",
+      "values_compared": {
+        "stage_1_pain_points": "73.2% (IDF Diabetes Atlas 2024)",
+        "stage_2_pain_points": "73.2% (IDF Diabetes Atlas 2024)",
+        "stage_3_pain_points": "73.2% (IDF Diabetes Atlas 2024)",
+        "stage_4_pain_points": "73.2% (IDF Diabetes Atlas 2024, SKI 2023)",
+        "stage_5_pain_points": "73.2% (IDF Diabetes Atlas 2024)",
+        "stage_6_value_chain": "73.2% (IDF Diabetes Atlas 2024) — but Stage 6 PP note flags SKI 2023 implies ~81% undiagnosed (9.5% blood-glucose gap vs 2.2% self-reported diagnosis)",
+        "stage_6_pain_point_6_1": "73.2% used in cohort models BUT footnote states SKI 2023 blood-glucose minus diagnosis gap implies ~81% undiagnosed"
+      },
+      "description": "All stages consistently cite 73.2% (IDF 2024) as the undiagnosed rate. Stage 6 pain point 6.1 introduces a second implicit estimate — SKI 2023 shows 11.7% blood-glucose-based vs 2.2% self-reported diagnosis, implying ~81% undiagnosed — but this higher estimate is never used in any cohort model in any stage, nor is the discrepancy flagged in Stages 1-5. The 73.2% vs ~81% spread is a 10.7 percentage-point gap and is load-bearing for the cohort arithmetic (85 undetected vs ~95 undetected per 1,000 employees). The discrepancy is produced by IDF's modelling approach vs. SKI's direct prevalence-minus-diagnosis arithmetic and is not methodologically equivalent; however, no stage explains which to use for corporate cohort modelling. Stage 6's own footnote contradicts the value used in its cohort model on the same page.",
+      "preferred_canonical_value": "73.2% (IDF Atlas 2024 modelled estimate) is the defensible canonical figure because it uses a validated methodology across countries. The SKI-derived ~81% is a lower-bound estimate from a different measurement approach. Use 73.2% for all inter-stage cohort models with an explicit footnote noting the SKI arithmetic yields a higher implied rate; do not mix the two without explanation.",
+      "resolution_priority": "immediate"
+    },
+    {
+      "id": "C-A3",
+      "class": "A",
+      "severity": "high",
+      "stages_involved": [1, 3, 4],
+      "metric_or_actor": "Indonesia medical cost inflation — MMB figures (2023 actual / 2024 forecast / 2025 forecast)",
+      "values_compared": {
+        "stage_1_value_chain_pre_dr": "13.6% (2023) cited in pain-point narrative as 'circulating in Indonesia press'",
+        "stage_1_pain_points_after_dr_patch": "14.6% (2023 actual) / 17.9% (2024 forecast) / 19.0% (2025 forecast) — explicitly states 13.6% was a secondary-source mis-attribution from Prastyo & Gani retiree study",
+        "stage_3_pain_points": "13.6% (highest in Asia per GAIP 2025) cited at PP 3.1 RC2 — appears to be the unrepatched number",
+        "stage_3_value_chain": "17.9% forecast for 2024 and 19.0% for 2025 cited correctly at Activities section bullet 4",
+        "stage_4_pain_points": "13.6% in 2025 cited at PP 4.3 source (24): 'Indonesia medical cost inflation 13.6% in 2025, highest in Asia' — a different year attribution"
+      },
+      "description": "DR5 (MMB-trend.json) found that 13.6% is a mis-attribution from Prastyo & Gani's retiree benchmark, not the MMB Health Trends global insurer survey. MMB Health Trends 2025 shows Indonesia 2023 actual = 14.6%, 2024 forecast = 17.9%, 2025 forecast = 19.0%. Stage 1's pain-points file was patched with the correct figures and the 13.6% provenance explanation. However Stage 3 PP 3.1 RC2 still says 'medical cost inflation at 13.6% (highest in Asia per GAIP 2025)' — using the unrepatched figure from a different sourced to a different year (GAIP 2025, not MMB). Stage 4 PP 4.3 cites 'Indonesia medical cost inflation 13.6% in 2025, highest in Asia' — which combines the discredited 13.6% value with a 2025 year attribution, compounding the error. Stage 3's value chain section correctly uses 17.9%/19.0%. The result is three different numbers attributable to 'Indonesia medical cost inflation' across the corpus (13.6%, 14.6%, 19.0%) without consistent source or year attribution.",
+      "preferred_canonical_value": "MMB Health Trends 2025 (global insurer panel): Indonesia 2023 actual = 14.6%; 2024 forecast = 17.9%; 2025 forecast = 19.0%. Aon GMTRR (different panel): 2024 actual = 13.1%; 2025 forecast = 16.2%; 2026 forecast = 16.9%. The 13.6% figure should be retired from all stages; it traces only to Prastyo & Gani's retiree-family cost benchmark, a separate product. GAIP 2025's 13.6% (Stage 3, Stage 4) needs source tracing — if GAIP is reporting a 2025 actual that has come in at 13.6%, that is a separate datapoint from MMB forecast figures and should be cited with its own year attribution.",
+      "resolution_priority": "immediate"
+    },
+    {
+      "id": "C-A4",
+      "class": "A",
+      "severity": "medium",
+      "stages_involved": [1, 3],
+      "metric_or_actor": "AAJI total life-sector health claims paid (full year 2024)",
+      "values_compared": {
+        "stage_1_value_chain_market_size_note": "Stage 1 does not cite this figure directly",
+        "stage_2_value_chain_market_size": "IDR 20.91 trillion (~$1.35B) Q3 2024 cumulative — labelled 'Q3 2024 cumulative', Medium confidence",
+        "stage_3_value_chain_market_size": "IDR 24.18 trillion (~$1.56B) FY2024 — labelled 'High', sourced from AAJI FY2024 press conference 28 Feb 2025"
+      },
+      "description": "Stage 2 cites AAJI Q3 2024 cumulative health claims at IDR 20.91 trillion, while Stage 3 cites AAJI full-year 2024 at IDR 24.18 trillion. These are not contradictory on their face — Q3 cumulative should be lower than full-year — but Stage 2's source note says 'Q3 2024 IDR 20.91 trillion cited in Kontan trade press corroboration' while the DR output (VC1-mkt-6.json) confirms FY2024 = IDR 24.18 trillion from AAJI's own press release. The issue is that Stage 2 frames the Q3 cumulative figure as describing the 'AAJI life-health claims paid' market size without explicitly labelling it as a partial-year figure in the running text. A reader comparing Stage 2 and Stage 3's market-size tables sees IDR 20.91T vs IDR 24.18T against what looks like the same metric. Delta = 15.6%, below the 30% materiality threshold, but the year-period difference is not conspicuous in Stage 2.",
+      "preferred_canonical_value": "Use IDR 24.18 trillion (AAJI FY2024, sourced from AAJI press conference 28 Feb 2025, High confidence per Stage 3) as the canonical AAJI life-sector health claims figure. Stage 2's IDR 20.91T should be annotated as a Q3 2024 partial-year figure to avoid confusion.",
+      "resolution_priority": "nice-to-have"
+    },
+    {
+      "id": "C-A5",
+      "class": "A",
+      "severity": "high",
+      "stages_involved": [1, 3],
+      "metric_or_actor": "AAUI general insurance health GWP (2024)",
+      "values_compared": {
+        "stage_2_value_chain": "IDR 11.82 trillion (~$760M at 15,500) — labelled High, sourced from AAUI official Q4 2024 statistical report",
+        "stage_3_value_chain": "IDR 11.82 trillion (~$762M at 15,500) — labelled High, same source"
+      },
+      "description": "Both Stage 2 and Stage 3 cite IDR 11.82 trillion for AAUI general insurance health GWP 2024. These are consistent. However the USD conversions differ: Stage 2 shows ~$760M and Stage 3 shows ~$762M. The Stage 2 text also has two different exchange rates in use: IDR 15,500/USD is stated for this conversion, but the Stage 4 pain-points header uses IDR 16,200/USD (May 2026 BI mid-rate). This is not a metric-value contradiction but is a systematic exchange-rate inconsistency across the corpus that will affect any cross-stage USD comparison derived from the same IDR base figures.",
+      "preferred_canonical_value": "The IDR 11.82T figure is consistently cited and is correct. Standardise all IDR-to-USD conversions on a single stated rate; given Stage 4 uses IDR 16,200/USD (May 2026 BI mid-rate) and Stage 1 value chain uses IDR 15,500/USD (2024 Bank Indonesia average), pick one rate per temporal context and state it explicitly. 2024 annual figures should use IDR 15,500; 2026 calculations should use IDR 16,200.",
+      "resolution_priority": "nice-to-have"
+    },
+    {
+      "id": "C-A6",
+      "class": "A",
+      "severity": "medium",
+      "stages_involved": [1, 6],
+      "metric_or_actor": "BPJS 2023 catastrophic disease total spend and heart disease sub-total",
+      "values_compared": {
+        "stage_6_value_chain": "Rp 34.8T total katastropik; heart Rp 17.6T, cancer Rp 4.5T, stroke Rp 3.2T, renal Rp 2.2T (sourced: Jakarta Post citing BPJS)",
+        "stage_6_pain_point_6_2": "BPJS 2022 data: Rp 12.14T heart disease, Rp 2.1T renal failure, Rp 3.2T stroke (sourced: Databoks/BPJS Kesehatan 2022) — note this is labelled as 2022 data but appears in Stage 6 PP 6.2 which is discussing 2023 context",
+        "dr4_pp1_2_cost_2_outcome": "2023: Rp 34.769T total, heart Rp 17.629T, cancer Rp 4.5T, stroke Rp 3.234T, kidney Rp 2.156T (Tribunnews citing BPJS official statement March 2024)"
+      },
+      "description": "Stage 6 value chain and DR4 are consistent on 2023 totals (Rp 34.8T / Rp 34.769T rounding; heart Rp 17.6T / Rp 17.629T). However Stage 6 PP 6.2 cites BPJS 2022 data showing heart disease at Rp 12.14T and renal at Rp 2.1T — and uses these as evidence in the same section that is discussing 2023 CDM cost context without clearly distinguishing 2022 from 2023 figures. The ratio of Rp 17.6T (2023) to Rp 12.14T (2022) for heart disease is 1.45x — a 45% year-on-year increase — and the difference in magnitude could confuse a reader applying either figure to a forward-looking CDM model. Additionally, the Stage 6 PP 6.2 source note cites 'BPJS 2022: 15.4 million heart disease catastrophic cases' but the 2023 Tribunnews source from DR4 shows 20.037 million cases — a 30% increase in case count that is consistent with the cost increase but is never explicitly reconciled.",
+      "preferred_canonical_value": "For 2023: Rp 34.8T total; heart Rp 17.6T; cancer Rp 4.5T; stroke Rp 3.2T; renal Rp 2.2T (sourced: DR4 PP1.2, Tribunnews citing BPJS official March 2024, now High confidence). Stage 6 PP 6.2's use of 2022 figures in a 2023 discussion context should be explicitly year-labelled at each citation to prevent conflation.",
+      "resolution_priority": "nice-to-have"
+    },
+    {
+      "id": "C-A7",
+      "class": "A",
+      "severity": "high",
+      "stages_involved": [1, 4, 6],
+      "metric_or_actor": "AMI/STEMI inpatient episode cost — public hospital JKN vs private employer plan",
+      "values_compared": {
+        "stage_1_pain_points": "Rp 100–400M per episode (private hospital range, cross-referenced against Siloam/Mitra Keluarga pricing) — sourced from Jakarta Post (secondary/general press)",
+        "stage_4_pain_points_methodology": "Rp 22M average inpatient episode (MMB HBS 2024, all conditions) used as base; Rp 100–400M cited as 'metabolic complication' range",
+        "stage_6_value_chain": "Median USD 3,033 (~Rp 47.7M at 15,734/USD) for AMI at public tertiary hospitals under JKN (Dwiputra et al. 2024); private hospital estimate explicitly stated as 'Rp 100–400M' sourced from Stage 5 cross-reference — not a primary source",
+        "stage_6_pain_point_6_2": "Dwiputra 2024 STEMI median USD 3,270 (~Rp 51.4M at study rate); acknowledges private hospital estimate has no primary source ('ASSUMED-3')",
+        "dr4_pp1_1_cost_3": "AMI at public hospitals JKN: Rp 47.7M median (Dwiputra multicenter, peer-reviewed); private hospital full episode implied Rp 150–500M range (procedure alone Rp 63–150M from Halodoc; full episode from health portals); private hospital primary source gap explicitly acknowledged"
+      },
+      "description": "The Rp 100–400M private hospital episode cost for metabolic complications is used in Stages 1, 2, 3, 4, and 6 as a load-bearing claim underpinning the CDM ROI argument. DR4 found that the public-hospital JKN median for STEMI is ~Rp 51.4M (Dwiputra 2024, peer-reviewed), which means the floor of the Rp 100–400M range (Rp 100M) represents approximately a 2x markup over public-hospital JKN costs. DR4 found no primary-source private hospital tariff schedule confirming the Rp 100–400M range; it is derived from health-portal and implied from procedure-cost data. Stage 6 explicitly tags the private hospital range as ASSUMED-3. However Stages 1, 2, 3, and 4 cite this range as established fact without the ASSUMED tag. The spread between JKN public (Rp 47-51M) and the claimed private range (Rp 100-400M) is 2-8x — well above the 30% materiality threshold. The claim is directionally plausible but the sourcing asymmetry creates a material credibility risk.",
+      "preferred_canonical_value": "State two figures explicitly: (1) JKN public hospital AMI median: ~Rp 47-51M (Dwiputra 2024, peer-reviewed, High confidence). (2) Private employer-plan AMI episode: estimated Rp 150-500M (procedure Rp 63-150M from Halodoc citing Harapan Kita; plus ICU/ward/drugs), not primary-sourced, tag as [ASSUMED]. Remove standalone 'Rp 100–400M' where cited without this two-tier context.",
+      "resolution_priority": "immediate"
+    },
+    {
+      "id": "C-A8",
+      "class": "A",
+      "severity": "medium",
+      "stages_involved": [1, 6],
+      "metric_or_actor": "Productivity days lost per diabetic per year (Finkelstein 2014)",
+      "values_compared": {
+        "stage_1_pain_points_pp1_3": "26 days/year per diabetic (Finkelstein et al. 2014, PMC4051736) cited in the Frequency section",
+        "stage_6_value_chain_market_size": "26 days/year (Finkelstein 2014) cited in indirect cost row",
+        "stage_6_cohort_model": "26 days/year used in productivity calculation applying Indonesia 2024 formal-sector wage",
+        "stage_1_pain_points_pp1_3_uli": "CHD proxy: 21.8 missed work days/year (Uli et al. 2020, PMC7482464) for CHD specifically — 6.8 absenteeism + 15.0 presenteeism"
+      },
+      "description": "Both stages consistently use 26 days (Finkelstein 2014) as the diabetes productivity loss figure. The CHD proxy (21.8 days, Uli 2020) is separately cited in Stage 1 and Stage 6 for cardiovascular outcomes. These figures are not contradictory — they measure different conditions — but Stage 1 and Stage 6 independently use both numbers without noting that 21.8 days is the downstream-complication proxy while 26 days is the diabetes-itself figure. Stage 6's corporate cohort model applies 26 days to the full diabetic cohort AND separately applies 10.6 days to hypertensives (using the Uli 2020 CHD general-population baseline as a hypertension proxy), without noting this is a double-dip risk if the hypertensive cohort substantially overlaps the diabetic cohort. The instruction asked to check this metric for consistency — it is consistent in source citation but the Stage 6 model applies two figures that partially overlap without adjusting for comorbidity overlap.",
+      "preferred_canonical_value": "26 days/year (Finkelstein 2014 IFLS) for diagnosed diabetics — consistently cited, no contradiction. Retain. The Uli 2020 CHD figure (21.8 days) is correctly used as a downstream-complication proxy. In the Stage 6 corporate cohort model, the diabetes and hypertension productivity estimates should include an explicit comorbidity-overlap caveat since SKI 2023 data shows significant T2DM/HTN co-prevalence among Indonesian urban adults.",
+      "resolution_priority": "nice-to-have"
+    },
+    {
+      "id": "C-A9",
+      "class": "A",
+      "severity": "medium",
+      "stages_involved": [1, 5],
+      "metric_or_actor": "Estimated number of ≥500 HC employers in Indonesia (Tier-1/Tier-2)",
+      "values_compared": {
+        "stage_1_value_chain_note": "~3,000–6,000 private-sector employers with ≥500 HC across all sectors (approximate, flagged [ASSUMED-1])",
+        "stage_5_pain_points_pp5_3": "3,500–6,400 Tier-1/Tier-2 employers (cited as the addressable market for an asset-light MSO)",
+        "dr1_vc1_mkt_3": "CONFIRMED_SCARCE; derivation widens range to 4,000–10,000 nationally; Tier-1/Tier-2 subset likely 2,500–6,000 — explicit note that original 3,000–6,000 is within lower range but not confirmed by official tabulation"
+      },
+      "description": "Stage 1's value chain note gives 3,000–6,000 employers. Stage 5's PP 5.3 states 3,500–6,400 Tier-1/Tier-2 employers. The ranges overlap but are not the same — Stage 5's lower bound is 500 higher (3,500 vs 3,000) and the upper bound is 400 higher (6,400 vs 6,000). DR1 widened the national range to 4,000–10,000 nationally with a Tier-1/Tier-2 subset of 2,500–6,000. Stage 5 thus appears to use a slightly modified range without tracing it to a new derivation, and its range is inconsistent with DR1's finding that the Tier-1/Tier-2 subset could be as low as 2,500. All figures carry [ASSUMED] or CONFIRMED_SCARCE status. The spread between DR1's Tier-1/Tier-2 floor (2,500) and Stage 5's stated floor (3,500) is 40% — exceeding the materiality threshold.",
+      "preferred_canonical_value": "Use DR1's post-research finding: estimated 4,000–10,000 nationally; Tier-1/Tier-2 subset approximately 2,500–6,000, all tagged CONFIRMED_SCARCE pending Kemnaker Satudata microdata. Stage 5's 3,500–6,400 should be updated to align with DR1's derivation and the CONFIRMED_SCARCE caveat should be applied in both stages.",
+      "resolution_priority": "nice-to-have"
+    },
+    {
+      "id": "C-A10",
+      "class": "A",
+      "severity": "medium",
+      "stages_involved": [1, 6],
+      "metric_or_actor": "Hypertension prevalence (Indonesia adults, SKI 2023)",
+      "values_compared": {
+        "stage_1_value_chain_pain_points": "Not explicitly cited as a standalone figure in Stage 1 text",
+        "stage_6_value_chain": "32.4% (SKI 2023)",
+        "stage_6_pain_point_6_3": "30.8% (SKI 2023, cited from Databoks source)"
+      },
+      "description": "Stage 6 value chain cites hypertension prevalence as 32.4% (SKI 2023) in the market size table. Stage 6 PP 6.3 cites 30.8% (SKI 2023) from Databoks in its cohort model. The same run, same stage, same year source produces two different hypertension prevalence figures: 32.4% and 30.8%. The 1.6 percentage-point absolute gap represents a 5% relative spread — below the 30% materiality threshold — but the figures should be identical if both trace to SKI 2023. The discrepancy likely reflects different age-group denominations (≥15 vs ≥18) or different SKI 2023 publication extracts. In the Stage 6 cohort model, 30.8% implies 308 hypertensive employees per 1,000; at 32.4% it would be 324. The direction-of-bias is unclear.",
+      "preferred_canonical_value": "Confirm the age-band denominator from SKI 2023 directly. Stage 6's value chain (32.4%) cites the BKPK Kemenkes SKI 2023 Fact Sheet — this is the canonical primary source. Stage 6 PP 6.3's 30.8% from Databoks may reflect a different age cut. Standardise on 32.4% from BKPK primary source with explicit age-band note (adults ≥15 or ≥18 depending on SKI 2023 definition).",
+      "resolution_priority": "nice-to-have"
+    },
+    {
+      "id": "C-A11",
+      "class": "A",
+      "severity": "medium",
+      "stages_involved": [4, 5],
+      "metric_or_actor": "Pertamedika IHC clinic network count",
+      "values_compared": {
+        "stage_4_value_chain": "75 hospitals + 144 clinics (sourced: pertamedika.co.id)",
+        "stage_5_value_chain": "75 hospitals + 143 clinics (sourced: pertamedika.co.id)",
+        "stage_5_pain_points_pp5_3": "36 hospitals, 39 KSO hospitals, 145 clinic networks (sourced: pertamedika.co.id/en; hospitalmanagementasia.com)"
+      },
+      "description": "Stage 4 reports Pertamedika IHC as having 75 hospitals + 144 clinics. Stage 5 value chain reports 75 hospitals + 143 clinics (1 fewer clinic). Stage 5 PP 5.3 reports 36 hospitals + 39 KSO hospitals (= 75 total) + 145 clinic networks (1 more clinic than Stage 4). Three distinct clinic counts appear in two stages: 143, 144, and 145 — all sourced to pertamedika.co.id with varying cross-references. The hospital count is consistent at 75 (or decomposed as 36 + 39 KSO). The clinic variance (143/144/145) is a small absolute spread but the inconsistency across stages sourced to the same website suggests different pages or timestamps were accessed. This is not load-bearing for the hypothesis argument but it is the specific cross-stage actor characterization check requested.",
+      "preferred_canonical_value": "Access pertamedika.co.id directly to confirm current clinic count. If the current figure is 143 or 145, update Stage 4 and Stage 5 to the same number. The 75 hospitals figure (or 36 own + 39 KSO) should be verified as the same decomposition is described inconsistently across stages. Given Pertamedika is a BUMN entity, the most recent audited BUMN-ministry annual report is the canonical source.",
+      "resolution_priority": "nice-to-have"
+    },
+    {
+      "id": "C-B1",
+      "class": "B",
+      "severity": "high",
+      "stages_involved": [2, 3],
+      "metric_or_actor": "Mandiri Inhealth — ownership structure",
+      "values_compared": {
+        "stage_2_value_chain": "IFG Life 80%, Bank Mandiri 20% (acquisition completed June 2024) — sourced: IDNFinancials + IFG Life press release",
+        "stage_3_value_chain": "IFG Life 80%, Bank Mandiri 20% (acquisition completed June 2024) — sourced: IFG Life press release + Kontan"
+      },
+      "description": "Ownership is consistent across Stage 2 and Stage 3: IFG Life 80%, Bank Mandiri 20%. However Stage 2's source list for the Mandiri Inhealth entry cites 'IDNFinancials: IFG to acquire 70% of Mandiri Inhealth from Bank Mandiri and Kimia Farma' — a headline that says 70%, while the text says 80%. The IDNFinancials headline appears to reflect an earlier announcement of an intended 70% stake that was subsequently increased to 80% at closing. Within Stage 2 there is a 70% vs 80% inconsistency between the source headline and the claim text. Stage 3 consistently cites 80%.",
+      "preferred_canonical_value": "IFG Life 80%, Bank Mandiri 20% is the post-acquisition final structure (June 2024). The IDNFinancials article headline reporting 70% reflects a pre-closing announcement. The 80% figure in Stage 2 text is correct; the cited source headline needs a clarifying annotation that the final stake was 80% not 70% as initially announced.",
+      "resolution_priority": "nice-to-have"
+    },
+    {
+      "id": "C-B2",
+      "class": "B",
+      "severity": "medium",
+      "stages_involved": [2, 3],
+      "metric_or_actor": "AdMedika — number of clients and members",
+      "values_compared": {
+        "stage_2_value_chain": "5.1 million+ members; 177 clients (sourced: AdMedika About page — vendor self-reported, Low confidence)",
+        "stage_2_pain_points": "177 clients; 5.1M members (repeated consistently)",
+        "stage_3_context": "Not cited directly in Stage 3 — Mandiri Inhealth cited with 1.8M participants; no AdMedika figure"
+      },
+      "description": "No direct inter-stage contradiction on AdMedika numbers; both Stage 2 references are consistent internally. The 177 clients and 5.1M members figures are vendor-self-reported (Low confidence) and used repeatedly across Stage 2 without per-use qualification. No other stage independently cites AdMedika scale. The issue is not a contradiction but a single-source self-report used as a load-bearing market-size anchor across multiple pain points without triangulation. Not a formal contradiction — noting for curator completeness.",
+      "preferred_canonical_value": "No change required to values. Add a consistent '(vendor self-reported, Low confidence)' qualifier on every use of the 177-client and 5.1M-member figures in Stage 2.",
+      "resolution_priority": "nice-to-have"
+    },
+    {
+      "id": "C-C1",
+      "class": "C",
+      "severity": "high",
+      "stages_involved": [1, 3, 4],
+      "metric_or_actor": "MMB Indonesia medical trend rates — DR5 correction not propagated to Stages 3 and 4",
+      "values_compared": {
+        "stage_1_patched": "14.6% (2023 actual) / 17.9% (2024 forecast) / 19.0% (2025 forecast) — correctly patched per DR5 finding; 13.6% provenance explained",
+        "stage_3_pain_points_pp3_1_rc2": "13.6% (medical cost inflation — attributed to 'GAIP 2025 Indonesia') — uses the unrepatched figure",
+        "stage_4_pain_points_pp4_3_source_24": "'Indonesia medical cost inflation 13.6% in 2025, highest in Asia' — unrepatched figure with wrong year attribution"
+      },
+      "description": "DR5 (MMB-trend.json) corrected the 13.6% figure in Stage 1 and the patch was applied to stage-1-pain-points.md and stage-1-value-chain.md. The correction was NOT propagated to Stages 3 and 4. Stage 3 PP 3.1 RC2 still uses 13.6% attributed to 'GAIP 2025', and Stage 4 PP 4.3 uses '13.6% in 2025' — which is both the wrong value (per DR5) and the wrong year attribution. This is a Class C contradiction: deep-research found and corrected the error in Stage 1 but the superseded value is still present in Stages 3 and 4.",
+      "preferred_canonical_value": "Apply the DR5 correction to Stages 3 and 4: replace 13.6% with the appropriate year-specific value (14.6% for 2023 actual per MMB; 13.1% for 2024 actual per Aon; or 19.0% for 2025 forecast per MMB). If GAIP 2025 is a genuinely separate source that reports a different 2025 actual figure for Indonesia (e.g. a revised actual that came in at 13.6%), that source should be cited explicitly and distinguished from the MMB forecast. Until GAIP 2025 is verified, the DR5 correction should be treated as authoritative.",
+      "resolution_priority": "immediate"
+    },
+    {
+      "id": "C-C2",
+      "class": "C",
+      "severity": "medium",
+      "stages_involved": [1, 2, 3, 4, 5, 6],
+      "metric_or_actor": "Private hospital AMI episode cost claim — DR4 finding not tagged in Stages 2-6",
+      "values_compared": {
+        "dr4_outcome": "found-stronger-evidence; suggested revision: JKN public hospital AMI median Rp 47-51M (Dwiputra 2024, peer-reviewed); private hospital full episode Rp 150-500M range (not primary-sourced); suggests explicit ASSUMED tag for private hospital range",
+        "stage_1_patched": "DR4 findings referenced and Dwiputra 2024 is now cited in Stage 6; but Rp 100–400M still in Stage 1 PP 1.1 cost text without the ASSUMED qualifier",
+        "stages_2_3_4": "Rp 100–400M cited without ASSUMED tag and without Dwiputra 2024 as the JKN floor anchor"
+      },
+      "description": "DR4 found peer-reviewed evidence (Dwiputra 2024) establishing the JKN public hospital AMI median at Rp 47-51M and recommended revising the Rp 100-400M private hospital range to a two-tier presentation with the private range tagged ASSUMED. Stage 6 adopted Dwiputra 2024. Stages 2, 3, and 4 continue to cite 'Rp 100–400M per episode' as if it were a primary-sourced private hospital figure without the ASSUMED qualifier or the Dwiputra JKN floor context. This creates an inconsistency where Stage 6 (the literature stage) correctly hedges the private hospital claim but the operational stages (1-4) state it without that hedging.",
+      "preferred_canonical_value": "In all stages where Rp 100-400M per episode is cited: (1) add Dwiputra 2024 as the JKN floor anchor (Rp 47-51M public hospital); (2) present the private hospital range as Rp 150-500M [ASSUMED, no primary source]; (3) note the 3-10x gap between JKN and private-hospital costs. The Stage 6 treatment is the target state; propagate it to Stages 1-5.",
+      "resolution_priority": "immediate"
+    },
+    {
+      "id": "C-C3",
+      "class": "C",
+      "severity": "medium",
+      "stages_involved": [3, 6],
+      "metric_or_actor": "Kristina 2020 USD 1,208/year per diabetic total cost — adoption inconsistency",
+      "values_compared": {
+        "stage_6_value_chain": "Correctly cites Kristina 2020: USD 1,208/year total (USD 1,062 direct + USD 146 indirect) — sourced from ResearchGate, medium confidence",
+        "stage_6_pain_points_6_1": "Correctly uses USD 1,207.8 total / USD 145.6 indirect",
+        "stage_6_cohort_model": "Uses USD 1,062 direct cost (Kristina 2020) in the per-diabetic direct cost calculation",
+        "stage_3_pain_points": "Does not cite Kristina 2020 at all; references Hidayat 2022 (USD 421/930 per year with/without complications) for direct cost comparisons"
+      },
+      "description": "Stage 6 uses Kristina 2020's total-burden figure (USD 1,208/year) as a key anchor for the ROI model. Stage 3 uses Hidayat 2022 (USD 421 without complications / USD 930 with complications) from JKN claims data. These are not contradictory since they measure different things — Kristina 2020 is a direct + indirect human-capital study while Hidayat 2022 is a direct medical cost study from JKN — but Stages 3 and 6 both build ROI arguments that will be compared by a corporate buyer, and the Stage 3 direct-cost figure (USD 421) is dramatically lower than the Stage 6 all-in figure (USD 1,208). There is no cross-reference between stages explaining the relationship between these figures. A reader using Stage 3's numbers and Stage 6's numbers to construct a CDM ROI argument would arrive at inconsistent cost bases without realising it.",
+      "preferred_canonical_value": "Cross-reference Kristina 2020 and Hidayat 2022 explicitly in both stages. Kristina 2020 captures direct + indirect; Hidayat 2022 captures direct only (JKN claims, public-hospital tier). For corporate employer context, the preferred all-in figure is Kristina 2020 (USD 1,208, with caveat that indirect component uses human-capital absenteeism only, excluding presenteeism) applied with the Stage 6 note that private employer costs are ~30% above JKN rates. This cross-reference should appear in Stage 3 PP 3.1 where CDM ROI is discussed.",
+      "resolution_priority": "nice-to-have"
+    },
+    {
+      "id": "C-D1",
+      "class": "D",
+      "severity": "medium",
+      "stages_involved": [2, 3, 4, 5],
+      "metric_or_actor": "Indonesia TPA / connected healthcare market size (USD figures) — geography and methodology inconsistency",
+      "values_compared": {
+        "stage_2_value_chain": "USD 1.66 billion TPA market (all lines, 2024) — NextMSC single market research firm; flagged Low with explicit note that it is 'inconsistent in scale with underlying insurer premium base'",
+        "stage_2_tpa_market_2030": "USD 5.0-5.32 billion (CAGR 7.5-20.6%) — two different research firms with divergent methodologies; flagged Low",
+        "stage_5_value_chain": "USD 690 million connected healthcare market (2024) — Mordor Intelligence; flagged Low"
+      },
+      "description": "Stage 2 explicitly flags the NextMSC USD 1.66B figure as inconsistent with the AAUI general insurance health GWP base (USD 760M) and notes that a USD 1.66B TPA-administered premium is implausible relative to total premium. Stage 5 uses Mordor Intelligence's USD 690M connected healthcare figure, which is a different market definition (connected/telehealth, not TPA) but both are used to size the 'digital corporate health' space. No stage notes that USD 1.66B (TPA market from NextMSC) and USD 690M (connected healthcare from Mordor) both purport to measure overlapping layers of the same market and cannot be additive. The geography mismatch flag (these are Indonesia-specific claims from market research firms whose Indonesia methodology is opaque) is applied in Stage 2 but not in Stage 5.",
+      "preferred_canonical_value": "These market-sizing figures are all Low confidence and should not be used in the same document as if they represent non-overlapping market layers. Standardise the market-size section to use only AAUI/AAJI primary data (High confidence) for insurance layer sizing, and explicitly mark all market research firm figures (NextMSC, Mordor, Ken Research) as directional-only with methodology-unknown caveats. Stage 5's Mordor USD 690M figure should carry the same Low-confidence and methodology-opaque flag as Stage 2's NextMSC figures.",
+      "resolution_priority": "nice-to-have"
+    },
+    {
+      "id": "C-D2",
+      "class": "D",
+      "severity": "low",
+      "stages_involved": [1, 6],
+      "metric_or_actor": "WHO/IDF presenteeism / productivity multipliers applied to Indonesia",
+      "values_compared": {
+        "stage_1_pain_points_pp1_3": "Singapore total economic cost per working-age diabetic USD 5,646 (2010) applied as comparator for Indonesia productivity cost argument",
+        "stage_6_value_chain": "ADA 2022 US presenteeism-to-absenteeism ratio (6.6:1) applied to derive Indonesia indirect cost upper bound",
+        "stage_6_pain_points_6_1": "ADA methodology applied with explicit note that it is a calibrated upper-bound reference for Indonesia; flagged as international methodology applied with local wage proxies"
+      },
+      "description": "Stage 1 uses Singapore productivity data as a proxy for Indonesia without a geography-mismatch flag — it is applied implicitly as a comparator ('USD 5,646 in 2010 per working-age diabetic') without noting that Singapore's per-capita GDP and wage structure is 5-7x Indonesia's, rendering the absolute dollar figure non-transferable. Stage 6 uses ADA 2022 US methodology more carefully, explicitly flagging it as an upper-bound reference requiring local wage calibration. The inconsistency is not in the data values themselves but in the transparency of the geography assumption: Stage 1 presents the Singapore figure as a comparator without a geography-mismatch warning; Stage 6 explicitly hedges the equivalent US methodology. A reader of Stage 1 could incorrectly apply the Singapore figure as Indonesia-relevant.",
+      "preferred_canonical_value": "Add a geography-mismatch caveat to Stage 1 PP 1.3's Singapore productivity figure: note explicitly that Singapore GDP per capita is ~5x Indonesia's and that the absolute USD figure is not transferable; use only the methodology (presenteeism-to-absenteeism ratio) as transferable, applying Indonesia wage data for the final calculation, consistent with Stage 6's treatment.",
+      "resolution_priority": "nice-to-have"
+    }
+  ],
+  "summary": {
+    "total_contradictions": 16,
+    "by_severity": {
+      "high": 6,
+      "medium": 8,
+      "low": 2
+    },
+    "by_class": {
+      "A": 11,
+      "B": 2,
+      "C": 3,
+      "D": 2
+    }
+  },
+  "gate_impact": "high-severity-block",
+  "narrative": "Six high-severity contradictions were found: the 13.6% medical cost inflation figure is used incorrectly in Stages 3 and 4 after DR5 corrected it to 14.6% in Stage 1 (Class C, immediate fix required); the Rp 100–400M private hospital AMI episode cost is cited as fact across Stages 1–5 without the primary-source gap and ASSUMED qualifier that DR4 established and Stage 6 correctly adopted (Class C, immediate); the IDF 73.2% undiagnosed rate conflicts with an ~81% implied rate from SKI 2023 data within Stage 6 without reconciliation (Class A, immediate); and three other load-bearing numeric claims carry unreconciled values across stages. None of these contradictions invalidate the hypothesis, but the three 'immediate' items must be resolved before the corpus is cited in a commercial or investor context."
+}

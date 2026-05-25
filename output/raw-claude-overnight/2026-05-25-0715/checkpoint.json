@@ -1,0 +1,62 @@
+{
+  "run_id": "2026-05-25-0715",
+  "input_file": "./input/2026-05-23-indonesia-affluent-preventive-cdm-market.md",
+  "topic": "Indonesia affluent preventive care and CDM market",
+  "topic_slug": "indonesia-affluent-preventive-cdm",
+  "geography": "Indonesia Tier-1 and Tier-2 cities",
+  "mode": "sandbox",
+  "output_dir": "./output/raw-claude-overnight/2026-05-25-0715/",
+  "current_pass": 5,
+  "started_at": "2026-05-25T07:15Z",
+  "completed_at": "2026-05-25T~12:00Z",
+  "stages_planned": [
+    {"n": 1, "name": "Affluent / upper-middle population sizing"},
+    {"n": 2, "name": "Healthcare spend by income segment"},
+    {"n": 3, "name": "Private health insurance penetration & coverage"},
+    {"n": 4, "name": "Major insurer products & preventive/CDM programmes"},
+    {"n": 5, "name": "Existing preventive/CDM delivery landscape"},
+    {"n": 6, "name": "Employer-provided health benefits market"}
+  ],
+  "stages_completed": [1, 2, 3, 4, 5, 6],
+  "stages_in_progress": [],
+  "weak_claims_to_re_research": [],
+  "deep_research_completed": [
+    "stage-1/pp1-2-5", "stage-1/vc1-28", "stage-1/pp1-1-2", "stage-1/vc1-15", "stage-1/pp1-2-8",
+    "stage-2/vc2-13", "stage-2/vc2-5", "stage-2/pp2-1a", "stage-2/pp2-4g",
+    "stage-3/pp3-4-2", "stage-3/vc3-7"
+  ],
+  "deep_research_deferred": ["stage-4 (5 weak claims)", "stage-5 (5 weak claims)", "stage-6 (5 weak claims)"],
+  "contradictions_found": {"high": 4, "medium": 4, "low": 1},
+  "contradictions_resolved_at_merge": 4,
+  "final_gate_decision": "ship-with-flag",
+  "gate_rationale": "~40% Low across corpus post-correction (within 30-70% ship-with-flag threshold). 4 high-severity contradictions resolved by applying stages-validated/ corrections at canonical-artifact merge. Flags: Stages 4-6 citation-tier reliance on insurer-marketing/sell-side/trade-press; critic pass deferred; 5 medium/low contradictions inline.",
+  "auto_enrichment": {
+    "started_at": "2026-05-25T04:04Z",
+    "completed_at": "2026-05-25T04:10Z",
+    "urls_attempted": 17,
+    "urls_succeeded": 10,
+    "urls_confirmed_inaccessible": 7,
+    "claims_upgraded": [
+      {"id": "VC1.MC-headcount-source", "from": "low", "to": "medium", "new_source": "https://www.bps.go.id/en/news/2024/10/25/622/indonesia-s-middle-class--a-crucial-pillar-for-national-economic-stability.html"},
+      {"id": "VC1.DKI-Jakarta-Susenas", "from": "low", "to": "medium", "new_source": "https://jakarta.bps.go.id/en/publication/2024/12/13/ce20289e27a0054b3c2e9362/statistik-kesejahteraan-rakyat-provinsi-dki-jakarta-2024.html"},
+      {"id": "VC1.Sakernas-40.89-formal", "from": "low", "to": "high", "new_source": "https://www.bps.go.id/en/pressrelease/2023/11/06/2002/"},
+      {"id": "VC3.LR-April-2025-51.29", "from": "low", "to": "high", "new_source": "https://www.antaranews.com/berita/4873513/ojk-rasio-klaim-kesehatan-di-asuransi-jiwa-5129-persen-april-2025"},
+      {"id": "VC3.LR-FY2024-71.2", "from": "low", "to": "high", "new_source": "https://finansial.bisnis.com/read/20250313/215/1861151/rasio-klaim-asuransi-kesehatan-pada-2024-turun-ojk-ungkap-faktornya"},
+      {"id": "VC3.POJK36-2025-waiting-period", "from": "low", "to": "medium", "new_source": "https://www.stabilitas.id/prudential-dukung-aturan-baru-ojk-masa-tunggu-penyakit-kronis-dipangkas-jadi-6-bulan"},
+      {"id": "PP3.WTW-LR-Q1-2024-105.7", "from": "low", "to": "medium", "new_source": "https://www.asiainsurancereview.com/News/View-NewsLetter-Article?id=90289&Type=eDaily"},
+      {"id": "PP1-1-2.INA-CBG-stroke-gap", "from": "low", "to": "medium", "new_source": "https://jnevis.org/index.php/jnevis/article/view/1"},
+      {"id": "VC4.POJK36-2025-managed-care", "from": "medium", "to": "high", "new_source": "https://ojk.go.id/id/regulasi/Pages/POJK-36-Tahun-2025-Penguatan-Ekosistem-Asuransi-Kesehatan.aspx"},
+      {"id": "VC6.MMB-Health-Trends-publisher", "from": "low", "to": "medium", "new_source": "https://www.marsh.com/en/services/employee-health-benefits/insights/health-trends-report.html"}
+    ],
+    "urls_confirmed_inaccessible_list": [
+      {"url": "https://www.allianz.co.id/content/dam/onemarketing/azli/wwwallianzcoid/produk/asuransi-individu/asuransi-kesehatan/allianz-flexi-medical/riplay-v-2-9/riplay-umum-allianz-flexi-medical.pdf", "reason": "PDF binary; Playwright DOM empty"},
+      {"url": "https://www.prudential.co.id/export/sites/prudential-id/id/.galleries/pdf/pruwell/Brochure-PRUWell-Medical.pdf", "reason": "404 Not Found"},
+      {"url": "https://kemkes.go.id/app_asset/file_content_download/172231123666a86244b83fd8.51637104.pdf", "reason": "PDF binary; auto-download triggered, no DOM"},
+      {"url": "https://www.researchgate.net/publication/380285294_A_comparative_study_of_real_hospital_costs_and_INA-CBG_rates_for_stroke_in_Indonesia", "reason": "Cloudflare Turnstile captcha; skipped per Phase 2 rules"},
+      {"url": "https://thinkwell.global/wp-content/uploads/2025/03/Telemedicine_in_Indonesia-FINAL-1.pdf", "reason": "PDF binary; Playwright DOM empty"},
+      {"url": "https://www.ramsaysimedarby.co.id:8443/", "reason": "Navigation timeout (60s)"},
+      {"url": "BPS Susenas BUKLE cell-level microdata", "reason": "No public URL; requires BPS microdata licence"}
+    ],
+    "notes": "Phase 2 Playwright enrichment: all 3 BPS pages previously Cloudflare-blocked now successfully retrieved with verbatim figures. Antara + Bisnis Indonesia + Stabilitas + Asia Insurance Review pages also retrieved verbatim, upgrading 3 Stage-3 claims from Low to High/Medium. PDFs uniformly inaccessible via Playwright DOM. Cloudflare-Turnstile sites (ResearchGate) skipped per rules. Net: 4 canonical [NEEDS-ATTENDED-FETCH] tags replaced inline (3 resolved, 1 marked [CONFIRMED-INACCESSIBLE])."
+  }
+}

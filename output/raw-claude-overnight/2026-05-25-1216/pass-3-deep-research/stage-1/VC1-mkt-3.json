@@ -1,0 +1,37 @@
+{
+  "claim_id": "VC1-mkt-3",
+  "outcome": "CONFIRMED_SCARCE",
+  "new_score": "Low",
+  "evidence": [
+    {
+      "url": "https://www.bps.go.id/en/publication/2023/12/22/140fcce371d95181d426827c/business-characteristics-statistics-2022-2023.html",
+      "publisher": "BPS Statistics Indonesia",
+      "date": "2023-12",
+      "supports": "partial",
+      "quote": "BPS publishes large+medium enterprise counts across 17 business field categories (UMB scale). The survey covers the formal registered enterprise universe. No published size-band breakdown at 500+ HC is available in this publication."
+    },
+    {
+      "url": "https://www.bps.go.id/en/publication/2023/09/29/8c2d8435fe0c552c6ffdc528/manufacturing-industrial-directory-2023.html",
+      "publisher": "BPS Statistics Indonesia",
+      "date": "2023-09",
+      "supports": "partial",
+      "quote": "Manufacturing Industrial Directory 2023 covers large+medium manufacturing establishments (IBS definition: 'large' = ≥100 workers, 'medium' = 20-99 workers). Total all Indonesia large+medium manufacturing: ~32,193 establishments. No 500+ worker sub-band published."
+    },
+    {
+      "url": "https://www.enterprisesurveys.org/content/dam/enterprisesurveys/documents/country/Indonesia-2023.pdf",
+      "publisher": "World Bank Enterprise Surveys",
+      "date": "2023",
+      "supports": "partial",
+      "quote": "2,955 formal private Indonesian firms surveyed Dec 2022–Sep 2023. Size bands: Small 5-19 (1,652 firms), Medium 20-99 (822 firms), Large 100+ (481 firms). Large = 100+; no 500+ sub-band published. Survey covers manufacturing, construction, services."
+    },
+    {
+      "url": "https://www.bpjsketenagakerjaan.go.id/assets/uploads/laporan_tahunan/IR2023_BPJS_LO13_ENG_LOW.pdf",
+      "publisher": "BPJS Ketenagakerjaan",
+      "date": "2023",
+      "supports": "partial",
+      "quote": "BPJS Ketenagakerjaan 2023 Annual Report: 40.9M active formal worker members; total participants 61.08M. Company registration data exists but PDF was unreadable binary; no employer size-band breakdown confirmed. [NEEDS-ATTENDED-FETCH]"
+    }
+  ],
+  "revised_claim": "[ASSUMED-N]: Estimated 4,000–10,000 formal-sector employers in Indonesia with ≥500 headcount (Tier-1/Tier-2 cities subset likely 2,500–6,000). Derivation: BPS reports ~58,708 all-sector large enterprises (≥100 HC) and ~32,193 large+medium manufacturing establishments; applying a 10–17% share of large firms (≥100 HC) having ≥500 workers (consistent with East Asia peer-country firm-size distributions) yields 5,800–9,900 nationally across all sectors. The original 3,000–6,000 estimate is within the lower range of this derivation but is not confirmed by a published official tabulation at the ≥500 HC threshold. To validate: request BPS microdata from the 2016 Economic Census 'Continued' (SE2016-Lanjutan) or Kemnaker Satudata employer registry by employment band, or BPJS Ketenagakerjaan partner data request by employer headcount bracket.",
+  "notes": "No government, multilateral, or academic source publishes a direct count of Indonesian formal-sector employers at the ≥500 HC threshold. BPS defines 'large' enterprise as ≥100 workers (IBS manufacturing) or uses revenue-based 'UMB' (medium-large) classification. The WBES 2023 also stops at 100+ as 'large'. BPJS Ketenagakerjaan holds employer-level enrollment data by headcount but does not publish size-band tables. The derivation-based range (4,000–10,000 nationally; 2,500–6,000 Tier-1/Tier-2) widens the lower bound of the original [ASSUMED-1] estimate of 3,000–6,000 but the upper bound extends higher. Recommended action: (1) file a data request with Kemnaker Satudata or BPJS Ketenagakerjaan for employer count by employment band; (2) alternatively use BPS SE2016 microdata via Pusdatin BPS; (3) until then, maintain [ASSUMED-N] tag with widened range and explicit derivation note."
+}

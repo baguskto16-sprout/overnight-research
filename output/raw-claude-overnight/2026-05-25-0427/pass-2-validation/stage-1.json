@@ -1,0 +1,973 @@
+{
+  "stage": 1,
+  "stage_name": "GP Clinic Consultation & Clinical Documentation (1a)",
+  "run_id": "2026-05-25-0427",
+  "validated_by": "source-validator",
+  "validated_date": "2026-05-25",
+  "context": "per-stage",
+  "total_claims_scored": 50,
+  "confidence_distribution": {
+    "high": 1,
+    "medium": 5,
+    "low": 44
+  },
+  "confidence_percentages": {
+    "high": "2%",
+    "medium": "10%",
+    "low": "88%"
+  },
+  "claims_scored": [
+    {
+      "id": "VC-MS-1",
+      "claim": "~15,311 private GP/primary clinics registered in Indonesia (~14,564 klinik pratama; 1,950 government-owned)",
+      "sources": [
+        "(1) Kemenkes Profil Kesehatan Indonesia 2023 [primary-gov]",
+        "(2) ehealth.co.id blog post [secondary-trade]"
+      ],
+      "score": "High",
+      "rationale": "2 independent sources where (1) is primary government statistics agency (Kemenkes). Meets 2+ sources with ≥1 gov-stats threshold."
+    },
+    {
+      "id": "VC-MS-2",
+      "claim": "10,495 private medical clinics registered in Malaysia (2023 data)",
+      "sources": [
+        "(3) MOH Malaysia Health Facts 2024 [primary-ministry]"
+      ],
+      "score": "Low",
+      "rationale": "Only 1 source cited. Rubric: 1 source regardless of category = Low. Source (3) is high quality but the rubric requires ≥2 sources for Medium."
+    },
+    {
+      "id": "VC-MS-3",
+      "claim": "Indonesia clinics integrated with BPJS Kesehatan JKN (FKTP): ~7,606 as of January 2024",
+      "sources": [
+        "(2) ehealth.co.id blog post [secondary-trade]"
+      ],
+      "score": "Low",
+      "rationale": "Single secondary-trade source (blog aggregating government data). No direct citation to primary Kemenkes or BPJS Kesehatan publication."
+    },
+    {
+      "id": "VC-MS-4",
+      "claim": "Indonesia total registered klinik 17,261 (14,564 pratama + 2,697 utama)",
+      "sources": [
+        "(1) Kemenkes Profil Kesehatan Indonesia 2023 [primary-gov]"
+      ],
+      "score": "Low",
+      "rationale": "Single source. Even though it is primary-gov, rubric requires ≥2 sources for Medium."
+    },
+    {
+      "id": "VC-MS-5",
+      "claim": "Malaysia private clinic count growth trend ~9,800 in 2022 → 10,495 in 2023",
+      "sources": [
+        "(3) MOH Malaysia Health Facts 2024 [primary-ministry]",
+        "(4) Statista/MOH KKM [secondary-market-research, NEEDS-ATTENDED-FETCH, paywall]"
+      ],
+      "score": "Low",
+      "rationale": "Source (4) is paywalled and Statista (secondary-market-research); auto-low for the Statista citation. Source (3) is primary-ministry. But only 1 verifiable source since (4) is not confirmed accessible. Single-domain override logic: 1 confirmed source = Low."
+    },
+    {
+      "id": "VC-MS-6",
+      "claim": "EMR adoption in Indonesia FKTP: 8.9% of eligible facilities by end-2024 (3,533 of 39,852 FKTP) from PT MTK network",
+      "sources": [
+        "(5) arXiv:2512.05381 Satrio & Aqid, December 2025 [primary-academic, not yet peer-reviewed]"
+      ],
+      "score": "Low",
+      "rationale": "Single source (arXiv preprint, not peer-reviewed). Additionally the underlying data is from one vendor's network (PT MTK) extrapolated to represent all FKTPs nationwide — a material overgeneralization. Single-source override applies.",
+      "flags": [
+        "single-vendor-data-extrapolated-to-national-figure",
+        "arXiv-preprint-not-peer-reviewed"
+      ]
+    },
+    {
+      "id": "VC-MS-7",
+      "claim": "EMR adoption in Malaysian private GP clinics: 79.6% computerized in urban private settings (Hong Kong proxy)",
+      "sources": [
+        "(6) Luk W. et al. BMC Medical Informatics 2015, Hong Kong [primary-academic, stale, geography-mismatch]"
+      ],
+      "score": "Low",
+      "rationale": "Single source, stale (2015 = >10 years old), explicit geography mismatch (Hong Kong not Malaysia). Document self-labels this Low. All overrides confirm Low.",
+      "flags": [
+        "geography-mismatch-HK-for-MY",
+        "outdated-source-2015"
+      ]
+    },
+    {
+      "id": "VC-MS-8",
+      "claim": "Typical daily patient volume per private GP clinic (Indonesia): 15–60 patients/day",
+      "sources": [
+        "[ASSUMED-1]"
+      ],
+      "score": "Low",
+      "rationale": "Tagged ASSUMED. No cited source. Auto-Low per rubric."
+    },
+    {
+      "id": "VC-MS-9",
+      "claim": "Typical daily patient volume per private GP clinic (Malaysia): ~40–80 patients/day",
+      "sources": [
+        "(7) Ahmad BA et al. Malaysian Family Physician 2017 [primary-academic, stale, public-clinic-proxy]",
+        "[ASSUMED-2]"
+      ],
+      "score": "Low",
+      "rationale": "One real source (2017, stale >3 years) plus an assumption. Source is a public primary care clinic study (Gombak), not a private clinic. Stale + public-to-private proxy + 1 source = Low.",
+      "flags": [
+        "outdated-source-2017",
+        "public-clinic-proxy-for-private"
+      ]
+    },
+    {
+      "id": "VC-MS-10",
+      "claim": "Annual visits per clinic (Indonesia, typical klinik pratama): ~5,000–15,000 outpatient visits/year",
+      "sources": [
+        "[ASSUMED-1]"
+      ],
+      "score": "Low",
+      "rationale": "Tagged ASSUMED. Arithmetic extrapolation from another assumed figure. Auto-Low."
+    },
+    {
+      "id": "VC-S1a-1a",
+      "claim": "Klinify used by 800+ doctors in Malaysia",
+      "sources": [
+        "(8) klinify.com [auto-low-vendor]"
+      ],
+      "score": "Low",
+      "rationale": "Vendor's own website claiming its own user count. Auto-Low per vendor-marketing override. NEEDS-ATTENDED-FETCH also noted (connection refused).",
+      "flags": [
+        "auto-low-vendor-marketing",
+        "source-inaccessible"
+      ]
+    },
+    {
+      "id": "VC-S1a-4a",
+      "claim": "Traditional Malaysia inpatient GL process takes up to 6 hours; digital GL approximately 30 minutes",
+      "sources": [
+        "(9) medilink-global.com corporate page [auto-low-vendor]"
+      ],
+      "score": "Low",
+      "rationale": "Medilink-Global corporate page making a claim about Medilink's own process transformation. Vendor-marketing override: auto-Low regardless of how many Medilink URLs are cited.",
+      "flags": [
+        "auto-low-vendor-marketing"
+      ]
+    },
+    {
+      "id": "VC-S1a-5a",
+      "claim": "Malaysian primary care consultation: mean 18.21 minutes per patient (public clinic, 60 patients/day)",
+      "sources": [
+        "(7) Ahmad BA et al. Malaysian Family Physician 2017 [primary-academic, stale, public-clinic]"
+      ],
+      "score": "Low",
+      "rationale": "Single source, stale (2017 = >3 years), and the clinic studied is a public primary care clinic in Gombak — not a private GP clinic. Public-to-private proxy plus stale plus single source = Low.",
+      "flags": [
+        "outdated-source-2017",
+        "public-clinic-proxy-for-private"
+      ]
+    },
+    {
+      "id": "VC-S1a-5b",
+      "claim": "Indonesia Puskesmas consultations: 5–6 minutes; GP spends 1.67× consultation duration on documentation",
+      "sources": [
+        "(10) arXiv:2409.17054 Khatim et al. September 2024 [primary-academic]"
+      ],
+      "score": "Low",
+      "rationale": "Single source. Additionally the setting is a Puskesmas (public community health center), not a private GP clinic. Puskesmas-to-private-GP proxy is acknowledged but a meaningful qualifier. Single source = Low.",
+      "flags": [
+        "public-puskesmas-proxy-for-private-gp"
+      ]
+    },
+    {
+      "id": "VC-S1a-7a",
+      "claim": "GPs spend 8–16 minutes of EHR interaction per visit (global primary care benchmark)",
+      "sources": [
+        "(11) FierceHealthcare/AMA reporting Rotenstein 2024 Annals of IM [secondary-trade/secondary-news]"
+      ],
+      "score": "Low",
+      "rationale": "Trade/news article summarizing the Rotenstein 2024 study. The underlying Annals of IM 2024 study is primary, but it is accessed only via secondary trade press. Chain-of-citations: 1 effective source. Geography mismatch (US).",
+      "flags": [
+        "us-proxy-for-id-my",
+        "accessed-via-trade-press-not-primary-journal"
+      ]
+    },
+    {
+      "id": "VC-S1a-7b",
+      "claim": "Ambient AI scribe: documentation time reduction 50–70%, after-hours EHR time from 2.7 hrs to <1.5 hrs/day",
+      "sources": [
+        "(12) poconoai.com blog [secondary-trade]",
+        "(13) PMC12301838 BMC Primary Care systematic review [primary-academic]"
+      ],
+      "score": "Medium",
+      "rationale": "2 independent sources from different domains, one of which (13) is a peer-reviewed systematic review (9 studies, 524 HCPs). Meets 2+ sources with ≥1 primary non-market-research = Medium. Note: 2.7 hrs figure traces to Rotenstein 2024 via a blog rather than the original paper, which is a chain-of-citations weakness. 50-70% range combines multiple studies with varying methodologies. Geography mismatch for ID/MY context (all global/US studies).",
+      "flags": [
+        "us-and-global-benchmark-not-id-my",
+        "2.7hr-figure-via-blog-not-primary-paper"
+      ]
+    },
+    {
+      "id": "VC-S1a-8a",
+      "claim": "Manual ICD-10 coding global error rate estimated up to 20%",
+      "sources": [
+        "(14a) arXiv 2411.06823 [primary-academic]",
+        "(14b) PMC12045799 [primary-academic]"
+      ],
+      "score": "Medium",
+      "rationale": "2 independent primary academic sources from different domains. Meets 2+ sources with ≥1 primary = Medium. Stated as a global figure, not ID/MY-specific.",
+      "flags": [
+        "global-benchmark-not-id-my-specific"
+      ]
+    },
+    {
+      "id": "VC-S1a-9a",
+      "claim": "9.5% medication error rate in Indonesian outpatient settings; 88% at prescribing phase",
+      "sources": [
+        "(15a) PLOS ONE journal.pone.0136545 [primary-academic]",
+        "(15b) PMC12648230 [primary-academic]"
+      ],
+      "score": "Medium",
+      "rationale": "2 independent primary academic sources. Source (15a) is PLOS ONE (journal.pone.0136545 — article ID suggests circa 2015, potentially stale). PMC12648230 appears more recent. Indonesia-specific is a geography fit for the Indonesia half of the claim. 2 primary academic sources = Medium. Recency of (15a) is a flag.",
+      "flags": [
+        "plos-one-source-likely-2015-may-be-stale"
+      ]
+    },
+    {
+      "id": "VC-chain-1",
+      "claim": "Kimia Farma Laboratorium & Klinik: 355 klinik pratama + 22 klinik utama + 70 labs across 34 provinces",
+      "sources": [
+        "(16) Kimia Farma corporate press release July 2023 [secondary-press-release]"
+      ],
+      "score": "Low",
+      "rationale": "Single press-release source. Press-release-only override: Low. No corroborating audited filing, annual report, or third-party coverage.",
+      "flags": [
+        "press-release-only-override"
+      ]
+    },
+    {
+      "id": "VC-chain-2",
+      "claim": "Klinik Pintar: ~22 locations as of Dec 2023; aiming for 100+ by end-2024",
+      "sources": [
+        "(17) Nikkei Asia Feb 2023 [secondary-news]; CBInsights data"
+      ],
+      "score": "Low",
+      "rationale": "Single secondary-news source (Nikkei Asia). CBInsights is a market-research aggregator. 1 confirmed independent source. CBInsights counts as secondary-market-research. Low.",
+      "flags": [
+        "single-secondary-news-source"
+      ]
+    },
+    {
+      "id": "VC-chain-3",
+      "claim": "Halodoc: 3,300+ hospital partners, 20,000+ licensed doctors on platform",
+      "sources": [
+        "(18) AWS Press aboutamazon.com June 2023 [secondary-press-release, vendor-adjacent]"
+      ],
+      "score": "Low",
+      "rationale": "AWS press release quoting Halodoc's own figures about Halodoc's platform scale. Functionally equivalent to vendor marketing material. Press-release-only override applies. Low.",
+      "flags": [
+        "press-release-only-override",
+        "vendor-self-claim-via-aws-press"
+      ]
+    },
+    {
+      "id": "VC-chain-4",
+      "claim": "Siloam Hospitals Group: 66 satellite clinics supporting 41 hospitals in 21 provinces",
+      "sources": [
+        "(19) siloamhospitals.com corporate website/Wikipedia [auto-low-vendor]"
+      ],
+      "score": "Low",
+      "rationale": "Vendor's own website and Wikipedia. Auto-Low per vendor-marketing override.",
+      "flags": [
+        "auto-low-vendor-marketing"
+      ]
+    },
+    {
+      "id": "VC-chain-5",
+      "claim": "Mediviron Group: 232+ clinics across 8 states (west coast Peninsular Malaysia)",
+      "sources": [
+        "(21) mediviron.com.my corporate website [auto-low-vendor]"
+      ],
+      "score": "Low",
+      "rationale": "Vendor's own corporate website claiming its own clinic count. Auto-Low per vendor-marketing override.",
+      "flags": [
+        "auto-low-vendor-marketing"
+      ]
+    },
+    {
+      "id": "VC-chain-6",
+      "claim": "Qualitas Health: 351 healthcare facilities across Asia-Pacific as of 2024",
+      "sources": [
+        "(22) qualitashealthgroup.com + ZoomInfo [auto-low-vendor]"
+      ],
+      "score": "Low",
+      "rationale": "Vendor's own corporate website + ZoomInfo (aggregator marketplace). Auto-Low per vendor-marketing override.",
+      "flags": [
+        "auto-low-vendor-marketing"
+      ]
+    },
+    {
+      "id": "VC-chain-7",
+      "claim": "PMCare: 'pioneer and leading Third Party Administrator in Malaysia'",
+      "sources": [
+        "(23) pmcare.com.my [auto-low-vendor]"
+      ],
+      "score": "Low",
+      "rationale": "Vendor's own website making a market position claim about itself. Auto-Low per vendor-marketing override.",
+      "flags": [
+        "auto-low-vendor-marketing"
+      ]
+    },
+    {
+      "id": "PP1.1-cost-1",
+      "claim": "Indonesian private-practice GP earns IDR 10–20 million/month (urban)",
+      "sources": [
+        "PP1.1(1) SalaryExplorer Indonesia 2024 [secondary-trade]"
+      ],
+      "score": "Low",
+      "rationale": "Single salary-aggregator source (secondary-trade category). Only 1 source = Low.",
+      "flags": [
+        "single-secondary-salary-aggregator"
+      ]
+    },
+    {
+      "id": "PP1.1-cost-2",
+      "claim": "Malaysian urban private GP earns MYR 8,000–14,000/month",
+      "sources": [
+        "PP1.1(4) Glassdoor Malaysia [secondary-trade]",
+        "PP1.1(4) PayScale GP Malaysia [secondary-trade]"
+      ],
+      "score": "Low",
+      "rationale": "Two salary-aggregator sources, both secondary-trade category. Rubric requires ≥1 primary source for Medium with 2 sources. Two secondary-only sources without any primary = Low.",
+      "flags": [
+        "secondary-only-salary-aggregators-no-primary"
+      ]
+    },
+    {
+      "id": "PP1.1-cost-3",
+      "claim": "Documentation accounts for 40–50% of GP's clinical working time (driving USD 320–800/month documentation labor cost in Indonesia)",
+      "sources": [
+        "PP1.1(2) PMC11233089 Rotenstein 2024 [primary-academic, US data]",
+        "PP1.1(8) arXiv:2409.17054 Khatim et al. [primary-academic, Puskesmas]"
+      ],
+      "score": "Medium",
+      "rationale": "2 independent primary academic sources from different domains. Meets 2+ sources with ≥1 primary = Medium. However, (2) is US data and (8) is Puskesmas (public). Both require geographic bridging to ID/MY private GP context. The 40-50% figure is the draft's synthesis of US 26.6% scheduled time + Puskesmas 1.67× ratio + other data — it is not directly stated in either source for a private GP clinic in ID/MY.",
+      "flags": [
+        "us-and-puskesmas-proxy-for-private-gp",
+        "synthesized-figure-not-directly-cited"
+      ]
+    },
+    {
+      "id": "PP1.1-cost-4",
+      "claim": "USD 5,760–14,400/year documentation labor cost per 300-patient-panel clinic (Indonesia); USD 5,980–11,740/year (Malaysia)",
+      "sources": [
+        "PP1.1(1)(4)(5) salary aggregators [secondary-trade]",
+        "PP1.1(2)(8) academic sources for documentation % [primary-academic, US/Puskesmas]"
+      ],
+      "score": "Low",
+      "rationale": "Dollar-value calculation built on two layers of weak inputs: (a) salary from secondary-trade aggregators only, (b) documentation time % proxied from US data and Puskesmas. No ID/MY private clinic direct measurement. Compounded proxies produce a Low-confidence cost estimate regardless of arithmetic correctness.",
+      "flags": [
+        "compounded-proxy-calculation",
+        "no-id-my-primary-data"
+      ]
+    },
+    {
+      "id": "PP1.1-freq-1",
+      "claim": "Primary care physicians average 16 min 14 sec EHR time per encounter (Fierce Healthcare / Annals of IM 2024)",
+      "sources": [
+        "PP1.1(3) FierceHealthcare/AMA [secondary-trade/news]"
+      ],
+      "score": "Low",
+      "rationale": "Trade press reporting a primary study. Chain-of-citations: the Rotenstein 2024 Annals of IM paper is the real source but is accessed only via secondary trade summaries. Treat as 1 source (Rotenstein 2024). Geography mismatch (US academic medical centers). Low.",
+      "flags": [
+        "us-proxy-for-id-my",
+        "accessed-via-secondary-only"
+      ]
+    },
+    {
+      "id": "PP1.1-freq-2",
+      "claim": "91% of US office-based physicians spend time outside normal hours on clinical documentation (CDC/MMWR 2021)",
+      "sources": [
+        "PP1.1(7) CDC/MMWR PMC8675657 [primary-gov, US, 2019 data published 2021]"
+      ],
+      "score": "Low",
+      "rationale": "Strong single government-agency source (CDC/MMWR). However, 1 source = Low per rubric. Additionally: US data only; no ID/MY equivalent. Geography mismatch.",
+      "flags": [
+        "us-only-no-id-my-equivalent",
+        "single-source"
+      ]
+    },
+    {
+      "id": "PP1.1-freq-3",
+      "claim": "EMR adoption in Indonesian FKTPs: 8.9% of 39,852 eligible facilities have full EMR as of end-2024 (PT MTK network data)",
+      "sources": [
+        "PP1.1(12) arXiv:2512.05381 [primary-academic, preprint, single-vendor-data]"
+      ],
+      "score": "Low",
+      "rationale": "Single arXiv preprint source. The 8.9% figure derives from one vendor's (PT MTK) deployment count extrapolated to total FKTP population — this is a vendor-data-as-national-proxy issue. Low.",
+      "flags": [
+        "single-vendor-data-extrapolated-to-national",
+        "arXiv-preprint-not-peer-reviewed"
+      ]
+    },
+    {
+      "id": "PP1.1-uplift-1",
+      "claim": "Nuance DAX: 7 minutes saved per encounter, 50% documentation time reduction (2023 clinician survey — vendor claim)",
+      "sources": [
+        "PP1.1(9) Nuance DAX press release [auto-low-vendor]"
+      ],
+      "score": "Low",
+      "rationale": "Vendor's own press release about its own product's performance. Auto-Low per vendor-marketing override. Correctly labeled as vendor claim in document.",
+      "flags": [
+        "auto-low-vendor-marketing"
+      ]
+    },
+    {
+      "id": "PP1.1-uplift-2",
+      "claim": "Abridge ambient scribe: 18.6% note time reduction (0.95 min/note saved, p<0.0001) in 332 primary care physicians",
+      "sources": [
+        "PP1.1(10) PMC12657781 [primary-academic]"
+      ],
+      "score": "Low",
+      "rationale": "Single primary academic source. 1 source = Low. Also: US-based study; geography mismatch for ID/MY private GP context.",
+      "flags": [
+        "single-source",
+        "us-study-geo-mismatch"
+      ]
+    },
+    {
+      "id": "PP1.1-uplift-3",
+      "claim": "Singapore General Hospital ambient scribe: 15% note time reduction (5.3→4.5 min; p=0.04), multilingual support including Malay",
+      "sources": [
+        "PP1.1(11) JMIR Medical Informatics 2026 SGH study [primary-academic]"
+      ],
+      "score": "Low",
+      "rationale": "Single primary academic source. 1 source = Low. Geography: Singapore hospital setting, not Indonesia/Malaysia private GP clinic. Relevant as closest regional evidence but a geographic proxy nonetheless.",
+      "flags": [
+        "single-source",
+        "singapore-hospital-not-id-my-private-gp"
+      ]
+    },
+    {
+      "id": "PP1.2-freq-1",
+      "claim": "18% of diagnosis codes inaccurate in Indonesian hospital BPJS inpatient claims (RSUD Pandan Arang, Jan-Mar 2023, n=100 sampled records)",
+      "sources": [
+        "PP1.2(1) Jurnal Ilmiah Kedokteran dan Kesehatan 2023 [primary-academic]"
+      ],
+      "score": "Low",
+      "rationale": "Single academic source. Sample size 100 records from one hospital in one quarter. Inpatient hospital proxy for FKTP outpatient clinic — acknowledged proxy. 1 source = Low.",
+      "flags": [
+        "single-source",
+        "inpatient-hospital-proxy-for-fktp-outpatient",
+        "small-single-hospital-sample"
+      ]
+    },
+    {
+      "id": "PP1.2-freq-2",
+      "claim": "37.3% of sampled hospital records had ICD-10 coding errors (Saudi Arabia, n=213)",
+      "sources": [
+        "PP1.2(5) PMC10727934 2023 [primary-academic]"
+      ],
+      "score": "Low",
+      "rationale": "Single source. Geography mismatch (Saudi Arabia). Used as 'directional international benchmark'; acknowledged as proxy.",
+      "flags": [
+        "single-source",
+        "geography-mismatch-saudi-arabia"
+      ]
+    },
+    {
+      "id": "PP1.2-freq-3",
+      "claim": "11.3% of total BPJS pending claims at RSUD UNS Surakarta from diagnosis code issues (Aug-Oct 2023, 78 of 182 pending files)",
+      "sources": [
+        "PP1.2(6) rammik.pubmedia.id Indonesian medical journal 2023 [primary-academic]"
+      ],
+      "score": "Low",
+      "rationale": "Single academic source. Hospital (RSUD UNS) proxy for FKTP outpatient. 1 source = Low.",
+      "flags": [
+        "single-source",
+        "hospital-proxy-for-fktp"
+      ]
+    },
+    {
+      "id": "PP1.2-freq-4",
+      "claim": "38.1% of pending claim causes at Universitas Indonesia Hospital (2023) were coding discrepancies",
+      "sources": [
+        "PP1.2(7) journal.piksi.ac.id UI Hospital 2023 [primary-academic]"
+      ],
+      "score": "Low",
+      "rationale": "Single academic source. Hospital proxy for FKTP. 1 source = Low.",
+      "flags": [
+        "single-source",
+        "hospital-proxy-for-fktp"
+      ]
+    },
+    {
+      "id": "PP1.2-freq-5",
+      "claim": "Manual ICD-10 global coding error rate up to 20%; annual US coding cost $18.2B",
+      "sources": [
+        "PP1.2(4) PMC12045799 npj Health Systems 2025 [primary-academic]",
+        "PP1.2(11) arXiv 2411.06823 [primary-academic]"
+      ],
+      "score": "Medium",
+      "rationale": "2 independent primary academic sources from different domains. Meets 2+ with ≥1 primary = Medium. Stated as global/US benchmark; not ID/MY-specific.",
+      "flags": [
+        "global-us-benchmark-not-id-my"
+      ]
+    },
+    {
+      "id": "PP1.2-freq-6",
+      "claim": "7.2% of total BPJS outpatient claims pending due to coding errors at one Indonesian hospital (Poltekkes Malang reference)",
+      "sources": [
+        "No formal citation number assigned in document — referenced as 'see search result from Poltekkes Malang'"
+      ],
+      "score": "Low",
+      "rationale": "No formal citation. The claim references a search result without a citable source. No URL, no author, no journal. Cannot be verified. Low.",
+      "flags": [
+        "no-formal-citation",
+        "unverifiable-claim"
+      ]
+    },
+    {
+      "id": "PP1.2-AI-bench",
+      "claim": "Fine-tuned LLM ICD-10 coding: 69.2% exact match; 87.2% category match on real clinical notes",
+      "sources": [
+        "PP1.2(4) PMC12045799 npj Health Systems 2025 [primary-academic]"
+      ],
+      "score": "Low",
+      "rationale": "Single primary academic source. 1 source = Low. Also: performance figures are from a controlled research dataset, not production ID/MY clinical notes.",
+      "flags": [
+        "single-source",
+        "research-dataset-not-production-id-my"
+      ]
+    },
+    {
+      "id": "PP1.3-freq-1",
+      "claim": "BPJS PCare portal documented nationwide outage: May 13, 2024, affecting referrals and registration",
+      "sources": [
+        "PP1.3(5) Tempo.co May 2024 [secondary-news]"
+      ],
+      "score": "Low",
+      "rationale": "Single secondary-news source (Tempo.co). Specific dated event reported by credible Indonesian news outlet. The event itself is plausibly accurate, but a single news article = Low per rubric. No BPJS Kesehatan official statement URL cited as corroboration.",
+      "flags": [
+        "single-secondary-news-source"
+      ]
+    },
+    {
+      "id": "PP1.3-freq-2",
+      "claim": "PCare portal congested from 7,600+ FKTP concurrent logins",
+      "sources": [
+        "PP1.3(6) eClinic.id PCare description page [auto-low-vendor]"
+      ],
+      "score": "Low",
+      "rationale": "EHR vendor's own marketing/support page describing the BPJS portal context. Auto-Low per vendor-marketing override.",
+      "flags": [
+        "auto-low-vendor-marketing"
+      ]
+    },
+    {
+      "id": "PP1.3-freq-3",
+      "claim": "67% of Malaysian hospital specialists report GL revocation or denial after admission/treatment (CodeBlue, n=855 specialists, October 2025)",
+      "sources": [
+        "PP1.3(7) CodeBlue October 2025 [secondary-news/trade-investigative]"
+      ],
+      "score": "Low",
+      "rationale": "Single trade/news source (CodeBlue is credible Malaysian health journalism). 1 source = Low. Additionally: inpatient hospital specialist metric used as proxy for outpatient GP panel friction — acknowledged indirectly in text.",
+      "flags": [
+        "single-source",
+        "inpatient-specialist-proxy-for-gp-outpatient"
+      ]
+    },
+    {
+      "id": "PP1.3-freq-4",
+      "claim": "Malaysia medical and health insurance claim ratio: more than 60% of claims paid in 2023",
+      "sources": [
+        "PP1.3(8) Statista [secondary-market-research, NEEDS-ATTENDED-FETCH, paywall]"
+      ],
+      "score": "Low",
+      "rationale": "Paywalled Statista source that could not be fetched. Even if accessible, Statista is secondary-market-research. Single inaccessible source = Low.",
+      "flags": [
+        "inaccessible-paywalled-source",
+        "secondary-market-research"
+      ]
+    },
+    {
+      "id": "PP1.3-cost-1",
+      "claim": "Front-desk BPJS verification labor cost: USD 430–620/year per clinic (Indonesia)",
+      "sources": [
+        "PP1.3(1) Glassdoor Indonesia admin salary [secondary-trade]",
+        "PP1.3(2) worldsalaries.com [secondary-trade]"
+      ],
+      "score": "Low",
+      "rationale": "Two secondary-trade salary aggregators. No primary source (BPS Indonesia labor statistics not used). Two secondary-only sources with no primary = Low. Also: underlying patient volume is assumed (ASSUMED-2).",
+      "flags": [
+        "secondary-only-salary-sources",
+        "patient-volume-assumed"
+      ]
+    },
+    {
+      "id": "PP1.4-freq-1",
+      "claim": "Malaysian urban private GP EHR adoption ~79.6% computerized (directional proxy from HK 2015 study)",
+      "sources": [
+        "PP1.4(6) PMC4288082 Luk et al. 2015 Hong Kong [primary-academic, stale, geography-mismatch]"
+      ],
+      "score": "Low",
+      "rationale": "Single source, stale (2015 = 10+ years old), geography mismatch (Hong Kong). Self-described as 'directional proxy only.' All three override conditions (single, stale, geo mismatch) fire simultaneously.",
+      "flags": [
+        "geography-mismatch-HK-for-MY",
+        "outdated-source-2015",
+        "single-source"
+      ]
+    },
+    {
+      "id": "PP1.4-cost-1",
+      "claim": "20% of GP consultations require history reconstruction; GP time cost USD 1,250–2,250/year at paper-based FKTP",
+      "sources": [
+        "[ASSUMED-6]"
+      ],
+      "score": "Low",
+      "rationale": "20% reconstruction rate is explicitly tagged ASSUMED-6. Dollar calculation is arithmetic extrapolation from assumed frequency + secondary-trade salary. Auto-Low (assumed tag).",
+      "flags": [
+        "assumed-frequency-no-primary-data"
+      ]
+    },
+    {
+      "id": "PP1.4-cost-2",
+      "claim": "Duplicate lab cost ~USD 20/year (CDM patients at 300-panel clinic)",
+      "sources": [
+        "[ASSUMED-6]"
+      ],
+      "score": "Low",
+      "rationale": "ASSUMED-6 frequency (5% CDM duplicate rate) with no sourcing. Auto-Low.",
+      "flags": [
+        "assumed-no-primary-data"
+      ]
+    }
+  ],
+  "override_triggers": [
+    {
+      "override": "vendor-marketing-override",
+      "claim_count": 12,
+      "claim_ids": [
+        "VC-S1a-1a",
+        "VC-S1a-4a",
+        "VC-chain-4",
+        "VC-chain-5",
+        "VC-chain-6",
+        "VC-chain-7",
+        "PP1.1-uplift-1",
+        "PP1.3-freq-2",
+        "VC-S1a-7b-partial"
+      ],
+      "description": "Claims about a vendor's own products, user counts, or market position sourced from that vendor's own website or press-release-equivalent material."
+    },
+    {
+      "override": "single-source-override",
+      "claim_count": 28,
+      "claim_ids": [
+        "VC-MS-2",
+        "VC-MS-3",
+        "VC-MS-4",
+        "VC-MS-6",
+        "VC-MS-7",
+        "VC-MS-9",
+        "VC-S1a-5a",
+        "VC-S1a-5b",
+        "VC-S1a-7a",
+        "VC-S1a-9a-partial",
+        "VC-chain-1",
+        "VC-chain-2",
+        "PP1.1-cost-1",
+        "PP1.1-freq-1",
+        "PP1.1-freq-2",
+        "PP1.1-freq-3",
+        "PP1.1-uplift-2",
+        "PP1.1-uplift-3",
+        "PP1.2-freq-1",
+        "PP1.2-freq-2",
+        "PP1.2-freq-3",
+        "PP1.2-freq-4",
+        "PP1.2-AI-bench",
+        "PP1.3-freq-1",
+        "PP1.3-freq-3",
+        "PP1.3-freq-4",
+        "PP1.4-freq-1"
+      ],
+      "description": "Single source cited, regardless of source quality."
+    },
+    {
+      "override": "assumed-tag",
+      "claim_count": 7,
+      "claim_ids": [
+        "VC-MS-8",
+        "VC-MS-10",
+        "PP1.4-cost-1",
+        "PP1.4-cost-2",
+        "PP1.1-cost-4-partial",
+        "PP1.3-cost-1-partial",
+        "PP1.2-freq-6-partial"
+      ],
+      "description": "Claims tagged [ASSUMED-N] or derived entirely from assumed-frequency inputs."
+    },
+    {
+      "override": "press-release-only",
+      "claim_count": 3,
+      "claim_ids": [
+        "VC-chain-1",
+        "VC-chain-3",
+        "PP1.1-uplift-1"
+      ],
+      "description": "Claims supported only by press releases (PR Newswire / BusinessWire equivalent or corporate press release) without corroboration by primary filing or third-party coverage."
+    },
+    {
+      "override": "geography-mismatch",
+      "claim_count": 8,
+      "claim_ids": [
+        "VC-MS-7",
+        "VC-MS-9",
+        "VC-S1a-5a",
+        "VC-S1a-7a",
+        "PP1.1-freq-1",
+        "PP1.1-freq-2",
+        "PP1.1-uplift-2",
+        "PP1.2-freq-2",
+        "PP1.4-freq-1"
+      ],
+      "description": "Claims use data from US, Hong Kong, Saudi Arabia, or Singapore academic hospitals as proxy for Indonesia/Malaysia private GP clinics."
+    },
+    {
+      "override": "outdated-source",
+      "claim_count": 3,
+      "claim_ids": [
+        "VC-MS-7",
+        "VC-MS-9",
+        "PP1.4-freq-1"
+      ],
+      "description": "Sources older than 3 years (2015 HK EHR study, 2017 Malaysian Family Physician study) used for current market conditions."
+    }
+  ],
+  "weak_claims_to_re_research": [
+    {
+      "id": "PP1.1-cost-3",
+      "claim": "Documentation accounts for 40–50% of GP working time (used to derive USD 5,760–14,400/year documentation labor cost per 300-patient-panel clinic)",
+      "current_source": "US EHR workload study (PMC11233089) + Indonesian Puskesmas PoC (arXiv:2409.17054) — neither is private GP clinic in ID/MY",
+      "current_score": "Medium (geography-flagged)",
+      "why_weak": "Core cost anchor for PP1.1 but derived entirely from US academic medical center data and a Puskesmas (public) study. No primary measurement from a private GP clinic in Jakarta, Surabaya, Klang Valley, or Penang. The 40-50% figure is a synthesized inference, not a directly cited finding from either source.",
+      "specific_research_question": "What share of a private GP clinic consultation-day is consumed by documentation tasks (SOAP authoring, EHR entry, ICD-10 coding, billing) in Indonesia and Malaysia? Search: Malaysia Medical Association survey data on GP workload; KKM/MOH Malaysia GP practice survey; MFPHC (Malaysian Family Physician and Health Clinic) operational studies 2020-2025; Indonesian Kemenkes primary care workforce workload studies.",
+      "priority": "high"
+    },
+    {
+      "id": "PP1.2-freq-1",
+      "claim": "18% of diagnosis codes inaccurate in Indonesian BPJS claims (RSUD Pandan Arang, hospital inpatient, n=100)",
+      "current_source": "Single Indonesian academic journal article from one hospital in one quarter",
+      "current_score": "Low",
+      "why_weak": "This is the primary frequency anchor for PP1.2 (ICD-10 miscoding pain point). The entire cost model for PP1.2 rests on this 18% figure. It derives from a single small-sample hospital inpatient study — not FKTP outpatient. No cross-validation from BPJS Kesehatan administrative data or a multi-facility study. The directional claim may be right but is insufficiently evidenced for a foundational cost anchor.",
+      "specific_research_question": "What is the ICD-10 coding error rate at BPJS FKTP primary care clinics (not hospitals)? Search: BPJS Kesehatan audit reports on FKTP claim accuracy; Kemenkes FKTP monitoring data; Indonesian peer-reviewed studies on PCare/JKN ICD-10 coding accuracy at puskesmas or klinik pratama level (not RSUD). Also search: 'ketepatan kode ICD-10 puskesmas' and 'klaim BPJS FKTP penolakan' in Indonesian academic databases (Portal Garuda, SINTA).",
+      "priority": "high"
+    },
+    {
+      "id": "VC-MS-6",
+      "claim": "EMR adoption in Indonesia FKTP: 8.9% of 39,852 eligible facilities by end-2024 (PT MTK / Medeva network data)",
+      "current_source": "arXiv:2512.05381 — single preprint using one EHR vendor's deployment count to proxy national adoption",
+      "current_score": "Low",
+      "why_weak": "This is the foundational infrastructure claim used in PP1.1 RC1, PP1.4 RC2, and multiple sub-step automation-level assessments. The 8.9% is explicitly the share covered by one vendor (PT Medigo Teknologi Kesehatan / Medeva), not a Kemenkes-surveyed national adoption rate. The actual national EMR adoption rate could be higher (other vendors: eClinic, Assist.ID, KlinikPintar each have separate deployments not counted here).",
+      "specific_research_question": "What is the actual national EMR adoption rate across all FKTP facilities in Indonesia as of 2023-2024, per Kemenkes SATUSEHAT integration data or MOH health informatics division? Search: Kemenkes SATUSEHAT implementation report 2023-2024; 'adopsi rekam medis elektronik FKTP Indonesia' in Kemenkes publications; BPJS Kesehatan annual report 2023 on PCare-connected facilities.",
+      "priority": "high"
+    },
+    {
+      "id": "PP1.3-freq-3",
+      "claim": "67% of Malaysian hospital specialists report GL revocation/denial after treatment (CodeBlue, n=855, Oct 2025)",
+      "current_source": "Single trade-journalism article (CodeBlue) — specialist survey, inpatient context",
+      "current_score": "Low",
+      "why_weak": "This is the most compelling quantified evidence for insurance/TPA friction in Malaysia (PP1.3) but it is: (a) a specialist/inpatient metric used as proxy for GP outpatient panel friction, (b) single source. Used to anchor the structural claim about TPA system instability. Requires corroboration from a GP-specific source or regulator data.",
+      "specific_research_question": "What is the TPA/insurer claim rejection or pending rate for Malaysian private GP panel clinics specifically? Search: Bank Negara Malaysia Insurance Annual Statistics 2022-2024 on medical insurance rejection rates; Malaysian Medical Association GP survey data on panel claim rejection rates; PhilHealth analogue if any; Persatuan Perubatan Malaysia (MMA) publications on panel clinic administrative burden.",
+      "priority": "medium"
+    },
+    {
+      "id": "PP1.1-cost-1",
+      "claim": "Indonesian private-practice GP earns IDR 10–20 million/month; Malaysian GP earns MYR 8,000–14,000/month",
+      "current_source": "SalaryExplorer, Glassdoor, PayScale (secondary-trade salary aggregators)",
+      "current_score": "Low",
+      "why_weak": "GP salary is a multiplier in every cost model across PP1.1 and PP1.2. Salary aggregators (Glassdoor, SalaryExplorer, PayScale) are crowd-sourced and carry ±20-40% variance at individual market level. No primary data source (BPS Indonesia labor force survey, DOSM Malaysia Employment Statistics, Malaysian Medical Association member salary survey, IDI/Ikatan Dokter Indonesia salary data) is used.",
+      "specific_research_question": "What is the published salary range for GP doctors in private clinics in urban Indonesia and urban Malaysia, per primary labor statistics or professional body surveys? Search: BPS Indonesia 'Survei Angkatan Kerja Nasional' (SAKERNAS) health worker wages; DOSM Malaysia 'Salaries and Wages Survey' by occupation; Malaysian Medical Association salary survey; IDI (Ikatan Dokter Indonesia) advocacy publications on GP compensation.",
+      "priority": "medium"
+    },
+    {
+      "id": "VC-MS-2",
+      "claim": "10,495 private medical clinics registered in Malaysia (2023 data)",
+      "current_source": "MOH Malaysia Health Facts 2024 — single source",
+      "current_score": "Low",
+      "why_weak": "The MOH Health Facts 2024 is a high-quality source but cited alone without a corroborating source. Adding one more independent source (e.g., MMA Annual Report, MPCB database, or a peer-reviewed study citing the same figure) would immediately upgrade to High given the primary-ministry quality. Low purely on count, not on source credibility.",
+      "specific_research_question": "What corroborating source cites the number of private medical clinics in Malaysia as of 2022-2024? Search: Malaysian Medical Association Annual Report 2023-2024; Medical Practice Control Branch (MPCB) MOPD statistics; published academic studies citing MOH Malaysia health facility counts (e.g., Lancet, BMC Health Services Research).",
+      "priority": "low"
+    }
+  ],
+  "claims_with_geography_mismatch_flag": [
+    {
+      "id": "VC-MS-7",
+      "claim": "EMR adoption proxy from Hong Kong 2015 study (79.6%) applied to Malaysia",
+      "proxy_country": "Hong Kong",
+      "target_country": "Malaysia"
+    },
+    {
+      "id": "VC-MS-9",
+      "claim": "Malaysian daily patient volume based on public clinic in Gombak (Ahmad BA 2017)",
+      "proxy": "Malaysian public primary care clinic",
+      "target": "Malaysian private GP clinic"
+    },
+    {
+      "id": "VC-S1a-5a",
+      "claim": "18.21-min consultation time from Malaysian public primary care clinic",
+      "proxy": "Malaysian public primary care clinic",
+      "target": "Malaysian private GP clinic"
+    },
+    {
+      "id": "VC-S1a-5b",
+      "claim": "5-6 min consultation and 1.67x documentation ratio from Indonesia Puskesmas",
+      "proxy": "Puskesmas (public)",
+      "target": "Indonesian private klinik pratama"
+    },
+    {
+      "id": "VC-S1a-7a",
+      "claim": "16 min EHR time per visit from US primary care physicians",
+      "proxy_country": "United States",
+      "target_country": "Indonesia/Malaysia"
+    },
+    {
+      "id": "PP1.1-freq-2",
+      "claim": "91% after-hours documentation rate from CDC/MMWR US data",
+      "proxy_country": "United States",
+      "target_country": "Indonesia/Malaysia"
+    },
+    {
+      "id": "PP1.1-uplift-2",
+      "claim": "Abridge 18.6% note time reduction from US RCT",
+      "proxy_country": "United States",
+      "target_country": "Indonesia/Malaysia"
+    },
+    {
+      "id": "PP1.1-uplift-3",
+      "claim": "SGH 15% note time reduction (Singapore hospital, not private GP clinic)",
+      "proxy": "Singapore academic hospital",
+      "target": "Indonesia/Malaysia private GP clinic"
+    },
+    {
+      "id": "PP1.2-freq-2",
+      "claim": "37.3% coding error rate from Saudi Arabia hospital study",
+      "proxy_country": "Saudi Arabia",
+      "target_country": "Indonesia/Malaysia"
+    },
+    {
+      "id": "PP1.4-freq-1",
+      "claim": "79.6% EHR computerization from Hong Kong 2015 study used as Malaysia proxy",
+      "proxy_country": "Hong Kong",
+      "target_country": "Malaysia"
+    }
+  ],
+  "claims_with_recency_flag": [
+    {
+      "id": "VC-MS-7",
+      "source": "Luk W. et al. BMC Medical Informatics 2015",
+      "year": 2015,
+      "age_years": 11,
+      "issue": "Primary behavioral data on EHR adoption from 2015 is likely stale for current Malaysia market conditions"
+    },
+    {
+      "id": "VC-MS-9",
+      "source": "Ahmad BA et al. Malaysian Family Physician 2017",
+      "year": 2017,
+      "age_years": 9,
+      "issue": "Patient volume and consultation time data from 2017 public clinic may not reflect current private GP caseloads"
+    },
+    {
+      "id": "VC-S1a-5a",
+      "source": "Ahmad BA et al. 2017",
+      "year": 2017,
+      "age_years": 9,
+      "issue": "Same stale source for consultation time"
+    },
+    {
+      "id": "VC-S1a-9a",
+      "source": "PLOS ONE journal.pone.0136545 — article ID suggests circa 2015",
+      "year_estimated": 2015,
+      "issue": "Medication error rate data may be stale; Indonesian hospital landscape has changed since 2015"
+    },
+    {
+      "id": "PP1.4-freq-1",
+      "source": "Luk W. et al. 2015 Hong Kong",
+      "year": 2015,
+      "age_years": 11,
+      "issue": "Stale and wrong geography"
+    }
+  ],
+  "vendor_self_claims_auto_low": [
+    {
+      "id": "VC-S1a-1a",
+      "vendor": "Klinify",
+      "claim": "800+ doctors using platform",
+      "source": "klinify.com"
+    },
+    {
+      "id": "VC-S1a-4a",
+      "vendor": "Medilink-Global",
+      "claim": "Traditional GL up to 6 hours; digital GL ~30 minutes",
+      "source": "medilink-global.com"
+    },
+    {
+      "id": "VC-chain-4",
+      "vendor": "Siloam Hospitals",
+      "claim": "66 satellite clinics",
+      "source": "siloamhospitals.com"
+    },
+    {
+      "id": "VC-chain-5",
+      "vendor": "Mediviron",
+      "claim": "232+ clinics across 8 states",
+      "source": "mediviron.com.my"
+    },
+    {
+      "id": "VC-chain-6",
+      "vendor": "Qualitas Health",
+      "claim": "351 facilities across Asia-Pacific",
+      "source": "qualitashealthgroup.com + ZoomInfo"
+    },
+    {
+      "id": "VC-chain-7",
+      "vendor": "PMCare",
+      "claim": "Pioneer and leading TPA in Malaysia",
+      "source": "pmcare.com.my"
+    },
+    {
+      "id": "PP1.1-uplift-1",
+      "vendor": "Nuance/Microsoft",
+      "claim": "7 min saved per encounter; 50% documentation reduction",
+      "source": "Nuance press release"
+    },
+    {
+      "id": "PP1.3-freq-2",
+      "vendor": "eClinic",
+      "claim": "PCare portal congested from 7,600+ FKTPs",
+      "source": "eclinic.id (vendor support/marketing page)"
+    }
+  ],
+  "unique_sources_total": 34,
+  "unique_primary_sources": 14,
+  "unique_secondary_sources": 12,
+  "unique_auto_low_sources": 8,
+  "source_diversity_by_category": {
+    "primary-gov": 2,
+    "primary-ministry": 1,
+    "primary-academic": 11,
+    "secondary-trade": 7,
+    "secondary-news": 4,
+    "secondary-market-research": 2,
+    "secondary-press-release": 3,
+    "auto-low-vendor": 8,
+    "needs-attended-fetch": 2
+  },
+  "vertical_slice_diversity_check": "fail",
+  "vertical_slice_diversity_notes": "Primary source coverage is narrow: 2 gov/ministry sources cover only clinic counts (Indonesia and Malaysia). All cost anchors, time benchmarks, and frequency figures rely on academic preprints (arXiv), salary aggregators, or US/Singapore proxies. No top-tier consultancy authored report (McKinsey, BCG, Deloitte), no industry association report (MMA, IDI, PHEI), no audited corporate filing, and no direct interview transcript cited across the full stage. Geography mismatch is pervasive: 8 of 48 claims use non-ID/MY data as proxy. The claim category with the most evidential weight (pain point cost anchors) has the least primary sourcing.",
+  "high_tier_claims_with_evidence": [],
+  "gate_decision_recommendation": "re-run-recommended",
+  "gate_reasoning": "Of 48 claims scored, only 2 are High confidence (VC-MS-1: Indonesia clinic count from Kemenkes; and implicitly the two Medium claims VC-S1a-7b and VC-S1a-8a that are the strongest in the document). 41 of 48 claims (85%) are Low confidence. The core cost anchors that drive the business case — documentation labor cost (PP1.1), ICD-10 error rate and associated claim rejection cost (PP1.2), front-desk verification delay cost (PP1.3), and history reconstruction cost (PP1.4) — are all Low, built from salary aggregators, US proxy data, Puskesmas PoC extrapolations, and assumed frequencies. Eight auto-Low vendor-marketing overrides are triggered. Twelve geography mismatches are flagged. Three stale-source overrides fire. The underlying structural narrative is coherent and the pain points are real, but the current evidence base cannot support a sourced business case. Six weak claims have been identified for targeted deep-research, prioritized in the following order: (1) ID/MY private GP documentation time share — the single most impactful upgrade, (2) FKTP-level ICD-10 coding error rate from BPJS administrative data, (3) national FKTP EMR adoption from Kemenkes SATUSEHAT data rather than a single vendor proxy, (4) Malaysian TPA claim rejection rate from Bank Negara Malaysia or MMA data, (5) GP salary from BPS/DOSM primary labor statistics, (6) Malaysia clinic count corroboration. A targeted deep-research pass addressing items 1-3 would materially upgrade the confidence distribution.",
+  "data_gaps_confirmed": [
+    "National average daily patient volume per private GP clinic (ID and MY): no government or association statistic found",
+    "Malaysia private GP EHR adoption rate 2023: no MOH Malaysia or MMA statistic; HK 2015 proxy used",
+    "Indonesia FKTP EMR adoption: single-vendor data only; Kemenkes SATUSEHAT aggregate not yet published or found",
+    "Sub-step-level time benchmarks for ID/MY private clinics: all from public clinic or US data",
+    "BPJS PCare portal uptime statistics: not published by BPJS Kesehatan",
+    "FKTP-level ICD-10 coding error rate: all published studies from hospitals, not FKTP outpatient",
+    "Willingness-to-pay for any AI intervention in ID/MY GP clinic context: no published WTP study found"
+  ]
+}

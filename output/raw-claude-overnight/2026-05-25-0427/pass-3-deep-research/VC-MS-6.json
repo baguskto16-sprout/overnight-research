@@ -1,0 +1,134 @@
+{
+  "claim_id": "VC-MS-6",
+  "original_claim": "EMR adoption in Indonesia FKTP: 8.9% of 39,852 eligible facilities by end-2024 (PT MTK / Medeva network data)",
+  "original_source": "arXiv:2512.05381 — single preprint using one EHR vendor's deployment count as national proxy",
+  "outcome": "contradicting-evidence",
+
+  "new_sources": [
+    {
+      "url": "https://www.kemkes.go.id/id/satusehat-raih-penghargaan-aaah-award-2024",
+      "category": "primary-gov",
+      "publication_date": "2024",
+      "publication_name": "Kemenkes Indonesia — SATUSEHAT AAAH Award 2024 press release",
+      "key_finding_contradicting_original": "SATUSEHAT has integrated more than 40,000 EMR systems across all fasyankes in Indonesia, with a total target of 60,000 by end-2024. This aggregate figure covers all facility types (hospitals, puskesmas, kliniks) and directly contradicts the 8.9% single-vendor figure as a proxy for national adoption.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://www.badankebijakan.kemkes.go.id/en/wajib-integrasi-satu-sehat-kemenkes-desak-percepatan-rme-di-fasyankes/",
+      "category": "primary-gov",
+      "publication_date": "2025-10-27",
+      "publication_name": "BKPK Kemenkes (Ministry of Health Policy Development Agency) — official article",
+      "key_finding_contradicting_original": "As of October 27, 2025, 34,463 healthcare facilities (fasyankes) have been integrated with SATUSEHAT. For hospitals specifically, 3,138 of 3,239 (96.9%) have implemented EMR. Original Permenkes 24/2022 deadline extended to end-2025 due to implementation challenges. No FKTP-only breakdown provided.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40776145/",
+      "category": "primary-academic",
+      "publication_date": "2025",
+      "publication_name": "PubMed — Assessing the Fidelity of Electronic Health Record Implementation Using SatuSehat Platform in Indonesia",
+      "key_finding_contradicting_original": "Analysis of approximately 33,901 healthcare facilities tracked in the SATUSEHAT dashboard. In October 2024, 58% of tracked facilities met the 50% data-submission threshold, declining by December 2024 when the target increased to 100%. This confirms that SATUSEHAT-registered facilities far exceed the single-vendor 3,533 figure.",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://arxiv.org/abs/2512.05381",
+      "category": "secondary-academic-preprint",
+      "publication_date": "2025",
+      "publication_name": "arXiv:2512.05381 — Deadline-Chasing in Digital Health (updated version)",
+      "key_finding_contradicting_original": "Updated version (June 2025) shows vendor network reached 3,803 facilities = 10.3% of revised eligible FKTP pool of 36,784 (not 39,852 as in earlier version). The paper itself acknowledges its scope is one vendor's customer network, not national adoption.",
+      "via_pdf_markitdown": false,
+      "note": "This is the same flagged preprint but updated — the denominator changed from 39,852 to 36,784 and vendor share rose to 10.3% by June 2025. Still one-vendor data, not national."
+    },
+    {
+      "url": "https://codeblue.galencentre.org/2023/10/13/budget-2024-more-funds-for-digital-health-records-preventive-care/",
+      "category": "primary-gov-cited",
+      "publication_date": "2023-10-13",
+      "publication_name": "CodeBlue citing Prime Minister Anwar Ibrahim, Budget 2024 presentation",
+      "key_finding_for_malaysia": "Only 3% of Malaysia's health clinics (klinik kesihatan — public primary care) were equipped with digital health records as of October 2023. Government allocated RM150 million for IT systems including Clinic Management System Subscription in 100 health clinics.",
+      "geography": "Malaysia",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://www.trade.gov/market-intelligence/malaysia-digital-health",
+      "category": "primary-gov",
+      "publication_date": "2024",
+      "publication_name": "US International Trade Administration — Malaysia Digital Health Market Intelligence (citing Malaysian MOH data)",
+      "key_finding_for_malaysia": "Confirms 3% of health clinics have digital health records. MOH ICT Masterplan includes phased EMR and Electronic Lifetime Health Records (ELHR) rollout. MOH plans off-the-shelf cloud EMR systems for public hospitals and clinics.",
+      "geography": "Malaysia",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12227897/",
+      "category": "primary-academic",
+      "publication_date": "2025",
+      "publication_name": "PMC — The evolution of healthcare digitalisation policies in Malaysia",
+      "key_finding_for_malaysia": "By 2019, only 24% of public MOH hospitals had HIS and only 7% of health clinics (118 of 1,703) used clinical information systems. Private sector shows higher adoption capacity but no aggregate percentage given. Confirms structural digitalization gap at primary care level.",
+      "geography": "Malaysia",
+      "via_pdf_markitdown": false
+    }
+  ],
+
+  "key_distinction": {
+    "issue": "The arXiv preprint measures one commercial EMR vendor's (PT MTK / Medeva) FKTP customer base as a proxy for national adoption. This conflates vendor market share with national adoption rate.",
+    "what_vendor_data_shows": "PT MTK / Medeva: ~3,533–3,803 facilities = ~8.9–10.3% of eligible FKTP pool (per the vendor's own tracking data in the preprint).",
+    "what_satusehat_data_shows": "Kemenkes SATUSEHAT platform: 40,000+ EMR systems integrated across all fasyankes (all types); 34,463 fasyankes registered on SATUSEHAT as of Oct 2025; ~33,901 in tracked dashboard as of PubMed study. This includes hospitals, puskesmas, and kliniks — but the public Kemenkes data does NOT separately report FKTP-only counts with EMR.",
+    "reconciliation": "The 8.9% figure specifically measures penetration of one vendor among eligible private FKTP clinics — a different (narrower) denominator. National SATUSEHAT enrollment (40k+) counts RME software licenses submitted to the platform across all facility types. Neither figure cleanly equals 'national FKTP EMR adoption rate' as a standalone metric.",
+    "data_gap": "Kemenkes has NOT publicly released a clean FKTP-specific (excluding hospitals) EMR adoption rate. The 39,852 eligible FKTP denominator in the preprint appears to come from a BPJS Kesehatan cooperative facility count (all BPJS-partnered FKTP), not directly from Kemenkes PUSDATIN."
+  },
+
+  "malaysia_fktp_findings": {
+    "public_health_clinics": "Only 3% of klinik kesihatan (government primary care clinics) had digital health records as of October 2023 (PM Budget 2024 statement). By 2019, only 7% of health clinics used clinical information systems (PMC study).",
+    "private_gp_landscape": "Klinify serves 800+ doctors in Malaysia. TeleMe is telemedicine-focused. MOH stated 'nearly half' of private clinics have adopted digital systems available in the market (Feb 2025 CodeBlue), but this appears to be MOH's characterization without a verified primary source count. US ITA Malaysia report and MOH do not provide a verified aggregate private GP EMR adoption rate.",
+    "government_plan": "Malaysian MOH 2024 plan: national EMR / Lifetime Health Records system targeting 4-5 year completion. Off-the-shelf cloud EMR systems planned for public hospitals and health clinics. RM150M allocated for MOH IT systems in Budget 2024.",
+    "data_gap": "No verified official statistic for private GP clinic EMR adoption rate in Malaysia from MOH or industry association. The '3%' figure applies only to government klinik kesihatan, not the 5,000+ private GP clinic sector."
+  },
+
+  "suggested_revision": "Split into two claims: (A) Indonesia FKTP EMR vendor penetration (PT MTK / Medeva network): ~8.9–10.3% of BPJS-partnered FKTP pool (3,533–3,803 of ~36,784–39,852 eligible clinics) by end-2024 to mid-2025 — single-vendor data, not national rate. (B) Indonesia national SATUSEHAT enrollment: Kemenkes reports 40,000+ EMR systems registered on SATUSEHAT platform across all fasyankes (target: 60,000 by end-2024); 34,463 fasyankes of all types had SATUSEHAT integration as of Oct 2025 (BKPK Kemenkes). A clean FKTP-only national EMR adoption rate has NOT been publicly released by Kemenkes / PUSDATIN. (C) Malaysia: Only 3% of government klinik kesihatan had digital health records as of Oct 2023 (PM Budget 2024); private GP sector has higher but unquantified adoption — Klinify serves 800+ private doctors.",
+
+  "suggested_new_score": "Medium",
+
+  "reasoning": "The 8.9% figure is not fabricated — it accurately reflects one EMR vendor's (PT MTK) FKTP market penetration, as the arXiv preprint itself states. However, it cannot stand as the national FKTP EMR adoption rate. Kemenkes' own SATUSEHAT data shows 40,000+ RME systems integrated across all fasyankes and 34,463 facilities enrolled — an order of magnitude larger than PT MTK's customer base alone, though this covers all facility types not just FKTP. The claim requires splitting: the vendor-share figure should be sourced to the preprint with explicit 'single-vendor' caveat, and Kemenkes/BKPK official sources should be added for the broader SATUSEHAT enrollment picture. For Malaysia, the 3% figure (government clinics only, 2023) is sourced to a Prime Ministerial Budget statement and corroborated by US ITA, but private GP adoption lacks a verified national figure.",
+
+  "searches_performed": [
+    "academic-search.sh: EMR adoption primary care Indonesia FKTP digital health",
+    "WebSearch: SATUSEHAT FKTP terintegrasi rekam medis elektronik 2024 Kemenkes Indonesia progress",
+    "WebSearch: PUSDATIN Kemenkes Indonesia EMR adoption rate primary care facilities 2023 2024",
+    "WebFetch: badankebijakan.kemkes.go.id BKPK article on SATUSEHAT integration",
+    "WebSearch: SATUSEHAT 34463 fasilitas kesehatan terintegrasi 2024 2025 Kemenkes",
+    "WebFetch: satusehat.kemkes.go.id/platform (no public stats available)",
+    "WebSearch: BPJS Kesehatan PCare puskesmas klinik connected facilities 2024 annual report",
+    "WebFetch: DJSN Monthly Report JKN September 2024 PDF — HTTP 403",
+    "WebSearch: Indonesia SATUSEHAT dashboard FKTP puskesmas klinik terintegrasi statistics 2024",
+    "WebFetch: kemkes.go.id data puskesmas teregistrasi semester I 2024 (no stats in web view)",
+    "WebSearch: Indonesia digital health EMR adoption Permenkes 24 implementation WHO ASEAN 2024",
+    "WebFetch: pubmed.ncbi.nlm.nih.gov 40776145 SATUSEHAT fidelity paper",
+    "WebSearch: Bappenas working paper digital health Indonesia SATUSEHAT 2025",
+    "WebSearch: Indonesia SATUSEHAT 33901 OR 34000 total fasyankes integrated 2024",
+    "WebFetch: kemkes.go.id SATUSEHAT AAAH Award 2024 (confirmed 40,000+ figure)",
+    "WebSearch: Malaysia EMR adoption private GP clinics Klinify TeleMe MyClinic digital health 2023 2024 MOH",
+    "WebFetch: trade.gov Malaysia Digital Health (confirmed 3% figure)",
+    "WebSearch: Malaysia 3 percent health clinic digital records EMR adoption 2023 2024",
+    "WebFetch: codeblue.galencentre.org Budget 2024 digital health records (confirmed PM statement)",
+    "WebFetch: krinstitute.org KRI Digital Health Records Malaysia PDF (content not in web excerpt)",
+    "WebFetch: pmc.ncbi.nlm.nih.gov PMC12227897 Malaysia digitalisation evolution (2019: 7% clinics)"
+  ],
+
+  "categories_searched": [
+    "primary-gov (Kemenkes / BKPK official press releases and data)",
+    "primary-gov (SATUSEHAT platform official pages)",
+    "primary-gov (Kemenkes decree data — puskesmas register)",
+    "primary-gov-cited (Malaysia PM Budget 2024 statement via CodeBlue)",
+    "primary-multilateral (US ITA Malaysia Digital Health Intelligence)",
+    "primary-academic (PubMed SATUSEHAT fidelity study)",
+    "primary-academic (PMC Malaysia digitalisation policy evolution)",
+    "secondary-academic-preprint (arXiv 2512.05381 — original flagged source, updated version)",
+    "secondary-academic (Semantic Scholar academic-search.sh results)"
+  ],
+
+  "notes_for_orchestrator": {
+    "key_issue": "The original claim mixes two different metrics: (1) a single vendor's FKTP market share (8.9%), and (2) national FKTP EMR adoption rate. These are not the same. Kemenkes reports 40,000+ EMR registrations nationally across all facility types, which is a fundamentally different denominator.",
+    "fktp_only_gap": "A clean official Kemenkes figure for 'share of FKTP (only) with EMR' does not appear to exist in the public domain. The PUSDATIN annual SIRS data may contain it but is not publicly disaggregated by facility-level EMR status.",
+    "satusehat_caveat": "The 34,463 and 40,000+ figures from Kemenkes count SATUSEHAT-registered fasyankes of ALL types (hospitals + puskesmas + kliniks + pharmacies + labs). Hospital EMR is near-complete (96.9% per BKPK). Dragging this figure down to 'FKTP only' would require knowing the FKTP subset.",
+    "malaysia_note": "The 3% figure is specifically for government klinik kesihatan, not private GPs. Private GP EMR adoption in Malaysia is materially higher but no verified national aggregate exists. Klinify's 800+ doctors is a data point but represents a small fraction of the ~5,000+ private GP clinic sector.",
+    "recommended_action": "Revise claim to explicitly note 'single-vendor market share' for the 8.9% figure, add Kemenkes SATUSEHAT 40,000+ enrollment as counterpoint, and note the absence of a clean national FKTP-only EMR rate. For Malaysia, cite the 3% government clinic figure with its October 2023 date and note private GP adoption is higher but unquantified officially."
+  }
+}

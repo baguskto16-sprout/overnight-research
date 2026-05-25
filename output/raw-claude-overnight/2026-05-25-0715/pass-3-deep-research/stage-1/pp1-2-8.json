@@ -1,0 +1,21 @@
+{
+  "claim_id": "PP1.2.8",
+  "verdict": "confirmed",
+  "primary_number": "Employer 4%, Employee 1%, Total 5% of salary/wage; salary cap Rp 12,000,000/month (Pasal 30 and Pasal 32, Perpres 64/2020)",
+  "primary_url": "https://www.llg-bwi.org/file_publish/Perpres%20Nomor%2064%20Tahun%202020.pdf",
+  "publisher": "Sekretariat Negara / Indonesian Government (Presidential Regulation No. 64 of 2020 — Perubahan Kedua atas Perpres No. 82 Tahun 2018 tentang Jaminan Kesehatan). PDF also downloadable from BPK JDIH: https://peraturan.bpk.go.id/Download/127554/Perpres%20Nomor%2064%20Tahun%202020.pdf and JDIH Kemenkeu: https://jdih.kemenkeu.go.id/dok/perpres-64-tahun-2020",
+  "publisher_tier": 1,
+  "methodology_note": "PDF of the primary Presidential Regulation was accessed via markitdown and the exact article text was extracted and verified. Pasal 30 ayat (1) states: 'Iuran bagi Peserta PPU yaitu sebesar 5% dari Gaji atau Upah per bulan dengan ketentuan: (a) 4% dibayar oleh Pemberi Kerja; dan (b) 1% dibayar oleh Peserta.' Pasal 32 ayat (1) states: 'Batas paling tinggi Gaji atau Upah per bulan yang digunakan sebagai dasar perhitungan besaran Iuran bagi Peserta PPU yaitu sebesar Rp12.000.000,00 (dua belas juta rupiah).' Two subsequent amendments (Perpres 63/2022 on PBPU class restructuring, and Perpres 59/2024 on KRIS transition) did NOT change PPU rates or the salary cap. As of May 2026, rates remain unchanged — a potential rate increase for 2026 is under study but not yet enacted.",
+  "what_was_attempted": [
+    "https://peraturan.bpk.go.id/Details/136650/perpres-no-64-tahun-2020 — HTTP 403 Forbidden (blocked)",
+    "https://jdih.kemenkeu.go.id/dok/perpres-64-tahun-2020 — Page accessible; confirmed existence of regulation and PDF download link, but contribution-rate text not in page HTML (in PDF only)",
+    "https://www.llg-bwi.org/file_publish/Perpres%20Nomor%2064%20Tahun%202020.pdf — SUCCESS via markitdown; extracted verbatim text of Pasal 30 (4%/1% PPU rate) and Pasal 32 (Rp 12,000,000 cap)",
+    "https://djsn.go.id/berita/press-release-djsn-terkait-perpres-nomor-59-tahun-2024 — HTTP 403 Forbidden (blocked)",
+    "https://finansial.bisnis.com/read/20250119/215/1832933/iuran-bpjs-kesehatan-tahun-2025 — HTTP 403 Forbidden (blocked)",
+    "https://www.cnbcindonesia.com/news/20221102072647-4-384369 — SUCCESS; confirmed 4% employer / 1% employee / Rp 12M cap, citing Perpres 64/2020",
+    "https://www.gadjian.com/blog/2024/04/26/iuran-bpjs-kesehatan-karyawan/ — SUCCESS; confirmed 4%/1% split, Rp 12M cap, Perpres 64/2020 as basis, noted rates will not change until KRIS fully implemented",
+    "WebSearch: Perpres 59/2024 PPU iuran batas atas — Multiple results confirm salary cap unchanged at Rp 12M and PPU rates unchanged at 4%/1% under Perpres 59/2024",
+    "WebSearch: BPJS Kesehatan PPU 4% 2025 2026 — Confirmed rates unchanged as of May 2026; potential increase under study for 2026 but not enacted"
+  ],
+  "recommended_edit_to_canonical": "Replace secondary HR-blog citations with: 'Peraturan Presiden No. 64 Tahun 2020, Pasal 30 ayat (1) [employer 4%, employee 1%] and Pasal 32 ayat (1) [salary cap Rp 12,000,000/month], amending Perpres No. 82 Tahun 2018 tentang Jaminan Kesehatan. Source: https://peraturan.bpk.go.id/Download/127554/Perpres%20Nomor%2064%20Tahun%202020.pdf (BPK JDIH). Rates and cap unchanged by Perpres 63/2022 and Perpres 59/2024; confirmed current as of May 2026. Cap: employer maximum contribution = 4% x Rp 12,000,000 = Rp 480,000/month. Employee maximum = 1% x Rp 12,000,000 = Rp 120,000/month.'"
+}

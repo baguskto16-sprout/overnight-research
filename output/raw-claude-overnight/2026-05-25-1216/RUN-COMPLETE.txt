@@ -1,0 +1,51 @@
+RUN COMPLETE — 2026-05-25-1216
+Phase: 1 (unattended-Playwright)
+Topic: Indonesia Corporate CDM Cost Burden — cost of undetected/unmanaged metabolic disease in 500+ HC private-sector workforces (Tier-1/Tier-2 cities), employer health benefits + MCU market structure
+Started:   2026-05-25T12:16Z
+Completed: 2026-05-25T15:30Z (approx)
+Runtime:   ~3h 14m
+
+Mode:           sandbox (no engagement-design or engagement-ideation signature in cwd)
+Stages run:     6 (all tracer-fired, no aborts)
+PPs produced:   24 (4 per stage)
+Root causes:    88 total
+Unique URLs:    ~147 across 12 stage files
+Sub-agents:     26 invocations (6 mappers + 6 researchers + 2 validators + 5 deep-research + 1 contradiction-finder + 4 critics + 2 orchestrator-applied patches)
+
+Gate decision:  ship-with-flag (42.5% Low, in 30-70% band)
+Contradictions: 16 found (6 high-severity); 3 high-severity resolved via patches; 0 unresolved; no gate auto-degrade
+WH verdicts:    WH1 confirmed; WH2 confirmed; WH3 partial; WH4 confirmed; WH5 confirmed
+
+Canonical artifacts:
+  raw-claude-value-chain-indonesia-corporate-cdm-cost-burden.md (1,181 lines)
+  raw-claude-pain-points-indonesia-corporate-cdm-cost-burden.md (1,405 lines)
+  raw-claude-summary-indonesia-corporate-cdm-cost-burden.md
+  FINAL-REPORT.html (Wright-branded, 9 pages, A4 print-ready)
+
+Audit trail:
+  pass-0-plan.md
+  pass-0-deviations.md (vertical-slice deviation documented; Stages 2-6 used consolidated cross-stage validator)
+  pass-1-drafts/ (per-stage mapper + researcher drafts)
+  pass-2-validation/stage-1.json (per-stage Stage 1 validator)
+  pass-2-validation/cross-stage.json (cross-stage consolidated validator, 214 claims)
+  pass-2-validation/contradictions.json (16 contradictions found)
+  pass-2-validation/contradictions-resolved.json (3 high-severity resolved + 3 deferred to Phase 2/field)
+  pass-2-critics/critic-{dialectic,depth,width,instruction}.json
+  pass-3-deep-research/stage-1/ (5 DR outputs — employer count CONFIRMED_SCARCE, AAUI/AAJI primary, productivity loss anchored, BPJS catastrophic, MMB trend corrected)
+  stages-validated/stage-{1..6}-{value-chain,pain-points}.md (12 files)
+  checkpoint.json
+
+Phase 2 carry-forward:
+  [NEEDS-ATTENDED-FETCH] tags documented in stage files and run summary — BPS Sensus Ekonomi, OJK Statistik Perasuransian 2024 ZIP, Marsh MMB Indonesia HBS 2024 full PDF, Allianz FY2024 AR, Mondaq SEOJK comparison, BPJS Ketenagakerjaan AR. A separate Phase 2 orchestrator pass will pick these up via Playwright MCP.
+
+Top 3 high-confidence findings:
+1. Indonesia commercial group health is in a structural cost-pressure cycle (138% loss ratio 2023 → 77.2% rate-driven GWP growth 2024; medical trend 14.6/17.9/19% per MMB); insurer response is repricing + plan-design cuts, not prevention investment.
+2. HbA1c is systematically absent from standard corporate MCU panels (Prodia, Kimia Farma, Pramita, Parahita, Tzu Chi, Mandaya, RSBP Batam all confirm); first appears at Executive Female tier (Rp 1.8M+) or Premium. Permenaker 5/2018 specifies no minimum test list.
+3. 1,000-employee corporate metabolic cost burden USD 150-600K/year vs. CDM screening incremental USD 5-10K/year — 15-60x avoided-cost ratio. Cohort math holds at 500-employee (USD 75-260K) and 5,000-employee (USD 750K-2.8M) scales per width gap-fill.
+
+Top 3 questions for field validation:
+1. What share of Indonesian corporate MCU contracts include HbA1c as a default test in the panel? (ASSUMED throughout corpus)
+2. What is the per-episode cost of AMI/stroke/dialysis at private Tier-A/B hospitals in Jakarta/Surabaya? (ROI denominator, currently industry-knowledge only)
+3. Has any Indonesian employer or insurer measured presenteeism for unmanaged metabolic disease? (Soewondo 2013 acknowledged data does not exist; WH3 most-challengeable claim)
+
+STOP. Phase 2 orchestrator pass to follow separately for [NEEDS-ATTENDED-FETCH] resolution.

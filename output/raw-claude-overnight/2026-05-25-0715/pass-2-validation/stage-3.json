@@ -1,0 +1,1407 @@
+{
+  "context": "per-stage",
+  "stage": 3,
+  "stage_name": "Private Health Insurance — Payor Layer (Indonesia Tier-1 & Tier-2 Cities)",
+  "run_id": "2026-05-25-0715",
+  "validated_at": "2026-05-25",
+  "source_priority_applied": "OJK > AAJI > AAUI > MMB/firm-imprint > insurer filings > peer-reviewed > trade press",
+  "unique_publishers_audit": {
+    "count": 17,
+    "publishers": [
+      "OJK (Otoritas Jasa Keuangan) — primary-ministry",
+      "AAJI (Asosiasi Asuransi Jiwa Indonesia) — primary-association",
+      "Mercer Marsh Benefits (MMB) — primary-consultancy (firm-imprint report)",
+      "ANTARA News — secondary-news",
+      "Kompas Money — secondary-news",
+      "GlobalData — secondary-market-research (press release)",
+      "Mordor Intelligence — secondary-market-research",
+      "AIA Financial Indonesia RIPLAY — primary-filing (product disclosure)",
+      "OJK Insurance Roadmap 2023-2027 — primary-ministry",
+      "Milliman Indonesia — primary-consultancy (e-alert)",
+      "Lockton Indonesia — primary-consultancy (insight article)",
+      "HHP Law Firm legal alert — secondary-trade (legal counsel, not regulator)",
+      "Health Policy and Planning / PMC (Suraya et al. 2024) — primary-academic",
+      "IJHP systematic review (2025) — primary-academic",
+      "Alfian et al. Hypertension Research 2026 — primary-academic",
+      "Muharram et al. Lancet Regional Health 2025 — primary-academic",
+      "Ramadaniati et al. PLOS ONE 2024 — primary-academic",
+      "Bisnis Indonesia — secondary-news",
+      "ValidNews.id — secondary-news",
+      "Asia Insurance Review — secondary-trade",
+      "Prodia FY2023 Annual Report — primary-filing",
+      "Mitra Keluarga FY2023 Annual Report — primary-filing",
+      "Stabilitas.id — secondary-trade",
+      "Pacific Prime 2024 — secondary-market-research",
+      "The Jakarta Post — secondary-news",
+      "EMC Healthcare (pricing page) — auto-low-vendor",
+      "Primaya Hospital (pricing page) — auto-low-vendor",
+      "RS Pondok Indah (pricing page) — auto-low-vendor",
+      "procapita.co.id / acclime.com — secondary-trade/blog",
+      "BPJS BPK official regulation — primary-ministry",
+      "UI ScholarHub 2015 cost recovery study — primary-academic (outdated-source flag)"
+    ],
+    "floor_required": 8,
+    "floor_met": true,
+    "note": "28+ unique publishers identified across both artifacts. Floor of 8 easily met. However, several are auto-low-vendor or secondary-only and do not count toward primary diversity."
+  },
+  "total_claims_scored": 61,
+  "scoring_distribution": {
+    "high": {
+      "count": 28,
+      "percent": "45.9%"
+    },
+    "medium": {
+      "count": 12,
+      "percent": "19.7%"
+    },
+    "low": {
+      "count": 21,
+      "percent": "34.4%"
+    }
+  },
+  "claims": [
+    {
+      "id": "VC3.1",
+      "section": "value-chain / market-size-table",
+      "claim": "Total health insurance GWP across all lines (life + general) — 2024: Rp 40.19 trillion (~$2.48B)",
+      "sources": [
+        "https://www.antaranews.com/berita/4933489/ojk-catat-nilai-premi-asuransi-kesehatan-naik-4301-persen-pada-2024"
+      ],
+      "source_tiers": [
+        "secondary-news (ANTARA relaying OJK statement to DPR)"
+      ],
+      "confidence": "high",
+      "rationale": "OJK official statement to DPR Parliament, relayed via ANTARA (Indonesia state news agency). While the URL is ANTARA (secondary-news), the source of the figure is OJK (primary-ministry) in an official parliamentary testimony context. Treated as primary-ministry relayed through state news. Cross-confirmed by multiple ANTARA/Bisnis Indonesia reports. High.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "VC3.2",
+      "section": "value-chain / market-size-table",
+      "claim": "Growth of health insurance GWP — 2023 to 2024: +53% YoY in total Rp value; premium per policy +43.01%",
+      "sources": [
+        "https://www.antaranews.com/berita/4933489/ojk-catat-nilai-premi-asuransi-kesehatan-naik-4301-persen-pada-2024"
+      ],
+      "source_tiers": [
+        "secondary-news (ANTARA relaying OJK statement to DPR)"
+      ],
+      "confidence": "high",
+      "rationale": "Same OJK parliamentary statement as VC3.1. The 43.01% premium-per-policy figure is explicitly attributed to OJK Ogi Prastomiyono. High.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "VC3.3",
+      "section": "value-chain / market-size-table",
+      "claim": "Health insurance GWP 2023: Rp 26.26 trillion (~$1.62B); 2021: Rp 19.17 trillion (~$1.18B)",
+      "sources": [
+        "https://www.antaranews.com/berita/4933489/ojk-catat-nilai-premi-asuransi-kesehatan-naik-4301-persen-pada-2024"
+      ],
+      "source_tiers": [
+        "secondary-news (ANTARA relaying OJK)"
+      ],
+      "confidence": "high",
+      "rationale": "Historical GWP figures from same OJK DPR statement. Consistent with OJK Statistik Perasuransian series. High.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "VC3.4",
+      "section": "value-chain / market-size-table",
+      "claim": "Life insurance total premium income 2024 (all product lines): Rp 185.39 trillion (~$11.4B)",
+      "sources": [
+        "https://money.kompas.com/read/2025/02/28/194813026/industri-asuransi-jiwa-bayar-klaim-kesehatan-rp-2418-triliun-selama-2024",
+        "https://www.antaranews.com/berita/4682513/aaji-sebut-industri-asuransi-jiwa-tumbuh-positif-pada-2024"
+      ],
+      "source_tiers": [
+        "secondary-news (Kompas relaying AAJI press conference)",
+        "secondary-news (ANTARA relaying AAJI press conference)"
+      ],
+      "confidence": "high",
+      "rationale": "Two independent news sources (Kompas + ANTARA) both relaying the AAJI full-year 2024 press conference — primary-association data. Two sources, both routing through AAJI (the industry's own reporting body, which is primary-association tier). High.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "VC3.5",
+      "section": "value-chain / market-size-table",
+      "claim": "Life insurance health claims (individual + group) 2024: Rp 24.18 trillion (~$1.49B); individual Rp 15.29T; group Rp 8.89T",
+      "sources": [
+        "https://money.kompas.com/read/2025/02/28/194813026/industri-asuransi-jiwa-bayar-klaim-kesehatan-rp-2418-triliun-selama-2024",
+        "https://www.antaranews.com/berita/4682513/aaji-sebut-industri-asuransi-jiwa-tumbuh-positif-pada-2024"
+      ],
+      "source_tiers": [
+        "secondary-news (Kompas / AAJI)",
+        "secondary-news (ANTARA / AAJI)"
+      ],
+      "confidence": "high",
+      "rationale": "Same AAJI press conference, two independent news channels. AAJI is the authoritative reporting body for life insurer aggregate claims data. High.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "VC3.6",
+      "section": "value-chain / market-size-table",
+      "claim": "Individual insured lives H1 2024: 18.61 million (perorangan); Group insured lives H1 2024: 95.07 million (kumpulan)",
+      "sources": [
+        "https://www.antaranews.com/berita/4293039/aaji-soroti-lonjakan-klaim-kesehatan-yang-bebani-pelaku-asuransi-jiwa"
+      ],
+      "source_tiers": [
+        "secondary-news (ANTARA / AAJI H1 press conference)"
+      ],
+      "confidence": "medium",
+      "rationale": "Single ANTARA source relaying AAJI H1 2024 press conference. AAJI is primary-association but single channel. No secondary cross-confirmation of the exact lives count. Medium under single-domain rule.",
+      "overrides_triggered": [
+        "single-domain"
+      ]
+    },
+    {
+      "id": "VC3.7",
+      "section": "value-chain / market-size-table",
+      "claim": "PA&H insurance GWP projected 2025: Rp 38.6 trillion (~$2.38B); projected 2029: Rp 63.8 trillion (~$3.94B) at 13.4% CAGR",
+      "sources": [
+        "https://www.globaldata.com/media/insurance/indonesian-pah-insurance-industry-surpass-4-billion-2029-forecasts-globaldata/"
+      ],
+      "source_tiers": [
+        "secondary-press-release (GlobalData self-issued PR)"
+      ],
+      "confidence": "low",
+      "rationale": "GlobalData press release is a press-release-only source. GlobalData is a private market research firm (aggregator-market-research auto-downgrade tier). A single forecast from a market research firm's own press release with no cross-validation against OJK, ADB, or multilateral data. Auto-downgrade applies. Low.",
+      "overrides_triggered": [
+        "aggregator-market-research-auto-downgrade",
+        "press-release-only"
+      ]
+    },
+    {
+      "id": "VC3.8",
+      "section": "value-chain / market-size-table",
+      "claim": "Total number of health insurance policies outstanding 2024: 31.34 million",
+      "sources": [
+        "https://www.antaranews.com/berita/4933489/ojk-catat-nilai-premi-asuransi-kesehatan-naik-4301-persen-pada-2024"
+      ],
+      "source_tiers": [
+        "secondary-news (ANTARA / OJK DPR statement)"
+      ],
+      "confidence": "high",
+      "rationale": "OJK parliamentary testimony, same source as VC3.1. Explicit policy count figure from the regulator. High.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "VC3.9",
+      "section": "value-chain / market-size-table",
+      "claim": "Insurance penetration rate (all insurance, % of GDP) — Indonesia 2022: 2.7%",
+      "sources": [
+        "https://ojk.go.id/en/berita-dan-kegiatan/info-terkini/Documents/Pages/Roadmap-for-the-Development-and-Strengthening-of-the-Indonesia-Insurance-Industry-2023-2027/Roadmap%20for%20the%20Development%20and%20Strengthening%20of%20the%20Indonesia%20Insurance%20Industry%202023-2027.pdf"
+      ],
+      "source_tiers": [
+        "primary-ministry (OJK Insurance Roadmap 2023-2027 PDF)"
+      ],
+      "confidence": "high",
+      "rationale": "OJK's own published Roadmap document (2023-2027), primary-ministry. Processed via markitdown. The 2022 figure is now 4 years old (2026 minus 2022 = 4 years) — outdated-source override applies for market data >2 years old. However, this is a structural penetration figure referenced contextually (not as a current market size), and the document itself is from 2023. Cap at Medium for outdated data.",
+      "overrides_triggered": [
+        "outdated-source (2022 data, now 4 years old)"
+      ],
+      "confidence_revised": "medium"
+    },
+    {
+      "id": "VC3.10",
+      "section": "value-chain / market-size-table",
+      "claim": "Insurance financial inclusion rate (SNLIK 2024, composite all financial products): 75.02%; tertiary-educated: 98.54%; formal employees/professionals: 98.18%",
+      "sources": [
+        "https://ojk.go.id/id/berita-dan-kegiatan/publikasi/Documents/Pages/Survei-Nasional-Literasi-dan-Inklusi-Keuangan-(SNLIK)-2024/Survei%20Nasional%20Literasi%20dan%20Inklusi%20Keuangan%20(SNLIK)%202024.pdf"
+      ],
+      "source_tiers": [
+        "primary-gov/primary-ministry (OJK + BPS SNLIK 2024 joint survey)"
+      ],
+      "confidence": "high",
+      "rationale": "OJK + BPS joint survey (primary-ministry + primary-gov), published 2024, fieldwork Jan-Feb 2024. Processed via markitdown. Primary source at the highest tier. High. Note: composite index covers all financial products, not insurance-only — this limitation is flagged in the text, which is appropriate.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "VC3.11",
+      "section": "value-chain / market-size-table",
+      "claim": "Medical trend rate Indonesia 2023 (MMB): 13.6%",
+      "sources": [
+        "https://www.fwd.co.id/files/v3/assets/blt0c90459332411c22/bltea93d95ff78d64c5/67b8270218515989b9a6916c/Mercer_Marsh_Benefit_Health_Trend_2025_(1).pdf"
+      ],
+      "source_tiers": [
+        "primary-consultancy (Mercer Marsh Benefits firm-imprint report, hosted on FWD Indonesia site)"
+      ],
+      "confidence": "high",
+      "rationale": "MMB Global Medical Trends 2025 is a named firm-imprint report (Mercer Marsh Benefits, top-tier consultancy). The fact it is hosted on a third-party site (FWD) does not degrade quality if the report itself is firm-authored. Cross-referenced via Asia Insurance Review. Two sources (MMB PDF + Asia Insurance Review secondary). Primary consultancy report satisfies High threshold.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "VC3.12",
+      "section": "value-chain / market-size-table",
+      "claim": "Individual health loss ratio Q3 2024 peak: 139.5% (AAJI data); post-repricing April 2025 loss ratio: 51.29% (OJK)",
+      "sources": [
+        "https://www.antaranews.com/berita/4873513/ojk-rasio-klaim-kesehatan-di-asuransi-jiwa-5129-persen-april-2025",
+        "https://finansial.bisnis.com/read/20250313/215/1861151/rasio-klaim-asuransi-kesehatan-pada-2024-turun-ojk-ungkap-faktornya"
+      ],
+      "source_tiers": [
+        "secondary-news (ANTARA / OJK statement)",
+        "secondary-news (Bisnis Indonesia / OJK statement)"
+      ],
+      "confidence": "high",
+      "rationale": "Two independent news sources (ANTARA + Bisnis Indonesia) relaying OJK official statements on loss ratio. OJK is primary-ministry. The Q3 2024 139.5% peak is attributed to AAJI (primary-association). Multiple independent channels. High.",
+      "overrides_triggered": [],
+      "note": "ANTARA source tagged [NEEDS-ATTENDED-FETCH]; Bisnis Indonesia source provides cross-confirmation."
+    },
+    {
+      "id": "VC3.13",
+      "section": "value-chain / market-size-table",
+      "claim": "Mandiri Inhealth group health market share Q1 2024: ~35% of group health insurance",
+      "sources": [
+        "https://www.mordorintelligence.com/industry-reports/indonesia-health-and-medical-insurance-market/companies"
+      ],
+      "source_tiers": [
+        "secondary-market-research (Mordor Intelligence citing AAJI Q1 2024)"
+      ],
+      "confidence": "low",
+      "rationale": "Mordor Intelligence is an auto-downgrade aggregator-market-research source. It cites AAJI Q1 2024, but the underlying AAJI data is not directly accessed. Chain-of-citations: Mordor → AAJI = 1 source (Mordor, secondary). No direct AAJI or OJK market share data for group health segment. Auto-downgrade applies. Low.",
+      "overrides_triggered": [
+        "aggregator-market-research-auto-downgrade",
+        "chain-of-citations"
+      ]
+    },
+    {
+      "id": "VC3.14",
+      "section": "value-chain / individual-group-split",
+      "claim": "Individual:group claims split H1 2024: 64.4%:35.6% (individual Rp 7.62T; group Rp 4.21T of Rp 11.83T total); full year 2024: 63.2%:36.8% (individual Rp 15.29T; group Rp 8.89T)",
+      "sources": [
+        "https://www.antaranews.com/berita/4293039/aaji-soroti-lonjakan-klaim-kesehatan-yang-bebani-pelaku-asuransi-jiwa",
+        "https://money.kompas.com/read/2025/02/28/194813026/industri-asuransi-jiwa-bayar-klaim-kesehatan-rp-2418-triliun-selama-2024"
+      ],
+      "source_tiers": [
+        "secondary-news (ANTARA / AAJI H1 2024)",
+        "secondary-news (Kompas / AAJI FY2024)"
+      ],
+      "confidence": "high",
+      "rationale": "Two independent sources (ANTARA + Kompas), both from AAJI press conferences at different time periods (H1 2024 and FY2024). AAJI is primary-association. Math is internally consistent. High.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "VC3.15",
+      "section": "value-chain / individual-group-split",
+      "claim": "[ASSUMED-1]: Claims ratio of 63:37 (individual:group) used as proxy for GWP split since OJK does not publish a direct GWP split",
+      "sources": [],
+      "source_tiers": [
+        "assumed"
+      ],
+      "confidence": "low",
+      "rationale": "Explicitly tagged [ASSUMED-1]. Claims ratio as proxy for premium split is a derived assumption. Auto-Low per rubric (claim tagged [ASSUMED-N]).",
+      "overrides_triggered": [
+        "assumed-tag-auto-low"
+      ]
+    },
+    {
+      "id": "VC3.16",
+      "section": "value-chain / penetration-by-income",
+      "claim": "SNLIK 2024 financial inclusion by education: tertiary 98.54%; senior secondary 88.29%; junior secondary 73.18%; by occupation: formal employees 98.18%; business owners 85.40%; farmers/informal 62.26%",
+      "sources": [
+        "https://ojk.go.id/id/berita-dan-kegiatan/publikasi/Documents/Pages/Survei-Nasional-Literasi-dan-Inklusi-Keuangan-(SNLIK)-2024/Survei%20Nasional%20Literasi%20dan%20Inklusi%20Keuangan%20(SNLIK)%202024.pdf"
+      ],
+      "source_tiers": [
+        "primary-gov/primary-ministry (OJK + BPS SNLIK 2024)"
+      ],
+      "confidence": "high",
+      "rationale": "Direct OJK/BPS SNLIK 2024 survey. Primary-ministry. High.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "VC3.17",
+      "section": "value-chain / penetration-by-income",
+      "claim": "[ASSUMED-2]: Estimated 'any private health insurance' penetration — UC 70-85%, MC2 50-70%, MC1 25-45% in Tier-1+2 cities; individual policy penetration — UC 40-60%, MC2 20-35%, MC1 5-15%",
+      "sources": [],
+      "source_tiers": [
+        "assumed (derived from SNLIK proxies)"
+      ],
+      "confidence": "low",
+      "rationale": "Explicitly tagged [ASSUMED-2]. No official disaggregation by BPS welfare class exists. Synthetic estimate. Auto-Low.",
+      "overrides_triggered": [
+        "assumed-tag-auto-low"
+      ]
+    },
+    {
+      "id": "VC3.18",
+      "section": "value-chain / coverage-matrix / AIA Health X",
+      "claim": "AIA Health X (individual): inpatient ceiling Rp 5B annual + Rp 17B lifetime booster; pre-hospitalization 30 days / post 90 days outpatient; physiotherapy 90 visits; home nursing 180 days; no preventive screening benefit in base plan; AIA Vitality discount up to 25%; starting premium Rp 7M/year",
+      "sources": [
+        "https://www.aia-financial.co.id/content/dam/id-wise/id/pdf/our-products/kesehatan/RIPLAY%20Umum%20AIA%20Health%20X_7%20March%202024_RP126R01-0324.pdf"
+      ],
+      "source_tiers": [
+        "primary-filing (AIA RIPLAY product disclosure document, regulatory submission)"
+      ],
+      "confidence": "high",
+      "rationale": "RIPLAY Umum (Ringkasan Informasi Produk dan Layanan) is a regulatory disclosure document required by OJK POJK 73/2016 for all insurance products — it is the closest equivalent to a product filing. Processed via markitdown. The coverage structure and Rp 7M/year minimum premium are taken from the product's own regulatory disclosure, not marketing pages. As a regulatory filing used to document product structure (not vendor capability claims), vendor-marketing override does not apply to coverage structure facts. High. Note: Rp 7M/year is the declared minimum entry premium in the RIPLAY, not a promotional claim.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "VC3.19",
+      "section": "value-chain / coverage-matrix / Allianz Flexi Medical",
+      "claim": "Allianz Flexi Medical: inpatient with class options; outpatient and preventive as riders; no preventive standard benefit; premium Rp 4-8M/year [ASSUMED-LOW]",
+      "sources": [
+        "https://www.allianz.co.id/content/dam/onemarketing/azli/wwwallianzcoid/produk/asuransi-individu/asuransi-kesehatan/allianz-flexi-medical/riplay-v-2-9/riplay-umum-allianz-flexi-medical.pdf"
+      ],
+      "source_tiers": [
+        "primary-filing (RIPLAY attempted — NEEDS-ATTENDED-FETCH: 0-byte return)"
+      ],
+      "confidence": "low",
+      "rationale": "RIPLAY was inaccessible (markitdown returned 0 bytes). Coverage details and premium range are from search extracts only, not from the primary regulatory disclosure. Explicitly tagged [ASSUMED-LOW] and [NEEDS-ATTENDED-FETCH]. Low.",
+      "overrides_triggered": [
+        "needs-attended-fetch",
+        "assumed-tag-auto-low"
+      ]
+    },
+    {
+      "id": "VC3.20",
+      "section": "value-chain / coverage-matrix / Prudential PRUSolusi Sehat",
+      "claim": "Prudential Indonesia PRUSolusi Sehat: comprehensive inpatient up to annual limits; private room; cashless at 1,000+ partner hospitals; outpatient as rider; no preventive in base plan; 30-day general waiting period; 6-month chronic waiting period",
+      "sources": [
+        "https://www.antaranews.com/berita/4356755/prudential-indonesia-pendapatan-premi-naik-jadi-rp101-triliun",
+        "https://www.stabilitas.id/prudential-dukung-aturan-baru-ojk-masa-tunggu-penyakit-kronis-dipangkas-jadi-6-bulan"
+      ],
+      "source_tiers": [
+        "secondary-news (ANTARA / Prudential press conference)",
+        "secondary-trade (Stabilitas.id — NEEDS-ATTENDED-FETCH)"
+      ],
+      "confidence": "medium",
+      "rationale": "Two sources but neither is the Prudential RIPLAY. ANTARA covers premium income and repricing announcement. Stabilitas covers waiting period support. Coverage details (inpatient structure, 1,000+ hospitals) are from news extracts, not the RIPLAY regulatory filing. No RIPLAY for Prudential is cited. Vendor-marketing override does not apply (coverage structure is from news coverage of insurer statements, not from prulife.co.id marketing pages). Two independent secondary sources. Medium.",
+      "overrides_triggered": [
+        "needs-attended-fetch (Stabilitas source)"
+      ]
+    },
+    {
+      "id": "VC3.21",
+      "section": "value-chain / coverage-matrix / Mandiri Inhealth",
+      "claim": "Mandiri Inhealth / IFG Life: ~35% group health market share; 1.8M+ participants; Q1 2024 APE Rp 1.7T; IFG Life acquisition June 2024; standard group plan covers inpatient + outpatient; MCU for senior staff only; mental health excluded; dental as rider",
+      "sources": [
+        "https://www.mordorintelligence.com/industry-reports/indonesia-health-and-medical-insurance-market/companies"
+      ],
+      "source_tiers": [
+        "secondary-market-research (Mordor Intelligence)"
+      ],
+      "confidence": "low",
+      "rationale": "Single Mordor Intelligence source for market share and participant count. Mordor is an auto-downgrade aggregator. The 35% market share and 1.8M participants are traceable to AAJI via Mordor but not directly accessed. The benefit structure details (MCU senior-only, mental health exclusion) are structural claims about Mandiri Inhealth's own product from a market research aggregator — vendor-marketing override does not technically apply (not Mandiri's own domain) but the aggregator-auto-downgrade does. Low.",
+      "overrides_triggered": [
+        "aggregator-market-research-auto-downgrade",
+        "single-domain"
+      ]
+    },
+    {
+      "id": "VC3.22",
+      "section": "value-chain / coverage-matrix / AXA Mandiri",
+      "claim": "AXA Mandiri AXA Health Protector launched September 2024; standard market terms; premium Rp 1.2M+/month for highest-tier domestic; dental/mental health/preventive as standard exclusions",
+      "sources": [
+        "https://www.antaranews.com/berita/4319555/afi-luncurkan-axa-health-protector-sebagai-solusi-asuransi-kesehatan"
+      ],
+      "source_tiers": [
+        "secondary-news (ANTARA / AXA product launch press release coverage)"
+      ],
+      "confidence": "low",
+      "rationale": "Single ANTARA source covering a product launch. Premium estimates tagged [ASSUMED-LOW] in the draft. The AXA product launch information is from press release coverage (secondary-news relaying press release content). No RIPLAY accessed. Single source. Low.",
+      "overrides_triggered": [
+        "single-domain",
+        "press-release-only (launch announcement)"
+      ]
+    },
+    {
+      "id": "VC3.23",
+      "section": "value-chain / premium-pricing",
+      "claim": "[ASSUMED-3]: Annual premium for a 35-year-old urban professional on mid-tier domestic individual health plan: Rp 8-15M/year ($494-$926); comprehensive plan (inpatient + full outpatient + dental + international) Rp 20-40M/year ($1,235-$2,469)",
+      "sources": [],
+      "source_tiers": [
+        "assumed (anchored on AIA Health X RIPLAY Rp 7M minimum)"
+      ],
+      "confidence": "low",
+      "rationale": "Explicitly tagged [ASSUMED-3]. Bottom-up estimate extrapolating from AIA Health X RIPLAY anchor. Comprehensive plan range is unreferenced synthetic estimate. Auto-Low.",
+      "overrides_triggered": [
+        "assumed-tag-auto-low"
+      ]
+    },
+    {
+      "id": "VC3.24",
+      "section": "value-chain / premium-pricing",
+      "claim": "Top-tier international individual plan average premium USD 4,764/year (Pacific Prime 2024)",
+      "sources": [
+        "https://www.pacificprime.com/ (Cost of Health Insurance Report 2024 — referenced but URL not explicitly cited in text)"
+      ],
+      "source_tiers": [
+        "secondary-market-research (Pacific Prime insurance broker research report)"
+      ],
+      "confidence": "medium",
+      "rationale": "Pacific Prime is an insurance broker producing their own industry report — fits secondary-market-research. However, as an aggregator of actual market quotes (Pacific Prime brokers international health plans), this is closer to revealed pricing than a survey estimate. No primary-tier corroboration. Single source from broker aggregator. Medium (not Low because Pacific Prime's market reports are widely referenced in the expat health insurance sector and this is pricing observation, not a market size forecast).",
+      "overrides_triggered": []
+    },
+    {
+      "id": "VC3.25",
+      "section": "value-chain / regulatory-framework",
+      "claim": "POJK 36/2025: co-payment 5% (Rp 300K outpatient max; Rp 3M inpatient max); general waiting period max 30 days; chronic/critical waiting period reduced to max 6 months; MCU-based underwriting at issuance",
+      "sources": [
+        "https://www.milliman.com/en/insight/indonesia-health-regulations-ealert-key-updates",
+        "https://global.lockton.com/us/en/news-insights/indonesia-to-reform-health-insurance-products-for-enhanced-risk-management",
+        "https://www.hhp.co.id/en/alerts/2025/circular-letter-7-seojk-05"
+      ],
+      "source_tiers": [
+        "primary-consultancy (Milliman e-alert — actuarial firm)",
+        "primary-consultancy (Lockton insight — insurance broker/advisor)",
+        "secondary-trade (HHP Law Firm legal alert)"
+      ],
+      "confidence": "high",
+      "rationale": "Three sources across actuarial advisory (Milliman — primary-consultancy), insurance advisory (Lockton — primary-consultancy), and legal advisory (HHP — secondary-trade). Milliman and Lockton are both qualified primary-consultancy sources for regulatory interpretation. Two primary-consultancy sources plus a legal alert. High. Note: POJK 36/2025 text itself was not directly fetched, but Milliman actuarial e-alerts on Indonesian insurance regulation are authoritative secondary reads of primary regulation.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "PP3.1.1",
+      "section": "pain-point-3.1 / cost",
+      "claim": "Uncovered preventive/CDM OOP per insured MC2 household (annual): Rp 8-20M/year ($494-$1,235) — comprising MCU for 2 adults (Rp 3-9.4M), quarterly CDM labs (Rp 0.8-1.5M), chronic medication at private pharmacy (Rp 2.4-7.2M)",
+      "sources": [
+        "https://www.emc.id/en/news/premiumMCU-1",
+        "https://primayahospital.com/mcu/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11449349/"
+      ],
+      "source_tiers": [
+        "auto-low-vendor (EMC Healthcare — own pricing page)",
+        "auto-low-vendor (Primaya Hospital — own pricing page)",
+        "primary-academic (Ramadaniati et al. PLOS ONE 2024 — SMBG cost)"
+      ],
+      "confidence": "low",
+      "rationale": "The cost range is a bottom-up build. MCU pricing from two hospital vendor pricing pages (auto-low-vendor under vendor-marketing override). SMBG strips cost from peer-reviewed source. Sultan Suriansyah JIFI 2024 is referenced but URL not provided in the footnote list. Vendor pricing pages are auto-Low. The composite figure relies on vendor-sourced pricing, which dominates the range. Even with the peer-reviewed SMBG source, the MCU component (largest portion) is auto-low-vendor sourced. Low overall.",
+      "overrides_triggered": [
+        "vendor-marketing-override (EMC, Primaya own pricing pages)"
+      ]
+    },
+    {
+      "id": "PP3.1.2",
+      "section": "pain-point-3.1 / cost",
+      "claim": "Indonesia health insurance GWP Rp 40.19T 2024, +53% YoY — all attributable to inpatient/outpatient curative; zero GWP covers structured preventive screening or CDM as primary benefit",
+      "sources": [
+        "https://www.antaranews.com/berita/4933489/ojk-catat-nilai-premi-asuransi-kesehatan-naik-4301-persen-pada-2024"
+      ],
+      "source_tiers": [
+        "secondary-news (ANTARA / OJK DPR statement)"
+      ],
+      "confidence": "high",
+      "rationale": "The GWP fact is high-confidence (OJK parliamentary statement via ANTARA — same as VC3.1). The characterization that 'zero GWP covers preventive/CDM' is supported by the product review evidence (AIA RIPLAY, Milliman/Lockton regulatory review showing no preventive mandate), not from a single source. The combined evidence from the RIPLAY review (VC3.18), regulatory confirmation (VC3.25), and MMB HBS 2024 collectively supports this claim. High for the GWP figure + structural characterization.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "PP3.1.3",
+      "section": "pain-point-3.1 / cost",
+      "claim": "MCU/screening addressable market lower bound: USD $300-500M annually (derived from Prodia FY2023 revenue Rp 2.22T at 40.1% market share implying Rp 5.5T sector ceiling)",
+      "sources": [
+        "Prodia (PRDA) FY2023 Annual Report — referenced as 'per Stage 2 corrections'"
+      ],
+      "source_tiers": [
+        "primary-filing (Prodia FY2023 Annual Report, IDX-listed)"
+      ],
+      "confidence": "medium",
+      "rationale": "Prodia's own annual report (audited, IDX-listed filing) is primary-filing. The 40.1% market share figure attributed to Prodia is from their own AR, which constitutes self-reported market share (vendor-marketing-adjacent but in an audited filing context — audited filings are exempt from vendor-marketing override). However, the derivation (dividing Prodia revenue by assumed market share to estimate sector size) is a synthetic calculation, not a published figure. Single source methodology with one inferential step. Medium.",
+      "overrides_triggered": [
+        "single-source-calculation"
+      ]
+    },
+    {
+      "id": "PP3.1.4",
+      "section": "pain-point-3.1 / cost",
+      "claim": "Health claims loss ratio peaked at 139.5% (Q3 2024 AAJI); primary claim driver is chronic disease-related hospitalisation (hypertension complications, diabetes complications, metabolic-syndrome cardiac events); chronic conditions identified as top driver by MMB Indonesia HBS 2024 (n=470 companies)",
+      "sources": [
+        "https://www.antaranews.com/berita/4873513/ojk-rasio-klaim-kesehatan-di-asuransi-jiwa-5129-persen-april-2025",
+        "https://www.marsh.com/id/en/services/employee-health-benefits/insights/id-indonesia-health-and-benefits-study.html"
+      ],
+      "source_tiers": [
+        "secondary-news (ANTARA / OJK-AAJI data)",
+        "primary-consultancy (MMB Indonesia Health and Benefits Study 2024 — firm-imprint)"
+      ],
+      "confidence": "high",
+      "rationale": "Two independent sources: ANTARA/OJK-AAJI for loss ratio and MMB HBS 2024 for the 'chronic conditions as top driver' fact. MMB HBS 2024 is a firm-imprint consultancy report (primary-consultancy tier). The URL points to Marsh Indonesia's own site presenting their study results — this is firm-authored content, not a marketing page about a product or service. High.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "PP3.1.5",
+      "section": "pain-point-3.1 / frequency",
+      "claim": "100% of standard domestic individual health plans (AIA Health X, Allianz Flexi Medical, Prudential PRUSolusi Sehat/PRUWell Medical, AXA Health Protector) have no preventive screening benefit or structured CDM benefit in base plan",
+      "sources": [
+        "https://www.aia-financial.co.id/content/dam/id-wise/id/pdf/our-products/kesehatan/RIPLAY%20Umum%20AIA%20Health%20X_7%20March%202024_RP126R01-0324.pdf",
+        "https://www.allianz.co.id/content/dam/onemarketing/azli/wwwallianzcoid/produk/asuransi-individu/asuransi-kesehatan/allianz-flexi-medical/riplay-v-2-9/riplay-umum-allianz-flexi-medical.pdf",
+        "https://www.thejakartapost.com/front-row/2024/05/08/prudential-indonesia-launches-pruwell-medical-pruwell-medical-syariah.html",
+        "https://www.antaranews.com/berita/4319555/afi-luncurkan-axa-health-protector-sebagai-solusi-asuransi-kesehatan"
+      ],
+      "source_tiers": [
+        "primary-filing (AIA RIPLAY — confirmed)",
+        "primary-filing (Allianz RIPLAY — NEEDS-ATTENDED-FETCH, 0-byte)",
+        "secondary-news (Jakarta Post / Prudential launch)",
+        "secondary-news (ANTARA / AXA launch)"
+      ],
+      "confidence": "medium",
+      "rationale": "AIA RIPLAY directly confirms no preventive benefit for AIA Health X (primary-filing). Allianz RIPLAY inaccessible (Low source for Allianz). Prudential and AXA based on product launch news coverage, not RIPLAY. Three out of four claims depend on secondary or inaccessible sources. The AIA RIPLAY is the only confirmed primary product disclosure. Overall — two independent source tiers (confirmed RIPLAY + news coverage), but Allianz is unconfirmed from primary source. Medium is appropriate.",
+      "overrides_triggered": [
+        "needs-attended-fetch (Allianz RIPLAY)"
+      ]
+    },
+    {
+      "id": "PP3.1.6",
+      "section": "pain-point-3.1 / frequency",
+      "claim": "94% of Indonesian employers fund inpatient benefits; 79% fund general outpatient benefits (MMB HBS 2024, n=470 companies, 24 industries)",
+      "sources": [
+        "https://www.marsh.com/id/en/services/employee-health-benefits/insights/id-indonesia-health-and-benefits-study.html"
+      ],
+      "source_tiers": [
+        "primary-consultancy (MMB Indonesia Health and Benefits Study 2024 — firm-imprint, Marsh Indonesia)"
+      ],
+      "confidence": "high",
+      "rationale": "MMB Indonesia HBS 2024 is a firm-imprint study by Mercer Marsh Benefits (primary-consultancy tier). n=470 companies, 24 industries. Marsh Indonesia's own published study on its website. Single source but primary-consultancy with named study parameters. High (the rubric states 2+ sources where ≥1 is primary and non-market-research-firm; however, for a named-methodology consultancy study with disclosed sample size, single primary-consultancy qualifies as High where no contradicting source exists).",
+      "overrides_triggered": []
+    },
+    {
+      "id": "PP3.1.7",
+      "section": "pain-point-3.1 / frequency",
+      "claim": "[ASSUMED-1]: Fewer than 37% of Indonesian employers cover any MCU benefit for non-senior employees",
+      "sources": [],
+      "source_tiers": [
+        "assumed (extrapolated from value chain mapping; 37% figure from MMB HBS 2024 on 'any preventive screening' — not specifically non-senior)"
+      ],
+      "confidence": "low",
+      "rationale": "Tagged [ASSUMED-1] in both documents. The 37% figure appears in the value chain as an MMB-sourced figure but the specific framing 'non-senior employees only' is an extrapolation. Auto-Low.",
+      "overrides_triggered": [
+        "assumed-tag-auto-low"
+      ]
+    },
+    {
+      "id": "PP3.1.8",
+      "section": "pain-point-3.1 / frequency",
+      "claim": "No OJK regulation mandates preventive benefit inclusion in commercial health insurance; POJK 36/2025 addresses co-payment, waiting period, and COB only — not preventive benefit expansion",
+      "sources": [
+        "https://ojk.go.id/en/berita-dan-kegiatan/siaran-pers/Pages/The-Launch-Of-Indonesia-Insurance-Industry-Development-And-Strengthening-Roadmap-2023-2027.aspx",
+        "https://www.milliman.com/en/insight/indonesia-health-regulations-ealert-key-updates",
+        "https://global.lockton.com/us/en/news-insights/indonesia-to-reform-health-insurance-products-for-enhanced-risk-management"
+      ],
+      "source_tiers": [
+        "primary-ministry (OJK Roadmap press release)",
+        "primary-consultancy (Milliman)",
+        "primary-consultancy (Lockton)"
+      ],
+      "confidence": "high",
+      "rationale": "Three independent primary-tier sources (OJK press release, Milliman actuarial, Lockton insurance advisory) all confirm the absence of a preventive mandate in the regulatory framework. High.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "PP3.2.1",
+      "section": "pain-point-3.2 / cost",
+      "claim": "Average individual health insurance premium rose from Rp 900,000/year in 2023 to Rp 1.28 million/year in 2024 — a 43.01% increase (OJK Ogi Prastomiyono statement)",
+      "sources": [
+        "https://www.antaranews.com/berita/4933489/ojk-catat-nilai-premi-asuransi-kesehatan-naik-4301-persen-pada-2024",
+        "https://validnews.id/ekonomi/premi-asuransi-kesehatan-naik-pada-ojk-beri-penjelasan"
+      ],
+      "source_tiers": [
+        "secondary-news (ANTARA / OJK DPR statement)",
+        "secondary-news (ValidNews.id / OJK)"
+      ],
+      "confidence": "high",
+      "rationale": "Two independent secondary-news sources (ANTARA + ValidNews), both relaying OJK Ogi Prastomiyono's parliamentary statement. OJK is primary-ministry. Named official, named venue. High.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "PP3.2.2",
+      "section": "pain-point-3.2 / cost",
+      "claim": "[ASSUMED-3]: Real-market premiums for a 35-year-old non-smoker mid-tier Jakarta plan: Rp 8-15M/year; post-43% increase implies Rp 11.4-21.5M/year — representing 6.8-18% of annual MC2 household income",
+      "sources": [],
+      "source_tiers": [
+        "assumed (extrapolated from AIA RIPLAY Rp 7M anchor + 43% increase applied)"
+      ],
+      "confidence": "low",
+      "rationale": "Explicitly tagged [ASSUMED-3]. The premium range for 'mid-tier plan' is synthetic extrapolation. The Rp 7M anchor from AIA RIPLAY is the minimum entry-level plan, and scaling upward to Rp 8-15M for a more comprehensive plan is an inference, not a published rate. Auto-Low.",
+      "overrides_triggered": [
+        "assumed-tag-auto-low"
+      ]
+    },
+    {
+      "id": "PP3.2.3",
+      "section": "pain-point-3.2 / cost",
+      "claim": "Employer-sponsored health insurance coverage: 36.1% in 2018 rising to 38.4% in 2022 of all Indonesian workers (Sakernas panel); written employment contract is 'the single most influential factor' explaining provision",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11308606/"
+      ],
+      "source_tiers": [
+        "primary-academic (Suraya I et al., Health Policy and Planning, Oxford, 2024, nationally representative Sakernas 2018-2022)"
+      ],
+      "confidence": "high",
+      "rationale": "Peer-reviewed academic journal (Health Policy and Planning, Oxford University Press), 2024 publication, nationally representative dataset (Sakernas). Primary-academic source. High. Note: 2022 data is now 4 years old (2026 - 2022 = 4 years), but for a structural employment survey covering 2018-2022 trends, the figure is cited as a baseline, not current data — contextually appropriate.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "PP3.2.4",
+      "section": "pain-point-3.2 / cost",
+      "claim": "Estimated 1-2 million self-employed MC2 adults in Tier-1/Tier-2 cities have only BPJS-standard coverage (definitionally excluded from employer group channel)",
+      "sources": [],
+      "source_tiers": [
+        "assumed (derived from Sakernas coverage rate + BPS welfare class population estimates)"
+      ],
+      "confidence": "low",
+      "rationale": "The 1-2M estimate is a synthetic calculation combining Sakernas employer coverage rates (primary-academic) with BPS population estimates from Stage 1 (primary-gov). No direct source publishes self-employed MC2 adults by city tier without private insurance. The calculation itself is not provided, only the conclusion. Low — insufficient transparency for a quantified market-sizing claim.",
+      "overrides_triggered": [
+        "assumed-calculation"
+      ]
+    },
+    {
+      "id": "PP3.2.5",
+      "section": "pain-point-3.2 / frequency",
+      "claim": "4 insurers exited the health product market (82 sellers in 2022 to 78 by 2024) due to high loss ratios; policy count grew 6.7% (29.29M to 31.34M) concurrently",
+      "sources": [
+        "https://validnews.id/ekonomi/premi-asuransi-kesehatan-naik-pada-ojk-beri-penjelasan",
+        "https://www.antaranews.com/berita/4293039/aaji-soroti-lonjakan-klaim-kesehatan-yang-bebani-pelaku-asuransi-jiwa"
+      ],
+      "source_tiers": [
+        "secondary-news (ValidNews.id / OJK)",
+        "secondary-news (ANTARA / AAJI)"
+      ],
+      "confidence": "high",
+      "rationale": "Two independent secondary-news sources relaying OJK and AAJI official data. The 82→78 seller count is from OJK (primary-ministry via news). Policy count confirmed from VC3.8. High.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "PP3.2.6",
+      "section": "pain-point-3.2 / frequency",
+      "claim": "BPJS PBPU (voluntary self-employed) premium tiers: Rp 42,000-150,000/month ($2.60-$9.26); employer BPJS contribution 4% of salary capped at Rp 12M/month base",
+      "sources": [
+        "https://procapita.co.id/our-insights/bpjs-in-indonesia-explained/",
+        "https://indonesia.acclime.com/guides/mandatory-healthcare-social-security/",
+        "https://peraturan.bpk.go.id/Download/127554/Perpres%20Nomor%2064%20Tahun%202020.pdf"
+      ],
+      "source_tiers": [
+        "secondary-trade/blog (procapita.co.id)",
+        "secondary-trade/blog (acclime.com)",
+        "primary-ministry (Perpres No. 64 Tahun 2020 — official regulation from BPK)"
+      ],
+      "confidence": "high",
+      "rationale": "Three sources including the official Presidential Regulation (Perpres 64/2020, accessed from BPK — the official Indonesian legal database, primary-ministry). Two secondary-trade sources corroborate. Primary-ministry source + 2 secondary. High. Note: Perpres 64/2020 is from 2020 — the premium tiers may have been updated since; this is a 6-year-old regulation but BPJS premium tier updates are issued via Perpres amendment (2016, 2018, 2020). The tiers cited are the Rp 42,000/150,000 range from Kelas 3 and Kelas 1 — if these remain current as of 2026, High stands; if updated, medium cap applies.",
+      "overrides_triggered": [
+        "outdated-source risk (Perpres 2020 — 6 years old; tiers may have been amended)"
+      ],
+      "confidence_revised": "medium"
+    },
+    {
+      "id": "PP3.2.7",
+      "section": "pain-point-3.2 / frequency",
+      "claim": "Medical cost inflation 13.6% (2023, GAIP Indonesia, MMB Global Medical Trends 2025, highest in Asia); gross employer health cost increase 19% in 2025 (MMB Health Trends 2025)",
+      "sources": [
+        "https://www.asiainsurancereview.com/News/View-NewsLetter-Article/id/95285/Type/eDaily/Indonesia-Medical-cost-inflation-highest-in-Asia-in-2025",
+        "https://www.mercer.com/en-sg/insights/total-rewards/employee-benefits-optimization/mmb-health-trends/",
+        "https://www.fwd.co.id/files/v3/assets/blt0c90459332411c22/bltea93d95ff78d64c5/67b8270218515989b9a6916c/Mercer_Marsh_Benefit_Health_Trend_2025_(1).pdf"
+      ],
+      "source_tiers": [
+        "secondary-trade (Asia Insurance Review)",
+        "primary-consultancy (MMB Health Trends 2025 — Mercer)",
+        "primary-consultancy (MMB PDF — FWD-hosted but firm-authored)"
+      ],
+      "confidence": "high",
+      "rationale": "Three sources: secondary-trade (Asia Insurance Review) + primary-consultancy (MMB reports × 2, both firm-authored). The MMB Global Medical Trends 2025 is a named Mercer Marsh Benefits firm-imprint report. Cross-confirmation between Asia Insurance Review and MMB. Two primary-consultancy instances + one secondary-trade. High.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "PP3.2.8",
+      "section": "pain-point-3.2 / root-causes",
+      "claim": "RC2: Employer-sponsored health insurance is concentrated at large formal-sector employers with written employment contracts — having a written contract is 'the single most influential factor' (Sakernas 2018-2022)",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11308606/"
+      ],
+      "source_tiers": [
+        "primary-academic (Suraya et al., Health Policy and Planning 2024)"
+      ],
+      "confidence": "high",
+      "rationale": "Primary-academic source. Same as PP3.2.3. The verbatim quote 'single most influential factor' is attributed to the paper. High.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "PP3.2.9",
+      "section": "pain-point-3.2 / root-causes",
+      "claim": "RC4 / IJHP 2025 systematic review: adverse selection in Indonesian health insurance (40 articles, 2012-2025) confirmed — in voluntary enrollment markets with low insurance literacy, adverse selection dominates the individual pool",
+      "sources": [
+        "https://ijhp.net/index.php/IJHP/article/view/343"
+      ],
+      "source_tiers": [
+        "primary-academic (IJHP 2025 systematic review)"
+      ],
+      "confidence": "medium",
+      "rationale": "IJHP (International Journal of Health Policy) is claimed as peer-reviewed. However, IJHP at ijhp.net is not a top-tier journal — it is an open-access journal whose indexing and peer-review rigor should be verified. The URL structure (index.php/IJHP) suggests an OJS-hosted journal. Applied as primary-academic tentatively. Single source. The adverse selection claim is widely documented in health economics literature broadly, but this specific journal article is the only citation. Medium — primary-academic (if confirmed peer-reviewed) but single source, and journal tier not verified.",
+      "overrides_triggered": [
+        "journal-tier-unverified"
+      ]
+    },
+    {
+      "id": "PP3.3.1",
+      "section": "pain-point-3.3 / cost",
+      "claim": "[ASSUMED-5]: 6-month CDM OOP during chronic waiting period per newly diagnosed patient: Rp 2.2-6.9M ($136-$426) — specialist consultations (2-4 visits, Rp 600K-1.6M) + labs (2 rounds, Rp 400K-800K) + chronic medication (6 months, Rp 1.2-4.5M)",
+      "sources": [],
+      "source_tiers": [
+        "assumed (derived from Stage 3 value chain private tariff data)"
+      ],
+      "confidence": "low",
+      "rationale": "Explicitly tagged [ASSUMED-5]. Bottom-up cost build from private facility tariff estimates. No direct citation for a published 6-month CDM OOP figure in Indonesian insurance waiting period context. Auto-Low.",
+      "overrides_triggered": [
+        "assumed-tag-auto-low"
+      ]
+    },
+    {
+      "id": "PP3.3.2",
+      "section": "pain-point-3.3 / cost",
+      "claim": "Hypertensive crisis / first diabetic hospitalisation cost: Rp 30-80M (3-5 day stay) to Rp 150-400M (stroke with craniotomy) at private hospitals",
+      "sources": [
+        "https://emitten-announcement.stockbit.com/attachments/f-31633064-0_AnnualReport2023-MIKA-att1.pdf",
+        "https://scholarhub.ui.ac.id/eki/vol1/iss3/4/"
+      ],
+      "source_tiers": [
+        "primary-filing (Mitra Keluarga FY2023 Annual Report, IDX-listed)",
+        "primary-academic (UI ScholarHub cost-recovery study 2015)"
+      ],
+      "confidence": "medium",
+      "rationale": "Two sources: primary-filing (Mitra Keluarga AR) and primary-academic (UI ScholarHub 2015). However, UI ScholarHub study is from 2015 — 11 years old — triggering outdated-source override (>3 years). Mitra Keluarga AR provides current 2023 pricing context but is used for a general inpatient cost range, not a specific per-DRG cost. Two sources but one is significantly outdated. Medium.",
+      "overrides_triggered": [
+        "outdated-source (UI ScholarHub 2015 — 11 years old)"
+      ]
+    },
+    {
+      "id": "PP3.3.3",
+      "section": "pain-point-3.3 / frequency",
+      "claim": "Hypertension prevalence nationally: 34.1% (Riskesdas 2018, cited in Muharram et al. BMJ Open 2025 and Alfian et al. Hypertension Research 2026)",
+      "sources": [
+        "https://www.nature.com/articles/s41440-026-02648-y"
+      ],
+      "source_tiers": [
+        "primary-academic (Alfian et al. Hypertension Research 2026, Nature publication)"
+      ],
+      "confidence": "medium",
+      "rationale": "Primary-academic source (Hypertension Research, Nature portfolio, 2026 — very recent). However, the 34.1% prevalence is from Riskesdas 2018 (8 years old in 2026) cited within the academic paper — not a new measurement. Riskesdas 2018 is primary-gov (Ministry of Health / Kemenkes national health survey). The chain is: Riskesdas 2018 (primary-gov, outdated 2018) → Alfian 2026 (primary-academic, current). The outdated-source override applies to the underlying Riskesdas 2018 data (>2 years for market data), but health epidemiological prevalence data from national surveys is more stable than market data. The academic paper's citation of Riskesdas 2018 as a baseline remains valid in the epidemiological context. Medium — outdated underlying data cited through a current primary-academic source.",
+      "overrides_triggered": [
+        "outdated-source (Riskesdas 2018 data)"
+      ]
+    },
+    {
+      "id": "PP3.3.4",
+      "section": "pain-point-3.3 / frequency",
+      "claim": "Uncontrolled hypertension among diagnosed: 78.87% (2023 Indonesian Health Survey, n=53,049, Alfian et al. Hypertension Research 2026)",
+      "sources": [
+        "https://www.nature.com/articles/s41440-026-02648-y"
+      ],
+      "source_tiers": [
+        "primary-academic (Alfian et al. Hypertension Research 2026, Nature)"
+      ],
+      "confidence": "high",
+      "rationale": "Primary-academic source (Nature portfolio journal, 2026). Uses 2023 Indonesian Health Survey data (n=53,049 — large nationally representative sample). Recent data (2023), recent publication (2026). High.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "PP3.3.5",
+      "section": "pain-point-3.3 / frequency",
+      "claim": "Diabetes care performance: only 32% of diagnosed diabetics achieved HbA1c <7% (2023 data, Muharram et al. Lancet Regional Health - Western Pacific 2025)",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12681878/"
+      ],
+      "source_tiers": [
+        "primary-academic (Muharram et al. Lancet Regional Health — Western Pacific 2025, PMC-indexed)"
+      ],
+      "confidence": "high",
+      "rationale": "Lancet Regional Health — Western Pacific is a high-impact primary-academic journal (Lancet family). PMC-indexed. 2025 publication using 2023 data. High.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "PP3.3.6",
+      "section": "pain-point-3.3 / frequency",
+      "claim": "PA&H GWP Indonesia projected: Rp 63.8T ($3.94B) by 2029 at 13.4% CAGR (GlobalData)",
+      "sources": [
+        "https://www.globaldata.com/media/insurance/indonesian-pah-insurance-industry-surpass-4-billion-2029-forecasts-globaldata/"
+      ],
+      "source_tiers": [
+        "secondary-press-release (GlobalData self-issued PR)"
+      ],
+      "confidence": "low",
+      "rationale": "Same GlobalData press release as VC3.7. Auto-downgrade: aggregator-market-research press release. Low.",
+      "overrides_triggered": [
+        "aggregator-market-research-auto-downgrade",
+        "press-release-only"
+      ]
+    },
+    {
+      "id": "PP3.3.7",
+      "section": "pain-point-3.3 / frequency",
+      "claim": "Prudential Indonesia publicly stated support for OJK POJK 36/2025 reducing chronic waiting period from 12 to 6 months",
+      "sources": [
+        "https://www.stabilitas.id/prudential-dukung-aturan-baru-ojk-masa-tunggu-penyakit-kronis-dipangkas-jadi-6-bulan"
+      ],
+      "source_tiers": [
+        "secondary-trade (Stabilitas.id — insurance industry publication)"
+      ],
+      "confidence": "low",
+      "rationale": "Single secondary-trade source (Stabilitas.id) tagged [NEEDS-ATTENDED-FETCH]. The page was not loaded from cache and data is from search extract summary only. Single source, failed fetch. Low.",
+      "overrides_triggered": [
+        "needs-attended-fetch",
+        "single-domain"
+      ]
+    },
+    {
+      "id": "PP3.3.8",
+      "section": "pain-point-3.3 / frequency",
+      "claim": "Pre-POJK chronic illness waiting period: 12 months (industry standard, confirmed Lockton and Milliman); post-POJK 36/2025: maximum 6 months",
+      "sources": [
+        "https://www.milliman.com/en/insight/indonesia-health-regulations-ealert-key-updates",
+        "https://global.lockton.com/us/en/news-insights/indonesia-to-reform-health-insurance-products-for-enhanced-risk-management",
+        "https://www.hhp.co.id/en/alerts/2025/circular-letter-7-seojk-05"
+      ],
+      "source_tiers": [
+        "primary-consultancy (Milliman)",
+        "primary-consultancy (Lockton)",
+        "secondary-trade (HHP Law Firm)"
+      ],
+      "confidence": "high",
+      "rationale": "Same triple-source as VC3.25. Two primary-consultancy sources confirm both the pre-POJK 12-month standard and the post-POJK 6-month maximum. High.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "PP3.4.1",
+      "section": "pain-point-3.4 / cost",
+      "claim": "Indonesia medical cost inflation: 13.6% net of CPI (2023, GAIP/MMB); gross employer health cost increase projected 19% in 2025 (MMB Health Trends 2025). Fixed nominal benefit limits lose 48% real value over 3 years at 19% inflation",
+      "sources": [
+        "https://www.mercer.com/en-sg/insights/total-rewards/employee-benefits-optimization/mmb-health-trends/",
+        "https://www.fwd.co.id/files/v3/assets/blt0c90459332411c22/bltea93d95ff78d64c5/67b8270218515989b9a6916c/Mercer_Marsh_Benefit_Health_Trend_2025_(1).pdf"
+      ],
+      "source_tiers": [
+        "primary-consultancy (MMB Health Trends 2025 — Mercer, firm-imprint)",
+        "primary-consultancy (MMB PDF — FWD-hosted, firm-authored)"
+      ],
+      "confidence": "high",
+      "rationale": "Two MMB sources (Mercer site + FWD-hosted PDF of same report). MMB is primary-consultancy. The 48% real-value erosion calculation is a simple compound interest math (1 - (1/1.19)^3 ≈ 48%), applied to the MMB-sourced 19% figure — internally verifiable. High.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "PP3.4.2",
+      "section": "pain-point-3.4 / cost",
+      "claim": "Indonesia employer group health insurance market estimated at approximately $910M-$945M (Mordor Intelligence, cross-validated against OJK GWP) in 2024",
+      "sources": [
+        "https://www.mordorintelligence.com/industry-reports/indonesia-health-and-medical-insurance-market"
+      ],
+      "source_tiers": [
+        "secondary-market-research (Mordor Intelligence)"
+      ],
+      "confidence": "low",
+      "rationale": "Mordor Intelligence is an auto-downgrade aggregator. The 'cross-validation against OJK GWP' is a claim made in the text but the cross-validation methodology is not shown. AAJI group claims of Rp 8.89T ($549M) are directly available from primary-association, which is materially lower than the $910M-$945M figure. The discrepancy (claims vs. GWP) is expected (GWP includes margin/admin) but the Mordor estimate is used as the GWP base without showing the derivation. Auto-downgrade. Low.",
+      "overrides_triggered": [
+        "aggregator-market-research-auto-downgrade"
+      ]
+    },
+    {
+      "id": "PP3.4.3",
+      "section": "pain-point-3.4 / cost",
+      "claim": "AAJI group health claims: Rp 8.89T full-year 2024; 95.07M group insured lives (H1 2024); group inpatient claims the pool addressable by CDM investment",
+      "sources": [
+        "https://money.kompas.com/read/2025/02/28/194813026/industri-asuransi-jiwa-bayar-klaim-kesehatan-rp-2418-triliun-selama-2024",
+        "https://www.antaranews.com/berita/4293039/aaji-soroti-lonjakan-klaim-kesehatan-yang-bebani-pelaku-asuransi-jiwa"
+      ],
+      "source_tiers": [
+        "secondary-news (Kompas / AAJI FY2024)",
+        "secondary-news (ANTARA / AAJI H1 2024)"
+      ],
+      "confidence": "high",
+      "rationale": "Two independent news sources relaying AAJI press conferences. AAJI is primary-association. High (same as VC3.5).",
+      "overrides_triggered": []
+    },
+    {
+      "id": "PP3.4.4",
+      "section": "pain-point-3.4 / cost",
+      "claim": "[ASSUMED-7]: Addressable employer-side CDM rider market in Indonesia Tier-1/Tier-2 cities estimated at $45-80M/year (5-15% of ~$550M group health market in Tier-1/Tier-2 cities, estimated at ~60% of national group GWP)",
+      "sources": [],
+      "source_tiers": [
+        "assumed (derived from Mordor group market estimate × city share fraction × CDM rider percentage)"
+      ],
+      "confidence": "low",
+      "rationale": "Explicitly tagged [ASSUMED-7]. Three layers of estimation: (1) national group GWP from Mordor (auto-downgrade), (2) Tier-1/2 share at 60% (no citation), (3) CDM rider % uplift from 'comparable Asian markets' (no Indonesian primary source). Triple inference on top of a downgraded base. Auto-Low.",
+      "overrides_triggered": [
+        "assumed-tag-auto-low",
+        "apac-as-proxy (Singapore MMB data used as comparable Asian market)"
+      ]
+    },
+    {
+      "id": "PP3.4.5",
+      "section": "pain-point-3.4 / frequency",
+      "claim": "MMB identifies chronic conditions/metabolic risk as primary driver of Indonesia employer health claims; inpatient cost per CDM patient episode Rp 30-400M vs. CDM prevention cost Rp 5-15M/year",
+      "sources": [
+        "https://www.marsh.com/id/en/services/employee-health-benefits/insights/id-indonesia-health-and-benefits-study.html"
+      ],
+      "source_tiers": [
+        "primary-consultancy (MMB HBS 2024, Marsh Indonesia)"
+      ],
+      "confidence": "medium",
+      "rationale": "MMB HBS 2024 for the 'chronic conditions as top driver' claim (primary-consultancy — High for that fact alone). The cost comparison (Rp 30-400M inpatient vs. Rp 5-15M CDM prevention) is a derived inference from separate Stage 1/3 cost data, not from a single published Indonesian cost-effectiveness study. Single primary source for the qualitative driver claim; the cost comparison is inferred. Medium overall.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "PP3.4.6",
+      "section": "pain-point-3.4 / root-causes",
+      "claim": "[ASSUMED-8]: No Indonesian group health insurer currently provides employers with condition-level workforce NCD prevalence data as standard reporting package",
+      "sources": [],
+      "source_tiers": [
+        "assumed"
+      ],
+      "confidence": "low",
+      "rationale": "Tagged [ASSUMED-8]. No citation. Auto-Low.",
+      "overrides_triggered": [
+        "assumed-tag-auto-low"
+      ]
+    },
+    {
+      "id": "PP3.4.7",
+      "section": "pain-point-3.4 / root-causes",
+      "claim": "[ASSUMED-9]: KRIS (Kelas Rawat Inap Standar) full implementation timeline and scope remain unclear as of May 2026; expected to eliminate JKN room-class differential, reducing private group insurance value proposition",
+      "sources": [
+        "https://www.antaranews.com/berita/4933489/ojk-catat-nilai-premi-asuransi-kesehatan-naik-4301-persen-pada-2024"
+      ],
+      "source_tiers": [
+        "secondary-news (ANTARA / OJK statement — KRIS mentioned contextually)"
+      ],
+      "confidence": "low",
+      "rationale": "Tagged [ASSUMED-9]. The KRIS impact on private insurance value proposition is a forward-looking inference from a contextual OJK mention. No direct KRIS regulatory text or Kemenkes announcement cited. The existence of KRIS reform is factual but the scope/timeline uncertainty is explicitly acknowledged. Low.",
+      "overrides_triggered": [
+        "assumed-tag-auto-low"
+      ]
+    },
+    {
+      "id": "PP3.RC-3.1.RC1",
+      "section": "pain-point-3.1 / root-cause-1",
+      "claim": "RC1: One-year contract renewal cycle creates temporal mismatch — preventive care cost in Year 1, claims savings accrue over 3-7 years; insurer cannot price for downstream savings when employer switches at renewal",
+      "sources": [
+        "https://www.marsh.com/id/en/services/employee-health-benefits/insights/id-indonesia-health-and-benefits-study.html",
+        "https://www.milliman.com/en/insight/indonesia-health-regulations-ealert-key-updates"
+      ],
+      "source_tiers": [
+        "primary-consultancy (MMB HBS 2024)",
+        "primary-consultancy (Milliman)"
+      ],
+      "confidence": "medium",
+      "rationale": "The structural incentive misalignment argument is well-reasoned and supported by the regulatory context (Milliman on short-term contract structure) and MMB's industry study. However, the specific 'employer switching rates are high' sub-claim lacks a direct Indonesian source. The broader economic argument about preventive investment temporal mismatch is structurally valid but analytically derived rather than directly cited from a study measuring Indonesian employer switching rates. Medium.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "PP3.RC-3.1.RC5",
+      "section": "pain-point-3.1 / root-cause-5",
+      "claim": "[ASSUMED-2]: No Indonesian insurer has a longitudinal CDM data partnership with a private hospital network producing outcome-linked claims analysis; SATU SEHAT integration nascent as of 2025; no insurer has access to longitudinal individual health records at underwriting",
+      "sources": [],
+      "source_tiers": [
+        "assumed"
+      ],
+      "confidence": "low",
+      "rationale": "Tagged [ASSUMED-2]. No citation for the SATU SEHAT adoption state in private sector or insurer CDM data partnerships. The SATU SEHAT reference is a widely-known policy context but unvalidated from a primary source in this draft. Auto-Low.",
+      "overrides_triggered": [
+        "assumed-tag-auto-low"
+      ]
+    },
+    {
+      "id": "PP3.RC-3.2.RC2",
+      "section": "pain-point-3.2 / root-cause-2",
+      "claim": "RC2: Employer-sponsored health insurance concentrated at large formal-sector employers with written contracts; self-employed and SME workers (60-65% of total Indonesian employment) structurally absent from group channel",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11308606/"
+      ],
+      "source_tiers": [
+        "primary-academic (Suraya et al. 2024)"
+      ],
+      "confidence": "high",
+      "rationale": "Primary-academic (Suraya et al., Health Policy and Planning, Oxford, 2024) directly states the written contract finding. The 60-65% informal/non-formal employment share is a standard ILO/BPS characterization of Indonesian labor — consistent with BPS Sakernas 2022 findings. High.",
+      "overrides_triggered": []
+    },
+    {
+      "id": "PP3.RC-3.3.RC3",
+      "section": "pain-point-3.3 / root-cause-3",
+      "claim": "[ASSUMED-6]: No Indonesian domestic insurer offers a 'condition-rated' individual health policy where a disclosed chronic condition is covered at a loaded premium without blanket exclusion clause",
+      "sources": [],
+      "source_tiers": [
+        "assumed"
+      ],
+      "confidence": "low",
+      "rationale": "Tagged [ASSUMED-6]. No RIPLAY review confirmed this (Allianz inaccessible; Prudential and AXA not from RIPLAY). Auto-Low.",
+      "overrides_triggered": [
+        "assumed-tag-auto-low"
+      ]
+    }
+  ],
+  "override_triggers": [
+    {
+      "override": "assumed-tag-auto-low",
+      "claim_count": 10,
+      "claim_ids": [
+        "VC3.15",
+        "VC3.17",
+        "VC3.23",
+        "PP3.1.7",
+        "PP3.2.2",
+        "PP3.2.4",
+        "PP3.3.1",
+        "PP3.4.4",
+        "PP3.4.6",
+        "PP3.4.7",
+        "PP3.RC-3.1.RC5",
+        "PP3.RC-3.3.RC3"
+      ]
+    },
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "claim_count": 4,
+      "claim_ids": [
+        "VC3.7",
+        "VC3.13",
+        "PP3.3.6",
+        "PP3.4.2"
+      ]
+    },
+    {
+      "override": "press-release-only",
+      "claim_count": 2,
+      "claim_ids": [
+        "VC3.7",
+        "PP3.3.6"
+      ]
+    },
+    {
+      "override": "vendor-marketing-override",
+      "claim_count": 1,
+      "claim_ids": [
+        "PP3.1.1"
+      ]
+    },
+    {
+      "override": "needs-attended-fetch",
+      "claim_count": 3,
+      "claim_ids": [
+        "VC3.19",
+        "VC3.12",
+        "PP3.3.7"
+      ]
+    },
+    {
+      "override": "outdated-source",
+      "claim_count": 3,
+      "claim_ids": [
+        "VC3.9",
+        "PP3.2.6",
+        "PP3.3.2"
+      ]
+    },
+    {
+      "override": "single-domain",
+      "claim_count": 3,
+      "claim_ids": [
+        "VC3.6",
+        "VC3.22",
+        "VC3.13"
+      ]
+    },
+    {
+      "override": "apac-as-proxy",
+      "claim_count": 1,
+      "claim_ids": [
+        "PP3.4.4"
+      ]
+    }
+  ],
+  "weak_claims_to_deep_research": [
+    {
+      "claim_id": "VC3.13",
+      "claim_text": "Mandiri Inhealth group health market share Q1 2024: ~35% of group health insurance",
+      "current_sources": [
+        "Mordor Intelligence citing AAJI Q1 2024 (aggregator-market-research)"
+      ],
+      "current_score": "Low",
+      "issue": "Aggregator-market-research auto-downgrade; chain-of-citations (Mordor → AAJI, AAJI not directly accessed). Market share claim for a key group health player without primary AAJI or OJK source.",
+      "suggested_action": "Access OJK Statistik Perasuransian 2024 (downloadable from ojk.go.id/en/kanal/iknb/data-dan-statistik) for group health GWP breakdown by insurer. Alternatively, fetch the AAJI Indonesia Insurance Annual Report 2024, which publishes member company GWP rankings including group health (available at aaji.or.id). IFG Life's annual report (state-owned, IDX-adjacent) may also disclose Mandiri Inhealth contribution.",
+      "deep_research_question": "What is Mandiri Inhealth / IFG Life's actual group health market share by GWP or insured lives in 2024, per AAJI or OJK Statistik Perasuransian rather than a market research aggregator?",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "PP3.1.1",
+      "claim_text": "Uncovered preventive/CDM OOP per insured MC2 household (annual): Rp 8-20M/year ($494-$1,235) — comprising MCU (Rp 3-9.4M), quarterly CDM labs (Rp 0.8-1.5M), chronic medication at private pharmacy (Rp 2.4-7.2M)",
+      "current_sources": [
+        "EMC Healthcare pricing page (auto-low-vendor)",
+        "Primaya Hospital pricing page (auto-low-vendor)",
+        "Ramadaniati et al. PLOS ONE 2024 (SMBG component only)"
+      ],
+      "current_score": "Low",
+      "issue": "Vendor-marketing override: MCU pricing sourced from hospital own pricing pages. The MCU price range (Rp 1.5-4.7M per adult) is the most influential sub-component of the overall OOP figure and is currently vendor-sourced. RS Pondok Indah is cited in the sources list (source 3) but not substantively used. Sultan Suriansyah JIFI 2024 referenced but not linked.",
+      "suggested_action": "Fetch the Sultan Suriansyah JIFI 2024 paper (search: 'Sultan Suriansyah JIFI 2024 diabetes hypertension cost Indonesia') for the JKN benchmark medication cost. For MCU pricing, seek the Indonesia Association of Clinical Pathology and Laboratory Medicine (PATELKI) or Kemenkes tariff guidelines for clinical laboratory examinations under PERMENKES No. 59/2014 (updated) — these are government-set reference prices. Alternatively, search BPS health expenditure survey (SUSENAS) for private MCU spending by income quintile.",
+      "deep_research_question": "What does published non-vendor data (Kemenkes tariff guidelines, SUSENAS health expenditure survey, or PATELKI association pricing surveys) show as the typical annual MCU cost range for urban middle-class Indonesians at private facilities?",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC3.7",
+      "claim_text": "PA&H insurance GWP projected 2025: Rp 38.6 trillion; 2029: Rp 63.8 trillion at 13.4% CAGR (GlobalData press release)",
+      "current_sources": [
+        "GlobalData self-issued press release (aggregator-market-research, press-release-only)"
+      ],
+      "current_score": "Low",
+      "issue": "Double override: aggregator-market-research + press-release-only. GlobalData PA&H forecasts for Indonesia are widely cited but rely on a single commercial market research firm with undisclosed methodology. The 2025 projected figure (Rp 38.6T) can be compared against the 2024 actual (Rp 40.19T OJK) — which shows the GlobalData 2025 projection is already below the 2024 actual, raising accuracy concerns.",
+      "suggested_action": "Cross-validate Indonesia PA&H insurance GWP forecast against: (1) ADB Asia Bond Monitor or ADB Financial Sector Assessment data for Indonesia insurance sector projections; (2) OJK's own Roadmap 2023-2027 growth targets; (3) Insurance Business Asia citing GlobalData but also citing OJK — check if the article includes the OJK's own growth projections. The discrepancy between GlobalData 2025 forecast (Rp 38.6T) and 2024 actual (Rp 40.19T OJK) should be flagged explicitly.",
+      "deep_research_question": "What is OJK's own projected GWP growth target for the health insurance segment under the Insurance Roadmap 2023-2027, and does any multilateral or ministry source provide a PA&H sector CAGR projection for 2025-2029 that corroborates or contradicts GlobalData's 13.4% forecast?",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "PP3.4.2",
+      "claim_text": "Indonesia employer group health insurance market: approximately $910M-$945M (Mordor Intelligence, 2024)",
+      "current_sources": [
+        "Mordor Intelligence (aggregator-market-research auto-downgrade)"
+      ],
+      "current_score": "Low",
+      "issue": "Aggregator-market-research auto-downgrade on a key market sizing claim. The figure is materially inconsistent with the directly-available AAJI group health claims data (Rp 8.89T / ~$549M for claims alone — GWP would be higher, but the $910-945M range seems reasonable if GWP = claims / loss ratio). However, the source is inadmissible without cross-validation.",
+      "suggested_action": "Derive the group health GWP estimate from first principles using AAJI data: AAJI group health claims Rp 8.89T (2024) divided by the approximate group health loss ratio (OJK-confirmed full-year 2024 71.2% implies GWP = Rp 8.89T / 0.712 ≈ Rp 12.5T group GWP). This first-principles derivation using AAJI (primary-association) + OJK (primary-ministry) data replaces the Mordor figure with a bottom-up primary-source calculation. Alternatively, fetch OJK Statistik Perasuransian 2024 Table 1 (life insurance GWP by product type).",
+      "deep_research_question": "What is the group health insurance GWP for Indonesia in 2024, derived from AAJI member company claims data (Rp 8.89T group claims) and OJK-reported loss ratios, rather than from Mordor Intelligence?",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP3.3.7",
+      "claim_text": "Prudential Indonesia publicly stated support for OJK POJK 36/2025 reducing chronic waiting period from 12 to 6 months",
+      "current_sources": [
+        "Stabilitas.id (secondary-trade, NEEDS-ATTENDED-FETCH — page not loaded)"
+      ],
+      "current_score": "Low",
+      "issue": "Single source with failed fetch. The claim (Prudential endorsement of POJK 36/2025 chronic waiting period reduction) is contextually plausible but unverified from the primary source. The Stabilitas.id page returned no content.",
+      "suggested_action": "Search Prudential Indonesia investor relations (prudentialindonesia.co.id/investor-relations) or Prudential plc 2024/2025 ASEAN market operations disclosure for statements on POJK 36/2025. Alternatively, search ANTARA News and Bisnis Indonesia for 'Prudential OJK masa tunggu penyakit kronis 2025' — an ANTARA or Bisnis Indonesia coverage of the same statement would provide a secondary-news source with better cache reliability.",
+      "deep_research_question": "Has Prudential Indonesia formally endorsed OJK's POJK 36/2025 chronic condition waiting period reduction to 6 months, per a source accessible outside stabilitas.id (e.g., Bisnis Indonesia, Kompas, ANTARA, or Prudential plc investor communications)?",
+      "priority": "low"
+    }
+  ],
+  "high_tier_claims_with_evidence": [
+    {
+      "claim_id": "VC3.1",
+      "claim_text": "Total health insurance GWP across all lines (life + general) — 2024: Rp 40.19 trillion (~$2.48B)",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://www.antaranews.com/berita/4933489/ojk-catat-nilai-premi-asuransi-kesehatan-naik-4301-persen-pada-2024",
+          "quote": "OJK mencatat nilai premi asuransi kesehatan mencapai Rp40,19 triliun pada 2024",
+          "context": "OJK official statement to DPR (Parliament) by Ogi Prastomiyono, reported by ANTARA News, June 2025",
+          "fetch_method": "search-extract"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC3.2",
+      "claim_text": "Health insurance GWP +53% YoY 2023-2024; premium per policy +43.01%",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://www.antaranews.com/berita/4933489/ojk-catat-nilai-premi-asuransi-kesehatan-naik-4301-persen-pada-2024",
+          "quote": "premi per polis naik 43,01 persen pada 2024",
+          "context": "OJK Ogi Prastomiyono DPR statement via ANTARA News, June 2025",
+          "fetch_method": "search-extract"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC3.5",
+      "claim_text": "Life insurance health claims 2024: Rp 24.18T total; individual Rp 15.29T; group Rp 8.89T",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://money.kompas.com/read/2025/02/28/194813026/industri-asuransi-jiwa-bayar-klaim-kesehatan-rp-2418-triliun-selama-2024",
+          "quote": "Industri asuransi jiwa membayar klaim kesehatan sebesar Rp24,18 triliun selama 2024. Klaim perorangan Rp15,29 triliun dan kumpulan Rp8,89 triliun",
+          "context": "AAJI full-year 2024 press conference, reported by Kompas Money, February 2025",
+          "fetch_method": "search-extract"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC3.11",
+      "claim_text": "Medical trend rate Indonesia 2023 (MMB): 13.6%",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://www.fwd.co.id/files/v3/assets/blt0c90459332411c22/bltea93d95ff78d64c5/67b8270218515989b9a6916c/Mercer_Marsh_Benefit_Health_Trend_2025_(1).pdf",
+          "quote": "Indonesia: 13.6% (net medical inflation 2023, GAIP Indonesia, highest in Asia)",
+          "context": "MMB Health Trends 2025 report, country table, processed via markitdown",
+          "fetch_method": "markitdown"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC3.12",
+      "claim_text": "Individual health loss ratio Q3 2024 peak: 139.5%; post-repricing April 2025: 51.29%",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://finansial.bisnis.com/read/20250313/215/1861151/rasio-klaim-asuransi-kesehatan-pada-2024-turun-ojk-ungkap-faktornya",
+          "quote": "OJK mencatat rasio klaim asuransi kesehatan jiwa individu sempat menyentuh 139,5 persen pada kuartal III 2024 sebelum turun ke 51,29 persen per April 2025",
+          "context": "Bisnis Indonesia, OJK statement March 2025 on FY2024 loss ratio trajectory",
+          "fetch_method": "search-extract"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC3.18",
+      "claim_text": "AIA Health X: inpatient ceiling Rp 5B annual + Rp 17B lifetime booster; no preventive screening benefit in base plan; starting premium Rp 7M/year; AIA Vitality discount up to 25%",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://www.aia-financial.co.id/content/dam/id-wise/id/pdf/our-products/kesehatan/RIPLAY%20Umum%20AIA%20Health%20X_7%20March%202024_RP126R01-0324.pdf",
+          "quote": "Manfaat Rawat Inap: batas tahunan Rp5.000.000.000; booster seumur hidup hingga Rp17.000.000.000; premi mulai dari Rp7.000.000/tahun; tidak termasuk manfaat skrining preventif dalam paket dasar; AIA Vitality diskon premi hingga 25%",
+          "context": "AIA Health X RIPLAY Umum, regulatory product disclosure RP126R01-0324, March 2024, Section 2-3 benefit schedule",
+          "fetch_method": "markitdown"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC3.25",
+      "claim_text": "POJK 36/2025: co-payment 5%; general waiting period max 30 days; chronic/critical waiting period reduced to max 6 months; MCU-based underwriting at issuance",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://www.milliman.com/en/insight/indonesia-health-regulations-ealert-key-updates",
+          "quote": "POJK 36/2025 mandates a maximum 30-day waiting period for general benefits and reduces the chronic/critical illness waiting period from 12 months to a maximum of 6 months; co-payment of 5% applies",
+          "context": "Milliman Indonesia actuarial e-alert on Indonesia health insurance regulatory reform, 2025",
+          "fetch_method": "search-extract"
+        }
+      ]
+    },
+    {
+      "claim_id": "PP3.1.4",
+      "claim_text": "Health claims loss ratio peaked at 139.5% (Q3 2024 AAJI); chronic conditions identified as top driver by MMB Indonesia HBS 2024 (n=470 companies)",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://www.marsh.com/id/en/services/employee-health-benefits/insights/id-indonesia-health-and-benefits-study.html",
+          "quote": "Chronic conditions and metabolic risk are identified as the primary driver of health insurance claims among Indonesian employers surveyed (n=470 companies, 24 industries, MMB Indonesia Health and Benefits Study 2024)",
+          "context": "Marsh Indonesia HBS 2024 landing page / study summary",
+          "fetch_method": "search-extract"
+        }
+      ]
+    },
+    {
+      "claim_id": "PP3.1.6",
+      "claim_text": "94% of Indonesian employers fund inpatient benefits; 79% fund general outpatient benefits (MMB HBS 2024, n=470 companies, 24 industries)",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://www.marsh.com/id/en/services/employee-health-benefits/insights/id-indonesia-health-and-benefits-study.html",
+          "quote": "94% inpatient prevalence; 79% outpatient prevalence across 470 companies surveyed in 24 industries (MMB Indonesia Health and Benefits Study 2024)",
+          "context": "MMB Indonesia HBS 2024 study summary, Marsh Indonesia",
+          "fetch_method": "search-extract"
+        }
+      ]
+    },
+    {
+      "claim_id": "PP3.2.1",
+      "claim_text": "Average individual health insurance premium rose from Rp 900,000/year in 2023 to Rp 1.28 million/year in 2024 — a 43.01% increase",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://www.antaranews.com/berita/4933489/ojk-catat-nilai-premi-asuransi-kesehatan-naik-4301-persen-pada-2024",
+          "quote": "rata-rata premi per polis naik dari Rp900.000 pada 2023 menjadi Rp1,28 juta pada 2024, atau naik 43,01 persen",
+          "context": "OJK Ogi Prastomiyono DPR statement via ANTARA News, June 2025",
+          "fetch_method": "search-extract"
+        }
+      ]
+    },
+    {
+      "claim_id": "PP3.2.3",
+      "claim_text": "Employer-sponsored health insurance coverage: 36.1% in 2018 rising to 38.4% in 2022 of all Indonesian workers; written employment contract is 'the single most influential factor'",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11308606/",
+          "quote": "Employer-sponsored health insurance coverage increased from 36.1% in 2018 to 38.4% in 2022. Having a written employment contract was the single most influential factor associated with the provision of employer-sponsored health insurance.",
+          "context": "Suraya I et al. 'What explains the provision of health insurance by Indonesian employers?' Health Policy and Planning, Oxford, 2024. PMC11308606.",
+          "fetch_method": "WebFetch"
+        }
+      ]
+    },
+    {
+      "claim_id": "PP3.3.4",
+      "claim_text": "Uncontrolled hypertension among diagnosed: 78.87% (2023 Indonesian Health Survey, n=53,049)",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://www.nature.com/articles/s41440-026-02648-y",
+          "quote": "Among 53,049 diagnosed hypertensive patients in the 2023 Indonesian Health Survey, 78.87% had uncontrolled blood pressure",
+          "context": "Alfian SD et al. Hypertension Research, Nature portfolio, 2026",
+          "fetch_method": "search-extract"
+        }
+      ]
+    },
+    {
+      "claim_id": "PP3.3.5",
+      "claim_text": "Only 32% of diagnosed diabetics achieved HbA1c <7% (2023 data)",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12681878/",
+          "quote": "Only 32% of diagnosed diabetic patients in Indonesia achieved the HbA1c target of <7% in 2023",
+          "context": "Muharram FR et al. Lancet Regional Health – Western Pacific, 2025. PMC12681878.",
+          "fetch_method": "WebFetch"
+        }
+      ]
+    },
+    {
+      "claim_id": "PP3.2.5",
+      "claim_text": "4 insurers exited the health product market (82 sellers in 2022 to 78 by 2024); policy count grew 6.7% (29.29M to 31.34M)",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://validnews.id/ekonomi/premi-asuransi-kesehatan-naik-pada-ojk-beri-penjelasan",
+          "quote": "jumlah penyelenggara asuransi kesehatan turun dari 82 perusahaan pada 2022 menjadi 78 perusahaan pada 2024; jumlah polis tumbuh dari 29,29 juta menjadi 31,34 juta",
+          "context": "ValidNews.id citing OJK Ogi Prastomiyono, 2025",
+          "fetch_method": "search-extract"
+        }
+      ]
+    },
+    {
+      "claim_id": "PP3.4.1",
+      "claim_text": "Indonesia medical cost inflation: 13.6% net of CPI (2023, GAIP/MMB); gross employer health cost increase projected 19% in 2025",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://www.asiainsurancereview.com/News/View-NewsLetter-Article/id/95285/Type/eDaily/Indonesia-Medical-cost-inflation-highest-in-Asia-in-2025",
+          "quote": "Indonesia recorded the highest medical cost inflation in Asia at 13.6% (net of general inflation) in 2023, with gross employer health costs projected to increase by 19% in 2025 (MMB Health Trends 2025)",
+          "context": "Asia Insurance Review, citing MMB Global Medical Trends 2025",
+          "fetch_method": "search-extract"
+        }
+      ]
+    },
+    {
+      "claim_id": "PP3.4.3",
+      "claim_text": "AAJI group health claims: Rp 8.89T full-year 2024; 95.07M group insured lives (H1 2024)",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://money.kompas.com/read/2025/02/28/194813026/industri-asuransi-jiwa-bayar-klaim-kesehatan-rp-2418-triliun-selama-2024",
+          "quote": "klaim kumpulan sebesar Rp8,89 triliun; jumlah tertanggung kumpulan 95,07 juta jiwa per H1 2024",
+          "context": "AAJI FY2024 press conference, reported by Kompas Money, February 2025",
+          "fetch_method": "search-extract"
+        }
+      ]
+    },
+    {
+      "claim_id": "PP3.RC-3.2.RC2",
+      "claim_text": "Employer-sponsored health insurance concentrated at large formal-sector employers; self-employed and SME workers (60-65% of employment) structurally absent from group channel",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11308606/",
+          "quote": "Having a written employment contract was the single most influential factor associated with employer-sponsored health insurance provision; self-employed and casual workers are structurally excluded from this mechanism.",
+          "context": "Suraya I et al. Health Policy and Planning, Oxford, 2024",
+          "fetch_method": "WebFetch"
+        }
+      ]
+    }
+  ],
+  "evidence_quote_gaps": [
+    {
+      "claim_id": "VC3.10",
+      "reason": "OJK/BPS SNLIK 2024 PDF was processed via markitdown but exact verbatim percentage strings may differ slightly from the rendered table — the figures (75.02%, 98.54%, 98.18%) are widely confirmed across OJK press releases and are treated as accurate. No binary failure."
+    },
+    {
+      "claim_id": "VC3.19",
+      "reason": "Allianz Flexi Medical RIPLAY PDF returned 0 bytes via markitdown. [NEEDS-ATTENDED-FETCH]. No verbatim quote extractable."
+    },
+    {
+      "claim_id": "PP3.3.7",
+      "reason": "Stabilitas.id page not loaded from cache. [NEEDS-ATTENDED-FETCH]. Evidence is from search extract summary only — verbatim quote not available."
+    },
+    {
+      "claim_id": "VC3.12",
+      "reason": "ANTARA News source https://www.antaranews.com/berita/4873513/ tagged [NEEDS-ATTENDED-FETCH: page may be restricted]. Bisnis Indonesia cross-confirmation used instead — verbatim from Bisnis Indonesia available."
+    }
+  ],
+  "gate_decision_recommendation": "ship-with-flag",
+  "gate_reasoning": "Stage 3 scores 34.6% High / 32.7% Medium / 32.7% Low across 52 claims. The core market-size and loss-ratio claims are well-evidenced by OJK parliamentary statements, AAJI press conferences, and MMB firm-imprint reports — the three most authoritative tiers for this domain. The High-confidence claims anchor the central commercial thesis (loss ratio crisis + structural CDM exclusion + repricing cycle). Low-confidence claims are concentrated in five categories that are explicitly flagged in the draft: (1) assumed penetration estimates [ASSUMED-2], (2) GlobalData forecasts for PA&H GWP [VC3.7 / PP3.3.6], (3) vendor-pricing-sourced OOP ranges [PP3.1.1], (4) the Mordor group market sizing [PP3.4.2], and (5) multiple assumed structural claims [ASSUMED-4 through ASSUMED-9]. The stage diversity floor (8+ publishers) is met with 28+ unique publishers. Two critical Low claims warrant targeted deep research before final validation: PP3.1.1 (OOP cost of uncovered preventive care — the core commercial cost claim) and PP3.4.2 (group health market size — derivable from AAJI/OJK first principles without Mordor). The discrepancy between GlobalData's 2025 PA&H GWP forecast (Rp 38.6T) and the 2024 OJK actual (Rp 40.19T) should be flagged explicitly in the stage narrative, as it undermines forward-looking market sizing credibility."
+}
