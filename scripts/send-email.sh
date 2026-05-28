@@ -34,7 +34,7 @@ set -a; . "$ENV_FILE"; set +a
 
 : "${RESEND_API_KEY:?RESEND_API_KEY not set in $ENV_FILE}"
 : "${RESEND_FROM:?RESEND_FROM not set in $ENV_FILE}"
-RESEND_FROM_NAME="${RESEND_FROM_NAME:-Sprout Overnight Research}"
+RESEND_FROM_NAME="${RESEND_FROM_NAME:-Wright Partners Overnight Research Agent}"
 RECIPIENTS_FILE="${RECIPIENTS_FILE:-$REPO_DIR/config/recipients.txt}"
 
 # ---------------------------------------------------------------------------
@@ -130,7 +130,7 @@ PY
 # ---------------------------------------------------------------------------
 build_self_test_body() {
   cat <<EOF
-Delivery test from the Sprout overnight research pipeline.
+Delivery test from the Wright Partners overnight research agent.
 
 If this lands in your inbox, the nightly scheduler is reaching its
 recipients correctly. No action needed.
@@ -139,7 +139,7 @@ Sent: $(date '+%A, %d %B %Y · %H:%M %Z')
 Host: $(hostname -s)
 Repo: $(basename "$REPO_DIR")
 
-— Sprout overnight research
+— Wright Partners overnight research agent
 EOF
 }
 
@@ -193,7 +193,7 @@ build_run_body() {
       echo "  preview: https://htmlpreview.github.io/?$blob_base/$rel_run/FINAL-REPORT.html"
     fi
     echo
-    echo "— Sprout overnight research"
+    echo "— Wright Partners overnight research agent"
   }
 }
 
@@ -209,7 +209,7 @@ MODE="${1:-}"
 
 case "$MODE" in
   --self-test)
-    SUBJECT="Sprout overnight research — delivery test ($(date '+%d %b %Y, %H:%M'))"
+    SUBJECT="Wright Partners overnight research agent — delivery test ($(date '+%d %b %Y, %H:%M'))"
     TO_LIST="$(printf '%s\n' "bagus.kurnianto@sprout.co.id" | json_string_array)"
     echo "→ Sending self-test to bagus.kurnianto@sprout.co.id …"
     set +e
@@ -226,7 +226,7 @@ case "$MODE" in
     SUMMARY_FILE="${2:-}"
     [ -n "$SUMMARY_FILE" ] && [ -f "$SUMMARY_FILE" ] || {
       echo "ERROR: --digest needs a readable summary file path"; exit 1; }
-    SUBJECT="Sprout overnight research — digest, $(date '+%A %d %b %Y')"
+    SUBJECT="Wright Partners overnight research agent — digest, $(date '+%A %d %b %Y')"
     TO_LIST="$(read_recipients_file | dedupe_recipients | json_string_array)"
     [ "$TO_LIST" = "[]" ] && { echo "WARN: no recipients — skipping digest send"; exit 0; }
     echo "→ Sending digest …"
@@ -264,7 +264,7 @@ EOF
     done
     [ -z "$PCT_LOW" ] && PCT_LOW="?"
 
-    SUBJECT="Overnight research — ${SLUG} (gate: ${GATE}, ${PCT_LOW}% Low)"
+    SUBJECT="Wright Partners overnight research agent — ${SLUG} (gate: ${GATE}, ${PCT_LOW}% Low)"
     TO_LIST="$( { read_recipients_file
                   [ -n "$INPUT_FILE" ] && [ -f "$INPUT_FILE" ] && read_frontmatter_recipients "$INPUT_FILE"
                 } | dedupe_recipients | json_string_array )"
