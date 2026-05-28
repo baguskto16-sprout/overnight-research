@@ -1,0 +1,91 @@
+{
+  "run_id": "2026-05-26-0159",
+  "input_file": "input/2026-05-23-ai-process-efficiency-healthcare-id-my.md",
+  "topic_slug": "ai-process-efficiency-healthcare-id-my",
+  "mode": "sandbox",
+  "run_mode": "unattended-playwright",
+  "started_at": "2026-05-26T01:59:00",
+  "completed_at": "2026-05-26T04:05:00",
+  "current_pass": 5,
+  "stages_planned": [
+    {"id": 1, "name": "GP clinic operations"},
+    {"id": 2, "name": "Corporate Health & MCU administration"},
+    {"id": 3, "name": "Insurance & TPA claims operations"},
+    {"id": 4, "name": "Cross-layer cost & failure concentration"},
+    {"id": 5, "name": "Indonesia vs Malaysia readiness comparison"},
+    {"id": 6, "name": "AI capability to sub-step mapping"}
+  ],
+  "stages_completed": [1, 2, 3, 4, 5, 6],
+  "stages_in_progress": [],
+  "weak_claims_to_re_research": [],
+  "final_gate_decision": "ship-with-flag",
+  "interruption": null,
+  "outputs": {
+    "canonical_value_chain": "raw-claude-value-chain-ai-process-efficiency-healthcare-id-my.md",
+    "canonical_pain_points": "raw-claude-pain-points-ai-process-efficiency-healthcare-id-my.md",
+    "summary": "raw-claude-summary-ai-process-efficiency-healthcare-id-my.md",
+    "final_report_html": "FINAL-REPORT.html",
+    "plan": "pass-0-plan.md",
+    "deviations": "pass-0-deviations.md",
+    "validation": ["pass-2-validation/stage-1.json", "pass-2-validation/stage-2.json", "pass-2-validation/stage-3.json", "pass-2-validation/cross-stage.json", "pass-2-validation/contradictions.json", "pass-2-validation/contradictions-resolved.json"],
+    "critics": ["pass-2-critics/critic-dialectic.json", "pass-2-critics/critic-depth.json", "pass-2-critics/critic-width.json", "pass-2-critics/critic-instruction.json"]
+  },
+  "corpus_metrics": {
+    "total_claims": 240,
+    "high_pct": 18,
+    "medium_pct": 33,
+    "low_pct": 49,
+    "unique_urls": 98,
+    "pain_points": 13,
+    "stages_count": 6,
+    "sub_agent_invocations": 20
+  },
+  "contradictions_summary": {
+    "total": 8,
+    "high_severity": 4,
+    "high_severity_resolved": 4,
+    "unresolved_high_severity": 0,
+    "gate_auto_degrade_triggered": false
+  },
+  "phase_2_handoff": {
+    "needs_attended_fetch_urls": [
+      "https://www.moh.gov.my/moh/resources/Penerbitan/Laporan/Umum/NDR_Report_2023_Final.pdf",
+      "https://peraturan.bpk.go.id/Details/275518/permenkes-no-3-tahun-2023",
+      "https://data.moh.gov.my/dashboard/peka-b40",
+      "https://www.theedgemalaysia.com/node/750017",
+      "https://mediplus.co.id/"
+    ],
+    "highest_priority_field_inquiry": "HealthMetrics Head of Corporate Wellness (MY) — confirm sub-step 2d automation status; pivotal for primary pilot recommendation"
+  },
+  "auto_enrichment": {
+    "started_at": "2026-05-25T20:06:10Z",
+    "completed_at": "2026-05-25T20:12:30Z",
+    "tool": "Playwright MCP (mcp__playwright__browser_*)",
+    "urls_attempted": 8,
+    "urls_succeeded": 4,
+    "urls_confirmed_inaccessible": 4,
+    "urls_partial": 1,
+    "claims_upgraded": [],
+    "note_on_upgrades": "No Low→Medium / Medium→High tier changes occurred. The two successful primary-source fetches (MIDF May 2025 PDF, BPK Permenkes 3/2023) corroborate claims already at Medium tier (private clinic count, Permenkes 3/2023 effective date and structure) — they add evidentiary depth but do not change the per-claim confidence tier under the existing rubric. The four [CONFIRMED-INACCESSIBLE] outcomes (NDR 2023 PDF, KKMNOW peka-b40 dashboard, medicoplus.co.id, mediplus.co.id) hold the corresponding claims at Low. BP Healthcare overview rendered but specific scale claims uncorroborated. Net effect: 7 [NEEDS-ATTENDED-FETCH] tags in canonical files resolved to 2 [VERIFIED] + 5 [CONFIRMED-INACCESSIBLE].",
+    "outcomes": [
+      {"url": "https://medicoplus.co.id", "outcome": "confirmed-inaccessible", "reason": "DNS ERR_NAME_NOT_RESOLVED"},
+      {"url": "https://www.midf.com.my/sites/corporate/files/2025-05/thematic-malaysia_healthcare-midf-050525_2.pdf", "outcome": "succeeded", "extracted": "33-page PDF; 207 private hospitals + 9,830 private medical clinics + 3,522 private dental clinics in 2022; private health services real growth +9.3% avg 2022-2024; sector 2.1% of GDP 2023"},
+      {"url": "https://peraturan.bpk.go.id/Details/275518/permenkes-no-3-tahun-2023", "outcome": "succeeded", "extracted": "BPK metadata page rendered; confirms Permenkes No.3 Tahun 2023 Standar Tarif Pelayanan Kesehatan; FKTP Kapitasi/Non-Kapitasi + FKRTL INA-CBG/Non-INA-CBG; ditetapkan 06-Jan-2023, diundangkan 09-Jan-2023, berlaku 09-Jan-2023; status Berlaku"},
+      {"url": "https://bphealthcare.azurewebsites.net/overview/", "outcome": "partial", "extracted": "Overview page rendered: est. 1982, Malaysia + Singapore footprint, 35M+ customers served, B2B2C; specific branch count and $335M revenue NOT visible on overview page"},
+      {"url": "https://data.moh.gov.my/dashboard/peka-b40", "outcome": "confirmed-inaccessible", "reason": "Vercel deployment paused — 'This deployment is temporarily paused' (sin1::6q6wq)"},
+      {"url": "https://www.mediplus.co.id", "outcome": "confirmed-inaccessible", "reason": "DNS ERR_NAME_NOT_RESOLVED"},
+      {"url": "https://www.moh.gov.my/moh/resources/Penerbitan/Laporan/Umum/NDR_Report_2023_Final.pdf", "outcome": "confirmed-inaccessible", "reason": "HTTP 404 at MOH; fallback crc.gov.my/ndr-report-2023/ also 404; fasyankes.kemkes.go.id also DNS-failed when retried as secondary anchor"},
+      {"url": "https://www.theedgemalaysia.com/node/750017", "outcome": "succeeded", "extracted": "The Edge Malaysia 9-Apr-2025 Special Report rendered; confirms BNM 2024 Annual Report feature article 'Securing Sustainable Access to Medical and Health Insurance or Takaful Protection' (released 24-Mar-2025); MHIT product utilisation up to RM8M annually with no lifetime claim limit. Article not cited in canonical files; no inline edit required."}
+    ],
+    "additional_inaccessible_outside_named_list": [
+      {"url": "https://fasyankes.kemkes.go.id/", "reason": "DNS ERR_NAME_NOT_RESOLVED — subdomain not publicly resolvable; tag found in citation (2) of Stage 1 sources, flipped to [CONFIRMED-INACCESSIBLE]"}
+    ],
+    "post_enrichment_corpus_metrics": {
+      "high_pct_unchanged": 18,
+      "medium_pct_unchanged": 33,
+      "low_pct_unchanged": 49,
+      "gate_unchanged": "ship-with-flag",
+      "rationale": "No confidence tier movements; auto-enrichment increased evidentiary depth on existing Medium claims (MIDF, BPK) and converted unresolvable URLs from [NEEDS-ATTENDED-FETCH] to [CONFIRMED-INACCESSIBLE], reducing the pool of unresolved phase-2 unknowns to zero."
+    }
+  }
+}

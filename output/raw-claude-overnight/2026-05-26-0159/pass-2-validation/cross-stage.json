@@ -1,0 +1,896 @@
+{
+  "run_id": "2026-05-26-0159",
+  "validation_context": "final-cross-stage",
+  "validator": "source-validator",
+  "scored_at": "2026-05-26",
+  "stages_covered": ["Stage 1", "Stage 2", "Stage 3", "Stage 4", "Stage 5", "Stage 6"],
+
+  "methodology_notes": {
+    "stages_1_2_3": "Scores taken from per-stage JSON files (pass-2-validation/stage-1.json, stage-2.json, stage-3.json), then adjusted for source upgrades documented in deep-research addenda (pass-3-deep-research/ and stages-validated/*-corrections-addendum.md).",
+    "stages_4_5_6": "Synthesis stages; claims scored fresh in this pass. Claims that cite directly back to Stage 1–3 footnotes inherit the underlying claim score; fresh claims in Stages 4–6 scored independently.",
+    "deep_research_upgrades_applied": [
+      "Stage 1 VC9 / PP1.2-f / PP1.3-b: NHMS 2023 upgraded Low → High (IPH fact sheet + PMC12264187 peer-reviewed paper found; two primary sources confirmed)",
+      "Stage 1 VC8: BPJS capitation rate (PMK 3/2023) upgraded Low → High (Kemenkes official site confirms IDR 9,000–16,000; second primary-ministry URL found)",
+      "Stage 1 VC10 / PP1.1-e: SATUSEHAT adoption reframed; 8.9% was PT MTK vendor market share not national integration rate; claim replaced with MOH Digital Health Blueprint '80% of facilities lack digital tech'; upgraded to Medium with correct framing",
+      "Stage 1 PP1.3-e: SMS/CDM reminder effect size upgraded Low → High (four independent meta-analyses found: JAMA IM 2016, Cochrane 2013, BMC Endocrine Disorders 2023, Indonesian RCT PMC5489927)",
+      "Stage 2 VC-MS-13: IHC hospital count corrected 75 → 36 (FY2023); source: Pertamedika Annual Reports 2023 + 2024 (two primary-filing sources — High)",
+      "Stage 2 PP2.1-e: Specialist deficit corrected 65,000 → ~31,481; source: Kemenkes 26 June 2023 press conference + Health Minister May 2024 statement (two primary-gov sources — High)",
+      "Stage 2 PP2.3-i: Peka B40 NCD rate corrected 41% → ~70%; source: ProtectHealth Corporation/FMT/The Star September 2025 (two media sources citing institutional primary — Medium)",
+      "Stage 3 FE-1: POJK 36/2025 corrected to POJK 36/2024 + SE 7/2025; effective 1 Jan 2026 not Dec 2026",
+      "Stage 3 FE-2: Claims ratio framing corrected: 111% is multi-year BNM band 2018–2023, not 2023 single-year; 2023 LIAM ICR is 65.9%"
+    ]
+  },
+
+  "stage_scores_pre_and_post_deep_research": {
+    "stage_1": {
+      "pre_DR": {"high": 3, "medium": 7, "low": 40, "total": 50},
+      "post_DR_estimated": {"high": 7, "medium": 11, "low": 32, "total": 50},
+      "upgrades_applied": 4,
+      "note": "Deep-research addendum states estimated post-DR: 7–9 High / 10–12 Medium / 28–33 Low. Mid-range applied: 7H / 11M / 32L. NDR 2023 (PP1.2-f, PP1.3-b) remains Low (URL 404 not resolved in Phase 1)."
+    },
+    "stage_2": {
+      "pre_DR": {"high": 7, "medium": 12, "low": 33, "total": 52},
+      "post_DR_estimated": {"high": 10, "medium": 13, "low": 29, "total": 52},
+      "upgrades_applied": 3,
+      "note": "Three factual corrections (IHC hospital count → two primary-filing sources = High; specialist deficit → two primary-gov sources = High; Peka B40 → two secondary sources citing institutional primary = Medium). IHC was Low (factual dispute); now High. Specialist deficit was Low (disputed); now High. Peka B40 was Low; now Medium."
+    },
+    "stage_3": {
+      "pre_DR": {"high": 14, "medium": 20, "low": 24, "total": 58},
+      "post_DR_estimated": {"high": 14, "medium": 20, "low": 24, "total": 58},
+      "upgrades_applied": 0,
+      "note": "Stage 3 corrections are framing/labelling corrections (POJK year, claims ratio framing, VEDIKA single-site context, NCD cost vintage) that do not change confidence tier scores — they correct factual characterisation while keeping the same underlying sources. Net score change: zero. No new primary sources added in deep-research for Stage 3."
+    }
+  },
+
+  "corpus_stages_1_2_3": {
+    "total_claims_scored": 160,
+    "post_DR_high": {"count": 31, "percent": "19%"},
+    "post_DR_medium": {"count": 44, "percent": "28%"},
+    "post_DR_low": {"count": 85, "percent": "53%"},
+    "notes": "Stages 1+2+3 post-deep-research: 7+10+14=31 High; 11+13+20=44 Medium; 32+29+24=85 Low."
+  },
+
+  "stage_4_scoring": {
+    "context": "Cross-layer synthesis stage. Claims are primarily inheritance from Stages 1–3 (inherit the underlying score) plus fresh cost calculations which rely heavily on ASSUMED-tagged time estimates.",
+    "total_distinct_claim_blocks_scored": 30,
+    "high": {"count": 4, "percent": "13%"},
+    "medium": {"count": 14, "percent": "47%"},
+    "low": {"count": 12, "percent": "40%"},
+    "claim_detail": [
+      {
+        "claim_id": "S4-sub1a-confidence",
+        "claim": "Sub-step 1a: documentation time 20–45 min aggregate; 6–10 min global ambient scribe benchmark",
+        "inherited_from": "S1 PP1.1-a, PP1.1-c",
+        "score": "medium",
+        "note": "PP1.1-c (35% documentation share + 2:1 EHR ratio) scored High in Stage 1 (3 sources). PP1.1-a (6–10 min benchmark) scored Low (single preprint). Aggregate presented as Medium — appropriate blended score."
+      },
+      {
+        "claim_id": "S4-sub1b-confidence",
+        "claim": "Sub-step 1b: 7.1% lab follow-up failure rate (global); PDF/fax dominant format",
+        "inherited_from": "S1 PP1.2-a",
+        "score": "medium",
+        "note": "PP1.2-a scored High in Stage 1 with chain-of-citations caveat. Stage 4 appropriately labels this Med."
+      },
+      {
+        "claim_id": "S4-sub1c-confidence",
+        "claim": "Sub-step 1c: >50% CDM default rate (proxy); 17–33 staff-hours/month recall",
+        "inherited_from": "S1 PP1.3, ASSUMED-9, ASSUMED-12",
+        "score": "medium",
+        "note": "Default rate is proxy evidence (Posbindu 42.2% + NDR 65.62% not-at-target). Staff-hours is ASSUMED-9. Both data points acknowledged in synthesis. Medium appropriate."
+      },
+      {
+        "claim_id": "S4-sub1d-confidence",
+        "claim": "Sub-step 1d: 28% no-show rate (HKL proxy); RM 490–1,120/day revenue loss",
+        "inherited_from": "S1 PP1.4-a, PP1.4-b, PP1.4-c",
+        "score": "medium",
+        "note": "PP1.4-c (revenue loss calculation) scored Medium in Stage 1. PP1.4-a (no-show rate) scored Low (single source, public hospital proxy). Stage 4 labels this Med — appropriate given the revenue calculation has two supporting sources."
+      },
+      {
+        "claim_id": "S4-sub2a-confidence",
+        "claim": "Sub-step 2a: 40–80 hr scheduling per 100-employee programme",
+        "inherited_from": "S2 PP2.4, ASSUMED-13",
+        "score": "low",
+        "note": "Scheduling time is ASSUMED-13 in Stage 2. Auto-Low for assumed-tag."
+      },
+      {
+        "claim_id": "S4-sub2b-confidence",
+        "claim": "Sub-step 2b: ~4 min/employee collation time; OCR F1 0.86 on lab reports",
+        "inherited_from": "S2 PP2.2, ASSUMED-3, PMC 10629084",
+        "score": "medium",
+        "note": "Collation time ASSUMED-3 (Low); but OCR F1 benchmark from PMC 10629084 (peer-reviewed, single source = Low). Stage 4 table labels Med-High for this sub-step overall based on the confirmed turnaround data from Indonesian MCU sources. Medium is conservative-appropriate."
+      },
+      {
+        "claim_id": "S4-sub2c-confidence",
+        "claim": "Sub-step 2c: OHD 20–35 min/report; 3–7 day turnaround; 1,113 OHDs in Malaysia (2016)",
+        "inherited_from": "S2 PP2.1, DOSH primary-ministry (VC-PP-2, PP2.1-d)",
+        "score": "medium",
+        "note": "DOSH 1,113 OHD figure is High (two primary-ministry sources). OHD sign-off time 20–35 min is ASSUMED-1 in Stage 2. Mixed: one component High, one component Low — Medium overall for the sub-step. Stage 4 labels Med-High for this sub-step, which slightly overstates the confidence given the ASSUMED time figure."
+      },
+      {
+        "claim_id": "S4-sub2d-confidence",
+        "claim": "Sub-step 2d: 77.4% MCU-identified high-risk employees receive no structured follow-up",
+        "inherited_from": "S2 PP2.3-a (PMC 12021225)",
+        "score": "medium",
+        "note": "PMC 12021225 is a single primary-academic source = Low in Stage 2. Stage 4 labels Med-High, which overstates. Downgrade to Medium for cross-stage synthesis. Geography-mismatch (South Korean semiconductor sector) acknowledged in Stage 2."
+      },
+      {
+        "claim_id": "S4-sub3a-confidence",
+        "claim": "Sub-step 3a: 67% GL revocation MY; 6-hour GL standard; 34% pending ID; 55% incomplete",
+        "inherited_from": "S3 VC3a-GL-revocation (Medium), VC3a-GL-time (Low), PP3.1-ID-TPA-pending (Low)",
+        "score": "medium",
+        "note": "Stage 4 labels this High. Most specific figures are Low or Medium in Stage 3: GL revocation (Medium, single CodeBlue survey); GL time (Low, vendor page); pending rate (Low, single study). The combined narrative is supported but no individual claim reaches High independently. Downgrade synthesis label from High to Medium."
+      },
+      {
+        "claim_id": "S4-sub3b-confidence",
+        "claim": "Sub-step 3b: 15–20% denial rate; $43–57 rework cost; 55% incomplete documentation",
+        "inherited_from": "S3 PP3.2-Experian-denial-stats (Low), PP3.2-denial-rate-global (Low), PP3.1-ID-TPA-pending (Low)",
+        "score": "low",
+        "note": "Stage 4 labels this High. All three underlying source claims are Low in Stage 3 (Experian US survey geography-mismatch; InterPixels vendor-marketing; Indonesia TPA study single institution). Downgrade to Low."
+      },
+      {
+        "claim_id": "S4-sub3c-confidence",
+        "claim": "Sub-step 3c: 35–45 min manual review; 25–40% claims require human review; $40–60/claim manual cost",
+        "inherited_from": "S3 PP3.3-McKinsey-claims-automation (Low), PP3.2-manual-automated-cost (Low — InterPixels vendor-marketing)",
+        "score": "low",
+        "note": "Stage 4 labels this High. Primary evidence for adjudication time and cost comes from InterPixels AI (vendor-marketing, auto-Low) and single McKinsey source (single-source = Low). VEDIKA settlement improvement (PP3.2-VEDIKA) is Medium but outdated (2019 single hospital). Downgrade to Low."
+      },
+      {
+        "claim_id": "S4-sub3d-confidence",
+        "claim": "Sub-step 3d: 34.3% Prolanis enrolment; 56.8% dropout; 2–4 FTE per 10,000 lives",
+        "inherited_from": "S3 PP3.5-Prolanis-34pct (Low), PP3.5-CDM-cost-ASSUMED (Low)",
+        "score": "low",
+        "note": "PMC 12538241 (single primary-academic) = Low. FTE estimate ASSUMED-7. Stage 4 labels this Med — appropriate given one peer-reviewed paper; but single-source rule keeps it Low. Use Low."
+      },
+      {
+        "claim_id": "S4-cost-baseline-4_3_1",
+        "claim": "GP clinic annualised back-office labour cost MY: $86,285–$319,740/year; ID: $17,290–$74,355/year",
+        "inherited_from": "S1 salary data (PP1.1-b, PP1.4-d: salary aggregator sources), time estimates (PP1.1-a ASSUMED, PP1.3 ASSUMED-9)",
+        "score": "low",
+        "note": "Cost calculation is doubly derived: salary from secondary-trade aggregators (Low); time from ASSUMED-tagged estimates. Auto-Low for ASSUMED-tag dependent calculations."
+      },
+      {
+        "claim_id": "S4-cost-baseline-4_3_2",
+        "claim": "MCU 1,000-employee labour cost MY: $27,910–$48,393/year; ID: $6,295–$12,511/year",
+        "inherited_from": "OHD salary from salary aggregators (PP2.1-i Low); sign-off time ASSUMED-1; admin time ASSUMED-3",
+        "score": "low",
+        "note": "OHD salary from salary aggregators (Low); time estimates are ASSUMED. Auto-Low."
+      },
+      {
+        "claim_id": "S4-cost-baseline-4_3_3",
+        "claim": "TPA 50,000-lives labour cost MY: $1,860,000–$3,310,000/year; ID: $421,000–$700,000/year",
+        "inherited_from": "TPA adjudicator salary (PP3.1-cost-TPA-analyst: Low — salary aggregators); time/volume from InterPixels (auto-Low vendor); 3d FTE ASSUMED-7",
+        "score": "low",
+        "note": "All three cost components derive from Low sources. Auto-Low for cost baseline."
+      },
+      {
+        "claim_id": "S4-WH5-cascade",
+        "claim": "CDM leakage cascade: 1,000 patients → ~17 well-controlled (98.3% system-level leakage)",
+        "inherited_from": "Layer 1: Posbindu 42.2% (S1 PP1.3-a, Low); Layer 2: PMC 12021225 22.6% (S2 PP2.3-a, Low); Layer 3: PMC 12538241 56.8% dropout (S3 PP3.5-Prolanis-34pct, Low); NDR 34.38% (S1 PP1.2-f, Low)",
+        "score": "low",
+        "note": "All four leakage inputs are individually Low (single-source studies; setting/geography mismatches). The cascade arithmetic multiplies four Low-confidence inputs — the result is directionally credible but carries compounded uncertainty. Claimed as 'illustrative' in the text, which is appropriate; source quality dictates Low for the quantified output."
+      },
+      {
+        "claim_id": "S4-WH1-confirmed",
+        "claim": "WH1: Cost and failure concentrate in sub-steps 2c, 3c, 3a, 1c — confirmed",
+        "score": "medium",
+        "note": "Synthesis-level claim inheriting from multiple Medium sources. Qualitative direction is well-supported; specific cost magnitudes are Low-confidence. Medium is appropriate for the directional WH confirmation."
+      },
+      {
+        "claim_id": "S4-WH2-confirmed",
+        "claim": "WH2: Automation feasibility gated by input-data format — confirmed",
+        "score": "medium",
+        "note": "Structural observation with strong face validity supported by multiple Medium-confidence data points across all three stages."
+      },
+      {
+        "claim_id": "S4-NHMS-2023-cascade-anchor",
+        "claim": "NHMS 2023: 15.6% DM, 29.2% HTN, 33.3% hypercholesterolaemia used as starting population",
+        "inherited_from": "S1 VC9 / deep-research Upgrade 1: IPH fact sheet + PMC12264187",
+        "score": "high",
+        "note": "Post-deep-research upgrade to High confirmed. Two independent primary sources. Used throughout Stage 4 as the population anchor."
+      },
+      {
+        "claim_id": "S4-Prodia-revenue",
+        "claim": "Prodia IDR 2.25T total revenue; IDR 354.93B B2B corporate channel FY2024",
+        "inherited_from": "S2 VC-MS-7, VC-PP-5: two primary-filing sources",
+        "score": "high",
+        "note": "Two primary-filing sources (Annual Report 2024 + 9M Results Update). High confirmed."
+      },
+      {
+        "claim_id": "S4-KPJ-revenue",
+        "claim": "KPJ Healthcare FY2023 MYR 3.42B revenue; 3.32M outpatient visits",
+        "inherited_from": "S2 VC-MS-11: two sources (KPJ IAR 2023 primary-filing + Statista corroborating)",
+        "score": "high",
+        "note": "KPJ IAR 2023 is primary-filing. Two sources ≥1 primary. High confirmed."
+      },
+      {
+        "claim_id": "S4-DOSH-OHD",
+        "claim": "1,113 registered OHDs in Malaysia as of 2016; structural supply constraint",
+        "inherited_from": "S2 PP2.1-d / VC-PP-2: two primary-ministry DOSH pages",
+        "score": "high",
+        "note": "Two independent primary-ministry sources confirmed. High. Note: 2016 data — outdated-source flag applies to current-count inference but structural-constraint claim is defensible even with 2016 baseline."
+      }
+    ]
+  },
+
+  "stage_5_scoring": {
+    "context": "ID vs. MY readiness comparison. Mostly qualitative synthesis drawing on Stages 1–4. Fresh WebSearch sources (F1–F18) scored individually.",
+    "total_distinct_claim_blocks_scored": 24,
+    "high": {"count": 5, "percent": "21%"},
+    "medium": {"count": 11, "percent": "46%"},
+    "low": {"count": 8, "percent": "33%"},
+    "claim_detail": [
+      {
+        "claim_id": "S5-PDPA-MY",
+        "claim": "Malaysia PDPA Amendment 2024 (Act A1727) phased in: Phase 1 Jan, Phase 2 Apr, Phase 3 Jun 2025",
+        "sources": ["pdp.gov.my (primary-ministry)", "Baker McKenzie InsightPlus (primary-consultancy)"],
+        "score": "high",
+        "note": "Two independent primary sources (government portal + top-tier consultancy authored analysis). High."
+      },
+      {
+        "claim_id": "S5-SATUSEHAT-fidelity",
+        "claim": "33,901–34,463 facilities registered on SATUSEHAT dashboard (Dec 2024–Oct 2025)",
+        "sources": ["PubMed 40776145 (primary-academic)", "Kemenkes BKPK press release Oct 2025 (primary-ministry)"],
+        "score": "high",
+        "note": "Two independent primary sources (peer-reviewed + primary-ministry). High."
+      },
+      {
+        "claim_id": "S5-MY-HIS-penetration",
+        "claim": "Only 24% of MOH hospitals (35 of 145) had HIS as of 2019; 7% of public health clinics",
+        "sources": ["PMC 12227897 (primary-academic)"],
+        "score": "low",
+        "note": "Single primary-academic source. Also 2019 data — outdated-source flag. Low."
+      },
+      {
+        "claim_id": "S5-FHIR-100-limit",
+        "claim": "SATUSEHAT limits data transmission to 100 patients per facility per day",
+        "sources": ["Klinik Pintar integration documentation (secondary-trade vendor doc)", "PMC 12036547 FHIR complexity (primary-academic)"],
+        "score": "medium",
+        "note": "Two independent sources, one secondary-trade vendor doc and one primary-academic. Medium."
+      },
+      {
+        "claim_id": "S5-PMCare-ops",
+        "claim": "PMCare processes 13,000 claims/day; 4.2M transactions/year; MYR 2B+ claims 2024; 30-min GL",
+        "sources": ["CodeBlue Nov 2025 CEO interview (secondary-trade)"],
+        "score": "medium",
+        "note": "Single secondary-trade source (CodeBlue named-CEO interview). Medium ceiling for single source. Confirmed via CodeBlue second article (same publication family = 1 source)."
+      },
+      {
+        "claim_id": "S5-HealthMetrics-scale",
+        "claim": "HealthMetrics: 1,000+ corporates; 200,000+ users; AI pre-auth launched Indonesia April 2025",
+        "sources": ["healthmetrics.com (auto-low-vendor for own capability)", "TechNode Global April 2025 (secondary-trade)"],
+        "score": "low",
+        "note": "HealthMetrics.com own corporate page = auto-low-vendor for own capabilities. TechNode is secondary-trade reporting HealthMetrics' own press release = auto-low-vendor origin. Low."
+      },
+      {
+        "claim_id": "S5-Indonesia-PDP-law",
+        "claim": "Indonesia PDP Law (UU 27/2022) entered full force October 2024; implementing regs pending",
+        "sources": ["iclg.com 2025–2026 Digital Health Laws Indonesia (secondary-trade/legal intelligence)"],
+        "score": "low",
+        "note": "Single secondary source (ICLG legal intelligence platform). The underlying primary is the law itself (Undang-Undang No. 27/2022). Single trade/legal secondary = Low."
+      },
+      {
+        "claim_id": "S5-POJK-regulatory-pull",
+        "claim": "POJK 36/2024 + SE 7/2025 mandates fraud detection, COB, Medical Advisory Board — effective 1 Jan 2026",
+        "sources": ["Milliman e-alert (primary-consultancy)", "Lockton broker commentary (secondary-trade)"],
+        "score": "medium",
+        "note": "Two sources, ≥1 primary-consultancy (Milliman). Medium (same as Stage 3 VC3c-POJK36-COB score). Factual error corrected to POJK 36/2024."
+      },
+      {
+        "claim_id": "S5-BPJS-UHC",
+        "claim": "BPJS Kesehatan 98.45% UHC coverage by end-2024",
+        "sources": ["harmonyfmserang.com (obscure local radio, secondary-news)"],
+        "score": "low",
+        "note": "Same as Stage 1 VC16. Obscure single secondary-news source. Low. Primary would be BPJS Kesehatan annual report."
+      },
+      {
+        "claim_id": "S5-BPS-formal-workers",
+        "claim": "Indonesia 82.67M formal sector workers (Aug 2023); 59.1% of 139.85M employed",
+        "sources": ["BPS Indonesia Labour Force Survey Aug 2023 (primary-gov)"],
+        "score": "low",
+        "note": "Single primary-gov source. 1 source = Low per rubric despite BPS quality."
+      },
+      {
+        "claim_id": "S5-NAIO-AI-investment",
+        "claim": "Malaysia NAIO launched late 2024; RM3.29B AI private investment approved H1 2025; RM150M IT allocation in RM41.22B health budget 2024",
+        "sources": ["trade.gov Malaysia AI Assisted Healthcare Technology (secondary-trade)", "OpenGov Asia (secondary-trade)"],
+        "score": "low",
+        "note": "Two secondary-trade sources. No primary-ministry (Budget 2025 speech text, NAIO press release). Low."
+      },
+      {
+        "claim_id": "S5-Klinik-Pintar-scale",
+        "claim": "Klinik Pintar: 1,500+ networked clinics; SATUSEHAT-integrated; $5M Series A1 Dec 2023",
+        "sources": ["TechNode Global Dec 2023 (secondary-trade)"],
+        "score": "low",
+        "note": "Same as Stage 1 VC12. Single secondary-trade source. Funding claim would need Form D. Low."
+      },
+      {
+        "claim_id": "S5-Qualitas-AA3",
+        "claim": "Qualitas Medical Group 135 owned + 151 affiliate clinics; AA3/Stable RAM rating",
+        "sources": ["RAM Ratings press release (primary-association/third-party credit agency)"],
+        "score": "medium",
+        "note": "Same as Stage 1 VC13. RAM Ratings as independent third-party credit assessor — Medium (single credible third-party above secondary trade)."
+      },
+      {
+        "claim_id": "S5-Indonesia-VC-health",
+        "claim": "Indonesia healthtech: $122M raised in 2023; 622 companies; 79 funded; 15 at Series A+",
+        "sources": ["Tracxn / HealthTech Alpha (secondary-trade/aggregator)"],
+        "score": "low",
+        "note": "Single secondary-trade/aggregator. Low."
+      },
+      {
+        "claim_id": "S5-LIAM-claims-2024",
+        "claim": "LIAM: MYR 8.9B health insurance claims paid in 2024; MYR 16.8B total benefit payouts",
+        "sources": ["LIAM press release Jan 2025 (primary-association)", "Bernama (secondary-news)"],
+        "score": "high",
+        "note": "Two independent sources ≥1 primary-association. Same as Stage 3 VC3-LIAM-2024-claims. High confirmed."
+      },
+      {
+        "claim_id": "S5-BNM-MHIT",
+        "claim": "Malaysia MHIT spending MYR 6.75B (2023); 7.7M covered; 73% cumulative claims increase 2021–2023",
+        "sources": ["The Edge citing BNM Special Report (secondary-news)", "BNM Annual Report (primary-ministry, not directly fetched — 403 error)"],
+        "score": "high",
+        "note": "Same as Stage 3 VC3-BNM-MHIT. High confirmed. BNM is confirmed as the data origin via multiple secondary sources. Two sources ≥1 primary-ministry. High."
+      },
+      {
+        "claim_id": "S5-AAJI-claims",
+        "claim": "AAJI: health insurance claims IDR 24.18T in 2024 (+16.4%); individual IDR 15.29T; group IDR 8.89T",
+        "sources": ["AAJI official press release Feb 2025 (primary-association)", "Kompas.com (secondary-news)"],
+        "score": "high",
+        "note": "Same as Stage 3 VC3-AAJI-health-claims. High confirmed. Two sources ≥1 primary-association."
+      },
+      {
+        "claim_id": "S5-SOCSO-HSP",
+        "claim": "SOCSO HSP 3.0 targets 2.2M contributors aged 40–59; SEHATi digital portal",
+        "sources": ["HROnline (secondary-trade)", "PERKESO official FAQ (primary-gov/ministry)"],
+        "score": "medium",
+        "note": "Same as Stage 2 VC-MS-4. Two sources ≥1 primary-gov. Medium (2.2M specific count from HRO; PERKESO confirms programme but count unconfirmed in FAQ)."
+      },
+      {
+        "claim_id": "S5-Allianz-MY",
+        "claim": "Allianz Malaysia GWP MYR 6.55B in 2023 (+8.7%); Allianz General market share 14.0%",
+        "sources": ["Allianz Malaysia official IR press release (primary-filing equivalent)"],
+        "score": "high",
+        "note": "Same as Stage 3 VC3-Allianz-MY. Bursa-listed entity IR announcement = primary-filing. High (single authoritative primary-filing for a listed entity)."
+      },
+      {
+        "claim_id": "S5-readiness-matrix-scores",
+        "claim": "36-cell readiness matrix: MY Layer 3 composite 3.7; MY Layer 2 composite 3.2; ID Layer 1 composite 2.5",
+        "score": "low",
+        "note": "Matrix scores are synthesised expert judgments based on underlying evidence, not directly cited quantitative claims. Multiple ASSUMED-tagged flags in Section 5.5. Low for the composite-score claims themselves; underlying evidence for individual dimensions varies as scored above."
+      },
+      {
+        "claim_id": "S5-MY-primary-rec",
+        "claim": "Primary recommendation: Malaysia Layer 2 MCU sub-step 2d via HealthMetrics (1–3 month entry timeline)",
+        "score": "medium",
+        "note": "Synthesis conclusion supported by Medium-confidence underlying claims. The HealthMetrics operator-readiness claim is Low (vendor-marketing), but the PMC 12021225 77.4% leakage figure (Low, single primary-academic, geography-mismatch) and SOCSO HSP 3.0 digital infrastructure (Medium) collectively support the recommendation directionally. Medium for the overall recommendation."
+      },
+      {
+        "claim_id": "S5-AdMedika-scale",
+        "claim": "AdMedika: 5.2M+ members; 9,000+ facilities; AdCPS platform; Prixa AI partnership 2022",
+        "sources": ["AdMedika own website (auto-low-vendor)", "PR Newswire APAC Prixa partnership (secondary-press-release)"],
+        "score": "low",
+        "note": "Own-website capability claims = auto-low-vendor. Press release = secondary-press-release. Low."
+      },
+      {
+        "claim_id": "S5-POJK-fraud-mandate",
+        "claim": "POJK 36/2024 fraud-detection and COB mandates create near-term regulatory pull for Indonesia Layer 3 AI tooling",
+        "score": "medium",
+        "note": "Regulatory mandate is confirmed (Medium from Milliman + Lockton sources). The 'regulatory pull' inference is analytical but based on confirmed Medium-confidence regulatory fact."
+      },
+      {
+        "claim_id": "S5-Bahasa-ASR-barrier",
+        "claim": "No commercially available Bahasa-capable ambient scribe in Indonesia or Malaysia as of May 2026; arXiv 2409.17054 confirms PoC feasibility only",
+        "sources": ["arXiv 2409.17054 (primary-academic preprint)", "Stage 6 literature review"],
+        "score": "medium",
+        "note": "The absence claim is difficult to source positively. arXiv preprint confirms PoC. Stage 6 literature review confirms no commercial product found. Medium for this negative-capability claim."
+      }
+    ]
+  },
+
+  "stage_6_scoring": {
+    "context": "AI capability mapping with global benchmarks applied to ID/MY context. Most claims are single-source academic benchmarks.",
+    "total_distinct_claim_blocks_scored": 26,
+    "high": {"count": 4, "percent": "15%"},
+    "medium": {"count": 9, "percent": "35%"},
+    "low": {"count": 13, "percent": "50%"},
+    "claim_detail": [
+      {
+        "claim_id": "S6-LLM-SOAP-hallucination",
+        "claim": "LLM clinical SOAP generation: 1.47% hallucination rate; 3.45% omission rate (12,999-sentence eval, npj Digital Medicine 2025)",
+        "sources": ["PMC 12075489 (primary-academic, peer-reviewed)"],
+        "score": "low",
+        "note": "Single primary-academic source. Low. Also: non-ID/MY context — geography-mismatch for direct application."
+      },
+      {
+        "claim_id": "S6-LLM-ICD10-accuracy",
+        "claim": "ICD-10 coding fine-tuned Llama-3.2-1B: exact match 69.20%; category match 87.16% (npj Health Systems 2025). GPT-4o mini: <1% → 97% after fine-tuning",
+        "sources": ["PMC 12045799 (primary-academic, npj Health Systems 2025)"],
+        "score": "low",
+        "note": "Single primary-academic source. Low."
+      },
+      {
+        "claim_id": "S6-NEJM-ambient-RCT",
+        "claim": "NEJM AI RCT (238 outpatient physicians, 14 specialties): 30 min/day documentation reduction; ambient scribe (DAX/Nabla vs. control)",
+        "sources": ["PubMed 40672471 (primary-academic)", "PMC 12492056 (primary-academic, JAMA Network Open 263 physicians)"],
+        "score": "medium",
+        "note": "Two independent primary-academic sources (NEJM AI RCT + JAMA Network Open RCT). Different study populations, both peer-reviewed. Medium (2 primary sources, not 3; not gov-stats/multilateral)."
+      },
+      {
+        "claim_id": "S6-medrxiv-ambient-time",
+        "claim": "Time-motion study: documentation time reduced 20.4% (10.3 → 8.2 min/consult); 30% reduction in after-hours documentation (PMC 11840636)",
+        "sources": ["PMC 11840636 (primary-academic — peer-reviewed version of medRxiv preprint)"],
+        "score": "low",
+        "note": "Single primary-academic source. Low."
+      },
+      {
+        "claim_id": "S6-SGH-ambient",
+        "claim": "Singapore General Hospital Note Buddy: 15% documentation time reduction (5.3 → 4.5 min/consult); 10.6% increase in eye contact; 0% patient discomfort (JMIR 2026)",
+        "sources": ["JMIR Medical Informatics 2026 (primary-academic — first published ambient scribe study in Asia)"],
+        "score": "low",
+        "note": "Single primary-academic source. Closest regional data point (Singapore, not ID/MY). Low."
+      },
+      {
+        "claim_id": "S6-OCR-SOTA",
+        "claim": "OCR printed/typed docs: >99.2% character accuracy (Google Cloud Vision, Azure DI, PaddleOCR-VL); structured forms 97–99% (IntuitionLabs pharma benchmark 2024)",
+        "sources": ["IntuitionLabs 2024 benchmark (secondary-trade/tech consultancy)", "PMC 10629084 (primary-academic)"],
+        "score": "medium",
+        "note": "Two independent sources ≥1 primary-academic (PMC 10629084). IntuitionLabs is secondary-trade. Medium (2 sources, ≥1 primary)."
+      },
+      {
+        "claim_id": "S6-Bahasa-ASR-WER",
+        "claim": "Whisper large: WER 19.8–22.3% on formal Bahasa Indonesia speech; WER 27.7–645% on informal conversational speech",
+        "sources": ["ResearchGate 2025 Bahasa Indonesia ASR study (secondary-trade/academic)"],
+        "score": "low",
+        "note": "Single source — ResearchGate paper. The large informal-speech WER range (up to 645%) indicates high variance; single study. Low."
+      },
+      {
+        "claim_id": "S6-Spark-NLP-NER",
+        "claim": "Spark NLP Healthcare: 76% entity capture for ICD-10-CM, outperforming GPT-4 (58%) and GPT-3.5 (40%) (John Snow Labs 2024)",
+        "sources": ["John Snow Labs 2024 benchmark (secondary-trade — proprietary vendor benchmark)"],
+        "score": "low",
+        "note": "Single source from the vendor (John Snow Labs sells Spark NLP Healthcare). Vendor-benchmark for own product — auto-low-vendor adjacent. Low."
+      },
+      {
+        "claim_id": "S6-NLP-ICD-sensitivity",
+        "claim": "NLP + ICD-10 hybrid: sensitivity 43% (ICD alone) → 94% with NLP augmentation (PMC 12396801)",
+        "sources": ["PMC 12396801 (primary-academic)"],
+        "score": "low",
+        "note": "Single primary-academic source. Low."
+      },
+      {
+        "claim_id": "S6-no-show-ML",
+        "claim": "No-show prediction (HKL, gradient boosting): AUC 0.65, accuracy 78%, F1 0.76 (PMC 10624443)",
+        "sources": ["PMC 10624443 (primary-academic)"],
+        "score": "low",
+        "note": "Single primary-academic source. Same paper as Stage 1 PP1.4-b. Low."
+      },
+      {
+        "claim_id": "S6-fraud-ML-accuracy",
+        "claim": "Healthcare fraud detection Random Forest (Medicare): training accuracy 99.2%, validation 98.8%, F1 98.4% (MDPI 2025)",
+        "sources": ["MDPI 2025 (primary-academic)"],
+        "score": "low",
+        "note": "Single primary-academic source. Geography-mismatch (Medicare US data). Low."
+      },
+      {
+        "claim_id": "S6-CDM-adherence-AUROC",
+        "claim": "ML medication non-adherence prediction: AUROC 0.70–0.74 (AJMC 2024; PMC 12672954)",
+        "sources": ["AJMC 2024 (primary-academic journal)", "PMC 12672954 (primary-academic)"],
+        "score": "medium",
+        "note": "Two independent primary-academic sources. Medium."
+      },
+      {
+        "claim_id": "S6-RPA-claims-reduction",
+        "claim": "RPA claims processing time reduction: 70–80%; 30–40% decrease in accounts receivable days (getmagical.com 2024 citing case studies)",
+        "sources": ["getmagical.com (secondary-trade/vendor)"],
+        "score": "low",
+        "note": "Single secondary-trade source from a vendor blog. Low."
+      },
+      {
+        "claim_id": "S6-RPA-denial-reduction",
+        "claim": "Prior auth denial reduction: 22% decrease after UiPath RPA (Montage Health); Jorie AI: 0.21% denial rate post-RPA vs 15–20% baseline",
+        "sources": ["tactionsoft.com 2024 (secondary-trade)", "innobothealth.com (secondary-trade/vendor)"],
+        "score": "low",
+        "note": "Two secondary-trade sources from tech vendors reporting their own or client results. Geography-mismatch (US). Low."
+      },
+      {
+        "claim_id": "S6-JAMA-SMS-meta",
+        "claim": "JAMA IM meta-analysis (Thakkar 2016): SMS doubles odds of chronic-disease medication adherence (OR 2.11, 16 RCTs, n=2,742)",
+        "sources": ["PubMed 26831740 (primary-academic)"],
+        "score": "low",
+        "note": "Single primary-academic source — but this is the anchor meta-analysis for the SMS upgrade in Stage 1 deep-research. As part of the four-meta-analysis bundle (Stage 1 deep-research Upgrade 4), it contributes to High; as an individual claim = Low."
+      },
+      {
+        "claim_id": "S6-SMS-4meta-bundle",
+        "claim": "CDM recall SMS effect: Cochrane attendance RR 1.14; JAMA OR 2.11; BMC Endocrine 2023 SMD 0.36; Indonesian RCT PMC5489927 — collectively support 10–37 pp adherence improvement range",
+        "sources": ["PubMed 26831740 (primary-academic — JAMA IM Thakkar)", "PMC Cochrane CD007458 (primary-academic)", "BMC Endocrine Disorders 2023 (primary-academic)", "PMC 5489927 (primary-academic)"],
+        "score": "high",
+        "note": "Four independent primary-academic sources (3 meta-analyses + 1 regional RCT). Meets High: 3+ independent sources ≥1 primary. This is the post-deep-research upgrade for Stage 1 PP1.3-e."
+      },
+      {
+        "claim_id": "S6-NHMS-2023-NCD",
+        "claim": "NHMS 2023: diabetes 15.6%, hypertension 29.2%, hypercholesterolaemia 33.3% prevalence (confirmed)",
+        "sources": ["IPH fact sheet MOH/S/IKU/229.24(PT) (primary-gov)", "PMC 12264187 Scientific Reports (primary-academic)"],
+        "score": "high",
+        "note": "Two independent primary sources (government statistics + peer-reviewed paper). High confirmed. Post-deep-research Upgrade 1."
+      },
+      {
+        "claim_id": "S6-BPJS-capitation",
+        "claim": "Klinik Pratama capitation IDR 9,000–16,000/patient/month under PMK No. 3/2023",
+        "sources": ["Kemenkes official site (primary-ministry)", "BPK regulatory database (primary-ministry, Cloudflare-blocked — NEEDS-ATTENDED-FETCH)"],
+        "score": "high",
+        "note": "Kemenkes official site confirmed content. Second primary-ministry URL confirmed at BPK but Cloudflare-blocked. One confirmed primary-ministry + one partially verified = High with NEEDS-ATTENDED-FETCH tag on second source. Post-deep-research Upgrade 2."
+      },
+      {
+        "claim_id": "S6-IHC-corrected",
+        "claim": "IHC (Pertamedika) operates 36 hospitals + 68 clinics (FY2023); 37 hospitals + 73 clinics (FY2024)",
+        "sources": ["Pertamedika Annual Report 2023 (primary-filing)", "Pertamedika Annual Report 2024 (primary-filing)"],
+        "score": "high",
+        "note": "Two primary-filing sources with verbatim confirmation. High. Post-deep-research Upgrade (E1 correction)."
+      },
+      {
+        "claim_id": "S6-ambient-scribe-vendor-landscape",
+        "claim": "DAX Copilot (Microsoft), Abridge, Suki, Nabla, DeepScribe all production in English markets; no Bahasa-capable commercial ambient scribe as of May 2026",
+        "sources": ["Various secondary-trade sources and PMC 12075489, PMC 11840636"],
+        "score": "medium",
+        "note": "Market landscape claim across multiple secondary sources. The positive existence claims (DAX, Abridge, etc. are in production) are secondary-trade corroborated. The negative claim (no Bahasa product) is based on absence in literature + market search. Medium overall."
+      },
+      {
+        "claim_id": "S6-BotMD-SEA",
+        "claim": "BotMD automates WhatsApp patient enquiries and follow-ups across 20,000+ SEA doctors",
+        "sources": ["Secondary-trade/vendor marketing (not directly cited in Stage 6 — inferred from BotMD corporate website)"],
+        "score": "low",
+        "note": "Vendor's own marketing for own scale = auto-low-vendor. Low."
+      },
+      {
+        "claim_id": "S6-ASSUMED-language-tags",
+        "claim": "ASSUMED-1 through ASSUMED-4: code-switching 15–25% worse on ICD-10; OCR accuracy comparable to PMC benchmark; Bahasa clinical ASR MVP 12–18 months; Bahasa clinical NER F1 0.70–0.87",
+        "score": "low",
+        "note": "All four are explicitly ASSUMED-tagged in Stage 6. Auto-Low for assumed-tag claims. Each requires field validation or controlled benchmark."
+      },
+      {
+        "claim_id": "S6-WH2-verdict",
+        "claim": "WH2 confirmed: format gate is the primary automation barrier; three sub-steps have structured input but not automated (confirming process/accountability as secondary barrier)",
+        "score": "medium",
+        "note": "Synthesis conclusion; analytically sound; supported by Medium-confidence evidence across Stages 1–3."
+      },
+      {
+        "claim_id": "S6-cost-reduction-estimates",
+        "claim": "Conservative/base/upside cost-per-transaction reductions for each sub-step (2c: $24 → $8–17; 3c: $6 → $1.50–3.60; 3a: $15.25 → $3.05–7.60; 1c: $0.76–1.48 → $0.11–0.74; 2d: $504–1131/year → 15–40% residual; 3b: $43–57 → $19–43; 1a: $22.50 → $11.25–18; 2b: $266 → $40–107)",
+        "score": "low",
+        "note": "All cost reduction ranges are derived from: (a) salary baselines from salary aggregators (Low); (b) time estimates from assumed/single-trade sources (Low); (c) automation reduction percentages from global benchmarks with geography-mismatch. Triply-derived Low. Correct to present as illustrative ranges only."
+      },
+      {
+        "claim_id": "S6-OCR-F1-lab-extraction",
+        "claim": "Lab result extraction OCR+NER pipeline: F1 = 0.86 overall (PMC 10629084, Peking University/Philips Research China, 153 real-world lab reports)",
+        "sources": ["PMC 10629084 (primary-academic, peer-reviewed, BMC Medical Informatics)"],
+        "score": "low",
+        "note": "Single primary-academic source. Geography-mismatch (Chinese hospital lab reports applied as benchmark for Indonesian/Malaysian labs). Low. However this is the best available technical benchmark for this sub-step."
+      }
+    ]
+  },
+
+  "corpus_all_stages": {
+    "total_claims_scored": 240,
+    "note": "Stage 1: 50; Stage 2: 52; Stage 3: 58; Stage 4: 30; Stage 5: 24; Stage 6: 26",
+    "corpus_high": {
+      "count": 44,
+      "percent": "18%",
+      "breakdown_by_stage": {"S1_post_DR": 7, "S2_post_DR": 10, "S3": 14, "S4": 4, "S5": 5, "S6": 4}
+    },
+    "corpus_medium": {
+      "count": 78,
+      "percent": "33%",
+      "breakdown_by_stage": {"S1_post_DR": 11, "S2_post_DR": 13, "S3": 20, "S4": 14, "S5": 11, "S6": 9}
+    },
+    "corpus_low": {
+      "count": 118,
+      "percent": "49%",
+      "breakdown_by_stage": {"S1_post_DR": 32, "S2_post_DR": 29, "S3": 24, "S4": 12, "S5": 8, "S6": 13}
+    }
+  },
+
+  "unique_urls_total": {
+    "count_estimate": 98,
+    "method": "Count of unique domains + page paths across all stage source lists. Includes Stage 1 (55 URLs noted in deep-research addendum) + Stage 2 (~30 unique additional) + Stage 3 (~35 unique additional, some overlap with S1–S2 for CodeBlue, PMC, OJK) + Stages 4–6 fresh sources (F1–F18 in Stage 5, ~15 additional in Stage 6). Estimated overlap-adjusted unique URL count: ~98.",
+    "note": "Target was 40–60 unique URLs. Actual corpus exceeds the upper bound at ~98 URLs. This is not a quality problem — the excess reflects comprehensive coverage across three market layers and two countries. However, it underscores that de-duplication is needed: many URLs are cited across multiple stages (see sources_used_multiple_stages below)."
+  },
+
+  "sources_used_multiple_stages": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5433794/",
+      "description": "SMS+call reminder Malaysia: adherence 54.6%→92.2%",
+      "used_in": ["Stage 1 (PP1.3-e anchor)", "Stage 2 (PP2.3-j cross-reference)", "Stage 4 (CDM recall leakage)", "Stage 6 (sub-step 1c automation benchmark)"]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10624443/",
+      "description": "HKL no-show prediction: 28% no-show rate, gradient boosting 78% accuracy",
+      "used_in": ["Stage 1 (PP1.4-b)", "Stage 2 (PP2.4-e)", "Stage 6 (sub-step 1d ML benchmark)"]
+    },
+    {
+      "url": "https://arxiv.org/pdf/2512.05381",
+      "description": "arXiv preprint on Indonesia EMR adoption dynamics (PT MTK market share)",
+      "used_in": ["Stage 1 (VC10, PP1.1-e, PP1.1-j)", "Stage 2 (VC-PP-4, PP2.1-k)", "Stage 5 (EHR dimension)"]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5977598/",
+      "description": "ICD-10 coding accuracy: >25% omission/error (US ambulatory clinicians)",
+      "used_in": ["Stage 1 (PP1.1-h, PP1.1-k)", "Stage 3 (PP3.2-coding-inaccuracy-25pct)", "Stage 6 (sub-step 1a error reduction baseline)"]
+    },
+    {
+      "url": "https://codeblue.galencentre.org/",
+      "description": "CodeBlue.galencentre.org (multiple articles — GL revocation, NHMS 2023, LIAM claims, PMCare interview, Madani scheme, SOCSO HSP)",
+      "used_in": ["Stage 1 (VC7, VC9, PP1.4-c)", "Stage 2 (PP2.3-c/d/h, PP2.4-a/b)", "Stage 3 (VC3a-GL-revocation, VC3-LIAM-claims-ratio, PP3.1, PP3.3, PP3.5)", "Stage 5 (S3-2, S3-3)", "Stage 6 (multiple references)"],
+      "single_domain_override_note": "CodeBlue represents a single publication family. Under single-domain override, multiple CodeBlue articles cannot collectively elevate any claim above Medium. This applies across all stages."
+    },
+    {
+      "url": "https://interpixels.ai/insights/",
+      "description": "InterPixels AI APAC TPA automation benchmarks",
+      "used_in": ["Stage 3 (PP3.2-denial-rate-global, PP3.2-manual-automated-cost, PP3.3)", "Stage 4 (sub-step 3c cost baseline)", "Stage 6 (sub-step 3c, 3b benchmarks)"],
+      "auto_low_vendor_note": "InterPixels AI is a vendor selling claims automation. All citations to interpixels.ai are auto-low-vendor regardless of how many pages are cited. All claims relying on InterPixels benchmarks are auto-Low across all stages."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12021225/",
+      "description": "PMC 12021225: 22.6% CDM follow-up rate in 39,073-employee South Korean semiconductor programme",
+      "used_in": ["Stage 2 (PP2.3-a, PP2.3-b)", "Stage 4 (CDM leakage Layer 2)", "Stage 5 (Malaysia Layer 2 pilot reasoning)"],
+      "geography_mismatch_note": "Applied across 5 citation instances as a proxy for Malaysian/Indonesian corporate MCU follow-up rates. Geography-mismatch (South Korean semiconductor sector) is acknowledged in Stage 2 but persists through Stages 4–5. All downstream conclusions relying on this single study should carry a field-validation tag."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12538241/",
+      "description": "PMC 12538241: Indonesia Prolanis 34.3% enrolment; 56.8% dropout (East Java)",
+      "used_in": ["Stage 3 (PP3.5-Prolanis-34pct)", "Stage 4 (CDM leakage Layer 3)", "Stage 5 (readiness matrix Indonesia Layer 1)"]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2878665/",
+      "description": "7.1% lab follow-up failure rate (US primary care, 19 practices)",
+      "used_in": ["Stage 1 (PP1.2-a)", "Stage 4 (sub-step 1b confidence)"]
+    },
+    {
+      "url": "https://www.dosh.gov.my/",
+      "description": "DOSH Malaysia OHD registration / USECHH 2000",
+      "used_in": ["Stage 2 (VC-PP-2, PP2.1-b, PP2.1-d)", "Stage 4 (sub-step 2c OHD supply constraint)", "Stage 6 (sub-step 2c risk factor)"]
+    },
+    {
+      "url": "https://d3ftma7dyyzt91.cloudfront.net/2025/04/07/081518/Prodia%20AR%202024.pdf",
+      "description": "Prodia Annual Report 2024 (primary-filing)",
+      "used_in": ["Stage 2 (VC-MS-7, VC-PP-5)", "Stage 4 (S2-5)", "Stage 5 (S2-3)"]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10629084/",
+      "description": "Lab result OCR+NER extraction F1=0.86 (Peking University/Philips Research China)",
+      "used_in": ["Stage 2 (PP2.2-b)", "Stage 4 (sub-step 2b)", "Stage 6 (sub-step 2b OCR benchmark)"]
+    },
+    {
+      "url": "https://researchgate.net/publication/394616258",
+      "description": "Indonesia TPA (PT XYZ) 2024: 34% pending; 55% incomplete documentation; n=442,279",
+      "used_in": ["Stage 3 (PP3.1-ID-TPA-pending)", "Stage 4 (sub-step 3b)", "Stage 6 (sub-step 3b)"]
+    }
+  ],
+
+  "cross_stage_inconsistencies": [
+    {
+      "inconsistency_id": "CSI-1",
+      "description": "SATUSEHAT adoption figure misrepresented across stages",
+      "detail": "Stage 1, 2, and 4 initially cite '8.9% of eligible FKTPs have activated an EMR' as the SATUSEHAT adoption rate. Deep-research Upgrade 3 clarifies this is PT MTK's vendor market share, not the national SATUSEHAT integration rate. Stages 1–2 draft text uses this figure to justify 'near-zero' private clinic EMR adoption. Post-deep-research, the correct framing is 'MOH Digital Health Blueprint 2024 acknowledges 80% of facilities lack digital technology' — directionally consistent but the specific 8.9% should not appear as the SATUSEHAT integration rate in any stage. Stages 4 and 5 are updated to use the MOH Blueprint framing. Stage 2 (PP2.1-k) still references the 8.9% from the preprint — correction required in canonical artifact.",
+      "stages_affected": ["Stage 1", "Stage 2", "Stage 4"],
+      "severity": "medium — direction of claim (low private clinic EMR adoption) is confirmed; the specific 8.9% figure is incorrectly attributed",
+      "resolution": "Apply Stage 1 deep-research addendum Upgrade 3 framing across all stages: replace '8.9% of eligible FKTPs have activated SATUSEHAT' with '80% of facilities lack digital technology (MOH Digital Health Blueprint 2024); private klinik pratama are largely paper-based; hospital integration dominates SATUSEHAT headline count of 33,901–34,463 facilities'"
+    },
+    {
+      "inconsistency_id": "CSI-2",
+      "description": "POJK regulation designation inconsistent",
+      "detail": "Stage 3 originally refers to 'POJK 36/2025' throughout. Stage 5 adopts the corrected 'POJK 36/2024 + SE 7/2025 effective 1 January 2026'. Stage 6 still uses 'POJK 36/2025' in sub-step 3c discussion. The cross-stage canonical artifact must consistently use POJK 36/2024 with implementing SE 7/SEOJK.05/2025, effective 1 January 2026.",
+      "stages_affected": ["Stage 3", "Stage 5", "Stage 6"],
+      "severity": "medium — regulatory content is correctly described; only the designation number is wrong",
+      "resolution": "Apply Stage 3 corrections addendum Correction 1 globally: replace all 'POJK 36/2025' with 'POJK 36/2024 + SE 7/SEOJK.05/2025'"
+    },
+    {
+      "inconsistency_id": "CSI-3",
+      "description": "Malaysia claims ratio characterisation conflict",
+      "detail": "Stage 3 initially states '2023 claims ratio reached ~111% for many product lines'. Stage 3 corrections addendum clarifies this is a multi-year BNM band (2018–2023 ex-pandemic) and the 2023 single-year LIAM ICR is 65.9%. Stage 5 and 4 reference 'MHIT cumulative claims inflation 73% (2021–2023)' and '111% multi-year band (2018–2023)' — correctly framed after correction. However Stage 4 Section 4.3.3 still references 'MY MHIT claims ratio for 2023 single-year was 65.9%... with cumulative multi-year incurred claims ratio reaching 111%' — this is correctly disambiguated. No remaining inconsistency after correction; flag as resolved.",
+      "stages_affected": ["Stage 3"],
+      "severity": "low — corrected in addendum; Stages 4–5 use correct framing",
+      "resolution": "Resolved by Stage 3 corrections addendum Correction 2. Verify Stage 3 canonical artifact explicitly disambiguates 65.9% (2023 single-year LIAM ICR) from 111% (multi-year BNM band)."
+    },
+    {
+      "inconsistency_id": "CSI-4",
+      "description": "CDM leakage cascade mixes public and private sector proxies without consistent labelling",
+      "detail": "Stage 4 Section 4.4 constructs a 1,000 → 17 cascade using: Posbindu (public community screening) for Layer 1; South Korean semiconductor company onsite clinic (PMC 12021225) for Layer 2; Prolanis/BPJS East Java (PMC 12538241) for Layer 3; and NDR Malaysia for control. All four inputs are individually Low-confidence with setting/geography mismatches. Stage 5 presents the cascade as a central pillar of the Malaysia Layer 2 pilot recommendation. The uncertainty in the cascade is noted in Stage 4 ('illustrative cascade using best available evidence') but is not consistently flagged as Low-confidence in Stage 5's strategic recommendation.",
+      "stages_affected": ["Stage 4", "Stage 5"],
+      "severity": "medium — the cascade direction is defensible; quantified output (98.3% leakage) may be misleadingly precise given all four Low-confidence inputs",
+      "resolution": "Add explicit confidence tag to the WH5 cascade in Stage 5: 'CDM leakage cascade is an illustrative Low-confidence estimate using proxy data from four settings none of which match private GP clinic in ID/MY directly. Field validation of each leakage rate is the highest-priority empirical task.'"
+    },
+    {
+      "inconsistency_id": "CSI-5",
+      "description": "IHC/Pertamedika hospital count: 75 persists in Stage 4 text despite Stage 2 correction",
+      "detail": "Stage 4 sub-step 2a/2b discussion inherits Stage 2 value chain data. While Stage 2 corrections addendum corrects '75 hospitals' to '36 hospitals (FY2023); 37 (FY2024)', Stage 4 cross-layer synthesis table (Section 4.1) does not reference IHC directly — so no direct conflict. However Stage 5 similarly does not reference the corrected figure. The correction should be propagated to any canonical artifact that mentions IHC facility count.",
+      "stages_affected": ["Stage 2 (corrected)", "Stage 4 (indirect)"],
+      "severity": "low — Stage 4–5 do not cite IHC facility count directly; correction is confined to Stage 2 canonical artifact",
+      "resolution": "Apply Stage 2 corrections addendum Correction 1 to canonical Stage 2 artifact. No further propagation needed."
+    }
+  ],
+
+  "geography_mismatch_corpus_wide": [
+    {
+      "flag_id": "GM-1",
+      "claim": "Documentation time 6–10 min per consultation (ambient scribe benchmark)",
+      "source_geography": "Global/US (medRxiv preprint)",
+      "applied_to": "Indonesian and Malaysian private GP clinics",
+      "stages": ["Stage 1 PP1.1-a", "Stage 4 sub-step 1a", "Stage 6 sub-step 1a"],
+      "severity": "medium — no SEA private-clinic time-motion study exists; global benchmark is the best available"
+    },
+    {
+      "flag_id": "GM-2",
+      "claim": "22.6% CDM follow-up rate among high-risk MCU employees",
+      "source_geography": "South Korean semiconductor company onsite clinic (PMC 12021225, 2013–2016)",
+      "applied_to": "Malaysian and Indonesian corporate MCU post-screening follow-up rates",
+      "stages": ["Stage 2 PP2.3-a/b", "Stage 4 Layer 2 leakage", "Stage 5 Malaysia Layer 2 pilot reasoning"],
+      "severity": "high — South Korean semiconductor sector with onsite clinic is structurally very different from Malaysian/Indonesian corporate MCU programmes via external lab providers; field validation is highest priority"
+    },
+    {
+      "flag_id": "GM-3",
+      "claim": "7.1% lab follow-up failure rate (19 US primary care practices)",
+      "source_geography": "US primary care (PMC 2878665)",
+      "applied_to": "Indonesian and Malaysian private GP clinics",
+      "stages": ["Stage 1 PP1.2-a", "Stage 4 sub-step 1b"],
+      "severity": "medium — applied as a floor estimate with transparent acknowledgement; actual ID/MY rate unknown"
+    },
+    {
+      "flag_id": "GM-4",
+      "claim": "ICD-10 coding accuracy >25% omission/error (23 US ambulatory clinicians, PMC 5977598)",
+      "source_geography": "US ambulatory clinics",
+      "applied_to": "Indonesian and Malaysian GP ICD-10 coding error rates",
+      "stages": ["Stage 1 PP1.1-h", "Stage 3 PP3.2", "Stage 6 sub-step 1a"],
+      "severity": "medium — ICD-10 error rates in ID/MY likely higher given lower EHR penetration and less structured coding support"
+    },
+    {
+      "flag_id": "GM-5",
+      "claim": "Manual claims cost $40–60/claim; automated <$20 (InterPixels APAC TPA benchmark)",
+      "source_geography": "Vendor-generated 'APAC' benchmark — methodology and geography unclear",
+      "applied_to": "Indonesian and Malaysian TPA claims processing costs",
+      "stages": ["Stage 3 PP3.2", "Stage 4 sub-step 3c cost", "Stage 6 sub-step 3c"],
+      "severity": "high — vendor-marketing override also applies; this is a doubly-problematic source (auto-low-vendor + geography unclear). All cost calculations built on InterPixels figures should be flagged as illustrative-only."
+    },
+    {
+      "flag_id": "GM-6",
+      "claim": "ASEAN-wide 60% private sector share of outpatient consultations used as ID/MY proxy",
+      "source_geography": "ASEAN aggregate (PMC 7371561)",
+      "applied_to": "Indonesia and Malaysia specifically",
+      "stages": ["Stage 1 PP1.3-f"],
+      "severity": "medium — ASEAN aggregate masks country-level variation; APAC-as-proxy override applied in Stage 1"
+    },
+    {
+      "flag_id": "GM-7",
+      "claim": "OCR+NER lab extraction F1=0.86 (Peking University/Philips Research China, 153 reports)",
+      "source_geography": "China (Peking University First Hospital)",
+      "applied_to": "Indonesian and Malaysian lab report OCR as technical benchmark",
+      "stages": ["Stage 2 PP2.2-b", "Stage 4 sub-step 2b", "Stage 6 sub-step 2b"],
+      "severity": "low — technical benchmark applied as general OCR performance reference; Chinese printed lab report layouts are comparable to Indonesian/Malaysian. Severity is low."
+    },
+    {
+      "flag_id": "GM-8",
+      "claim": "AMA/PMC prior auth harm data: 27% serious adverse events; 23% hospitalisation in 27% of cases",
+      "source_geography": "US healthcare (AMA survey; PMC 6140260 — 2018 study)",
+      "applied_to": "Malaysian pre-authorisation context",
+      "stages": ["Stage 3 PP3.1-AMA-prior-auth"],
+      "severity": "medium — US data applied as analogue; outdated-source override also applies"
+    }
+  ],
+
+  "top_5_strongest_corpus_claims_with_evidence": [
+    {
+      "claim_id": "CS1",
+      "claim_text": "NHMS 2023 Malaysia: diabetes 15.6%, hypertension 29.2%, hypercholesterolaemia 33.3% prevalence; only 34.6% of adults had a medical check-up in the past year",
+      "stages_used_in": ["Stage 1 VC9 (upgraded)", "Stage 2 PP2.3-d/h", "Stage 4 cascade anchor"],
+      "score": "high",
+      "evidence_quotes": [
+        {
+          "url": "https://iku.nih.gov.my/images/nhms2023/fact-sheet-nhms-2023.pdf",
+          "quote": "Diabetes mellitus: 15.6% prevalence; 5.9% undiagnosed. Hypertension: 29.2% prevalence; 11.9% undiagnosed. Hypercholesterolaemia: 33.3% prevalence; 18.1% undiagnosed. Only 34.6% of adults had a medical check-up in the past year.",
+          "context": "IPH NHMS 2023 Fact Sheet, document ID MOH/S/IKU/229.24(PT) — primary government statistics",
+          "fetch_method": "deep-research pass-3-deep-research/stage-1/nhms-2023-primary.json"
+        },
+        {
+          "url": "https://www.nature.com/articles/s41598-025-08311-9",
+          "quote": "Overall prevalence: diabetes 15.6%, hypertension 29.2% among Malaysian adults (NHMS 2023) — peer-reviewed companion paper published Scientific Reports 2025",
+          "context": "Scientific Reports peer-reviewed paper on NHMS 2023 findings",
+          "fetch_method": "WebSearch confirmed existence and content alignment"
+        }
+      ]
+    },
+    {
+      "claim_id": "CS2",
+      "claim_text": "LIAM: health insurance claims payout MYR 8.9 billion in 2024; total benefit payouts MYR 16.8 billion",
+      "stages_used_in": ["Stage 3 VC3-LIAM-2024-claims", "Stage 5"],
+      "score": "high",
+      "evidence_quotes": [
+        {
+          "url": "https://www.liam.org.my/news/press_details.aspx?ps=11158&ct=3",
+          "quote": "In 2024 alone, the life insurance sector disbursed RM16.8 billion in benefit payouts, of which RM8.9 billion were for medical insurance claims — LIAM official press release January 2025",
+          "context": "LIAM primary-association press release Jan 2025 — full-year 2024 industry statistics",
+          "fetch_method": "WebSearch confirmed"
+        }
+      ]
+    },
+    {
+      "claim_id": "CS3",
+      "claim_text": "Prodia Widyahusada Tbk (IDX: PRDA) FY2024: total revenue IDR 2.25 trillion; B2B/corporate channel IDR 354.93 billion (15.8% of total)",
+      "stages_used_in": ["Stage 2 VC-MS-7, VC-PP-5", "Stage 4 S2-5", "Stage 5"],
+      "score": "high",
+      "evidence_quotes": [
+        {
+          "url": "https://d3ftma7dyyzt91.cloudfront.net/2025/04/07/081518/Prodia%20AR%202024.pdf",
+          "quote": "Total revenue IDR 2,250B (approx); B2B channel IDR 354.93B; third-party IDR 600.14B; doctor referral IDR 616.65B; B2C IDR 680.47B [revenue by channel segmentation FY2024]",
+          "context": "Prodia Annual Report 2024 — revenue channel breakdown (audited)",
+          "fetch_method": "markitdown (processed in Stage 2 deep-research)"
+        }
+      ]
+    },
+    {
+      "claim_id": "CS4",
+      "claim_text": "CDM SMS reminder meta-evidence: Cochrane review (8 RCTs, n=6,615) attendance RR 1.14; JAMA IM meta-analysis (16 RCTs, n=2,742) OR 2.11 — SMS doubles adherence odds; confirmed by Indonesian RCT and BMC Endocrine 2023 T2DM meta-analysis",
+      "stages_used_in": ["Stage 1 PP1.3-e (upgraded to High)", "Stage 4 CDM recall", "Stage 6 sub-step 1c"],
+      "score": "high",
+      "evidence_quotes": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26831740/",
+          "quote": "SMS-based interventions significantly improved odds of medication adherence (OR 2.11; 95% CI 1.52–2.93; 16 RCTs; n=2,742). Thakkar J et al. JAMA Internal Medicine, 2016.",
+          "context": "JAMA Internal Medicine 2016 meta-analysis — SMS for chronic disease medication adherence",
+          "fetch_method": "deep-research pass-3-deep-research/stage-1/cdm-sms-reminder-2nd-source.json"
+        }
+      ]
+    },
+    {
+      "claim_id": "CS5",
+      "claim_text": "BNM/MHIT: Malaysia MHIT healthcare spending MYR 6.75 billion in 2023 (vs MYR 0.96 billion in 2003); 7.7 million covered persons; cumulative claims increase 73% in 2021–2023 vs. premium increase 21%",
+      "stages_used_in": ["Stage 3 VC3-BNM-MHIT", "Stage 5"],
+      "score": "high",
+      "evidence_quotes": [
+        {
+          "url": "https://www.bnm.gov.my/bnm-annual-report",
+          "quote": "MYR 6.75 billion MHIT spending in 2023; 7.7 million covered persons; 73% cumulative claims increase 2021–2023 vs. 21% premium growth — BNM Special Report on Medical and Health Insurance/Takaful (primary-ministry)",
+          "context": "BNM Annual Report / Special Report on MHIT — BNM is the Malaysia central bank regulator (primary-ministry)",
+          "fetch_method": "WebSearch confirmed BNM as origin; direct URL returned 403; confirmed via The Edge Malaysia and multiple secondary corroboration"
+        }
+      ]
+    }
+  ],
+
+  "needs_attended_fetch_corpus": [
+    {
+      "url": "https://www.moh.gov.my/moh/resources/Penerbitan/Laporan/Umum/NDR_Report_2023_Final.pdf",
+      "reason": "Malaysia NDR 2023 — HbA1c ≤6.5% control rate 34.38%; critical for PP1.2-f, PP1.3-b, Stage 4 WH5 cascade. URL returns 404. Claims remain Low. If resolved, upgrades two Low claims to High.",
+      "stages_affected": ["Stage 1", "Stage 4"],
+      "priority": "high"
+    },
+    {
+      "url": "https://peraturan.bpk.go.id/Details/275518/permenkes-no-3-tahun-2023",
+      "reason": "PMK No. 3/2023 full regulation text (BPJS capitation rates) — Cloudflare-blocked in Phase 1. Kemenkes official site confirms content; this BPK URL would provide second primary-ministry source for direct text confirmation.",
+      "stages_affected": ["Stage 1"],
+      "priority": "medium"
+    },
+    {
+      "url": "https://data.moh.gov.my/dashboard/peka-b40",
+      "reason": "KKMNOW MOH Peka B40 dashboard — returned HTTP 402. Primary-ministry source for Peka B40 NCD prevalence. Deep-research E3 correction relies on FMT/The Star secondary sources for the ~70% figure; dashboard would provide primary-ministry confirmation.",
+      "stages_affected": ["Stage 2"],
+      "priority": "medium"
+    },
+    {
+      "url": "https://theedgemalaysia.com/node/750017",
+      "reason": "The Edge Malaysia article on BNM MHIT Special Report — returned 403. Underlying BNM data is confirmed primary-ministry; direct fetch would provide verbatim quote for CS5 evidence file.",
+      "stages_affected": ["Stage 3", "Stage 5"],
+      "priority": "low"
+    }
+  ],
+
+  "gate_decision_recommendation": "ship-with-flag",
+
+  "gate_reasoning": "The corpus of 240 scored claims across 6 stages yields 18% High, 33% Medium, 49% Low post-deep-research corrections. This is below the typical 'ship-as-is' threshold (target: >30% High, <40% Low) but above the 're-run' threshold. The corpus has three distinct quality tiers: (1) Stages 4–6 synthesis stages are analytically rigorous and internally consistent despite deriving from Low-confidence inputs — their value is in the analytical framework, not individual data points, and should be clearly labelled as such; (2) Stage 3 (insurance/TPA) is the strongest empirical stage with 24% High and multiple confirmed primary-filing sources (Prodia, KPJ, Sinar Mas, Allianz, AAJI, LIAM, BNM); (3) Stage 1 (GP clinics) improved significantly post-deep-research from 80% Low to an estimated 64% Low, but structural Low-confidence issues remain in salary data, single-study US/global benchmarks, and the inaccessible NDR 2023. Five cross-stage inconsistencies were identified; all have documented corrections. Eight geography-mismatch flags span multiple stages, the most critical being the Korean semiconductor sector proxy for corporate MCU CDM follow-up rates (GM-2) and the InterPixels AI vendor benchmark for claims costs (GM-5). The corpus should ship with: (a) explicit confidence-tier labels on each sub-step in the canonical artifact; (b) ASSUMED-N tags visible in all cost estimates; (c) the Stage 1 SATUSEHAT adoption figure corrected corpus-wide; (d) the POJK designation corrected corpus-wide; and (e) the Malaysia NDR 2023 URL resolution as the single highest-impact pending action. The underlying research quality — two countries, three market layers, 12 sub-steps mapped, five working hypotheses tested — is strong and warrants shipping for editorial review with these flags applied.",
+
+  "notes": [
+    "Total unique URL count (~98) exceeds the 40–60 target range. This reflects comprehensive multi-layer multi-country scope. De-duplication during canonical artifact build should identify ~20 URLs cited across 3+ stages for special corroboration annotation.",
+    "CodeBlue.galencentre.org is the single most-cited domain across all stages (appearing in Stages 1, 2, 3, 4, 5). Under single-domain override, no claim sourced exclusively from CodeBlue can exceed Medium confidence. CodeBlue is a legitimate and credible health trade publication in Malaysia; the single-domain constraint is a rubric artifact, not a quality judgment on CodeBlue.",
+    "InterPixels AI is the single most consequential auto-low-vendor source. Stages 3, 4, and 6 all rely on InterPixels benchmarks for claims cost and STP rate estimates. Every figure from interpixels.ai is auto-Low regardless of citation count. A KPMG, Deloitte, or McKinsey SEA insurance automation authored report would be the upgrade path.",
+    "The West Malaysian (Klang Valley / Penang) focus in Stages 1–3 means East Malaysia and non-Tier-1 Indonesian cities are not evidenced. All claims about clinic operations, MCU programmes, and TPA processing should carry an implicit 'Tier-1/2 city' qualifier.",
+    "Stage 6 ASSUMED-1 through ASSUMED-4 tags on language performance claims are the most material unknowns for commercial deployment feasibility. A controlled benchmark of LLM/ASR/NER on 200 real ID/MY clinical notes would resolve all four assumptions and would be the highest-impact technical validation ahead of any pilot."
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "task": "nhms-2023-primary-source",
+  "run": "2026-05-26-0159",
+  "timestamp": "2026-05-26",
+  "claim_investigated": "NHMS 2023 Malaysia NCD prevalence figures used in stage-1-value-chain.md (VC9) and stage-1-pain-points.md (PP1.3 CDM recall, PP1.2 lab routing): diabetes 15.6%, hypertension 29.2%, hypercholesterolaemia 33.3%",
+  "prior_source": {
+    "url": "https://codeblue.galencentre.org/2024/05/over-two-million-adults-in-malaysia-live-with-three-ncds-nhms-2023/",
+    "category": "secondary-trade-press",
+    "flag_reason": "Secondary/trade press only — no primary government or academic source cited"
+  },
+  "new_sources": [
+    {
+      "url": "https://iku.nih.gov.my/images/nhms2023/fact-sheet-nhms-2023.pdf",
+      "category": "primary-gov",
+      "publisher": "Institute for Public Health (IPH / IKU), Ministry of Health Malaysia",
+      "document_id": "MOH/S/IKU/229.24(PT)",
+      "publication_date": "2024",
+      "survey_period": "July–September 2023",
+      "n_respondents": 13616,
+      "supports_claim": true,
+      "via_pdf_markitdown": true,
+      "key_data": {
+        "diabetes": {
+          "overall_prevalence_pct": 15.6,
+          "known_diabetes_pct": 9.7,
+          "undiagnosed_raised_blood_glucose_pct": 5.9,
+          "trend": "upward trend from 2011 to 2023"
+        },
+        "hypertension": {
+          "overall_prevalence_pct": 29.2,
+          "known_hypertension_pct": 17.3,
+          "undiagnosed_raised_blood_pressure_pct": 11.9,
+          "trend": "plateau in prevalence from 2011 to 2023"
+        },
+        "hypercholesterolaemia": {
+          "overall_prevalence_pct": 33.3,
+          "known_hypercholesterolaemia_pct": 15.2,
+          "undiagnosed_raised_blood_cholesterol_pct": 18.1,
+          "trend": "declining trend observed from 2011 to 2023"
+        },
+        "cdm_relevant_additional": {
+          "ncd_health_screening_past_1yr_pct": 57.2,
+          "outpatient_healthcare_utilisation_2wk_pct": 12.5,
+          "medical_checkup_past_12mo_pct": 34.6,
+          "unmet_healthcare_needs_pct": 2.3,
+          "unmet_due_to_cost_pct": 12.9
+        }
+      },
+      "verbatim_quote": "Prevalence of diabetes among adults: Overall: 15.6% / Known diabetes: 9.7% / Raised blood glucose among those not known to have diabetes: 5.9%. Prevalence of hypertension among adults: Overall: 29.2% / Known hypertension: 17.3% / Raised blood pressure among those not known to have hypertension: 11.9%. Prevalence of hypercholesterolaemia among adults: Overall: 33.3% / Known hypercholesterolaemia: 15.2% / Raised blood cholesterol among those not known to have hypercholesterolaemia: 18.1%",
+      "verbatim_section": "NHMS 2023 Fact Sheet — Non-Communicable Diseases section, IPH/IKU MOH Malaysia"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12264187/",
+      "doi_url": "https://www.nature.com/articles/s41598-025-08311-9",
+      "category": "primary-academic-peer-reviewed",
+      "journal": "Scientific Reports (Nature)",
+      "title": "Conducting the National Health and Morbidity Survey 2023 in Malaysia with focus on methodology and main findings on non-communicable diseases",
+      "publication_date": "2025",
+      "supports_claim": true,
+      "via_pdf_markitdown": false,
+      "key_data": {
+        "diabetes_overall_pct": 15.6,
+        "diabetes_known_pct": 9.7,
+        "diabetes_undiagnosed_pct": 5.9,
+        "hypertension_overall_pct": 29.2,
+        "hypertension_known_pct": 17.3,
+        "hypertension_undiagnosed_pct": 11.9,
+        "hypercholesterolaemia_overall_pct": 33.3,
+        "hypercholesterolaemia_known_pct": 15.2,
+        "hypercholesterolaemia_undiagnosed_pct": 18.1,
+        "notable_finding": "Younger demographic showed higher proportion of undiagnosed diabetes, hypertension, and hypercholesterolaemia"
+      }
+    }
+  ],
+  "verdict": "CONFIRMED",
+  "draft_figures_check": {
+    "vc9_diabetes": {"draft": "15.6%", "primary_source": "15.6%", "match": true},
+    "vc9_hypertension": {"draft": "29.2%", "primary_source": "29.2%", "match": true},
+    "vc9_hypercholesterolaemia": {"draft": "33.3%", "primary_source": "33.3%", "match": true}
+  },
+  "suggested_revision": "Replace citation (12) in stage-1-value-chain.md and all NHMS 2023 citation references in stage-1-pain-points.md from CodeBlue (secondary) to primary sources: (a) IPH/IKU Fact Sheet MOH/S/IKU/229.24(PT): https://iku.nih.gov.my/images/nhms2023/fact-sheet-nhms-2023.pdf and (b) Scientific Reports PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC12264187/",
+  "additional_cdm_data_for_drafts": {
+    "undiagnosed_diabetes_5_9pct": "5.9% of adults have raised blood glucose but are NOT known diabetics — supports PP1.2 (undetected NCD at lab routing) and PP1.3 (CDM recall gap for newly identified patients)",
+    "undiagnosed_hypertension_11_9pct": "11.9% of adults have raised blood pressure but are NOT known hypertensives — largest undiagnosed gap among the three NCDs",
+    "undiagnosed_hypercholesterolaemia_18_1pct": "18.1% of adults have raised cholesterol but are NOT known to have hypercholesterolaemia — majority of hypercholesterolaemia cases are undetected",
+    "ncd_screening_57pct": "57.2% had NCD health screening in past year, meaning ~43% of the at-risk adult population is not being screened annually",
+    "medical_checkup_34_6pct": "Only 34.6% of adults utilised medical check-up in the last 12 months — supports PP1.3 poor recall and follow-up rates"
+  },
+  "searches_performed": [
+    "NHMS 2023 National Health and Morbidity Survey Malaysia fact sheet diabetes hypertension prevalence IPH site:iku.gov.my",
+    "NHMS 2023 National Health and Morbidity Survey Malaysia PDF Institute for Public Health diabetes hypertension hypercholesterolaemia"
+  ],
+  "outcome": "found-stronger-evidence",
+  "suggested_new_score": "High",
+  "reasoning": "The IPH/IKU official NHMS 2023 Fact Sheet (MOH/S/IKU/229.24(PT)) is a government primary source that precisely confirms all three draft prevalence figures (DM 15.6%, HTN 29.2%, HChol 33.3%), along with known/undiagnosed breakdowns directly relevant to PP1.2 and PP1.3. A peer-reviewed companion paper in Scientific Reports (PMC12264187) independently corroborates all figures. The current CodeBlue secondary citation should be replaced with these two primary sources."
+}

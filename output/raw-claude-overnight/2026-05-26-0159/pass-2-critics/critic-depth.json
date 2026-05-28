@@ -1,0 +1,84 @@
+{
+  "generated_at": "2026-05-26T03:30:00Z",
+  "run_id": "2026-05-26-0159",
+  "critic": "depth",
+  "stage_summaries": [
+    {"stage": 1, "total_pps": 4, "thin_pps": 3, "notes": "Post-DR addendum upgraded NHMS 2023, BPJS capitation, SMS adherence meta, SATUSEHAT framing. NDR 2023 anchor still [NEEDS-ATTENDED-FETCH]. PP1.1=13 cites, PP1.2=12, PP1.3=12, PP1.4=10."},
+    {"stage": 2, "total_pps": 4, "thin_pps": 3, "notes": "PP2.1=12, PP2.2=15, PP2.3=15, PP2.4=12. Anchor for OHD time (PP2.1) is ASSUMED-1 with no primary source. PP2.3 anchor (22.6% follow-up) is South Korean Samsung — geography mismatch."},
+    {"stage": 3, "total_pps": 5, "thin_pps": 4, "notes": "PP3.1=11, PP3.2=11, PP3.3=11, PP3.4=12, PP3.5=8 (at IMI floor). Stage 3 has highest H/M mix (24%/34%) but PP3.2/PP3.3 cost anchors trace entirely to InterPixels AI vendor marketing → auto-Low."}
+  ],
+  "thin_spots": [
+    {
+      "stage": 1, "pp_id": "PP1.2",
+      "deficits": ["Anchor source single (NDR 34.38% HbA1c control)", "Primary URL [NEEDS-ATTENDED-FETCH] 404", "US 7.1% missed lab follow-up applied as proxy"],
+      "actionable_gap": true, "actionability": "high",
+      "recommended_action": "deep-research-on-anchor",
+      "deep_research_query": "Playwright-fetch MY NDR 2023 PDF from moh.gov.my/crc.gov.my; also search PubMed for ASEAN missed-lab-follow-up studies."
+    },
+    {
+      "stage": 1, "pp_id": "PP1.3",
+      "deficits": ["No private-clinic ID/MY CDM default rate published anywhere", "Posbindu 42.2% completion is public community proxy", "8 ASSUMED tags bound key claims"],
+      "actionable_gap": true, "actionability": "medium",
+      "recommended_action": "re-invoke-pp-researcher-or-field-validate",
+      "deep_research_query": "Search PubMed 'chronic disease management recall private clinic Malaysia/Indonesia'; also LIAM/AMM publications on private GP CDM panel management."
+    },
+    {
+      "stage": 1, "pp_id": "PP1.4",
+      "deficits": ["28% no-show anchor single PMC 11436967 (HKL public tertiary hospital — not private GP)", "No ID private clinic no-show data"],
+      "actionable_gap": true, "actionability": "high",
+      "recommended_action": "deep-research-on-anchor",
+      "deep_research_query": "Search PubMed for second MY or ID outpatient no-show study; cross-check MOH Malaysia Health Facts for implied attendance rates."
+    },
+    {
+      "stage": 2, "pp_id": "PP2.1",
+      "deficits": ["20-35 min OHD time = ASSUMED-1 no primary source", "MCU delay 3-7 days from 3 secondary trade sources (Aviat, Alodokter, Halodoc)"],
+      "actionable_gap": true, "actionability": "high",
+      "recommended_action": "deep-research-on-anchor",
+      "deep_research_query": "Search peer-reviewed studies measuring physician time component of occupational health report generation; UK/AU/SG analogues acceptable as upgrade from ASSUMED."
+    },
+    {
+      "stage": 2, "pp_id": "PP2.3",
+      "deficits": ["22.6% follow-up anchor = South Korean Samsung (geography mismatch)", "RM 2.7M/year absenteeism from vendor blog (auto-Low)"],
+      "actionable_gap": true, "actionability": "high",
+      "recommended_action": "deep-research-on-anchor",
+      "deep_research_query": "Find any MY/ID/ASEAN corporate MCU post-screening CDM referral completion rate study; HealthMetrics or SOCSO HSP outcome data preferred."
+    },
+    {
+      "stage": 3, "pp_id": "PP3.2",
+      "deficits": ["15-20% denial rate + $43-57 rework cost both from InterPixels AI vendor marketing → auto-Low (no credible source)", "34% pending = single-institution Indonesian study"],
+      "actionable_gap": true, "actionability": "high",
+      "recommended_action": "deep-research-on-anchor",
+      "deep_research_query": "KPMG/Deloitte/EY/McKinsey APAC claims-cost benchmark report; OJK Indonesia annual industry stats; BNM MHIT/LIAM filings for any audited denial/rejection rates."
+    },
+    {
+      "stage": 3, "pp_id": "PP3.3",
+      "deficits": ["35-45 min/claim + 60-75% STP achievable both from InterPixels AI vendor marketing → auto-Low", "McKinsey 30% reduction is single primary consultancy"],
+      "actionable_gap": true, "actionability": "medium",
+      "recommended_action": "deep-research-on-anchor",
+      "deep_research_query": "Milliman APAC actuarial benchmarks; ISSA claims-processing efficiency Asia-Pacific; BPJS Kesehatan annual report claims-per-FTE."
+    },
+    {
+      "stage": 3, "pp_id": "PP3.4",
+      "deficits": ["11.9% upcoding from single 6-hospital rural study", "20-40% fraud detection rate = InterPixels AI vendor (auto-Low)", "BPJS 2015 IDR 400B figure 10 years stale"],
+      "actionable_gap": true, "actionability": "medium",
+      "recommended_action": "deep-research-on-anchor",
+      "deep_research_query": "Second academic study on Indonesian hospital coding accuracy; BPJS Kesehatan fraud analytics annual summary 2022-2024."
+    },
+    {
+      "stage": 3, "pp_id": "PP3.5",
+      "deficits": ["8 cites (at IMI floor); effective ~4-5 credible", "34.3% Prolanis enrolment = single-site East Java public sector proxy", "RM 9.65B NCD cost = 2017 data released 2022 (stale)", "No private insurer CDM programme data anywhere"],
+      "actionable_gap": true, "actionability": "medium",
+      "recommended_action": "deep-research-on-anchor",
+      "deep_research_query": "LIAM publications on group health CDM; AIA/Prudential/Great Eastern CSR reports on employer CDM programmes; current NCD cost estimate from WHO GHED."
+    }
+  ],
+  "summary": {
+    "total_pps_assessed": 13,
+    "thin_spots_found": 9,
+    "high_actionability": 5,
+    "medium_actionability": 4,
+    "thinnest_pps": ["PP3.5 (insurer CDM admin)", "PP3.2 (claims denial - vendor sole anchor)", "PP3.3 (adjudication - vendor sole anchor)", "PP1.3 (private clinic CDM recall - structural gap)"],
+    "deepest_pps": ["PP1.1 (clinical documentation, post-DR addendum upgraded)", "PP2.2 (multi-lab collation, strong OCR evidence)", "PP3.1 (GL pre-auth, strong insurance market sourcing)"],
+    "top_gap": "PP3.2 + PP3.3 share InterPixels AI vendor-marketing dependency — both PPs' headline cost/rate figures have zero credible non-vendor sources. One KPMG/Deloitte/OJK/BPJS regulatory report on APAC claims costs would resolve both."
+  }
+}

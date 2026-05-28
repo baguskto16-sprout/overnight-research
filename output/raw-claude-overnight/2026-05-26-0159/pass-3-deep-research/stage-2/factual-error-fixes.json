@@ -1,0 +1,104 @@
+{
+  "run_id": "2026-05-26-0159",
+  "generated_at": "2026-05-26",
+  "agent": "deep-research",
+  "errors": [
+    {
+      "error_id": "E1",
+      "claim_in_draft": "IHC (Pertamedika) operates 75 hospitals",
+      "draft_file": "pass-1-drafts/stage-2-value-chain.md",
+      "verdict": "CONTRADICTED",
+      "primary_sources": [
+        {
+          "url": "https://pertamedika.co.id/uploads/files/annual_report/annual_2023.pdf",
+          "category": "primary-corp-annual-report",
+          "publication_date": "2023 (fiscal year 2023)",
+          "supports_claim": false,
+          "key_data": "36 Rumah Sakit/Hospitals, 68 Klinik/Clinics — as of fiscal year 2023",
+          "verbatim_quote": "1 Kantor Pusat/Head Office | 16 Unit Usaha/Business Units | 10 Anak Perusahaan/Subsidiaries | 36 Rumah Sakit/Hospitals | 68 Klinik/Clinics",
+          "via_pdf_markitdown": true,
+          "note": "Official 2023 Annual Report, Jaringan Usaha / Business Network summary page"
+        },
+        {
+          "url": "https://pertamedika.co.id/uploads/files/annual_report/annual_2024.pdf",
+          "category": "primary-corp-annual-report",
+          "publication_date": "2024 (fiscal year 2024)",
+          "supports_claim": false,
+          "key_data": "37 Rumah Sakit/Hospitals, 73 Klinik/Clinics — as of fiscal year 2024 (after 2024 expansion)",
+          "verbatim_quote": "37 Rumah Sakit / Hospitals | 73 Klinik / Clinics",
+          "via_pdf_markitdown": true,
+          "note": "Official 2024 Annual Report confirming +1 hospital added in 2024 (RS Pertamina Panorama Balikpapan)"
+        }
+      ],
+      "corrected_figure": "36 hospitals as of Dec 2023 (fiscal year 2023); 37 hospitals as of Dec 2024",
+      "note_on_75": "The figure '75' does not correspond to any Pertamedika facility metric. '75' appears in the 2023 Annual Report only as a table-of-contents page number. The validator's figure of 36 (Dec 2023) is correct per the official annual report. The '39 affiliated hospitals' cited in trade press (Kontan June 2024) refers to affiliated — not owned/managed — hospitals and appears to be a different metric not found in the annual reports. The Indonesia Miner third-party data page cited '38 Hospitals + 72 Clinics' which is internally inconsistent with annual reports; the official Pertamedika annual reports are authoritative.",
+      "suggested_revision": "Replace '75 hospitals' with: 'PT Pertamina Bina Medika IHC (Pertamedika), Indonesia's state-owned hospital holding, operated 36 hospitals and 68 clinics as of fiscal year 2023, growing to 37 hospitals and 73 clinics by end-2024. (Source: Pertamedika Annual Reports 2023 and 2024.)'"
+    },
+    {
+      "error_id": "E2",
+      "claim_in_draft": "Indonesia's national specialist doctor deficit is 65,000 as of 2023",
+      "draft_file": "pass-1-drafts/stage-2-pain-points.md",
+      "verdict": "CONTRADICTED",
+      "primary_sources": [
+        {
+          "url": "https://nasional.kompas.com/read/2023/06/26/15323601/kemenkes-indonesia-masih-kekurangan-31481-dokter-spesialis",
+          "category": "primary-gov-press-conference",
+          "publication_date": "2023-06-26",
+          "supports_claim": false,
+          "key_data": "Kemenkes stated deficit of 31,481 specialist doctors as of June 2023; 46,200 active specialists (STR-registered as of April 2023)",
+          "verbatim_quote": "Untuk melayani 277 juta penduduk Indonesia, kita masih kekurangan dokter spesialis. Di mana ketersediaan saat ini 46.200 dokter spesialis, kita masih kekurangan sekitar 31.481 dokter spesialis secara total",
+          "official_source_person": "Oos Fatimah, Direktur Penyediaan Tenaga Kesehatan, Kemenkes",
+          "via_pdf_markitdown": false
+        },
+        {
+          "url": "https://nasional.kompas.com/read/2024/05/06/13513861/menkes-indonesia-kekurangan-29000-dokter-spesialis-per-tahun-cuma-produksi",
+          "category": "primary-gov-ministerial-statement",
+          "publication_date": "2024-05-06",
+          "supports_claim": false,
+          "key_data": "Health Minister Budi Gunadi Sadikin stated deficit of 29,000 specialist doctors as of May 2024; annual production only 2,700/year",
+          "verbatim_quote": "Masalah banyaknya dokter spesialis yang kurang. Salah satu penyebab kurang memang produksi dokter spesialis kita 2.700 per tahun, kebutuhan kita 29.000, 30.000.",
+          "official_source_person": "Menteri Kesehatan Budi Gunadi Sadikin",
+          "via_pdf_markitdown": false
+        }
+      ],
+      "corrected_figure": "~31,481 specialist doctor deficit as of June 2023 (Kemenkes press conference); ~29,000 as of May 2024 (Health Minister statement). Active specialists: 46,200 (April 2023 STR). IDI figure ~30,546 is consistent.",
+      "note_on_65000": "The figure '65,000' likely conflates two different metrics: (a) the TOTAL number of specialist doctors needed (~78,000 at WHO ratio for 280M population) vs. (b) the DEFICIT above current supply (~31,481 in 2023). The 65,000 figure does not appear in any Kemenkes or IDI primary source.",
+      "suggested_revision": "Replace '65,000 medical specialist shortfalls nationally as of 2023' with: 'Indonesia's Ministry of Health reported a deficit of ~31,481 specialist doctors as of June 2023 (Kemenkes press conference, 26 June 2023), with only 46,200 specialist doctors active against a requirement of ~77,681 for a population of 277 million; the Health Minister reconfirmed a ~29,000 shortfall in May 2024.'"
+    },
+    {
+      "error_id": "E3",
+      "claim_in_draft": "Peka B40 NCD rate cited as 41%",
+      "draft_file": "pass-1-drafts/stage-2-pain-points.md",
+      "verdict": "CONTRADICTED",
+      "primary_sources": [
+        {
+          "url": "https://www.freemalaysiatoday.com/category/nation/2025/09/02/70-of-peka-b40-participants-found-to-have-ncds/",
+          "category": "primary-institutional-press-release-media",
+          "publication_date": "2025-09-02",
+          "supports_claim": false,
+          "key_data": "Nearly 70% of 301,650 Peka B40 participants screened in 2024 had at least one NCD; 25% had two or more NCDs; reporting entity: ProtectHealth Corporation (MOH subsidiary)",
+          "verbatim_quote": "Nearly 70% of the 301,650 participants screened [in 2024] were found to have at least one NCD, such as diabetes, hypertension, high cholesterol or obesity. One in four was diagnosed with two or more conditions.",
+          "via_pdf_markitdown": false
+        },
+        {
+          "url": "https://www.thestar.com.my/news/nation/2025/09/03/b40-health-screening-reveals-widespread-ncds",
+          "category": "primary-institutional-press-release-media",
+          "publication_date": "2025-09-03",
+          "supports_claim": false,
+          "key_data": "The Star independently corroborates: nearly 70% of Peka B40 2024 screenings positive for NCDs; 301,650 screened; source ProtectHealth Corporation",
+          "verbatim_quote": "Nearly 70% of participants had at least one non-communicable disease; 25% had two or more NCDs.",
+          "via_pdf_markitdown": false
+        }
+      ],
+      "metric_clarification": {
+        "figure_in_draft": "41%",
+        "correct_figure_from_primary_source": "~70% (2024 screenings, reported September 2025)",
+        "what_this_measures": "NCD-positive at screening: percentage of screened Peka B40 participants found to have at least one NCD (diabetes, hypertension, high cholesterol, or obesity) during the screening visit",
+        "what_it_does_not_measure": "This is NOT the NCD 'newly identified' rate (many may have known diagnoses) and NOT the 'enrolled to follow-up' rate. It is the NCD prevalence/positive rate among B40 adults aged 40+ who presented for screening.",
+        "note_on_41pct": "The 41% figure is not corroborated by any primary source retrieved. It may stem from an earlier programme phase (pre-2023), a subset metric (e.g., newly diagnosed only), or a misread of a different dashboard indicator. The KKMNOW dashboard (data.moh.gov.my/dashboard/peka-b40) returned HTTP 402 and could not be directly accessed to check for a 41% sub-metric; tagged [NEEDS-ATTENDED-FETCH] for direct dashboard verification.",
+        "kkmnow_dashboard": "[NEEDS-ATTENDED-FETCH]: https://data.moh.gov.my/dashboard/peka-b40 — returned HTTP 402; attend-mode fetch required to verify if 41% appears as a sub-category metric on the live dashboard"
+      },
+      "suggested_revision": "Replace '41%' with: 'Nearly 70% of Peka B40 participants screened in 2024 were found to have at least one NCD (diabetes, hypertension, high cholesterol, or obesity), according to ProtectHealth Corporation, the MOH subsidiary administering the programme (FMT/The Star, September 2025, citing 301,650 screenees). One in four had two or more NCDs simultaneously.'"
+    }
+  ]
+}

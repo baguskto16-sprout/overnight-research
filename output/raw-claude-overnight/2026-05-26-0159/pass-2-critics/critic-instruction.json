@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-05-26T03:30:00Z",
+  "run_id": "2026-05-26-0159",
+  "critic": "instruction",
+  "working_hypotheses": [
+    {
+      "wh_id": "WH1",
+      "wh_text": "Cost and failure concentrate in a few high-volume, low-judgment sub-steps per layer.",
+      "verdict": "confirmed",
+      "supporting_evidence": ["Stage 4 §4.2 ranks 8 sub-steps by cost; top 3 (2c, 3c, 3a) dominate", "Stage 4 §4.6 explicit verdict CONFIRMED", "PP1.1, PP2.1, PP3.3 individually confirm per-stage"],
+      "gaps_in_test_coverage": "Absolute dollar figures are sensitive to ASSUMED-N time-per-transaction inputs; concentration ranking is directionally robust but field validation needed for investor-grade numbers.",
+      "actionable_gap": false
+    },
+    {
+      "wh_id": "WH2",
+      "wh_text": "Automation feasibility is gated by input-data format, not process importance.",
+      "verdict": "partially-confirmed",
+      "supporting_evidence": ["Stage 6 §6.3 verdict: largely confirmed for 6 of 8 sub-steps", "Stage 4 §4.6 verdict with corollary: 'structured data necessary but not sufficient'"],
+      "gaps_in_test_coverage": "Three sub-steps (1c CDM recall, 2d post-MCU routing, 3d TPA CDM admin) have fully STRUCTURED inputs yet remain unautomated — process accountability is a co-equal barrier the WH framing misses. The 'format gates feasibility, not importance' causal claim is confirmed directionally but the corollary (process importance is irrelevant) is untested.",
+      "actionable_gap": true,
+      "suggested_deep_research_question": "Operator interviews at Klinik Pintar (1c), HealthMetrics (2d), and PMCare (3d): 'What would it take to automate your CDM workflow given that the data already exists structured?' Answer determines whether WH2 framing should be revised to 'format OR process accountability gates feasibility'."
+    },
+    {
+      "wh_id": "WH3",
+      "wh_text": "MCU report generation and results collation are manual-heavy and fragmented.",
+      "verdict": "confirmed",
+      "supporting_evidence": ["Stage 2 PP2.1 explicit WH3 CONFIRMED", "PP2.2 multi-lab F1=0.86 OCR benchmark + 3-6 lab fragmentation", "Stage 4 §4.2 Rank 1: sub-step 2c is single highest per-transaction cost"],
+      "gaps_in_test_coverage": "OHD physician time per report (20-35 min) is ASSUMED-1 with no primary time-motion study — single most consequential unvalidated figure. Willingness to pay flagged as not sourced. Prodia OHI operations interview identified as required validation.",
+      "actionable_gap": false
+    },
+    {
+      "wh_id": "WH4",
+      "wh_text": "Claims pre-auth and adjudication are rules-based yet manually executed.",
+      "verdict": "confirmed",
+      "supporting_evidence": ["Stage 3 PP3.1 (GL manual + 67% revocation)", "PP3.2 (15-20% denial; 55% pending from completeness failure)", "PP3.3 ('first-pass eligibility is pure rule-matching, currently manual')", "Stage 4 §4.2 Rank 2-3"],
+      "gaps_in_test_coverage": "WH4 is entirely absent from the Stage 4 §4.6 synthesis cross-check table — Stage 4 author omission. Resubmission loop (3b) also rules-based + manually executed but not explicitly named in WH text.",
+      "actionable_gap": false,
+      "suggested_action": "Flag to Stage 4: §4.6 should include a WH4 verdict row. No additional research needed."
+    },
+    {
+      "wh_id": "WH5",
+      "wh_text": "CDM recall and follow-up leak patients across every layer.",
+      "verdict": "confirmed",
+      "supporting_evidence": ["Stage 4 §4.4 cascade quantified (1000 → ~17 controlled, 98.3% leakage)", "Stage 4 §4.6 explicit CONFIRMED", "PP1.3 (GP recall), PP2.3 (post-MCU drop), PP3.5 (TPA CDM admin) each confirm layer-specific leakage"],
+      "gaps_in_test_coverage": "Cascade uses evidence from three different settings (Posbindu public ID, semiconductor SK private, BPJS Prolanis East Java) — not a single private-sector cross-layer cohort. Private GP CDM default rate is ASSUMED-12. 98.3% cumulative leakage is illustrative cascade model, not measured private-sector statistic.",
+      "actionable_gap": false,
+      "suggested_action": "Field-validation study: retrospective cohort using HealthMetrics claims + MCU programme + panel GP visit records for one large corporate client — single highest-value field study for WH5."
+    },
+    {
+      "wh_id": "WH6",
+      "wh_text": "Indonesia and Malaysia diverge sharply on readiness.",
+      "verdict": "confirmed",
+      "supporting_evidence": ["Stage 5 §5.1 36-cell matrix: MY Layer 3=3.7 vs ID=2.5 (largest delta)", "Stage 5 explicit verdict CONFIRMED-with-nuance", "Section 5.2 dim 5: MY English/bilingual notes vs ID Bahasa-only NLP gap"],
+      "gaps_in_test_coverage": "Five ASSUMED-5-N flags documented. Most consequential: ASSUMED-5-1 (HealthMetrics' actual sub-step 2d automation status) is pivotal for primary pilot recommendation. Layer 1 'sharp divergence' framing is weak (2.5 vs 2.7 — effectively tied).",
+      "actionable_gap": true,
+      "suggested_deep_research_question": "30-min interview with HealthMetrics Head of Corporate Wellness: (1) Is post-MCU CDM routing automated today? (2) Actual observed follow-up rate (not 22.6% Korean proxy)? (3) ID-MY feature parity? This single interview validates or overturns the primary pilot recommendation."
+    }
+  ],
+  "summary": {
+    "total_whs": 6,
+    "confirmed": 5,
+    "partially_confirmed": 1,
+    "contradicted": 0,
+    "untested": 0,
+    "high_actionability_gaps": 2,
+    "top_gap": "ASSUMED-5-1 — HealthMetrics sub-step 2d automation status — is the single pivotal unvalidated question. If HealthMetrics already automates 2d, the Malaysia Layer 2 primary pilot recommendation collapses or pivots to Indonesia Layer 2 (Prodia, sub-step 2c).",
+    "stage_4_documentation_gap": "WH4 verdict missing from §4.6 synthesis table — non-research authoring gap."
+  }
+}

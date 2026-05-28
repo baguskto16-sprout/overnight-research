@@ -1,0 +1,71 @@
+RUN-COMPLETE — 2026-05-26-0159
+
+Topic: AI Process Efficiency in Healthcare Back-Office (Indonesia & Malaysia, Deep Process Edition)
+Input: input/2026-05-23-ai-process-efficiency-healthcare-id-my.md
+Mode: sandbox / unattended-Playwright (Phase 2 enrichment runs as separate orchestrator pass)
+Started: 2026-05-26T01:59:00
+Completed: 2026-05-26T04:05:00
+Gate: ship-with-flag
+
+Stages completed (6 of 6):
+  1. GP clinic operations — 4 PPs / 55 URLs / tracer fired with remediation
+  2. Corporate Health & MCU administration — 4 PPs / 47 URLs / 3 factual errors corrected
+  3. Insurance & TPA claims operations — 5 PPs / 57 URLs / 4 framing corrections
+  4. Cross-layer cost & failure concentration — synthesis stage, 12-sub-step unified table
+  5. Indonesia vs Malaysia readiness comparison — synthesis stage, 36-cell matrix
+  6. AI capability to sub-step mapping — synthesis stage, 8 high-cost sub-steps benchmarked
+
+Corpus metrics:
+  Total claims scored: 240
+  High: 18% / Medium: 33% / Low: 49% (post-deep-research)
+  Unique URLs: ~98 (target was 40-60; reflects 3-layer × 2-country scope)
+  Pain points: 13 across stages 1-3
+  Sub-agent invocations: ~20
+
+Contradictions: 8 surfaced (4 high-severity, 4 medium); all 4 high-severity resolved by addendum-backed primary-source substitution. Gate auto-degrade: NOT triggered.
+
+Critics (Step 5.5): 4 in parallel
+  - critic-dialectic: 3 high-severity gaps (PMC 12021225 geog misattribution = top)
+  - critic-depth: 9 thin spots (PP3.2/PP3.3 InterPixels vendor dependency = top)
+  - critic-width: 8 gaps (W2 specialist clinic as operator missing = top)
+  - critic-instruction: 5 of 6 WHs CONFIRMED; WH2 PARTIALLY (process accountability is co-equal barrier)
+
+Gap-fill remediation (Step 5.5b): SKIPPED due to total-runtime cap.
+
+Vertical-slice deviations: documented in pass-0-deviations.md
+  - Stages 2-3 validation parallelized with Stage 3 research
+  - Stage 4 launched in parallel with Stage 3 validation
+  - Stages 5+6 launched in parallel (synthesis stages)
+  - Stages 4-6 no per-stage source-validator (covered by Step 5a cross-stage pass)
+  - Step 5.5b gap-fill skipped
+  - Step 5a'' contradiction-resolver in orchestrator-manual mode (4 high-severity already resolved by Step 3d)
+
+Outputs:
+  Canonical (sandbox mode):
+    output/raw-claude-overnight/2026-05-26-0159/raw-claude-value-chain-ai-process-efficiency-healthcare-id-my.md  (224 KB)
+    output/raw-claude-overnight/2026-05-26-0159/raw-claude-pain-points-ai-process-efficiency-healthcare-id-my.md  (268 KB)
+    output/raw-claude-overnight/2026-05-26-0159/raw-claude-summary-ai-process-efficiency-healthcare-id-my.md
+    output/raw-claude-overnight/2026-05-26-0159/FINAL-REPORT.html  (17 pages, print-ready A4)
+  Audit trail: pass-0-*, pass-1-drafts/, pass-2-validation/, pass-2-critics/, pass-3-deep-research/, stages-validated/
+  Checkpoint: checkpoint.json
+
+Top 3 findings (high-confidence):
+  1. Sub-step 2c (MCU report + OHD sign-off) is the highest per-transaction cost item in the corpus. WH3 CONFIRMED.
+  2. Sub-step 3c (claims adjudication) carries the largest absolute annual labour cost at TPA scale (US$1.86-3.31M / yr at 50K-life MY book). WH4 CONFIRMED.
+  3. MY leads on readiness across all 3 layers; gap concentrated at Layer 3 (delta 1.2 pts). Layer 1 effectively tied. WH6 CONFIRMED with nuance.
+
+Primary pilot recommendation: MY Layer 2 sub-step 2d (post-MCU CDM routing via HealthMetrics), with 12-month expansion to Layer 3 sub-step 3a. Conditioned on 3 field-validation items (HealthMetrics 2d automation status, SOCSO SEHATi scope, SEA-specific post-MCU follow-up rate).
+
+Alternative pilot (more evidence-robust): ID Layer 2 sub-step 2c via Prodia OHI (MCU report auto-generation).
+
+Top 3 field-validation interviews:
+  1. HealthMetrics Head of Corporate Wellness (MY) — 30 min, sub-step 2d automation status
+  2. Prodia OHI operations lead — OHD time per MCU report (PP2.1 anchor)
+  3. PMCare operations director — TPA call-centre cost-per-GL-transaction
+
+Phase 2 hand-off:
+  - 5 [NEEDS-ATTENDED-FETCH] URLs documented in checkpoint.json
+  - Highest-priority Playwright target: MY NDR 2023 PDF (moh.gov.my + crc.gov.my)
+  - Highest-priority field inquiry: HealthMetrics sub-step 2d automation
+
+Skill stops here. Phase 2 Playwright enrichment is a separate orchestrator pass.

@@ -1,0 +1,253 @@
+{
+  "generated_at": "2026-05-26T00:00:00Z",
+  "run_id": "2026-05-26-0159",
+  "scan_method": "contradiction-finder v1",
+  "stages_compared": [1, 2, 3, 4, 5, 6],
+  "contradictions": [
+    {
+      "id": "C-001",
+      "class": "B",
+      "severity": "high",
+      "stages_involved": [2],
+      "claim_a": {
+        "stage": 2,
+        "claim_id": "VC-MS-13",
+        "text": "IHC (Pertamina Bina Medika) operates 75 hospitals, 68 clinics",
+        "value": "75 hospitals",
+        "current_score": "low",
+        "source_url": "https://indonesiabusinesspost.com/1997/Politics/ihc-records-positive-performance-achievements-in-2023"
+      },
+      "claim_b": {
+        "stage": 2,
+        "claim_id": "stage-2-corrections-addendum / deep-research E1",
+        "text": "Pertamedika Annual Report 2023 (primary-corp-annual-report): 36 Rumah Sakit / Hospitals, 68 Klinik / Clinics at FY2023; 37 hospitals, 73 clinics at FY2024",
+        "value": "36 hospitals (FY2023); 37 hospitals (FY2024)",
+        "current_score": "high (primary-corp-annual-report, markitdown-extracted verbatim)",
+        "source_url": "https://pertamedika.co.id/uploads/files/annual_report/annual_2023.pdf"
+      },
+      "delta_description": "Stage 2 value-chain draft cites 75 hospitals; Pertamedika's own audited annual reports (FY2023 and FY2024) document 36 and 37 hospitals respectively — a 2× factual error. The '75' figure appears in the annual report only as a table-of-contents page number, not any facility metric. The correction is confirmed by the deep-research agent (pass-3-deep-research/stage-2/factual-error-fixes.json, verdict CONTRADICTED). CRITICAL: the erroneous '75 hospitals' figure remains in the live canonical stage-2-value-chain.md at lines 132 and 170, as well as in the source citation at line 232. The corrections addendum instructs replacement but the draft body has not been updated.",
+      "resolution_suggestion": "Replace '75 hospitals' with '36 hospitals + 68 clinics (FY2023); 37 hospitals + 73 clinics (FY2024)' in stage-2-value-chain.md lines 132, 170, 232. Cite: PT Pertamedika IHC, Annual Report 2023 (primary-corp-annual-report) and Annual Report 2024.",
+      "resolution_hint": {
+        "metric_phrase": "IHC / Pertamedika hospital count",
+        "primary_source_categories_to_try": ["primary-corp-annual-report"],
+        "applied_to_stages": [2]
+      }
+    },
+    {
+      "id": "C-002",
+      "class": "C",
+      "severity": "high",
+      "stages_involved": [2, 4, 5, 6],
+      "claim_a": {
+        "stage": 2,
+        "claim_id": "PP2.1-e",
+        "text": "Indonesia had ~65,000 medical specialist shortfall as of 2023",
+        "value": "65,000 specialist deficit",
+        "current_score": "low",
+        "source_url": "https://indonesia.acclime.com/guides/mandatory-healthcare-social-security/ and https://en.antaranews.com/amp/news/402982/indonesia-develops-hospital-based-training-to-fix-specialist-shortage"
+      },
+      "claim_b": {
+        "stage": 2,
+        "claim_id": "stage-2-corrections-addendum / deep-research E2",
+        "text": "Kemenkes stated deficit of 31,481 specialist doctors as of June 2023; Health Minister reconfirmed ~29,000 May 2024",
+        "value": "31,481 (Kemenkes Jun 2023) / ~29,000 (Minister May 2024)",
+        "current_score": "high (primary-gov-press-conference, verbatim quote; primary-gov-ministerial-statement)",
+        "source_url": "https://nasional.kompas.com/read/2023/06/26/15323601/kemenkes-indonesia-masih-kekurangan-31481-dokter-spesialis"
+      },
+      "delta_description": "Draft claims 65,000 deficit; verified Kemenkes figures are 31,481 (Jun 2023) and ~29,000 (May 2024) — approximately 2× overstatement. Deep-research verdict: CONTRADICTED. The 65,000 figure does not appear in any primary government or IDI source; it appears to conflate total specialist need (~78,000) with the current-supply deficit (~31,481). CRITICAL: The erroneous 65,000 figure persists in the canonical stage-2-pain-points.md body text and source citation at line 46. Stage 6 correctly inherits the ~29,000 figure from the corrections addendum (stage-6 line 168: '~29,000 specialist deficit in ID — Stage 2 corrections addendum'), creating an inter-stage inconsistency: stage-2-pain-points.md (not yet updated) carries 65,000 while stage-6 carries the corrected ~29,000.",
+      "resolution_suggestion": "Update stage-2-pain-points.md body and footnote 11 to replace '65,000' with '~31,000 (Kemenkes 2023); reconfirmed ~29,000 (Minister May 2024)'. Stage 6 reference to '~29,000 specialist deficit — Stage 2 corrections addendum' is correctly framed; no change needed there.",
+      "resolution_hint": {
+        "metric_phrase": "Indonesia specialist doctor deficit 2023",
+        "primary_source_categories_to_try": ["primary-gov"],
+        "academic_search_query": "Indonesia kekurangan dokter spesialis Kemenkes 2023",
+        "applied_to_stages": [2, 6]
+      }
+    },
+    {
+      "id": "C-003",
+      "class": "C",
+      "severity": "high",
+      "stages_involved": [2, 5],
+      "claim_a": {
+        "stage": 2,
+        "claim_id": "PP2.3-i",
+        "text": "41% NCD rate at Peka B40 screening — used to evidence MCU post-screening CDM gap",
+        "value": "41% NCD-positive rate",
+        "current_score": "low",
+        "source_url": "https://says.com/my/news/malaysians-screened-ncds-peka-b40-2025"
+      },
+      "claim_b": {
+        "stage": 2,
+        "claim_id": "stage-2-corrections-addendum / deep-research E3",
+        "text": "Nearly 70% of 301,650 Peka B40 participants screened in 2024 had at least one NCD (ProtectHealth Corporation / FMT / The Star, Sep 2025)",
+        "value": "~70% NCD-positive rate",
+        "current_score": "medium (two independent news outlets citing the same institutional press release from ProtectHealth Corporation, MOH subsidiary)",
+        "source_url": "https://www.freemalaysiatoday.com/category/nation/2025/09/02/70-of-peka-b40-participants-found-to-have-ncds/"
+      },
+      "delta_description": "41% vs ~70% — a 71% relative difference on the same metric (NCD-positive rate at Peka B40 screening, 2024). Deep-research verdict: CONTRADICTED. The 41% figure is unconfirmed by any primary source; it may refer to a different programme phase, a sub-metric (newly diagnosed only), or a misread. CRITICAL: the 41% figure remains live in stage-2-pain-points.md at line 154 and footnote 4 (line 161). Stage 5 correctly cites '~70% NCD rate found at Peka B40 screenings (Stage 2 corrections addendum Correction 3 — ProtectHealth 2024 data)' at line 114, creating a direct cross-stage inconsistency where stage-2 body text carries 41% and stage-5 carries 70% for the same 2024 Peka B40 cohort.",
+      "resolution_suggestion": "Update stage-2-pain-points.md line 154 and footnote 4 (line 161) to replace '41%' with '~70%' with FMT/The Star/ProtectHealth attribution. Cross-check against KKMNOW dashboard (data.moh.gov.my/dashboard/peka-b40, currently HTTP 402) for authoritative sub-metric breakdown to determine if 41% represents a specific sub-metric that both figures can coexist as (e.g., newly diagnosed vs. total NCD-positive).",
+      "resolution_hint": {
+        "metric_phrase": "Peka B40 NCD positive rate 2024",
+        "primary_source_categories_to_try": ["primary-gov", "primary-multilateral"],
+        "academic_search_query": "Peka B40 2024 NCD screening results Malaysia MOH ProtectHealth",
+        "applied_to_stages": [2, 5]
+      }
+    },
+    {
+      "id": "C-004",
+      "class": "A",
+      "severity": "high",
+      "stages_involved": [3, 4, 5],
+      "claim_a": {
+        "stage": 3,
+        "claim_id": "VC3-LIAM-claims-ratio / VC3c-COB context",
+        "text": "2023 claims ratio reached ~111% for many product lines (Stage 3 value chain body; Stage 3 source citation S3-10 in Stage 4 and Stage 5)",
+        "value": "~111% (framed as 2023 single-year figure)",
+        "current_score": "medium (partially corrected in addendum but raw body text still carries '111%' without reconciliation note)",
+        "source_url": "https://codeblue.galencentre.org/2024/12/majority-health-insurance-premiums-rose-up-to-20-pc-this-year-bank-negara/"
+      },
+      "claim_b": {
+        "stage": 3,
+        "claim_id": "stage-3-corrections-addendum Correction 2; stage-3-pain-points.md line 155",
+        "text": "LIAM incurred claims ratio (ICR) for 2023 single year: 65.9%; the 111% range covers a multi-year BNM band (2018–2023, excluding pandemic years)",
+        "value": "65.9% (2023 single-year ICR per LIAM); 111% is 2018–2023 multi-year band",
+        "current_score": "high (LIAM primary-association annual report; BNM Financial Stability Review)",
+        "source_url": "https://www.liam.org.my/images/liam/PR-Life-Insurance-Industry-performance-2023.Final.pdf"
+      },
+      "delta_description": "Stage 3 value chain (line 123) and its footnote source (S3-10, also cited in Stage 4 source list line 260 and Stage 5 line 128 running text) present '111%' as the Malaysia 2023 claims ratio without the multi-year band qualifier, overstating single-year loss ratio by ~68% relative to the LIAM 65.9% figure. Stage 3 corrections addendum documents this as a high-severity factual error. However: (a) stage-3-value-chain.md line 123 still reads '2023 claims ratio reached ~111% for many product lines' without reconciliation; (b) Stage 4 source list (S3-10) also labels this as '111% (2023)'; (c) Stage 5 running text (line 128) correctly references 'LIAM 2023 claims ratio of 65.9% (single-year)' AND the corrections addendum — demonstrating awareness but not uniform application. Stage 3 pain-points correctly cites 65.9% (line 155), creating an intra-stage inconsistency between stage-3-value-chain.md (111%) and stage-3-pain-points.md (65.9%) for what appears to be the same 2023 single-year metric.",
+      "resolution_suggestion": "In stage-3-value-chain.md line 123, revise to: 'MHIT cumulative incurred claims inflation: +73% cumulative 2021–2023 vs. +21% premium growth; BNM data shows a multi-year claims ratio band of 101–111% across 2018–2023 (excluding pandemic years); LIAM 2023 single-year incurred claims ratio: 65.9%.' Update Stage 4 source citation S3-10 label to remove the '(2023)' date qualifier. No change needed in Stage 5 (already correctly framed).",
+      "resolution_hint": {
+        "metric_phrase": "Malaysia MHIT claims ratio 2023",
+        "primary_source_categories_to_try": ["primary-association"],
+        "academic_search_query": "LIAM 2023 incurred claims ratio Malaysia health insurance",
+        "applied_to_stages": [3, 4]
+      }
+    },
+    {
+      "id": "C-005",
+      "class": "C",
+      "severity": "medium",
+      "stages_involved": [3, 4, 5, 6],
+      "claim_a": {
+        "stage": 3,
+        "claim_id": "PP3.2-freq-8 / PP3.3-freq-5 / VC-3c context",
+        "text": "BPJS Kesehatan reduced claims settlement from 45 days → 15 days and staff from 1,345 → 961 after VEDIKA implementation — framed in stage-3-pain-points.md as 'Indonesian TPA digital claims processing reduced settlement time from 45 days to 15 days after VEDIKA implementation' (line 93) and 'BPJS Kesehatan reduced processing time from 45 days → 15 days and staff from 1,345 → 961 after VEDIKA' (line 153) without qualification",
+        "value": "System-wide BPJS Kesehatan post-VEDIKA figures",
+        "current_score": "medium (single academic source — Unair journal article)",
+        "source_url": "https://e-journal.unair.ac.id/JPHRECODE/article/view/19848"
+      },
+      "claim_b": {
+        "stage": 3,
+        "claim_id": "stage-3-corrections-addendum Correction 3",
+        "text": "Figures are from a 2019 single-hospital study at RSUD Sidoarjo (one public hospital), NOT current BPJS system-wide statistics",
+        "value": "Single-hospital 2019 case study result, not system-wide",
+        "current_score": "medium (same Unair source, correctly contextualised)",
+        "source_url": "https://e-journal.unair.ac.id/JPHRECODE/article/view/19848"
+      },
+      "delta_description": "Stage 3 pain-points and the Stage 4 synthesis (source list S3-8, labelled 'BPJS digital claims: 45 → 15 day settlement, 1,345 → 961 staff') represent the VEDIKA figures as if they are current BPJS system-wide outcomes. The corrections addendum documents that they are from a 2019 case study at a single public hospital (RSUD Sidoarjo). The framing in stage-3-pain-points.md (lines 93, 112, 153) remains unqualified in the canonical text. Stage 4 inherits and propagates this framing via source citation S3-8. The directional claim (VEDIKA reduces settlement time) is valid; the characterisation as system-wide or current-state is not. This is a medium-severity framing error because the underlying AI opportunity claim remains valid, but the evidence citation is contextually misrepresented.",
+      "resolution_suggestion": "In stage-3-pain-points.md lines 93 and 153, add qualifier: 'RSUD Sidoarjo 2019 VEDIKA implementation case study (single-hospital): settlement time 45 → 15 days, staff 1,345 → 961 — demonstrates directional potential; system-wide BPJS Kesehatan post-VEDIKA data not published.' Update Stage 4 source citation S3-8 label to add '(single-hospital 2019 case study)'.",
+      "resolution_hint": {
+        "metric_phrase": "BPJS VEDIKA claims settlement improvement",
+        "primary_source_categories_to_try": ["primary-gov", "primary-ministry"],
+        "academic_search_query": "BPJS Kesehatan VEDIKA claims settlement time improvement system-wide annual report",
+        "applied_to_stages": [3, 4]
+      }
+    },
+    {
+      "id": "C-006",
+      "class": "C",
+      "severity": "high",
+      "stages_involved": [1, 2, 4, 5, 6],
+      "claim_a": {
+        "stage": 1,
+        "claim_id": "VC10 / PP1.1-e / PP1.2-i",
+        "text": "Indonesia EMR/SATUSEHAT adoption: ~8.9% of eligible FKTPs (3,533 of 39,852) registered by mid-2024/end-2024 — framed as the national SATUSEHAT integration rate among private clinics",
+        "value": "8.9% national SATUSEHAT integration rate",
+        "current_score": "low",
+        "source_url": "https://arxiv.org/pdf/2512.05381"
+      },
+      "claim_b": {
+        "stage": 1,
+        "claim_id": "stage-1-deep-research-addendum Upgrade 3 / pass-3-deep-research/stage-1/satusehat-adoption.json",
+        "text": "8.9% is ONE private EMR vendor's (PT MTK) FKTP market share, NOT the national SATUSEHAT integration rate. National SATUSEHAT: 34,463 fasyankes integrated by Oct 2025 (Kemenkes BKPK official data); hospital adoption 96%/92%. MOH Blueprint 2024: 80% of facilities lack digital technology adoption.",
+        "value": "8.9% = single-vendor market share; national registration ~34,463 fasyankes (hospitals dominate)",
+        "current_score": "medium-high (primary-gov Kemenkes BKPK Oct 2025; peer-reviewed PubMed 40776145; peer-reviewed journal version of arXiv)",
+        "source_url": "https://www.badankebijakan.kemkes.go.id/wajib-integrasi-satu-sehat-kemenkes-desak-percepatan-rme-di-fasyankes/"
+      },
+      "delta_description": "Deep-research verdict: REFINED. The 8.9% figure is the market share of a single EMR vendor (PT MTK), not the national platform integration rate. However, the original draft's directional claim (private klinik pratama integration is very low) remains valid. CRITICAL: the erroneous 8.9%-as-national-rate framing persists throughout the corpus without correction in the canonical stage files. Affected locations: stage-1-value-chain.md (lines 17, 149, 227); stage-1-pain-points.md (lines 30, 41, 95, 105); stage-2-pain-points.md (lines 64, 76, 89, 95, 96); stage-4-cross-layer-synthesis.md (table row sub-step 1a, sub-step 2b, source citation S1-2); stage-6-ai-capability-mapping.md (lines 342, 416). The deep-research addendum and pass-3 JSON provide the corrected framing, but no stage has been updated to reflect this. Stage 4 source citation S1-2 is the only location in the synthesis that partially acknowledges the revision ('8.9% PT MTK market share; peer-reviewed: scholarhub.ui.ac.id') but the synthesis body text still uses '8.9% of private FKTPs' without the vendor-market-share qualifier in the sub-step table.",
+      "resolution_suggestion": "Apply the deep-research addendum Upgrade 3 revised text across all stages: replace '8.9% of eligible FKTPs have activated an EMR / SATUSEHAT integration' with the corrected framing (one EMR vendor's market share ≤10%; national SATUSEHAT registration 34,463 fasyankes dominated by hospitals; private klinik pratama disaggregated rate not published; MOH 2024 Blueprint: 80% of facilities lack digital technology adoption). The directional conclusion — >90% of private clinics non-integrated — remains supported by MOH Blueprint and Kemenkes data.",
+      "resolution_hint": {
+        "metric_phrase": "SATUSEHAT private clinic integration rate Indonesia",
+        "primary_source_categories_to_try": ["primary-gov"],
+        "academic_search_query": "SATUSEHAT klinik pratama integrasi jumlah 2024 2025 Kemenkes",
+        "applied_to_stages": [1, 2, 4, 6]
+      }
+    },
+    {
+      "id": "C-007",
+      "class": "B",
+      "severity": "medium",
+      "stages_involved": [3, 4, 5, 6],
+      "claim_a": {
+        "stage": 3,
+        "claim_id": "VC3c-POJK36-COB / PP3.2-RC1 / PP3.3-RC2 / PP3.4-RC4",
+        "text": "POJK 36/2025 mandates fraud detection, COB, Medical Advisory Board by December 2026 — consistently cited as 'POJK 36/2025' throughout stage-3-value-chain.md and stage-3-pain-points.md",
+        "value": "Regulation designation: POJK 36/2025; effective date: December 2026",
+        "current_score": "medium",
+        "source_url": "https://global.lockton.com/us/en/news-insights/indonesia-to-reform-health-insurance-products-for-enhanced-risk-management"
+      },
+      "claim_b": {
+        "stage": 3,
+        "claim_id": "stage-3-corrections-addendum Correction 1 / stage-3-value-chain.md validation JSON FE-1",
+        "text": "Correct designation: POJK 36/2024 with implementing Circular Letter 7/SEOJK.05/2025; effective 1 January 2026 (not December 2026)",
+        "value": "Regulation designation: POJK 36/2024; effective date: 1 January 2026",
+        "current_score": "medium (Nusantara Legal, HHP law firm, Milliman e-alert independently confirm POJK 36/2024)",
+        "source_url": "https://www.milliman.com/en/insight/indonesia-health-regulations-ealert-key-updates"
+      },
+      "delta_description": "Regulation designation error (36/2025 vs. 36/2024) and effective-date error (December 2026 vs. 1 January 2026) persist in the canonical stage-3-value-chain.md and stage-3-pain-points.md body text. Stage 5 reproduces the error as 'POJK 36/2025' in running text (lines 44, 48, 58, 64, 68, 130, 171, 185, 188, 218) and at Stage 5 source citation S3-4. Stage 4 source citation S3-6 labels it 'POJK 36/2025'. Stage 6 lines 206, 494 cite 'POJK 36/2025'. Only the corrections addendum and the stage-2-validation JSON correctly document the fix. The substantive content (fraud detection mandate, COB, Medical Advisory Board, co-payment rules) is described correctly — this is a designation-and-date error, not a content error. Severity is medium because the error does not change any pain-point argument or cost estimate, but a curator citing this work would propagate an incorrect regulation name.",
+      "resolution_suggestion": "Apply corrections addendum Correction 1 globally: replace all 'POJK 36/2025' instances with 'POJK 36/2024 (implementing: SE 7/SEOJK.05/2025, effective 1 January 2026)' across stage-3-value-chain.md, stage-3-pain-points.md, stage-4-cross-layer-synthesis.md source S3-6, stage-5-id-vs-my-readiness.md (multiple lines), stage-6-ai-capability-mapping.md lines 206, 494. Also correct 'December 2026' to '1 January 2026' wherever it refers to POJK 36 implementation.",
+      "resolution_hint": {
+        "metric_phrase": "POJK 36/2024 OJK health insurance regulation Indonesia",
+        "primary_source_categories_to_try": ["primary-ministry"],
+        "academic_search_query": "OJK POJK 36 2024 asuransi kesehatan regulasi Indonesia effective date",
+        "applied_to_stages": [3, 4, 5, 6]
+      }
+    },
+    {
+      "id": "C-008",
+      "class": "D",
+      "severity": "medium",
+      "stages_involved": [1, 2, 3, 4, 5, 6],
+      "claim_a": {
+        "stage": 1,
+        "claim_id": "PP1.1-e / VC10 and all subsequent citations",
+        "text": "SATUSEHAT adoption 8.9% of 'eligible FKTPs' — stage-1 applies this as a private-clinic-specific metric; stage-2 pain-points further narrows it to 'private FKTPs' specifically",
+        "value": "8.9% of private FKTPs (presented as the private-clinic integration rate)",
+        "current_score": "low",
+        "source_url": "https://arxiv.org/pdf/2512.05381"
+      },
+      "claim_b": {
+        "stage": 4,
+        "claim_id": "stage-4-cross-layer-synthesis sub-step 1a automation row",
+        "text": "Stage 4 source citation S1-2 correctly labels '8.9% PT MTK market share' but the sub-step 1a automation-level cell still states 'SATUSEHAT FHIR at 8.9% private FKTPs — Stage 2 PP2.2 fn 2' without the vendor-share qualifier",
+        "value": "8.9% used as a private-clinic integration rate in the table cell",
+        "current_score": "medium",
+        "source_url": "internal cross-reference"
+      },
+      "delta_description": "The 8.9% figure is simultaneously and inconsistently treated as: (a) a vendor (PT MTK) market-share statistic in the Stage 1 deep-research addendum and in Stage 4's source citation label, and (b) a national private-clinic SATUSEHAT integration rate in the body text of Stages 1, 2, 4, 5, and 6. This is a geography/scope mismatch applied inconsistently: some locations in the corpus acknowledge the vendor-market-share qualification while most do not. The inconsistency in Stage 4 itself (source citation says 'PT MTK market share'; table cell says 'SATUSEHAT FHIR at 8.9% private FKTPs') is the clearest cross-stage contradiction. This is Class D because it is analogous to a geography override applied to some occurrences but not others.",
+      "resolution_suggestion": "Apply the unified revised framing from pass-3-deep-research/stage-1/satusehat-adoption.json uniformly: replace all occurrences of '8.9% of eligible FKTPs / private FKTPs' with 'one EMR vendor's private-clinic market share reached 8.9% by end-2024; overall national SATUSEHAT registration: 34,463 fasyankes (Oct 2025), dominated by hospitals; private clinic integration rate not published as standalone figure'. Ensure Stage 4 table cell and source S1-2 label are consistent.",
+      "resolution_hint": {
+        "metric_phrase": "SATUSEHAT FKTP private clinic integration",
+        "primary_source_categories_to_try": ["primary-gov"],
+        "applied_to_stages": [1, 2, 4, 5, 6]
+      }
+    }
+  ],
+  "summary": {
+    "total_contradictions": 8,
+    "by_severity": {"high": 4, "medium": 4, "low": 0},
+    "by_class": {"A": 1, "B": 2, "C": 4, "D": 1}
+  },
+  "gate_impact": "high-severity-block",
+  "narrative": "Four high-severity contradictions require curator resolution before this run can be promoted to canonical: the IHC hospital count (75 vs. 36 — deep-research CONTRADICTED, not yet applied to body text), the Indonesia specialist deficit (65,000 vs. ~31,000 — CONTRADICTED, body text not updated), the Peka B40 NCD rate (41% vs. ~70% — CONTRADICTED, body text not updated in stage-2 while stage-5 already reflects the correction), and the SATUSEHAT 8.9% misattribution (vendor market share propagated as national integration rate across all six stages despite deep-research REFINED verdict). The four medium-severity items — Malaysia claims ratio 111% vs. 65.9% framing, VEDIKA scope (system-wide vs. single-hospital), POJK 36 designation (2025 vs. 2024, effective date Dec 2026 vs. Jan 2026), and the inconsistent geographic scope of the 8.9% SATUSEHAT figure — require correction but do not change the fundamental analytical conclusions of any stage."
+}

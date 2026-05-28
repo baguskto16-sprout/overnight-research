@@ -1,0 +1,129 @@
+{
+  "claim": "BPJS Kesehatan FKTP capitation rate set by Permenkes No. 3/2023",
+  "outcome": "found-stronger-evidence",
+  "verdict": "CONFIRMED",
+  "primary_sources": [
+    {
+      "url": "https://peraturan.bpk.go.id/Details/275518/permenkes-no-3-tahun-2023",
+      "category": "primary-gov",
+      "publisher": "Badan Pemeriksa Keuangan (BPK) — Indonesian Supreme Audit Agency regulatory database",
+      "publication_date": "2023-01-09",
+      "access_status": "cloudflare-blocked — tagged [NEEDS-ATTENDED-FETCH]",
+      "supports_claim": true,
+      "key_data": "Official BPK regulatory index entry for Permenkes No. 3 Tahun 2023; PDF available at peraturan.bpk.go.id/Download/334015/Permenkes%20Nomor%203%20Tahun%202023.pdf"
+    },
+    {
+      "url": "https://kemkes.go.id/id/ini-dia-standar-tarif-baru-pelayanan-jkn",
+      "category": "primary-gov",
+      "publisher": "Kementerian Kesehatan Republik Indonesia (Ministry of Health) — official government website",
+      "publication_date": "2023-01-09",
+      "access_status": "fetched-successfully",
+      "supports_claim": true,
+      "key_data": "Official Kemenkes announcement confirming Permenkes No. 3 Tahun 2023 effective 9 January 2023 with all FKTP capitation tariff ranges. First increase since 2016."
+    },
+    {
+      "url": "https://jdih.kemkes.go.id/common/dokumen/PMK%203%20TH%202023-ABSTRAK.pdf",
+      "category": "primary-gov",
+      "publisher": "JDIH Kementerian Kesehatan RI — official legal information database",
+      "publication_date": "2023-01-09",
+      "access_status": "pdf-returned-empty-via-markitdown",
+      "supports_claim": true,
+      "key_data": "Official JDIH abstract PDF for PMK 3/2023"
+    },
+    {
+      "url": "https://www.cnnindonesia.com/ekonomi/20230116154336-78-901024/beda-tarif-pelayanan-peserta-jkn-di-aturan-baru-dan-lama",
+      "category": "tier-2-national-media",
+      "publisher": "CNN Indonesia",
+      "publication_date": "2023-01-16",
+      "access_status": "fetched-successfully",
+      "supports_claim": true,
+      "key_data": "Cross-validates all tariff figures old vs new; confirms effective date 9 January 2023"
+    },
+    {
+      "url": "https://luk.staff.ugm.ac.id/atur/Permenkes3-2023StandarTarif.pdf",
+      "category": "primary-gov-mirror",
+      "publisher": "UGM (Universitas Gadjah Mada) staff server — full regulation text PDF",
+      "publication_date": "2023-01-09",
+      "access_status": "markitdown-returned-empty — [NEEDS-ATTENDED-FETCH]",
+      "supports_claim": true,
+      "key_data": "Full PMK 3/2023 PDF text"
+    }
+  ],
+  "verified_capitation_figures": {
+    "regulation": "Peraturan Menteri Kesehatan Republik Indonesia Nomor 3 Tahun 2023 tentang Standar Tarif Pelayanan Kesehatan dalam Penyelenggaraan Jaminan Kesehatan",
+    "effective_date": "2023-01-09",
+    "usd_conversion_rate_used": "IDR 16,000 per USD (approximate May 2026)",
+    "fktp_tiers": [
+      {
+        "facility_type": "Puskesmas",
+        "tariff_range_idr": "Rp3,600–Rp9,000 per peserta per bulan",
+        "tariff_range_usd": "USD 0.23–0.56 per member per month",
+        "breakdowns": [
+          {"condition": "With doctor (ratio 1:≤5,000) + dentist", "rate_idr": "Rp7,000"},
+          {"condition": "With doctor (ratio 1:≤5,000) without dentist", "rate_idr": "Rp6,300"},
+          {"condition": "With doctor (ratio 1:>5,000) + dentist", "rate_idr": "Rp6,000"},
+          {"condition": "With doctor (ratio 1:>5,000) without dentist", "rate_idr": "Rp5,300"},
+          {"condition": "Without doctor + dentist", "rate_idr": "Rp4,300"},
+          {"condition": "Without doctor or dentist", "rate_idr": "Rp3,600"}
+        ],
+        "old_rate_pre_2023": "Rp3,000–Rp6,000"
+      },
+      {
+        "facility_type": "Klinik Pratama / Rumah Sakit Kelas D Pratama",
+        "tariff_range_idr": "Rp9,000–Rp16,000 per peserta per bulan",
+        "tariff_range_usd": "USD 0.56–1.00 per member per month",
+        "breakdowns": [
+          {"condition": "With doctor (ratio 1:≤5,000) + dentist", "rate_idr": "Rp12,000"},
+          {"condition": "With doctor (ratio 1:≤5,000) without dentist", "rate_idr": "Rp10,000"},
+          {"condition": "With doctor (ratio 1:>5,000) + dentist", "rate_idr": "Rp11,000"},
+          {"condition": "With doctor (ratio 1:>5,000) without dentist", "rate_idr": "Rp9,000"}
+        ],
+        "old_rate_pre_2023": "Rp8,000–Rp10,000"
+      },
+      {
+        "facility_type": "Praktik Mandiri Dokter / Praktik Dokter Layanan Primer",
+        "tariff_range_idr": "Rp8,300–Rp15,000 per peserta per bulan",
+        "tariff_range_usd": "USD 0.52–0.94 per member per month",
+        "breakdowns": [
+          {"condition": "Doctor ratio 1:≤5,000 peserta", "rate_idr": "Rp8,800"},
+          {"condition": "Doctor ratio 1:>5,000 peserta", "rate_idr": "Rp8,300"}
+        ],
+        "old_rate_pre_2023": "Rp8,000 (flat)"
+      },
+      {
+        "facility_type": "Praktik Mandiri Dokter Gigi",
+        "tariff_range_idr": "Rp3,000–Rp4,000 per peserta per bulan",
+        "tariff_range_usd": "USD 0.19–0.25 per member per month",
+        "old_rate_pre_2023": "not specified in sources"
+      }
+    ]
+  },
+  "verbatim_quote_from_kemenkes_official": "Standar tarif kapitasi ditetapkan sebagai berikut: a. Puskesmas sebesar Rp3.600 sampai dengan Rp9.000 per peserta per bulan; b. rumah sakit Kelas D Pratama, klinik pratama, atau fasilitas kesehatan yang setara sebesar Rp9.000 sampai dengan Rp16.000 per peserta per bulan; c. praktik mandiri dokter atau praktik dokter layanan primer sebesar Rp 8.300 sampai dengan Rp15.000 per peserta per bulan; d. praktik mandiri dokter gigi sebesar Rp3.000 sampai dengan Rp4.000 per peserta per bulan.",
+  "verbatim_source_url": "https://kemkes.go.id/id/ini-dia-standar-tarif-baru-pelayanan-jkn",
+  "suggested_revision": "Replace eclinic.id blog citation with: Permenkes No. 3 Tahun 2023 (Standar Tarif Pelayanan Kesehatan dalam Penyelenggaraan Jaminan Kesehatan, effective 9 Jan 2023), sourced from kemkes.go.id and BPK regulatory database (peraturan.bpk.go.id/Details/275518). Capitation ranges: Puskesmas Rp3,600–9,000; Klinik Pratama Rp9,000–16,000; Praktik Mandiri Dokter Rp8,300–15,000 per member per month.",
+  "suggested_new_score": "High",
+  "reasoning": "Claim is fully confirmed by the official Kementerian Kesehatan website (primary government source) and cross-validated by CNN Indonesia news coverage. The BPK regulatory index entry is the authoritative official registry. The eclinic.id blog post was accurately citing the regulation; replacing it with the primary government URLs elevates confidence to High.",
+  "searches_performed": [
+    "Permenkes No 3 Tahun 2023 kapitasi FKTP BPJS Kesehatan tarif peraturan.bpk.go.id",
+    "PMK 3 2023 capitation FKTP puskesmas klinik pratama site:jdih.kemkes.go.id",
+    "Permenkes 3 2023 Rp3.600 OR Rp9.000 OR Rp16.000 kapitasi puskesmas klinik pratama dokter praktik"
+  ],
+  "urls_fetched": [
+    {"url": "https://kemkes.go.id/id/ini-dia-standar-tarif-baru-pelayanan-jkn", "result": "success"},
+    {"url": "https://peraturan.bpk.go.id/Details/275518/permenkes-no-3-tahun-2023", "result": "[NEEDS-ATTENDED-FETCH] Cloudflare challenge"},
+    {"url": "https://jdih.kemkes.go.id/dokumen/view?id=20", "result": "404 not found"},
+    {"url": "https://jdih.kemkes.go.id/common/dokumen/PMK%203%20TH%202023-ABSTRAK.pdf", "result": "markitdown returned empty"},
+    {"url": "https://peraturan.bpk.go.id/Download/334015/Permenkes%20Nomor%203%20Tahun%202023.pdf", "result": "markitdown returned empty"},
+    {"url": "https://peraturan.go.id/files/permenkes+-no-3-tahun-2023.pdf", "result": "markitdown returned empty"},
+    {"url": "https://luk.staff.ugm.ac.id/atur/Permenkes3-2023StandarTarif.pdf", "result": "markitdown returned empty — [NEEDS-ATTENDED-FETCH]"},
+    {"url": "https://www.cnnindonesia.com/ekonomi/20230116154336-78-901024/beda-tarif-pelayanan-peserta-jkn-di-aturan-baru-dan-lama", "result": "success — cross-validates all figures"},
+    {"url": "https://chpm.fk.ugm.ac.id/permenkes-nomor-3-tahun-2023-tentang-standar-tarif-pelayanan-kesehatan-dalam-penyelenggaraan-jaminan-kesehatan/", "result": "page fetched, no tariff detail"},
+    {"url": "https://dataindonesia.id/regulasi/detail/permenkes-nomor-3-tahun-2023-tentang-tarif-kapitasi-bpjs", "result": "page fetched, no tariff detail (paywalled)"}
+  ],
+  "notes": [
+    "BPK PDF direct download (peraturan.bpk.go.id/Download/334015/...) returned empty via markitdown — likely requires browser rendering or Cloudflare pass. Tagging [NEEDS-ATTENDED-FETCH] for orchestrator.",
+    "UGM staff PDF (luk.staff.ugm.ac.id/atur/Permenkes3-2023StandarTarif.pdf) also returned empty via markitdown — same issue. [NEEDS-ATTENDED-FETCH].",
+    "Official kemenkes.go.id page was successfully fetched and confirms all tariff ranges verbatim.",
+    "USD conversion based on approximate IDR/USD rate of 16,000 as of May 2026; exact rates subject to exchange rate at time of use."
+  ]
+}

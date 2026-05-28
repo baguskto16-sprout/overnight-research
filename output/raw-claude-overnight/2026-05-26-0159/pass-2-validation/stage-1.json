@@ -1,0 +1,853 @@
+{
+  "stage_id": 1,
+  "stage_name": "GP clinic operations — Indonesia and Malaysia private primary care",
+  "run_id": "2026-05-26-0159",
+  "validation_context": "per-stage, first pass (pre-deep-research)",
+  "validator": "source-validator",
+  "scored_at": "2026-05-26",
+
+  "total_claims_scored": 50,
+  "high_confidence": 3,
+  "medium_confidence": 7,
+  "low_confidence": 40,
+  "low_confidence_pct": 80,
+
+  "scoring_distribution": {
+    "high":   {"count": 3,  "percent": "6%"},
+    "medium": {"count": 7,  "percent": "14%"},
+    "low":    {"count": 40, "percent": "80%"}
+  },
+
+  "claim_detail": [
+    {
+      "claim_id": "VC1",
+      "claim": "Total private klinik pratama in Indonesia ~14,564",
+      "sources": ["BPS Jawa Tengah provincial data 2023 (primary-gov)", "ehealth.co.id citing Kemenkes (secondary-trade)"],
+      "score": "medium",
+      "note": "Primary-gov source is single-province BPS page used to infer national count; Kemenkes portal not directly fetched (NEEDS-ATTENDED-FETCH). 2 sources ≥1 primary-gov meets Medium bar but does not reach High (Jawa Tengah provincial figure extrapolated to national)."
+    },
+    {
+      "claim_id": "VC2",
+      "claim": "Private medical clinics Malaysia: 9,830 (2022)",
+      "sources": ["Statista (secondary-market-research)", "MIDF Thematic Report May 2025 (secondary-analyst, NEEDS-ATTENDED-FETCH)"],
+      "score": "low",
+      "note": "Statista is a market-research aggregator — aggregator auto-downgrade applies. MIDF is not a top-tier consultancy per rubric. Both secondary. Auto-Low on aggregator primary source.",
+      "override": "aggregator-market-research-auto-downgrade"
+    },
+    {
+      "claim_id": "VC3",
+      "claim": "Total JKN FKTP outpatient visits 376.58 million Jan–Sep 2024",
+      "sources": ["DJSN Monthly JKN Report September 2024 (primary-ministry)"],
+      "score": "low",
+      "note": "Single source, regardless of quality (primary-ministry DJSN). Rubric: 1 source = Low. Should be upgraded to Medium if a second independent source confirms."
+    },
+    {
+      "claim_id": "VC4",
+      "claim": "Indonesia healthcare providers market (outpatient) $19.6 billion (2023)",
+      "sources": ["Ken Research (secondary-market-research)"],
+      "score": "low",
+      "note": "Ken Research = private market-research aggregator. Auto-Low. Already flagged Low in draft.",
+      "override": "aggregator-market-research-auto-downgrade"
+    },
+    {
+      "claim_id": "VC5",
+      "claim": "Malaysia total healthcare operating expenditure USD 10.9 billion (2023)",
+      "sources": ["Statista (secondary-market-research)"],
+      "score": "low",
+      "note": "Statista aggregator. Auto-Low. Draft scored this Medium — OVERRIDE to Low.",
+      "override": "aggregator-market-research-auto-downgrade"
+    },
+    {
+      "claim_id": "VC6",
+      "claim": "Malaysia private healthcare market USD 27.87 billion (2024)",
+      "sources": ["Statista (secondary-market-research)"],
+      "score": "low",
+      "note": "Statista aggregator. Auto-Low. Draft already flags Low.",
+      "override": "aggregator-market-research-auto-downgrade"
+    },
+    {
+      "claim_id": "VC7",
+      "claim": "Malaysia private GP consultation fee capped at RM10–RM35; Madani Medical Scheme raised to RM35 from Sept 2023",
+      "sources": ["CodeBlue/Galen Centre (secondary-trade)", "Bernama (secondary-news)"],
+      "score": "low",
+      "note": "Two secondary sources, different families. Rubric requires 3+ all-secondary for Medium or 2+ with ≥1 primary. Two secondary = Low. Underlying primary source is Schedule 7, Act 586 / MOH Madani announcement — not directly cited. Draft scores this High — OVERRIDE to Low.",
+      "override": "two-secondary-sources-only"
+    },
+    {
+      "claim_id": "VC8",
+      "claim": "BPJS capitation for klinik pratama IDR 9,000–16,000 per patient per month under PMK No. 3/2023",
+      "sources": ["eclinic.id (secondary-trade blog)"],
+      "score": "low",
+      "note": "Single secondary-trade source (industry blog) reporting on PMK No. 3/2023. Underlying primary (Kemenkes regulation text) not directly cited. Draft scores this High — OVERRIDE to Low.",
+      "override": "single-trade-source"
+    },
+    {
+      "claim_id": "VC9",
+      "claim": "Malaysia NHMS 2023: diabetes 15.6%, hypertension 29.2%, hypercholesterolaemia 33.3%; 2.3 million adults with 3+ NCDs",
+      "sources": ["CodeBlue reporting on NHMS 2023 (secondary-trade citing primary-gov survey)"],
+      "score": "low",
+      "note": "Single source. Chain-of-citations: CodeBlue reports the NHMS 2023 primary government survey but is itself secondary-trade. Primary NHMS 2023 PDF not directly cited. 1 source = Low. Draft scores this High — OVERRIDE to Low.",
+      "override": "single-source"
+    },
+    {
+      "claim_id": "VC10",
+      "claim": "Indonesia EMR/SATUSEHAT adoption: ~8.9% of eligible FKTPs (3,533 of 39,852) registered over 33 months to mid-2024",
+      "sources": ["arXiv preprint 2512.05381 (primary-academic preprint, unreviewed)"],
+      "score": "low",
+      "note": "Single source, preprint (not peer-reviewed). 1 source = Low."
+    },
+    {
+      "claim_id": "VC11",
+      "claim": "Drug dispensing is the dominant revenue driver at Malaysia private GP clinics",
+      "sources": ["Zin et al. 2023 PMC 10284298 (primary-academic)", "Zin et al. 2020 PMC 7750386 (primary-academic)"],
+      "score": "medium",
+      "note": "Two independent peer-reviewed academic papers from the same research group (Zin et al.) confirming drug dispensing dominance. Same author family — but published 3 years apart as distinct studies. Two primary-academic sources. Medium (2+ sources ≥1 primary not-market-research; not High because neither is gov-stats/multilateral and count is only 2 not 3).",
+      "note_caution": "Same lead author across both papers — chain-of-citations risk if they draw on the same clinic dataset. If same underlying dataset, count as 1 source."
+    },
+    {
+      "claim_id": "VC12",
+      "claim": "Klinik Pintar: 22 own clinics in Greater Jakarta (late 2023); 1,500+ networked third-party clinics; raised $5M Series A1 in Dec 2023",
+      "sources": ["TechNode Global trade press (secondary-news)"],
+      "score": "low",
+      "note": "Single secondary-news source (trade press). Funding claim ($5M Series A1) requires primary-filing (Form D equivalent) for corroboration — not cited. Press-release-only override applies.",
+      "override": "press-release-only"
+    },
+    {
+      "claim_id": "VC13",
+      "claim": "Qualitas Medical Group: 135 owned + 151 affiliate clinics (end-2024); AA3/Stable credit rating",
+      "sources": ["RAM Ratings press release (primary-association/third-party credit agency)"],
+      "score": "medium",
+      "note": "RAM Ratings is Malaysia's national credit rating agency — a recognized third-party financial assessor. A RAM press release confirming a rating based on their analytical review is distinct from vendor self-promotion. Classified as primary-association adjacent. Single source = would normally be Low, but this is a third-party verifiable financial rating, not vendor marketing. Scored Medium as a single credible third-party source above secondary-trade level. Borderline — would score Low under strictest single-source rule."
+    },
+    {
+      "claim_id": "VC14",
+      "claim": "Good Doctor Indonesia: 1,000+ registered doctors; 4,000 pharmacies; 100+ cities",
+      "sources": ["gooddoctor.co.id (vendor own website)"],
+      "score": "low",
+      "note": "Vendor's own website making claims about its own scale. Auto-Low vendor-marketing override.",
+      "override": "vendor-marketing"
+    },
+    {
+      "claim_id": "VC15",
+      "claim": "ProtectHealth Madani Medical Scheme: ~2,500 GPs enrolled nationwide as of 2023",
+      "sources": ["protecthealth.com.my (operator's own marketing page)"],
+      "score": "low",
+      "note": "ProtectHealth is the operator of this scheme making claims about programme scale on its own marketing page. Auto-Low vendor-marketing override.",
+      "override": "vendor-marketing"
+    },
+    {
+      "claim_id": "VC16",
+      "claim": "BPJS Kesehatan UHC 98.45% in 2024",
+      "sources": ["harmonyfmserang.com (local Indonesian radio station website, secondary-news obscure)"],
+      "score": "low",
+      "note": "Obscure secondary-news source (local radio station). BPJS Kesehatan annual report or press office would be the primary source — not cited. Single low-quality secondary source."
+    },
+    {
+      "claim_id": "VC17",
+      "claim": "Private klinik pratama controlled PROLANIS ratio 1.46% vs puskesmas 0.08%",
+      "sources": ["none cited (inline claim in PROLANIS context paragraph with no footnote)"],
+      "score": "low",
+      "note": "No source number cited for this specific figure. No evidence anchor."
+    },
+    {
+      "claim_id": "VC18",
+      "claim": "BookDoc is 'the largest digital channel for private GP bookings in Malaysia'",
+      "sources": ["none cited"],
+      "score": "low",
+      "note": "Unsourced superlative claim. No evidence cited."
+    },
+    {
+      "claim_id": "VC19",
+      "claim": "Halodoc: 20,000+ doctors; 3,300+ hospitals; 4,900 pharmacies",
+      "sources": ["none cited explicitly (inferred from player description paragraph without numbered source)"],
+      "score": "low",
+      "note": "No numbered source cited in the value chain player section. Even if Halodoc's own data, would trigger vendor-marketing override."
+    },
+    {
+      "claim_id": "VC20",
+      "claim": "Only ~3% of Malaysia health clinics have digital health records",
+      "sources": ["trade.gov US commercial market brief (secondary-trade/primary-ministry US gov)"],
+      "score": "low",
+      "note": "trade.gov is a US government commercial intelligence brief — it is primary-gov status for the US, but is secondary when reporting on Malaysian domestic statistics. Single source. The underlying primary would be Malaysia MOH data. 1 source = Low."
+    },
+    {
+      "claim_id": "VC21",
+      "claim": "~2,000+ independent private GPs enrolled as PERKESO panel clinics",
+      "sources": ["sehat.perkeso.gov.my (primary-gov, Malaysian government PERKESO portal)"],
+      "score": "low",
+      "note": "Single source, albeit a primary government portal. 1 source = Low per rubric."
+    },
+    {
+      "claim_id": "PP1.1-a",
+      "claim": "Documentation consumes approximately 6–10 min per consultation (ambient scribe benchmark)",
+      "sources": ["medRxiv preprint 2026.01.12.26343538 (primary-academic preprint)"],
+      "score": "low",
+      "note": "Single source, preprint. Additionally this is a global/US benchmark — APAC-as-proxy concern: this study is from a US/global context applied to ID/MY settings without direct validation. Geography-mismatch flag applies.",
+      "flags": ["geography-mismatch-global-to-ID-MY"]
+    },
+    {
+      "claim_id": "PP1.1-b",
+      "claim": "GP fully loaded cost $15–20/hr (MY) or $10–14/hr (ID)",
+      "sources": ["SalaryExpert/PayScale MY (secondary-trade, salary aggregator)", "Jobstreet ID / WorldSalaries ID (secondary-trade, job posting aggregator)"],
+      "score": "low",
+      "note": "Salary aggregator websites — no government statistics agency or primary source. Multiple secondary-trade sources from same type (job portal / salary aggregator). No primary (BPS, DOSM, EPF data) cited."
+    },
+    {
+      "claim_id": "PP1.1-c",
+      "claim": "Documentation accounts for approximately 35% of active consultation time globally; ambulatory physicians spend close to 2 hours on EHR/admin for every 1 hour with a patient",
+      "sources": ["medRxiv 2026.01.12.26343538 (primary-academic preprint)", "AMA EHR burden reporting ama-assn.org (secondary-trade)", "PMC 10134123 burnout/EHR (primary-academic)"],
+      "score": "high",
+      "note": "3 sources AND ≥1 primary-academic (2 primary). Meets High threshold. Note: these are global/US benchmarks applied as context for ID/MY — the underlying claim is correctly labelled as a global figure in the draft. Geography-mismatch flag is N/A since the draft is transparent that this is a global benchmark.",
+      "flags": ["global-benchmark-applied-to-ID-MY-context"]
+    },
+    {
+      "claim_id": "PP1.1-d",
+      "claim": "26% of primary care physicians globally name documentation as their primary stressor; documentation burden is the leading EHR-linked contributor to physician burnout",
+      "sources": ["Tebra/The Intake vendor publication (secondary-trade)", "PMC 10134123 (primary-academic)", "AHRQ PMC 11534919 (primary-academic via AHRQ)"],
+      "score": "high",
+      "note": "3 sources AND ≥1 primary (2 primary-academic). Tebra is a health IT company's publication which may introduce vendor bias for the specific 26% statistic; however PMC 10134123 and AHRQ PMC 11534919 are independent academic/government sources confirming documentation burden and burnout. High threshold met."
+    },
+    {
+      "claim_id": "PP1.1-e",
+      "claim": "Indonesia: as of end-2024 only ~8.9% of eligible FKTPs have activated an EMR",
+      "sources": ["arXiv 2512.05381 (primary-academic preprint)"],
+      "score": "low",
+      "note": "Single source, preprint. Reuses same single paper cited throughout (VC10, PP1.1-e, PP1.2-i, PP1.3 contexts). The repeated citation of the same arXiv preprint is a structural weakness across the draft."
+    },
+    {
+      "claim_id": "PP1.1-f",
+      "claim": "Malaysian primary care digitalisation is fragmented, layered burden, dual-entry; doctors toggle between multiple non-communicating systems",
+      "sources": ["Healthcare IT News Asia, Jan 2026 (secondary-trade)"],
+      "score": "low",
+      "note": "Single secondary-trade source. Potentially strong contextual source but only 1 source."
+    },
+    {
+      "claim_id": "PP1.1-g",
+      "claim": "LLM transcription PoC on Indonesian primary care (Puskesmas): 300+-second consultations transcribed in <30 seconds with clinical accuracy",
+      "sources": ["arXiv 2409.17054 (primary-academic preprint)"],
+      "score": "low",
+      "note": "Single source, preprint. Puskesmas setting (public) — the draft is transparent that this is a public-sector PoC, not private clinic. No geography-mismatch flag needed since this is correctly labelled."
+    },
+    {
+      "claim_id": "PP1.1-h",
+      "claim": "ICD-10 coding accuracy: >25% codes omitted or inappropriate; approximately half of entered codes were appropriate (simulation of 23 ambulatory clinicians)",
+      "sources": ["PMC 5977598 (primary-academic)"],
+      "score": "low",
+      "note": "Single primary-academic source. Insufficient for any tier above Low. Also, study was conducted in a non-SEA context (US ambulatory clinics) — geography mismatch flag applies.",
+      "flags": ["geography-mismatch-US-study-applied-to-ID-MY"]
+    },
+    {
+      "claim_id": "PP1.1-i",
+      "claim": "Ambient AI scribe RCT (DAX Copilot / Nabla): documentation time reduction confirmed; burnout benefit across 238+ physicians",
+      "sources": ["PubMed 40672471 (primary-academic, possibly Nabla RCT)", "PMC 12492056 (primary-academic, JAMA Network Open Yale/Sutter/CHRISTUS 263 physicians)"],
+      "score": "medium",
+      "note": "Two sources, both primary-academic. Not gov-stats/multilateral; count is 2 not 3 — Medium (not High). These appear to be two distinct studies (DAX/Nabla vs. JAMA NO). If confirmed as independent, Medium is correct."
+    },
+    {
+      "claim_id": "PP1.1-j",
+      "claim": "SATUSEHAT mandate (Permenkes 24/2022) creates dual-entry compliance burden in Indonesia; Malaysian private clinics similarly face fragmented multi-system documentation",
+      "sources": ["arXiv 2512.05381 (primary-academic preprint)", "Healthcare IT News Asia Jan 2026 (secondary-trade)"],
+      "score": "medium",
+      "note": "Two sources, ≥1 primary (preprint). Meets Medium threshold. arXiv paper is specific to Indonesian EMR/SATUSEHAT; HITN Asia is specific to Malaysia. Both relevant and independent."
+    },
+    {
+      "claim_id": "PP1.1-k",
+      "claim": "ICD-10 query interfaces have proprietary terminology, no consistent cross-system search; near-four-fold expansion of diagnoses in ICD-10 creates formidable challenge",
+      "sources": ["PMC 5977598 (primary-academic)"],
+      "score": "low",
+      "note": "Single primary-academic source. Same US-context study. Low."
+    },
+    {
+      "claim_id": "PP1.2-a",
+      "claim": "7.1% of clinically significant abnormal outpatient lab results lack timely follow-up across 19 primary care practices (variation 0–26%)",
+      "sources": ["PMC 2878665 (primary-academic)", "AHRQ PSNet (primary-gov, Agency for Healthcare Research and Quality US)"],
+      "score": "high",
+      "note": "Two sources: PMC 2878665 is a primary academic study; AHRQ PSNet is a US government patient safety network summary. If they independently report the same finding (PMC is likely the primary study; AHRQ PSNet may be citing the same study), this could be chain-of-citations. Provisional High — flag for verification that AHRQ PSNet cites an independent study, not just PMC 2878665.",
+      "flags": ["possible-chain-of-citations-verify-AHRQ-PSNet-independence"],
+      "geography_flag": "US primary care benchmark applied to ID/MY context — no direct ID/MY data for this figure"
+    },
+    {
+      "claim_id": "PP1.2-b",
+      "claim": "One-fourth of delay-in-treatment malpractice claims attributed to failure to follow up test results",
+      "sources": ["AHRQ PSNet delay case study (primary-gov)"],
+      "score": "low",
+      "note": "Single source, even though it's AHRQ (primary-gov). 1 source = Low per rubric. Also: the 'one-fourth' figure may come from the same underlying AHRQ PSNet document as PP1.2-a — chain-of-citations within same source."
+    },
+    {
+      "claim_id": "PP1.2-c",
+      "claim": "77% of primary care physicians surveyed had no reliable method for tracking whether patients with abnormal results received recommended follow-up",
+      "sources": ["AAFP Family Practice Management 2002 (primary-association)"],
+      "score": "low",
+      "note": "Single source AND outdated (2002, >3 years old — over 20 years old). Outdated-source override applies. Score: Low.",
+      "override": "outdated-source"
+    },
+    {
+      "claim_id": "PP1.2-d",
+      "claim": "Primary care physicians receive ~57 EHR/inbox alerts per day and spend close to 1 hour/day on inbox management",
+      "sources": ["PMC 5593724 (primary-academic)"],
+      "score": "low",
+      "note": "Single primary-academic source. Low. Also US-context benchmark applied to ID/MY setting.",
+      "flags": ["geography-mismatch-US-to-ID-MY"]
+    },
+    {
+      "claim_id": "PP1.2-e",
+      "claim": "Partial EHR adoption is an independent risk factor for missed lab results vs. full EHR or no EHR",
+      "sources": ["PMC 8739406 (primary-academic)"],
+      "score": "low",
+      "note": "Single primary-academic source."
+    },
+    {
+      "claim_id": "PP1.2-f",
+      "claim": "Malaysia NDR 2023: only 34.38% of registered diabetes patients achieved HbA1c ≤6.5% target",
+      "sources": ["MOH Malaysia NDR 2023 PDF (primary-ministry, NEEDS-ATTENDED-FETCH)"],
+      "score": "low",
+      "note": "Cited as primary-ministry source but flagged NEEDS-ATTENDED-FETCH — URL returned 404 at index time. Cannot verify. Single source even if fetchable. Low.",
+      "flags": ["NEEDS-ATTENDED-FETCH: https://www.moh.gov.my/moh/resources/Penerbitan/Laporan/Umum/NDR_Report_2023_Final.pdf"]
+    },
+    {
+      "claim_id": "PP1.2-g",
+      "claim": "Indonesia 2023 national survey (SKI 2023): only 32% of diabetes patients had HbA1c <7%",
+      "sources": ["Lancet Regional Health Western Pacific (primary-academic)", "PMC 12681878 (primary-academic — likely same article via PMC mirror)"],
+      "score": "low",
+      "note": "Chain-of-citations: thelancet.com article and PMC 12681878 appear to be the same paper accessed via two different URLs. Single underlying source. Low.",
+      "override": "chain-of-citations"
+    },
+    {
+      "claim_id": "PP1.2-h",
+      "claim": "JMIR: FHIR-based interoperability in Indonesia creates complexity and developer burden",
+      "sources": ["PMC 12036547 (primary-academic)"],
+      "score": "low",
+      "note": "Single primary-academic source."
+    },
+    {
+      "claim_id": "PP1.2-i",
+      "claim": "Malaysia doctor workload crisis — hospitals grapple with doctor shortages",
+      "sources": ["Broadsheet Asia 2025 (secondary-news, niche publication)"],
+      "score": "low",
+      "note": "Single secondary-news source from a low-prominence publication. Insufficient."
+    },
+    {
+      "claim_id": "PP1.3-a",
+      "claim": "42.2% of participants in Indonesian NCD screening (Posbindu/Aceh Besar) completed follow-up at primary healthcare facilities after community screening",
+      "sources": ["Wiley Public Health Nursing / Posbindu study (primary-academic)"],
+      "score": "low",
+      "note": "Single primary-academic source. Also: this is a public community-screening study (Posbindu), not a private GP clinic study — geography and setting mismatch. Applied as proxy for private-clinic recall default rates.",
+      "flags": ["setting-mismatch-public-community-screening-used-as-proxy-for-private-GP"]
+    },
+    {
+      "claim_id": "PP1.3-b",
+      "claim": "Malaysia NDR 2023: 34.38% HbA1c ≤6.5%; 81.10% had concurrent hypertension",
+      "sources": ["MOH Malaysia NDR 2023 PDF (primary-ministry, NEEDS-ATTENDED-FETCH)"],
+      "score": "low",
+      "note": "Same as PP1.2-f. Single source, NEEDS-ATTENDED-FETCH, 404 status at index time.",
+      "flags": ["NEEDS-ATTENDED-FETCH: https://www.moh.gov.my/moh/resources/Penerbitan/Laporan/Umum/NDR_Report_2023_Final.pdf"]
+    },
+    {
+      "claim_id": "PP1.3-c",
+      "claim": "Indonesia SKI 2023: 32% HbA1c <7%; fewer than 5% met composite behavioral-clinical targets",
+      "sources": ["Lancet Regional Health Western Pacific + PMC 12681878 (same article, two access paths)"],
+      "score": "low",
+      "note": "Chain-of-citations: same underlying article. Single source.",
+      "override": "chain-of-citations"
+    },
+    {
+      "claim_id": "PP1.3-d",
+      "claim": "Prolanis Indonesia: 69% of health centres lack qualified staff; implementation barriers include inadequate skill-mix and overburdened nurses",
+      "sources": ["PMC 12538241 (primary-academic)"],
+      "score": "low",
+      "note": "Single primary-academic source."
+    },
+    {
+      "claim_id": "PP1.3-e",
+      "claim": "Mobile phone reminders in Malaysia: SMS + call improved adherence from 54.6% to 92.2%; missed appointments reduced from 35.5% to 14.0%",
+      "sources": ["PMC 5433794 (primary-academic)"],
+      "score": "low",
+      "note": "Single primary-academic source. Frequently cited across PP1.2, PP1.3, and PP1.4 — same paper used as foundation for multiple distinct claims throughout the draft. Single paper = 1 source per citation. Low per rubric."
+    },
+    {
+      "claim_id": "PP1.3-f",
+      "claim": "Private clinics handle approximately 60% of outpatient consultations in ASEAN NCD management",
+      "sources": ["PMC 7371561 (primary-academic)"],
+      "score": "low",
+      "note": "Single primary-academic source. ASEAN-regional figure applied to Indonesia/Malaysia specifically — APAC-as-proxy concern (the figure is ASEAN-wide, not country-specific). Geography-mismatch flag.",
+      "flags": ["geography-mismatch-ASEAN-aggregate-used-as-ID-MY-proxy"],
+      "override": "apac-as-proxy"
+    },
+    {
+      "claim_id": "PP1.3-g",
+      "claim": "Malaysia EnPHC: human resource constraints, workflow modification needed, task sharing required for primary care CDM",
+      "sources": ["PMC 7799751 (primary-academic)"],
+      "score": "low",
+      "note": "Single primary-academic source."
+    },
+    {
+      "claim_id": "PP1.4-a",
+      "claim": "No-show rates: 28% at Hospital Kuala Lumpur; 35% at tertiary dietetic clinic (southern Malaysia); 15–30% global primary care range; can reach 50% in some settings",
+      "sources": ["PMC 11436967 (primary-academic)"],
+      "score": "low",
+      "note": "Single primary-academic source. HKL is a public tertiary hospital, not a private GP clinic — setting mismatch for applying no-show rates to private primary care. Geography is Malaysia (correct country) but setting is wrong tier.",
+      "flags": ["setting-mismatch-public-tertiary-hospital-as-proxy-for-private-GP"]
+    },
+    {
+      "claim_id": "PP1.4-b",
+      "claim": "Hospital Kuala Lumpur ML study: 28% no-show rate on 2019 appointment data; gradient boosting model achieved 78% prediction accuracy",
+      "sources": ["PMC 10624443 (primary-academic)"],
+      "score": "low",
+      "note": "Single primary-academic source."
+    },
+    {
+      "claim_id": "PP1.4-c",
+      "claim": "Revenue loss from no-shows: 28% no-show × 50 slots/day × RM 35–80 = RM 490–1,120/day",
+      "sources": ["PMC 11436967 (primary-academic, for 28% rate)", "CodeBlue/MPCAM (secondary-trade, for RM35–80 consult fee range)"],
+      "score": "medium",
+      "note": "Two independent sources for two components of the calculation. PMC for no-show rate; CodeBlue for consultation fee (proposed increase range, not yet enacted). Meets Medium (2+ sources ≥1 primary). Caveat: RM35–80 range includes proposed-but-not-yet-enacted fee increases (MPCAM proposal) — current regulatory cap is RM10–35. The calculation may overstate current revenue using proposed fee levels."
+    },
+    {
+      "claim_id": "PP1.4-d",
+      "claim": "Malaysia healthcare administration staff salary RM 2,249–3,910 per month",
+      "sources": ["Indeed Malaysia (secondary-trade, job posting site)", "ASEAN Briefing (secondary-trade)"],
+      "score": "low",
+      "note": "Two secondary-trade sources, same category. No primary (DOSM wage statistics, EPF, or MOH HR data). Low."
+    },
+    {
+      "claim_id": "PP1.4-e",
+      "claim": "US per-slot no-show cost $150–200",
+      "sources": ["Curogram vendor blog (auto-low-vendor)"],
+      "score": "low",
+      "note": "Curogram is a healthcare messaging/scheduling vendor. This claim on a vendor blog about a cost figure in the vendor's area of business. Auto-Low vendor-marketing override. Draft correctly notes this is adjusted downward for MY/ID but the source itself is still auto-Low.",
+      "override": "vendor-marketing"
+    }
+  ],
+
+  "override_triggers": [
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "triggered_by": ["Statista (VC5, VC6)", "Ken Research (VC4)"],
+      "claim_count": 3,
+      "claim_ids": ["VC4", "VC5", "VC6"]
+    },
+    {
+      "override": "single-trade-source",
+      "triggered_by": ["eclinic.id for BPJS capitation rate (VC8)"],
+      "claim_count": 1,
+      "claim_ids": ["VC8"]
+    },
+    {
+      "override": "vendor-marketing",
+      "triggered_by": ["gooddoctor.co.id (VC14)", "protecthealth.com.my (VC15)", "Curogram blog (PP1.4-e)"],
+      "claim_count": 3,
+      "claim_ids": ["VC14", "VC15", "PP1.4-e"]
+    },
+    {
+      "override": "chain-of-citations",
+      "triggered_by": ["Lancet PIIS2666-6065 + PMC 12681878 are same article (PP1.2-g, PP1.3-c)"],
+      "claim_count": 2,
+      "claim_ids": ["PP1.2-g", "PP1.3-c"]
+    },
+    {
+      "override": "outdated-source",
+      "triggered_by": ["AAFP FPM 2002 for PP1.2-c (>20 years old)"],
+      "claim_count": 1,
+      "claim_ids": ["PP1.2-c"]
+    },
+    {
+      "override": "apac-as-proxy",
+      "triggered_by": ["PMC 7371561 ASEAN-wide 60% private sector share applied to specific ID/MY (PP1.3-f)"],
+      "claim_count": 1,
+      "claim_ids": ["PP1.3-f"]
+    },
+    {
+      "override": "single-source",
+      "notes": "Numerous claims throughout both drafts are sourced from a single source only — including VC3, VC7, VC9, VC10, VC20, PP1.1-a through PP1.1-k, PP1.2 through PP1.4. The draft systematically uses 1-source footnoting for specific country statistics."
+    },
+    {
+      "override": "draft-overscored-items",
+      "note": "The draft explicitly scores VC5 (Malaysia opex) as Medium, VC7 (MY GP fee) as High, and VC8 (BPJS capitation) as High in the market size table. All three are overridden to Low by rubric application. These are the most significant scoring disagreements."
+    }
+  ],
+
+  "draft_scoring_disagreements": [
+    {
+      "claim_id": "VC5",
+      "draft_score": "Medium",
+      "validator_score": "Low",
+      "reason": "Statista is a market-research aggregator — aggregator auto-downgrade overrides draft's Medium"
+    },
+    {
+      "claim_id": "VC7",
+      "draft_score": "High",
+      "validator_score": "Low",
+      "reason": "Two secondary sources (CodeBlue + Bernama) do not meet High or Medium threshold. Underlying primary (Schedule 7 / MOH Madani announcement) not directly cited."
+    },
+    {
+      "claim_id": "VC8",
+      "draft_score": "High",
+      "validator_score": "Low",
+      "reason": "eclinic.id is a secondary-trade blog. Underlying primary PMK No. 3/2023 regulation text not directly cited."
+    },
+    {
+      "claim_id": "VC9",
+      "draft_score": "High",
+      "validator_score": "Low",
+      "reason": "CodeBlue is a single secondary-trade source reporting on NHMS 2023. NHMS 2023 PDF not directly cited. 1 source = Low."
+    }
+  ],
+
+  "weak_claims": [
+    {
+      "claim_id": "VC7",
+      "claim": "Malaysia private GP consultation fee capped at RM10–RM35; Madani Scheme raised to RM35 from Sept 2023",
+      "current_score": "low",
+      "reason": "Two secondary sources only (CodeBlue + Bernama). Underlying regulatory primary (Schedule 7, Act 586; Madani Scheme ministerial gazette) not directly cited.",
+      "suggested_deep_research": "Fetch Malaysia Private Healthcare Facilities and Services Act 1998 (Act 586) Schedule 7 from AGC Malaysia (www.agc.gov.my) or Federal Gazette entry; alternatively fetch Ministry of Health Malaysia official press release on Madani Medical Scheme rate revision Sept 2023 from www.moh.gov.my. These are primary-ministry sources.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC8",
+      "claim": "BPJS capitation rate IDR 9,000–16,000 per patient per month under PMK No. 3/2023",
+      "current_score": "low",
+      "reason": "Single secondary-trade blog (eclinic.id). PMK No. 3/2023 is a primary-ministry document (Indonesian Ministry of Health Regulation) that is publicly available.",
+      "suggested_deep_research": "Fetch Peraturan Menteri Kesehatan No. 3 Tahun 2023 from JDIH.kemkes.go.id or Kemenkes regulation portal. URL pattern: https://peraturan.go.id/jdih/peraturan-menteri-kesehatan/. This would upgrade to primary-ministry and enable direct verification of the IDR 9,000–16,000 range.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC9",
+      "claim": "NHMS 2023: diabetes 15.6%, hypertension 29.2%, hypercholesterolaemia 33.3%; 2.3M adults with 3+ NCDs",
+      "current_score": "low",
+      "reason": "Single secondary source (CodeBlue) citing NHMS 2023. The primary source (NHMS 2023 published report by Malaysia Institute for Public Health) is a government statistics document.",
+      "suggested_deep_research": "Fetch NHMS 2023 PDF directly from IPH Malaysia: https://iku.moh.gov.my/publications/nhms or search 'National Health Morbidity Survey 2023 Malaysia Institute for Public Health PDF'. This is primary-gov and would upgrade this claim to High alongside NHMS data.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC10",
+      "claim": "Indonesia EMR/SATUSEHAT adoption: ~8.9% of eligible FKTPs registered (3,533 of 39,852)",
+      "current_score": "low",
+      "reason": "Single arXiv preprint (2512.05381). This figure is cited 4+ times across both drafts, making it a high-impact structural claim. The underlying data derives from SATUSEHAT/Kemenkes registration records — a primary-gov source. The preprint processes this data but the raw figures should be confirmable from SATUSEHAT official statistics.",
+      "suggested_deep_research": "Search SATUSEHAT portal statistics page: https://satusehat.kemkes.go.id/ for FKTP registration counts. Also search Kemenkes Pusdatin (Pusat Data dan Informasi Kemenkes) annual report 2024 for fascilities registration data. This would upgrade from single preprint to primary-gov/primary-ministry.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP1.2-f",
+      "claim": "Malaysia NDR 2023: 34.38% of registered diabetes patients at HbA1c ≤6.5%; 65.62% not at target",
+      "current_score": "low",
+      "reason": "Cited as primary-ministry (MOH Malaysia NDR 2023 PDF) but URL returned 404. NEEDS-ATTENDED-FETCH. Critical quantitative claim used for CDM recall pain point sizing in both PP1.2 and PP1.3.",
+      "suggested_deep_research": "Fetch https://www.moh.gov.my/moh/resources/Penerbitan/Laporan/Umum/NDR_Report_2023_Final.pdf with Playwright/attended browser. Alternatively search 'Malaysia National Diabetes Registry Report 2023 MOH' for current URL. If 404, try: https://www.crc.gov.my/ (Clinical Research Centre Malaysia maintains NDR). This single successful fetch would upgrade to primary-ministry and support High if another independent source corroborates.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP1.3-e",
+      "claim": "Mobile SMS+call reminders in Malaysia: adherence 54.6%→92.2%; missed appointments 35.5%→14.0%",
+      "current_score": "low",
+      "reason": "Single primary-academic source (PMC 5433794). This is the most-cited claim in the CDM recall section — used as the core evidence for the AI recall uplift estimates.",
+      "suggested_deep_research": "Find a second independent RCT or cohort study on SMS/call reminders in Malaysian or ASEAN primary care CDM context. Search PubMed: 'SMS reminder adherence primary care diabetes Malaysia' or 'mobile phone intervention chronic disease Southeast Asia'. Cochrane review on appointment reminders in LMICs would also qualify.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP1.4-a",
+      "claim": "No-show rates: 28% at Hospital Kuala Lumpur; 35% at tertiary dietetic clinic; 15–30% global primary care range",
+      "current_score": "low",
+      "reason": "Single PMC source (11436967). HKL is public tertiary hospital — setting mismatch for private GP clinic no-show extrapolation. No published private GP clinic no-show rate found.",
+      "suggested_deep_research": "Search PubMed 'outpatient no-show rate private clinic Malaysia' or 'appointment non-attendance primary care Malaysia'. Also check Malaysia MOH Health Facts publications. If private-sector-specific data unavailable, a second independent study from any Malaysian or regional clinical setting would upgrade this to Medium.",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "PP1.1-a",
+      "claim": "Documentation consumes approximately 6–10 min per consultation",
+      "current_score": "low",
+      "reason": "Single medRxiv preprint. Global/US benchmark with no direct ID/MY measurement.",
+      "suggested_deep_research": "Find a second independent time-motion study on GP consultation documentation time in Southeast Asian or similar LMIC primary care setting. Alternatively, search: 'consultation documentation time general practice Asia' in PubMed. The ambient scribe literature (DAX/Nabla papers) may contain baseline documentation time data as a secondary finding.",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "PP1.1-b",
+      "claim": "GP fully loaded cost $15–20/hr (Malaysia) or $10–14/hr (Indonesia)",
+      "current_score": "low",
+      "reason": "Salary aggregator websites (SalaryExpert/PayScale/Jobstreet/WorldSalaries) — no primary government statistics source.",
+      "suggested_deep_research": "Search for Malaysia DOSM (Department of Statistics Malaysia) Labour Force Survey salary data for Medical Practitioners (ISCO 2211), or Malaysia Medical Association salary benchmarks 2023–2024. For Indonesia, BPS wage structure statistics by occupation (Statistik Upah BPS). These are primary-gov sources.",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "VC3",
+      "claim": "Total JKN FKTP outpatient visits 376.58 million January–September 2024",
+      "current_score": "low",
+      "reason": "Single source, even though primary-ministry (DJSN Monthly Report). The underlying data source (BPJS Kesehatan operational statistics) could provide a second independent confirmation.",
+      "suggested_deep_research": "Cross-reference against BPJS Kesehatan Annual Report 2024 or official BPJS statistical release: https://bpjs-kesehatan.go.id/bpjs/laporan. The BPJS annual report is a separate primary-ministry source that should contain FKTP visit statistics.",
+      "priority": "low"
+    }
+  ],
+
+  "assumed_tags": [
+    {
+      "id": "VC-ASSUMED-1",
+      "source_doc": "stage-1-value-chain.md",
+      "claim": "Administrative labour (front-desk + clinic assistant) accounts for 20–30% of operating cost at a typical 3-room klinik pratama in Indonesia",
+      "validation_question": "What is the average monthly wage bill for non-physician staff (front-desk + clinic assistants) vs. total monthly operating expense at a 3-room klinik pratama in Jakarta or Surabaya? Reference: BPS minimum wage data for DKI Jakarta (UMK) as floor; ask clinic operators for actual figures."
+    },
+    {
+      "id": "VC-ASSUMED-2",
+      "source_doc": "stage-1-value-chain.md",
+      "claim": "Drug dispensing accounts for 50–70% of total revenue at a typical independent Malaysia private GP clinic",
+      "validation_question": "What is the dispensing-to-consultation revenue ratio at a representative independent private GP clinic in Klang Valley or Penang? Cross-check against Zin et al. 2023 (PMC 10284298) academic estimate and interview data from GP owners."
+    },
+    {
+      "id": "VC-ASSUMED-3",
+      "source_doc": "stage-1-value-chain.md",
+      "claim": "A typical independent private klinik pratama in Jakarta/Surabaya sees 40–80 patients per day (~10,000–20,000 visits/year)",
+      "validation_question": "What is the average daily patient volume at Klinik Pintar's 22 own clinics in Greater Jakarta? Request operational data or ask clinic owners. Compare to Kimia Farma Klinik operational averages."
+    },
+    {
+      "id": "VC-ASSUMED-4",
+      "source_doc": "stage-1-value-chain.md",
+      "claim": "Majority of private GP clinics in Malaysia do not use WhatsApp Business API for patient follow-up — personal WhatsApp is dominant",
+      "validation_question": "Survey 5–10 independent GP clinic front-desk staff in Klang Valley: 'Do you use a dedicated scheduling system or personal WhatsApp for appointment reminders?' Compare to WhatsApp Business API adoption rates in MY SME context (MDEC data if available)."
+    },
+    {
+      "id": "VC-ASSUMED-5",
+      "source_doc": "stage-1-value-chain.md",
+      "claim": "PROLANIS recall lists at Indonesian klinik pratama are generated manually rather than from automated EMR exports in the majority of clinics",
+      "validation_question": "Ask 5+ BPJS PCARE-enrolled klinik pratama: 'How do you identify which PROLANIS patients are overdue for their monthly check?' If >70% report manual/paper method, assumption confirmed. Reference: P4H/WHO PROLANIS review."
+    },
+    {
+      "id": "PP-ASSUMED-1",
+      "source_doc": "stage-1-pain-points.md",
+      "claim": "50-consult/day clinic could absorb 8–12 additional consultations if documentation time reduced 50% (ambient scribe benchmark)",
+      "validation_question": "What is the average daily utilization rate (% of slots filled) at private GP clinics in MY/ID? If clinics are already at capacity, throughput uplift is not recoverable. Ask clinic operators: 'On a typical weekday, what fraction of scheduled slots are filled?'"
+    },
+    {
+      "id": "PP-ASSUMED-2",
+      "source_doc": "stage-1-pain-points.md",
+      "claim": "Dual-entry rework for BPJS PCare eclaim entry estimated at 3–5 additional minutes per BPJS patient",
+      "validation_question": "Conduct a time-motion study at 3–5 Indonesian private clinics: measure total time from end of consultation to BPJS PCare eclaim submission confirmation. Compare clinics with integrated EMR-to-PCare vs. manual double-entry workflows."
+    },
+    {
+      "id": "PP-ASSUMED-3",
+      "source_doc": "stage-1-pain-points.md",
+      "claim": "Commercial ambient voice scribe word-error rate (WER) for Bahasa Indonesia and code-switched Malaysian medical conversations is unknown",
+      "validation_question": "Request in-language validation data from: Nuance DAX, Nabla, Heidi Health, or Klinik Pintar's technology partners. Search arXiv/PubMed for 'automatic speech recognition Bahasa Indonesia medical' or 'clinical ASR Malaysia multilingual'."
+    },
+    {
+      "id": "PP-ASSUMED-4",
+      "source_doc": "stage-1-pain-points.md",
+      "claim": "Actual missed lab follow-up rate at private GP clinics in MY/ID operating without structured result-tracking is unknown; 7% global estimate used as floor",
+      "validation_question": "Conduct chart audit at 3–5 private GP clinics in KL and Jakarta: for patients with lab orders in the past 6 months, what % had documented follow-up within 30 days of abnormal result? This is the key validation needed for PP1.2 pain sizing."
+    },
+    {
+      "id": "PP-ASSUMED-5",
+      "source_doc": "stage-1-pain-points.md",
+      "claim": "Time on manual lab triage estimated at 15–30 min/day for a clinic with 20+ lab-active CDM patients",
+      "validation_question": "Time-motion observation at 2–3 private GP clinics in KL/Jakarta: measure time from lab result receipt to GP annotation + patient notification per result, multiplied by daily volume."
+    },
+    {
+      "id": "PP-ASSUMED-6",
+      "source_doc": "stage-1-pain-points.md",
+      "claim": "PDF/fax/email is the dominant lab result delivery format at Malaysian and Indonesian private GP clinics; HL7 interface penetration assumed negligible",
+      "validation_question": "Interview Sonic Healthcare MY, Quest Diagnostics MY/ID, Clinipath, Gribbles, Prodia: 'What % of your private GP clinic customers receive results via HL7/FHIR interface vs. PDF email vs. fax?' This is a critical format assumption for the OCR/NER automation case."
+    },
+    {
+      "id": "PP-ASSUMED-9",
+      "source_doc": "stage-1-pain-points.md",
+      "claim": "Manual CDM phone recall requires 5–10 min per patient contact; 200 overdue CDM patients/month = 17–33 staff-hours/month",
+      "validation_question": "Time-motion observation: have clinic staff perform 10 CDM recall calls and log start-to-finish time per call. 17–33 staff-hours/month at RM10–15/hr = RM170–495 labor cost — ask clinic operators if this matches their experience."
+    },
+    {
+      "id": "PP-ASSUMED-12",
+      "source_doc": "stage-1-pain-points.md",
+      "claim": "No published direct measurement of CDM default/recall rate specifically at private commercial GP clinics in Indonesia or Malaysia",
+      "validation_question": "Conduct a 3-month chart audit at 3–5 private GP clinics in KL and Jakarta measuring the 3-month and 6-month return rates for CDM patients (DM, HTN). Compare to Posbindu proxy data (42.2%) and public sector benchmarks."
+    },
+    {
+      "id": "PP-ASSUMED-18",
+      "source_doc": "stage-1-pain-points.md",
+      "claim": "Indonesian private clinic no-show rate assumed similar to Malaysia 15–30% range; no published Indonesian private clinic no-show data found",
+      "validation_question": "Request appointment log data from Klinik Pintar or Klinik+ for 3-month period: % of booked appointments that were no-shows. Compare to MY HKL 28% baseline. This is a data gap that directly affects PP1.4 uplift sizing."
+    }
+  ],
+
+  "geography_mismatch_flags": [
+    {
+      "claim_id": "PP1.1-a",
+      "flag": "global-benchmark-to-ID-MY",
+      "description": "Documentation time 6–10 min per consult is from a global/US ambient scribe study (medRxiv). Applied to Indonesian and Malaysian private GP context without direct ID/MY time-motion data."
+    },
+    {
+      "claim_id": "PP1.1-h",
+      "flag": "US-study-to-ID-MY",
+      "description": "ICD-10 coding accuracy study (PMC 5977598) involved 23 US ambulatory clinicians. Applied to Indonesian and Malaysian GP coding practices without direct SEA-context validation."
+    },
+    {
+      "claim_id": "PP1.2-a",
+      "flag": "US-primary-care-to-ID-MY",
+      "description": "7.1% follow-up failure rate (PMC 2878665) comes from US primary care practices. The draft correctly notes 'at private clinics with paper-based or non-integrated systems, the failure rate is expected to be substantially higher' — this is a conservative floor extrapolation, not a direct measure."
+    },
+    {
+      "claim_id": "PP1.2-d",
+      "flag": "US-to-ID-MY",
+      "description": "57 alerts/day, ~1 hr inbox (PMC 5593724) from US primary care EHR context. In Indonesian private clinics without EHR, this specific metric does not apply directly — the draft applies it as context."
+    },
+    {
+      "claim_id": "PP1.3-a",
+      "flag": "public-community-screening-to-private-GP",
+      "description": "Posbindu/Aceh Besar NCD follow-up 42.2% completion is from a community public health screening programme (Posbindu), not from a private GP clinic recall. Setting mismatch as proxy for private clinic CDM default rates."
+    },
+    {
+      "claim_id": "PP1.3-f",
+      "flag": "ASEAN-aggregate-to-ID-MY",
+      "description": "PMC 7371561 '60% of ASEAN outpatient consultations at private sector' is an ASEAN-wide figure. Country-specific private sector shares in Indonesia vs. Malaysia differ and are not separately cited.",
+      "override_applied": "apac-as-proxy"
+    },
+    {
+      "claim_id": "PP1.4-a",
+      "flag": "public-tertiary-to-private-GP",
+      "description": "No-show rate 28% from Hospital Kuala Lumpur (major public tertiary facility). Private GP clinic no-show dynamics may differ. The draft applies this as a proxy with acknowledgment."
+    }
+  ],
+
+  "needs_attended_fetch": [
+    {
+      "url": "https://www.moh.gov.my/moh/resources/Penerbitan/Laporan/Umum/NDR_Report_2023_Final.pdf",
+      "reason": "Malaysia National Diabetes Registry 2023 — primary-ministry source for NDR HbA1c control rate. 404 at index time. Used for PP1.2-f and PP1.3-b (two critical CDM pain point claims). Priority: HIGH."
+    },
+    {
+      "url": "https://fasyankes.kemkes.go.id/",
+      "reason": "Kemenkes Indonesia health facilities registry — direct primary-ministry confirmation for VC1 (total klinik pratama count). Currently sourced via ehealth.co.id secondary summary."
+    },
+    {
+      "url": "https://www.midf.com.my/sites/corporate/files/2025-05/thematic-malaysia_healthcare-midf-050525_2.pdf",
+      "reason": "MIDF Healthcare Thematic Report May 2025 — secondary-analyst source for VC2 (Malaysia clinic count). Fetch to verify clinic count figure and source quality."
+    },
+    {
+      "url": "https://peraturan.go.id/jdih/search?q=PMK+No+3+2023",
+      "reason": "PMK No. 3/2023 (Permenkes 3/2023) — Indonesian Ministry of Health Regulation establishing BPJS capitation rates. Direct fetch would upgrade VC8 from Low (eclinic.id blog) to primary-ministry."
+    },
+    {
+      "url": "https://medicoplus.co.id",
+      "reason": "Existence verification for 'Medico Plus' clinic name mentioned in value chain text. Domain existence unverified."
+    }
+  ],
+
+  "high_tier_claims_with_evidence": [
+    {
+      "claim_id": "PP1.1-c",
+      "claim_text": "Documentation accounts for approximately 35% of active consultation time globally; ambulatory physicians spend close to 2 hours on EHR/admin for every 1 hour with a patient",
+      "sources_used": [
+        {
+          "url": "https://www.medrxiv.org/content/10.64898/2026.01.12.26343538.full.pdf",
+          "classification": "primary-academic (preprint)",
+          "evidence_quote": "",
+          "section_pointer": "medRxiv preprint Jan 2026 — longitudinal ambient scribe study — documentation time baseline and reduction data",
+          "fetch_status": "not-fetched — preprint PDF; verbatim extraction not attempted within budget"
+        },
+        {
+          "url": "https://www.ama-assn.org/practice-management/physician-health/doctors-work-fewer-hours-ehr-still-follows-them-home",
+          "classification": "secondary-trade (AMA publication)",
+          "evidence_quote": "",
+          "section_pointer": "AMA EHR burden article — 2:1 EHR:patient time ratio claim",
+          "fetch_status": "not-fetched — within budget constraints"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10134123/",
+          "classification": "primary-academic",
+          "evidence_quote": "",
+          "section_pointer": "PMC 10134123 — physician burnout and EHR documentation burden study",
+          "fetch_status": "not-fetched"
+        }
+      ],
+      "evidence_quote_gaps": [
+        {
+          "reason": "No verbatim extraction attempted for High claims in this first pass. Sources require individual fetch. Flag for attended-fetch in deep-research pass.",
+          "urls_affected": ["medRxiv 2026.01.12", "ama-assn.org/ehr", "PMC10134123"]
+        }
+      ]
+    },
+    {
+      "claim_id": "PP1.1-d",
+      "claim_text": "26% of primary care physicians globally name documentation as their primary stressor; documentation burden is the leading EHR-linked contributor to physician burnout",
+      "sources_used": [
+        {
+          "url": "https://www.tebra.com/theintake/ehr-emr/how-documentation-became-top-cause-of-physician-burnout",
+          "classification": "secondary-trade (Tebra/The Intake vendor publication)",
+          "evidence_quote": "",
+          "section_pointer": "Tebra/The Intake — 26% documentation stressor statistic",
+          "fetch_status": "not-fetched"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10134123/",
+          "classification": "primary-academic",
+          "evidence_quote": "",
+          "section_pointer": "PMC 10134123 — EHR burnout",
+          "fetch_status": "not-fetched"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11534919/",
+          "classification": "primary-academic",
+          "evidence_quote": "",
+          "section_pointer": "AHRQ/PMC 11534919 — documentation burden",
+          "fetch_status": "not-fetched"
+        }
+      ],
+      "evidence_quote_gaps": [
+        {
+          "reason": "Verbatim extraction not attempted for High claims in first pass. Requires attended fetch. Note: 26% figure originates from Tebra vendor publication — this specific statistic should be traced to its underlying survey methodology.",
+          "urls_affected": ["tebra.com/theintake", "PMC10134123", "PMC11534919"]
+        }
+      ]
+    },
+    {
+      "claim_id": "PP1.2-a",
+      "claim_text": "7.1% of clinically significant abnormal outpatient lab results lack timely follow-up even with automated EHR notification; variation across practices is 0–26%",
+      "sources_used": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2878665/",
+          "classification": "primary-academic",
+          "evidence_quote": "",
+          "section_pointer": "PMC 2878665 — failure to inform patients of clinically significant outpatient test results",
+          "fetch_status": "not-fetched",
+          "note": "Chain-of-citations risk: verify this paper independently reports 7.1% and is not the same study being cited via AHRQ PSNet"
+        },
+        {
+          "url": "https://psnet.ahrq.gov/issue/frequency-failure-inform-patients-clinically-significant-outpatient-test-results",
+          "classification": "primary-gov (AHRQ PSNet)",
+          "evidence_quote": "",
+          "section_pointer": "AHRQ PSNet — frequency of failure to inform patients of outpatient test results",
+          "fetch_status": "not-fetched",
+          "note": "AHRQ PSNet may be citing PMC 2878665 as its primary source — if so, chain-of-citations reduces to 1 source and score drops to Low"
+        }
+      ],
+      "evidence_quote_gaps": [
+        {
+          "reason": "Verbatim extraction not attempted in first pass. The chain-of-citations risk for this claim (AHRQ PSNet potentially citing the same PMC study) should be verified before treating as High. Recommend attended fetch of the AHRQ PSNet page to identify the underlying primary paper cited.",
+          "urls_affected": ["PMC2878665", "AHRQ PSNet follow-up failure page"]
+        }
+      ]
+    }
+  ],
+
+  "evidence_quote_gaps": [
+    {
+      "claim_id": "PP1.1-c",
+      "reason": "Three sources — preprint PDF, AMA web article, PMC paper — not fetched. Verbatim extraction deferred to deep-research pass."
+    },
+    {
+      "claim_id": "PP1.1-d",
+      "reason": "Three sources not fetched. Note specific concern: the 26% statistic originates from a vendor (Tebra) publication — verify this is reporting published research vs. Tebra's own survey."
+    },
+    {
+      "claim_id": "PP1.2-a",
+      "reason": "Two sources not fetched. Critical: verify AHRQ PSNet page independence from PMC 2878665 to confirm High vs. Medium/Low downgrade."
+    }
+  ],
+
+  "structural_observations": [
+    "SINGLE-PREPRINT DEPENDENCY: The arXiv preprint 2512.05381 is cited 4+ times across both drafts (VC10, PP1.1-e, PP1.2-i, PP1.1-j RC2) as the sole or primary source for all Indonesia SATUSEHAT/EMR adoption figures. This is a single unreviewed preprint anchoring multiple critical claims. If the preprint's methodology is challenged, several pain point arguments lose their empirical foundation.",
+    "SINGLE-PAPER CDM ADHERENCE ANCHOR: PMC 5433794 (mobile SMS reminder trial in Malaysia) is cited as the primary evidence for CDM recall uplift estimates in PP1.2, PP1.3, and PP1.4. A single RCT is the basis for projected 54.6%→92.2% adherence improvement. This paper should be supplemented with at least one independent replication.",
+    "NDR 2023 INACCESSIBLE: The Malaysia NDR 2023 PDF (primary-ministry) is cited for key diabetes control statistics in PP1.2 and PP1.3 but the URL is a 404. This is the single most impactful unresolved source issue — it anchors the '65.62% of Malaysian diabetes patients not at target' claim that frames the entire CDM recall pain point.",
+    "BPJS CAPITATION UNDERLINKED: The PMK No. 3/2023 regulation establishing BPJS capitation rates (VC8) is cited only via a secondary-trade blog (eclinic.id). The actual Kemenkes regulation is publicly available and should be directly cited — a straightforward upgrade from Low to primary-ministry.",
+    "VENDOR-MARKETING FOR PLAYER COUNTS: Good Doctor (VC14), ProtectHealth (VC15), and implicitly Halodoc (VC19) are sourced from or inferred from vendor marketing pages. Player section should be cross-validated with independent sources (e.g., BPJS panel clinic lists, trade press, regulatory filings).",
+    "DRAFT OVERCLAIMS HIGH CONFIDENCE: The value chain market size table explicitly labels VC7 (MY GP fee), VC8 (BPJS capitation), and VC9 (NHMS NCD data) as High confidence. By rubric application, all three are Low. These are the most significant confidence inflation points in the draft."
+  ],
+
+  "gate_decision_recommendation": "ship-with-flag",
+  "gate_reasoning": "The draft contains strong structural research — four coherent pain points with defensible logic chains and appropriate use of global benchmarks. However, 80% of scored claims are Low-confidence under the rubric, primarily because the draft relies heavily on single sources, secondary-trade citations for regulatory facts that have available primary sources, and one unreviewed preprint (arXiv 2512.05381) as the anchor for Indonesia EMR statistics. Deep-research should focus on five high-priority upgrades: (1) direct fetch of PMK No. 3/2023 for BPJS capitation, (2) direct fetch of NHMS 2023 PDF for Malaysia NCD prevalence, (3) direct fetch of SATUSEHAT registration statistics from Kemenkes portal for EMR adoption, (4) direct fetch of Schedule 7/Act 586 for Malaysia consultation fee cap, and (5) a second independent RCT for CDM SMS reminder adherence improvement. These five fetches would convert the highest-impact Low claims to Medium or High and substantially alter the confidence profile. The underlying research quality is sufficient to ship conditionally — the gate flag is for the specific uncorrected claims, not the overall analytical framework.",
+
+  "notes": "First pass only — deep-research has not yet run. High-tier claims evidence quotes not extracted in this pass (all three High claims flagged for attended fetch in deep-research pass). The 80% Low rate reflects strict rubric application, not poor underlying research — most Low claims would upgrade to Medium with a second independent source, which is achievable for the regulatory-fact claims (PMK 3/2023, Act 586 Schedule 7, NHMS 2023) through direct primary-source fetches."
+}

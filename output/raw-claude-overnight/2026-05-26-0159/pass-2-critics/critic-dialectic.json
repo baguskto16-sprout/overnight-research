@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-05-26T03:30:00Z",
+  "run_id": "2026-05-26-0159",
+  "critic": "dialectic",
+  "findings_assessed": [
+    {
+      "finding_id": "F1",
+      "finding_text": "98.3% CDM cascade leakage across three layers (1,000 NCD-eligible patients funnel to ~17 in controlled CDM management), with Layer 2 anchored at 77.4% leakage from PMC 12021225.",
+      "supporting_stages": ["Stage 4 §4.4 cascade table", "Stage 2 PP2.3", "Stage 5 Layer 2 pilot rationale"],
+      "counter_evidence": [
+        {"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12021225/", "implication": "PMC 12021225 is a South Korean Samsung Electronics study (2013-2016, onsite clinic). Used as Malaysia/Indonesia proxy without geographic disclosure. The 77.4% Layer 2 anchor has no validated SEA corporate MCU analogue in public literature."},
+        {"url": "https://www.thelancet.com/journals/landia/article/PIIS2213-8587(25)00217-7/abstract", "implication": "Lancet GBD 2025 global cascade reports 21% of all diabetics globally in optimal management — directionally consistent with the corpus endpoint but uses general-population framing, not serial corporate-MCU-to-TPA path."}
+      ],
+      "counter_cases_ignored": [
+        "HealthMetrics-integrated MY corporate MCU may have materially different follow-up rates than 22.6% South Korean figure",
+        "Prolanis 56.8% dropout (Layer 3) is East Java public sector — private TPA dynamics may differ",
+        "Cascade serially multiplies leakage rates across non-overlapping cohorts"
+      ],
+      "actionable_gap": true,
+      "severity": "high",
+      "recommended_action": "add-caveat-and-flag-for-field-validation",
+      "suggested_deep_research_question": "Search PubMed for any published Malaysia/Indonesia corporate MCU post-screening CDM follow-up rate; if none exists, flag as primary-data gap requiring HealthMetrics or SOCSO field interview."
+    },
+    {
+      "finding_id": "F2",
+      "finding_text": "67% of MY specialists report GL revocation post-admission (CodeBlue Oct 2025 survey, n=855); anchors sub-step 3a as 3rd highest cost concentration and drives MY Layer 3 pilot rationale.",
+      "supporting_stages": ["Stage 3 PP3.1", "Stage 4 §4.2 Rank 3", "Stage 5 Layer 3 pilot recommendation"],
+      "counter_evidence": [
+        {"url": "https://codeblue.galencentre.org/2025/10/insurance-takaful-industry-touts-90-medical-claims-approval-without-specifying-gl-denial-rate/", "implication": "Insurance industry response (90%+ approval rate) uses different denominator; no audited BNM/TPA GL revocation rate published."},
+        {"url": "https://codeblue.galencentre.org/2025/09/codeblue-polling-specialists-on-patients-health-insurance-problems/", "implication": "CodeBlue survey used convenience sampling via medical association networks distributing survey framed as investigating insurance problems — textbook volunteer/selection bias."}
+      ],
+      "counter_cases_ignored": [
+        "67% figure not decomposed by revocation legitimacy (some may be appropriate policy application)",
+        "Faster-SLA insurers (Generali 1-hr, Allianz 45-min) suggest 6-hr average is upper-bound not median",
+        "BNM Dec 2025 directive + MOF statements indicate active regulatory reform may shift the problem before 2026"
+      ],
+      "actionable_gap": true,
+      "severity": "med",
+      "recommended_action": "add-caveat",
+      "suggested_deep_research_question": "Search BNM Financial Stability Review / LIAM for any audited GL denial rate; relabel 67% as 'specialist perception rate (convenience sample)' and downgrade from High to Medium confidence."
+    },
+    {
+      "finding_id": "F3",
+      "finding_text": "Malaysia Layer 2 sub-step 2d (post-MCU CDM routing via HealthMetrics) is the recommended fastest path to pilot (Stage 5 §5.4 primary recommendation).",
+      "supporting_stages": ["Stage 5 §5.3 Layer 2", "Stage 5 §5.4 milestone sequence", "Stage 5 §5.5 Interview 1"],
+      "counter_evidence": [
+        {"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12021225/", "implication": "22.6% Layer 2 leakage anchor is from 2013-2016 South Korean Samsung onsite clinic — 8-12 years old, structurally distinct setting, no MY/ID equivalent published."},
+        {"url": "https://sihat.perkeso.gov.my/v2/50-general.html", "implication": "SOCSO SEHATi portal may already provide government-mandated CDM referral pathway for HSP-enrolled employers, narrowing addressable market for a third-party AI product."}
+      ],
+      "counter_cases_ignored": [
+        "Indonesia Layer 2 via Prodia sub-step 2c (LIS-to-PDF auto-generation) has fewer open assumptions and no geographic misattribution — may be more evidence-robust",
+        "HealthMetrics itself may build sub-step 2d (becoming a competitor, not partner)",
+        "Stage 5 readiness matrix scores are unweighted averages; uncertainty-weighted ranking could shift the layer/market choice"
+      ],
+      "actionable_gap": true,
+      "severity": "high",
+      "recommended_action": "deep-research-revisit",
+      "suggested_deep_research_question": "(1) Confirm HealthMetrics' current sub-step 2d automation status via product documentation + direct inquiry. (2) Confirm whether SOCSO SEHATi includes post-screening CDM referral workflow for HSP-enrolled employers."
+    }
+  ],
+  "summary": {
+    "total_findings_assessed": 3,
+    "findings_with_counter_evidence": 3,
+    "actionable_gaps": 3,
+    "most_impactful_gap": "F1 and F3 share root cause: PMC 12021225 (22.6% post-MCU CDM follow-up) is South Korean Samsung Electronics, applied as Malaysia/Indonesia proxy without geographic qualification. This single misattribution simultaneously unanchors the WH5 cascade's Layer 2 step (98.3% leakage figure) AND removes quantitative foundation for the primary pilot recommendation. Resolution requires Malaysia/Indonesia-specific corporate MCU post-screening CDM follow-up rate — likely a primary-data gap requiring field validation."
+  }
+}

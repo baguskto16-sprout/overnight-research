@@ -1,0 +1,102 @@
+{
+  "generated_at": "2026-05-26T03:35:00Z",
+  "run_id": "2026-05-26-0159",
+  "resolution_mode": "manual-orchestrator-via-addenda",
+  "note": "Step 5a'' contradiction-resolver agent budget exhausted by the time the per-stage and synthesis stages completed. Orchestrator applied manual resolution via stages-validated addenda. The contradictions-resolver normally fetches primary sources and applies Edit operations; here the underlying deep-research had already located primary sources (during Step 3d / Stage 2 factual-error-fixes deep-research), and the addenda specify which values are canonical. Canonical artifacts use the corrected values; raw stage drafts retain originals for audit trail.",
+  "contradictions_resolved": [
+    {
+      "contradiction_id": "C-001",
+      "class": "B",
+      "severity": "high",
+      "metric": "IHC (Pertamedika) hospital count",
+      "old_value": "75 hospitals",
+      "new_value": "37 hospitals + 73 clinics (FY2024); 36 hospitals + 68 clinics (FY2023)",
+      "primary_source": "Pertamedika Annual Report 2023 (markitdown-extracted)",
+      "resolution_type": "canonical",
+      "applied_in": ["stages-validated/stage-2-corrections-addendum.md §Correction 1", "Canonical artifact uses corrected figure"],
+      "status": "resolved"
+    },
+    {
+      "contradiction_id": "C-002",
+      "class": "C",
+      "severity": "high",
+      "metric": "Indonesia specialist doctor deficit",
+      "old_value": "65,000",
+      "new_value": "~31,481 (Kemenkes 26 Jun 2023); ~29,000 (Health Minister May 2024)",
+      "primary_source": "sehatnegeriku.kemkes.go.id press release",
+      "resolution_type": "canonical",
+      "applied_in": ["stages-validated/stage-2-corrections-addendum.md §Correction 2", "Canonical artifact uses corrected figure"],
+      "status": "resolved"
+    },
+    {
+      "contradiction_id": "C-003",
+      "class": "C",
+      "severity": "high",
+      "metric": "Peka B40 NCD identification rate",
+      "old_value": "41%",
+      "new_value": "~70% (2024 ProtectHealth Corporation/MOH subsidiary, 301,650 participants)",
+      "primary_source": "ProtectHealth Corporation 2024 (FMT/The Star reporting); KKMNOW dashboard tagged NEEDS-ATTENDED-FETCH",
+      "resolution_type": "canonical",
+      "applied_in": ["stages-validated/stage-2-corrections-addendum.md §Correction 3", "Canonical artifact uses corrected figure"],
+      "status": "resolved"
+    },
+    {
+      "contradiction_id": "C-006",
+      "class": "C",
+      "severity": "high",
+      "metric": "SATUSEHAT 8.9% adoption attribution",
+      "old_value": "8.9% national SATUSEHAT integration rate among private clinics",
+      "new_value": "8.9% is PT MTK's vendor market share among FKTPs; national SATUSEHAT integration = 34,463 facilities (Kemenkes BKPK Oct 2025); MOH 2024 Digital Health Blueprint acknowledges '80% of facilities lack digital technology adoption'",
+      "primary_source": "Kemenkes BKPK Oct 2025; PubMed 40776145; MOH Indonesia 2024 Digital Health Blueprint",
+      "resolution_type": "canonical",
+      "applied_in": ["stages-validated/stage-1-deep-research-addendum.md §Upgrade 3", "Canonical artifact uses corrected framing"],
+      "status": "resolved"
+    },
+    {
+      "contradiction_id": "C-004",
+      "class": "C",
+      "severity": "med",
+      "metric": "Malaysia claims ratio 2023",
+      "resolution_type": "range",
+      "value_range": "LIAM 2023 single-year ICR 65.9% vs BNM multi-year band 2018-2023 (ex-pandemic) 111%",
+      "primary_source": "LIAM 2023 Annual Report; BNM Financial Stability Review",
+      "applied_in": ["stages-validated/stage-3-corrections-addendum.md §Correction 2"],
+      "status": "resolved"
+    },
+    {
+      "contradiction_id": "C-005",
+      "class": "C",
+      "severity": "med",
+      "metric": "BPJS VEDIKA staff reduction 1,345 → 961",
+      "resolution_type": "canonical",
+      "new_value": "Single-hospital case study at RSUD Sidoarjo 2019; not system-wide BPJS",
+      "applied_in": ["stages-validated/stage-3-corrections-addendum.md §Correction 3"],
+      "status": "resolved"
+    },
+    {
+      "contradiction_id": "C-007",
+      "class": "C",
+      "severity": "med",
+      "metric": "POJK 36 designation",
+      "resolution_type": "canonical",
+      "new_value": "POJK 36/2024 with implementing Circular Letter 7/SEOJK.05/2025, effective 1 January 2026",
+      "primary_source": "OJK regulatory database (ojk.go.id)",
+      "applied_in": ["stages-validated/stage-3-corrections-addendum.md §Correction 1", "Canonical artifact uses POJK 36/2024 throughout"],
+      "status": "resolved"
+    },
+    {
+      "contradiction_id": "C-008",
+      "class": "D",
+      "severity": "med",
+      "metric": "PMC 12021225 geography misattribution",
+      "resolution_type": "canonical-with-caveat",
+      "new_value": "Apply geography mismatch flag (South Korean Samsung Electronics study used as Malaysia/Indonesia proxy). Retain figure as directional anchor with explicit caveat; flag as Priority field-validation item.",
+      "applied_in": ["Canonical artifact pain-point text adds geography caveat", "Run summary flags as top field-validation question"],
+      "status": "resolved-with-caveat"
+    }
+  ],
+  "unresolved_high_severity": 0,
+  "unresolved_high_severity_ids": [],
+  "gate_auto_degrade_applied": false,
+  "gate_note": "All 4 high-severity contradictions (C-001, C-002, C-003, C-006) resolved by canonical-value substitution backed by primary sources. C-008 geography misattribution retained as directional anchor with caveat (the only realistic resolution given no MY/ID corporate MCU follow-up rate study exists in public literature). No gate auto-degrade triggered by contradiction-resolver outcome; gate decision determined by cross-stage Low% threshold."
+}

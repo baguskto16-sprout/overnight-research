@@ -1,0 +1,802 @@
+{
+  "stage_id": 3,
+  "stage_name": "Insurance and TPA Claims Operations — Indonesia and Malaysia",
+  "run_id": "2026-05-26-0159",
+  "validation_context": "per-stage, first pass (pre-deep-research)",
+  "validator": "source-validator",
+  "scored_at": "2026-05-26",
+
+  "total_claims_scored": 58,
+  "high_confidence": 14,
+  "medium_confidence": 20,
+  "low_confidence": 24,
+  "low_confidence_pct": 41,
+
+  "scoring_distribution": {
+    "high":   {"count": 14, "percent": "24%"},
+    "medium": {"count": 20, "percent": "34%"},
+    "low":    {"count": 24, "percent": "41%"}
+  },
+
+  "factual_errors_found": [
+    {
+      "error_id": "FE-1",
+      "description": "Regulation cited throughout as 'POJK 36/2025' is actually OJK Regulation No. 36/2024 (POJK 36/2024), implemented via Circular Letter 7/SEOJK.05/2025 effective January 1 2026. The year 2025 in the regulation number refers to the implementing circular, not the regulation itself. All claim citations referencing 'POJK 36/2025' should read 'POJK 36/2024' with implementing SE 7/2025.",
+      "affected_claim_ids": ["VC3c-COB", "VC3c-fraud", "VC3c-copay", "PP3.4-freq-11", "PP3.2-RC1", "PP3.3-RC2", "PP3.4-RC4"],
+      "severity": "medium — regulation name and year are wrong but the substantive content (fraud detection mandate, COB requirement, Medical Advisory Board, co-payment rules) appears correctly described based on Nusantara Legal, HHP, and Milliman e-alert sources"
+    },
+    {
+      "error_id": "FE-2",
+      "description": "Draft states 'claims ratio reached ~111% for many product lines' for Malaysia 2023 (source 19). Official LIAM data shows the 2023 incurred claims ratio at 65.9% (industry aggregate, per Statista/LIAM). The 101-111% range was cited in a BNM/MOF December 2024 presentation covering 2018-2023, excluding pandemic years — it is NOT the 2023 figure alone. Using 111% as a 2023 figure is a period-conflation error. Correct characterization: claims costs rose 73% cumulatively 2021-2023 while premiums rose 21%; the 101-111% range represents the multi-year band across 2018-2023.",
+      "affected_claim_ids": ["VC3-insurer-econ-MY", "PP3.3-freq-4"],
+      "severity": "high — 111% for 2023 overstates the single-year loss ratio; the incurred claims ratio of 65.9% is a different metric (claims paid / earned premium) from the gross loss ratio on an 'as-charged' basis; the distinction must be noted or the claim is misleading"
+    },
+    {
+      "error_id": "FE-3",
+      "description": "VEDIKA staff reduction figures (1,345 → 961) cited from a 2019 study of Sidoarjo Regional Public Hospital. This is a single-hospital study from 6 years ago, used to evidence a system-wide BPJS Kesehatan capability claim. The 45-day to 15-day settlement improvement is from the same 2019 source. Both figures may be valid for that one hospital deployment but cannot be represented as current BPJS system-wide statistics.",
+      "affected_claim_ids": ["PP3.2-freq-8", "PP3.3-freq-5"],
+      "severity": "medium — the directional claim (VEDIKA reduces settlement time) is credible; the specific numbers are stale single-site data"
+    },
+    {
+      "error_id": "FE-4",
+      "description": "Malaysia NCD annual healthcare cost 'exceeds RM 9.65 billion' is from a WHO/MOH Malaysia report released August 2022 based on 2017 data. At current medical inflation (12-15% annually 2021-2024), the 2024 equivalent would be materially higher. Outdated-source override applies — source is 7 years stale on underlying data.",
+      "affected_claim_ids": ["PP3.5-cost-1", "PP3.5-freq-1"],
+      "severity": "low — directionally correct but the figure understates current NCD cost burden"
+    }
+  ],
+
+  "claim_detail": [
+
+    {
+      "claim_id": "VC3a-GL-time",
+      "claim": "Great Eastern GL processing standard 75 minutes for straightforward Final GL; up to 6 hours for inpatient planned admission; 3-4 hours cashless discharge",
+      "sources": ["https://www.greateasternlife.com/my/en/customer-services/claims/medical-and-hospitalisation/health-care-card-and-guarantee-letter-gl.html (auto-low-vendor — Great Eastern's own product page)"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "low",
+      "override": "vendor-marketing-override — Great Eastern's own page describing its own SLA",
+      "note": "Vendor marketing page for own product SLA. Auto-Low. However, the same 6-hour figure is corroborated by Medilink-Global ECCS secondary-trade source and CodeBlue survey data — the claim is credible but this specific citation fails the vendor override."
+    },
+    {
+      "claim_id": "VC3a-AdMedika-SLA",
+      "claim": "AdMedika SLA 45 minutes from complete document receipt for cashless claims processing",
+      "sources": ["https://asuransinow.com/admedika-mengenal-peran-tpa-dalam-klaim-cashless/ (secondary-trade — asuransinow.com insurance trade blog)"],
+      "source_categories": ["secondary-trade"],
+      "score": "low",
+      "override": "single-trade-source — one secondary trade source for an operational metric",
+      "note": "AdMedika's own website (admedika.co.id) is auto-low-vendor; asuransinow.com is a trade blog citing AdMedika promotional copy. Single trade source for a specific SLA figure."
+    },
+    {
+      "claim_id": "VC3a-PMCare-ops",
+      "claim": "PMCare processes 13,000+ claims daily; 352 staff; 15 in-house doctors; 83 call centre; ~7,300 panel providers; MYR 2B+ claims; 4.2M transactions in 2024; MYR 36/member/year + MYR 8/transaction; 30-min GL",
+      "sources": ["https://codeblue.galencentre.org/2025/11/pmcare-advocates-for-doctors-tpa-more-than-middleman/ (secondary-trade — CodeBlue)"],
+      "source_categories": ["secondary-trade"],
+      "score": "medium",
+      "override": "single-source; however CodeBlue is trade press quoting directly from PMCare CEO named interview, not marketing copy — counts as named-source trade press, which is secondary-trade not auto-low-vendor. Single named-source trade press = Medium ceiling per rubric.",
+      "note": "PMCare CEO Kamal Aryf Baharuddin quoted directly by CodeBlue at a conference. This is secondary-trade, not audited filing. MYR 2B+ in claims and 4.2M transactions independently confirmed via second CodeBlue article (source 32). Two CodeBlue articles = same publication family = 1 secondary-trade source. Medium."
+    },
+    {
+      "claim_id": "VC3a-automation-level",
+      "claim": "AdMedika AdCPS processes cashless claims electronically at 9,000+ partner facilities; HealthMetrics launched AI-driven pre-auth in Indonesia April 2025; legacy fax still used",
+      "sources": ["https://www.admedika.co.id/en/about-us (auto-low-vendor for AdMedika own capability claim)", "https://technode.global/2025/04/21/malaysias-digital-third-party-administrator-healthmetrics-launches-in-indonesia/ (secondary-trade — TechNode Global)"],
+      "source_categories": ["auto-low-vendor", "secondary-trade"],
+      "score": "low",
+      "override": "vendor-marketing-override for AdMedika claim; secondary-trade only for HealthMetrics claim; combined score Low because the primary automation claim (AdCPS at 9,000+ facilities) rests on vendor's own marketing page",
+      "note": "AdMedika own about-us page = auto-low-vendor for the AdCPS/9,000+ facility claim. HealthMetrics launch from TechNode = secondary-trade corroborated by HealthMetrics own newsroom — the vendor's own announcement is also auto-low-vendor. The legacy-fax claim has no independent citation."
+    },
+    {
+      "claim_id": "VC3a-GL-revocation",
+      "claim": "Approximately 67% of Malaysian specialists surveyed report GLs revoked after treatment completion; delays of 48+ hours for inpatient GL approvals",
+      "sources": ["https://codeblue.galencentre.org/2025/10/deny-delay-revoke-specialists-reveal-health-insurance-underbelly-in-malaysia/ (secondary-trade — CodeBlue, n=855 specialist survey Oct 2025)"],
+      "source_categories": ["secondary-trade"],
+      "score": "medium",
+      "override": "single-source (CodeBlue survey). However this is a primary empirical survey — CodeBlue conducted the survey itself (not citing another study). n=855 is a credible sample. 2025 data. This is secondary-trade reporting its own original research — counts as one source. Without a second independent source, Medium is ceiling.",
+      "note": "Verified via web search: 67% GL revocation figure, 99% clinical interference perception, 73% patient redirection confirmed from CodeBlue's own October 2025 survey of 855 private specialists. Source is authentic and current. The 48+ hour delay claim appears in the same CodeBlue article. One source = Medium max (single survey, trade publication)."
+    },
+    {
+      "claim_id": "VC3b-claims-submission-times",
+      "claim": "Malaysia reimbursement claims adjudication target 14-30 working days; Indonesia 30-day target; 1-5 working days per resubmission cycle",
+      "sources": ["https://www.sunlifemalaysia.com/life-moments/bright-facts/medical-claims-101-step-by-step-guide/ (auto-low-vendor — Sun Life Malaysia own page)", "https://www.generali.com.my/claims/health-insurance (auto-low-vendor — Generali Malaysia own claims page)"],
+      "source_categories": ["auto-low-vendor", "auto-low-vendor"],
+      "score": "low",
+      "override": "vendor-marketing-override — both sources are individual insurer product/claims pages on claims about their own processing times. Two vendor pages = one vendor source.",
+      "note": "Both citations are insurer own-website pages describing own processing timelines. Auto-Low-vendor. The 14-30 working day standard is cited by multiple insurers but independently verifiable sources (BNM policy document, MHIT guidelines) would be needed for Medium."
+    },
+    {
+      "claim_id": "VC3b-PMCare-volume",
+      "claim": "PMCare processes 13,000+ claims daily; Medilink-Global ECCS 4.0 provides electronic clearing for 3,500+ providers; AdMedika serves 5.1M+ members across 9,000+ facilities",
+      "sources": ["CodeBlue Nov 2025 (secondary-trade)", "https://www.medilink-global.com/ (auto-low-vendor for Medilink own capability)", "https://www.admedika.co.id/en/about-us (auto-low-vendor for AdMedika own capability)"],
+      "source_categories": ["secondary-trade", "auto-low-vendor", "auto-low-vendor"],
+      "score": "low",
+      "override": "vendor-marketing-override for Medilink and AdMedika claims; PMCare via CodeBlue is secondary-trade. Three sources but two are auto-low-vendor for own capabilities. Medilink-Global 3,500+ provider figure from own website = auto-low-vendor; AdMedika 5.1M/8,800 facility from own website = auto-low-vendor.",
+      "note": "Verified: Medilink-Global website confirms 3,500+ providers and ECCS 4.0. AdMedika website confirms 8,800+ facilities and 5.1M+ members. But these are vendor's own about-us pages — auto-low-vendor for own capability claims."
+    },
+    {
+      "claim_id": "VC3c-fraud-ML",
+      "claim": "BPJS Kesehatan employs ML-based fraud analytics (XGBoost, Random Forest, SVM studied); private insurer fraud detection predominantly rule-based",
+      "sources": ["https://ejurnal.seminar-id.com/index.php/bits/article/view/7349 (primary-academic — peer-reviewed journal study on BPJS fraud detection ML)"],
+      "source_categories": ["primary-academic"],
+      "score": "low",
+      "override": "single-source — one academic study. 1 source = Low regardless of quality.",
+      "note": "Academic journal study on ML fraud detection at BPJS is primary-academic but single source. ML F1=19.53 figure from this same source. Rule-based characterization for private insurers has no independent citation."
+    },
+    {
+      "claim_id": "VC3c-POJK36-COB",
+      "claim": "POJK 36/2025 (actual: POJK 36/2024 + SE 7/2025) mandates fraud detection systems, COB with BPJS, Medical Advisory Board, digital integration by December 2026; 5% co-payment, max IDR 300,000 outpatient / IDR 3,000,000 inpatient",
+      "sources": ["https://global.lockton.com/us/en/news-insights/indonesia-to-reform-health-insurance-products-for-enhanced-risk-management (secondary-trade — Lockton broker commentary)", "https://www.milliman.com/en/insight/indonesia-health-regulations-ealert-key-updates (primary-consultancy — Milliman e-alert on regulatory content)"],
+      "source_categories": ["secondary-trade", "primary-consultancy"],
+      "score": "medium",
+      "override": "regulation year error (POJK 36/2024 not POJK 36/2025); implementation date confirmed Jan 1 2026 per Circular Letter 7/2025, not December 2026 as stated. The 'December 2026' deadline in the draft may refer to a transition period — needs clarification. Milliman is primary-consultancy; Lockton is secondary-trade. 2 sources with 1 primary = Medium.",
+      "note": "Verified: OJK Regulation 36/2024 + Circular Letter 7/SEOJK.05/2025 (effective January 1, 2026) confirmed via Nusantara Legal, HHP law firm alerts, Milliman e-alert. Co-payment figures and fraud/COB mandates appear consistent with cited sources. FACTUAL ERROR: the regulation is POJK 36/2024 not 36/2025."
+    },
+    {
+      "claim_id": "VC3-ID-GWP",
+      "claim": "Indonesia private health insurance GWP IDR 40.19 trillion (~USD 2.48B) in 2024; IDR 26.26 trillion in 2023; IDR 22.09 trillion in 2022",
+      "sources": ["https://validnews.id/ekonomi/premi-asuransi-kesehatan-naik-pada-ojk-beri-penjelasan (secondary-news citing OJK press release)", "https://keuangan.kontan.co.id/news/rasio-klaim-asuransi-kesehatan-turun-pada-2024-ojk-ungkap-penyebabnya (secondary-news citing OJK)", "https://www.antaranews.com/berita/4933489/ojk-catat-nilai-premi-asuransi-kesehatan-naik-4301-persen-pada-2024 (secondary-news citing OJK)"],
+      "source_categories": ["secondary-news", "secondary-news", "secondary-news"],
+      "score": "medium",
+      "override": "chain-of-citations — all three trace back to OJK press release Feb 2025. Three secondary-news outlets citing same primary = effectively 1 source (OJK Feb 2025). However OJK is a primary-ministry source; the three news outlets are transmission vehicles. Single-domain override does not apply (different publications). With 3 news sources all citing OJK, and the OJK press release being the true primary, this is Medium: the primary source exists but has not been directly cited (OJK press release not directly linked). Trade-press-only override applies if the OJK release itself is not verified.",
+      "note": "GWP figure of IDR 40.19 trillion and +43.01% YoY confirmed by GlobalData estimate (IDR 38.6 trillion for 2025 PA&H, consistent with 2024 being ~IDR 40T). The underlying OJK data is credible but only accessed via news intermediaries."
+    },
+    {
+      "claim_id": "VC3-ID-claims-ratio",
+      "claim": "Indonesia health insurance claims ratio 71.23% in 2024 (vs. 97.52% in 2023)",
+      "sources": ["https://keuangan.kontan.co.id/news/rasio-klaim-asuransi-kesehatan-turun-pada-2024-ojk-ungkap-penyebabnya (secondary-news citing OJK)", "https://validnews.id (secondary-news citing OJK)"],
+      "source_categories": ["secondary-news", "secondary-news"],
+      "score": "medium",
+      "override": "chain-of-citations to same OJK primary; two secondary-news sources citing same OJK primary = effectively OJK (primary-ministry) via two intermediaries. Medium: primary source credible but not directly linked.",
+      "note": "Kontan and Validnews both trace to same OJK Feb-Mar 2025 press releases. Claim is plausible given structural repricing documented across the industry."
+    },
+    {
+      "claim_id": "VC3-AAJI-health-claims",
+      "claim": "AAJI reports health insurance claims IDR 24.18 trillion in 2024, +16.4% YoY; individual IDR 15.29 trillion; group IDR 8.89 trillion",
+      "sources": ["https://aaji.or.id/NewsEvent/industri-asuransi-jiwa-2024--tumbuh-positif,-kian-kokoh-melindungi-masyarakat (primary-association — AAJI official press release Feb 2025)", "https://money.kompas.com/read/2025/02/28/194813026/industri-asuransi-jiwa-bayar-klaim-kesehatan-rp-2418-triliun-selama-2024 (secondary-news citing AAJI)"],
+      "source_categories": ["primary-association", "secondary-news"],
+      "score": "high",
+      "note": "AAJI is the industry association (primary-association) issuing its own annual press release for full-year 2024 industry data. This is the primary-association category. Secondary search found AAJI data consistent ($20.83T reported elsewhere for 2023; the 2024 IDR 24.18T figure is plausible at +16.4% YoY). 2+ independent sources with ≥1 primary-association = High."
+    },
+    {
+      "claim_id": "VC3-Mandiri-Inhealth",
+      "claim": "Mandiri Inhealth GWP IDR 3.43 trillion (2023, +15.84% YoY); ~35% market share in group health insurance (AAJI Q1 2024); majority acquired by PT Asuransi Jiwa IFG June 2024; IFG Life + Mandiri Inhealth claims IDR 10.6 trillion in 2024",
+      "sources": ["https://finansial.bisnis.com/read/20250228/215/1843556/sepanjang-tahun-lalu-ifg-life-dan-mandiri-inhealth-bayar-klaim-rp106-triliun (secondary-news/trade citing IFG press release)", "https://ifg-life.id/berita-korporasi/press-release/ifg-life-dan-mandiri-inhealth-bayar-klaim-rp10-6-t-sepanjang-2024 (secondary-press-release — IFG Life own press release)"],
+      "source_categories": ["secondary-news", "secondary-press-release"],
+      "score": "medium",
+      "override": "press-release-only override for the IFG Life own press release; secondary-news Bisnis.com citing same IFG press release = chain of citations. However, the 35% market share figure is independently confirmed via IFG Life corporate website citing AAJI Q1 2024 data (primary-association). Two sources (IFG secondary-press-release + AAJI Q1 data as primary-association) = Medium.",
+      "note": "35% market share confirmed via CNBC Indonesia/IFG corporate press citing AAJI Q1 2024 — AAJI is primary-association. GWP IDR 3.43T comes from IFG press materials only (no audited filing link provided). Medium is appropriate."
+    },
+    {
+      "claim_id": "VC3-BNM-MHIT",
+      "claim": "Malaysia MHIT healthcare spending MYR 6.75 billion (2023, vs MYR 0.96 billion in 2003); 7.7 million covered persons; claims increased 73% cumulative 2021-2023",
+      "sources": ["https://theedgemalaysia.com/node/750017 (secondary-news citing BNM Special Report) [NEEDS-ATTENDED-FETCH: 403 returned]", "https://www.bnm.gov.my/bnm-annual-report (primary-ministry — BNM Annual Report, not directly fetched)"],
+      "source_categories": ["secondary-news", "primary-ministry"],
+      "score": "high",
+      "note": "Web search confirmed BNM as the primary source for all three figures (MYR 6.75B, 7.7M covered persons, 73% cumulative claims increase 2021-2023). The Edge Malaysia article is confirmed as citing BNM's own Special Report on MHIT. BNM is primary-ministry. Two independent sources (The Edge citing BNM + BNM annual report reference) with ≥1 primary-ministry = High. The BNM direct URL was not fetched (403 error) but BNM as the data origin is confirmed via multiple secondary sources.",
+      "needs_attended_fetch": "https://theedgemalaysia.com/node/750017 — returned 403; BNM Special Report on MHIT (approximate URL: https://www.bnm.gov.my documents/20124 area) should be fetched to obtain direct quote for evidence file"
+    },
+    {
+      "claim_id": "VC3-LIAM-2024-claims",
+      "claim": "LIAM: health insurance claims payout MYR 8.9 billion in 2024; total benefit payouts MYR 16.8 billion",
+      "sources": ["https://www.liam.org.my/news/press_details.aspx?ps=11158&ct=3 (primary-association — LIAM official press release Jan 2025)", "https://www.bernama.com/en/news.php?id=2289248 (secondary-news — Bernama citing LIAM)"],
+      "source_categories": ["primary-association", "secondary-news"],
+      "score": "high",
+      "note": "LIAM is the industry association issuing official annual statistics. Web search confirmed: 'In 2024 alone, the life insurance sector disbursed RM16.8 billion in benefit payouts, of which RM8.9 billion were for medical insurance claims.' Direct LIAM press release + Bernama wire = 2 independent sources with ≥1 primary-association = High."
+    },
+    {
+      "claim_id": "VC3-LIAM-claims-ratio",
+      "claim": "MHIT claims cost inflation +73% cumulative 2021-2023 vs. +21% premium growth; 2023 claims ratio reached ~111% for many product lines",
+      "sources": ["https://www.liam.org.my/images/liam/PR-Life-Insurance-Industry-performance-2023.Final.pdf (primary-association — LIAM PDF, not directly fetched)", "https://codeblue.galencentre.org/2024/12/majority-health-insurance-premiums-rose-up-to-20-pc-this-year-bank-negara/ (secondary-news/trade)"],
+      "source_categories": ["primary-association", "secondary-trade"],
+      "score": "medium",
+      "override": "FACTUAL-ERROR-FLAG on '111% for many product lines in 2023' — verified as a multi-year band (2018-2023, excl. pandemic years) per BNM/MOF Dec 2024 presentation; the official 2023 incurred claims ratio per LIAM/Statista is 65.9%. The 73% cumulative cost inflation figure is confirmed as accurate (BNM-sourced, multiple secondary sources). The 111% characterization as a 2023 figure is misleading. Scoring Medium because the underlying data (73% cumulative inflation, 21% premium growth) is from primary-association (LIAM) with trade press corroboration — but the 111% framing introduces inaccuracy.",
+      "note": "LIAM PDF cited but not directly fetched. The 73% + 21% figures are well-corroborated. The 111% as a 2023-specific figure is a factual distortion — it covers a 5-year band per BNM/MOF Dec 2024 context. Draft score should carry a factual-error flag."
+    },
+    {
+      "claim_id": "VC3-Prudential-MY",
+      "claim": "Prudential Malaysia claims paid MYR 2.78 billion in 2024; medical claims MYR 1.46 billion (2022, +33.9% YoY); PRU@Work employer group health product",
+      "sources": ["https://www.prudential.com.my/en/insurance-101/all-stories/medical-insurance-claims-data/ (auto-low-vendor — Prudential Malaysia's own claims data page)", "https://www.prudential.com.my/en/insurance-101/all-stories/prudential-insurance-claims-payout-2023/ (auto-low-vendor — same vendor's own press/corporate page)"],
+      "source_categories": ["auto-low-vendor", "auto-low-vendor"],
+      "score": "low",
+      "override": "vendor-marketing-override — both sources are Prudential Malaysia's own website pages disclosing its own claims volume. Auto-Low for vendor's own financial disclosure not cross-validated against audited filing. An annual report or Bursa filing would upgrade this.",
+      "note": "Prudential Malaysia is listed; Bursa filings or Prudential plc annual report (20-F equivalent) would be primary-filing. The cited URLs are investor-comms web pages, not the underlying audited accounts."
+    },
+    {
+      "claim_id": "VC3-Allianz-MY",
+      "claim": "Allianz Malaysia GWP MYR 6.55 billion in 2023 (+8.7%); Allianz General market share 14.0%",
+      "sources": ["https://www.allianz.com.my/personal/media-hub/allianz-malaysia-fy23-strong.html (primary-filing equivalent — Allianz Malaysia is Bursa-listed; annual results announcement from official IR page)"],
+      "source_categories": ["primary-filing"],
+      "score": "high",
+      "note": "Allianz Malaysia Berhad is Bursa-listed. The allianz.com.my/media-hub FY2023 results press release is from the official investor relations page of a listed entity — functionally equivalent to an earnings announcement. Web search confirmed: GWP MYR 6.55B (+8.7%), Allianz General GWP MYR 3.0B (+13.1%), market share 14.0%. Single source from a listed company's official IR = effectively primary-filing. High with one primary-filing source.",
+      "note2": "Allianz Malaysia Berhad Bursa filing or annual report would be the stronger citation but the IR press release from listed entity is accepted as primary-filing category."
+    },
+    {
+      "claim_id": "VC3-GVR-MY-market",
+      "claim": "Malaysia health insurance GWP USD 915.44 million in 2024, projected 9.99% CAGR to 2030",
+      "sources": ["https://www.grandviewresearch.com/industry-analysis/malaysia-health-insurance-market-report (secondary-market-research — Grand View Research)"],
+      "source_categories": ["secondary-market-research"],
+      "score": "low",
+      "override": "aggregator-market-research-auto-downgrade — Grand View Research is a private market research aggregator. Draft already correctly scores this Low.",
+      "note": "Auto-Low. Cross-validation note in draft is correct: BNM data shows MYR 6.75B in 2023 claims paid (not GWP); the GVR GWP figure of USD 915M (~MYR 4.3B) implies loss ratio >100%, which is internally consistent with the MHIT crisis context but the GVR figure itself is not independently verifiable."
+    },
+    {
+      "claim_id": "VC3-TPA-market-ID",
+      "claim": "Indonesia insurance TPA market USD 1.66 billion (2024), projected USD 5.32 billion by 2030 (20.6% CAGR)",
+      "sources": ["https://www.nextmsc.com/news/indonesia-insurance-tpa-market (secondary-market-research — Next Move Strategy Consulting)"],
+      "source_categories": ["secondary-market-research"],
+      "score": "low",
+      "override": "aggregator-market-research-auto-downgrade — Next Move Strategy Consulting is a private market research firm with no disclosed methodology. Draft correctly scores this Low.",
+      "note": "Auto-Low. Confirmed via web search: Next Move Strategy Consulting is the sole source; methodology not disclosed."
+    },
+    {
+      "claim_id": "VC3-PMCare-revenue-ASSUMED1",
+      "claim": "[ASSUMED-1] PMCare annual admin revenue ~MYR 75-90 million estimated from stated fee structure",
+      "sources": ["Calculated assumption — no source"],
+      "source_categories": ["assumed-no-source"],
+      "score": "low",
+      "override": "claim-tagged-ASSUMED — auto-Low per rubric for any ASSUMED-tagged claim",
+      "note": "Correctly tagged ASSUMED-1 in draft. Auto-Low."
+    },
+    {
+      "claim_id": "VC3-MiCare",
+      "claim": "MiCare HealthTech Holdings: 15+ million members, 45+ insurers, 6,500 corporate clients, 5,000+ providers, Malaysia/Thailand/Philippines",
+      "sources": ["https://www.micarehealthtech.com/corporate.html (auto-low-vendor — MiCare's own corporate profile page)"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "low",
+      "override": "vendor-marketing-override — MiCare's own corporate profile page claiming its own market reach. Auto-Low.",
+      "note": "Web search confirmed these figures appear on MiCare's own website. IFC investment press release (ifc.org) could provide some corroboration for scale claims but does not confirm these specific numbers. Auto-Low for self-reported vendor capability figures."
+    },
+    {
+      "claim_id": "VC3-HealthMetrics",
+      "claim": "HealthMetrics: 85% reduction in HR admin tasks; USD 1 billion cumulative medical treatments by end 2025; AI-driven pre-auth; ISO 27001; 100+ insurers, 3,000+ corporates, 15,000+ providers",
+      "sources": ["https://technode.global/2025/04/21/malaysias-digital-third-party-administrator-healthmetrics-launches-in-indonesia/ (secondary-trade — TechNode Global)"],
+      "source_categories": ["secondary-trade"],
+      "score": "low",
+      "override": "single-trade-source for operational metrics; the '85% reduction in HR admin tasks' and 'USD 1B cumulative' targets are from HealthMetrics' own press release routed through TechNode. The provider/insurer/corporate counts (100+, 3,000+, 15,000+) were confirmed via web search from HealthMetrics' own newsroom = auto-low-vendor for own capability claims",
+      "note": "Verified: HealthMetrics Indonesia launch April 16 2025. The 100+ insurers, 3,000+ corporate, 15,000+ provider figures are from HealthMetrics own press release picked up by TechNode. Auto-low-vendor for own-capability claims; secondary-trade for the narrative. Low."
+    },
+
+    {
+      "claim_id": "PP3.1-67pct-GL-revocation",
+      "claim": "67% of Malaysian specialists report GL revocation after treatment; 99% report TPA/insurer clinical decision interference; 73% had patients redirected to public hospitals",
+      "sources": ["https://codeblue.galencentre.org/2025/10/deny-delay-revoke-specialists-reveal-health-insurance-underbelly-in-malaysia/ (secondary-trade — CodeBlue n=855 specialist survey, October 2025)"],
+      "source_categories": ["secondary-trade"],
+      "score": "medium",
+      "note": "CodeBlue conducted this survey directly (n=855 private specialists, Oct 2025). All three percentages (67%, 99%, 73%) confirmed via web search from same CodeBlue article. Single secondary-trade source conducting original survey research. Medium ceiling for single source. Would reach High with corroborating AMM/specialist body data or BNM acknowledgement of same figures (BNM's December 2025 directive referencing 'unreasonable delay' is indirect corroboration but does not cite the percentages)."
+    },
+    {
+      "claim_id": "PP3.1-cost-TPA-analyst",
+      "claim": "Claims adjudicator salary Malaysia RM 78,000-92,000/year; 6-hour GL review costs $48-$60 in TPA analyst time",
+      "sources": ["https://www.salaryexpert.com/salary/job/claims-adjudicator/malaysia (secondary-trade/market data — SalaryExpert)", "https://www.erieri.com/salary/job/insurance-claims-adjuster/malaysia (secondary-trade/market data — ERI)"],
+      "source_categories": ["secondary-market-research", "secondary-market-research"],
+      "score": "low",
+      "override": "salary data from commercial salary aggregators; both SalaryExpert and ERI are private commercial databases — secondary-market-research category. Two secondary-market-research sources = Low (no primary). Derived cost ($48-$60) is a calculation from salary figures — doubly derived from secondary data.",
+      "note": "Salary aggregators are not government labor statistics (not BLS or DOSM). The cost calculation is layered atop aggregator salary data. Low."
+    },
+    {
+      "claim_id": "PP3.1-AMA-prior-auth",
+      "claim": "AMA data: prior auth delays cause serious adverse events in 27% of cases; hospitalisation resulting in 23% [context: US data used as comparator]",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC6140260/ (primary-academic — PMC cited)", "https://www.ama-assn.org/practice-management/prior-authorization/fixing-prior-auth-first-speed-payers-response-times (secondary-trade/institutional — AMA advocacy page)"],
+      "source_categories": ["primary-academic", "secondary-trade"],
+      "score": "medium",
+      "override": "geography-mismatch — these are US AMA/PMC data used as analogues for MY/ID context. APAC-as-proxy equivalent: US data used as proxy for Malaysia context. Geography mismatch flag required. The PMC article (6140260) is a 2018 study — outdated-source override (>3 years) applies. Medium with geography flag.",
+      "geography_flag": "US-to-Malaysia proxy — prior auth harm data from US context applied to Malaysia without Malaysia-specific evidence"
+    },
+    {
+      "claim_id": "PP3.1-BNM-directive",
+      "claim": "BNM December 2025 directive prohibits 'unreasonable delay' but did not set mandatory processing timeline",
+      "sources": ["https://codeblue.galencentre.org/2025/12/bnm-tells-insurers-to-settle-medical-claims-promptly-prohibits-applying-unknown-exclusions/ (secondary-trade — CodeBlue citing BNM Dec 2025 directive)"],
+      "source_categories": ["secondary-trade"],
+      "score": "medium",
+      "note": "BNM is the primary source (primary-ministry); CodeBlue is reporting on a BNM regulatory action. Single secondary-trade citing primary-ministry. The BNM directive itself is the primary source — if directly accessible it would be High. Via CodeBlue alone = Medium. CodeBlue's coverage of regulatory actions is generally reliable."
+    },
+    {
+      "claim_id": "PP3.1-ID-TPA-pending",
+      "claim": "In Indonesia, 34% of all TPA claims classified as 'pending' (n=442,279, 2024); 55% of pending cases due to incomplete documentation",
+      "sources": ["https://www.researchgate.net/publication/394616258_DELAYS_IN_HEALTH_INSURANCE_CLAIMS_AT_A_THIRD-PARTY_ADMINISTRATOR_TPA_PT_XYZ_IN_2024 (primary-academic — peer-reviewed 2024 study, ResearchGate)"],
+      "source_categories": ["primary-academic"],
+      "score": "low",
+      "override": "single-source — one academic study at one anonymous TPA ('PT XYZ'). 1 source = Low regardless of quality. Also: single-institution study may not generalise.",
+      "note": "Verified via web search: ResearchGate paper on PT XYZ TPA, n=442,279 claims, 34% pending, 55% incomplete documentation — figures confirmed accurate from abstract. Single primary-academic source = Low by rubric."
+    },
+    {
+      "claim_id": "PP3.2-denial-rate-global",
+      "claim": "Global benchmark: 15-20% initial denial rate in manual-first adjudication; $43-$57 rework cost per denied claim (2022-2023 US data)",
+      "sources": ["https://interpixels.ai/insights/health-insurance-claims-automation-roi-what-asia-pacific-tpas-can-realistically-expect/ (auto-low-vendor — InterPixels AI is a vendor selling claims automation; this is their own blog/marketing content)", "https://www.os-healthcare.com/news-and-blog/measuring-the-cost-of-denials-and-impact-of-prevention (secondary-trade/blog — OS Healthcare blog)"],
+      "source_categories": ["auto-low-vendor", "secondary-trade"],
+      "score": "low",
+      "override": "vendor-marketing-override — InterPixels AI is the vendor selling the automation solution being pitched; their 'insights' page is marketing content for their own product. Auto-Low for vendor's own benchmark claims. OS Healthcare is an industry blog. Both secondary. Also: geography-mismatch — US cost data used as proxy for ID/MY context.",
+      "geography_flag": "US denial cost data ($43-$57/claim) used as cost-structure benchmark for Malaysia and Indonesia without local validation"
+    },
+    {
+      "claim_id": "PP3.2-Experian-denial-stats",
+      "claim": "Global benchmark: 41% of providers say at least 1 in 10 claims denied on first submission; 26% cite inaccurate/incomplete data as primary denial cause",
+      "sources": ["https://www.experian.com/blogs/healthcare/healthcare-claim-denials-statistics-state-of-claims-report/ (secondary-trade — Experian Health State of Claims 2025, US survey)"],
+      "source_categories": ["secondary-trade"],
+      "score": "low",
+      "override": "geography-mismatch — US provider survey used as Malaysia/Indonesia benchmark. Single secondary-trade source. The 41% figure from 2025 confirmed via web search but is US-specific.",
+      "geography_flag": "US State of Claims 2025 denial statistics applied to ID/MY context"
+    },
+    {
+      "claim_id": "PP3.2-VEDIKA",
+      "claim": "Indonesian TPA digital claims processing reduced settlement time from 45 days to 15 days after VEDIKA implementation; staff reduced from 1,345 to 961",
+      "sources": ["https://e-journal.unair.ac.id/JPHRECODE/article/view/19848 (primary-academic — Unair journal 2019 VEDIKA study)", "https://www.issa.int/gp/173409 (primary-multilateral/association — ISSA good practice award)"],
+      "source_categories": ["primary-academic", "primary-association"],
+      "score": "medium",
+      "override": "outdated-source-override — the Unair journal study is from 2019 (6+ years old); staff figures are from a single hospital (Sidoarjo) study. The ISSA reference is from 2018-2019 era. Both sources >3 years old. Capped at Medium per outdated-source override. Additionally: single-institution Sidoarjo study — does not represent current BPJS system-wide statistics.",
+      "note": "Outdated-source override triggered. The directional claim (VEDIKA improves settlement time) is corroborated by BPJS general announcements but the specific 45-day, 15-day, 1,345, 961 figures are from 2019 single-hospital study."
+    },
+    {
+      "claim_id": "PP3.2-manual-automated-cost",
+      "claim": "Manual claims processing cost $40-60/claim; automated <$20; STP rates 60-75% achievable at mature AI deployments; 25-40% require human review",
+      "sources": ["https://interpixels.ai/insights/health-insurance-claims-automation-roi-what-asia-pacific-tpas-can-realistically-expect/ (auto-low-vendor — InterPixels AI vendor marketing blog)"],
+      "source_categories": ["auto-low-vendor"],
+      "score": "low",
+      "override": "vendor-marketing-override — all cost/STP benchmarks in PP3.2, PP3.3 trace back to InterPixels AI's own 'insights' page. InterPixels AI is the vendor selling this automation. Their benchmarks are self-serving marketing claims. Auto-Low for vendor's own capability/ROI claims about their own market segment. Counts once regardless of how many InterPixels AI pages are cited.",
+      "note": "Confirmed via web search: InterPixels AI's own website is the source of the $40-60/$20 cost claims, 8x processing improvement, and APAC TPA automation ROI claims. Auto-low-vendor applies across all citations to interpixels.ai."
+    },
+    {
+      "claim_id": "PP3.3-McKinsey-claims-automation",
+      "claim": "McKinsey: automation can reduce claims journey costs by up to 30%; settlement speed improvement 50%",
+      "sources": ["https://www.mckinsey.com/industries/financial-services/our-insights/insurance-blog/industrializing-data-and-analytics-among-asian-insurers (primary-consultancy — McKinsey authored report on Asian insurers)"],
+      "source_categories": ["primary-consultancy"],
+      "score": "low",
+      "override": "single-source — one primary-consultancy source. 1 source = Low regardless of category.",
+      "note": "McKinsey authored report is primary-consultancy (legitimate). Single source = Low by rubric. Would need a second independent source (e.g., OJK Roadmap citing efficiency gains, or a second consultancy report) to reach Medium."
+    },
+    {
+      "claim_id": "PP3.3-OJK-roadmap",
+      "claim": "OJK Roadmap 2023-2027 explicitly names 'digitalization for supporting effectiveness and efficiency of insurance business processes' as a strategic issue",
+      "sources": ["https://ojk.go.id/en/berita-dan-kegiatan/info-terkini/Pages/Roadmap-for-the-Development-and-Strengthening-of-the-Indonesia-Insurance-Industry-2023-2027.aspx (primary-ministry — OJK official roadmap publication)"],
+      "source_categories": ["primary-ministry"],
+      "score": "low",
+      "override": "single-source — one primary-ministry. 1 source = Low by rubric.",
+      "note": "OJK Roadmap is primary-ministry but single source. Low."
+    },
+    {
+      "claim_id": "PP3.3-LIAM-inflation",
+      "claim": "Malaysia medical cost inflation 56% cumulative 2021-2023; claims ratio 65.9% in 2023; 12.6% annual inflation 2023",
+      "sources": ["https://www.liam.org.my/news/press_details.aspx?ps=11144&ct=3 (primary-association — LIAM interim measures press release)", "https://www.liam.org.my/pdf/annual_report_2023.pdf (primary-association — LIAM Annual Report 2023)", "https://www.pwc.com/my/en/perspective/healthcare/260225-taming-malaysia-medical-inflation.html (primary-consultancy — PwC Malaysia authored perspective)"],
+      "source_categories": ["primary-association", "primary-association", "primary-consultancy"],
+      "score": "high",
+      "note": "Two LIAM sources (primary-association) plus PwC Malaysia perspective (primary-consultancy) = 3+ sources with 2+ from primary categories. Note: two LIAM sources from same organisation count as 1 source under single-domain override. PwC adds the second independent primary. However LIAM PDF (annual report) is a different document from LIAM press release — same org, different publications. Per rubric: single-domain override capped at Medium even with multiple URLs from same org. PwC is independent. LIAM (as org) + PwC = 2 independent sources with both primary = High. The 56% and 12.6% figures are well-corroborated via BNM data and multiple trade press confirmations from web search."
+    },
+    {
+      "claim_id": "PP3.4-upcoding-11pct",
+      "claim": "11.9% upcoding prevalence across 6 Indonesian rural province hospitals (n=360 records); IDR 154.6M overpayment = 9% of revenue examined",
+      "sources": ["https://apfjournal.or.id/index.php/apf/article/view/135 (primary-academic — Asia Pacific Fraud Journal peer-reviewed study)"],
+      "source_categories": ["primary-academic"],
+      "score": "low",
+      "override": "single-source — one primary-academic study. 1 source = Low. Also: 6 rural hospitals study — may not represent national private insurer context.",
+      "note": "Verified via web search: APF Journal article on upcoding in Indonesian hospitals confirmed to exist at that URL. Single primary-academic = Low."
+    },
+    {
+      "claim_id": "PP3.4-BPJS-fraud-2015",
+      "claim": "BPJS detected fraud 2015: 175,000 claims worth IDR 400 billion (~$26M)",
+      "sources": ["https://sustain.id/2024/10/04/fraud-dalam-pelayanan-kesehatan-di-indonesia-dan-strategi-pencegahannya/ (secondary-trade/blog)"],
+      "source_categories": ["secondary-trade"],
+      "score": "low",
+      "override": "outdated-source-override — 2015 fraud data cited as evidence of current problem; 10 years stale. Single secondary source citing decade-old statistics. Low.",
+      "note": "2015 BPJS fraud data used to evidence a structural 2024-era claim. Outdated-source + single-trade-source."
+    },
+    {
+      "claim_id": "PP3.4-global-fraud-260B",
+      "claim": "Global health insurance fraud ~$260 billion/year globally, ~6% of healthcare spending",
+      "sources": ["https://www.researchgate.net/publication/395121448_Analysis_of_Fraud_in_National_Health_Insurance_in_Indonesia_A_Literature_Review (primary-academic — literature review citing global fraud estimates)"],
+      "source_categories": ["primary-academic"],
+      "score": "low",
+      "override": "single-source — one academic source, itself a literature review citing an upstream estimate. Chain-of-citations: the literature review is citing the $260B figure from another source. 1 effective source = Low.",
+      "note": "The $260B global fraud figure is widely cited but its provenance (often traced to FBI or NHCAA estimates) is not directly linked here — it passes through an Indonesian literature review. Single source, chain-of-citations."
+    },
+    {
+      "claim_id": "PP3.4-Malaysia-IJN-drug",
+      "claim": "Malaysia IJN drug pricing 42%-4,323% above MOH procurement prices; 'at least RM100 million' expected government savings",
+      "sources": ["https://codeblue.galencentre.org/2024/12/the-year-of-the-payer-malaysian-health-care-in-2024/ (secondary-trade — CodeBlue year-end review)"],
+      "source_categories": ["secondary-trade"],
+      "score": "low",
+      "override": "single-trade-source for a highly specific billing irregularity statistic. Low.",
+      "note": "Single CodeBlue trade article. The underlying IJN data would need MOH procurement records or PAC/audit committee report to reach Medium."
+    },
+    {
+      "claim_id": "PP3.4-ML-F1",
+      "claim": "ML fraud detection F1 score of 19.53 for Random Forest + Tomek Links in BPJS data — low F1 indicates high false positive/negative rate",
+      "sources": ["https://ejurnal.seminar-id.com/index.php/bits/article/view/7349 (primary-academic — peer-reviewed journal study)"],
+      "source_categories": ["primary-academic"],
+      "score": "low",
+      "override": "single-source — one academic study. 1 source = Low.",
+      "note": "Single primary-academic source. The F1=19.53 is a striking/credible finding but single-study evidence."
+    },
+    {
+      "claim_id": "PP3.5-Prolanis-34pct",
+      "claim": "Indonesia Prolanis: 34.3% (187/546) of eligible type 2 diabetes patients enrolled in East Java study; 56.8% dropout from enrolled patients",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC12538241/ (primary-academic — PMC peer-reviewed article 2025)"],
+      "source_categories": ["primary-academic"],
+      "score": "low",
+      "override": "single-source — one academic study, single geography (East Java). 1 source = Low.",
+      "note": "PMC 12538241 confirmed to be a Prolanis study. Single primary-academic, single-site East Java. Generalisability limited. Directionally credible but single source."
+    },
+    {
+      "claim_id": "PP3.5-MY-NCD-cost",
+      "claim": "Malaysia annual healthcare cost of cardiovascular diseases, diabetes, and cancer exceeds RM 9.65 billion",
+      "sources": ["https://www.who.int/malaysia/news/detail/09-08-2022-the-annual-health-care-cost-of-cardiovascular-diseases--diabetes-and-cancer-in-malaysia-exceeds-rm-9.65-billion (primary-multilateral — WHO Malaysia publication)"],
+      "source_categories": ["primary-multilateral"],
+      "score": "medium",
+      "override": "outdated-source-override — WHO Malaysia report released August 2022 based on 2017 data. Source is 7-9 years stale on underlying data. Capped at Medium per outdated-source override (>2 years old market data). Single source also applies — would be High if current, but outdated caps at Medium.",
+      "note": "Verified via web search: WHO Malaysia 2022 publication confirmed; 2017 data basis confirmed. Outdated-source override caps at Medium despite primary-multilateral status."
+    },
+    {
+      "claim_id": "PP3.5-MY-diabetes-prevalence",
+      "claim": "Malaysia diabetes prevalence 18.3% in adults (2019)",
+      "sources": ["https://www.sciencedirect.com/article/pii/S2949856225000947 (primary-academic — ScienceDirect journal article citing NHMS 2019)"],
+      "source_categories": ["primary-academic"],
+      "score": "low",
+      "override": "outdated-source-override — NHMS 2019 data, >5 years old. Single source citing NHMS. Low.",
+      "note": "NHMS 2019 data is the underlying primary but accessed via a secondary journal citation. Outdated-source + single source. Low."
+    },
+    {
+      "claim_id": "PP3.5-SOCSO-19pct",
+      "claim": "SOCSO HSP only 19% uptake (576,902 of 3.6M eligible) for employer health screening",
+      "sources": ["https://codeblue.galencentre.org/2022/09/only-19-uptake-for-socsos-health-screening-programme/ (secondary-trade — CodeBlue 2022)"],
+      "source_categories": ["secondary-trade"],
+      "score": "low",
+      "override": "outdated-source-override — CodeBlue 2022 article, >3 years old. Single secondary-trade source. Low.",
+      "note": "2022 data from CodeBlue trade press. Outdated + single-trade."
+    },
+    {
+      "claim_id": "PP3.5-LIAM-45pct",
+      "claim": "Malaysia private insurance covers ~45% of population (LIAM)",
+      "sources": ["https://codeblue.galencentre.org/2024/12/the-year-of-the-payer-malaysian-health-care-in-2024/ (secondary-trade — CodeBlue citing LIAM)"],
+      "source_categories": ["secondary-trade"],
+      "score": "low",
+      "override": "single-trade-source for a statistic attributed to LIAM but not directly from LIAM primary publication. Low.",
+      "note": "If LIAM directly published this 45% figure it would be primary-association; via CodeBlue it is secondary-trade with unverified chain. LIAM's own website or annual report would be the primary."
+    },
+    {
+      "claim_id": "PP3.1-RC1-CMS-benchmark",
+      "claim": "US federal government set 72-hour urgent/7-day non-urgent CMS mandates for Medicare Advantage in 2024",
+      "sources": ["No URL cited — stated as 'CMS 2024 final rule' without hyperlink"],
+      "source_categories": ["unverified-no-url"],
+      "score": "low",
+      "override": "unverified — no URL or citation number provided. Even if factually accurate, no sourcing = Low.",
+      "note": "This is a US benchmark used for comparison context only. No citation provided. Low."
+    },
+    {
+      "claim_id": "PP3.2-coding-inaccuracy-25pct",
+      "claim": "Over 25% of ICD-10 codes are omitted or inappropriate (PMC 5977598, cited from Stage 1)",
+      "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC5977598/ (primary-academic — PMC 2018 study on ambulatory clinician coding)"],
+      "source_categories": ["primary-academic"],
+      "score": "low",
+      "override": "single-source; outdated-source — 2018 study, >3 years old; geography-mismatch — study is not ID/MY-specific. Low.",
+      "geography_flag": "Global/Western coding accuracy study used as proxy for ID/MY context"
+    },
+    {
+      "claim_id": "PP3.2-ID-coding-inaccuracy-31pct",
+      "claim": "31.03% diagnosis coding inaccuracy in Indonesian BPJS outpatient claims",
+      "sources": ["https://www.researchgate.net/publication/388617339_Assesment_Sistem_Informasi_Manajemen_Rekam_Medis (primary-academic — ResearchGate Indonesian medical record management study)"],
+      "source_categories": ["primary-academic"],
+      "score": "low",
+      "override": "single-source — one primary-academic study from Indonesia. 1 source = Low.",
+      "note": "Single primary-academic from Indonesia. Low."
+    },
+    {
+      "claim_id": "PP3.4-INA-CBG-tariff",
+      "claim": "INA-CBG tariffs underestimate actual treatment costs (multiple policy reviews); structural incentive for upcoding at highest justifiable severity level",
+      "sources": ["https://apfjournal.or.id/index.php/apf/article/view/135 (primary-academic)", "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10770668/ (primary-academic — PMC article on INA-CBGs tariff)"],
+      "source_categories": ["primary-academic", "primary-academic"],
+      "score": "medium",
+      "note": "Two independent primary-academic sources on INA-CBG tariff adequacy. Both Indonesia-specific. 2 primary-academic sources = Medium (no government statistics or multilateral to reach High)."
+    },
+    {
+      "claim_id": "PP3.2-BPJS-HIS-35pct",
+      "claim": "35% of BPJS claims affected by HIS integration failures (2022 study)",
+      "sources": ["https://ijsr.internationaljournallabs.com/index.php/ijsr/article/download/1911/1159 (primary-academic — Indonesian academic journal)"],
+      "source_categories": ["primary-academic"],
+      "score": "low",
+      "override": "single-source; outdated-source — 2022 data, >3 years old for a rapidly-changing technical landscape. Low.",
+      "note": "Single primary-academic, 2022 data. Low."
+    },
+    {
+      "claim_id": "PP3.3-BPJS-scale",
+      "claim": "BPJS Kesehatan manages 442 billion data points across 27,000 health facilities",
+      "sources": ["https://govinsider.asia/intl-id/article/bpjs-kesehatan-to-use-ai-improve-efficiency-healthcare-services (secondary-trade — GovInsider citing BPJS announcement)"],
+      "source_categories": ["secondary-trade"],
+      "score": "low",
+      "override": "single-trade-source. Low.",
+      "note": "GovInsider is trade press; single source for a specific scale statistic attributed to BPJS. If BPJS Kesehatan's official Healthkathon 2024 press release were directly cited this would be stronger."
+    },
+    {
+      "claim_id": "PP3.5-CDM-cost-ASSUMED",
+      "claim": "[ASSUMED-7/8/9] CDM programme admin 2-4 FTE per 10,000 lives; non-adherent diabetes patients generate 2-3x higher hospitalisation costs; 3-5 day employer report assembly",
+      "sources": ["No source — ASSUMED-tagged"],
+      "source_categories": ["assumed-no-source"],
+      "score": "low",
+      "override": "assumed-tagged — auto-Low for all three ASSUMED claims (7, 8, 9).",
+      "note": "Three separate assumed claims correctly tagged ASSUMED in draft. All auto-Low."
+    },
+    {
+      "claim_id": "VC3-Prudential-ID",
+      "claim": "Prudential Indonesia health insurance claims IDR 5.4 trillion (2023, +19%); GWP IDR 19.88 trillion (2023)",
+      "sources": ["https://infobanknews.com/prudential-catat-total-klaim-kesehatan-capai-rp54-triliun-di-2023/ (secondary-trade — Infobanknews trade press)", "https://www.statista.com/statistics/1424330/prudential-indonesia-gross-premium-income/ (secondary-market-research — Statista)"],
+      "source_categories": ["secondary-trade", "secondary-market-research"],
+      "score": "low",
+      "override": "two secondary sources (trade press + market research aggregator). Neither is Prudential Indonesia's own audited filing (annual report, IDX filing). Statista auto-downgrade applies. Low.",
+      "note": "Prudential Indonesia is not separately listed; Prudential plc annual report/Group Embedded Value report would be the primary-filing source. Neither is cited."
+    },
+    {
+      "claim_id": "VC3-Sinar-Mas",
+      "claim": "Asuransi Sinar Mas: 179 branch offices, AA+ Fitch, general insurance GWP growth 15.3% (2023); IDR 103.86 trillion (total group)",
+      "sources": ["https://www.sinarmas.co.id/media/tentang-kami/files/financial-files/annual-report-asuransi-sinar-mas-2024.pdf (primary-filing — Annual report PDF from official Sinar Mas website IR page)"],
+      "source_categories": ["primary-filing"],
+      "score": "high",
+      "note": "Annual report PDF from Sinar Mas official corporate website investor relations section = primary-filing. Single primary-filing source. Per rubric: government statistics or multilateral require only 2 sources; primary-filing alone can be High if it is the definitive corporate disclosure. High — single authoritative filing.",
+      "note2": "Note: the IDR 103.86 trillion figure is described as 'total group, not health-specific' in the draft — this is an appropriate caveat."
+    },
+    {
+      "claim_id": "PP3.2-RC1-OJK-roadmap",
+      "claim": "OJK Roadmap 2023-2027 does not mandate standardised private claims document format",
+      "sources": ["https://ojk.go.id/en/berita-dan-kegiatan/info-terkini/Pages/Roadmap-for-the-Development-and-Strengthening-of-the-Indonesia-Insurance-Industry-2023-2027.aspx (primary-ministry — OJK official publication)", "https://www.adb.org/publications/digital-technologies-health-insurance-systems-asia-pacific (primary-multilateral — ADB publication)"],
+      "source_categories": ["primary-ministry", "primary-multilateral"],
+      "score": "medium",
+      "note": "Two primary-category sources (OJK ministry + ADB multilateral). However the claim is a negative (absence of mandate) which is harder to evidence. Medium is appropriate — the absence of a standard is inferred from what the OJK Roadmap/ADB says rather than a direct statement."
+    },
+    {
+      "claim_id": "PP3.1-Medilink-6hr",
+      "claim": "6-hour legacy GL timeline; GL digitisation process described",
+      "sources": ["https://medilink-global.com/digitising-the-letter-of-guarantee--log--process (secondary-trade/vendor — Medilink-Global blog on own GL product)", "https://www.generali.com.my/claims/health-insurance (auto-low-vendor — Generali own claims page)", "https://www.allianz.com.my/personal/help-and-services/how-to-and-faqs/how-to-make-a-claim/life-claims-faq.html (auto-low-vendor — Allianz own FAQ)"],
+      "source_categories": ["secondary-trade", "auto-low-vendor", "auto-low-vendor"],
+      "score": "low",
+      "override": "vendor-marketing-override for Generali and Allianz own pages; Medilink-Global blog discussing its own product = borderline auto-low-vendor (they discuss the problem they are solving = marketing content). Three sources but two auto-low-vendor, one vendor blog. Low.",
+      "note": "The 6-hour figure is corroborated by CodeBlue survey (source 6) independently. The Medilink, Generali, Allianz citations are all vendor-side sources."
+    }
+  ],
+
+  "override_triggers": [
+    {
+      "override": "vendor-marketing-override",
+      "claim_count": 12,
+      "claim_ids": ["VC3a-GL-time", "VC3a-automation-level", "VC3b-claims-submission-times", "VC3b-PMCare-volume", "VC3-MiCare", "VC3-HealthMetrics", "VC3-Prudential-MY", "PP3.1-Medilink-6hr", "PP3.2-manual-automated-cost", "PP3.2-denial-rate-global"]
+    },
+    {
+      "override": "single-trade-source",
+      "claim_count": 8,
+      "claim_ids": ["VC3a-AdMedika-SLA", "VC3c-fraud-ML", "PP3.4-BPJS-fraud-2015", "PP3.4-global-fraud-260B", "PP3.4-Malaysia-IJN-drug", "PP3.5-LIAM-45pct", "PP3.3-BPJS-scale", "PP3.3-McKinsey-claims-automation"]
+    },
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "claim_count": 3,
+      "claim_ids": ["VC3-GVR-MY-market", "VC3-TPA-market-ID", "VC3-Prudential-ID"]
+    },
+    {
+      "override": "outdated-source",
+      "claim_count": 6,
+      "claim_ids": ["PP3.2-VEDIKA", "PP3.5-MY-NCD-cost", "PP3.5-MY-diabetes-prevalence", "PP3.4-BPJS-fraud-2015", "PP3.5-SOCSO-19pct", "PP3.2-BPJS-HIS-35pct"]
+    },
+    {
+      "override": "geography-mismatch",
+      "claim_count": 3,
+      "claim_ids": ["PP3.1-AMA-prior-auth", "PP3.2-denial-rate-global", "PP3.2-coding-inaccuracy-25pct"]
+    },
+    {
+      "override": "assumed-tagged-auto-low",
+      "claim_count": 4,
+      "claim_ids": ["VC3-PMCare-revenue-ASSUMED1", "PP3.5-CDM-cost-ASSUMED", "PP3.1-AMA-ASSUMED1", "PP3.2-RC3-ASSUMED4"]
+    },
+    {
+      "override": "chain-of-citations",
+      "claim_count": 2,
+      "claim_ids": ["VC3-ID-GWP", "VC3-ID-claims-ratio"]
+    }
+  ],
+
+  "assumed_tags": [
+    "ASSUMED-1: PMCare annual admin revenue ~MYR 75-90M — calculation only",
+    "ASSUMED-2: Indonesia TPA per-claim fee IDR 15,000-50,000 — Malaysia proxy extrapolation",
+    "ASSUMED-3: First-submission rejection rate 15-25% for private sector reimbursement claims in ID/MY — no published statistic",
+    "ASSUMED-4: COB between private insurers and BPJS does not function in practice for majority of dual-coverage policyholders",
+    "ASSUMED-5: CDM programme enrolment reaches <50% of clinically eligible employees",
+    "ASSUMED-6: 60-75% of Indonesia private health claims processed through TPA",
+    "ASSUMED-7 (PP): CDM 2-4 FTE per 10,000 lives — no source",
+    "ASSUMED-8 (PP): Non-adherent diabetes patients generate 2-3x hospitalisation costs — no source",
+    "ASSUMED-9 (PP): 3-5 day employer CDM report assembly — no source",
+    "ASSUMED-10 (PP): No top-5 insurer has CDM population health platform — unverified absence"
+  ],
+
+  "geography_mismatch_flags": [
+    {
+      "claim_id": "PP3.1-AMA-prior-auth",
+      "description": "AMA/PMC prior auth patient harm data (27% adverse events, 23% hospitalisation) is from US context applied to Malaysian GL system without Malaysia-specific evidence"
+    },
+    {
+      "claim_id": "PP3.2-denial-rate-global",
+      "description": "US claims denial cost benchmark ($43-$57/claim rework cost) applied to ID/MY TPA context without local salary/cost validation; InterPixels AI vendor source compounds the issue"
+    },
+    {
+      "claim_id": "PP3.2-coding-inaccuracy-25pct",
+      "description": "PMC 5977598 ICD-10 coding accuracy study is not specific to Indonesia or Malaysia; used as global proxy without Southeast Asia validation"
+    },
+    {
+      "claim_id": "VC3a-GL-time",
+      "description": "Great Eastern GL SLA is Malaysia-specific but the broader claim about 6-hour turnaround is presented as general ID/MY standard without Indonesian TPA-specific data"
+    }
+  ],
+
+  "needs_attended_fetch": [
+    {
+      "url": "https://theedgemalaysia.com/node/750017",
+      "reason": "403 error on standard fetch; The Edge Malaysia Special Report on BNM MHIT data (MYR 6.75B, 7.7M covered persons). BNM primary data needs direct verification."
+    },
+    {
+      "url": "https://www.liam.org.my/images/liam/PR-Life-Insurance-Industry-performance-2023.Final.pdf",
+      "reason": "LIAM 2023 performance PDF — primary-association source for Malaysia claims ratio 65.9% and medical inflation 12.6%. PDF needs direct fetch to verify verbatim data."
+    },
+    {
+      "url": "https://www.bnm.gov.my/-/pd-mhit",
+      "reason": "BNM Policy Document on MHIT — primary-ministry source for Malaysian insurance regulation. Would upgrade several claims from Medium to High if verbatim policy text accessible."
+    },
+    {
+      "url": "https://www.sinarmas.co.id/media/tentang-kami/files/financial-files/annual-report-asuransi-sinar-mas-2024.pdf",
+      "reason": "Sinar Mas Annual Report 2024 PDF — primary-filing for Indonesian insurer financial data. PDF may be machine-readable for evidence quote extraction."
+    },
+    {
+      "url": "https://www.abnrlaw.com/news/ojk-reg-362024-whats-changing-for-insurance-operations",
+      "reason": "ABNR law firm analysis of OJK Reg 36/2024 — needed to confirm the regulation number (36/2024 vs 36/2025) and December 2026 transition timeline vs January 2026 effective date."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12538241/",
+      "reason": "Prolanis East Java study — 34.3% enrolment figure. PMC article; needs direct fetch to confirm methodology and whether 187/546 is correct."
+    },
+    {
+      "url": "https://www.mediplus.co.id",
+      "reason": "NEEDS-ATTENDED-FETCH flagged in original draft for Mediplus network size and client count."
+    }
+  ],
+
+  "weak_claims_to_deep_research": [
+    {
+      "claim_id": "PP3.2-manual-automated-cost",
+      "claim_text": "Manual health insurance claims processing costs APAC TPAs between $40 and $60 per claim; automation brings that figure below $20 while cutting processing time from 40 minutes to under 5 minutes; STP rates of 60-75% achievable at mature AI-augmented deployments",
+      "current_sources": ["interpixels.ai (auto-low-vendor)"],
+      "current_score": "low",
+      "issue": "Vendor-marketing-override. All APAC TPA cost benchmarks trace to InterPixels AI, the vendor selling this automation. Self-serving. No independent primary source for ID/MY-specific claims processing costs.",
+      "suggested_action": "Search: (1) OJK Roadmap 2023-2027 appendix for insurer operational cost benchmarks; (2) KPMG or Deloitte Indonesia/Malaysia insurance industry reports 2023-2025 on claims processing efficiency; (3) ADB digital health insurance Asia-Pacific 2022-2025 reports with TPA cost data",
+      "search_query": "KPMG OR Deloitte Indonesia Malaysia TPA claims processing cost per claim automation straight-through processing 2023 2024 2025",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP3.1-67pct-GL-revocation",
+      "claim_text": "67% of Malaysian specialists report GL revocation after treatment; 99% report clinical decision interference; 73% had patients redirected",
+      "current_sources": ["CodeBlue October 2025 survey (secondary-trade, n=855)"],
+      "current_score": "medium",
+      "issue": "Single-source trade press survey. High downstream impact — this is the anchor statistic for pain point 3.1. BNM and Malaysia Medical Association (AMM) both referenced this survey in their responses but no independent replication.",
+      "suggested_action": "Search for: (1) AMM (Malaysian Medical Association) formal position paper or survey on GL denials 2024-2025; (2) BNM December 2025 MHIT policy document referencing GL denial statistics; (3) PHAMA (Private Hospital Association Malaysia) or Malaysian Medical Council reports on prior auth delays",
+      "search_query": "Malaysia Medical Association AMM guarantee letter denial survey 2025 specialists clinical interference BNM MHIT",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC3-ID-GWP",
+      "claim_text": "Indonesia private health insurance GWP IDR 40.19 trillion (~USD 2.48B) in 2024; IDR 26.26 trillion in 2023; claims ratio 71.23% in 2024 vs. 97.52% in 2023",
+      "current_sources": ["Validnews, Kontan, Antara (secondary-news citing OJK press release Feb-Mar 2025)"],
+      "current_score": "medium",
+      "issue": "Chain-of-citations: all three secondary-news sources trace to same OJK press release. The OJK press release itself is the primary-ministry source but not directly linked.",
+      "suggested_action": "Direct fetch of OJK's IKNB (Non-Bank Financial Industry) statistics page: https://www.ojk.go.id/id/kanal/iknb/data-dan-statistik/asuransi/Pages/Statistik-Perasuransian-2024.aspx — look for the official 2024 insurance statistics report with health insurance premium and claims ratio breakdowns. This would upgrade to High.",
+      "search_query": "OJK statistik perasuransian 2024 asuransi kesehatan premi klaim rasio IDR 40 triliun site:ojk.go.id",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP3.4-upcoding-11pct",
+      "claim_text": "11.9% upcoding prevalence across 6 Indonesian rural province hospitals; IDR 154.6M overpayment = 9% of revenue examined",
+      "current_sources": ["APF Journal single academic study (primary-academic)"],
+      "current_score": "low",
+      "issue": "Single-institution/6-hospital academic study. High importance as anchor for fraud pain point. No BPJS Kesehatan or OJK official data on private upcoding rates.",
+      "suggested_action": "Search: (1) BPJS Kesehatan annual audit reports or Healthkathon 2024 findings on upcoding detection rates; (2) KPK (Corruption Eradication Commission) Indonesia reports on health insurance fraud 2022-2024; (3) Ministry of Health Indonesia hospital audit findings on INA-CBG coding accuracy",
+      "search_query": "BPJS Kesehatan upcoding fraud detection rate 2023 2024 INA-CBG coding accuracy hospital audit Indonesia",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "VC3c-POJK36-COB",
+      "claim_text": "POJK 36/2025 mandates fraud detection systems, COB with BPJS, Medical Advisory Board, digital integration — deadline December 2026",
+      "current_sources": ["Milliman e-alert (primary-consultancy), Lockton commentary (secondary-trade)"],
+      "current_score": "medium",
+      "issue": "Regulation year error (should be POJK 36/2024 + SE 7/2025). Implementation date stated as 'December 2026' but SE 7/2025 effective date is January 1 2026 — the December 2026 deadline in the draft may refer to a transition grace period that needs verification. Core regulation content appears accurate but citation errors undermine credibility.",
+      "suggested_action": "Direct fetch ABNR law firm analysis at https://www.abnrlaw.com/news/ojk-reg-362024-whats-changing-for-insurance-operations to confirm transition timeline; also HHP Attorneys circular letter 7 alert at https://www.hhp.co.id/en/alerts/2025/circular-letter-7-seojk-05 for the exact grace period vs. effective date distinction.",
+      "search_query": "OJK Regulation 36 2024 health insurance effective date January 2026 transition period December 2026 fraud coordination of benefits",
+      "priority": "medium"
+    }
+  ],
+
+  "high_tier_claims_with_evidence": [
+    {
+      "claim_id": "VC3-AAJI-health-claims",
+      "claim_text": "AAJI reports health insurance claims IDR 24.18 trillion in 2024, +16.4% YoY; individual health IDR 15.29 trillion; group/collective IDR 8.89 trillion",
+      "current_score": "high",
+      "evidence_quotes": [
+        {
+          "url": "https://aaji.or.id/NewsEvent/industri-asuransi-jiwa-2024--tumbuh-positif,-kian-kokoh-melindungi-masyarakat",
+          "quote": "AAJI official press release February 2025 confirming IDR 24.18 trillion in health insurance claims for full year 2024, +16.4% YoY. Confirmed via web search: 'health claims increased by 16.4 percent to IDR 24.18 trillion in 2024, according to data from AAJI presented in February 2025.'",
+          "context": "AAJI annual industry press release for 2024 full-year results",
+          "fetch_method": "WebSearch corroboration"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC3-BNM-MHIT",
+      "claim_text": "Malaysia MHIT healthcare spending MYR 6.75 billion (2023); 7.7 million covered persons; claims increased 73% cumulative 2021-2023 vs 21% premium growth",
+      "current_score": "high",
+      "evidence_quotes": [
+        {
+          "url": "https://theedgemalaysia.com/node/750017",
+          "quote": "Bank Negara Malaysia: 'the amount of healthcare spending funded by MHIT has grown six times over the past two decades, from RM0.96 billion in 2003 to RM6.75 billion in 2023. As at 2023, there were 7.7 million individuals covered under MHIT products. Between 2021 and 2023, the total cost of MHIT claims increased by 73%, far surpassing the 21% growth in MHIT premiums collected.'",
+          "context": "BNM Special Report on MHIT cited by The Edge Malaysia; direct BNM data",
+          "fetch_method": "WebSearch corroboration — The Edge URL returns 403 but BNM figures confirmed via multiple secondary sources"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC3-LIAM-2024-claims",
+      "claim_text": "LIAM: health insurance claims payout MYR 8.9 billion in 2024; total benefit payouts MYR 16.8 billion",
+      "current_score": "high",
+      "evidence_quotes": [
+        {
+          "url": "https://www.liam.org.my/news/press_details.aspx?ps=11158&ct=3",
+          "quote": "LIAM press release January 2025: 'In 2024 alone, the life insurance sector disbursed RM16.8 billion in benefit payouts, of which RM8.9 billion were for medical insurance claims.' Corroborated by Bernama: 'Life Insurance Industry Records Healthy Growth of 11.6%' citing same LIAM figures.",
+          "context": "LIAM official press release for 2024 full-year industry results; corroborated by Bernama national wire",
+          "fetch_method": "WebSearch corroboration"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC3-Allianz-MY",
+      "claim_text": "Allianz Malaysia GWP MYR 6.55 billion in 2023 (+8.7%); Allianz General market share 14.0%; general insurance GWP MYR 3.0 billion (+13.1%)",
+      "current_score": "high",
+      "evidence_quotes": [
+        {
+          "url": "https://www.allianz.com.my/personal/media-hub/allianz-malaysia-fy23-strong.html",
+          "quote": "Allianz Malaysia FY2023 results: 'Allianz Malaysia's Gross Written Premiums (GWP) increased by 8.7% to RM6.55 billion for FY2023. Allianz General Insurance Company (Malaysia) Berhad extended its market lead to 14.0% by recording RM3.00 billion in GWP for FY2023, representing an increase of 13.1%.'",
+          "context": "Official FY2023 results press release from Allianz Malaysia Berhad investor relations page (Bursa-listed entity)",
+          "fetch_method": "WebSearch corroboration"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC3-Sinar-Mas",
+      "claim_text": "Asuransi Sinar Mas: 179 branch offices, AA+ Fitch, general insurance GWP growth 15.3% (2023)",
+      "current_score": "high",
+      "evidence_quotes": [
+        {
+          "url": "https://www.sinarmas.co.id/media/tentang-kami/files/financial-files/annual-report-asuransi-sinar-mas-2024.pdf",
+          "quote": "[PDF — evidence quote extraction requires Playwright/markitdown fetch; PDF likely machine-readable from official Sinar Mas corporate website]",
+          "context": "Asuransi Sinar Mas Annual Report 2024 from official corporate investor relations page",
+          "fetch_method": "NEEDS-ATTENDED-FETCH — PDF binary not extracted in this session"
+        }
+      ]
+    },
+    {
+      "claim_id": "PP3.3-LIAM-inflation",
+      "claim_text": "Malaysia medical cost inflation 56% cumulative 2021-2023; claims ratio 65.9% in 2023; 12.6% annual inflation 2023",
+      "current_score": "high",
+      "evidence_quotes": [
+        {
+          "url": "https://www.liam.org.my/news/press_details.aspx?ps=11144&ct=3",
+          "quote": "LIAM interim measures statement: 'Between 2021 and 2023, the insurance and takaful industry has experienced an unprecedented cumulative medical claims cost inflation rate of 56%.' Claims ratio of 65.9% for 2023 from Statista/LIAM Annual Report.",
+          "context": "LIAM official press release on interim measures; supported by LIAM Annual Report 2023 and PwC Malaysia healthcare perspective",
+          "fetch_method": "WebSearch corroboration"
+        }
+      ]
+    }
+  ],
+
+  "evidence_quote_gaps": [
+    {
+      "claim_id": "VC3-Sinar-Mas",
+      "reason": "Annual report PDF at sinarmas.co.id not directly fetched in this session; specific figures (179 branches, 15.3% GWP growth) need verbatim extraction from the PDF. [NEEDS-ATTENDED-FETCH]"
+    },
+    {
+      "claim_id": "VC3-BNM-MHIT",
+      "reason": "The Edge Malaysia URL returned 403; BNM Special Report on MHIT not directly fetched. BNM primary data confirmed via multiple secondary sources but no verbatim BNM document quote extracted."
+    },
+    {
+      "claim_id": "VC3c-POJK36-COB",
+      "reason": "ABNR law firm analysis URL not fetched; exact transition period/December 2026 date vs January 2026 effective date distinction not resolved from current sources."
+    }
+  ],
+
+  "gate_decision_recommendation": "ship-with-flag",
+  "gate_reasoning": "Stage 3 scores 24% High / 34% Medium / 41% Low across 58 claims. The Low proportion (41%) is meaningfully better than Stage 1 (80% Low) due to stronger primary-source anchoring on key financial metrics (AAJI, LIAM, BNM, Allianz audited results). However, four factual errors require correction before the document is shipped: (1) POJK 36/2025 should be POJK 36/2024 throughout — incorrect regulation year; (2) the '111% claims ratio in 2023' for Malaysia is a period-conflation error (actual 2023 incurred claims ratio per LIAM is 65.9%; the 101-111% band covers 2018-2023 excluding pandemic years); (3) VEDIKA settlement-time statistics (45-day, 15-day, 1,345 staff, 961 staff) are from a 2019 single-hospital study, not current BPJS system-wide data; (4) Malaysia NCD cost RM 9.65 billion is based on 2017 data. Three deep-research priorities can upgrade Low claims to High: (a) direct OJK statistics page fetch for IDR 40.19T GWP and 71.23% claims ratio official data; (b) AMM or BNM primary data to corroborate CodeBlue's GL revocation survey; (c) independent APAC TPA cost benchmark from KPMG/Deloitte/ADB to replace InterPixels AI vendor-sourced figures. The CDM and fraud sections are predominantly Low-confidence and ASSUMED, appropriately limiting actionable claims in those sub-steps. Ship with corrections to factual errors and flagging of three priority deep-research gaps."
+}

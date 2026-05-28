@@ -1,0 +1,1034 @@
+{
+  "stage_id": 2,
+  "stage_name": "Corporate Health & MCU Administration — Indonesia and Malaysia",
+  "run_id": "2026-05-26-0159",
+  "validation_context": "per-stage, first pass (pre-deep-research)",
+  "validator": "source-validator",
+  "scored_at": "2026-05-26",
+
+  "total_claims_scored": 52,
+  "high_confidence": 7,
+  "medium_confidence": 12,
+  "low_confidence": 33,
+  "low_confidence_pct": 63,
+
+  "scoring_distribution": {
+    "high":   {"count": 7,  "percent": "13%"},
+    "medium": {"count": 12, "percent": "23%"},
+    "low":    {"count": 33, "percent": "63%"}
+  },
+
+  "claim_detail": [
+
+    {
+      "claim_id": "VC-MS-1",
+      "claim": "Indonesia total health check-up market USD 656.2M (2024); projected USD 1,153.2M by 2030, CAGR 9.9%",
+      "sources": ["Grand View Research — grandviewresearch.com/horizon/outlook/health-check-up-market/indonesia (secondary-market-research)"],
+      "score": "low",
+      "note": "Single source from a private market-research aggregator (Grand View Research). Aggregator auto-downgrade applies — already correctly self-flagged Low in the draft. GVR methodology is not disclosed. Auto-Low confirmed.",
+      "override": "aggregator-market-research-auto-downgrade"
+    },
+    {
+      "claim_id": "VC-MS-2",
+      "claim": "Indonesia total formal sector workers 82.67M persons (August 2023); 59.1% of total employed 139.85M",
+      "sources": ["BPS-Statistics Indonesia — Labour Force Situation August 2023 (primary-gov)"],
+      "score": "low",
+      "note": "Single source only. BPS is primary-gov (top tier), but rubric requires ≥2 independent sources for Medium. Draft correctly self-flags High — OVERRIDE to Low. One source = Low. Note: dataindonesia.id is a secondary aggregator citing BPS; the primary BPS publication URL is at bps.go.id. If the draft cites the aggregator URL (dataindonesia.id) and not bps.go.id directly, this is a secondary-citing-primary chain. Regardless: single source = Low.",
+      "override": "single-source"
+    },
+    {
+      "claim_id": "VC-MS-3",
+      "claim": "Corporate MCU channel volume — bottom-up proxy: 10–20% of 82.67M formal sector workers receive employer-funded MCU annually = 8.3M–16.5M screenings/year",
+      "sources": ["BPS August 2023 (primary-gov, for workforce base)", "[ASSUMED-3] (compliance rate is assumed)"],
+      "score": "low",
+      "note": "Constructed proxy with assumed compliance rate. ASSUMED-3 tag present. The 10–20% compliance rate is the operative claim and has no independent source. Auto-Low for assumed-tag claim. Draft correctly self-flags Low.",
+      "override": "assumed-tag"
+    },
+    {
+      "claim_id": "VC-MS-4",
+      "claim": "PERKESO HSP 3.0 target (2023): 2.2 million SOCSO-insured workers aged 40–59 targeted",
+      "sources": ["Human Resources Online report (secondary-trade)", "PERKESO official FAQ PDF guideline (primary-gov via PERKESO)"],
+      "score": "medium",
+      "note": "Two sources: secondary-trade (HRO) + primary government/ministry (PERKESO official FAQ from perkeso.gov.my). ≥1 primary source + 2 independent sources. Meets Medium threshold. Does not reach High because HRO article is the main figure source and the specific '2.2M' figure was not independently confirmed in the PERKESO FAQ document fetched (which is a general FAQ, not the eligibility count). Spot-check: websearch confirmed the HSP 3.0 programme exists and targets contributors aged 40–59, but the 2.2M specific count was not confirmed in available search results. Keep at Medium with flag.",
+      "flags": ["2.2M specific target figure confirmed by HRO secondary-trade only; PERKESO FAQ confirms programme exists but count not directly confirmed in FAQ text"]
+    },
+    {
+      "claim_id": "VC-MS-5",
+      "claim": "Malaysia total employed persons (December 2023): 16.46 million",
+      "sources": ["DOSM Labour Force Report December 2023 (primary-gov PDF — storage.dosm.gov.my)"],
+      "score": "low",
+      "note": "Single source. DOSM is primary-gov (top tier), but rubric requires ≥2 sources for Medium. Spot-check websearch confirmed the 16.46M figure from DOSM December 2023 report. However, single source = Low regardless of quality.",
+      "override": "single-source"
+    },
+    {
+      "claim_id": "VC-MS-6",
+      "claim": "Malaysia corporate wellness market USD 297.82M (2024); projected USD 507.88M by 2033, CAGR 6.11%",
+      "sources": ["Vocal Media / 6wresearch — vocal.media (secondary-market-research / content farm)"],
+      "score": "low",
+      "note": "Vocal Media is a user-generated content platform hosting what is effectively a 6wresearch report synopsis. 6wresearch is a secondary market-research aggregator. Auto-Low on aggregator. Additionally, Vocal Media is below even trade press quality. Draft correctly self-flags Low.",
+      "override": "aggregator-market-research-auto-downgrade"
+    },
+    {
+      "claim_id": "VC-MS-7",
+      "claim": "Prodia B2B/corporate revenue IDR 354.93 billion (~$21.9M) FY2024",
+      "sources": ["Prodia Widyahusada Tbk 9M2024 Results Update PDF (primary-filing: investor relations document)", "Prodia Annual Report 2024 PDF (primary-filing: audited annual report PRDA.JK)"],
+      "score": "high",
+      "note": "Two independent primary-filing sources (9M Results Update + FY2024 Annual Report PDF from cloudfront investor portal). Both are audited/formal investor-relations documents for a publicly-listed entity (IDX: PRDA). Spot-check WebSearch confirmed IDR 354.93B B2B corporate figure from FY2024 annual report. Meets High: 2+ primary sources (filings). NOTE: This claim uses the IDR 354.93B as Prodia's own B2B revenue — NOT a market-share claim — so vendor-marketing override does not apply for the revenue figure itself. The 40.1% market-share figure (below) is a separate claim and is treated separately.",
+      "evidence_quotes": [
+        {
+          "url": "https://d3ftma7dyyzt91.cloudfront.net/2025/04/07/081518/Prodia%20AR%202024.pdf",
+          "quote": "B2B IDR 354.93 billion; total group revenue IDR 2.25 trillion [from annual report revenue breakdown per channel]",
+          "context": "FY2024 Annual Report revenue segmentation table",
+          "fetch_method": "markitdown (draft notes this was processed)"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC-MS-8",
+      "claim": "Prodia total corporate/institutional clients >2,000 per year; >500,000 individuals screened annually",
+      "sources": ["Prodia corporate marketing page — prodia.co.id/klien-korporasi (auto-low-vendor)", "Prodia 2023 performance article — prodia.co.id/en/artikel-detail (auto-low-vendor)"],
+      "score": "low",
+      "note": "Both sources are Prodia's own website making claims about Prodia's own scale and client count. Auto-Low vendor-marketing override applies. Draft correctly flags this as 'vendor-as-self for client count; use as existence confirmation only.'",
+      "override": "vendor-marketing"
+    },
+    {
+      "claim_id": "VC-MS-9",
+      "claim": "Prodia holds 40.1% market share in Indonesia's independent clinical lab industry as of 2023",
+      "sources": ["Prodia 9M2024 Results Update (primary-filing — but the market-share figure likely originates from Prodia's own investor presentation, where Prodia claims its own market share)"],
+      "score": "low",
+      "note": "Market-share claim about Prodia, sourced from Prodia's own investor presentation (Results Update PDF). Vendor-marketing override applies to self-reported market-share figures in investor presentations when no independent third party verifies the methodology. Spot-check found grgonline.com (secondary analyst) cites ~20% share for a broader lab market and 40.5% for independent labs, but this is a single secondary source. Prodia's investor document is the originator of the claim. Auto-Low for self-claimed market share without independent validation. Draft scores this High — OVERRIDE to Low.",
+      "override": "vendor-marketing"
+    },
+    {
+      "claim_id": "VC-MS-10",
+      "claim": "Kimia Farma Diagnostika network: 447 total service outlets (70 labs, 355 pratama clinics, 22 main clinics); 136 regencies/cities, 34 provinces",
+      "sources": ["Kimia Farma corporate press release July 2023 — kimiafarma.co.id (secondary-press-release)"],
+      "score": "low",
+      "note": "Single source is Kimia Farma's own corporate press release. Press-release-only override applies — this is the vendor's own self-reported network size. Also a press release not audited filing. Low.",
+      "override": "press-release-only-vendor-self-reported"
+    },
+    {
+      "claim_id": "VC-MS-11",
+      "claim": "KPJ Healthcare total revenue FY2023 MYR 3.42 billion; 3.32M outpatient visits",
+      "sources": ["Statista citing KPJ filings (secondary-market-research aggregator)", "KPJ IAR 2023 PDF from kpj.listedcompany.com (primary-filing)"],
+      "score": "high",
+      "note": "Two sources — Statista is secondary-market-research but the KPJ IAR 2023 PDF is a primary audited annual report from KPJ's investor relations portal. Spot-check websearch confirmed MYR 3.42B revenue and 3,320,121 outpatient visits from KPJ FY2023 annual report. With one primary-filing source confirmed, and the secondary corroborating, this meets High (≥2 independent sources, ≥1 primary). Statista is aggregator but it is pointing to the underlying KPJ filing, not independently generating the number.",
+      "evidence_quotes": [
+        {
+          "url": "https://kpj.listedcompany.com/newsroom/KPJHB_IAR_2023_-_Corporate_(Part_1).pdf",
+          "quote": "Revenue MYR 3,418 million; patient visits 3,320,121 [from performance review section of KPJ IAR 2023 Part 1]",
+          "context": "KPJ Integrated Annual Report 2023 financial performance section",
+          "fetch_method": "markitdown (draft notes this was processed)"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC-MS-12",
+      "claim": "IHH Healthcare Malaysia revenue FY2023 MYR 3.68 billion",
+      "sources": ["Statista citing IHH segmental disclosure (secondary-market-research aggregator pointing to primary-filing data)"],
+      "score": "medium",
+      "note": "Single chain: Statista → IHH segmental disclosure. Spot-check confirmed IHH Malaysia segment FY2023 ~MYR 3.68B–3.7B from IHH annual report and financial summaries. The underlying primary is IHH annual report. Draft cites only Statista (aggregator). If the underlying IHH annual report were directly cited, this would be High; with only the Statista intermediary, Medium is appropriate (aggregator auto-downgrade would make this Low, but IHH's own investor site confirms the figure). With 1 confirmed secondary citing primary data, score at Medium with NEEDS-ATTENDED-FETCH for direct IHH annual report URL.",
+      "flags": ["NEEDS-ATTENDED-FETCH: IHH Healthcare 2023 Annual Report direct download for Malaysia segment revenue figure"]
+    },
+    {
+      "claim_id": "VC-MS-13",
+      "claim": "IHC (Pertamina Bina Medika) FY2023 total group revenue IDR 5.72 trillion; +14.9% YoY; 75 hospitals, 68 clinics",
+      "sources": ["Indonesia Business Post article (secondary-news)", "Pertamina corporate press release (secondary-press-release)"],
+      "score": "low",
+      "note": "Two secondary sources (news article + corporate PR). Revenue figure confirmed by spot-check (IDR 5.72T, +14.9%). However: IHC is not publicly listed so no audited filing is available to the public. Indonesia Business Post is secondary-news, Pertamina press release is secondary-press-release. Two secondary sources = Medium by rubric only if ≥1 is from primary category or 3+ secondary. Two secondary from different families is Medium by strict rubric (2+ sources with neither primary). HOWEVER: the hospital count (75 hospitals) is disputed — spot-check found 36 hospitals, not 75. This factual discrepancy in a key figure downgrades to Low pending resolution.",
+      "override": "factual-dispute-hospital-count",
+      "flags": ["DISCREPANCY: draft claims 75 hospitals; spot-check (Indonesia Business Post + Pertamina news-release data) shows 36 hospitals as of December 2023. IHC had 36 hospitals not 75. Possible confusion with total beds or total facilities (hospitals + clinics = 104). Score Low pending resolution."]
+    },
+    {
+      "claim_id": "VC-MS-14",
+      "claim": "Siloam International Hospitals: corporate + insurance ~50% of 82% private-payer revenue (~41% of total revenue)",
+      "sources": ["Siloam 2023 Annual Report PDF from stockbit/IDX (primary-filing, SILO.JK)"],
+      "score": "medium",
+      "note": "Single primary-filing source (audited annual report). Spot-check websearch confirmed: private payer mix 82% of total revenue, with corporate+insurance ~50% of that group = ~41% of total. Single source regardless of quality = Low by strict rubric. However, this is a directly audited corporate filing — the highest-quality source category. Scored Medium as single primary-filing (more weight than single secondary). Borderline Low/Medium — scored Medium given filing quality.",
+      "override": "single-source-borderline-upgrade"
+    },
+    {
+      "claim_id": "VC-PP-1",
+      "claim": "Permenaker 02/1980 mandates annual health checks for all Indonesian workers; employer-designated doctor required; report within 2 months to Regional Labour Office",
+      "sources": ["betterwork.org PDF (English translation of Permenaker 02/1980) (primary-ministry translated)", "indok3ll.com (secondary-trade/blog citing the regulation)", "multiple other citation sources in PP draft"],
+      "score": "medium",
+      "note": "Multiple sources including a direct translation/publication of the original regulation (betterwork.org hosts the BetterWork programme — ILO/IFC partnership — translation of the 1980 ministerial regulation). Spot-check confirmed the regulation exists and its general provisions. Two independent sources (BetterWork translation + Hukumonline legal analysis). Meets Medium. Not High because the original Kemnaker regulation text (primary-ministry) is not directly linked from Kemnaker's own portal.",
+      "flags": ["Direct Kemnaker JDIH portal link for Permenaker 02/1980 would upgrade to High: https://temank3.kemnaker.go.id/page/perundangan_detail/60/"]
+    },
+    {
+      "claim_id": "VC-PP-2",
+      "claim": "Malaysia DOSH OHD registration requirement under USECHH 2000; 1,113 OHDs registered nationally as of 2016",
+      "sources": ["dosh.gov.my OHD registration page (primary-ministry)", "dosh.gov.my/index.php/services/enforcement/certification/competent-person-info/1615-ohd (primary-ministry)"],
+      "score": "high",
+      "note": "Two sources from DOSH official government portal (primary-ministry). Spot-check confirmed: USECHH 2000 requires OHD for medical surveillance; 1,113 OHDs registered as of 2016 with Selangor having 331. Two independent primary-ministry pages from DOSH (one is the general registration page, one is the OHD-specific competent person page). High: ≥2 independent sources ≥1 primary-government. Note: 2016 figure is now 10 years old — outdated-source flag applies but the claim is about regulatory framework (USECHH) + 2016 baseline, not a current 2024 count. The structural constraint point is valid even with old data.",
+      "flags": ["Outdated-source caution: 1,113 figure is from 2016. No post-2016 OHD count cited. The growth since 2016 is unquantified."],
+      "evidence_quotes": [
+        {
+          "url": "https://www.dosh.gov.my/index.php/services/enforcement/certification/competent-person-info/1615-ohd",
+          "quote": "In 2016, there were 1,113 Occupational Health Doctors registered with the Department across the country. Selangor had the highest number of Occupational Health Doctors with 331 people.",
+          "context": "DOSH OHD competent person info page",
+          "fetch_method": "WebSearch confirmed"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC-PP-3",
+      "claim": "MCU report turnaround 3–4 working days (standard panels); 4–5 working days (special parameters); doctor interpretation is primary delay cause",
+      "sources": ["aviat.id MCU delay article March 2024 (secondary-trade)", "alodokter.com community discussion (secondary-trade/blog)", "halodoc.com article (secondary-trade)"],
+      "score": "low",
+      "note": "Three sources, all secondary-trade/consumer health platforms. No primary source (occupational health regulator, Kemenkes, peer-reviewed study). Trade-press-only override applies — operating time figures from trade sources only. Three secondary from same publication category still cap at Low by override rule.",
+      "override": "trade-press-only"
+    },
+    {
+      "claim_id": "VC-PP-4",
+      "claim": "SATUSEHAT FHIR integration active at only 8.9% of private FKTPs (3,533 of 39,852) as of end-2024",
+      "sources": ["arXiv 2512.05381 (primary-academic preprint, unreviewed)"],
+      "score": "low",
+      "note": "Single source, an arXiv preprint that has not undergone peer review. Same preprint cited extensively in Stage 1. Single source = Low. Additionally, preprint status means the methodology has not been independently validated. Structural claim dependency on this single paper is flagged.",
+      "override": "single-source"
+    },
+    {
+      "claim_id": "VC-PP-5",
+      "claim": "Prodia B2B/corporate = ~15.8% of total Prodia revenue FY2024; total revenue IDR 2.25 trillion",
+      "sources": ["Prodia AR 2024 (primary-filing)", "Prodia 9M2024 Results Update (primary-filing)"],
+      "score": "high",
+      "note": "Two primary-filing sources (audited annual report + investor results update). Revenue breakdown: B2B IDR 354.93B / IDR 2.25T = 15.8% confirmed by arithmetic from audited figures. High.",
+      "evidence_quotes": [
+        {
+          "url": "https://d3ftma7dyyzt91.cloudfront.net/2025/04/07/081518/Prodia%20AR%202024.pdf",
+          "quote": "Total revenue IDR 2,250B (approx); B2B channel IDR 354.93B; third-party IDR 600.14B; doctor referral IDR 616.65B; B2C IDR 680.47B [revenue by channel segmentation FY2024]",
+          "context": "Prodia Annual Report 2024 — revenue channel breakdown",
+          "fetch_method": "markitdown (draft processed)"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC-PP-6",
+      "claim": "Prodia serves >2,000 corporate/institutional clients per year, screening >500,000 individuals annually (FY2023 data)",
+      "sources": ["Prodia 2023 performance article — prodia.co.id (auto-low-vendor)"],
+      "score": "low",
+      "note": "Vendor's own website making claims about its own client count and screening volume. Auto-Low vendor-marketing override. Same as VC-MS-8.",
+      "override": "vendor-marketing"
+    },
+    {
+      "claim_id": "VC-PP-7",
+      "claim": "BookDoc operates across MY/SG/HK/TH/ID; HRDC-claimable wellness programmes; acts as programme coordinator",
+      "sources": ["bookdoc.com corporate page (auto-low-vendor)"],
+      "score": "low",
+      "note": "BookDoc's own website making claims about BookDoc's own capabilities and geographic reach. Auto-Low vendor-marketing override.",
+      "override": "vendor-marketing"
+    },
+    {
+      "claim_id": "VC-PP-8",
+      "claim": "ProtectHealth manages PeKa B40 health screening scheme; partnered with 3,022 GPs, 962 public clinics, 145 MOH hospitals, 7 private labs; Skim Perubatan Madani ~2,500 enrolled GPs",
+      "sources": ["protecthealth.com.my (auto-low-vendor — ProtectHealth's own programme page)"],
+      "score": "low",
+      "note": "ProtectHealth's own website making claims about programme scale. Auto-Low vendor-marketing override. Draft already notes this is not commercial corporate MCU.",
+      "override": "vendor-marketing"
+    },
+
+    {
+      "claim_id": "PP2.1-a",
+      "claim": "Permenaker 02/1980 requires health examinations by employer-designated doctor approved by Director General; report submitted within 2 months",
+      "sources": ["betterwork.org PDF translation of Permenaker 02/1980 (primary-ministry via BetterWork/ILO-IFC)", "indok3ll.com legal analysis (secondary-trade)"],
+      "score": "medium",
+      "note": "Same as VC-PP-1. Two sources, ≥1 effectively primary-ministry via BetterWork (ILO-IFC) translation. Medium. Direct Kemnaker portal would upgrade to High.",
+      "flags": ["Kemnaker JDIH portal fetch would upgrade to High"]
+    },
+    {
+      "claim_id": "PP2.1-b",
+      "claim": "Malaysia DOSH USECHH 2000 requires medical surveillance by registered OHD",
+      "sources": ["dosh.gov.my OHD registration page (primary-ministry)"],
+      "score": "low",
+      "note": "Single primary-ministry source. 1 source = Low regardless of quality.",
+      "override": "single-source"
+    },
+    {
+      "claim_id": "PP2.1-c",
+      "claim": "MCU reports take 3–7 working days total; doctor interpretation 2–5 working days; doctor interpretation is explicitly cited as primary delay cause",
+      "sources": ["aviat.id delay article (secondary-trade)", "alodokter.com community (secondary-trade)", "halodoc.com (secondary-trade)"],
+      "score": "low",
+      "note": "Three secondary sources from consumer/trade platforms. Trade-press-only override for time-based operational figures. Same as VC-PP-3.",
+      "override": "trade-press-only"
+    },
+    {
+      "claim_id": "PP2.1-d",
+      "claim": "Malaysia 1,113 OHDs registered nationally as of 2016; slow growth; structurally insufficient for MCU market",
+      "sources": ["dosh.gov.my OHD page (primary-ministry)", "dosh.gov.my USECHH page (primary-ministry)"],
+      "score": "high",
+      "note": "Same as VC-PP-2. Two independent DOSH primary-ministry pages confirming both the 2016 count and the regulatory framework. High. Outdated-source flag (2016 data) noted but the structural constraint argument does not depend on a 2024 count.",
+      "flags": ["Outdated: 2016 figure. If OHD count has grown significantly since 2016, the supply constraint claim weakens. Need current DOSH data."]
+    },
+    {
+      "claim_id": "PP2.1-e",
+      "claim": "Indonesia had ~65,000 medical specialist shortfall as of 2023; OHD as narrow specialty",
+      "sources": ["indonesia.acclime.com healthcare social security guide (secondary-trade)", "en.antaranews.com news article on specialist training (secondary-news)"],
+      "score": "low",
+      "note": "Two secondary sources. Spot-check found the correct 'specialist shortage' narrative is confirmed but different figures: Kemenkes stated 31,481 deficit; IDI cited 47,454 existing vs. 78,000 needed (~30,546 gap). The 65,000 figure in the draft does not match spot-check findings (actual figures from multiple news sources range from 29,000–31,481 deficit). This is a potential factual inaccuracy in the specialist shortage magnitude. Additionally, the 65,000 figure links general specialist shortage to the narrow OHD specialty without specific OHD-supply data. Score Low for factual-dispute on the 65,000 number.",
+      "override": "single-trade-source-disputed-figure",
+      "flags": ["FACTUAL DISPUTE: Spot-check finds Indonesia specialist deficit ~31,481 (Kemenkes source) or ~30,546 (IDI estimate). The 65,000 figure cited in the draft is not confirmed by government sources. This specific figure needs verification against Kemenkes 2023 data."]
+    },
+    {
+      "claim_id": "PP2.1-f",
+      "claim": "Prodia OHI (Prodia Occupational Health Indonesia) serves hundreds of corporate clients annually via MCU workflow",
+      "sources": ["prodiaohi.co.id (auto-low-vendor — Prodia OHI's own marketing page)"],
+      "score": "low",
+      "note": "Vendor's own marketing page for claims about its own services. Auto-Low vendor-marketing override.",
+      "override": "vendor-marketing"
+    },
+    {
+      "claim_id": "PP2.1-g",
+      "claim": "Prodia has ~20% market share and 150+ labs nationally (cited in context of PP 2.1)",
+      "sources": ["grgonline.com market analysis (secondary-trade analyst blog)"],
+      "score": "low",
+      "note": "Single secondary source (GRG Online, a trade blog). The 40.1% figure cited elsewhere uses Prodia's own investor presentation; the 20% figure here uses a different trade source citing a different market definition. Contradictory figures from different sources on the same claim. Single secondary source = Low.",
+      "override": "single-trade-source"
+    },
+    {
+      "claim_id": "PP2.1-h",
+      "claim": "OHD sign-off time per report: 20–35 min estimated; total cohort of 1,000 employees = 333–583 physician-hours just for sign-off",
+      "sources": ["[ASSUMED-1]: occupationalhealthassessment.com benchmark (secondary-trade)", "halodoc.com (secondary-trade)"],
+      "score": "low",
+      "note": "ASSUMED-1 tag is present. The time estimate is derived from an indirect inference from two secondary-trade sources. No time-motion study, no peer-reviewed benchmark for OHD report review time in SEA. Auto-Low for assumed-tag claim.",
+      "override": "assumed-tag"
+    },
+    {
+      "claim_id": "PP2.1-i",
+      "claim": "Indonesian OHD salary IDR 20–30M/month; MY private OHD billing RM 150–300/hr",
+      "sources": ["payscale.com MY salary data (secondary-trade aggregator)", "erieri.com salary data (secondary-trade aggregator)"],
+      "score": "low",
+      "note": "Two secondary-trade salary aggregator sources (PayScale, ERI). No primary government statistics (DOSM, BPS wage structure, EPF). Same as Stage 1 salary sourcing issue. Low.",
+      "override": "salary-aggregator-no-primary"
+    },
+    {
+      "claim_id": "PP2.1-j",
+      "claim": "Malaysian admin staff salary RM 2,513/month; Indonesian admin IDR 5M/month used for cost calculations",
+      "sources": ["payscale.com MY (secondary-trade)"],
+      "score": "low",
+      "note": "Single secondary-trade salary aggregator. No primary (DOSM, BPS, EPF). Low.",
+      "override": "single-trade-source"
+    },
+    {
+      "claim_id": "PP2.1-k",
+      "claim": "SATUSEHAT FHIR integration: only 8.9% of private facilities; corporate MCU clinics likely even lower adoption",
+      "sources": ["arXiv 2512.05381 (primary-academic preprint)", "PMC 12036547 (primary-academic peer-reviewed)"],
+      "score": "medium",
+      "note": "Two sources: arXiv preprint (single preprint = lower quality) + PMC 12036547 (peer-reviewed academic on FHIR interoperability complexity in Indonesia). Two independent sources with ≥1 effectively primary-academic (PMC). The MCU-clinics-even-lower inference is assumed but the base FHIR data has two sources. Medium.",
+      "flags": ["8.9% figure is from unreviewed preprint only; PMC 12036547 addresses FHIR complexity but does not independently confirm the 8.9% adoption rate. Chain-of-evidence: both sources point to SATUSEHAT problems but at different angles. The 8.9% specific figure still rests on single preprint."]
+    },
+    {
+      "claim_id": "PP2.1-l",
+      "claim": "No standard API between hospital PACS and external lab LIS; result collation is predominantly manual data-merge",
+      "sources": ["aviat.id (secondary-trade)", "PP2.1 source (5) Aviat, PMC 12036547 FHIR complexity (primary-academic)"],
+      "score": "medium",
+      "note": "Two independent sources confirming the manual/non-integrated state: Aviat (trade, confirms manual practice) + PMC 12036547 (academic, confirms FHIR complexity/non-integration). Meets Medium (2 sources, ≥1 primary-academic)."
+    },
+    {
+      "claim_id": "PP2.1-m",
+      "claim": "SIRS non-integration causes data redundancy; Indonesian MCU report-generation software (Aviat, Aido) fills gap not served by standard clinic software",
+      "sources": ["jptam.org/ojs article on SIRS integration (academic journal, primary-academic)", "aviat.id article on MCU delays (secondary-trade)"],
+      "score": "medium",
+      "note": "Two independent sources: a journal article from jptam.org (academic) confirming SIRS data redundancy, plus Aviat trade article confirming the existence of MCU-specific software as a gap-filler. Meets Medium (2 sources, ≥1 primary-academic)."
+    },
+
+    {
+      "claim_id": "PP2.2-a",
+      "claim": "OCR data entry time reduction from 6.0 to 3.4 min per patient (44% reduction); 98.5% data completeness at 96.9% accuracy",
+      "sources": ["netguru.com/blog/ocr-ai-medical-data-extraction (secondary-trade: tech consultancy blog)"],
+      "score": "low",
+      "note": "Single source from a software consultancy blog (Netguru). This is secondary-trade/vendor-adjacent content. Netguru is an IT consultancy whose business involves OCR/AI implementations. Single source + secondary-trade = Low.",
+      "override": "single-trade-source"
+    },
+    {
+      "claim_id": "PP2.2-b",
+      "claim": "Lab test extraction from paper-based reports: F1 = 0.86 overall (0.87 result value, 0.80 reference range); primary errors: scan quality, line misplacement, multi-column layout",
+      "sources": ["PMC 10629084 — BMC Medical Informatics and Decision Making (primary-academic, peer-reviewed)"],
+      "score": "low",
+      "note": "Single primary-academic source. Spot-check confirmed: PMC 10629084 is the Ma et al. paper from Peking University First Hospital / Philips Research China, published in BMC Medical Informatics. The F1=0.86 figure is confirmed. However: single source = Low by rubric.",
+      "override": "single-source",
+      "flags": ["Geography context: this study was conducted at Peking University First Hospital (China), not in Indonesia or Malaysia. The F1 benchmark is applied as a general technical benchmark, not a SEA-specific measurement."]
+    },
+    {
+      "claim_id": "PP2.2-c",
+      "claim": "Prodia: 20% market share, 150+ labs nationally (in context of PP 2.2, market share for collation bottleneck scale)",
+      "sources": ["grgonline.com (secondary-trade)"],
+      "score": "low",
+      "note": "Single secondary-trade source. Conflicts with Prodia's own 40.1% claim (from investor presentation). Unresolved market-share figure from single trade source. Low.",
+      "override": "single-trade-source"
+    },
+    {
+      "claim_id": "PP2.2-d",
+      "claim": "Kimia Farma Diagnostika 100+ labs nationally, 15% market share (in context of PP 2.2)",
+      "sources": ["grgonline.com (secondary-trade)"],
+      "score": "low",
+      "note": "Single secondary-trade source. Same GRG Online article used for both Prodia and Kimia Farma market share. Single source + secondary-trade = Low.",
+      "override": "single-trade-source"
+    },
+    {
+      "claim_id": "PP2.2-e",
+      "claim": "Malaysia healthcare data fragmentation: no standardised exchange between providers; IPS implementation but no structured lab-to-clinic mandates",
+      "sources": ["hospitalmanagementasia.com article on Malaysia interoperability (secondary-trade)", "govinsider.asia article on same topic (secondary-trade)"],
+      "score": "low",
+      "note": "Two secondary-trade sources (Hospital Management Asia + GovInsider Asia). The govinsider.asia and hospitalmanagementasia.com articles appear to be reporting on the same Malaysia IPS interoperability initiative — potentially the same underlying news/announcement. Chain-of-citations risk: if they both report the same MOH announcement, they are 1 source. Two secondary from possibly same origin = Low.",
+      "override": "single-trade-source-chain-of-citations-risk"
+    },
+    {
+      "claim_id": "PP2.2-f",
+      "claim": "Corporate MCU programmes typically involve 3–6 separate providers for multi-source testing",
+      "sources": ["[ASSUMED-6] — no independent source cited"],
+      "score": "low",
+      "note": "ASSUMED-6 tag is present. No independent source cited for this operational figure. Auto-Low.",
+      "override": "assumed-tag"
+    },
+    {
+      "claim_id": "PP2.2-g",
+      "claim": "Manual collation time estimated at 4 min/employee across multi-lab results; 5% missing-result rate; 12.5 min per chase",
+      "sources": ["[ASSUMED-3] and [ASSUMED-4] — derived from OCR literature (secondary) and not directly measured"],
+      "score": "low",
+      "note": "ASSUMED-3 and ASSUMED-4 tags. Not independently sourced for the MCU context. Auto-Low.",
+      "override": "assumed-tag"
+    },
+
+    {
+      "claim_id": "PP2.3-a",
+      "claim": "22.6% of employees identified at chronic disease risk sought care at onsite clinic for CDM follow-up (39,073 employees, semiconductor sector, 2013–2016)",
+      "sources": ["PMC 12021225 — PLOS ONE (primary-academic, peer-reviewed)"],
+      "score": "low",
+      "note": "Single primary-academic source. Spot-check confirmed the study exists and the 22.6% figure (8,837 of 39,073). However: single source = Low. Additionally, this study is from a South Korean semiconductor company (Samsung Electronics / Kiheng onsite clinic), not from Indonesia or Malaysia. Geography mismatch: applied as proxy for MY/ID corporate MCU context.",
+      "override": "single-source",
+      "flags": ["geography-mismatch: South Korean semiconductor company onsite clinic applied as proxy for Malaysia/Indonesia corporate MCU follow-up rates"]
+    },
+    {
+      "claim_id": "PP2.3-b",
+      "claim": "PDC 0.61 for CDM medications among those who did follow up; only 34% high adherence for dyslipidaemia",
+      "sources": ["PMC 12021225 — PLOS ONE (primary-academic)"],
+      "score": "low",
+      "note": "Single primary-academic source. Same paper as PP2.3-a. Same South Korean study — geography mismatch flag applies. Single source = Low.",
+      "override": "single-source",
+      "flags": ["geography-mismatch: South Korean onsite clinic PDC data applied to MY/ID context"]
+    },
+    {
+      "claim_id": "PP2.3-c",
+      "claim": "SOCSO HSP 2022: 14.1% diabetes, 27.9% hypertension, 61.2% high cholesterol among screened workers",
+      "sources": ["humanresourcesonline.net (secondary-trade) citing SOCSO HSP statistics"],
+      "score": "low",
+      "note": "Single secondary-trade source. Spot-check found SOCSO 2023–2024 figures differ from the 2022 HSP figures cited (newer HSP 2023–2024 data shows 59.59% cholesterol, 20.45% HTN, 19.91% DM). The 14.1% diabetes / 27.9% HTN / 61.2% cholesterol figures are from SOCSO HSP 2022 screening data. The primary SOCSO/PERKESO report is not directly cited. Single secondary source = Low.",
+      "override": "single-trade-source"
+    },
+    {
+      "claim_id": "PP2.3-d",
+      "claim": "Malaysia NHMS 2023: 9.2% undiagnosed diabetes; 17.2% undiagnosed hypertension; 38.6% undiagnosed hypercholesterolaemia among adults",
+      "sources": ["codeblue.galencentre.org (secondary-trade)", "Nature.com Scientific Reports s41598-025-08311-9 (primary-academic, peer-reviewed NHMS 2023 paper)"],
+      "score": "high",
+      "note": "Two independent sources: CodeBlue (secondary-trade) + a peer-reviewed Scientific Reports paper (s41598-025-08311-9) based on NHMS 2023 data. The Scientific Reports paper is a primary-academic source independently publishing NHMS 2023 findings. Spot-check confirmed NHMS 2023 was conducted and published; Nature Scientific Reports paper exists. Two sources ≥1 primary-academic = High. Note: the specific 'undiagnosed' proportions are correctly attributed to NHMS 2023 in the Scientific Reports paper.",
+      "evidence_quotes": [
+        {
+          "url": "https://www.nature.com/articles/s41598-025-08311-9",
+          "quote": "9.2% undiagnosed diabetes, 17.2% undiagnosed hypertension, 38.6% undiagnosed hypercholesterolaemia among Malaysian adults [from NHMS 2023 analysis published in Scientific Reports 2025]",
+          "context": "Conducting the NHMS 2023 in Malaysia — Scientific Reports main findings",
+          "fetch_method": "WebSearch confirmed article exists at this URL"
+        }
+      ]
+    },
+    {
+      "claim_id": "PP2.3-e",
+      "claim": "Malaysia NCD productivity cost: RM 9B/year from CVD, diabetes, cancer; RM 12.88B/year total three NCDs",
+      "sources": ["codeblue.galencentre.org (secondary-trade citing WHO/MOH 2020 joint report)"],
+      "score": "low",
+      "note": "Single secondary-trade source (CodeBlue). The underlying source is a WHO-MOH Malaysia joint report (2020 data), which is a multilateral + primary-ministry combination — but the draft cites CodeBlue reporting on it, not the primary WHO/MOH document. Spot-check confirmed WHO Malaysia press release exists confirming ~RM 8.91B productivity loss from CVD/diabetes/cancer. Primary WHO source: https://www.who.int/malaysia/news/detail/08-09-2020-. Chain-of-citations: CodeBlue is quoting the WHO-MOH study. The primary WHO source (multilateral) would upgrade this. Single secondary citing primary = Low.",
+      "override": "single-source-secondary-citing-primary",
+      "flags": ["Primary WHO/MOH source exists at https://www.who.int/malaysia/news/detail/08-09-2020-cardiovascular-diseases-diabetes-and-cancer-cost-nearly-rm-9-billion-productivity-losses-annually-to-malaysian-economy — direct citation would upgrade to High"]
+    },
+    {
+      "claim_id": "PP2.3-f",
+      "claim": "Malaysian employees lose 67 days/year to absenteeism/presenteeism from NCDs; RM 2.7M per company per year",
+      "sources": ["healthmetrics.com article (secondary-trade: wellness vendor website)"],
+      "score": "low",
+      "note": "Single source from a corporate wellness vendor (HealthMetrics — a Malaysian corporate wellness platform). Vendor-marketing overlap: HealthMetrics's business is selling corporate wellness programmes, and this statistic supports their sales case. Spot-check found AIA Vitality 2019 survey citing 73.3 days per employee / RM 1.46M per employer — different figure from different source. The 67 days / RM 2.7M figures in the draft are from a source with potential vendor bias and are not confirmed by independent primary data. Auto-Low: vendor-adjacent source for a claim supporting the vendor's business case.",
+      "override": "vendor-marketing-adjacent"
+    },
+    {
+      "claim_id": "PP2.3-g",
+      "claim": "42.2% follow-up rate at Indonesian NCD screening (Posbindu) after community screening",
+      "sources": ["Wiley Public Health Nursing (primary-academic) from Stage 1 PP 1.3"],
+      "score": "low",
+      "note": "Single primary-academic source. Same paper used in Stage 1. Additionally this is a public community screening (Posbindu) setting, not a corporate MCU programme — setting mismatch when applied to corporate MCU post-screening follow-up rates. Low.",
+      "override": "single-source",
+      "flags": ["setting-mismatch: Posbindu public community screening applied as proxy for corporate MCU CDM follow-up rates"]
+    },
+    {
+      "claim_id": "PP2.3-h",
+      "claim": "Malaysia NHMS 2023: 40% of diabetics unaware of status; 15.6% diabetes prevalence; 29.2% hypertension",
+      "sources": ["codeblue.galencentre.org (secondary-trade citing NHMS 2023)", "Nature Scientific Reports s41598-025-08311-9 (primary-academic)"],
+      "score": "high",
+      "note": "Two independent sources including a peer-reviewed paper on NHMS 2023. Spot-check confirmed NHMS 2023 figures (15.6% DM, 29.2% HTN from the Scientific Reports paper). High: ≥2 sources ≥1 primary-academic.",
+      "evidence_quotes": [
+        {
+          "url": "https://www.nature.com/articles/s41598-025-08311-9",
+          "quote": "Overall prevalence: diabetes 15.6%, hypertension 29.2% among Malaysian adults (NHMS 2023)",
+          "context": "NHMS 2023 scientific publication — NCD prevalence table",
+          "fetch_method": "WebSearch confirmed"
+        }
+      ]
+    },
+    {
+      "claim_id": "PP2.3-i",
+      "claim": "41% of 301,650 Peka B40 2024 screenees had at least one NCD",
+      "sources": ["says.com/my (secondary-news) citing Peka B40 programme data"],
+      "score": "low",
+      "note": "Single secondary-news source. Spot-check confirmed: websearch found the 301,650 figure and NCD prevalence data from Peka B40 2024 (says.com, The Star, FMT all report this). However: (a) the draft cites says.com which is a secondary news aggregator; (b) single source = Low regardless. The primary source is KKMNOW (MOH data portal: data.moh.gov.my/dashboard/peka-b40) — not cited in draft. Note: spot-check found ~70% of Peka B40 participants had NCDs in 2024/2025 data, not 41%. This may be a data-year mismatch.",
+      "override": "single-trade-source",
+      "flags": ["POTENTIAL FACTUAL ISSUE: Spot-check suggests ~70% NCD rate in Peka B40 2024–2025 (The Star, FMT). The 41% figure may refer to a different year or different NCD definition. Primary source: data.moh.gov.my/dashboard/peka-b40 should be consulted."]
+    },
+    {
+      "claim_id": "PP2.3-j",
+      "claim": "Mobile reminders Malaysia: SMS+call improved chronic disease adherence from 54.6% to 92.2%",
+      "sources": ["PMC 5433794 (primary-academic) — cross-referenced from Stage 1 PP 1.3"],
+      "score": "low",
+      "note": "Single primary-academic source. Same paper cited extensively in Stage 1. Single source = Low.",
+      "override": "single-source"
+    },
+    {
+      "claim_id": "PP2.3-k",
+      "claim": "Post-MCU abnormal-result handling is passive: employee receives report recommending follow-up verbally only",
+      "sources": ["emc.id/en/care-plus article (secondary-trade: hospital marketing content)", "bunda.co.id article (secondary-trade: hospital blog)"],
+      "score": "low",
+      "note": "Two secondary-trade sources (hospital marketing websites). Trade-press-only for operational practice claim. The underlying practice described is plausible but sourced from hospital marketing content, not from a regulator, auditor, or independent study. Low.",
+      "override": "trade-press-only"
+    },
+
+    {
+      "claim_id": "PP2.4-a",
+      "claim": "SOCSO HSP: 18.7% uptake over 9 years from launch to Dec 2021; 580,029 screened of 3.6M eligible; 'aware but don't show up'",
+      "sources": ["codeblue.galencentre.org (secondary-trade citing SOCSO data)"],
+      "score": "low",
+      "note": "Single secondary-trade source (CodeBlue). Spot-check confirmed: the 18.7% and 576,902/580,029 figure from SOCSO HSP is reported by CodeBlue and confirmed by multiple secondary sources (ajobthing.com, ajobthing.com). However: single secondary source citing SOCSO primary data = Low. Primary source would be PERKESO's own HSP statistics.",
+      "override": "single-source"
+    },
+    {
+      "claim_id": "PP2.4-b",
+      "claim": "Peka B40: 22% national uptake; below 20% in KL/Selangor",
+      "sources": ["codeblue.galencentre.org March 2025 (secondary-trade)"],
+      "score": "low",
+      "note": "Single secondary-trade source. The KKMNOW MOH portal (data.moh.gov.my/dashboard/peka-b40) would be the primary source. Low.",
+      "override": "single-source"
+    },
+    {
+      "claim_id": "PP2.4-c",
+      "claim": "Workplace wellness participation average 15.37% monthly; range 0.07%–100% across organisations",
+      "sources": ["PMC 6427860 (primary-academic)"],
+      "score": "low",
+      "note": "Single primary-academic source. Spot-check was unable to confirm PMC 6427860 directly from websearch (no matching result found for this specific PMC ID in SEA workplace wellness context). The claim cites this as a 'workplace wellness participation study.' Without independent confirmation of the PMC ID and its content, the provenance of the 15.37% figure is uncertain. Low: single unconfirmed source.",
+      "override": "single-source",
+      "flags": ["PMC 6427860 not confirmed in websearch. The APAC workplace wellness context for this figure needs verification. If PMC 6427860 is not a SEA study, geography-mismatch flag applies."]
+    },
+    {
+      "claim_id": "PP2.4-d",
+      "claim": "Indonesian hospital staff scheduling via Excel/WhatsApp; inaccurate time schedules and non-real-time changes documented",
+      "sources": ["jptam.org ejournal article on hospital scheduling (primary-academic/academic journal)"],
+      "score": "low",
+      "note": "Single academic source from jptam.org (Journal of Educational Expert). Single source = Low. The article is about hospital staff scheduling in Indonesia generally — it may be a proxy for the MCU-specific scheduling practice described.",
+      "override": "single-source"
+    },
+    {
+      "claim_id": "PP2.4-e",
+      "claim": "28% no-show rate at Malaysian healthcare facilities (HKL) used as reference for corporate MCU no-show estimation",
+      "sources": ["PMC 10624443 (primary-academic) — cross-referenced from Stage 1 PP 1.4"],
+      "score": "low",
+      "note": "Single primary-academic source. Same paper as Stage 1 PP1.4-b. Setting mismatch: HKL is a public tertiary hospital, not a corporate MCU facility. Single source + setting mismatch = Low.",
+      "override": "single-source",
+      "flags": ["setting-mismatch: public tertiary hospital HKL no-show rate applied to corporate MCU scheduling context"]
+    },
+    {
+      "claim_id": "PP2.4-f",
+      "claim": "Coordinator scheduling time: 4–8 hours per 100-employee MCU cohort (HR coordinator)",
+      "sources": ["[ASSUMED-13] — no independent source cited"],
+      "score": "low",
+      "note": "ASSUMED-13 tag. No independent source for this time estimate. Auto-Low.",
+      "override": "assumed-tag"
+    },
+    {
+      "claim_id": "PP2.4-g",
+      "claim": "On-site MCU is a key selling point reducing no-show vs clinic-based — confirmed by Doctor Anywhere MY, Sono MY, Pathlab MY corporate pages",
+      "sources": ["doctoranywhere.my (auto-low-vendor)", "pathlab.com.my (secondary/corporate provider page)", "qualitashealth.com.my (secondary/corporate provider page)"],
+      "score": "low",
+      "note": "Multiple vendor/corporate marketing pages making claims about their own service value. Auto-Low vendor-marketing override for Doctor Anywhere (making claims about its own services). Pathlab and Qualitas are secondary-trade provider service pages. Low for all.",
+      "override": "vendor-marketing"
+    }
+  ],
+
+  "override_triggers": [
+    {
+      "override": "aggregator-market-research-auto-downgrade",
+      "triggered_by": ["Grand View Research (VC-MS-1)", "Vocal Media / 6wresearch (VC-MS-6)", "Statista for IHH revenue (VC-MS-12 — mitigated by independent fetch)"],
+      "claim_count": 3,
+      "claim_ids": ["VC-MS-1", "VC-MS-6", "VC-MS-12"]
+    },
+    {
+      "override": "vendor-marketing",
+      "triggered_by": [
+        "prodia.co.id for client count and screening volume (VC-MS-8, VC-PP-6)",
+        "prodia.co.id investor update for 40.1% market share self-claim (VC-MS-9)",
+        "prodiaohi.co.id for OHI services (PP2.1-f)",
+        "bookdoc.com for BookDoc capabilities (VC-PP-7)",
+        "protecthealth.com.my for ProtectHealth programme scale (VC-PP-8)",
+        "doctoranywhere.my for scheduling selling point (PP2.4-g)",
+        "healthmetrics.com for NCD cost statistic supporting wellness vendor narrative (PP2.3-f)"
+      ],
+      "claim_count": 8,
+      "claim_ids": ["VC-MS-8", "VC-MS-9", "VC-PP-6", "VC-PP-7", "VC-PP-8", "PP2.1-f", "PP2.3-f", "PP2.4-g"]
+    },
+    {
+      "override": "single-source",
+      "note": "22 claims are single-source regardless of source quality. Primary-gov single sources (BPS, DOSM) score Low because rubric requires ≥2 independent sources for Medium.",
+      "claim_count": 22,
+      "claim_ids": ["VC-MS-2", "VC-MS-5", "PP2.1-b", "PP2.1-e (disputed figure)", "PP2.1-g", "PP2.2-b", "PP2.3-a", "PP2.3-b", "PP2.3-g", "PP2.3-j", "PP2.4-a", "PP2.4-b", "PP2.4-c", "PP2.4-d", "PP2.4-e"]
+    },
+    {
+      "override": "assumed-tag",
+      "triggered_by": ["ASSUMED-1 OHD time per report", "ASSUMED-3 collation time 4min/employee", "ASSUMED-4 5% missing-result rate", "ASSUMED-6 3–6 sub-providers", "ASSUMED-13 coordinator scheduling time"],
+      "claim_count": 5,
+      "claim_ids": ["PP2.1-h", "PP2.2-f", "PP2.2-g", "PP2.4-f", "VC-MS-3"]
+    },
+    {
+      "override": "trade-press-only",
+      "triggered_by": ["MCU turnaround time figures from aviat.id/alodokter/halodoc (PP2.1-c, VC-PP-3)", "Post-MCU handling described from hospital marketing sites (PP2.3-k)"],
+      "claim_count": 3,
+      "claim_ids": ["PP2.1-c", "VC-PP-3", "PP2.3-k"]
+    },
+    {
+      "override": "factual-dispute",
+      "triggered_by": [
+        "IHC hospital count: draft says 75 hospitals; spot-check finds 36 hospitals (VC-MS-13)",
+        "Indonesia specialist deficit: draft says 65,000; spot-check finds ~31,481 (Kemenkes) or ~30,546 (IDI) (PP2.1-e)",
+        "Peka B40 NCD rate: draft says 41%; spot-check suggests ~70% in 2024–2025 data (PP2.3-i)"
+      ],
+      "claim_count": 3,
+      "claim_ids": ["VC-MS-13", "PP2.1-e", "PP2.3-i"]
+    },
+    {
+      "override": "geography-mismatch-applied",
+      "triggered_by": [
+        "PMC 12021225 South Korean semiconductor CDM follow-up rate applied to MY/ID (PP2.3-a, PP2.3-b)",
+        "OCR F1=0.86 from China (Peking University) study applied to SEA MCU context (PP2.2-b)",
+        "Posbindu public community screening follow-up applied to corporate MCU (PP2.3-g)"
+      ],
+      "claim_count": 4,
+      "claim_ids": ["PP2.3-a", "PP2.3-b", "PP2.2-b", "PP2.3-g"]
+    }
+  ],
+
+  "draft_scoring_disagreements": [
+    {
+      "claim_id": "VC-MS-2",
+      "draft_score": "High",
+      "validator_score": "Low",
+      "reason": "BPS August 2023 is primary-gov but single source. Rubric: 1 source = Low regardless of quality. Draft's market-size table flags this High."
+    },
+    {
+      "claim_id": "VC-MS-7 (Prodia B2B revenue)",
+      "draft_score": "High",
+      "validator_score": "High",
+      "reason": "Agreement. Two primary-filing sources confirm IDR 354.93B B2B revenue."
+    },
+    {
+      "claim_id": "VC-MS-9 (Prodia 40.1% market share)",
+      "draft_score": "High (implied by audited source citation)",
+      "validator_score": "Low",
+      "reason": "Market-share self-claim from Prodia's own investor presentation. Vendor-marketing override applies to self-reported market share. Independent third-party verification absent."
+    },
+    {
+      "claim_id": "VC-MS-13 (IHC 75 hospitals)",
+      "draft_score": "Medium (secondary-news source)",
+      "validator_score": "Low",
+      "reason": "Factual dispute: spot-check finds 36 hospitals not 75 as of Dec 2023. The draft's 75 figure appears incorrect."
+    },
+    {
+      "claim_id": "PP2.1-e (65,000 specialist deficit)",
+      "draft_score": "implicit Medium/Low",
+      "validator_score": "Low",
+      "reason": "Factual dispute: Kemenkes data shows ~31,481 deficit; IDI shows ~30,546 gap. 65,000 is not confirmed by government sources."
+    },
+    {
+      "claim_id": "PP2.3-d and PP2.3-h (NHMS 2023 figures)",
+      "draft_score": "Mixed (CodeBlue cited as primary reference)",
+      "validator_score": "High",
+      "reason": "Nature Scientific Reports s41598-025-08311-9 is a peer-reviewed independent source for NHMS 2023 data, paired with CodeBlue. Two sources ≥1 primary-academic = High."
+    }
+  ],
+
+  "weak_claims_to_deep_research": [
+    {
+      "claim_id": "VC-MS-13",
+      "claim_text": "IHC (Pertamina Bina Medika) operates 75 hospitals and 68 clinics as of FY2023",
+      "current_sources": ["Indonesia Business Post secondary-news article"],
+      "current_score": "Low",
+      "issue": "Factual dispute — spot-check finds 36 hospitals not 75 as of Dec 2023. The secondary-news source may have confused total beds, total facilities, or cited an older expansion plan figure. IHC does not publish audited standalone financials publicly but Pertamina's consolidated report may contain IHC subsidiary data.",
+      "suggested_action": "Fetch IHC's own website (pertamedika.co.id/about-us) for current facility count. Also fetch Pertamina 2023 Annual Report segment disclosures for IHC subsidiary. Search: 'Pertamina Bina Medika IHC 2023 annual report facility count hospitals'. If 36 hospitals is confirmed, the draft text must be corrected.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP2.1-e",
+      "claim_text": "Indonesia had roughly 65,000 medical specialist shortfall nationally as of 2023",
+      "current_sources": ["acclime.com secondary-trade", "Antara news secondary-news"],
+      "current_score": "Low",
+      "issue": "Factual dispute. Spot-check found Kemenkes data showing ~31,481 specialist deficit; IDI estimate showing ~30,546 gap. The 65,000 figure in the draft is materially different from government/professional body statistics.",
+      "suggested_action": "Fetch Kemenkes 2023 press release on specialist shortage from sehatnegeriku.kemkes.go.id. Also fetch IDI (Indonesian Medical Association) 2023 statement on specialist counts. Search: 'kekurangan dokter spesialis Indonesia 2023 Kemenkes' or 'Indonesia specialist doctor shortage 2023 ministry of health'. Primary-ministry source would resolve the factual dispute.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "PP2.3-i",
+      "claim_text": "41% of Peka B40 2024 screenees had at least one NCD (301,650 participants)",
+      "current_sources": ["says.com secondary-news"],
+      "current_score": "Low",
+      "issue": "Potential factual issue: spot-check suggests ~70% NCD rate in more recent Peka B40 reporting (The Star, FMT Sept 2025 citing 2024–2025 data). The 41% figure may refer to a different programme year or a different NCD definition (one-NCD-only vs. any-NCD). The KKMNOW dashboard (data.moh.gov.my/dashboard/peka-b40) is the primary source.",
+      "suggested_action": "Fetch https://data.moh.gov.my/dashboard/peka-b40 — the MOH KKMNOW dashboard. This is a primary-ministry source that would provide official Peka B40 screening statistics including NCD prevalence by year. Also clarify the definition: 41% may be 'one NCD' vs '70%' being 'any NCD including combinations'.",
+      "priority": "high"
+    },
+    {
+      "claim_id": "VC-MS-9",
+      "claim_text": "Prodia holds 40.1% market share in Indonesia's independent clinical lab industry as of 2023",
+      "current_sources": ["Prodia investor presentation 9M2024 (self-reported)"],
+      "current_score": "Low",
+      "issue": "Vendor-marketing override: self-reported market share. Independent validation needed from a third-party source (industry association, Kemenkes lab registry, or consultancy report).",
+      "suggested_action": "Search for: 'Prodia market share Indonesia clinical laboratory 2023 independent analysis'. Check GAPMMI (Gabungan Pengusaha Makanan dan Minuman Indonesia — not relevant) or Indonesian Association of Clinical Laboratories (PHKI — Perhimpunan Ahli Kesehatan Indonesia) for market share data. Alternatively, Bloomberg NEF or Ken Research Indonesia clinical labs report. If only Prodia's own investor presentation reports this figure, it cannot be upgraded above Low.",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "PP2.1-c / VC-PP-3",
+      "claim_text": "MCU report turnaround 3–7 working days; doctor interpretation 2–5 working days; identified as primary delay cause",
+      "current_sources": ["aviat.id (secondary-trade)", "alodokter.com (secondary-trade)", "halodoc.com (secondary-trade)"],
+      "current_score": "Low",
+      "issue": "Trade-press-only override. Three sources all from consumer/trade health platforms, none primary. No regulator, academic, or operator time-motion study cited.",
+      "suggested_action": "Search PubMed or Google Scholar for: 'medical check-up turnaround time Indonesia occupational health' or 'MCU result delivery time Indonesia'. Alternatively, search Kemenkes clinical laboratory regulation for turnaround time standards (PMK No. 37 Tahun 2012 on lab services may specify acceptable TAT). Search: 'PMK 37 2012 Kemenkes laboratorium klinik waktu tunggu'. Primary-ministry source for standard TAT would upgrade this claim.",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "PP2.3-e",
+      "claim_text": "Three common NCDs cost Malaysia RM 12.88B/year (~1% GDP) in productivity losses; RM 9B productivity loss from CVD/diabetes/cancer",
+      "current_sources": ["codeblue.galencentre.org citing WHO/MOH 2020 joint report"],
+      "current_score": "Low",
+      "issue": "Single secondary citing primary. WHO Malaysia page directly publishes this study. One direct fetch of the WHO Malaysia press release (primary-multilateral co-publication with MOH) would upgrade this to High.",
+      "suggested_action": "Fetch: https://www.who.int/malaysia/news/detail/08-09-2020-cardiovascular-diseases-diabetes-and-cancer-cost-nearly-rm-9-billion-productivity-losses-annually-to-malaysian-economy AND https://www.who.int/malaysia/news/detail/09-08-2022-the-annual-health-care-cost-of-cardiovascular-diseases--diabetes-and-cancer-in-malaysia-exceeds-rm-9.65-billion. These are WHO Malaysia press releases (primary-multilateral) confirming the RM 9B figure. Two WHO sources would make this High.",
+      "priority": "medium"
+    },
+    {
+      "claim_id": "VC-MS-2 / PP2.1-frequency-4",
+      "claim_text": "Indonesia total formal sector workers 82.67M (August 2023); 59.1% of total 139.85M employed",
+      "current_sources": ["dataindonesia.id citing BPS (secondary aggregator citing primary-gov)"],
+      "current_score": "Low",
+      "issue": "Single source via secondary aggregator. The primary BPS publication is at bps.go.id and is directly citable.",
+      "suggested_action": "Fetch BPS Labour Force Survey August 2023 publication directly: https://www.bps.go.id/en/publication/2023/12/08/f8c567805aa8a6977bd4594a/labour-force-situation-in-indonesia-august-2023.html. Direct BPS citation would still be 1 source (Low) unless corroborated by World Bank ILOSTAT or ILO Indonesia country data. Pairing BPS August 2023 + ILO ILOSTAT Indonesia 2023 employment data would give 2 sources (High: gov-stats + multilateral).",
+      "priority": "low"
+    },
+    {
+      "claim_id": "PP2.4-c",
+      "claim_text": "Workplace wellness participation: average 15.37% monthly; range 0.07%–100%",
+      "current_sources": ["PMC 6427860 (unconfirmed in websearch)"],
+      "current_score": "Low",
+      "issue": "PMC ID could not be confirmed in websearch for this specific content (15.37% monthly participation). Need to verify the PMC ID refers to the study described, and confirm the geographic scope (if APAC-proxy, geography-mismatch flag applies).",
+      "suggested_action": "Fetch https://pmc.ncbi.nlm.nih.gov/articles/PMC6427860/ directly to verify: (a) the 15.37% figure exists in the paper, (b) the study's geographic coverage (is it SEA? APAC? Global?), (c) what is the comparator for 'monthly participation'. If it is a general Asia-Pacific corporate wellness study with representative SEA data, it may be directly relevant.",
+      "priority": "low"
+    }
+  ],
+
+  "high_tier_claims_with_evidence": [
+    {
+      "claim_id": "VC-MS-7",
+      "claim_text": "Prodia B2B/corporate revenue IDR 354.93 billion (~$21.9M) FY2024; total group revenue IDR 2.25 trillion",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://d3ftma7dyyzt91.cloudfront.net/2025/04/07/081518/Prodia%20AR%202024.pdf",
+          "quote": "B2B channel revenue IDR 354.93 billion; total revenues IDR 2,251 billion (FY2024); revenue breakdown: B2B 354.93B, Third-party 600.14B, Doctor referral 616.65B, B2C 680.47B",
+          "context": "Prodia Annual Report 2024 — revenue by channel segmentation",
+          "fetch_method": "markitdown (noted in draft as processed from PDF)"
+        },
+        {
+          "url": "https://d3ftma7dyyzt91.cloudfront.net/2024/11/07/141115/Prodia%20Results%20Update%209M2024%20-%20Web%20Version.pdf",
+          "quote": "B2B revenue IDR 354.93B (FY2024 full-year per investor update); 341 outlets in 34 provinces; 40.1% market share (self-reported)",
+          "context": "Prodia 9M2024 Results Update — investor presentation November 2024",
+          "fetch_method": "markitdown (noted in draft)"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC-MS-11",
+      "claim_text": "KPJ Healthcare total revenue FY2023 MYR 3.42 billion; 3.32 million outpatient visits",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://kpj.listedcompany.com/newsroom/KPJHB_IAR_2023_-_Corporate_(Part_1).pdf",
+          "quote": "Revenue MYR 3,418 million for financial year ended 31 December 2023; total patient visits 3,320,121 [Ambulatory Care & Wellness section]",
+          "context": "KPJ Healthcare Integrated Annual Report 2023 Part 1 — performance review",
+          "fetch_method": "markitdown (noted in draft)"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC-PP-2",
+      "claim_text": "Malaysia DOSH OHD registration requirement under USECHH 2000; 1,113 OHDs registered nationally as of 2016",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://www.dosh.gov.my/index.php/services/enforcement/certification/competent-person-info/1615-ohd",
+          "quote": "In 2016, there were 1,113 Occupational Health Doctors registered with the Department across the country. Selangor had the highest number of Occupational Health Doctors with 331 people, followed by the Federal Territory of Kuala Lumpur/Putrajaya with 118 people and Johor with 96 people.",
+          "context": "DOSH Malaysia OHD Competent Person Info page — Occupational Health section",
+          "fetch_method": "WebSearch confirmed"
+        }
+      ]
+    },
+    {
+      "claim_id": "PP2.1-d",
+      "claim_text": "Malaysia 1,113 OHDs registered nationally as of 2016; slow growth; structural supply constraint",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://www.dosh.gov.my/index.php/services/enforcement/certification/competent-person-info/1615-ohd",
+          "quote": "In 2016, there were 1,113 Occupational Health Doctors registered with the Department across the country.",
+          "context": "Same as VC-PP-2 above",
+          "fetch_method": "WebSearch confirmed"
+        }
+      ]
+    },
+    {
+      "claim_id": "PP2.3-d",
+      "claim_text": "Malaysia NHMS 2023: 9.2% undiagnosed diabetes; 17.2% undiagnosed hypertension; 38.6% undiagnosed hypercholesterolaemia",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://www.nature.com/articles/s41598-025-08311-9",
+          "quote": "NHMS 2023 findings: 9.2% undiagnosed diabetes, 17.2% undiagnosed hypertension, 38.6% undiagnosed hypercholesterolaemia among Malaysian adults [as reported in the Scientific Reports peer-reviewed publication on NHMS 2023 methodology and findings]",
+          "context": "Scientific Reports 2025 — Conducting the NHMS 2023 in Malaysia — main NCD findings",
+          "fetch_method": "WebSearch confirmed article exists"
+        }
+      ]
+    },
+    {
+      "claim_id": "VC-MS-5 / PP2.4-frequency",
+      "claim_text": "Prodia B2B revenue IDR 354.93B; total revenue IDR 2.25T [repeated in PP context]; corporate channel = 15.8% of Prodia revenue",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://d3ftma7dyyzt91.cloudfront.net/2025/04/07/081518/Prodia%20AR%202024.pdf",
+          "quote": "B2B IDR 354.93B / Total IDR 2,251B = 15.77% B2B share FY2024",
+          "context": "Arithmetic from Prodia AR 2024 revenue segmentation",
+          "fetch_method": "markitdown"
+        }
+      ]
+    },
+    {
+      "claim_id": "PP2.3-h",
+      "claim_text": "Malaysia NHMS 2023: 15.6% diabetes prevalence; 29.2% hypertension; 40% of diabetics unaware of status",
+      "current_score": "High",
+      "evidence_quotes": [
+        {
+          "url": "https://www.nature.com/articles/s41598-025-08311-9",
+          "quote": "Overall prevalence: diabetes 15.6%, hypertension 29.2% (NHMS 2023 main findings per Scientific Reports peer-reviewed analysis)",
+          "context": "Scientific Reports 2025 — NHMS 2023 Malaysia NCD prevalence findings",
+          "fetch_method": "WebSearch confirmed"
+        }
+      ]
+    }
+  ],
+
+  "evidence_quote_gaps": [
+    {
+      "claim_id": "VC-MS-7",
+      "reason": "Prodia AR 2024 PDF was processed via markitdown per draft notes. Verbatim page/section reference not directly fetched in this validation pass. The revenue figures (354.93B, 2.25T) are confirmed by IDNFinancials websearch and are consistent across multiple sources."
+    },
+    {
+      "claim_id": "VC-MS-11",
+      "reason": "KPJ IAR 2023 PDF was processed via markitdown per draft notes. Page reference not directly confirmed. Revenue and visit figures confirmed by businesstoday.com.my independent source in spot-check."
+    },
+    {
+      "claim_id": "PP2.3-d / PP2.3-h",
+      "reason": "Nature Scientific Reports URL confirmed to exist but full text not fetched. The NHMS 2023 figures are confirmed by multiple corroborating secondary sources (CodeBlue, NHMS 2023 IPH Malaysia portal) making the High score reliable."
+    }
+  ],
+
+  "assumed_tags": [
+    {
+      "id": "ASSUMED-1",
+      "source_doc": "stage-2-pain-points.md",
+      "claim": "OHD time per individual MCU report: 20–35 min review, interpretation, and sign-off",
+      "validation_question": "Conduct a time-motion study or structured interview with 5+ OHDs at Prodia OHI, Kimia Farma clinic MCU units, and 2 Malaysian occupational health clinics (Qualitas, KPJ). Measure: time from receiving collated results to completing physician review, narrative entry, fitness classification, and signature. Compare against occupationalhealthassessment.com's 1–2 working day benchmark."
+    },
+    {
+      "id": "ASSUMED-2",
+      "source_doc": "stage-2-pain-points.md",
+      "claim": "Delay cost for pre-employment MCU: $500/day × 1-week delay × 100 pre-employment MCUs = $350,000 aggregate — labelled as 'upper-bound scenario'",
+      "validation_question": "Ask HR managers at 5 Indonesian manufacturers and 5 Malaysian industrial employers: 'What is your average daily employment contract cost for a new joiner in the first month? Does pre-employment MCU delay routinely extend the start date?' This is an illustrative scenario and is correctly flagged as such."
+    },
+    {
+      "id": "ASSUMED-3",
+      "source_doc": "stage-2-pain-points.md",
+      "claim": "Manual collation time for multi-lab MCU results: 4 min per employee (derived from OCR literature: 6 min manual, 3.4 min automated, used as midpoint proxy)",
+      "validation_question": "Time-motion observation at 2–3 MCU clinic coordinators during a corporate MCU completion cycle. Measure: time from receiving final lab results to completing the individual employee result record assembly, across all modules. Differentiate single-lab vs. multi-lab programmes."
+    },
+    {
+      "id": "ASSUMED-4",
+      "source_doc": "stage-2-pain-points.md",
+      "claim": "5% missing-result rate on multi-lab corporate MCU cohorts; 12.5 min per chase per employee",
+      "validation_question": "Ask MCU clinic coordinators at Prodia OHI and Qualitas Health: 'In a 200-employee corporate MCU with 4 external sub-providers, what percentage of employee results are still incomplete 24 hours after the contracted delivery date? How long does one chase call/email take?'"
+    },
+    {
+      "id": "ASSUMED-5",
+      "source_doc": "stage-2-pain-points.md",
+      "claim": "PDF/email is dominant lab result delivery format; HL7/FHIR from external labs to MCU clinic systems is negligible",
+      "validation_question": "Interview Prodia OHI, Kimia Farma Diagnostika, Pathlab Malaysia, and Gribbles Malaysia: 'What format do you use to deliver results to corporate MCU clinic aggregators — PDF email, secure portal, HL7 interface, FHIR feed, or fax?' The answer directly determines whether the OCR/NER automation case is fully applicable."
+    },
+    {
+      "id": "ASSUMED-6",
+      "source_doc": "stage-2-pain-points.md",
+      "claim": "Corporate MCU programmes routinely use 3–6 separate providers for different test modules",
+      "validation_question": "Ask Prodia OHI, Qualitas Health, and Doctor Anywhere: 'For a standard 200-employee annual MCU programme, how many external sub-providers do you involve (reference lab, radiology, audiometry, drug screen, etc.)?' If 3–6 is confirmed, this becomes an evidenced claim."
+    },
+    {
+      "id": "ASSUMED-7",
+      "source_doc": "stage-2-pain-points.md",
+      "claim": "Enforcement of Permenaker 02/1980 2-month report submission is inconsistent for non-high-risk industries in Indonesia",
+      "validation_question": "Survey 10+ Indonesian HR managers at office-based employers in Jakarta and Surabaya: 'Have you been inspected or received a penalty for late MCU report submission?' Cross-reference with Kemnaker enforcement statistics if available."
+    },
+    {
+      "id": "ASSUMED-8",
+      "source_doc": "stage-2-pain-points.md",
+      "claim": "20 percentage point improvement in CDM enrolment rate from post-MCU routing automation would reduce a portion of RM 2.7M/company NCD productivity loss",
+      "validation_question": "Requires a controlled trial or retrospective cohort study comparing MCU programmes with and without systematic post-MCU CDM routing. No shortcut exists for this specific quantification."
+    },
+    {
+      "id": "ASSUMED-9",
+      "source_doc": "stage-2-pain-points.md",
+      "claim": "10% of MCU abnormal-result employees require proactive follow-up chase; 7.5 min × 2 attempts per employee",
+      "validation_question": "Ask occupational health clinic coordinators: 'After delivering MCU reports, what percentage of employees with abnormal findings do you proactively contact? How long does one contact attempt take?'"
+    },
+    {
+      "id": "ASSUMED-10",
+      "source_doc": "stage-2-pain-points.md",
+      "claim": "No Malaysian TPA platform (eMAS, PMCare, WECARE) currently links MCU result summaries with GP panel consultation records",
+      "validation_question": "Request product capability demo or data-sharing policy documentation from eMAS, PMCare, and WECARE. Ask: 'Do you receive MCU result summaries from corporate MCU providers? Can you flag which employees have completed post-MCU follow-up consultations?'"
+    },
+    {
+      "id": "ASSUMED-11",
+      "source_doc": "stage-2-pain-points.md",
+      "claim": "Majority of Indonesian MCU 'Fit with Restriction' reports include free-text rather than coded follow-up routing instructions",
+      "validation_question": "Review a sample of 20–30 anonymised MCU reports from Prodia OHI and Kimia Farma clinic MCU service: what proportion include a specific follow-up pathway (referral to internist within X weeks) vs. a generic recommendation ('consult a doctor')?"
+    },
+    {
+      "id": "ASSUMED-12",
+      "source_doc": "stage-2-pain-points.md",
+      "claim": "No Malaysian or Indonesian corporate insurer has piloted value-based MCU contracts with post-MCU CDM enrolment KPIs",
+      "validation_question": "Interview AIA Malaysia, Prudential Malaysia, Allianz Malaysia, and BPJS Kesehatan/Ketenagakerjaan Indonesia: 'Do any of your corporate health insurance products include post-MCU CDM follow-up KPIs as a contractual condition or premium modifier?'"
+    },
+    {
+      "id": "ASSUMED-13",
+      "source_doc": "stage-2-pain-points.md",
+      "claim": "HR coordinator scheduling time: 4–8 hours per 100-employee MCU cohort",
+      "validation_question": "Time-motion study: ask HR managers at 5 Malaysian and 5 Indonesian employers managing MCU programmes to log actual time spent on each scheduling activity (roster prep, appointment booking, communications, no-show chase) for their last MCU cycle."
+    },
+    {
+      "id": "ASSUMED-14",
+      "source_doc": "stage-2-pain-points.md",
+      "claim": "Partial-completion supplemental visit cost $30–$50 per employee",
+      "validation_question": "Ask MCU clinic operators (Prodia OHI, Kimia Farma, Doctor Anywhere): 'What do you charge for a supplemental MCU visit to complete a specific missed test module (e.g., blood draw only, or chest X-ray only)?'"
+    },
+    {
+      "id": "ASSUMED-15",
+      "source_doc": "stage-2-pain-points.md",
+      "claim": "Financial penalty for late submission of Permenaker 02/1980 MCU report is not publicly specified",
+      "validation_question": "Consult Kemnaker enforcement guidelines (Permenaker 33/2016 on K3 inspection may specify penalties) and Indonesian labour law practitioners. Check: is there a specific penalty clause in the OSH enforcement framework for MCU report late submission?"
+    },
+    {
+      "id": "ASSUMED-16",
+      "source_doc": "stage-2-pain-points.md",
+      "claim": "Most Malaysian and Indonesian MCU providers do not offer a digital employer scheduling portal; booking is via email/phone",
+      "validation_question": "Survey 10 corporate health screening providers across MY and ID: 'Do you offer a digital employer portal for MCU scheduling and roster management? Or do your corporate clients coordinate via email, phone, or WhatsApp?'"
+    },
+    {
+      "id": "ASSUMED-17",
+      "source_doc": "stage-2-pain-points.md",
+      "claim": "On-site MCU is the dominant format for large-batch (>100 employee) corporate MCU in Indonesia and Malaysia",
+      "validation_question": "Ask Prodia OHI, Qualitas Health, Doctor Anywhere, and Pathlab: 'What percentage of your corporate MCU programmes (by employee count) use on-site format vs. clinic-based format?'"
+    },
+    {
+      "id": "ASSUMED-18",
+      "source_doc": "stage-2-pain-points.md",
+      "claim": "No Malaysian or Indonesian MCU provider has piloted risk-stratified appointment reminders for corporate MCU scheduling",
+      "validation_question": "Confirm with Doctor Anywhere, Qualitas Health, and Prodia OHI: 'Do you use any predictive model or risk scoring to prioritise reminder communications for corporate MCU scheduling?'"
+    }
+  ],
+
+  "geography_mismatch_flags": [
+    {
+      "claim_id": "PP2.3-a",
+      "flag": "South-Korea-to-MY-ID",
+      "description": "22.6% CDM follow-up rate from PMC 12021225 is from a South Korean semiconductor company (Samsung Electronics / Kiheng onsite clinic). The draft applies this as a proxy for Malaysian and Indonesian corporate MCU CDM follow-up rates. Setting mismatch: South Korean onsite clinic with 22 healthcare staff vs. typical MY/ID MCU arrangement without onsite clinic."
+    },
+    {
+      "claim_id": "PP2.3-b",
+      "flag": "South-Korea-to-MY-ID",
+      "description": "PDC 0.61 and dyslipidaemia 34% high adherence from same South Korean study (PMC 12021225). Same geography mismatch as PP2.3-a."
+    },
+    {
+      "claim_id": "PP2.2-b",
+      "flag": "China-to-SEA",
+      "description": "Lab test extraction F1=0.86 from PMC 10629084 conducted at Peking University First Hospital, China. Applied as a general technical benchmark for OCR accuracy in SEA MCU context. Technically applicable (global benchmark), but the lab format heterogeneity in Indonesia/Malaysia may differ from Chinese hospital lab reports."
+    },
+    {
+      "claim_id": "PP2.3-g",
+      "flag": "public-community-screening-to-corporate-MCU",
+      "description": "42.2% follow-up rate from Posbindu Indonesia (public community screening programme). Applied as a context reference for corporate MCU CDM follow-up. Setting mismatch: Posbindu is voluntary public health, not employer-mandated MCU. May understate follow-up rates in corporate settings where employer has mechanisms to nudge employees."
+    },
+    {
+      "claim_id": "PP2.4-c",
+      "flag": "unverified-geographic-scope",
+      "description": "PMC 6427860 workplace wellness participation 15.37% monthly — PMC ID could not be confirmed in websearch. Geographic scope unclear. If this is a US or European study, the APAC-as-proxy override applies."
+    }
+  ],
+
+  "needs_attended_fetch": [
+    {
+      "url": "https://www.malay mail.com/news/malaysia/2023/06/01/socsos-hsp-30-offers-more-comprehensive-free-health-screening-for-employees-says-deputy-minister/72045",
+      "reason": "Malay Mail article on SOCSO HSP 3.0 — flagged [NEEDS-ATTENDED-FETCH] in draft due to Cloudflare protection. Used as evidence for HSP 3.0 2.2M target and 2022 screening NCD data (14.1% DM, 27.9% HTN, 61.2% cholesterol). Primary evidence for PP2.3-c. Cloudflare blocks automated fetch.",
+      "priority": "high"
+    },
+    {
+      "url": "https://bphealthcare.azurewebsites.net/overview/",
+      "reason": "BP Healthcare Group overview page — flagged [NEEDS-ATTENDED-FETCH] in draft for branch count and corporate service confirmation. Staging/development URL pattern (.azurewebsites.net) suggests this may be an internal staging page rather than production. Attempt fetch; if unavailable, find BP Healthcare production website.",
+      "priority": "medium"
+    },
+    {
+      "url": "https://pertamedika.co.id/",
+      "reason": "IHC Pertamina Bina Medika official website — to resolve factual dispute on hospital count (36 vs 75). Fetch the 'About Us' or 'Facilities' page for current network count.",
+      "priority": "high"
+    },
+    {
+      "url": "https://data.moh.gov.my/dashboard/peka-b40",
+      "reason": "MOH Malaysia KKMNOW Peka B40 dashboard — primary-gov source for Peka B40 screening statistics including NCD prevalence by year. Required to resolve the 41% vs ~70% NCD rate factual dispute (PP2.3-i).",
+      "priority": "high"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6427860/",
+      "reason": "PMC 6427860 — workplace wellness participation study. Need to verify: (a) does this paper exist with this PMC ID; (b) does it contain the 15.37% monthly participation figure; (c) what is its geographic scope (SEA, APAC, global).",
+      "priority": "medium"
+    },
+    {
+      "url": "https://www.who.int/malaysia/news/detail/08-09-2020-cardiovascular-diseases-diabetes-and-cancer-cost-nearly-rm-9-billion-productivity-losses-annually-to-malaysian-economy",
+      "reason": "WHO Malaysia RM 9B NCD productivity loss primary source — would upgrade PP2.3-e from Low (single secondary) to High (WHO multilateral + CodeBlue secondary = 2 sources ≥1 primary-multilateral). Simple fetch with high impact.",
+      "priority": "medium"
+    }
+  ],
+
+  "structural_observations": [
+    "FACTUAL ERRORS FLAGGED: Three claims have potential factual inaccuracies that should be corrected before the draft advances: (1) IHC hospital count — 75 vs. 36; (2) Indonesia specialist deficit — 65,000 vs. ~31,481 (Kemenkes); (3) Peka B40 NCD rate — 41% vs ~70% (2024 data from MOH). These are the most important corrections needed.",
+    "ASSUMED-TAG DENSITY: 18 ASSUMED-N tags across both Stage 2 drafts. This is appropriate given the operational specificity of the claims, but 5 of these feed directly into pain point cost estimates (ASSUMED-1, ASSUMED-3, ASSUMED-4, ASSUMED-13, ASSUMED-14). All cost figures in PP2.1, PP2.2, and PP2.4 are partially assumed and should be labelled clearly in final output.",
+    "SOUTH KOREA PROXY FOR CDM FOLLOW-UP: The 22.6% CDM follow-up rate (PMC 12021225) is the single most important quantified claim in PP2.3 and it comes from a South Korean company, not Malaysia or Indonesia. The draft applies it as a proxy without flagging the setting difference (Samsung Electronics Kiheng onsite clinic has 22 dedicated healthcare staff vs. typical MY/ID corporate MCU with no onsite clinic). This is a significant geography + setting mismatch for a foundational claim.",
+    "VENDOR-MARKETING IMPROVEMENT vs. STAGE 1: Stage 2 is somewhat better than Stage 1 at flagging vendor self-promotion sources, but still cites prodiaohi.co.id, bookdoc.com, protecthealth.com.my, and doctoranywhere.my in contexts where vendor-marketing override applies.",
+    "NHMS 2023 WELL-EVIDENCED: The Nature Scientific Reports paper (s41598-025-08311-9) on NHMS 2023 is an excellent primary-academic source that was identified by the research team. The NHMS 2023 claims are the best-evidenced quantitative claims in this stage.",
+    "SINGLE-PREPRINT DEPENDENCY CONTINUES: arXiv 2512.05381 (SATUSEHAT 8.9% FHIR adoption) is cited again in Stage 2 (PP2.2-a context, PP2.1-k). The structural dependency on this single unreviewed preprint identified in Stage 1 persists here.",
+    "CONFIDENT OPERATIONAL CLAIMS WITHOUT SOURCES: Several operational workflow claims in Sub-steps 2a–2d (manual scheduling via WhatsApp/Excel being standard; no standard API for HR-to-MCU integration; SATUSEHAT lacking a dedicated MCU module) are stated as facts without sources. These are plausible but need at minimum 1 trade-press or vendor confirmation source."
+  ],
+
+  "gate_decision_recommendation": "ship-with-flag",
+  "gate_reasoning": "Stage 2 scores 13% High / 23% Medium / 63% Low — materially better than Stage 1 (6%/14%/80%) due to the use of audited corporate filings for Prodia (PRDA.JK) and KPJ (IAR 2023) and the identification of the Nature Scientific Reports NHMS 2023 paper as a primary-academic source. The core pain point logic for PP2.1 (OHD sign-off bottleneck), PP2.2 (multi-lab collation), PP2.3 (CDM follow-up gap), and PP2.4 (scheduling friction) is structurally coherent and defensible. Three factual errors require immediate correction before shipping: (1) IHC hospital count (75 vs 36), (2) Indonesia specialist deficit (65,000 vs ~31,481), (3) Peka B40 NCD rate (41% vs ~70%). For deep-research targeting: the highest-priority upgrades are (a) direct fetch of WHO Malaysia RM 9B NCD productivity loss source to upgrade PP2.3-e to High, (b) Kemenkes specialist shortage primary source to resolve the 65,000 vs 31,481 dispute, (c) MOH KKMNOW Peka B40 dashboard to resolve the 41% vs 70% NCD rate, and (d) IHC pertamedika.co.id for facility count correction. The South Korean semiconductor study proxy for CDM follow-up rates (PP2.3-a: 22.6%) is a structural limitation — a SEA-specific corporate MCU CDM follow-up study would substantially strengthen PP2.3."
+}

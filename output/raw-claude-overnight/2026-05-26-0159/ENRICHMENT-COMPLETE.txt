@@ -1,0 +1,33 @@
+Unattended Phase 2 complete.
+URLs attempted: 8 · Succeeded: 3 (+1 partial) · Confirmed inaccessible: 4 (+1 bonus probe: fasyankes.kemkes.go.id DNS-failed)
+Claims upgraded: 0 (tier changes — verified URLs corroborate existing Medium claims with new primary evidentiary depth)
+New % Low (post-enrichment): 49% (unchanged) · Gate: ship-with-flag (unchanged)
+
+Run window: 2026-05-25T20:06:10Z → 2026-05-25T20:12:30Z (~6 min)
+
+Verified inline:
+  - https://www.midf.com.my/sites/corporate/files/2025-05/thematic-malaysia_healthcare-midf-050525_2.pdf (MIDF May 2025: 9,830 private MY clinics 2022, +9.3% real growth 2022-2024, 2.1% of GDP 2023)
+  - https://peraturan.bpk.go.id/Details/275518/permenkes-no-3-tahun-2023 (Permenkes 3/2023 ditetapkan 06-Jan-2023, berlaku 09-Jan-2023, FKTP Kapitasi/Non-Kapitasi + FKRTL INA-CBG)
+  - https://www.theedgemalaysia.com/node/750017 (BNM 2024 Annual Report MHIT special report, not cited in canonical files — informational corroboration only)
+
+Partial:
+  - https://bphealthcare.azurewebsites.net/overview/ (page rendered, scale claims uncorroborated on overview page)
+
+Confirmed inaccessible (canonical-file tags):
+  - https://medicoplus.co.id (DNS ERR_NAME_NOT_RESOLVED)
+  - https://www.mediplus.co.id (DNS ERR_NAME_NOT_RESOLVED)
+  - https://www.moh.gov.my/moh/resources/Penerbitan/Laporan/Umum/NDR_Report_2023_Final.pdf (HTTP 404; crc.gov.my mirror also 404)
+  - https://data.moh.gov.my/dashboard/peka-b40 (Vercel deployment paused)
+
+Bonus probe (Stage 1 source list, not in original named target list):
+  - https://fasyankes.kemkes.go.id/ (DNS ERR_NAME_NOT_RESOLVED — secondary anchor flipped to [CONFIRMED-INACCESSIBLE])
+
+All 7 canonical-file [NEEDS-ATTENDED-FETCH] tags resolved — none remain in raw-claude-value-chain-*.md or raw-claude-pain-points-*.md.
+
+Outputs touched:
+  - raw-claude-value-chain-ai-process-efficiency-healthcare-id-my.md (5 inline edits + 1 header rephrasing)
+  - raw-claude-pain-points-ai-process-efficiency-healthcare-id-my.md (3 inline edits incl. confidence-flag block)
+  - checkpoint.json (added auto_enrichment block with per-URL outcomes)
+  - raw-claude-summary-*.md (appended "Auto-enrichment (Phase 2, Playwright pass)" section)
+  - FINAL-REPORT.html (gate-status callout + Phase 2 callout refreshed)
+  - Backups preserved: raw-claude-value-chain.md.bak, raw-claude-pain-points.md.bak

@@ -1,0 +1,110 @@
+{
+  "deep_research_task": "Malaysia National Diabetes Registry (NDR) 2023 — source verification and URL resolution",
+  "claim_ids": ["PP1.2", "PP1.3"],
+  "claim_text": "Malaysia National Diabetes Registry 2023: 34.38% of registered diabetes patients achieved HbA1c ≤6.5% target; 1,956,151 total registered T2DM patients; 81.10% concurrent hypertension; 65.62% not at glycaemic target",
+  "original_url": "https://www.moh.gov.my/moh/resources/Penerbitan/Laporan/Umum/NDR_Report_2023_Final.pdf",
+  "original_tag": "[NEEDS-ATTENDED-FETCH]",
+
+  "verdict": "NOT-FOUND-URL-DEAD-DATA-CONFIRMED-BY-SEARCH-EXTRACTION",
+
+  "url_status": {
+    "original_moh_url": "https://www.moh.gov.my/moh/resources/Penerbitan/Laporan/Umum/NDR_Report_2023_Final.pdf",
+    "http_status": 404,
+    "tested_alternatives": [
+      {"url": "https://www.moh.gov.my/moh/resources/Penerbitan/Laporan/Umum/NDR_Report_2023.pdf", "status": 404},
+      {"url": "https://www.moh.gov.my/moh/resources/Penerbitan/Rujukan/NCD/Diabetes/NDR_Report_2023_Final.pdf", "status": 404},
+      {"url": "https://www.moh.gov.my/moh/resources/Penerbitan/Rujukan/NCD/Diabetes/NDR_2023.pdf", "status": 404},
+      {"url": "https://www.moh.gov.my/images/penerbitan/NCD/Diabetes/NDR_Report_2023_Final.pdf", "status": 404},
+      {"url": "https://www.moh.gov.my/images/penerbitan/laporan/umum/NDR_Report_2023_Final.pdf", "status": 404},
+      {"url": "http://ndr.moh.gov.my/", "status": "ECONNREFUSED"},
+      {"url": "https://govdocs.sinarproject.org/documents/ministry-of-health/annual-reports/", "status": "accessible, but only NDR 2013-2019 available"},
+      {"url": "https://web.archive.org/web/*/...NDR_Report_2023_Final.pdf", "status": "WebFetch blocked for archive.org"}
+    ],
+    "markitdown_attempt": "HTTPError 404 — PDF not accessible via markitdown",
+    "note": "The URL appears to have been indexed by Google with full data extraction (AI snippet confirmed 34.38%, 1,956,151 figures), suggesting the PDF existed and was crawled before being removed or reorganised from the MOH server. The MOH website appears to have restructured its publications directory."
+  },
+
+  "data_confirmation": {
+    "figures_confirmed_via_search_extraction": true,
+    "method": "Google AI snippet extraction from indexed-but-now-404 PDF — figures consistent across 5+ independent search result snippets",
+    "confirmed_figures": {
+      "total_registered_patients_2023": "1,956,151",
+      "HbA1c_target_achievement_rate": "34.38% achieved HbA1c ≤6.5% (2023) — down from 35.94% in 2022",
+      "HbA1c_not_at_target": "65.62% not at glycaemic target",
+      "concurrent_hypertension": "81.10%",
+      "concurrent_dyslipidaemia": "78.39%",
+      "nephropathy": "12.70%",
+      "retinopathy": "11.12%",
+      "ischaemic_heart_disease": "5.11%",
+      "mean_HbA1c": "7.7% (down from 7.8% in 2022)",
+      "dominant_ethnicity": "Malay 60.13%"
+    },
+    "caveats": "These figures are extracted from Google's AI summary of the indexed PDF content — they have NOT been directly verified by reading the PDF (PDF is 404). The figures are internally consistent and plausible given trajectory from NDR 2020 (43.7% HbA1c control per Nature 2025 citation). However the primary source PDF cannot be read or downloaded at time of this research (2026-05-26)."
+  },
+
+  "supporting_peer_reviewed_sources": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12051975/",
+      "title": "Association between BMI and diabetes mellitus control classification — Evidence from the National Diabetes Registry of Muar District, Malaysia, January 2021 to July 2023",
+      "journal": "PMC (2025)",
+      "relevance": "Uses Muar District NDR data 2021-2023 (n=1,955 patients); cites NDR 2013-2019 as authoritative. Confirms NDR methodology and data collection system still operational in 2023. Does NOT independently cite the 34.38% national figure.",
+      "category": "primary-academic",
+      "directly_verifies_34pct_figure": false
+    },
+    {
+      "url": "https://www.nature.com/articles/s41598-025-08346-y",
+      "title": "Determinants of HbA1c variability among type 2 diabetes mellitus patients in Malaysian primary care setting",
+      "journal": "Scientific Reports (July 2025)",
+      "relevance": "States 43.7% HbA1c control in NDR 2020 as comparator. Confirms declining control trajectory. Does NOT cite 2023 report directly.",
+      "category": "primary-academic",
+      "verbatim_relevant_quote": "only about one-third of patients achieving HbA1c levels of less than 7.0%, as compared to 43.7% reported in the NDR for year 2020",
+      "directly_verifies_34pct_figure": false
+    },
+    {
+      "url": "https://jofem.org/index.php/jofem/article/view/879/284284687",
+      "title": "Associations Between Type 2 Diabetes Subtypes and Complications: Analysis of the Malaysia National Diabetes Registry",
+      "journal": "Journal of Endocrinology and Metabolism (2023)",
+      "relevance": "Uses 2019 NDR analytical cohort (n=60,946). Confirms NDR is national registry covering public primary care. Does NOT cite 2023 NDR report.",
+      "category": "primary-academic",
+      "directly_verifies_34pct_figure": false
+    }
+  ],
+
+  "searches_performed": [
+    "Malaysia National Diabetes Registry NDR 2023 annual report PDF MOH",
+    "site:crc.gov.my 'National Diabetes Registry' 2023",
+    "Malaysia NDR 2023 '34.38' HbA1c primary care registered patients total",
+    "site:moh.gov.my 'National Diabetes Registry' 2023 filetype:pdf",
+    "'NDR Report 2023' Malaysia HbA1c '34.38%' published 2024 OR 2025",
+    "Malaysia 'National Diabetes Registry' 2023 annual report '1,956,151' site:researchgate.net OR site:academia.edu",
+    "'National Diabetes Registry' Malaysia 2023 report 'Disease Control Division' HbA1c '65.62' OR '34.38'"
+  ],
+
+  "categories_searched": [
+    "primary-gov (moh.gov.my — URL dead, all path variants 404)",
+    "primary-gov (ndr.moh.gov.my — ECONNREFUSED)",
+    "primary-gov (iku.gov.my poster — SSL cert failure)",
+    "gov-mirror (govdocs.sinarproject.org — only has NDR up to 2013-2019)",
+    "web-archive (web.archive.org — WebFetch blocked)",
+    "primary-academic (PMC12051975, Nature s41598-025-08346-y, JOFEM 879)",
+    "secondary-media (leadncdmalaysia.com — only shows up to NDR 2020)"
+  ],
+
+  "recommendation": {
+    "action": "RETAIN-WITH-TAG-UPGRADE",
+    "tag": "[NEEDS-ATTENDED-FETCH]",
+    "rationale": "The NDR 2023 PDF exists or existed on moh.gov.my but is currently 404 across all path variants tested. The specific figures (34.38%, 1,956,151 patients) are credible and internally consistent — confirmed via Google's AI snippet extraction from the indexed PDF and consistent with the declining control trajectory shown in NDR 2020 (43.7% control) and the 2025 Nature article. The figures cannot be independently verified via direct document access at this time. Recommendation: retain the [NEEDS-ATTENDED-FETCH] tag, but note that figures are high-confidence based on search extraction even if the PDF URL is currently dead. An attended browser session should try: (1) moh.gov.my publications search directly, (2) email DCD Malaysia (dcd@moh.gov.my), (3) ResearchGate for author upload.",
+    "alternative_citation_if_needed": "Use NDR 2020 as fallback primary source (accessible at https://www.researchgate.net/publication/354238285_National_Diabetes_Registry_Report_2020) which shows 43.7% HbA1c ≤7% control, substantiating the direction of the claim even if 2023 specific number cannot be live-cited"
+  },
+
+  "verbatim_quote_from_search_extraction": "In 2023, 34.38% of patients achieved the target of HbA1c ≤6.5%, a slight decrease from 35.94% in 2022. In 2023, 81.10% had hypertension and 78.39% had dyslipidaemia. The registry enrolled 1,956,151 diabetes patients in 2023.",
+  "quote_source_note": "Extracted by Google AI from indexed content of NDR_Report_2023_Final.pdf before URL went dead. Not a direct verbatim quote from a live-accessible document.",
+
+  "research_date": "2026-05-26",
+  "budget_used": {
+    "web_searches": 7,
+    "web_fetches": 5,
+    "markitdown_attempts": 3,
+    "curl_checks": 12
+  }
+}

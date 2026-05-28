@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-05-26T03:30:00Z",
+  "run_id": "2026-05-26-0159",
+  "critic": "width",
+  "imi_dimensions_assessed": [
+    {"dimension": "IMI Stage 1 — Process Owners (operators with capital at risk)", "covered_stages": [1,2,3,4,5,6], "quality": "full"},
+    {"dimension": "IMI Stage 2 — Service Integrators / Implementation Consultants", "covered_stages": [], "quality": "missing", "notes": "EHR implementation partners, MCU programme design consultants, TPA platform integrators appear in player tables but no dedicated actor-stage analysis."},
+    {"dimension": "IMI Stage 3 — Technology / Product Suppliers", "covered_stages": [1,2,3,6], "quality": "partial", "notes": "Clinic-mgmt SaaS, lab providers, TPA platforms appear as players; no pain-point analysis from their cost/structure perspective."},
+    {"dimension": "IMI Stage 5 — Ongoing Operations", "covered_stages": [1,2,3,4,5,6], "quality": "full"},
+    {"dimension": "IMI Stage 6 — End Users", "covered_stages": [1,2,3,4,5], "quality": "partial", "notes": "Patients/employees appear as pain-bearers; no decomposition by payer cohort (BPJS/employer-insured/self-pay)."},
+    {"dimension": "Cross-cutting — Regulatory environment", "covered_stages": [1,2,3,5], "quality": "partial", "notes": "Per-stage coverage strong; no standalone regulatory-risk section in Stage 4."},
+    {"dimension": "Cross-cutting — Consolidated market sizing", "covered_stages": [1,2,3], "quality": "partial", "notes": "Per-stage market sizes present; no integrated cross-layer TAM summary."}
+  ],
+  "topic_scope_dimensions_assessed": [
+    {"dimension": "ID Tier-2 cities (Surabaya, Bandung, Medan)", "quality": "partial", "notes": "Named in player tables; all quantitative data is Jakarta/national-level."},
+    {"dimension": "MY Penang and Johor Bahru", "quality": "partial", "notes": "Klang Valley-only quantitative data; no city-specific differentiation."},
+    {"dimension": "All 12 sub-steps quantified (1a–3d)", "quality": "full", "notes": "All 12 sub-steps appear in Stage 4 unified table with owner, format, time, volume, automation, error, AI capability."},
+    {"dimension": "Labour: Doctor / GP", "quality": "full"},
+    {"dimension": "Labour: Nurse / clinical assistant", "quality": "partial", "notes": "Covered for Stage 1; TPA clinical-review nurses not costed."},
+    {"dimension": "Labour: Lab tech / phlebotomist", "quality": "partial", "notes": "Owner role identified; cost proxied with admin rate."},
+    {"dimension": "Labour: Claims adjudicator", "quality": "full"},
+    {"dimension": "Labour: Call-centre operator at TPA", "quality": "missing", "notes": "PMCare 83-staff disclosed but per-transaction cost never derived."},
+    {"dimension": "Labour: Pharmacist / dispensing staff", "quality": "partial", "notes": "Not in input scope list but dispensing is 50-70% of MY GP revenue."},
+    {"dimension": "Specialist clinic as a back-office operator", "quality": "missing", "notes": "Specialists appear as referral subjects + GL revocation victims; never as process operator with own admin burden."},
+    {"dimension": "Employer HR as process operator", "quality": "partial", "notes": "Appears as MCU customer; own back-office burden (procurement, compliance) not decomposed."}
+  ],
+  "gaps": [
+    {"gap_id": "W1", "type": "labour-category-missing", "dimension": "TPA call-centre operator cost", "actionable_gap": true, "actionability": "high", "recommended_action": "deep-research-on-dim",
+     "reasoning": "PMCare publicly disclosed 83 call-centre staff (45 GL + 38 discharge) and ~4.2M annual transactions — cost-per-transaction is derivable from primary source. Currently Stage 4 TPA cost baseline uses adjudicator rate as catch-all, understating sub-step 3a cost."},
+    {"gap_id": "W2", "type": "actor-type-missing", "dimension": "Specialist clinic / private specialist practice as operator", "actionable_gap": true, "actionability": "high", "recommended_action": "invoke-value-chain-mapper-on-dim",
+     "reasoning": "67% GL revocation creates a large rework burden at specialist billing teams that is entirely unquantified. The complete Stage 3 picture requires provider side, not only payer side."},
+    {"gap_id": "W3", "type": "geography-incomplete", "dimension": "ID Tier-2 city specific data", "actionable_gap": true, "actionability": "medium", "recommended_action": "deep-research-on-dim",
+     "reasoning": "Tier-2 cities = larger volume opportunity but lower readiness. Pilot recommendations calibrated only to Jakarta may overstate scale speed."},
+    {"gap_id": "W4", "type": "geography-incomplete", "dimension": "MY Penang and Johor Bahru", "actionable_gap": true, "actionability": "medium", "recommended_action": "deep-research-on-dim",
+     "reasoning": "JB cross-border workforce creates unusual dual-coverage TPA claims patterns; Penang manufacturing-sector employer profile differs from KL services; absent from corpus."},
+    {"gap_id": "W5", "type": "imi-dim-missing", "dimension": "Implementation/Integration Consultant actor stage", "actionable_gap": true, "actionability": "medium", "recommended_action": "invoke-value-chain-mapper-on-dim",
+     "reasoning": "This actor is the likely route-to-market partner for AI tooling (operator relationships, embedded sales) — commercially meaningful gap."},
+    {"gap_id": "W6", "type": "anchor-unvalidated", "dimension": "Sub-step 3d CDM admin FTE count", "actionable_gap": true, "actionability": "high", "recommended_action": "deep-research-on-dim",
+     "reasoning": "ASSUMED-7 (2-4 FTE per 10,000 lives) drives a 5x cost range ($220K–$1.06M) — too wide for business case. One PMCare/HealthMetrics interview resolves."},
+    {"gap_id": "W7", "type": "payer-cohort-undifferentiated", "dimension": "Back-office burden by payer type at GP", "actionable_gap": false, "actionability": "low", "recommended_action": "document-as-known-scope-narrowing"},
+    {"gap_id": "W8", "type": "labour-category-thin", "dimension": "Lab tech salary separate from admin rate", "actionable_gap": true, "actionability": "low", "recommended_action": "deep-research-on-dim"}
+  ],
+  "summary": {
+    "imi_dimensions_total": 7,
+    "imi_dimensions_missing": 1,
+    "imi_dimensions_partial": 4,
+    "imi_dimensions_full": 2,
+    "topic_scope_dimensions_missing": 2,
+    "topic_scope_dimensions_partial": 6,
+    "topic_scope_dimensions_full": 3,
+    "total_gaps": 8,
+    "high_actionability": 3,
+    "medium_actionability": 3,
+    "low_actionability": 2,
+    "twelve_substep_coverage": "complete",
+    "top_3_gaps": ["W2 (specialist clinic as operator)", "W6 (sub-step 3d CDM FTE unvalidated)", "W1 (TPA call-centre cost)"]
+  }
+}

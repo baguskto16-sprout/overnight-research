@@ -1,0 +1,93 @@
+{
+  "claim_researched": "SATUSEHAT EHR/EMR adoption rate among private clinics ~8.9% (3,533 of 39,852 eligible facilities) by mid-2024/end-2024",
+  "original_source": "arXiv 2512.05381 (Satrio & Aqid, 2025) — single EMR provider (PT MTK) customer network data",
+  "outcome": "found-stronger-evidence",
+  "critical_reinterpretation": {
+    "original_claim_flaw": "The 8.9% figure measures ONE private EMR vendor's (PT MTK) market share of FKTPs nationally, NOT the total SATUSEHAT integration rate across all providers. The arXiv abstract states explicitly: 'total market share of FKTP for PT MTK remains less than 10 percent at the end of 2024'. This is a vendor market-share statistic, not a national SATUSEHAT platform registration rate.",
+    "national_picture_is_different": "The SATUSEHAT platform nationally had 34,463 fasyankes integrated as of 27 October 2025 (Kemenkes official data, BKPK), and had 33,901 facilities in dashboard analysis by December 2024 (peer-reviewed PubMed 40776145). Total eligible facilities are ~65,000–70,000+ (hospitals + puskesmas + klinik + TPM). This suggests a higher national integration rate, but denominator and private-clinic-specific disaggregation are not published separately.",
+    "hospital_vs_clinic_split": "96% of hospitals implemented EMR with 92% connected to SATUSEHAT (GovInsider Asia / Ministry data, mid-2025). Private clinics (klinik pratama/utama) and independent practices (TPM) lag far behind — total national private clinic count is ~17,261 (14,564 klinik pratama + 2,697 klinik utama per fasyankes.kemkes.go.id); integration rate for this segment not published as standalone official figure.",
+    "80pct_lacks_digital": "MOH Blueprint of Digital Health Transformation Strategy 2024 explicitly states 'lack of digital technology adoption in 80% of healthcare facilities' — consistent with low clinic-level adoption."
+  },
+  "new_sources": [
+    {
+      "url": "https://www.badankebijakan.kemkes.go.id/wajib-integrasi-satu-sehat-kemenkes-desak-percepatan-rme-di-fasyankes/",
+      "category": "primary-gov",
+      "publisher": "Badan Kebijakan Pembangunan Kesehatan (BKPK) — Ministry of Health Indonesia",
+      "publication_date": "2025-10-29",
+      "key_data": "Per 27 Oktober 2025, tercatat 34,463 fasyankes terintegrasi SATUSEHAT. Of hospitals: 3,138 of 3,239 have implemented RME (96.9%). Deadline extended to end of 2025.",
+      "verbatim_quote_under_500": "Berdasarkan data Satu Sehat, per 27 Oktober 2025, tercatat 34.463 fasyankes telah berhasil terintegrasi dengan Satu Sehat. Kemenkes mendorong percepatan integrasi Rekam Medis Elektronik (RME) di seluruh fasilitas pelayanan kesehatan pada platform Satu Sehat. Sebanyak 3.138 dari 3.239 rumah sakit telah mengimplementasikan RME; 495 RS belum mencakup enam jenis pelayanan inti.",
+      "supports_claim": "partially — provides national total (34,463 fasyankes) but does not disaggregate to private clinic segment; confirms hospitals near-complete but clinic-level integration still lagging",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40776145/",
+      "category": "primary-academic-peer-reviewed",
+      "publisher": "PubMed / NCBI — peer-reviewed journal article",
+      "authors": "Astari LA, Amalia I, Indra L, Sanjaya GY, Fuad A",
+      "title": "Assessing the Fidelity of Electronic Health Record Implementation Using SatuSehat Platform in Indonesia",
+      "publication_date": "2025 (indexed PubMed)",
+      "key_data": "Analyzed dashboard data from 33,901 facilities on SATUSEHAT. By December 2024 all providers required to submit encounter+diagnosis data. In October 2024: 58% met the 50% data-submission threshold; rates declined by December when target increased to 100%. Findings highlight disparities across facility types.",
+      "verbatim_quote_under_500": "Indonesia's Ministry of Health launched the SatuSehat platform in 2022 to unify Electronic Health Record (EHR) data and improve interoperability nationwide. By December 2024, all healthcare providers were required to submit encounter and diagnosis data. This study analyzed dashboard data from 33,901 facilities to assess submission fidelity. In October, 58% met the 50% threshold, but rates declined by December when the target increased to 100%.",
+      "supports_claim": "corroborates — 33,901 facilities were on the platform dashboard by Dec 2024, but fidelity (data submission quality) was low; confirms implementation gap",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://scholarhub.ui.ac.id/ihpa/vol11/iss2/3/",
+      "category": "primary-academic-peer-reviewed",
+      "publisher": "Journal of Indonesian Health Policy and Administration (University of Indonesia), DOI: 10.7454/ihpa.v11i2.1180",
+      "authors": "Satrio, Suryo; Aqid, Bukhori Muhammad",
+      "title": "Deadline-Chasing in Digital Health: Forecasting EMR Adoption Dynamics and Regulatory Impact in Indonesian Primary Care",
+      "publication_date": "2025 (journal version of arXiv 2512.05381)",
+      "key_data": "PEER-REVIEWED VERSION of arXiv preprint. 3,533 facilities registered with ONE EMR provider (PT MTK) = 8.9% of 39,852 eligible FKTPs. This is PT MTK's market share, not national SATUSEHAT integration rate.",
+      "verbatim_quote_under_500": "The proportion of final adoption compared to eligible facilities was 8.9 percent (3,533 of 39,852). The ARIMA model projects approximately 3,997 clinics by June 2025. Total market share of FKTP for PT MTK remains less than 10 percent at the end of 2024.",
+      "supports_claim": "supports with critical caveat — confirms ~8.9% is ONE vendor's market share; national SATUSEHAT integration is higher",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://govinsider.asia/intl-en/article/hospital-transformation-and-the-future-of-emr-in-indonesia",
+      "category": "secondary-trade-press-citing-ministry",
+      "publisher": "GovInsider Asia, citing Ministry of Health data",
+      "publication_date": "2025",
+      "key_data": "96% of hospitals implemented EMR; 92% connected to SATUSEHAT. Only small proportion regularly and comprehensively submit patient health data.",
+      "verbatim_quote_under_500": "96 per cent of hospitals in Indonesia have implemented EMR, with approximately 92 per cent of all hospitals connected to SATUSEHAT. Only a small proportion of hospitals regularly and comprehensively submit patient health data to the national platform.",
+      "supports_claim": "partially — confirms hospital-level near-complete adoption; implicitly confirms clinic-level is far lower",
+      "via_pdf_markitdown": false
+    },
+    {
+      "url": "https://vm.ee/sites/default/files/documents/2025-03/Indonesia_Strategy_HealthTech.pdf",
+      "category": "secondary-government-report",
+      "publisher": "Orissa International / Intralink for Ministry of Foreign Affairs of Republic of Estonia, March 2025",
+      "publication_date": "2025-03",
+      "key_data": "MOH Blueprint of Digital Health Transformation Strategy 2024 states: 'lack of digital technology adoption in 80% of healthcare facilities' — i.e., only ~20% have any digital health adoption, consistent with very low EMR/SATUSEHAT integration at clinic level.",
+      "verbatim_quote_under_500": "The strategy addresses key challenges such as data fragmentation, inefficient health services, and the lack of digital technology adoption in 80% of healthcare facilities.",
+      "supports_claim": "corroborates low adoption — 80% of facilities lack digital adoption as per MOH's own blueprint",
+      "via_pdf_markitdown": true
+    }
+  ],
+  "suggested_revision": {
+    "original_text": "cumulative adoption was only ~8.9% of eligible facilities (3,533 of 39,852) by mid-2025 projection",
+    "revised_text": "SATUSEHAT integration among private primary care facilities remains low: one major EMR vendor's (PT MTK) FKTP market share reached only 8.9% (3,533 of 39,852 eligible facilities) by end-2024 — a vendor market-share figure that understates total national registration (34,463 facilities across all types were integrated by Oct 2025 per Kemenkes BKPK official data), but hospitals dominate that total (96% hospital adoption, 92% SATUSEHAT-connected). Private klinik pratama integration has not been published as a standalone official figure; the MOH's own 2024 Digital Health Blueprint acknowledges 80% of facilities lack digital technology adoption. The claim that >90% of private clinics remain non-integrated with SATUSEHAT is well-supported; the 8.9% figure specifically reflects one EMR provider's primary-care market share, not all-provider national registration.",
+    "suggested_footnote_revision": "Upgrade arXiv source to its peer-reviewed journal version: Satrio S, Aqid BM. Deadline-Chasing in Digital Health. Journal of Indonesian Health Policy and Administration. DOI: 10.7454/ihpa.v11i2.1180. Cross-cite: Kemenkes BKPK (Oct 2025 official figure: 34,463 facilities); PubMed 40776145 (33,901 facilities on dashboard, Dec 2024); MOH Blueprint 2024 (80% facilities lack digital adoption)."
+  },
+  "suggested_new_score": "Medium-High",
+  "reasoning": "The directional claim (>90% of private clinics not integrated with SATUSEHAT) is robustly supported by four independent sources including official Kemenkes data and a peer-reviewed journal. However, the 8.9% figure is a single-vendor market share, not a national platform statistic — which is a material distinction. The revised text adds necessary precision without changing the substantive conclusion: private clinic EMR/SATUSEHAT integration is very low.",
+  "searches_performed": [
+    "SATUSEHAT platform integrasi faskes jumlah statistik 2024 kemenkes kemkes.go.id",
+    "SATUSEHAT private clinic integration adoption rate Indonesia 2024 official statistics",
+    "SATUSEHAT 34463 fasyankes terintegrasi Oktober 2025 kemenkes statistik",
+    "Indonesia SATUSEHAT EMR adoption klinik percentage 2024 annual report pusdatin OR World Bank",
+    "SATUSEHAT klinik swasta integrasi jumlah 2024 klinik pratama private clinic percentage",
+    "site:nhs-journal.com SATUSEHAT OR Indonesia EMR adoption 2025",
+    "SATUSEHAT 33901 fasyankes EHR fidelity December 2024 study",
+    "SATUSEHAT tempat praktik mandiri OR TPM OR independent practice 24% connected 2024 2025"
+  ],
+  "categories_searched": [
+    "primary-gov (Kemenkes BKPK official data — found)",
+    "primary-multilateral (World Bank, ADB — not found for this specific metric)",
+    "primary-academic-peer-reviewed (PubMed 40776145, scholarhub IHPA journal — found)",
+    "secondary-trade-press-citing-ministry (GovInsider Asia — found)",
+    "secondary-government-strategy-doc (MOH Blueprint 2024 via Estonia HealthTech PDF — found)"
+  ],
+  "run_timestamp": "2026-05-26",
+  "deep_research_agent_version": "stage-1-satusehat"
+}
