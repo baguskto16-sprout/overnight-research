@@ -34,7 +34,7 @@ set -a; . "$ENV_FILE"; set +a
 
 : "${RESEND_API_KEY:?RESEND_API_KEY not set in $ENV_FILE}"
 : "${RESEND_FROM:?RESEND_FROM not set in $ENV_FILE}"
-RESEND_FROM_NAME="${RESEND_FROM_NAME:-Overnight Research}"
+RESEND_FROM_NAME="${RESEND_FROM_NAME:-Sprout Overnight Research}"
 RECIPIENTS_FILE="${RECIPIENTS_FILE:-$REPO_DIR/config/recipients.txt}"
 
 # ---------------------------------------------------------------------------
@@ -130,16 +130,16 @@ PY
 # ---------------------------------------------------------------------------
 build_self_test_body() {
   cat <<EOF
-This is a self-test email from scripts/send-email.sh.
+Delivery test from the Sprout overnight research pipeline.
 
-If you can read this, Resend delivery is wired correctly for the
-auto-overnight scheduler running on alphabot.
+If this lands in your inbox, the nightly scheduler is reaching its
+recipients correctly. No action needed.
 
-Sent: $(date '+%F %T %Z')
-Host: $(hostname)
-Repo: $REPO_DIR
+Sent: $(date '+%A, %d %B %Y · %H:%M %Z')
+Host: $(hostname -s)
+Repo: $(basename "$REPO_DIR")
 
-— Overnight Research bot
+— Sprout overnight research
 EOF
 }
 
@@ -167,9 +167,8 @@ build_run_body() {
   local rel_run="output/raw-claude-overnight/$run_basename"
 
   {
-    echo "Overnight run complete."
+    echo "Overnight research run complete for ${slug:-$run_basename}."
     echo
-    echo "  Topic:  ${slug:-$run_basename}"
     echo "  Gate:   ${gate}"
     echo "  % Low:  ${pct_low}%"
     echo "  Input:  ${input_file}"
@@ -194,7 +193,7 @@ build_run_body() {
       echo "  preview: https://htmlpreview.github.io/?$blob_base/$rel_run/FINAL-REPORT.html"
     fi
     echo
-    echo "— Overnight Research bot"
+    echo "— Sprout overnight research"
   }
 }
 
@@ -210,7 +209,7 @@ MODE="${1:-}"
 
 case "$MODE" in
   --self-test)
-    SUBJECT="[overnight] send-email self-test · $(date '+%F %H:%M')"
+    SUBJECT="Sprout overnight research — delivery test ($(date '+%d %b %Y, %H:%M'))"
     TO_LIST="$(printf '%s\n' "bagus.kurnianto@sprout.co.id" | json_string_array)"
     echo "→ Sending self-test to bagus.kurnianto@sprout.co.id …"
     set +e
@@ -227,7 +226,7 @@ case "$MODE" in
     SUMMARY_FILE="${2:-}"
     [ -n "$SUMMARY_FILE" ] && [ -f "$SUMMARY_FILE" ] || {
       echo "ERROR: --digest needs a readable summary file path"; exit 1; }
-    SUBJECT="[overnight] nightly digest · $(date '+%F')"
+    SUBJECT="Sprout overnight research — digest, $(date '+%A %d %b %Y')"
     TO_LIST="$(read_recipients_file | dedupe_recipients | json_string_array)"
     [ "$TO_LIST" = "[]" ] && { echo "WARN: no recipients — skipping digest send"; exit 0; }
     echo "→ Sending digest …"
@@ -265,7 +264,7 @@ EOF
     done
     [ -z "$PCT_LOW" ] && PCT_LOW="?"
 
-    SUBJECT="[overnight] ${SLUG} · ${GATE} · ${PCT_LOW}% Low"
+    SUBJECT="Overnight research — ${SLUG} (gate: ${GATE}, ${PCT_LOW}% Low)"
     TO_LIST="$( { read_recipients_file
                   [ -n "$INPUT_FILE" ] && [ -f "$INPUT_FILE" ] && read_frontmatter_recipients "$INPUT_FILE"
                 } | dedupe_recipients | json_string_array )"

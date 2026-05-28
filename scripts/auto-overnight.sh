@@ -114,7 +114,7 @@ while IFS= read -r q; do [ -n "$q" ] && log "  • $q"; done < "$QUEUE_FILE"
 DIGEST_FILE="$LOG_DIR/auto-overnight-digest-$(date +%Y%m%d).txt"
 : > "$DIGEST_FILE"
 {
-  echo "Nightly digest — $(date '+%F')"
+  echo "Sprout overnight research — digest, $(date '+%A, %d %B %Y')"
   echo "Queue size: $QUEUE_COUNT"
   echo
 } >> "$DIGEST_FILE"
