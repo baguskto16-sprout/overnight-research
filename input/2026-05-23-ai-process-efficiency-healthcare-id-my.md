@@ -1,3 +1,7 @@
+---
+rerun: true
+---
+
 # Hypothesis input — AI Process Efficiency in Healthcare Back-Office (Indonesia & Malaysia, Deep Process Edition)
 
 ## Topic
