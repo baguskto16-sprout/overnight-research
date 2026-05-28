@@ -162,8 +162,8 @@ build_run_body() {
 
   local run_basename
   run_basename="$(basename "$run_dir")"
-  local blob_base="https://github.com/Wright-Partners/overnight-research/blob/main"
-  local tree_base="https://github.com/Wright-Partners/overnight-research/tree/main"
+  local blob_base="https://github.com/baguskto16-sprout/overnight-research/blob/main"
+  local tree_base="https://github.com/baguskto16-sprout/overnight-research/tree/main"
   local rel_run="output/raw-claude-overnight/$run_basename"
 
   {
