@@ -565,96 +565,9 @@ th {
 </div>
 
 <!-- PAGE 9 - CLOSING -->
-<div class="page">
-  <div class="page-header">
-    <div class="crumbs">Phase 2 · Playwright auto-enrichment (2026-05-20)</div>
-    <div class="pgnum">09 · Auto-enrichment</div>
-  </div>
-  <div>
-    <div class="eyebrow">Phase 2 outcome</div>
-    <h2>Playwright auto-enrichment resolved <span class="accent">8 of 9</span> [NEEDS-ATTENDED-FETCH] URLs in ~7.5 minutes; one Medium → High upgrade applied.</h2>
-    <p>Goal was to lift URLs tagged <code>[NEEDS-ATTENDED-FETCH]</code> in the canonical raw-claude-* files by re-fetching via the Playwright MCP toolchain. Captcha or login walls were left untouched and re-tagged <code>[CONFIRMED-INACCESSIBLE]</code>. No source was ever removed; no confidence tier was lowered.</p>
 
-    <h3>Fetch outcomes</h3>
-    <table class="priority-table" style="font-size: 8.5pt;">
-      <thead>
-        <tr><th style="width:7%">#</th><th style="width:46%">URL</th><th style="width:14%">Outcome</th><th>Note</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>1</td><td>roanokegroup.com/cargo-api-integration/</td><td class="pri-m">Verified</td><td>CoverageDock™ Quote / Issuance / Certificate APIs confirmed; SEA road-freight applicability still not on page.</td></tr>
-        <tr><td>2</td><td>sap.com/resources/supply-chain-control-tower</td><td class="pri-m">Verified</td><td>Product described (cloud, AI/ML/IoT, TMS/ERP/WMS integration). Pricing not public.</td></tr>
-        <tr><td>3</td><td>grandviewresearch.com/industry-analysis/control-towers-market</td><td class="pri-m">Verified</td><td>All figures confirmed verbatim ($9.67B → $32.14B, CAGR 23.0%, operational 83.04% in 2024). Aggregator-override keeps tier Low.</td></tr>
-        <tr><td>4</td><td>ttclub.com/&hellip;/TT_Club_Report_-_Supply_Chain_Report_April_2025.pdf</td><td class="pri-h">Discrepancy</td><td>PDF fetched + markitdown-converted. Body does NOT name Indonesia top-10 nor cite +281% Malacca piracy; hotspots listed = Brazil/Mexico/India/US/Germany/Chile/South Africa. Indonesia/Malacca specifics remain on secondary sources only.</td></tr>
-        <tr><td>5</td><td>ttnews.com/articles/double-brokering-increases</td><td class="pri-h">Inaccessible</td><td>HTTP 403 / Varnish edge cache. Bot-blocked even via Playwright. Re-tagged <code>[CONFIRMED-INACCESSIBLE]</code>.</td></tr>
-        <tr><td>6</td><td>ofac.treasury.gov/&hellip;/2025-enforcement-information</td><td class="pri-h" style="color: var(--red);">Upgrade ↑</td><td>YTD-2025 primary table now confirms 14 actions / $265,746,819, incl. Fracht FWO $1.61M (9/3/25), Key Holding $608.8K (7/2/25), GVA Capital $215.99M (6/12/25). Claim moved Medium → High.</td></tr>
-        <tr><td>7</td><td>iata.org/en/programs/cargo/pharma/</td><td class="pri-m">Verified</td><td>CEIV Pharma program existence confirmed. $2.5B–$12.5B excursion-loss figure not on this overview.</td></tr>
-        <tr><td>8</td><td>iata.org/&hellip;/ceiv-pharma/ (now /services/certification/special-cargo/ceiv-pharma/)</td><td class="pri-m">Verified</td><td>Old URL redirects to current canonical path. Program scope confirmed.</td></tr>
-        <tr><td>9</td><td>jdih.dephub.go.id/</td><td class="pri-m">Verified</td><td>Registry reachable; keyword search returns no national ePOD mandate. Original "unsubstantiated" finding stands.</td></tr>
-      </tbody>
-    </table>
 
-    <h3>Recomputed gate</h3>
-    <div class="callout">
-      <div class="label">Gate band unchanged · ship-with-flag</div>
-      Corpus 346 claims. <strong>% Low pre-enrichment: 56.0% → post-enrichment: 55.7%</strong> (Δ ≈ –0.3 pt from one Medium → High upgrade). The remaining low confidence is irreducible without field validation: vendor-marketing self-reporting, aggregator SEA sizing, 15 ASSUMED tags. Phase 2 confirms the structural narrative — it does not invalidate any prior finding.
-    </div>
 
-    <h3>Items still requiring attended / human work</h3>
-    <ul>
-      <li>Crunchbase / PitchBook gated funding rounds (Loadsure, Parsyl, Breeze, Cover Genius, Highway) — subscription wall; not Playwright-solvable.</li>
-      <li>ALFI Indonesia members-only portal — login wall; field-contact required for definitive ePOD direction.</li>
-      <li>TT News double-brokering article — Varnish 403; FreightCaviar summary remains the reachable substitute.</li>
-      <li>IATA whitepaper underlying the $2.5B–$12.5B pharma excursion figure — not on the public site tree; requires IATA Cargo Services subscription or direct request.</li>
-    </ul>
-  </div>
-
-  <div class="signoff">
-    <div><strong>Wright Partners</strong> · Confidential research brief · Phase 2 addendum</div>
-    <div class="contact">
-      Ziv Yirmiyahu · ziv@wrightpartners.com<br>
-      Arnold Yong · arnold@wrightpartners.com
-    </div>
-    <div style="margin-top: 4mm; font-size: 8pt;">
-      Phase 2 run 2026-05-20 07:34–07:42 UTC · Tool: mcp__playwright (+ curl fallback for the TT Club PDF stream) · See <code>checkpoint.json#auto_enrichment</code> for machine-readable record.
-    </div>
-  </div>
-</div>
-
-<div class="page closing">
-  <div class="page-header">
-    <div class="crumbs">Closing · next steps</div>
-    <div class="pgnum">10</div>
-  </div>
-  <div>
-    <div class="eyebrow">Next steps</div>
-    <h2>Treat this as <span class="accent">research feedstock</span> — review before treating as canonical.</h2>
-    <p>This is a raw-claude-* unattended overnight artifact. The <code>raw-claude-</code> prefix signals: review for accuracy before sharing externally. The corpus is publishable as the competitive-landscape input for the Tokio Marine + ID&E venture pitch with explicit caveats on (a) SEA market sizing relying on aggregator estimates, (b) vendor-traction figures as self-reported, (c) 15 ASSUMED claims requiring field validation.</p>
-
-    <h3>Three priorities for the pitch team</h3>
-    <ol>
-      <li><strong>Foreground the Stage 6 wedge.</strong> The pitch's competitive-landscape slide should lead with: <em>no SEA parametric / telematics-native cargo insurance exists; Tokio Marine has the assets to be first</em>. Use IUMI verbatim figures + Nirvana Tokio Marine Future Fund link as the proof points.</li>
-      <li><strong>Sequence field interviews by structural leverage.</strong> Start with Tokio Marine Future Fund and Tokio Marine Asia regional head before validating broker / shipper / carrier interviewees. The pitch is only viable if there is internal sponsorship at Tokio Marine HQ Tokyo.</li>
-      <li><strong>Phase 2 attended-fetch — <span class="accent">COMPLETED 2026-05-20.</span></strong> Of 9 distinct <code>[NEEDS-ATTENDED-FETCH]</code> URLs, 8 are now reachable via Playwright; 1 (TT News article) confirmed inaccessible behind Varnish 403. The OFAC 2025 enforcement table is now primary-confirmed (14 actions / $265.7M YTD), driving a single Medium → High upgrade. JDIH Kemenhub and IATA CEIV Pharma overview pages are reachable but the specific dollar figures and ePOD mandates remain off-page; secondary sourcing unchanged. See page 10 for the full enrichment table.</li>
-    </ol>
-
-    <h3>Mode + gate</h3>
-    <div class="callout">
-      <div class="label">Gate decision · ship-with-flag (Phase 2 applied)</div>
-      ~55.7% Low confidence post-enrichment (was 56.0% pre-Phase 2); within the 30–70% ship-with-flag band per skill rubric. Phase 2 Playwright pass added 1 Medium → High upgrade (OFAC 2025 primary index) and resolved 8 of 9 [NEEDS-ATTENDED-FETCH] tags. Structural narrative spine is High-confidence (FMCSA, BSI/TT Club PDFs, IUMI Stats Report 2025 PDF, ReCAAP ISC, McKinsey, audited corporate filings, SCOTUS Montgomery ruling, OFAC 2025 primary). Remaining Low % is driven by irreducible categories: vendor-marketing for own funding/traction, aggregator market-research for SEA sizing, and ASSUMED tags for field-interview validation.
-    </div>
-  </div>
-
-  <div class="signoff">
-    <div><strong>Wright Partners</strong> · Confidential research brief</div>
-    <div class="contact">
-      Ziv Yirmiyahu · ziv@wrightpartners.com<br>
-      Arnold Yong · arnold@wrightpartners.com
-    </div>
-    <div style="margin-top: 4mm; font-size: 8pt;">
-      Generated 2026-05-20 · Run ID 2026-05-20-1124 · Unattended multi-agent overnight research orchestrator · Phase 1 of 2 (Playwright enrichment runs as Phase 2)
-    </div>
-  </div>
-</div>
 
 </body>
 </html>
