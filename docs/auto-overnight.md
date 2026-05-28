@@ -2,7 +2,7 @@
 
 Sequential nightly pipeline. Drop a topic into `input/`, merge to `main`,
 and at **23:00 SGT** it auto-runs end-to-end on alphabot: research → commit
-to `wp/main` → email completion to the team.
++ push to origin → email completion to the team.
 
 ---
 
@@ -52,7 +52,7 @@ purely optional metadata.
 ## Manual run (for testing)
 
 ```bash
-cd /Users/alphabot/Downloads/Work/overnight-research-repo
+cd /Users/alphabot/Work/overnight-research-repo
 ./scripts/auto-overnight.sh
 ```
 
