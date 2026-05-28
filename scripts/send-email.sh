@@ -130,7 +130,7 @@ PY
 # ---------------------------------------------------------------------------
 build_self_test_body() {
   cat <<EOF
-Delivery test from the Wright Partners overnight research agent pipeline.
+Delivery test from the Wright Partners overnight research agent.
 
 If this lands in your inbox, the nightly scheduler is reaching its
 recipients correctly. No action needed.
