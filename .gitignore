@@ -33,3 +33,10 @@ Thumbs.db
 .unattended.pid
 .render.pid
 .playwright-mcp/
+config/auto-overnight.env
+*.run.lock
+
+# Scheduler runtime
+logs/
+auto-overnight-implementation-report.md
+.claude/plans/

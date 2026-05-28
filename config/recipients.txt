@@ -1,0 +1,6 @@
+# auto-overnight recipients.
+# One address per line. Lines starting with `#` are comments.
+# Per-topic owner and extra_recipients (from input frontmatter) are
+# added automatically on top of this list.
+
+bagus.kurnianto@sprout.co.id
