@@ -1,3 +1,17 @@
+---
+# Optional scheduler controls. Uncomment any line you want to activate.
+# Per-topic email routing — these are ADDED to config/recipients.txt
+# (which always receives), then de-duplicated.
+# owner: alice@example.com
+# extra_recipients:
+#   - bob@example.com
+#   - charlie@example.com
+#
+# Discovery flags:
+# skip: true         # never auto-pick this topic
+# rerun: true        # force re-run even if already researched
+---
+
 # Hypothesis input — [your topic name]
 
 ## Topic
