@@ -1,9 +1,10 @@
 # Lint report — 2026-05-26-0159
-Generated: 2026-05-26 04:15:40 +08
-Result: 10 pass · 1 warn · 0 fail
+Generated: 2026-05-29 17:53:58 +08
+Result: 10 pass · 2 warn · 0 fail
 
 ## Warnings
 
+- **render-quality** — 11 page(s) exceed A4 height but render cleanly — see render-verify/
 - **attended-fetch-tags** — tags missing URL — sample: **Outstanding [NEEDS-ATTENDED-FETCH] tags** were processed by the Phase 2 Playwr...
 
 ## Passed
