@@ -40,11 +40,11 @@ body {
 
 .page {
   width: 210mm;
-  height: 297mm;
-  padding: 16mm 20mm 14mm;
+  min-min-height: 297mm;
+  padding: 16mm 20mm 22mm;
   background: #FFFFFF;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 .page + .page { page-break-before: always; break-before: page; }
 .page:last-of-type { page-break-after: avoid; break-after: avoid; }
