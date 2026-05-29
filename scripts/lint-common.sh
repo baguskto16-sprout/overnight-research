@@ -196,6 +196,47 @@ lint_check_wordmark() {
 }
 
 # ---------------------------------------------------------------------------
+# Check 5b — Render quality via headless Playwright
+# Opens FINAL-REPORT.html, measures each .page for A4 overflow and footer
+# overlap, captures screenshots. Footer overlap or JS errors = FAIL.
+# A4 overflow alone (content longer than 297mm) = WARN — readable on screen.
+# Requires node + playwright from ~/.claude/skills/wright-brand-skill/render.
+# ---------------------------------------------------------------------------
+lint_check_render_quality() {
+  local html="$1" run_dir="$2"
+  [ -f "$html" ] || { _lint_record WARN "render-quality" "FINAL-REPORT.html missing"; return; }
+
+  local repo_root
+  repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+  local verify_sh="$repo_root/scripts/verify-render.sh"
+  [ -x "$verify_sh" ] || { _lint_record WARN "render-quality" "verify-render.sh not executable"; return; }
+
+  # Run verify with screenshots inside the run dir for audit trail.
+  local shot_dir="$run_dir/render-verify"
+  local out_file="$run_dir/RENDER-VERIFY.log"
+  local rc=0
+  bash "$verify_sh" "$html" "$shot_dir" > "$out_file" 2>&1 || rc=$?
+
+  if [ "$rc" -eq 2 ]; then
+    _lint_record WARN "render-quality" "verify could not run (playwright missing?) — see RENDER-VERIFY.log"
+    return
+  fi
+
+  local overflow_lines
+  overflow_lines=$(grep -cE '\| +[0-9]+px \([0-9.]+mm\) +\|' "$out_file" 2>/dev/null || echo 0)
+  local overlap_n
+  overlap_n=$(grep -oE 'FAIL:.*footer overlap' "$out_file" 2>/dev/null | head -1 || echo "")
+
+  if [ "$rc" -eq 1 ]; then
+    _lint_record FAIL "render-quality" "rendered HTML has layout issues — see RENDER-VERIFY.log + render-verify/ screenshots"
+  elif [ "$overflow_lines" -gt 0 ]; then
+    _lint_record WARN "render-quality" "${overflow_lines} page(s) exceed A4 height but render cleanly — see render-verify/"
+  else
+    _lint_record PASS "render-quality" "all pages fit A4, no footer overlap, no JS errors"
+  fi
+}
+
+# ---------------------------------------------------------------------------
 # Check 6 — Attended-fetch tags well-formed
 # Every [NEEDS-ATTENDED-FETCH] and [CONFIRMED-INACCESSIBLE] tag must include
 # a full URL (http/https) — no truncation, no placeholder.
